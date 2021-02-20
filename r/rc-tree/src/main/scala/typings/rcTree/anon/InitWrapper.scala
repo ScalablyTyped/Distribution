@@ -2,12 +2,13 @@ package typings.rcTree.anon
 
 import typings.rcTree.interfaceMod.DataEntity
 import typings.rcTree.treeUtilMod.Wrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitWrapper extends js.Object {
+trait InitWrapper extends StObject {
   
   var initWrapper: js.UndefOr[js.Function1[/* wrapper */ Wrapper, Wrapper]] = js.native
   
@@ -24,36 +25,24 @@ object InitWrapper {
   }
   
   @scala.inline
-  implicit class InitWrapperOps[Self <: InitWrapper] (val x: Self) extends AnyVal {
+  implicit class InitWrapperMutableBuilder[Self <: InitWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitWrapper(value: /* wrapper */ Wrapper => Wrapper): Self = StObject.set(x, "initWrapper", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitWrapperUndefined: Self = StObject.set(x, "initWrapper", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnProcessFinished(value: /* wrapper */ Wrapper => Unit): Self = StObject.set(x, "onProcessFinished", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitWrapper(value: /* wrapper */ Wrapper => Wrapper): Self = this.set("initWrapper", js.Any.fromFunction1(value))
+    def setOnProcessFinishedUndefined: Self = StObject.set(x, "onProcessFinished", js.undefined)
     
     @scala.inline
-    def deleteInitWrapper: Self = this.set("initWrapper", js.undefined)
+    def setProcessEntity(value: (/* entity */ DataEntity, /* wrapper */ Wrapper) => Unit): Self = StObject.set(x, "processEntity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnProcessFinished(value: /* wrapper */ Wrapper => Unit): Self = this.set("onProcessFinished", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnProcessFinished: Self = this.set("onProcessFinished", js.undefined)
-    
-    @scala.inline
-    def setProcessEntity(value: (/* entity */ DataEntity, /* wrapper */ Wrapper) => Unit): Self = this.set("processEntity", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteProcessEntity: Self = this.set("processEntity", js.undefined)
+    def setProcessEntityUndefined: Self = StObject.set(x, "processEntity", js.undefined)
   }
 }

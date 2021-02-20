@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshopOptions extends js.Object {
+trait SnapshopOptions extends StObject {
   
   /**
     * Prune uninteresting nodes from the tree.
@@ -29,30 +30,18 @@ object SnapshopOptions {
   }
   
   @scala.inline
-  implicit class SnapshopOptionsOps[Self <: SnapshopOptions] (val x: Self) extends AnyVal {
+  implicit class SnapshopOptionsMutableBuilder[Self <: SnapshopOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterestingOnly(value: Boolean): Self = StObject.set(x, "interestingOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterestingOnlyUndefined: Self = StObject.set(x, "interestingOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: ElementHandle[Element]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterestingOnly(value: Boolean): Self = this.set("interestingOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterestingOnly: Self = this.set("interestingOnly", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: ElementHandle[Element]): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

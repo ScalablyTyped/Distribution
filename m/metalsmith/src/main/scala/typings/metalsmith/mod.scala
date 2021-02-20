@@ -3,13 +3,12 @@ package typings.metalsmith
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.fsMod.Stats
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("metalsmith", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Initialize a new `Metalsmith` builder with a working `directory`.
@@ -21,10 +20,18 @@ object mod extends js.Object {
     * @link [API] https://github.com/segmentio/metalsmith#new-metalsmithdir
     * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L30
     */
+  @JSImport("metalsmith", JSImport.Namespace)
+  @js.native
   def apply(directory: String): Metalsmith = js.native
   
+  type Callback = js.Function3[/* err */ Error | Null, /* files */ Files, /* metalsmith */ Metalsmith, Unit]
+  
+  type Files = StringDictionary[js.Any]
+  
+  type Ignore = js.Function2[/* path */ String, /* stat */ Stats, Unit]
+  
   @js.native
-  trait Metalsmith extends js.Object {
+  trait Metalsmith extends StObject {
     
     /**
       * Perform the `build` with the current settings outputting to the destination directory.
@@ -354,12 +361,6 @@ object mod extends js.Object {
       */
     def writeFile(file: String, data: js.Object): Unit = js.native
   }
-  
-  type Callback = js.Function3[/* err */ Error | Null, /* files */ Files, /* metalsmith */ Metalsmith, Unit]
-  
-  type Files = StringDictionary[js.Any]
-  
-  type Ignore = js.Function2[/* path */ String, /* stat */ Stats, Unit]
   
   type Plugin = js.Function3[/* files */ Files, /* metalsmith */ Metalsmith, /* callback */ Callback, Unit]
 }

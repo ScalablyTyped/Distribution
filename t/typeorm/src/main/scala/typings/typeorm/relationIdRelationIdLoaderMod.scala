@@ -4,16 +4,16 @@ import typings.typeorm.connectionConnectionMod.Connection
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.relationIdRelationIdAttributeMod.RelationIdAttribute
 import typings.typeorm.relationIdRelationIdLoadResultMod.RelationIdLoadResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/relation-id/RelationIdLoader", JSImport.Namespace)
-@js.native
-object relationIdRelationIdLoaderMod extends js.Object {
+object relationIdRelationIdLoaderMod {
   
+  @JSImport("typeorm/query-builder/relation-id/RelationIdLoader", "RelationIdLoader")
   @js.native
-  class RelationIdLoader protected () extends js.Object {
+  class RelationIdLoader protected () extends StObject {
     def this(
       connection: Connection,
       queryRunner: js.UndefOr[scala.Nothing],

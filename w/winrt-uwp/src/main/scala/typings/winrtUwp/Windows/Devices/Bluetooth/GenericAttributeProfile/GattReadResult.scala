@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of an asynchronous read operation of a GATT Characteristic or Descriptor value. */
 @js.native
-trait GattReadResult extends js.Object {
+trait GattReadResult extends StObject {
   
   /** Gets the status of an asynchronous operation. */
   var status: GattCommunicationStatus = js.native
@@ -24,24 +25,12 @@ object GattReadResult {
   }
   
   @scala.inline
-  implicit class GattReadResultOps[Self <: GattReadResult] (val x: Self) extends AnyVal {
+  implicit class GattReadResultMutableBuilder[Self <: GattReadResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: GattCommunicationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatus(value: GattCommunicationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: IBuffer): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

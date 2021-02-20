@@ -1,12 +1,13 @@
 package typings.ionicCore.anon
 
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Android extends js.Object {
+trait Android extends StObject {
   
   def android(win: Window): Boolean = js.native
   
@@ -60,60 +61,48 @@ object Android {
   }
   
   @scala.inline
-  implicit class AndroidOps[Self <: Android] (val x: Self) extends AnyVal {
+  implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: Window => Boolean): Self = StObject.set(x, "android", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacitor(value: js.Any => Boolean): Self = StObject.set(x, "capacitor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCordova(value: js.Any => Boolean): Self = StObject.set(x, "cordova", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAndroid(value: Window => Boolean): Self = this.set("android", js.Any.fromFunction1(value))
+    def setDesktop(value: Window => Boolean): Self = StObject.set(x, "desktop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCapacitor(value: js.Any => Boolean): Self = this.set("capacitor", js.Any.fromFunction1(value))
+    def setElectron(value: Window => Boolean): Self = StObject.set(x, "electron", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCordova(value: js.Any => Boolean): Self = this.set("cordova", js.Any.fromFunction1(value))
+    def setHybrid(value: Window => Boolean): Self = StObject.set(x, "hybrid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDesktop(value: Window => Boolean): Self = this.set("desktop", js.Any.fromFunction1(value))
+    def setIos(value: Window => Boolean): Self = StObject.set(x, "ios", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElectron(value: Window => Boolean): Self = this.set("electron", js.Any.fromFunction1(value))
+    def setIpad(value: Window => Boolean): Self = StObject.set(x, "ipad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHybrid(value: Window => Boolean): Self = this.set("hybrid", js.Any.fromFunction1(value))
+    def setIphone(value: Window => Boolean): Self = StObject.set(x, "iphone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIos(value: Window => Boolean): Self = this.set("ios", js.Any.fromFunction1(value))
+    def setMobile(value: Window => Boolean): Self = StObject.set(x, "mobile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIpad(value: Window => Boolean): Self = this.set("ipad", js.Any.fromFunction1(value))
+    def setMobileweb(value: Window => Boolean): Self = StObject.set(x, "mobileweb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIphone(value: Window => Boolean): Self = this.set("iphone", js.Any.fromFunction1(value))
+    def setPhablet(value: Window => Boolean): Self = StObject.set(x, "phablet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMobile(value: Window => Boolean): Self = this.set("mobile", js.Any.fromFunction1(value))
+    def setPwa(value: Window => Boolean): Self = StObject.set(x, "pwa", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMobileweb(value: Window => Boolean): Self = this.set("mobileweb", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPhablet(value: Window => Boolean): Self = this.set("phablet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPwa(value: Window => Boolean): Self = this.set("pwa", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTablet(value: Window => Boolean): Self = this.set("tablet", js.Any.fromFunction1(value))
+    def setTablet(value: Window => Boolean): Self = StObject.set(x, "tablet", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.AspectRatio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +24,16 @@ class OrthographicFrustum () extends Frustum {
   
   var width: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "OrthographicFrustum")
-@js.native
-object OrthographicFrustum extends js.Object {
+object OrthographicFrustum {
   
-  var packedLength: Double = js.native
+  @JSImport("cesium", "OrthographicFrustum")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "OrthographicFrustum.packedLength")
+  @js.native
+  def packedLength: Double = js.native
+  @scala.inline
+  def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
 }

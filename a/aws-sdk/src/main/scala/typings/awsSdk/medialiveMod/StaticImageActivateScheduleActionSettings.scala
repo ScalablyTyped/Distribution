@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticImageActivateScheduleActionSettings extends js.Object {
+trait StaticImageActivateScheduleActionSettings extends StObject {
   
   /**
     * The duration in milliseconds for the image to remain on the video. If omitted or set to 0 the duration is unlimited and the image will remain until it is explicitly deactivated.
@@ -66,75 +67,63 @@ object StaticImageActivateScheduleActionSettings {
   }
   
   @scala.inline
-  implicit class StaticImageActivateScheduleActionSettingsOps[Self <: StaticImageActivateScheduleActionSettings] (val x: Self) extends AnyVal {
+  implicit class StaticImageActivateScheduleActionSettingsMutableBuilder[Self <: StaticImageActivateScheduleActionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: integerMin0): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFadeIn(value: integerMin0): Self = StObject.set(x, "FadeIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: InputLocation): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setFadeInUndefined: Self = StObject.set(x, "FadeIn", js.undefined)
     
     @scala.inline
-    def setDuration(value: integerMin0): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setFadeOutUndefined: Self = StObject.set(x, "FadeOut", js.undefined)
     
     @scala.inline
-    def setFadeIn(value: integerMin0): Self = this.set("FadeIn", value.asInstanceOf[js.Any])
+    def setHeight(value: integerMin1): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFadeIn: Self = this.set("FadeIn", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def setFadeOut(value: integerMin0): Self = this.set("FadeOut", value.asInstanceOf[js.Any])
+    def setImage(value: InputLocation): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFadeOut: Self = this.set("FadeOut", js.undefined)
+    def setImageX(value: integerMin0): Self = StObject.set(x, "ImageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integerMin1): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setImageXUndefined: Self = StObject.set(x, "ImageX", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
+    def setImageY(value: integerMin0): Self = StObject.set(x, "ImageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageX(value: integerMin0): Self = this.set("ImageX", value.asInstanceOf[js.Any])
+    def setImageYUndefined: Self = StObject.set(x, "ImageY", js.undefined)
     
     @scala.inline
-    def deleteImageX: Self = this.set("ImageX", js.undefined)
+    def setLayer(value: integerMin0Max7): Self = StObject.set(x, "Layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageY(value: integerMin0): Self = this.set("ImageY", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "Layer", js.undefined)
     
     @scala.inline
-    def deleteImageY: Self = this.set("ImageY", js.undefined)
+    def setOpacity(value: integerMin0Max100): Self = StObject.set(x, "Opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: integerMin0Max7): Self = this.set("Layer", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "Opacity", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("Layer", js.undefined)
+    def setWidth(value: integerMin1): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: integerMin0Max100): Self = this.set("Opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("Opacity", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: integerMin1): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TrafficTarget holds a single entry of the routing table for a Route.
   */
 @js.native
-trait SchemaTrafficTarget extends js.Object {
+trait SchemaTrafficTarget extends StObject {
   
   /**
     * ConfigurationName of a configuration to whose latest revision we will
@@ -51,42 +52,30 @@ object SchemaTrafficTarget {
   }
   
   @scala.inline
-  implicit class SchemaTrafficTargetOps[Self <: SchemaTrafficTarget] (val x: Self) extends AnyVal {
+  implicit class SchemaTrafficTargetMutableBuilder[Self <: SchemaTrafficTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationName(value: String): Self = this.set("configurationName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteConfigurationName: Self = this.set("configurationName", js.undefined)
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRevisionName(value: String): Self = StObject.set(x, "revisionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercent: Self = this.set("percent", js.undefined)
-    
-    @scala.inline
-    def setRevisionName(value: String): Self = this.set("revisionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionName: Self = this.set("revisionName", js.undefined)
+    def setRevisionNameUndefined: Self = StObject.set(x, "revisionName", js.undefined)
   }
 }

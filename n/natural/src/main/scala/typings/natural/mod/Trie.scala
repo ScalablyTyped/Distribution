@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trie extends js.Object {
+trait Trie extends StObject {
   
   def addString(text: String): Boolean = js.native
   
@@ -35,36 +36,24 @@ object Trie {
   }
   
   @scala.inline
-  implicit class TrieOps[Self <: Trie] (val x: Self) extends AnyVal {
+  implicit class TrieMutableBuilder[Self <: Trie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddString(value: String => Boolean): Self = StObject.set(x, "addString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddStrings(value: js.Array[String] => Unit): Self = StObject.set(x, "addStrings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddString(value: String => Boolean): Self = this.set("addString", js.Any.fromFunction1(value))
+    def setFindMatchesOnPath(value: String => js.Array[String]): Self = StObject.set(x, "findMatchesOnPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddStrings(value: js.Array[String] => Unit): Self = this.set("addStrings", js.Any.fromFunction1(value))
+    def setFindPrefix(value: String => js.Array[String]): Self = StObject.set(x, "findPrefix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContains(value: String => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindMatchesOnPath(value: String => js.Array[String]): Self = this.set("findMatchesOnPath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindPrefix(value: String => js.Array[String]): Self = this.set("findPrefix", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setKeysWithPrefix(value: String => js.Array[String]): Self = this.set("keysWithPrefix", js.Any.fromFunction1(value))
+    def setKeysWithPrefix(value: String => js.Array[String]): Self = StObject.set(x, "keysWithPrefix", js.Any.fromFunction1(value))
   }
 }

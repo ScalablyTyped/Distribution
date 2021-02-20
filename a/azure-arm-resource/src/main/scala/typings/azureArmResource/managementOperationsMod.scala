@@ -8,16 +8,15 @@ import typings.azureArmResource.managementModelsMod.ManagementGroupWithHierarchy
 import typings.azureArmResource.managementModelsMod.OperationListResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/management/operations", JSImport.Namespace)
-@js.native
-object managementOperationsMod extends js.Object {
+object managementOperationsMod {
   
   @js.native
-  trait ManagementGroups extends js.Object {
+  trait ManagementGroups extends StObject {
     
     /**
       * Get the details of the management group.
@@ -222,7 +221,7 @@ object managementOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Operations extends js.Object {
+  trait Operations extends StObject {
     
     /**
       * Lists all of the available management REST API operations.

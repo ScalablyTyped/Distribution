@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.conflicting_
 import typings.chromeApps.chromeAppsStrings.pending_
 import typings.chromeApps.chromeAppsStrings.synced_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CONFLICTING extends js.Object {
+trait CONFLICTING extends StObject {
   
   var CONFLICTING: conflicting_ = js.native
   
@@ -25,27 +26,15 @@ object CONFLICTING {
   }
   
   @scala.inline
-  implicit class CONFLICTINGOps[Self <: CONFLICTING] (val x: Self) extends AnyVal {
+  implicit class CONFLICTINGMutableBuilder[Self <: CONFLICTING] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONFLICTING(value: conflicting_): Self = StObject.set(x, "CONFLICTING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPENDING(value: pending_): Self = StObject.set(x, "PENDING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCONFLICTING(value: conflicting_): Self = this.set("CONFLICTING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPENDING(value: pending_): Self = this.set("PENDING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSYNCED(value: synced_): Self = this.set("SYNCED", value.asInstanceOf[js.Any])
+    def setSYNCED(value: synced_): Self = StObject.set(x, "SYNCED", value.asInstanceOf[js.Any])
   }
 }

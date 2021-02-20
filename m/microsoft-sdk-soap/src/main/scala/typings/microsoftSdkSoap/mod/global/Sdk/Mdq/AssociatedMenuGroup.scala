@@ -1,5 +1,6 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales
   - typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service
 */
-trait AssociatedMenuGroup extends js.Object
+trait AssociatedMenuGroup extends StObject
 object AssociatedMenuGroup {
   
   @scala.inline

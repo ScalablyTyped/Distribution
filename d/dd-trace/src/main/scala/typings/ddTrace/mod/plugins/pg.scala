@@ -1,6 +1,6 @@
 package typings.ddTrace.mod.plugins
 
-import typings.ddTrace.mod.Analyzable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [pg](https://node-postgres.com/) module.
   */
 @js.native
-trait pg
-  extends Integration
-     with Analyzable {
+trait pg extends Instrumentation {
   
   /**
     * The service name to be used for this plugin. If a function is used, it will be passed the connection parameters and its return value will be used as the service name.
@@ -29,27 +27,15 @@ object pg {
   }
   
   @scala.inline
-  implicit class pgOps[Self <: pg] (val x: Self) extends AnyVal {
+  implicit class pgMutableBuilder[Self <: pg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setService(value: String | (js.Function1[/* params */ js.Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceFunction1(value: /* params */ js.Any => String): Self = StObject.set(x, "service", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceFunction1(value: /* params */ js.Any => String): Self = this.set("service", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setService(value: String | (js.Function1[/* params */ js.Any, String])): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

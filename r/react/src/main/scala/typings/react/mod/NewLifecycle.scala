@@ -1,12 +1,13 @@
 package typings.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // This should be "infer SS" but can't use it yet
 @js.native
-trait NewLifecycle[P, S, SS] extends js.Object {
+trait NewLifecycle[P, S, SS] extends StObject {
   
   /**
     * Called immediately after updating occurs. Not called for the initial render.
@@ -36,30 +37,18 @@ object NewLifecycle {
   }
   
   @scala.inline
-  implicit class NewLifecycleOps[Self <: NewLifecycle[_, _, _], P, S, SS] (val x: Self with (NewLifecycle[P, S, SS])) extends AnyVal {
+  implicit class NewLifecycleMutableBuilder[Self <: NewLifecycle[_, _, _], P, S, SS] (val x: Self with (NewLifecycle[P, S, SS])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentDidUpdate(value: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSnapshotBeforeUpdate(value: (/* prevProps */ P, /* prevState */ S) => SS | Null): Self = StObject.set(x, "getSnapshotBeforeUpdate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setComponentDidUpdate(value: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => Unit): Self = this.set("componentDidUpdate", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteComponentDidUpdate: Self = this.set("componentDidUpdate", js.undefined)
-    
-    @scala.inline
-    def setGetSnapshotBeforeUpdate(value: (/* prevProps */ P, /* prevState */ S) => SS | Null): Self = this.set("getSnapshotBeforeUpdate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGetSnapshotBeforeUpdate: Self = this.set("getSnapshotBeforeUpdate", js.undefined)
+    def setGetSnapshotBeforeUpdateUndefined: Self = StObject.set(x, "getSnapshotBeforeUpdate", js.undefined)
   }
 }

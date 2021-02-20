@@ -2,12 +2,13 @@ package typings.wechatMiniprogram.anon
 
 import typings.std.Set
 import typings.wechatMiniprogram.DB.DatabaseAggregateCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Abs extends js.Object {
+trait Abs extends StObject {
   
   var __safe_props__ : js.UndefOr[Set[String]] = js.native
   
@@ -250,7 +251,7 @@ object Abs {
     dayOfWeek: js.Any => DatabaseAggregateCommand,
     dayOfYear: js.Any => DatabaseAggregateCommand,
     divide: js.Any => DatabaseAggregateCommand,
-    eq: js.Any => DatabaseAggregateCommand,
+    eq_ : js.Any => DatabaseAggregateCommand,
     exp: js.Any => DatabaseAggregateCommand,
     filter: js.Any => DatabaseAggregateCommand,
     first: js.Any => DatabaseAggregateCommand,
@@ -325,7 +326,7 @@ object Abs {
     toLong: js.Any => DatabaseAggregateCommand,
     toLower: js.Any => DatabaseAggregateCommand,
     toObjectId: js.Any => DatabaseAggregateCommand,
-    toString: js.Any => DatabaseAggregateCommand,
+    toString_ : js.Any => DatabaseAggregateCommand,
     toUpper: js.Any => DatabaseAggregateCommand,
     trim: js.Any => DatabaseAggregateCommand,
     trunc: js.Any => DatabaseAggregateCommand,
@@ -334,348 +335,338 @@ object Abs {
     year: js.Any => DatabaseAggregateCommand,
     zip: js.Any => DatabaseAggregateCommand
   ): Abs = {
-    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction1(abs), add = js.Any.fromFunction1(add), addToSet = js.Any.fromFunction1(addToSet), allElementsTrue = js.Any.fromFunction1(allElementsTrue), and = js.Any.fromFunction1(and), anyElementTrue = js.Any.fromFunction1(anyElementTrue), arrayElemAt = js.Any.fromFunction1(arrayElemAt), arrayToObject = js.Any.fromFunction1(arrayToObject), avg = js.Any.fromFunction1(avg), ceil = js.Any.fromFunction1(ceil), cmp = js.Any.fromFunction1(cmp), concat = js.Any.fromFunction1(concat), concatArrays = js.Any.fromFunction1(concatArrays), cond = js.Any.fromFunction1(cond), convert = js.Any.fromFunction1(convert), dateFromParts = js.Any.fromFunction1(dateFromParts), dateFromString = js.Any.fromFunction1(dateFromString), dateToParts = js.Any.fromFunction1(dateToParts), dateToString = js.Any.fromFunction1(dateToString), dayOfMonth = js.Any.fromFunction1(dayOfMonth), dayOfWeek = js.Any.fromFunction1(dayOfWeek), dayOfYear = js.Any.fromFunction1(dayOfYear), divide = js.Any.fromFunction1(divide), eq = js.Any.fromFunction1(eq), exp = js.Any.fromFunction1(exp), filter = js.Any.fromFunction1(filter), first = js.Any.fromFunction1(first), floor = js.Any.fromFunction1(floor), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), hour = js.Any.fromFunction1(hour), ifNull = js.Any.fromFunction1(ifNull), in = js.Any.fromFunction1(in), indexOfArray = js.Any.fromFunction1(indexOfArray), indexOfBytes = js.Any.fromFunction1(indexOfBytes), indexOfCP = js.Any.fromFunction1(indexOfCP), isArray = js.Any.fromFunction1(isArray), isoDayOfWeek = js.Any.fromFunction1(isoDayOfWeek), isoWeek = js.Any.fromFunction1(isoWeek), isoWeekYear = js.Any.fromFunction1(isoWeekYear), last = js.Any.fromFunction1(last), let = js.Any.fromFunction1(let), literal = js.Any.fromFunction1(literal), ln = js.Any.fromFunction1(ln), log = js.Any.fromFunction1(log), log10 = js.Any.fromFunction1(log10), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), ltrim = js.Any.fromFunction1(ltrim), map = js.Any.fromFunction1(map), max = js.Any.fromFunction1(max), mergeObjects = js.Any.fromFunction1(mergeObjects), meta = js.Any.fromFunction1(meta), millisecond = js.Any.fromFunction1(millisecond), min = js.Any.fromFunction1(min), minute = js.Any.fromFunction1(minute), mod = js.Any.fromFunction1(mod), month = js.Any.fromFunction1(month), multiply = js.Any.fromFunction1(multiply), neq = js.Any.fromFunction1(neq), not = js.Any.fromFunction1(not), objectToArray = js.Any.fromFunction1(objectToArray), or = js.Any.fromFunction1(or), pow = js.Any.fromFunction1(pow), push = js.Any.fromFunction1(push), range = js.Any.fromFunction1(range), reduce = js.Any.fromFunction1(reduce), reverseArray = js.Any.fromFunction1(reverseArray), rtrim = js.Any.fromFunction1(rtrim), second = js.Any.fromFunction1(second), setDifference = js.Any.fromFunction1(setDifference), setEquals = js.Any.fromFunction1(setEquals), setIntersection = js.Any.fromFunction1(setIntersection), setIsSubset = js.Any.fromFunction1(setIsSubset), setUnion = js.Any.fromFunction1(setUnion), size = js.Any.fromFunction1(size), slice = js.Any.fromFunction1(slice), split = js.Any.fromFunction1(split), sqrt = js.Any.fromFunction1(sqrt), stdDevPop = js.Any.fromFunction1(stdDevPop), stdDevSamp = js.Any.fromFunction1(stdDevSamp), strLenBytes = js.Any.fromFunction1(strLenBytes), strLenCP = js.Any.fromFunction1(strLenCP), strcasecmp = js.Any.fromFunction1(strcasecmp), substr = js.Any.fromFunction1(substr), substrBytes = js.Any.fromFunction1(substrBytes), substrCP = js.Any.fromFunction1(substrCP), subtract = js.Any.fromFunction1(subtract), sum = js.Any.fromFunction1(sum), switch = js.Any.fromFunction1(switch), toBool = js.Any.fromFunction1(toBool), toDate = js.Any.fromFunction1(toDate), toDecimal = js.Any.fromFunction1(toDecimal), toDouble = js.Any.fromFunction1(toDouble), toInt = js.Any.fromFunction1(toInt), toLong = js.Any.fromFunction1(toLong), toLower = js.Any.fromFunction1(toLower), toObjectId = js.Any.fromFunction1(toObjectId), toString = js.Any.fromFunction1(toString), toUpper = js.Any.fromFunction1(toUpper), trim = js.Any.fromFunction1(trim), trunc = js.Any.fromFunction1(trunc), week = js.Any.fromFunction1(week), year = js.Any.fromFunction1(year), zip = js.Any.fromFunction1(zip))
+    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction1(abs), add = js.Any.fromFunction1(add), addToSet = js.Any.fromFunction1(addToSet), allElementsTrue = js.Any.fromFunction1(allElementsTrue), and = js.Any.fromFunction1(and), anyElementTrue = js.Any.fromFunction1(anyElementTrue), arrayElemAt = js.Any.fromFunction1(arrayElemAt), arrayToObject = js.Any.fromFunction1(arrayToObject), avg = js.Any.fromFunction1(avg), ceil = js.Any.fromFunction1(ceil), cmp = js.Any.fromFunction1(cmp), concat = js.Any.fromFunction1(concat), concatArrays = js.Any.fromFunction1(concatArrays), cond = js.Any.fromFunction1(cond), convert = js.Any.fromFunction1(convert), dateFromParts = js.Any.fromFunction1(dateFromParts), dateFromString = js.Any.fromFunction1(dateFromString), dateToParts = js.Any.fromFunction1(dateToParts), dateToString = js.Any.fromFunction1(dateToString), dayOfMonth = js.Any.fromFunction1(dayOfMonth), dayOfWeek = js.Any.fromFunction1(dayOfWeek), dayOfYear = js.Any.fromFunction1(dayOfYear), divide = js.Any.fromFunction1(divide), exp = js.Any.fromFunction1(exp), filter = js.Any.fromFunction1(filter), first = js.Any.fromFunction1(first), floor = js.Any.fromFunction1(floor), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), hour = js.Any.fromFunction1(hour), ifNull = js.Any.fromFunction1(ifNull), in = js.Any.fromFunction1(in), indexOfArray = js.Any.fromFunction1(indexOfArray), indexOfBytes = js.Any.fromFunction1(indexOfBytes), indexOfCP = js.Any.fromFunction1(indexOfCP), isArray = js.Any.fromFunction1(isArray), isoDayOfWeek = js.Any.fromFunction1(isoDayOfWeek), isoWeek = js.Any.fromFunction1(isoWeek), isoWeekYear = js.Any.fromFunction1(isoWeekYear), last = js.Any.fromFunction1(last), let = js.Any.fromFunction1(let), literal = js.Any.fromFunction1(literal), ln = js.Any.fromFunction1(ln), log = js.Any.fromFunction1(log), log10 = js.Any.fromFunction1(log10), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), ltrim = js.Any.fromFunction1(ltrim), map = js.Any.fromFunction1(map), max = js.Any.fromFunction1(max), mergeObjects = js.Any.fromFunction1(mergeObjects), meta = js.Any.fromFunction1(meta), millisecond = js.Any.fromFunction1(millisecond), min = js.Any.fromFunction1(min), minute = js.Any.fromFunction1(minute), mod = js.Any.fromFunction1(mod), month = js.Any.fromFunction1(month), multiply = js.Any.fromFunction1(multiply), neq = js.Any.fromFunction1(neq), not = js.Any.fromFunction1(not), objectToArray = js.Any.fromFunction1(objectToArray), or = js.Any.fromFunction1(or), pow = js.Any.fromFunction1(pow), push = js.Any.fromFunction1(push), range = js.Any.fromFunction1(range), reduce = js.Any.fromFunction1(reduce), reverseArray = js.Any.fromFunction1(reverseArray), rtrim = js.Any.fromFunction1(rtrim), second = js.Any.fromFunction1(second), setDifference = js.Any.fromFunction1(setDifference), setEquals = js.Any.fromFunction1(setEquals), setIntersection = js.Any.fromFunction1(setIntersection), setIsSubset = js.Any.fromFunction1(setIsSubset), setUnion = js.Any.fromFunction1(setUnion), size = js.Any.fromFunction1(size), slice = js.Any.fromFunction1(slice), split = js.Any.fromFunction1(split), sqrt = js.Any.fromFunction1(sqrt), stdDevPop = js.Any.fromFunction1(stdDevPop), stdDevSamp = js.Any.fromFunction1(stdDevSamp), strLenBytes = js.Any.fromFunction1(strLenBytes), strLenCP = js.Any.fromFunction1(strLenCP), strcasecmp = js.Any.fromFunction1(strcasecmp), substr = js.Any.fromFunction1(substr), substrBytes = js.Any.fromFunction1(substrBytes), substrCP = js.Any.fromFunction1(substrCP), subtract = js.Any.fromFunction1(subtract), sum = js.Any.fromFunction1(sum), switch = js.Any.fromFunction1(switch), toBool = js.Any.fromFunction1(toBool), toDate = js.Any.fromFunction1(toDate), toDecimal = js.Any.fromFunction1(toDecimal), toDouble = js.Any.fromFunction1(toDouble), toInt = js.Any.fromFunction1(toInt), toLong = js.Any.fromFunction1(toLong), toLower = js.Any.fromFunction1(toLower), toObjectId = js.Any.fromFunction1(toObjectId), toUpper = js.Any.fromFunction1(toUpper), trim = js.Any.fromFunction1(trim), trunc = js.Any.fromFunction1(trunc), week = js.Any.fromFunction1(week), year = js.Any.fromFunction1(year), zip = js.Any.fromFunction1(zip))
+    __obj.updateDynamic("eq")(js.Any.fromFunction1(eq_))
+    __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
     __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[Abs]
   }
   
   @scala.inline
-  implicit class AbsOps[Self <: Abs] (val x: Self) extends AnyVal {
+  implicit class AbsMutableBuilder[Self <: Abs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbs(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddToSet(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbs(value: js.Any => DatabaseAggregateCommand): Self = this.set("abs", js.Any.fromFunction1(value))
+    def setAllElementsTrue(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "allElementsTrue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: js.Any => DatabaseAggregateCommand): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAnd(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddToSet(value: js.Any => DatabaseAggregateCommand): Self = this.set("addToSet", js.Any.fromFunction1(value))
+    def setAnyElementTrue(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "anyElementTrue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllElementsTrue(value: js.Any => DatabaseAggregateCommand): Self = this.set("allElementsTrue", js.Any.fromFunction1(value))
+    def setArrayElemAt(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "arrayElemAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnd(value: js.Any => DatabaseAggregateCommand): Self = this.set("and", js.Any.fromFunction1(value))
+    def setArrayToObject(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "arrayToObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnyElementTrue(value: js.Any => DatabaseAggregateCommand): Self = this.set("anyElementTrue", js.Any.fromFunction1(value))
+    def setAvg(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "avg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArrayElemAt(value: js.Any => DatabaseAggregateCommand): Self = this.set("arrayElemAt", js.Any.fromFunction1(value))
+    def setCeil(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArrayToObject(value: js.Any => DatabaseAggregateCommand): Self = this.set("arrayToObject", js.Any.fromFunction1(value))
+    def setCmp(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "cmp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvg(value: js.Any => DatabaseAggregateCommand): Self = this.set("avg", js.Any.fromFunction1(value))
+    def setConcat(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCeil(value: js.Any => DatabaseAggregateCommand): Self = this.set("ceil", js.Any.fromFunction1(value))
+    def setConcatArrays(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "concatArrays", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCmp(value: js.Any => DatabaseAggregateCommand): Self = this.set("cmp", js.Any.fromFunction1(value))
+    def setCond(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "cond", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConcat(value: js.Any => DatabaseAggregateCommand): Self = this.set("concat", js.Any.fromFunction1(value))
+    def setConvert(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConcatArrays(value: js.Any => DatabaseAggregateCommand): Self = this.set("concatArrays", js.Any.fromFunction1(value))
+    def setDateFromParts(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dateFromParts", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCond(value: js.Any => DatabaseAggregateCommand): Self = this.set("cond", js.Any.fromFunction1(value))
+    def setDateFromString(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dateFromString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvert(value: js.Any => DatabaseAggregateCommand): Self = this.set("convert", js.Any.fromFunction1(value))
+    def setDateToParts(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dateToParts", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFromParts(value: js.Any => DatabaseAggregateCommand): Self = this.set("dateFromParts", js.Any.fromFunction1(value))
+    def setDateToString(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dateToString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFromString(value: js.Any => DatabaseAggregateCommand): Self = this.set("dateFromString", js.Any.fromFunction1(value))
+    def setDayOfMonth(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dayOfMonth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateToParts(value: js.Any => DatabaseAggregateCommand): Self = this.set("dateToParts", js.Any.fromFunction1(value))
+    def setDayOfWeek(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dayOfWeek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateToString(value: js.Any => DatabaseAggregateCommand): Self = this.set("dateToString", js.Any.fromFunction1(value))
+    def setDayOfYear(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "dayOfYear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDayOfMonth(value: js.Any => DatabaseAggregateCommand): Self = this.set("dayOfMonth", js.Any.fromFunction1(value))
+    def setDivide(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDayOfWeek(value: js.Any => DatabaseAggregateCommand): Self = this.set("dayOfWeek", js.Any.fromFunction1(value))
+    def setEq_(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDayOfYear(value: js.Any => DatabaseAggregateCommand): Self = this.set("dayOfYear", js.Any.fromFunction1(value))
+    def setExp(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDivide(value: js.Any => DatabaseAggregateCommand): Self = this.set("divide", js.Any.fromFunction1(value))
+    def setFilter(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEq(value: js.Any => DatabaseAggregateCommand): Self = this.set("eq", js.Any.fromFunction1(value))
+    def setFirst(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExp(value: js.Any => DatabaseAggregateCommand): Self = this.set("exp", js.Any.fromFunction1(value))
+    def setFloor(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "floor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilter(value: js.Any => DatabaseAggregateCommand): Self = this.set("filter", js.Any.fromFunction1(value))
+    def setGt(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirst(value: js.Any => DatabaseAggregateCommand): Self = this.set("first", js.Any.fromFunction1(value))
+    def setGte(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFloor(value: js.Any => DatabaseAggregateCommand): Self = this.set("floor", js.Any.fromFunction1(value))
+    def setHour(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "hour", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGt(value: js.Any => DatabaseAggregateCommand): Self = this.set("gt", js.Any.fromFunction1(value))
+    def setIfNull(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "ifNull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGte(value: js.Any => DatabaseAggregateCommand): Self = this.set("gte", js.Any.fromFunction1(value))
+    def setIn(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHour(value: js.Any => DatabaseAggregateCommand): Self = this.set("hour", js.Any.fromFunction1(value))
+    def setIndexOfArray(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "indexOfArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIfNull(value: js.Any => DatabaseAggregateCommand): Self = this.set("ifNull", js.Any.fromFunction1(value))
+    def setIndexOfBytes(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "indexOfBytes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: js.Any => DatabaseAggregateCommand): Self = this.set("in", js.Any.fromFunction1(value))
+    def setIndexOfCP(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "indexOfCP", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexOfArray(value: js.Any => DatabaseAggregateCommand): Self = this.set("indexOfArray", js.Any.fromFunction1(value))
+    def setIsArray(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexOfBytes(value: js.Any => DatabaseAggregateCommand): Self = this.set("indexOfBytes", js.Any.fromFunction1(value))
+    def setIsoDayOfWeek(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "isoDayOfWeek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexOfCP(value: js.Any => DatabaseAggregateCommand): Self = this.set("indexOfCP", js.Any.fromFunction1(value))
+    def setIsoWeek(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "isoWeek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsArray(value: js.Any => DatabaseAggregateCommand): Self = this.set("isArray", js.Any.fromFunction1(value))
+    def setIsoWeekYear(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "isoWeekYear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsoDayOfWeek(value: js.Any => DatabaseAggregateCommand): Self = this.set("isoDayOfWeek", js.Any.fromFunction1(value))
+    def setLast(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsoWeek(value: js.Any => DatabaseAggregateCommand): Self = this.set("isoWeek", js.Any.fromFunction1(value))
+    def setLet(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "let", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsoWeekYear(value: js.Any => DatabaseAggregateCommand): Self = this.set("isoWeekYear", js.Any.fromFunction1(value))
+    def setLiteral(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLast(value: js.Any => DatabaseAggregateCommand): Self = this.set("last", js.Any.fromFunction1(value))
+    def setLn(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "ln", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLet(value: js.Any => DatabaseAggregateCommand): Self = this.set("let", js.Any.fromFunction1(value))
+    def setLog(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLiteral(value: js.Any => DatabaseAggregateCommand): Self = this.set("literal", js.Any.fromFunction1(value))
+    def setLog10(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "log10", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLn(value: js.Any => DatabaseAggregateCommand): Self = this.set("ln", js.Any.fromFunction1(value))
+    def setLt(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLog(value: js.Any => DatabaseAggregateCommand): Self = this.set("log", js.Any.fromFunction1(value))
+    def setLte(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLog10(value: js.Any => DatabaseAggregateCommand): Self = this.set("log10", js.Any.fromFunction1(value))
+    def setLtrim(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "ltrim", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLt(value: js.Any => DatabaseAggregateCommand): Self = this.set("lt", js.Any.fromFunction1(value))
+    def setMap(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLte(value: js.Any => DatabaseAggregateCommand): Self = this.set("lte", js.Any.fromFunction1(value))
+    def setMax(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLtrim(value: js.Any => DatabaseAggregateCommand): Self = this.set("ltrim", js.Any.fromFunction1(value))
+    def setMergeObjects(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "mergeObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMap(value: js.Any => DatabaseAggregateCommand): Self = this.set("map", js.Any.fromFunction1(value))
+    def setMeta(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "meta", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMax(value: js.Any => DatabaseAggregateCommand): Self = this.set("max", js.Any.fromFunction1(value))
+    def setMillisecond(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "millisecond", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMergeObjects(value: js.Any => DatabaseAggregateCommand): Self = this.set("mergeObjects", js.Any.fromFunction1(value))
+    def setMin(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMeta(value: js.Any => DatabaseAggregateCommand): Self = this.set("meta", js.Any.fromFunction1(value))
+    def setMinute(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "minute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMillisecond(value: js.Any => DatabaseAggregateCommand): Self = this.set("millisecond", js.Any.fromFunction1(value))
+    def setMod(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "mod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMin(value: js.Any => DatabaseAggregateCommand): Self = this.set("min", js.Any.fromFunction1(value))
+    def setMonth(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "month", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinute(value: js.Any => DatabaseAggregateCommand): Self = this.set("minute", js.Any.fromFunction1(value))
+    def setMultiply(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMod(value: js.Any => DatabaseAggregateCommand): Self = this.set("mod", js.Any.fromFunction1(value))
+    def setNeq(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMonth(value: js.Any => DatabaseAggregateCommand): Self = this.set("month", js.Any.fromFunction1(value))
+    def setNot(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMultiply(value: js.Any => DatabaseAggregateCommand): Self = this.set("multiply", js.Any.fromFunction1(value))
+    def setObjectToArray(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "objectToArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNeq(value: js.Any => DatabaseAggregateCommand): Self = this.set("neq", js.Any.fromFunction1(value))
+    def setOr(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNot(value: js.Any => DatabaseAggregateCommand): Self = this.set("not", js.Any.fromFunction1(value))
+    def setPow(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "pow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObjectToArray(value: js.Any => DatabaseAggregateCommand): Self = this.set("objectToArray", js.Any.fromFunction1(value))
+    def setPush(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOr(value: js.Any => DatabaseAggregateCommand): Self = this.set("or", js.Any.fromFunction1(value))
+    def setRange(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "range", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPow(value: js.Any => DatabaseAggregateCommand): Self = this.set("pow", js.Any.fromFunction1(value))
+    def setReduce(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPush(value: js.Any => DatabaseAggregateCommand): Self = this.set("push", js.Any.fromFunction1(value))
+    def setReverseArray(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "reverseArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRange(value: js.Any => DatabaseAggregateCommand): Self = this.set("range", js.Any.fromFunction1(value))
+    def setRtrim(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "rtrim", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReduce(value: js.Any => DatabaseAggregateCommand): Self = this.set("reduce", js.Any.fromFunction1(value))
+    def setSecond(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "second", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReverseArray(value: js.Any => DatabaseAggregateCommand): Self = this.set("reverseArray", js.Any.fromFunction1(value))
+    def setSetDifference(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "setDifference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRtrim(value: js.Any => DatabaseAggregateCommand): Self = this.set("rtrim", js.Any.fromFunction1(value))
+    def setSetEquals(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "setEquals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSecond(value: js.Any => DatabaseAggregateCommand): Self = this.set("second", js.Any.fromFunction1(value))
+    def setSetIntersection(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "setIntersection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDifference(value: js.Any => DatabaseAggregateCommand): Self = this.set("setDifference", js.Any.fromFunction1(value))
+    def setSetIsSubset(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "setIsSubset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEquals(value: js.Any => DatabaseAggregateCommand): Self = this.set("setEquals", js.Any.fromFunction1(value))
+    def setSetUnion(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "setUnion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIntersection(value: js.Any => DatabaseAggregateCommand): Self = this.set("setIntersection", js.Any.fromFunction1(value))
+    def setSize(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIsSubset(value: js.Any => DatabaseAggregateCommand): Self = this.set("setIsSubset", js.Any.fromFunction1(value))
+    def setSlice(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "slice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUnion(value: js.Any => DatabaseAggregateCommand): Self = this.set("setUnion", js.Any.fromFunction1(value))
+    def setSplit(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSize(value: js.Any => DatabaseAggregateCommand): Self = this.set("size", js.Any.fromFunction1(value))
+    def setSqrt(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "sqrt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSlice(value: js.Any => DatabaseAggregateCommand): Self = this.set("slice", js.Any.fromFunction1(value))
+    def setStdDevPop(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "stdDevPop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSplit(value: js.Any => DatabaseAggregateCommand): Self = this.set("split", js.Any.fromFunction1(value))
+    def setStdDevSamp(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "stdDevSamp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSqrt(value: js.Any => DatabaseAggregateCommand): Self = this.set("sqrt", js.Any.fromFunction1(value))
+    def setStrLenBytes(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "strLenBytes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStdDevPop(value: js.Any => DatabaseAggregateCommand): Self = this.set("stdDevPop", js.Any.fromFunction1(value))
+    def setStrLenCP(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "strLenCP", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStdDevSamp(value: js.Any => DatabaseAggregateCommand): Self = this.set("stdDevSamp", js.Any.fromFunction1(value))
+    def setStrcasecmp(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "strcasecmp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrLenBytes(value: js.Any => DatabaseAggregateCommand): Self = this.set("strLenBytes", js.Any.fromFunction1(value))
+    def setSubstr(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "substr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrLenCP(value: js.Any => DatabaseAggregateCommand): Self = this.set("strLenCP", js.Any.fromFunction1(value))
+    def setSubstrBytes(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "substrBytes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrcasecmp(value: js.Any => DatabaseAggregateCommand): Self = this.set("strcasecmp", js.Any.fromFunction1(value))
+    def setSubstrCP(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "substrCP", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubstr(value: js.Any => DatabaseAggregateCommand): Self = this.set("substr", js.Any.fromFunction1(value))
+    def setSubtract(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "subtract", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubstrBytes(value: js.Any => DatabaseAggregateCommand): Self = this.set("substrBytes", js.Any.fromFunction1(value))
+    def setSum(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubstrCP(value: js.Any => DatabaseAggregateCommand): Self = this.set("substrCP", js.Any.fromFunction1(value))
+    def setSwitch(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "switch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubtract(value: js.Any => DatabaseAggregateCommand): Self = this.set("subtract", js.Any.fromFunction1(value))
+    def setToBool(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toBool", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSum(value: js.Any => DatabaseAggregateCommand): Self = this.set("sum", js.Any.fromFunction1(value))
+    def setToDate(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSwitch(value: js.Any => DatabaseAggregateCommand): Self = this.set("switch", js.Any.fromFunction1(value))
+    def setToDecimal(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toDecimal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToBool(value: js.Any => DatabaseAggregateCommand): Self = this.set("toBool", js.Any.fromFunction1(value))
+    def setToDouble(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toDouble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToDate(value: js.Any => DatabaseAggregateCommand): Self = this.set("toDate", js.Any.fromFunction1(value))
+    def setToInt(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toInt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToDecimal(value: js.Any => DatabaseAggregateCommand): Self = this.set("toDecimal", js.Any.fromFunction1(value))
+    def setToLong(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toLong", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToDouble(value: js.Any => DatabaseAggregateCommand): Self = this.set("toDouble", js.Any.fromFunction1(value))
+    def setToLower(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toLower", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToInt(value: js.Any => DatabaseAggregateCommand): Self = this.set("toInt", js.Any.fromFunction1(value))
+    def setToObjectId(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toObjectId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToLong(value: js.Any => DatabaseAggregateCommand): Self = this.set("toLong", js.Any.fromFunction1(value))
+    def setToString_(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToLower(value: js.Any => DatabaseAggregateCommand): Self = this.set("toLower", js.Any.fromFunction1(value))
+    def setToUpper(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "toUpper", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToObjectId(value: js.Any => DatabaseAggregateCommand): Self = this.set("toObjectId", js.Any.fromFunction1(value))
+    def setTrim(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToString(value: js.Any => DatabaseAggregateCommand): Self = this.set("toString", js.Any.fromFunction1(value))
+    def setTrunc(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "trunc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToUpper(value: js.Any => DatabaseAggregateCommand): Self = this.set("toUpper", js.Any.fromFunction1(value))
+    def setType(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTrim(value: js.Any => DatabaseAggregateCommand): Self = this.set("trim", js.Any.fromFunction1(value))
+    def setWeek(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "week", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTrunc(value: js.Any => DatabaseAggregateCommand): Self = this.set("trunc", js.Any.fromFunction1(value))
+    def setYear(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "year", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: js.Any => DatabaseAggregateCommand): Self = this.set("type", js.Any.fromFunction1(value))
+    def setZip(value: js.Any => DatabaseAggregateCommand): Self = StObject.set(x, "zip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWeek(value: js.Any => DatabaseAggregateCommand): Self = this.set("week", js.Any.fromFunction1(value))
+    def set__safe_props__(value: Set[String]): Self = StObject.set(x, "__safe_props__", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYear(value: js.Any => DatabaseAggregateCommand): Self = this.set("year", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setZip(value: js.Any => DatabaseAggregateCommand): Self = this.set("zip", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def set__safe_props__(value: Set[String]): Self = this.set("__safe_props__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__safe_props__ : Self = this.set("__safe_props__", js.undefined)
+    def set__safe_props__Undefined: Self = StObject.set(x, "__safe_props__", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,42 +46,30 @@ object IgComboLocale {
   }
   
   @scala.inline
-  implicit class IgComboLocaleOps[Self <: IgComboLocale] (val x: Self) extends AnyVal {
+  implicit class IgComboLocaleMutableBuilder[Self <: IgComboLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearButtonTitle(value: js.Any): Self = StObject.set(x, "clearButtonTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearButtonTitleUndefined: Self = StObject.set(x, "clearButtonTitle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropDownButtonTitle(value: js.Any): Self = StObject.set(x, "dropDownButtonTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearButtonTitle(value: js.Any): Self = this.set("clearButtonTitle", value.asInstanceOf[js.Any])
+    def setDropDownButtonTitleUndefined: Self = StObject.set(x, "dropDownButtonTitle", js.undefined)
     
     @scala.inline
-    def deleteClearButtonTitle: Self = this.set("clearButtonTitle", js.undefined)
+    def setNoMatchFoundText(value: js.Any): Self = StObject.set(x, "noMatchFoundText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDownButtonTitle(value: js.Any): Self = this.set("dropDownButtonTitle", value.asInstanceOf[js.Any])
+    def setNoMatchFoundTextUndefined: Self = StObject.set(x, "noMatchFoundText", js.undefined)
     
     @scala.inline
-    def deleteDropDownButtonTitle: Self = this.set("dropDownButtonTitle", js.undefined)
+    def setPlaceHolder(value: js.Any): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoMatchFoundText(value: js.Any): Self = this.set("noMatchFoundText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoMatchFoundText: Self = this.set("noMatchFoundText", js.undefined)
-    
-    @scala.inline
-    def setPlaceHolder(value: js.Any): Self = this.set("placeHolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceHolder: Self = this.set("placeHolder", js.undefined)
+    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomTransformers extends js.Object {
+trait CustomTransformers extends StObject {
   
   /** Custom transformers to evaluate after built-in .js transformations. */
   var after: js.UndefOr[js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]] = js.native
@@ -25,45 +26,33 @@ object CustomTransformers {
   }
   
   @scala.inline
-  implicit class CustomTransformersOps[Self <: CustomTransformers] (val x: Self) extends AnyVal {
+  implicit class CustomTransformersMutableBuilder[Self <: CustomTransformers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterDeclarations(value: js.Array[(TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory]): Self = StObject.set(x, "afterDeclarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterDeclarationsUndefined: Self = StObject.set(x, "afterDeclarations", js.undefined)
     
     @scala.inline
-    def setAfterVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = this.set("after", js.Array(value :_*))
+    def setAfterDeclarationsVarargs(value: ((TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory)*): Self = StObject.set(x, "afterDeclarations", js.Array(value :_*))
     
     @scala.inline
-    def setAfter(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def setAfterDeclarationsVarargs(value: ((TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory)*): Self = this.set("afterDeclarations", js.Array(value :_*))
+    def setBefore(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterDeclarations(value: js.Array[(TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory]): Self = this.set("afterDeclarations", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfterDeclarations: Self = this.set("afterDeclarations", js.undefined)
-    
-    @scala.inline
-    def setBeforeVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = this.set("before", js.Array(value :_*))
-    
-    @scala.inline
-    def setBefore(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = this.set("before", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setBeforeVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "before", js.Array(value :_*))
   }
 }

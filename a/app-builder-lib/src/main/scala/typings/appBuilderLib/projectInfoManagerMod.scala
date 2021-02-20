@@ -2,16 +2,16 @@ package typings.appBuilderLib
 
 import typings.appBuilderLib.packagerMod.Packager
 import typings.lazyVal.mod.Lazy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/remoteBuilder/ProjectInfoManager", JSImport.Namespace)
-@js.native
-object projectInfoManagerMod extends js.Object {
+object projectInfoManagerMod {
   
+  @JSImport("app-builder-lib/out/remoteBuilder/ProjectInfoManager", "ProjectInfoManager")
   @js.native
-  class ProjectInfoManager protected () extends js.Object {
+  class ProjectInfoManager protected () extends StObject {
     def this(packager: Packager) = this()
     
     val infoFile: Lazy[String] = js.native

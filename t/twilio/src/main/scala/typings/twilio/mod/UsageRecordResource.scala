@@ -1,16 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageRecordResource
-  extends BaseMappedResource[UsageRecordInstance]
-     with Resource {
-  
-  /* InferMemberOverrides */
-  override def apply(T0: /* resourceSid */ String): UsageRecordInstance = js.native
+trait UsageRecordResource extends MappedResource[UsageRecordInstance] {
   
   var allTime: UsageRecordRange = js.native
   

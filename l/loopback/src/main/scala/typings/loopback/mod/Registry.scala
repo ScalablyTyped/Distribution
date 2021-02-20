@@ -2,6 +2,7 @@ package typings.loopback.mod
 
 import typings.loopback.anon.Connector
 import typings.loopback.anon.Relations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Registry")
 @js.native
-class Registry () extends js.Object {
+class Registry () extends StObject {
   
   /**
     * Alter an existing Model class.
@@ -125,10 +126,10 @@ class Registry () extends js.Object {
   def memory(): Unit = js.native
   def memory(name: String): Unit = js.native
 }
-/* static members */
-@JSImport("loopback", "Registry")
-@js.native
-object Registry extends js.Object {
+object Registry {
   
+  /* static member */
+  @JSImport("loopback", "Registry.addACL")
+  @js.native
   def addACL(acls: js.Array[_], acl: js.Any): Unit = js.native
 }

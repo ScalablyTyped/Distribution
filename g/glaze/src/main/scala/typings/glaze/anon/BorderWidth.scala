@@ -16,12 +16,13 @@ import typings.glaze.glazeStrings.opacity
 import typings.glaze.glazeStrings.width
 import typings.glaze.glazeStrings.zIndex
 import typings.glaze.themeMod.ScaleTokens
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderWidth extends js.Object {
+trait BorderWidth extends StObject {
   
   var border: ScaleTokens[typings.glaze.glazeStrings.border] = js.native
   
@@ -78,63 +79,51 @@ object BorderWidth {
   }
   
   @scala.inline
-  implicit class BorderWidthOps[Self <: BorderWidth] (val x: Self) extends AnyVal {
+  implicit class BorderWidthMutableBuilder[Self <: BorderWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ScaleTokens[border]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderWidth(value: ScaleTokens[borderWidth]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: ScaleTokens[color]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: ScaleTokens[border]): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setDuration(value: ScaleTokens[animationDuration]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: ScaleTokens[borderWidth]): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setFontFamily(value: ScaleTokens[fontFamily]): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ScaleTokens[color]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontSize(value: ScaleTokens[fontSize]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: ScaleTokens[animationDuration]): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setFontWeight(value: ScaleTokens[fontWeight]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: ScaleTokens[fontFamily]): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setLetterSpacing(value: ScaleTokens[letterSpacing]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: ScaleTokens[fontSize]): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setLineHeight(value: ScaleTokens[lineHeight]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: ScaleTokens[fontWeight]): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setOpacity(value: ScaleTokens[opacity]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: ScaleTokens[letterSpacing]): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setRadius(value: ScaleTokens[borderRadius]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: ScaleTokens[lineHeight]): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setShadow(value: ScaleTokens[boxShadow]): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: ScaleTokens[opacity]): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSize(value: ScaleTokens[width]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: ScaleTokens[borderRadius]): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSpacing(value: ScaleTokens[margin]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: ScaleTokens[boxShadow]): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: ScaleTokens[width]): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpacing(value: ScaleTokens[margin]): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZIndex(value: ScaleTokens[zIndex]): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    def setZIndex(value: ScaleTokens[zIndex]): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
   }
 }

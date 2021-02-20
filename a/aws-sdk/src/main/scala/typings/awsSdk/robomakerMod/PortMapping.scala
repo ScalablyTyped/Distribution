@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortMapping extends js.Object {
+trait PortMapping extends StObject {
   
   /**
     * The port number on the application.
@@ -31,30 +32,18 @@ object PortMapping {
   }
   
   @scala.inline
-  implicit class PortMappingOps[Self <: PortMapping] (val x: Self) extends AnyVal {
+  implicit class PortMappingMutableBuilder[Self <: PortMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationPort(value: NonSystemPort): Self = StObject.set(x, "applicationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableOnPublicIp(value: Boolean): Self = StObject.set(x, "enableOnPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableOnPublicIpUndefined: Self = StObject.set(x, "enableOnPublicIp", js.undefined)
     
     @scala.inline
-    def setApplicationPort(value: NonSystemPort): Self = this.set("applicationPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobPort(value: Port): Self = this.set("jobPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableOnPublicIp(value: Boolean): Self = this.set("enableOnPublicIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableOnPublicIp: Self = this.set("enableOnPublicIp", js.undefined)
+    def setJobPort(value: Port): Self = StObject.set(x, "jobPort", value.asInstanceOf[js.Any])
   }
 }

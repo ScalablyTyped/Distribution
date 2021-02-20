@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DicomConfig extends js.Object {
+trait DicomConfig extends StObject {
   
   /** Tag filtering profile that determines which tags to keep/remove. */
   var filterProfile: js.UndefOr[String] = js.native
@@ -33,42 +34,30 @@ object DicomConfig {
   }
   
   @scala.inline
-  implicit class DicomConfigOps[Self <: DicomConfig] (val x: Self) extends AnyVal {
+  implicit class DicomConfigMutableBuilder[Self <: DicomConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterProfile(value: String): Self = StObject.set(x, "filterProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterProfileUndefined: Self = StObject.set(x, "filterProfile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeepList(value: TagFilterList): Self = StObject.set(x, "keepList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterProfile(value: String): Self = this.set("filterProfile", value.asInstanceOf[js.Any])
+    def setKeepListUndefined: Self = StObject.set(x, "keepList", js.undefined)
     
     @scala.inline
-    def deleteFilterProfile: Self = this.set("filterProfile", js.undefined)
+    def setRemoveList(value: TagFilterList): Self = StObject.set(x, "removeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepList(value: TagFilterList): Self = this.set("keepList", value.asInstanceOf[js.Any])
+    def setRemoveListUndefined: Self = StObject.set(x, "removeList", js.undefined)
     
     @scala.inline
-    def deleteKeepList: Self = this.set("keepList", js.undefined)
+    def setSkipIdRedaction(value: Boolean): Self = StObject.set(x, "skipIdRedaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveList(value: TagFilterList): Self = this.set("removeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveList: Self = this.set("removeList", js.undefined)
-    
-    @scala.inline
-    def setSkipIdRedaction(value: Boolean): Self = this.set("skipIdRedaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipIdRedaction: Self = this.set("skipIdRedaction", js.undefined)
+    def setSkipIdRedactionUndefined: Self = StObject.set(x, "skipIdRedaction", js.undefined)
   }
 }

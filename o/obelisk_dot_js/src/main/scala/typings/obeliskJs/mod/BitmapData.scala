@@ -3,13 +3,14 @@ package typings.obeliskJs.mod
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "BitmapData")
 @js.native
-class BitmapData protected () extends js.Object {
+class BitmapData protected () extends StObject {
   def this(w: Double, h: Double) = this()
   def this(w: Double, h: Double, useDefaultCanvas: Boolean) = this()
   

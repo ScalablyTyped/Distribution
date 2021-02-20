@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SMTPDelivery extends js.Object {
+trait SMTPDelivery extends StObject {
   
   /** This is the SMTP account/email that appears in the `From:` of the email. If empty, it is assumed to be sender. */
   var fromAddress: js.UndefOr[String] = js.native
@@ -34,57 +35,45 @@ object SMTPDelivery {
   }
   
   @scala.inline
-  implicit class SMTPDeliveryOps[Self <: SMTPDelivery] (val x: Self) extends AnyVal {
+  implicit class SMTPDeliveryMutableBuilder[Self <: SMTPDelivery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromAddress(value: String): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: NotifierSecretRef): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromAddress(value: String): Self = this.set("fromAddress", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteFromAddress: Self = this.set("fromAddress", js.undefined)
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: NotifierSecretRef): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setRecipientAddresses(value: js.Array[String]): Self = StObject.set(x, "recipientAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setRecipientAddressesUndefined: Self = StObject.set(x, "recipientAddresses", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setRecipientAddressesVarargs(value: String*): Self = StObject.set(x, "recipientAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientAddressesVarargs(value: String*): Self = this.set("recipientAddresses", js.Array(value :_*))
+    def setSenderAddress(value: String): Self = StObject.set(x, "senderAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientAddresses(value: js.Array[String]): Self = this.set("recipientAddresses", value.asInstanceOf[js.Any])
+    def setSenderAddressUndefined: Self = StObject.set(x, "senderAddress", js.undefined)
     
     @scala.inline
-    def deleteRecipientAddresses: Self = this.set("recipientAddresses", js.undefined)
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderAddress(value: String): Self = this.set("senderAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderAddress: Self = this.set("senderAddress", js.undefined)
-    
-    @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

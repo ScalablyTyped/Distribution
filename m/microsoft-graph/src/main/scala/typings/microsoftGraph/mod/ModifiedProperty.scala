@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifiedProperty extends js.Object {
+trait ModifiedProperty extends StObject {
   
   // Indicates the property name of the target attribute that was changed.
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object ModifiedProperty {
   }
   
   @scala.inline
-  implicit class ModifiedPropertyOps[Self <: ModifiedProperty] (val x: Self) extends AnyVal {
+  implicit class ModifiedPropertyMutableBuilder[Self <: ModifiedProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNewValue(value: NullableOption[String]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setNewValueNull: Self = StObject.set(x, "newValue", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
     @scala.inline
-    def setNewValue(value: NullableOption[String]): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setOldValue(value: NullableOption[String]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNewValue: Self = this.set("newValue", js.undefined)
+    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
     @scala.inline
-    def setNewValueNull: Self = this.set("newValue", null)
-    
-    @scala.inline
-    def setOldValue(value: NullableOption[String]): Self = this.set("oldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
-    
-    @scala.inline
-    def setOldValueNull: Self = this.set("oldValue", null)
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

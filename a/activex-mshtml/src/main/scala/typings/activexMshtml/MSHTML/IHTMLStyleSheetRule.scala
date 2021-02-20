@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLStyleSheetRule extends js.Object {
+trait IHTMLStyleSheetRule extends StObject {
   
   @JSName("MSHTML.IHTMLStyleSheetRule_typekey")
   var MSHTMLDotIHTMLStyleSheetRule_typekey: IHTMLStyleSheetRule = js.native
@@ -31,30 +32,18 @@ object IHTMLStyleSheetRule {
   }
   
   @scala.inline
-  implicit class IHTMLStyleSheetRuleOps[Self <: IHTMLStyleSheetRule] (val x: Self) extends AnyVal {
+  implicit class IHTMLStyleSheetRuleMutableBuilder[Self <: IHTMLStyleSheetRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotIHTMLStyleSheetRule_typekey(value: IHTMLStyleSheetRule): Self = StObject.set(x, "MSHTML.IHTMLStyleSheetRule_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectorText(value: String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLStyleSheetRule_typekey(value: IHTMLStyleSheetRule): Self = this.set("MSHTML.IHTMLStyleSheetRule_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorText(value: String): Self = this.set("selectorText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: IHTMLRuleStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

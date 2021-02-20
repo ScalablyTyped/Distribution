@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends js.Object {
+trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends StObject {
   
   /** Each PlayableLocation object corresponds to a game_object_type specified in the request. */
   var locationsPerGameObjectType: js.UndefOr[
@@ -31,34 +32,22 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponseOps[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponseMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setLocationsPerGameObjectType(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList}
       */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse with TopLevel[js.Any]
-    ): Self = this.set("locationsPerGameObjectType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "locationsPerGameObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocationsPerGameObjectType: Self = this.set("locationsPerGameObjectType", js.undefined)
+    def setLocationsPerGameObjectTypeUndefined: Self = StObject.set(x, "locationsPerGameObjectType", js.undefined)
     
     @scala.inline
-    def setTtl(value: String): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

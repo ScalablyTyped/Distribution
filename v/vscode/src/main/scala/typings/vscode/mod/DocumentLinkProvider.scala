@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentLinkProvider[T /* <: DocumentLink */] extends js.Object {
+trait DocumentLinkProvider[T /* <: DocumentLink */] extends StObject {
   
   /**
     * Provide links for the given document. Note that the editor ships with a default provider that detects
@@ -38,27 +39,15 @@ object DocumentLinkProvider {
   }
   
   @scala.inline
-  implicit class DocumentLinkProviderOps[Self <: DocumentLinkProvider[_], T /* <: DocumentLink */] (val x: Self with DocumentLinkProvider[T]) extends AnyVal {
+  implicit class DocumentLinkProviderMutableBuilder[Self <: DocumentLinkProvider[_], T /* <: DocumentLink */] (val x: Self with DocumentLinkProvider[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvideDocumentLinks(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideDocumentLinks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolveDocumentLink(value: (/* link */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveDocumentLink", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideDocumentLinks(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = this.set("provideDocumentLinks", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResolveDocumentLink(value: (/* link */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = this.set("resolveDocumentLink", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteResolveDocumentLink: Self = this.set("resolveDocumentLink", js.undefined)
+    def setResolveDocumentLinkUndefined: Self = StObject.set(x, "resolveDocumentLink", js.undefined)
   }
 }

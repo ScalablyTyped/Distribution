@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.mathVectorMod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BInfo extends js.Object {
+trait BInfo extends StObject {
   
   var bInfo: js.UndefOr[js.Any] = js.native
   
@@ -39,84 +40,72 @@ object BInfo {
   }
   
   @scala.inline
-  implicit class BInfoOps[Self <: BInfo] (val x: Self) extends AnyVal {
+  implicit class BInfoMutableBuilder[Self <: BInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBInfo(value: js.Any): Self = StObject.set(x, "bInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBInfoUndefined: Self = StObject.set(x, "bInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBbSize(value: Vector3): Self = StObject.set(x, "bbSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBInfo(value: js.Any): Self = this.set("bInfo", value.asInstanceOf[js.Any])
+    def setBbSizeUndefined: Self = StObject.set(x, "bbSize", js.undefined)
     
     @scala.inline
-    def deleteBInfo: Self = this.set("bInfo", js.undefined)
+    def setDepthSort(value: Boolean): Self = StObject.set(x, "depthSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbSize(value: Vector3): Self = this.set("bbSize", value.asInstanceOf[js.Any])
+    def setDepthSortUndefined: Self = StObject.set(x, "depthSort", js.undefined)
     
     @scala.inline
-    def deleteBbSize: Self = this.set("bbSize", js.undefined)
+    def setDepthSortedFacets(value: js.Any): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthSort(value: Boolean): Self = this.set("depthSort", value.asInstanceOf[js.Any])
+    def setDepthSortedFacetsUndefined: Self = StObject.set(x, "depthSortedFacets", js.undefined)
     
     @scala.inline
-    def deleteDepthSort: Self = this.set("depthSort", js.undefined)
+    def setDistanceTo(value: Vector3): Self = StObject.set(x, "distanceTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthSortedFacets(value: js.Any): Self = this.set("depthSortedFacets", value.asInstanceOf[js.Any])
+    def setDistanceToUndefined: Self = StObject.set(x, "distanceTo", js.undefined)
     
     @scala.inline
-    def deleteDepthSortedFacets: Self = this.set("depthSortedFacets", js.undefined)
+    def setFacetNormals(value: js.Any): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceTo(value: Vector3): Self = this.set("distanceTo", value.asInstanceOf[js.Any])
+    def setFacetNormalsUndefined: Self = StObject.set(x, "facetNormals", js.undefined)
     
     @scala.inline
-    def deleteDistanceTo: Self = this.set("distanceTo", js.undefined)
+    def setFacetPartitioning(value: js.Any): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetNormals(value: js.Any): Self = this.set("facetNormals", value.asInstanceOf[js.Any])
+    def setFacetPartitioningUndefined: Self = StObject.set(x, "facetPartitioning", js.undefined)
     
     @scala.inline
-    def deleteFacetNormals: Self = this.set("facetNormals", js.undefined)
+    def setFacetPositions(value: js.Any): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetPartitioning(value: js.Any): Self = this.set("facetPartitioning", value.asInstanceOf[js.Any])
+    def setFacetPositionsUndefined: Self = StObject.set(x, "facetPositions", js.undefined)
     
     @scala.inline
-    def deleteFacetPartitioning: Self = this.set("facetPartitioning", js.undefined)
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetPositions(value: js.Any): Self = this.set("facetPositions", value.asInstanceOf[js.Any])
+    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
     @scala.inline
-    def deleteFacetPositions: Self = this.set("facetPositions", js.undefined)
+    def setSubDiv(value: js.Any): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setSubDivUndefined: Self = StObject.set(x, "subDiv", js.undefined)
     
     @scala.inline
-    def deleteRatio: Self = this.set("ratio", js.undefined)
+    def setUseRightHandedSystem(value: Boolean): Self = StObject.set(x, "useRightHandedSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubDiv(value: js.Any): Self = this.set("subDiv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubDiv: Self = this.set("subDiv", js.undefined)
-    
-    @scala.inline
-    def setUseRightHandedSystem(value: Boolean): Self = this.set("useRightHandedSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseRightHandedSystem: Self = this.set("useRightHandedSystem", js.undefined)
+    def setUseRightHandedSystemUndefined: Self = StObject.set(x, "useRightHandedSystem", js.undefined)
   }
 }

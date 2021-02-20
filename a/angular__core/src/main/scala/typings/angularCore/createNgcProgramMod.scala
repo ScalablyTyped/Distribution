@@ -2,14 +2,15 @@ package typings.angularCore
 
 import typings.angularCore.anon.Compiler
 import typings.typescript.mod.CompilerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/create_ngc_program", JSImport.Namespace)
-@js.native
-object createNgcProgramMod extends js.Object {
+object createNgcProgramMod {
   
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/create_ngc_program", "createNgcProgram")
+  @js.native
   def createNgcProgram(
     createHost: js.Function1[
       /* options */ CompilerOptions, 

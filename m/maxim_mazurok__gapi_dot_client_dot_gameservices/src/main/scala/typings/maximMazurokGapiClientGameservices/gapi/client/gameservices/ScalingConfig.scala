@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalingConfig extends js.Object {
+trait ScalingConfig extends StObject {
   
   /** Required. Agones fleet autoscaler spec. Example spec: https://agones.dev/site/docs/reference/fleetautoscaler/ */
   var fleetAutoscalerSpec: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object ScalingConfig {
   }
   
   @scala.inline
-  implicit class ScalingConfigOps[Self <: ScalingConfig] (val x: Self) extends AnyVal {
+  implicit class ScalingConfigMutableBuilder[Self <: ScalingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFleetAutoscalerSpec(value: String): Self = StObject.set(x, "fleetAutoscalerSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleetAutoscalerSpecUndefined: Self = StObject.set(x, "fleetAutoscalerSpec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetAutoscalerSpec(value: String): Self = this.set("fleetAutoscalerSpec", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFleetAutoscalerSpec: Self = this.set("fleetAutoscalerSpec", js.undefined)
+    def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSchedulesUndefined: Self = StObject.set(x, "schedules", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
     
     @scala.inline
-    def setSchedulesVarargs(value: Schedule*): Self = this.set("schedules", js.Array(value :_*))
+    def setSelectors(value: js.Array[LabelSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedules(value: js.Array[Schedule]): Self = this.set("schedules", value.asInstanceOf[js.Any])
+    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
     @scala.inline
-    def deleteSchedules: Self = this.set("schedules", js.undefined)
-    
-    @scala.inline
-    def setSelectorsVarargs(value: LabelSelector*): Self = this.set("selectors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectors(value: js.Array[LabelSelector]): Self = this.set("selectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    def setSelectorsVarargs(value: LabelSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

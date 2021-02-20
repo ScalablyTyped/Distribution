@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2DeltaPresenceEstimationResult extends js.Object {
+trait GooglePrivacyDlpV2DeltaPresenceEstimationResult extends StObject {
   
   /**
     * The intervals [min_probability, max_probability) do not overlap. If a value doesn't correspond to any such interval, the associated frequency is zero. For example, the following
@@ -23,27 +24,15 @@ object GooglePrivacyDlpV2DeltaPresenceEstimationResult {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2DeltaPresenceEstimationResultOps[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationResult] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2DeltaPresenceEstimationResultMutableBuilder[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeltaPresenceEstimationHistogram(value: js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]): Self = StObject.set(x, "deltaPresenceEstimationHistogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaPresenceEstimationHistogramUndefined: Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeltaPresenceEstimationHistogramVarargs(value: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = this.set("deltaPresenceEstimationHistogram", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeltaPresenceEstimationHistogram(value: js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]): Self = this.set("deltaPresenceEstimationHistogram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeltaPresenceEstimationHistogram: Self = this.set("deltaPresenceEstimationHistogram", js.undefined)
+    def setDeltaPresenceEstimationHistogramVarargs(value: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.Array(value :_*))
   }
 }

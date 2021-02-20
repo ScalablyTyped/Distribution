@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GpuDeviceInfo extends js.Object {
+trait GpuDeviceInfo extends StObject {
   
   /**
     * The number of GPUs for the instance type.
@@ -36,42 +37,30 @@ object GpuDeviceInfo {
   }
   
   @scala.inline
-  implicit class GpuDeviceInfoOps[Self <: GpuDeviceInfo] (val x: Self) extends AnyVal {
+  implicit class GpuDeviceInfoMutableBuilder[Self <: GpuDeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: GpuDeviceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManufacturer(value: GpuDeviceManufacturerName): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: GpuDeviceCount): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setMemoryInfo(value: GpuDeviceMemoryInfo): Self = StObject.set(x, "MemoryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: GpuDeviceManufacturerName): Self = this.set("Manufacturer", value.asInstanceOf[js.Any])
+    def setMemoryInfoUndefined: Self = StObject.set(x, "MemoryInfo", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("Manufacturer", js.undefined)
+    def setName(value: GpuDeviceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryInfo(value: GpuDeviceMemoryInfo): Self = this.set("MemoryInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemoryInfo: Self = this.set("MemoryInfo", js.undefined)
-    
-    @scala.inline
-    def setName(value: GpuDeviceName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

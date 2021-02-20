@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSamplingRuleRequest extends js.Object {
+trait DeleteSamplingRuleRequest extends StObject {
   
   /**
     * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
@@ -26,30 +27,18 @@ object DeleteSamplingRuleRequest {
   }
   
   @scala.inline
-  implicit class DeleteSamplingRuleRequestOps[Self <: DeleteSamplingRuleRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteSamplingRuleRequestMutableBuilder[Self <: DeleteSamplingRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleARN(value: String): Self = this.set("RuleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleARN: Self = this.set("RuleARN", js.undefined)
-    
-    @scala.inline
-    def setRuleName(value: String): Self = this.set("RuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleName: Self = this.set("RuleName", js.undefined)
+    def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
   }
 }

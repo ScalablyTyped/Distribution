@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLHistory extends js.Object {
+trait HTMLHistory extends StObject {
   
   @JSName("MSHTML.HTMLHistory_typekey")
   var MSHTMLDotHTMLHistory_typekey: HTMLHistory = js.native

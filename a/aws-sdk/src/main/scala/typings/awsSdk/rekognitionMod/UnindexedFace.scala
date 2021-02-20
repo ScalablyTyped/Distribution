@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnindexedFace extends js.Object {
+trait UnindexedFace extends StObject {
   
   /**
     * The structure that contains attributes of a face that IndexFacesdetected, but didn't index. 
@@ -26,33 +27,21 @@ object UnindexedFace {
   }
   
   @scala.inline
-  implicit class UnindexedFaceOps[Self <: UnindexedFace] (val x: Self) extends AnyVal {
+  implicit class UnindexedFaceMutableBuilder[Self <: UnindexedFace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceDetailUndefined: Self = StObject.set(x, "FaceDetail", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReasons(value: Reasons): Self = StObject.set(x, "Reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceDetail(value: FaceDetail): Self = this.set("FaceDetail", value.asInstanceOf[js.Any])
+    def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
     
     @scala.inline
-    def deleteFaceDetail: Self = this.set("FaceDetail", js.undefined)
-    
-    @scala.inline
-    def setReasonsVarargs(value: Reason*): Self = this.set("Reasons", js.Array(value :_*))
-    
-    @scala.inline
-    def setReasons(value: Reasons): Self = this.set("Reasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasons: Self = this.set("Reasons", js.undefined)
+    def setReasonsVarargs(value: Reason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Safe extends js.Object {
+trait Safe extends StObject {
   
   /*This block contains the flags that control what the Safe extension will allow, and what it will block. The
     * flags can be set to "all", "none", or "safe". When set to "all", no filtering is done for these values (this
@@ -55,54 +56,42 @@ object Safe {
   }
   
   @scala.inline
-  implicit class SafeOps[Self <: Safe] (val x: Self) extends AnyVal {
+  implicit class SafeMutableBuilder[Self <: Safe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: SafeAllow): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSafeProtocols(value: SafeProtocols): Self = StObject.set(x, "safeProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: SafeAllow): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def setSafeProtocolsUndefined: Self = StObject.set(x, "safeProtocols", js.undefined)
     
     @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
+    def setSafeRequire(value: SafeRequire): Self = StObject.set(x, "safeRequire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeProtocols(value: SafeProtocols): Self = this.set("safeProtocols", value.asInstanceOf[js.Any])
+    def setSafeRequireUndefined: Self = StObject.set(x, "safeRequire", js.undefined)
     
     @scala.inline
-    def deleteSafeProtocols: Self = this.set("safeProtocols", js.undefined)
+    def setSafeStyles(value: SafeStyles): Self = StObject.set(x, "safeStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeRequire(value: SafeRequire): Self = this.set("safeRequire", value.asInstanceOf[js.Any])
+    def setSafeStylesUndefined: Self = StObject.set(x, "safeStyles", js.undefined)
     
     @scala.inline
-    def deleteSafeRequire: Self = this.set("safeRequire", js.undefined)
+    def setSizeMax(value: Double): Self = StObject.set(x, "sizeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeStyles(value: SafeStyles): Self = this.set("safeStyles", value.asInstanceOf[js.Any])
+    def setSizeMaxUndefined: Self = StObject.set(x, "sizeMax", js.undefined)
     
     @scala.inline
-    def deleteSafeStyles: Self = this.set("safeStyles", js.undefined)
+    def setSizeMin(value: Double): Self = StObject.set(x, "sizeMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeMax(value: Double): Self = this.set("sizeMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeMax: Self = this.set("sizeMax", js.undefined)
-    
-    @scala.inline
-    def setSizeMin(value: Double): Self = this.set("sizeMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeMin: Self = this.set("sizeMin", js.undefined)
+    def setSizeMinUndefined: Self = StObject.set(x, "sizeMin", js.undefined)
   }
 }

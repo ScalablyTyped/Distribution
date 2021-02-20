@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Etag extends js.Object {
+trait Etag extends StObject {
   
   var etag: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object Etag {
   }
   
   @scala.inline
-  implicit class EtagOps[Self <: Etag] (val x: Self) extends AnyVal {
+  implicit class EtagMutableBuilder[Self <: Etag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setVary(value: Boolean): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: String): Self = this.set("modified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModified: Self = this.set("modified", js.undefined)
-    
-    @scala.inline
-    def setVary(value: Boolean): Self = this.set("vary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVary: Self = this.set("vary", js.undefined)
+    def setVaryUndefined: Self = StObject.set(x, "vary", js.undefined)
   }
 }

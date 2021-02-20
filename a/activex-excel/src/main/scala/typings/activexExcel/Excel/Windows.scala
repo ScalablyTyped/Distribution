@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Windows extends js.Object {
+trait Windows extends StObject {
   
   def apply(Index: String): Window = js.native
   def apply(Index: Double): Window = js.native

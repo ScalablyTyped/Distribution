@@ -5,12 +5,13 @@ import typings.minappEnv.minappEnvStrings.barCode
 import typings.minappEnv.minappEnvStrings.datamatrix
 import typings.minappEnv.minappEnvStrings.pdf417
 import typings.minappEnv.minappEnvStrings.qrCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanCodeOption extends js.Object {
+trait ScanCodeOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[ScanCodeCompleteCallback] = js.native
@@ -46,48 +47,36 @@ object ScanCodeOption {
   }
   
   @scala.inline
-  implicit class ScanCodeOptionOps[Self <: ScanCodeOption] (val x: Self) extends AnyVal {
+  implicit class ScanCodeOptionMutableBuilder[Self <: ScanCodeOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setScanType(value: Array[barCode | qrCode | datamatrix | pdf417]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyFromCamera(value: Boolean): Self = this.set("onlyFromCamera", value.asInstanceOf[js.Any])
+    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
     @scala.inline
-    def deleteOnlyFromCamera: Self = this.set("onlyFromCamera", js.undefined)
+    def setSuccess(value: /* result */ ScanCodeSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanType(value: Array[barCode | qrCode | datamatrix | pdf417]): Self = this.set("scanType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanType: Self = this.set("scanType", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ ScanCodeSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

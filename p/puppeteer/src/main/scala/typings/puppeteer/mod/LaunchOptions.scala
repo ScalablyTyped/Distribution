@@ -1,6 +1,7 @@
 package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,75 +78,63 @@ object LaunchOptions {
   }
   
   @scala.inline
-  implicit class LaunchOptionsOps[Self <: LaunchOptions] (val x: Self) extends AnyVal {
+  implicit class LaunchOptionsMutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDumpio(value: Boolean): Self = StObject.set(x, "dumpio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDumpioUndefined: Self = StObject.set(x, "dumpio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDumpio(value: Boolean): Self = this.set("dumpio", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteDumpio: Self = this.set("dumpio", js.undefined)
+    def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: StringDictionary[String | Boolean | Double]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setExecutablePathUndefined: Self = StObject.set(x, "executablePath", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setHandleSIGHUP(value: Boolean): Self = StObject.set(x, "handleSIGHUP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutablePath(value: String): Self = this.set("executablePath", value.asInstanceOf[js.Any])
+    def setHandleSIGHUPUndefined: Self = StObject.set(x, "handleSIGHUP", js.undefined)
     
     @scala.inline
-    def deleteExecutablePath: Self = this.set("executablePath", js.undefined)
+    def setHandleSIGINT(value: Boolean): Self = StObject.set(x, "handleSIGINT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleSIGHUP(value: Boolean): Self = this.set("handleSIGHUP", value.asInstanceOf[js.Any])
+    def setHandleSIGINTUndefined: Self = StObject.set(x, "handleSIGINT", js.undefined)
     
     @scala.inline
-    def deleteHandleSIGHUP: Self = this.set("handleSIGHUP", js.undefined)
+    def setHandleSIGTERM(value: Boolean): Self = StObject.set(x, "handleSIGTERM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleSIGINT(value: Boolean): Self = this.set("handleSIGINT", value.asInstanceOf[js.Any])
+    def setHandleSIGTERMUndefined: Self = StObject.set(x, "handleSIGTERM", js.undefined)
     
     @scala.inline
-    def deleteHandleSIGINT: Self = this.set("handleSIGINT", js.undefined)
+    def setIgnoreDefaultArgs(value: Boolean | js.Array[String]): Self = StObject.set(x, "ignoreDefaultArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleSIGTERM(value: Boolean): Self = this.set("handleSIGTERM", value.asInstanceOf[js.Any])
+    def setIgnoreDefaultArgsUndefined: Self = StObject.set(x, "ignoreDefaultArgs", js.undefined)
     
     @scala.inline
-    def deleteHandleSIGTERM: Self = this.set("handleSIGTERM", js.undefined)
+    def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreDefaultArgsVarargs(value: String*): Self = this.set("ignoreDefaultArgs", js.Array(value :_*))
+    def setPipe(value: Boolean): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreDefaultArgs(value: Boolean | js.Array[String]): Self = this.set("ignoreDefaultArgs", value.asInstanceOf[js.Any])
+    def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
     
     @scala.inline
-    def deleteIgnoreDefaultArgs: Self = this.set("ignoreDefaultArgs", js.undefined)
+    def setProduct(value: Product_): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipe(value: Boolean): Self = this.set("pipe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipe: Self = this.set("pipe", js.undefined)
-    
-    @scala.inline
-    def setProduct(value: Product_): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.activexMsforms.activexMsformsNumbers.`1`
 import typings.activexMsforms.activexMsformsNumbers.`2`
 import typings.activexMsforms.activexMsformsNumbers.`3`
 import typings.activexMsforms.activexMsformsNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMsforms.activexMsformsNumbers.`0`
   - typings.activexMsforms.activexMsformsNumbers.`1`
 */
-trait fmPictureAlignment extends js.Object
+trait fmPictureAlignment extends StObject
 object fmPictureAlignment {
   
   @scala.inline

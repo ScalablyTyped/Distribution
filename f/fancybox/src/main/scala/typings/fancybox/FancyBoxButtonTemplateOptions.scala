@@ -1,11 +1,12 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxButtonTemplateOptions extends js.Object {
+trait FancyBoxButtonTemplateOptions extends StObject {
   
   var arrowLeft: js.UndefOr[String] = js.native
   
@@ -32,54 +33,42 @@ object FancyBoxButtonTemplateOptions {
   }
   
   @scala.inline
-  implicit class FancyBoxButtonTemplateOptionsOps[Self <: FancyBoxButtonTemplateOptions] (val x: Self) extends AnyVal {
+  implicit class FancyBoxButtonTemplateOptionsMutableBuilder[Self <: FancyBoxButtonTemplateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowLeft(value: String): Self = StObject.set(x, "arrowLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowLeftUndefined: Self = StObject.set(x, "arrowLeft", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowRight(value: String): Self = StObject.set(x, "arrowRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowLeft(value: String): Self = this.set("arrowLeft", value.asInstanceOf[js.Any])
+    def setArrowRightUndefined: Self = StObject.set(x, "arrowRight", js.undefined)
     
     @scala.inline
-    def deleteArrowLeft: Self = this.set("arrowLeft", js.undefined)
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowRight(value: String): Self = this.set("arrowRight", value.asInstanceOf[js.Any])
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteArrowRight: Self = this.set("arrowRight", js.undefined)
+    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setSmallBtn(value: String): Self = StObject.set(x, "smallBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownload(value: String): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setSmallBtnUndefined: Self = StObject.set(x, "smallBtn", js.undefined)
     
     @scala.inline
-    def deleteDownload: Self = this.set("download", js.undefined)
+    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallBtn(value: String): Self = this.set("smallBtn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmallBtn: Self = this.set("smallBtn", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: String): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

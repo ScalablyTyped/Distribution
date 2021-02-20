@@ -2,12 +2,13 @@ package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ClientStateListResponse.IEntry
 import typings.sawtoothSdk.protobufMod.ClientStateListResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientStateListResponse extends js.Object {
+trait IClientStateListResponse extends StObject {
   
   /** ClientStateListResponse entries */
   var entries: js.UndefOr[js.Array[IEntry] | Null] = js.native
@@ -30,57 +31,45 @@ object IClientStateListResponse {
   }
   
   @scala.inline
-  implicit class IClientStateListResponseOps[Self <: IClientStateListResponse] (val x: Self) extends AnyVal {
+  implicit class IClientStateListResponseMutableBuilder[Self <: IClientStateListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: js.Array[IEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesNull: Self = StObject.set(x, "entries", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def setEntriesVarargs(value: IEntry*): Self = this.set("entries", js.Array(value :_*))
+    def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def setEntries(value: js.Array[IEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setPaging(value: IClientPagingResponse): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setPagingNull: Self = StObject.set(x, "paging", null)
     
     @scala.inline
-    def setEntriesNull: Self = this.set("entries", null)
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def setPaging(value: IClientPagingResponse): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setStateRootNull: Self = StObject.set(x, "stateRoot", null)
     
     @scala.inline
-    def setPagingNull: Self = this.set("paging", null)
+    def setStateRootUndefined: Self = StObject.set(x, "stateRoot", js.undefined)
     
     @scala.inline
-    def setStateRoot(value: String): Self = this.set("stateRoot", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStateRoot: Self = this.set("stateRoot", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setStateRootNull: Self = this.set("stateRoot", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

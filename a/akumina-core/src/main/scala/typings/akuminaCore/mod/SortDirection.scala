@@ -1,5 +1,6 @@
 package typings.akuminaCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // class ContainsExpression extends Expression { }
 @JSImport("akumina-core", "SortDirection")
 @js.native
-class SortDirection () extends js.Object
-/* static members */
-@JSImport("akumina-core", "SortDirection")
-@js.native
-object SortDirection extends js.Object {
+class SortDirection () extends StObject
+object SortDirection {
   
-  var Descending: String = js.native
+  @JSImport("akumina-core", "SortDirection")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("akumina-core", "SortDirection.Descending")
+  @js.native
+  def Descending: String = js.native
+  @scala.inline
+  def Descending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
 }

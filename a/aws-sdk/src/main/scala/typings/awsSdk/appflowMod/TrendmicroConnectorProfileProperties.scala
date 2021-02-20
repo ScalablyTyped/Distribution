@@ -1,8 +1,9 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrendmicroConnectorProfileProperties extends js.Object
+trait TrendmicroConnectorProfileProperties extends StObject

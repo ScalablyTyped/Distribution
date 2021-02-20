@@ -1,5 +1,6 @@
 package typings.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object BaseBlockParams {
   }
   
   @scala.inline
-  implicit class BaseBlockParamsOps[Self <: BaseBlockParams] (val x: Self) extends AnyVal {
+  implicit class BaseBlockParamsMutableBuilder[Self <: BaseBlockParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPrimitiveSchema(value: js.Object): Self = StObject.set(x, "primitiveSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: scala.Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptional: Self = this.set("optional", js.undefined)
-    
-    @scala.inline
-    def setPrimitiveSchema(value: js.Object): Self = this.set("primitiveSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimitiveSchema: Self = this.set("primitiveSchema", js.undefined)
+    def setPrimitiveSchemaUndefined: Self = StObject.set(x, "primitiveSchema", js.undefined)
   }
 }

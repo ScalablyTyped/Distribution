@@ -1,11 +1,12 @@
 package typings.oauth2Server.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizeOptions extends js.Object {
+trait AuthorizeOptions extends StObject {
   
   /**
     * Allow clients to specify an empty state
@@ -31,36 +32,24 @@ object AuthorizeOptions {
   }
   
   @scala.inline
-  implicit class AuthorizeOptionsOps[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+  implicit class AuthorizeOptionsMutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmptyState(value: Boolean): Self = StObject.set(x, "allowEmptyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEmptyStateUndefined: Self = StObject.set(x, "allowEmptyState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthenticateHandler(value: js.Object): Self = StObject.set(x, "authenticateHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEmptyState(value: Boolean): Self = this.set("allowEmptyState", value.asInstanceOf[js.Any])
+    def setAuthenticateHandlerUndefined: Self = StObject.set(x, "authenticateHandler", js.undefined)
     
     @scala.inline
-    def deleteAllowEmptyState: Self = this.set("allowEmptyState", js.undefined)
+    def setAuthorizationCodeLifetime(value: Double): Self = StObject.set(x, "authorizationCodeLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticateHandler(value: js.Object): Self = this.set("authenticateHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthenticateHandler: Self = this.set("authenticateHandler", js.undefined)
-    
-    @scala.inline
-    def setAuthorizationCodeLifetime(value: Double): Self = this.set("authorizationCodeLifetime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizationCodeLifetime: Self = this.set("authorizationCodeLifetime", js.undefined)
+    def setAuthorizationCodeLifetimeUndefined: Self = StObject.set(x, "authorizationCodeLifetime", js.undefined)
   }
 }

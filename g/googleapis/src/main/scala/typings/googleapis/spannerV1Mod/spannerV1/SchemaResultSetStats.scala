@@ -1,6 +1,7 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Additional statistics about a ResultSet or PartialResultSet.
   */
 @js.native
-trait SchemaResultSetStats extends js.Object {
+trait SchemaResultSetStats extends StObject {
   
   /**
     * QueryPlan for the query associated with this result.
@@ -45,42 +46,30 @@ object SchemaResultSetStats {
   }
   
   @scala.inline
-  implicit class SchemaResultSetStatsOps[Self <: SchemaResultSetStats] (val x: Self) extends AnyVal {
+  implicit class SchemaResultSetStatsMutableBuilder[Self <: SchemaResultSetStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryPlan(value: SchemaQueryPlan): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryStats(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryPlan(value: SchemaQueryPlan): Self = this.set("queryPlan", value.asInstanceOf[js.Any])
+    def setQueryStatsUndefined: Self = StObject.set(x, "queryStats", js.undefined)
     
     @scala.inline
-    def deleteQueryPlan: Self = this.set("queryPlan", js.undefined)
+    def setRowCountExact(value: String): Self = StObject.set(x, "rowCountExact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryStats(value: StringDictionary[js.Any]): Self = this.set("queryStats", value.asInstanceOf[js.Any])
+    def setRowCountExactUndefined: Self = StObject.set(x, "rowCountExact", js.undefined)
     
     @scala.inline
-    def deleteQueryStats: Self = this.set("queryStats", js.undefined)
+    def setRowCountLowerBound(value: String): Self = StObject.set(x, "rowCountLowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCountExact(value: String): Self = this.set("rowCountExact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowCountExact: Self = this.set("rowCountExact", js.undefined)
-    
-    @scala.inline
-    def setRowCountLowerBound(value: String): Self = this.set("rowCountLowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowCountLowerBound: Self = this.set("rowCountLowerBound", js.undefined)
+    def setRowCountLowerBoundUndefined: Self = StObject.set(x, "rowCountLowerBound", js.undefined)
   }
 }

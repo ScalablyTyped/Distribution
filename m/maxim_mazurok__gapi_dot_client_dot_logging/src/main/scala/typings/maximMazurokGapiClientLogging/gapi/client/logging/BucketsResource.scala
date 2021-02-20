@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientLogging.anon.Name
 import typings.maximMazurokGapiClientLogging.anon.Oauthtoken
 import typings.maximMazurokGapiClientLogging.anon.PrettyPrint
 import typings.maximMazurokGapiClientLogging.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketsResource extends js.Object {
+trait BucketsResource extends StObject {
   
   /** Creates a bucket that can be used to store log entries. Once a bucket has been created, the region cannot be changed. */
   def create(request: BucketId): Request[LogBucket] = js.native

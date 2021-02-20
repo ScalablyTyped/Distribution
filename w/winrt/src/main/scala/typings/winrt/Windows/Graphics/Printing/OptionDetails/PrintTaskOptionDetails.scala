@@ -5,6 +5,7 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Graphics.Printing.IPrintTaskOptionsCore
 import typings.winrt.Windows.Graphics.Printing.IPrintTaskOptionsCoreUIConfiguration
 import typings.winrt.Windows.Graphics.Printing.PrintPageDescription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

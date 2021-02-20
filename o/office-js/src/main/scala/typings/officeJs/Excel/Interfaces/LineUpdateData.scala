@@ -18,13 +18,14 @@ import typings.officeJs.officeJsStrings.Stealth
 import typings.officeJs.officeJsStrings.Straight
 import typings.officeJs.officeJsStrings.Triangle
 import typings.officeJs.officeJsStrings.Wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Line object, for use in `line.set({ ... })`. */
 @js.native
-trait LineUpdateData extends js.Object {
+trait LineUpdateData extends StObject {
   
   /**
     *
@@ -91,60 +92,48 @@ object LineUpdateData {
   }
   
   @scala.inline
-  implicit class LineUpdateDataOps[Self <: LineUpdateData] (val x: Self) extends AnyVal {
+  implicit class LineUpdateDataMutableBuilder[Self <: LineUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "beginArrowheadLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginArrowheadLengthUndefined: Self = StObject.set(x, "beginArrowheadLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = StObject.set(x, "beginArrowheadStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = this.set("beginArrowheadLength", value.asInstanceOf[js.Any])
+    def setBeginArrowheadStyleUndefined: Self = StObject.set(x, "beginArrowheadStyle", js.undefined)
     
     @scala.inline
-    def deleteBeginArrowheadLength: Self = this.set("beginArrowheadLength", js.undefined)
+    def setBeginArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = StObject.set(x, "beginArrowheadWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = this.set("beginArrowheadStyle", value.asInstanceOf[js.Any])
+    def setBeginArrowheadWidthUndefined: Self = StObject.set(x, "beginArrowheadWidth", js.undefined)
     
     @scala.inline
-    def deleteBeginArrowheadStyle: Self = this.set("beginArrowheadStyle", js.undefined)
+    def setConnectorType(value: ConnectorType | Straight | Elbow | Curve): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = this.set("beginArrowheadWidth", value.asInstanceOf[js.Any])
+    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
     @scala.inline
-    def deleteBeginArrowheadWidth: Self = this.set("beginArrowheadWidth", js.undefined)
+    def setEndArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "endArrowheadLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorType(value: ConnectorType | Straight | Elbow | Curve): Self = this.set("connectorType", value.asInstanceOf[js.Any])
+    def setEndArrowheadLengthUndefined: Self = StObject.set(x, "endArrowheadLength", js.undefined)
     
     @scala.inline
-    def deleteConnectorType: Self = this.set("connectorType", js.undefined)
+    def setEndArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = StObject.set(x, "endArrowheadStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = this.set("endArrowheadLength", value.asInstanceOf[js.Any])
+    def setEndArrowheadStyleUndefined: Self = StObject.set(x, "endArrowheadStyle", js.undefined)
     
     @scala.inline
-    def deleteEndArrowheadLength: Self = this.set("endArrowheadLength", js.undefined)
+    def setEndArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = StObject.set(x, "endArrowheadWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = this.set("endArrowheadStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndArrowheadStyle: Self = this.set("endArrowheadStyle", js.undefined)
-    
-    @scala.inline
-    def setEndArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = this.set("endArrowheadWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndArrowheadWidth: Self = this.set("endArrowheadWidth", js.undefined)
+    def setEndArrowheadWidthUndefined: Self = StObject.set(x, "endArrowheadWidth", js.undefined)
   }
 }

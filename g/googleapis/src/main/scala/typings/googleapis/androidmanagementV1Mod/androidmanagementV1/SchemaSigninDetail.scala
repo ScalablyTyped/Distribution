@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A resource containing sign in details for an enterprise.
   */
 @js.native
-trait SchemaSigninDetail extends js.Object {
+trait SchemaSigninDetail extends StObject {
   
   /**
     * A JSON string whose UTF-8 representation can be used to generate a QR
@@ -44,36 +45,24 @@ object SchemaSigninDetail {
   }
   
   @scala.inline
-  implicit class SchemaSigninDetailOps[Self <: SchemaSigninDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaSigninDetailMutableBuilder[Self <: SchemaSigninDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSigninEnrollmentToken(value: String): Self = StObject.set(x, "signinEnrollmentToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQrCode(value: String): Self = this.set("qrCode", value.asInstanceOf[js.Any])
+    def setSigninEnrollmentTokenUndefined: Self = StObject.set(x, "signinEnrollmentToken", js.undefined)
     
     @scala.inline
-    def deleteQrCode: Self = this.set("qrCode", js.undefined)
+    def setSigninUrl(value: String): Self = StObject.set(x, "signinUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigninEnrollmentToken(value: String): Self = this.set("signinEnrollmentToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigninEnrollmentToken: Self = this.set("signinEnrollmentToken", js.undefined)
-    
-    @scala.inline
-    def setSigninUrl(value: String): Self = this.set("signinUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigninUrl: Self = this.set("signinUrl", js.undefined)
+    def setSigninUrlUndefined: Self = StObject.set(x, "signinUrl", js.undefined)
   }
 }

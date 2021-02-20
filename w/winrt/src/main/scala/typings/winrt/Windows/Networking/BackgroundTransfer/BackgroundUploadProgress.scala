@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.BackgroundTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundUploadProgress extends js.Object {
+trait BackgroundUploadProgress extends StObject {
   
   var bytesReceived: Double = js.native
   
@@ -38,39 +39,27 @@ object BackgroundUploadProgress {
   }
   
   @scala.inline
-  implicit class BackgroundUploadProgressOps[Self <: BackgroundUploadProgress] (val x: Self) extends AnyVal {
+  implicit class BackgroundUploadProgressMutableBuilder[Self <: BackgroundUploadProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasResponseChanged(value: Boolean): Self = StObject.set(x, "hasResponseChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesReceived(value: Double): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
+    def setHasRestarted(value: Boolean): Self = StObject.set(x, "hasRestarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    def setStatus(value: BackgroundTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasResponseChanged(value: Boolean): Self = this.set("hasResponseChanged", value.asInstanceOf[js.Any])
+    def setTotalBytesToReceive(value: Double): Self = StObject.set(x, "totalBytesToReceive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasRestarted(value: Boolean): Self = this.set("hasRestarted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: BackgroundTransferStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesToReceive(value: Double): Self = this.set("totalBytesToReceive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesToSend(value: Double): Self = this.set("totalBytesToSend", value.asInstanceOf[js.Any])
+    def setTotalBytesToSend(value: Double): Self = StObject.set(x, "totalBytesToSend", value.asInstanceOf[js.Any])
   }
 }

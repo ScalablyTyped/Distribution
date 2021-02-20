@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,54 +55,42 @@ object ClaimCareTeam {
   }
   
   @scala.inline
-  implicit class ClaimCareTeamOps[Self <: ClaimCareTeam] (val x: Self) extends AnyVal {
+  implicit class ClaimCareTeamMutableBuilder[Self <: ClaimCareTeam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQualification(value: CodeableConcept): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQualificationUndefined: Self = StObject.set(x, "qualification", js.undefined)
     
     @scala.inline
-    def setProvider(value: Reference): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setResponsible(value: Boolean): Self = StObject.set(x, "responsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setResponsibleUndefined: Self = StObject.set(x, "responsible", js.undefined)
     
     @scala.inline
-    def set_responsible(value: Element): Self = this.set("_responsible", value.asInstanceOf[js.Any])
+    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_responsible: Self = this.set("_responsible", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def set_responsible(value: Element): Self = StObject.set(x, "_responsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualification(value: CodeableConcept): Self = this.set("qualification", value.asInstanceOf[js.Any])
+    def set_responsibleUndefined: Self = StObject.set(x, "_responsible", js.undefined)
     
     @scala.inline
-    def deleteQualification: Self = this.set("qualification", js.undefined)
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsible(value: Boolean): Self = this.set("responsible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsible: Self = this.set("responsible", js.undefined)
-    
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

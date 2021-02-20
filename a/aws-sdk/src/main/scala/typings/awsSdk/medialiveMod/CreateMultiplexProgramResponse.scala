@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMultiplexProgramResponse extends js.Object {
+trait CreateMultiplexProgramResponse extends StObject {
   
   /**
     * The newly created multiplex program.
@@ -21,24 +22,12 @@ object CreateMultiplexProgramResponse {
   }
   
   @scala.inline
-  implicit class CreateMultiplexProgramResponseOps[Self <: CreateMultiplexProgramResponse] (val x: Self) extends AnyVal {
+  implicit class CreateMultiplexProgramResponseMutableBuilder[Self <: CreateMultiplexProgramResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiplexProgram(value: MultiplexProgram): Self = StObject.set(x, "MultiplexProgram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMultiplexProgram(value: MultiplexProgram): Self = this.set("MultiplexProgram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiplexProgram: Self = this.set("MultiplexProgram", js.undefined)
+    def setMultiplexProgramUndefined: Self = StObject.set(x, "MultiplexProgram", js.undefined)
   }
 }

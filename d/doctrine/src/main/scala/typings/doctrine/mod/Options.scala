@@ -1,11 +1,12 @@
 package typings.doctrine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Set to `true` to add `lineNumber` to each node, specifying the line on
@@ -59,63 +60,51 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbers(value: Boolean): Self = this.set("lineNumbers", value.asInstanceOf[js.Any])
+    def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
     
     @scala.inline
-    def deleteLineNumbers: Self = this.set("lineNumbers", js.undefined)
+    def setRecoverable(value: Boolean): Self = StObject.set(x, "recoverable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveWhitespace(value: Boolean): Self = this.set("preserveWhitespace", value.asInstanceOf[js.Any])
+    def setRecoverableUndefined: Self = StObject.set(x, "recoverable", js.undefined)
     
     @scala.inline
-    def deletePreserveWhitespace: Self = this.set("preserveWhitespace", js.undefined)
+    def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecoverable(value: Boolean): Self = this.set("recoverable", value.asInstanceOf[js.Any])
+    def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
     
     @scala.inline
-    def deleteRecoverable: Self = this.set("recoverable", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSloppy(value: Boolean): Self = this.set("sloppy", value.asInstanceOf[js.Any])
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deleteSloppy: Self = this.set("sloppy", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUnwrap(value: Boolean): Self = this.set("unwrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnwrap: Self = this.set("unwrap", js.undefined)
+    def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
   }
 }

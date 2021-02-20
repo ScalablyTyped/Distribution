@@ -1,31 +1,35 @@
 package typings.winrt.global.Windows.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Geolocation")
-@js.native
-object Geolocation extends js.Object {
+object Geolocation {
   
+  @JSGlobal("Windows.Devices.Geolocation.CivicAddress")
   @js.native
   class CivicAddress ()
     extends typings.winrt.Windows.Devices.Geolocation.CivicAddress
   
+  @JSGlobal("Windows.Devices.Geolocation.Geocoordinate")
   @js.native
   class Geocoordinate ()
     extends typings.winrt.Windows.Devices.Geolocation.Geocoordinate
   
+  @JSGlobal("Windows.Devices.Geolocation.Geolocator")
   @js.native
   class Geolocator ()
     extends typings.winrt.Windows.Devices.Geolocation.Geolocator
   
+  @JSGlobal("Windows.Devices.Geolocation.Geoposition")
   @js.native
   class Geoposition ()
     extends typings.winrt.Windows.Devices.Geolocation.Geoposition
   
+  @JSGlobal("Windows.Devices.Geolocation.PositionAccuracy")
   @js.native
-  object PositionAccuracy extends js.Object {
+  object PositionAccuracy extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Devices.Geolocation.PositionAccuracy with Double] = js.native
@@ -35,12 +39,14 @@ object Geolocation extends js.Object {
     /* 1 */ val high: typings.winrt.Windows.Devices.Geolocation.PositionAccuracy.high with Double = js.native
   }
   
+  @JSGlobal("Windows.Devices.Geolocation.PositionChangedEventArgs")
   @js.native
   class PositionChangedEventArgs ()
     extends typings.winrt.Windows.Devices.Geolocation.PositionChangedEventArgs
   
+  @JSGlobal("Windows.Devices.Geolocation.PositionStatus")
   @js.native
-  object PositionStatus extends js.Object {
+  object PositionStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Devices.Geolocation.PositionStatus with Double] = js.native
@@ -58,6 +64,7 @@ object Geolocation extends js.Object {
     /* 0 */ val ready: typings.winrt.Windows.Devices.Geolocation.PositionStatus.ready with Double = js.native
   }
   
+  @JSGlobal("Windows.Devices.Geolocation.StatusChangedEventArgs")
   @js.native
   class StatusChangedEventArgs ()
     extends typings.winrt.Windows.Devices.Geolocation.StatusChangedEventArgs

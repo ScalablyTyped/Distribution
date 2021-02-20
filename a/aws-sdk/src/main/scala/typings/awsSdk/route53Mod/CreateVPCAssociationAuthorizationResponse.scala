@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVPCAssociationAuthorizationResponse extends js.Object {
+trait CreateVPCAssociationAuthorizationResponse extends StObject {
   
   /**
     * The ID of the hosted zone that you authorized associating a VPC with.
@@ -26,24 +27,12 @@ object CreateVPCAssociationAuthorizationResponse {
   }
   
   @scala.inline
-  implicit class CreateVPCAssociationAuthorizationResponseOps[Self <: CreateVPCAssociationAuthorizationResponse] (val x: Self) extends AnyVal {
+  implicit class CreateVPCAssociationAuthorizationResponseMutableBuilder[Self <: CreateVPCAssociationAuthorizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVPC(value: VPC): Self = this.set("VPC", value.asInstanceOf[js.Any])
+    def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
   }
 }

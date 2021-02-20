@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Measure extends js.Object {
+trait Measure extends StObject {
   
   /**
     * Returns the aggregator type that identifies how a measure was derived. It is a value from the $.ig.AggregatorType enumeration.
@@ -127,42 +128,30 @@ object Measure {
   }
   
   @scala.inline
-  implicit class MeasureOps[Self <: Measure] (val x: Self) extends AnyVal {
+  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregatorType(value: js.Object => Double): Self = StObject.set(x, "aggregatorType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultFormatString(value: js.Object => String): Self = StObject.set(x, "defaultFormatString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAggregatorType(value: js.Object => Double): Self = this.set("aggregatorType", js.Any.fromFunction1(value))
+    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaption(value: js.Object => String): Self = this.set("caption", js.Any.fromFunction1(value))
+    def setMeasureDisplayFolder(value: js.Object => String): Self = StObject.set(x, "measureDisplayFolder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultFormatString(value: js.Object => String): Self = this.set("defaultFormatString", js.Any.fromFunction1(value))
+    def setMeasureGroupName(value: js.Object => String): Self = StObject.set(x, "measureGroupName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDescription(value: js.Object => String): Self = this.set("description", js.Any.fromFunction1(value))
+    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMeasureDisplayFolder(value: js.Object => String): Self = this.set("measureDisplayFolder", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMeasureGroupName(value: js.Object => String): Self = this.set("measureGroupName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: js.Object => String): Self = this.set("name", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = this.set("uniqueName", js.Any.fromFunction1(value))
+    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

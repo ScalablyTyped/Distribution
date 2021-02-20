@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.lang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.resource.XLocale} interface to set the locale.
   */
 @js.native
-trait Locale extends js.Object {
+trait Locale extends StObject {
   
   /**
     * specifies an **ISO 3166 Country Code** .
@@ -69,27 +70,15 @@ object Locale {
   }
   
   @scala.inline
-  implicit class LocaleOps[Self <: Locale] (val x: Self) extends AnyVal {
+  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountry(value: String): Self = this.set("Country", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariant(value: String): Self = this.set("Variant", value.asInstanceOf[js.Any])
+    def setVariant(value: String): Self = StObject.set(x, "Variant", value.asInstanceOf[js.Any])
   }
 }

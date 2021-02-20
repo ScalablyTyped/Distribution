@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetResourceConfigResponse extends js.Object {
+trait BatchGetResourceConfigResponse extends StObject {
   
   /**
     * A list that contains the current configuration of one or more resources.
@@ -26,36 +27,24 @@ object BatchGetResourceConfigResponse {
   }
   
   @scala.inline
-  implicit class BatchGetResourceConfigResponseOps[Self <: BatchGetResourceConfigResponse] (val x: Self) extends AnyVal {
+  implicit class BatchGetResourceConfigResponseMutableBuilder[Self <: BatchGetResourceConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseConfigurationItems(value: BaseConfigurationItems): Self = StObject.set(x, "baseConfigurationItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseConfigurationItemsUndefined: Self = StObject.set(x, "baseConfigurationItems", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "baseConfigurationItems", js.Array(value :_*))
     
     @scala.inline
-    def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = this.set("baseConfigurationItems", js.Array(value :_*))
+    def setUnprocessedResourceKeys(value: ResourceKeys): Self = StObject.set(x, "unprocessedResourceKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseConfigurationItems(value: BaseConfigurationItems): Self = this.set("baseConfigurationItems", value.asInstanceOf[js.Any])
+    def setUnprocessedResourceKeysUndefined: Self = StObject.set(x, "unprocessedResourceKeys", js.undefined)
     
     @scala.inline
-    def deleteBaseConfigurationItems: Self = this.set("baseConfigurationItems", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedResourceKeysVarargs(value: ResourceKey*): Self = this.set("unprocessedResourceKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedResourceKeys(value: ResourceKeys): Self = this.set("unprocessedResourceKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedResourceKeys: Self = this.set("unprocessedResourceKeys", js.undefined)
+    def setUnprocessedResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "unprocessedResourceKeys", js.Array(value :_*))
   }
 }

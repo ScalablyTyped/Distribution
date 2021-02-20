@@ -1,6 +1,7 @@
 package typings.mockAwsS3.mod
 
 import typings.awsSdk.cloudfrontMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,9 @@ class CloudFront ()
   extends typings.awsSdk.mod.CloudFront {
   def this(options: ClientConfiguration) = this()
 }
-@JSImport("mock-aws-s3", "CloudFront")
-@js.native
-object CloudFront extends js.Object {
+object CloudFront {
   
+  @JSImport("mock-aws-s3", "CloudFront.Signer")
   @js.native
   class Signer protected ()
     extends typings.awsSdk.mod.CloudFront.Signer {

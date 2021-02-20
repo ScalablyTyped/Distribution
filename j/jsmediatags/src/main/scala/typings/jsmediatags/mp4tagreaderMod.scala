@@ -3,13 +3,27 @@ package typings.jsmediatags
 import typings.jsmediatags.typesMod.ByteRange
 import typings.jsmediatags.typesMod.LoadCallbackType
 import typings.jsmediatags.typesMod.TagFrame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/MP4TagReader", JSImport.Namespace)
-@js.native
-object mp4tagreaderMod extends js.Object {
+object mp4tagreaderMod {
+  
+  @JSImport("jsmediatags/build2/MP4TagReader", JSImport.Default)
+  @js.native
+  class default () extends MP4TagReader
+  /* static members */
+  object default {
+    
+    @JSImport("jsmediatags/build2/MP4TagReader", "default.canReadTagFormat")
+    @js.native
+    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
+    
+    @JSImport("jsmediatags/build2/MP4TagReader", "default.getTagIdentifierByteRange")
+    @js.native
+    def getTagIdentifierByteRange(): ByteRange = js.native
+  }
   
   @js.native
   trait MP4TagReader
@@ -88,16 +102,5 @@ object mp4tagreaderMod extends js.Object {
     ): Unit = js.native
     
     def _readMetadataAtom(data: typings.jsmediatags.mediaFileReaderMod.default, offset: Double): TagFrame = js.native
-  }
-  
-  @js.native
-  class default () extends MP4TagReader
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
-    
-    def getTagIdentifierByteRange(): ByteRange = js.native
   }
 }

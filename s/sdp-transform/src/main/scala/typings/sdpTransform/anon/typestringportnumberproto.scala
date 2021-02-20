@@ -4,13 +4,14 @@ import typings.sdpTransform.sdpTransformStrings.inactive
 import typings.sdpTransform.sdpTransformStrings.recvonly
 import typings.sdpTransform.sdpTransformStrings.sendonly
 import typings.sdpTransform.sdpTransformStrings.sendrecv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  type :string,   port :number,   protocol :string,   payloads :string | undefined} & sdp-transform.sdp-transform.MediaDescription */
 @js.native
-trait typestringportnumberproto extends js.Object {
+trait typestringportnumberproto extends StObject {
   
   // b=AS:4000
   var bandwidth: js.UndefOr[js.Array[Limit]] = js.native
@@ -132,279 +133,267 @@ object typestringportnumberproto {
   }
   
   @scala.inline
-  implicit class typestringportnumberprotoOps[Self <: typestringportnumberproto] (val x: Self) extends AnyVal {
+  implicit class typestringportnumberprotoMutableBuilder[Self <: typestringportnumberproto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidth(value: js.Array[Limit]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidthVarargs(value: Limit*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
     
     @scala.inline
-    def setFmtpVarargs(value: Config*): Self = this.set("fmtp", js.Array(value :_*))
+    def setCandidates(value: js.Array[Foundation]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFmtp(value: js.Array[Config]): Self = this.set("fmtp", value.asInstanceOf[js.Any])
+    def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setCandidatesVarargs(value: Foundation*): Self = StObject.set(x, "candidates", js.Array(value :_*))
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setConnection(value: Ip): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtpVarargs(value: Codec*): Self = this.set("rtp", js.Array(value :_*))
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def setRtp(value: js.Array[Codec]): Self = this.set("rtp", value.asInstanceOf[js.Any])
+    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def setBandwidthVarargs(value: Limit*): Self = this.set("bandwidth", js.Array(value :_*))
+    def setCrypto(value: Id): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: js.Array[Limit]): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidatesVarargs(value: Foundation*): Self = this.set("candidates", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCandidates(value: js.Array[Foundation]): Self = this.set("candidates", value.asInstanceOf[js.Any])
+    def setDirection(value: sendrecv | recvonly | sendonly | inactive): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCandidates: Self = this.set("candidates", js.undefined)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setConnection(value: Ip): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setEndOfCandidates(value: String): Self = StObject.set(x, "endOfCandidates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setEndOfCandidatesUndefined: Self = StObject.set(x, "endOfCandidates", js.undefined)
     
     @scala.inline
-    def setControl(value: String): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setExt(value: js.Array[Uri]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
     @scala.inline
-    def setCrypto(value: Id): Self = this.set("crypto", value.asInstanceOf[js.Any])
+    def setExtVarargs(value: Uri*): Self = StObject.set(x, "ext", js.Array(value :_*))
     
     @scala.inline
-    def deleteCrypto: Self = this.set("crypto", js.undefined)
+    def setFingerprint(value: Hash): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFmtp(value: js.Array[Config]): Self = StObject.set(x, "fmtp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: sendrecv | recvonly | sendonly | inactive): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFmtpVarargs(value: Config*): Self = StObject.set(x, "fmtp", js.Array(value :_*))
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setFramerate(value: Double | String): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfCandidates(value: String): Self = this.set("endOfCandidates", value.asInstanceOf[js.Any])
+    def setFramerateUndefined: Self = StObject.set(x, "framerate", js.undefined)
     
     @scala.inline
-    def deleteEndOfCandidates: Self = this.set("endOfCandidates", js.undefined)
+    def setIcePwd(value: String): Self = StObject.set(x, "icePwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtVarargs(value: Uri*): Self = this.set("ext", js.Array(value :_*))
+    def setIcePwdUndefined: Self = StObject.set(x, "icePwd", js.undefined)
     
     @scala.inline
-    def setExt(value: js.Array[Uri]): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setIceUfrag(value: String): Self = StObject.set(x, "iceUfrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExt: Self = this.set("ext", js.undefined)
+    def setIceUfragUndefined: Self = StObject.set(x, "iceUfrag", js.undefined)
     
     @scala.inline
-    def setFingerprint(value: Hash): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setImageattrs(value: js.Array[Attrs1]): Self = StObject.set(x, "imageattrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setImageattrsUndefined: Self = StObject.set(x, "imageattrs", js.undefined)
     
     @scala.inline
-    def setFramerate(value: Double | String): Self = this.set("framerate", value.asInstanceOf[js.Any])
+    def setImageattrsVarargs(value: Attrs1*): Self = StObject.set(x, "imageattrs", js.Array(value :_*))
     
     @scala.inline
-    def deleteFramerate: Self = this.set("framerate", js.undefined)
+    def setInvalid(value: js.Array[ValueString]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcePwd(value: String): Self = this.set("icePwd", value.asInstanceOf[js.Any])
+    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     @scala.inline
-    def deleteIcePwd: Self = this.set("icePwd", js.undefined)
+    def setInvalidVarargs(value: ValueString*): Self = StObject.set(x, "invalid", js.Array(value :_*))
     
     @scala.inline
-    def setIceUfrag(value: String): Self = this.set("iceUfrag", value.asInstanceOf[js.Any])
+    def setMaxptime(value: Double): Self = StObject.set(x, "maxptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIceUfrag: Self = this.set("iceUfrag", js.undefined)
+    def setMaxptimeUndefined: Self = StObject.set(x, "maxptime", js.undefined)
     
     @scala.inline
-    def setImageattrsVarargs(value: Attrs1*): Self = this.set("imageattrs", js.Array(value :_*))
+    def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageattrs(value: js.Array[Attrs1]): Self = this.set("imageattrs", value.asInstanceOf[js.Any])
+    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
     @scala.inline
-    def deleteImageattrs: Self = this.set("imageattrs", js.undefined)
+    def setMsid(value: String): Self = StObject.set(x, "msid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidVarargs(value: ValueString*): Self = this.set("invalid", js.Array(value :_*))
+    def setMsidUndefined: Self = StObject.set(x, "msid", js.undefined)
     
     @scala.inline
-    def setInvalid(value: js.Array[ValueString]): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    def setPayloads(value: String): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvalid: Self = this.set("invalid", js.undefined)
+    def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
     @scala.inline
-    def setMaxptime(value: Double): Self = this.set("maxptime", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxptime: Self = this.set("maxptime", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    def setPtime(value: Double): Self = StObject.set(x, "ptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMid: Self = this.set("mid", js.undefined)
+    def setPtimeUndefined: Self = StObject.set(x, "ptime", js.undefined)
     
     @scala.inline
-    def setMsid(value: String): Self = this.set("msid", value.asInstanceOf[js.Any])
+    def setRemoteCandidates(value: String): Self = StObject.set(x, "remoteCandidates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsid: Self = this.set("msid", js.undefined)
+    def setRemoteCandidatesUndefined: Self = StObject.set(x, "remoteCandidates", js.undefined)
     
     @scala.inline
-    def setPayloads(value: String): Self = this.set("payloads", value.asInstanceOf[js.Any])
+    def setRids(value: js.Array[Direction]): Self = StObject.set(x, "rids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayloads: Self = this.set("payloads", js.undefined)
+    def setRidsUndefined: Self = StObject.set(x, "rids", js.undefined)
     
     @scala.inline
-    def setPtime(value: Double): Self = this.set("ptime", value.asInstanceOf[js.Any])
+    def setRidsVarargs(value: Direction*): Self = StObject.set(x, "rids", js.Array(value :_*))
     
     @scala.inline
-    def deletePtime: Self = this.set("ptime", js.undefined)
+    def setRtcp(value: IpVer): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteCandidates(value: String): Self = this.set("remoteCandidates", value.asInstanceOf[js.Any])
+    def setRtcpFb(value: js.Array[Payload]): Self = StObject.set(x, "rtcpFb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoteCandidates: Self = this.set("remoteCandidates", js.undefined)
+    def setRtcpFbTrrInt(value: js.Array[Value]): Self = StObject.set(x, "rtcpFbTrrInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRidsVarargs(value: Direction*): Self = this.set("rids", js.Array(value :_*))
+    def setRtcpFbTrrIntUndefined: Self = StObject.set(x, "rtcpFbTrrInt", js.undefined)
     
     @scala.inline
-    def setRids(value: js.Array[Direction]): Self = this.set("rids", value.asInstanceOf[js.Any])
+    def setRtcpFbTrrIntVarargs(value: Value*): Self = StObject.set(x, "rtcpFbTrrInt", js.Array(value :_*))
     
     @scala.inline
-    def deleteRids: Self = this.set("rids", js.undefined)
+    def setRtcpFbUndefined: Self = StObject.set(x, "rtcpFb", js.undefined)
     
     @scala.inline
-    def setRtcp(value: IpVer): Self = this.set("rtcp", value.asInstanceOf[js.Any])
+    def setRtcpFbVarargs(value: Payload*): Self = StObject.set(x, "rtcpFb", js.Array(value :_*))
     
     @scala.inline
-    def deleteRtcp: Self = this.set("rtcp", js.undefined)
+    def setRtcpMux(value: String): Self = StObject.set(x, "rtcpMux", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtcpFbVarargs(value: Payload*): Self = this.set("rtcpFb", js.Array(value :_*))
+    def setRtcpMuxUndefined: Self = StObject.set(x, "rtcpMux", js.undefined)
     
     @scala.inline
-    def setRtcpFb(value: js.Array[Payload]): Self = this.set("rtcpFb", value.asInstanceOf[js.Any])
+    def setRtcpRsize(value: String): Self = StObject.set(x, "rtcpRsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtcpFb: Self = this.set("rtcpFb", js.undefined)
+    def setRtcpRsizeUndefined: Self = StObject.set(x, "rtcpRsize", js.undefined)
     
     @scala.inline
-    def setRtcpFbTrrIntVarargs(value: Value*): Self = this.set("rtcpFbTrrInt", js.Array(value :_*))
+    def setRtcpUndefined: Self = StObject.set(x, "rtcp", js.undefined)
     
     @scala.inline
-    def setRtcpFbTrrInt(value: js.Array[Value]): Self = this.set("rtcpFbTrrInt", value.asInstanceOf[js.Any])
+    def setRtp(value: js.Array[Codec]): Self = StObject.set(x, "rtp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtcpFbTrrInt: Self = this.set("rtcpFbTrrInt", js.undefined)
+    def setRtpVarargs(value: Codec*): Self = StObject.set(x, "rtp", js.Array(value :_*))
     
     @scala.inline
-    def setRtcpMux(value: String): Self = this.set("rtcpMux", value.asInstanceOf[js.Any])
+    def setSctpmap(value: App): Self = StObject.set(x, "sctpmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtcpMux: Self = this.set("rtcpMux", js.undefined)
+    def setSctpmapUndefined: Self = StObject.set(x, "sctpmap", js.undefined)
     
     @scala.inline
-    def setRtcpRsize(value: String): Self = this.set("rtcpRsize", value.asInstanceOf[js.Any])
+    def setSetup(value: String): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtcpRsize: Self = this.set("rtcpRsize", js.undefined)
+    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
     @scala.inline
-    def setSctpmap(value: App): Self = this.set("sctpmap", value.asInstanceOf[js.Any])
+    def setSimulcast(value: Dir1): Self = StObject.set(x, "simulcast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSctpmap: Self = this.set("sctpmap", js.undefined)
+    def setSimulcastUndefined: Self = StObject.set(x, "simulcast", js.undefined)
     
     @scala.inline
-    def setSetup(value: String): Self = this.set("setup", value.asInstanceOf[js.Any])
+    def setSimulcast_03(value: ValueString): Self = StObject.set(x, "simulcast_03", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetup: Self = this.set("setup", js.undefined)
+    def setSimulcast_03Undefined: Self = StObject.set(x, "simulcast_03", js.undefined)
     
     @scala.inline
-    def setSimulcast(value: Dir1): Self = this.set("simulcast", value.asInstanceOf[js.Any])
+    def setSourceFilter(value: AddressTypes): Self = StObject.set(x, "sourceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSimulcast: Self = this.set("simulcast", js.undefined)
+    def setSourceFilterUndefined: Self = StObject.set(x, "sourceFilter", js.undefined)
     
     @scala.inline
-    def setSimulcast_03(value: ValueString): Self = this.set("simulcast_03", value.asInstanceOf[js.Any])
+    def setSsrcGroups(value: js.Array[Semantics]): Self = StObject.set(x, "ssrcGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSimulcast_03: Self = this.set("simulcast_03", js.undefined)
+    def setSsrcGroupsUndefined: Self = StObject.set(x, "ssrcGroups", js.undefined)
     
     @scala.inline
-    def setSourceFilter(value: AddressTypes): Self = this.set("sourceFilter", value.asInstanceOf[js.Any])
+    def setSsrcGroupsVarargs(value: Semantics*): Self = StObject.set(x, "ssrcGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteSourceFilter: Self = this.set("sourceFilter", js.undefined)
+    def setSsrcs(value: js.Array[Attribute]): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsrcGroupsVarargs(value: Semantics*): Self = this.set("ssrcGroups", js.Array(value :_*))
+    def setSsrcsUndefined: Self = StObject.set(x, "ssrcs", js.undefined)
     
     @scala.inline
-    def setSsrcGroups(value: js.Array[Semantics]): Self = this.set("ssrcGroups", value.asInstanceOf[js.Any])
+    def setSsrcsVarargs(value: Attribute*): Self = StObject.set(x, "ssrcs", js.Array(value :_*))
     
     @scala.inline
-    def deleteSsrcGroups: Self = this.set("ssrcGroups", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsrcsVarargs(value: Attribute*): Self = this.set("ssrcs", js.Array(value :_*))
+    def setXGoogleFlag(value: String): Self = StObject.set(x, "xGoogleFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsrcs(value: js.Array[Attribute]): Self = this.set("ssrcs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrcs: Self = this.set("ssrcs", js.undefined)
-    
-    @scala.inline
-    def setXGoogleFlag(value: String): Self = this.set("xGoogleFlag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXGoogleFlag: Self = this.set("xGoogleFlag", js.undefined)
+    def setXGoogleFlagUndefined: Self = StObject.set(x, "xGoogleFlag", js.undefined)
   }
 }

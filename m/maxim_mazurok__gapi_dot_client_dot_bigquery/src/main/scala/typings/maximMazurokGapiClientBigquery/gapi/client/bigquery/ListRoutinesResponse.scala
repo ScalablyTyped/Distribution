@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRoutinesResponse extends js.Object {
+trait ListRoutinesResponse extends StObject {
   
   /** A token to request the next page of results. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -25,33 +26,21 @@ object ListRoutinesResponse {
   }
   
   @scala.inline
-  implicit class ListRoutinesResponseOps[Self <: ListRoutinesResponse] (val x: Self) extends AnyVal {
+  implicit class ListRoutinesResponseMutableBuilder[Self <: ListRoutinesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoutines(value: js.Array[Routine]): Self = StObject.set(x, "routines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setRoutinesUndefined: Self = StObject.set(x, "routines", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setRoutinesVarargs(value: Routine*): Self = this.set("routines", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutines(value: js.Array[Routine]): Self = this.set("routines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutines: Self = this.set("routines", js.undefined)
+    def setRoutinesVarargs(value: Routine*): Self = StObject.set(x, "routines", js.Array(value :_*))
   }
 }

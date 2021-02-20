@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StructuredFormatting extends js.Object {
+trait StructuredFormatting extends StObject {
   
   /** contains the main text of a prediction, usually the name of the place. */
   var main_text: String = js.native
@@ -32,30 +33,18 @@ object StructuredFormatting {
   }
   
   @scala.inline
-  implicit class StructuredFormattingOps[Self <: StructuredFormatting] (val x: Self) extends AnyVal {
+  implicit class StructuredFormattingMutableBuilder[Self <: StructuredFormatting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMain_text(value: String): Self = StObject.set(x, "main_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMain_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "main_text_matched_substrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMain_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "main_text_matched_substrings", js.Array(value :_*))
     
     @scala.inline
-    def setMain_text(value: String): Self = this.set("main_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMain_text_matched_substringsVarargs(value: PredictionSubstring*): Self = this.set("main_text_matched_substrings", js.Array(value :_*))
-    
-    @scala.inline
-    def setMain_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = this.set("main_text_matched_substrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondary_text(value: String): Self = this.set("secondary_text", value.asInstanceOf[js.Any])
+    def setSecondary_text(value: String): Self = StObject.set(x, "secondary_text", value.asInstanceOf[js.Any])
   }
 }

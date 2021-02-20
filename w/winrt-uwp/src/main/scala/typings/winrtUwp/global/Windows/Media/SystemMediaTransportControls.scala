@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class SystemMediaTransportControls ()
   extends typings.winrtUwp.Windows.Media.SystemMediaTransportControls
-/* static members */
-@JSGlobal("Windows.Media.SystemMediaTransportControls")
-@js.native
-object SystemMediaTransportControls extends js.Object {
+object SystemMediaTransportControls {
   
   /**
     * The system transport controls for the current view.
     * @return The system transport controls for the current view.
     */
+  /* static member */
+  @JSGlobal("Windows.Media.SystemMediaTransportControls.getForCurrentView")
+  @js.native
   def getForCurrentView(): typings.winrtUwp.Windows.Media.SystemMediaTransportControls = js.native
 }

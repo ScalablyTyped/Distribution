@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueChange extends js.Object {
+trait ValueChange extends StObject {
   
   val AllocationMethod: XlAllocationMethod = js.native
   
@@ -58,57 +59,45 @@ object ValueChange {
   }
   
   @scala.inline
-  implicit class ValueChangeOps[Self <: ValueChange] (val x: Self) extends AnyVal {
+  implicit class ValueChangeMutableBuilder[Self <: ValueChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationMethod(value: XlAllocationMethod): Self = StObject.set(x, "AllocationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationValue(value: XlAllocationValue): Self = StObject.set(x, "AllocationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllocationWeightExpression(value: String): Self = StObject.set(x, "AllocationWeightExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationMethod(value: XlAllocationMethod): Self = this.set("AllocationMethod", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationValue(value: XlAllocationValue): Self = this.set("AllocationValue", value.asInstanceOf[js.Any])
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationWeightExpression(value: String): Self = this.set("AllocationWeightExpression", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotValueChange_typekey(value: ValueChange): Self = StObject.set(x, "Excel.ValueChange_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotValueChange_typekey(value: ValueChange): Self = this.set("Excel.ValueChange_typekey", value.asInstanceOf[js.Any])
+    def setPivotCell(value: PivotCell): Self = StObject.set(x, "PivotCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("Order", value.asInstanceOf[js.Any])
+    def setTuple(value: String): Self = StObject.set(x, "Tuple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotCell(value: PivotCell): Self = this.set("PivotCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTuple(value: String): Self = this.set("Tuple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleInPivotTable(value: Boolean): Self = this.set("VisibleInPivotTable", value.asInstanceOf[js.Any])
+    def setVisibleInPivotTable(value: Boolean): Self = StObject.set(x, "VisibleInPivotTable", value.asInstanceOf[js.Any])
   }
 }

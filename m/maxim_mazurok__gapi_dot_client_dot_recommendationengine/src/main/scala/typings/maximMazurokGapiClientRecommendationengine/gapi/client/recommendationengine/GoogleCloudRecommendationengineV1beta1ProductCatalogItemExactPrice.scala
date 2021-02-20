@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends StObject {
   
   /** Optional. Display price of the product. */
   var displayPrice: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPriceOps[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPriceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayPrice(value: Double): Self = StObject.set(x, "displayPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayPriceUndefined: Self = StObject.set(x, "displayPrice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalPrice(value: Double): Self = StObject.set(x, "originalPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayPrice(value: Double): Self = this.set("displayPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayPrice: Self = this.set("displayPrice", js.undefined)
-    
-    @scala.inline
-    def setOriginalPrice(value: Double): Self = this.set("originalPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalPrice: Self = this.set("originalPrice", js.undefined)
+    def setOriginalPriceUndefined: Self = StObject.set(x, "originalPrice", js.undefined)
   }
 }

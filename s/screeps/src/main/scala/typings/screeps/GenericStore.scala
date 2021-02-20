@@ -1,12 +1,13 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined screeps.GenericStoreBase & {[ P in screeps.ResourceConstant ]: number} */
 @js.native
-trait GenericStore extends js.Object {
+trait GenericStore extends StObject {
   
   var G: Double = js.native
   

@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBitVector extends js.Object {
+trait IBitVector extends StObject {
   
   def release(): Unit = js.native
   
@@ -22,27 +23,15 @@ object IBitVector {
   }
   
   @scala.inline
-  implicit class IBitVectorOps[Self <: IBitVector] (val x: Self) extends AnyVal {
+  implicit class IBitVectorMutableBuilder[Self <: IBitVector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetValueAt(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setValueAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelease(value: () => Unit): Self = this.set("release", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetValueAt(value: (Double, Boolean) => Unit): Self = this.set("setValueAt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValueAt(value: Double => Boolean): Self = this.set("valueAt", js.Any.fromFunction1(value))
+    def setValueAt(value: Double => Boolean): Self = StObject.set(x, "valueAt", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexDao.DAO
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplexType extends js.Object {
+trait ComplexType extends StObject {
   
   @JSName("DAO.ComplexType_typekey")
   var DAODotComplexType_typekey: ComplexType = js.native

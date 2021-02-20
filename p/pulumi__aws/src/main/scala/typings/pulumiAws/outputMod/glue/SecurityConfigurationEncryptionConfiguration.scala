@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityConfigurationEncryptionConfiguration extends js.Object {
+trait SecurityConfigurationEncryptionConfiguration extends StObject {
   
   var cloudwatchEncryption: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption = js.native
   
@@ -29,27 +30,15 @@ object SecurityConfigurationEncryptionConfiguration {
   }
   
   @scala.inline
-  implicit class SecurityConfigurationEncryptionConfigurationOps[Self <: SecurityConfigurationEncryptionConfiguration] (val x: Self) extends AnyVal {
+  implicit class SecurityConfigurationEncryptionConfigurationMutableBuilder[Self <: SecurityConfigurationEncryptionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchEncryption(value: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption): Self = StObject.set(x, "cloudwatchEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobBookmarksEncryption(value: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption): Self = StObject.set(x, "jobBookmarksEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudwatchEncryption(value: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption): Self = this.set("cloudwatchEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobBookmarksEncryption(value: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption): Self = this.set("jobBookmarksEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Encryption(value: SecurityConfigurationEncryptionConfigurationS3Encryption): Self = this.set("s3Encryption", value.asInstanceOf[js.Any])
+    def setS3Encryption(value: SecurityConfigurationEncryptionConfigurationS3Encryption): Self = StObject.set(x, "s3Encryption", value.asInstanceOf[js.Any])
   }
 }

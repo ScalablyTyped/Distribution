@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Object
 import typings.std.PropertyKey
 import typings.storybookAddons.anon.Base
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,35 +31,23 @@ object OptionsParameter {
   }
   
   @scala.inline
-  implicit class OptionsParameterOps[Self <: OptionsParameter] (val x: Self) extends AnyVal {
+  implicit class OptionsParameterMutableBuilder[Self <: OptionsParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorySort(value: StorySortParameter): Self = StObject.set(x, "storySort", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStorySortFunction2(
       value: (js.Tuple4[StoryId, js.Any, Parameters, Parameters], js.Tuple4[StoryId, js.Any, Parameters, Parameters]) => Boolean | Double
-    ): Self = this.set("storySort", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "storySort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStorySort(value: StorySortParameter): Self = this.set("storySort", value.asInstanceOf[js.Any])
+    def setStorySortUndefined: Self = StObject.set(x, "storySort", js.undefined)
     
     @scala.inline
-    def deleteStorySort: Self = this.set("storySort", js.undefined)
+    def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: Base): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

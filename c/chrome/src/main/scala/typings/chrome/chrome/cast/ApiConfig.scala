@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiConfig extends js.Object {
+trait ApiConfig extends StObject {
   
   var autoJoinPolicy: AutoJoinPolicy = js.native
   
@@ -32,33 +33,21 @@ object ApiConfig {
   }
   
   @scala.inline
-  implicit class ApiConfigOps[Self <: ApiConfig] (val x: Self) extends AnyVal {
+  implicit class ApiConfigMutableBuilder[Self <: ApiConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultActionPolicy(value: DefaultActionPolicy): Self = StObject.set(x, "defaultActionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiverListener(value: ReceiverAvailability => Unit): Self = StObject.set(x, "receiverListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoJoinPolicy(value: AutoJoinPolicy): Self = this.set("autoJoinPolicy", value.asInstanceOf[js.Any])
+    def setSessionListener(value: Session => Unit): Self = StObject.set(x, "sessionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultActionPolicy(value: DefaultActionPolicy): Self = this.set("defaultActionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceiverListener(value: ReceiverAvailability => Unit): Self = this.set("receiverListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSessionListener(value: Session => Unit): Self = this.set("sessionListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSessionRequest(value: SessionRequest): Self = this.set("sessionRequest", value.asInstanceOf[js.Any])
+    def setSessionRequest(value: SessionRequest): Self = StObject.set(x, "sessionRequest", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.lovefield.mod
 
 import typings.lovefield.mod.query.Builder
 import typings.lovefield.mod.schema.Table
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
   def attach(query: Builder): js.Promise[js.Array[js.Object]] = js.native
   
@@ -37,36 +38,24 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttach(value: Builder => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBegin(value: js.Array[Table] => js.Promise[Unit]): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttach(value: Builder => js.Promise[js.Array[js.Object]]): Self = this.set("attach", js.Any.fromFunction1(value))
+    def setExec(value: js.Array[Builder] => js.Promise[js.Array[js.Array[js.Object]]]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBegin(value: js.Array[Table] => js.Promise[Unit]): Self = this.set("begin", js.Any.fromFunction1(value))
+    def setRollback(value: () => js.Promise[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCommit(value: () => js.Promise[Unit]): Self = this.set("commit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExec(value: js.Array[Builder] => js.Promise[js.Array[js.Array[js.Object]]]): Self = this.set("exec", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRollback(value: () => js.Promise[Unit]): Self = this.set("rollback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStats(value: () => TransactionStats): Self = this.set("stats", js.Any.fromFunction0(value))
+    def setStats(value: () => TransactionStats): Self = StObject.set(x, "stats", js.Any.fromFunction0(value))
   }
 }

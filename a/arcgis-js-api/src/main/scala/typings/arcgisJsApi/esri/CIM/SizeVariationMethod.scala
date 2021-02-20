@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SizeVariationMethod extends js.Object
+sealed trait SizeVariationMethod extends StObject
 @JSGlobal("__esri.CIM.SizeVariationMethod")
 @js.native
-object SizeVariationMethod extends js.Object {
+object SizeVariationMethod extends StObject {
   
   /**
     * Markers are drawn in a pattern where the markers decrease in size.

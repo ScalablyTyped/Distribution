@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Budget extends js.Object {
+trait Budget extends StObject {
   
   /**
     * The total amount of cost, usage, RI utilization, RI coverage, Savings Plans utilization, or Savings Plans coverage that you want to track with your budget.  BudgetLimit is required for cost or usage budgets, but optional for RI or Savings Plans utilization or coverage budgets. RI and Savings Plans utilization or coverage budgets default to 100, which is the only valid value for RI or Savings Plans utilization or coverage budgets. You can't use BudgetLimit with PlannedBudgetLimits for CreateBudget and UpdateBudget actions. 
@@ -66,69 +67,57 @@ object Budget {
   }
   
   @scala.inline
-  implicit class BudgetOps[Self <: Budget] (val x: Self) extends AnyVal {
+  implicit class BudgetMutableBuilder[Self <: Budget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudgetLimit(value: Spend): Self = StObject.set(x, "BudgetLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetLimitUndefined: Self = StObject.set(x, "BudgetLimit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
+    def setBudgetType(value: BudgetType): Self = StObject.set(x, "BudgetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetType(value: BudgetType): Self = this.set("BudgetType", value.asInstanceOf[js.Any])
+    def setCalculatedSpend(value: CalculatedSpend): Self = StObject.set(x, "CalculatedSpend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeUnit(value: TimeUnit): Self = this.set("TimeUnit", value.asInstanceOf[js.Any])
+    def setCalculatedSpendUndefined: Self = StObject.set(x, "CalculatedSpend", js.undefined)
     
     @scala.inline
-    def setBudgetLimit(value: Spend): Self = this.set("BudgetLimit", value.asInstanceOf[js.Any])
+    def setCostFilters(value: CostFilters): Self = StObject.set(x, "CostFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBudgetLimit: Self = this.set("BudgetLimit", js.undefined)
+    def setCostFiltersUndefined: Self = StObject.set(x, "CostFilters", js.undefined)
     
     @scala.inline
-    def setCalculatedSpend(value: CalculatedSpend): Self = this.set("CalculatedSpend", value.asInstanceOf[js.Any])
+    def setCostTypes(value: CostTypes): Self = StObject.set(x, "CostTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalculatedSpend: Self = this.set("CalculatedSpend", js.undefined)
+    def setCostTypesUndefined: Self = StObject.set(x, "CostTypes", js.undefined)
     
     @scala.inline
-    def setCostFilters(value: CostFilters): Self = this.set("CostFilters", value.asInstanceOf[js.Any])
+    def setLastUpdatedTime(value: GenericTimestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCostFilters: Self = this.set("CostFilters", js.undefined)
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def setCostTypes(value: CostTypes): Self = this.set("CostTypes", value.asInstanceOf[js.Any])
+    def setPlannedBudgetLimits(value: PlannedBudgetLimits): Self = StObject.set(x, "PlannedBudgetLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCostTypes: Self = this.set("CostTypes", js.undefined)
+    def setPlannedBudgetLimitsUndefined: Self = StObject.set(x, "PlannedBudgetLimits", js.undefined)
     
     @scala.inline
-    def setLastUpdatedTime(value: GenericTimestamp): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
     
     @scala.inline
-    def setPlannedBudgetLimits(value: PlannedBudgetLimits): Self = this.set("PlannedBudgetLimits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlannedBudgetLimits: Self = this.set("PlannedBudgetLimits", js.undefined)
-    
-    @scala.inline
-    def setTimePeriod(value: TimePeriod): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimePeriod: Self = this.set("TimePeriod", js.undefined)
+    def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
   }
 }

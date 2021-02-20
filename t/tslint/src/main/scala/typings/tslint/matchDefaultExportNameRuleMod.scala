@@ -1,23 +1,35 @@
 package typings.tslint
 
+import typings.tslint.mod.Rules.TypedRule
+import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
-import typings.tslint.typedRuleMod.TypedRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/matchDefaultExportNameRule", JSImport.Namespace)
-@js.native
-object matchDefaultExportNameRuleMod extends js.Object {
+object matchDefaultExportNameRuleMod {
   
+  @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule")
   @js.native
-  class Rule () extends TypedRule
+  class Rule protected () extends TypedRule {
+    def this(options: IOptions) = this()
+  }
   /* static members */
-  @js.native
-  object Rule extends js.Object {
+  object Rule {
     
+    @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule.FAILURE_STRING")
+    @js.native
     def FAILURE_STRING(importName: String, exportName: String): String = js.native
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

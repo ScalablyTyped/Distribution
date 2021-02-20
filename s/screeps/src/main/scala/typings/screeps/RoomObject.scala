@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are derived from RoomObject.
   */
 @js.native
-trait RoomObject extends js.Object {
+trait RoomObject extends StObject {
   
   /**
     * Applied effects, an array of objects with the following properties:
@@ -37,33 +38,21 @@ object RoomObject {
   }
   
   @scala.inline
-  implicit class RoomObjectOps[Self <: RoomObject] (val x: Self) extends AnyVal {
+  implicit class RoomObjectMutableBuilder[Self <: RoomObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffects(value: js.Array[RoomObjectEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectsVarargs(value: RoomObjectEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectsVarargs(value: RoomObjectEffect*): Self = this.set("effects", js.Array(value :_*))
+    def setRoom(value: Room): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffects(value: js.Array[RoomObjectEffect]): Self = this.set("effects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPos(value: RoomPosition): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoom(value: Room): Self = this.set("room", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoom: Self = this.set("room", js.undefined)
+    def setRoomUndefined: Self = StObject.set(x, "room", js.undefined)
   }
 }

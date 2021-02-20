@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceProfile extends js.Object {
+trait InstanceProfile extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the instance profile.
@@ -46,57 +47,45 @@ object InstanceProfile {
   }
   
   @scala.inline
-  implicit class InstanceProfileOps[Self <: InstanceProfile] (val x: Self) extends AnyVal {
+  implicit class InstanceProfileMutableBuilder[Self <: InstanceProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setExcludeAppPackagesFromCleanup(value: PackageIds): Self = StObject.set(x, "excludeAppPackagesFromCleanup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExcludeAppPackagesFromCleanupUndefined: Self = StObject.set(x, "excludeAppPackagesFromCleanup", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExcludeAppPackagesFromCleanupVarargs(value: String*): Self = StObject.set(x, "excludeAppPackagesFromCleanup", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeAppPackagesFromCleanupVarargs(value: String*): Self = this.set("excludeAppPackagesFromCleanup", js.Array(value :_*))
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeAppPackagesFromCleanup(value: PackageIds): Self = this.set("excludeAppPackagesFromCleanup", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteExcludeAppPackagesFromCleanup: Self = this.set("excludeAppPackagesFromCleanup", js.undefined)
+    def setPackageCleanup(value: Boolean): Self = StObject.set(x, "packageCleanup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPackageCleanupUndefined: Self = StObject.set(x, "packageCleanup", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRebootAfterUse(value: Boolean): Self = StObject.set(x, "rebootAfterUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageCleanup(value: Boolean): Self = this.set("packageCleanup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageCleanup: Self = this.set("packageCleanup", js.undefined)
-    
-    @scala.inline
-    def setRebootAfterUse(value: Boolean): Self = this.set("rebootAfterUse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRebootAfterUse: Self = this.set("rebootAfterUse", js.undefined)
+    def setRebootAfterUseUndefined: Self = StObject.set(x, "rebootAfterUse", js.undefined)
   }
 }

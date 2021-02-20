@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogObject")
 @js.native
-class CatalogObject () extends js.Object {
+class CatalogObject () extends StObject {
   
   /**
     * A list of locations where the object is not present, even if `present_at_all_locations` is `true`.

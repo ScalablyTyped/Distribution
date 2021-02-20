@@ -1,5 +1,6 @@
 package typings.xelib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,4 +22,7 @@ package object mod {
   type RecordHandle = typings.xelib.mod.ElementHandle with js.Object
   
   type Zeroable[H /* <: typings.xelib.mod.Handle */] = H | typings.xelib.xelibNumbers.`0`
+  
+  @scala.inline
+  def wrapper: typings.xelib.mod.XELib = typings.xelib.mod.^.asInstanceOf[js.Dynamic].selectDynamic("wrapper").asInstanceOf[typings.xelib.mod.XELib]
 }

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolTip extends js.Object {
+trait ToolTip extends StObject {
   
   /*The delay (in milliseconds) before the tooltop is cleared after the mouse moves out of the maction element.*/
   var delayClear: Double = js.native
@@ -28,30 +29,18 @@ object ToolTip {
   }
   
   @scala.inline
-  implicit class ToolTipOps[Self <: ToolTip] (val x: Self) extends AnyVal {
+  implicit class ToolTipMutableBuilder[Self <: ToolTip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelayClear(value: Double): Self = StObject.set(x, "delayClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayPost(value: Double): Self = StObject.set(x, "delayPost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayClear(value: Double): Self = this.set("delayClear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelayPost(value: Double): Self = this.set("delayPost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
   }
 }

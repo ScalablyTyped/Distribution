@@ -1,5 +1,6 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.azdata.azdataStrings.error
   - typings.azdata.azdataStrings.update_display_data
 */
-trait OutputTypeName extends js.Object
+trait OutputTypeName extends StObject
 object OutputTypeName {
   
   @scala.inline

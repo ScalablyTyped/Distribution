@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBulkDeploymentsResponse extends js.Object {
+trait ListBulkDeploymentsResponse extends StObject {
   
   /**
     * A list of bulk deployments.
@@ -26,33 +27,21 @@ object ListBulkDeploymentsResponse {
   }
   
   @scala.inline
-  implicit class ListBulkDeploymentsResponseOps[Self <: ListBulkDeploymentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListBulkDeploymentsResponseMutableBuilder[Self <: ListBulkDeploymentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkDeployments(value: BulkDeployments): Self = StObject.set(x, "BulkDeployments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkDeploymentsUndefined: Self = StObject.set(x, "BulkDeployments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulkDeploymentsVarargs(value: BulkDeployment*): Self = StObject.set(x, "BulkDeployments", js.Array(value :_*))
     
     @scala.inline
-    def setBulkDeploymentsVarargs(value: BulkDeployment*): Self = this.set("BulkDeployments", js.Array(value :_*))
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkDeployments(value: BulkDeployments): Self = this.set("BulkDeployments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulkDeployments: Self = this.set("BulkDeployments", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

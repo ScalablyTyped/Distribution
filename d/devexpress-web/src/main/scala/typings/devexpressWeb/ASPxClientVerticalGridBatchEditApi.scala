@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides members related to Batch Edit Mode
   */
 @js.native
-trait ASPxClientVerticalGridBatchEditApi extends js.Object {
+trait ASPxClientVerticalGridBatchEditApi extends StObject {
   
   /**
     * Adds a new record when ASPxVerticalGrid is in Batch Edit mode.

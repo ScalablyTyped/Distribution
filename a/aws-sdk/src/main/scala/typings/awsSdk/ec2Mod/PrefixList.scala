@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixList extends js.Object {
+trait PrefixList extends StObject {
   
   /**
     * The IP address range of the AWS service.
@@ -31,39 +32,27 @@ object PrefixList {
   }
   
   @scala.inline
-  implicit class PrefixListOps[Self <: PrefixList] (val x: Self) extends AnyVal {
+  implicit class PrefixListMutableBuilder[Self <: PrefixList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrs(value: ValueStringList): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrsUndefined: Self = StObject.set(x, "Cidrs", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrsVarargs(value: String*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
     
     @scala.inline
-    def setCidrsVarargs(value: String*): Self = this.set("Cidrs", js.Array(value :_*))
+    def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrs(value: ValueStringList): Self = this.set("Cidrs", value.asInstanceOf[js.Any])
+    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
     @scala.inline
-    def deleteCidrs: Self = this.set("Cidrs", js.undefined)
+    def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListId(value: String): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixListId: Self = this.set("PrefixListId", js.undefined)
-    
-    @scala.inline
-    def setPrefixListName(value: String): Self = this.set("PrefixListName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixListName: Self = this.set("PrefixListName", js.undefined)
+    def setPrefixListNameUndefined: Self = StObject.set(x, "PrefixListName", js.undefined)
   }
 }

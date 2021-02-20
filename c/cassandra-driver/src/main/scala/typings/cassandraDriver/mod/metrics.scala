@@ -1,13 +1,13 @@
 package typings.cassandraDriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "metrics")
-@js.native
-object metrics extends js.Object {
+object metrics {
   
+  @JSImport("cassandra-driver", "metrics.DefaultMetrics")
   @js.native
   class DefaultMetrics ()
     extends typings.cassandraDriver.metricsMod.metrics.DefaultMetrics

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,63 +32,51 @@ object DeviceEnrollmentPlatformRestrictionsConfiguration {
   }
   
   @scala.inline
-  implicit class DeviceEnrollmentPlatformRestrictionsConfigurationOps[Self <: DeviceEnrollmentPlatformRestrictionsConfiguration] (val x: Self) extends AnyVal {
+  implicit class DeviceEnrollmentPlatformRestrictionsConfigurationMutableBuilder[Self <: DeviceEnrollmentPlatformRestrictionsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = StObject.set(x, "androidRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidRestrictionNull: Self = StObject.set(x, "androidRestriction", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidRestrictionUndefined: Self = StObject.set(x, "androidRestriction", js.undefined)
     
     @scala.inline
-    def setAndroidRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = this.set("androidRestriction", value.asInstanceOf[js.Any])
+    def setIosRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = StObject.set(x, "iosRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAndroidRestriction: Self = this.set("androidRestriction", js.undefined)
+    def setIosRestrictionNull: Self = StObject.set(x, "iosRestriction", null)
     
     @scala.inline
-    def setAndroidRestrictionNull: Self = this.set("androidRestriction", null)
+    def setIosRestrictionUndefined: Self = StObject.set(x, "iosRestriction", js.undefined)
     
     @scala.inline
-    def setIosRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = this.set("iosRestriction", value.asInstanceOf[js.Any])
+    def setMacOSRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = StObject.set(x, "macOSRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIosRestriction: Self = this.set("iosRestriction", js.undefined)
+    def setMacOSRestrictionNull: Self = StObject.set(x, "macOSRestriction", null)
     
     @scala.inline
-    def setIosRestrictionNull: Self = this.set("iosRestriction", null)
+    def setMacOSRestrictionUndefined: Self = StObject.set(x, "macOSRestriction", js.undefined)
     
     @scala.inline
-    def setMacOSRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = this.set("macOSRestriction", value.asInstanceOf[js.Any])
+    def setWindowsMobileRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = StObject.set(x, "windowsMobileRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMacOSRestriction: Self = this.set("macOSRestriction", js.undefined)
+    def setWindowsMobileRestrictionNull: Self = StObject.set(x, "windowsMobileRestriction", null)
     
     @scala.inline
-    def setMacOSRestrictionNull: Self = this.set("macOSRestriction", null)
+    def setWindowsMobileRestrictionUndefined: Self = StObject.set(x, "windowsMobileRestriction", js.undefined)
     
     @scala.inline
-    def setWindowsMobileRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = this.set("windowsMobileRestriction", value.asInstanceOf[js.Any])
+    def setWindowsRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = StObject.set(x, "windowsRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWindowsMobileRestriction: Self = this.set("windowsMobileRestriction", js.undefined)
+    def setWindowsRestrictionNull: Self = StObject.set(x, "windowsRestriction", null)
     
     @scala.inline
-    def setWindowsMobileRestrictionNull: Self = this.set("windowsMobileRestriction", null)
-    
-    @scala.inline
-    def setWindowsRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = this.set("windowsRestriction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsRestriction: Self = this.set("windowsRestriction", js.undefined)
-    
-    @scala.inline
-    def setWindowsRestrictionNull: Self = this.set("windowsRestriction", null)
+    def setWindowsRestrictionUndefined: Self = StObject.set(x, "windowsRestriction", js.undefined)
   }
 }

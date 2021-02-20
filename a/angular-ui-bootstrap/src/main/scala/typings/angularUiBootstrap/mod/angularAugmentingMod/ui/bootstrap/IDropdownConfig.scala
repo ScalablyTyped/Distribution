@@ -1,11 +1,12 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDropdownConfig extends js.Object {
+trait IDropdownConfig extends StObject {
   
   /**
     * @default: 'uib-dropdown-open'
@@ -26,30 +27,18 @@ object IDropdownConfig {
   }
   
   @scala.inline
-  implicit class IDropdownConfigOps[Self <: IDropdownConfig] (val x: Self) extends AnyVal {
+  implicit class IDropdownConfigMutableBuilder[Self <: IDropdownConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendToOpenClass(value: String): Self = StObject.set(x, "appendToOpenClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendToOpenClassUndefined: Self = StObject.set(x, "appendToOpenClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenClass(value: String): Self = StObject.set(x, "openClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendToOpenClass(value: String): Self = this.set("appendToOpenClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppendToOpenClass: Self = this.set("appendToOpenClass", js.undefined)
-    
-    @scala.inline
-    def setOpenClass(value: String): Self = this.set("openClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenClass: Self = this.set("openClass", js.undefined)
+    def setOpenClassUndefined: Self = StObject.set(x, "openClass", js.undefined)
   }
 }

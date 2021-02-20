@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateField extends js.Object {
+trait DateField extends StObject {
   
   var dateField: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object DateField {
   }
   
   @scala.inline
-  implicit class DateFieldOps[Self <: DateField] (val x: Self) extends AnyVal {
+  implicit class DateFieldMutableBuilder[Self <: DateField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateField(value: String): Self = StObject.set(x, "dateField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFieldUndefined: Self = StObject.set(x, "dateField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateOnly(value: Boolean): Self = StObject.set(x, "dateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateField(value: String): Self = this.set("dateField", value.asInstanceOf[js.Any])
+    def setDateOnlyUndefined: Self = StObject.set(x, "dateOnly", js.undefined)
     
     @scala.inline
-    def deleteDateField: Self = this.set("dateField", js.undefined)
+    def setFormatUsing(value: String): Self = StObject.set(x, "formatUsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateOnly(value: Boolean): Self = this.set("dateOnly", value.asInstanceOf[js.Any])
+    def setFormatUsingUndefined: Self = StObject.set(x, "formatUsing", js.undefined)
     
     @scala.inline
-    def deleteDateOnly: Self = this.set("dateOnly", js.undefined)
+    def setRelativeTime(value: String): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatUsing(value: String): Self = this.set("formatUsing", value.asInstanceOf[js.Any])
+    def setRelativeTimeUndefined: Self = StObject.set(x, "relativeTime", js.undefined)
     
     @scala.inline
-    def deleteFormatUsing: Self = this.set("formatUsing", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeTime(value: String): Self = this.set("relativeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeTime: Self = this.set("relativeTime", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

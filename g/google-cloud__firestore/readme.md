@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__firestore
 
-Typings are for version 3.8.6
+Typings are for version 4.7.1
 
 ## Library description:
 Firestore Client Library for Node.js
@@ -10,9 +10,9 @@ Firestore Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/firestore |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, firestore |
-| # releases         | 46 |
-| # dependents       | 75 |
-| # downloads        | 21325528 |
+| # releases         | 65 |
+| # dependents       | 141 |
+| # downloads        | 40734308 |
 | # stars            | 1 |
 
 ## Links

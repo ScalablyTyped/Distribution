@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPage extends js.Object {
+trait WebPage extends StObject {
   
   /** Fully matching images on the page. Can include resized copies of the query image. */
   var fullMatchingImages: js.UndefOr[js.Array[WebImage]] = js.native
@@ -31,54 +32,42 @@ object WebPage {
   }
   
   @scala.inline
-  implicit class WebPageOps[Self <: WebPage] (val x: Self) extends AnyVal {
+  implicit class WebPageMutableBuilder[Self <: WebPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setFullMatchingImagesVarargs(value: WebImage*): Self = this.set("fullMatchingImages", js.Array(value :_*))
+    def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullMatchingImages(value: js.Array[WebImage]): Self = this.set("fullMatchingImages", value.asInstanceOf[js.Any])
+    def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
     
     @scala.inline
-    def deleteFullMatchingImages: Self = this.set("fullMatchingImages", js.undefined)
+    def setPartialMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageTitle(value: String): Self = this.set("pageTitle", value.asInstanceOf[js.Any])
+    def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
     
     @scala.inline
-    def deletePageTitle: Self = this.set("pageTitle", js.undefined)
+    def setPartialMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setPartialMatchingImagesVarargs(value: WebImage*): Self = this.set("partialMatchingImages", js.Array(value :_*))
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialMatchingImages(value: js.Array[WebImage]): Self = this.set("partialMatchingImages", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deletePartialMatchingImages: Self = this.set("partialMatchingImages", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

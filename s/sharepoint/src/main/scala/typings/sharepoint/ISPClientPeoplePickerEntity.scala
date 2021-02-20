@@ -2,6 +2,7 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.anon.Department
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,78 +40,66 @@ object ISPClientPeoplePickerEntity {
   }
   
   @scala.inline
-  implicit class ISPClientPeoplePickerEntityOps[Self <: ISPClientPeoplePickerEntity] (val x: Self) extends AnyVal {
+  implicit class ISPClientPeoplePickerEntityMutableBuilder[Self <: ISPClientPeoplePickerEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayText(value: String): Self = StObject.set(x, "DisplayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleMatchesVarargs(value: ISPClientPeoplePickerEntity*): Self = this.set("MultipleMatches", js.Array(value :_*))
+    def setDisplayTextUndefined: Self = StObject.set(x, "DisplayText", js.undefined)
     
     @scala.inline
-    def setMultipleMatches(value: js.Array[ISPClientPeoplePickerEntity]): Self = this.set("MultipleMatches", value.asInstanceOf[js.Any])
+    def setDomainText(value: String): Self = StObject.set(x, "DomainText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDomainTextUndefined: Self = StObject.set(x, "DomainText", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEntityData(value: Department): Self = StObject.set(x, "EntityData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayText(value: String): Self = this.set("DisplayText", value.asInstanceOf[js.Any])
+    def setEntityDataUndefined: Self = StObject.set(x, "EntityData", js.undefined)
     
     @scala.inline
-    def deleteDisplayText: Self = this.set("DisplayText", js.undefined)
+    def setEntityType(value: String): Self = StObject.set(x, "EntityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainText(value: String): Self = this.set("DomainText", value.asInstanceOf[js.Any])
+    def setEntityTypeUndefined: Self = StObject.set(x, "EntityType", js.undefined)
     
     @scala.inline
-    def deleteDomainText: Self = this.set("DomainText", js.undefined)
+    def setIsResolved(value: Boolean): Self = StObject.set(x, "IsResolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityData(value: Department): Self = this.set("EntityData", value.asInstanceOf[js.Any])
+    def setIsResolvedUndefined: Self = StObject.set(x, "IsResolved", js.undefined)
     
     @scala.inline
-    def deleteEntityData: Self = this.set("EntityData", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: String): Self = this.set("EntityType", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteEntityType: Self = this.set("EntityType", js.undefined)
+    def setMultipleMatches(value: js.Array[ISPClientPeoplePickerEntity]): Self = StObject.set(x, "MultipleMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResolved(value: Boolean): Self = this.set("IsResolved", value.asInstanceOf[js.Any])
+    def setMultipleMatchesVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "MultipleMatches", js.Array(value :_*))
     
     @scala.inline
-    def deleteIsResolved: Self = this.set("IsResolved", js.undefined)
+    def setProviderDisplayName(value: String): Self = StObject.set(x, "ProviderDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setProviderDisplayNameUndefined: Self = StObject.set(x, "ProviderDisplayName", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderDisplayName(value: String): Self = this.set("ProviderDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderDisplayName: Self = this.set("ProviderDisplayName", js.undefined)
-    
-    @scala.inline
-    def setProviderName(value: String): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderName: Self = this.set("ProviderName", js.undefined)
+    def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A product to be made visible to a user.
   */
 @js.native
-trait SchemaProductVisibility extends js.Object {
+trait SchemaProductVisibility extends StObject {
   
   /**
     * The product ID to make visible to the user. Required for each item in the
@@ -36,42 +37,30 @@ object SchemaProductVisibility {
   }
   
   @scala.inline
-  implicit class SchemaProductVisibilityOps[Self <: SchemaProductVisibility] (val x: Self) extends AnyVal {
+  implicit class SchemaProductVisibilityMutableBuilder[Self <: SchemaProductVisibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrackIds(value: js.Array[String]): Self = StObject.set(x, "trackIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
     
     @scala.inline
-    def setTrackIdsVarargs(value: String*): Self = this.set("trackIds", js.Array(value :_*))
+    def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackIds(value: js.Array[String]): Self = this.set("trackIds", value.asInstanceOf[js.Any])
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
     @scala.inline
-    def deleteTrackIds: Self = this.set("trackIds", js.undefined)
-    
-    @scala.inline
-    def setTracksVarargs(value: String*): Self = this.set("tracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracks(value: js.Array[String]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
+    def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

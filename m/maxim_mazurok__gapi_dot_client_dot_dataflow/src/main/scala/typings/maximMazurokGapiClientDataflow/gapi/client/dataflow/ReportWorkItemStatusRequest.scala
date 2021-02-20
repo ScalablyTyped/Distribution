@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportWorkItemStatusRequest extends js.Object {
+trait ReportWorkItemStatusRequest extends StObject {
   
   /** The current timestamp at the worker. */
   var currentWorkerTime: js.UndefOr[String] = js.native
@@ -39,55 +40,43 @@ object ReportWorkItemStatusRequest {
   }
   
   @scala.inline
-  implicit class ReportWorkItemStatusRequestOps[Self <: ReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
+  implicit class ReportWorkItemStatusRequestMutableBuilder[Self <: ReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentWorkerTimeUndefined: Self = StObject.set(x, "currentWorkerTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentWorkerTime(value: String): Self = this.set("currentWorkerTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentWorkerTime: Self = this.set("currentWorkerTime", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
     def setUnifiedWorkerRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest with TopLevel[js.Any]
-    ): Self = this.set("unifiedWorkerRequest", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnifiedWorkerRequest: Self = this.set("unifiedWorkerRequest", js.undefined)
+    def setUnifiedWorkerRequestUndefined: Self = StObject.set(x, "unifiedWorkerRequest", js.undefined)
     
     @scala.inline
-    def setWorkItemStatusesVarargs(value: WorkItemStatus*): Self = this.set("workItemStatuses", js.Array(value :_*))
+    def setWorkItemStatuses(value: js.Array[WorkItemStatus]): Self = StObject.set(x, "workItemStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItemStatuses(value: js.Array[WorkItemStatus]): Self = this.set("workItemStatuses", value.asInstanceOf[js.Any])
+    def setWorkItemStatusesUndefined: Self = StObject.set(x, "workItemStatuses", js.undefined)
     
     @scala.inline
-    def deleteWorkItemStatuses: Self = this.set("workItemStatuses", js.undefined)
+    def setWorkItemStatusesVarargs(value: WorkItemStatus*): Self = StObject.set(x, "workItemStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
+    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

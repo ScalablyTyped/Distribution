@@ -1,11 +1,12 @@
 package typings.ydnDb.ydn.db
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Iterator extends js.Object {
+trait Iterator extends StObject {
   
   def getKey(): js.Any = js.native
   

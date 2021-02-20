@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypedLinkFacet extends js.Object {
+trait TypedLinkFacet extends StObject {
   
   /**
     * A set of key-value pairs associated with the typed link. Typed link attributes are used when you have data values that are related to the link itself, and not to one of the two objects being linked. Identity attributes also serve to distinguish the link from others of the same type between the same objects.
@@ -35,33 +36,21 @@ object TypedLinkFacet {
   }
   
   @scala.inline
-  implicit class TypedLinkFacetOps[Self <: TypedLinkFacet] (val x: Self) extends AnyVal {
+  implicit class TypedLinkFacetMutableBuilder[Self <: TypedLinkFacet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: TypedLinkAttributeDefinitionList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: TypedLinkAttributeDefinition*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: TypedLinkAttributeDefinition*): Self = this.set("Attributes", js.Array(value :_*))
+    def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
     
     @scala.inline
-    def setAttributes(value: TypedLinkAttributeDefinitionList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = this.set("IdentityAttributeOrder", js.Array(value :_*))
-    
-    @scala.inline
-    def setIdentityAttributeOrder(value: AttributeNameList): Self = this.set("IdentityAttributeOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: TypedLinkName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

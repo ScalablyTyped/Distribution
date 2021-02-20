@@ -1,12 +1,13 @@
 package typings.cookieclicker.Game
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Minigame extends js.Object {
+trait Minigame extends StObject {
   
   var draw: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -57,72 +58,60 @@ object Minigame {
   }
   
   @scala.inline
-  implicit class MinigameOps[Self <: Minigame] (val x: Self) extends AnyVal {
+  implicit class MinigameMutableBuilder[Self <: Minigame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffs(value: Effects): Self = StObject.set(x, "effs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: HTMLDivElement => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setEffsUndefined: Self = StObject.set(x, "effs", js.undefined)
     
     @scala.inline
-    def setLaunch(value: () => Unit): Self = this.set("launch", js.Any.fromFunction0(value))
+    def setInit(value: HTMLDivElement => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoad(value: String => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    def setLaunch(value: () => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLoad(value: String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: GameObject): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setLogic(value: () => Unit): Self = StObject.set(x, "logic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSave(value: () => String): Self = this.set("save", js.Any.fromFunction0(value))
+    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
     
     @scala.inline
-    def setDraw(value: () => Unit): Self = this.set("draw", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDraw: Self = this.set("draw", js.undefined)
+    def setOnLevel(value: () => Unit): Self = StObject.set(x, "onLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEffs(value: Effects): Self = this.set("effs", value.asInstanceOf[js.Any])
+    def setOnLevelUndefined: Self = StObject.set(x, "onLevel", js.undefined)
     
     @scala.inline
-    def deleteEffs: Self = this.set("effs", js.undefined)
+    def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLogic(value: () => Unit): Self = this.set("logic", js.Any.fromFunction0(value))
+    def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     @scala.inline
-    def deleteLogic: Self = this.set("logic", js.undefined)
+    def setOnRuinTheFun(value: () => Unit): Self = StObject.set(x, "onRuinTheFun", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnLevel(value: () => Unit): Self = this.set("onLevel", js.Any.fromFunction0(value))
+    def setOnRuinTheFunUndefined: Self = StObject.set(x, "onRuinTheFun", js.undefined)
     
     @scala.inline
-    def deleteOnLevel: Self = this.set("onLevel", js.undefined)
+    def setParent(value: GameObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnResize(value: () => Unit): Self = this.set("onResize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnResize: Self = this.set("onResize", js.undefined)
-    
-    @scala.inline
-    def setOnRuinTheFun(value: () => Unit): Self = this.set("onRuinTheFun", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnRuinTheFun: Self = this.set("onRuinTheFun", js.undefined)
+    def setSave(value: () => String): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
   }
 }

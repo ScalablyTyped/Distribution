@@ -2,16 +2,16 @@ package typings.ipAddress
 
 import typings.ipAddress.ipv6Mod.Address6
 import typings.jsbn.mod.BigInteger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ip-address/dist/lib/ipv4", JSImport.Namespace)
-@js.native
-object ipv4Mod extends js.Object {
+object ipv4Mod {
   
+  @JSImport("ip-address/dist/lib/ipv4", "Address4")
   @js.native
-  class Address4 protected () extends js.Object {
+  class Address4 protected () extends StObject {
     def this(address: String) = this()
     
     /**
@@ -190,8 +190,7 @@ object ipv4Mod extends js.Object {
     var v4: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object Address4 extends js.Object {
+  object Address4 {
     
     /**
       * Converts a BigInteger to a v4 address object
@@ -200,6 +199,8 @@ object ipv4Mod extends js.Object {
       * @param {BigInteger} bigInteger - a BigInteger to convert
       * @returns {Address4}
       */
+    @JSImport("ip-address/dist/lib/ipv4", "Address4.fromBigInteger")
+    @js.native
     def fromBigInteger(bigInteger: BigInteger): Address4 = js.native
     
     /**
@@ -209,6 +210,8 @@ object ipv4Mod extends js.Object {
       * @param {string} hex - a hex string to convert
       * @returns {Address4}
       */
+    @JSImport("ip-address/dist/lib/ipv4", "Address4.fromHex")
+    @js.native
     def fromHex(hex: String): Address4 = js.native
     
     /**
@@ -218,8 +221,12 @@ object ipv4Mod extends js.Object {
       * @param {integer} integer - a number to convert
       * @returns {Address4}
       */
+    @JSImport("ip-address/dist/lib/ipv4", "Address4.fromInteger")
+    @js.native
     def fromInteger(integer: Double): Address4 = js.native
     
+    @JSImport("ip-address/dist/lib/ipv4", "Address4.isValid")
+    @js.native
     def isValid(address: String): Boolean = js.native
   }
 }

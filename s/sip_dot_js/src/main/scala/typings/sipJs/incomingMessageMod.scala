@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.anon.Host
 import typings.sipJs.anon.Parsed
 import typings.sipJs.grammarMod.NameAddrHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/messages/incoming-message", JSImport.Namespace)
-@js.native
-object incomingMessageMod extends js.Object {
+object incomingMessageMod {
   
+  @JSImport("sip.js/lib/core/messages/incoming-message", "IncomingMessage")
   @js.native
-  class IncomingMessage () extends js.Object {
+  class IncomingMessage () extends StObject {
     
     /**
       * Insert a header of the given name and value into the last position of the

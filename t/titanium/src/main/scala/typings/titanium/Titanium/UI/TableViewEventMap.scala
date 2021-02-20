@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,90 +91,78 @@ object TableViewEventMap {
   }
   
   @scala.inline
-  implicit class TableViewEventMapOps[Self <: TableViewEventMap] (val x: Self) extends AnyVal {
+  implicit class TableViewEventMapMutableBuilder[Self <: TableViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: TableViewClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDblclick(value: TableViewDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: TableViewDeleteEvent): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: TableViewClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: TableViewDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: TableViewDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setDragend(value: TableViewDragendEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: TableViewDeleteEvent): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setDragstart(value: TableViewDragstartEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: TableViewDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setFocus(value: TableViewFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragend(value: TableViewDragendEvent): Self = this.set("dragend", value.asInstanceOf[js.Any])
+    def setIndexclick(value: TableViewIndexclickEvent): Self = StObject.set(x, "indexclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragstart(value: TableViewDragstartEvent): Self = this.set("dragstart", value.asInstanceOf[js.Any])
+    def setKeypressed(value: TableViewKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: TableViewFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongclick(value: TableViewLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexclick(value: TableViewIndexclickEvent): Self = this.set("indexclick", value.asInstanceOf[js.Any])
+    def setLongpress(value: TableViewLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: TableViewKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setMove(value: TableViewMoveEvent): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: TableViewLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPinch(value: TableViewPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: TableViewLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPostlayout(value: TableViewPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: TableViewMoveEvent): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setRowsselected(value: TableViewRowsselectedEvent): Self = StObject.set(x, "rowsselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: TableViewPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setScroll(value: TableViewScrollEvent): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: TableViewPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setScrollend(value: TableViewScrollendEvent): Self = StObject.set(x, "scrollend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsselected(value: TableViewRowsselectedEvent): Self = this.set("rowsselected", value.asInstanceOf[js.Any])
+    def setSingletap(value: TableViewSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroll(value: TableViewScrollEvent): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setSwipe(value: TableViewSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollend(value: TableViewScrollendEvent): Self = this.set("scrollend", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: TableViewTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: TableViewSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: TableViewTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: TableViewSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: TableViewTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: TableViewTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: TableViewTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: TableViewTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: TableViewTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: TableViewTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: TableViewTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: TableViewTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

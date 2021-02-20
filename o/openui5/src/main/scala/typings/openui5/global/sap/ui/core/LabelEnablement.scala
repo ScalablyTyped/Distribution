@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.LabelEnablement")
-@js.native
-object LabelEnablement extends js.Object {
+object LabelEnablement {
   
   /**
     * This function should be called on a label control to enrich it's functionality.<b>Usage:</b>The
@@ -26,6 +25,8 @@ object LabelEnablement extends js.Object {
     * getLabelForRendering are added.
     * @param oControl the label control which should be enriched with further label functionality.
     */
+  @JSGlobal("sap.ui.core.LabelEnablement.enrich")
+  @js.native
   def enrich(oControl: typings.openui5.sap.ui.core.Control): Unit = js.native
   
   /**
@@ -33,6 +34,8 @@ object LabelEnablement extends js.Object {
     * @param oElement The element whose referencing labels should be returned
     * @returns an array of ids of the labels referencing the given element
     */
+  @JSGlobal("sap.ui.core.LabelEnablement.getReferencingLabels")
+  @js.native
   def getReferencingLabels(oElement: typings.openui5.sap.ui.core.Element): js.Array[String] = js.native
   
   /**
@@ -43,6 +46,8 @@ object LabelEnablement extends js.Object {
     * @returns <code>true</code> when the given control is required (property 'required') or one of its
     * referencing labels, <code>false</code> otherwise
     */
+  @JSGlobal("sap.ui.core.LabelEnablement.isRequired")
+  @js.native
   def isRequired(oElement: typings.openui5.sap.ui.core.Element): Boolean = js.native
   
   /**
@@ -52,5 +57,7 @@ object LabelEnablement extends js.Object {
     * @param oLabel The label for which the 'for' html attribute should be written to the
     * render-output-buffer.
     */
+  @JSGlobal("sap.ui.core.LabelEnablement.writeLabelForAttribute")
+  @js.native
   def writeLabelForAttribute(oRenderManager: typings.openui5.sap.ui.core.RenderManager, oLabel: js.Any): Unit = js.native
 }

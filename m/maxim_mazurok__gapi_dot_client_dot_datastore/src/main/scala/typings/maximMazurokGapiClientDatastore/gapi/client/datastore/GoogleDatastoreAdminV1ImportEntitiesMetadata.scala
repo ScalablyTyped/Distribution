@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDatastoreAdminV1ImportEntitiesMetadata extends js.Object {
+trait GoogleDatastoreAdminV1ImportEntitiesMetadata extends StObject {
   
   /** Metadata common to all Datastore Admin operations. */
   var common: js.UndefOr[GoogleDatastoreAdminV1CommonMetadata] = js.native
@@ -31,48 +32,36 @@ object GoogleDatastoreAdminV1ImportEntitiesMetadata {
   }
   
   @scala.inline
-  implicit class GoogleDatastoreAdminV1ImportEntitiesMetadataOps[Self <: GoogleDatastoreAdminV1ImportEntitiesMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleDatastoreAdminV1ImportEntitiesMetadataMutableBuilder[Self <: GoogleDatastoreAdminV1ImportEntitiesMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
     @scala.inline
-    def deleteCommon: Self = this.set("common", js.undefined)
+    def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = this.set("entityFilter", value.asInstanceOf[js.Any])
+    def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
     
     @scala.inline
-    def deleteEntityFilter: Self = this.set("entityFilter", js.undefined)
+    def setProgressBytes(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputUrl(value: String): Self = this.set("inputUrl", value.asInstanceOf[js.Any])
+    def setProgressBytesUndefined: Self = StObject.set(x, "progressBytes", js.undefined)
     
     @scala.inline
-    def deleteInputUrl: Self = this.set("inputUrl", js.undefined)
+    def setProgressEntities(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressBytes(value: GoogleDatastoreAdminV1Progress): Self = this.set("progressBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressBytes: Self = this.set("progressBytes", js.undefined)
-    
-    @scala.inline
-    def setProgressEntities(value: GoogleDatastoreAdminV1Progress): Self = this.set("progressEntities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressEntities: Self = this.set("progressEntities", js.undefined)
+    def setProgressEntitiesUndefined: Self = StObject.set(x, "progressEntities", js.undefined)
   }
 }

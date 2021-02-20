@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextVerticalAlignment extends js.Object
+sealed trait ShapeTextVerticalAlignment extends StObject
 /**
   *
   * Specifies the vertical alignment for the text frame in a shape.
@@ -14,7 +15,7 @@ sealed trait ShapeTextVerticalAlignment extends js.Object
   */
 @JSGlobal("Excel.ShapeTextVerticalAlignment")
 @js.native
-object ShapeTextVerticalAlignment extends js.Object {
+object ShapeTextVerticalAlignment extends StObject {
   
   @js.native
   sealed trait bottom extends ShapeTextVerticalAlignment

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityProfileTargetMapping extends js.Object {
+trait SecurityProfileTargetMapping extends StObject {
   
   /**
     * Information that identifies the security profile.
@@ -26,30 +27,18 @@ object SecurityProfileTargetMapping {
   }
   
   @scala.inline
-  implicit class SecurityProfileTargetMappingOps[Self <: SecurityProfileTargetMapping] (val x: Self) extends AnyVal {
+  implicit class SecurityProfileTargetMappingMutableBuilder[Self <: SecurityProfileTargetMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurityProfileIdentifier(value: SecurityProfileIdentifier): Self = StObject.set(x, "securityProfileIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecurityProfileIdentifierUndefined: Self = StObject.set(x, "securityProfileIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: SecurityProfileTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityProfileIdentifier(value: SecurityProfileIdentifier): Self = this.set("securityProfileIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityProfileIdentifier: Self = this.set("securityProfileIdentifier", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: SecurityProfileTarget): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

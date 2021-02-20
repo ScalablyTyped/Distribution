@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartRemediationExecutionResponse extends js.Object {
+trait StartRemediationExecutionResponse extends StObject {
   
   /**
     * For resources that have failed to start execution, the API returns a resource key object.
@@ -26,33 +27,21 @@ object StartRemediationExecutionResponse {
   }
   
   @scala.inline
-  implicit class StartRemediationExecutionResponseOps[Self <: StartRemediationExecutionResponse] (val x: Self) extends AnyVal {
+  implicit class StartRemediationExecutionResponseMutableBuilder[Self <: StartRemediationExecutionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedItems(value: ResourceKeys): Self = StObject.set(x, "FailedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedItemsUndefined: Self = StObject.set(x, "FailedItems", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedItemsVarargs(value: ResourceKey*): Self = StObject.set(x, "FailedItems", js.Array(value :_*))
     
     @scala.inline
-    def setFailedItemsVarargs(value: ResourceKey*): Self = this.set("FailedItems", js.Array(value :_*))
+    def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedItems(value: ResourceKeys): Self = this.set("FailedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedItems: Self = this.set("FailedItems", js.undefined)
-    
-    @scala.inline
-    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NodeConfigStatus describes the status of the config assigned by Node.Spec.ConfigSource.
   */
 @js.native
-trait NodeConfigStatus extends js.Object {
+trait NodeConfigStatus extends StObject {
   
   /**
     * Active reports the checkpointed config the node is actively using. Active will represent either the current version of the Assigned config, or the current LastKnownGood config, depending on whether attempting to use the Assigned config results in an error.
@@ -44,30 +45,18 @@ object NodeConfigStatus {
   }
   
   @scala.inline
-  implicit class NodeConfigStatusOps[Self <: NodeConfigStatus] (val x: Self) extends AnyVal {
+  implicit class NodeConfigStatusMutableBuilder[Self <: NodeConfigStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: NodeConfigSource): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssigned(value: NodeConfigSource): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: NodeConfigSource): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssigned(value: NodeConfigSource): Self = this.set("assigned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastKnownGood(value: NodeConfigSource): Self = this.set("lastKnownGood", value.asInstanceOf[js.Any])
+    def setLastKnownGood(value: NodeConfigSource): Self = StObject.set(x, "lastKnownGood", value.asInstanceOf[js.Any])
   }
 }

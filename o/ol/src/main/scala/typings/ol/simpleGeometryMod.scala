@@ -3,17 +3,26 @@ package typings.ol
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
 import typings.ol.olMod.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/SimpleGeometry", JSImport.Namespace)
-@js.native
-object simpleGeometryMod extends js.Object {
+object simpleGeometryMod {
   
+  @JSImport("ol/geom/SimpleGeometry", JSImport.Default)
+  @js.native
+  abstract class default () extends SimpleGeometry
+  
+  @JSImport("ol/geom/SimpleGeometry", "getStrideForLayout")
+  @js.native
   def getStrideForLayout(layout: GeometryLayout): Double = js.native
   
+  @JSImport("ol/geom/SimpleGeometry", "transformGeom2D")
+  @js.native
   def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform): js.Array[Double] = js.native
+  @JSImport("ol/geom/SimpleGeometry", "transformGeom2D")
+  @js.native
   def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform, opt_dest: js.Array[Double]): js.Array[Double] = js.native
   
   @js.native
@@ -57,7 +66,4 @@ object simpleGeometryMod extends js.Object {
     
     var stride: Double = js.native
   }
-  
-  @js.native
-  abstract class default () extends SimpleGeometry
 }

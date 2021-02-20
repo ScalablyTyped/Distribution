@@ -1,14 +1,15 @@
 package typings.chromecastCafSender.cast.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RemotePlayerEventType extends js.Object
+sealed trait RemotePlayerEventType extends StObject
 @JSGlobal("cast.framework.RemotePlayerEventType")
 @js.native
-object RemotePlayerEventType extends js.Object {
+object RemotePlayerEventType extends StObject {
   
   @js.native
   sealed trait ANY_CHANGE extends RemotePlayerEventType

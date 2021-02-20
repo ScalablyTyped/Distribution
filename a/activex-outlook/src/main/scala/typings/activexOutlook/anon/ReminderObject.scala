@@ -1,12 +1,13 @@
 package typings.activexOutlook.anon
 
 import typings.activexOutlook.Outlook.Reminder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReminderObject extends js.Object {
+trait ReminderObject extends StObject {
   
   val ReminderObject: Reminder = js.native
 }
@@ -19,21 +20,9 @@ object ReminderObject {
   }
   
   @scala.inline
-  implicit class ReminderObjectOps[Self <: ReminderObject] (val x: Self) extends AnyVal {
+  implicit class ReminderObjectMutableBuilder[Self <: ReminderObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReminderObject(value: Reminder): Self = this.set("ReminderObject", value.asInstanceOf[js.Any])
+    def setReminderObject(value: Reminder): Self = StObject.set(x, "ReminderObject", value.asInstanceOf[js.Any])
   }
 }

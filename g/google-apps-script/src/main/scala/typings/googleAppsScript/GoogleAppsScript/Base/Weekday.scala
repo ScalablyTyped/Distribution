@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Weekday extends js.Object
+sealed trait Weekday extends StObject
 /**
   * An enum representing the days of the week.
   */
 @JSGlobal("GoogleAppsScript.Base.Weekday")
 @js.native
-object Weekday extends js.Object {
+object Weekday extends StObject {
   
   @js.native
   sealed trait FRIDAY extends Weekday

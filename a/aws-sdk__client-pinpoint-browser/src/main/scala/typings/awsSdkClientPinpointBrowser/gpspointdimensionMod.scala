@@ -1,13 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/_GPSPointDimension", JSImport.Namespace)
-@js.native
-object gpspointdimensionMod extends js.Object {
+object gpspointdimensionMod {
   
-  @JSName("_GPSPointDimension")
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/_GPSPointDimension", "_GPSPointDimension")
+  @js.native
   val GPSPointDimension: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

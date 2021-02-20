@@ -1,11 +1,12 @@
 package typings.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Facebook extends js.Object {
+trait Facebook extends StObject {
   
   var og_description: js.UndefOr[Nullable[String]] = js.native
   
@@ -22,45 +23,33 @@ object Facebook {
   }
   
   @scala.inline
-  implicit class FacebookOps[Self <: Facebook] (val x: Self) extends AnyVal {
+  implicit class FacebookMutableBuilder[Self <: Facebook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOg_description(value: Nullable[String]): Self = StObject.set(x, "og_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOg_descriptionNull: Self = StObject.set(x, "og_description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOg_descriptionUndefined: Self = StObject.set(x, "og_description", js.undefined)
     
     @scala.inline
-    def setOg_description(value: Nullable[String]): Self = this.set("og_description", value.asInstanceOf[js.Any])
+    def setOg_image(value: Nullable[String]): Self = StObject.set(x, "og_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOg_description: Self = this.set("og_description", js.undefined)
+    def setOg_imageNull: Self = StObject.set(x, "og_image", null)
     
     @scala.inline
-    def setOg_descriptionNull: Self = this.set("og_description", null)
+    def setOg_imageUndefined: Self = StObject.set(x, "og_image", js.undefined)
     
     @scala.inline
-    def setOg_image(value: Nullable[String]): Self = this.set("og_image", value.asInstanceOf[js.Any])
+    def setOg_title(value: Nullable[String]): Self = StObject.set(x, "og_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOg_image: Self = this.set("og_image", js.undefined)
+    def setOg_titleNull: Self = StObject.set(x, "og_title", null)
     
     @scala.inline
-    def setOg_imageNull: Self = this.set("og_image", null)
-    
-    @scala.inline
-    def setOg_title(value: Nullable[String]): Self = this.set("og_title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOg_title: Self = this.set("og_title", js.undefined)
-    
-    @scala.inline
-    def setOg_titleNull: Self = this.set("og_title", null)
+    def setOg_titleUndefined: Self = StObject.set(x, "og_title", js.undefined)
   }
 }

@@ -3,22 +3,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides localized information that details an in-app product. */
 @js.native
-trait ProductListing extends js.Object {
+trait ProductListing extends StObject {
   
   var currencyCode: js.Any = js.native
   
-   /* unmapped type */ /** Gets the description for the in-app product. */
+  /* unmapped type */
+  /** Gets the description for the in-app product. */
   var description: String = js.native
   
   var formattedBasePrice: js.Any = js.native
   
-   /* unmapped type */ /** Gets the purchase price for the in-app product with the appropriate formatting for the current market. */
+  /* unmapped type */
+  /** Gets the purchase price for the in-app product with the appropriate formatting for the current market. */
   var formattedPrice: String = js.native
   
   /** Gets the URI of the image associated with the in-app product. */
@@ -26,7 +29,8 @@ trait ProductListing extends js.Object {
   
   var isOnSale: js.Any = js.native
   
-   /* unmapped type */ /** Gets the list of keywords associated with the in-app product. These keywords are useful for filtering product lists by keyword, for example, when calling LoadListingInformationByKeywordsAsync . */
+  /* unmapped type */
+  /** Gets the list of keywords associated with the in-app product. These keywords are useful for filtering product lists by keyword, for example, when calling LoadListingInformationByKeywordsAsync . */
   var keywords: IIterable[String] = js.native
   
   /** Gets the descriptive name of the in-app product that is displayed customers in the current market. */
@@ -66,54 +70,42 @@ object ProductListing {
   }
   
   @scala.inline
-  implicit class ProductListingOps[Self <: ProductListing] (val x: Self) extends AnyVal {
+  implicit class ProductListingMutableBuilder[Self <: ProductListing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: js.Any): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedBasePrice(value: js.Any): Self = StObject.set(x, "formattedBasePrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: js.Any): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setImageUri(value: Uri): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedBasePrice(value: js.Any): Self = this.set("formattedBasePrice", value.asInstanceOf[js.Any])
+    def setIsOnSale(value: js.Any): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedPrice(value: String): Self = this.set("formattedPrice", value.asInstanceOf[js.Any])
+    def setKeywords(value: IIterable[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUri(value: Uri): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOnSale(value: js.Any): Self = this.set("isOnSale", value.asInstanceOf[js.Any])
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: IIterable[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setProductType(value: ProductType): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSaleEndDate(value: Date): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProductType(value: ProductType): Self = this.set("productType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaleEndDate(value: Date): Self = this.set("saleEndDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

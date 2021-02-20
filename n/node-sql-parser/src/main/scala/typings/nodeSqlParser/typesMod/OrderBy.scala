@@ -2,12 +2,13 @@ package typings.nodeSqlParser.typesMod
 
 import typings.nodeSqlParser.nodeSqlParserStrings.ASC
 import typings.nodeSqlParser.nodeSqlParserStrings.DESC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderBy extends js.Object {
+trait OrderBy extends StObject {
   
   var expr: js.Any = js.native
   
@@ -23,24 +24,12 @@ object OrderBy {
   }
   
   @scala.inline
-  implicit class OrderByOps[Self <: OrderBy] (val x: Self) extends AnyVal {
+  implicit class OrderByMutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpr(value: js.Any): Self = this.set("expr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ASC | DESC): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ASC | DESC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

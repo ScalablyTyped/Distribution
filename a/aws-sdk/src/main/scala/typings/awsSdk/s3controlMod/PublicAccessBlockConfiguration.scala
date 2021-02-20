@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicAccessBlockConfiguration extends js.Object {
+trait PublicAccessBlockConfiguration extends StObject {
   
   /**
     * Specifies whether Amazon S3 should block public access control lists (ACLs) for buckets in this account. Setting this element to TRUE causes the following behavior:   PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public.   PUT Object calls fail if the request includes a public ACL.   PUT Bucket calls fail if the request includes a public ACL.   Enabling this setting doesn't affect existing policies or ACLs. This is not supported for Amazon S3 on Outposts.
@@ -36,42 +37,30 @@ object PublicAccessBlockConfiguration {
   }
   
   @scala.inline
-  implicit class PublicAccessBlockConfigurationOps[Self <: PublicAccessBlockConfiguration] (val x: Self) extends AnyVal {
+  implicit class PublicAccessBlockConfigurationMutableBuilder[Self <: PublicAccessBlockConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockPublicAcls(value: Setting): Self = StObject.set(x, "BlockPublicAcls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockPublicAclsUndefined: Self = StObject.set(x, "BlockPublicAcls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockPublicPolicy(value: Setting): Self = StObject.set(x, "BlockPublicPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockPublicAcls(value: Setting): Self = this.set("BlockPublicAcls", value.asInstanceOf[js.Any])
+    def setBlockPublicPolicyUndefined: Self = StObject.set(x, "BlockPublicPolicy", js.undefined)
     
     @scala.inline
-    def deleteBlockPublicAcls: Self = this.set("BlockPublicAcls", js.undefined)
+    def setIgnorePublicAcls(value: Setting): Self = StObject.set(x, "IgnorePublicAcls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockPublicPolicy(value: Setting): Self = this.set("BlockPublicPolicy", value.asInstanceOf[js.Any])
+    def setIgnorePublicAclsUndefined: Self = StObject.set(x, "IgnorePublicAcls", js.undefined)
     
     @scala.inline
-    def deleteBlockPublicPolicy: Self = this.set("BlockPublicPolicy", js.undefined)
+    def setRestrictPublicBuckets(value: Setting): Self = StObject.set(x, "RestrictPublicBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnorePublicAcls(value: Setting): Self = this.set("IgnorePublicAcls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnorePublicAcls: Self = this.set("IgnorePublicAcls", js.undefined)
-    
-    @scala.inline
-    def setRestrictPublicBuckets(value: Setting): Self = this.set("RestrictPublicBuckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictPublicBuckets: Self = this.set("RestrictPublicBuckets", js.undefined)
+    def setRestrictPublicBucketsUndefined: Self = StObject.set(x, "RestrictPublicBuckets", js.undefined)
   }
 }

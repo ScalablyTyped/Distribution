@@ -2,6 +2,7 @@ package typings.activexWord.Word
 
 import typings.activexWord.activexWordNumbers.`17`
 import typings.activexWord.activexWordNumbers.`18`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`17`
   - typings.activexWord.activexWordNumbers.`18`
 */
-trait WdExportFormat extends js.Object
+trait WdExportFormat extends StObject
 object WdExportFormat {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojcompositeMod.ViewModelContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metadata extends js.Object {
+trait Metadata extends StObject {
   
   var metadata: typings.oracleOraclejet.ojcompositeMod.Metadata = js.native
   
@@ -35,30 +36,18 @@ object Metadata {
   }
   
   @scala.inline
-  implicit class MetadataOps[Self <: Metadata] (val x: Self) extends AnyVal {
+  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: typings.oracleOraclejet.ojcompositeMod.Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParseFunction(value: (String, String, js.Object, js.Function1[/* value */ String, _]) => js.Any): Self = StObject.set(x, "parseFunction", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: typings.oracleOraclejet.ojcompositeMod.Metadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParseFunction(value: (String, String, js.Object, js.Function1[/* value */ String, _]) => js.Any): Self = this.set("parseFunction", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewModel(value: ViewModelContext => Unit | js.Object): Self = this.set("viewModel", js.Any.fromFunction1(value))
+    def setViewModel(value: ViewModelContext => Unit | js.Object): Self = StObject.set(x, "viewModel", js.Any.fromFunction1(value))
   }
 }

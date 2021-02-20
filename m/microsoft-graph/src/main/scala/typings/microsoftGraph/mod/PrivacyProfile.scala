@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrivacyProfile extends js.Object {
+trait PrivacyProfile extends StObject {
   
   // A valid smtp email address for the privacy statement contact. Not required.
   var contactEmail: js.UndefOr[NullableOption[String]] = js.native
@@ -25,36 +26,24 @@ object PrivacyProfile {
   }
   
   @scala.inline
-  implicit class PrivacyProfileOps[Self <: PrivacyProfile] (val x: Self) extends AnyVal {
+  implicit class PrivacyProfileMutableBuilder[Self <: PrivacyProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactEmail(value: NullableOption[String]): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactEmailNull: Self = StObject.set(x, "contactEmail", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
     @scala.inline
-    def setContactEmail(value: NullableOption[String]): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    def setStatementUrl(value: NullableOption[String]): Self = StObject.set(x, "statementUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    def setStatementUrlNull: Self = StObject.set(x, "statementUrl", null)
     
     @scala.inline
-    def setContactEmailNull: Self = this.set("contactEmail", null)
-    
-    @scala.inline
-    def setStatementUrl(value: NullableOption[String]): Self = this.set("statementUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatementUrl: Self = this.set("statementUrl", js.undefined)
-    
-    @scala.inline
-    def setStatementUrlNull: Self = this.set("statementUrl", null)
+    def setStatementUrlUndefined: Self = StObject.set(x, "statementUrl", js.undefined)
   }
 }

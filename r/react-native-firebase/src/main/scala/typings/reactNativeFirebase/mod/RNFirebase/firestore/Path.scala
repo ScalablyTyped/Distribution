@@ -1,12 +1,13 @@
 package typings.reactNativeFirebase.mod.RNFirebase.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.Path")
 @js.native
-class Path protected () extends js.Object {
+class Path protected () extends StObject {
   def this(pathComponents: js.Array[String]) = this()
   
   def child(relativePath: String): Path = js.native
@@ -21,10 +22,10 @@ class Path protected () extends js.Object {
   
   val relativeName: String = js.native
 }
-/* static members */
-@JSImport("react-native-firebase", "RNFirebase.firestore.Path")
-@js.native
-object Path extends js.Object {
+object Path {
   
+  /* static member */
+  @JSImport("react-native-firebase", "RNFirebase.firestore.Path.fromName")
+  @js.native
   def fromName(name: String): Path = js.native
 }

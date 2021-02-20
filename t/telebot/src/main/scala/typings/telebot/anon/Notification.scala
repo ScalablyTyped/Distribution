@@ -1,11 +1,12 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   var notification: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParseMode(value: String): Self = StObject.set(x, "parseMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: Boolean): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setParseModeUndefined: Self = StObject.set(x, "parseMode", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseMode(value: String): Self = this.set("parseMode", value.asInstanceOf[js.Any])
+    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
     @scala.inline
-    def deleteParseMode: Self = this.set("parseMode", js.undefined)
+    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyMarkup(value: js.Any): Self = this.set("replyMarkup", value.asInstanceOf[js.Any])
+    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
     
     @scala.inline
-    def deleteReplyMarkup: Self = this.set("replyMarkup", js.undefined)
+    def setWebPreview(value: Boolean): Self = StObject.set(x, "webPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToMessage(value: Double): Self = this.set("replyToMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToMessage: Self = this.set("replyToMessage", js.undefined)
-    
-    @scala.inline
-    def setWebPreview(value: Boolean): Self = this.set("webPreview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPreview: Self = this.set("webPreview", js.undefined)
+    def setWebPreviewUndefined: Self = StObject.set(x, "webPreview", js.undefined)
   }
 }

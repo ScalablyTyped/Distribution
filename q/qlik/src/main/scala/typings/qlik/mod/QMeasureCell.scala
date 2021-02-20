@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QMeasureCell extends js.Object {
+trait QMeasureCell extends StObject {
   
   def getPercent(): Double = js.native
   
@@ -24,33 +25,21 @@ object QMeasureCell {
   }
   
   @scala.inline
-  implicit class QMeasureCellOps[Self <: QMeasureCell] (val x: Self) extends AnyVal {
+  implicit class QMeasureCellMutableBuilder[Self <: QMeasureCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPercent(value: () => Double): Self = StObject.set(x, "getPercent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPercentOfMax(value: () => Double): Self = StObject.set(x, "getPercentOfMax", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPercent(value: () => Double): Self = this.set("getPercent", js.Any.fromFunction0(value))
+    def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
     
     @scala.inline
-    def setGetPercentOfMax(value: () => Double): Self = this.set("getPercentOfMax", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQNum(value: Double): Self = this.set("qNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQNum: Self = this.set("qNum", js.undefined)
+    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }
 }

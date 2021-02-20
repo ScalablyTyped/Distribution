@@ -1,5 +1,6 @@
 package typings.node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.node.nodeStrings.binary
   - typings.node.nodeStrings.hex
 */
-trait BufferEncoding extends js.Object
+trait BufferEncoding extends StObject
 object BufferEncoding {
   
   @scala.inline

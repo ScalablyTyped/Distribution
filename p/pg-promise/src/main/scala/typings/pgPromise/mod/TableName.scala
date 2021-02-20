@@ -1,5 +1,6 @@
 package typings.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/helpers.TableName.html
 @JSImport("pg-promise", "TableName")
 @js.native
-class TableName protected () extends js.Object {
+class TableName protected () extends StObject {
   def this(table: String) = this()
   def this(table: ITable) = this()
   

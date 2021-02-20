@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PixelReference extends js.Object
+sealed trait PixelReference extends StObject
 @JSGlobal("Microsoft.Maps.PixelReference")
 @js.native
-object PixelReference extends js.Object {
+object PixelReference extends StObject {
   
   /** The pixel is defined relative to the map control’s root element, where the top left corner of the map control is (0, 0). */
   @js.native

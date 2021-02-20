@@ -1,5 +1,6 @@
 package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecatalogproducerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and bar@gmail.com from DATA_WRITE logging.
   */
 @js.native
-trait SchemaGoogleIamV1AuditConfig extends js.Object {
+trait SchemaGoogleIamV1AuditConfig extends StObject {
   
   /**
     * The configuration for logging of each type of permission.
@@ -51,33 +52,21 @@ object SchemaGoogleIamV1AuditConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleIamV1AuditConfigOps[Self <: SchemaGoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleIamV1AuditConfigMutableBuilder[Self <: SchemaGoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditLogConfigs(value: js.Array[SchemaGoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuditLogConfigsVarargs(value: SchemaGoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setAuditLogConfigsVarargs(value: SchemaGoogleIamV1AuditLogConfig*): Self = this.set("auditLogConfigs", js.Array(value :_*))
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditLogConfigs(value: js.Array[SchemaGoogleIamV1AuditLogConfig]): Self = this.set("auditLogConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuditLogConfigs: Self = this.set("auditLogConfigs", js.undefined)
-    
-    @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

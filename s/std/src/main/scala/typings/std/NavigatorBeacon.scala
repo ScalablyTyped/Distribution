@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorBeacon extends js.Object {
+trait NavigatorBeacon extends StObject {
   
   def sendBeacon(url: java.lang.String): scala.Boolean = js.native
   def sendBeacon(url: java.lang.String, data: java.lang.String): scala.Boolean = js.native

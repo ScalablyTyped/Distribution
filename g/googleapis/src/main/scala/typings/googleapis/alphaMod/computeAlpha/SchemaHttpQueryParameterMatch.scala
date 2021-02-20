@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HttpRouteRuleMatch criteria for a request&#39;s query parameter.
   */
 @js.native
-trait SchemaHttpQueryParameterMatch extends js.Object {
+trait SchemaHttpQueryParameterMatch extends StObject {
   
   /**
     * The queryParameterMatch matches if the value of the parameter exactly
@@ -47,42 +48,30 @@ object SchemaHttpQueryParameterMatch {
   }
   
   @scala.inline
-  implicit class SchemaHttpQueryParameterMatchOps[Self <: SchemaHttpQueryParameterMatch] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpQueryParameterMatchMutableBuilder[Self <: SchemaHttpQueryParameterMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactMatch(value: String): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentMatch(value: Boolean): Self = this.set("presentMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresentMatch: Self = this.set("presentMatch", js.undefined)
-    
-    @scala.inline
-    def setRegexMatch(value: String): Self = this.set("regexMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexMatch: Self = this.set("regexMatch", js.undefined)
+    def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
   }
 }

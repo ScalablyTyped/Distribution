@@ -1,5 +1,6 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://docs.couchdb.org/en/latest/api/database/common.html#post--db
 // http://docs.couchdb.org/en/latest/api/document/common.html#put--db-docid
 @js.native
-trait DocumentInsertResponse extends js.Object {
+trait DocumentInsertResponse extends StObject {
   
   // Document ID
   var id: String = js.native
@@ -27,27 +28,15 @@ object DocumentInsertResponse {
   }
   
   @scala.inline
-  implicit class DocumentInsertResponseOps[Self <: DocumentInsertResponse] (val x: Self) extends AnyVal {
+  implicit class DocumentInsertResponseMutableBuilder[Self <: DocumentInsertResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOk(value: Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRev(value: String): Self = this.set("rev", value.asInstanceOf[js.Any])
+    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

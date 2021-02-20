@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SelectInfo...
   */
 @js.native
-trait ISelectInfo extends js.Object {
+trait ISelectInfo extends StObject {
   
   /**
     * List of information about ranges for selections.
@@ -64,45 +65,33 @@ object ISelectInfo {
   }
   
   @scala.inline
-  implicit class ISelectInfoOps[Self <: ISelectInfo] (val x: Self) extends AnyVal {
+  implicit class ISelectInfoMutableBuilder[Self <: ISelectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQContinuousRangeInfo(value: js.Array[IRange]): Self = StObject.set(x, "qContinuousRangeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQContinuousRangeInfoVarargs(value: IRange*): Self = StObject.set(x, "qContinuousRangeInfo", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQNumberFormat(value: IFieldAttributes): Self = StObject.set(x, "qNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQContinuousRangeInfoVarargs(value: IRange*): Self = this.set("qContinuousRangeInfo", js.Array(value :_*))
+    def setQRangeHi(value: Double): Self = StObject.set(x, "qRangeHi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQContinuousRangeInfo(value: js.Array[IRange]): Self = this.set("qContinuousRangeInfo", value.asInstanceOf[js.Any])
+    def setQRangeInfo(value: js.Array[INxRangeSelectInfo]): Self = StObject.set(x, "qRangeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNumberFormat(value: IFieldAttributes): Self = this.set("qNumberFormat", value.asInstanceOf[js.Any])
+    def setQRangeInfoVarargs(value: INxRangeSelectInfo*): Self = StObject.set(x, "qRangeInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQRangeHi(value: Double): Self = this.set("qRangeHi", value.asInstanceOf[js.Any])
+    def setQRangeLo(value: Double): Self = StObject.set(x, "qRangeLo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQRangeInfoVarargs(value: INxRangeSelectInfo*): Self = this.set("qRangeInfo", js.Array(value :_*))
+    def setQTextSearch(value: String): Self = StObject.set(x, "qTextSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQRangeInfo(value: js.Array[INxRangeSelectInfo]): Self = this.set("qRangeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQRangeLo(value: Double): Self = this.set("qRangeLo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTextSearch(value: String): Self = this.set("qTextSearch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQTextSearch: Self = this.set("qTextSearch", js.undefined)
+    def setQTextSearchUndefined: Self = StObject.set(x, "qTextSearch", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexWord.Word
 
 import typings.activexWord.activexWordNumbers.`-10`
 import typings.activexWord.activexWordNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`2`
   - typings.activexWord.activexWordNumbers.`-10`
 */
-trait WdGutterStyleOld extends js.Object
+trait WdGutterStyleOld extends StObject
 object WdGutterStyleOld {
   
   @scala.inline

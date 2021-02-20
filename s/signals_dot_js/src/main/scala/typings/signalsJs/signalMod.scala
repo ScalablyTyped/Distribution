@@ -2,17 +2,17 @@ package typings.signalsJs
 
 import typings.signalsJs.islotMod.ISlot
 import typings.signalsJs.onceSignalMod.OnceSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signals.js/lib/org/osflash/signals/Signal", JSImport.Namespace)
-@js.native
-object signalMod extends js.Object {
+object signalMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.signalsJs.ioncesignalMod.IOnceSignal because Already inherited
-  - typings.signalsJs.isignalMod.ISignal because var conflicts: numListeners, valueClasses. Inlined add */ @js.native
+  - typings.signalsJs.isignalMod.ISignal because var conflicts: numListeners, valueClasses. Inlined add */ @JSImport("signals.js/lib/org/osflash/signals/Signal", "Signal")
+  @js.native
   class Signal protected () extends OnceSignal {
     /**
       * Creates a Signal instance to dispatch value objects.

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchInResponseBodyRequest extends js.Object {
+trait SearchInResponseBodyRequest extends StObject {
   
   /**
     * If true, search is case sensitive.
@@ -36,36 +37,24 @@ object SearchInResponseBodyRequest {
   }
   
   @scala.inline
-  implicit class SearchInResponseBodyRequestOps[Self <: SearchInResponseBodyRequest] (val x: Self) extends AnyVal {
+  implicit class SearchInResponseBodyRequestMutableBuilder[Self <: SearchInResponseBodyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsRegex(value: Boolean): Self = StObject.set(x, "isRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setIsRegexUndefined: Self = StObject.set(x, "isRegex", js.undefined)
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
-    
-    @scala.inline
-    def setIsRegex(value: Boolean): Self = this.set("isRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsRegex: Self = this.set("isRegex", js.undefined)
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

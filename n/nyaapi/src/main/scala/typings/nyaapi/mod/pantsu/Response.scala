@@ -1,11 +1,12 @@
 package typings.nyaapi.mod.pantsu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response[T] extends js.Object {
+trait Response[T] extends StObject {
   
   var data: js.Array[T] = js.native
   
@@ -22,33 +23,21 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfos(value: js.Array[String]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    def setInfosVarargs(value: String*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfosVarargs(value: String*): Self = this.set("infos", js.Array(value :_*))
-    
-    @scala.inline
-    def setInfos(value: js.Array[String]): Self = this.set("infos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOk(value: Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
+    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

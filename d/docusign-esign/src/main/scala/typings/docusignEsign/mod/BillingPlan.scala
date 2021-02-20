@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingPlan extends js.Object {
+trait BillingPlan extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -121,85 +122,67 @@ object BillingPlan {
   }
   
   @scala.inline
-  implicit class BillingPlanOps[Self <: BillingPlan] (val x: Self) extends AnyVal {
+  implicit class BillingPlanMutableBuilder[Self <: BillingPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppStoreProducts(value: js.Array[/* Contains information about an APP store product. */ AppStoreProduct]): Self = StObject.set(x, "appStoreProducts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppStoreProductsUndefined: Self = StObject.set(x, "appStoreProducts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppStoreProductsVarargs(value: (/* Contains information about an APP store product. */ AppStoreProduct)*): Self = StObject.set(x, "appStoreProducts", js.Array(value :_*))
     
     @scala.inline
-    def setAppStoreProductsVarargs(value: (/* Contains information about an APP store product. */ AppStoreProduct)*): Self = this.set("appStoreProducts", js.Array(value :_*))
+    def setCurrencyPlanPrices(value: js.Array[CurrencyPlanPrice]): Self = StObject.set(x, "currencyPlanPrices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppStoreProducts(value: js.Array[/* Contains information about an APP store product. */ AppStoreProduct]): Self = this.set("appStoreProducts", value.asInstanceOf[js.Any])
+    def setCurrencyPlanPricesUndefined: Self = StObject.set(x, "currencyPlanPrices", js.undefined)
     
     @scala.inline
-    def deleteAppStoreProducts: Self = this.set("appStoreProducts", js.undefined)
+    def setCurrencyPlanPricesVarargs(value: CurrencyPlanPrice*): Self = StObject.set(x, "currencyPlanPrices", js.Array(value :_*))
     
     @scala.inline
-    def setCurrencyPlanPricesVarargs(value: CurrencyPlanPrice*): Self = this.set("currencyPlanPrices", js.Array(value :_*))
+    def setEnableSupport(value: String): Self = StObject.set(x, "enableSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyPlanPrices(value: js.Array[CurrencyPlanPrice]): Self = this.set("currencyPlanPrices", value.asInstanceOf[js.Any])
+    def setEnableSupportUndefined: Self = StObject.set(x, "enableSupport", js.undefined)
     
     @scala.inline
-    def deleteCurrencyPlanPrices: Self = this.set("currencyPlanPrices", js.undefined)
+    def setIncludedSeats(value: String): Self = StObject.set(x, "includedSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSupport(value: String): Self = this.set("enableSupport", value.asInstanceOf[js.Any])
+    def setIncludedSeatsUndefined: Self = StObject.set(x, "includedSeats", js.undefined)
     
     @scala.inline
-    def deleteEnableSupport: Self = this.set("enableSupport", js.undefined)
+    def setOtherDiscountPercent(value: String): Self = StObject.set(x, "otherDiscountPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedSeats(value: String): Self = this.set("includedSeats", value.asInstanceOf[js.Any])
+    def setOtherDiscountPercentUndefined: Self = StObject.set(x, "otherDiscountPercent", js.undefined)
     
     @scala.inline
-    def deleteIncludedSeats: Self = this.set("includedSeats", js.undefined)
+    def setPaymentCycle(value: String): Self = StObject.set(x, "paymentCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherDiscountPercent(value: String): Self = this.set("otherDiscountPercent", value.asInstanceOf[js.Any])
+    def setPaymentCycleUndefined: Self = StObject.set(x, "paymentCycle", js.undefined)
     
     @scala.inline
-    def deleteOtherDiscountPercent: Self = this.set("otherDiscountPercent", js.undefined)
+    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentCycle(value: String): Self = this.set("paymentCycle", value.asInstanceOf[js.Any])
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def deletePaymentCycle: Self = this.set("paymentCycle", js.undefined)
+    def setPerSeatPrice(value: String): Self = StObject.set(x, "perSeatPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethod(value: String): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setPerSeatPriceUndefined: Self = StObject.set(x, "perSeatPrice", js.undefined)
     
     @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setPlanClassification(value: String): Self = StObject.set(x, "planClassification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerSeatPrice(value: String): Self = this.set("perSeatPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerSeatPrice: Self = this.set("perSeatPrice", js.undefined)
-    
-    @scala.inline
-    def setPlanClassification(value: String): Self = this.set("planClassification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanClassification: Self = this.set("planClassification", js.undefined)
-    
-    @scala.inline
-    def setPlanFeatureSetsVarargs(
-      value: (/* This object provides details about a feature set, or add-on product that is associated with an account.
-      It is reserved for DocuSign internal use only. */ FeatureSet)*
-    ): Self = this.set("planFeatureSets", js.Array(value :_*))
+    def setPlanClassificationUndefined: Self = StObject.set(x, "planClassification", js.undefined)
     
     @scala.inline
     def setPlanFeatureSets(
@@ -207,42 +190,48 @@ object BillingPlan {
           /* This object provides details about a feature set, or add-on product that is associated with an account.
       It is reserved for DocuSign internal use only. */ FeatureSet
         ]
-    ): Self = this.set("planFeatureSets", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "planFeatureSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlanFeatureSets: Self = this.set("planFeatureSets", js.undefined)
+    def setPlanFeatureSetsUndefined: Self = StObject.set(x, "planFeatureSets", js.undefined)
     
     @scala.inline
-    def setPlanId(value: String): Self = this.set("planId", value.asInstanceOf[js.Any])
+    def setPlanFeatureSetsVarargs(
+      value: (/* This object provides details about a feature set, or add-on product that is associated with an account.
+      It is reserved for DocuSign internal use only. */ FeatureSet)*
+    ): Self = StObject.set(x, "planFeatureSets", js.Array(value :_*))
     
     @scala.inline
-    def deletePlanId: Self = this.set("planId", js.undefined)
+    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanName(value: String): Self = this.set("planName", value.asInstanceOf[js.Any])
+    def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
     
     @scala.inline
-    def deletePlanName: Self = this.set("planName", js.undefined)
+    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeatDiscountsVarargs(value: (/* This object contains information about a seat discount. */ SeatDiscount)*): Self = this.set("seatDiscounts", js.Array(value :_*))
+    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
     
     @scala.inline
-    def setSeatDiscounts(value: js.Array[/* This object contains information about a seat discount. */ SeatDiscount]): Self = this.set("seatDiscounts", value.asInstanceOf[js.Any])
+    def setSeatDiscounts(value: js.Array[/* This object contains information about a seat discount. */ SeatDiscount]): Self = StObject.set(x, "seatDiscounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeatDiscounts: Self = this.set("seatDiscounts", js.undefined)
+    def setSeatDiscountsUndefined: Self = StObject.set(x, "seatDiscounts", js.undefined)
     
     @scala.inline
-    def setSupportIncidentFee(value: String): Self = this.set("supportIncidentFee", value.asInstanceOf[js.Any])
+    def setSeatDiscountsVarargs(value: (/* This object contains information about a seat discount. */ SeatDiscount)*): Self = StObject.set(x, "seatDiscounts", js.Array(value :_*))
     
     @scala.inline
-    def deleteSupportIncidentFee: Self = this.set("supportIncidentFee", js.undefined)
+    def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportPlanFee(value: String): Self = this.set("supportPlanFee", value.asInstanceOf[js.Any])
+    def setSupportIncidentFeeUndefined: Self = StObject.set(x, "supportIncidentFee", js.undefined)
     
     @scala.inline
-    def deleteSupportPlanFee: Self = this.set("supportPlanFee", js.undefined)
+    def setSupportPlanFee(value: String): Self = StObject.set(x, "supportPlanFee", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSupportPlanFeeUndefined: Self = StObject.set(x, "supportPlanFee", js.undefined)
   }
 }

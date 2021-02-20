@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FollowCameraKeyboardMoveInput")
 @js.native
 class FollowCameraKeyboardMoveInput ()
-  extends typings.babylonjs.followCameraKeyboardMoveInputMod.FollowCameraKeyboardMoveInput
+  extends typings.babylonjs.legacyMod.FollowCameraKeyboardMoveInput

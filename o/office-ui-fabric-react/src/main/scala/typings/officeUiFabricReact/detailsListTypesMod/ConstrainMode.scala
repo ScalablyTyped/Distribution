@@ -1,15 +1,15 @@
 package typings.officeUiFabricReact.detailsListTypesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConstrainMode extends js.Object
+sealed trait ConstrainMode extends StObject
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.types", "ConstrainMode")
 @js.native
-object ConstrainMode extends js.Object {
+object ConstrainMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConstrainMode with Double] = js.native
@@ -17,12 +17,10 @@ object ConstrainMode extends js.Object {
   /** Constrains the list to the given layout space. */
   @js.native
   sealed trait horizontalConstrained extends ConstrainMode
-  /* 1 */ @js.native
-  object horizontalConstrained extends TopLevel[horizontalConstrained with Double]
+  /* 1 */ val horizontalConstrained: typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode.horizontalConstrained with Double = js.native
   
   /** Lets the content grow which allows the page to manage scrolling. */
   @js.native
   sealed trait unconstrained extends ConstrainMode
-  /* 0 */ @js.native
-  object unconstrained extends TopLevel[unconstrained with Double]
+  /* 0 */ val unconstrained: typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode.unconstrained with Double = js.native
 }

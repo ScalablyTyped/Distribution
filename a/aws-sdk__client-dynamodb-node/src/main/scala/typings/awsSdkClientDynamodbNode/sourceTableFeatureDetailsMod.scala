@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/model/_SourceTableFeatureDetails", JSImport.Namespace)
-@js.native
-object sourceTableFeatureDetailsMod extends js.Object {
+object sourceTableFeatureDetailsMod {
   
-  @JSName("_SourceTableFeatureDetails")
+  @JSImport("@aws-sdk/client-dynamodb-node/model/_SourceTableFeatureDetails", "_SourceTableFeatureDetails")
+  @js.native
   val SourceTableFeatureDetails: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

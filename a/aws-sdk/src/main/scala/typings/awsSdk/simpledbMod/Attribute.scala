@@ -1,11 +1,12 @@
 package typings.awsSdk.simpledbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attribute extends js.Object {
+trait Attribute extends StObject {
   
   /**
     * 
@@ -36,36 +37,24 @@ object Attribute {
   }
   
   @scala.inline
-  implicit class AttributeOps[Self <: Attribute] (val x: Self) extends AnyVal {
+  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateNameEncoding(value: String): Self = StObject.set(x, "AlternateNameEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateNameEncodingUndefined: Self = StObject.set(x, "AlternateNameEncoding", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternateValueEncoding(value: String): Self = StObject.set(x, "AlternateValueEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setAlternateValueEncodingUndefined: Self = StObject.set(x, "AlternateValueEncoding", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateNameEncoding(value: String): Self = this.set("AlternateNameEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlternateNameEncoding: Self = this.set("AlternateNameEncoding", js.undefined)
-    
-    @scala.inline
-    def setAlternateValueEncoding(value: String): Self = this.set("AlternateValueEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlternateValueEncoding: Self = this.set("AlternateValueEncoding", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

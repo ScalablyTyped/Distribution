@@ -56,12 +56,13 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheck
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheckable
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.verbose
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def checkbox(): JQuery = js.native
   def checkbox(behavior: setting, name: beforeChecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native

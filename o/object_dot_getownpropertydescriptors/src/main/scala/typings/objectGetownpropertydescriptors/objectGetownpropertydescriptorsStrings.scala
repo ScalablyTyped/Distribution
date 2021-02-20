@@ -1,5 +1,6 @@
 package typings.objectGetownpropertydescriptors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object objectGetownpropertydescriptorsStrings {
   
   @js.native
-  sealed trait ^ extends js.Object
+  sealed trait apply extends StObject
+  @scala.inline
+  def apply: apply = "<apply>".asInstanceOf[apply]
+  
+  @js.native
+  sealed trait ^ extends StObject
   @scala.inline
   def ^ : ^ = "^".asInstanceOf[^]
   
+  @js.native
+  sealed trait FnCall extends StObject
   @scala.inline
   def FnCall: FnCall = "FnCall".asInstanceOf[FnCall]
-  
-  @scala.inline
-  def implementation: implementation = "implementation".asInstanceOf[implementation]
-  
-  @js.native
-  sealed trait FnCall extends js.Object
-  
-  @js.native
-  sealed trait implementation extends js.Object
 }

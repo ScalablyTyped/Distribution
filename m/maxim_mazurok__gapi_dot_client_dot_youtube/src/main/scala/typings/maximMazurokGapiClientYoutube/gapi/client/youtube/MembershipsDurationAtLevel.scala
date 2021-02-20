@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MembershipsDurationAtLevel extends js.Object {
+trait MembershipsDurationAtLevel extends StObject {
   
   /** Pricing level ID. */
   var level: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object MembershipsDurationAtLevel {
   }
   
   @scala.inline
-  implicit class MembershipsDurationAtLevelOps[Self <: MembershipsDurationAtLevel] (val x: Self) extends AnyVal {
+  implicit class MembershipsDurationAtLevelMutableBuilder[Self <: MembershipsDurationAtLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemberSince(value: String): Self = StObject.set(x, "memberSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMemberSinceUndefined: Self = StObject.set(x, "memberSince", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMemberTotalDurationMonths(value: Double): Self = StObject.set(x, "memberTotalDurationMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberSince(value: String): Self = this.set("memberSince", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberSince: Self = this.set("memberSince", js.undefined)
-    
-    @scala.inline
-    def setMemberTotalDurationMonths(value: Double): Self = this.set("memberTotalDurationMonths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberTotalDurationMonths: Self = this.set("memberTotalDurationMonths", js.undefined)
+    def setMemberTotalDurationMonthsUndefined: Self = StObject.set(x, "memberTotalDurationMonths", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildSourceLocationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buildspec extends js.Object {
+trait Buildspec extends StObject {
   
   var buildspec: String = js.native
   
@@ -24,27 +25,15 @@ object Buildspec {
   }
   
   @scala.inline
-  implicit class BuildspecOps[Self <: Buildspec] (val x: Self) extends AnyVal {
+  implicit class BuildspecMutableBuilder[Self <: Buildspec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuildspec(value: String): Self = this.set("buildspec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: CodeBuildSourceLocationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: CodeBuildSourceLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ClientBatchStatusResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientBatchStatusResponse extends js.Object {
+trait IClientBatchStatusResponse extends StObject {
   
   /** ClientBatchStatusResponse batchStatuses */
   var batchStatuses: js.UndefOr[js.Array[IClientBatchStatus] | Null] = js.native
@@ -23,39 +24,27 @@ object IClientBatchStatusResponse {
   }
   
   @scala.inline
-  implicit class IClientBatchStatusResponseOps[Self <: IClientBatchStatusResponse] (val x: Self) extends AnyVal {
+  implicit class IClientBatchStatusResponseMutableBuilder[Self <: IClientBatchStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchStatuses(value: js.Array[IClientBatchStatus]): Self = StObject.set(x, "batchStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchStatusesNull: Self = StObject.set(x, "batchStatuses", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchStatusesUndefined: Self = StObject.set(x, "batchStatuses", js.undefined)
     
     @scala.inline
-    def setBatchStatusesVarargs(value: IClientBatchStatus*): Self = this.set("batchStatuses", js.Array(value :_*))
+    def setBatchStatusesVarargs(value: IClientBatchStatus*): Self = StObject.set(x, "batchStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setBatchStatuses(value: js.Array[IClientBatchStatus]): Self = this.set("batchStatuses", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchStatuses: Self = this.set("batchStatuses", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setBatchStatusesNull: Self = this.set("batchStatuses", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

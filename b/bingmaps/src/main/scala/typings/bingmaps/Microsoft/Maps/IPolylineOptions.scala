@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,45 +29,33 @@ object IPolylineOptions {
   }
   
   @scala.inline
-  implicit class IPolylineOptionsOps[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
+  implicit class IPolylineOptionsMutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneralizable(value: Boolean): Self = StObject.set(x, "generalizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeneralizableUndefined: Self = StObject.set(x, "generalizable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrokeColor(value: String | Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneralizable(value: Boolean): Self = this.set("generalizable", value.asInstanceOf[js.Any])
+    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
     @scala.inline
-    def deleteGeneralizable: Self = this.set("generalizable", js.undefined)
+    def setStrokeDashArray(value: js.Array[Double] | String): Self = StObject.set(x, "strokeDashArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeColor(value: String | Color): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    def setStrokeDashArrayUndefined: Self = StObject.set(x, "strokeDashArray", js.undefined)
     
     @scala.inline
-    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeDashArrayVarargs(value: Double*): Self = this.set("strokeDashArray", js.Array(value :_*))
+    def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeDashArray(value: js.Array[Double] | String): Self = this.set("strokeDashArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeDashArray: Self = this.set("strokeDashArray", js.undefined)
-    
-    @scala.inline
-    def setStrokeThickness(value: Double): Self = this.set("strokeThickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeThickness: Self = this.set("strokeThickness", js.undefined)
+    def setStrokeThicknessUndefined: Self = StObject.set(x, "strokeThickness", js.undefined)
   }
 }

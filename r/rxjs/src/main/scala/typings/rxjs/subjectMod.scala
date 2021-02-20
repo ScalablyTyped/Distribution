@@ -4,14 +4,14 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.Observer
 import typings.rxjs.typesMod.SubscriptionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Subject", JSImport.Namespace)
-@js.native
-object subjectMod extends js.Object {
+object subjectMod {
   
+  @JSImport("rxjs/internal/Subject", "AnonymousSubject")
   @js.native
   class AnonymousSubject[T] () extends Subject[T] {
     def this(destination: Observer[T]) = this()
@@ -21,6 +21,7 @@ object subjectMod extends js.Object {
     var destination: js.UndefOr[Observer[T]] = js.native
   }
   
+  @JSImport("rxjs/internal/Subject", "Subject")
   @js.native
   class Subject[T] ()
     extends Observable[T]
@@ -50,15 +51,23 @@ object subjectMod extends js.Object {
     var thrownError: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Subject extends js.Object {
+  object Subject {
+    
+    @JSImport("rxjs/internal/Subject", "Subject")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**@nocollapse
       * @deprecated use new Subject() instead
       */
-    var create: js.Function = js.native
+    @JSImport("rxjs/internal/Subject", "Subject.create")
+    @js.native
+    def create: js.Function = js.native
+    @scala.inline
+    def create_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("rxjs/internal/Subject", "SubjectSubscriber")
   @js.native
   class SubjectSubscriber[T] protected () extends Subscriber[T] {
     def this(destination: Subject[T]) = this()

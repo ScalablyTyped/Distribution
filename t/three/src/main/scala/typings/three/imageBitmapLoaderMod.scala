@@ -7,14 +7,14 @@ import typings.std.ProgressEvent
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/ImageBitmapLoader", JSImport.Namespace)
-@js.native
-object imageBitmapLoaderMod extends js.Object {
+object imageBitmapLoaderMod {
   
+  @JSImport("three/src/loaders/ImageBitmapLoader", "ImageBitmapLoader")
   @js.native
   class ImageBitmapLoader () extends Loader {
     def this(manager: LoadingManager) = this()

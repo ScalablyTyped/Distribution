@@ -1,11 +1,12 @@
 package typings.expressValidator.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckFalsy extends js.Object {
+trait CheckFalsy extends StObject {
   
   var checkFalsy: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object CheckFalsy {
   }
   
   @scala.inline
-  implicit class CheckFalsyOps[Self <: CheckFalsy] (val x: Self) extends AnyVal {
+  implicit class CheckFalsyMutableBuilder[Self <: CheckFalsy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckFalsy(value: Boolean): Self = StObject.set(x, "checkFalsy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckFalsyUndefined: Self = StObject.set(x, "checkFalsy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckNull(value: Boolean): Self = StObject.set(x, "checkNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckFalsy(value: Boolean): Self = this.set("checkFalsy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckFalsy: Self = this.set("checkFalsy", js.undefined)
-    
-    @scala.inline
-    def setCheckNull(value: Boolean): Self = this.set("checkNull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckNull: Self = this.set("checkNull", js.undefined)
+    def setCheckNullUndefined: Self = StObject.set(x, "checkNull", js.undefined)
   }
 }

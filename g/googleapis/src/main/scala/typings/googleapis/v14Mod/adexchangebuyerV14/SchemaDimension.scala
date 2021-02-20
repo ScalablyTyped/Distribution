@@ -1,5 +1,6 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {dimension_value: {id: 2, name: &#39;UK&#39;}}]}
   */
 @js.native
-trait SchemaDimension extends js.Object {
+trait SchemaDimension extends StObject {
   
   var dimensionType: js.UndefOr[String] = js.native
   
@@ -25,33 +26,21 @@ object SchemaDimension {
   }
   
   @scala.inline
-  implicit class SchemaDimensionOps[Self <: SchemaDimension] (val x: Self) extends AnyVal {
+  implicit class SchemaDimensionMutableBuilder[Self <: SchemaDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionType(value: String): Self = StObject.set(x, "dimensionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionTypeUndefined: Self = StObject.set(x, "dimensionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionValues(value: js.Array[SchemaDimensionDimensionValue]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionType(value: String): Self = this.set("dimensionType", value.asInstanceOf[js.Any])
+    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
     @scala.inline
-    def deleteDimensionType: Self = this.set("dimensionType", js.undefined)
-    
-    @scala.inline
-    def setDimensionValuesVarargs(value: SchemaDimensionDimensionValue*): Self = this.set("dimensionValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setDimensionValues(value: js.Array[SchemaDimensionDimensionValue]): Self = this.set("dimensionValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionValues: Self = this.set("dimensionValues", js.undefined)
+    def setDimensionValuesVarargs(value: SchemaDimensionDimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
   }
 }

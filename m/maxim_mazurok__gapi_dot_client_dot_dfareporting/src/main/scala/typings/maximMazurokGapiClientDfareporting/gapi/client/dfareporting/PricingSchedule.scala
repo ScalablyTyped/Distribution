@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PricingSchedule extends js.Object {
+trait PricingSchedule extends StObject {
   
   /** Placement cap cost option. */
   var capCostOption: js.UndefOr[String] = js.native
@@ -37,69 +38,57 @@ object PricingSchedule {
   }
   
   @scala.inline
-  implicit class PricingScheduleOps[Self <: PricingSchedule] (val x: Self) extends AnyVal {
+  implicit class PricingScheduleMutableBuilder[Self <: PricingSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapCostOption(value: String): Self = StObject.set(x, "capCostOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapCostOptionUndefined: Self = StObject.set(x, "capCostOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapCostOption(value: String): Self = this.set("capCostOption", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteCapCostOption: Self = this.set("capCostOption", js.undefined)
+    def setFlighted(value: Boolean): Self = StObject.set(x, "flighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setFlightedUndefined: Self = StObject.set(x, "flighted", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlighted(value: Boolean): Self = this.set("flighted", value.asInstanceOf[js.Any])
+    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
     @scala.inline
-    def deleteFlighted: Self = this.set("flighted", js.undefined)
+    def setPricingPeriods(value: js.Array[PricingSchedulePricingPeriod]): Self = StObject.set(x, "pricingPeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityId(value: String): Self = this.set("floodlightActivityId", value.asInstanceOf[js.Any])
+    def setPricingPeriodsUndefined: Self = StObject.set(x, "pricingPeriods", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityId: Self = this.set("floodlightActivityId", js.undefined)
+    def setPricingPeriodsVarargs(value: PricingSchedulePricingPeriod*): Self = StObject.set(x, "pricingPeriods", js.Array(value :_*))
     
     @scala.inline
-    def setPricingPeriodsVarargs(value: PricingSchedulePricingPeriod*): Self = this.set("pricingPeriods", js.Array(value :_*))
+    def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingPeriods(value: js.Array[PricingSchedulePricingPeriod]): Self = this.set("pricingPeriods", value.asInstanceOf[js.Any])
+    def setPricingTypeUndefined: Self = StObject.set(x, "pricingType", js.undefined)
     
     @scala.inline
-    def deletePricingPeriods: Self = this.set("pricingPeriods", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingType(value: String): Self = this.set("pricingType", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deletePricingType: Self = this.set("pricingType", js.undefined)
+    def setTestingStartDate(value: String): Self = StObject.set(x, "testingStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
-    
-    @scala.inline
-    def setTestingStartDate(value: String): Self = this.set("testingStartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestingStartDate: Self = this.set("testingStartDate", js.undefined)
+    def setTestingStartDateUndefined: Self = StObject.set(x, "testingStartDate", js.undefined)
   }
 }

@@ -6,18 +6,19 @@ import typings.react.mod.Context
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/routing/RouteManagerContext", JSImport.Namespace)
-@js.native
-object routeManagerContextMod extends js.Object {
+object routeManagerContextMod {
   
+  @JSImport("@ionic/react/dist/types/routing/RouteManagerContext", "RouteManagerContext")
+  @js.native
   val RouteManagerContext: Context[RouteManagerContextState] = js.native
   
   @js.native
-  trait RouteManagerContextState extends js.Object {
+  trait RouteManagerContextState extends StObject {
     
     def addViewItem(viewItem: ViewItem[_]): Unit = js.native
     

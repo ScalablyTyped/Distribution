@@ -16,34 +16,45 @@ import typings.ionicCore.ionicCoreStrings.pwa
 import typings.ionicCore.ionicCoreStrings.tablet
 import typings.std.RegExp
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/utils/platform", JSImport.Namespace)
-@js.native
-object platformMod extends js.Object {
+object platformMod {
   
+  @JSImport("@ionic/core/dist/types/utils/platform", "getPlatforms")
+  @js.native
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
+  @JSImport("@ionic/core/dist/types/utils/platform", "getPlatforms")
+  @js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
   
+  @JSImport("@ionic/core/dist/types/utils/platform", "isPlatform")
+  @js.native
   val isPlatform: IsPlatformSignature = js.native
   
+  @JSImport("@ionic/core/dist/types/utils/platform", "setupPlatforms")
+  @js.native
   def setupPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
+  @JSImport("@ionic/core/dist/types/utils/platform", "setupPlatforms")
+  @js.native
   def setupPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
   
+  @JSImport("@ionic/core/dist/types/utils/platform", "testUserAgent")
+  @js.native
   def testUserAgent(win: Window, expr: RegExp): Boolean = js.native
   
   @js.native
-  trait IsPlatformSignature extends js.Object {
+  trait IsPlatformSignature extends StObject {
     
     def apply(plt: Platforms): Boolean = js.native
     def apply(win: Window, plt: Platforms): Boolean = js.native
@@ -65,5 +76,5 @@ object platformMod extends js.Object {
     - typings.ionicCore.ionicCoreStrings.desktop
     - typings.ionicCore.ionicCoreStrings.hybrid
   */
-  trait Platforms extends js.Object
+  trait Platforms extends StObject
 }

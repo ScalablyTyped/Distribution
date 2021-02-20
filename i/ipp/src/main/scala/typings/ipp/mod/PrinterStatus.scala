@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrinterStatus extends js.Object {
+trait PrinterStatus extends StObject {
   
   var `chamber-humidity-current`: js.UndefOr[Double] = js.native
   
@@ -130,396 +131,384 @@ object PrinterStatus {
   }
   
   @scala.inline
-  implicit class PrinterStatusOps[Self <: PrinterStatus] (val x: Self) extends AnyVal {
+  implicit class PrinterStatusMutableBuilder[Self <: PrinterStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setChamber-humidity-current`(value: Double): Self = StObject.set(x, "chamber-humidity-current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setChamber-humidity-currentUndefined`: Self = StObject.set(x, "chamber-humidity-current", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setChamber-temperature-current`(value: Double): Self = StObject.set(x, "chamber-temperature-current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChamber-humidity-current`(value: Double): Self = this.set("chamber-humidity-current", value.asInstanceOf[js.Any])
+    def `setChamber-temperature-currentUndefined`: Self = StObject.set(x, "chamber-temperature-current", js.undefined)
     
     @scala.inline
-    def `deleteChamber-humidity-current`: Self = this.set("chamber-humidity-current", js.undefined)
+    def `setDevice-service-count`(value: Double): Self = StObject.set(x, "device-service-count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChamber-temperature-current`(value: Double): Self = this.set("chamber-temperature-current", value.asInstanceOf[js.Any])
+    def `setDevice-service-countUndefined`: Self = StObject.set(x, "device-service-count", js.undefined)
     
     @scala.inline
-    def `deleteChamber-temperature-current`: Self = this.set("chamber-temperature-current", js.undefined)
+    def `setDevice-uuid`(value: String): Self = StObject.set(x, "device-uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDevice-service-count`(value: Double): Self = this.set("device-service-count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteDevice-service-count`: Self = this.set("device-service-count", js.undefined)
-    
-    @scala.inline
-    def `setDevice-uuid`(value: String): Self = this.set("device-uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteDevice-uuid`: Self = this.set("device-uuid", js.undefined)
-    
-    @scala.inline
-    def `setDocument-format-varying-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any)*): Self = this.set("document-format-varying-attributes", js.Array(value :_*))
+    def `setDevice-uuidUndefined`: Self = StObject.set(x, "device-uuid", js.undefined)
     
     @scala.inline
     def `setDocument-format-varying-attributes`(
       value: js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
         ]
-    ): Self = this.set("document-format-varying-attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "document-format-varying-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteDocument-format-varying-attributes`: Self = this.set("document-format-varying-attributes", js.undefined)
+    def `setDocument-format-varying-attributesUndefined`: Self = StObject.set(x, "document-format-varying-attributes", js.undefined)
     
     @scala.inline
-    def `setJob-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = this.set("job-settable-attributes-supported", js.Array(value :_*))
+    def `setDocument-format-varying-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any)*): Self = StObject.set(x, "document-format-varying-attributes", js.Array(value :_*))
     
     @scala.inline
     def `setJob-settable-attributes-supported`(
       value: js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
         ]
-    ): Self = this.set("job-settable-attributes-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "job-settable-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-settable-attributes-supported`: Self = this.set("job-settable-attributes-supported", js.undefined)
+    def `setJob-settable-attributes-supportedUndefined`: Self = StObject.set(x, "job-settable-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setPages-per-minute`(value: Double): Self = this.set("pages-per-minute", value.asInstanceOf[js.Any])
+    def `setJob-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = StObject.set(x, "job-settable-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePages-per-minute`: Self = this.set("pages-per-minute", js.undefined)
+    def `setPages-per-minute`(value: Double): Self = StObject.set(x, "pages-per-minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPages-per-minute-color`(value: Double): Self = this.set("pages-per-minute-color", value.asInstanceOf[js.Any])
+    def `setPages-per-minute-color`(value: Double): Self = StObject.set(x, "pages-per-minute-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePages-per-minute-color`: Self = this.set("pages-per-minute-color", js.undefined)
+    def `setPages-per-minute-colorUndefined`: Self = StObject.set(x, "pages-per-minute-color", js.undefined)
     
     @scala.inline
-    def `setPrinter-alertVarargs`(value: String*): Self = this.set("printer-alert", js.Array(value :_*))
+    def `setPages-per-minuteUndefined`: Self = StObject.set(x, "pages-per-minute", js.undefined)
     
     @scala.inline
-    def `setPrinter-alert`(value: js.Array[String]): Self = this.set("printer-alert", value.asInstanceOf[js.Any])
+    def `setPrinter-alert`(value: js.Array[String]): Self = StObject.set(x, "printer-alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-alert`: Self = this.set("printer-alert", js.undefined)
+    def `setPrinter-alert-description`(value: js.Array[String]): Self = StObject.set(x, "printer-alert-description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-alert-descriptionVarargs`(value: String*): Self = this.set("printer-alert-description", js.Array(value :_*))
+    def `setPrinter-alert-descriptionUndefined`: Self = StObject.set(x, "printer-alert-description", js.undefined)
     
     @scala.inline
-    def `setPrinter-alert-description`(value: js.Array[String]): Self = this.set("printer-alert-description", value.asInstanceOf[js.Any])
+    def `setPrinter-alert-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-alert-description", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-alert-description`: Self = this.set("printer-alert-description", js.undefined)
+    def `setPrinter-alertUndefined`: Self = StObject.set(x, "printer-alert", js.undefined)
     
     @scala.inline
-    def `setPrinter-camera-image-uriVarargs`(value: String*): Self = this.set("printer-camera-image-uri", js.Array(value :_*))
+    def `setPrinter-alertVarargs`(value: String*): Self = StObject.set(x, "printer-alert", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-camera-image-uri`(value: js.Array[String]): Self = this.set("printer-camera-image-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-camera-image-uri`(value: js.Array[String]): Self = StObject.set(x, "printer-camera-image-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-camera-image-uri`: Self = this.set("printer-camera-image-uri", js.undefined)
+    def `setPrinter-camera-image-uriUndefined`: Self = StObject.set(x, "printer-camera-image-uri", js.undefined)
     
     @scala.inline
-    def `setPrinter-config-change-date-time`(value: String): Self = this.set("printer-config-change-date-time", value.asInstanceOf[js.Any])
+    def `setPrinter-camera-image-uriVarargs`(value: String*): Self = StObject.set(x, "printer-camera-image-uri", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-config-change-date-time`: Self = this.set("printer-config-change-date-time", js.undefined)
+    def `setPrinter-config-change-date-time`(value: String): Self = StObject.set(x, "printer-config-change-date-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-config-change-time`(value: Double): Self = this.set("printer-config-change-time", value.asInstanceOf[js.Any])
+    def `setPrinter-config-change-date-timeUndefined`: Self = StObject.set(x, "printer-config-change-date-time", js.undefined)
     
     @scala.inline
-    def `deletePrinter-config-change-time`: Self = this.set("printer-config-change-time", js.undefined)
+    def `setPrinter-config-change-time`(value: Double): Self = StObject.set(x, "printer-config-change-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-config-changes`(value: Double): Self = this.set("printer-config-changes", value.asInstanceOf[js.Any])
+    def `setPrinter-config-change-timeUndefined`: Self = StObject.set(x, "printer-config-change-time", js.undefined)
     
     @scala.inline
-    def `deletePrinter-config-changes`: Self = this.set("printer-config-changes", js.undefined)
+    def `setPrinter-config-changes`(value: Double): Self = StObject.set(x, "printer-config-changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-detailed-status-messagesVarargs`(value: String*): Self = this.set("printer-detailed-status-messages", js.Array(value :_*))
+    def `setPrinter-config-changesUndefined`: Self = StObject.set(x, "printer-config-changes", js.undefined)
     
     @scala.inline
-    def `setPrinter-detailed-status-messages`(value: js.Array[String]): Self = this.set("printer-detailed-status-messages", value.asInstanceOf[js.Any])
+    def `setPrinter-detailed-status-messages`(value: js.Array[String]): Self = StObject.set(x, "printer-detailed-status-messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-detailed-status-messages`: Self = this.set("printer-detailed-status-messages", js.undefined)
+    def `setPrinter-detailed-status-messagesUndefined`: Self = StObject.set(x, "printer-detailed-status-messages", js.undefined)
     
     @scala.inline
-    def `setPrinter-finisherVarargs`(value: String*): Self = this.set("printer-finisher", js.Array(value :_*))
+    def `setPrinter-detailed-status-messagesVarargs`(value: String*): Self = StObject.set(x, "printer-detailed-status-messages", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-finisher`(value: js.Array[String]): Self = this.set("printer-finisher", value.asInstanceOf[js.Any])
+    def `setPrinter-finisher`(value: js.Array[String]): Self = StObject.set(x, "printer-finisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-finisher`: Self = this.set("printer-finisher", js.undefined)
+    def `setPrinter-finisher-description`(value: js.Array[String]): Self = StObject.set(x, "printer-finisher-description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-finisher-descriptionVarargs`(value: String*): Self = this.set("printer-finisher-description", js.Array(value :_*))
+    def `setPrinter-finisher-descriptionUndefined`: Self = StObject.set(x, "printer-finisher-description", js.undefined)
     
     @scala.inline
-    def `setPrinter-finisher-description`(value: js.Array[String]): Self = this.set("printer-finisher-description", value.asInstanceOf[js.Any])
+    def `setPrinter-finisher-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-description", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-finisher-description`: Self = this.set("printer-finisher-description", js.undefined)
+    def `setPrinter-finisher-supplies`(value: js.Array[String]): Self = StObject.set(x, "printer-finisher-supplies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-finisher-suppliesVarargs`(value: String*): Self = this.set("printer-finisher-supplies", js.Array(value :_*))
+    def `setPrinter-finisher-supplies-description`(value: js.Array[String]): Self = StObject.set(x, "printer-finisher-supplies-description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-finisher-supplies`(value: js.Array[String]): Self = this.set("printer-finisher-supplies", value.asInstanceOf[js.Any])
+    def `setPrinter-finisher-supplies-descriptionUndefined`: Self = StObject.set(x, "printer-finisher-supplies-description", js.undefined)
     
     @scala.inline
-    def `deletePrinter-finisher-supplies`: Self = this.set("printer-finisher-supplies", js.undefined)
+    def `setPrinter-finisher-supplies-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-supplies-description", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-finisher-supplies-descriptionVarargs`(value: String*): Self = this.set("printer-finisher-supplies-description", js.Array(value :_*))
+    def `setPrinter-finisher-suppliesUndefined`: Self = StObject.set(x, "printer-finisher-supplies", js.undefined)
     
     @scala.inline
-    def `setPrinter-finisher-supplies-description`(value: js.Array[String]): Self = this.set("printer-finisher-supplies-description", value.asInstanceOf[js.Any])
+    def `setPrinter-finisher-suppliesVarargs`(value: String*): Self = StObject.set(x, "printer-finisher-supplies", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-finisher-supplies-description`: Self = this.set("printer-finisher-supplies-description", js.undefined)
+    def `setPrinter-finisherUndefined`: Self = StObject.set(x, "printer-finisher", js.undefined)
     
     @scala.inline
-    def `setPrinter-id`(value: Double): Self = this.set("printer-id", value.asInstanceOf[js.Any])
+    def `setPrinter-finisherVarargs`(value: String*): Self = StObject.set(x, "printer-finisher", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-id`: Self = this.set("printer-id", js.undefined)
+    def `setPrinter-id`(value: Double): Self = StObject.set(x, "printer-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-impressions-completed`(value: Double): Self = this.set("printer-impressions-completed", value.asInstanceOf[js.Any])
+    def `setPrinter-idUndefined`: Self = StObject.set(x, "printer-id", js.undefined)
     
     @scala.inline
-    def `deletePrinter-impressions-completed`: Self = this.set("printer-impressions-completed", js.undefined)
+    def `setPrinter-impressions-completed`(value: Double): Self = StObject.set(x, "printer-impressions-completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-impressions-completed-col`(value: Impressions): Self = this.set("printer-impressions-completed-col", value.asInstanceOf[js.Any])
+    def `setPrinter-impressions-completed-col`(value: Impressions): Self = StObject.set(x, "printer-impressions-completed-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-impressions-completed-col`: Self = this.set("printer-impressions-completed-col", js.undefined)
+    def `setPrinter-impressions-completed-colUndefined`: Self = StObject.set(x, "printer-impressions-completed-col", js.undefined)
     
     @scala.inline
-    def `setPrinter-input-trayVarargs`(value: String*): Self = this.set("printer-input-tray", js.Array(value :_*))
+    def `setPrinter-impressions-completedUndefined`: Self = StObject.set(x, "printer-impressions-completed", js.undefined)
     
     @scala.inline
-    def `setPrinter-input-tray`(value: js.Array[String]): Self = this.set("printer-input-tray", value.asInstanceOf[js.Any])
+    def `setPrinter-input-tray`(value: js.Array[String]): Self = StObject.set(x, "printer-input-tray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-input-tray`: Self = this.set("printer-input-tray", js.undefined)
+    def `setPrinter-input-trayUndefined`: Self = StObject.set(x, "printer-input-tray", js.undefined)
     
     @scala.inline
-    def `setPrinter-is-accepting-jobs`(value: Boolean): Self = this.set("printer-is-accepting-jobs", value.asInstanceOf[js.Any])
+    def `setPrinter-input-trayVarargs`(value: String*): Self = StObject.set(x, "printer-input-tray", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-is-accepting-jobs`: Self = this.set("printer-is-accepting-jobs", js.undefined)
+    def `setPrinter-is-accepting-jobs`(value: Boolean): Self = StObject.set(x, "printer-is-accepting-jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-media-sheets-completed`(value: Double): Self = this.set("printer-media-sheets-completed", value.asInstanceOf[js.Any])
+    def `setPrinter-is-accepting-jobsUndefined`: Self = StObject.set(x, "printer-is-accepting-jobs", js.undefined)
     
     @scala.inline
-    def `deletePrinter-media-sheets-completed`: Self = this.set("printer-media-sheets-completed", js.undefined)
+    def `setPrinter-media-sheets-completed`(value: Double): Self = StObject.set(x, "printer-media-sheets-completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-media-sheets-completed-col`(value: MediaSheets): Self = this.set("printer-media-sheets-completed-col", value.asInstanceOf[js.Any])
+    def `setPrinter-media-sheets-completed-col`(value: MediaSheets): Self = StObject.set(x, "printer-media-sheets-completed-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-media-sheets-completed-col`: Self = this.set("printer-media-sheets-completed-col", js.undefined)
+    def `setPrinter-media-sheets-completed-colUndefined`: Self = StObject.set(x, "printer-media-sheets-completed-col", js.undefined)
     
     @scala.inline
-    def `setPrinter-message-date-time`(value: String): Self = this.set("printer-message-date-time", value.asInstanceOf[js.Any])
+    def `setPrinter-media-sheets-completedUndefined`: Self = StObject.set(x, "printer-media-sheets-completed", js.undefined)
     
     @scala.inline
-    def `deletePrinter-message-date-time`: Self = this.set("printer-message-date-time", js.undefined)
+    def `setPrinter-message-date-time`(value: String): Self = StObject.set(x, "printer-message-date-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-message-from-operator`(value: String): Self = this.set("printer-message-from-operator", value.asInstanceOf[js.Any])
+    def `setPrinter-message-date-timeUndefined`: Self = StObject.set(x, "printer-message-date-time", js.undefined)
     
     @scala.inline
-    def `deletePrinter-message-from-operator`: Self = this.set("printer-message-from-operator", js.undefined)
+    def `setPrinter-message-from-operator`(value: String): Self = StObject.set(x, "printer-message-from-operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-message-time`(value: Double): Self = this.set("printer-message-time", value.asInstanceOf[js.Any])
+    def `setPrinter-message-from-operatorUndefined`: Self = StObject.set(x, "printer-message-from-operator", js.undefined)
     
     @scala.inline
-    def `deletePrinter-message-time`: Self = this.set("printer-message-time", js.undefined)
+    def `setPrinter-message-time`(value: Double): Self = StObject.set(x, "printer-message-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-more-info`(value: String): Self = this.set("printer-more-info", value.asInstanceOf[js.Any])
+    def `setPrinter-message-timeUndefined`: Self = StObject.set(x, "printer-message-time", js.undefined)
     
     @scala.inline
-    def `deletePrinter-more-info`: Self = this.set("printer-more-info", js.undefined)
+    def `setPrinter-more-info`(value: String): Self = StObject.set(x, "printer-more-info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-output-trayVarargs`(value: String*): Self = this.set("printer-output-tray", js.Array(value :_*))
+    def `setPrinter-more-infoUndefined`: Self = StObject.set(x, "printer-more-info", js.undefined)
     
     @scala.inline
-    def `setPrinter-output-tray`(value: js.Array[String]): Self = this.set("printer-output-tray", value.asInstanceOf[js.Any])
+    def `setPrinter-output-tray`(value: js.Array[String]): Self = StObject.set(x, "printer-output-tray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-output-tray`: Self = this.set("printer-output-tray", js.undefined)
+    def `setPrinter-output-trayUndefined`: Self = StObject.set(x, "printer-output-tray", js.undefined)
     
     @scala.inline
-    def `setPrinter-pages-completed`(value: Double): Self = this.set("printer-pages-completed", value.asInstanceOf[js.Any])
+    def `setPrinter-output-trayVarargs`(value: String*): Self = StObject.set(x, "printer-output-tray", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-pages-completed`: Self = this.set("printer-pages-completed", js.undefined)
+    def `setPrinter-pages-completed`(value: Double): Self = StObject.set(x, "printer-pages-completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-pages-completed-col`(value: Pages): Self = this.set("printer-pages-completed-col", value.asInstanceOf[js.Any])
+    def `setPrinter-pages-completed-col`(value: Pages): Self = StObject.set(x, "printer-pages-completed-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-pages-completed-col`: Self = this.set("printer-pages-completed-col", js.undefined)
+    def `setPrinter-pages-completed-colUndefined`: Self = StObject.set(x, "printer-pages-completed-col", js.undefined)
     
     @scala.inline
-    def `setPrinter-service-type`(value: PrinterServiceType): Self = this.set("printer-service-type", value.asInstanceOf[js.Any])
+    def `setPrinter-pages-completedUndefined`: Self = StObject.set(x, "printer-pages-completed", js.undefined)
     
     @scala.inline
-    def `deletePrinter-service-type`: Self = this.set("printer-service-type", js.undefined)
+    def `setPrinter-service-type`(value: PrinterServiceType): Self = StObject.set(x, "printer-service-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any)*): Self = this.set("printer-settable-attributes-supported", js.Array(value :_*))
+    def `setPrinter-service-typeUndefined`: Self = StObject.set(x, "printer-service-type", js.undefined)
     
     @scala.inline
     def `setPrinter-settable-attributes-supported`(
       value: js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
         ]
-    ): Self = this.set("printer-settable-attributes-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "printer-settable-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-settable-attributes-supported`: Self = this.set("printer-settable-attributes-supported", js.undefined)
+    def `setPrinter-settable-attributes-supportedUndefined`: Self = StObject.set(x, "printer-settable-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-state`(value: PrinterState): Self = this.set("printer-state", value.asInstanceOf[js.Any])
+    def `setPrinter-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any)*): Self = StObject.set(x, "printer-settable-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-state`: Self = this.set("printer-state", js.undefined)
+    def `setPrinter-state`(value: PrinterState): Self = StObject.set(x, "printer-state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-state-change-date-time`(value: String): Self = this.set("printer-state-change-date-time", value.asInstanceOf[js.Any])
+    def `setPrinter-state-change-date-time`(value: String): Self = StObject.set(x, "printer-state-change-date-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-state-change-date-time`: Self = this.set("printer-state-change-date-time", js.undefined)
+    def `setPrinter-state-change-date-timeUndefined`: Self = StObject.set(x, "printer-state-change-date-time", js.undefined)
     
     @scala.inline
-    def `setPrinter-state-change-time`(value: Double): Self = this.set("printer-state-change-time", value.asInstanceOf[js.Any])
+    def `setPrinter-state-change-time`(value: Double): Self = StObject.set(x, "printer-state-change-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-state-change-time`: Self = this.set("printer-state-change-time", js.undefined)
+    def `setPrinter-state-change-timeUndefined`: Self = StObject.set(x, "printer-state-change-time", js.undefined)
     
     @scala.inline
-    def `setPrinter-state-message`(value: String): Self = this.set("printer-state-message", value.asInstanceOf[js.Any])
+    def `setPrinter-state-message`(value: String): Self = StObject.set(x, "printer-state-message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-state-message`: Self = this.set("printer-state-message", js.undefined)
+    def `setPrinter-state-messageUndefined`: Self = StObject.set(x, "printer-state-message", js.undefined)
     
     @scala.inline
-    def `setPrinter-state-reasonsVarargs`(value: PrinterStateReasons*): Self = this.set("printer-state-reasons", js.Array(value :_*))
+    def `setPrinter-state-reasons`(value: js.Array[PrinterStateReasons]): Self = StObject.set(x, "printer-state-reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-state-reasons`(value: js.Array[PrinterStateReasons]): Self = this.set("printer-state-reasons", value.asInstanceOf[js.Any])
+    def `setPrinter-state-reasonsUndefined`: Self = StObject.set(x, "printer-state-reasons", js.undefined)
     
     @scala.inline
-    def `deletePrinter-state-reasons`: Self = this.set("printer-state-reasons", js.undefined)
+    def `setPrinter-state-reasonsVarargs`(value: PrinterStateReasons*): Self = StObject.set(x, "printer-state-reasons", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-static-resource-k-octets-free`(value: Double): Self = this.set("printer-static-resource-k-octets-free", value.asInstanceOf[js.Any])
+    def `setPrinter-stateUndefined`: Self = StObject.set(x, "printer-state", js.undefined)
     
     @scala.inline
-    def `deletePrinter-static-resource-k-octets-free`: Self = this.set("printer-static-resource-k-octets-free", js.undefined)
+    def `setPrinter-static-resource-k-octets-free`(value: Double): Self = StObject.set(x, "printer-static-resource-k-octets-free", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-supplyVarargs`(value: String*): Self = this.set("printer-supply", js.Array(value :_*))
+    def `setPrinter-static-resource-k-octets-freeUndefined`: Self = StObject.set(x, "printer-static-resource-k-octets-free", js.undefined)
     
     @scala.inline
-    def `setPrinter-supply`(value: js.Array[String]): Self = this.set("printer-supply", value.asInstanceOf[js.Any])
+    def `setPrinter-supply`(value: js.Array[String]): Self = StObject.set(x, "printer-supply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-supply`: Self = this.set("printer-supply", js.undefined)
+    def `setPrinter-supply-description`(value: js.Array[String]): Self = StObject.set(x, "printer-supply-description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-supply-descriptionVarargs`(value: String*): Self = this.set("printer-supply-description", js.Array(value :_*))
+    def `setPrinter-supply-descriptionUndefined`: Self = StObject.set(x, "printer-supply-description", js.undefined)
     
     @scala.inline
-    def `setPrinter-supply-description`(value: js.Array[String]): Self = this.set("printer-supply-description", value.asInstanceOf[js.Any])
+    def `setPrinter-supply-descriptionVarargs`(value: String*): Self = StObject.set(x, "printer-supply-description", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-supply-description`: Self = this.set("printer-supply-description", js.undefined)
+    def `setPrinter-supply-info-uri`(value: String): Self = StObject.set(x, "printer-supply-info-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-supply-info-uri`(value: String): Self = this.set("printer-supply-info-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-supply-info-uriUndefined`: Self = StObject.set(x, "printer-supply-info-uri", js.undefined)
     
     @scala.inline
-    def `deletePrinter-supply-info-uri`: Self = this.set("printer-supply-info-uri", js.undefined)
+    def `setPrinter-supplyUndefined`: Self = StObject.set(x, "printer-supply", js.undefined)
     
     @scala.inline
-    def `setPrinter-up-time`(value: Double): Self = this.set("printer-up-time", value.asInstanceOf[js.Any])
+    def `setPrinter-supplyVarargs`(value: String*): Self = StObject.set(x, "printer-supply", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-up-time`: Self = this.set("printer-up-time", js.undefined)
+    def `setPrinter-up-time`(value: Double): Self = StObject.set(x, "printer-up-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-uri-supportedVarargs`(value: String*): Self = this.set("printer-uri-supported", js.Array(value :_*))
+    def `setPrinter-up-timeUndefined`: Self = StObject.set(x, "printer-up-time", js.undefined)
     
     @scala.inline
-    def `setPrinter-uri-supported`(value: js.Array[String]): Self = this.set("printer-uri-supported", value.asInstanceOf[js.Any])
+    def `setPrinter-uri-supported`(value: js.Array[String]): Self = StObject.set(x, "printer-uri-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-uri-supported`: Self = this.set("printer-uri-supported", js.undefined)
+    def `setPrinter-uri-supportedUndefined`: Self = StObject.set(x, "printer-uri-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-uuid`(value: String): Self = this.set("printer-uuid", value.asInstanceOf[js.Any])
+    def `setPrinter-uri-supportedVarargs`(value: String*): Self = StObject.set(x, "printer-uri-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-uuid`: Self = this.set("printer-uuid", js.undefined)
+    def `setPrinter-uuid`(value: String): Self = StObject.set(x, "printer-uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setQueued-job-count`(value: Double): Self = this.set("queued-job-count", value.asInstanceOf[js.Any])
+    def `setPrinter-uuidUndefined`: Self = StObject.set(x, "printer-uuid", js.undefined)
     
     @scala.inline
-    def `deleteQueued-job-count`: Self = this.set("queued-job-count", js.undefined)
+    def `setQueued-job-count`(value: Double): Self = StObject.set(x, "queued-job-count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setXri-authentication-supportedVarargs`(value: XriAuthentication*): Self = this.set("xri-authentication-supported", js.Array(value :_*))
+    def `setQueued-job-countUndefined`: Self = StObject.set(x, "queued-job-count", js.undefined)
     
     @scala.inline
-    def `setXri-authentication-supported`(value: js.Array[XriAuthentication]): Self = this.set("xri-authentication-supported", value.asInstanceOf[js.Any])
+    def `setXri-authentication-supported`(value: js.Array[XriAuthentication]): Self = StObject.set(x, "xri-authentication-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteXri-authentication-supported`: Self = this.set("xri-authentication-supported", js.undefined)
+    def `setXri-authentication-supportedUndefined`: Self = StObject.set(x, "xri-authentication-supported", js.undefined)
     
     @scala.inline
-    def `setXri-security-supportedVarargs`(value: XriSecurity*): Self = this.set("xri-security-supported", js.Array(value :_*))
+    def `setXri-authentication-supportedVarargs`(value: XriAuthentication*): Self = StObject.set(x, "xri-authentication-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setXri-security-supported`(value: js.Array[XriSecurity]): Self = this.set("xri-security-supported", value.asInstanceOf[js.Any])
+    def `setXri-security-supported`(value: js.Array[XriSecurity]): Self = StObject.set(x, "xri-security-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteXri-security-supported`: Self = this.set("xri-security-supported", js.undefined)
+    def `setXri-security-supportedUndefined`: Self = StObject.set(x, "xri-security-supported", js.undefined)
     
     @scala.inline
-    def `setXri-uri-scheme-supportedVarargs`(value: UriSchemes*): Self = this.set("xri-uri-scheme-supported", js.Array(value :_*))
+    def `setXri-security-supportedVarargs`(value: XriSecurity*): Self = StObject.set(x, "xri-security-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setXri-uri-scheme-supported`(value: js.Array[UriSchemes]): Self = this.set("xri-uri-scheme-supported", value.asInstanceOf[js.Any])
+    def `setXri-uri-scheme-supported`(value: js.Array[UriSchemes]): Self = StObject.set(x, "xri-uri-scheme-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteXri-uri-scheme-supported`: Self = this.set("xri-uri-scheme-supported", js.undefined)
+    def `setXri-uri-scheme-supportedUndefined`: Self = StObject.set(x, "xri-uri-scheme-supported", js.undefined)
+    
+    @scala.inline
+    def `setXri-uri-scheme-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "xri-uri-scheme-supported", js.Array(value :_*))
   }
 }

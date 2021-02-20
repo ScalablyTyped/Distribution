@@ -1,26 +1,17 @@
 package typings.cryptoJs.mod
 
 import typings.cryptoJs.anon.PartialCipherParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("crypto-js", "lib")
-@js.native
-object lib extends js.Object {
-  
-  /**
-    * Abstract base block cipher mode template.
-    */
-  val BlockCipherMode: js.Any = js.native
-  
-  val BufferedBlockAlgorithm: js.Any = js.native
+object lib {
   
   /**
     * Base object for prototypal inheritance.
     */
-  @js.native
-  object Base extends js.Object {
+  object Base {
     
     /**
       * Extends this object and runs the init method.
@@ -32,6 +23,8 @@ object lib extends js.Object {
       *
       *     var instance = MyType.create();
       */
+    @JSImport("crypto-js", "lib.Base.create")
+    @js.native
     def create(args: js.Any*): js.Any = js.native
     
     /**
@@ -50,6 +43,8 @@ object lib extends js.Object {
       *         }
       *     });
       */
+    @JSImport("crypto-js", "lib.Base.extend")
+    @js.native
     def extend(overrides: js.Object): js.Any = js.native
     
     /**
@@ -63,11 +58,23 @@ object lib extends js.Object {
       *         field: 'value'
       *     });
       */
+    @JSImport("crypto-js", "lib.Base.mixIn")
+    @js.native
     def mixIn(properties: js.Object): js.Any = js.native
   }
   
+  /**
+    * Abstract base block cipher mode template.
+    */
+  @JSImport("crypto-js", "lib.BlockCipherMode")
   @js.native
-  object Cipher extends js.Object {
+  val BlockCipherMode: js.Any = js.native
+  
+  @JSImport("crypto-js", "lib.BufferedBlockAlgorithm")
+  @js.native
+  val BufferedBlockAlgorithm: js.Any = js.native
+  
+  object Cipher {
     
     /**
       * Creates shortcut functions to a cipher's object interface.
@@ -80,11 +87,12 @@ object lib extends js.Object {
       *
       *     var AES = CryptoJS.lib.Cipher._createHelper(CryptoJS.algo.AES);
       */
-    def _createHelper(cipher: typings.cryptoJs.mod.Cipher): CipherHelper = js.native
+    @JSImport("crypto-js", "lib.Cipher._createHelper")
+    @js.native
+    def createHelper(cipher: typings.cryptoJs.mod.Cipher): CipherHelper = js.native
   }
   
-  @js.native
-  object CipherParams extends js.Object {
+  object CipherParams {
     
     /**
       * Initializes a newly created cipher params object.
@@ -105,11 +113,12 @@ object lib extends js.Object {
       *         formatter: CryptoJS.format.OpenSSL
       *     });
       */
+    @JSImport("crypto-js", "lib.CipherParams.create")
+    @js.native
     def create(cipherParams: PartialCipherParams): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
   }
   
-  @js.native
-  object Hasher extends js.Object {
+  object Hasher {
     
     /**
       * Creates a shortcut function to a hasher's object interface.
@@ -122,7 +131,9 @@ object lib extends js.Object {
       *
       *     var SHA256 = CryptoJS.lib.Hasher._createHelper(CryptoJS.algo.SHA256);
       */
-    def _createHelper(hasher: HasherStatic): HasherHelper = js.native
+    @JSImport("crypto-js", "lib.Hasher._createHelper")
+    @js.native
+    def createHelper(hasher: HasherStatic): HasherHelper = js.native
     
     /**
       * Creates a shortcut function to the HMAC's object interface.
@@ -135,17 +146,22 @@ object lib extends js.Object {
       *
       *     var HmacSHA256 = CryptoJS.lib.Hasher._createHmacHelper(CryptoJS.algo.SHA256);
       */
-    def _createHmacHelper(hasher: HasherStatic): HmacHasherHelper = js.native
+    @JSImport("crypto-js", "lib.Hasher._createHmacHelper")
+    @js.native
+    def createHmacHelper(hasher: HasherStatic): HmacHasherHelper = js.native
   }
   
   /**
     * A serializable cipher wrapper that derives the key from a password,
     * and returns ciphertext as a serializable cipher params object.
     */
-  @js.native
-  object PasswordBasedCipher extends js.Object {
+  object PasswordBasedCipher {
     
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.decrypt")
+    @js.native
     def decrypt(cipher: CipherStatic, ciphertext: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.decrypt")
+    @js.native
     def decrypt(cipher: CipherStatic, ciphertext: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
     /**
       * Decrypts serialized ciphertext using a password.
@@ -162,11 +178,15 @@ object lib extends js.Object {
       *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, 'password', { format: CryptoJS.format.OpenSSL });
       *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, 'password', { format: CryptoJS.format.OpenSSL });
       */
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.decrypt")
+    @js.native
     def decrypt(
       cipher: CipherStatic,
       ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams,
       password: String
     ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.decrypt")
+    @js.native
     def decrypt(
       cipher: CipherStatic,
       ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams,
@@ -174,7 +194,11 @@ object lib extends js.Object {
       cfg: CipherOption
     ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
     
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.encrypt")
+    @js.native
     def encrypt(cipher: CipherStatic, message: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.encrypt")
+    @js.native
     def encrypt(cipher: CipherStatic, message: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
     /**
       * Encrypts a message using a password.
@@ -191,11 +215,15 @@ object lib extends js.Object {
       *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password');
       *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password', { format: CryptoJS.format.OpenSSL });
       */
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.encrypt")
+    @js.native
     def encrypt(
       cipher: CipherStatic,
       message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
       password: String
     ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    @JSImport("crypto-js", "lib.PasswordBasedCipher.encrypt")
+    @js.native
     def encrypt(
       cipher: CipherStatic,
       message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
@@ -207,26 +235,13 @@ object lib extends js.Object {
   /**
     * A cipher wrapper that returns ciphertext as a serializable cipher params object.
     */
-  @js.native
-  object SerializableCipher extends js.Object {
+  object SerializableCipher {
     
-    def _parse(ciphertext: String, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-    /**
-      * Converts serialized ciphertext to CipherParams,
-      * else assumed CipherParams already and returns ciphertext unchanged.
-      *
-      * @param ciphertext The ciphertext.
-      * @param format The formatting strategy to use to parse serialized ciphertext.
-      *
-      * @return The unserialized ciphertext.
-      *
-      * @example
-      *
-      *     var ciphertextParams = CryptoJS.lib.SerializableCipher._parse(ciphertextStringOrParams, format);
-      */
-    def _parse(ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-    
+    @JSImport("crypto-js", "lib.SerializableCipher.decrypt")
+    @js.native
     def decrypt(cipher: CipherStatic, ciphertext: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    @JSImport("crypto-js", "lib.SerializableCipher.decrypt")
+    @js.native
     def decrypt(
       cipher: CipherStatic,
       ciphertext: String,
@@ -248,11 +263,15 @@ object lib extends js.Object {
       *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, key, { iv: iv, format: CryptoJS.format.OpenSSL });
       *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, key, { iv: iv, format: CryptoJS.format.OpenSSL });
       */
+    @JSImport("crypto-js", "lib.SerializableCipher.decrypt")
+    @js.native
     def decrypt(
       cipher: CipherStatic,
       ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
       key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
     ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    @JSImport("crypto-js", "lib.SerializableCipher.decrypt")
+    @js.native
     def decrypt(
       cipher: CipherStatic,
       ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
@@ -260,7 +279,11 @@ object lib extends js.Object {
       cfg: CipherOption
     ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
     
+    @JSImport("crypto-js", "lib.SerializableCipher.encrypt")
+    @js.native
     def encrypt(cipher: CipherStatic, message: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    @JSImport("crypto-js", "lib.SerializableCipher.encrypt")
+    @js.native
     def encrypt(
       cipher: CipherStatic,
       message: String,
@@ -283,21 +306,44 @@ object lib extends js.Object {
       *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv });
       *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv, format: CryptoJS.format.OpenSSL });
       */
+    @JSImport("crypto-js", "lib.SerializableCipher.encrypt")
+    @js.native
     def encrypt(
       cipher: CipherStatic,
       message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
       key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
     ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    @JSImport("crypto-js", "lib.SerializableCipher.encrypt")
+    @js.native
     def encrypt(
       cipher: CipherStatic,
       message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
       key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
       cfg: CipherOption
     ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    
+    @JSImport("crypto-js", "lib.SerializableCipher._parse")
+    @js.native
+    def parse(ciphertext: String, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+    /**
+      * Converts serialized ciphertext to CipherParams,
+      * else assumed CipherParams already and returns ciphertext unchanged.
+      *
+      * @param ciphertext The ciphertext.
+      * @param format The formatting strategy to use to parse serialized ciphertext.
+      *
+      * @return The unserialized ciphertext.
+      *
+      * @example
+      *
+      *     var ciphertextParams = CryptoJS.lib.SerializableCipher._parse(ciphertextStringOrParams, format);
+      */
+    @JSImport("crypto-js", "lib.SerializableCipher._parse")
+    @js.native
+    def parse(ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
   }
   
-  @js.native
-  object WordArray extends js.Object {
+  object WordArray {
     
     /**
       * Initializes a newly created word array.
@@ -311,9 +357,17 @@ object lib extends js.Object {
       *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607]);
       *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607], 6);
       */
+    @JSImport("crypto-js", "lib.WordArray.create")
+    @js.native
     def create(): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+    @JSImport("crypto-js", "lib.WordArray.create")
+    @js.native
     def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+    @JSImport("crypto-js", "lib.WordArray.create")
+    @js.native
     def create(words: js.Array[Double]): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+    @JSImport("crypto-js", "lib.WordArray.create")
+    @js.native
     def create(words: js.Array[Double], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
     
     /**
@@ -327,6 +381,8 @@ object lib extends js.Object {
       *
       *     var wordArray = CryptoJS.lib.WordArray.random(16);
       */
+    @JSImport("crypto-js", "lib.WordArray.random")
+    @js.native
     def random(nBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
   }
 }

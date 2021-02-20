@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2DetectIntentRequest extends js.Object {
+trait GoogleCloudDialogflowV2DetectIntentRequest extends StObject {
   
   /**
     * The natural language speech audio to be processed. This field should be populated iff `query_input` is set to an input audio config. A single request can contain up to 1 minute of
@@ -40,48 +41,36 @@ object GoogleCloudDialogflowV2DetectIntentRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2DetectIntentRequestOps[Self <: GoogleCloudDialogflowV2DetectIntentRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2DetectIntentRequestMutableBuilder[Self <: GoogleCloudDialogflowV2DetectIntentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputAudio(value: String): Self = StObject.set(x, "inputAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputAudioUndefined: Self = StObject.set(x, "inputAudio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputAudioConfig(value: GoogleCloudDialogflowV2OutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputAudio(value: String): Self = this.set("inputAudio", value.asInstanceOf[js.Any])
+    def setOutputAudioConfigMask(value: String): Self = StObject.set(x, "outputAudioConfigMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputAudio: Self = this.set("inputAudio", js.undefined)
+    def setOutputAudioConfigMaskUndefined: Self = StObject.set(x, "outputAudioConfigMask", js.undefined)
     
     @scala.inline
-    def setOutputAudioConfig(value: GoogleCloudDialogflowV2OutputAudioConfig): Self = this.set("outputAudioConfig", value.asInstanceOf[js.Any])
+    def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
     
     @scala.inline
-    def deleteOutputAudioConfig: Self = this.set("outputAudioConfig", js.undefined)
+    def setQueryInput(value: GoogleCloudDialogflowV2QueryInput): Self = StObject.set(x, "queryInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputAudioConfigMask(value: String): Self = this.set("outputAudioConfigMask", value.asInstanceOf[js.Any])
+    def setQueryInputUndefined: Self = StObject.set(x, "queryInput", js.undefined)
     
     @scala.inline
-    def deleteOutputAudioConfigMask: Self = this.set("outputAudioConfigMask", js.undefined)
+    def setQueryParams(value: GoogleCloudDialogflowV2QueryParameters): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryInput(value: GoogleCloudDialogflowV2QueryInput): Self = this.set("queryInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryInput: Self = this.set("queryInput", js.undefined)
-    
-    @scala.inline
-    def setQueryParams(value: GoogleCloudDialogflowV2QueryParameters): Self = this.set("queryParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryParams: Self = this.set("queryParams", js.undefined)
+    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
   }
 }

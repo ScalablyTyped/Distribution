@@ -1,12 +1,13 @@
 package typings.ddTrace.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 @js.native
-trait TransportRequestParams extends js.Object {
+trait TransportRequestParams extends StObject {
   
   var body: js.UndefOr[anyObject] = js.native
   
@@ -27,42 +28,30 @@ object TransportRequestParams {
   }
   
   @scala.inline
-  implicit class TransportRequestParamsOps[Self <: TransportRequestParams] (val x: Self) extends AnyVal {
+  implicit class TransportRequestParamsMutableBuilder[Self <: TransportRequestParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: anyObject): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulkBody(value: anyObject): Self = StObject.set(x, "bulkBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setBulkBodyUndefined: Self = StObject.set(x, "bulkBody", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: anyObject): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setQuerystring(value: anyObject): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkBody(value: anyObject): Self = this.set("bulkBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulkBody: Self = this.set("bulkBody", js.undefined)
-    
-    @scala.inline
-    def setQuerystring(value: anyObject): Self = this.set("querystring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuerystring: Self = this.set("querystring", js.undefined)
+    def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
   }
 }

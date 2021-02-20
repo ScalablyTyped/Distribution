@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDomainsDns extends js.Object {
+trait GoogleDomainsDns extends StObject {
   
   /** Output only. The list of DS records published for this domain. The list is automatically populated when `ds_state` is `DS_RECORDS_PUBLISHED`, otherwise it remains empty. */
   var dsRecords: js.UndefOr[js.Array[DsRecord]] = js.native
@@ -28,42 +29,30 @@ object GoogleDomainsDns {
   }
   
   @scala.inline
-  implicit class GoogleDomainsDnsOps[Self <: GoogleDomainsDns] (val x: Self) extends AnyVal {
+  implicit class GoogleDomainsDnsMutableBuilder[Self <: GoogleDomainsDns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDsRecords(value: js.Array[DsRecord]): Self = StObject.set(x, "dsRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
     
     @scala.inline
-    def setDsRecordsVarargs(value: DsRecord*): Self = this.set("dsRecords", js.Array(value :_*))
+    def setDsState(value: String): Self = StObject.set(x, "dsState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsRecords(value: js.Array[DsRecord]): Self = this.set("dsRecords", value.asInstanceOf[js.Any])
+    def setDsStateUndefined: Self = StObject.set(x, "dsState", js.undefined)
     
     @scala.inline
-    def deleteDsRecords: Self = this.set("dsRecords", js.undefined)
+    def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsState(value: String): Self = this.set("dsState", value.asInstanceOf[js.Any])
+    def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
     @scala.inline
-    def deleteDsState: Self = this.set("dsState", js.undefined)
-    
-    @scala.inline
-    def setNameServersVarargs(value: String*): Self = this.set("nameServers", js.Array(value :_*))
-    
-    @scala.inline
-    def setNameServers(value: js.Array[String]): Self = this.set("nameServers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameServers: Self = this.set("nameServers", js.undefined)
+    def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
   }
 }

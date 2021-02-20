@@ -1,11 +1,12 @@
 package typings.zepto
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZeptoEffects extends js.Object {
+trait ZeptoEffects extends StObject {
   
   /**
     * (default false in browsers that support CSS transitions): set to true to disable all animate() transitions.
@@ -27,24 +28,12 @@ object ZeptoEffects {
   }
   
   @scala.inline
-  implicit class ZeptoEffectsOps[Self <: ZeptoEffects] (val x: Self) extends AnyVal {
+  implicit class ZeptoEffectsMutableBuilder[Self <: ZeptoEffects] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOff(value: Boolean): Self = this.set("off", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeeds(value: ZeptoEffectsSpeeds): Self = this.set("speeds", value.asInstanceOf[js.Any])
+    def setSpeeds(value: ZeptoEffectsSpeeds): Self = StObject.set(x, "speeds", value.asInstanceOf[js.Any])
   }
 }

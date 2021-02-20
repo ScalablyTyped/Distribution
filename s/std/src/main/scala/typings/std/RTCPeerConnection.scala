@@ -10,6 +10,7 @@ import typings.std.stdStrings.negotiationneeded
 import typings.std.stdStrings.signalingstatechange
 import typings.std.stdStrings.statsended
 import typings.std.stdStrings.track
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

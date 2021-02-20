@@ -2,12 +2,13 @@ package typings.jqueryui.JQueryUI
 
 import typings.jqueryui.JQuery
 import typings.std.ThisType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Widget extends js.Object {
+trait Widget extends StObject {
   
   def apply(methodName: String): JQuery = js.native
   def apply(optionLiteral: String, optionName: String): js.Any = js.native

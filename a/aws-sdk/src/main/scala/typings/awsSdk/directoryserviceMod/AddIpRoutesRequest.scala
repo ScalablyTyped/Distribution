@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddIpRoutesRequest extends js.Object {
+trait AddIpRoutesRequest extends StObject {
   
   /**
     * Identifier (ID) of the directory to which to add the address block.
@@ -31,33 +32,21 @@ object AddIpRoutesRequest {
   }
   
   @scala.inline
-  implicit class AddIpRoutesRequestOps[Self <: AddIpRoutesRequest] (val x: Self) extends AnyVal {
+  implicit class AddIpRoutesRequestMutableBuilder[Self <: AddIpRoutesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpRoutes(value: IpRoutes): Self = StObject.set(x, "IpRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpRoutesVarargs(value: IpRoute*): Self = StObject.set(x, "IpRoutes", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setUpdateSecurityGroupForDirectoryControllers(value: UpdateSecurityGroupForDirectoryControllers): Self = StObject.set(x, "UpdateSecurityGroupForDirectoryControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpRoutesVarargs(value: IpRoute*): Self = this.set("IpRoutes", js.Array(value :_*))
-    
-    @scala.inline
-    def setIpRoutes(value: IpRoutes): Self = this.set("IpRoutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateSecurityGroupForDirectoryControllers(value: UpdateSecurityGroupForDirectoryControllers): Self = this.set("UpdateSecurityGroupForDirectoryControllers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSecurityGroupForDirectoryControllers: Self = this.set("UpdateSecurityGroupForDirectoryControllers", js.undefined)
+    def setUpdateSecurityGroupForDirectoryControllersUndefined: Self = StObject.set(x, "UpdateSecurityGroupForDirectoryControllers", js.undefined)
   }
 }

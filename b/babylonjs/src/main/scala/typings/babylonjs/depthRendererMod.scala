@@ -5,16 +5,16 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Rendering/depthRenderer", JSImport.Namespace)
-@js.native
-object depthRendererMod extends js.Object {
+object depthRendererMod {
   
+  @JSImport("babylonjs/Rendering/depthRenderer", "DepthRenderer")
   @js.native
-  class DepthRenderer protected () extends js.Object {
+  class DepthRenderer protected () extends StObject {
     /**
       * Instantiates a depth renderer
       * @param scene The scene the renderer belongs to
@@ -81,10 +81,11 @@ object depthRendererMod extends js.Object {
     var useOnlyInActiveCamera: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object DepthRenderer extends js.Object {
+  object DepthRenderer {
     
     /** @hidden */
+    @JSImport("babylonjs/Rendering/depthRenderer", "DepthRenderer._SceneComponentInitialization")
+    @js.native
     def _SceneComponentInitialization(scene: Scene): Unit = js.native
   }
 }

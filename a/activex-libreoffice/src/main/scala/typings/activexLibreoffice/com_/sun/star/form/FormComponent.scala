@@ -3,10 +3,8 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyAccess
+import typings.activexLibreoffice.com_.sun.star.beans.XPropertyBag
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyContainer
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XChild
@@ -18,6 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,13 +28,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait FormComponent
-  extends XChild
+  extends XPropertyBag
+     with XChild
      with XComponent
      with XNamed
-     with XPropertySet
      with XPersistObject
-     with XPropertyContainer
-     with XPropertyAccess
 object FormComponent {
   
   @scala.inline

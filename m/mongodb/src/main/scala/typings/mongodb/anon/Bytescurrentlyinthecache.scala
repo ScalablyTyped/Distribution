@@ -1,11 +1,12 @@
 package typings.mongodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bytescurrentlyinthecache extends js.Object {
+trait Bytescurrentlyinthecache extends StObject {
   
   var `bytes currently in the cache`: Double = js.native
   
@@ -109,87 +110,75 @@ object Bytescurrentlyinthecache {
   }
   
   @scala.inline
-  implicit class BytescurrentlyinthecacheOps[Self <: Bytescurrentlyinthecache] (val x: Self) extends AnyVal {
+  implicit class BytescurrentlyinthecacheMutableBuilder[Self <: Bytescurrentlyinthecache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setBytes currently in the cache`(value: Double): Self = StObject.set(x, "bytes currently in the cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setBytes read into cache`(value: Double): Self = StObject.set(x, "bytes read into cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBytes written from cache`(value: Double): Self = StObject.set(x, "bytes written from cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBytes currently in the cache`(value: Double): Self = this.set("bytes currently in the cache", value.asInstanceOf[js.Any])
+    def `setCheckpoint blocked page eviction`(value: Double): Self = StObject.set(x, "checkpoint blocked page eviction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBytes read into cache`(value: Double): Self = this.set("bytes read into cache", value.asInstanceOf[js.Any])
+    def `setData source pages selected for eviction unable to be evicted`(value: Double): Self = StObject.set(x, "data source pages selected for eviction unable to be evicted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBytes written from cache`(value: Double): Self = this.set("bytes written from cache", value.asInstanceOf[js.Any])
+    def `setHazard pointer blocked page eviction`(value: Double): Self = StObject.set(x, "hazard pointer blocked page eviction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCheckpoint blocked page eviction`(value: Double): Self = this.set("checkpoint blocked page eviction", value.asInstanceOf[js.Any])
+    def `setIn-memory page passed criteria to be split`(value: Double): Self = StObject.set(x, "in-memory page passed criteria to be split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setData source pages selected for eviction unable to be evicted`(value: Double): Self = this.set("data source pages selected for eviction unable to be evicted", value.asInstanceOf[js.Any])
+    def `setIn-memory page splits`(value: Double): Self = StObject.set(x, "in-memory page splits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHazard pointer blocked page eviction`(value: Double): Self = this.set("hazard pointer blocked page eviction", value.asInstanceOf[js.Any])
+    def `setInternal pages evicted`(value: Double): Self = StObject.set(x, "internal pages evicted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIn-memory page passed criteria to be split`(value: Double): Self = this.set("in-memory page passed criteria to be split", value.asInstanceOf[js.Any])
+    def `setInternal pages split during eviction`(value: Double): Self = StObject.set(x, "internal pages split during eviction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIn-memory page splits`(value: Double): Self = this.set("in-memory page splits", value.asInstanceOf[js.Any])
+    def `setLeaf pages split during eviction`(value: Double): Self = StObject.set(x, "leaf pages split during eviction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInternal pages evicted`(value: Double): Self = this.set("internal pages evicted", value.asInstanceOf[js.Any])
+    def `setModified pages evicted`(value: Double): Self = StObject.set(x, "modified pages evicted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInternal pages split during eviction`(value: Double): Self = this.set("internal pages split during eviction", value.asInstanceOf[js.Any])
+    def `setOverflow pages read into cache`(value: Double): Self = StObject.set(x, "overflow pages read into cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLeaf pages split during eviction`(value: Double): Self = this.set("leaf pages split during eviction", value.asInstanceOf[js.Any])
+    def `setOverflow values cached in memory`(value: Double): Self = StObject.set(x, "overflow values cached in memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setModified pages evicted`(value: Double): Self = this.set("modified pages evicted", value.asInstanceOf[js.Any])
+    def `setPage split during eviction deepened the tree`(value: Double): Self = StObject.set(x, "page split during eviction deepened the tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOverflow pages read into cache`(value: Double): Self = this.set("overflow pages read into cache", value.asInstanceOf[js.Any])
+    def `setPage written requiring lookaside records`(value: Double): Self = StObject.set(x, "page written requiring lookaside records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOverflow values cached in memory`(value: Double): Self = this.set("overflow values cached in memory", value.asInstanceOf[js.Any])
+    def `setPages read into cache`(value: Double): Self = StObject.set(x, "pages read into cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage split during eviction deepened the tree`(value: Double): Self = this.set("page split during eviction deepened the tree", value.asInstanceOf[js.Any])
+    def `setPages read into cache requiring lookaside entries`(value: Double): Self = StObject.set(x, "pages read into cache requiring lookaside entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage written requiring lookaside records`(value: Double): Self = this.set("page written requiring lookaside records", value.asInstanceOf[js.Any])
+    def `setPages requested from the cache`(value: Double): Self = StObject.set(x, "pages requested from the cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPages read into cache`(value: Double): Self = this.set("pages read into cache", value.asInstanceOf[js.Any])
+    def `setPages written from cache`(value: Double): Self = StObject.set(x, "pages written from cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPages read into cache requiring lookaside entries`(value: Double): Self = this.set("pages read into cache requiring lookaside entries", value.asInstanceOf[js.Any])
+    def `setPages written requiring in-memory restoration`(value: Double): Self = StObject.set(x, "pages written requiring in-memory restoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPages requested from the cache`(value: Double): Self = this.set("pages requested from the cache", value.asInstanceOf[js.Any])
+    def `setTracked dirty bytes in the cache`(value: Double): Self = StObject.set(x, "tracked dirty bytes in the cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPages written from cache`(value: Double): Self = this.set("pages written from cache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setPages written requiring in-memory restoration`(value: Double): Self = this.set("pages written requiring in-memory restoration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setTracked dirty bytes in the cache`(value: Double): Self = this.set("tracked dirty bytes in the cache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUnmodified pages evicted`(value: Double): Self = this.set("unmodified pages evicted", value.asInstanceOf[js.Any])
+    def `setUnmodified pages evicted`(value: Double): Self = StObject.set(x, "unmodified pages evicted", value.asInstanceOf[js.Any])
   }
 }

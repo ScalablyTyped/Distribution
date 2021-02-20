@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyCode extends js.Object {
+trait KeyCode extends StObject {
   
   var BACKSPACE: Double = js.native
   
@@ -83,84 +84,72 @@ object KeyCode {
   }
   
   @scala.inline
-  implicit class KeyCodeOps[Self <: KeyCode] (val x: Self) extends AnyVal {
+  implicit class KeyCodeMutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBACKSPACE(value: Double): Self = StObject.set(x, "BACKSPACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOMMA(value: Double): Self = StObject.set(x, "COMMA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDELETE(value: Double): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBACKSPACE(value: Double): Self = this.set("BACKSPACE", value.asInstanceOf[js.Any])
+    def setDOWN(value: Double): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOMMA(value: Double): Self = this.set("COMMA", value.asInstanceOf[js.Any])
+    def setEND(value: Double): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDELETE(value: Double): Self = this.set("DELETE", value.asInstanceOf[js.Any])
+    def setENTER(value: Double): Self = StObject.set(x, "ENTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWN(value: Double): Self = this.set("DOWN", value.asInstanceOf[js.Any])
+    def setESCAPE(value: Double): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEND(value: Double): Self = this.set("END", value.asInstanceOf[js.Any])
+    def setHOME(value: Double): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setENTER(value: Double): Self = this.set("ENTER", value.asInstanceOf[js.Any])
+    def setLEFT(value: Double): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setESCAPE(value: Double): Self = this.set("ESCAPE", value.asInstanceOf[js.Any])
+    def setNUMPAD_ADD(value: Double): Self = StObject.set(x, "NUMPAD_ADD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHOME(value: Double): Self = this.set("HOME", value.asInstanceOf[js.Any])
+    def setNUMPAD_DECIMAL(value: Double): Self = StObject.set(x, "NUMPAD_DECIMAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLEFT(value: Double): Self = this.set("LEFT", value.asInstanceOf[js.Any])
+    def setNUMPAD_DIVIDE(value: Double): Self = StObject.set(x, "NUMPAD_DIVIDE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMPAD_ADD(value: Double): Self = this.set("NUMPAD_ADD", value.asInstanceOf[js.Any])
+    def setNUMPAD_ENTER(value: Double): Self = StObject.set(x, "NUMPAD_ENTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMPAD_DECIMAL(value: Double): Self = this.set("NUMPAD_DECIMAL", value.asInstanceOf[js.Any])
+    def setNUMPAD_MULTIPLY(value: Double): Self = StObject.set(x, "NUMPAD_MULTIPLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMPAD_DIVIDE(value: Double): Self = this.set("NUMPAD_DIVIDE", value.asInstanceOf[js.Any])
+    def setNUMPAD_SUBTRACT(value: Double): Self = StObject.set(x, "NUMPAD_SUBTRACT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMPAD_ENTER(value: Double): Self = this.set("NUMPAD_ENTER", value.asInstanceOf[js.Any])
+    def setPAGE_DOWN(value: Double): Self = StObject.set(x, "PAGE_DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMPAD_MULTIPLY(value: Double): Self = this.set("NUMPAD_MULTIPLY", value.asInstanceOf[js.Any])
+    def setPAGE_UP(value: Double): Self = StObject.set(x, "PAGE_UP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMPAD_SUBTRACT(value: Double): Self = this.set("NUMPAD_SUBTRACT", value.asInstanceOf[js.Any])
+    def setPERIOD(value: Double): Self = StObject.set(x, "PERIOD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPAGE_DOWN(value: Double): Self = this.set("PAGE_DOWN", value.asInstanceOf[js.Any])
+    def setRIGHT(value: Double): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPAGE_UP(value: Double): Self = this.set("PAGE_UP", value.asInstanceOf[js.Any])
+    def setSPACE(value: Double): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPERIOD(value: Double): Self = this.set("PERIOD", value.asInstanceOf[js.Any])
+    def setTAB(value: Double): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRIGHT(value: Double): Self = this.set("RIGHT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSPACE(value: Double): Self = this.set("SPACE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTAB(value: Double): Self = this.set("TAB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUP(value: Double): Self = this.set("UP", value.asInstanceOf[js.Any])
+    def setUP(value: Double): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
   }
 }

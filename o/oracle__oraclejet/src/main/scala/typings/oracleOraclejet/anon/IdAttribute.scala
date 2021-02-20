@@ -2,12 +2,13 @@ package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojarraydataproviderMod.SortComparators
 import typings.oracleOraclejet.ojdataproviderMod.SortCriterion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdAttribute[D] extends js.Object {
+trait IdAttribute[D] extends StObject {
   
   var idAttribute: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -28,63 +29,51 @@ object IdAttribute {
   }
   
   @scala.inline
-  implicit class IdAttributeOps[Self <: IdAttribute[_], D] (val x: Self with IdAttribute[D]) extends AnyVal {
+  implicit class IdAttributeMutableBuilder[Self <: IdAttribute[_], D] (val x: Self with IdAttribute[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdAttribute(value: String | js.Array[String]): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdAttributeVarargs(value: String*): Self = StObject.set(x, "idAttribute", js.Array(value :_*))
     
     @scala.inline
-    def setIdAttributeVarargs(value: String*): Self = this.set("idAttribute", js.Array(value :_*))
+    def setImplicitSort(value: js.Array[SortCriterion[D]]): Self = StObject.set(x, "implicitSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdAttribute(value: String | js.Array[String]): Self = this.set("idAttribute", value.asInstanceOf[js.Any])
+    def setImplicitSortUndefined: Self = StObject.set(x, "implicitSort", js.undefined)
     
     @scala.inline
-    def deleteIdAttribute: Self = this.set("idAttribute", js.undefined)
+    def setImplicitSortVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "implicitSort", js.Array(value :_*))
     
     @scala.inline
-    def setImplicitSortVarargs(value: SortCriterion[D]*): Self = this.set("implicitSort", js.Array(value :_*))
+    def setKeyAttributes(value: String | js.Array[String]): Self = StObject.set(x, "keyAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicitSort(value: js.Array[SortCriterion[D]]): Self = this.set("implicitSort", value.asInstanceOf[js.Any])
+    def setKeyAttributesUndefined: Self = StObject.set(x, "keyAttributes", js.undefined)
     
     @scala.inline
-    def deleteImplicitSort: Self = this.set("implicitSort", js.undefined)
+    def setKeyAttributesVarargs(value: String*): Self = StObject.set(x, "keyAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setKeyAttributesVarargs(value: String*): Self = this.set("keyAttributes", js.Array(value :_*))
+    def setKeys(value: js.Array[_] | js.Function0[js.Array[_]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAttributes(value: String | js.Array[String]): Self = this.set("keyAttributes", value.asInstanceOf[js.Any])
+    def setKeysFunction0(value: () => js.Array[_]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteKeyAttributes: Self = this.set("keyAttributes", js.undefined)
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = this.set("keys", js.Array(value :_*))
+    def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysFunction0(value: () => js.Array[_]): Self = this.set("keys", js.Any.fromFunction0(value))
+    def setSortComparators(value: SortComparators[D]): Self = StObject.set(x, "sortComparators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: js.Array[_] | js.Function0[js.Array[_]]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
-    
-    @scala.inline
-    def setSortComparators(value: SortComparators[D]): Self = this.set("sortComparators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortComparators: Self = this.set("sortComparators", js.undefined)
+    def setSortComparatorsUndefined: Self = StObject.set(x, "sortComparators", js.undefined)
   }
 }

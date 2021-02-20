@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,30 +74,18 @@ object XSheetCellRangeContainer {
   }
   
   @scala.inline
-  implicit class XSheetCellRangeContainerOps[Self <: XSheetCellRangeContainer] (val x: Self) extends AnyVal {
+  implicit class XSheetCellRangeContainerMutableBuilder[Self <: XSheetCellRangeContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRangeAddress(value: (CellRangeAddress, Boolean) => Unit): Self = StObject.set(x, "addRangeAddress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRangeAddresses(value: (SeqEquiv[CellRangeAddress], Boolean) => Unit): Self = StObject.set(x, "addRangeAddresses", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveRangeAddress(value: CellRangeAddress => Unit): Self = StObject.set(x, "removeRangeAddress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRangeAddress(value: (CellRangeAddress, Boolean) => Unit): Self = this.set("addRangeAddress", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setAddRangeAddresses(value: (SeqEquiv[CellRangeAddress], Boolean) => Unit): Self = this.set("addRangeAddresses", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveRangeAddress(value: CellRangeAddress => Unit): Self = this.set("removeRangeAddress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveRangeAddresses(value: SeqEquiv[CellRangeAddress] => Unit): Self = this.set("removeRangeAddresses", js.Any.fromFunction1(value))
+    def setRemoveRangeAddresses(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "removeRangeAddresses", js.Any.fromFunction1(value))
   }
 }

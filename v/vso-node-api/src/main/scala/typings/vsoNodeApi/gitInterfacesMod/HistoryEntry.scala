@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryEntry[T] extends js.Object {
+trait HistoryEntry[T] extends StObject {
   
   /**
     * The Change list (changeset/commit/shelveset) for this point in history
@@ -31,27 +32,15 @@ object HistoryEntry {
   }
   
   @scala.inline
-  implicit class HistoryEntryOps[Self <: HistoryEntry[_], T] (val x: Self with HistoryEntry[T]) extends AnyVal {
+  implicit class HistoryEntryMutableBuilder[Self <: HistoryEntry[_], T] (val x: Self with HistoryEntry[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeList(value: ChangeList[T]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemChangeType(value: VersionControlChangeType): Self = StObject.set(x, "itemChangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeList(value: ChangeList[T]): Self = this.set("changeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemChangeType(value: VersionControlChangeType): Self = this.set("itemChangeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerItem(value: String): Self = this.set("serverItem", value.asInstanceOf[js.Any])
+    def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
   }
 }

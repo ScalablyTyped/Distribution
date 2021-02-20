@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.networking.onc
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WiMAXProperties[M /* <: ManagedObject */, B] extends js.Object {
+trait WiMAXProperties[M /* <: ManagedObject */, B] extends StObject {
   
   /** Whether the network should be connected automatically. */
   var AutoConnect: js.UndefOr[B] = js.native
@@ -26,36 +27,24 @@ object WiMAXProperties {
   }
   
   @scala.inline
-  implicit class WiMAXPropertiesOps[Self <: WiMAXProperties[_, _], M /* <: ManagedObject */, B] (val x: Self with (WiMAXProperties[M, B])) extends AnyVal {
+  implicit class WiMAXPropertiesMutableBuilder[Self <: WiMAXProperties[_, _], M /* <: ManagedObject */, B] (val x: Self with (WiMAXProperties[M, B])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: B): Self = this.set("AutoConnect", value.asInstanceOf[js.Any])
+    def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
     
     @scala.inline
-    def deleteAutoConnect: Self = this.set("AutoConnect", js.undefined)
+    def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEAP(value: EAPProperties): Self = this.set("EAP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEAP: Self = this.set("EAP", js.undefined)
-    
-    @scala.inline
-    def setSignalStrength(value: integer): Self = this.set("SignalStrength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalStrength: Self = this.set("SignalStrength", js.undefined)
+    def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
   }
 }

@@ -19,21 +19,34 @@ import typings.std.Date
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-datepicker", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-datepicker", JSImport.Default)
+  @js.native
+  class default () extends ReactDatePicker
+  
+  @JSImport("react-datepicker", "CalendarContainer")
+  @js.native
   def CalendarContainer(className: String, children: js.Array[ReactNode], showPopperArrow: Boolean, arrowProps: js.Object): ReactNode = js.native
   
+  @JSImport("react-datepicker", "getDefaultLocale")
+  @js.native
   def getDefaultLocale(): String = js.native
   
+  @JSImport("react-datepicker", "registerLocale")
+  @js.native
   def registerLocale(localeName: String, localeData: js.Object): Unit = js.native
   
+  @JSImport("react-datepicker", "setDefaultLocale")
+  @js.native
   def setDefaultLocale(localeName: String): Unit = js.native
+  
+  type HighlightDates = StringDictionary[js.Array[Date]]
   
   @js.native
   trait ReactDatePicker
@@ -50,7 +63,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ReactDatePickerProps extends js.Object {
+  trait ReactDatePickerProps extends StObject {
     
     var adjustDateOnChange: js.UndefOr[Boolean] = js.native
     
@@ -318,9 +331,4 @@ object mod extends js.Object {
     
     var yearDropdownItemNumber: js.UndefOr[Double] = js.native
   }
-  
-  @js.native
-  class default () extends ReactDatePicker
-  
-  type HighlightDates = StringDictionary[js.Array[Date]]
 }

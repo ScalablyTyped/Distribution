@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * definition of `objectType`.
   */
 @js.native
-trait SchemaNamedProperty extends js.Object {
+trait SchemaNamedProperty extends StObject {
   
   var booleanValue: js.UndefOr[Boolean] = js.native
   
@@ -46,78 +47,66 @@ object SchemaNamedProperty {
   }
   
   @scala.inline
-  implicit class SchemaNamedPropertyOps[Self <: SchemaNamedProperty] (val x: Self) extends AnyVal {
+  implicit class SchemaNamedPropertyMutableBuilder[Self <: SchemaNamedProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateValues(value: SchemaDateValues): Self = StObject.set(x, "dateValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    def setDateValuesUndefined: Self = StObject.set(x, "dateValues", js.undefined)
     
     @scala.inline
-    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    def setDoubleValues(value: SchemaDoubleValues): Self = StObject.set(x, "doubleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateValues(value: SchemaDateValues): Self = this.set("dateValues", value.asInstanceOf[js.Any])
+    def setDoubleValuesUndefined: Self = StObject.set(x, "doubleValues", js.undefined)
     
     @scala.inline
-    def deleteDateValues: Self = this.set("dateValues", js.undefined)
+    def setEnumValues(value: SchemaEnumValues): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValues(value: SchemaDoubleValues): Self = this.set("doubleValues", value.asInstanceOf[js.Any])
+    def setEnumValuesUndefined: Self = StObject.set(x, "enumValues", js.undefined)
     
     @scala.inline
-    def deleteDoubleValues: Self = this.set("doubleValues", js.undefined)
+    def setHtmlValues(value: SchemaHtmlValues): Self = StObject.set(x, "htmlValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumValues(value: SchemaEnumValues): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+    def setHtmlValuesUndefined: Self = StObject.set(x, "htmlValues", js.undefined)
     
     @scala.inline
-    def deleteEnumValues: Self = this.set("enumValues", js.undefined)
+    def setIntegerValues(value: SchemaIntegerValues): Self = StObject.set(x, "integerValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlValues(value: SchemaHtmlValues): Self = this.set("htmlValues", value.asInstanceOf[js.Any])
+    def setIntegerValuesUndefined: Self = StObject.set(x, "integerValues", js.undefined)
     
     @scala.inline
-    def deleteHtmlValues: Self = this.set("htmlValues", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValues(value: SchemaIntegerValues): Self = this.set("integerValues", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIntegerValues: Self = this.set("integerValues", js.undefined)
+    def setObjectValues(value: SchemaObjectValues): Self = StObject.set(x, "objectValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setObjectValuesUndefined: Self = StObject.set(x, "objectValues", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTextValues(value: SchemaTextValues): Self = StObject.set(x, "textValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectValues(value: SchemaObjectValues): Self = this.set("objectValues", value.asInstanceOf[js.Any])
+    def setTextValuesUndefined: Self = StObject.set(x, "textValues", js.undefined)
     
     @scala.inline
-    def deleteObjectValues: Self = this.set("objectValues", js.undefined)
+    def setTimestampValues(value: SchemaTimestampValues): Self = StObject.set(x, "timestampValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextValues(value: SchemaTextValues): Self = this.set("textValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextValues: Self = this.set("textValues", js.undefined)
-    
-    @scala.inline
-    def setTimestampValues(value: SchemaTimestampValues): Self = this.set("timestampValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValues: Self = this.set("timestampValues", js.undefined)
+    def setTimestampValuesUndefined: Self = StObject.set(x, "timestampValues", js.undefined)
   }
 }

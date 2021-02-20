@@ -1,11 +1,12 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsideMenu extends js.Object {
+trait AsideMenu extends StObject {
   
   var asideMenu: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object AsideMenu {
   }
   
   @scala.inline
-  implicit class AsideMenuOps[Self <: AsideMenu] (val x: Self) extends AnyVal {
+  implicit class AsideMenuMutableBuilder[Self <: AsideMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsideMenu(value: Boolean): Self = StObject.set(x, "asideMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsideMenuUndefined: Self = StObject.set(x, "asideMenu", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottomMenu(value: Boolean): Self = StObject.set(x, "bottomMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsideMenu(value: Boolean): Self = this.set("asideMenu", value.asInstanceOf[js.Any])
+    def setBottomMenuUndefined: Self = StObject.set(x, "bottomMenu", js.undefined)
     
     @scala.inline
-    def deleteAsideMenu: Self = this.set("asideMenu", js.undefined)
+    def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMenu(value: Boolean): Self = this.set("bottomMenu", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteBottomMenu: Self = this.set("bottomMenu", js.undefined)
+    def setTopMenu(value: Boolean): Self = StObject.set(x, "topMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Boolean): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setTopMenu(value: Boolean): Self = this.set("topMenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopMenu: Self = this.set("topMenu", js.undefined)
+    def setTopMenuUndefined: Self = StObject.set(x, "topMenu", js.undefined)
   }
 }

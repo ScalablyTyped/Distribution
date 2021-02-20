@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutConfigurationAggregatorRequest extends js.Object {
+trait PutConfigurationAggregatorRequest extends StObject {
   
   /**
     * A list of AccountAggregationSource object. 
@@ -36,45 +37,33 @@ object PutConfigurationAggregatorRequest {
   }
   
   @scala.inline
-  implicit class PutConfigurationAggregatorRequestOps[Self <: PutConfigurationAggregatorRequest] (val x: Self) extends AnyVal {
+  implicit class PutConfigurationAggregatorRequestMutableBuilder[Self <: PutConfigurationAggregatorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountAggregationSources(value: AccountAggregationSourceList): Self = StObject.set(x, "AccountAggregationSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountAggregationSourcesUndefined: Self = StObject.set(x, "AccountAggregationSources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountAggregationSourcesVarargs(value: AccountAggregationSource*): Self = StObject.set(x, "AccountAggregationSources", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = this.set("ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountAggregationSourcesVarargs(value: AccountAggregationSource*): Self = this.set("AccountAggregationSources", js.Array(value :_*))
+    def setOrganizationAggregationSource(value: OrganizationAggregationSource): Self = StObject.set(x, "OrganizationAggregationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountAggregationSources(value: AccountAggregationSourceList): Self = this.set("AccountAggregationSources", value.asInstanceOf[js.Any])
+    def setOrganizationAggregationSourceUndefined: Self = StObject.set(x, "OrganizationAggregationSource", js.undefined)
     
     @scala.inline
-    def deleteAccountAggregationSources: Self = this.set("AccountAggregationSources", js.undefined)
+    def setTags(value: TagsList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationAggregationSource(value: OrganizationAggregationSource): Self = this.set("OrganizationAggregationSource", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteOrganizationAggregationSource: Self = this.set("OrganizationAggregationSource", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagsList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

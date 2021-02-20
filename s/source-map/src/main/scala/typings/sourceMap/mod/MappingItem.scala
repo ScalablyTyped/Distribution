@@ -1,11 +1,12 @@
 package typings.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MappingItem extends js.Object {
+trait MappingItem extends StObject {
   
   var generatedColumn: Double = js.native
   
@@ -35,36 +36,24 @@ object MappingItem {
   }
   
   @scala.inline
-  implicit class MappingItemOps[Self <: MappingItem] (val x: Self) extends AnyVal {
+  implicit class MappingItemMutableBuilder[Self <: MappingItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeneratedLine(value: Double): Self = StObject.set(x, "generatedLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratedColumn(value: Double): Self = this.set("generatedColumn", value.asInstanceOf[js.Any])
+    def setOriginalColumn(value: Double): Self = StObject.set(x, "originalColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratedLine(value: Double): Self = this.set("generatedLine", value.asInstanceOf[js.Any])
+    def setOriginalLine(value: Double): Self = StObject.set(x, "originalLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalColumn(value: Double): Self = this.set("originalColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalLine(value: Double): Self = this.set("originalLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

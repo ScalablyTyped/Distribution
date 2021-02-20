@@ -7,14 +7,14 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.poseEnabledControllerMod.ExtendedGamepadButton
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webVRControllerMod.WebVRController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", JSImport.Namespace)
-@js.native
-object windowsMotionControllerMod extends js.Object {
+object windowsMotionControllerMod {
   
+  @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController")
   @js.native
   class WindowsMotionController protected () extends WebVRController {
     /**
@@ -105,35 +105,55 @@ object windowsMotionControllerMod extends js.Object {
     var trackpad: StickValues = js.native
   }
   /* static members */
-  @js.native
-  object WindowsMotionController extends js.Object {
+  object WindowsMotionController {
+    
+    @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The controller id pattern for this controller type
       */
+    @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.GAMEPAD_ID_PATTERN")
+    @js.native
     val GAMEPAD_ID_PATTERN: js.Any = js.native
     
     /**
       * The controller name prefix for this controller type
       */
+    @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.GAMEPAD_ID_PREFIX")
+    @js.native
     val GAMEPAD_ID_PREFIX: String = js.native
     
     /**
       * The base url used to load the left and right controller models
       */
-    var MODEL_BASE_URL: String = js.native
+    @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.MODEL_BASE_URL")
+    @js.native
+    def MODEL_BASE_URL: String = js.native
+    @scala.inline
+    def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the left controller model file
       */
-    var MODEL_LEFT_FILENAME: String = js.native
+    @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.MODEL_LEFT_FILENAME")
+    @js.native
+    def MODEL_LEFT_FILENAME: String = js.native
+    @scala.inline
+    def MODEL_LEFT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_LEFT_FILENAME")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the right controller model file
       */
-    var MODEL_RIGHT_FILENAME: String = js.native
+    @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.MODEL_RIGHT_FILENAME")
+    @js.native
+    def MODEL_RIGHT_FILENAME: String = js.native
+    @scala.inline
+    def MODEL_RIGHT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_RIGHT_FILENAME")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "XRWindowsMotionController")
   @js.native
   class XRWindowsMotionController protected () extends WindowsMotionController {
     /**

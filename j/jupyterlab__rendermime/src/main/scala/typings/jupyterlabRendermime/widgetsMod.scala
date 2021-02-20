@@ -7,14 +7,14 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IResolver
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ISanitizer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/rendermime/lib/widgets", JSImport.Namespace)
-@js.native
-object widgetsMod extends js.Object {
+object widgetsMod {
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedCommon")
   @js.native
   abstract class RenderedCommon protected () extends IRenderer {
     /**
@@ -66,6 +66,7 @@ object widgetsMod extends js.Object {
     /* protected */ def setFragment(fragment: String): Unit = js.native
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedHTML")
   @js.native
   class RenderedHTML protected () extends RenderedHTMLCommon {
     /**
@@ -76,6 +77,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedHTMLCommon")
   @js.native
   abstract class RenderedHTMLCommon protected () extends RenderedCommon {
     /**
@@ -86,6 +88,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedImage")
   @js.native
   class RenderedImage protected () extends RenderedCommon {
     /**
@@ -96,6 +99,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedJavaScript")
   @js.native
   class RenderedJavaScript protected () extends RenderedCommon {
     /**
@@ -106,6 +110,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedLatex")
   @js.native
   class RenderedLatex protected () extends RenderedCommon {
     /**
@@ -116,6 +121,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedMarkdown")
   @js.native
   class RenderedMarkdown protected () extends RenderedHTMLCommon {
     /**
@@ -126,6 +132,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedSVG")
   @js.native
   class RenderedSVG protected () extends RenderedCommon {
     /**
@@ -136,6 +143,7 @@ object widgetsMod extends js.Object {
     def this(options: IRendererOptions) = this()
   }
   
+  @JSImport("@jupyterlab/rendermime/lib/widgets", "RenderedText")
   @js.native
   class RenderedText protected () extends RenderedCommon {
     /**

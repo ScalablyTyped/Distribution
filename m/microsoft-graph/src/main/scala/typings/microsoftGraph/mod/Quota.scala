@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Quota extends js.Object {
+trait Quota extends StObject {
   
   // Total space consumed by files in the recycle bin, in bytes. Read-only.
   var deleted: js.UndefOr[NullableOption[Double]] = js.native
@@ -34,72 +35,60 @@ object Quota {
   }
   
   @scala.inline
-  implicit class QuotaOps[Self <: Quota] (val x: Self) extends AnyVal {
+  implicit class QuotaMutableBuilder[Self <: Quota] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: NullableOption[Double]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedNull: Self = StObject.set(x, "deleted", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def setDeleted(value: NullableOption[Double]): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setRemaining(value: NullableOption[Double]): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setRemainingNull: Self = StObject.set(x, "remaining", null)
     
     @scala.inline
-    def setDeletedNull: Self = this.set("deleted", null)
+    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
     
     @scala.inline
-    def setRemaining(value: NullableOption[Double]): Self = this.set("remaining", value.asInstanceOf[js.Any])
+    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemaining: Self = this.set("remaining", js.undefined)
+    def setStateNull: Self = StObject.set(x, "state", null)
     
     @scala.inline
-    def setRemainingNull: Self = this.set("remaining", null)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setState(value: NullableOption[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStoragePlanInformation(value: NullableOption[StoragePlanInformation]): Self = StObject.set(x, "storagePlanInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStoragePlanInformationNull: Self = StObject.set(x, "storagePlanInformation", null)
     
     @scala.inline
-    def setStateNull: Self = this.set("state", null)
+    def setStoragePlanInformationUndefined: Self = StObject.set(x, "storagePlanInformation", js.undefined)
     
     @scala.inline
-    def setStoragePlanInformation(value: NullableOption[StoragePlanInformation]): Self = this.set("storagePlanInformation", value.asInstanceOf[js.Any])
+    def setTotal(value: NullableOption[Double]): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStoragePlanInformation: Self = this.set("storagePlanInformation", js.undefined)
+    def setTotalNull: Self = StObject.set(x, "total", null)
     
     @scala.inline
-    def setStoragePlanInformationNull: Self = this.set("storagePlanInformation", null)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def setTotal(value: NullableOption[Double]): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setUsed(value: NullableOption[Double]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setUsedNull: Self = StObject.set(x, "used", null)
     
     @scala.inline
-    def setTotalNull: Self = this.set("total", null)
-    
-    @scala.inline
-    def setUsed(value: NullableOption[Double]): Self = this.set("used", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsed: Self = this.set("used", js.undefined)
-    
-    @scala.inline
-    def setUsedNull: Self = this.set("used", null)
+    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
   }
 }

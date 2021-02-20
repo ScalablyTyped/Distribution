@@ -1,13 +1,14 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operators/findIndex", JSImport.Namespace)
-@js.native
-object findIndexMod extends js.Object {
+object findIndexMod {
   
+  @JSImport("rxjs-compat/operators/findIndex", "findIndex")
+  @js.native
   def findIndex[T](
     predicate: js.Function3[
       /* value */ T, 
@@ -16,6 +17,8 @@ object findIndexMod extends js.Object {
       Boolean
     ]
   ): js.Any = js.native
+  @JSImport("rxjs-compat/operators/findIndex", "findIndex")
+  @js.native
   def findIndex[T](
     predicate: js.Function3[
       /* value */ T, 

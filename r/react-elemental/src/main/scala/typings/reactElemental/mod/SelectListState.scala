@@ -1,12 +1,13 @@
 package typings.reactElemental.mod
 
 import typings.reactElemental.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectListState extends js.Object {
+trait SelectListState extends StObject {
   
   val highlightedIdx: Double | Null = js.native
   
@@ -27,36 +28,24 @@ object SelectListState {
   }
   
   @scala.inline
-  implicit class SelectListStateOps[Self <: SelectListState] (val x: Self) extends AnyVal {
+  implicit class SelectListStateMutableBuilder[Self <: SelectListState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightedIdx(value: Double): Self = StObject.set(x, "highlightedIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightedIdxNull: Self = StObject.set(x, "highlightedIdx", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
+    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFocused(value: Boolean): Self = this.set("isFocused", value.asInstanceOf[js.Any])
+    def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHovered(value: Boolean): Self = this.set("isHovered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedOption(value: Value): Self = this.set("selectedOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHighlightedIdx(value: Double): Self = this.set("highlightedIdx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHighlightedIdxNull: Self = this.set("highlightedIdx", null)
+    def setSelectedOption(value: Value): Self = StObject.set(x, "selectedOption", value.asInstanceOf[js.Any])
   }
 }

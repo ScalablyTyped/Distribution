@@ -1,12 +1,13 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.wordpressApiFetch.anon.Formats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Theme extends js.Object {
+trait Theme extends StObject {
   
   var theme_supports: Formats = js.native
 }
@@ -19,21 +20,9 @@ object Theme {
   }
   
   @scala.inline
-  implicit class ThemeOps[Self <: Theme] (val x: Self) extends AnyVal {
+  implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTheme_supports(value: Formats): Self = this.set("theme_supports", value.asInstanceOf[js.Any])
+    def setTheme_supports(value: Formats): Self = StObject.set(x, "theme_supports", value.asInstanceOf[js.Any])
   }
 }

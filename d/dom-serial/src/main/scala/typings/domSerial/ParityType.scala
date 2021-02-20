@@ -1,5 +1,6 @@
 package typings.domSerial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.domSerial.domSerialStrings.mark
   - typings.domSerial.domSerialStrings.space
 */
-trait ParityType extends js.Object
+trait ParityType extends StObject
 object ParityType {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RenewTokenResponse")
 @js.native
-class RenewTokenResponse () extends js.Object {
+class RenewTokenResponse () extends StObject {
   
   /**
     * The renewed access token. This value might be different from the `access_token` you provided in your request.

@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColInfo extends js.Object {
+trait ColInfo extends StObject {
   
   /** Excel's "Max Digit Width" unit, always integral */
   var MDW: js.UndefOr[Double] = js.native
@@ -33,48 +34,36 @@ object ColInfo {
   }
   
   @scala.inline
-  implicit class ColInfoOps[Self <: ColInfo] (val x: Self) extends AnyVal {
+  implicit class ColInfoMutableBuilder[Self <: ColInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMDW(value: Double): Self = StObject.set(x, "MDW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMDW(value: Double): Self = this.set("MDW", value.asInstanceOf[js.Any])
+    def setMDWUndefined: Self = StObject.set(x, "MDW", js.undefined)
     
     @scala.inline
-    def deleteMDW: Self = this.set("MDW", js.undefined)
+    def setWch(value: Double): Self = StObject.set(x, "wch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setWchUndefined: Self = StObject.set(x, "wch", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWch(value: Double): Self = this.set("wch", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteWch: Self = this.set("wch", js.undefined)
+    def setWpx(value: Double): Self = StObject.set(x, "wpx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWpx(value: Double): Self = this.set("wpx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWpx: Self = this.set("wpx", js.undefined)
+    def setWpxUndefined: Self = StObject.set(x, "wpx", js.undefined)
   }
 }

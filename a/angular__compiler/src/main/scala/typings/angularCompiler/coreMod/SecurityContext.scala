@@ -1,46 +1,40 @@
 package typings.angularCompiler.coreMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SecurityContext extends js.Object
+sealed trait SecurityContext extends StObject
 @JSImport("@angular/compiler/src/core", "SecurityContext")
 @js.native
-object SecurityContext extends js.Object {
+object SecurityContext extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SecurityContext with Double] = js.native
   
   @js.native
   sealed trait HTML extends SecurityContext
-  /* 1 */ @js.native
-  object HTML extends TopLevel[HTML with Double]
+  /* 1 */ val HTML: typings.angularCompiler.coreMod.SecurityContext.HTML with Double = js.native
   
   @js.native
   sealed trait NONE extends SecurityContext
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  /* 0 */ val NONE: typings.angularCompiler.coreMod.SecurityContext.NONE with Double = js.native
   
   @js.native
   sealed trait RESOURCE_URL extends SecurityContext
-  /* 5 */ @js.native
-  object RESOURCE_URL extends TopLevel[RESOURCE_URL with Double]
+  /* 5 */ val RESOURCE_URL: typings.angularCompiler.coreMod.SecurityContext.RESOURCE_URL with Double = js.native
   
   @js.native
   sealed trait SCRIPT extends SecurityContext
-  /* 3 */ @js.native
-  object SCRIPT extends TopLevel[SCRIPT with Double]
+  /* 3 */ val SCRIPT: typings.angularCompiler.coreMod.SecurityContext.SCRIPT with Double = js.native
   
   @js.native
   sealed trait STYLE extends SecurityContext
-  /* 2 */ @js.native
-  object STYLE extends TopLevel[STYLE with Double]
+  /* 2 */ val STYLE: typings.angularCompiler.coreMod.SecurityContext.STYLE with Double = js.native
   
   @js.native
   sealed trait URL extends SecurityContext
-  /* 4 */ @js.native
-  object URL extends TopLevel[URL with Double]
+  /* 4 */ val URL: typings.angularCompiler.coreMod.SecurityContext.URL with Double = js.native
 }

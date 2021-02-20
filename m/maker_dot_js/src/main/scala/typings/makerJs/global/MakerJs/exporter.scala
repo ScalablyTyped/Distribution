@@ -13,95 +13,22 @@ import typings.makerJs.MakerJs.exporter.ISVGRenderOptions
 import typings.makerJs.MakerJs.exporter.IXmlTagAttrs
 import typings.makerJs.MakerJs.exporter.svgUnitConversion
 import typings.pdfkit.PDFKit.PDFDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.exporter")
-@js.native
-object exporter extends js.Object {
+object exporter {
   
-  /**
-    * Convert a chain to SVG path data.
-    */
-  def chainToSVGPathData(chain: IChain, offset: IPoint): String = js.native
-  
-  /**
-    * Convert a path to SVG path data.
-    */
-  def pathToSVGPathData(pathToExport: IPath, offset: IPoint, offset2: IPoint): String = js.native
-  
-  /**
-    * Map of MakerJs unit system to SVG unit system
-    */
-  var svgUnit: svgUnitConversion = js.native
-  
-  def toDXF(modelToExport: IModel): String = js.native
-  def toDXF(modelToExport: IModel, options: IDXFRenderOptions): String = js.native
-  def toDXF(pathToExport: IPath): String = js.native
-  def toDXF(pathToExport: IPath, options: IDXFRenderOptions): String = js.native
-  def toDXF(pathsToExport: js.Array[IPath]): String = js.native
-  def toDXF(pathsToExport: js.Array[IPath], options: IDXFRenderOptions): String = js.native
-  
-  def toOpenJsCad(modelToExport: IModel): String = js.native
-  def toOpenJsCad(modelToExport: IModel, options: IOpenJsCadOptions): String = js.native
-  def toOpenJsCad(pathToExport: IPath): String = js.native
-  def toOpenJsCad(pathToExport: IPath, options: IOpenJsCadOptions): String = js.native
-  def toOpenJsCad(pathsToExport: js.Array[IPath]): String = js.native
-  def toOpenJsCad(pathsToExport: js.Array[IPath], options: IOpenJsCadOptions): String = js.native
-  
-  /**
-    * Injects drawing into a PDFKit document.
-    *
-    * @param modelToExport Model object to export.
-    * @param options Export options object.
-    * @returns String of PDF file contents.
-    */
-  def toPDF(doc: PDFDocument, modelToExport: IModel): Unit = js.native
-  def toPDF(doc: PDFDocument, modelToExport: IModel, options: IPDFRenderOptions): Unit = js.native
-  
-  /**
-    * Executes a JavaScript string with the OpenJsCad engine - converts 2D to 3D.
-    *
-    * @param modelToExport Model object to export.
-    * @param options Export options object.
-    * @param options.extrusion Height of 3D extrusion.
-    * @param options.resolution Size of facets.
-    * @returns String of STL format of 3D object.
-    */
-  def toSTL(modelToExport: IModel): String = js.native
-  def toSTL(modelToExport: IModel, options: IOpenJsCadOptions): String = js.native
-  
-  def toSVG(modelToExport: IModel): String = js.native
-  def toSVG(modelToExport: IModel, options: ISVGRenderOptions): String = js.native
-  def toSVG(pathToExport: IPath): String = js.native
-  def toSVG(pathToExport: IPath, options: ISVGRenderOptions): String = js.native
-  def toSVG(pathsToExport: js.Array[IPath]): String = js.native
-  def toSVG(pathsToExport: js.Array[IPath], options: ISVGRenderOptions): String = js.native
-  
-  /**
-    * Convert a model to SVG path data.
-    *
-    * @param modelToExport Model to export.
-    * @param byLayers Boolean flag (default true) to return a map of path data by layer.
-    * @param origin Optional reference origin.
-    * @returns String of SVG path data (if byLayers is false) or an object map of path data by layer .
-    */
-  def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = js.native
-  def toSVGPathData(modelToExport: IModel, byLayers: js.UndefOr[scala.Nothing], origin: IPoint): IPathDataByLayerMap | String = js.native
-  def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = js.native
-  def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = js.native
-  
-  /**
-    * Try to get the unit system from a model
-    * @private
-    */
-  def tryGetModelUnits(itemToExport: js.Any): String = js.native
+  @JSGlobal("MakerJs.exporter")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Class to traverse an item 's models or paths and ultimately render each path.
     * @private
     */
+  @JSGlobal("MakerJs.exporter.Exporter")
   @js.native
   class Exporter protected ()
     extends typings.makerJs.MakerJs.exporter.Exporter {
@@ -209,6 +136,7 @@ object exporter extends js.Object {
     * Class for an XML tag.
     * @private
     */
+  @JSGlobal("MakerJs.exporter.XmlTag")
   @js.native
   class XmlTag protected ()
     extends typings.makerJs.MakerJs.exporter.XmlTag {
@@ -219,15 +147,155 @@ object exporter extends js.Object {
     def this(name: String) = this()
     def this(name: String, attrs: IXmlTagAttrs) = this()
   }
-  /* static members */
-  @js.native
-  object XmlTag extends js.Object {
+  object XmlTag {
     
     /**
       * Escapes certain characters within a string so that it can appear in a tag or its attribute.
       *
       * @returns Escaped string.
       */
+    /* static member */
+    @JSGlobal("MakerJs.exporter.XmlTag.escapeString")
+    @js.native
     def escapeString(value: String): String = js.native
   }
+  
+  /**
+    * Convert a chain to SVG path data.
+    */
+  @JSGlobal("MakerJs.exporter.chainToSVGPathData")
+  @js.native
+  def chainToSVGPathData(chain: IChain, offset: IPoint): String = js.native
+  
+  /**
+    * Convert a path to SVG path data.
+    */
+  @JSGlobal("MakerJs.exporter.pathToSVGPathData")
+  @js.native
+  def pathToSVGPathData(pathToExport: IPath, offset: IPoint, offset2: IPoint): String = js.native
+  
+  /**
+    * Map of MakerJs unit system to SVG unit system
+    */
+  @JSGlobal("MakerJs.exporter.svgUnit")
+  @js.native
+  def svgUnit: svgUnitConversion = js.native
+  @scala.inline
+  def svgUnit_=(x: svgUnitConversion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgUnit")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("MakerJs.exporter.toDXF")
+  @js.native
+  def toDXF(modelToExport: IModel): String = js.native
+  @JSGlobal("MakerJs.exporter.toDXF")
+  @js.native
+  def toDXF(modelToExport: IModel, options: IDXFRenderOptions): String = js.native
+  @JSGlobal("MakerJs.exporter.toDXF")
+  @js.native
+  def toDXF(pathToExport: IPath): String = js.native
+  @JSGlobal("MakerJs.exporter.toDXF")
+  @js.native
+  def toDXF(pathToExport: IPath, options: IDXFRenderOptions): String = js.native
+  @JSGlobal("MakerJs.exporter.toDXF")
+  @js.native
+  def toDXF(pathsToExport: js.Array[IPath]): String = js.native
+  @JSGlobal("MakerJs.exporter.toDXF")
+  @js.native
+  def toDXF(pathsToExport: js.Array[IPath], options: IDXFRenderOptions): String = js.native
+  
+  @JSGlobal("MakerJs.exporter.toOpenJsCad")
+  @js.native
+  def toOpenJsCad(modelToExport: IModel): String = js.native
+  @JSGlobal("MakerJs.exporter.toOpenJsCad")
+  @js.native
+  def toOpenJsCad(modelToExport: IModel, options: IOpenJsCadOptions): String = js.native
+  @JSGlobal("MakerJs.exporter.toOpenJsCad")
+  @js.native
+  def toOpenJsCad(pathToExport: IPath): String = js.native
+  @JSGlobal("MakerJs.exporter.toOpenJsCad")
+  @js.native
+  def toOpenJsCad(pathToExport: IPath, options: IOpenJsCadOptions): String = js.native
+  @JSGlobal("MakerJs.exporter.toOpenJsCad")
+  @js.native
+  def toOpenJsCad(pathsToExport: js.Array[IPath]): String = js.native
+  @JSGlobal("MakerJs.exporter.toOpenJsCad")
+  @js.native
+  def toOpenJsCad(pathsToExport: js.Array[IPath], options: IOpenJsCadOptions): String = js.native
+  
+  /**
+    * Injects drawing into a PDFKit document.
+    *
+    * @param modelToExport Model object to export.
+    * @param options Export options object.
+    * @returns String of PDF file contents.
+    */
+  @JSGlobal("MakerJs.exporter.toPDF")
+  @js.native
+  def toPDF(doc: PDFDocument, modelToExport: IModel): Unit = js.native
+  @JSGlobal("MakerJs.exporter.toPDF")
+  @js.native
+  def toPDF(doc: PDFDocument, modelToExport: IModel, options: IPDFRenderOptions): Unit = js.native
+  
+  /**
+    * Executes a JavaScript string with the OpenJsCad engine - converts 2D to 3D.
+    *
+    * @param modelToExport Model object to export.
+    * @param options Export options object.
+    * @param options.extrusion Height of 3D extrusion.
+    * @param options.resolution Size of facets.
+    * @returns String of STL format of 3D object.
+    */
+  @JSGlobal("MakerJs.exporter.toSTL")
+  @js.native
+  def toSTL(modelToExport: IModel): String = js.native
+  @JSGlobal("MakerJs.exporter.toSTL")
+  @js.native
+  def toSTL(modelToExport: IModel, options: IOpenJsCadOptions): String = js.native
+  
+  @JSGlobal("MakerJs.exporter.toSVG")
+  @js.native
+  def toSVG(modelToExport: IModel): String = js.native
+  @JSGlobal("MakerJs.exporter.toSVG")
+  @js.native
+  def toSVG(modelToExport: IModel, options: ISVGRenderOptions): String = js.native
+  @JSGlobal("MakerJs.exporter.toSVG")
+  @js.native
+  def toSVG(pathToExport: IPath): String = js.native
+  @JSGlobal("MakerJs.exporter.toSVG")
+  @js.native
+  def toSVG(pathToExport: IPath, options: ISVGRenderOptions): String = js.native
+  @JSGlobal("MakerJs.exporter.toSVG")
+  @js.native
+  def toSVG(pathsToExport: js.Array[IPath]): String = js.native
+  @JSGlobal("MakerJs.exporter.toSVG")
+  @js.native
+  def toSVG(pathsToExport: js.Array[IPath], options: ISVGRenderOptions): String = js.native
+  
+  /**
+    * Convert a model to SVG path data.
+    *
+    * @param modelToExport Model to export.
+    * @param byLayers Boolean flag (default true) to return a map of path data by layer.
+    * @param origin Optional reference origin.
+    * @returns String of SVG path data (if byLayers is false) or an object map of path data by layer .
+    */
+  @JSGlobal("MakerJs.exporter.toSVGPathData")
+  @js.native
+  def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = js.native
+  @JSGlobal("MakerJs.exporter.toSVGPathData")
+  @js.native
+  def toSVGPathData(modelToExport: IModel, byLayers: js.UndefOr[scala.Nothing], origin: IPoint): IPathDataByLayerMap | String = js.native
+  @JSGlobal("MakerJs.exporter.toSVGPathData")
+  @js.native
+  def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = js.native
+  @JSGlobal("MakerJs.exporter.toSVGPathData")
+  @js.native
+  def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = js.native
+  
+  /**
+    * Try to get the unit system from a model
+    * @private
+    */
+  @JSGlobal("MakerJs.exporter.tryGetModelUnits")
+  @js.native
+  def tryGetModelUnits(itemToExport: js.Any): String = js.native
 }

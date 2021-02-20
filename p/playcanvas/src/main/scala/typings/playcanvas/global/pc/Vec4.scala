@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,18 +47,21 @@ class Vec4 ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-/* static members */
-@JSGlobal("pc.Vec4")
-@js.native
-object Vec4 extends js.Object {
+object Vec4 {
   
   /**
     * A constant vector set to [1, 1, 1, 1].
     */
+  /* static member */
+  @JSGlobal("pc.Vec4.ONE")
+  @js.native
   val ONE: typings.playcanvas.pc.Vec4 = js.native
   
   /**
     * A constant vector set to [0, 0, 0, 0].
     */
+  /* static member */
+  @JSGlobal("pc.Vec4.ZERO")
+  @js.native
   val ZERO: typings.playcanvas.pc.Vec4 = js.native
 }

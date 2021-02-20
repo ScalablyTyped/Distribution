@@ -2,18 +2,21 @@ package typings.stripe.mod.resources
 
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.oauth.IOAuthAuthorizationCodeTokenRequest
 import typings.stripe.mod.oauth.IOAuthDeauthorizationResponse
 import typings.stripe.mod.oauth.IOAuthRefreshTokenRequest
 import typings.stripe.mod.oauth.IOAuthToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.OAuth")
 @js.native
-class OAuth () extends StripeResource {
+class OAuth protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def deauthorize(client_id: String, stripe_user_id: String): js.Promise[IOAuthDeauthorizationResponse] = js.native
   /**

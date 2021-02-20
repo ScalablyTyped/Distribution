@@ -1,12 +1,13 @@
 package typings.tableau.global.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("tableau.ToolbarButtonName")
 @js.native
-object ToolbarButtonName extends js.Object {
+object ToolbarButtonName extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.tableau.tableau.ToolbarButtonName with String] = js.native

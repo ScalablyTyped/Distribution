@@ -5,12 +5,13 @@ import typings.googleapis.firestoreV1Mod.firestoreV1.Options
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1beta1
 import typings.googleapis.googleapisStrings.v1beta2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn71 extends js.Object {
+trait Fn71 extends StObject {
   
   def apply(options: Options): Firestore = js.native
   def apply(options: typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Options): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = js.native

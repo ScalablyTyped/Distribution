@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotaryResult extends js.Object {
+trait NotaryResult extends StObject {
   
   var jurisdictions: js.UndefOr[js.Array[Jurisdiction]] = js.native
   
@@ -20,33 +21,21 @@ object NotaryResult {
   }
   
   @scala.inline
-  implicit class NotaryResultOps[Self <: NotaryResult] (val x: Self) extends AnyVal {
+  implicit class NotaryResultMutableBuilder[Self <: NotaryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJurisdictions(value: js.Array[Jurisdiction]): Self = StObject.set(x, "jurisdictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJurisdictionsUndefined: Self = StObject.set(x, "jurisdictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJurisdictionsVarargs(value: Jurisdiction*): Self = StObject.set(x, "jurisdictions", js.Array(value :_*))
     
     @scala.inline
-    def setJurisdictionsVarargs(value: Jurisdiction*): Self = this.set("jurisdictions", js.Array(value :_*))
+    def setNotary(value: Notary): Self = StObject.set(x, "notary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictions(value: js.Array[Jurisdiction]): Self = this.set("jurisdictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJurisdictions: Self = this.set("jurisdictions", js.undefined)
-    
-    @scala.inline
-    def setNotary(value: Notary): Self = this.set("notary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotary: Self = this.set("notary", js.undefined)
+    def setNotaryUndefined: Self = StObject.set(x, "notary", js.undefined)
   }
 }

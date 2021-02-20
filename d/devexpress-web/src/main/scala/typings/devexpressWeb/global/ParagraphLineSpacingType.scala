@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ParagraphLineSpacingType")
 @js.native
-object ParagraphLineSpacingType extends js.Object {
+object ParagraphLineSpacingType extends StObject {
   
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[typings.devexpressWeb.ParagraphLineSpacingType with scala.Double] = js.native

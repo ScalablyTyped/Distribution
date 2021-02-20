@@ -2,12 +2,13 @@ package typings.sendcloud.mod
 
 import typings.sendcloud.anon.Modifyat
 import typings.sendcloud.sendcloudStrings.success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMemberListResponse extends js.Object {
+trait ListMemberListResponse extends StObject {
   
   var members: js.Array[Modifyat] = js.native
   
@@ -24,30 +25,18 @@ object ListMemberListResponse {
   }
   
   @scala.inline
-  implicit class ListMemberListResponseOps[Self <: ListMemberListResponse] (val x: Self) extends AnyVal {
+  implicit class ListMemberListResponseMutableBuilder[Self <: ListMemberListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMembers(value: js.Array[Modifyat]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembersVarargs(value: Modifyat*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembersVarargs(value: Modifyat*): Self = this.set("members", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembers(value: js.Array[Modifyat]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: success): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

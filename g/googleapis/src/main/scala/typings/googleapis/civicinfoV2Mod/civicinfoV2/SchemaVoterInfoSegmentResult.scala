@@ -1,11 +1,12 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaVoterInfoSegmentResult extends js.Object {
+trait SchemaVoterInfoSegmentResult extends StObject {
   
   var generatedMillis: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object SchemaVoterInfoSegmentResult {
   }
   
   @scala.inline
-  implicit class SchemaVoterInfoSegmentResultOps[Self <: SchemaVoterInfoSegmentResult] (val x: Self) extends AnyVal {
+  implicit class SchemaVoterInfoSegmentResultMutableBuilder[Self <: SchemaVoterInfoSegmentResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneratedMillis(value: String): Self = StObject.set(x, "generatedMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeneratedMillisUndefined: Self = StObject.set(x, "generatedMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostalAddress(value: SchemaPostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratedMillis(value: String): Self = this.set("generatedMillis", value.asInstanceOf[js.Any])
+    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
     @scala.inline
-    def deleteGeneratedMillis: Self = this.set("generatedMillis", js.undefined)
+    def setRequest(value: SchemaVoterInfoRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalAddress(value: SchemaPostalAddress): Self = this.set("postalAddress", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deletePostalAddress: Self = this.set("postalAddress", js.undefined)
+    def setResponse(value: SchemaVoterInfoResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: SchemaVoterInfoRequest): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
-    
-    @scala.inline
-    def setResponse(value: SchemaVoterInfoResponse): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

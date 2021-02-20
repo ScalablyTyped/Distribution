@@ -1,19 +1,17 @@
 package typings.vueNiceDates
 
-import org.scalablytyped.runtime.TopLevel
 import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import typings.vueNiceDates.anon.ChangeLastValidDate
 import typings.vueNiceDates.anon.IsFocus
 import typings.vueNiceDates.anon.LastValidDate
 import typings.vueNiceDates.sharedMod.DatePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-nice-dates/DatePicker", JSImport.Namespace)
-@js.native
-object datePickerMod extends js.Object {
+object datePickerMod {
   
   @js.native
   trait DatePicker extends VueConstructor[Vue] {
@@ -26,6 +24,7 @@ object datePickerMod extends js.Object {
     
     var watch: IsFocus = js.native
   }
+  @JSImport("vue-nice-dates/DatePicker", "DatePicker")
   @js.native
-  object DatePicker extends TopLevel[DatePicker]
+  val DatePicker: typings.vueNiceDates.datePickerMod.DatePicker = js.native
 }

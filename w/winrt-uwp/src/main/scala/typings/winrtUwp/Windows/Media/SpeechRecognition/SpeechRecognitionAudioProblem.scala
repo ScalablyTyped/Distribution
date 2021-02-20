@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionAudioProblem extends js.Object
+sealed trait SpeechRecognitionAudioProblem extends StObject
 /** Specifies the type of audio problem detected. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem")
 @js.native
-object SpeechRecognitionAudioProblem extends js.Object {
+object SpeechRecognitionAudioProblem extends StObject {
   
   /** No audio. For example, the microphone may have been muted. */
   @js.native

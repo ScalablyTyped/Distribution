@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,39 +38,27 @@ object AttachmentTimeline {
   }
   
   @scala.inline
-  implicit class AttachmentTimelineOps[Self <: AttachmentTimeline] (val x: Self) extends AnyVal {
+  implicit class AttachmentTimelineMutableBuilder[Self <: AttachmentTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentNames(value: js.Array[String]): Self = StObject.set(x, "attachmentNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentNamesVarargs(value: String*): Self = StObject.set(x, "attachmentNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentNamesVarargs(value: String*): Self = this.set("attachmentNames", js.Array(value :_*))
+    def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachmentNames(value: js.Array[String]): Self = this.set("attachmentNames", value.asInstanceOf[js.Any])
+    def setSetAttachment(value: (Skeleton, Slot, String) => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setSetFrame(value: (Double, Double, String) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetFrameCount(value: () => Double): Self = this.set("getFrameCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAttachment(value: (Skeleton, Slot, String) => Unit): Self = this.set("setAttachment", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetFrame(value: (Double, Double, String) => Unit): Self = this.set("setFrame", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSlotIndex(value: Double): Self = this.set("slotIndex", value.asInstanceOf[js.Any])
+    def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
   }
 }

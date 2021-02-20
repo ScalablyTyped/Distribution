@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultsFilter extends js.Object {
+trait ResultsFilter extends StObject {
   
   var automatedTestName: String = js.native
   
@@ -42,45 +43,33 @@ object ResultsFilter {
   }
   
   @scala.inline
-  implicit class ResultsFilterOps[Self <: ResultsFilter] (val x: Self) extends AnyVal {
+  implicit class ResultsFilterMutableBuilder[Self <: ResultsFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatedTestName(value: String): Self = StObject.set(x, "automatedTestName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestName(value: String): Self = this.set("automatedTestName", value.asInstanceOf[js.Any])
+    def setMaxCompleteDate(value: Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setResultsCount(value: Double): Self = StObject.set(x, "resultsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    def setTestCaseReferenceIds(value: js.Array[Double]): Self = StObject.set(x, "testCaseReferenceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCompleteDate(value: Date): Self = this.set("maxCompleteDate", value.asInstanceOf[js.Any])
+    def setTestCaseReferenceIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseReferenceIds", js.Array(value :_*))
     
     @scala.inline
-    def setResultsCount(value: Double): Self = this.set("resultsCount", value.asInstanceOf[js.Any])
+    def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCaseReferenceIdsVarargs(value: Double*): Self = this.set("testCaseReferenceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestCaseReferenceIds(value: js.Array[Double]): Self = this.set("testCaseReferenceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestResultsContext(value: TestResultsContext): Self = this.set("testResultsContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrendDays(value: Double): Self = this.set("trendDays", value.asInstanceOf[js.Any])
+    def setTrendDays(value: Double): Self = StObject.set(x, "trendDays", value.asInstanceOf[js.Any])
   }
 }

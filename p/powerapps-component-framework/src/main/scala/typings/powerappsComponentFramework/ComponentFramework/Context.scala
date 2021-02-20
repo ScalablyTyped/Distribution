@@ -1,5 +1,6 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The entire property bag interface available to control via Context Object
   */
 @js.native
-trait Context[TInputs] extends js.Object {
+trait Context[TInputs] extends StObject {
   
   var client: Client = js.native
   
@@ -56,57 +57,45 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context[_], TInputs] (val x: Self with Context[TInputs]) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context[_], TInputs] (val x: Self with Context[TInputs]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFactory(value: Factory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: Client): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setFormatting(value: Formatting): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactory(value: Factory): Self = this.set("factory", value.asInstanceOf[js.Any])
+    def setNavigation(value: Navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatting(value: Formatting): Self = this.set("formatting", value.asInstanceOf[js.Any])
+    def setParameters(value: TInputs): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigation(value: Navigation): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    def setUpdatedProperties(value: js.Array[String]): Self = StObject.set(x, "updatedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: TInputs): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setUpdatedPropertiesVarargs(value: String*): Self = StObject.set(x, "updatedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setResources(value: Resources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setUserSettings(value: UserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedPropertiesVarargs(value: String*): Self = this.set("updatedProperties", js.Array(value :_*))
+    def setUtils(value: Utility): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedProperties(value: js.Array[String]): Self = this.set("updatedProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserSettings(value: UserSettings): Self = this.set("userSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtils(value: Utility): Self = this.set("utils", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebAPI(value: WebApi): Self = this.set("webAPI", value.asInstanceOf[js.Any])
+    def setWebAPI(value: WebApi): Self = StObject.set(x, "webAPI", value.asInstanceOf[js.Any])
   }
 }

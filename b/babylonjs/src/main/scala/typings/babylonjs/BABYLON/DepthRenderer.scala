@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DepthRenderer extends js.Object {
+trait DepthRenderer extends StObject {
   
   var _cachedDefines: js.Any = js.native
   
@@ -76,57 +77,45 @@ object DepthRenderer {
   }
   
   @scala.inline
-  implicit class DepthRendererOps[Self <: DepthRenderer] (val x: Self) extends AnyVal {
+  implicit class DepthRendererMutableBuilder[Self <: DepthRenderer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDepthMap(value: () => RenderTargetTexture): Self = StObject.set(x, "getDepthMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_cachedDefines(value: js.Any): Self = this.set("_cachedDefines", value.asInstanceOf[js.Any])
+    def setIsPacked(value: Boolean): Self = StObject.set(x, "isPacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_camera(value: js.Any): Self = this.set("_camera", value.asInstanceOf[js.Any])
+    def setIsReady(value: (SubMesh, Boolean) => Boolean): Self = StObject.set(x, "isReady", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_clearColor(value: js.Any): Self = this.set("_clearColor", value.asInstanceOf[js.Any])
+    def setUseOnlyInActiveCamera(value: Boolean): Self = StObject.set(x, "useOnlyInActiveCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_depthMap(value: js.Any): Self = this.set("_depthMap", value.asInstanceOf[js.Any])
+    def set_cachedDefines(value: js.Any): Self = StObject.set(x, "_cachedDefines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_effect(value: js.Any): Self = this.set("_effect", value.asInstanceOf[js.Any])
+    def set_camera(value: js.Any): Self = StObject.set(x, "_camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_scene(value: js.Any): Self = this.set("_scene", value.asInstanceOf[js.Any])
+    def set_clearColor(value: js.Any): Self = StObject.set(x, "_clearColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_storeNonLinearDepth(value: js.Any): Self = this.set("_storeNonLinearDepth", value.asInstanceOf[js.Any])
+    def set_depthMap(value: js.Any): Self = StObject.set(x, "_depthMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def set_effect(value: js.Any): Self = StObject.set(x, "_effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDepthMap(value: () => RenderTargetTexture): Self = this.set("getDepthMap", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsPacked(value: Boolean): Self = this.set("isPacked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsReady(value: (SubMesh, Boolean) => Boolean): Self = this.set("isReady", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUseOnlyInActiveCamera(value: Boolean): Self = this.set("useOnlyInActiveCamera", value.asInstanceOf[js.Any])
+    def set_storeNonLinearDepth(value: js.Any): Self = StObject.set(x, "_storeNonLinearDepth", value.asInstanceOf[js.Any])
   }
 }

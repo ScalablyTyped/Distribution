@@ -5,6 +5,7 @@ import typings.react.mod.ComponentState
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeVectorIcons.iconMod.IconButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,84 +83,72 @@ object IconProps {
   }
   
   @scala.inline
-  implicit class IconPropsOps[Self <: IconProps] (val x: Self) extends AnyVal {
+  implicit class IconPropsMutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrand(value: Boolean): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("Component", js.undefined)
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: Boolean): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def deleteBrand: Self = this.set("brand", js.undefined)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
     
     @scala.inline
-    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = this.set("disabledStyle", value.asInstanceOf[js.Any])
+    def setIconProps(value: typings.reactNativeVectorIcons.iconMod.IconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledStyle: Self = this.set("disabledStyle", js.undefined)
+    def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
     
     @scala.inline
-    def setDisabledStyleNull: Self = this.set("disabledStyle", null)
+    def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconProps(value: typings.reactNativeVectorIcons.iconMod.IconProps): Self = this.set("iconProps", value.asInstanceOf[js.Any])
+    def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
     
     @scala.inline
-    def deleteIconProps: Self = this.set("iconProps", js.undefined)
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaised(value: Boolean): Self = this.set("raised", value.asInstanceOf[js.Any])
+    def setReverseColor(value: String): Self = StObject.set(x, "reverseColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRaised: Self = this.set("raised", js.undefined)
+    def setReverseColorUndefined: Self = StObject.set(x, "reverseColor", js.undefined)
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setSolid(value: Boolean): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseColor(value: String): Self = this.set("reverseColor", value.asInstanceOf[js.Any])
+    def setSolidUndefined: Self = StObject.set(x, "solid", js.undefined)
     
     @scala.inline
-    def deleteReverseColor: Self = this.set("reverseColor", js.undefined)
+    def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolid(value: Boolean): Self = this.set("solid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolid: Self = this.set("solid", js.undefined)
-    
-    @scala.inline
-    def setType(value: IconType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

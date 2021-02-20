@@ -8,33 +8,39 @@ import typings.ngTable.ngTableDefaultsMod.IDefaults
 import typings.ngTable.ngTableParamsMod.IParamValues
 import typings.ngTable.ngTableSettingsMod.ISettings
 import typings.ngTable.ngTableSettingsMod.NgTableSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/core", JSImport.Namespace)
-@js.native
-object coreMod extends js.Object {
+object coreMod {
   
-  val ngTableCoreModule: IModule = js.native
-  
+  @JSImport("ng-table/src/core", "NgTableDefaultGetDataProvider")
   @js.native
   class NgTableDefaultGetDataProvider ()
     extends typings.ngTable.dataMod.NgTableDefaultGetDataProvider
   
+  @JSImport("ng-table/src/core", "NgTableEventsChannel")
   @js.native
   class NgTableEventsChannel protected ()
     extends typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel {
     def this($rootScope: IRootScopeService) = this()
   }
   /* static members */
-  @js.native
-  object NgTableEventsChannel extends js.Object {
+  object NgTableEventsChannel {
     
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
+    @JSImport("ng-table/src/core", "NgTableEventsChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ng-table/src/core", "NgTableEventsChannel.$inject")
+    @js.native
+    def $inject: js.Array[String] = js.native
+    @scala.inline
+    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("ng-table/src/core", "NgTableParams")
   @js.native
   class NgTableParams[T] ()
     extends typings.ngTable.ngTableParamsMod.NgTableParams[T] {
@@ -45,15 +51,26 @@ object coreMod extends js.Object {
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
   }
   /* static members */
-  @js.native
-  object NgTableParams extends js.Object {
+  object NgTableParams {
     
-    @JSName("$log")
-    var $log: js.Any = js.native
+    @JSImport("ng-table/src/core", "NgTableParams")
+    @js.native
+    val ^ : js.Any = js.native
     
-    @JSName("$q")
-    var $q: js.Any = js.native
+    @JSImport("ng-table/src/core", "NgTableParams.$log")
+    @js.native
+    def $log: js.Any = js.native
+    @scala.inline
+    def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
     
+    @JSImport("ng-table/src/core", "NgTableParams.$q")
+    @js.native
+    def $q: js.Any = js.native
+    @scala.inline
+    def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ng-table/src/core", "NgTableParams.init")
+    @js.native
     def init(
       $q: IQService,
       $log: ILogService,
@@ -62,10 +79,26 @@ object coreMod extends js.Object {
       ngTableSettings: NgTableSettings
     ): Unit = js.native
     
-    var ngTableDefaults: js.Any = js.native
+    @JSImport("ng-table/src/core", "NgTableParams.ngTableDefaults")
+    @js.native
+    def ngTableDefaults: js.Any = js.native
+    @scala.inline
+    def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
     
-    var ngTableEventsChannel: js.Any = js.native
+    @JSImport("ng-table/src/core", "NgTableParams.ngTableEventsChannel")
+    @js.native
+    def ngTableEventsChannel: js.Any = js.native
+    @scala.inline
+    def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
     
-    var ngTableSettings: js.Any = js.native
+    @JSImport("ng-table/src/core", "NgTableParams.ngTableSettings")
+    @js.native
+    def ngTableSettings: js.Any = js.native
+    @scala.inline
+    def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("ng-table/src/core", "ngTableCoreModule")
+  @js.native
+  val ngTableCoreModule: IModule = js.native
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for a MessageAvailableChanged event. */
 @js.native
-trait RcsEndUserMessageAvailableEventArgs extends js.Object {
+trait RcsEndUserMessageAvailableEventArgs extends StObject {
   
   /** Gets a Boolean value indicating if a new message is available. */
   var isMessageAvailable: Boolean = js.native
@@ -23,24 +24,12 @@ object RcsEndUserMessageAvailableEventArgs {
   }
   
   @scala.inline
-  implicit class RcsEndUserMessageAvailableEventArgsOps[Self <: RcsEndUserMessageAvailableEventArgs] (val x: Self) extends AnyVal {
+  implicit class RcsEndUserMessageAvailableEventArgsMutableBuilder[Self <: RcsEndUserMessageAvailableEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMessageAvailable(value: Boolean): Self = StObject.set(x, "isMessageAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsMessageAvailable(value: Boolean): Self = this.set("isMessageAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: RcsEndUserMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: RcsEndUserMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

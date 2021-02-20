@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IReferenceResolverHost extends js.Object {
+trait IReferenceResolverHost extends StObject {
   
   def directoryExists(path: String): Boolean = js.native
   
@@ -32,33 +33,21 @@ object IReferenceResolverHost {
   }
   
   @scala.inline
-  implicit class IReferenceResolverHostOps[Self <: IReferenceResolverHost] (val x: Self) extends AnyVal {
+  implicit class IReferenceResolverHostMutableBuilder[Self <: IReferenceResolverHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectoryExists(value: String => Boolean): Self = this.set("directoryExists", js.Any.fromFunction1(value))
+    def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFileExists(value: String => Boolean): Self = this.set("fileExists", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetParentDirectory(value: String => String): Self = this.set("getParentDirectory", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = this.set("getScriptSnapshot", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveRelativePath(value: (String, String) => String): Self = this.set("resolveRelativePath", js.Any.fromFunction2(value))
+    def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
   }
 }

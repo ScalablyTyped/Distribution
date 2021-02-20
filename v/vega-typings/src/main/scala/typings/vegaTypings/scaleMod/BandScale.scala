@@ -2,6 +2,7 @@ package typings.vegaTypings.scaleMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.band
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object BandScale {
   }
   
   @scala.inline
-  implicit class BandScaleOps[Self <: BandScale] (val x: Self) extends AnyVal {
+  implicit class BandScaleMutableBuilder[Self <: BandScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: band): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingInner(value: Double | SignalRef): Self = this.set("paddingInner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingInner: Self = this.set("paddingInner", js.undefined)
+    def setType(value: band): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

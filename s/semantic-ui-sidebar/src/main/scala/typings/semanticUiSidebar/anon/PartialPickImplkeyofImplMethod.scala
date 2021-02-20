@@ -1,12 +1,13 @@
 package typings.semanticUiSidebar.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.ErrorSettings._Impl, keyof semantic-ui-sidebar.SemanticUI.Sidebar.ErrorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplMethod extends js.Object {
+trait PartialPickImplkeyofImplMethod extends StObject {
   
   var method: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialPickImplkeyofImplMethod {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplMethodOps[Self <: PartialPickImplkeyofImplMethod] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplMethodMutableBuilder[Self <: PartialPickImplkeyofImplMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMovedSidebar(value: String): Self = StObject.set(x, "movedSidebar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMovedSidebarUndefined: Self = StObject.set(x, "movedSidebar", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovedSidebar(value: String): Self = this.set("movedSidebar", value.asInstanceOf[js.Any])
+    def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
     
     @scala.inline
-    def deleteMovedSidebar: Self = this.set("movedSidebar", js.undefined)
+    def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotFound(value: String): Self = this.set("notFound", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteNotFound: Self = this.set("notFound", js.undefined)
+    def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: String): Self = this.set("overlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
-    
-    @scala.inline
-    def setPusher(value: String): Self = this.set("pusher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePusher: Self = this.set("pusher", js.undefined)
+    def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
   }
 }

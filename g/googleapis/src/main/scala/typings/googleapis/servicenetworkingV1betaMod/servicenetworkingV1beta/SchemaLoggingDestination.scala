@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the consumer project).
   */
 @js.native
-trait SchemaLoggingDestination extends js.Object {
+trait SchemaLoggingDestination extends StObject {
   
   /**
     * Names of the logs to be sent to this destination. Each name must be
@@ -34,33 +35,21 @@ object SchemaLoggingDestination {
   }
   
   @scala.inline
-  implicit class SchemaLoggingDestinationOps[Self <: SchemaLoggingDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaLoggingDestinationMutableBuilder[Self <: SchemaLoggingDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
     @scala.inline
-    def setLogsVarargs(value: String*): Self = this.set("logs", js.Array(value :_*))
+    def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: js.Array[String]): Self = this.set("logs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogs: Self = this.set("logs", js.undefined)
-    
-    @scala.inline
-    def setMonitoredResource(value: String): Self = this.set("monitoredResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitoredResource: Self = this.set("monitoredResource", js.undefined)
+    def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
   }
 }

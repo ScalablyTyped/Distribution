@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * information, see  Permissions in Search Console.
   */
 @js.native
-trait SchemaWmxSite extends js.Object {
+trait SchemaWmxSite extends StObject {
   
   /**
     * The user&#39;s permission level for the site.
@@ -30,30 +31,18 @@ object SchemaWmxSite {
   }
   
   @scala.inline
-  implicit class SchemaWmxSiteOps[Self <: SchemaWmxSite] (val x: Self) extends AnyVal {
+  implicit class SchemaWmxSiteMutableBuilder[Self <: SchemaWmxSite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionLevelUndefined: Self = StObject.set(x, "permissionLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionLevel(value: String): Self = this.set("permissionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionLevel: Self = this.set("permissionLevel", js.undefined)
-    
-    @scala.inline
-    def setSiteUrl(value: String): Self = this.set("siteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteUrl: Self = this.set("siteUrl", js.undefined)
+    def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
   }
 }

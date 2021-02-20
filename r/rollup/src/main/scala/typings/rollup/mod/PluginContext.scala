@@ -5,6 +5,7 @@ import typings.rollup.anon.Line
 import typings.rollup.anon.Name
 import typings.std.IterableIterator
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

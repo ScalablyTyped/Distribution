@@ -1,20 +1,26 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/lastDayOfWeek", JSImport.Namespace)
-@js.native
-object dateFnsLastDayOfWeekMod extends js.Object {
+object dateFnsLastDayOfWeekMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/lastDayOfWeek", JSImport.Default)
+    @js.native
     def apply(date: Double): Date = js.native
+    @JSImport("date-fns/lastDayOfWeek", JSImport.Default)
+    @js.native
     def apply(date: Double, options: typings.dateFns.anon.Locale): Date = js.native
+    @JSImport("date-fns/lastDayOfWeek", JSImport.Default)
+    @js.native
     def apply(date: Date): Date = js.native
+    @JSImport("date-fns/lastDayOfWeek", JSImport.Default)
+    @js.native
     def apply(date: Date, options: typings.dateFns.anon.Locale): Date = js.native
   }
 }

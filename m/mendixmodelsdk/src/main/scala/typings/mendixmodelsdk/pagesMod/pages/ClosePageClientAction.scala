@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,16 +46,20 @@ class ClosePageClientAction protected () extends ClientAction {
   
   def numberOfPages_=(newValue: Double): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction")
-@js.native
-object ClosePageClientAction extends js.Object {
+object ClosePageClientAction {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.create")
+  @js.native
   def create(model: IModel): ClosePageClientAction = js.native
   
   /**
@@ -65,6 +70,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInActionButtonUnderAction")
+  @js.native
   def createInActionButtonUnderAction(container: ActionButton): ClosePageClientAction = js.native
   
   /**
@@ -75,6 +83,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInActionItemUnderAction")
+  @js.native
   def createInActionItemUnderAction(container: ActionItem): ClosePageClientAction = js.native
   
   /**
@@ -85,6 +96,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAssociationWidgetUnderOnChangeAction")
+  @js.native
   def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): ClosePageClientAction = js.native
   
   /**
@@ -95,6 +109,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAttributeWidgetUnderOnChangeAction")
+  @js.native
   def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): ClosePageClientAction = js.native
   
   /**
@@ -105,6 +122,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAttributeWidgetUnderOnEnterAction")
+  @js.native
   def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): ClosePageClientAction = js.native
   
   /**
@@ -115,6 +135,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInAttributeWidgetUnderOnLeaveAction")
+  @js.native
   def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): ClosePageClientAction = js.native
   
   /**
@@ -125,6 +148,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 to 8.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInBottomBarItemUnderAction")
+  @js.native
   def createInBottomBarItemUnderAction(container: BottomBarItem): ClosePageClientAction = js.native
   
   /**
@@ -135,6 +161,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.3.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInDivContainerUnderOnClickAction")
+  @js.native
   def createInDivContainerUnderOnClickAction(container: DivContainer): ClosePageClientAction = js.native
   
   /**
@@ -145,6 +174,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.18.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInDynamicImageViewerUnderClickAction")
+  @js.native
   def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): ClosePageClientAction = js.native
   
   /**
@@ -155,6 +187,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInGridActionButtonUnderAction")
+  @js.native
   def createInGridActionButtonUnderAction(container: GridActionButton): ClosePageClientAction = js.native
   
   /**
@@ -165,6 +200,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInListViewUnderClickAction")
+  @js.native
   def createInListViewUnderClickAction(container: ListView): ClosePageClientAction = js.native
   
   /**
@@ -175,6 +213,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInListViewUnderPullDownAction")
+  @js.native
   def createInListViewUnderPullDownAction(container: ListView): ClosePageClientAction = js.native
   
   /**
@@ -185,6 +226,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInMenuItemUnderAction")
+  @js.native
   def createInMenuItemUnderAction(container: MenuItem): ClosePageClientAction = js.native
   
   /**
@@ -195,6 +239,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+  @js.native
   def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): ClosePageClientAction = js.native
   
   /**
@@ -205,6 +252,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInStaticImageViewerUnderClickAction")
+  @js.native
   def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): ClosePageClientAction = js.native
   
   /**
@@ -215,6 +265,9 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.7.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInTextBoxUnderOnEnterKeyPressAction")
+  @js.native
   def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): ClosePageClientAction = js.native
   
   /**
@@ -225,9 +278,22 @@ object ClosePageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.19.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.createInWidgetValueUnderAction")
+  @js.native
   def createInWidgetValueUnderAction(container: WidgetValue): ClosePageClientAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A poly-polygon consists of multiple polygons combined in one.
   */
 @js.native
-trait PolyPolygonDescriptor extends js.Object {
+trait PolyPolygonDescriptor extends StObject {
   
   /** These are the untransformed points of this polygon. */
   var Geometry: PointSequenceSequence = js.native
@@ -30,33 +31,21 @@ object PolyPolygonDescriptor {
   }
   
   @scala.inline
-  implicit class PolyPolygonDescriptorOps[Self <: PolyPolygonDescriptor] (val x: Self) extends AnyVal {
+  implicit class PolyPolygonDescriptorMutableBuilder[Self <: PolyPolygonDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometry(value: PointSequenceSequence): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeometryVarargs(value: PointSequence*): Self = StObject.set(x, "Geometry", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolyPolygon(value: PointSequenceSequence): Self = StObject.set(x, "PolyPolygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryVarargs(value: PointSequence*): Self = this.set("Geometry", js.Array(value :_*))
+    def setPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "PolyPolygon", js.Array(value :_*))
     
     @scala.inline
-    def setGeometry(value: PointSequenceSequence): Self = this.set("Geometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolyPolygonVarargs(value: PointSequence*): Self = this.set("PolyPolygon", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolyPolygon(value: PointSequenceSequence): Self = this.set("PolyPolygon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolygonKind(value: PolygonKind): Self = this.set("PolygonKind", value.asInstanceOf[js.Any])
+    def setPolygonKind(value: PolygonKind): Self = StObject.set(x, "PolygonKind", value.asInstanceOf[js.Any])
   }
 }

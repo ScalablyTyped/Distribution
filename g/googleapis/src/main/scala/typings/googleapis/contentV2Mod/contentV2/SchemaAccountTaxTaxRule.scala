@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Tax calculation rule to apply in a state or province (USA only).
   */
 @js.native
-trait SchemaAccountTaxTaxRule extends js.Object {
+trait SchemaAccountTaxTaxRule extends StObject {
   
   /**
     * Country code in which tax is applicable.
@@ -47,48 +48,36 @@ object SchemaAccountTaxTaxRule {
   }
   
   @scala.inline
-  implicit class SchemaAccountTaxTaxRuleOps[Self <: SchemaAccountTaxTaxRule] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountTaxTaxRuleMutableBuilder[Self <: SchemaAccountTaxTaxRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setRatePercent(value: String): Self = StObject.set(x, "ratePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setRatePercentUndefined: Self = StObject.set(x, "ratePercent", js.undefined)
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setShippingTaxed(value: Boolean): Self = StObject.set(x, "shippingTaxed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatePercent(value: String): Self = this.set("ratePercent", value.asInstanceOf[js.Any])
+    def setShippingTaxedUndefined: Self = StObject.set(x, "shippingTaxed", js.undefined)
     
     @scala.inline
-    def deleteRatePercent: Self = this.set("ratePercent", js.undefined)
+    def setUseGlobalRate(value: Boolean): Self = StObject.set(x, "useGlobalRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingTaxed(value: Boolean): Self = this.set("shippingTaxed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingTaxed: Self = this.set("shippingTaxed", js.undefined)
-    
-    @scala.inline
-    def setUseGlobalRate(value: Boolean): Self = this.set("useGlobalRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseGlobalRate: Self = this.set("useGlobalRate", js.undefined)
+    def setUseGlobalRateUndefined: Self = StObject.set(x, "useGlobalRate", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlusCode extends js.Object {
+trait PlusCode extends StObject {
   
   /** is a 6 character or longer local code with an explicit location (CWC8+R9, Mountain View, CA, USA). */
   var compound_code: String = js.native
@@ -22,24 +23,12 @@ object PlusCode {
   }
   
   @scala.inline
-  implicit class PlusCodeOps[Self <: PlusCode] (val x: Self) extends AnyVal {
+  implicit class PlusCodeMutableBuilder[Self <: PlusCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompound_code(value: String): Self = StObject.set(x, "compound_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompound_code(value: String): Self = this.set("compound_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlobal_code(value: String): Self = this.set("global_code", value.asInstanceOf[js.Any])
+    def setGlobal_code(value: String): Self = StObject.set(x, "global_code", value.asInstanceOf[js.Any])
   }
 }

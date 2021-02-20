@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.closenessCentralityNormalized
   */
 @js.native
-trait SearchClosenessCentralityNormalizedOptions extends js.Object {
+trait SearchClosenessCentralityNormalizedOptions extends StObject {
   
   var directed: js.UndefOr[Boolean] = js.native
   
@@ -38,36 +39,24 @@ object SearchClosenessCentralityNormalizedOptions {
   }
   
   @scala.inline
-  implicit class SearchClosenessCentralityNormalizedOptionsOps[Self <: SearchClosenessCentralityNormalizedOptions] (val x: Self) extends AnyVal {
+  implicit class SearchClosenessCentralityNormalizedOptionsMutableBuilder[Self <: SearchClosenessCentralityNormalizedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHarmonic(value: Boolean): Self = StObject.set(x, "harmonic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirected(value: Boolean): Self = this.set("directed", value.asInstanceOf[js.Any])
+    def setHarmonicUndefined: Self = StObject.set(x, "harmonic", js.undefined)
     
     @scala.inline
-    def deleteDirected: Self = this.set("directed", js.undefined)
+    def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHarmonic(value: Boolean): Self = this.set("harmonic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHarmonic: Self = this.set("harmonic", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeSingular => Double): Self = this.set("weight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

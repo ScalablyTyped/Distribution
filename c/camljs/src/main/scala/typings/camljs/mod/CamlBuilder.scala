@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CamlBuilder extends js.Object {
+trait CamlBuilder extends StObject {
   
   /** Generate <View> tag for SP.CamlQuery
     @param viewFields If omitted, default view fields are requested; otherwise, only values for the fields with the specified internal names are returned.

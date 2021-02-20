@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancelled extends js.Object {
+trait Cancelled extends StObject {
   
   var cancelled: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Cancelled {
   }
   
   @scala.inline
-  implicit class CancelledOps[Self <: Cancelled] (val x: Self) extends AnyVal {
+  implicit class CancelledMutableBuilder[Self <: Cancelled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelled(value: scala.Double): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublished(value: scala.Double): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelled(value: scala.Double): Self = this.set("cancelled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: scala.Double): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublished(value: scala.Double): Self = this.set("published", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnpublished(value: scala.Double): Self = this.set("unpublished", value.asInstanceOf[js.Any])
+    def setUnpublished(value: scala.Double): Self = StObject.set(x, "unpublished", value.asInstanceOf[js.Any])
   }
 }

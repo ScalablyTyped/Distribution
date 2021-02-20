@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggerDefinitionVersion extends js.Object {
+trait LoggerDefinitionVersion extends StObject {
   
   /**
     * A list of loggers.
@@ -21,27 +22,15 @@ object LoggerDefinitionVersion {
   }
   
   @scala.inline
-  implicit class LoggerDefinitionVersionOps[Self <: LoggerDefinitionVersion] (val x: Self) extends AnyVal {
+  implicit class LoggerDefinitionVersionMutableBuilder[Self <: LoggerDefinitionVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoggers(value: listOfLogger): Self = StObject.set(x, "Loggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoggersUndefined: Self = StObject.set(x, "Loggers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoggersVarargs(value: Logger*): Self = this.set("Loggers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLoggers(value: listOfLogger): Self = this.set("Loggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggers: Self = this.set("Loggers", js.undefined)
+    def setLoggersVarargs(value: Logger*): Self = StObject.set(x, "Loggers", js.Array(value :_*))
   }
 }

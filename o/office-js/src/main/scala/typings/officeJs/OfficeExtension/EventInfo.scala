@@ -1,11 +1,12 @@
 package typings.officeJs.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventInfo[T] extends js.Object {
+trait EventInfo[T] extends StObject {
   
   def eventArgsTransformFunc(args: js.Any): js.Promise[T] = js.native
   
@@ -26,27 +27,15 @@ object EventInfo {
   }
   
   @scala.inline
-  implicit class EventInfoOps[Self <: EventInfo[_], T] (val x: Self with EventInfo[T]) extends AnyVal {
+  implicit class EventInfoMutableBuilder[Self <: EventInfo[_], T] (val x: Self with EventInfo[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventArgsTransformFunc(value: js.Any => js.Promise[T]): Self = StObject.set(x, "eventArgsTransformFunc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[_]): Self = StObject.set(x, "registerFunc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventArgsTransformFunc(value: js.Any => js.Promise[T]): Self = this.set("eventArgsTransformFunc", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[_]): Self = this.set("registerFunc", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnregisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[_]): Self = this.set("unregisterFunc", js.Any.fromFunction1(value))
+    def setUnregisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[_]): Self = StObject.set(x, "unregisterFunc", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextBoxSnapshot extends js.Object {
+trait TextBoxSnapshot extends StObject {
   
   /**
     * The absolute position bounding box.
@@ -44,42 +45,30 @@ object TextBoxSnapshot {
   }
   
   @scala.inline
-  implicit class TextBoxSnapshotOps[Self <: TextBoxSnapshot] (val x: Self) extends AnyVal {
+  implicit class TextBoxSnapshotMutableBuilder[Self <: TextBoxSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Array[Rectangle]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: Rectangle*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayoutIndex(value: js.Array[integer]): Self = StObject.set(x, "layoutIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Rectangle*): Self = this.set("bounds", js.Array(value :_*))
+    def setLayoutIndexVarargs(value: integer*): Self = StObject.set(x, "layoutIndex", js.Array(value :_*))
     
     @scala.inline
-    def setBounds(value: js.Array[Rectangle]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setLength(value: js.Array[integer]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutIndexVarargs(value: integer*): Self = this.set("layoutIndex", js.Array(value :_*))
+    def setLengthVarargs(value: integer*): Self = StObject.set(x, "length", js.Array(value :_*))
     
     @scala.inline
-    def setLayoutIndex(value: js.Array[integer]): Self = this.set("layoutIndex", value.asInstanceOf[js.Any])
+    def setStart(value: js.Array[integer]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthVarargs(value: integer*): Self = this.set("length", js.Array(value :_*))
-    
-    @scala.inline
-    def setLength(value: js.Array[integer]): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartVarargs(value: integer*): Self = this.set("start", js.Array(value :_*))
-    
-    @scala.inline
-    def setStart(value: js.Array[integer]): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStartVarargs(value: integer*): Self = StObject.set(x, "start", js.Array(value :_*))
   }
 }

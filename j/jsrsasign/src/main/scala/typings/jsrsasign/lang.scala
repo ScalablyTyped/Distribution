@@ -1,12 +1,11 @@
 package typings.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("lang")
-@js.native
-object lang extends js.Object {
+object lang {
   
   /**
     * String and its utility class
@@ -20,6 +19,5 @@ object lang extends js.Object {
     * - `KJUR.lang.String.isBase64URL` - check whether argument is a Base64URL encoded string
     * - `KJUR.lang.String.isIntegerArray` - check whether argument is an array of integers
     */
-  @js.native
-  object String extends js.Object
+  object String
 }

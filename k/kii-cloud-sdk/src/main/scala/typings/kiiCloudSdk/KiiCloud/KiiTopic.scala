@@ -3,6 +3,7 @@ package typings.kiiCloudSdk.KiiCloud
 import typings.kiiCloudSdk.anon.`29`
 import typings.kiiCloudSdk.anon.`30`
 import typings.kiiCloudSdk.anon.`31`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Topic object.
   */
 @js.native
-trait KiiTopic extends js.Object {
+trait KiiTopic extends StObject {
   
   /**
     * Get ACL object of this topic.

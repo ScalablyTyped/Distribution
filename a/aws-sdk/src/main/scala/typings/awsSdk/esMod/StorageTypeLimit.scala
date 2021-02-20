@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageTypeLimit extends js.Object {
+trait StorageTypeLimit extends StObject {
   
   /**
     *  Name of storage limits that are applicable for given storage type. If  StorageType  is ebs, following storage options are applicable  MinimumVolumeSize Minimum amount of volume size that is applicable for given storage type.It can be empty if it is not applicable. MaximumVolumeSize Maximum amount of volume size that is applicable for given storage type.It can be empty if it is not applicable. MaximumIops Maximum amount of Iops that is applicable for given storage type.It can be empty if it is not applicable. MinimumIops Minimum amount of Iops that is applicable for given storage type.It can be empty if it is not applicable.  
@@ -26,33 +27,21 @@ object StorageTypeLimit {
   }
   
   @scala.inline
-  implicit class StorageTypeLimitOps[Self <: StorageTypeLimit] (val x: Self) extends AnyVal {
+  implicit class StorageTypeLimitMutableBuilder[Self <: StorageTypeLimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimitName(value: LimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitNameUndefined: Self = StObject.set(x, "LimitName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitValues(value: LimitValueList): Self = StObject.set(x, "LimitValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitName(value: LimitName): Self = this.set("LimitName", value.asInstanceOf[js.Any])
+    def setLimitValuesUndefined: Self = StObject.set(x, "LimitValues", js.undefined)
     
     @scala.inline
-    def deleteLimitName: Self = this.set("LimitName", js.undefined)
-    
-    @scala.inline
-    def setLimitValuesVarargs(value: LimitValue*): Self = this.set("LimitValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setLimitValues(value: LimitValueList): Self = this.set("LimitValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimitValues: Self = this.set("LimitValues", js.undefined)
+    def setLimitValuesVarargs(value: LimitValue*): Self = StObject.set(x, "LimitValues", js.Array(value :_*))
   }
 }

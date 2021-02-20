@@ -1,19 +1,22 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/throttle", JSImport.Namespace)
-@js.native
-object operatorThrottleMod extends js.Object {
+object operatorThrottleMod {
   
+  @JSImport("rxjs-compat/operator/throttle", "throttle")
+  @js.native
   def throttle[T](
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs-compat/operator/throttle", "throttle")
+  @js.native
   def throttle[T](
     durationSelector: js.Function1[
       /* value */ T, 

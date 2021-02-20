@@ -1,18 +1,19 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InputType extends js.Object
+sealed trait InputType extends StObject
 /**
   * A subset of input types that fits to a simple API returning one string.Not available on purpose:
   * button, checkbox, hidden, image, password, radio, range, reset, search, submit.
   */
 @JSGlobal("sap.m.InputType")
 @js.native
-object InputType extends js.Object {
+object InputType extends StObject {
   
   @js.native
   sealed trait Date extends InputType

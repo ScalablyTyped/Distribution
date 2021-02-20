@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrantListEntry extends js.Object {
+trait GrantListEntry extends StObject {
   
   /**
     * A list of key-value pairs that must be present in the encryption context of certain subsequent operations that the grant allows.
@@ -61,75 +62,63 @@ object GrantListEntry {
   }
   
   @scala.inline
-  implicit class GrantListEntryOps[Self <: GrantListEntry] (val x: Self) extends AnyVal {
+  implicit class GrantListEntryMutableBuilder[Self <: GrantListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: GrantConstraints): Self = this.set("Constraints", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteConstraints: Self = this.set("Constraints", js.undefined)
+    def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setGranteePrincipal(value: PrincipalIdType): Self = StObject.set(x, "GranteePrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantId(value: GrantIdType): Self = this.set("GrantId", value.asInstanceOf[js.Any])
+    def setGranteePrincipalUndefined: Self = StObject.set(x, "GranteePrincipal", js.undefined)
     
     @scala.inline
-    def deleteGrantId: Self = this.set("GrantId", js.undefined)
+    def setIssuingAccount(value: PrincipalIdType): Self = StObject.set(x, "IssuingAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranteePrincipal(value: PrincipalIdType): Self = this.set("GranteePrincipal", value.asInstanceOf[js.Any])
+    def setIssuingAccountUndefined: Self = StObject.set(x, "IssuingAccount", js.undefined)
     
     @scala.inline
-    def deleteGranteePrincipal: Self = this.set("GranteePrincipal", js.undefined)
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuingAccount(value: PrincipalIdType): Self = this.set("IssuingAccount", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def deleteIssuingAccount: Self = this.set("IssuingAccount", js.undefined)
+    def setName(value: GrantNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setOperations(value: GrantOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: GrantNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOperationsVarargs(value: GrantOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
     
     @scala.inline
-    def setOperationsVarargs(value: GrantOperation*): Self = this.set("Operations", js.Array(value :_*))
+    def setRetiringPrincipal(value: PrincipalIdType): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperations(value: GrantOperationList): Self = this.set("Operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperations: Self = this.set("Operations", js.undefined)
-    
-    @scala.inline
-    def setRetiringPrincipal(value: PrincipalIdType): Self = this.set("RetiringPrincipal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetiringPrincipal: Self = this.set("RetiringPrincipal", js.undefined)
+    def setRetiringPrincipalUndefined: Self = StObject.set(x, "RetiringPrincipal", js.undefined)
   }
 }

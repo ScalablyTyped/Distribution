@@ -1,11 +1,12 @@
 package typings.gamequery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationOptions extends js.Object {
+trait AnimationOptions extends StObject {
   
   var delta: js.UndefOr[Double] = js.native
   
@@ -32,63 +33,51 @@ object AnimationOptions {
   }
   
   @scala.inline
-  implicit class AnimationOptionsOps[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageURL(value: String): Self = this.set("imageURL", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
+    def setNumberOfFrame(value: Double): Self = StObject.set(x, "numberOfFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setNumberOfFrameUndefined: Self = StObject.set(x, "numberOfFrame", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setOffsetx(value: Double): Self = StObject.set(x, "offsetx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfFrame(value: Double): Self = this.set("numberOfFrame", value.asInstanceOf[js.Any])
+    def setOffsetxUndefined: Self = StObject.set(x, "offsetx", js.undefined)
     
     @scala.inline
-    def deleteNumberOfFrame: Self = this.set("numberOfFrame", js.undefined)
+    def setOffsety(value: Double): Self = StObject.set(x, "offsety", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetx(value: Double): Self = this.set("offsetx", value.asInstanceOf[js.Any])
+    def setOffsetyUndefined: Self = StObject.set(x, "offsety", js.undefined)
     
     @scala.inline
-    def deleteOffsetx: Self = this.set("offsetx", js.undefined)
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsety(value: Double): Self = this.set("offsety", value.asInstanceOf[js.Any])
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def deleteOffsety: Self = this.set("offsety", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

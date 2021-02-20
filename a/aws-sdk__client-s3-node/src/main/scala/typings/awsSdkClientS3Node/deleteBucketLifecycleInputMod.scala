@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/DeleteBucketLifecycleInput", JSImport.Namespace)
-@js.native
-object deleteBucketLifecycleInputMod extends js.Object {
+object deleteBucketLifecycleInputMod {
   
+  @JSImport("@aws-sdk/client-s3-node/model/DeleteBucketLifecycleInput", "DeleteBucketLifecycleInput")
+  @js.native
   val DeleteBucketLifecycleInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

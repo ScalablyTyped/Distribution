@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BroadcastId_ extends js.Object {
+trait BroadcastId_ extends StObject {
   
   var broadcastId: String = js.native
   
@@ -22,33 +23,21 @@ object BroadcastId_ {
   }
   
   @scala.inline
-  implicit class BroadcastId_Ops[Self <: BroadcastId_] (val x: Self) extends AnyVal {
+  implicit class BroadcastId_MutableBuilder[Self <: BroadcastId_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsRequested(value: Double): Self = StObject.set(x, "commentsRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsRequestedUndefined: Self = StObject.set(x, "commentsRequested", js.undefined)
     
     @scala.inline
-    def setBroadcastId(value: String): Self = this.set("broadcastId", value.asInstanceOf[js.Any])
+    def setLastCommentTs(value: String | Double): Self = StObject.set(x, "lastCommentTs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsRequested(value: Double): Self = this.set("commentsRequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommentsRequested: Self = this.set("commentsRequested", js.undefined)
-    
-    @scala.inline
-    def setLastCommentTs(value: String | Double): Self = this.set("lastCommentTs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastCommentTs: Self = this.set("lastCommentTs", js.undefined)
+    def setLastCommentTsUndefined: Self = StObject.set(x, "lastCommentTs", js.undefined)
   }
 }

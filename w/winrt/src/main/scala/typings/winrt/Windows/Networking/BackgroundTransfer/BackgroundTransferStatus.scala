@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.BackgroundTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BackgroundTransferStatus extends js.Object
+sealed trait BackgroundTransferStatus extends StObject
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferStatus")
 @js.native
-object BackgroundTransferStatus extends js.Object {
+object BackgroundTransferStatus extends StObject {
   
   @js.native
   sealed trait canceled extends BackgroundTransferStatus

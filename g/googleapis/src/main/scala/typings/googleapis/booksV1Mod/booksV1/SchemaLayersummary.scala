@@ -1,11 +1,12 @@
 package typings.googleapis.booksV1Mod.booksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLayersummary extends js.Object {
+trait SchemaLayersummary extends StObject {
   
   /**
     * The number of annotations for this layer.
@@ -85,99 +86,87 @@ object SchemaLayersummary {
   }
   
   @scala.inline
-  implicit class SchemaLayersummaryOps[Self <: SchemaLayersummary] (val x: Self) extends AnyVal {
+  implicit class SchemaLayersummaryMutableBuilder[Self <: SchemaLayersummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationCount(value: Double): Self = StObject.set(x, "annotationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationCountUndefined: Self = StObject.set(x, "annotationCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationTypes(value: js.Array[String]): Self = StObject.set(x, "annotationTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationCount(value: Double): Self = this.set("annotationCount", value.asInstanceOf[js.Any])
+    def setAnnotationTypesUndefined: Self = StObject.set(x, "annotationTypes", js.undefined)
     
     @scala.inline
-    def deleteAnnotationCount: Self = this.set("annotationCount", js.undefined)
+    def setAnnotationTypesVarargs(value: String*): Self = StObject.set(x, "annotationTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationTypesVarargs(value: String*): Self = this.set("annotationTypes", js.Array(value :_*))
+    def setAnnotationsDataLink(value: String): Self = StObject.set(x, "annotationsDataLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationTypes(value: js.Array[String]): Self = this.set("annotationTypes", value.asInstanceOf[js.Any])
+    def setAnnotationsDataLinkUndefined: Self = StObject.set(x, "annotationsDataLink", js.undefined)
     
     @scala.inline
-    def deleteAnnotationTypes: Self = this.set("annotationTypes", js.undefined)
+    def setAnnotationsLink(value: String): Self = StObject.set(x, "annotationsLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsDataLink(value: String): Self = this.set("annotationsDataLink", value.asInstanceOf[js.Any])
+    def setAnnotationsLinkUndefined: Self = StObject.set(x, "annotationsLink", js.undefined)
     
     @scala.inline
-    def deleteAnnotationsDataLink: Self = this.set("annotationsDataLink", js.undefined)
+    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsLink(value: String): Self = this.set("annotationsLink", value.asInstanceOf[js.Any])
+    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
     @scala.inline
-    def deleteAnnotationsLink: Self = this.set("annotationsLink", js.undefined)
+    def setDataCount(value: Double): Self = StObject.set(x, "dataCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    def setDataCountUndefined: Self = StObject.set(x, "dataCount", js.undefined)
     
     @scala.inline
-    def deleteContentVersion: Self = this.set("contentVersion", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCount(value: Double): Self = this.set("dataCount", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDataCount: Self = this.set("dataCount", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteLayerId: Self = this.set("layerId", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setVolumeAnnotationsVersion(value: String): Self = StObject.set(x, "volumeAnnotationsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setVolumeAnnotationsVersionUndefined: Self = StObject.set(x, "volumeAnnotationsVersion", js.undefined)
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeAnnotationsVersion(value: String): Self = this.set("volumeAnnotationsVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeAnnotationsVersion: Self = this.set("volumeAnnotationsVersion", js.undefined)
-    
-    @scala.inline
-    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

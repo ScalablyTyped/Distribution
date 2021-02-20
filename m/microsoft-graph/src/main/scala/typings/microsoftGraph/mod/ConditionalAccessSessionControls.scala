@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalAccessSessionControls extends js.Object {
+trait ConditionalAccessSessionControls extends StObject {
   
   /**
     * Session control to enforce application restrictions. Only Exchange Online and Sharepoint Online support this session
@@ -34,54 +35,42 @@ object ConditionalAccessSessionControls {
   }
   
   @scala.inline
-  implicit class ConditionalAccessSessionControlsOps[Self <: ConditionalAccessSessionControls] (val x: Self) extends AnyVal {
+  implicit class ConditionalAccessSessionControlsMutableBuilder[Self <: ConditionalAccessSessionControls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationEnforcedRestrictions(value: NullableOption[ApplicationEnforcedRestrictionsSessionControl]): Self = StObject.set(x, "applicationEnforcedRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationEnforcedRestrictionsNull: Self = StObject.set(x, "applicationEnforcedRestrictions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationEnforcedRestrictionsUndefined: Self = StObject.set(x, "applicationEnforcedRestrictions", js.undefined)
     
     @scala.inline
-    def setApplicationEnforcedRestrictions(value: NullableOption[ApplicationEnforcedRestrictionsSessionControl]): Self = this.set("applicationEnforcedRestrictions", value.asInstanceOf[js.Any])
+    def setCloudAppSecurity(value: NullableOption[CloudAppSecuritySessionControl]): Self = StObject.set(x, "cloudAppSecurity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationEnforcedRestrictions: Self = this.set("applicationEnforcedRestrictions", js.undefined)
+    def setCloudAppSecurityNull: Self = StObject.set(x, "cloudAppSecurity", null)
     
     @scala.inline
-    def setApplicationEnforcedRestrictionsNull: Self = this.set("applicationEnforcedRestrictions", null)
+    def setCloudAppSecurityUndefined: Self = StObject.set(x, "cloudAppSecurity", js.undefined)
     
     @scala.inline
-    def setCloudAppSecurity(value: NullableOption[CloudAppSecuritySessionControl]): Self = this.set("cloudAppSecurity", value.asInstanceOf[js.Any])
+    def setPersistentBrowser(value: NullableOption[PersistentBrowserSessionControl]): Self = StObject.set(x, "persistentBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudAppSecurity: Self = this.set("cloudAppSecurity", js.undefined)
+    def setPersistentBrowserNull: Self = StObject.set(x, "persistentBrowser", null)
     
     @scala.inline
-    def setCloudAppSecurityNull: Self = this.set("cloudAppSecurity", null)
+    def setPersistentBrowserUndefined: Self = StObject.set(x, "persistentBrowser", js.undefined)
     
     @scala.inline
-    def setPersistentBrowser(value: NullableOption[PersistentBrowserSessionControl]): Self = this.set("persistentBrowser", value.asInstanceOf[js.Any])
+    def setSignInFrequency(value: NullableOption[SignInFrequencySessionControl]): Self = StObject.set(x, "signInFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistentBrowser: Self = this.set("persistentBrowser", js.undefined)
+    def setSignInFrequencyNull: Self = StObject.set(x, "signInFrequency", null)
     
     @scala.inline
-    def setPersistentBrowserNull: Self = this.set("persistentBrowser", null)
-    
-    @scala.inline
-    def setSignInFrequency(value: NullableOption[SignInFrequencySessionControl]): Self = this.set("signInFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignInFrequency: Self = this.set("signInFrequency", js.undefined)
-    
-    @scala.inline
-    def setSignInFrequencyNull: Self = this.set("signInFrequency", null)
+    def setSignInFrequencyUndefined: Self = StObject.set(x, "signInFrequency", js.undefined)
   }
 }

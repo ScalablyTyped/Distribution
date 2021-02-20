@@ -1,15 +1,26 @@
 package typings.nodeHtmlParser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-html-parser/dist/matcher", JSImport.Namespace)
-@js.native
-object matcherMod extends js.Object {
+object matcherMod {
+  
+  @JSImport("node-html-parser/dist/matcher", JSImport.Default)
+  @js.native
+  class default protected () extends Matcher {
+    /**
+      * Creates an instance of Matcher.
+      * @param {string} selector
+      *
+      * @memberof Matcher
+      */
+    def this(selector: String) = this()
+  }
   
   @js.native
-  trait Matcher extends js.Object {
+  trait Matcher extends StObject {
     
     /**
       * Trying to advance match pointer
@@ -43,16 +54,5 @@ object matcherMod extends js.Object {
       * Rewind the match pointer
       */
     def rewind(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends Matcher {
-    /**
-      * Creates an instance of Matcher.
-      * @param {string} selector
-      *
-      * @memberof Matcher
-      */
-    def this(selector: String) = this()
   }
 }

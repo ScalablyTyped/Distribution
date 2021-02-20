@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilitySonificationOptions extends js.Object {
+trait LangAccessibilitySonificationOptions extends StObject {
   
   var playAsSoundButtonText: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object LangAccessibilitySonificationOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilitySonificationOptionsOps[Self <: LangAccessibilitySonificationOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilitySonificationOptionsMutableBuilder[Self <: LangAccessibilitySonificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlayAsSoundButtonText(value: String): Self = StObject.set(x, "playAsSoundButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayAsSoundButtonTextUndefined: Self = StObject.set(x, "playAsSoundButtonText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayAsSoundClickAnnouncement(value: String): Self = StObject.set(x, "playAsSoundClickAnnouncement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayAsSoundButtonText(value: String): Self = this.set("playAsSoundButtonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayAsSoundButtonText: Self = this.set("playAsSoundButtonText", js.undefined)
-    
-    @scala.inline
-    def setPlayAsSoundClickAnnouncement(value: String): Self = this.set("playAsSoundClickAnnouncement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayAsSoundClickAnnouncement: Self = this.set("playAsSoundClickAnnouncement", js.undefined)
+    def setPlayAsSoundClickAnnouncementUndefined: Self = StObject.set(x, "playAsSoundClickAnnouncement", js.undefined)
   }
 }

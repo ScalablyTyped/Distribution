@@ -1,12 +1,13 @@
 package typings.antvG2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@antv/g2", "PathUtil")
 @js.native
-class PathUtil () extends js.Object {
+class PathUtil () extends StObject {
   
   def catmullRomToBezier(pointsArray: js.Array[_]): js.Any = js.native
   

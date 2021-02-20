@@ -11,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.intersection
 import typings.arcgisJsApi.arcgisJsApiStrings.overlap
 import typings.arcgisJsApi.arcgisJsApiStrings.touch
 import typings.arcgisJsApi.arcgisJsApiStrings.within
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

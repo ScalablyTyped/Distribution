@@ -1,7 +1,7 @@
 package typings.reactBootstrap.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reactBootstrap.tabContainerMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +10,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Tab ()
   extends typings.reactBootstrap.libMod.Tab
-/* static members */
-@JSImport("react-bootstrap", "Tab")
-@js.native
-object Tab extends js.Object {
+object Tab {
   
-  var Container: Instantiable0[^] = js.native
+  @JSImport("react-bootstrap", "Tab")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Content: Instantiable0[typings.reactBootstrap.tabContentMod.^] = js.native
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Tab.Container")
+  @js.native
+  class Container ()
+    extends typings.reactBootstrap.tabContainerMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Tab.Container")
+  @js.native
+  def Container: Instantiable0[typings.reactBootstrap.tabContainerMod.^] = js.native
+  @scala.inline
+  def Container_=(x: Instantiable0[typings.reactBootstrap.tabContainerMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
   
-  var Pane: Instantiable0[typings.reactBootstrap.tabPaneMod.^] = js.native
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Tab.Content")
+  @js.native
+  class Content ()
+    extends typings.reactBootstrap.tabContentMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Tab.Content")
+  @js.native
+  def Content: Instantiable0[typings.reactBootstrap.tabContentMod.^] = js.native
+  @scala.inline
+  def Content_=(x: Instantiable0[typings.reactBootstrap.tabContentMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Tab.Pane")
+  @js.native
+  class Pane ()
+    extends typings.reactBootstrap.tabPaneMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Tab.Pane")
+  @js.native
+  def Pane: Instantiable0[typings.reactBootstrap.tabPaneMod.^] = js.native
+  @scala.inline
+  def Pane_=(x: Instantiable0[typings.reactBootstrap.tabPaneMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pane")(x.asInstanceOf[js.Any])
 }

@@ -1,13 +1,14 @@
 package typings.typeorm.anon
 
 import typings.typeorm.typeormBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typeorm.typeorm/repository/SaveOptions.SaveOptions & {  reload :false} */
 @js.native
-trait SaveOptionsreloadfalse extends js.Object {
+trait SaveOptionsreloadfalse extends StObject {
   
   /**
     * Breaks save execution into chunks of a given size.
@@ -53,45 +54,33 @@ object SaveOptionsreloadfalse {
   }
   
   @scala.inline
-  implicit class SaveOptionsreloadfalseOps[Self <: SaveOptionsreloadfalse] (val x: Self) extends AnyVal {
+  implicit class SaveOptionsreloadfalseMutableBuilder[Self <: SaveOptionsreloadfalse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReload(value: js.UndefOr[Boolean] with `false`): Self = this.set("reload", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setChunk(value: Double): Self = this.set("chunk", value.asInstanceOf[js.Any])
+    def setListeners(value: Boolean): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChunk: Self = this.set("chunk", js.undefined)
+    def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setReload(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setTransaction(value: Boolean): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListeners(value: Boolean): Self = this.set("listeners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListeners: Self = this.set("listeners", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: Boolean): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

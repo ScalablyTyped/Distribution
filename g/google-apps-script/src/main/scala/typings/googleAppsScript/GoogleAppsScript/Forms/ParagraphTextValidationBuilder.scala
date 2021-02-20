@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     paragraphTextItem.setValidation(paragraphtextValidation);
   */
 @js.native
-trait ParagraphTextValidationBuilder extends js.Object {
+trait ParagraphTextValidationBuilder extends StObject {
   
   def requireTextContainsPattern(pattern: String): ParagraphTextValidationBuilder = js.native
   
@@ -46,36 +47,24 @@ object ParagraphTextValidationBuilder {
   }
   
   @scala.inline
-  implicit class ParagraphTextValidationBuilderOps[Self <: ParagraphTextValidationBuilder] (val x: Self) extends AnyVal {
+  implicit class ParagraphTextValidationBuilderMutableBuilder[Self <: ParagraphTextValidationBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequireTextContainsPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextContainsPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequireTextDoesNotContainPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotContainPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequireTextDoesNotMatchPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotMatchPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextContainsPattern(value: String => ParagraphTextValidationBuilder): Self = this.set("requireTextContainsPattern", js.Any.fromFunction1(value))
+    def setRequireTextLengthGreaterThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthGreaterThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextDoesNotContainPattern(value: String => ParagraphTextValidationBuilder): Self = this.set("requireTextDoesNotContainPattern", js.Any.fromFunction1(value))
+    def setRequireTextLengthLessThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextDoesNotMatchPattern(value: String => ParagraphTextValidationBuilder): Self = this.set("requireTextDoesNotMatchPattern", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireTextLengthGreaterThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = this.set("requireTextLengthGreaterThanOrEqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireTextLengthLessThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = this.set("requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireTextMatchesPattern(value: String => ParagraphTextValidationBuilder): Self = this.set("requireTextMatchesPattern", js.Any.fromFunction1(value))
+    def setRequireTextMatchesPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextMatchesPattern", js.Any.fromFunction1(value))
   }
 }

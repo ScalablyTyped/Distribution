@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchAssertion[T, U] extends js.Object {
+trait NightwatchAssertion[T, U] extends StObject {
   
   var api: NightwatchAPI = js.native
   
@@ -37,45 +38,33 @@ object NightwatchAssertion {
   }
   
   @scala.inline
-  implicit class NightwatchAssertionOps[Self <: NightwatchAssertion[_, _], T, U] (val x: Self with (NightwatchAssertion[T, U])) extends AnyVal {
+  implicit class NightwatchAssertionMutableBuilder[Self <: NightwatchAssertion[_, _], T, U] (val x: Self with (NightwatchAssertion[T, U])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommand(value: js.Function1[/* result */ U, Unit] => NightwatchAssertion[T, U]): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpected(value: js.Function0[T] | T): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: NightwatchAPI): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setExpectedFunction0(value: () => T): Self = StObject.set(x, "expected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCommand(value: js.Function1[/* result */ U, Unit] => NightwatchAssertion[T, U]): Self = this.set("command", js.Any.fromFunction1(value))
+    def setFailure(value: /* result */ U => Boolean): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpectedFunction0(value: () => T): Self = this.set("expected", js.Any.fromFunction0(value))
+    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
     @scala.inline
-    def setExpected(value: js.Function0[T] | T): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPass(value: T => js.Any): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPass(value: T => js.Any): Self = this.set("pass", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValue(value: U => T): Self = this.set("value", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFailure(value: /* result */ U => Boolean): Self = this.set("failure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFailure: Self = this.set("failure", js.undefined)
+    def setValue(value: U => T): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

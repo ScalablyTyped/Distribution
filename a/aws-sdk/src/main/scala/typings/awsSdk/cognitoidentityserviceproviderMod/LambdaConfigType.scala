@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaConfigType extends js.Object {
+trait LambdaConfigType extends StObject {
   
   /**
     * Creates an authentication challenge.
@@ -66,78 +67,66 @@ object LambdaConfigType {
   }
   
   @scala.inline
-  implicit class LambdaConfigTypeOps[Self <: LambdaConfigType] (val x: Self) extends AnyVal {
+  implicit class LambdaConfigTypeMutableBuilder[Self <: LambdaConfigType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAuthChallenge(value: ArnType): Self = StObject.set(x, "CreateAuthChallenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateAuthChallengeUndefined: Self = StObject.set(x, "CreateAuthChallenge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomMessage(value: ArnType): Self = StObject.set(x, "CustomMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateAuthChallenge(value: ArnType): Self = this.set("CreateAuthChallenge", value.asInstanceOf[js.Any])
+    def setCustomMessageUndefined: Self = StObject.set(x, "CustomMessage", js.undefined)
     
     @scala.inline
-    def deleteCreateAuthChallenge: Self = this.set("CreateAuthChallenge", js.undefined)
+    def setDefineAuthChallenge(value: ArnType): Self = StObject.set(x, "DefineAuthChallenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: ArnType): Self = this.set("CustomMessage", value.asInstanceOf[js.Any])
+    def setDefineAuthChallengeUndefined: Self = StObject.set(x, "DefineAuthChallenge", js.undefined)
     
     @scala.inline
-    def deleteCustomMessage: Self = this.set("CustomMessage", js.undefined)
+    def setPostAuthentication(value: ArnType): Self = StObject.set(x, "PostAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefineAuthChallenge(value: ArnType): Self = this.set("DefineAuthChallenge", value.asInstanceOf[js.Any])
+    def setPostAuthenticationUndefined: Self = StObject.set(x, "PostAuthentication", js.undefined)
     
     @scala.inline
-    def deleteDefineAuthChallenge: Self = this.set("DefineAuthChallenge", js.undefined)
+    def setPostConfirmation(value: ArnType): Self = StObject.set(x, "PostConfirmation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostAuthentication(value: ArnType): Self = this.set("PostAuthentication", value.asInstanceOf[js.Any])
+    def setPostConfirmationUndefined: Self = StObject.set(x, "PostConfirmation", js.undefined)
     
     @scala.inline
-    def deletePostAuthentication: Self = this.set("PostAuthentication", js.undefined)
+    def setPreAuthentication(value: ArnType): Self = StObject.set(x, "PreAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostConfirmation(value: ArnType): Self = this.set("PostConfirmation", value.asInstanceOf[js.Any])
+    def setPreAuthenticationUndefined: Self = StObject.set(x, "PreAuthentication", js.undefined)
     
     @scala.inline
-    def deletePostConfirmation: Self = this.set("PostConfirmation", js.undefined)
+    def setPreSignUp(value: ArnType): Self = StObject.set(x, "PreSignUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreAuthentication(value: ArnType): Self = this.set("PreAuthentication", value.asInstanceOf[js.Any])
+    def setPreSignUpUndefined: Self = StObject.set(x, "PreSignUp", js.undefined)
     
     @scala.inline
-    def deletePreAuthentication: Self = this.set("PreAuthentication", js.undefined)
+    def setPreTokenGeneration(value: ArnType): Self = StObject.set(x, "PreTokenGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreSignUp(value: ArnType): Self = this.set("PreSignUp", value.asInstanceOf[js.Any])
+    def setPreTokenGenerationUndefined: Self = StObject.set(x, "PreTokenGeneration", js.undefined)
     
     @scala.inline
-    def deletePreSignUp: Self = this.set("PreSignUp", js.undefined)
+    def setUserMigration(value: ArnType): Self = StObject.set(x, "UserMigration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreTokenGeneration(value: ArnType): Self = this.set("PreTokenGeneration", value.asInstanceOf[js.Any])
+    def setUserMigrationUndefined: Self = StObject.set(x, "UserMigration", js.undefined)
     
     @scala.inline
-    def deletePreTokenGeneration: Self = this.set("PreTokenGeneration", js.undefined)
+    def setVerifyAuthChallengeResponse(value: ArnType): Self = StObject.set(x, "VerifyAuthChallengeResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserMigration(value: ArnType): Self = this.set("UserMigration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserMigration: Self = this.set("UserMigration", js.undefined)
-    
-    @scala.inline
-    def setVerifyAuthChallengeResponse(value: ArnType): Self = this.set("VerifyAuthChallengeResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyAuthChallengeResponse: Self = this.set("VerifyAuthChallengeResponse", js.undefined)
+    def setVerifyAuthChallengeResponseUndefined: Self = StObject.set(x, "VerifyAuthChallengeResponse", js.undefined)
   }
 }

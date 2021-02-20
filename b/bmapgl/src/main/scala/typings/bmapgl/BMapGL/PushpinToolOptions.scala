@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushpinToolOptions extends js.Object {
+trait PushpinToolOptions extends StObject {
   
   var cursor: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object PushpinToolOptions {
   }
   
   @scala.inline
-  implicit class PushpinToolOptionsOps[Self <: PushpinToolOptions] (val x: Self) extends AnyVal {
+  implicit class PushpinToolOptionsMutableBuilder[Self <: PushpinToolOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowText(value: String): Self = StObject.set(x, "followText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setFollowTextUndefined: Self = StObject.set(x, "followText", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowText(value: String): Self = this.set("followText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowText: Self = this.set("followText", js.undefined)
-    
-    @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
   }
 }

@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/transformer/DocumentToEntityTransformer", JSImport.Namespace)
-@js.native
-object transformerDocumentToEntityTransformerMod extends js.Object {
+object transformerDocumentToEntityTransformerMod {
   
+  @JSImport("typeorm/query-builder/transformer/DocumentToEntityTransformer", "DocumentToEntityTransformer")
   @js.native
-  class DocumentToEntityTransformer () extends js.Object {
+  class DocumentToEntityTransformer () extends StObject {
     def this(// private selectionMap: AliasMap,
     enableRelationIdValues: Boolean) = this()
     

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiConditionalSplitActivity extends js.Object {
+trait MultiConditionalSplitActivity extends StObject {
   
   /**
     * The paths for the activity, including the conditions for entering each path and the activity to perform for each path.
@@ -31,39 +32,27 @@ object MultiConditionalSplitActivity {
   }
   
   @scala.inline
-  implicit class MultiConditionalSplitActivityOps[Self <: MultiConditionalSplitActivity] (val x: Self) extends AnyVal {
+  implicit class MultiConditionalSplitActivityMutableBuilder[Self <: MultiConditionalSplitActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: ListOfMultiConditionalBranch): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranchesVarargs(value: MultiConditionalBranch*): Self = StObject.set(x, "Branches", js.Array(value :_*))
     
     @scala.inline
-    def setBranchesVarargs(value: MultiConditionalBranch*): Self = this.set("Branches", js.Array(value :_*))
+    def setDefaultActivity(value: string): Self = StObject.set(x, "DefaultActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranches(value: ListOfMultiConditionalBranch): Self = this.set("Branches", value.asInstanceOf[js.Any])
+    def setDefaultActivityUndefined: Self = StObject.set(x, "DefaultActivity", js.undefined)
     
     @scala.inline
-    def deleteBranches: Self = this.set("Branches", js.undefined)
+    def setEvaluationWaitTime(value: WaitTime): Self = StObject.set(x, "EvaluationWaitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultActivity(value: string): Self = this.set("DefaultActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultActivity: Self = this.set("DefaultActivity", js.undefined)
-    
-    @scala.inline
-    def setEvaluationWaitTime(value: WaitTime): Self = this.set("EvaluationWaitTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluationWaitTime: Self = this.set("EvaluationWaitTime", js.undefined)
+    def setEvaluationWaitTimeUndefined: Self = StObject.set(x, "EvaluationWaitTime", js.undefined)
   }
 }

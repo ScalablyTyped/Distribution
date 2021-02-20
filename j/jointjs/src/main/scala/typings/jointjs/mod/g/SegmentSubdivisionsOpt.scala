@@ -1,5 +1,6 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +19,15 @@ object SegmentSubdivisionsOpt {
   }
   
   @scala.inline
-  implicit class SegmentSubdivisionsOptOps[Self <: SegmentSubdivisionsOpt] (val x: Self) extends AnyVal {
+  implicit class SegmentSubdivisionsOptMutableBuilder[Self <: SegmentSubdivisionsOpt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSegmentSubdivisions(value: js.Array[js.Array[Curve]]): Self = StObject.set(x, "segmentSubdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSegmentSubdivisionsUndefined: Self = StObject.set(x, "segmentSubdivisions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSegmentSubdivisionsVarargs(value: js.Array[Curve]*): Self = this.set("segmentSubdivisions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegmentSubdivisions(value: js.Array[js.Array[Curve]]): Self = this.set("segmentSubdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentSubdivisions: Self = this.set("segmentSubdivisions", js.undefined)
+    def setSegmentSubdivisionsVarargs(value: js.Array[Curve]*): Self = StObject.set(x, "segmentSubdivisions", js.Array(value :_*))
   }
 }

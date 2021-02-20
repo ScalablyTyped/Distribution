@@ -6,12 +6,13 @@ import typings.auth0Lock.auth0LockStrings.forgotPassword
 import typings.auth0Lock.auth0LockStrings.login
 import typings.auth0Lock.auth0LockStrings.signUp
 import typings.auth0Lock.auth0LockStrings.small
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0LockConstructorOptions extends js.Object {
+trait Auth0LockConstructorOptions extends StObject {
   
   var _enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.native
   
@@ -104,273 +105,261 @@ object Auth0LockConstructorOptions {
   }
   
   @scala.inline
-  implicit class Auth0LockConstructorOptionsOps[Self <: Auth0LockConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class Auth0LockConstructorOptionsMutableBuilder[Self <: Auth0LockConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalSignUpFields(value: js.Array[Auth0LockAdditionalSignUpField]): Self = StObject.set(x, "additionalSignUpFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalSignUpFieldsUndefined: Self = StObject.set(x, "additionalSignUpFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalSignUpFieldsVarargs(value: Auth0LockAdditionalSignUpField*): Self = StObject.set(x, "additionalSignUpFields", js.Array(value :_*))
     
     @scala.inline
-    def set_enableIdPInitiatedLogin(value: Boolean): Self = this.set("_enableIdPInitiatedLogin", value.asInstanceOf[js.Any])
+    def setAllowAutocomplete(value: Boolean): Self = StObject.set(x, "allowAutocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_enableIdPInitiatedLogin: Self = this.set("_enableIdPInitiatedLogin", js.undefined)
+    def setAllowAutocompleteUndefined: Self = StObject.set(x, "allowAutocomplete", js.undefined)
     
     @scala.inline
-    def set_enableImpersonation(value: Boolean): Self = this.set("_enableImpersonation", value.asInstanceOf[js.Any])
+    def setAllowForgotPassword(value: Boolean): Self = StObject.set(x, "allowForgotPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_enableImpersonation: Self = this.set("_enableImpersonation", js.undefined)
+    def setAllowForgotPasswordUndefined: Self = StObject.set(x, "allowForgotPassword", js.undefined)
     
     @scala.inline
-    def setAdditionalSignUpFieldsVarargs(value: Auth0LockAdditionalSignUpField*): Self = this.set("additionalSignUpFields", js.Array(value :_*))
+    def setAllowLogin(value: Boolean): Self = StObject.set(x, "allowLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalSignUpFields(value: js.Array[Auth0LockAdditionalSignUpField]): Self = this.set("additionalSignUpFields", value.asInstanceOf[js.Any])
+    def setAllowLoginUndefined: Self = StObject.set(x, "allowLogin", js.undefined)
     
     @scala.inline
-    def deleteAdditionalSignUpFields: Self = this.set("additionalSignUpFields", js.undefined)
+    def setAllowPasswordAutocomplete(value: Boolean): Self = StObject.set(x, "allowPasswordAutocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAutocomplete(value: Boolean): Self = this.set("allowAutocomplete", value.asInstanceOf[js.Any])
+    def setAllowPasswordAutocompleteUndefined: Self = StObject.set(x, "allowPasswordAutocomplete", js.undefined)
     
     @scala.inline
-    def deleteAllowAutocomplete: Self = this.set("allowAutocomplete", js.undefined)
+    def setAllowShowPassword(value: Boolean): Self = StObject.set(x, "allowShowPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowForgotPassword(value: Boolean): Self = this.set("allowForgotPassword", value.asInstanceOf[js.Any])
+    def setAllowShowPasswordUndefined: Self = StObject.set(x, "allowShowPassword", js.undefined)
     
     @scala.inline
-    def deleteAllowForgotPassword: Self = this.set("allowForgotPassword", js.undefined)
+    def setAllowSignUp(value: Boolean): Self = StObject.set(x, "allowSignUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowLogin(value: Boolean): Self = this.set("allowLogin", value.asInstanceOf[js.Any])
+    def setAllowSignUpUndefined: Self = StObject.set(x, "allowSignUp", js.undefined)
     
     @scala.inline
-    def deleteAllowLogin: Self = this.set("allowLogin", js.undefined)
+    def setAllowedConnections(value: js.Array[String]): Self = StObject.set(x, "allowedConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPasswordAutocomplete(value: Boolean): Self = this.set("allowPasswordAutocomplete", value.asInstanceOf[js.Any])
+    def setAllowedConnectionsUndefined: Self = StObject.set(x, "allowedConnections", js.undefined)
     
     @scala.inline
-    def deleteAllowPasswordAutocomplete: Self = this.set("allowPasswordAutocomplete", js.undefined)
+    def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value :_*))
     
     @scala.inline
-    def setAllowShowPassword(value: Boolean): Self = this.set("allowShowPassword", value.asInstanceOf[js.Any])
+    def setAssetsUrl(value: String): Self = StObject.set(x, "assetsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowShowPassword: Self = this.set("allowShowPassword", js.undefined)
+    def setAssetsUrlUndefined: Self = StObject.set(x, "assetsUrl", js.undefined)
     
     @scala.inline
-    def setAllowSignUp(value: Boolean): Self = this.set("allowSignUp", value.asInstanceOf[js.Any])
+    def setAuth(value: Auth0LockAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowSignUp: Self = this.set("allowSignUp", js.undefined)
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def setAllowedConnectionsVarargs(value: String*): Self = this.set("allowedConnections", js.Array(value :_*))
+    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedConnections(value: js.Array[String]): Self = this.set("allowedConnections", value.asInstanceOf[js.Any])
+    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
     @scala.inline
-    def deleteAllowedConnections: Self = this.set("allowedConnections", js.undefined)
+    def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetsUrl(value: String): Self = this.set("assetsUrl", value.asInstanceOf[js.Any])
+    def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
     
     @scala.inline
-    def deleteAssetsUrl: Self = this.set("assetsUrl", js.undefined)
+    def setAvatar(value: Auth0LockAvatarOptions): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: Auth0LockAuthOptions): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setAvatarNull: Self = StObject.set(x, "avatar", null)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
     @scala.inline
-    def setAutoclose(value: Boolean): Self = this.set("autoclose", value.asInstanceOf[js.Any])
+    def setClientBaseUrl(value: String): Self = StObject.set(x, "clientBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoclose: Self = this.set("autoclose", js.undefined)
+    def setClientBaseUrlUndefined: Self = StObject.set(x, "clientBaseUrl", js.undefined)
     
     @scala.inline
-    def setAutofocus(value: Boolean): Self = this.set("autofocus", value.asInstanceOf[js.Any])
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutofocus: Self = this.set("autofocus", js.undefined)
+    def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
     @scala.inline
-    def setAvatar(value: Auth0LockAvatarOptions): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    def setConfigurationBaseUrl(value: String): Self = StObject.set(x, "configurationBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    def setConfigurationBaseUrlUndefined: Self = StObject.set(x, "configurationBaseUrl", js.undefined)
     
     @scala.inline
-    def setAvatarNull: Self = this.set("avatar", null)
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientBaseUrl(value: String): Self = this.set("clientBaseUrl", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteClientBaseUrl: Self = this.set("clientBaseUrl", js.undefined)
+    def setDefaultADUsernameFromEmailPrefix(value: Boolean): Self = StObject.set(x, "defaultADUsernameFromEmailPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setDefaultADUsernameFromEmailPrefixUndefined: Self = StObject.set(x, "defaultADUsernameFromEmailPrefix", js.undefined)
     
     @scala.inline
-    def deleteClosable: Self = this.set("closable", js.undefined)
+    def setDefaultDatabaseConnection(value: String): Self = StObject.set(x, "defaultDatabaseConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationBaseUrl(value: String): Self = this.set("configurationBaseUrl", value.asInstanceOf[js.Any])
+    def setDefaultDatabaseConnectionUndefined: Self = StObject.set(x, "defaultDatabaseConnection", js.undefined)
     
     @scala.inline
-    def deleteConfigurationBaseUrl: Self = this.set("configurationBaseUrl", js.undefined)
+    def setDefaultEnterpriseConnection(value: String): Self = StObject.set(x, "defaultEnterpriseConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDefaultEnterpriseConnectionUndefined: Self = StObject.set(x, "defaultEnterpriseConnection", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = StObject.set(x, "flashMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultADUsernameFromEmailPrefix(value: Boolean): Self = this.set("defaultADUsernameFromEmailPrefix", value.asInstanceOf[js.Any])
+    def setFlashMessageUndefined: Self = StObject.set(x, "flashMessage", js.undefined)
     
     @scala.inline
-    def deleteDefaultADUsernameFromEmailPrefix: Self = this.set("defaultADUsernameFromEmailPrefix", js.undefined)
+    def setForgotPasswordLink(value: String): Self = StObject.set(x, "forgotPasswordLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDatabaseConnection(value: String): Self = this.set("defaultDatabaseConnection", value.asInstanceOf[js.Any])
+    def setForgotPasswordLinkUndefined: Self = StObject.set(x, "forgotPasswordLink", js.undefined)
     
     @scala.inline
-    def deleteDefaultDatabaseConnection: Self = this.set("defaultDatabaseConnection", js.undefined)
+    def setHashCleanup(value: Boolean): Self = StObject.set(x, "hashCleanup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEnterpriseConnection(value: String): Self = this.set("defaultEnterpriseConnection", value.asInstanceOf[js.Any])
+    def setHashCleanupUndefined: Self = StObject.set(x, "hashCleanup", js.undefined)
     
     @scala.inline
-    def deleteDefaultEnterpriseConnection: Self = this.set("defaultEnterpriseConnection", js.undefined)
+    def setInitialScreen(value: login | signUp | forgotPassword): Self = StObject.set(x, "initialScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = this.set("flashMessage", value.asInstanceOf[js.Any])
+    def setInitialScreenUndefined: Self = StObject.set(x, "initialScreen", js.undefined)
     
     @scala.inline
-    def deleteFlashMessage: Self = this.set("flashMessage", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForgotPasswordLink(value: String): Self = this.set("forgotPasswordLink", value.asInstanceOf[js.Any])
+    def setLanguageBaseUrl(value: String): Self = StObject.set(x, "languageBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForgotPasswordLink: Self = this.set("forgotPasswordLink", js.undefined)
+    def setLanguageBaseUrlUndefined: Self = StObject.set(x, "languageBaseUrl", js.undefined)
     
     @scala.inline
-    def setHashCleanup(value: Boolean): Self = this.set("hashCleanup", value.asInstanceOf[js.Any])
+    def setLanguageDictionary(value: js.Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHashCleanup: Self = this.set("hashCleanup", js.undefined)
+    def setLanguageDictionaryUndefined: Self = StObject.set(x, "languageDictionary", js.undefined)
     
     @scala.inline
-    def setInitialScreen(value: login | signUp | forgotPassword): Self = this.set("initialScreen", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteInitialScreen: Self = this.set("initialScreen", js.undefined)
+    def setLeeway(value: Double): Self = StObject.set(x, "leeway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLeewayUndefined: Self = StObject.set(x, "leeway", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLoginAfterSignUp(value: Boolean): Self = StObject.set(x, "loginAfterSignUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageBaseUrl(value: String): Self = this.set("languageBaseUrl", value.asInstanceOf[js.Any])
+    def setLoginAfterSignUpUndefined: Self = StObject.set(x, "loginAfterSignUp", js.undefined)
     
     @scala.inline
-    def deleteLanguageBaseUrl: Self = this.set("languageBaseUrl", js.undefined)
+    def setMustAcceptTerms(value: Boolean): Self = StObject.set(x, "mustAcceptTerms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageDictionary(value: js.Any): Self = this.set("languageDictionary", value.asInstanceOf[js.Any])
+    def setMustAcceptTermsUndefined: Self = StObject.set(x, "mustAcceptTerms", js.undefined)
     
     @scala.inline
-    def deleteLanguageDictionary: Self = this.set("languageDictionary", js.undefined)
+    def setOidcConformant(value: Boolean): Self = StObject.set(x, "oidcConformant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeeway(value: Double): Self = this.set("leeway", value.asInstanceOf[js.Any])
+    def setOidcConformantUndefined: Self = StObject.set(x, "oidcConformant", js.undefined)
     
     @scala.inline
-    def deleteLeeway: Self = this.set("leeway", js.undefined)
+    def setPopupOptions(value: Auth0LockPopupOptions): Self = StObject.set(x, "popupOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginAfterSignUp(value: Boolean): Self = this.set("loginAfterSignUp", value.asInstanceOf[js.Any])
+    def setPopupOptionsUndefined: Self = StObject.set(x, "popupOptions", js.undefined)
     
     @scala.inline
-    def deleteLoginAfterSignUp: Self = this.set("loginAfterSignUp", js.undefined)
+    def setPrefill(value: Email): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMustAcceptTerms(value: Boolean): Self = this.set("mustAcceptTerms", value.asInstanceOf[js.Any])
+    def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
     
     @scala.inline
-    def deleteMustAcceptTerms: Self = this.set("mustAcceptTerms", js.undefined)
+    def setRememberLastLogin(value: Boolean): Self = StObject.set(x, "rememberLastLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOidcConformant(value: Boolean): Self = this.set("oidcConformant", value.asInstanceOf[js.Any])
+    def setRememberLastLoginUndefined: Self = StObject.set(x, "rememberLastLogin", js.undefined)
     
     @scala.inline
-    def deleteOidcConformant: Self = this.set("oidcConformant", js.undefined)
+    def setScrollGlobalMessagesIntoView(value: Boolean): Self = StObject.set(x, "scrollGlobalMessagesIntoView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupOptions(value: Auth0LockPopupOptions): Self = this.set("popupOptions", value.asInstanceOf[js.Any])
+    def setScrollGlobalMessagesIntoViewUndefined: Self = StObject.set(x, "scrollGlobalMessagesIntoView", js.undefined)
     
     @scala.inline
-    def deletePopupOptions: Self = this.set("popupOptions", js.undefined)
+    def setSignupLink(value: String): Self = StObject.set(x, "signupLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefill(value: Email): Self = this.set("prefill", value.asInstanceOf[js.Any])
+    def setSignupLinkUndefined: Self = StObject.set(x, "signupLink", js.undefined)
     
     @scala.inline
-    def deletePrefill: Self = this.set("prefill", js.undefined)
+    def setSocialButtonStyle(value: big | small): Self = StObject.set(x, "socialButtonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRememberLastLogin(value: Boolean): Self = this.set("rememberLastLogin", value.asInstanceOf[js.Any])
+    def setSocialButtonStyleUndefined: Self = StObject.set(x, "socialButtonStyle", js.undefined)
     
     @scala.inline
-    def deleteRememberLastLogin: Self = this.set("rememberLastLogin", js.undefined)
+    def setTheme(value: Auth0LockThemeOptions): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollGlobalMessagesIntoView(value: Boolean): Self = this.set("scrollGlobalMessagesIntoView", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteScrollGlobalMessagesIntoView: Self = this.set("scrollGlobalMessagesIntoView", js.undefined)
+    def setUsernameStyle(value: String): Self = StObject.set(x, "usernameStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignupLink(value: String): Self = this.set("signupLink", value.asInstanceOf[js.Any])
+    def setUsernameStyleUndefined: Self = StObject.set(x, "usernameStyle", js.undefined)
     
     @scala.inline
-    def deleteSignupLink: Self = this.set("signupLink", js.undefined)
+    def set_enableIdPInitiatedLogin(value: Boolean): Self = StObject.set(x, "_enableIdPInitiatedLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocialButtonStyle(value: big | small): Self = this.set("socialButtonStyle", value.asInstanceOf[js.Any])
+    def set_enableIdPInitiatedLoginUndefined: Self = StObject.set(x, "_enableIdPInitiatedLogin", js.undefined)
     
     @scala.inline
-    def deleteSocialButtonStyle: Self = this.set("socialButtonStyle", js.undefined)
+    def set_enableImpersonation(value: Boolean): Self = StObject.set(x, "_enableImpersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: Auth0LockThemeOptions): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setUsernameStyle(value: String): Self = this.set("usernameStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsernameStyle: Self = this.set("usernameStyle", js.undefined)
+    def set_enableImpersonationUndefined: Self = StObject.set(x, "_enableImpersonation", js.undefined)
   }
 }

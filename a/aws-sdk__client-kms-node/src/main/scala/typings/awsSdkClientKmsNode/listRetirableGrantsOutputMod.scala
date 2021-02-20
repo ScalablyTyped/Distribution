@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/ListRetirableGrantsOutput", JSImport.Namespace)
-@js.native
-object listRetirableGrantsOutputMod extends js.Object {
+object listRetirableGrantsOutputMod {
   
+  @JSImport("@aws-sdk/client-kms-node/model/ListRetirableGrantsOutput", "ListRetirableGrantsOutput")
+  @js.native
   val ListRetirableGrantsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/compound-nodes
   */
 @js.native
-trait NodeSingularCompound extends js.Object {
+trait NodeSingularCompound extends StObject {
   
   /**
     * Get whether the node is a compound child (i.e. contained within a node)
@@ -49,30 +50,18 @@ object NodeSingularCompound {
   }
   
   @scala.inline
-  implicit class NodeSingularCompoundOps[Self <: NodeSingularCompound] (val x: Self) extends AnyVal {
+  implicit class NodeSingularCompoundMutableBuilder[Self <: NodeSingularCompound] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsChild(value: () => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsChildless(value: () => Boolean): Self = StObject.set(x, "isChildless", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOrphan(value: () => Boolean): Self = StObject.set(x, "isOrphan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsChild(value: () => Boolean): Self = this.set("isChild", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsChildless(value: () => Boolean): Self = this.set("isChildless", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOrphan(value: () => Boolean): Self = this.set("isOrphan", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsParent(value: () => Boolean): Self = this.set("isParent", js.Any.fromFunction0(value))
+    def setIsParent(value: () => Boolean): Self = StObject.set(x, "isParent", js.Any.fromFunction0(value))
   }
 }

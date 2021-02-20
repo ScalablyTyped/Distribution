@@ -1,15 +1,15 @@
 package typings.blockingProxy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blocking-proxy/built/lib/simple_webdriver_client", JSImport.Namespace)
-@js.native
-object simpleWebdriverClientMod extends js.Object {
+object simpleWebdriverClientMod {
   
+  @JSImport("blocking-proxy/built/lib/simple_webdriver_client", "SimpleWebDriverClient")
   @js.native
-  class SimpleWebDriverClient protected () extends js.Object {
+  class SimpleWebDriverClient protected () extends StObject {
     def this(seleniumAddress: String) = this()
     
     /* private */ def createSeleniumRequest(method: js.Any, messageUrl: js.Any, data: js.Any): js.Any = js.native

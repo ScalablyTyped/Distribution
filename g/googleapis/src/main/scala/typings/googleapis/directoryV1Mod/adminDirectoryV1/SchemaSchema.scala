@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for Schema resource in Directory API.
   */
 @js.native
-trait SchemaSchema extends js.Object {
+trait SchemaSchema extends StObject {
   
   /**
     * Display name for the schema.
@@ -49,57 +50,45 @@ object SchemaSchema {
   }
   
   @scala.inline
-  implicit class SchemaSchemaOps[Self <: SchemaSchema] (val x: Self) extends AnyVal {
+  implicit class SchemaSchemaMutableBuilder[Self <: SchemaSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFields(value: js.Array[SchemaSchemaFieldSpec]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setFieldsVarargs(value: SchemaSchemaFieldSpec*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: SchemaSchemaFieldSpec*): Self = this.set("fields", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[SchemaSchemaFieldSpec]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setSchemaId(value: String): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSchemaIdUndefined: Self = StObject.set(x, "schemaId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaId(value: String): Self = this.set("schemaId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaId: Self = this.set("schemaId", js.undefined)
-    
-    @scala.inline
-    def setSchemaName(value: String): Self = this.set("schemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaName: Self = this.set("schemaName", js.undefined)
+    def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
   }
 }

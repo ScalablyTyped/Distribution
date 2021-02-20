@@ -1,13 +1,14 @@
 package typings.grpc.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "Client")
 @js.native
-class Client protected () extends js.Object {
+class Client protected () extends StObject {
   /**
     * A generic gRPC client. Primarily useful as a base class for generated clients
     * @param address Server address to connect to

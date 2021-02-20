@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITimerData[T] extends js.Object {
+trait ITimerData[T] extends StObject {
   
   /**
     * How much is completed, in [0.0...1.0].
@@ -42,33 +43,21 @@ object ITimerData {
   }
   
   @scala.inline
-  implicit class ITimerDataOps[Self <: ITimerData[_], T] (val x: Self with ITimerData[T]) extends AnyVal {
+  implicit class ITimerDataMutableBuilder[Self <: ITimerData[_], T] (val x: Self with ITimerData[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleteRate(value: Double): Self = StObject.set(x, "completeRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaTime(value: Double): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteRate(value: Double): Self = this.set("completeRate", value.asInstanceOf[js.Any])
+    def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeltaTime(value: Double): Self = this.set("deltaTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPayload(value: T): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

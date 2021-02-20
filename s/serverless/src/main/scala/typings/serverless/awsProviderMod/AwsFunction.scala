@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsFunction extends js.Object {
+trait AwsFunction extends StObject {
   
   @JSName("package")
   var _package: js.UndefOr[Package] = js.native
@@ -59,150 +60,138 @@ object AwsFunction {
   }
   
   @scala.inline
-  implicit class AwsFunctionOps[Self <: AwsFunction] (val x: Self) extends AnyVal {
+  implicit class AwsFunctionMutableBuilder[Self <: AwsFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsKmsKeyArn(value: String): Self = StObject.set(x, "awsKmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "awsKmsKeyArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: String): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set_package(value: Package): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setDependsOn(value: js.Array[String]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
     @scala.inline
-    def setAwsKmsKeyArn(value: String): Self = this.set("awsKmsKeyArn", value.asInstanceOf[js.Any])
+    def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
     @scala.inline
-    def deleteAwsKmsKeyArn: Self = this.set("awsKmsKeyArn", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setDestinations(value: Destinations): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependsOnVarargs(value: String*): Self = this.set("dependsOn", js.Array(value :_*))
+    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
     @scala.inline
-    def setDependsOn(value: js.Array[String]): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDependsOn: Self = this.set("dependsOn", js.undefined)
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setDestinations(value: Destinations): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def deleteDestinations: Self = this.set("destinations", js.undefined)
+    def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
+    def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setEvents(value: js.Array[Event]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setMemorySize(value: Double | String): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
     
     @scala.inline
-    def setLayersVarargs(value: String*): Self = this.set("layers", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: js.Array[String]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setOnError(value: String): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorySize(value: Double | String): Self = this.set("memorySize", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteMemorySize: Self = this.set("memorySize", js.undefined)
+    def setProvisionedConcurrency(value: Double | String): Self = StObject.set(x, "provisionedConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProvisionedConcurrencyUndefined: Self = StObject.set(x, "provisionedConcurrency", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReservedConcurrency(value: Double | String): Self = StObject.set(x, "reservedConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnError(value: String): Self = this.set("onError", value.asInstanceOf[js.Any])
+    def setReservedConcurrencyUndefined: Self = StObject.set(x, "reservedConcurrency", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedConcurrency(value: Double | String): Self = this.set("provisionedConcurrency", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteProvisionedConcurrency: Self = this.set("provisionedConcurrency", js.undefined)
+    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedConcurrency(value: Double | String): Self = this.set("reservedConcurrency", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     @scala.inline
-    def deleteReservedConcurrency: Self = this.set("reservedConcurrency", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setTimeout(value: Double | String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteRuntime: Self = this.set("runtime", js.undefined)
+    def setTracing(value: String): Self = StObject.set(x, "tracing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTracingUndefined: Self = StObject.set(x, "tracing", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVpc(value: Vpc): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double | String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracing(value: String): Self = this.set("tracing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracing: Self = this.set("tracing", js.undefined)
-    
-    @scala.inline
-    def setVpc(value: Vpc): Self = this.set("vpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpc: Self = this.set("vpc", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

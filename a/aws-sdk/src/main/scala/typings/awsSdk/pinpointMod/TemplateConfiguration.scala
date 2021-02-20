@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateConfiguration extends js.Object {
+trait TemplateConfiguration extends StObject {
   
   /**
     * The email template to use for the message.
@@ -36,42 +37,30 @@ object TemplateConfiguration {
   }
   
   @scala.inline
-  implicit class TemplateConfigurationOps[Self <: TemplateConfiguration] (val x: Self) extends AnyVal {
+  implicit class TemplateConfigurationMutableBuilder[Self <: TemplateConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailTemplate(value: Template): Self = StObject.set(x, "EmailTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailTemplateUndefined: Self = StObject.set(x, "EmailTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPushTemplate(value: Template): Self = StObject.set(x, "PushTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailTemplate(value: Template): Self = this.set("EmailTemplate", value.asInstanceOf[js.Any])
+    def setPushTemplateUndefined: Self = StObject.set(x, "PushTemplate", js.undefined)
     
     @scala.inline
-    def deleteEmailTemplate: Self = this.set("EmailTemplate", js.undefined)
+    def setSMSTemplate(value: Template): Self = StObject.set(x, "SMSTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushTemplate(value: Template): Self = this.set("PushTemplate", value.asInstanceOf[js.Any])
+    def setSMSTemplateUndefined: Self = StObject.set(x, "SMSTemplate", js.undefined)
     
     @scala.inline
-    def deletePushTemplate: Self = this.set("PushTemplate", js.undefined)
+    def setVoiceTemplate(value: Template): Self = StObject.set(x, "VoiceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMSTemplate(value: Template): Self = this.set("SMSTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMSTemplate: Self = this.set("SMSTemplate", js.undefined)
-    
-    @scala.inline
-    def setVoiceTemplate(value: Template): Self = this.set("VoiceTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceTemplate: Self = this.set("VoiceTemplate", js.undefined)
+    def setVoiceTemplateUndefined: Self = StObject.set(x, "VoiceTemplate", js.undefined)
   }
 }

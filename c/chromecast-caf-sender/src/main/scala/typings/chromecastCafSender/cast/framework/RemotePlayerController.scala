@@ -1,11 +1,12 @@
 package typings.chromecastCafSender.cast.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemotePlayerController extends js.Object {
+trait RemotePlayerController extends StObject {
   
   def addEventListener(
     `type`: RemotePlayerEventType,
@@ -53,52 +54,40 @@ object RemotePlayerController {
   }
   
   @scala.inline
-  implicit class RemotePlayerControllerOps[Self <: RemotePlayerController] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class RemotePlayerControllerMutableBuilder[Self <: RemotePlayerController] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAddEventListener(
       value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]) => Unit
-    ): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFormattedTime(value: Double => String): Self = this.set("getFormattedTime", js.Any.fromFunction1(value))
+    def setGetFormattedTime(value: Double => String): Self = StObject.set(x, "getFormattedTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSeekPosition(value: (Double, Double) => Double): Self = this.set("getSeekPosition", js.Any.fromFunction2(value))
+    def setGetSeekPosition(value: (Double, Double) => Double): Self = StObject.set(x, "getSeekPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSeekTime(value: (Double, Double) => Double): Self = this.set("getSeekTime", js.Any.fromFunction2(value))
+    def setGetSeekTime(value: (Double, Double) => Double): Self = StObject.set(x, "getSeekTime", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMuteOrUnmute(value: () => Unit): Self = this.set("muteOrUnmute", js.Any.fromFunction0(value))
+    def setMuteOrUnmute(value: () => Unit): Self = StObject.set(x, "muteOrUnmute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlayOrPause(value: () => Unit): Self = this.set("playOrPause", js.Any.fromFunction0(value))
+    def setPlayOrPause(value: () => Unit): Self = StObject.set(x, "playOrPause", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRemoveEventListener(
       value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[_], Unit]) => Unit
-    ): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeek(value: () => Unit): Self = this.set("seek", js.Any.fromFunction0(value))
+    def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetVolumeLevel(value: () => Unit): Self = this.set("setVolumeLevel", js.Any.fromFunction0(value))
+    def setSetVolumeLevel(value: () => Unit): Self = StObject.set(x, "setVolumeLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

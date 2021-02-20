@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypedLinkAttributeDefinition extends js.Object {
+trait TypedLinkAttributeDefinition extends StObject {
   
   /**
     * The default value of the attribute (if configured).
@@ -46,45 +47,33 @@ object TypedLinkAttributeDefinition {
   }
   
   @scala.inline
-  implicit class TypedLinkAttributeDefinitionOps[Self <: TypedLinkAttributeDefinition] (val x: Self) extends AnyVal {
+  implicit class TypedLinkAttributeDefinitionMutableBuilder[Self <: TypedLinkAttributeDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsImmutable(value: Bool): Self = StObject.set(x, "IsImmutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AttributeName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setIsImmutableUndefined: Self = StObject.set(x, "IsImmutable", js.undefined)
     
     @scala.inline
-    def setRequiredBehavior(value: RequiredAttributeBehavior): Self = this.set("RequiredBehavior", value.asInstanceOf[js.Any])
+    def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: FacetAttributeType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setRequiredBehavior(value: RequiredAttributeBehavior): Self = StObject.set(x, "RequiredBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: TypedAttributeValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setRules(value: RuleMap): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def setIsImmutable(value: Bool): Self = this.set("IsImmutable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsImmutable: Self = this.set("IsImmutable", js.undefined)
-    
-    @scala.inline
-    def setRules(value: RuleMap): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
+    def setType(value: FacetAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

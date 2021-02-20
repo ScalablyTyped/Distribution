@@ -1,6 +1,7 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * metric&#39;s configured quota behaviors to apply to the method call.
   */
 @js.native
-trait SchemaMetricRule extends js.Object {
+trait SchemaMetricRule extends StObject {
   
   /**
     * Metrics to update when the selected methods are called, and the
@@ -35,30 +36,18 @@ object SchemaMetricRule {
   }
   
   @scala.inline
-  implicit class SchemaMetricRuleOps[Self <: SchemaMetricRule] (val x: Self) extends AnyVal {
+  implicit class SchemaMetricRuleMutableBuilder[Self <: SchemaMetricRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricCosts(value: StringDictionary[String]): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricCosts(value: StringDictionary[String]): Self = this.set("metricCosts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricCosts: Self = this.set("metricCosts", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

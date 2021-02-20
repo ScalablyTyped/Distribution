@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRemediationExceptionsResponse extends js.Object {
+trait PutRemediationExceptionsResponse extends StObject {
   
   /**
     * Returns a list of failed remediation exceptions batch objects. Each object in the batch consists of a list of failed items and failure messages.
@@ -21,27 +22,15 @@ object PutRemediationExceptionsResponse {
   }
   
   @scala.inline
-  implicit class PutRemediationExceptionsResponseOps[Self <: PutRemediationExceptionsResponse] (val x: Self) extends AnyVal {
+  implicit class PutRemediationExceptionsResponseMutableBuilder[Self <: PutRemediationExceptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedBatches(value: FailedRemediationExceptionBatches): Self = StObject.set(x, "FailedBatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedBatchesUndefined: Self = StObject.set(x, "FailedBatches", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedBatchesVarargs(value: FailedRemediationExceptionBatch*): Self = this.set("FailedBatches", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedBatches(value: FailedRemediationExceptionBatches): Self = this.set("FailedBatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedBatches: Self = this.set("FailedBatches", js.undefined)
+    def setFailedBatchesVarargs(value: FailedRemediationExceptionBatch*): Self = StObject.set(x, "FailedBatches", js.Array(value :_*))
   }
 }

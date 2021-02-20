@@ -1,12 +1,15 @@
 package typings.antvAdjust
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/adjust/lib/adjusts/symmetric", JSImport.Namespace)
-@js.native
-object symmetricMod extends js.Object {
+object symmetricMod {
+  
+  @JSImport("@antv/adjust/lib/adjusts/symmetric", JSImport.Default)
+  @js.native
+  class default () extends Symmetric
   
   @js.native
   trait Symmetric
@@ -16,7 +19,4 @@ object symmetricMod extends js.Object {
     
     var getXValuesMaxMap: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends Symmetric
 }

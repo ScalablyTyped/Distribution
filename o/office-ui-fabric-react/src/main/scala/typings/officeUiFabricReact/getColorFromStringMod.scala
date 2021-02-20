@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.interfacesMod.IColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/color/getColorFromString", JSImport.Namespace)
-@js.native
-object getColorFromStringMod extends js.Object {
+object getColorFromStringMod {
   
+  @JSImport("office-ui-fabric-react/lib/utilities/color/getColorFromString", "getColorFromString")
+  @js.native
   def getColorFromString(inputColor: String): js.UndefOr[IColor] = js.native
 }

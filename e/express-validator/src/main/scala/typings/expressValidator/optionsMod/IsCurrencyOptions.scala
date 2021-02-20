@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsCurrencyOptions extends js.Object {
+trait IsCurrencyOptions extends StObject {
   
   var allow_decimal: js.UndefOr[Boolean] = js.native
   
@@ -46,111 +47,99 @@ object IsCurrencyOptions {
   }
   
   @scala.inline
-  implicit class IsCurrencyOptionsOps[Self <: IsCurrencyOptions] (val x: Self) extends AnyVal {
+  implicit class IsCurrencyOptionsMutableBuilder[Self <: IsCurrencyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_decimal(value: Boolean): Self = StObject.set(x, "allow_decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_decimalUndefined: Self = StObject.set(x, "allow_decimal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_negative_sign_placeholder(value: Boolean): Self = StObject.set(x, "allow_negative_sign_placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_decimal(value: Boolean): Self = this.set("allow_decimal", value.asInstanceOf[js.Any])
+    def setAllow_negative_sign_placeholderUndefined: Self = StObject.set(x, "allow_negative_sign_placeholder", js.undefined)
     
     @scala.inline
-    def deleteAllow_decimal: Self = this.set("allow_decimal", js.undefined)
+    def setAllow_negatives(value: Boolean): Self = StObject.set(x, "allow_negatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_negative_sign_placeholder(value: Boolean): Self = this.set("allow_negative_sign_placeholder", value.asInstanceOf[js.Any])
+    def setAllow_negativesUndefined: Self = StObject.set(x, "allow_negatives", js.undefined)
     
     @scala.inline
-    def deleteAllow_negative_sign_placeholder: Self = this.set("allow_negative_sign_placeholder", js.undefined)
+    def setAllow_space_after_digits(value: Boolean): Self = StObject.set(x, "allow_space_after_digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_negatives(value: Boolean): Self = this.set("allow_negatives", value.asInstanceOf[js.Any])
+    def setAllow_space_after_digitsUndefined: Self = StObject.set(x, "allow_space_after_digits", js.undefined)
     
     @scala.inline
-    def deleteAllow_negatives: Self = this.set("allow_negatives", js.undefined)
+    def setAllow_space_after_symbol(value: Boolean): Self = StObject.set(x, "allow_space_after_symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_space_after_digits(value: Boolean): Self = this.set("allow_space_after_digits", value.asInstanceOf[js.Any])
+    def setAllow_space_after_symbolUndefined: Self = StObject.set(x, "allow_space_after_symbol", js.undefined)
     
     @scala.inline
-    def deleteAllow_space_after_digits: Self = this.set("allow_space_after_digits", js.undefined)
+    def setDecimal_separator(value: String): Self = StObject.set(x, "decimal_separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_space_after_symbol(value: Boolean): Self = this.set("allow_space_after_symbol", value.asInstanceOf[js.Any])
+    def setDecimal_separatorUndefined: Self = StObject.set(x, "decimal_separator", js.undefined)
     
     @scala.inline
-    def deleteAllow_space_after_symbol: Self = this.set("allow_space_after_symbol", js.undefined)
+    def setDigits_after_decimal(value: js.Array[Double]): Self = StObject.set(x, "digits_after_decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal_separator(value: String): Self = this.set("decimal_separator", value.asInstanceOf[js.Any])
+    def setDigits_after_decimalUndefined: Self = StObject.set(x, "digits_after_decimal", js.undefined)
     
     @scala.inline
-    def deleteDecimal_separator: Self = this.set("decimal_separator", js.undefined)
+    def setDigits_after_decimalVarargs(value: Double*): Self = StObject.set(x, "digits_after_decimal", js.Array(value :_*))
     
     @scala.inline
-    def setDigits_after_decimalVarargs(value: Double*): Self = this.set("digits_after_decimal", js.Array(value :_*))
+    def setNegative_sign_after_digits(value: Boolean): Self = StObject.set(x, "negative_sign_after_digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigits_after_decimal(value: js.Array[Double]): Self = this.set("digits_after_decimal", value.asInstanceOf[js.Any])
+    def setNegative_sign_after_digitsUndefined: Self = StObject.set(x, "negative_sign_after_digits", js.undefined)
     
     @scala.inline
-    def deleteDigits_after_decimal: Self = this.set("digits_after_decimal", js.undefined)
+    def setNegative_sign_before_digits(value: Boolean): Self = StObject.set(x, "negative_sign_before_digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegative_sign_after_digits(value: Boolean): Self = this.set("negative_sign_after_digits", value.asInstanceOf[js.Any])
+    def setNegative_sign_before_digitsUndefined: Self = StObject.set(x, "negative_sign_before_digits", js.undefined)
     
     @scala.inline
-    def deleteNegative_sign_after_digits: Self = this.set("negative_sign_after_digits", js.undefined)
+    def setParens_for_negatives(value: Boolean): Self = StObject.set(x, "parens_for_negatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegative_sign_before_digits(value: Boolean): Self = this.set("negative_sign_before_digits", value.asInstanceOf[js.Any])
+    def setParens_for_negativesUndefined: Self = StObject.set(x, "parens_for_negatives", js.undefined)
     
     @scala.inline
-    def deleteNegative_sign_before_digits: Self = this.set("negative_sign_before_digits", js.undefined)
+    def setRequire_decimal(value: Boolean): Self = StObject.set(x, "require_decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParens_for_negatives(value: Boolean): Self = this.set("parens_for_negatives", value.asInstanceOf[js.Any])
+    def setRequire_decimalUndefined: Self = StObject.set(x, "require_decimal", js.undefined)
     
     @scala.inline
-    def deleteParens_for_negatives: Self = this.set("parens_for_negatives", js.undefined)
+    def setRequire_symbol(value: Boolean): Self = StObject.set(x, "require_symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_decimal(value: Boolean): Self = this.set("require_decimal", value.asInstanceOf[js.Any])
+    def setRequire_symbolUndefined: Self = StObject.set(x, "require_symbol", js.undefined)
     
     @scala.inline
-    def deleteRequire_decimal: Self = this.set("require_decimal", js.undefined)
+    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_symbol(value: Boolean): Self = this.set("require_symbol", value.asInstanceOf[js.Any])
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def deleteRequire_symbol: Self = this.set("require_symbol", js.undefined)
+    def setSymbol_after_digits(value: Boolean): Self = StObject.set(x, "symbol_after_digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol_after_digitsUndefined: Self = StObject.set(x, "symbol_after_digits", js.undefined)
     
     @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setThousands_separator(value: String): Self = StObject.set(x, "thousands_separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol_after_digits(value: Boolean): Self = this.set("symbol_after_digits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbol_after_digits: Self = this.set("symbol_after_digits", js.undefined)
-    
-    @scala.inline
-    def setThousands_separator(value: String): Self = this.set("thousands_separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThousands_separator: Self = this.set("thousands_separator", js.undefined)
+    def setThousands_separatorUndefined: Self = StObject.set(x, "thousands_separator", js.undefined)
   }
 }

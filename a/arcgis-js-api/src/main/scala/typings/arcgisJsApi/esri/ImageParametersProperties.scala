@@ -13,12 +13,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.png32
 import typings.arcgisJsApi.arcgisJsApiStrings.png8
 import typings.arcgisJsApi.arcgisJsApiStrings.show
 import typings.arcgisJsApi.arcgisJsApiStrings.svg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageParametersProperties extends js.Object {
+trait ImageParametersProperties extends StObject {
   
   /**
     * Dots per inch setting for an module:esri/layersMapImageLayer.
@@ -99,84 +100,72 @@ object ImageParametersProperties {
   }
   
   @scala.inline
-  implicit class ImageParametersPropertiesOps[Self <: ImageParametersProperties] (val x: Self) extends AnyVal {
+  implicit class ImageParametersPropertiesMutableBuilder[Self <: ImageParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpi(value: Double): Self = this.set("dpi", value.asInstanceOf[js.Any])
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def deleteDpi: Self = this.set("dpi", js.undefined)
+    def setFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: ExtentProperties): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setImageSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "imageSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImageSpatialReferenceUndefined: Self = StObject.set(x, "imageSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLayerDefinitions(value: js.Array[String]): Self = StObject.set(x, "layerDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSpatialReference(value: SpatialReferenceProperties): Self = this.set("imageSpatialReference", value.asInstanceOf[js.Any])
+    def setLayerDefinitionsUndefined: Self = StObject.set(x, "layerDefinitions", js.undefined)
     
     @scala.inline
-    def deleteImageSpatialReference: Self = this.set("imageSpatialReference", js.undefined)
+    def setLayerDefinitionsVarargs(value: String*): Self = StObject.set(x, "layerDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setLayerDefinitionsVarargs(value: String*): Self = this.set("layerDefinitions", js.Array(value :_*))
+    def setLayerIds(value: js.Array[Double]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerDefinitions(value: js.Array[String]): Self = this.set("layerDefinitions", value.asInstanceOf[js.Any])
+    def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
     @scala.inline
-    def deleteLayerDefinitions: Self = this.set("layerDefinitions", js.undefined)
+    def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
     
     @scala.inline
-    def setLayerIdsVarargs(value: Double*): Self = this.set("layerIds", js.Array(value :_*))
+    def setLayerOption(value: show | hide | include | exclude): Self = StObject.set(x, "layerOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerIds(value: js.Array[Double]): Self = this.set("layerIds", value.asInstanceOf[js.Any])
+    def setLayerOptionUndefined: Self = StObject.set(x, "layerOption", js.undefined)
     
     @scala.inline
-    def deleteLayerIds: Self = this.set("layerIds", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerOption(value: show | hide | include | exclude): Self = this.set("layerOption", value.asInstanceOf[js.Any])
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
     @scala.inline
-    def deleteLayerOption: Self = this.set("layerOption", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

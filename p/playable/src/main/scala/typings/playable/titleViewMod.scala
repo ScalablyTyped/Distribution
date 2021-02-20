@@ -3,17 +3,22 @@ package typings.playable
 import typings.playable.titleTypesMod.ITitleViewConfig
 import typings.playable.titleTypesMod.ITitleViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/title/title.view", JSImport.Namespace)
-@js.native
-object titleViewMod extends js.Object {
+object titleViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/title/title.view", JSImport.Default)
+  @js.native
+  class default protected () extends TitleView {
+    def this(config: ITitleViewConfig) = this()
+  }
   
   @js.native
   trait TitleView
-    extends typings.playable.stylableMod.default[ITitleViewStyles] {
+    extends typings.playable.viewMod.default[ITitleViewStyles] {
     
     @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
@@ -38,10 +43,5 @@ object titleViewMod extends js.Object {
     def setTitle(title: String): Unit = js.native
     
     def show(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends TitleView {
-    def this(config: ITitleViewConfig) = this()
   }
 }

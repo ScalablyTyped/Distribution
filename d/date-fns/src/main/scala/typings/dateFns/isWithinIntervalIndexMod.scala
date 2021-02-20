@@ -1,15 +1,23 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/isWithinInterval/index", JSImport.Namespace)
-@js.native
-object isWithinIntervalIndexMod extends js.Object {
+object isWithinIntervalIndexMod {
   
-  @js.native
-  object default extends TopLevel[CurriedFn2[Interval, Date | Double, Boolean]]
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/esm/fp/isWithinInterval/index", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn2[Interval, Date | Double, Boolean] = js.native
+    
+    type _To = CurriedFn2[Interval, Date | Double, Boolean]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn2[Interval, Date | Double, Boolean] = ^
+  }
 }

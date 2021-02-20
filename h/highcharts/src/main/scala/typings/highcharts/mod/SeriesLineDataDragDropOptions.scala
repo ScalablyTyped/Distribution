@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesLineDataDragDropOptions extends js.Object {
+trait SeriesLineDataDragDropOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Options for the drag handles.
@@ -98,98 +99,86 @@ object SeriesLineDataDragDropOptions {
   }
   
   @scala.inline
-  implicit class SeriesLineDataDragDropOptionsOps[Self <: SeriesLineDataDragDropOptions] (val x: Self) extends AnyVal {
+  implicit class SeriesLineDataDragDropOptionsMutableBuilder[Self <: SeriesLineDataDragDropOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragHandle(value: DragDropHandleOptionsObject): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragMaxX(value: Double): Self = StObject.set(x, "dragMaxX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragHandle(value: DragDropHandleOptionsObject): Self = this.set("dragHandle", value.asInstanceOf[js.Any])
+    def setDragMaxXUndefined: Self = StObject.set(x, "dragMaxX", js.undefined)
     
     @scala.inline
-    def deleteDragHandle: Self = this.set("dragHandle", js.undefined)
+    def setDragMaxY(value: Double): Self = StObject.set(x, "dragMaxY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragMaxX(value: Double): Self = this.set("dragMaxX", value.asInstanceOf[js.Any])
+    def setDragMaxYUndefined: Self = StObject.set(x, "dragMaxY", js.undefined)
     
     @scala.inline
-    def deleteDragMaxX: Self = this.set("dragMaxX", js.undefined)
+    def setDragMinX(value: Double): Self = StObject.set(x, "dragMinX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragMaxY(value: Double): Self = this.set("dragMaxY", value.asInstanceOf[js.Any])
+    def setDragMinXUndefined: Self = StObject.set(x, "dragMinX", js.undefined)
     
     @scala.inline
-    def deleteDragMaxY: Self = this.set("dragMaxY", js.undefined)
+    def setDragMinY(value: Double): Self = StObject.set(x, "dragMinY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragMinX(value: Double): Self = this.set("dragMinX", value.asInstanceOf[js.Any])
+    def setDragMinYUndefined: Self = StObject.set(x, "dragMinY", js.undefined)
     
     @scala.inline
-    def deleteDragMinX: Self = this.set("dragMinX", js.undefined)
+    def setDragPrecisionX(value: Double): Self = StObject.set(x, "dragPrecisionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragMinY(value: Double): Self = this.set("dragMinY", value.asInstanceOf[js.Any])
+    def setDragPrecisionXUndefined: Self = StObject.set(x, "dragPrecisionX", js.undefined)
     
     @scala.inline
-    def deleteDragMinY: Self = this.set("dragMinY", js.undefined)
+    def setDragPrecisionY(value: Double): Self = StObject.set(x, "dragPrecisionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragPrecisionX(value: Double): Self = this.set("dragPrecisionX", value.asInstanceOf[js.Any])
+    def setDragPrecisionYUndefined: Self = StObject.set(x, "dragPrecisionY", js.undefined)
     
     @scala.inline
-    def deleteDragPrecisionX: Self = this.set("dragPrecisionX", js.undefined)
+    def setDragSensitivity(value: Double): Self = StObject.set(x, "dragSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragPrecisionY(value: Double): Self = this.set("dragPrecisionY", value.asInstanceOf[js.Any])
+    def setDragSensitivityUndefined: Self = StObject.set(x, "dragSensitivity", js.undefined)
     
     @scala.inline
-    def deleteDragPrecisionY: Self = this.set("dragPrecisionY", js.undefined)
+    def setDraggableX(value: Boolean): Self = StObject.set(x, "draggableX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragSensitivity(value: Double): Self = this.set("dragSensitivity", value.asInstanceOf[js.Any])
+    def setDraggableXUndefined: Self = StObject.set(x, "draggableX", js.undefined)
     
     @scala.inline
-    def deleteDragSensitivity: Self = this.set("dragSensitivity", js.undefined)
+    def setDraggableY(value: Boolean): Self = StObject.set(x, "draggableY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggableX(value: Boolean): Self = this.set("draggableX", value.asInstanceOf[js.Any])
+    def setDraggableYUndefined: Self = StObject.set(x, "draggableY", js.undefined)
     
     @scala.inline
-    def deleteDraggableX: Self = this.set("draggableX", js.undefined)
+    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggableY(value: Boolean): Self = this.set("draggableY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDraggableY: Self = this.set("draggableY", js.undefined)
-    
-    @scala.inline
-    def setGroupBy(value: String): Self = this.set("groupBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
     @scala.inline
     def setGuideBox(
       value: SeriesAreaDataDragDropGuideBoxOptions | SeriesArearangeDataDragDropGuideBoxOptions | SeriesAreasplineDataDragDropGuideBoxOptions | SeriesAreasplinerangeDataDragDropGuideBoxOptions | SeriesBarDataDragDropGuideBoxOptions | SeriesBoxplotDataDragDropGuideBoxOptions | SeriesBubbleDataDragDropGuideBoxOptions | SeriesBulletDataDragDropGuideBoxOptions | SeriesCandlestickDataDragDropGuideBoxOptions | SeriesColumnDataDragDropGuideBoxOptions | SeriesColumnpyramidDataDragDropGuideBoxOptions | SeriesColumnrangeDataDragDropGuideBoxOptions | SeriesCylinderDataDragDropGuideBoxOptions | SeriesDumbbellDataDragDropGuideBoxOptions | SeriesErrorbarDataDragDropGuideBoxOptions | SeriesFlagsDataDragDropGuideBoxOptions | SeriesFunnelDataDragDropGuideBoxOptions | SeriesGanttDataDragDropGuideBoxOptions | SeriesGaugeDataDragDropGuideBoxOptions | SeriesHeatmapDataDragDropGuideBoxOptions | SeriesItemDataDragDropGuideBoxOptions | SeriesLineDataDragDropGuideBoxOptions | SeriesLollipopDataDragDropGuideBoxOptions | SeriesNetworkgraphDataDragDropGuideBoxOptions | SeriesOhlcDataDragDropGuideBoxOptions | SeriesPackedbubbleDataDragDropGuideBoxOptions | SeriesParetoDataDragDropGuideBoxOptions | SeriesPieDataDragDropGuideBoxOptions | SeriesPolygonDataDragDropGuideBoxOptions | SeriesPyramidDataDragDropGuideBoxOptions | SeriesScatter3dDataDragDropGuideBoxOptions | SeriesScatterDataDragDropGuideBoxOptions | SeriesSolidgaugeDataDragDropGuideBoxOptions | SeriesSplineDataDragDropGuideBoxOptions | SeriesStreamgraphDataDragDropGuideBoxOptions | SeriesSunburstDataDragDropGuideBoxOptions | SeriesTilemapDataDragDropGuideBoxOptions | SeriesTimelineDataDragDropGuideBoxOptions | SeriesTreemapDataDragDropGuideBoxOptions | SeriesVariablepieDataDragDropGuideBoxOptions | SeriesVariwideDataDragDropGuideBoxOptions | SeriesVectorDataDragDropGuideBoxOptions | SeriesVennDataDragDropGuideBoxOptions | SeriesWaterfallDataDragDropGuideBoxOptions | SeriesWindbarbDataDragDropGuideBoxOptions | SeriesWordcloudDataDragDropGuideBoxOptions | SeriesXrangeDataDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
-    ): Self = this.set("guideBox", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGuideBox: Self = this.set("guideBox", js.undefined)
+    def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
     
     @scala.inline
-    def setLiveRedraw(value: Boolean): Self = this.set("liveRedraw", value.asInstanceOf[js.Any])
+    def setLiveRedraw(value: Boolean): Self = StObject.set(x, "liveRedraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLiveRedraw: Self = this.set("liveRedraw", js.undefined)
+    def setLiveRedrawUndefined: Self = StObject.set(x, "liveRedraw", js.undefined)
   }
 }

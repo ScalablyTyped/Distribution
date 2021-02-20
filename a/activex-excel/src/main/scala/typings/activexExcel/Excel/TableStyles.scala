@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableStyles extends js.Object {
+trait TableStyles extends StObject {
   
   def apply(Index: String): TableStyle = js.native
   def apply(Index: Double): TableStyle = js.native

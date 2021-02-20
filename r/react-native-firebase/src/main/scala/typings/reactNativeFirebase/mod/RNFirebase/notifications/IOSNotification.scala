@@ -1,12 +1,13 @@
 package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.IOSNotification")
 @js.native
-class IOSNotification () extends js.Object {
+class IOSNotification () extends StObject {
   
   def addAttachment(identifier: String, url: String, options: IOSAttachmentOptions): Notification = js.native
   

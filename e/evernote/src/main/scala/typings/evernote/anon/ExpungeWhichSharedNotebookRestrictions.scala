@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.evernote.mod.Types.SharedNotebookInstanceRestrictions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpungeWhichSharedNotebookRestrictions extends js.Object {
+trait ExpungeWhichSharedNotebookRestrictions extends StObject {
   
   var expungeWhichSharedNotebookRestrictions: js.UndefOr[SharedNotebookInstanceRestrictions] = js.native
   
@@ -61,150 +62,138 @@ object ExpungeWhichSharedNotebookRestrictions {
   }
   
   @scala.inline
-  implicit class ExpungeWhichSharedNotebookRestrictionsOps[Self <: ExpungeWhichSharedNotebookRestrictions] (val x: Self) extends AnyVal {
+  implicit class ExpungeWhichSharedNotebookRestrictionsMutableBuilder[Self <: ExpungeWhichSharedNotebookRestrictions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpungeWhichSharedNotebookRestrictions(value: SharedNotebookInstanceRestrictions): Self = StObject.set(x, "expungeWhichSharedNotebookRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpungeWhichSharedNotebookRestrictionsUndefined: Self = StObject.set(x, "expungeWhichSharedNotebookRestrictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoCreateNotes(value: Boolean): Self = StObject.set(x, "noCreateNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungeWhichSharedNotebookRestrictions(value: SharedNotebookInstanceRestrictions): Self = this.set("expungeWhichSharedNotebookRestrictions", value.asInstanceOf[js.Any])
+    def setNoCreateNotesUndefined: Self = StObject.set(x, "noCreateNotes", js.undefined)
     
     @scala.inline
-    def deleteExpungeWhichSharedNotebookRestrictions: Self = this.set("expungeWhichSharedNotebookRestrictions", js.undefined)
+    def setNoCreateSharedNotebooks(value: Boolean): Self = StObject.set(x, "noCreateSharedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCreateNotes(value: Boolean): Self = this.set("noCreateNotes", value.asInstanceOf[js.Any])
+    def setNoCreateSharedNotebooksUndefined: Self = StObject.set(x, "noCreateSharedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteNoCreateNotes: Self = this.set("noCreateNotes", js.undefined)
+    def setNoCreateTags(value: Boolean): Self = StObject.set(x, "noCreateTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCreateSharedNotebooks(value: Boolean): Self = this.set("noCreateSharedNotebooks", value.asInstanceOf[js.Any])
+    def setNoCreateTagsUndefined: Self = StObject.set(x, "noCreateTags", js.undefined)
     
     @scala.inline
-    def deleteNoCreateSharedNotebooks: Self = this.set("noCreateSharedNotebooks", js.undefined)
+    def setNoEmailNotes(value: Boolean): Self = StObject.set(x, "noEmailNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCreateTags(value: Boolean): Self = this.set("noCreateTags", value.asInstanceOf[js.Any])
+    def setNoEmailNotesUndefined: Self = StObject.set(x, "noEmailNotes", js.undefined)
     
     @scala.inline
-    def deleteNoCreateTags: Self = this.set("noCreateTags", js.undefined)
+    def setNoExpungeNotebook(value: Boolean): Self = StObject.set(x, "noExpungeNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEmailNotes(value: Boolean): Self = this.set("noEmailNotes", value.asInstanceOf[js.Any])
+    def setNoExpungeNotebookUndefined: Self = StObject.set(x, "noExpungeNotebook", js.undefined)
     
     @scala.inline
-    def deleteNoEmailNotes: Self = this.set("noEmailNotes", js.undefined)
+    def setNoExpungeNotes(value: Boolean): Self = StObject.set(x, "noExpungeNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoExpungeNotebook(value: Boolean): Self = this.set("noExpungeNotebook", value.asInstanceOf[js.Any])
+    def setNoExpungeNotesUndefined: Self = StObject.set(x, "noExpungeNotes", js.undefined)
     
     @scala.inline
-    def deleteNoExpungeNotebook: Self = this.set("noExpungeNotebook", js.undefined)
+    def setNoExpungeTags(value: Boolean): Self = StObject.set(x, "noExpungeTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoExpungeNotes(value: Boolean): Self = this.set("noExpungeNotes", value.asInstanceOf[js.Any])
+    def setNoExpungeTagsUndefined: Self = StObject.set(x, "noExpungeTags", js.undefined)
     
     @scala.inline
-    def deleteNoExpungeNotes: Self = this.set("noExpungeNotes", js.undefined)
+    def setNoPublishToBusinessLibrary(value: Boolean): Self = StObject.set(x, "noPublishToBusinessLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoExpungeTags(value: Boolean): Self = this.set("noExpungeTags", value.asInstanceOf[js.Any])
+    def setNoPublishToBusinessLibraryUndefined: Self = StObject.set(x, "noPublishToBusinessLibrary", js.undefined)
     
     @scala.inline
-    def deleteNoExpungeTags: Self = this.set("noExpungeTags", js.undefined)
+    def setNoPublishToPublic(value: Boolean): Self = StObject.set(x, "noPublishToPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoPublishToBusinessLibrary(value: Boolean): Self = this.set("noPublishToBusinessLibrary", value.asInstanceOf[js.Any])
+    def setNoPublishToPublicUndefined: Self = StObject.set(x, "noPublishToPublic", js.undefined)
     
     @scala.inline
-    def deleteNoPublishToBusinessLibrary: Self = this.set("noPublishToBusinessLibrary", js.undefined)
+    def setNoReadNotes(value: Boolean): Self = StObject.set(x, "noReadNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoPublishToPublic(value: Boolean): Self = this.set("noPublishToPublic", value.asInstanceOf[js.Any])
+    def setNoReadNotesUndefined: Self = StObject.set(x, "noReadNotes", js.undefined)
     
     @scala.inline
-    def deleteNoPublishToPublic: Self = this.set("noPublishToPublic", js.undefined)
+    def setNoRenameNotebook(value: Boolean): Self = StObject.set(x, "noRenameNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoReadNotes(value: Boolean): Self = this.set("noReadNotes", value.asInstanceOf[js.Any])
+    def setNoRenameNotebookUndefined: Self = StObject.set(x, "noRenameNotebook", js.undefined)
     
     @scala.inline
-    def deleteNoReadNotes: Self = this.set("noReadNotes", js.undefined)
+    def setNoSendMessageToRecipients(value: Boolean): Self = StObject.set(x, "noSendMessageToRecipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoRenameNotebook(value: Boolean): Self = this.set("noRenameNotebook", value.asInstanceOf[js.Any])
+    def setNoSendMessageToRecipientsUndefined: Self = StObject.set(x, "noSendMessageToRecipients", js.undefined)
     
     @scala.inline
-    def deleteNoRenameNotebook: Self = this.set("noRenameNotebook", js.undefined)
+    def setNoSetDefaultNotebook(value: Boolean): Self = StObject.set(x, "noSetDefaultNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSendMessageToRecipients(value: Boolean): Self = this.set("noSendMessageToRecipients", value.asInstanceOf[js.Any])
+    def setNoSetDefaultNotebookUndefined: Self = StObject.set(x, "noSetDefaultNotebook", js.undefined)
     
     @scala.inline
-    def deleteNoSendMessageToRecipients: Self = this.set("noSendMessageToRecipients", js.undefined)
+    def setNoSetNotebookStack(value: Boolean): Self = StObject.set(x, "noSetNotebookStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSetDefaultNotebook(value: Boolean): Self = this.set("noSetDefaultNotebook", value.asInstanceOf[js.Any])
+    def setNoSetNotebookStackUndefined: Self = StObject.set(x, "noSetNotebookStack", js.undefined)
     
     @scala.inline
-    def deleteNoSetDefaultNotebook: Self = this.set("noSetDefaultNotebook", js.undefined)
+    def setNoSetParentTag(value: Boolean): Self = StObject.set(x, "noSetParentTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSetNotebookStack(value: Boolean): Self = this.set("noSetNotebookStack", value.asInstanceOf[js.Any])
+    def setNoSetParentTagUndefined: Self = StObject.set(x, "noSetParentTag", js.undefined)
     
     @scala.inline
-    def deleteNoSetNotebookStack: Self = this.set("noSetNotebookStack", js.undefined)
+    def setNoShareNotes(value: Boolean): Self = StObject.set(x, "noShareNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSetParentTag(value: Boolean): Self = this.set("noSetParentTag", value.asInstanceOf[js.Any])
+    def setNoShareNotesUndefined: Self = StObject.set(x, "noShareNotes", js.undefined)
     
     @scala.inline
-    def deleteNoSetParentTag: Self = this.set("noSetParentTag", js.undefined)
+    def setNoShareNotesWithBusiness(value: Boolean): Self = StObject.set(x, "noShareNotesWithBusiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoShareNotes(value: Boolean): Self = this.set("noShareNotes", value.asInstanceOf[js.Any])
+    def setNoShareNotesWithBusinessUndefined: Self = StObject.set(x, "noShareNotesWithBusiness", js.undefined)
     
     @scala.inline
-    def deleteNoShareNotes: Self = this.set("noShareNotes", js.undefined)
+    def setNoUpdateNotebook(value: Boolean): Self = StObject.set(x, "noUpdateNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoShareNotesWithBusiness(value: Boolean): Self = this.set("noShareNotesWithBusiness", value.asInstanceOf[js.Any])
+    def setNoUpdateNotebookUndefined: Self = StObject.set(x, "noUpdateNotebook", js.undefined)
     
     @scala.inline
-    def deleteNoShareNotesWithBusiness: Self = this.set("noShareNotesWithBusiness", js.undefined)
+    def setNoUpdateNotes(value: Boolean): Self = StObject.set(x, "noUpdateNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoUpdateNotebook(value: Boolean): Self = this.set("noUpdateNotebook", value.asInstanceOf[js.Any])
+    def setNoUpdateNotesUndefined: Self = StObject.set(x, "noUpdateNotes", js.undefined)
     
     @scala.inline
-    def deleteNoUpdateNotebook: Self = this.set("noUpdateNotebook", js.undefined)
+    def setNoUpdateTags(value: Boolean): Self = StObject.set(x, "noUpdateTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoUpdateNotes(value: Boolean): Self = this.set("noUpdateNotes", value.asInstanceOf[js.Any])
+    def setNoUpdateTagsUndefined: Self = StObject.set(x, "noUpdateTags", js.undefined)
     
     @scala.inline
-    def deleteNoUpdateNotes: Self = this.set("noUpdateNotes", js.undefined)
+    def setUpdateWhichSharedNotebookRestrictions(value: SharedNotebookInstanceRestrictions): Self = StObject.set(x, "updateWhichSharedNotebookRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoUpdateTags(value: Boolean): Self = this.set("noUpdateTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoUpdateTags: Self = this.set("noUpdateTags", js.undefined)
-    
-    @scala.inline
-    def setUpdateWhichSharedNotebookRestrictions(value: SharedNotebookInstanceRestrictions): Self = this.set("updateWhichSharedNotebookRestrictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateWhichSharedNotebookRestrictions: Self = this.set("updateWhichSharedNotebookRestrictions", js.undefined)
+    def setUpdateWhichSharedNotebookRestrictionsUndefined: Self = StObject.set(x, "updateWhichSharedNotebookRestrictions", js.undefined)
   }
 }

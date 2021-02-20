@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cognito
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolAdminCreateUserConfig extends js.Object {
+trait UserPoolAdminCreateUserConfig extends StObject {
   
   /**
     * Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.
@@ -27,30 +28,18 @@ object UserPoolAdminCreateUserConfig {
   }
   
   @scala.inline
-  implicit class UserPoolAdminCreateUserConfigOps[Self <: UserPoolAdminCreateUserConfig] (val x: Self) extends AnyVal {
+  implicit class UserPoolAdminCreateUserConfigMutableBuilder[Self <: UserPoolAdminCreateUserConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAdminCreateUserOnly(value: Input[Boolean]): Self = StObject.set(x, "allowAdminCreateUserOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAdminCreateUserOnlyUndefined: Self = StObject.set(x, "allowAdminCreateUserOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInviteMessageTemplate(value: Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]): Self = StObject.set(x, "inviteMessageTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAdminCreateUserOnly(value: Input[Boolean]): Self = this.set("allowAdminCreateUserOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowAdminCreateUserOnly: Self = this.set("allowAdminCreateUserOnly", js.undefined)
-    
-    @scala.inline
-    def setInviteMessageTemplate(value: Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]): Self = this.set("inviteMessageTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInviteMessageTemplate: Self = this.set("inviteMessageTemplate", js.undefined)
+    def setInviteMessageTemplateUndefined: Self = StObject.set(x, "inviteMessageTemplate", js.undefined)
   }
 }

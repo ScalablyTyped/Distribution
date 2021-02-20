@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   /** Notifications about new app restrictions schema changes. */
   var appRestrictionsSchemaChangeEvent: js.UndefOr[AppRestrictionsSchemaChangeEvent] = js.native
@@ -49,84 +50,72 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppRestrictionsSchemaChangeEvent(value: AppRestrictionsSchemaChangeEvent): Self = StObject.set(x, "appRestrictionsSchemaChangeEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppRestrictionsSchemaChangeEventUndefined: Self = StObject.set(x, "appRestrictionsSchemaChangeEvent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppUpdateEvent(value: AppUpdateEvent): Self = StObject.set(x, "appUpdateEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppRestrictionsSchemaChangeEvent(value: AppRestrictionsSchemaChangeEvent): Self = this.set("appRestrictionsSchemaChangeEvent", value.asInstanceOf[js.Any])
+    def setAppUpdateEventUndefined: Self = StObject.set(x, "appUpdateEvent", js.undefined)
     
     @scala.inline
-    def deleteAppRestrictionsSchemaChangeEvent: Self = this.set("appRestrictionsSchemaChangeEvent", js.undefined)
+    def setDeviceReportUpdateEvent(value: DeviceReportUpdateEvent): Self = StObject.set(x, "deviceReportUpdateEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppUpdateEvent(value: AppUpdateEvent): Self = this.set("appUpdateEvent", value.asInstanceOf[js.Any])
+    def setDeviceReportUpdateEventUndefined: Self = StObject.set(x, "deviceReportUpdateEvent", js.undefined)
     
     @scala.inline
-    def deleteAppUpdateEvent: Self = this.set("appUpdateEvent", js.undefined)
+    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceReportUpdateEvent(value: DeviceReportUpdateEvent): Self = this.set("deviceReportUpdateEvent", value.asInstanceOf[js.Any])
+    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
     @scala.inline
-    def deleteDeviceReportUpdateEvent: Self = this.set("deviceReportUpdateEvent", js.undefined)
+    def setInstallFailureEvent(value: InstallFailureEvent): Self = StObject.set(x, "installFailureEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterpriseId(value: String): Self = this.set("enterpriseId", value.asInstanceOf[js.Any])
+    def setInstallFailureEventUndefined: Self = StObject.set(x, "installFailureEvent", js.undefined)
     
     @scala.inline
-    def deleteEnterpriseId: Self = this.set("enterpriseId", js.undefined)
+    def setNewDeviceEvent(value: NewDeviceEvent): Self = StObject.set(x, "newDeviceEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallFailureEvent(value: InstallFailureEvent): Self = this.set("installFailureEvent", value.asInstanceOf[js.Any])
+    def setNewDeviceEventUndefined: Self = StObject.set(x, "newDeviceEvent", js.undefined)
     
     @scala.inline
-    def deleteInstallFailureEvent: Self = this.set("installFailureEvent", js.undefined)
+    def setNewPermissionsEvent(value: NewPermissionsEvent): Self = StObject.set(x, "newPermissionsEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewDeviceEvent(value: NewDeviceEvent): Self = this.set("newDeviceEvent", value.asInstanceOf[js.Any])
+    def setNewPermissionsEventUndefined: Self = StObject.set(x, "newPermissionsEvent", js.undefined)
     
     @scala.inline
-    def deleteNewDeviceEvent: Self = this.set("newDeviceEvent", js.undefined)
+    def setNotificationType(value: String): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPermissionsEvent(value: NewPermissionsEvent): Self = this.set("newPermissionsEvent", value.asInstanceOf[js.Any])
+    def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
     
     @scala.inline
-    def deleteNewPermissionsEvent: Self = this.set("newPermissionsEvent", js.undefined)
+    def setProductApprovalEvent(value: ProductApprovalEvent): Self = StObject.set(x, "productApprovalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationType(value: String): Self = this.set("notificationType", value.asInstanceOf[js.Any])
+    def setProductApprovalEventUndefined: Self = StObject.set(x, "productApprovalEvent", js.undefined)
     
     @scala.inline
-    def deleteNotificationType: Self = this.set("notificationType", js.undefined)
+    def setProductAvailabilityChangeEvent(value: ProductAvailabilityChangeEvent): Self = StObject.set(x, "productAvailabilityChangeEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductApprovalEvent(value: ProductApprovalEvent): Self = this.set("productApprovalEvent", value.asInstanceOf[js.Any])
+    def setProductAvailabilityChangeEventUndefined: Self = StObject.set(x, "productAvailabilityChangeEvent", js.undefined)
     
     @scala.inline
-    def deleteProductApprovalEvent: Self = this.set("productApprovalEvent", js.undefined)
+    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductAvailabilityChangeEvent(value: ProductAvailabilityChangeEvent): Self = this.set("productAvailabilityChangeEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductAvailabilityChangeEvent: Self = this.set("productAvailabilityChangeEvent", js.undefined)
-    
-    @scala.inline
-    def setTimestampMillis(value: String): Self = this.set("timestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampMillis: Self = this.set("timestampMillis", js.undefined)
+    def setTimestampMillisUndefined: Self = StObject.set(x, "timestampMillis", js.undefined)
   }
 }

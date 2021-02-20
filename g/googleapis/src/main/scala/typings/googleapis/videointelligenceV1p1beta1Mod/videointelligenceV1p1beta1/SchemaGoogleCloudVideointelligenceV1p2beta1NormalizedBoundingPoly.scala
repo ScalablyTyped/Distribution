@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * than 1 due to trignometric calculations for location of the box.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly extends StObject {
   
   /**
     * Normalized vertices of the bounding polygon.
@@ -31,27 +32,15 @@ object SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPolyOps[Self <: SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPolyMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVertices(value: js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVerticesVarargs(value: SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedVertex*): Self = this.set("vertices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVertices(value: js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedVertex]): Self = this.set("vertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertices: Self = this.set("vertices", js.undefined)
+    def setVerticesVarargs(value: SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.stripe.mod.paymentIntents
 
 import typings.stripe.mod.IShippingInformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPaymentIntentConfirmOptions extends js.Object {
+trait IPaymentIntentConfirmOptions extends StObject {
   
   /**
     * The client secret of this PaymentIntent. Used for client-side retrieval using a publishable key. Please refer to dynamic authentication guide on how client_secret should be handled. Required if using Publishable Key!
@@ -67,87 +68,75 @@ object IPaymentIntentConfirmOptions {
   }
   
   @scala.inline
-  implicit class IPaymentIntentConfirmOptionsOps[Self <: IPaymentIntentConfirmOptions] (val x: Self) extends AnyVal {
+  implicit class IPaymentIntentConfirmOptionsMutableBuilder[Self <: IPaymentIntentConfirmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOff_session(value: Boolean): Self = StObject.set(x, "off_session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    def setOff_sessionUndefined: Self = StObject.set(x, "off_session", js.undefined)
     
     @scala.inline
-    def deleteClient_secret: Self = this.set("client_secret", js.undefined)
+    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOff_session(value: Boolean): Self = this.set("off_session", value.asInstanceOf[js.Any])
+    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
     @scala.inline
-    def deleteOff_session: Self = this.set("off_session", js.undefined)
+    def setPayment_method_options(value: IPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_method(value: String): Self = this.set("payment_method", value.asInstanceOf[js.Any])
+    def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
     
     @scala.inline
-    def deletePayment_method: Self = this.set("payment_method", js.undefined)
+    def setPayment_method_types(value: js.Array[PaymentIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_method_options(value: IPaymentMethodOptions): Self = this.set("payment_method_options", value.asInstanceOf[js.Any])
+    def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
     
     @scala.inline
-    def deletePayment_method_options: Self = this.set("payment_method_options", js.undefined)
+    def setPayment_method_typesVarargs(value: PaymentIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
     
     @scala.inline
-    def setPayment_method_typesVarargs(value: PaymentIntentPaymentMethodType*): Self = this.set("payment_method_types", js.Array(value :_*))
+    def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_method_types(value: js.Array[PaymentIntentPaymentMethodType]): Self = this.set("payment_method_types", value.asInstanceOf[js.Any])
+    def setReceipt_emailNull: Self = StObject.set(x, "receipt_email", null)
     
     @scala.inline
-    def deletePayment_method_types: Self = this.set("payment_method_types", js.undefined)
+    def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
     
     @scala.inline
-    def setReceipt_email(value: String): Self = this.set("receipt_email", value.asInstanceOf[js.Any])
+    def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReceipt_email: Self = this.set("receipt_email", js.undefined)
+    def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
     
     @scala.inline
-    def setReceipt_emailNull: Self = this.set("receipt_email", null)
+    def setSave_payment_method(value: Boolean): Self = StObject.set(x, "save_payment_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_url(value: String): Self = this.set("return_url", value.asInstanceOf[js.Any])
+    def setSave_payment_methodUndefined: Self = StObject.set(x, "save_payment_method", js.undefined)
     
     @scala.inline
-    def deleteReturn_url: Self = this.set("return_url", js.undefined)
+    def setSetup_future_usage(value: PaymentIntentFutureUsageType): Self = StObject.set(x, "setup_future_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave_payment_method(value: Boolean): Self = this.set("save_payment_method", value.asInstanceOf[js.Any])
+    def setSetup_future_usageUndefined: Self = StObject.set(x, "setup_future_usage", js.undefined)
     
     @scala.inline
-    def deleteSave_payment_method: Self = this.set("save_payment_method", js.undefined)
+    def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetup_future_usage(value: PaymentIntentFutureUsageType): Self = this.set("setup_future_usage", value.asInstanceOf[js.Any])
+    def setShippingNull: Self = StObject.set(x, "shipping", null)
     
     @scala.inline
-    def deleteSetup_future_usage: Self = this.set("setup_future_usage", js.undefined)
-    
-    @scala.inline
-    def setShipping(value: IShippingInformation): Self = this.set("shipping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipping: Self = this.set("shipping", js.undefined)
-    
-    @scala.inline
-    def setShippingNull: Self = this.set("shipping", null)
+    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
   }
 }

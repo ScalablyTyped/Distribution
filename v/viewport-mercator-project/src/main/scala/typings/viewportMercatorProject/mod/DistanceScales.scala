@@ -1,11 +1,12 @@
 package typings.viewportMercatorProject.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceScales extends js.Object {
+trait DistanceScales extends StObject {
   
   var degreesPerPixel: js.Tuple3[Double, Double, Double] = js.native
   
@@ -29,30 +30,18 @@ object DistanceScales {
   }
   
   @scala.inline
-  implicit class DistanceScalesOps[Self <: DistanceScales] (val x: Self) extends AnyVal {
+  implicit class DistanceScalesMutableBuilder[Self <: DistanceScales] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDegreesPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "degreesPerPixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetersPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "metersPerPixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPixelsPerDegree(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerDegree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDegreesPerPixel(value: js.Tuple3[Double, Double, Double]): Self = this.set("degreesPerPixel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetersPerPixel(value: js.Tuple3[Double, Double, Double]): Self = this.set("metersPerPixel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelsPerDegree(value: js.Tuple3[Double, Double, Double]): Self = this.set("pixelsPerDegree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelsPerMeter(value: js.Tuple3[Double, Double, Double]): Self = this.set("pixelsPerMeter", value.asInstanceOf[js.Any])
+    def setPixelsPerMeter(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerMeter", value.asInstanceOf[js.Any])
   }
 }

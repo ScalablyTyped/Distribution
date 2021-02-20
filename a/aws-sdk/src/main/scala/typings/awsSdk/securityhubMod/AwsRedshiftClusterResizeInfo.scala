@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRedshiftClusterResizeInfo extends js.Object {
+trait AwsRedshiftClusterResizeInfo extends StObject {
   
   /**
     * Indicates whether the resize operation can be canceled.
@@ -26,30 +27,18 @@ object AwsRedshiftClusterResizeInfo {
   }
   
   @scala.inline
-  implicit class AwsRedshiftClusterResizeInfoOps[Self <: AwsRedshiftClusterResizeInfo] (val x: Self) extends AnyVal {
+  implicit class AwsRedshiftClusterResizeInfoMutableBuilder[Self <: AwsRedshiftClusterResizeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCancelResizeUndefined: Self = StObject.set(x, "AllowCancelResize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResizeType(value: NonEmptyString): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCancelResize(value: Boolean): Self = this.set("AllowCancelResize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowCancelResize: Self = this.set("AllowCancelResize", js.undefined)
-    
-    @scala.inline
-    def setResizeType(value: NonEmptyString): Self = this.set("ResizeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeType: Self = this.set("ResizeType", js.undefined)
+    def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
   }
 }

@@ -7,6 +7,7 @@ import typings.activexShdocvw.activexShdocvwStrings.`Leftcurlybracket30D02401-6A
 import typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
 import typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
 import typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
   - typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
 */
-trait BrowserBarConstants extends js.Object
+trait BrowserBarConstants extends StObject
 object BrowserBarConstants {
   
   @scala.inline

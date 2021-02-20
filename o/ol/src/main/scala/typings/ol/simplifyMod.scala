@@ -1,13 +1,14 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/simplify", JSImport.Namespace)
-@js.native
-object simplifyMod extends js.Object {
+object simplifyMod {
   
+  @JSImport("ol/geom/flat/simplify", "douglasPeucker")
+  @js.native
   def douglasPeucker(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -18,6 +19,8 @@ object simplifyMod extends js.Object {
     simplifiedOffset: Double
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "douglasPeuckerArray")
+  @js.native
   def douglasPeuckerArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -29,6 +32,8 @@ object simplifyMod extends js.Object {
     simplifiedEnds: js.Array[Double]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "douglasPeuckerMultiArray")
+  @js.native
   def douglasPeuckerMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -40,6 +45,8 @@ object simplifyMod extends js.Object {
     simplifiedEndss: js.Array[js.Array[Double]]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "quantize")
+  @js.native
   def quantize(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -50,6 +57,8 @@ object simplifyMod extends js.Object {
     simplifiedOffset: Double
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "quantizeArray")
+  @js.native
   def quantizeArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -61,6 +70,8 @@ object simplifyMod extends js.Object {
     simplifiedEnds: js.Array[Double]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "quantizeMultiArray")
+  @js.native
   def quantizeMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -72,6 +83,8 @@ object simplifyMod extends js.Object {
     simplifiedEndss: js.Array[js.Array[Double]]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "radialDistance")
+  @js.native
   def radialDistance(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -82,6 +95,8 @@ object simplifyMod extends js.Object {
     simplifiedOffset: Double
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/simplify", "simplifyLineString")
+  @js.native
   def simplifyLineString(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -90,6 +105,8 @@ object simplifyMod extends js.Object {
     squaredTolerance: Double,
     highQuality: Boolean
   ): js.Array[Double] = js.native
+  @JSImport("ol/geom/flat/simplify", "simplifyLineString")
+  @js.native
   def simplifyLineString(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -100,5 +117,7 @@ object simplifyMod extends js.Object {
     opt_simplifiedFlatCoordinates: js.Array[Double]
   ): js.Array[Double] = js.native
   
+  @JSImport("ol/geom/flat/simplify", "snap")
+  @js.native
   def snap(value: Double, tolerance: Double): Double = js.native
 }

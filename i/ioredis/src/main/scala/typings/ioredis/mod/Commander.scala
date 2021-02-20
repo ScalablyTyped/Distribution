@@ -1,12 +1,13 @@
 package typings.ioredis.mod
 
 import typings.ioredis.anon.Lua
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commander extends js.Object {
+trait Commander extends StObject {
   
   def createBuiltinCommand(commandName: String): js.Object = js.native
   
@@ -30,30 +31,18 @@ object Commander {
   }
   
   @scala.inline
-  implicit class CommanderOps[Self <: Commander] (val x: Self) extends AnyVal {
+  implicit class CommanderMutableBuilder[Self <: Commander] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateBuiltinCommand(value: String => js.Object): Self = StObject.set(x, "createBuiltinCommand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefineCommand(value: (String, Lua) => Unit): Self = StObject.set(x, "defineCommand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBuiltinCommands(value: () => js.Array[String]): Self = StObject.set(x, "getBuiltinCommands", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateBuiltinCommand(value: String => js.Object): Self = this.set("createBuiltinCommand", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDefineCommand(value: (String, Lua) => Unit): Self = this.set("defineCommand", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetBuiltinCommands(value: () => js.Array[String]): Self = this.set("getBuiltinCommands", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSendCommand(value: () => Unit): Self = this.set("sendCommand", js.Any.fromFunction0(value))
+    def setSendCommand(value: () => Unit): Self = StObject.set(x, "sendCommand", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends StObject {
   
   /** The total count of events purged as a result of the operation. */
   var purgedEventsCount: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponseOps[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPurgedEventsCount(value: String): Self = StObject.set(x, "purgedEventsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPurgedEventsCountUndefined: Self = StObject.set(x, "purgedEventsCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserEventsSample(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEventsSample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgedEventsCount(value: String): Self = this.set("purgedEventsCount", value.asInstanceOf[js.Any])
+    def setUserEventsSampleUndefined: Self = StObject.set(x, "userEventsSample", js.undefined)
     
     @scala.inline
-    def deletePurgedEventsCount: Self = this.set("purgedEventsCount", js.undefined)
-    
-    @scala.inline
-    def setUserEventsSampleVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = this.set("userEventsSample", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserEventsSample(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = this.set("userEventsSample", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEventsSample: Self = this.set("userEventsSample", js.undefined)
+    def setUserEventsSampleVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEventsSample", js.Array(value :_*))
   }
 }

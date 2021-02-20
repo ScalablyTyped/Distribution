@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @js.native
-trait FusionTablesStyle extends js.Object {
+trait FusionTablesStyle extends StObject {
   
   var markerOptions: js.UndefOr[FusionTablesMarkerOptions] = js.native
   
@@ -25,42 +26,30 @@ object FusionTablesStyle {
   }
   
   @scala.inline
-  implicit class FusionTablesStyleOps[Self <: FusionTablesStyle] (val x: Self) extends AnyVal {
+  implicit class FusionTablesStyleMutableBuilder[Self <: FusionTablesStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarkerOptions(value: FusionTablesMarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolygonOptions(value: FusionTablesPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerOptions(value: FusionTablesMarkerOptions): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
     @scala.inline
-    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    def setPolylineOptions(value: FusionTablesPolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonOptions(value: FusionTablesPolygonOptions): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
     @scala.inline
-    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineOptions(value: FusionTablesPolylineOptions): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

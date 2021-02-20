@@ -11,13 +11,14 @@ import typings.awsSdk.elasticbeanstalkMod.MaxRecords
 import typings.awsSdk.elasticbeanstalkMod.Token
 import typings.awsSdk.elasticbeanstalkMod.VersionLabel
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/elasticbeanstalk.DescribeEnvironmentsMessage & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeEnvironmentsMessa extends js.Object {
+trait DescribeEnvironmentsMessa extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -71,78 +72,66 @@ object DescribeEnvironmentsMessa {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentsMessaOps[Self <: DescribeEnvironmentsMessa] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentsMessaMutableBuilder[Self <: DescribeEnvironmentsMessa] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setEnvironmentIds(value: EnvironmentIdList): Self = StObject.set(x, "EnvironmentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setEnvironmentIdsUndefined: Self = StObject.set(x, "EnvironmentIds", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "EnvironmentIds", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = this.set("EnvironmentIds", js.Array(value :_*))
+    def setEnvironmentNames(value: EnvironmentNamesList): Self = StObject.set(x, "EnvironmentNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentIds(value: EnvironmentIdList): Self = this.set("EnvironmentIds", value.asInstanceOf[js.Any])
+    def setEnvironmentNamesUndefined: Self = StObject.set(x, "EnvironmentNames", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentIds: Self = this.set("EnvironmentIds", js.undefined)
+    def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = StObject.set(x, "EnvironmentNames", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = this.set("EnvironmentNames", js.Array(value :_*))
+    def setIncludeDeleted(value: IncludeDeleted): Self = StObject.set(x, "IncludeDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentNames(value: EnvironmentNamesList): Self = this.set("EnvironmentNames", value.asInstanceOf[js.Any])
+    def setIncludeDeletedUndefined: Self = StObject.set(x, "IncludeDeleted", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentNames: Self = this.set("EnvironmentNames", js.undefined)
+    def setIncludedDeletedBackTo(value: IncludeDeletedBackTo): Self = StObject.set(x, "IncludedDeletedBackTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDeleted(value: IncludeDeleted): Self = this.set("IncludeDeleted", value.asInstanceOf[js.Any])
+    def setIncludedDeletedBackToUndefined: Self = StObject.set(x, "IncludedDeletedBackTo", js.undefined)
     
     @scala.inline
-    def deleteIncludeDeleted: Self = this.set("IncludeDeleted", js.undefined)
+    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedDeletedBackTo(value: IncludeDeletedBackTo): Self = this.set("IncludedDeletedBackTo", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteIncludedDeletedBackTo: Self = this.set("IncludedDeletedBackTo", js.undefined)
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecycleExpiration extends js.Object {
+trait LifecycleExpiration extends StObject {
   
   /**
     * Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.
@@ -31,36 +32,24 @@ object LifecycleExpiration {
   }
   
   @scala.inline
-  implicit class LifecycleExpirationOps[Self <: LifecycleExpiration] (val x: Self) extends AnyVal {
+  implicit class LifecycleExpirationMutableBuilder[Self <: LifecycleExpiration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("Date", js.undefined)
+    def setExpiredObjectDeleteMarker(value: ExpiredObjectDeleteMarker): Self = StObject.set(x, "ExpiredObjectDeleteMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: Days): Self = this.set("Days", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDays: Self = this.set("Days", js.undefined)
-    
-    @scala.inline
-    def setExpiredObjectDeleteMarker(value: ExpiredObjectDeleteMarker): Self = this.set("ExpiredObjectDeleteMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiredObjectDeleteMarker: Self = this.set("ExpiredObjectDeleteMarker", js.undefined)
+    def setExpiredObjectDeleteMarkerUndefined: Self = StObject.set(x, "ExpiredObjectDeleteMarker", js.undefined)
   }
 }

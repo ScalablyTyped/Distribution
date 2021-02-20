@@ -1,13 +1,14 @@
 package typings.reveal
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/hakimel/reveal.js/#slide-changed-event
 @js.native
-trait SlideEvent extends js.Object {
+trait SlideEvent extends StObject {
   
   var currentSlide: Element = js.native
   
@@ -26,36 +27,24 @@ object SlideEvent {
   }
   
   @scala.inline
-  implicit class SlideEventOps[Self <: SlideEvent] (val x: Self) extends AnyVal {
+  implicit class SlideEventMutableBuilder[Self <: SlideEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSlide(value: Element): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexh(value: Double): Self = StObject.set(x, "indexh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexv(value: Double): Self = StObject.set(x, "indexv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSlide(value: Element): Self = this.set("currentSlide", value.asInstanceOf[js.Any])
+    def setIndexvUndefined: Self = StObject.set(x, "indexv", js.undefined)
     
     @scala.inline
-    def setIndexh(value: Double): Self = this.set("indexh", value.asInstanceOf[js.Any])
+    def setPreviousSlide(value: Element): Self = StObject.set(x, "previousSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexv(value: Double): Self = this.set("indexv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexv: Self = this.set("indexv", js.undefined)
-    
-    @scala.inline
-    def setPreviousSlide(value: Element): Self = this.set("previousSlide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousSlide: Self = this.set("previousSlide", js.undefined)
+    def setPreviousSlideUndefined: Self = StObject.set(x, "previousSlide", js.undefined)
   }
 }

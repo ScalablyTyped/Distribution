@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,30 +66,18 @@ object XCommandEnvironment {
   }
   
   @scala.inline
-  implicit class XCommandEnvironmentOps[Self <: XCommandEnvironment] (val x: Self) extends AnyVal {
+  implicit class XCommandEnvironmentMutableBuilder[Self <: XCommandEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInteractionHandler(value: () => XInteractionHandler): Self = StObject.set(x, "getInteractionHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetProgressHandler(value: () => XProgressHandler): Self = StObject.set(x, "getProgressHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractionHandler(value: XInteractionHandler): Self = StObject.set(x, "InteractionHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionHandler(value: XInteractionHandler): Self = this.set("InteractionHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgressHandler(value: XProgressHandler): Self = this.set("ProgressHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetInteractionHandler(value: () => XInteractionHandler): Self = this.set("getInteractionHandler", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetProgressHandler(value: () => XProgressHandler): Self = this.set("getProgressHandler", js.Any.fromFunction0(value))
+    def setProgressHandler(value: XProgressHandler): Self = StObject.set(x, "ProgressHandler", value.asInstanceOf[js.Any])
   }
 }

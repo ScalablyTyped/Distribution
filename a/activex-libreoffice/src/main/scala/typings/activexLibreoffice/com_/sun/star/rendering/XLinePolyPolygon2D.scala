@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,30 +68,18 @@ object XLinePolyPolygon2D {
   }
   
   @scala.inline
-  implicit class XLinePolyPolygon2DOps[Self <: XLinePolyPolygon2D] (val x: Self) extends AnyVal {
+  implicit class XLinePolyPolygon2DMutableBuilder[Self <: XLinePolyPolygon2D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPoint(value: (Double, Double) => RealPoint2D): Self = StObject.set(x, "getPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPoints(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealPoint2D]]): Self = StObject.set(x, "getPoints", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetPoint(value: (RealPoint2D, Double, Double) => Unit): Self = StObject.set(x, "setPoint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetPoint(value: (Double, Double) => RealPoint2D): Self = this.set("getPoint", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetPoints(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealPoint2D]]): Self = this.set("getPoints", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSetPoint(value: (RealPoint2D, Double, Double) => Unit): Self = this.set("setPoint", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetPoints(value: (SeqEquiv[SeqEquiv[RealPoint2D]], Double) => Unit): Self = this.set("setPoints", js.Any.fromFunction2(value))
+    def setSetPoints(value: (SeqEquiv[SeqEquiv[RealPoint2D]], Double) => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction2(value))
   }
 }

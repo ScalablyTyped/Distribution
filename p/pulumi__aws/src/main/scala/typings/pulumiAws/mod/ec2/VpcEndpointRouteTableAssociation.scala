@@ -5,6 +5,7 @@ import typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTab
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class VpcEndpointRouteTableAssociation protected ()
   def this(name: String, args: VpcEndpointRouteTableAssociationArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "ec2.VpcEndpointRouteTableAssociation")
-@js.native
-object VpcEndpointRouteTableAssociation extends js.Object {
+object VpcEndpointRouteTableAssociation {
   
   /**
     * Get an existing VpcEndpointRouteTableAssociation resource's state with the given name, ID, and optional extra
@@ -37,9 +36,17 @@ object VpcEndpointRouteTableAssociation extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws", "ec2.VpcEndpointRouteTableAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = js.native
+  @JSImport("@pulumi/aws", "ec2.VpcEndpointRouteTableAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = js.native
+  @JSImport("@pulumi/aws", "ec2.VpcEndpointRouteTableAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID], state: VpcEndpointRouteTableAssociationState): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = js.native
+  @JSImport("@pulumi/aws", "ec2.VpcEndpointRouteTableAssociation.get")
+  @js.native
   def get(
     name: String,
     id: Input[ID],
@@ -51,5 +58,7 @@ object VpcEndpointRouteTableAssociation extends js.Object {
     * Returns true if the given object is an instance of VpcEndpointRouteTableAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "ec2.VpcEndpointRouteTableAssociation.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean = js.native
 }

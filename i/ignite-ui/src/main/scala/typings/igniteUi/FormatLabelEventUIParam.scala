@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatLabelEventUIParam extends js.Object {
+trait FormatLabelEventUIParam extends StObject {
   
   /**
     * Used to obtain the maximum value of the bullet graph scale.
@@ -41,48 +42,36 @@ object FormatLabelEventUIParam {
   }
   
   @scala.inline
-  implicit class FormatLabelEventUIParamOps[Self <: FormatLabelEventUIParam] (val x: Self) extends AnyVal {
+  implicit class FormatLabelEventUIParamMutableBuilder[Self <: FormatLabelEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualMaximumValue(value: js.Any): Self = StObject.set(x, "actualMaximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualMaximumValueUndefined: Self = StObject.set(x, "actualMaximumValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActualMinimumValue(value: js.Any): Self = StObject.set(x, "actualMinimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualMaximumValue(value: js.Any): Self = this.set("actualMaximumValue", value.asInstanceOf[js.Any])
+    def setActualMinimumValueUndefined: Self = StObject.set(x, "actualMinimumValue", js.undefined)
     
     @scala.inline
-    def deleteActualMaximumValue: Self = this.set("actualMaximumValue", js.undefined)
+    def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualMinimumValue(value: js.Any): Self = this.set("actualMinimumValue", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteActualMinimumValue: Self = this.set("actualMinimumValue", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: js.Any): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.connectparticipantMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionCredentials extends js.Object {
+trait ConnectionCredentials extends StObject {
   
   /**
     * The connection token.
@@ -26,30 +27,18 @@ object ConnectionCredentials {
   }
   
   @scala.inline
-  implicit class ConnectionCredentialsOps[Self <: ConnectionCredentials] (val x: Self) extends AnyVal {
+  implicit class ConnectionCredentialsMutableBuilder[Self <: ConnectionCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionTokenUndefined: Self = StObject.set(x, "ConnectionToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiry(value: ISO8601Datetime): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionToken(value: ParticipantToken): Self = this.set("ConnectionToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionToken: Self = this.set("ConnectionToken", js.undefined)
-    
-    @scala.inline
-    def setExpiry(value: ISO8601Datetime): Self = this.set("Expiry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiry: Self = this.set("Expiry", js.undefined)
+    def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
   }
 }

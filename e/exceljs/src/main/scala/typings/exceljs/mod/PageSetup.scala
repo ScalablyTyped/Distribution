@@ -11,12 +11,13 @@ import typings.exceljs.exceljsStrings.downThenOver
 import typings.exceljs.exceljsStrings.landscape
 import typings.exceljs.exceljsStrings.overThenDown
 import typings.exceljs.exceljsStrings.portrait
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageSetup extends js.Object {
+trait PageSetup extends StObject {
   
   /**
   	 * Print without colour
@@ -197,84 +198,72 @@ object PageSetup {
   }
   
   @scala.inline
-  implicit class PageSetupOps[Self <: PageSetup] (val x: Self) extends AnyVal {
+  implicit class PageSetupMutableBuilder[Self <: PageSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlackAndWhite(value: Boolean): Self = StObject.set(x, "blackAndWhite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellComments(value: atEnd | asDisplayed | None): Self = StObject.set(x, "cellComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackAndWhite(value: Boolean): Self = this.set("blackAndWhite", value.asInstanceOf[js.Any])
+    def setErrors(value: dash | blank | NA | displayed): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellComments(value: atEnd | asDisplayed | None): Self = this.set("cellComments", value.asInstanceOf[js.Any])
+    def setFirstPageNumber(value: Double): Self = StObject.set(x, "firstPageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraft(value: Boolean): Self = this.set("draft", value.asInstanceOf[js.Any])
+    def setFitToHeight(value: Double): Self = StObject.set(x, "fitToHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: dash | blank | NA | displayed): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setFitToPage(value: Boolean): Self = StObject.set(x, "fitToPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageNumber(value: Double): Self = this.set("firstPageNumber", value.asInstanceOf[js.Any])
+    def setFitToWidth(value: Double): Self = StObject.set(x, "fitToWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitToHeight(value: Double): Self = this.set("fitToHeight", value.asInstanceOf[js.Any])
+    def setHorizontalCentered(value: Boolean): Self = StObject.set(x, "horizontalCentered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitToPage(value: Boolean): Self = this.set("fitToPage", value.asInstanceOf[js.Any])
+    def setHorizontalDpi(value: Double): Self = StObject.set(x, "horizontalDpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitToWidth(value: Double): Self = this.set("fitToWidth", value.asInstanceOf[js.Any])
+    def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalCentered(value: Boolean): Self = this.set("horizontalCentered", value.asInstanceOf[js.Any])
+    def setOrientation(value: portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalDpi(value: Double): Self = this.set("horizontalDpi", value.asInstanceOf[js.Any])
+    def setPageOrder(value: downThenOver | overThenDown): Self = StObject.set(x, "pageOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargins(value: Margins): Self = this.set("margins", value.asInstanceOf[js.Any])
+    def setPaperSize(value: PaperSize): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: portrait | landscape): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPrintArea(value: String): Self = StObject.set(x, "printArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageOrder(value: downThenOver | overThenDown): Self = this.set("pageOrder", value.asInstanceOf[js.Any])
+    def setPrintTitlesColumn(value: String): Self = StObject.set(x, "printTitlesColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperSize(value: PaperSize): Self = this.set("paperSize", value.asInstanceOf[js.Any])
+    def setPrintTitlesRow(value: String): Self = StObject.set(x, "printTitlesRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintArea(value: String): Self = this.set("printArea", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintTitlesColumn(value: String): Self = this.set("printTitlesColumn", value.asInstanceOf[js.Any])
+    def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintTitlesRow(value: String): Self = this.set("printTitlesRow", value.asInstanceOf[js.Any])
+    def setShowRowColHeaders(value: Boolean): Self = StObject.set(x, "showRowColHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setVerticalCentered(value: Boolean): Self = StObject.set(x, "verticalCentered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridLines(value: Boolean): Self = this.set("showGridLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowRowColHeaders(value: Boolean): Self = this.set("showRowColHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalCentered(value: Boolean): Self = this.set("verticalCentered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalDpi(value: Double): Self = this.set("verticalDpi", value.asInstanceOf[js.Any])
+    def setVerticalDpi(value: Double): Self = StObject.set(x, "verticalDpi", value.asInstanceOf[js.Any])
   }
 }

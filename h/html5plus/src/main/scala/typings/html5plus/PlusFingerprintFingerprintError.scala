@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
   */
 @js.native
-trait PlusFingerprintFingerprintError extends js.Object {
+trait PlusFingerprintFingerprintError extends StObject {
   
   /**
     * 指纹识别不匹配
@@ -95,72 +96,60 @@ object PlusFingerprintFingerprintError {
   }
   
   @scala.inline
-  implicit class PlusFingerprintFingerprintErrorOps[Self <: PlusFingerprintFingerprintError] (val x: Self) extends AnyVal {
+  implicit class PlusFingerprintFingerprintErrorMutableBuilder[Self <: PlusFingerprintFingerprintError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAUTHENTICATE_MISMATCH(value: Double): Self = StObject.set(x, "AUTHENTICATE_MISMATCH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAUTHENTICATE_MISMATCHUndefined: Self = StObject.set(x, "AUTHENTICATE_MISMATCH", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAUTHENTICATE_OVERLIMIT(value: Double): Self = StObject.set(x, "AUTHENTICATE_OVERLIMIT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUTHENTICATE_MISMATCH(value: Double): Self = this.set("AUTHENTICATE_MISMATCH", value.asInstanceOf[js.Any])
+    def setAUTHENTICATE_OVERLIMITUndefined: Self = StObject.set(x, "AUTHENTICATE_OVERLIMIT", js.undefined)
     
     @scala.inline
-    def deleteAUTHENTICATE_MISMATCH: Self = this.set("AUTHENTICATE_MISMATCH", js.undefined)
+    def setCANCEL(value: Double): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUTHENTICATE_OVERLIMIT(value: Double): Self = this.set("AUTHENTICATE_OVERLIMIT", value.asInstanceOf[js.Any])
+    def setCANCELUndefined: Self = StObject.set(x, "CANCEL", js.undefined)
     
     @scala.inline
-    def deleteAUTHENTICATE_OVERLIMIT: Self = this.set("AUTHENTICATE_OVERLIMIT", js.undefined)
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCANCEL(value: Double): Self = this.set("CANCEL", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteCANCEL: Self = this.set("CANCEL", js.undefined)
+    def setFINGERPRINT_UNENROLLED(value: Double): Self = StObject.set(x, "FINGERPRINT_UNENROLLED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFINGERPRINT_UNENROLLED(value: Double): Self = this.set("FINGERPRINT_UNENROLLED", value.asInstanceOf[js.Any])
+    def setFINGERPRINT_UNENROLLEDUndefined: Self = StObject.set(x, "FINGERPRINT_UNENROLLED", js.undefined)
     
     @scala.inline
-    def deleteFINGERPRINT_UNENROLLED: Self = this.set("FINGERPRINT_UNENROLLED", js.undefined)
+    def setKEYGUARD_INSECURE(value: Double): Self = StObject.set(x, "KEYGUARD_INSECURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKEYGUARD_INSECURE(value: Double): Self = this.set("KEYGUARD_INSECURE", value.asInstanceOf[js.Any])
+    def setKEYGUARD_INSECUREUndefined: Self = StObject.set(x, "KEYGUARD_INSECURE", js.undefined)
     
     @scala.inline
-    def deleteKEYGUARD_INSECURE: Self = this.set("KEYGUARD_INSECURE", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNKNOWN_ERROR(value: Double): Self = this.set("UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteUNKNOWN_ERROR: Self = this.set("UNKNOWN_ERROR", js.undefined)
+    def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNSUPPORT(value: Double): Self = this.set("UNSUPPORT", value.asInstanceOf[js.Any])
+    def setUNKNOWN_ERRORUndefined: Self = StObject.set(x, "UNKNOWN_ERROR", js.undefined)
     
     @scala.inline
-    def deleteUNSUPPORT: Self = this.set("UNSUPPORT", js.undefined)
+    def setUNSUPPORT(value: Double): Self = StObject.set(x, "UNSUPPORT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setUNSUPPORTUndefined: Self = StObject.set(x, "UNSUPPORT", js.undefined)
   }
 }

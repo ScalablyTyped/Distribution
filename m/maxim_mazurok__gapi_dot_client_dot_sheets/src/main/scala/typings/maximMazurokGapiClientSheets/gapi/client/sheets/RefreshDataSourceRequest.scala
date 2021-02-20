@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshDataSourceRequest extends js.Object {
+trait RefreshDataSourceRequest extends StObject {
   
   /** Reference to a DataSource. If specified, refreshes all associated data source objects for the data source. */
   var dataSourceId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object RefreshDataSourceRequest {
   }
   
   @scala.inline
-  implicit class RefreshDataSourceRequestOps[Self <: RefreshDataSourceRequest] (val x: Self) extends AnyVal {
+  implicit class RefreshDataSourceRequestMutableBuilder[Self <: RefreshDataSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    def setIsAll(value: Boolean): Self = StObject.set(x, "isAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setIsAllUndefined: Self = StObject.set(x, "isAll", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setReferences(value: DataSourceObjectReferences): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAll(value: Boolean): Self = this.set("isAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsAll: Self = this.set("isAll", js.undefined)
-    
-    @scala.inline
-    def setReferences(value: DataSourceObjectReferences): Self = this.set("references", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferences: Self = this.set("references", js.undefined)
+    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
   }
 }

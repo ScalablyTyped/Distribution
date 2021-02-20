@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArimaOrder extends js.Object {
+trait ArimaOrder extends StObject {
   
   /** Order of the differencing part. */
   var d: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ArimaOrder {
   }
   
   @scala.inline
-  implicit class ArimaOrderOps[Self <: ArimaOrder] (val x: Self) extends AnyVal {
+  implicit class ArimaOrderMutableBuilder[Self <: ArimaOrder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP(value: String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: String): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
-    
-    @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
   }
 }

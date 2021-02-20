@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hidden extends js.Object {
+trait Hidden extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object Hidden {
   }
   
   @scala.inline
-  implicit class HiddenOps[Self <: Hidden] (val x: Self) extends AnyVal {
+  implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: Boolean): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
     @scala.inline
-    def deleteModified: Self = this.set("modified", js.undefined)
+    def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestricted(value: Boolean): Self = this.set("restricted", value.asInstanceOf[js.Any])
+    def setStarredUndefined: Self = StObject.set(x, "starred", js.undefined)
     
     @scala.inline
-    def deleteRestricted: Self = this.set("restricted", js.undefined)
+    def setTrashed(value: Boolean): Self = StObject.set(x, "trashed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarred(value: Boolean): Self = this.set("starred", value.asInstanceOf[js.Any])
+    def setTrashedUndefined: Self = StObject.set(x, "trashed", js.undefined)
     
     @scala.inline
-    def deleteStarred: Self = this.set("starred", js.undefined)
+    def setViewed(value: Boolean): Self = StObject.set(x, "viewed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrashed(value: Boolean): Self = this.set("trashed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrashed: Self = this.set("trashed", js.undefined)
-    
-    @scala.inline
-    def setViewed(value: Boolean): Self = this.set("viewed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewed: Self = this.set("viewed", js.undefined)
+    def setViewedUndefined: Self = StObject.set(x, "viewed", js.undefined)
   }
 }

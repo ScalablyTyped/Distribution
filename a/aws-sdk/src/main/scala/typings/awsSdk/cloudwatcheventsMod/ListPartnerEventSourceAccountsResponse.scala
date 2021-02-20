@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPartnerEventSourceAccountsResponse extends js.Object {
+trait ListPartnerEventSourceAccountsResponse extends StObject {
   
   /**
     * A token you can use in a subsequent operation to retrieve the next set of results.
@@ -26,33 +27,21 @@ object ListPartnerEventSourceAccountsResponse {
   }
   
   @scala.inline
-  implicit class ListPartnerEventSourceAccountsResponseOps[Self <: ListPartnerEventSourceAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class ListPartnerEventSourceAccountsResponseMutableBuilder[Self <: ListPartnerEventSourceAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartnerEventSourceAccounts(value: PartnerEventSourceAccountList): Self = StObject.set(x, "PartnerEventSourceAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPartnerEventSourceAccountsUndefined: Self = StObject.set(x, "PartnerEventSourceAccounts", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPartnerEventSourceAccountsVarargs(value: PartnerEventSourceAccount*): Self = this.set("PartnerEventSourceAccounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartnerEventSourceAccounts(value: PartnerEventSourceAccountList): Self = this.set("PartnerEventSourceAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerEventSourceAccounts: Self = this.set("PartnerEventSourceAccounts", js.undefined)
+    def setPartnerEventSourceAccountsVarargs(value: PartnerEventSourceAccount*): Self = StObject.set(x, "PartnerEventSourceAccounts", js.Array(value :_*))
   }
 }

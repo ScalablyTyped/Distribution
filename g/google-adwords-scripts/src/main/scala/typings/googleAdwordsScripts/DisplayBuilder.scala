@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object DisplayBuilder {
   }
   
   @scala.inline
-  implicit class DisplayBuilderOps[Self <: DisplayBuilder[_], T] (val x: Self with DisplayBuilder[T]) extends AnyVal {
+  implicit class DisplayBuilderMutableBuilder[Self <: DisplayBuilder[_], T] (val x: Self with DisplayBuilder[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: () => AdWordsOperation[T]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithCpc(value: Double => T): Self = StObject.set(x, "withCpc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExclude(value: () => AdWordsOperation[T]): Self = this.set("exclude", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWithCpc(value: Double => T): Self = this.set("withCpc", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithCpm(value: Double => T): Self = this.set("withCpm", js.Any.fromFunction1(value))
+    def setWithCpm(value: Double => T): Self = StObject.set(x, "withCpm", js.Any.fromFunction1(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeList[T] extends js.Object {
+trait ChangeList[T] extends StObject {
   
   var allChangesIncluded: Boolean = js.native
   
@@ -55,60 +56,48 @@ object ChangeList {
   }
   
   @scala.inline
-  implicit class ChangeListOps[Self <: ChangeList[_], T] (val x: Self with ChangeList[T]) extends AnyVal {
+  implicit class ChangeListMutableBuilder[Self <: ChangeList[_], T] (val x: Self with ChangeList[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeCounts(value: NumberDictionary[Double]): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChanges(value: js.Array[Change[T]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllChangesIncluded(value: Boolean): Self = this.set("allChangesIncluded", value.asInstanceOf[js.Any])
+    def setChangesVarargs(value: Change[T]*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def setChangeCounts(value: NumberDictionary[Double]): Self = this.set("changeCounts", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: Change[T]*): Self = this.set("changes", js.Array(value :_*))
+    def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanges(value: js.Array[Change[T]]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setNotes(value: js.Array[CheckinNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentTruncated(value: Boolean): Self = this.set("commentTruncated", value.asInstanceOf[js.Any])
+    def setNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotesVarargs(value: CheckinNote*): Self = this.set("notes", js.Array(value :_*))
+    def setOwnerDisplayName(value: String): Self = StObject.set(x, "ownerDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: js.Array[CheckinNote]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSortDate(value: Date): Self = StObject.set(x, "sortDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerDisplayName(value: String): Self = this.set("ownerDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerId(value: String): Self = this.set("ownerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortDate(value: Date): Self = this.set("sortDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

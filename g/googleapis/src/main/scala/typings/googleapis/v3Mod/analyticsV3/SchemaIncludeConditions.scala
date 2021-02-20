@@ -1,5 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for an Analytics Remarketing Include Conditions.
   */
 @js.native
-trait SchemaIncludeConditions extends js.Object {
+trait SchemaIncludeConditions extends StObject {
   
   /**
     * The look-back window lets you specify a time frame for evaluating the
@@ -50,48 +51,36 @@ object SchemaIncludeConditions {
   }
   
   @scala.inline
-  implicit class SchemaIncludeConditionsOps[Self <: SchemaIncludeConditions] (val x: Self) extends AnyVal {
+  implicit class SchemaIncludeConditionsMutableBuilder[Self <: SchemaIncludeConditions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysToLookBack(value: Double): Self = StObject.set(x, "daysToLookBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysToLookBackUndefined: Self = StObject.set(x, "daysToLookBack", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSmartList(value: Boolean): Self = StObject.set(x, "isSmartList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysToLookBack(value: Double): Self = this.set("daysToLookBack", value.asInstanceOf[js.Any])
+    def setIsSmartListUndefined: Self = StObject.set(x, "isSmartList", js.undefined)
     
     @scala.inline
-    def deleteDaysToLookBack: Self = this.set("daysToLookBack", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSmartList(value: Boolean): Self = this.set("isSmartList", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsSmartList: Self = this.set("isSmartList", js.undefined)
+    def setMembershipDurationDays(value: Double): Self = StObject.set(x, "membershipDurationDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMembershipDurationDaysUndefined: Self = StObject.set(x, "membershipDurationDays", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembershipDurationDays(value: Double): Self = this.set("membershipDurationDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembershipDurationDays: Self = this.set("membershipDurationDays", js.undefined)
-    
-    @scala.inline
-    def setSegment(value: String): Self = this.set("segment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegment: Self = this.set("segment", js.undefined)
+    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

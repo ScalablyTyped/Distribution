@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (== resource_for beta.backendService ==)
   */
 @js.native
-trait SchemaBackendService extends js.Object {
+trait SchemaBackendService extends StObject {
   
   /**
     * Lifetime of cookies in seconds if session_affinity is GENERATED_COOKIE.
@@ -174,165 +175,153 @@ object SchemaBackendService {
   }
   
   @scala.inline
-  implicit class SchemaBackendServiceOps[Self <: SchemaBackendService] (val x: Self) extends AnyVal {
+  implicit class SchemaBackendServiceMutableBuilder[Self <: SchemaBackendService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffinityCookieTtlSec(value: Double): Self = StObject.set(x, "affinityCookieTtlSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffinityCookieTtlSecUndefined: Self = StObject.set(x, "affinityCookieTtlSec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackends(value: js.Array[SchemaBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffinityCookieTtlSec(value: Double): Self = this.set("affinityCookieTtlSec", value.asInstanceOf[js.Any])
+    def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
     @scala.inline
-    def deleteAffinityCookieTtlSec: Self = this.set("affinityCookieTtlSec", js.undefined)
+    def setBackendsVarargs(value: SchemaBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
     
     @scala.inline
-    def setBackendsVarargs(value: SchemaBackend*): Self = this.set("backends", js.Array(value :_*))
+    def setCdnPolicy(value: SchemaBackendServiceCdnPolicy): Self = StObject.set(x, "cdnPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackends(value: js.Array[SchemaBackend]): Self = this.set("backends", value.asInstanceOf[js.Any])
+    def setCdnPolicyUndefined: Self = StObject.set(x, "cdnPolicy", js.undefined)
     
     @scala.inline
-    def deleteBackends: Self = this.set("backends", js.undefined)
+    def setConnectionDraining(value: SchemaConnectionDraining): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdnPolicy(value: SchemaBackendServiceCdnPolicy): Self = this.set("cdnPolicy", value.asInstanceOf[js.Any])
+    def setConnectionDrainingUndefined: Self = StObject.set(x, "connectionDraining", js.undefined)
     
     @scala.inline
-    def deleteCdnPolicy: Self = this.set("cdnPolicy", js.undefined)
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionDraining(value: SchemaConnectionDraining): Self = this.set("connectionDraining", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteConnectionDraining: Self = this.set("connectionDraining", js.undefined)
+    def setCustomRequestHeaders(value: js.Array[String]): Self = StObject.set(x, "customRequestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setCustomRequestHeadersVarargs(value: String*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setCustomRequestHeadersVarargs(value: String*): Self = this.set("customRequestHeaders", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRequestHeaders(value: js.Array[String]): Self = this.set("customRequestHeaders", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomRequestHeaders: Self = this.set("customRequestHeaders", js.undefined)
+    def setEnableCDN(value: Boolean): Self = StObject.set(x, "enableCDN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnableCDNUndefined: Self = StObject.set(x, "enableCDN", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCDN(value: Boolean): Self = this.set("enableCDN", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteEnableCDN: Self = this.set("enableCDN", js.undefined)
+    def setHealthChecks(value: js.Array[String]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setHealthChecksVarargs(value: String*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
     
     @scala.inline
-    def setHealthChecksVarargs(value: String*): Self = this.set("healthChecks", js.Array(value :_*))
+    def setIap(value: SchemaBackendServiceIAP): Self = StObject.set(x, "iap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthChecks(value: js.Array[String]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    def setIapUndefined: Self = StObject.set(x, "iap", js.undefined)
     
     @scala.inline
-    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIap(value: SchemaBackendServiceIAP): Self = this.set("iap", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIap: Self = this.set("iap", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLoadBalancingScheme(value: String): Self = StObject.set(x, "loadBalancingScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLoadBalancingSchemeUndefined: Self = StObject.set(x, "loadBalancingScheme", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancingScheme(value: String): Self = this.set("loadBalancingScheme", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancingScheme: Self = this.set("loadBalancingScheme", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortName(value: String): Self = this.set("portName", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePortName: Self = this.set("portName", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityPolicy(value: String): Self = this.set("securityPolicy", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteSecurityPolicy: Self = this.set("securityPolicy", js.undefined)
+    def setSessionAffinity(value: String): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSessionAffinityUndefined: Self = StObject.set(x, "sessionAffinity", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setTimeoutSec(value: Double): Self = StObject.set(x, "timeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionAffinity(value: String): Self = this.set("sessionAffinity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionAffinity: Self = this.set("sessionAffinity", js.undefined)
-    
-    @scala.inline
-    def setTimeoutSec(value: Double): Self = this.set("timeoutSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutSec: Self = this.set("timeoutSec", js.undefined)
+    def setTimeoutSecUndefined: Self = StObject.set(x, "timeoutSec", js.undefined)
   }
 }

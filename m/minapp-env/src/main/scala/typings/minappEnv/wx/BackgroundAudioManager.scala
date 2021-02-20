@@ -1,5 +1,6 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ backgroundAudioManager.coverImgUrl = 'http://y.gtimg.cn/music/photo_new/T002R300
 backgroundAudioManager.src = 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&fromtag=46'
 ``` */
 @js.native
-trait BackgroundAudioManager extends js.Object {
+trait BackgroundAudioManager extends StObject {
   
   /** 音频已缓冲的时间，仅保证当前播放时间点到此时间点内容已缓冲。（只读） */
   var buffered: Double = js.native
@@ -191,102 +192,90 @@ object BackgroundAudioManager {
   }
   
   @scala.inline
-  implicit class BackgroundAudioManagerOps[Self <: BackgroundAudioManager] (val x: Self) extends AnyVal {
+  implicit class BackgroundAudioManagerMutableBuilder[Self <: BackgroundAudioManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverImgUrl(value: String): Self = StObject.set(x, "coverImgUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffered(value: Double): Self = this.set("buffered", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverImgUrl(value: String): Self = this.set("coverImgUrl", value.asInstanceOf[js.Any])
+    def setEpname(value: String): Self = StObject.set(x, "epname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setOnCanplay(value: BackgroundAudioManagerOnCanplayCallback => Unit): Self = StObject.set(x, "onCanplay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOnEnded(value: BackgroundAudioManagerOnEndedCallback => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEpname(value: String): Self = this.set("epname", value.asInstanceOf[js.Any])
+    def setOnError(value: BackgroundAudioManagerOnErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCanplay(value: BackgroundAudioManagerOnCanplayCallback => Unit): Self = this.set("onCanplay", js.Any.fromFunction1(value))
+    def setOnNext(value: OnNextCallback => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnded(value: BackgroundAudioManagerOnEndedCallback => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    def setOnPause(value: BackgroundAudioManagerOnPauseCallback => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: BackgroundAudioManagerOnErrorCallback => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnPlay(value: BackgroundAudioManagerOnPlayCallback => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNext(value: OnNextCallback => Unit): Self = this.set("onNext", js.Any.fromFunction1(value))
+    def setOnPrev(value: OnPrevCallback => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPause(value: BackgroundAudioManagerOnPauseCallback => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    def setOnSeeked(value: BackgroundAudioManagerOnSeekedCallback => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlay(value: BackgroundAudioManagerOnPlayCallback => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    def setOnSeeking(value: BackgroundAudioManagerOnSeekingCallback => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPrev(value: OnPrevCallback => Unit): Self = this.set("onPrev", js.Any.fromFunction1(value))
+    def setOnStop(value: BackgroundAudioManagerOnStopCallback => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSeeked(value: BackgroundAudioManagerOnSeekedCallback => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    def setOnTimeUpdate(value: BackgroundAudioManagerOnTimeUpdateCallback => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSeeking(value: BackgroundAudioManagerOnSeekingCallback => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    def setOnWaiting(value: BackgroundAudioManagerOnWaitingCallback => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStop(value: BackgroundAudioManagerOnStopCallback => Unit): Self = this.set("onStop", js.Any.fromFunction1(value))
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTimeUpdate(value: BackgroundAudioManagerOnTimeUpdateCallback => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnWaiting(value: BackgroundAudioManagerOnWaitingCallback => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setSinger(value: String): Self = StObject.set(x, "singer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSinger(value: String): Self = this.set("singer", value.asInstanceOf[js.Any])
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebUrl(value: String): Self = this.set("webUrl", value.asInstanceOf[js.Any])
+    def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
   }
 }

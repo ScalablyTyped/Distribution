@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.languages.typescript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeScriptWorker extends js.Object {
+trait TypeScriptWorker extends StObject {
   
   /**
     * Get other occurrences which should be updated when renaming the item at the given file and position.
@@ -164,78 +165,66 @@ object TypeScriptWorker {
   }
   
   @scala.inline
-  implicit class TypeScriptWorkerOps[Self <: TypeScriptWorker] (val x: Self) extends AnyVal {
+  implicit class TypeScriptWorkerMutableBuilder[Self <: TypeScriptWorker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindRenameLocations(value: (String, Double, Boolean, Boolean, Boolean) => js.Promise[js.UndefOr[js.Array[_]]]): Self = StObject.set(x, "findRenameLocations", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCodeFixesAtPosition(value: (String, Double, Double, js.Array[Double], js.Any) => js.Promise[js.Array[_]]): Self = StObject.set(x, "getCodeFixesAtPosition", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCompilerOptionsDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = StObject.set(x, "getCompilerOptionsDiagnostics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindRenameLocations(value: (String, Double, Boolean, Boolean, Boolean) => js.Promise[js.UndefOr[js.Array[_]]]): Self = this.set("findRenameLocations", js.Any.fromFunction5(value))
+    def setGetCompletionEntryDetails(value: (String, Double, String) => js.Promise[js.UndefOr[_]]): Self = StObject.set(x, "getCompletionEntryDetails", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetCodeFixesAtPosition(value: (String, Double, Double, js.Array[Double], js.Any) => js.Promise[js.Array[_]]): Self = this.set("getCodeFixesAtPosition", js.Any.fromFunction5(value))
+    def setGetCompletionsAtPosition(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = StObject.set(x, "getCompletionsAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCompilerOptionsDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = this.set("getCompilerOptionsDiagnostics", js.Any.fromFunction1(value))
+    def setGetDefinitionAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[_]]]): Self = StObject.set(x, "getDefinitionAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCompletionEntryDetails(value: (String, Double, String) => js.Promise[js.UndefOr[_]]): Self = this.set("getCompletionEntryDetails", js.Any.fromFunction3(value))
+    def setGetEmitOutput(value: String => js.Promise[EmitOutput]): Self = StObject.set(x, "getEmitOutput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCompletionsAtPosition(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = this.set("getCompletionsAtPosition", js.Any.fromFunction2(value))
+    def setGetFormattingEditsAfterKeystroke(value: (String, Double, String, js.Any) => js.Promise[js.Array[_]]): Self = StObject.set(x, "getFormattingEditsAfterKeystroke", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetDefinitionAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[_]]]): Self = this.set("getDefinitionAtPosition", js.Any.fromFunction2(value))
+    def setGetFormattingEditsForDocument(value: (String, js.Any) => js.Promise[js.Array[_]]): Self = StObject.set(x, "getFormattingEditsForDocument", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetEmitOutput(value: String => js.Promise[EmitOutput]): Self = this.set("getEmitOutput", js.Any.fromFunction1(value))
+    def setGetFormattingEditsForRange(value: (String, Double, Double, js.Any) => js.Promise[js.Array[_]]): Self = StObject.set(x, "getFormattingEditsForRange", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetFormattingEditsAfterKeystroke(value: (String, Double, String, js.Any) => js.Promise[js.Array[_]]): Self = this.set("getFormattingEditsAfterKeystroke", js.Any.fromFunction4(value))
+    def setGetNavigationBarItems(value: String => js.Promise[js.Array[_]]): Self = StObject.set(x, "getNavigationBarItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormattingEditsForDocument(value: (String, js.Any) => js.Promise[js.Array[_]]): Self = this.set("getFormattingEditsForDocument", js.Any.fromFunction2(value))
+    def setGetOccurrencesAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[_]]]): Self = StObject.set(x, "getOccurrencesAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFormattingEditsForRange(value: (String, Double, Double, js.Any) => js.Promise[js.Array[_]]): Self = this.set("getFormattingEditsForRange", js.Any.fromFunction4(value))
+    def setGetQuickInfoAtPosition(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = StObject.set(x, "getQuickInfoAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNavigationBarItems(value: String => js.Promise[js.Array[_]]): Self = this.set("getNavigationBarItems", js.Any.fromFunction1(value))
+    def setGetReferencesAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[_]]]): Self = StObject.set(x, "getReferencesAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetOccurrencesAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[_]]]): Self = this.set("getOccurrencesAtPosition", js.Any.fromFunction2(value))
+    def setGetRenameInfo(value: (String, Double, js.Any) => js.Promise[_]): Self = StObject.set(x, "getRenameInfo", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetQuickInfoAtPosition(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = this.set("getQuickInfoAtPosition", js.Any.fromFunction2(value))
+    def setGetScriptText(value: String => js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "getScriptText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetReferencesAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[_]]]): Self = this.set("getReferencesAtPosition", js.Any.fromFunction2(value))
+    def setGetSemanticDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = StObject.set(x, "getSemanticDiagnostics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRenameInfo(value: (String, Double, js.Any) => js.Promise[_]): Self = this.set("getRenameInfo", js.Any.fromFunction3(value))
+    def setGetSignatureHelpItems(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = StObject.set(x, "getSignatureHelpItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetScriptText(value: String => js.Promise[js.UndefOr[String]]): Self = this.set("getScriptText", js.Any.fromFunction1(value))
+    def setGetSuggestionDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = StObject.set(x, "getSuggestionDiagnostics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSemanticDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = this.set("getSemanticDiagnostics", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSignatureHelpItems(value: (String, Double) => js.Promise[js.UndefOr[_]]): Self = this.set("getSignatureHelpItems", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetSuggestionDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = this.set("getSuggestionDiagnostics", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSyntacticDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = this.set("getSyntacticDiagnostics", js.Any.fromFunction1(value))
+    def setGetSyntacticDiagnostics(value: String => js.Promise[js.Array[Diagnostic]]): Self = StObject.set(x, "getSyntacticDiagnostics", js.Any.fromFunction1(value))
   }
 }

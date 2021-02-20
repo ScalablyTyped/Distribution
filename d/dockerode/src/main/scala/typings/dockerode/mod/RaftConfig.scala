@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaftConfig extends js.Object {
+trait RaftConfig extends StObject {
   
   var ElectionTick: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object RaftConfig {
   }
   
   @scala.inline
-  implicit class RaftConfigOps[Self <: RaftConfig] (val x: Self) extends AnyVal {
+  implicit class RaftConfigMutableBuilder[Self <: RaftConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElectionTick(value: Double): Self = StObject.set(x, "ElectionTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElectionTickUndefined: Self = StObject.set(x, "ElectionTick", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeartbeatTick(value: Double): Self = StObject.set(x, "HeartbeatTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionTick(value: Double): Self = this.set("ElectionTick", value.asInstanceOf[js.Any])
+    def setHeartbeatTickUndefined: Self = StObject.set(x, "HeartbeatTick", js.undefined)
     
     @scala.inline
-    def deleteElectionTick: Self = this.set("ElectionTick", js.undefined)
+    def setKeepOldSnapshots(value: Double): Self = StObject.set(x, "KeepOldSnapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatTick(value: Double): Self = this.set("HeartbeatTick", value.asInstanceOf[js.Any])
+    def setKeepOldSnapshotsUndefined: Self = StObject.set(x, "KeepOldSnapshots", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatTick: Self = this.set("HeartbeatTick", js.undefined)
+    def setLogEntriesForSlowFollowers(value: Double): Self = StObject.set(x, "LogEntriesForSlowFollowers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepOldSnapshots(value: Double): Self = this.set("KeepOldSnapshots", value.asInstanceOf[js.Any])
+    def setLogEntriesForSlowFollowersUndefined: Self = StObject.set(x, "LogEntriesForSlowFollowers", js.undefined)
     
     @scala.inline
-    def deleteKeepOldSnapshots: Self = this.set("KeepOldSnapshots", js.undefined)
+    def setSnapshotInterval(value: Double): Self = StObject.set(x, "SnapshotInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEntriesForSlowFollowers(value: Double): Self = this.set("LogEntriesForSlowFollowers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogEntriesForSlowFollowers: Self = this.set("LogEntriesForSlowFollowers", js.undefined)
-    
-    @scala.inline
-    def setSnapshotInterval(value: Double): Self = this.set("SnapshotInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotInterval: Self = this.set("SnapshotInterval", js.undefined)
+    def setSnapshotIntervalUndefined: Self = StObject.set(x, "SnapshotInterval", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateDescription extends js.Object {
+trait CertificateDescription extends StObject {
   
   /** Describes lists of issuer CA certificate URLs that appear in the "Authority Information Access" extension in the certificate. */
   var aiaIssuingCertificateUrls: js.UndefOr[js.Array[String]] = js.native
@@ -40,72 +41,60 @@ object CertificateDescription {
   }
   
   @scala.inline
-  implicit class CertificateDescriptionOps[Self <: CertificateDescription] (val x: Self) extends AnyVal {
+  implicit class CertificateDescriptionMutableBuilder[Self <: CertificateDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAiaIssuingCertificateUrls(value: js.Array[String]): Self = StObject.set(x, "aiaIssuingCertificateUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAiaIssuingCertificateUrlsUndefined: Self = StObject.set(x, "aiaIssuingCertificateUrls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAiaIssuingCertificateUrlsVarargs(value: String*): Self = StObject.set(x, "aiaIssuingCertificateUrls", js.Array(value :_*))
     
     @scala.inline
-    def setAiaIssuingCertificateUrlsVarargs(value: String*): Self = this.set("aiaIssuingCertificateUrls", js.Array(value :_*))
+    def setAuthorityKeyId(value: KeyId): Self = StObject.set(x, "authorityKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAiaIssuingCertificateUrls(value: js.Array[String]): Self = this.set("aiaIssuingCertificateUrls", value.asInstanceOf[js.Any])
+    def setAuthorityKeyIdUndefined: Self = StObject.set(x, "authorityKeyId", js.undefined)
     
     @scala.inline
-    def deleteAiaIssuingCertificateUrls: Self = this.set("aiaIssuingCertificateUrls", js.undefined)
+    def setCertFingerprint(value: CertificateFingerprint): Self = StObject.set(x, "certFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorityKeyId(value: KeyId): Self = this.set("authorityKeyId", value.asInstanceOf[js.Any])
+    def setCertFingerprintUndefined: Self = StObject.set(x, "certFingerprint", js.undefined)
     
     @scala.inline
-    def deleteAuthorityKeyId: Self = this.set("authorityKeyId", js.undefined)
+    def setConfigValues(value: ReusableConfigValues): Self = StObject.set(x, "configValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertFingerprint(value: CertificateFingerprint): Self = this.set("certFingerprint", value.asInstanceOf[js.Any])
+    def setConfigValuesUndefined: Self = StObject.set(x, "configValues", js.undefined)
     
     @scala.inline
-    def deleteCertFingerprint: Self = this.set("certFingerprint", js.undefined)
+    def setCrlDistributionPoints(value: js.Array[String]): Self = StObject.set(x, "crlDistributionPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigValues(value: ReusableConfigValues): Self = this.set("configValues", value.asInstanceOf[js.Any])
+    def setCrlDistributionPointsUndefined: Self = StObject.set(x, "crlDistributionPoints", js.undefined)
     
     @scala.inline
-    def deleteConfigValues: Self = this.set("configValues", js.undefined)
+    def setCrlDistributionPointsVarargs(value: String*): Self = StObject.set(x, "crlDistributionPoints", js.Array(value :_*))
     
     @scala.inline
-    def setCrlDistributionPointsVarargs(value: String*): Self = this.set("crlDistributionPoints", js.Array(value :_*))
+    def setPublicKey(value: PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrlDistributionPoints(value: js.Array[String]): Self = this.set("crlDistributionPoints", value.asInstanceOf[js.Any])
+    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
     @scala.inline
-    def deleteCrlDistributionPoints: Self = this.set("crlDistributionPoints", js.undefined)
+    def setSubjectDescription(value: SubjectDescription): Self = StObject.set(x, "subjectDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKey(value: PublicKey): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    def setSubjectDescriptionUndefined: Self = StObject.set(x, "subjectDescription", js.undefined)
     
     @scala.inline
-    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    def setSubjectKeyId(value: KeyId): Self = StObject.set(x, "subjectKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectDescription(value: SubjectDescription): Self = this.set("subjectDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectDescription: Self = this.set("subjectDescription", js.undefined)
-    
-    @scala.inline
-    def setSubjectKeyId(value: KeyId): Self = this.set("subjectKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectKeyId: Self = this.set("subjectKeyId", js.undefined)
+    def setSubjectKeyIdUndefined: Self = StObject.set(x, "subjectKeyId", js.undefined)
   }
 }

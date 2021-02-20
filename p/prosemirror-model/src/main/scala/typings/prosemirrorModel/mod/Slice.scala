@@ -1,13 +1,14 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Slice")
 @js.native
-class Slice[S /* <: Schema[_, _] */] protected () extends js.Object {
+class Slice[S /* <: Schema[_, _] */] protected () extends StObject {
   /**
     * Create a slice. When specifying a non-zero open depth, you must
     * make sure that there are nodes of at least that depth at the
@@ -53,25 +54,39 @@ class Slice[S /* <: Schema[_, _] */] protected () extends js.Object {
   def toJSON(): js.UndefOr[StringDictionary[js.Any] | Null] = js.native
 }
 /* static members */
-@JSImport("prosemirror-model", "Slice")
-@js.native
-object Slice extends js.Object {
+object Slice {
+  
+  @JSImport("prosemirror-model", "Slice")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The empty slice.
     */
-  var empty: Slice[_] = js.native
+  @JSImport("prosemirror-model", "Slice.empty")
+  @js.native
+  def empty: Slice[js.Any] = js.native
+  @scala.inline
+  def empty_=(x: Slice[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
   
   /**
     * Deserialize a slice from its JSON representation.
     */
+  @JSImport("prosemirror-model", "Slice.fromJSON")
+  @js.native
   def fromJSON[S /* <: Schema[_, _] */](schema: S): Slice[S] = js.native
+  @JSImport("prosemirror-model", "Slice.fromJSON")
+  @js.native
   def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): Slice[S] = js.native
   
   /**
     * Create a slice from a fragment by taking the maximum possible
     * open value on both side of the fragment.
     */
+  @JSImport("prosemirror-model", "Slice.maxOpen")
+  @js.native
   def maxOpen[S /* <: Schema[_, _] */](fragment: Fragment[S]): Slice[S] = js.native
+  @JSImport("prosemirror-model", "Slice.maxOpen")
+  @js.native
   def maxOpen[S /* <: Schema[_, _] */](fragment: Fragment[S], openIsolating: Boolean): Slice[S] = js.native
 }

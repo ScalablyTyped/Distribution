@@ -1,5 +1,6 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object LockConstraintOptions {
   }
   
   @scala.inline
-  implicit class LockConstraintOptionsOps[Self <: LockConstraintOptions] (val x: Self) extends AnyVal {
+  implicit class LockConstraintOptionsMutableBuilder[Self <: LockConstraintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalAngleB(value: Double): Self = StObject.set(x, "localAngleB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalAngleBUndefined: Self = StObject.set(x, "localAngleB", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalOffsetB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localOffsetB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAngleB(value: Double): Self = this.set("localAngleB", value.asInstanceOf[js.Any])
+    def setLocalOffsetBUndefined: Self = StObject.set(x, "localOffsetB", js.undefined)
     
     @scala.inline
-    def deleteLocalAngleB: Self = this.set("localAngleB", js.undefined)
+    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalOffsetB(value: js.Tuple2[Double, Double]): Self = this.set("localOffsetB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalOffsetB: Self = this.set("localOffsetB", js.undefined)
-    
-    @scala.inline
-    def setMaxForce(value: Double): Self = this.set("maxForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxForce: Self = this.set("maxForce", js.undefined)
+    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
   }
 }

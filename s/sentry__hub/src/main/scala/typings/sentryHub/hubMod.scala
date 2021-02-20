@@ -6,28 +6,18 @@ import typings.sentryHub.interfacesMod.Layer
 import typings.sentryHub.scopeMod.Scope
 import typings.sentryTypes.clientMod.Client
 import typings.sentryTypes.optionsMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/hub/dist/hub", JSImport.Namespace)
-@js.native
-object hubMod extends js.Object {
+object hubMod {
   
+  @JSImport("@sentry/hub/dist/hub", "API_VERSION")
+  @js.native
   val API_VERSION: /* 3 */ Double = js.native
   
-  def getActiveDomain(): js.UndefOr[DomainAsCarrier] = js.native
-  
-  def getCurrentHub(): Hub = js.native
-  
-  def getHubFromCarrier(carrier: Carrier): Hub = js.native
-  
-  def getMainCarrier(): Carrier = js.native
-  
-  def makeMain(hub: Hub): Hub = js.native
-  
-  def setHubOnCarrier(carrier: Carrier, hub: Hub): Boolean = js.native
-  
+  @JSImport("@sentry/hub/dist/hub", "Hub")
   @js.native
   /**
     * Creates a new instance of the hub, will push one {@link Layer} into the
@@ -77,4 +67,28 @@ object hubMod extends js.Object {
     /** Returns the topmost scope layer in the order domain > local > process. */
     def getStackTop(): Layer = js.native
   }
+  
+  @JSImport("@sentry/hub/dist/hub", "getActiveDomain")
+  @js.native
+  def getActiveDomain(): js.UndefOr[DomainAsCarrier] = js.native
+  
+  @JSImport("@sentry/hub/dist/hub", "getCurrentHub")
+  @js.native
+  def getCurrentHub(): Hub = js.native
+  
+  @JSImport("@sentry/hub/dist/hub", "getHubFromCarrier")
+  @js.native
+  def getHubFromCarrier(carrier: Carrier): Hub = js.native
+  
+  @JSImport("@sentry/hub/dist/hub", "getMainCarrier")
+  @js.native
+  def getMainCarrier(): Carrier = js.native
+  
+  @JSImport("@sentry/hub/dist/hub", "makeMain")
+  @js.native
+  def makeMain(hub: Hub): Hub = js.native
+  
+  @JSImport("@sentry/hub/dist/hub", "setHubOnCarrier")
+  @js.native
+  def setHubOnCarrier(carrier: Carrier, hub: Hub): Boolean = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamwriteMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTableResponse extends js.Object {
+trait CreateTableResponse extends StObject {
   
   /**
     * The newly created Timestream table.
@@ -21,24 +22,12 @@ object CreateTableResponse {
   }
   
   @scala.inline
-  implicit class CreateTableResponseOps[Self <: CreateTableResponse] (val x: Self) extends AnyVal {
+  implicit class CreateTableResponseMutableBuilder[Self <: CreateTableResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTable(value: Table): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTable(value: Table): Self = this.set("Table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
   }
 }

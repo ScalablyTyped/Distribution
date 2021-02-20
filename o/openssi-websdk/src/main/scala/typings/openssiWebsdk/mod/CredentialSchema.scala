@@ -1,11 +1,12 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialSchema extends js.Object {
+trait CredentialSchema extends StObject {
   
   var attr_names: js.Array[String] = js.native
   
@@ -32,36 +33,24 @@ object CredentialSchema {
   }
   
   @scala.inline
-  implicit class CredentialSchemaOps[Self <: CredentialSchema] (val x: Self) extends AnyVal {
+  implicit class CredentialSchemaMutableBuilder[Self <: CredentialSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr_names(value: js.Array[String]): Self = StObject.set(x, "attr_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttr_namesVarargs(value: String*): Self = StObject.set(x, "attr_names", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: CredentialSchemaID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttr_namesVarargs(value: String*): Self = this.set("attr_names", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttr_names(value: js.Array[String]): Self = this.set("attr_names", value.asInstanceOf[js.Any])
+    def setNamever(value: String): Self = StObject.set(x, "namever", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: CredentialSchemaID): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamever(value: String): Self = this.set("namever", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

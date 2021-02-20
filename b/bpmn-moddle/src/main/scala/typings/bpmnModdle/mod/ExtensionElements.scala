@@ -1,6 +1,7 @@
 package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object ExtensionElements {
   }
   
   @scala.inline
-  implicit class ExtensionElementsOps[Self <: ExtensionElements] (val x: Self) extends AnyVal {
+  implicit class ExtensionElementsMutableBuilder[Self <: ExtensionElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionAttributeDefinition(value: ExtensionAttributeDefinition): Self = StObject.set(x, "extensionAttributeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueRef(value: BaseElement): Self = StObject.set(x, "valueRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: js.Array[BaseElement]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionAttributeDefinition(value: ExtensionAttributeDefinition): Self = this.set("extensionAttributeDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueRef(value: BaseElement): Self = this.set("valueRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: BaseElement*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[BaseElement]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: BaseElement*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

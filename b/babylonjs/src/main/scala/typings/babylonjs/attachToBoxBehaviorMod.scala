@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.transformNodeMod.TransformNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Meshes/attachToBoxBehavior", JSImport.Namespace)
-@js.native
-object attachToBoxBehaviorMod extends js.Object {
+object attachToBoxBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Meshes/attachToBoxBehavior", "AttachToBoxBehavior")
   @js.native
   class AttachToBoxBehavior protected () extends Behavior[Mesh] {
     /**

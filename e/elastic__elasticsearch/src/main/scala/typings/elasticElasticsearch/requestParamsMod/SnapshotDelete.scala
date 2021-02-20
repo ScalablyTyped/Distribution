@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object SnapshotDelete {
   }
   
   @scala.inline
-  implicit class SnapshotDeleteOps[Self <: SnapshotDelete] (val x: Self) extends AnyVal {
+  implicit class SnapshotDeleteMutableBuilder[Self <: SnapshotDelete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: String): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshot(value: String): Self = this.set("snapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaster_timeout(value: String): Self = this.set("master_timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaster_timeout: Self = this.set("master_timeout", js.undefined)
+    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNativeMaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoordinateAccuracy extends js.Object {
+trait CoordinateAccuracy extends StObject {
   
   var coordinate: Accuracy = js.native
 }
@@ -18,21 +19,9 @@ object CoordinateAccuracy {
   }
   
   @scala.inline
-  implicit class CoordinateAccuracyOps[Self <: CoordinateAccuracy] (val x: Self) extends AnyVal {
+  implicit class CoordinateAccuracyMutableBuilder[Self <: CoordinateAccuracy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoordinate(value: Accuracy): Self = this.set("coordinate", value.asInstanceOf[js.Any])
+    def setCoordinate(value: Accuracy): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
   }
 }

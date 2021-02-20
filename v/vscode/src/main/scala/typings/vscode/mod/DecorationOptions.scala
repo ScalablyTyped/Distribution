@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecorationOptions extends js.Object {
+trait DecorationOptions extends StObject {
   
   /**
     * A message that should be rendered when hovering over the decoration.
@@ -32,36 +33,24 @@ object DecorationOptions {
   }
   
   @scala.inline
-  implicit class DecorationOptionsOps[Self <: DecorationOptions] (val x: Self) extends AnyVal {
+  implicit class DecorationOptionsMutableBuilder[Self <: DecorationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHoverMessage(value: MarkedString | js.Array[MarkedString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoverMessageUndefined: Self = StObject.set(x, "hoverMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoverMessageVarargs(value: MarkedString*): Self = StObject.set(x, "hoverMessage", js.Array(value :_*))
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverMessageVarargs(value: MarkedString*): Self = this.set("hoverMessage", js.Array(value :_*))
+    def setRenderOptions(value: DecorationInstanceRenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverMessage(value: MarkedString | js.Array[MarkedString]): Self = this.set("hoverMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoverMessage: Self = this.set("hoverMessage", js.undefined)
-    
-    @scala.inline
-    def setRenderOptions(value: DecorationInstanceRenderOptions): Self = this.set("renderOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderOptions: Self = this.set("renderOptions", js.undefined)
+    def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
   }
 }

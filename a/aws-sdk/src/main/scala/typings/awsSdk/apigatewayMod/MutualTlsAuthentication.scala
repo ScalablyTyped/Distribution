@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MutualTlsAuthentication extends js.Object {
+trait MutualTlsAuthentication extends StObject {
   
   /**
     * An Amazon S3 URL that specifies the truststore for mutual TLS authentication, for example s3://bucket-name/key-name. The truststore can contain certificates from public or private certificate authorities. To update the truststore, upload a new version to S3, and then update your custom domain name to use the new version. To update the truststore, you must have permissions to access the S3 object.
@@ -31,39 +32,27 @@ object MutualTlsAuthentication {
   }
   
   @scala.inline
-  implicit class MutualTlsAuthenticationOps[Self <: MutualTlsAuthentication] (val x: Self) extends AnyVal {
+  implicit class MutualTlsAuthenticationMutableBuilder[Self <: MutualTlsAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTruststoreUri(value: String): Self = StObject.set(x, "truststoreUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTruststoreUriUndefined: Self = StObject.set(x, "truststoreUri", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTruststoreVersion(value: String): Self = StObject.set(x, "truststoreVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruststoreUri(value: String): Self = this.set("truststoreUri", value.asInstanceOf[js.Any])
+    def setTruststoreVersionUndefined: Self = StObject.set(x, "truststoreVersion", js.undefined)
     
     @scala.inline
-    def deleteTruststoreUri: Self = this.set("truststoreUri", js.undefined)
+    def setTruststoreWarnings(value: ListOfString): Self = StObject.set(x, "truststoreWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruststoreVersion(value: String): Self = this.set("truststoreVersion", value.asInstanceOf[js.Any])
+    def setTruststoreWarningsUndefined: Self = StObject.set(x, "truststoreWarnings", js.undefined)
     
     @scala.inline
-    def deleteTruststoreVersion: Self = this.set("truststoreVersion", js.undefined)
-    
-    @scala.inline
-    def setTruststoreWarningsVarargs(value: String*): Self = this.set("truststoreWarnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setTruststoreWarnings(value: ListOfString): Self = this.set("truststoreWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruststoreWarnings: Self = this.set("truststoreWarnings", js.undefined)
+    def setTruststoreWarningsVarargs(value: String*): Self = StObject.set(x, "truststoreWarnings", js.Array(value :_*))
   }
 }

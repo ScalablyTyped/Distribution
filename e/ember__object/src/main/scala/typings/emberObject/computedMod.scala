@@ -4,99 +4,182 @@ import typings.emberObject.anon.Id
 import typings.emberObject.anon.Until
 import typings.std.PropertyDecorator
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/object/computed", JSImport.Namespace)
-@js.native
-object computedMod extends js.Object {
+object computedMod {
   
+  @JSImport("@ember/object/computed", JSImport.Default)
+  @js.native
+  class default[Get, Set] () extends ComputedProperty[Get, Set] {
+    
+    /* CompleteClass */
+    override def apply(T0: /* target */ js.Object, T1: /* propertyKey */ String | js.Symbol): Unit = js.native
+  }
+  
+  @JSImport("@ember/object/computed", "alias")
+  @js.native
   def alias(dependentKey: String): ComputedProperty[_, _] = js.native
   
+  @JSImport("@ember/object/computed", "and")
+  @js.native
   def and(dependentKeys: String*): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "bool")
+  @js.native
   def bool(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "collect")
+  @js.native
   def collect(dependentKeys: String*): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "deprecatingAlias")
+  @js.native
   def deprecatingAlias(dependentKey: String): ComputedProperty[_, _] = js.native
+  @JSImport("@ember/object/computed", "deprecatingAlias")
+  @js.native
   def deprecatingAlias(dependentKey: String, options: Id): ComputedProperty[_, _] = js.native
+  @JSImport("@ember/object/computed", "deprecatingAlias")
+  @js.native
   def deprecatingAlias(dependentKey: String, options: Until): ComputedProperty[_, _] = js.native
   
+  @JSImport("@ember/object/computed", "empty")
+  @js.native
   def empty(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "equal")
+  @js.native
   def equal(dependentKey: String, value: js.Any): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "expandProperties")
+  @js.native
   def expandProperties(pattern: String, callback: js.Function1[/* expanded */ String, Unit]): Unit = js.native
   
+  @JSImport("@ember/object/computed", "filter")
+  @js.native
   def filter(
     dependentKey: String,
     additionalDependentKeys: js.Array[String],
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
   ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  @JSImport("@ember/object/computed", "filter")
+  @js.native
   def filter(
     dependentKey: String,
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
   ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "filterBy")
+  @js.native
   def filterBy(dependentKey: String, propertyKey: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  @JSImport("@ember/object/computed", "filterBy")
+  @js.native
   def filterBy(dependentKey: String, propertyKey: String, value: js.Any): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "gt")
+  @js.native
   def gt(dependentKey: String, value: Double): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "gte")
+  @js.native
   def gte(dependentKey: String, value: Double): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "intersect")
+  @js.native
   def intersect(propertyKeys: String*): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "lt")
+  @js.native
   def lt(dependentKey: String, value: Double): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "lte")
+  @js.native
   def lte(dependentKey: String, value: Double): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "map")
+  @js.native
   def map[U](
     dependentKey: String,
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], U]
   ): ComputedProperty[js.Array[U], js.Array[U]] = js.native
   
+  @JSImport("@ember/object/computed", "mapBy")
+  @js.native
   def mapBy(dependentKey: String, propertyKey: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
-  def `match`(dependentKey: String, regexp: RegExp): ComputedProperty[Boolean, Boolean] = js.native
-  
+  @JSImport("@ember/object/computed", "max")
+  @js.native
   def max(dependentKey: String): ComputedProperty[Double, Double] = js.native
   
+  @JSImport("@ember/object/computed", "min")
+  @js.native
   def min(dependentKey: String): ComputedProperty[Double, Double] = js.native
   
+  @JSImport("@ember/object/computed", "none")
+  @js.native
   def none(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "not")
+  @js.native
   def not(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "notEmpty")
+  @js.native
   def notEmpty(dependentKey: String): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "oneWay")
+  @js.native
   def oneWay(dependentKey: String): ComputedProperty[_, _] = js.native
   
+  @JSImport("@ember/object/computed", "or")
+  @js.native
   def or(dependentKeys: String*): ComputedProperty[Boolean, Boolean] = js.native
   
+  @JSImport("@ember/object/computed", "readOnly")
+  @js.native
   def readOnly(dependentKey: String): ComputedProperty[_, _] = js.native
   
+  @JSImport("@ember/object/computed", "reads")
+  @js.native
   def reads(dependentKey: String): ComputedProperty[_, _] = js.native
   
+  @JSImport("@ember/object/computed", "setDiff")
+  @js.native
   def setDiff(setAProperty: String, setBProperty: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "sort")
+  @js.native
   def sort(itemsKey: String, dependentKeys: js.Array[String], sortDefinition: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  @JSImport("@ember/object/computed", "sort")
+  @js.native
   def sort(
     itemsKey: String,
     dependentKeys: js.Array[String],
     sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]
   ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  @JSImport("@ember/object/computed", "sort")
+  @js.native
   def sort(itemsKey: String, sortDefinition: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  @JSImport("@ember/object/computed", "sort")
+  @js.native
   def sort(itemsKey: String, sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "sum")
+  @js.native
   def sum(dependentKey: String): ComputedProperty[Double, Double] = js.native
   
+  @JSImport("@ember/object/computed", "union")
+  @js.native
   def union(propertyKeys: String*): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "uniq")
+  @js.native
   def uniq(propertyKey: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
+  @JSImport("@ember/object/computed", "uniqBy")
+  @js.native
   def uniqBy(dependentKey: String, propertyKey: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -137,10 +220,7 @@ object computedMod extends js.Object {
     def volatile(): this.type = js.native
   }
   
+  @JSImport("@ember/object/computed", "match")
   @js.native
-  class default[Get, Set] () extends ComputedProperty[Get, Set] {
-    
-    /* CompleteClass */
-    override def apply(T0: /* target */ js.Object, T1: /* propertyKey */ String | js.Symbol): Unit = js.native
-  }
+  def `match`(dependentKey: String, regexp: RegExp): ComputedProperty[Boolean, Boolean] = js.native
 }

@@ -1,6 +1,7 @@
 package typings.go.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +45,7 @@ class TextBlock () extends GraphObject {
   
   var spacingAbove: Double = js.native
   
-    // undocumented
+  // undocumented
   var spacingBelow: Double = js.native
   
   /**Gets or sets the Brush (or CSS color string) that describes the stroke (color) of the .font.*/
@@ -65,32 +66,67 @@ class TextBlock () extends GraphObject {
   /**Gets or sets whether the text should be wrapped if it is too long to fit on one line.*/
   var wrap: EnumValue = js.native
 }
-/* static members */
-@JSImport("go", "TextBlock")
-@js.native
-object TextBlock extends js.Object {
+object TextBlock {
+  
+  @JSImport("go", "TextBlock")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**The TextBlock will not wrap its text.*/
-  var None: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextBlock.None")
+  @js.native
+  def None: EnumValue = js.native
+  @scala.inline
+  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /** Used as the default value for TextBlock.overflow: if the width is too small to display all text, the TextBlock will clip.*/
-  var OverflowClip: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextBlock.OverflowClip")
+  @js.native
+  def OverflowClip: EnumValue = js.native
+  @scala.inline
+  def OverflowClip_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverflowClip")(x.asInstanceOf[js.Any])
   
   /** Used as a value for TextBlock.overflow: if the width is too small to display all text, the TextBlock will display an ellipsis.*/
-  var OverflowEllipsis: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextBlock.OverflowEllipsis")
+  @js.native
+  def OverflowEllipsis: EnumValue = js.native
+  @scala.inline
+  def OverflowEllipsis_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverflowEllipsis")(x.asInstanceOf[js.Any])
   
   /**The TextBlock will wrap text and the width of the TextBlock will be the desiredSize's width, if any.*/
-  var WrapDesiredSize: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextBlock.WrapDesiredSize")
+  @js.native
+  def WrapDesiredSize: EnumValue = js.native
+  @scala.inline
+  def WrapDesiredSize_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapDesiredSize")(x.asInstanceOf[js.Any])
   
   /**The TextBlock will wrap text, making the width of the TextBlock equal to the width of the longest line.*/
-  var WrapFit: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextBlock.WrapFit")
+  @js.native
+  def WrapFit: EnumValue = js.native
+  @scala.inline
+  def WrapFit_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapFit")(x.asInstanceOf[js.Any])
   
-    // undocumented
+  // undocumented
+  /* static member */
+  @JSImport("go", "TextBlock.getEllipsis")
+  @js.native
   def getEllipsis(): String = js.native
   
-    // undocumented
+  // undocumented
+  /* static member */
+  @JSImport("go", "TextBlock.isValidFont")
+  @js.native
   def isValidFont(font: String): Boolean = js.native
   
-    // undocumented
+  // undocumented
+  /* static member */
+  @JSImport("go", "TextBlock.setEllipsis")
+  @js.native
   def setEllipsis(`val`: String): Unit = js.native
 }

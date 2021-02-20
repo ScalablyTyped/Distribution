@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
-trait DataEditorEventType extends js.Object
+trait DataEditorEventType extends StObject
 object DataEditorEventType {
   
   /** specifies that the data editing was canceled by the user (data not stored). */

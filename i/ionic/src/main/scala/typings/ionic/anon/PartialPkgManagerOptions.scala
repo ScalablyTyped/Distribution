@@ -1,13 +1,14 @@
 package typings.ionic.anon
 
 import typings.ionic.npmMod.PkgManagerCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ionic.ionic/lib/utils/npm.PkgManagerOptions> */
 @js.native
-trait PartialPkgManagerOptions extends js.Object {
+trait PartialPkgManagerOptions extends StObject {
   
   var command: js.UndefOr[PkgManagerCommand] = js.native
   
@@ -36,75 +37,63 @@ object PartialPkgManagerOptions {
   }
   
   @scala.inline
-  implicit class PartialPkgManagerOptionsOps[Self <: PartialPkgManagerOptions] (val x: Self) extends AnyVal {
+  implicit class PartialPkgManagerOptionsMutableBuilder[Self <: PartialPkgManagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: PkgManagerCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: PkgManagerCommand): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
     @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
+    def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: Boolean): Self = this.set("json", value.asInstanceOf[js.Any])
+    def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
     
     @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkg(value: String): Self = this.set("pkg", value.asInstanceOf[js.Any])
+    def setSaveDev(value: Boolean): Self = StObject.set(x, "saveDev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePkg: Self = this.set("pkg", js.undefined)
+    def setSaveDevUndefined: Self = StObject.set(x, "saveDev", js.undefined)
     
     @scala.inline
-    def setSave(value: Boolean): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setSaveExact(value: Boolean): Self = StObject.set(x, "saveExact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setSaveExactUndefined: Self = StObject.set(x, "saveExact", js.undefined)
     
     @scala.inline
-    def setSaveDev(value: Boolean): Self = this.set("saveDev", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteSaveDev: Self = this.set("saveDev", js.undefined)
+    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveExact(value: Boolean): Self = this.set("saveExact", value.asInstanceOf[js.Any])
+    def setScriptArgs(value: js.Array[String]): Self = StObject.set(x, "scriptArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSaveExact: Self = this.set("saveExact", js.undefined)
+    def setScriptArgsUndefined: Self = StObject.set(x, "scriptArgs", js.undefined)
     
     @scala.inline
-    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setScriptArgsVarargs(value: String*): Self = StObject.set(x, "scriptArgs", js.Array(value :_*))
     
     @scala.inline
-    def deleteScript: Self = this.set("script", js.undefined)
-    
-    @scala.inline
-    def setScriptArgsVarargs(value: String*): Self = this.set("scriptArgs", js.Array(value :_*))
-    
-    @scala.inline
-    def setScriptArgs(value: js.Array[String]): Self = this.set("scriptArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptArgs: Self = this.set("scriptArgs", js.undefined)
+    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
   }
 }

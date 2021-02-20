@@ -5,13 +5,14 @@ import typings.awsSdk.ecsMod.StringList
 import typings.awsSdk.ecsMod.TaskField
 import typings.awsSdk.ecsMod.TaskFieldList
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/ecs.DescribeTasksRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeTasksRequestwaite extends js.Object {
+trait DescribeTasksRequestwaite extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -40,45 +41,33 @@ object DescribeTasksRequestwaite {
   }
   
   @scala.inline
-  implicit class DescribeTasksRequestwaiteOps[Self <: DescribeTasksRequestwaite] (val x: Self) extends AnyVal {
+  implicit class DescribeTasksRequestwaiteMutableBuilder[Self <: DescribeTasksRequestwaite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTasksVarargs(value: String*): Self = this.set("tasks", js.Array(value :_*))
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def setTasks(value: StringList): Self = this.set("tasks", value.asInstanceOf[js.Any])
+    def setInclude(value: TaskFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setIncludeVarargs(value: TaskField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setTasks(value: StringList): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
-    
-    @scala.inline
-    def setIncludeVarargs(value: TaskField*): Self = this.set("include", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclude(value: TaskFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

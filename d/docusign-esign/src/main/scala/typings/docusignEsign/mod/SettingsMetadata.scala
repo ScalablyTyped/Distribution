@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettingsMetadata extends js.Object {
+trait SettingsMetadata extends StObject {
   
   /**
     * When **true**, indicates compliance with United States Food and Drug Administration (FDA) regulations on electronic records and electronic signatures (ERES).
@@ -49,57 +50,45 @@ object SettingsMetadata {
   }
   
   @scala.inline
-  implicit class SettingsMetadataOps[Self <: SettingsMetadata] (val x: Self) extends AnyVal {
+  implicit class SettingsMetadataMutableBuilder[Self <: SettingsMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIs21CFRPart11Undefined: Self = StObject.set(x, "is21CFRPart11", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs21CFRPart11(value: String): Self = this.set("is21CFRPart11", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteIs21CFRPart11: Self = this.set("is21CFRPart11", js.undefined)
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    def setRights(value: String): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[String]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setUiHint(value: String): Self = StObject.set(x, "uiHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRights(value: String): Self = this.set("rights", value.asInstanceOf[js.Any])
+    def setUiHintUndefined: Self = StObject.set(x, "uiHint", js.undefined)
     
     @scala.inline
-    def deleteRights: Self = this.set("rights", js.undefined)
+    def setUiOrder(value: String): Self = StObject.set(x, "uiOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiHint(value: String): Self = this.set("uiHint", value.asInstanceOf[js.Any])
+    def setUiOrderUndefined: Self = StObject.set(x, "uiOrder", js.undefined)
     
     @scala.inline
-    def deleteUiHint: Self = this.set("uiHint", js.undefined)
+    def setUiType(value: String): Self = StObject.set(x, "uiType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiOrder(value: String): Self = this.set("uiOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiOrder: Self = this.set("uiOrder", js.undefined)
-    
-    @scala.inline
-    def setUiType(value: String): Self = this.set("uiType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiType: Self = this.set("uiType", js.undefined)
+    def setUiTypeUndefined: Self = StObject.set(x, "uiType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSecretValueResponse extends js.Object {
+trait GetSecretValueResponse extends StObject {
   
   /**
     * The ARN of the secret.
@@ -51,63 +52,51 @@ object GetSecretValueResponse {
   }
   
   @scala.inline
-  implicit class GetSecretValueResponseOps[Self <: GetSecretValueResponse] (val x: Self) extends AnyVal {
+  implicit class GetSecretValueResponseMutableBuilder[Self <: GetSecretValueResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: CreatedDateType): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: SecretARNType): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: CreatedDateType): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setSecretBinary(value: SecretBinaryType): Self = StObject.set(x, "SecretBinary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SecretNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSecretBinaryUndefined: Self = StObject.set(x, "SecretBinary", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSecretString(value: SecretStringType): Self = StObject.set(x, "SecretString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretBinary(value: SecretBinaryType): Self = this.set("SecretBinary", value.asInstanceOf[js.Any])
+    def setSecretStringUndefined: Self = StObject.set(x, "SecretString", js.undefined)
     
     @scala.inline
-    def deleteSecretBinary: Self = this.set("SecretBinary", js.undefined)
+    def setVersionId(value: SecretVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretString(value: SecretStringType): Self = this.set("SecretString", value.asInstanceOf[js.Any])
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     
     @scala.inline
-    def deleteSecretString: Self = this.set("SecretString", js.undefined)
+    def setVersionStages(value: SecretVersionStagesType): Self = StObject.set(x, "VersionStages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionId(value: SecretVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    def setVersionStagesUndefined: Self = StObject.set(x, "VersionStages", js.undefined)
     
     @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
-    
-    @scala.inline
-    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = this.set("VersionStages", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersionStages(value: SecretVersionStagesType): Self = this.set("VersionStages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionStages: Self = this.set("VersionStages", js.undefined)
+    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value :_*))
   }
 }

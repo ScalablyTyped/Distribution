@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMessageResponseKind extends js.Object
+sealed trait EmailMessageResponseKind extends StObject
 /** Defines the type of response to an email message. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMessageResponseKind")
 @js.native
-object EmailMessageResponseKind extends js.Object {
+object EmailMessageResponseKind extends StObject {
   
   /** The email message is a forwarded copy of another email message. */
   @js.native

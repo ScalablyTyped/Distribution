@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesDeleteMessageBatchInputMod.DeleteMessage
 import typings.awsSdkClientSqsNode.typesDeleteMessageBatchOutputMod.DeleteMessageBatchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/DeleteMessageBatchCommand", JSImport.Namespace)
-@js.native
-object deleteMessageBatchCommandMod extends js.Object {
+object deleteMessageBatchCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/DeleteMessageBatchCommand", "DeleteMessageBatchCommand")
   @js.native
   class DeleteMessageBatchCommand protected () extends Command[
           InputTypesUnion, 

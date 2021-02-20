@@ -1,11 +1,12 @@
 package typings.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EasyScore extends js.Object {
+trait EasyScore extends StObject {
   
   def addCommitHook(commitHook: js.Any): js.Any = js.native
   

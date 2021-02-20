@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WheelConstraintOptions extends js.Object {
+trait WheelConstraintOptions extends StObject {
   
   var localForwardVector: js.UndefOr[js.Tuple2[Double, Double]] = js.native
   
@@ -22,36 +23,24 @@ object WheelConstraintOptions {
   }
   
   @scala.inline
-  implicit class WheelConstraintOptionsOps[Self <: WheelConstraintOptions] (val x: Self) extends AnyVal {
+  implicit class WheelConstraintOptionsMutableBuilder[Self <: WheelConstraintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalForwardVector(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localForwardVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalForwardVectorUndefined: Self = StObject.set(x, "localForwardVector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalPosition(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalForwardVector(value: js.Tuple2[Double, Double]): Self = this.set("localForwardVector", value.asInstanceOf[js.Any])
+    def setLocalPositionUndefined: Self = StObject.set(x, "localPosition", js.undefined)
     
     @scala.inline
-    def deleteLocalForwardVector: Self = this.set("localForwardVector", js.undefined)
+    def setSideFriction(value: Double): Self = StObject.set(x, "sideFriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPosition(value: js.Tuple2[Double, Double]): Self = this.set("localPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalPosition: Self = this.set("localPosition", js.undefined)
-    
-    @scala.inline
-    def setSideFriction(value: Double): Self = this.set("sideFriction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideFriction: Self = this.set("sideFriction", js.undefined)
+    def setSideFrictionUndefined: Self = StObject.set(x, "sideFriction", js.undefined)
   }
 }

@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/minBlock", JSImport.Namespace)
-@js.native
-object minBlockMod extends js.Object {
+object minBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/minBlock", "MinBlock")
   @js.native
   class MinBlock protected () extends NodeMaterialBlock {
     /**

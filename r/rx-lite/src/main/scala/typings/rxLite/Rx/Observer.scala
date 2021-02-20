@@ -1,5 +1,6 @@
 package typings.rxLite.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object Observer {
   }
   
   @scala.inline
-  implicit class ObserverOps[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+  implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsObserver(value: () => Observer[T]): Self = this.set("asObserver", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToNotifier(value: () => js.Function1[/* notification */ Notification[T], Unit]): Self = this.set("toNotifier", js.Any.fromFunction0(value))
+    def setToNotifier(value: () => js.Function1[/* notification */ Notification[T], Unit]): Self = StObject.set(x, "toNotifier", js.Any.fromFunction0(value))
   }
 }

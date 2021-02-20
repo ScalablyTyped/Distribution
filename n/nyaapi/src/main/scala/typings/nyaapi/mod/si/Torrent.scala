@@ -1,11 +1,12 @@
 package typings.nyaapi.mod.si
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Torrent extends js.Object {
+trait Torrent extends StObject {
   
   var category: String = js.native
   
@@ -53,54 +54,42 @@ object Torrent {
   }
   
   @scala.inline
-  implicit class TorrentOps[Self <: Torrent] (val x: Self) extends AnyVal {
+  implicit class TorrentMutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setFilesize(value: String): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: String): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesize(value: String): Self = this.set("filesize", value.asInstanceOf[js.Any])
+    def setLeechers(value: String): Self = StObject.set(x, "leechers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeechers(value: String): Self = this.set("leechers", value.asInstanceOf[js.Any])
+    def setSeeders(value: String): Self = StObject.set(x, "seeders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagnet(value: String): Self = this.set("magnet", value.asInstanceOf[js.Any])
+    def setSub_category(value: String): Self = StObject.set(x, "sub_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeeders(value: String): Self = this.set("seeders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSub_category(value: String): Self = this.set("sub_category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTorrent(value: String): Self = this.set("torrent", value.asInstanceOf[js.Any])
+    def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
   }
 }

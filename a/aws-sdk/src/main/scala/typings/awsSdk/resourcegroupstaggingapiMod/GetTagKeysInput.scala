@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTagKeysInput extends js.Object {
+trait GetTagKeysInput extends StObject {
   
   /**
     * A string that indicates that additional data is available. Leave this value empty for your initial request. If the response includes a PaginationToken, use that string for this value to request an additional page of data.
@@ -21,24 +22,12 @@ object GetTagKeysInput {
   }
   
   @scala.inline
-  implicit class GetTagKeysInputOps[Self <: GetTagKeysInput] (val x: Self) extends AnyVal {
+  implicit class GetTagKeysInputMutableBuilder[Self <: GetTagKeysInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
   }
 }

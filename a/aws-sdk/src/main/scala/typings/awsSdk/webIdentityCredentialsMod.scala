@@ -5,14 +5,14 @@ import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest
 import typings.awsSdk.stsMod.AssumeRoleWithWebIdentityResponse
 import typings.awsSdk.webIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/credentials/web_identity_credentials", JSImport.Namespace)
-@js.native
-object webIdentityCredentialsMod extends js.Object {
+object webIdentityCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/web_identity_credentials", "WebIdentityCredentials")
   @js.native
   /**
     * Creates a new credentials object.
@@ -32,8 +32,7 @@ object webIdentityCredentialsMod extends js.Object {
     var params: AssumeRoleWithWebIdentityRequest = js.native
   }
   // Needed to expose interfaces on the class
-  @js.native
-  object WebIdentityCredentials extends js.Object {
+  object WebIdentityCredentials {
     
     type ClientConfiguration = ConfigurationOptions
     

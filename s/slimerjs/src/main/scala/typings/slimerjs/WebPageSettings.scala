@@ -1,11 +1,12 @@
 package typings.slimerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPageSettings extends js.Object {
+trait WebPageSettings extends StObject {
   
   var XSSAuditingEnabled: Boolean = js.native
   
@@ -44,45 +45,33 @@ object WebPageSettings {
   }
   
   @scala.inline
-  implicit class WebPageSettingsOps[Self <: WebPageSettings] (val x: Self) extends AnyVal {
+  implicit class WebPageSettingsMutableBuilder[Self <: WebPageSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJavascriptEnabled(value: Boolean): Self = StObject.set(x, "javascriptEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadImages(value: Boolean): Self = StObject.set(x, "loadImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalToRemoteUrlAccessEnabled(value: Boolean): Self = StObject.set(x, "localToRemoteUrlAccessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXSSAuditingEnabled(value: Boolean): Self = this.set("XSSAuditingEnabled", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavascriptEnabled(value: Boolean): Self = this.set("javascriptEnabled", value.asInstanceOf[js.Any])
+    def setResourceTimeout(value: Double): Self = StObject.set(x, "resourceTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadImages(value: Boolean): Self = this.set("loadImages", value.asInstanceOf[js.Any])
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalToRemoteUrlAccessEnabled(value: Boolean): Self = this.set("localToRemoteUrlAccessEnabled", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setWebSecurityEnabled(value: Boolean): Self = StObject.set(x, "webSecurityEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTimeout(value: Double): Self = this.set("resourceTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebSecurityEnabled(value: Boolean): Self = this.set("webSecurityEnabled", value.asInstanceOf[js.Any])
+    def setXSSAuditingEnabled(value: Boolean): Self = StObject.set(x, "XSSAuditingEnabled", value.asInstanceOf[js.Any])
   }
 }

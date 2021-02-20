@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BorderLineStyle extends js.Object
+sealed trait BorderLineStyle extends StObject
 /**
   * Lists values to specify the line styles for table cell borders.
   */
 @JSGlobal("BorderLineStyle")
 @js.native
-object BorderLineStyle extends js.Object {
+object BorderLineStyle extends StObject {
   
   /**
     * Apples Art Border

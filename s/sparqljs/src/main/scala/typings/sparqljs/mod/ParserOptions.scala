@@ -3,12 +3,13 @@ package typings.sparqljs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.rdfJs.mod.DataFactory
 import typings.rdfJs.mod.Quad
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParserOptions extends js.Object {
+trait ParserOptions extends StObject {
   
   var baseIRI: js.UndefOr[String] = js.native
   
@@ -27,42 +28,30 @@ object ParserOptions {
   }
   
   @scala.inline
-  implicit class ParserOptionsOps[Self <: ParserOptions] (val x: Self) extends AnyVal {
+  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseIRI(value: String): Self = this.set("baseIRI", value.asInstanceOf[js.Any])
+    def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     
     @scala.inline
-    def deleteBaseIRI: Self = this.set("baseIRI", js.undefined)
+    def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactory(value: DataFactory[Quad, Quad]): Self = this.set("factory", value.asInstanceOf[js.Any])
+    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     
     @scala.inline
-    def deleteFactory: Self = this.set("factory", js.undefined)
+    def setSparqlStar(value: Boolean): Self = StObject.set(x, "sparqlStar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixes(value: StringDictionary[String]): Self = this.set("prefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixes: Self = this.set("prefixes", js.undefined)
-    
-    @scala.inline
-    def setSparqlStar(value: Boolean): Self = this.set("sparqlStar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSparqlStar: Self = this.set("sparqlStar", js.undefined)
+    def setSparqlStarUndefined: Self = StObject.set(x, "sparqlStar", js.undefined)
   }
 }

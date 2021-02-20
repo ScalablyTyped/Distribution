@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Determines whether the user interface for capturing from the attached camera allows capture of photos, videos, or both photos and videos. */
 @JSGlobal("Windows.Media.Capture.CameraCaptureUIMode")
 @js.native
-object CameraCaptureUIMode extends js.Object {
+object CameraCaptureUIMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Capture.CameraCaptureUIMode with Double] = js.native

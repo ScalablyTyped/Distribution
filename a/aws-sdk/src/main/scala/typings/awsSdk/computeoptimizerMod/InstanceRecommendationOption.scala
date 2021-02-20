@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceRecommendationOption extends js.Object {
+trait InstanceRecommendationOption extends StObject {
   
   /**
     * The instance type of the instance recommendation.
@@ -36,45 +37,33 @@ object InstanceRecommendationOption {
   }
   
   @scala.inline
-  implicit class InstanceRecommendationOptionOps[Self <: InstanceRecommendationOption] (val x: Self) extends AnyVal {
+  implicit class InstanceRecommendationOptionMutableBuilder[Self <: InstanceRecommendationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerformanceRisk(value: PerformanceRisk): Self = StObject.set(x, "performanceRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setPerformanceRiskUndefined: Self = StObject.set(x, "performanceRisk", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    def setProjectedUtilizationMetrics(value: ProjectedUtilizationMetrics): Self = StObject.set(x, "projectedUtilizationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceRisk(value: PerformanceRisk): Self = this.set("performanceRisk", value.asInstanceOf[js.Any])
+    def setProjectedUtilizationMetricsUndefined: Self = StObject.set(x, "projectedUtilizationMetrics", js.undefined)
     
     @scala.inline
-    def deletePerformanceRisk: Self = this.set("performanceRisk", js.undefined)
+    def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "projectedUtilizationMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = this.set("projectedUtilizationMetrics", js.Array(value :_*))
+    def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectedUtilizationMetrics(value: ProjectedUtilizationMetrics): Self = this.set("projectedUtilizationMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectedUtilizationMetrics: Self = this.set("projectedUtilizationMetrics", js.undefined)
-    
-    @scala.inline
-    def setRank(value: Rank): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
   }
 }

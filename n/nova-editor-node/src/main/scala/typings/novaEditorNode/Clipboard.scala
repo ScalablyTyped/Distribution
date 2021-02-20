@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://docs.nova.app/api-reference/clipboard/
 @js.native
-trait Clipboard extends js.Object {
+trait Clipboard extends StObject {
   
   def readText(): js.Promise[String] = js.native
   
@@ -21,24 +22,12 @@ object Clipboard {
   }
   
   @scala.inline
-  implicit class ClipboardOps[Self <: Clipboard] (val x: Self) extends AnyVal {
+  implicit class ClipboardMutableBuilder[Self <: Clipboard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadText(value: () => js.Promise[String]): Self = StObject.set(x, "readText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadText(value: () => js.Promise[String]): Self = this.set("readText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWriteText(value: String => js.Promise[Unit]): Self = this.set("writeText", js.Any.fromFunction1(value))
+    def setWriteText(value: String => js.Promise[Unit]): Self = StObject.set(x, "writeText", js.Any.fromFunction1(value))
   }
 }

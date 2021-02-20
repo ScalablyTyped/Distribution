@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplayDestination extends js.Object {
+trait ReplayDestination extends StObject {
   
   /**
     * The ARN of the event bus to replay event to. You can replay events only to the event bus specified to create the archive.
@@ -26,30 +27,18 @@ object ReplayDestination {
   }
   
   @scala.inline
-  implicit class ReplayDestinationOps[Self <: ReplayDestination] (val x: Self) extends AnyVal {
+  implicit class ReplayDestinationMutableBuilder[Self <: ReplayDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterArns(value: ReplayDestinationFilters): Self = StObject.set(x, "FilterArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterArnsUndefined: Self = StObject.set(x, "FilterArns", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilterArnsVarargs(value: Arn*): Self = this.set("FilterArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilterArns(value: ReplayDestinationFilters): Self = this.set("FilterArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterArns: Self = this.set("FilterArns", js.undefined)
+    def setFilterArnsVarargs(value: Arn*): Self = StObject.set(x, "FilterArns", js.Array(value :_*))
   }
 }

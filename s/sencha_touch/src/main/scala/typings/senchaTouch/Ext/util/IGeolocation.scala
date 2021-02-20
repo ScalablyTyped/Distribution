@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.IEvented
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,162 +115,150 @@ object IGeolocation {
   }
   
   @scala.inline
-  implicit class IGeolocationOps[Self <: IGeolocation] (val x: Self) extends AnyVal {
+  implicit class IGeolocationMutableBuilder[Self <: IGeolocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowHighAccuracy(value: Boolean): Self = StObject.set(x, "allowHighAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setAllowHighAccuracyUndefined: Self = StObject.set(x, "allowHighAccuracy", js.undefined)
     
     @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHighAccuracy(value: Boolean): Self = this.set("allowHighAccuracy", value.asInstanceOf[js.Any])
+    def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowHighAccuracy: Self = this.set("allowHighAccuracy", js.undefined)
+    def setAltitudeAccuracyUndefined: Self = StObject.set(x, "altitudeAccuracy", js.undefined)
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitudeAccuracy(value: Double): Self = this.set("altitudeAccuracy", value.asInstanceOf[js.Any])
+    def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
     
     @scala.inline
-    def deleteAltitudeAccuracy: Self = this.set("altitudeAccuracy", js.undefined)
+    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdate(value: Boolean): Self = this.set("autoUpdate", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdate: Self = this.set("autoUpdate", js.undefined)
+    def setGetAllowHighAccuracy(value: () => Boolean): Self = StObject.set(x, "getAllowHighAccuracy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setGetAllowHighAccuracyUndefined: Self = StObject.set(x, "getAllowHighAccuracy", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setGetAutoUpdate(value: () => Boolean): Self = StObject.set(x, "getAutoUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowHighAccuracy(value: () => Boolean): Self = this.set("getAllowHighAccuracy", js.Any.fromFunction0(value))
+    def setGetAutoUpdateUndefined: Self = StObject.set(x, "getAutoUpdate", js.undefined)
     
     @scala.inline
-    def deleteGetAllowHighAccuracy: Self = this.set("getAllowHighAccuracy", js.undefined)
+    def setGetFrequency(value: () => Double): Self = StObject.set(x, "getFrequency", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoUpdate(value: () => Boolean): Self = this.set("getAutoUpdate", js.Any.fromFunction0(value))
+    def setGetFrequencyUndefined: Self = StObject.set(x, "getFrequency", js.undefined)
     
     @scala.inline
-    def deleteGetAutoUpdate: Self = this.set("getAutoUpdate", js.undefined)
+    def setGetMaximumAge(value: () => Double): Self = StObject.set(x, "getMaximumAge", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFrequency(value: () => Double): Self = this.set("getFrequency", js.Any.fromFunction0(value))
+    def setGetMaximumAgeUndefined: Self = StObject.set(x, "getMaximumAge", js.undefined)
     
     @scala.inline
-    def deleteGetFrequency: Self = this.set("getFrequency", js.undefined)
+    def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaximumAge(value: () => Double): Self = this.set("getMaximumAge", js.Any.fromFunction0(value))
+    def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
     
     @scala.inline
-    def deleteGetMaximumAge: Self = this.set("getMaximumAge", js.undefined)
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTimeout(value: () => Double): Self = this.set("getTimeout", js.Any.fromFunction0(value))
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteGetTimeout: Self = this.set("getTimeout", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setSetAllowHighAccuracy(value: /* allowHighAccuracy */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowHighAccuracy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaximumAge(value: Double): Self = this.set("maximumAge", value.asInstanceOf[js.Any])
+    def setSetAllowHighAccuracyUndefined: Self = StObject.set(x, "setAllowHighAccuracy", js.undefined)
     
     @scala.inline
-    def deleteMaximumAge: Self = this.set("maximumAge", js.undefined)
+    def setSetAutoUpdate(value: /* autoUpdate */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAllowHighAccuracy(value: /* allowHighAccuracy */ js.UndefOr[Boolean] => Unit): Self = this.set("setAllowHighAccuracy", js.Any.fromFunction1(value))
+    def setSetAutoUpdateUndefined: Self = StObject.set(x, "setAutoUpdate", js.undefined)
     
     @scala.inline
-    def deleteSetAllowHighAccuracy: Self = this.set("setAllowHighAccuracy", js.undefined)
+    def setSetFrequency(value: /* frequency */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFrequency", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoUpdate(value: /* autoUpdate */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoUpdate", js.Any.fromFunction1(value))
+    def setSetFrequencyUndefined: Self = StObject.set(x, "setFrequency", js.undefined)
     
     @scala.inline
-    def deleteSetAutoUpdate: Self = this.set("setAutoUpdate", js.undefined)
+    def setSetMaximumAge(value: /* maximumAge */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximumAge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFrequency(value: /* frequency */ js.UndefOr[Double] => Unit): Self = this.set("setFrequency", js.Any.fromFunction1(value))
+    def setSetMaximumAgeUndefined: Self = StObject.set(x, "setMaximumAge", js.undefined)
     
     @scala.inline
-    def deleteSetFrequency: Self = this.set("setFrequency", js.undefined)
+    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaximumAge(value: /* maximumAge */ js.UndefOr[Double] => Unit): Self = this.set("setMaximumAge", js.Any.fromFunction1(value))
+    def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     
     @scala.inline
-    def deleteSetMaximumAge: Self = this.set("setMaximumAge", js.undefined)
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = this.set("setTimeout", js.Any.fromFunction1(value))
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
     @scala.inline
-    def deleteSetTimeout: Self = this.set("setTimeout", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUpdateLocation(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateLocation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTimestamp(value: js.Any): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setUpdateLocation(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("updateLocation", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUpdateLocation: Self = this.set("updateLocation", js.undefined)
+    def setUpdateLocationUndefined: Self = StObject.set(x, "updateLocation", js.undefined)
   }
 }

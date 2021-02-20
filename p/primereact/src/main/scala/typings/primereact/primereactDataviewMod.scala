@@ -2,20 +2,34 @@ package typings.primereact
 
 import typings.primereact.dataViewMod.DataViewLayoutOptionsProps
 import typings.primereact.dataViewMod.DataViewProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/dataview", JSImport.Namespace)
-@js.native
-object primereactDataviewMod extends js.Object {
+object primereactDataviewMod {
   
+  @JSImport("primereact/dataview", "DataView")
   @js.native
-  class DataView ()
-    extends Component[DataViewProps, js.Any, js.Any]
+  class DataView protected ()
+    extends typings.primereact.dataViewMod.DataView {
+    def this(props: DataViewProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DataViewProps, context: js.Any) = this()
+  }
   
+  @JSImport("primereact/dataview", "DataViewLayoutOptions")
   @js.native
-  class DataViewLayoutOptions ()
-    extends Component[DataViewLayoutOptionsProps, js.Any, js.Any]
+  class DataViewLayoutOptions protected ()
+    extends typings.primereact.dataViewMod.DataViewLayoutOptions {
+    def this(props: DataViewLayoutOptionsProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DataViewLayoutOptionsProps, context: js.Any) = this()
+  }
 }

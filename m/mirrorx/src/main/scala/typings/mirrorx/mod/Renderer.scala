@@ -8,12 +8,13 @@ import typings.react.mod.DOMElement
 import typings.react.mod.ReactElement
 import typings.react.mod.SFCElement
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Renderer extends js.Object {
+trait Renderer extends StObject {
   
   def apply(element: js.Array[CElement[_, Component[_, ComponentState, _]]]): Component[_, ComponentState, _] = js.native
   def apply(

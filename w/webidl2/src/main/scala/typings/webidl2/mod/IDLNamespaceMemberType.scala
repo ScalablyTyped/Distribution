@@ -2,6 +2,7 @@ package typings.webidl2.mod
 
 import typings.webidl2.webidl2Strings.attribute
 import typings.webidl2.webidl2Strings.operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webidl2.mod.AttributeMemberType
   - typings.webidl2.mod.OperationMemberType
 */
-trait IDLNamespaceMemberType extends js.Object
+trait IDLNamespaceMemberType extends StObject
 object IDLNamespaceMemberType {
   
   @scala.inline
@@ -22,10 +23,10 @@ object IDLNamespaceMemberType {
     parent: InterfaceMixinType | InterfaceType | NamespaceType,
     readonly: Boolean,
     `type`: attribute
-  ): IDLNamespaceMemberType = {
+  ): typings.webidl2.mod.AttributeMemberType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLNamespaceMemberType]
+    __obj.asInstanceOf[typings.webidl2.mod.AttributeMemberType]
   }
   
   @scala.inline
@@ -34,9 +35,9 @@ object IDLNamespaceMemberType {
     extAttrs: js.Array[ExtendedAttribute],
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType,
     `type`: operation
-  ): IDLNamespaceMemberType = {
+  ): typings.webidl2.mod.OperationMemberType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLNamespaceMemberType]
+    __obj.asInstanceOf[typings.webidl2.mod.OperationMemberType]
   }
 }

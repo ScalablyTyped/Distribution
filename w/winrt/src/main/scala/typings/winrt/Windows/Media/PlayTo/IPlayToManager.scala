@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlayToManager extends js.Object {
+trait IPlayToManager extends StObject {
   
   var defaultSourceSelection: Boolean = js.native
   
@@ -22,27 +23,15 @@ object IPlayToManager {
   }
   
   @scala.inline
-  implicit class IPlayToManagerOps[Self <: IPlayToManager] (val x: Self) extends AnyVal {
+  implicit class IPlayToManagerMutableBuilder[Self <: IPlayToManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSourceSelection(value: Boolean): Self = StObject.set(x, "defaultSourceSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnsourcerequested(value: js.Any): Self = StObject.set(x, "onsourcerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultSourceSelection(value: Boolean): Self = this.set("defaultSourceSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnsourcerequested(value: js.Any): Self = this.set("onsourcerequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnsourceselected(value: js.Any): Self = this.set("onsourceselected", value.asInstanceOf[js.Any])
+    def setOnsourceselected(value: js.Any): Self = StObject.set(x, "onsourceselected", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.nodeRedRegistry.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeRedRegistry.nodeRedRegistryStrings.ring
   - typings.nodeRedRegistry.nodeRedRegistryStrings.dot
 */
-trait NodeStatusShape extends js.Object
+trait NodeStatusShape extends StObject
 object NodeStatusShape {
   
   @scala.inline

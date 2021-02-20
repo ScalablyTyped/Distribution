@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceInformation extends js.Object {
+trait ComplianceInformation extends StObject {
   
   // Collection of the certification controls associated with certification
   var certificationControls: js.UndefOr[NullableOption[js.Array[CertificationControl]]] = js.native
@@ -22,39 +23,27 @@ object ComplianceInformation {
   }
   
   @scala.inline
-  implicit class ComplianceInformationOps[Self <: ComplianceInformation] (val x: Self) extends AnyVal {
+  implicit class ComplianceInformationMutableBuilder[Self <: ComplianceInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificationControls(value: NullableOption[js.Array[CertificationControl]]): Self = StObject.set(x, "certificationControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificationControlsNull: Self = StObject.set(x, "certificationControls", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificationControlsUndefined: Self = StObject.set(x, "certificationControls", js.undefined)
     
     @scala.inline
-    def setCertificationControlsVarargs(value: CertificationControl*): Self = this.set("certificationControls", js.Array(value :_*))
+    def setCertificationControlsVarargs(value: CertificationControl*): Self = StObject.set(x, "certificationControls", js.Array(value :_*))
     
     @scala.inline
-    def setCertificationControls(value: NullableOption[js.Array[CertificationControl]]): Self = this.set("certificationControls", value.asInstanceOf[js.Any])
+    def setCertificationName(value: NullableOption[String]): Self = StObject.set(x, "certificationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificationControls: Self = this.set("certificationControls", js.undefined)
+    def setCertificationNameNull: Self = StObject.set(x, "certificationName", null)
     
     @scala.inline
-    def setCertificationControlsNull: Self = this.set("certificationControls", null)
-    
-    @scala.inline
-    def setCertificationName(value: NullableOption[String]): Self = this.set("certificationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificationName: Self = this.set("certificationName", js.undefined)
-    
-    @scala.inline
-    def setCertificationNameNull: Self = this.set("certificationName", null)
+    def setCertificationNameUndefined: Self = StObject.set(x, "certificationName", js.undefined)
   }
 }

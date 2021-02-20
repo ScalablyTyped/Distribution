@@ -3,6 +3,7 @@ package typings.estree.mod
 import typings.estree.estreeStrings.get
 import typings.estree.estreeStrings.init
 import typings.estree.estreeStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait Property
   
   var key: Expression = js.native
   
-   // Could be an AssignmentProperty
+  // Could be an AssignmentProperty
   var kind: init | get | set = js.native
   
   var method: Boolean = js.native
@@ -46,39 +47,27 @@ object Property {
   }
   
   @scala.inline
-  implicit class PropertyOps[Self <: Property] (val x: Self) extends AnyVal {
+  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Expression): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: init | get | set): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setType(value: typings.estree.estreeStrings.Property): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Boolean): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShorthand(value: Boolean): Self = this.set("shorthand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.Property): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Expression | Pattern): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Expression | Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

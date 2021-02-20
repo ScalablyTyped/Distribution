@@ -2,12 +2,13 @@ package typings.typescript.anon
 
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.TypeNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeArguments extends js.Object {
+trait TypeArguments extends StObject {
   
   var typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
 }
@@ -20,24 +21,12 @@ object TypeArguments {
   }
   
   @scala.inline
-  implicit class TypeArgumentsOps[Self <: TypeArguments] (val x: Self) extends AnyVal {
+  implicit class TypeArgumentsMutableBuilder[Self <: TypeArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTypeArguments(value: NodeArray[TypeNode]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTypeArguments(value: NodeArray[TypeNode]): Self = this.set("typeArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeArguments: Self = this.set("typeArguments", js.undefined)
+    def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
   }
 }

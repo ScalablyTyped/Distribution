@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scte35SegmentationDescriptor extends js.Object {
+trait Scte35SegmentationDescriptor extends StObject {
   
   /**
     * Holds the four SCTE-35 delivery restriction parameters.
@@ -74,78 +75,66 @@ object Scte35SegmentationDescriptor {
   }
   
   @scala.inline
-  implicit class Scte35SegmentationDescriptorOps[Self <: Scte35SegmentationDescriptor] (val x: Self) extends AnyVal {
+  implicit class Scte35SegmentationDescriptorMutableBuilder[Self <: Scte35SegmentationDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryRestrictions(value: Scte35DeliveryRestrictions): Self = StObject.set(x, "DeliveryRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryRestrictionsUndefined: Self = StObject.set(x, "DeliveryRestrictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentNum(value: integerMin0Max255): Self = StObject.set(x, "SegmentNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationCancelIndicator(value: Scte35SegmentationCancelIndicator): Self = this.set("SegmentationCancelIndicator", value.asInstanceOf[js.Any])
+    def setSegmentNumUndefined: Self = StObject.set(x, "SegmentNum", js.undefined)
     
     @scala.inline
-    def setSegmentationEventId(value: longMin0Max4294967295): Self = this.set("SegmentationEventId", value.asInstanceOf[js.Any])
+    def setSegmentationCancelIndicator(value: Scte35SegmentationCancelIndicator): Self = StObject.set(x, "SegmentationCancelIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryRestrictions(value: Scte35DeliveryRestrictions): Self = this.set("DeliveryRestrictions", value.asInstanceOf[js.Any])
+    def setSegmentationDuration(value: longMin0Max1099511627775): Self = StObject.set(x, "SegmentationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeliveryRestrictions: Self = this.set("DeliveryRestrictions", js.undefined)
+    def setSegmentationDurationUndefined: Self = StObject.set(x, "SegmentationDuration", js.undefined)
     
     @scala.inline
-    def setSegmentNum(value: integerMin0Max255): Self = this.set("SegmentNum", value.asInstanceOf[js.Any])
+    def setSegmentationEventId(value: longMin0Max4294967295): Self = StObject.set(x, "SegmentationEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSegmentNum: Self = this.set("SegmentNum", js.undefined)
+    def setSegmentationTypeId(value: integerMin0Max255): Self = StObject.set(x, "SegmentationTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationDuration(value: longMin0Max1099511627775): Self = this.set("SegmentationDuration", value.asInstanceOf[js.Any])
+    def setSegmentationTypeIdUndefined: Self = StObject.set(x, "SegmentationTypeId", js.undefined)
     
     @scala.inline
-    def deleteSegmentationDuration: Self = this.set("SegmentationDuration", js.undefined)
+    def setSegmentationUpid(value: string): Self = StObject.set(x, "SegmentationUpid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationTypeId(value: integerMin0Max255): Self = this.set("SegmentationTypeId", value.asInstanceOf[js.Any])
+    def setSegmentationUpidType(value: integerMin0Max255): Self = StObject.set(x, "SegmentationUpidType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSegmentationTypeId: Self = this.set("SegmentationTypeId", js.undefined)
+    def setSegmentationUpidTypeUndefined: Self = StObject.set(x, "SegmentationUpidType", js.undefined)
     
     @scala.inline
-    def setSegmentationUpid(value: string): Self = this.set("SegmentationUpid", value.asInstanceOf[js.Any])
+    def setSegmentationUpidUndefined: Self = StObject.set(x, "SegmentationUpid", js.undefined)
     
     @scala.inline
-    def deleteSegmentationUpid: Self = this.set("SegmentationUpid", js.undefined)
+    def setSegmentsExpected(value: integerMin0Max255): Self = StObject.set(x, "SegmentsExpected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationUpidType(value: integerMin0Max255): Self = this.set("SegmentationUpidType", value.asInstanceOf[js.Any])
+    def setSegmentsExpectedUndefined: Self = StObject.set(x, "SegmentsExpected", js.undefined)
     
     @scala.inline
-    def deleteSegmentationUpidType: Self = this.set("SegmentationUpidType", js.undefined)
+    def setSubSegmentNum(value: integerMin0Max255): Self = StObject.set(x, "SubSegmentNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentsExpected(value: integerMin0Max255): Self = this.set("SegmentsExpected", value.asInstanceOf[js.Any])
+    def setSubSegmentNumUndefined: Self = StObject.set(x, "SubSegmentNum", js.undefined)
     
     @scala.inline
-    def deleteSegmentsExpected: Self = this.set("SegmentsExpected", js.undefined)
+    def setSubSegmentsExpected(value: integerMin0Max255): Self = StObject.set(x, "SubSegmentsExpected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubSegmentNum(value: integerMin0Max255): Self = this.set("SubSegmentNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubSegmentNum: Self = this.set("SubSegmentNum", js.undefined)
-    
-    @scala.inline
-    def setSubSegmentsExpected(value: integerMin0Max255): Self = this.set("SubSegmentsExpected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubSegmentsExpected: Self = this.set("SubSegmentsExpected", js.undefined)
+    def setSubSegmentsExpectedUndefined: Self = StObject.set(x, "SubSegmentsExpected", js.undefined)
   }
 }

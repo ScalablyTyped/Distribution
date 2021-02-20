@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property data - Matrix elements in the form of a flat array.
   */
 @js.native
-trait Mat3 extends js.Object {
+trait Mat3 extends StObject {
   
   /**
     * Copies the contents of a source 3x3 matrix to a destination 3x3 matrix.
@@ -85,50 +86,39 @@ object Mat3 {
   def apply(
     copy: Mat3 => Mat3,
     data: Float32Array,
-    equals: Mat3 => Boolean,
+    equals_ : Mat3 => Boolean,
     isIdentity: () => Boolean,
     set: js.Array[Double] => Mat3,
     setIdentity: () => Mat3,
     transpose: () => Mat3
   ): Mat3 = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), data = data.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), isIdentity = js.Any.fromFunction0(isIdentity), set = js.Any.fromFunction1(set), setIdentity = js.Any.fromFunction0(setIdentity), transpose = js.Any.fromFunction0(transpose))
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), data = data.asInstanceOf[js.Any], isIdentity = js.Any.fromFunction0(isIdentity), set = js.Any.fromFunction1(set), setIdentity = js.Any.fromFunction0(setIdentity), transpose = js.Any.fromFunction0(transpose))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Mat3]
   }
   
   @scala.inline
-  implicit class Mat3Ops[Self <: Mat3] (val x: Self) extends AnyVal {
+  implicit class Mat3MutableBuilder[Self <: Mat3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: Mat3 => Mat3): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: Float32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: Mat3 => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopy(value: Mat3 => Mat3): Self = this.set("copy", js.Any.fromFunction1(value))
+    def setIsIdentity(value: () => Boolean): Self = StObject.set(x, "isIdentity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: Float32Array): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setSet(value: js.Array[Double] => Mat3): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEquals(value: Mat3 => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setSetIdentity(value: () => Mat3): Self = StObject.set(x, "setIdentity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIdentity(value: () => Boolean): Self = this.set("isIdentity", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: js.Array[Double] => Mat3): Self = this.set("set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIdentity(value: () => Mat3): Self = this.set("setIdentity", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTranspose(value: () => Mat3): Self = this.set("transpose", js.Any.fromFunction0(value))
+    def setTranspose(value: () => Mat3): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
   }
 }

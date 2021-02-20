@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.savedFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedFeedResponseMainImage extends js.Object {
+trait SavedFeedResponseMainImage extends StObject {
   
   var image_versions2: SavedFeedResponseImageVersions2 = js.native
   
@@ -20,24 +21,12 @@ object SavedFeedResponseMainImage {
   }
   
   @scala.inline
-  implicit class SavedFeedResponseMainImageOps[Self <: SavedFeedResponseMainImage] (val x: Self) extends AnyVal {
+  implicit class SavedFeedResponseMainImageMutableBuilder[Self <: SavedFeedResponseMainImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImage_versions2(value: SavedFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImage_versions2(value: SavedFeedResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreview(value: Null): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setPreview(value: Null): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

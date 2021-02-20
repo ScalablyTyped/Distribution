@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AzureCredentials extends js.Object {
+trait AzureCredentials extends StObject {
   
   /**
     * Required. Azure shared access signature. (see [Grant limited access to Azure Storage resources using shared access signatures
@@ -22,24 +23,12 @@ object AzureCredentials {
   }
   
   @scala.inline
-  implicit class AzureCredentialsOps[Self <: AzureCredentials] (val x: Self) extends AnyVal {
+  implicit class AzureCredentialsMutableBuilder[Self <: AzureCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSasToken(value: String): Self = StObject.set(x, "sasToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSasToken(value: String): Self = this.set("sasToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSasToken: Self = this.set("sasToken", js.undefined)
+    def setSasTokenUndefined: Self = StObject.set(x, "sasToken", js.undefined)
   }
 }

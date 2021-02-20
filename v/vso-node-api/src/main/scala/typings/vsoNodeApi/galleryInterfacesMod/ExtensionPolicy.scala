@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionPolicy extends js.Object {
+trait ExtensionPolicy extends StObject {
   
   /**
     * Permissions on 'Install' operation
@@ -26,24 +27,12 @@ object ExtensionPolicy {
   }
   
   @scala.inline
-  implicit class ExtensionPolicyOps[Self <: ExtensionPolicy] (val x: Self) extends AnyVal {
+  implicit class ExtensionPolicyMutableBuilder[Self <: ExtensionPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstall(value: ExtensionPolicyFlags): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstall(value: ExtensionPolicyFlags): Self = this.set("install", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ExtensionPolicyFlags): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequest(value: ExtensionPolicyFlags): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

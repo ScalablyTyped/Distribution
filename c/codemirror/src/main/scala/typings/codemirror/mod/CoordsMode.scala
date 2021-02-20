@@ -1,5 +1,6 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.codemirror.codemirrorStrings.local
   - typings.codemirror.codemirrorStrings.div
 */
-trait CoordsMode extends js.Object
+trait CoordsMode extends StObject
 object CoordsMode {
   
   @scala.inline

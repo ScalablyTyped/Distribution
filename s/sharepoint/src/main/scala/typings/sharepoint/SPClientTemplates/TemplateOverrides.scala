@@ -1,13 +1,14 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateOverrides extends js.Object {
+trait TemplateOverrides extends StObject {
   
-   // TODO: determine appropriate context type and purpose of this template
+  // TODO: determine appropriate context type and purpose of this template
   var Body: js.UndefOr[RenderCallback | String] = js.native
   
   /** Defines templates for fields rendering. The field is specified by it's internal name. */
@@ -17,7 +18,7 @@ trait TemplateOverrides extends js.Object {
     Can be either string or SingleTemplateCallback */
   var Footer: js.UndefOr[SingleTemplateCallback | String] = js.native
   
-   // TODO: determine appropriate context type and purpose of this template
+  // TODO: determine appropriate context type and purpose of this template
   /** Defines templates for rendering groups (aggregations). */
   var Group: js.UndefOr[GroupCallback | String] = js.native
   
@@ -39,78 +40,66 @@ object TemplateOverrides {
   }
   
   @scala.inline
-  implicit class TemplateOverridesOps[Self <: TemplateOverrides] (val x: Self) extends AnyVal {
+  implicit class TemplateOverridesMutableBuilder[Self <: TemplateOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: RenderCallback | String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyFunction1(value: /* ctx */ RenderContext => Unit): Self = StObject.set(x, "Body", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def setBodyFunction1(value: /* ctx */ RenderContext => Unit): Self = this.set("Body", js.Any.fromFunction1(value))
+    def setFields(value: FieldTemplateMap): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: RenderCallback | String): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setFooter(value: SingleTemplateCallback | String): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: FieldTemplateMap): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    def setFooterFunction1(value: /* renderContext */ RenderContextInView => String): Self = StObject.set(x, "Footer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFields: Self = this.set("Fields", js.undefined)
+    def setFooterUndefined: Self = StObject.set(x, "Footer", js.undefined)
     
     @scala.inline
-    def setFooterFunction1(value: /* renderContext */ RenderContextInView => String): Self = this.set("Footer", js.Any.fromFunction1(value))
+    def setGroup(value: GroupCallback | String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: SingleTemplateCallback | String): Self = this.set("Footer", value.asInstanceOf[js.Any])
+    def setGroupFunction1(value: /* renderContext */ RenderContextGroupInView => String): Self = StObject.set(x, "Group", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFooter: Self = this.set("Footer", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
     @scala.inline
-    def setGroupFunction1(value: /* renderContext */ RenderContextGroupInView => String): Self = this.set("Group", js.Any.fromFunction1(value))
+    def setHeader(value: SingleTemplateCallback | String): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: GroupCallback | String): Self = this.set("Group", value.asInstanceOf[js.Any])
+    def setHeaderFunction1(value: /* renderContext */ RenderContextInView => String): Self = StObject.set(x, "Header", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGroup: Self = this.set("Group", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
     @scala.inline
-    def setHeaderFunction1(value: /* renderContext */ RenderContextInView => String): Self = this.set("Header", js.Any.fromFunction1(value))
+    def setItem(value: ItemCallback | String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: SingleTemplateCallback | String): Self = this.set("Header", value.asInstanceOf[js.Any])
+    def setItemFunction1(value: /* renderContext */ RenderContext => String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeader: Self = this.set("Header", js.undefined)
+    def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
     
     @scala.inline
-    def setItemFunction1(value: /* renderContext */ RenderContext => String): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setView(value: RenderCallback | String): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: ItemCallback | String): Self = this.set("Item", value.asInstanceOf[js.Any])
+    def setViewFunction1(value: /* ctx */ RenderContext => Unit): Self = StObject.set(x, "View", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteItem: Self = this.set("Item", js.undefined)
-    
-    @scala.inline
-    def setViewFunction1(value: /* ctx */ RenderContext => Unit): Self = this.set("View", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setView(value: RenderCallback | String): Self = this.set("View", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("View", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
   }
 }

@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeMaterialModes extends js.Object
+sealed trait NodeMaterialModes extends StObject
 @JSGlobal("BABYLON.NodeMaterialModes")
 @js.native
-object NodeMaterialModes extends js.Object {
+object NodeMaterialModes extends StObject {
   
   /** Regular material */
   @js.native

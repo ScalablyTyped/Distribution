@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupPlanTemplatesListMember extends js.Object {
+trait BackupPlanTemplatesListMember extends StObject {
   
   /**
     * Uniquely identifies a stored backup plan template.
@@ -26,30 +27,18 @@ object BackupPlanTemplatesListMember {
   }
   
   @scala.inline
-  implicit class BackupPlanTemplatesListMemberOps[Self <: BackupPlanTemplatesListMember] (val x: Self) extends AnyVal {
+  implicit class BackupPlanTemplatesListMemberMutableBuilder[Self <: BackupPlanTemplatesListMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanTemplateId(value: String): Self = StObject.set(x, "BackupPlanTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanTemplateIdUndefined: Self = StObject.set(x, "BackupPlanTemplateId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupPlanTemplateName(value: String): Self = StObject.set(x, "BackupPlanTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanTemplateId(value: String): Self = this.set("BackupPlanTemplateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPlanTemplateId: Self = this.set("BackupPlanTemplateId", js.undefined)
-    
-    @scala.inline
-    def setBackupPlanTemplateName(value: String): Self = this.set("BackupPlanTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPlanTemplateName: Self = this.set("BackupPlanTemplateName", js.undefined)
+    def setBackupPlanTemplateNameUndefined: Self = StObject.set(x, "BackupPlanTemplateName", js.undefined)
   }
 }

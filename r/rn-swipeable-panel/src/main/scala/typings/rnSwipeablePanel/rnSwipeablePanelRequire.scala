@@ -1,5 +1,6 @@
 package typings.rnSwipeablePanel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("rn-swipeable-panel", JSImport.Namespace)
 @js.native
-object rnSwipeablePanelRequire extends js.Object
+object rnSwipeablePanelRequire extends StObject

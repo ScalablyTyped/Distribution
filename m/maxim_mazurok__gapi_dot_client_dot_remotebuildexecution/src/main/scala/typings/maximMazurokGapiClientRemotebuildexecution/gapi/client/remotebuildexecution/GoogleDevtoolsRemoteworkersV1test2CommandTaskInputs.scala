@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends js.Object {
+trait GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject {
   
   /**
     * The command itself to run (e.g., argv). This field should be passed directly to the underlying operating system, and so it must be sensible to that operating system. For example, on
@@ -45,60 +46,48 @@ object GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsOps[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setArgumentsVarargs(value: String*): Self = this.set("arguments", js.Array(value :_*))
+    def setEnvironmentVariables(value: js.Array[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: js.Array[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setEnvironmentVariablesVarargs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentVariablesVarargs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = this.set("environmentVariables", js.Array(value :_*))
+    def setFiles(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Digest]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: js.Array[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2Digest*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2Digest*): Self = this.set("files", js.Array(value :_*))
+    def setInlineBlobs(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Blob]): Self = StObject.set(x, "inlineBlobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Digest]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setInlineBlobsUndefined: Self = StObject.set(x, "inlineBlobs", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setInlineBlobsVarargs(value: GoogleDevtoolsRemoteworkersV1test2Blob*): Self = StObject.set(x, "inlineBlobs", js.Array(value :_*))
     
     @scala.inline
-    def setInlineBlobsVarargs(value: GoogleDevtoolsRemoteworkersV1test2Blob*): Self = this.set("inlineBlobs", js.Array(value :_*))
+    def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineBlobs(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Blob]): Self = this.set("inlineBlobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineBlobs: Self = this.set("inlineBlobs", js.undefined)
-    
-    @scala.inline
-    def setWorkingDirectory(value: String): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

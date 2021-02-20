@@ -2,16 +2,15 @@ package typings.inversifyInjectDecorators
 
 import typings.inversify.interfacesMod.interfaces.Abstract
 import typings.inversify.interfacesMod.interfaces.Newable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait LazyInject extends js.Object {
+  trait LazyInject extends StObject {
     
     def lazyInject(serviceIdentifier: String): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = js.native
     def lazyInject(serviceIdentifier: js.Symbol): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = js.native

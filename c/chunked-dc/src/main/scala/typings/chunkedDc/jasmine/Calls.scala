@@ -1,11 +1,12 @@
 package typings.chunkedDc.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Calls extends js.Object {
+trait Calls extends StObject {
   
   /** By chaining the spy with calls.all(), will return the context (the this) and arguments passed all calls **/
   def all(): js.Array[CallInfo] = js.native
@@ -49,42 +50,30 @@ object Calls {
   }
   
   @scala.inline
-  implicit class CallsOps[Self <: Calls] (val x: Self) extends AnyVal {
+  implicit class CallsMutableBuilder[Self <: Calls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: () => js.Array[CallInfo]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllArgs(value: () => js.Array[_]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAll(value: () => js.Array[CallInfo]): Self = this.set("all", js.Any.fromFunction0(value))
+    def setArgsFor(value: Double => js.Array[_]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllArgs(value: () => js.Array[_]): Self = this.set("allArgs", js.Any.fromFunction0(value))
+    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAny(value: () => Boolean): Self = this.set("any", js.Any.fromFunction0(value))
+    def setFirst(value: () => CallInfo): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArgsFor(value: Double => js.Array[_]): Self = this.set("argsFor", js.Any.fromFunction1(value))
+    def setMostRecent(value: () => CallInfo): Self = StObject.set(x, "mostRecent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: () => Double): Self = this.set("count", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFirst(value: () => CallInfo): Self = this.set("first", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMostRecent(value: () => CallInfo): Self = this.set("mostRecent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class MVCxClientImageGallery ()
   extends typings.devexpressWeb.MVCxClientImageGallery
-/* static members */
-@JSGlobal("MVCxClientImageGallery")
-@js.native
-object MVCxClientImageGallery extends js.Object {
+object MVCxClientImageGallery {
   
   /**
     * Converts the specified object to the MVCxClientImageGallery type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("MVCxClientImageGallery.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientImageGallery = js.native
 }

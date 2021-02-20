@@ -1,5 +1,6 @@
 package typings.jqueryCleditor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * custom plugins and override built in functionality.
   */
 @js.native
-trait JQueryCLEditorStatic extends js.Object {
+trait JQueryCLEditorStatic extends StObject {
   
   var buttons: js.Array[JQueryCLEditorButtonDefinition] = js.native
   
@@ -30,30 +31,18 @@ object JQueryCLEditorStatic {
   }
   
   @scala.inline
-  implicit class JQueryCLEditorStaticOps[Self <: JQueryCLEditorStatic] (val x: Self) extends AnyVal {
+  implicit class JQueryCLEditorStaticMutableBuilder[Self <: JQueryCLEditorStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[JQueryCLEditorButtonDefinition]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsVarargs(value: JQueryCLEditorButtonDefinition*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultOptions(value: JQueryCLEditorOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonsVarargs(value: JQueryCLEditorButtonDefinition*): Self = this.set("buttons", js.Array(value :_*))
-    
-    @scala.inline
-    def setButtons(value: js.Array[JQueryCLEditorButtonDefinition]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultOptions(value: JQueryCLEditorOptions): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImagesPath(value: () => String): Self = this.set("imagesPath", js.Any.fromFunction0(value))
+    def setImagesPath(value: () => String): Self = StObject.set(x, "imagesPath", js.Any.fromFunction0(value))
   }
 }

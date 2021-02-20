@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRecommenderConfigurationRequest extends js.Object {
+trait CreateRecommenderConfigurationRequest extends StObject {
   
   var CreateRecommenderConfiguration: typings.awsSdk.pinpointMod.CreateRecommenderConfiguration = js.native
 }
@@ -18,21 +19,9 @@ object CreateRecommenderConfigurationRequest {
   }
   
   @scala.inline
-  implicit class CreateRecommenderConfigurationRequestOps[Self <: CreateRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRecommenderConfigurationRequestMutableBuilder[Self <: CreateRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateRecommenderConfiguration(value: CreateRecommenderConfiguration): Self = this.set("CreateRecommenderConfiguration", value.asInstanceOf[js.Any])
+    def setCreateRecommenderConfiguration(value: CreateRecommenderConfiguration): Self = StObject.set(x, "CreateRecommenderConfiguration", value.asInstanceOf[js.Any])
   }
 }

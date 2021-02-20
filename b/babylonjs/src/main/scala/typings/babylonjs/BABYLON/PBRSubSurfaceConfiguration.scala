@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PBRSubSurfaceConfiguration extends js.Object {
+trait PBRSubSurfaceConfiguration extends StObject {
   
   /**
     * Returns the texture used for refraction or null if none is used.

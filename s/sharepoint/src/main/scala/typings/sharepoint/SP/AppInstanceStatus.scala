@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppInstanceStatus extends js.Object
+sealed trait AppInstanceStatus extends StObject
 @JSGlobal("SP.AppInstanceStatus")
 @js.native
-object AppInstanceStatus extends js.Object {
+object AppInstanceStatus extends StObject {
   
   @js.native
   sealed trait canceling extends AppInstanceStatus

@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Mdq.EntityQueryExpression")
 @js.native
-class EntityQueryExpression protected () extends js.Object {
+class EntityQueryExpression protected () extends StObject {
   def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression) = this()
   def this(
     criteria: MetadataFilterExpression,

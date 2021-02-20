@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceUpdate extends js.Object {
+trait ServiceUpdate extends StObject {
   
   /**
     * Indicates whether the service update will be automatically applied once the recommended apply-by date has expired. 
@@ -76,90 +77,78 @@ object ServiceUpdate {
   }
   
   @scala.inline
-  implicit class ServiceUpdateOps[Self <: ServiceUpdate] (val x: Self) extends AnyVal {
+  implicit class ServiceUpdateMutableBuilder[Self <: ServiceUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdateAfterRecommendedApplyByDate(value: BooleanOptional): Self = StObject.set(x, "AutoUpdateAfterRecommendedApplyByDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpdateAfterRecommendedApplyByDateUndefined: Self = StObject.set(x, "AutoUpdateAfterRecommendedApplyByDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdateAfterRecommendedApplyByDate(value: BooleanOptional): Self = this.set("AutoUpdateAfterRecommendedApplyByDate", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdateAfterRecommendedApplyByDate: Self = this.set("AutoUpdateAfterRecommendedApplyByDate", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setEstimatedUpdateTime(value: String): Self = StObject.set(x, "EstimatedUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setEstimatedUpdateTimeUndefined: Self = StObject.set(x, "EstimatedUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setServiceUpdateDescription(value: String): Self = StObject.set(x, "ServiceUpdateDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedUpdateTime(value: String): Self = this.set("EstimatedUpdateTime", value.asInstanceOf[js.Any])
+    def setServiceUpdateDescriptionUndefined: Self = StObject.set(x, "ServiceUpdateDescription", js.undefined)
     
     @scala.inline
-    def deleteEstimatedUpdateTime: Self = this.set("EstimatedUpdateTime", js.undefined)
+    def setServiceUpdateEndDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateDescription(value: String): Self = this.set("ServiceUpdateDescription", value.asInstanceOf[js.Any])
+    def setServiceUpdateEndDateUndefined: Self = StObject.set(x, "ServiceUpdateEndDate", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateDescription: Self = this.set("ServiceUpdateDescription", js.undefined)
+    def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateEndDate(value: TStamp): Self = this.set("ServiceUpdateEndDate", value.asInstanceOf[js.Any])
+    def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateEndDate: Self = this.set("ServiceUpdateEndDate", js.undefined)
+    def setServiceUpdateRecommendedApplyByDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    def setServiceUpdateRecommendedApplyByDateUndefined: Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
+    def setServiceUpdateReleaseDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateReleaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateRecommendedApplyByDate(value: TStamp): Self = this.set("ServiceUpdateRecommendedApplyByDate", value.asInstanceOf[js.Any])
+    def setServiceUpdateReleaseDateUndefined: Self = StObject.set(x, "ServiceUpdateReleaseDate", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateRecommendedApplyByDate: Self = this.set("ServiceUpdateRecommendedApplyByDate", js.undefined)
+    def setServiceUpdateSeverity(value: ServiceUpdateSeverity): Self = StObject.set(x, "ServiceUpdateSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateReleaseDate(value: TStamp): Self = this.set("ServiceUpdateReleaseDate", value.asInstanceOf[js.Any])
+    def setServiceUpdateSeverityUndefined: Self = StObject.set(x, "ServiceUpdateSeverity", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateReleaseDate: Self = this.set("ServiceUpdateReleaseDate", js.undefined)
+    def setServiceUpdateStatus(value: ServiceUpdateStatus): Self = StObject.set(x, "ServiceUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateSeverity(value: ServiceUpdateSeverity): Self = this.set("ServiceUpdateSeverity", value.asInstanceOf[js.Any])
+    def setServiceUpdateStatusUndefined: Self = StObject.set(x, "ServiceUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateSeverity: Self = this.set("ServiceUpdateSeverity", js.undefined)
+    def setServiceUpdateType(value: ServiceUpdateType): Self = StObject.set(x, "ServiceUpdateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateStatus(value: ServiceUpdateStatus): Self = this.set("ServiceUpdateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceUpdateStatus: Self = this.set("ServiceUpdateStatus", js.undefined)
-    
-    @scala.inline
-    def setServiceUpdateType(value: ServiceUpdateType): Self = this.set("ServiceUpdateType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceUpdateType: Self = this.set("ServiceUpdateType", js.undefined)
+    def setServiceUpdateTypeUndefined: Self = StObject.set(x, "ServiceUpdateType", js.undefined)
   }
 }

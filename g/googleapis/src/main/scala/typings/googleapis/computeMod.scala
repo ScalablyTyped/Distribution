@@ -1,8 +1,9 @@
 package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
+import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.alphaMod.computeAlpha.Compute
 import typings.googleapis.alphaMod.computeAlpha.Options
 import typings.googleapis.googleapisStrings.alpha
@@ -11,74 +12,91 @@ import typings.googleapis.googleapisStrings.v1
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis/build/src/apis/compute", JSImport.Namespace)
-@js.native
-object computeMod extends js.Object {
+object computeMod {
   
-  def compute(options: Options): Compute = js.native
-  def compute(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = js.native
-  def compute(options: typings.googleapis.computeV1Mod.computeV1.Options): typings.googleapis.computeV1Mod.computeV1.Compute = js.native
-  @JSName("compute")
-  def compute_alpha(version: alpha): Compute = js.native
-  @JSName("compute")
-  def compute_beta(version: beta): typings.googleapis.betaMod.computeBeta.Compute = js.native
-  @JSName("compute")
-  def compute_v1(version: v1): typings.googleapis.computeV1Mod.computeV1.Compute = js.native
-  
-  @js.native
-  object VERSIONS extends js.Object {
+  object VERSIONS {
     
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS.alpha")
     @js.native
     class alpha protected () extends Compute {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS.alpha")
     @js.native
-    object alpha
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Compute]
-            ]
+    def alpha: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Compute] = js.native
+    @scala.inline
+    def alpha_=(
+      x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Compute]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alpha")(x.asInstanceOf[js.Any])
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS.beta")
     @js.native
     class beta protected ()
       extends typings.googleapis.betaMod.computeBeta.Compute {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS.beta")
     @js.native
-    object beta
-      extends TopLevel[
-              Instantiable2[
-                /* options */ GlobalOptions, 
-                /* google */ js.UndefOr[GoogleConfigurable], 
-                typings.googleapis.betaMod.computeBeta.Compute
-              ]
-            ]
+    def beta: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        typings.googleapis.betaMod.computeBeta.Compute
+      ] = js.native
+    @scala.inline
+    def beta_=(
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          typings.googleapis.betaMod.computeBeta.Compute
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beta")(x.asInstanceOf[js.Any])
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS.v1")
     @js.native
     class v1 protected ()
       extends typings.googleapis.computeV1Mod.computeV1.Compute {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/compute", "VERSIONS.v1")
     @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[
-                /* options */ GlobalOptions, 
-                /* google */ js.UndefOr[GoogleConfigurable], 
-                typings.googleapis.computeV1Mod.computeV1.Compute
-              ]
-            ]
+    def v1: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        typings.googleapis.computeV1Mod.computeV1.Compute
+      ] = js.native
+    @scala.inline
+    def v1_=(
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          typings.googleapis.computeV1Mod.computeV1.Compute
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object auth extends TopLevel[AuthPlus] {
+  object auth extends Shortcut {
     
+    @JSImport("googleapis/build/src/apis/compute", "auth")
+    @js.native
+    val ^ : AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "auth.Compute")
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,6 +107,24 @@ object computeMod extends js.Object {
     class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
+    /**
+      * Export DefaultTransporter as a static property of the class.
+      */
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "auth.DefaultTransporter")
+    @js.native
+    class DefaultTransporter ()
+      extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+    /* static members */
+    object DefaultTransporter {
+      
+      @JSImport("googleapis/build/src/apis/compute", "auth.DefaultTransporter.constructor")
+      @js.native
+      def constructor(): js.Any = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "auth.JWT")
     @js.native
     class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
@@ -106,5 +142,44 @@ object computeMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/compute", "auth.OAuth2")
+    @js.native
+    /**
+      * Handles OAuth2 flow for Google APIs.
+      *
+      * @param clientId The authentication client ID.
+      * @param clientSecret The authentication client secret.
+      * @param redirectUri The URI to redirect to after completing the auth
+      * request.
+      * @param opts optional options for overriding the given parameters.
+      * @constructor
+      */
+    class OAuth2 () extends OAuth2Client
+    
+    type _To = AuthPlus
+    
+    /* This means you don't have to write `^`, but can instead just say `auth.foo` */
+    override def _to: AuthPlus = ^
   }
+  
+  @JSImport("googleapis/build/src/apis/compute", "compute")
+  @js.native
+  def compute(options: Options): Compute = js.native
+  @JSImport("googleapis/build/src/apis/compute", "compute")
+  @js.native
+  def compute(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = js.native
+  @JSImport("googleapis/build/src/apis/compute", "compute")
+  @js.native
+  def compute(options: typings.googleapis.computeV1Mod.computeV1.Options): typings.googleapis.computeV1Mod.computeV1.Compute = js.native
+  @JSImport("googleapis/build/src/apis/compute", "compute")
+  @js.native
+  def compute_alpha(version: alpha): Compute = js.native
+  @JSImport("googleapis/build/src/apis/compute", "compute")
+  @js.native
+  def compute_beta(version: beta): typings.googleapis.betaMod.computeBeta.Compute = js.native
+  @JSImport("googleapis/build/src/apis/compute", "compute")
+  @js.native
+  def compute_v1(version: v1): typings.googleapis.computeV1Mod.computeV1.Compute = js.native
 }

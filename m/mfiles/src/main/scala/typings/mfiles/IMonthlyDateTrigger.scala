@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFTriggerMonth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMonthlyDateTrigger extends js.Object {
+trait IMonthlyDateTrigger extends StObject {
   
   var Days: Double = js.native
   
@@ -21,24 +22,12 @@ object IMonthlyDateTrigger {
   }
   
   @scala.inline
-  implicit class IMonthlyDateTriggerOps[Self <: IMonthlyDateTrigger] (val x: Self) extends AnyVal {
+  implicit class IMonthlyDateTriggerMutableBuilder[Self <: IMonthlyDateTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDays(value: Double): Self = this.set("Days", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonths(value: MFTriggerMonth): Self = this.set("Months", value.asInstanceOf[js.Any])
+    def setMonths(value: MFTriggerMonth): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
   }
 }

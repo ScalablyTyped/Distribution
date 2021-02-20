@@ -1,12 +1,13 @@
 package typings.reactNativeSvgCharts.mod
 
 import typings.reactNativeSvgCharts.anon.PartialLineProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridProps[T] extends js.Object {
+trait GridProps[T] extends StObject {
   
   var belowChart: js.UndefOr[Boolean] = js.native
   
@@ -29,57 +30,45 @@ object GridProps {
   }
   
   @scala.inline
-  implicit class GridPropsOps[Self <: GridProps[_], T] (val x: Self with GridProps[T]) extends AnyVal {
+  implicit class GridPropsMutableBuilder[Self <: GridProps[_], T] (val x: Self with GridProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBelowChart(value: Boolean): Self = StObject.set(x, "belowChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBelowChartUndefined: Self = StObject.set(x, "belowChart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: GridDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBelowChart(value: Boolean): Self = this.set("belowChart", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteBelowChart: Self = this.set("belowChart", js.undefined)
+    def setSvg(value: PartialLineProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: GridDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setTicks(value: js.Array[T]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: PartialLineProps): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
     @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setTicksVarargs(value: T*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
     @scala.inline
-    def setTicksVarargs(value: T*): Self = this.set("ticks", js.Array(value :_*))
+    def setX(value: /* t */ T => Double): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTicks(value: js.Array[T]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
+    def setY(value: /* t */ T => Double): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setX(value: /* t */ T => Double): Self = this.set("x", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: /* t */ T => Double): Self = this.set("y", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

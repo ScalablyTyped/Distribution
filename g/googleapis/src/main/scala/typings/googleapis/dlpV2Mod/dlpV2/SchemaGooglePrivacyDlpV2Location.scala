@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the location of the finding.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Location extends js.Object {
+trait SchemaGooglePrivacyDlpV2Location extends StObject {
   
   /**
     * Zero-based byte offsets delimiting the finding. These are relative to the
@@ -39,39 +40,27 @@ object SchemaGooglePrivacyDlpV2Location {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2LocationOps[Self <: SchemaGooglePrivacyDlpV2Location] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2LocationMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteRange(value: SchemaGooglePrivacyDlpV2Range): Self = StObject.set(x, "byteRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteRangeUndefined: Self = StObject.set(x, "byteRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodepointRange(value: SchemaGooglePrivacyDlpV2Range): Self = StObject.set(x, "codepointRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteRange(value: SchemaGooglePrivacyDlpV2Range): Self = this.set("byteRange", value.asInstanceOf[js.Any])
+    def setCodepointRangeUndefined: Self = StObject.set(x, "codepointRange", js.undefined)
     
     @scala.inline
-    def deleteByteRange: Self = this.set("byteRange", js.undefined)
+    def setContentLocations(value: js.Array[SchemaGooglePrivacyDlpV2ContentLocation]): Self = StObject.set(x, "contentLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodepointRange(value: SchemaGooglePrivacyDlpV2Range): Self = this.set("codepointRange", value.asInstanceOf[js.Any])
+    def setContentLocationsUndefined: Self = StObject.set(x, "contentLocations", js.undefined)
     
     @scala.inline
-    def deleteCodepointRange: Self = this.set("codepointRange", js.undefined)
-    
-    @scala.inline
-    def setContentLocationsVarargs(value: SchemaGooglePrivacyDlpV2ContentLocation*): Self = this.set("contentLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setContentLocations(value: js.Array[SchemaGooglePrivacyDlpV2ContentLocation]): Self = this.set("contentLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentLocations: Self = this.set("contentLocations", js.undefined)
+    def setContentLocationsVarargs(value: SchemaGooglePrivacyDlpV2ContentLocation*): Self = StObject.set(x, "contentLocations", js.Array(value :_*))
   }
 }

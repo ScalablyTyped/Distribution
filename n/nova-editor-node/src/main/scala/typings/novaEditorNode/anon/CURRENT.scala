@@ -1,12 +1,13 @@
 package typings.novaEditorNode.anon
 
 import typings.novaEditorNode.FileSystemBitField
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CURRENT extends js.Object {
+trait CURRENT extends StObject {
   
   var CURRENT: FileSystemBitField = js.native
   
@@ -39,39 +40,27 @@ object CURRENT {
   }
   
   @scala.inline
-  implicit class CURRENTOps[Self <: CURRENT] (val x: Self) extends AnyVal {
+  implicit class CURRENTMutableBuilder[Self <: CURRENT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCURRENT(value: FileSystemBitField): Self = StObject.set(x, "CURRENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEND(value: FileSystemBitField): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF_OK(value: FileSystemBitField): Self = StObject.set(x, "F_OK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCURRENT(value: FileSystemBitField): Self = this.set("CURRENT", value.asInstanceOf[js.Any])
+    def setR_OK(value: FileSystemBitField): Self = StObject.set(x, "R_OK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEND(value: FileSystemBitField): Self = this.set("END", value.asInstanceOf[js.Any])
+    def setSTART(value: FileSystemBitField): Self = StObject.set(x, "START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_OK(value: FileSystemBitField): Self = this.set("F_OK", value.asInstanceOf[js.Any])
+    def setW_OK(value: FileSystemBitField): Self = StObject.set(x, "W_OK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR_OK(value: FileSystemBitField): Self = this.set("R_OK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTART(value: FileSystemBitField): Self = this.set("START", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW_OK(value: FileSystemBitField): Self = this.set("W_OK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX_OK(value: FileSystemBitField): Self = this.set("X_OK", value.asInstanceOf[js.Any])
+    def setX_OK(value: FileSystemBitField): Self = StObject.set(x, "X_OK", value.asInstanceOf[js.Any])
   }
 }

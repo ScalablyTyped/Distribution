@@ -2,13 +2,14 @@ package typings.exceljs.anon
 
 import typings.exceljs.mod.HeaderArray
 import typings.exceljs.mod.HeaderTransformFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.FastCsvParserOptionsArgs> */
 @js.native
-trait PartialFastCsvParserOptio extends js.Object {
+trait PartialFastCsvParserOptio extends StObject {
   
   var comment: js.UndefOr[String] = js.native
   
@@ -53,129 +54,117 @@ object PartialFastCsvParserOptio {
   }
   
   @scala.inline
-  implicit class PartialFastCsvParserOptioOps[Self <: PartialFastCsvParserOptio] (val x: Self) extends AnyVal {
+  implicit class PartialFastCsvParserOptioMutableBuilder[Self <: PartialFastCsvParserOptio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setDiscardUnmappedColumns(value: Boolean): Self = StObject.set(x, "discardUnmappedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setDiscardUnmappedColumnsUndefined: Self = StObject.set(x, "discardUnmappedColumns", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscardUnmappedColumns(value: Boolean): Self = this.set("discardUnmappedColumns", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteDiscardUnmappedColumns: Self = this.set("discardUnmappedColumns", js.undefined)
+    def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setHeaders(value: Boolean | HeaderTransformFunction | HeaderArray): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscape(value: String): Self = this.set("escape", value.asInstanceOf[js.Any])
+    def setHeadersFunction1(value: /* headers */ HeaderArray => HeaderArray): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEscape: Self = this.set("escape", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setHeadersVarargs(value: (js.UndefOr[String | Null])*): Self = this.set("headers", js.Array(value :_*))
+    def setHeadersVarargs(value: (js.UndefOr[String | Null])*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersFunction1(value: /* headers */ HeaderArray => HeaderArray): Self = this.set("headers", js.Any.fromFunction1(value))
+    def setIgnoreEmpty(value: Boolean): Self = StObject.set(x, "ignoreEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Boolean | HeaderTransformFunction | HeaderArray): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setIgnoreEmptyUndefined: Self = StObject.set(x, "ignoreEmpty", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setLtrim(value: Boolean): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreEmpty(value: Boolean): Self = this.set("ignoreEmpty", value.asInstanceOf[js.Any])
+    def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
     
     @scala.inline
-    def deleteIgnoreEmpty: Self = this.set("ignoreEmpty", js.undefined)
+    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLtrim(value: Boolean): Self = this.set("ltrim", value.asInstanceOf[js.Any])
+    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
     @scala.inline
-    def deleteLtrim: Self = this.set("ltrim", js.undefined)
+    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
+    def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
     @scala.inline
-    def deleteMaxRows: Self = this.set("maxRows", js.undefined)
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectMode(value: Boolean): Self = this.set("objectMode", value.asInstanceOf[js.Any])
+    def setQuoteNull: Self = StObject.set(x, "quote", null)
     
     @scala.inline
-    def deleteObjectMode: Self = this.set("objectMode", js.undefined)
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
     @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    def setRenameHeaders(value: Boolean): Self = StObject.set(x, "renameHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
+    def setRenameHeadersUndefined: Self = StObject.set(x, "renameHeaders", js.undefined)
     
     @scala.inline
-    def setQuoteNull: Self = this.set("quote", null)
+    def setRtrim(value: Boolean): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenameHeaders(value: Boolean): Self = this.set("renameHeaders", value.asInstanceOf[js.Any])
+    def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
     
     @scala.inline
-    def deleteRenameHeaders: Self = this.set("renameHeaders", js.undefined)
+    def setSkipLines(value: Double): Self = StObject.set(x, "skipLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtrim(value: Boolean): Self = this.set("rtrim", value.asInstanceOf[js.Any])
+    def setSkipLinesUndefined: Self = StObject.set(x, "skipLines", js.undefined)
     
     @scala.inline
-    def deleteRtrim: Self = this.set("rtrim", js.undefined)
+    def setSkipRows(value: Double): Self = StObject.set(x, "skipRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipLines(value: Double): Self = this.set("skipLines", value.asInstanceOf[js.Any])
+    def setSkipRowsUndefined: Self = StObject.set(x, "skipRows", js.undefined)
     
     @scala.inline
-    def deleteSkipLines: Self = this.set("skipLines", js.undefined)
+    def setStrictColumnHandling(value: Boolean): Self = StObject.set(x, "strictColumnHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipRows(value: Double): Self = this.set("skipRows", value.asInstanceOf[js.Any])
+    def setStrictColumnHandlingUndefined: Self = StObject.set(x, "strictColumnHandling", js.undefined)
     
     @scala.inline
-    def deleteSkipRows: Self = this.set("skipRows", js.undefined)
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictColumnHandling(value: Boolean): Self = this.set("strictColumnHandling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictColumnHandling: Self = this.set("strictColumnHandling", js.undefined)
-    
-    @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
   }
 }

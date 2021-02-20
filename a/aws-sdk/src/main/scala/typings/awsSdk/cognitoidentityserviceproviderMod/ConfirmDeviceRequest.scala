@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmDeviceRequest extends js.Object {
+trait ConfirmDeviceRequest extends StObject {
   
   /**
     * The access token.
@@ -36,36 +37,24 @@ object ConfirmDeviceRequest {
   }
   
   @scala.inline
-  implicit class ConfirmDeviceRequestOps[Self <: ConfirmDeviceRequest] (val x: Self) extends AnyVal {
+  implicit class ConfirmDeviceRequestMutableBuilder[Self <: ConfirmDeviceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: DeviceNameType): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
     @scala.inline
-    def setDeviceKey(value: DeviceKeyType): Self = this.set("DeviceKey", value.asInstanceOf[js.Any])
+    def setDeviceSecretVerifierConfig(value: DeviceSecretVerifierConfigType): Self = StObject.set(x, "DeviceSecretVerifierConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: DeviceNameType): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
-    
-    @scala.inline
-    def setDeviceSecretVerifierConfig(value: DeviceSecretVerifierConfigType): Self = this.set("DeviceSecretVerifierConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceSecretVerifierConfig: Self = this.set("DeviceSecretVerifierConfig", js.undefined)
+    def setDeviceSecretVerifierConfigUndefined: Self = StObject.set(x, "DeviceSecretVerifierConfig", js.undefined)
   }
 }

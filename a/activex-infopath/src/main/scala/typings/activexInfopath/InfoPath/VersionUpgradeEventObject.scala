@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionUpgradeEventObject extends js.Object {
+trait VersionUpgradeEventObject extends StObject {
   
   val DocumentVersion: String = js.native
   
@@ -34,33 +35,21 @@ object VersionUpgradeEventObject {
   }
   
   @scala.inline
-  implicit class VersionUpgradeEventObjectOps[Self <: VersionUpgradeEventObject] (val x: Self) extends AnyVal {
+  implicit class VersionUpgradeEventObjectMutableBuilder[Self <: VersionUpgradeEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentVersion(value: String): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotVersionUpgradeEventObject_typekey(value: VersionUpgradeEventObject): Self = StObject.set(x, "InfoPath.VersionUpgradeEventObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersion(value: String): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    def setSolutionVersion(value: String): Self = StObject.set(x, "SolutionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotVersionUpgradeEventObject_typekey(value: VersionUpgradeEventObject): Self = this.set("InfoPath.VersionUpgradeEventObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = this.set("ReturnStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSolutionVersion(value: String): Self = this.set("SolutionVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = this.set("XDocument", value.asInstanceOf[js.Any])
+    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

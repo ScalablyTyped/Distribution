@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOperationStepInfo extends js.Object {
+trait ClusterOperationStepInfo extends StObject {
   
   /**
     * 
@@ -23,24 +24,12 @@ object ClusterOperationStepInfo {
   }
   
   @scala.inline
-  implicit class ClusterOperationStepInfoOps[Self <: ClusterOperationStepInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterOperationStepInfoMutableBuilder[Self <: ClusterOperationStepInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStepStatus(value: string): Self = StObject.set(x, "StepStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStepStatus(value: string): Self = this.set("StepStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepStatus: Self = this.set("StepStatus", js.undefined)
+    def setStepStatusUndefined: Self = StObject.set(x, "StepStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISourceObjectFiles extends js.Object {
+trait ISourceObjectFiles extends StObject {
   
   def Add(Index: Double, SourceObjectFile: ISourceObjectFile): Unit = js.native
   
@@ -35,36 +36,24 @@ object ISourceObjectFiles {
   }
   
   @scala.inline
-  implicit class ISourceObjectFilesOps[Self <: ISourceObjectFiles] (val x: Self) extends AnyVal {
+  implicit class ISourceObjectFilesMutableBuilder[Self <: ISourceObjectFiles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, ISourceObjectFile) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEmptyFile(value: (String, String) => ISourceObjectFile): Self = StObject.set(x, "AddEmptyFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddFile(value: (String, String, String) => ISourceObjectFile): Self = StObject.set(x, "AddFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAdd(value: (Double, ISourceObjectFile) => Unit): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEmptyFile(value: (String, String) => ISourceObjectFile): Self = this.set("AddEmptyFile", js.Any.fromFunction2(value))
+    def setItem(value: Double => ISourceObjectFile): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFile(value: (String, String, String) => ISourceObjectFile): Self = this.set("AddFile", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Double => ISourceObjectFile): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

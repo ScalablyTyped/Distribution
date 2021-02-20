@@ -1,12 +1,13 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Global
 @js.native
-trait TransactionCollections extends js.Object {
+trait TransactionCollections extends StObject {
   
   var allowImplicit: js.UndefOr[Boolean] = js.native
   
@@ -23,42 +24,30 @@ object TransactionCollections {
   }
   
   @scala.inline
-  implicit class TransactionCollectionsOps[Self <: TransactionCollections] (val x: Self) extends AnyVal {
+  implicit class TransactionCollectionsMutableBuilder[Self <: TransactionCollections] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowImplicit(value: Boolean): Self = StObject.set(x, "allowImplicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowImplicitUndefined: Self = StObject.set(x, "allowImplicit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead(value: String | js.Array[String]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowImplicit(value: Boolean): Self = this.set("allowImplicit", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deleteAllowImplicit: Self = this.set("allowImplicit", js.undefined)
+    def setReadVarargs(value: String*): Self = StObject.set(x, "read", js.Array(value :_*))
     
     @scala.inline
-    def setReadVarargs(value: String*): Self = this.set("read", js.Array(value :_*))
+    def setWrite(value: String | js.Array[String]): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: String | js.Array[String]): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
-    
-    @scala.inline
-    def setWriteVarargs(value: String*): Self = this.set("write", js.Array(value :_*))
-    
-    @scala.inline
-    def setWrite(value: String | js.Array[String]): Self = this.set("write", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteVarargs(value: String*): Self = StObject.set(x, "write", js.Array(value :_*))
   }
 }

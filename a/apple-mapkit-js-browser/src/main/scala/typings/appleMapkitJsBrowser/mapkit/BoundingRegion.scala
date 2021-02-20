@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * northeast and southwest corners.
   */
 @js.native
-trait BoundingRegion extends js.Object {
+trait BoundingRegion extends StObject {
   
   /**
     * Returns a copy of the calling bounding region.
@@ -57,36 +58,24 @@ object BoundingRegion {
   }
   
   @scala.inline
-  implicit class BoundingRegionOps[Self <: BoundingRegion] (val x: Self) extends AnyVal {
+  implicit class BoundingRegionMutableBuilder[Self <: BoundingRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => BoundingRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEastLongitude(value: Double): Self = StObject.set(x, "eastLongitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNorthLatitude(value: Double): Self = StObject.set(x, "northLatitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => BoundingRegion): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setSouthLatitude(value: Double): Self = StObject.set(x, "southLatitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEastLongitude(value: Double): Self = this.set("eastLongitude", value.asInstanceOf[js.Any])
+    def setToCoordinateRegion(value: () => CoordinateRegion): Self = StObject.set(x, "toCoordinateRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNorthLatitude(value: Double): Self = this.set("northLatitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouthLatitude(value: Double): Self = this.set("southLatitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToCoordinateRegion(value: () => CoordinateRegion): Self = this.set("toCoordinateRegion", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWestLongitude(value: Double): Self = this.set("westLongitude", value.asInstanceOf[js.Any])
+    def setWestLongitude(value: Double): Self = StObject.set(x, "westLongitude", value.asInstanceOf[js.Any])
   }
 }

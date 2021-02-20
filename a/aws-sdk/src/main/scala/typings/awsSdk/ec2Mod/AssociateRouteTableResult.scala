@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateRouteTableResult extends js.Object {
+trait AssociateRouteTableResult extends StObject {
   
   /**
     * The route table association ID. This ID is required for disassociating the route table.
@@ -26,30 +27,18 @@ object AssociateRouteTableResult {
   }
   
   @scala.inline
-  implicit class AssociateRouteTableResultOps[Self <: AssociateRouteTableResult] (val x: Self) extends AnyVal {
+  implicit class AssociateRouteTableResultMutableBuilder[Self <: AssociateRouteTableResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: String): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
-    
-    @scala.inline
-    def setAssociationState(value: RouteTableAssociationState): Self = this.set("AssociationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociationState: Self = this.set("AssociationState", js.undefined)
+    def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
   }
 }

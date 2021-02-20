@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** UtteranceAnalyses. */
 @js.native
-trait UtteranceAnalyses extends js.Object {
+trait UtteranceAnalyses extends StObject {
   
   /** An array of `UtteranceAnalysis` objects that provides the results for each utterance of the input. */
   var utterances_tone: js.Array[UtteranceAnalysis] = js.native
@@ -23,30 +24,18 @@ object UtteranceAnalyses {
   }
   
   @scala.inline
-  implicit class UtteranceAnalysesOps[Self <: UtteranceAnalyses] (val x: Self) extends AnyVal {
+  implicit class UtteranceAnalysesMutableBuilder[Self <: UtteranceAnalyses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUtterances_tone(value: js.Array[UtteranceAnalysis]): Self = StObject.set(x, "utterances_tone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUtterances_toneVarargs(value: UtteranceAnalysis*): Self = StObject.set(x, "utterances_tone", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtterances_toneVarargs(value: UtteranceAnalysis*): Self = this.set("utterances_tone", js.Array(value :_*))
-    
-    @scala.inline
-    def setUtterances_tone(value: js.Array[UtteranceAnalysis]): Self = this.set("utterances_tone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarning(value: String): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

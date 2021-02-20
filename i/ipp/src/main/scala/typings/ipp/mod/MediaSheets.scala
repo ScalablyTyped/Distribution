@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaSheets extends js.Object {
+trait MediaSheets extends StObject {
   
   var blank: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object MediaSheets {
   }
   
   @scala.inline
-  implicit class MediaSheetsOps[Self <: MediaSheets] (val x: Self) extends AnyVal {
+  implicit class MediaSheetsMutableBuilder[Self <: MediaSheets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlank(value: Double): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlankUndefined: Self = StObject.set(x, "blank", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setFull-color`(value: Double): Self = StObject.set(x, "full-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlank(value: Double): Self = this.set("blank", value.asInstanceOf[js.Any])
+    def `setFull-colorUndefined`: Self = StObject.set(x, "full-color", js.undefined)
     
     @scala.inline
-    def deleteBlank: Self = this.set("blank", js.undefined)
+    def `setHighlight-color`(value: Double): Self = StObject.set(x, "highlight-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFull-color`(value: Double): Self = this.set("full-color", value.asInstanceOf[js.Any])
+    def `setHighlight-colorUndefined`: Self = StObject.set(x, "highlight-color", js.undefined)
     
     @scala.inline
-    def `deleteFull-color`: Self = this.set("full-color", js.undefined)
+    def setMonochrome(value: Double): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHighlight-color`(value: Double): Self = this.set("highlight-color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteHighlight-color`: Self = this.set("highlight-color", js.undefined)
-    
-    @scala.inline
-    def setMonochrome(value: Double): Self = this.set("monochrome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonochrome: Self = this.set("monochrome", js.undefined)
+    def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
   }
 }

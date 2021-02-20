@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexProgramServiceDescriptor extends js.Object {
+trait MultiplexProgramServiceDescriptor extends StObject {
   
   /**
     * Name of the provider.
@@ -26,24 +27,12 @@ object MultiplexProgramServiceDescriptor {
   }
   
   @scala.inline
-  implicit class MultiplexProgramServiceDescriptorOps[Self <: MultiplexProgramServiceDescriptor] (val x: Self) extends AnyVal {
+  implicit class MultiplexProgramServiceDescriptorMutableBuilder[Self <: MultiplexProgramServiceDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProviderName(value: stringMax256): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProviderName(value: stringMax256): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: stringMax256): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    def setServiceName(value: stringMax256): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
   }
 }

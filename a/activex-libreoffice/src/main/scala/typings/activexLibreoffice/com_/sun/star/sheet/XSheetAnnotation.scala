@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,45 +64,33 @@ object XSheetAnnotation {
   }
   
   @scala.inline
-  implicit class XSheetAnnotationOps[Self <: XSheetAnnotation] (val x: Self) extends AnyVal {
+  implicit class XSheetAnnotationMutableBuilder[Self <: XSheetAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAuthor(value: () => String): Self = StObject.set(x, "getAuthor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setGetDate(value: () => String): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDate(value: String): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setGetIsVisible(value: () => Boolean): Self = StObject.set(x, "getIsVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    def setGetPosition(value: () => CellAddress): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPosition(value: CellAddress): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAuthor(value: () => String): Self = this.set("getAuthor", js.Any.fromFunction0(value))
+    def setPosition(value: CellAddress): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDate(value: () => String): Self = this.set("getDate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsVisible(value: () => Boolean): Self = this.set("getIsVisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPosition(value: () => CellAddress): Self = this.set("getPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetIsVisible(value: Boolean => Unit): Self = this.set("setIsVisible", js.Any.fromFunction1(value))
+    def setSetIsVisible(value: Boolean => Unit): Self = StObject.set(x, "setIsVisible", js.Any.fromFunction1(value))
   }
 }

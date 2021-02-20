@@ -1,12 +1,13 @@
 package typings.onsenui.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LazyRepeatOptions extends js.Object {
+trait LazyRepeatOptions extends StObject {
   
   /**
     * @description Should return the height of an item. The index is provided as an argument. This is important when rendering lists where the items have different height. The function is optional and if it isn't present the height of the first item will be automatically calculated and used for all other items.
@@ -42,48 +43,36 @@ object LazyRepeatOptions {
   }
   
   @scala.inline
-  implicit class LazyRepeatOptionsOps[Self <: LazyRepeatOptions] (val x: Self) extends AnyVal {
+  implicit class LazyRepeatOptionsMutableBuilder[Self <: LazyRepeatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculateItemHeight(value: Double): Self = StObject.set(x, "calculateItemHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateItemHeightUndefined: Self = StObject.set(x, "calculateItemHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigureItemScope(value: Double): Self = StObject.set(x, "configureItemScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateItemHeight(value: Double): Self = this.set("calculateItemHeight", value.asInstanceOf[js.Any])
+    def setConfigureItemScopeUndefined: Self = StObject.set(x, "configureItemScope", js.undefined)
     
     @scala.inline
-    def deleteCalculateItemHeight: Self = this.set("calculateItemHeight", js.undefined)
+    def setCountItems(value: Double): Self = StObject.set(x, "countItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigureItemScope(value: Double): Self = this.set("configureItemScope", value.asInstanceOf[js.Any])
+    def setCountItemsUndefined: Self = StObject.set(x, "countItems", js.undefined)
     
     @scala.inline
-    def deleteConfigureItemScope: Self = this.set("configureItemScope", js.undefined)
+    def setCreateItemContent(value: HTMLElement): Self = StObject.set(x, "createItemContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountItems(value: Double): Self = this.set("countItems", value.asInstanceOf[js.Any])
+    def setCreateItemContentUndefined: Self = StObject.set(x, "createItemContent", js.undefined)
     
     @scala.inline
-    def deleteCountItems: Self = this.set("countItems", js.undefined)
+    def setDestroyItem(value: String): Self = StObject.set(x, "destroyItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateItemContent(value: HTMLElement): Self = this.set("createItemContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateItemContent: Self = this.set("createItemContent", js.undefined)
-    
-    @scala.inline
-    def setDestroyItem(value: String): Self = this.set("destroyItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestroyItem: Self = this.set("destroyItem", js.undefined)
+    def setDestroyItemUndefined: Self = StObject.set(x, "destroyItem", js.undefined)
   }
 }

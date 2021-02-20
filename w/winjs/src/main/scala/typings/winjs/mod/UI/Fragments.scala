@@ -2,6 +2,7 @@ package typings.winjs.mod.UI
 
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides functions to load HTML content programmatically.
 **/
-@JSImport("winjs", "UI.Fragments")
-@js.native
-object Fragments extends js.Object {
+object Fragments {
   
   //#region Functions
   /**
@@ -19,13 +18,19 @@ object Fragments extends js.Object {
     * @param href The URI that contains the fragment to be copied.
     * @returns A promise that is fulfilled when the fragment has been prepared for copying.
     **/
+  @JSImport("winjs", "UI.Fragments.cache")
+  @js.native
   def cache(href: String): Promise[_] = js.native
   
   /**
     * Removes any cached information about the specified fragment. This method does not unload any scripts or styles that are referenced by the fragment.
     * @param href The URI that contains the fragment to be cleared. If no URI is provided, the entire contents of the cache are cleared.
     **/
+  @JSImport("winjs", "UI.Fragments.clearCache")
+  @js.native
   def clearCache(href: String): Unit = js.native
+  @JSImport("winjs", "UI.Fragments.clearCache")
+  @js.native
   def clearCache(href: HTMLElement): Unit = js.native
   
   /**
@@ -34,7 +39,11 @@ object Fragments extends js.Object {
     * @param element Optional. The element to which the fragment is appended.
     * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The element is not added to the cache. See also rendercopy, where the element is added to the cache.
     **/
+  @JSImport("winjs", "UI.Fragments.render")
+  @js.native
   def render(href: String): Promise[HTMLElement] = js.native
+  @JSImport("winjs", "UI.Fragments.render")
+  @js.native
   def render(href: String, element: HTMLElement): Promise[HTMLElement] = js.native
   
   /**
@@ -43,8 +52,16 @@ object Fragments extends js.Object {
     * @param target The element to which the fragment is appended.
     * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The fragment is added to the cache. See also render, where the element is not added to the cache.
     **/
+  @JSImport("winjs", "UI.Fragments.renderCopy")
+  @js.native
   def renderCopy(href: String): Promise[HTMLElement] = js.native
+  @JSImport("winjs", "UI.Fragments.renderCopy")
+  @js.native
   def renderCopy(href: String, target: HTMLElement): Promise[HTMLElement] = js.native
+  @JSImport("winjs", "UI.Fragments.renderCopy")
+  @js.native
   def renderCopy(href: HTMLElement): Promise[HTMLElement] = js.native
+  @JSImport("winjs", "UI.Fragments.renderCopy")
+  @js.native
   def renderCopy(href: HTMLElement, target: HTMLElement): Promise[HTMLElement] = js.native
 }

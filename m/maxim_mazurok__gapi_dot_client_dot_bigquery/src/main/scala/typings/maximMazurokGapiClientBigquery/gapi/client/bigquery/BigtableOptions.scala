@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigtableOptions extends js.Object {
+trait BigtableOptions extends StObject {
   
   /**
     * [Optional] List of column families to expose in the table schema along with their types. This list restricts the column families that can be referenced in queries and specifies
@@ -35,39 +36,27 @@ object BigtableOptions {
   }
   
   @scala.inline
-  implicit class BigtableOptionsOps[Self <: BigtableOptions] (val x: Self) extends AnyVal {
+  implicit class BigtableOptionsMutableBuilder[Self <: BigtableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnFamilies(value: js.Array[BigtableColumnFamily]): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnFamiliesVarargs(value: BigtableColumnFamily*): Self = StObject.set(x, "columnFamilies", js.Array(value :_*))
     
     @scala.inline
-    def setColumnFamiliesVarargs(value: BigtableColumnFamily*): Self = this.set("columnFamilies", js.Array(value :_*))
+    def setIgnoreUnspecifiedColumnFamilies(value: Boolean): Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFamilies(value: js.Array[BigtableColumnFamily]): Self = this.set("columnFamilies", value.asInstanceOf[js.Any])
+    def setIgnoreUnspecifiedColumnFamiliesUndefined: Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", js.undefined)
     
     @scala.inline
-    def deleteColumnFamilies: Self = this.set("columnFamilies", js.undefined)
+    def setReadRowkeyAsString(value: Boolean): Self = StObject.set(x, "readRowkeyAsString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUnspecifiedColumnFamilies(value: Boolean): Self = this.set("ignoreUnspecifiedColumnFamilies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreUnspecifiedColumnFamilies: Self = this.set("ignoreUnspecifiedColumnFamilies", js.undefined)
-    
-    @scala.inline
-    def setReadRowkeyAsString(value: Boolean): Self = this.set("readRowkeyAsString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadRowkeyAsString: Self = this.set("readRowkeyAsString", js.undefined)
+    def setReadRowkeyAsStringUndefined: Self = StObject.set(x, "readRowkeyAsString", js.undefined)
   }
 }

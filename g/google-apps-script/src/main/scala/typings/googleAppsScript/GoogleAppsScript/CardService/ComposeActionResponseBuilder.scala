@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import typings.googleAppsScript.GoogleAppsScript.Gmail.GmailDraft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * UI element is selected.
   */
 @js.native
-trait ComposeActionResponseBuilder extends js.Object {
+trait ComposeActionResponseBuilder extends StObject {
   
   def build(): ComposeActionResponse = js.native
   
@@ -29,24 +30,12 @@ object ComposeActionResponseBuilder {
   }
   
   @scala.inline
-  implicit class ComposeActionResponseBuilderOps[Self <: ComposeActionResponseBuilder] (val x: Self) extends AnyVal {
+  implicit class ComposeActionResponseBuilderMutableBuilder[Self <: ComposeActionResponseBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => ComposeActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuild(value: () => ComposeActionResponse): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetGmailDraft(value: GmailDraft => ComposeActionResponseBuilder): Self = this.set("setGmailDraft", js.Any.fromFunction1(value))
+    def setSetGmailDraft(value: GmailDraft => ComposeActionResponseBuilder): Self = StObject.set(x, "setGmailDraft", js.Any.fromFunction1(value))
   }
 }

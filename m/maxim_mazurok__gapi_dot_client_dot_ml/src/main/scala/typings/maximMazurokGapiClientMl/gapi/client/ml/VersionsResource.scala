@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientMl.anon.FieldsKey
 import typings.maximMazurokGapiClientMl.anon.Filter
 import typings.maximMazurokGapiClientMl.anon.Oauthtoken
 import typings.maximMazurokGapiClientMl.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionsResource extends js.Object {
+trait VersionsResource extends StObject {
   
   /**
     * Creates a new version of a model from a trained TensorFlow model. If the version created in the cloud by this call is the first deployed version of the specified model, it will be

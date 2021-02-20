@@ -2,6 +2,7 @@ package typings.grammarkdown.grammarkdownMod
 
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.OfKeyword
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.OneKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

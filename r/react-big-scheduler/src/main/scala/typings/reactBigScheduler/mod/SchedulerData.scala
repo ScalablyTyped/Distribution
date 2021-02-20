@@ -1,14 +1,15 @@
 package typings.reactBigScheduler.mod
 
 import typings.moment.mod.Moment
-import typings.reactBigScheduler.anon.Call
+import typings.reactBigScheduler.anon.FnCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-big-scheduler", "SchedulerData")
 @js.native
-class SchedulerData protected () extends js.Object {
+class SchedulerData protected () extends StObject {
   def this(
     date: js.UndefOr[String],
     viewType: js.UndefOr[ViewTypes],
@@ -16,7 +17,7 @@ class SchedulerData protected () extends js.Object {
     isEventPerspective: js.UndefOr[Boolean],
     newConfig: js.UndefOr[SchedulerDataConfig],
     newBehaviours: js.UndefOr[js.Object],
-    localeMoment: js.UndefOr[Call]
+    localeMoment: js.UndefOr[FnCall]
   ) = this()
   
   var cellUnit: CellUnits = js.native

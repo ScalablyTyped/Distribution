@@ -1,12 +1,17 @@
 package typings.jqueryEasyLoading
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var factory: js.Function2[/* root */ js.UndefOr[js.Any], /* jQuery */ js.UndefOr[JQueryStatic], JQueryStatic] = js.native
+  @JSGlobal("factory")
+  @js.native
+  def factory: js.Function2[/* root */ js.UndefOr[js.Any], /* jQuery */ js.UndefOr[JQueryStatic], JQueryStatic] = js.native
+  @scala.inline
+  def factory_=(
+    x: js.Function2[/* root */ js.UndefOr[js.Any], /* jQuery */ js.UndefOr[JQueryStatic], JQueryStatic]
+  ): Unit = js.Dynamic.global.updateDynamic("factory")(x.asInstanceOf[js.Any])
 }

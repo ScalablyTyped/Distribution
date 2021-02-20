@@ -1,12 +1,13 @@
 package typings.appleMusicApi.AppleMusicApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/artwork
 @js.native
-trait Artwork extends js.Object {
+trait Artwork extends StObject {
   
   var bgColor: js.UndefOr[String] = js.native
   
@@ -33,57 +34,45 @@ object Artwork {
   }
   
   @scala.inline
-  implicit class ArtworkOps[Self <: Artwork] (val x: Self) extends AnyVal {
+  implicit class ArtworkMutableBuilder[Self <: Artwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setTextColor1(value: String): Self = StObject.set(x, "textColor1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTextColor1Undefined: Self = StObject.set(x, "textColor1", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setTextColor2(value: String): Self = StObject.set(x, "textColor2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgColor(value: String): Self = this.set("bgColor", value.asInstanceOf[js.Any])
+    def setTextColor2Undefined: Self = StObject.set(x, "textColor2", js.undefined)
     
     @scala.inline
-    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    def setTextColor3(value: String): Self = StObject.set(x, "textColor3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor1(value: String): Self = this.set("textColor1", value.asInstanceOf[js.Any])
+    def setTextColor3Undefined: Self = StObject.set(x, "textColor3", js.undefined)
     
     @scala.inline
-    def deleteTextColor1: Self = this.set("textColor1", js.undefined)
+    def setTextColor4(value: String): Self = StObject.set(x, "textColor4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor2(value: String): Self = this.set("textColor2", value.asInstanceOf[js.Any])
+    def setTextColor4Undefined: Self = StObject.set(x, "textColor4", js.undefined)
     
     @scala.inline
-    def deleteTextColor2: Self = this.set("textColor2", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor3(value: String): Self = this.set("textColor3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor3: Self = this.set("textColor3", js.undefined)
-    
-    @scala.inline
-    def setTextColor4(value: String): Self = this.set("textColor4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor4: Self = this.set("textColor4", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

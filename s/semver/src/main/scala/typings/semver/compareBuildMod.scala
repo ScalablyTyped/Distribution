@@ -4,13 +4,12 @@ import typings.semver.semverMod.^
 import typings.semver.semverNumbers.`-1`
 import typings.semver.semverNumbers.`0`
 import typings.semver.semverNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semver/functions/compare-build", JSImport.Namespace)
-@js.native
-object compareBuildMod extends js.Object {
+object compareBuildMod {
   
   /**
     * Compares two versions including build identifiers (the bit after `+` in the semantic version string).
@@ -24,8 +23,16 @@ object compareBuildMod extends js.Object {
     *
     * @since 6.1.0
     */
+  @JSImport("semver/functions/compare-build", JSImport.Namespace)
+  @js.native
   def apply(a: String, b: String): `1` | `0` | `-1` = js.native
+  @JSImport("semver/functions/compare-build", JSImport.Namespace)
+  @js.native
   def apply(a: String, b: ^): `1` | `0` | `-1` = js.native
+  @JSImport("semver/functions/compare-build", JSImport.Namespace)
+  @js.native
   def apply(a: ^, b: String): `1` | `0` | `-1` = js.native
+  @JSImport("semver/functions/compare-build", JSImport.Namespace)
+  @js.native
   def apply(a: ^, b: ^): `1` | `0` | `-1` = js.native
 }

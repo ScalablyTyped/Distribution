@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntentSummary extends js.Object {
+trait IntentSummary extends StObject {
   
   /**
     * A user-defined label that identifies a particular intent. You can use this label to return to a previous intent.  Use the checkpointLabelFilter parameter of the GetSessionRequest operation to filter the intents returned by the operation to those with only the specified label.
@@ -51,57 +52,45 @@ object IntentSummary {
   }
   
   @scala.inline
-  implicit class IntentSummaryOps[Self <: IntentSummary] (val x: Self) extends AnyVal {
+  implicit class IntentSummaryMutableBuilder[Self <: IntentSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckpointLabel(value: IntentSummaryCheckpointLabel): Self = StObject.set(x, "checkpointLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckpointLabelUndefined: Self = StObject.set(x, "checkpointLabel", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfirmationStatus(value: ConfirmationStatus): Self = StObject.set(x, "confirmationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogActionType(value: DialogActionType): Self = this.set("dialogActionType", value.asInstanceOf[js.Any])
+    def setConfirmationStatusUndefined: Self = StObject.set(x, "confirmationStatus", js.undefined)
     
     @scala.inline
-    def setCheckpointLabel(value: IntentSummaryCheckpointLabel): Self = this.set("checkpointLabel", value.asInstanceOf[js.Any])
+    def setDialogActionType(value: DialogActionType): Self = StObject.set(x, "dialogActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckpointLabel: Self = this.set("checkpointLabel", js.undefined)
+    def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmationStatus(value: ConfirmationStatus): Self = this.set("confirmationStatus", value.asInstanceOf[js.Any])
+    def setFulfillmentStateUndefined: Self = StObject.set(x, "fulfillmentState", js.undefined)
     
     @scala.inline
-    def deleteConfirmationStatus: Self = this.set("confirmationStatus", js.undefined)
+    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentState(value: FulfillmentState): Self = this.set("fulfillmentState", value.asInstanceOf[js.Any])
+    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
     @scala.inline
-    def deleteFulfillmentState: Self = this.set("fulfillmentState", js.undefined)
+    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentName(value: IntentName): Self = this.set("intentName", value.asInstanceOf[js.Any])
+    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
     @scala.inline
-    def deleteIntentName: Self = this.set("intentName", js.undefined)
+    def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotToElicit(value: String): Self = this.set("slotToElicit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotToElicit: Self = this.set("slotToElicit", js.undefined)
-    
-    @scala.inline
-    def setSlots(value: StringMap): Self = this.set("slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("slots", js.undefined)
+    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var autoResize: js.UndefOr[Boolean] = js.native
   
@@ -19,7 +20,7 @@ trait Options extends js.Object {
   
   var height: js.UndefOr[String] = js.native
   
-   // http://visjs.org/docs/network/layout.html
+  // http://visjs.org/docs/network/layout.html
   var interaction: js.UndefOr[js.Any] = js.native
   
   var layout: js.UndefOr[js.Any] = js.native
@@ -28,12 +29,12 @@ trait Options extends js.Object {
   
   var locales: js.UndefOr[Locales] = js.native
   
-   // visjs.org/docs/network/interaction.html?keywords=edges
+  // visjs.org/docs/network/interaction.html?keywords=edges
   var manipulation: js.UndefOr[js.Any] = js.native
   
   var nodes: js.UndefOr[NodeOptions] = js.native
   
-   // http://visjs.org/docs/network/manipulation.html#
+  // http://visjs.org/docs/network/manipulation.html#
   var physics: js.UndefOr[js.Any] = js.native
   
   var width: js.UndefOr[String] = js.native
@@ -47,102 +48,90 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickToUse(value: Boolean): Self = StObject.set(x, "clickToUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResize(value: Boolean): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    def setClickToUseUndefined: Self = StObject.set(x, "clickToUse", js.undefined)
     
     @scala.inline
-    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    def setConfigure(value: NetworkConfigure): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickToUse(value: Boolean): Self = this.set("clickToUse", value.asInstanceOf[js.Any])
+    def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
     
     @scala.inline
-    def deleteClickToUse: Self = this.set("clickToUse", js.undefined)
+    def setEdges(value: EdgeOptions): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigure(value: NetworkConfigure): Self = this.set("configure", value.asInstanceOf[js.Any])
+    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
     @scala.inline
-    def deleteConfigure: Self = this.set("configure", js.undefined)
+    def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdges(value: EdgeOptions): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteEdges: Self = this.set("edges", js.undefined)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Any): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setInteraction(value: js.Any): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteraction(value: js.Any): Self = this.set("interaction", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteInteraction: Self = this.set("interaction", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: js.Any): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLocales(value: Locales): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setManipulation(value: js.Any): Self = StObject.set(x, "manipulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocales(value: Locales): Self = this.set("locales", value.asInstanceOf[js.Any])
+    def setManipulationUndefined: Self = StObject.set(x, "manipulation", js.undefined)
     
     @scala.inline
-    def deleteLocales: Self = this.set("locales", js.undefined)
+    def setNodes(value: NodeOptions): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManipulation(value: js.Any): Self = this.set("manipulation", value.asInstanceOf[js.Any])
+    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
     @scala.inline
-    def deleteManipulation: Self = this.set("manipulation", js.undefined)
+    def setPhysics(value: js.Any): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: NodeOptions): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
     
     @scala.inline
-    def deleteNodes: Self = this.set("nodes", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysics(value: js.Any): Self = this.set("physics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhysics: Self = this.set("physics", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

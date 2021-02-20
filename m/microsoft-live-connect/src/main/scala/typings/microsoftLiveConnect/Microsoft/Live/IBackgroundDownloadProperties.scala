@@ -1,6 +1,7 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
 import typings.winrt.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 'Properties' object passed into the WL.backgroundDownload method.
   */
 @js.native
-trait IBackgroundDownloadProperties extends js.Object {
+trait IBackgroundDownloadProperties extends StObject {
   
   /**
     * The file output object to which the downloaded file data is written.
@@ -32,27 +33,15 @@ object IBackgroundDownloadProperties {
   }
   
   @scala.inline
-  implicit class IBackgroundDownloadPropertiesOps[Self <: IBackgroundDownloadProperties] (val x: Self) extends AnyVal {
+  implicit class IBackgroundDownloadPropertiesMutableBuilder[Self <: IBackgroundDownloadProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile_output(value: StorageFile): Self = StObject.set(x, "file_output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile_outputUndefined: Self = StObject.set(x, "file_output", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFile_output(value: StorageFile): Self = this.set("file_output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile_output: Self = this.set("file_output", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

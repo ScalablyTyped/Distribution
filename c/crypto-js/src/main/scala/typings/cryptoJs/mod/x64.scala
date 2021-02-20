@@ -1,15 +1,13 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("crypto-js", "x64")
-@js.native
-object x64 extends js.Object {
+object x64 {
   
-  @js.native
-  object Word extends js.Object {
+  object Word {
     
     /**
       * Initializes a newly created 64-bit word.
@@ -21,6 +19,8 @@ object x64 extends js.Object {
       *
       *     var x64Word = CryptoJS.x64.Word.create(0x00010203, 0x04050607);
       */
+    @JSImport("crypto-js", "x64.Word.create")
+    @js.native
     def create(high: Double, low: Double): X64Word = js.native
   }
   
@@ -44,12 +44,19 @@ object x64 extends js.Object {
     *         CryptoJS.x64.Word.create(0x18191a1b, 0x1c1d1e1f)
     *     ], 10);
     */
-  @js.native
-  object WordArray extends js.Object {
+  object WordArray {
     
+    @JSImport("crypto-js", "x64.WordArray.create")
+    @js.native
     def create(): X64WordArray = js.native
+    @JSImport("crypto-js", "x64.WordArray.create")
+    @js.native
     def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): X64WordArray = js.native
+    @JSImport("crypto-js", "x64.WordArray.create")
+    @js.native
     def create(words: js.Array[X64WordArray]): X64WordArray = js.native
+    @JSImport("crypto-js", "x64.WordArray.create")
+    @js.native
     def create(words: js.Array[X64WordArray], sigBytes: Double): X64WordArray = js.native
   }
 }

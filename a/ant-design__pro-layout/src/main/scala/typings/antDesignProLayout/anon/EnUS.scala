@@ -1,11 +1,12 @@
 package typings.antDesignProLayout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnUS extends js.Object {
+trait EnUS extends StObject {
   
   var `en-US`: Appsettingcontentwidth = js.native
   
@@ -33,30 +34,18 @@ object EnUS {
   }
   
   @scala.inline
-  implicit class EnUSOps[Self <: EnUS] (val x: Self) extends AnyVal {
+  implicit class EnUSMutableBuilder[Self <: EnUS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setEn-US`(value: Appsettingcontentwidth): Self = StObject.set(x, "en-US", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setIt-IT`(value: Appsettingcontentwidthfixed): Self = StObject.set(x, "it-IT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setZh-CN`(value: Appsettingcontentwidth): Self = StObject.set(x, "zh-CN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEn-US`(value: Appsettingcontentwidth): Self = this.set("en-US", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIt-IT`(value: Appsettingcontentwidthfixed): Self = this.set("it-IT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setZh-CN`(value: Appsettingcontentwidth): Self = this.set("zh-CN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setZh-TW`(value: Appsettingcontentwidthfixed): Self = this.set("zh-TW", value.asInstanceOf[js.Any])
+    def `setZh-TW`(value: Appsettingcontentwidthfixed): Self = StObject.set(x, "zh-TW", value.asInstanceOf[js.Any])
   }
 }

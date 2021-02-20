@@ -1,13 +1,14 @@
 package typings.hapi.anon
 
 import typings.hapi.mod.RouteExtObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in hapi.hapi.RouteRequestExtType ]:? hapi.hapi.RouteExtObject | std.Array<hapi.hapi.RouteExtObject>} */
 @js.native
-trait keyinRouteRequestExtTypeR extends js.Object {
+trait keyinRouteRequestExtTypeR extends StObject {
   
   var onCredentials: js.UndefOr[RouteExtObject | js.Array[RouteExtObject]] = js.native
   
@@ -30,72 +31,60 @@ object keyinRouteRequestExtTypeR {
   }
   
   @scala.inline
-  implicit class keyinRouteRequestExtTypeROps[Self <: keyinRouteRequestExtTypeR] (val x: Self) extends AnyVal {
+  implicit class keyinRouteRequestExtTypeRMutableBuilder[Self <: keyinRouteRequestExtTypeR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnCredentials(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnCredentialsUndefined: Self = StObject.set(x, "onCredentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnCredentialsVarargs(value: RouteExtObject*): Self = StObject.set(x, "onCredentials", js.Array(value :_*))
     
     @scala.inline
-    def setOnCredentialsVarargs(value: RouteExtObject*): Self = this.set("onCredentials", js.Array(value :_*))
+    def setOnPostAuth(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onPostAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCredentials(value: RouteExtObject | js.Array[RouteExtObject]): Self = this.set("onCredentials", value.asInstanceOf[js.Any])
+    def setOnPostAuthUndefined: Self = StObject.set(x, "onPostAuth", js.undefined)
     
     @scala.inline
-    def deleteOnCredentials: Self = this.set("onCredentials", js.undefined)
+    def setOnPostAuthVarargs(value: RouteExtObject*): Self = StObject.set(x, "onPostAuth", js.Array(value :_*))
     
     @scala.inline
-    def setOnPostAuthVarargs(value: RouteExtObject*): Self = this.set("onPostAuth", js.Array(value :_*))
+    def setOnPostHandler(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onPostHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPostAuth(value: RouteExtObject | js.Array[RouteExtObject]): Self = this.set("onPostAuth", value.asInstanceOf[js.Any])
+    def setOnPostHandlerUndefined: Self = StObject.set(x, "onPostHandler", js.undefined)
     
     @scala.inline
-    def deleteOnPostAuth: Self = this.set("onPostAuth", js.undefined)
+    def setOnPostHandlerVarargs(value: RouteExtObject*): Self = StObject.set(x, "onPostHandler", js.Array(value :_*))
     
     @scala.inline
-    def setOnPostHandlerVarargs(value: RouteExtObject*): Self = this.set("onPostHandler", js.Array(value :_*))
+    def setOnPreAuth(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onPreAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPostHandler(value: RouteExtObject | js.Array[RouteExtObject]): Self = this.set("onPostHandler", value.asInstanceOf[js.Any])
+    def setOnPreAuthUndefined: Self = StObject.set(x, "onPreAuth", js.undefined)
     
     @scala.inline
-    def deleteOnPostHandler: Self = this.set("onPostHandler", js.undefined)
+    def setOnPreAuthVarargs(value: RouteExtObject*): Self = StObject.set(x, "onPreAuth", js.Array(value :_*))
     
     @scala.inline
-    def setOnPreAuthVarargs(value: RouteExtObject*): Self = this.set("onPreAuth", js.Array(value :_*))
+    def setOnPreHandler(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onPreHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPreAuth(value: RouteExtObject | js.Array[RouteExtObject]): Self = this.set("onPreAuth", value.asInstanceOf[js.Any])
+    def setOnPreHandlerUndefined: Self = StObject.set(x, "onPreHandler", js.undefined)
     
     @scala.inline
-    def deleteOnPreAuth: Self = this.set("onPreAuth", js.undefined)
+    def setOnPreHandlerVarargs(value: RouteExtObject*): Self = StObject.set(x, "onPreHandler", js.Array(value :_*))
     
     @scala.inline
-    def setOnPreHandlerVarargs(value: RouteExtObject*): Self = this.set("onPreHandler", js.Array(value :_*))
+    def setOnPreResponse(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onPreResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPreHandler(value: RouteExtObject | js.Array[RouteExtObject]): Self = this.set("onPreHandler", value.asInstanceOf[js.Any])
+    def setOnPreResponseUndefined: Self = StObject.set(x, "onPreResponse", js.undefined)
     
     @scala.inline
-    def deleteOnPreHandler: Self = this.set("onPreHandler", js.undefined)
-    
-    @scala.inline
-    def setOnPreResponseVarargs(value: RouteExtObject*): Self = this.set("onPreResponse", js.Array(value :_*))
-    
-    @scala.inline
-    def setOnPreResponse(value: RouteExtObject | js.Array[RouteExtObject]): Self = this.set("onPreResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnPreResponse: Self = this.set("onPreResponse", js.undefined)
+    def setOnPreResponseVarargs(value: RouteExtObject*): Self = StObject.set(x, "onPreResponse", js.Array(value :_*))
   }
 }

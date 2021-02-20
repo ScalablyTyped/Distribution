@@ -1,12 +1,13 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "AccessToken")
 @js.native
-class AccessToken protected () extends js.Object {
+class AccessToken protected () extends StObject {
   def this(accountSid: String, keySid: String, secret: String) = this()
   def this(accountSid: String, keySid: String, secret: String, opts: AccessTokenOptions) = this()
   
@@ -29,15 +30,33 @@ class AccessToken protected () extends js.Object {
   var ttl: Double = js.native
 }
 /* static members */
-@JSImport("twilio", "AccessToken")
-@js.native
-object AccessToken extends js.Object {
+object AccessToken {
   
-  var ALGORITHMS: js.Array[String] = js.native
+  @JSImport("twilio", "AccessToken")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ConversationGrant: ConversationsGrant = js.native
+  @JSImport("twilio", "AccessToken.ALGORITHMS")
+  @js.native
+  def ALGORITHMS: js.Array[String] = js.native
+  @scala.inline
+  def ALGORITHMS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALGORITHMS")(x.asInstanceOf[js.Any])
   
-  var DEFAULT_ALGORITHM: String = js.native
+  @JSImport("twilio", "AccessToken.ConversationGrant")
+  @js.native
+  def ConversationGrant: ConversationsGrant = js.native
+  @scala.inline
+  def ConversationGrant_=(x: ConversationsGrant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConversationGrant")(x.asInstanceOf[js.Any])
   
-  var IpMessagingGrant: typings.twilio.mod.IpMessagingGrant = js.native
+  @JSImport("twilio", "AccessToken.DEFAULT_ALGORITHM")
+  @js.native
+  def DEFAULT_ALGORITHM: String = js.native
+  @scala.inline
+  def DEFAULT_ALGORITHM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALGORITHM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("twilio", "AccessToken.IpMessagingGrant")
+  @js.native
+  def IpMessagingGrant: typings.twilio.mod.IpMessagingGrant = js.native
+  @scala.inline
+  def IpMessagingGrant_=(x: IpMessagingGrant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IpMessagingGrant")(x.asInstanceOf[js.Any])
 }

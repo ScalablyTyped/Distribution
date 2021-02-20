@@ -1,11 +1,12 @@
 package typings.lodash.fpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashProperty1x2[TObject] extends js.Object {
+trait LodashProperty1x2[TObject] extends StObject {
   
   def apply[TKey /* <: /* keyof TObject */ String */](path: TKey): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   def apply[TKey /* <: /* keyof TObject */ String */](path: js.Array[TKey]): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native

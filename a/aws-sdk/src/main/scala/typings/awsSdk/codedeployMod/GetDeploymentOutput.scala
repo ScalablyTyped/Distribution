@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeploymentOutput extends js.Object {
+trait GetDeploymentOutput extends StObject {
   
   /**
     * Information about the deployment.
@@ -21,24 +22,12 @@ object GetDeploymentOutput {
   }
   
   @scala.inline
-  implicit class GetDeploymentOutputOps[Self <: GetDeploymentOutput] (val x: Self) extends AnyVal {
+  implicit class GetDeploymentOutputMutableBuilder[Self <: GetDeploymentOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentInfo(value: DeploymentInfo): Self = StObject.set(x, "deploymentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeploymentInfo(value: DeploymentInfo): Self = this.set("deploymentInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentInfo: Self = this.set("deploymentInfo", js.undefined)
+    def setDeploymentInfoUndefined: Self = StObject.set(x, "deploymentInfo", js.undefined)
   }
 }

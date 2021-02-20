@@ -3,6 +3,7 @@ package typings.typescript.mod.server
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.SortedReadonlyArray
 import typings.typescript.mod.TypeAcquisition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object SetTypings {
   }
   
   @scala.inline
-  implicit class SetTypingsOps[Self <: SetTypings] (val x: Self) extends AnyVal {
+  implicit class SetTypingsMutableBuilder[Self <: SetTypings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: ActionSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilerOptions(value: CompilerOptions): Self = this.set("compilerOptions", value.asInstanceOf[js.Any])
+    def setTypings_(value: js.Array[String]): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActionSet): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setTypings_Varargs(value: String*): Self = StObject.set(x, "typings", js.Array(value :_*))
     
     @scala.inline
-    def setTypeAcquisition(value: TypeAcquisition): Self = this.set("typeAcquisition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypings_Varargs(value: String*): Self = this.set("typings", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypings_(value: js.Array[String]): Self = this.set("typings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = this.set("unresolvedImports", value.asInstanceOf[js.Any])
+    def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = StObject.set(x, "unresolvedImports", value.asInstanceOf[js.Any])
   }
 }

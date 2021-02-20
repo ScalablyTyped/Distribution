@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConformancePackDetail extends js.Object {
+trait ConformancePackDetail extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the conformance pack.
@@ -60,60 +61,48 @@ object ConformancePackDetail {
   }
   
   @scala.inline
-  implicit class ConformancePackDetailOps[Self <: ConformancePackDetail] (val x: Self) extends AnyVal {
+  implicit class ConformancePackDetailMutableBuilder[Self <: ConformancePackDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConformancePackArn(value: ConformancePackArn): Self = StObject.set(x, "ConformancePackArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConformancePackId(value: ConformancePackId): Self = StObject.set(x, "ConformancePackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = StObject.set(x, "ConformancePackInputParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackArn(value: ConformancePackArn): Self = this.set("ConformancePackArn", value.asInstanceOf[js.Any])
+    def setConformancePackInputParametersUndefined: Self = StObject.set(x, "ConformancePackInputParameters", js.undefined)
     
     @scala.inline
-    def setConformancePackId(value: ConformancePackId): Self = this.set("ConformancePackId", value.asInstanceOf[js.Any])
+    def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value :_*))
     
     @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = this.set("ConformancePackName", value.asInstanceOf[js.Any])
+    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = this.set("ConformancePackInputParameters", js.Array(value :_*))
+    def setCreatedBy(value: StringWithCharLimit256): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = this.set("ConformancePackInputParameters", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def deleteConformancePackInputParameters: Self = this.set("ConformancePackInputParameters", js.undefined)
+    def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = StObject.set(x, "DeliveryS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: StringWithCharLimit256): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setDeliveryS3BucketUndefined: Self = StObject.set(x, "DeliveryS3Bucket", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setDeliveryS3KeyPrefix(value: DeliveryS3KeyPrefix): Self = StObject.set(x, "DeliveryS3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = this.set("DeliveryS3Bucket", value.asInstanceOf[js.Any])
+    def setDeliveryS3KeyPrefixUndefined: Self = StObject.set(x, "DeliveryS3KeyPrefix", js.undefined)
     
     @scala.inline
-    def deleteDeliveryS3Bucket: Self = this.set("DeliveryS3Bucket", js.undefined)
+    def setLastUpdateRequestedTime(value: Date): Self = StObject.set(x, "LastUpdateRequestedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryS3KeyPrefix(value: DeliveryS3KeyPrefix): Self = this.set("DeliveryS3KeyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeliveryS3KeyPrefix: Self = this.set("DeliveryS3KeyPrefix", js.undefined)
-    
-    @scala.inline
-    def setLastUpdateRequestedTime(value: Date): Self = this.set("LastUpdateRequestedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateRequestedTime: Self = this.set("LastUpdateRequestedTime", js.undefined)
+    def setLastUpdateRequestedTimeUndefined: Self = StObject.set(x, "LastUpdateRequestedTime", js.undefined)
   }
 }

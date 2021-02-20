@@ -3,20 +3,21 @@ package typings.typeorm
 import typings.typeorm.columnMetadataMod.ColumnMetadata
 import typings.typeorm.driverMod.Driver
 import typings.typeorm.tableColumnOptionsMod.TableColumnOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/schema-builder/util/TableUtils", JSImport.Namespace)
-@js.native
-object tableUtilsMod extends js.Object {
+object tableUtilsMod {
   
+  @JSImport("typeorm/browser/schema-builder/util/TableUtils", "TableUtils")
   @js.native
-  class TableUtils () extends js.Object
+  class TableUtils () extends StObject
   /* static members */
-  @js.native
-  object TableUtils extends js.Object {
+  object TableUtils {
     
+    @JSImport("typeorm/browser/schema-builder/util/TableUtils", "TableUtils.createTableColumnOptions")
+    @js.native
     def createTableColumnOptions(columnMetadata: ColumnMetadata, driver: Driver): TableColumnOptions = js.native
   }
 }

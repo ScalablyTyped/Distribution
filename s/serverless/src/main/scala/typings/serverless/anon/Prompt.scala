@@ -1,11 +1,12 @@
 package typings.serverless.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prompt extends js.Object {
+trait Prompt extends StObject {
   
   var prompt: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Prompt {
   }
   
   @scala.inline
-  implicit class PromptOps[Self <: Prompt] (val x: Self) extends AnyVal {
+  implicit class PromptMutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
-    
-    @scala.inline
-    def setRedirect(value: Boolean): Self = this.set("redirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
   }
 }

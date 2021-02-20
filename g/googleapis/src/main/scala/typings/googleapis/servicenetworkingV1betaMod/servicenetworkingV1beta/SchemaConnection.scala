@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * producer&#39;s VPC network and a service consumer&#39;s VPC network.
   */
 @js.native
-trait SchemaConnection extends js.Object {
+trait SchemaConnection extends StObject {
   
   /**
     * The name of service consumer&#39;s VPC network that&#39;s connected with
@@ -51,45 +52,33 @@ object SchemaConnection {
   }
   
   @scala.inline
-  implicit class SchemaConnectionOps[Self <: SchemaConnection] (val x: Self) extends AnyVal {
+  implicit class SchemaConnectionMutableBuilder[Self <: SchemaConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeering(value: String): Self = StObject.set(x, "peering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setPeeringUndefined: Self = StObject.set(x, "peering", js.undefined)
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setReservedPeeringRanges(value: js.Array[String]): Self = StObject.set(x, "reservedPeeringRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeering(value: String): Self = this.set("peering", value.asInstanceOf[js.Any])
+    def setReservedPeeringRangesUndefined: Self = StObject.set(x, "reservedPeeringRanges", js.undefined)
     
     @scala.inline
-    def deletePeering: Self = this.set("peering", js.undefined)
+    def setReservedPeeringRangesVarargs(value: String*): Self = StObject.set(x, "reservedPeeringRanges", js.Array(value :_*))
     
     @scala.inline
-    def setReservedPeeringRangesVarargs(value: String*): Self = this.set("reservedPeeringRanges", js.Array(value :_*))
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedPeeringRanges(value: js.Array[String]): Self = this.set("reservedPeeringRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedPeeringRanges: Self = this.set("reservedPeeringRanges", js.undefined)
-    
-    @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

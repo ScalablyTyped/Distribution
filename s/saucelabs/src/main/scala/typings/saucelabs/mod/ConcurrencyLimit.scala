@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object ConcurrencyLimit {
   }
   
   @scala.inline
-  implicit class ConcurrencyLimitOps[Self <: ConcurrencyLimit] (val x: Self) extends AnyVal {
+  implicit class ConcurrencyLimitMutableBuilder[Self <: ConcurrencyLimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMac(value: Double): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverall(value: Double): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMac(value: Double): Self = this.set("mac", value.asInstanceOf[js.Any])
+    def setOverallUndefined: Self = StObject.set(x, "overall", js.undefined)
     
     @scala.inline
-    def deleteMac: Self = this.set("mac", js.undefined)
+    def setReal_device(value: Double): Self = StObject.set(x, "real_device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverall(value: Double): Self = this.set("overall", value.asInstanceOf[js.Any])
+    def setReal_deviceUndefined: Self = StObject.set(x, "real_device", js.undefined)
     
     @scala.inline
-    def deleteOverall: Self = this.set("overall", js.undefined)
+    def setScout(value: Double): Self = StObject.set(x, "scout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReal_device(value: Double): Self = this.set("real_device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReal_device: Self = this.set("real_device", js.undefined)
-    
-    @scala.inline
-    def setScout(value: Double): Self = this.set("scout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScout: Self = this.set("scout", js.undefined)
+    def setScoutUndefined: Self = StObject.set(x, "scout", js.undefined)
   }
 }

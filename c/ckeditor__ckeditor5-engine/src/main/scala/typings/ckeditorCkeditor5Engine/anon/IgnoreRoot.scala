@@ -1,11 +1,12 @@
 package typings.ckeditorCkeditor5Engine.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgnoreRoot extends js.Object {
+trait IgnoreRoot extends StObject {
   
   var ignoreRoot: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object IgnoreRoot {
   }
   
   @scala.inline
-  implicit class IgnoreRootOps[Self <: IgnoreRoot] (val x: Self) extends AnyVal {
+  implicit class IgnoreRootMutableBuilder[Self <: IgnoreRoot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderUIElements(value: Boolean): Self = StObject.set(x, "renderUIElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreRoot(value: Boolean): Self = this.set("ignoreRoot", value.asInstanceOf[js.Any])
+    def setRenderUIElementsUndefined: Self = StObject.set(x, "renderUIElements", js.undefined)
     
     @scala.inline
-    def deleteIgnoreRoot: Self = this.set("ignoreRoot", js.undefined)
+    def setSameSelectionCharacters(value: Boolean): Self = StObject.set(x, "sameSelectionCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderUIElements(value: Boolean): Self = this.set("renderUIElements", value.asInstanceOf[js.Any])
+    def setSameSelectionCharactersUndefined: Self = StObject.set(x, "sameSelectionCharacters", js.undefined)
     
     @scala.inline
-    def deleteRenderUIElements: Self = this.set("renderUIElements", js.undefined)
+    def setShowAttributeElementId(value: Boolean): Self = StObject.set(x, "showAttributeElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSameSelectionCharacters(value: Boolean): Self = this.set("sameSelectionCharacters", value.asInstanceOf[js.Any])
+    def setShowAttributeElementIdUndefined: Self = StObject.set(x, "showAttributeElementId", js.undefined)
     
     @scala.inline
-    def deleteSameSelectionCharacters: Self = this.set("sameSelectionCharacters", js.undefined)
+    def setShowPriority(value: Boolean): Self = StObject.set(x, "showPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAttributeElementId(value: Boolean): Self = this.set("showAttributeElementId", value.asInstanceOf[js.Any])
+    def setShowPriorityUndefined: Self = StObject.set(x, "showPriority", js.undefined)
     
     @scala.inline
-    def deleteShowAttributeElementId: Self = this.set("showAttributeElementId", js.undefined)
+    def setShowType(value: Boolean): Self = StObject.set(x, "showType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPriority(value: Boolean): Self = this.set("showPriority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPriority: Self = this.set("showPriority", js.undefined)
-    
-    @scala.inline
-    def setShowType(value: Boolean): Self = this.set("showType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowType: Self = this.set("showType", js.undefined)
+    def setShowTypeUndefined: Self = StObject.set(x, "showType", js.undefined)
   }
 }

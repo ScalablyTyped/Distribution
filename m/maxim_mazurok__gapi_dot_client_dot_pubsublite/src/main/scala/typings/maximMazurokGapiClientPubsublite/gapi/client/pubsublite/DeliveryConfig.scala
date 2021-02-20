@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryConfig extends js.Object {
+trait DeliveryConfig extends StObject {
   
   /** The DeliveryRequirement for this subscription. */
   var deliveryRequirement: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object DeliveryConfig {
   }
   
   @scala.inline
-  implicit class DeliveryConfigOps[Self <: DeliveryConfig] (val x: Self) extends AnyVal {
+  implicit class DeliveryConfigMutableBuilder[Self <: DeliveryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryRequirement(value: String): Self = StObject.set(x, "deliveryRequirement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeliveryRequirement(value: String): Self = this.set("deliveryRequirement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeliveryRequirement: Self = this.set("deliveryRequirement", js.undefined)
+    def setDeliveryRequirementUndefined: Self = StObject.set(x, "deliveryRequirement", js.undefined)
   }
 }

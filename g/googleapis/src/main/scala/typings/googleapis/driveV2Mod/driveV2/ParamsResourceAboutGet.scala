@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object ParamsResourceAboutGet {
   }
   
   @scala.inline
-  implicit class ParamsResourceAboutGetOps[Self <: ParamsResourceAboutGet] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceAboutGetMutableBuilder[Self <: ParamsResourceAboutGet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeSubscribed(value: Boolean): Self = StObject.set(x, "includeSubscribed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setIncludeSubscribedUndefined: Self = StObject.set(x, "includeSubscribed", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setMaxChangeIdCount(value: String): Self = StObject.set(x, "maxChangeIdCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSubscribed(value: Boolean): Self = this.set("includeSubscribed", value.asInstanceOf[js.Any])
+    def setMaxChangeIdCountUndefined: Self = StObject.set(x, "maxChangeIdCount", js.undefined)
     
     @scala.inline
-    def deleteIncludeSubscribed: Self = this.set("includeSubscribed", js.undefined)
+    def setStartChangeId(value: String): Self = StObject.set(x, "startChangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxChangeIdCount(value: String): Self = this.set("maxChangeIdCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxChangeIdCount: Self = this.set("maxChangeIdCount", js.undefined)
-    
-    @scala.inline
-    def setStartChangeId(value: String): Self = this.set("startChangeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartChangeId: Self = this.set("startChangeId", js.undefined)
+    def setStartChangeIdUndefined: Self = StObject.set(x, "startChangeId", js.undefined)
   }
 }

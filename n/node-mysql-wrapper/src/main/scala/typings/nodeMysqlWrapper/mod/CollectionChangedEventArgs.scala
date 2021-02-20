@@ -1,12 +1,13 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "CollectionChangedEventArgs")
 @js.native
-class CollectionChangedEventArgs[T] protected () extends js.Object {
+class CollectionChangedEventArgs[T] protected () extends StObject {
   def this(action: CollectionChangedAction) = this()
   def this(action: CollectionChangedAction, oldItems: js.Array[T | (T with ObservableObject)]) = this()
   def this(

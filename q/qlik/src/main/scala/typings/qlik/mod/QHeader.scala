@@ -3,12 +3,13 @@ package typings.qlik.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.qlik.qlikStrings.A
 import typings.qlik.qlikStrings.B
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QHeader extends js.Object {
+trait QHeader extends StObject {
   
   var col: Double = js.native
   
@@ -57,78 +58,66 @@ object QHeader {
   }
   
   @scala.inline
-  implicit class QHeaderOps[Self <: QHeader] (val x: Self) extends AnyVal {
+  implicit class QHeaderMutableBuilder[Self <: QHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: Double): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOrderedBy(value: Boolean): Self = this.set("isOrderedBy", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setOrderBy(value: () => Unit): Self = this.set("orderBy", js.Any.fromFunction0(value))
+    def setIsOrderedBy(value: Boolean): Self = StObject.set(x, "isOrderedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFallbackTitle(value: String): Self = this.set("qFallbackTitle", value.asInstanceOf[js.Any])
+    def setOrderBy(value: () => Unit): Self = StObject.set(x, "orderBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQReverseSort(value: Boolean): Self = this.set("qReverseSort", value.asInstanceOf[js.Any])
+    def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSortIndicator(value: A | B): Self = this.set("qSortIndicator", value.asInstanceOf[js.Any])
+    def setQCardinalUndefined: Self = StObject.set(x, "qCardinal", js.undefined)
     
     @scala.inline
-    def setReverseOrder(value: () => Unit): Self = this.set("reverseOrder", js.Any.fromFunction0(value))
+    def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[_]): Self = this.set("selectRange", js.Any.fromFunction4(value))
+    def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setQMaxUndefined: Self = StObject.set(x, "qMax", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: Double): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setQMinUndefined: Self = StObject.set(x, "qMin", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCardinal(value: Double): Self = this.set("qCardinal", value.asInstanceOf[js.Any])
+    def setQSortIndicator(value: A | B): Self = StObject.set(x, "qSortIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQCardinal: Self = this.set("qCardinal", js.undefined)
+    def setQStateCounts(value: StringDictionary[Double]): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMax(value: Double): Self = this.set("qMax", value.asInstanceOf[js.Any])
+    def setQStateCountsUndefined: Self = StObject.set(x, "qStateCounts", js.undefined)
     
     @scala.inline
-    def deleteQMax: Self = this.set("qMax", js.undefined)
+    def setReverseOrder(value: () => Unit): Self = StObject.set(x, "reverseOrder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQMin(value: Double): Self = this.set("qMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQMin: Self = this.set("qMin", js.undefined)
-    
-    @scala.inline
-    def setQStateCounts(value: StringDictionary[Double]): Self = this.set("qStateCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQStateCounts: Self = this.set("qStateCounts", js.undefined)
+    def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[_]): Self = StObject.set(x, "selectRange", js.Any.fromFunction4(value))
   }
 }

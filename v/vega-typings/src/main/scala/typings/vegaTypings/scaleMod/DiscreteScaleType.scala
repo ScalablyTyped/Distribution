@@ -1,5 +1,6 @@
 package typings.vegaTypings.scaleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.band
   - typings.vegaTypings.vegaTypingsStrings.point
 */
-trait DiscreteScaleType extends js.Object
+trait DiscreteScaleType extends StObject
 object DiscreteScaleType {
   
   @scala.inline

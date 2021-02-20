@@ -2,12 +2,13 @@ package typings.handsontable.mod.Handsontable
 
 import typings.handsontable.handsontableStrings.after
 import typings.handsontable.handsontableStrings.before
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelOptions extends js.Object {
+trait LabelOptions extends StObject {
   
   var position: js.UndefOr[before | after] = js.native
   
@@ -24,39 +25,27 @@ object LabelOptions {
   }
   
   @scala.inline
-  implicit class LabelOptionsOps[Self <: LabelOptions] (val x: Self) extends AnyVal {
+  implicit class LabelOptionsMutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: before | after): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: before | after): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setValue(value: String | js.Function0[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setValueFunction0(value: () => String): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
-    
-    @scala.inline
-    def setValueFunction0(value: () => String): Self = this.set("value", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValue(value: String | js.Function0[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

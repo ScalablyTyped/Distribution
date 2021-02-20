@@ -1,11 +1,12 @@
 package typings.loopback.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Apns extends js.Object {
+trait Apns extends StObject {
   
   var apns: CerData = js.native
   
@@ -20,24 +21,12 @@ object Apns {
   }
   
   @scala.inline
-  implicit class ApnsOps[Self <: Apns] (val x: Self) extends AnyVal {
+  implicit class ApnsMutableBuilder[Self <: Apns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApns(value: CerData): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApns(value: CerData): Self = this.set("apns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGcm(value: ServerApiKey): Self = this.set("gcm", value.asInstanceOf[js.Any])
+    def setGcm(value: ServerApiKey): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
   }
 }

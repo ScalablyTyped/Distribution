@@ -2,6 +2,7 @@ package typings.awsSdk.browserDefaultMod
 
 import typings.awsSdk.kinesisvideosignalingchannelsMod.ClientConfiguration
 import typings.awsSdk.kinesisvideosignalingchannelsMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.semanticUiReact.genericMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1256,7 +1257,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.semanticUiReact.semanticUiReactStrings.write
   - typings.semanticUiReact.semanticUiReactStrings.`youtube play`
 */
-trait SemanticICONS extends js.Object
+trait SemanticICONS extends StObject
 object SemanticICONS {
   
   @scala.inline

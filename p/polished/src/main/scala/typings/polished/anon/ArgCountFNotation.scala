@@ -4,12 +4,13 @@ import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`1`
 import typings.polished.polishedStrings.Rightparenthesis
 import typings.polished.polishedStrings.postfix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArgCountFNotation extends js.Object {
+trait ArgCountFNotation extends StObject {
   
   var argCount: `1` = js.native
   
@@ -32,33 +33,21 @@ object ArgCountFNotation {
   }
   
   @scala.inline
-  implicit class ArgCountFNotationOps[Self <: ArgCountFNotation] (val x: Self) extends AnyVal {
+  implicit class ArgCountFNotationMutableBuilder[Self <: ArgCountFNotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotation(value: postfix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrecedence(value: `0`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgCount(value: `1`): Self = this.set("argCount", value.asInstanceOf[js.Any])
+    def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotation(value: postfix): Self = this.set("notation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrecedence(value: `0`): Self = this.set("precedence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightToLeft(value: `0`): Self = this.set("rightToLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: Rightparenthesis): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

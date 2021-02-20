@@ -9,12 +9,13 @@ import typings.mithril.mithrilStrings.document
 import typings.mithril.mithrilStrings.json
 import typings.mithril.mithrilStrings.text
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestOptions[T] extends js.Object {
+trait RequestOptions[T] extends StObject {
   
   /** Whether the request should be asynchronous. Defaults to true. */
   var async: js.UndefOr[Boolean] = js.native
@@ -82,120 +83,108 @@ object RequestOptions {
   }
   
   @scala.inline
-  implicit class RequestOptionsOps[Self <: RequestOptions[_], T] (val x: Self with RequestOptions[T]) extends AnyVal {
+  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[_], T] (val x: Self with RequestOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setBody(value: js.Any | (js.Object with StringDictionary[js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setConfig(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => XMLHttpRequest | Unit): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBody(value: js.Any | (js.Object with StringDictionary[js.Any])): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setDeserialize(value: /* data */ String => T): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfig(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => XMLHttpRequest | Unit): Self = this.set("config", js.Any.fromFunction2(value))
+    def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setExtract(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => T): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeserialize(value: /* data */ String => T): Self = this.set("deserialize", js.Any.fromFunction1(value))
+    def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
     
     @scala.inline
-    def deleteDeserialize: Self = this.set("deserialize", js.undefined)
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtract(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => T): Self = this.set("extract", js.Any.fromFunction2(value))
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteExtract: Self = this.set("extract", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setResponseType(value: _empty | arraybuffer | blob | document | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setSerialize(value: /* data */ js.Any => _): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResponseType(value: _empty | arraybuffer | blob | document | json | text): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialize(value: /* data */ js.Any => _): Self = this.set("serialize", js.Any.fromFunction1(value))
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSerialize: Self = this.set("serialize", js.undefined)
+    def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUseBody(value: Boolean): Self = StObject.set(x, "useBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUseBodyUndefined: Self = StObject.set(x, "useBody", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBody(value: Boolean): Self = this.set("useBody", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteUseBody: Self = this.set("useBody", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,28 +55,61 @@ class Period protected () extends TemporalAmount {
   
   def years(): Double = js.native
 }
-/* static members */
-@JSImport("js-joda", "Period")
-@js.native
-object Period extends js.Object {
+object Period {
   
-  var ZERO: Period = js.native
+  @JSImport("js-joda", "Period")
+  @js.native
+  val ^ : js.Any = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.ZERO")
+  @js.native
+  def ZERO: Period = js.native
+  @scala.inline
+  def ZERO_=(x: Period): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "Period.between")
+  @js.native
   def between(startDate: LocalDate, endDate: LocalDate): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.create")
+  @js.native
   def create(years: Double, months: Double, days: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.from")
+  @js.native
   def from(amount: TemporalAmount): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.of")
+  @js.native
   def of(years: Double, months: Double, days: Double): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.ofDays")
+  @js.native
   def ofDays(days: Double): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.ofMonths")
+  @js.native
   def ofMonths(months: Double): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.ofWeeks")
+  @js.native
   def ofWeeks(weeks: Double): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.ofYears")
+  @js.native
   def ofYears(years: Double): Period = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Period.parse")
+  @js.native
   def parse(text: String): Period = js.native
 }

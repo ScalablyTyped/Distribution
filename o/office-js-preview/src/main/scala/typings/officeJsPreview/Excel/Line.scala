@@ -20,6 +20,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Stealth
 import typings.officeJsPreview.officeJsPreviewStrings.Straight
 import typings.officeJsPreview.officeJsPreviewStrings.Triangle
 import typings.officeJsPreview.officeJsPreviewStrings.Wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

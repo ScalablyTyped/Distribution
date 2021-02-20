@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,30 +20,18 @@ object ServiceHostedMediaConfig {
   }
   
   @scala.inline
-  implicit class ServiceHostedMediaConfigOps[Self <: ServiceHostedMediaConfig] (val x: Self) extends AnyVal {
+  implicit class ServiceHostedMediaConfigMutableBuilder[Self <: ServiceHostedMediaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreFetchMedia(value: NullableOption[js.Array[MediaInfo]]): Self = StObject.set(x, "preFetchMedia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreFetchMediaNull: Self = StObject.set(x, "preFetchMedia", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreFetchMediaUndefined: Self = StObject.set(x, "preFetchMedia", js.undefined)
     
     @scala.inline
-    def setPreFetchMediaVarargs(value: MediaInfo*): Self = this.set("preFetchMedia", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreFetchMedia(value: NullableOption[js.Array[MediaInfo]]): Self = this.set("preFetchMedia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreFetchMedia: Self = this.set("preFetchMedia", js.undefined)
-    
-    @scala.inline
-    def setPreFetchMediaNull: Self = this.set("preFetchMedia", null)
+    def setPreFetchMediaVarargs(value: MediaInfo*): Self = StObject.set(x, "preFetchMedia", js.Array(value :_*))
   }
 }

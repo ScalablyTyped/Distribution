@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,36 +42,24 @@ object ArmInstruction {
   }
   
   @scala.inline
-  implicit class ArmInstructionOps[Self <: ArmInstruction] (val x: Self) extends AnyVal {
+  implicit class ArmInstructionMutableBuilder[Self <: ArmInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperands(value: js.Array[ArmOperand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperandsVarargs(value: ArmOperand*): Self = StObject.set(x, "operands", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegsRead(value: js.Array[ArmRegister]): Self = StObject.set(x, "regsRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperandsVarargs(value: ArmOperand*): Self = this.set("operands", js.Array(value :_*))
+    def setRegsReadVarargs(value: ArmRegister*): Self = StObject.set(x, "regsRead", js.Array(value :_*))
     
     @scala.inline
-    def setOperands(value: js.Array[ArmOperand]): Self = this.set("operands", value.asInstanceOf[js.Any])
+    def setRegsWritten(value: js.Array[ArmRegister]): Self = StObject.set(x, "regsWritten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegsReadVarargs(value: ArmRegister*): Self = this.set("regsRead", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegsRead(value: js.Array[ArmRegister]): Self = this.set("regsRead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegsWrittenVarargs(value: ArmRegister*): Self = this.set("regsWritten", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegsWritten(value: js.Array[ArmRegister]): Self = this.set("regsWritten", value.asInstanceOf[js.Any])
+    def setRegsWrittenVarargs(value: ArmRegister*): Self = StObject.set(x, "regsWritten", js.Array(value :_*))
   }
 }

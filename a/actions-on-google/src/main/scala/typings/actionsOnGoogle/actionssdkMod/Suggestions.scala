@@ -1,6 +1,7 @@
 package typings.actionsOnGoogle.actionssdkMod
 
 import typings.actionsOnGoogle.incomingMod._IncomingMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension extends js.Object {
+trait GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension extends StObject {
   
   /**
     * The event applied to all line item tickets.
@@ -21,24 +22,12 @@ object GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsTicketTicketOrderExtensionOps[Self <: GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3VerticalsTicketTicketOrderExtensionMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTicketEvent(value: GoogleActionsOrdersV3VerticalsTicketTicketEvent): Self = StObject.set(x, "ticketEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTicketEvent(value: GoogleActionsOrdersV3VerticalsTicketTicketEvent): Self = this.set("ticketEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicketEvent: Self = this.set("ticketEvent", js.undefined)
+    def setTicketEventUndefined: Self = StObject.set(x, "ticketEvent", js.undefined)
   }
 }

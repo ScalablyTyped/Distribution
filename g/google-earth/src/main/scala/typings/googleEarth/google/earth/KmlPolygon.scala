@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ object KmlPolygon {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getAltitudeMode: () => KmlAltitudeModeEnum,
     getExtrude: () => Boolean,
     getId: () => String,
@@ -51,32 +52,21 @@ object KmlPolygon {
     setOuterBoundary: KmlLinearRing => Unit,
     setTessellate: Boolean => Unit
   ): KmlPolygon = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getExtrude = js.Any.fromFunction0(getExtrude), getId = js.Any.fromFunction0(getId), getInnerBoundaries = js.Any.fromFunction0(getInnerBoundaries), getOuterBoundary = js.Any.fromFunction0(getOuterBoundary), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getTessellate = js.Any.fromFunction0(getTessellate), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode), setExtrude = js.Any.fromFunction1(setExtrude), setOuterBoundary = js.Any.fromFunction1(setOuterBoundary), setTessellate = js.Any.fromFunction1(setTessellate))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getExtrude = js.Any.fromFunction0(getExtrude), getId = js.Any.fromFunction0(getId), getInnerBoundaries = js.Any.fromFunction0(getInnerBoundaries), getOuterBoundary = js.Any.fromFunction0(getOuterBoundary), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getTessellate = js.Any.fromFunction0(getTessellate), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode), setExtrude = js.Any.fromFunction1(setExtrude), setOuterBoundary = js.Any.fromFunction1(setOuterBoundary), setTessellate = js.Any.fromFunction1(setTessellate))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlPolygon]
   }
   
   @scala.inline
-  implicit class KmlPolygonOps[Self <: KmlPolygon] (val x: Self) extends AnyVal {
+  implicit class KmlPolygonMutableBuilder[Self <: KmlPolygon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInnerBoundaries(value: () => GELinearRingContainer): Self = StObject.set(x, "getInnerBoundaries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetOuterBoundary(value: () => KmlLinearRing): Self = StObject.set(x, "getOuterBoundary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInnerBoundaries(value: () => GELinearRingContainer): Self = this.set("getInnerBoundaries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOuterBoundary(value: () => KmlLinearRing): Self = this.set("getOuterBoundary", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOuterBoundary(value: KmlLinearRing => Unit): Self = this.set("setOuterBoundary", js.Any.fromFunction1(value))
+    def setSetOuterBoundary(value: KmlLinearRing => Unit): Self = StObject.set(x, "setOuterBoundary", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMPointReadOnly extends js.Object {
+trait DOMPointReadOnly extends StObject {
   
   def matrixTransform(): DOMPoint = js.native
   def matrixTransform(matrix: DOMMatrixInit): DOMPoint = js.native

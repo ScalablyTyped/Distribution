@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemControl extends js.Object {
+trait ItemControl extends StObject {
   
   var clearButton: String = js.native
   
@@ -44,45 +45,33 @@ object ItemControl {
   }
   
   @scala.inline
-  implicit class ItemControlOps[Self <: ItemControl] (val x: Self) extends AnyVal {
+  implicit class ItemControlMutableBuilder[Self <: ItemControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearButton(value: String): Self = this.set("clearButton", value.asInstanceOf[js.Any])
+    def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemChecked(value: String): Self = this.set("itemChecked", value.asInstanceOf[js.Any])
+    def setItemText(value: String): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemControl(value: String): Self = this.set("itemControl", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemInline(value: String): Self = this.set("itemInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemText(value: String): Self = this.set("itemText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

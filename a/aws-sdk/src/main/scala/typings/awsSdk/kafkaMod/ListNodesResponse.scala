@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNodesResponse extends js.Object {
+trait ListNodesResponse extends StObject {
   
   /**
     * 
@@ -31,33 +32,21 @@ object ListNodesResponse {
   }
   
   @scala.inline
-  implicit class ListNodesResponseOps[Self <: ListNodesResponse] (val x: Self) extends AnyVal {
+  implicit class ListNodesResponseMutableBuilder[Self <: ListNodesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeInfoList(value: listOfNodeInfo): Self = StObject.set(x, "NodeInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setNodeInfoListUndefined: Self = StObject.set(x, "NodeInfoList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setNodeInfoListVarargs(value: NodeInfo*): Self = this.set("NodeInfoList", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodeInfoList(value: listOfNodeInfo): Self = this.set("NodeInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeInfoList: Self = this.set("NodeInfoList", js.undefined)
+    def setNodeInfoListVarargs(value: NodeInfo*): Self = StObject.set(x, "NodeInfoList", js.Array(value :_*))
   }
 }

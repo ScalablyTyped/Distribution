@@ -1,11 +1,12 @@
 package typings.lscache
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LSCache extends js.Object {
+trait LSCache extends StObject {
   
   /**
     * Sets whether to display warnings when an item is removed from the cache or not.

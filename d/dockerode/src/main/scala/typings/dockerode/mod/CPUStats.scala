@@ -2,12 +2,13 @@ package typings.dockerode.mod
 
 import typings.dockerode.anon.Percpuusage
 import typings.dockerode.anon.Periods
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPUStats extends js.Object {
+trait CPUStats extends StObject {
   
   var cpu_usage: Percpuusage = js.native
   
@@ -26,30 +27,18 @@ object CPUStats {
   }
   
   @scala.inline
-  implicit class CPUStatsOps[Self <: CPUStats] (val x: Self) extends AnyVal {
+  implicit class CPUStatsMutableBuilder[Self <: CPUStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpu_usage(value: Percpuusage): Self = StObject.set(x, "cpu_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnline_cpus(value: Double): Self = StObject.set(x, "online_cpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSystem_cpu_usage(value: Double): Self = StObject.set(x, "system_cpu_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu_usage(value: Percpuusage): Self = this.set("cpu_usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnline_cpus(value: Double): Self = this.set("online_cpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystem_cpu_usage(value: Double): Self = this.set("system_cpu_usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThrottling_data(value: Periods): Self = this.set("throttling_data", value.asInstanceOf[js.Any])
+    def setThrottling_data(value: Periods): Self = StObject.set(x, "throttling_data", value.asInstanceOf[js.Any])
   }
 }

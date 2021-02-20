@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolvedTypeReferenceDirectiveWithFailedLookupLocations extends js.Object {
+trait ResolvedTypeReferenceDirectiveWithFailedLookupLocations extends StObject {
   
   val failedLookupLocations: js.Array[java.lang.String] = js.native
   
@@ -20,30 +21,18 @@ object ResolvedTypeReferenceDirectiveWithFailedLookupLocations {
   }
   
   @scala.inline
-  implicit class ResolvedTypeReferenceDirectiveWithFailedLookupLocationsOps[Self <: ResolvedTypeReferenceDirectiveWithFailedLookupLocations] (val x: Self) extends AnyVal {
+  implicit class ResolvedTypeReferenceDirectiveWithFailedLookupLocationsMutableBuilder[Self <: ResolvedTypeReferenceDirectiveWithFailedLookupLocations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedLookupLocations(value: js.Array[java.lang.String]): Self = StObject.set(x, "failedLookupLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedLookupLocationsVarargs(value: java.lang.String*): Self = StObject.set(x, "failedLookupLocations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedTypeReferenceDirective(value: ResolvedTypeReferenceDirective): Self = StObject.set(x, "resolvedTypeReferenceDirective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedLookupLocationsVarargs(value: java.lang.String*): Self = this.set("failedLookupLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedLookupLocations(value: js.Array[java.lang.String]): Self = this.set("failedLookupLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedTypeReferenceDirective(value: ResolvedTypeReferenceDirective): Self = this.set("resolvedTypeReferenceDirective", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvedTypeReferenceDirective: Self = this.set("resolvedTypeReferenceDirective", js.undefined)
+    def setResolvedTypeReferenceDirectiveUndefined: Self = StObject.set(x, "resolvedTypeReferenceDirective", js.undefined)
   }
 }

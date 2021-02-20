@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Target
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetRemoteLocationsRequest extends js.Object {
+trait SetRemoteLocationsRequest extends StObject {
   
   /**
     * List of remote locations.
@@ -21,24 +22,12 @@ object SetRemoteLocationsRequest {
   }
   
   @scala.inline
-  implicit class SetRemoteLocationsRequestOps[Self <: SetRemoteLocationsRequest] (val x: Self) extends AnyVal {
+  implicit class SetRemoteLocationsRequestMutableBuilder[Self <: SetRemoteLocationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocations(value: js.Array[RemoteLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocationsVarargs(value: RemoteLocation*): Self = this.set("locations", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocations(value: js.Array[RemoteLocation]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setLocationsVarargs(value: RemoteLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

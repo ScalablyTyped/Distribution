@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailOnDuplicatePaymentMethod extends js.Object {
+trait FailOnDuplicatePaymentMethod extends StObject {
   
   var failOnDuplicatePaymentMethod: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object FailOnDuplicatePaymentMethod {
   }
   
   @scala.inline
-  implicit class FailOnDuplicatePaymentMethodOps[Self <: FailOnDuplicatePaymentMethod] (val x: Self) extends AnyVal {
+  implicit class FailOnDuplicatePaymentMethodMutableBuilder[Self <: FailOnDuplicatePaymentMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailOnDuplicatePaymentMethod(value: Boolean): Self = StObject.set(x, "failOnDuplicatePaymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailOnDuplicatePaymentMethodUndefined: Self = StObject.set(x, "failOnDuplicatePaymentMethod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMakeDefault(value: Boolean): Self = StObject.set(x, "makeDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailOnDuplicatePaymentMethod(value: Boolean): Self = this.set("failOnDuplicatePaymentMethod", value.asInstanceOf[js.Any])
+    def setMakeDefaultUndefined: Self = StObject.set(x, "makeDefault", js.undefined)
     
     @scala.inline
-    def deleteFailOnDuplicatePaymentMethod: Self = this.set("failOnDuplicatePaymentMethod", js.undefined)
+    def setVerifyCard(value: Boolean): Self = StObject.set(x, "verifyCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMakeDefault(value: Boolean): Self = this.set("makeDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMakeDefault: Self = this.set("makeDefault", js.undefined)
-    
-    @scala.inline
-    def setVerifyCard(value: Boolean): Self = this.set("verifyCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyCard: Self = this.set("verifyCard", js.undefined)
+    def setVerifyCardUndefined: Self = StObject.set(x, "verifyCard", js.undefined)
   }
 }

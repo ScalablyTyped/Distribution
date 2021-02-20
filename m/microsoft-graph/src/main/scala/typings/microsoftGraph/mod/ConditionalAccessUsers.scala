@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalAccessUsers extends js.Object {
+trait ConditionalAccessUsers extends StObject {
   
   // Group IDs excluded from scope of policy.
   var excludeGroups: js.UndefOr[js.Array[String]] = js.native
@@ -34,72 +35,60 @@ object ConditionalAccessUsers {
   }
   
   @scala.inline
-  implicit class ConditionalAccessUsersOps[Self <: ConditionalAccessUsers] (val x: Self) extends AnyVal {
+  implicit class ConditionalAccessUsersMutableBuilder[Self <: ConditionalAccessUsers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeGroups(value: js.Array[String]): Self = StObject.set(x, "excludeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeGroupsUndefined: Self = StObject.set(x, "excludeGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeGroupsVarargs(value: String*): Self = StObject.set(x, "excludeGroups", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeGroupsVarargs(value: String*): Self = this.set("excludeGroups", js.Array(value :_*))
+    def setExcludeRoles(value: js.Array[String]): Self = StObject.set(x, "excludeRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeGroups(value: js.Array[String]): Self = this.set("excludeGroups", value.asInstanceOf[js.Any])
+    def setExcludeRolesUndefined: Self = StObject.set(x, "excludeRoles", js.undefined)
     
     @scala.inline
-    def deleteExcludeGroups: Self = this.set("excludeGroups", js.undefined)
+    def setExcludeRolesVarargs(value: String*): Self = StObject.set(x, "excludeRoles", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeRolesVarargs(value: String*): Self = this.set("excludeRoles", js.Array(value :_*))
+    def setExcludeUsers(value: js.Array[String]): Self = StObject.set(x, "excludeUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeRoles(value: js.Array[String]): Self = this.set("excludeRoles", value.asInstanceOf[js.Any])
+    def setExcludeUsersUndefined: Self = StObject.set(x, "excludeUsers", js.undefined)
     
     @scala.inline
-    def deleteExcludeRoles: Self = this.set("excludeRoles", js.undefined)
+    def setExcludeUsersVarargs(value: String*): Self = StObject.set(x, "excludeUsers", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeUsersVarargs(value: String*): Self = this.set("excludeUsers", js.Array(value :_*))
+    def setIncludeGroups(value: js.Array[String]): Self = StObject.set(x, "includeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeUsers(value: js.Array[String]): Self = this.set("excludeUsers", value.asInstanceOf[js.Any])
+    def setIncludeGroupsUndefined: Self = StObject.set(x, "includeGroups", js.undefined)
     
     @scala.inline
-    def deleteExcludeUsers: Self = this.set("excludeUsers", js.undefined)
+    def setIncludeGroupsVarargs(value: String*): Self = StObject.set(x, "includeGroups", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeGroupsVarargs(value: String*): Self = this.set("includeGroups", js.Array(value :_*))
+    def setIncludeRoles(value: js.Array[String]): Self = StObject.set(x, "includeRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeGroups(value: js.Array[String]): Self = this.set("includeGroups", value.asInstanceOf[js.Any])
+    def setIncludeRolesUndefined: Self = StObject.set(x, "includeRoles", js.undefined)
     
     @scala.inline
-    def deleteIncludeGroups: Self = this.set("includeGroups", js.undefined)
+    def setIncludeRolesVarargs(value: String*): Self = StObject.set(x, "includeRoles", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeRolesVarargs(value: String*): Self = this.set("includeRoles", js.Array(value :_*))
+    def setIncludeUsers(value: js.Array[String]): Self = StObject.set(x, "includeUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeRoles(value: js.Array[String]): Self = this.set("includeRoles", value.asInstanceOf[js.Any])
+    def setIncludeUsersUndefined: Self = StObject.set(x, "includeUsers", js.undefined)
     
     @scala.inline
-    def deleteIncludeRoles: Self = this.set("includeRoles", js.undefined)
-    
-    @scala.inline
-    def setIncludeUsersVarargs(value: String*): Self = this.set("includeUsers", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludeUsers(value: js.Array[String]): Self = this.set("includeUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUsers: Self = this.set("includeUsers", js.undefined)
+    def setIncludeUsersVarargs(value: String*): Self = StObject.set(x, "includeUsers", js.Array(value :_*))
   }
 }

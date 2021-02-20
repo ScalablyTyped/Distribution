@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object NumberFormatSettings {
   }
   
   @scala.inline
-  implicit class NumberFormatSettingsOps[Self <: NumberFormatSettings] (val x: Self) extends AnyVal {
+  implicit class NumberFormatSettingsMutableBuilder[Self <: NumberFormatSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoZero(value: Boolean): Self = StObject.set(x, "NoZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNullDate(value: Date): Self = StObject.set(x, "NullDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStandardDecimals(value: Double): Self = StObject.set(x, "StandardDecimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoZero(value: Boolean): Self = this.set("NoZero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNullDate(value: Date): Self = this.set("NullDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardDecimals(value: Double): Self = this.set("StandardDecimals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwoDigitDateStart(value: Double): Self = this.set("TwoDigitDateStart", value.asInstanceOf[js.Any])
+    def setTwoDigitDateStart(value: Double): Self = StObject.set(x, "TwoDigitDateStart", value.asInstanceOf[js.Any])
   }
 }

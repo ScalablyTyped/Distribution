@@ -1,12 +1,13 @@
 package typings.cqrsDomain.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CqrsDomain extends js.Object {
+trait CqrsDomain extends StObject {
   
   /**
     * Inject idGenerator function for aggregate id.

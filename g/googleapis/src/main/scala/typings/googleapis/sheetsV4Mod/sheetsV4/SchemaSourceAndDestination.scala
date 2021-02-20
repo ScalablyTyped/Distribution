@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A combination of a source range and how to extend that source.
   */
 @js.native
-trait SchemaSourceAndDestination extends js.Object {
+trait SchemaSourceAndDestination extends StObject {
   
   /**
     * The dimension that data should be filled into.
@@ -36,36 +37,24 @@ object SchemaSourceAndDestination {
   }
   
   @scala.inline
-  implicit class SchemaSourceAndDestinationOps[Self <: SchemaSourceAndDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceAndDestinationMutableBuilder[Self <: SchemaSourceAndDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillLength(value: Double): Self = StObject.set(x, "fillLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setFillLengthUndefined: Self = StObject.set(x, "fillLength", js.undefined)
     
     @scala.inline
-    def deleteDimension: Self = this.set("dimension", js.undefined)
+    def setSource(value: SchemaGridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillLength(value: Double): Self = this.set("fillLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillLength: Self = this.set("fillLength", js.undefined)
-    
-    @scala.inline
-    def setSource(value: SchemaGridRange): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.restifyErrors.mod
 
 import typings.verror.mod.VError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

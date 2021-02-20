@@ -1,5 +1,6 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable
 */
-trait TooltipBehaviorIOS extends js.Object
+trait TooltipBehaviorIOS extends StObject
 object TooltipBehaviorIOS {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information about an operating system that can be targeted by ads.
   */
 @js.native
-trait SchemaOperatingSystem extends js.Object {
+trait SchemaOperatingSystem extends StObject {
   
   /**
     * DART ID of this operating system. This is the ID used for targeting.
@@ -45,48 +46,36 @@ object SchemaOperatingSystem {
   }
   
   @scala.inline
-  implicit class SchemaOperatingSystemOps[Self <: SchemaOperatingSystem] (val x: Self) extends AnyVal {
+  implicit class SchemaOperatingSystemMutableBuilder[Self <: SchemaOperatingSystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDartId(value: String): Self = this.set("dartId", value.asInstanceOf[js.Any])
+    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
     @scala.inline
-    def deleteDartId: Self = this.set("dartId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktop(value: Boolean): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: Boolean): Self = this.set("mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

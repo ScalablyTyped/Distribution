@@ -1,12 +1,13 @@
 package typings.rxJquery
 
 import typings.jquery.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RxJQueryAjaxResult[T] extends js.Object {
+trait RxJQueryAjaxResult[T] extends StObject {
   
   var data: T = js.native
   
@@ -23,27 +24,15 @@ object RxJQueryAjaxResult {
   }
   
   @scala.inline
-  implicit class RxJQueryAjaxResultOps[Self <: RxJQueryAjaxResult[_], T] (val x: Self with RxJQueryAjaxResult[T]) extends AnyVal {
+  implicit class RxJQueryAjaxResultMutableBuilder[Self <: RxJQueryAjaxResult[_], T] (val x: Self with RxJQueryAjaxResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJqXHR(value: JQueryXHR): Self = this.set("jqXHR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextStatus(value: String): Self = this.set("textStatus", value.asInstanceOf[js.Any])
+    def setTextStatus(value: String): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
   }
 }

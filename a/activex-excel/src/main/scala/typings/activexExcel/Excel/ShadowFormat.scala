@@ -3,12 +3,13 @@ package typings.activexExcel.Excel
 import typings.activexOffice.Office.MsoShadowStyle
 import typings.activexOffice.Office.MsoShadowType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowFormat extends js.Object {
+trait ShadowFormat extends StObject {
   
   val Application: js.Any = js.native
   
@@ -73,69 +74,57 @@ object ShadowFormat {
   }
   
   @scala.inline
-  implicit class ShadowFormatOps[Self <: ShadowFormat] (val x: Self) extends AnyVal {
+  implicit class ShadowFormatMutableBuilder[Self <: ShadowFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlur(value: Double): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotShadowFormat_typekey(value: ShadowFormat): Self = StObject.set(x, "Excel.ShadowFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: Double): Self = this.set("Blur", value.asInstanceOf[js.Any])
+    def setForeColor(value: ColorFormat): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIncrementOffsetX(value: Double => Unit): Self = StObject.set(x, "IncrementOffsetX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcelDotShadowFormat_typekey(value: ShadowFormat): Self = this.set("Excel.ShadowFormat_typekey", value.asInstanceOf[js.Any])
+    def setIncrementOffsetY(value: Double => Unit): Self = StObject.set(x, "IncrementOffsetY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForeColor(value: ColorFormat): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    def setObscured(value: MsoTriState): Self = StObject.set(x, "Obscured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementOffsetX(value: Double => Unit): Self = this.set("IncrementOffsetX", js.Any.fromFunction1(value))
+    def setOffsetX(value: Double): Self = StObject.set(x, "OffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementOffsetY(value: Double => Unit): Self = this.set("IncrementOffsetY", js.Any.fromFunction1(value))
+    def setOffsetY(value: Double): Self = StObject.set(x, "OffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObscured(value: MsoTriState): Self = this.set("Obscured", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("OffsetX", value.asInstanceOf[js.Any])
+    def setRotateWithShape(value: MsoTriState): Self = StObject.set(x, "RotateWithShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("OffsetY", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStyle(value: MsoShadowStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateWithShape(value: MsoTriState): Self = this.set("RotateWithShape", value.asInstanceOf[js.Any])
+    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setType(value: MsoShadowType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: MsoShadowStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransparency(value: Double): Self = this.set("Transparency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoShadowType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.numeral
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.numeral.numeralStrings.format
   - typings.numeral.numeralStrings.locale
 */
-trait RegisterType extends js.Object
+trait RegisterType extends StObject
 object RegisterType {
   
   @scala.inline

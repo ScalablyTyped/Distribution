@@ -6,29 +6,34 @@ import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.recognizerMod.Recognizer
 import typings.antlr4.tokenMod.Token
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/error/Errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
   
+  @JSImport("antlr4/error/Errors", "FailedPredicateException")
   @js.native
   class FailedPredicateException () extends RecognitionException
   
+  @JSImport("antlr4/error/Errors", "InputMismatchException")
   @js.native
   class InputMismatchException () extends RecognitionException
   
+  @JSImport("antlr4/error/Errors", "LexerNoViableAltException")
   @js.native
   class LexerNoViableAltException () extends RecognitionException
   
+  @JSImport("antlr4/error/Errors", "NoViableAltException")
   @js.native
   class NoViableAltException () extends RecognitionException
   
+  @JSImport("antlr4/error/Errors", "ParseCancellationException")
   @js.native
   class ParseCancellationException () extends RecognitionException
   
+  @JSImport("antlr4/error/Errors", "RecognitionException")
   @js.native
   class RecognitionException () extends Error {
     

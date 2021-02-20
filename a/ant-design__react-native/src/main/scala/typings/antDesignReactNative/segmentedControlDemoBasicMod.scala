@@ -1,13 +1,16 @@
 package typings.antDesignReactNative
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/segmented-control/demo/basic", JSImport.Namespace)
-@js.native
-object segmentedControlDemoBasicMod extends js.Object {
+object segmentedControlDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/segmented-control/demo/basic", JSImport.Default)
+  @js.native
+  class default () extends BasicTagExample
   
   @js.native
   trait BasicTagExample
@@ -17,7 +20,4 @@ object segmentedControlDemoBasicMod extends js.Object {
     
     def onValueChange(value: js.Any): Unit = js.native
   }
-  
-  @js.native
-  class default () extends BasicTagExample
 }

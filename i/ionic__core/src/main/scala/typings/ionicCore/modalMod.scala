@@ -9,14 +9,14 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/modal/modal", JSImport.Namespace)
-@js.native
-object modalMod extends js.Object {
+object modalMod {
   
+  @JSImport("@ionic/core/dist/types/components/modal/modal", "Modal")
   @js.native
   class Modal ()
     extends ComponentInterface

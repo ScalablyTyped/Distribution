@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketOwnershipControlsOutput extends js.Object {
+trait GetBucketOwnershipControlsOutput extends StObject {
   
   /**
     * The OwnershipControls (BucketOwnerPreferred or ObjectWriter) currently in effect for this Amazon S3 bucket.
@@ -21,24 +22,12 @@ object GetBucketOwnershipControlsOutput {
   }
   
   @scala.inline
-  implicit class GetBucketOwnershipControlsOutputOps[Self <: GetBucketOwnershipControlsOutput] (val x: Self) extends AnyVal {
+  implicit class GetBucketOwnershipControlsOutputMutableBuilder[Self <: GetBucketOwnershipControlsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwnershipControls(value: OwnershipControls): Self = StObject.set(x, "OwnershipControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOwnershipControls(value: OwnershipControls): Self = this.set("OwnershipControls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnershipControls: Self = this.set("OwnershipControls", js.undefined)
+    def setOwnershipControlsUndefined: Self = StObject.set(x, "OwnershipControls", js.undefined)
   }
 }

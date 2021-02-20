@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetHttpsProxy extends js.Object {
+trait TargetHttpsProxy extends StObject {
   
   /**
     * Optional. A URL referring to a networksecurity.AuthorizationPolicy resource that describes how the proxy should authorize inbound traffic. If left blank, access will not be
@@ -98,105 +99,93 @@ object TargetHttpsProxy {
   }
   
   @scala.inline
-  implicit class TargetHttpsProxyOps[Self <: TargetHttpsProxy] (val x: Self) extends AnyVal {
+  implicit class TargetHttpsProxyMutableBuilder[Self <: TargetHttpsProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationPolicy(value: String): Self = StObject.set(x, "authorizationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationPolicyUndefined: Self = StObject.set(x, "authorizationPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationPolicy(value: String): Self = this.set("authorizationPolicy", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationPolicy: Self = this.set("authorizationPolicy", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setProxyBind(value: Boolean): Self = StObject.set(x, "proxyBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProxyBindUndefined: Self = StObject.set(x, "proxyBind", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQuicOverride(value: String): Self = StObject.set(x, "quicOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyBind(value: Boolean): Self = this.set("proxyBind", value.asInstanceOf[js.Any])
+    def setQuicOverrideUndefined: Self = StObject.set(x, "quicOverride", js.undefined)
     
     @scala.inline
-    def deleteProxyBind: Self = this.set("proxyBind", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuicOverride(value: String): Self = this.set("quicOverride", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteQuicOverride: Self = this.set("quicOverride", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setServerTlsPolicy(value: String): Self = StObject.set(x, "serverTlsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setServerTlsPolicyUndefined: Self = StObject.set(x, "serverTlsPolicy", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSslCertificates(value: js.Array[String]): Self = StObject.set(x, "sslCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerTlsPolicy(value: String): Self = this.set("serverTlsPolicy", value.asInstanceOf[js.Any])
+    def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
     @scala.inline
-    def deleteServerTlsPolicy: Self = this.set("serverTlsPolicy", js.undefined)
+    def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
     
     @scala.inline
-    def setSslCertificatesVarargs(value: String*): Self = this.set("sslCertificates", js.Array(value :_*))
+    def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCertificates(value: js.Array[String]): Self = this.set("sslCertificates", value.asInstanceOf[js.Any])
+    def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
     
     @scala.inline
-    def deleteSslCertificates: Self = this.set("sslCertificates", js.undefined)
+    def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslPolicy(value: String): Self = this.set("sslPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslPolicy: Self = this.set("sslPolicy", js.undefined)
-    
-    @scala.inline
-    def setUrlMap(value: String): Self = this.set("urlMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlMap: Self = this.set("urlMap", js.undefined)
+    def setUrlMapUndefined: Self = StObject.set(x, "urlMap", js.undefined)
   }
 }

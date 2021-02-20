@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the scope of a query. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailQuerySearchScope")
 @js.native
-object EmailQuerySearchScope extends js.Object {
+object EmailQuerySearchScope extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

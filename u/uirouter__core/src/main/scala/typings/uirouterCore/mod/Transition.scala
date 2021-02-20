@@ -1,6 +1,7 @@
 package typings.uirouterCore.mod
 
 import typings.uirouterCore.anon.TypeofTransition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +30,16 @@ class Transition protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@uirouter/core", "Transition")
-@js.native
-object Transition extends js.Object {
+object Transition {
+  
+  @JSImport("@uirouter/core", "Transition")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @internal */
-  var diToken: TypeofTransition = js.native
+  @JSImport("@uirouter/core", "Transition.diToken")
+  @js.native
+  def diToken: TypeofTransition = js.native
+  @scala.inline
+  def diToken_=(x: TypeofTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diToken")(x.asInstanceOf[js.Any])
 }

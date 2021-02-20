@@ -1,16 +1,15 @@
 package typings.playable
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/text-map/types", JSImport.Namespace)
-@js.native
-object textMapTypesMod extends js.Object {
+object textMapTypesMod {
   
   @js.native
-  trait ITextMap extends js.Object {
+  trait ITextMap extends StObject {
     
     def destroy(): Unit = js.native
     

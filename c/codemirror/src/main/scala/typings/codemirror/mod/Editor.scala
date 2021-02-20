@@ -103,6 +103,7 @@ import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,7 +111,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Methods prefixed with doc. can, unless otherwise specified, be called both on CodeMirror (editor) instances and
   CodeMirror.Doc instances. Thus, the Editor interface extends Doc. **/
 @js.native
-trait Editor extends Doc {
+trait Editor
+  extends typings.codemirror.mod.Doc {
   
   /** Attach an additional keymap to the editor.
     This is mostly useful for add - ons that need to register some key handlers without trampling on the extraKeys option.
@@ -214,7 +216,7 @@ trait Editor extends Doc {
   def focus(): Unit = js.native
   
   /** Retrieve the currently active document from an editor. */
-  def getDoc(): Doc = js.native
+  def getDoc(): typings.codemirror.mod.Doc = js.native
   
   /** Fetches the DOM node that contains the editor gutters. */
   def getGutterElement(): HTMLElement = js.native
@@ -425,7 +427,10 @@ trait Editor extends Doc {
   def lineInfo(line: js.Any): BgClass = js.native
   
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
-  def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
+  def off(
+    eventName: String,
+    handler: js.Function2[/* doc */ typings.codemirror.mod.Doc, /* event */ js.Any, Unit]
+  ): Unit = js.native
   def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
@@ -523,7 +528,10 @@ trait Editor extends Doc {
     handler: js.Function2[/* instance */ this.type, /* event */ Event, Unit]
   ): Unit = js.native
   @JSName("off")
-  def off_swapDoc(eventName: swapDoc, handler: js.Function2[/* instance */ this.type, /* oldDoc */ Doc, Unit]): Unit = js.native
+  def off_swapDoc(
+    eventName: swapDoc,
+    handler: js.Function2[/* instance */ this.type, /* oldDoc */ typings.codemirror.mod.Doc, Unit]
+  ): Unit = js.native
   @JSName("off")
   def off_update(eventName: update, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   @JSName("off")
@@ -537,7 +545,10 @@ trait Editor extends Doc {
     The instance argument always refers to the editor instance. */
   def on(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
-  def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
+  def on(
+    eventName: String,
+    handler: js.Function2[/* doc */ typings.codemirror.mod.Doc, /* event */ js.Any, Unit]
+  ): Unit = js.native
   /** Fires when one of the global DOM events fires. */
   def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any) */](
     eventName: K,
@@ -675,7 +686,10 @@ trait Editor extends Doc {
   ): Unit = js.native
   /** This is signalled when the editor's document is replaced using the swapDoc method. */
   @JSName("on")
-  def on_swapDoc(eventName: swapDoc, handler: js.Function2[/* instance */ this.type, /* oldDoc */ Doc, Unit]): Unit = js.native
+  def on_swapDoc(
+    eventName: swapDoc,
+    handler: js.Function2[/* instance */ this.type, /* oldDoc */ typings.codemirror.mod.Doc, Unit]
+  ): Unit = js.native
   /** Will be fired whenever CodeMirror updates its DOM display. */
   @JSName("on")
   def on_update(eventName: update, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
@@ -1032,7 +1046,7 @@ trait Editor extends Doc {
   def startOperation(): Unit = js.native
   
   /** Attach a new document to the editor. Returns the old document, which is now no longer associated with an editor. */
-  def swapDoc(doc: Doc): Doc = js.native
+  def swapDoc(doc: typings.codemirror.mod.Doc): typings.codemirror.mod.Doc = js.native
   
   /** Tries to uncomment the current selection, and if that fails, line-comments it. */
   def toggleComment(): Unit = js.native

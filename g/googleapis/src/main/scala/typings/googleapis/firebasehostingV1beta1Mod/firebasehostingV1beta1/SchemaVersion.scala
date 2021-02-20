@@ -1,6 +1,7 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * files](sites.versions.files) that determine how a site is displayed.
   */
 @js.native
-trait SchemaVersion extends js.Object {
+trait SchemaVersion extends StObject {
   
   /**
     * The configuration for the behavior of the site. This configuration exists
@@ -96,90 +97,78 @@ object SchemaVersion {
   }
   
   @scala.inline
-  implicit class SchemaVersionOps[Self <: SchemaVersion] (val x: Self) extends AnyVal {
+  implicit class SchemaVersionMutableBuilder[Self <: SchemaVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: SchemaServingConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: SchemaServingConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setCreateUser(value: SchemaActingUser): Self = StObject.set(x, "createUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCreateUserUndefined: Self = StObject.set(x, "createUser", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDeleteTime(value: String): Self = StObject.set(x, "deleteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateUser(value: SchemaActingUser): Self = this.set("createUser", value.asInstanceOf[js.Any])
+    def setDeleteTimeUndefined: Self = StObject.set(x, "deleteTime", js.undefined)
     
     @scala.inline
-    def deleteCreateUser: Self = this.set("createUser", js.undefined)
+    def setDeleteUser(value: SchemaActingUser): Self = StObject.set(x, "deleteUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTime(value: String): Self = this.set("deleteTime", value.asInstanceOf[js.Any])
+    def setDeleteUserUndefined: Self = StObject.set(x, "deleteUser", js.undefined)
     
     @scala.inline
-    def deleteDeleteTime: Self = this.set("deleteTime", js.undefined)
+    def setFileCount(value: String): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteUser(value: SchemaActingUser): Self = this.set("deleteUser", value.asInstanceOf[js.Any])
+    def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
     
     @scala.inline
-    def deleteDeleteUser: Self = this.set("deleteUser", js.undefined)
+    def setFinalizeTime(value: String): Self = StObject.set(x, "finalizeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileCount(value: String): Self = this.set("fileCount", value.asInstanceOf[js.Any])
+    def setFinalizeTimeUndefined: Self = StObject.set(x, "finalizeTime", js.undefined)
     
     @scala.inline
-    def deleteFileCount: Self = this.set("fileCount", js.undefined)
+    def setFinalizeUser(value: SchemaActingUser): Self = StObject.set(x, "finalizeUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalizeTime(value: String): Self = this.set("finalizeTime", value.asInstanceOf[js.Any])
+    def setFinalizeUserUndefined: Self = StObject.set(x, "finalizeUser", js.undefined)
     
     @scala.inline
-    def deleteFinalizeTime: Self = this.set("finalizeTime", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalizeUser(value: SchemaActingUser): Self = this.set("finalizeUser", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteFinalizeUser: Self = this.set("finalizeUser", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVersionBytes(value: String): Self = StObject.set(x, "versionBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setVersionBytes(value: String): Self = this.set("versionBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionBytes: Self = this.set("versionBytes", js.undefined)
+    def setVersionBytesUndefined: Self = StObject.set(x, "versionBytes", js.undefined)
   }
 }

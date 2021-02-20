@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayPortMapping extends js.Object {
+trait VirtualGatewayPortMapping extends StObject {
   
   /**
     * The port used for the port mapping. Specify one protocol.
@@ -26,24 +27,12 @@ object VirtualGatewayPortMapping {
   }
   
   @scala.inline
-  implicit class VirtualGatewayPortMappingOps[Self <: VirtualGatewayPortMapping] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayPortMappingMutableBuilder[Self <: VirtualGatewayPortMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPort(value: PortNumber): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPort(value: PortNumber): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: VirtualGatewayPortProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setProtocol(value: VirtualGatewayPortProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

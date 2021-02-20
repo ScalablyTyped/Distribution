@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageRulePredicates extends js.Object {
+trait MessageRulePredicates extends StObject {
   
   /**
     * Represents the strings that should appear in the body of an incoming message in order for the condition or exception to
@@ -161,315 +162,303 @@ object MessageRulePredicates {
   }
   
   @scala.inline
-  implicit class MessageRulePredicatesOps[Self <: MessageRulePredicates] (val x: Self) extends AnyVal {
+  implicit class MessageRulePredicatesMutableBuilder[Self <: MessageRulePredicates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "bodyContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyContainsNull: Self = StObject.set(x, "bodyContains", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyContainsUndefined: Self = StObject.set(x, "bodyContains", js.undefined)
     
     @scala.inline
-    def setBodyContainsVarargs(value: String*): Self = this.set("bodyContains", js.Array(value :_*))
+    def setBodyContainsVarargs(value: String*): Self = StObject.set(x, "bodyContains", js.Array(value :_*))
     
     @scala.inline
-    def setBodyContains(value: NullableOption[js.Array[String]]): Self = this.set("bodyContains", value.asInstanceOf[js.Any])
+    def setBodyOrSubjectContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "bodyOrSubjectContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyContains: Self = this.set("bodyContains", js.undefined)
+    def setBodyOrSubjectContainsNull: Self = StObject.set(x, "bodyOrSubjectContains", null)
     
     @scala.inline
-    def setBodyContainsNull: Self = this.set("bodyContains", null)
+    def setBodyOrSubjectContainsUndefined: Self = StObject.set(x, "bodyOrSubjectContains", js.undefined)
     
     @scala.inline
-    def setBodyOrSubjectContainsVarargs(value: String*): Self = this.set("bodyOrSubjectContains", js.Array(value :_*))
+    def setBodyOrSubjectContainsVarargs(value: String*): Self = StObject.set(x, "bodyOrSubjectContains", js.Array(value :_*))
     
     @scala.inline
-    def setBodyOrSubjectContains(value: NullableOption[js.Array[String]]): Self = this.set("bodyOrSubjectContains", value.asInstanceOf[js.Any])
+    def setCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyOrSubjectContains: Self = this.set("bodyOrSubjectContains", js.undefined)
+    def setCategoriesNull: Self = StObject.set(x, "categories", null)
     
     @scala.inline
-    def setBodyOrSubjectContainsNull: Self = this.set("bodyOrSubjectContains", null)
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategories(value: NullableOption[js.Array[String]]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setFromAddresses(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "fromAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setFromAddressesNull: Self = StObject.set(x, "fromAddresses", null)
     
     @scala.inline
-    def setCategoriesNull: Self = this.set("categories", null)
+    def setFromAddressesUndefined: Self = StObject.set(x, "fromAddresses", js.undefined)
     
     @scala.inline
-    def setFromAddressesVarargs(value: Recipient*): Self = this.set("fromAddresses", js.Array(value :_*))
+    def setFromAddressesVarargs(value: Recipient*): Self = StObject.set(x, "fromAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setFromAddresses(value: NullableOption[js.Array[Recipient]]): Self = this.set("fromAddresses", value.asInstanceOf[js.Any])
+    def setHasAttachments(value: NullableOption[Boolean]): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromAddresses: Self = this.set("fromAddresses", js.undefined)
+    def setHasAttachmentsNull: Self = StObject.set(x, "hasAttachments", null)
     
     @scala.inline
-    def setFromAddressesNull: Self = this.set("fromAddresses", null)
+    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
     @scala.inline
-    def setHasAttachments(value: NullableOption[Boolean]): Self = this.set("hasAttachments", value.asInstanceOf[js.Any])
+    def setHeaderContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "headerContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasAttachments: Self = this.set("hasAttachments", js.undefined)
+    def setHeaderContainsNull: Self = StObject.set(x, "headerContains", null)
     
     @scala.inline
-    def setHasAttachmentsNull: Self = this.set("hasAttachments", null)
+    def setHeaderContainsUndefined: Self = StObject.set(x, "headerContains", js.undefined)
     
     @scala.inline
-    def setHeaderContainsVarargs(value: String*): Self = this.set("headerContains", js.Array(value :_*))
+    def setHeaderContainsVarargs(value: String*): Self = StObject.set(x, "headerContains", js.Array(value :_*))
     
     @scala.inline
-    def setHeaderContains(value: NullableOption[js.Array[String]]): Self = this.set("headerContains", value.asInstanceOf[js.Any])
+    def setImportance(value: NullableOption[Importance]): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderContains: Self = this.set("headerContains", js.undefined)
+    def setImportanceNull: Self = StObject.set(x, "importance", null)
     
     @scala.inline
-    def setHeaderContainsNull: Self = this.set("headerContains", null)
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def setImportance(value: NullableOption[Importance]): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setIsApprovalRequest(value: NullableOption[Boolean]): Self = StObject.set(x, "isApprovalRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setIsApprovalRequestNull: Self = StObject.set(x, "isApprovalRequest", null)
     
     @scala.inline
-    def setImportanceNull: Self = this.set("importance", null)
+    def setIsApprovalRequestUndefined: Self = StObject.set(x, "isApprovalRequest", js.undefined)
     
     @scala.inline
-    def setIsApprovalRequest(value: NullableOption[Boolean]): Self = this.set("isApprovalRequest", value.asInstanceOf[js.Any])
+    def setIsAutomaticForward(value: NullableOption[Boolean]): Self = StObject.set(x, "isAutomaticForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsApprovalRequest: Self = this.set("isApprovalRequest", js.undefined)
+    def setIsAutomaticForwardNull: Self = StObject.set(x, "isAutomaticForward", null)
     
     @scala.inline
-    def setIsApprovalRequestNull: Self = this.set("isApprovalRequest", null)
+    def setIsAutomaticForwardUndefined: Self = StObject.set(x, "isAutomaticForward", js.undefined)
     
     @scala.inline
-    def setIsAutomaticForward(value: NullableOption[Boolean]): Self = this.set("isAutomaticForward", value.asInstanceOf[js.Any])
+    def setIsAutomaticReply(value: NullableOption[Boolean]): Self = StObject.set(x, "isAutomaticReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAutomaticForward: Self = this.set("isAutomaticForward", js.undefined)
+    def setIsAutomaticReplyNull: Self = StObject.set(x, "isAutomaticReply", null)
     
     @scala.inline
-    def setIsAutomaticForwardNull: Self = this.set("isAutomaticForward", null)
+    def setIsAutomaticReplyUndefined: Self = StObject.set(x, "isAutomaticReply", js.undefined)
     
     @scala.inline
-    def setIsAutomaticReply(value: NullableOption[Boolean]): Self = this.set("isAutomaticReply", value.asInstanceOf[js.Any])
+    def setIsEncrypted(value: NullableOption[Boolean]): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAutomaticReply: Self = this.set("isAutomaticReply", js.undefined)
+    def setIsEncryptedNull: Self = StObject.set(x, "isEncrypted", null)
     
     @scala.inline
-    def setIsAutomaticReplyNull: Self = this.set("isAutomaticReply", null)
+    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
     @scala.inline
-    def setIsEncrypted(value: NullableOption[Boolean]): Self = this.set("isEncrypted", value.asInstanceOf[js.Any])
+    def setIsMeetingRequest(value: NullableOption[Boolean]): Self = StObject.set(x, "isMeetingRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEncrypted: Self = this.set("isEncrypted", js.undefined)
+    def setIsMeetingRequestNull: Self = StObject.set(x, "isMeetingRequest", null)
     
     @scala.inline
-    def setIsEncryptedNull: Self = this.set("isEncrypted", null)
+    def setIsMeetingRequestUndefined: Self = StObject.set(x, "isMeetingRequest", js.undefined)
     
     @scala.inline
-    def setIsMeetingRequest(value: NullableOption[Boolean]): Self = this.set("isMeetingRequest", value.asInstanceOf[js.Any])
+    def setIsMeetingResponse(value: NullableOption[Boolean]): Self = StObject.set(x, "isMeetingResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsMeetingRequest: Self = this.set("isMeetingRequest", js.undefined)
+    def setIsMeetingResponseNull: Self = StObject.set(x, "isMeetingResponse", null)
     
     @scala.inline
-    def setIsMeetingRequestNull: Self = this.set("isMeetingRequest", null)
+    def setIsMeetingResponseUndefined: Self = StObject.set(x, "isMeetingResponse", js.undefined)
     
     @scala.inline
-    def setIsMeetingResponse(value: NullableOption[Boolean]): Self = this.set("isMeetingResponse", value.asInstanceOf[js.Any])
+    def setIsNonDeliveryReport(value: NullableOption[Boolean]): Self = StObject.set(x, "isNonDeliveryReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsMeetingResponse: Self = this.set("isMeetingResponse", js.undefined)
+    def setIsNonDeliveryReportNull: Self = StObject.set(x, "isNonDeliveryReport", null)
     
     @scala.inline
-    def setIsMeetingResponseNull: Self = this.set("isMeetingResponse", null)
+    def setIsNonDeliveryReportUndefined: Self = StObject.set(x, "isNonDeliveryReport", js.undefined)
     
     @scala.inline
-    def setIsNonDeliveryReport(value: NullableOption[Boolean]): Self = this.set("isNonDeliveryReport", value.asInstanceOf[js.Any])
+    def setIsPermissionControlled(value: NullableOption[Boolean]): Self = StObject.set(x, "isPermissionControlled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsNonDeliveryReport: Self = this.set("isNonDeliveryReport", js.undefined)
+    def setIsPermissionControlledNull: Self = StObject.set(x, "isPermissionControlled", null)
     
     @scala.inline
-    def setIsNonDeliveryReportNull: Self = this.set("isNonDeliveryReport", null)
+    def setIsPermissionControlledUndefined: Self = StObject.set(x, "isPermissionControlled", js.undefined)
     
     @scala.inline
-    def setIsPermissionControlled(value: NullableOption[Boolean]): Self = this.set("isPermissionControlled", value.asInstanceOf[js.Any])
+    def setIsReadReceipt(value: NullableOption[Boolean]): Self = StObject.set(x, "isReadReceipt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsPermissionControlled: Self = this.set("isPermissionControlled", js.undefined)
+    def setIsReadReceiptNull: Self = StObject.set(x, "isReadReceipt", null)
     
     @scala.inline
-    def setIsPermissionControlledNull: Self = this.set("isPermissionControlled", null)
+    def setIsReadReceiptUndefined: Self = StObject.set(x, "isReadReceipt", js.undefined)
     
     @scala.inline
-    def setIsReadReceipt(value: NullableOption[Boolean]): Self = this.set("isReadReceipt", value.asInstanceOf[js.Any])
+    def setIsSigned(value: NullableOption[Boolean]): Self = StObject.set(x, "isSigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsReadReceipt: Self = this.set("isReadReceipt", js.undefined)
+    def setIsSignedNull: Self = StObject.set(x, "isSigned", null)
     
     @scala.inline
-    def setIsReadReceiptNull: Self = this.set("isReadReceipt", null)
+    def setIsSignedUndefined: Self = StObject.set(x, "isSigned", js.undefined)
     
     @scala.inline
-    def setIsSigned(value: NullableOption[Boolean]): Self = this.set("isSigned", value.asInstanceOf[js.Any])
+    def setIsVoicemail(value: NullableOption[Boolean]): Self = StObject.set(x, "isVoicemail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSigned: Self = this.set("isSigned", js.undefined)
+    def setIsVoicemailNull: Self = StObject.set(x, "isVoicemail", null)
     
     @scala.inline
-    def setIsSignedNull: Self = this.set("isSigned", null)
+    def setIsVoicemailUndefined: Self = StObject.set(x, "isVoicemail", js.undefined)
     
     @scala.inline
-    def setIsVoicemail(value: NullableOption[Boolean]): Self = this.set("isVoicemail", value.asInstanceOf[js.Any])
+    def setMessageActionFlag(value: NullableOption[MessageActionFlag]): Self = StObject.set(x, "messageActionFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsVoicemail: Self = this.set("isVoicemail", js.undefined)
+    def setMessageActionFlagNull: Self = StObject.set(x, "messageActionFlag", null)
     
     @scala.inline
-    def setIsVoicemailNull: Self = this.set("isVoicemail", null)
+    def setMessageActionFlagUndefined: Self = StObject.set(x, "messageActionFlag", js.undefined)
     
     @scala.inline
-    def setMessageActionFlag(value: NullableOption[MessageActionFlag]): Self = this.set("messageActionFlag", value.asInstanceOf[js.Any])
+    def setNotSentToMe(value: NullableOption[Boolean]): Self = StObject.set(x, "notSentToMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageActionFlag: Self = this.set("messageActionFlag", js.undefined)
+    def setNotSentToMeNull: Self = StObject.set(x, "notSentToMe", null)
     
     @scala.inline
-    def setMessageActionFlagNull: Self = this.set("messageActionFlag", null)
+    def setNotSentToMeUndefined: Self = StObject.set(x, "notSentToMe", js.undefined)
     
     @scala.inline
-    def setNotSentToMe(value: NullableOption[Boolean]): Self = this.set("notSentToMe", value.asInstanceOf[js.Any])
+    def setRecipientContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "recipientContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotSentToMe: Self = this.set("notSentToMe", js.undefined)
+    def setRecipientContainsNull: Self = StObject.set(x, "recipientContains", null)
     
     @scala.inline
-    def setNotSentToMeNull: Self = this.set("notSentToMe", null)
+    def setRecipientContainsUndefined: Self = StObject.set(x, "recipientContains", js.undefined)
     
     @scala.inline
-    def setRecipientContainsVarargs(value: String*): Self = this.set("recipientContains", js.Array(value :_*))
+    def setRecipientContainsVarargs(value: String*): Self = StObject.set(x, "recipientContains", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientContains(value: NullableOption[js.Array[String]]): Self = this.set("recipientContains", value.asInstanceOf[js.Any])
+    def setSenderContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "senderContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientContains: Self = this.set("recipientContains", js.undefined)
+    def setSenderContainsNull: Self = StObject.set(x, "senderContains", null)
     
     @scala.inline
-    def setRecipientContainsNull: Self = this.set("recipientContains", null)
+    def setSenderContainsUndefined: Self = StObject.set(x, "senderContains", js.undefined)
     
     @scala.inline
-    def setSenderContainsVarargs(value: String*): Self = this.set("senderContains", js.Array(value :_*))
+    def setSenderContainsVarargs(value: String*): Self = StObject.set(x, "senderContains", js.Array(value :_*))
     
     @scala.inline
-    def setSenderContains(value: NullableOption[js.Array[String]]): Self = this.set("senderContains", value.asInstanceOf[js.Any])
+    def setSensitivity(value: NullableOption[Sensitivity]): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderContains: Self = this.set("senderContains", js.undefined)
+    def setSensitivityNull: Self = StObject.set(x, "sensitivity", null)
     
     @scala.inline
-    def setSenderContainsNull: Self = this.set("senderContains", null)
+    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
     
     @scala.inline
-    def setSensitivity(value: NullableOption[Sensitivity]): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
+    def setSentCcMe(value: NullableOption[Boolean]): Self = StObject.set(x, "sentCcMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
+    def setSentCcMeNull: Self = StObject.set(x, "sentCcMe", null)
     
     @scala.inline
-    def setSensitivityNull: Self = this.set("sensitivity", null)
+    def setSentCcMeUndefined: Self = StObject.set(x, "sentCcMe", js.undefined)
     
     @scala.inline
-    def setSentCcMe(value: NullableOption[Boolean]): Self = this.set("sentCcMe", value.asInstanceOf[js.Any])
+    def setSentOnlyToMe(value: NullableOption[Boolean]): Self = StObject.set(x, "sentOnlyToMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentCcMe: Self = this.set("sentCcMe", js.undefined)
+    def setSentOnlyToMeNull: Self = StObject.set(x, "sentOnlyToMe", null)
     
     @scala.inline
-    def setSentCcMeNull: Self = this.set("sentCcMe", null)
+    def setSentOnlyToMeUndefined: Self = StObject.set(x, "sentOnlyToMe", js.undefined)
     
     @scala.inline
-    def setSentOnlyToMe(value: NullableOption[Boolean]): Self = this.set("sentOnlyToMe", value.asInstanceOf[js.Any])
+    def setSentToAddresses(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "sentToAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentOnlyToMe: Self = this.set("sentOnlyToMe", js.undefined)
+    def setSentToAddressesNull: Self = StObject.set(x, "sentToAddresses", null)
     
     @scala.inline
-    def setSentOnlyToMeNull: Self = this.set("sentOnlyToMe", null)
+    def setSentToAddressesUndefined: Self = StObject.set(x, "sentToAddresses", js.undefined)
     
     @scala.inline
-    def setSentToAddressesVarargs(value: Recipient*): Self = this.set("sentToAddresses", js.Array(value :_*))
+    def setSentToAddressesVarargs(value: Recipient*): Self = StObject.set(x, "sentToAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setSentToAddresses(value: NullableOption[js.Array[Recipient]]): Self = this.set("sentToAddresses", value.asInstanceOf[js.Any])
+    def setSentToMe(value: NullableOption[Boolean]): Self = StObject.set(x, "sentToMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentToAddresses: Self = this.set("sentToAddresses", js.undefined)
+    def setSentToMeNull: Self = StObject.set(x, "sentToMe", null)
     
     @scala.inline
-    def setSentToAddressesNull: Self = this.set("sentToAddresses", null)
+    def setSentToMeUndefined: Self = StObject.set(x, "sentToMe", js.undefined)
     
     @scala.inline
-    def setSentToMe(value: NullableOption[Boolean]): Self = this.set("sentToMe", value.asInstanceOf[js.Any])
+    def setSentToOrCcMe(value: NullableOption[Boolean]): Self = StObject.set(x, "sentToOrCcMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentToMe: Self = this.set("sentToMe", js.undefined)
+    def setSentToOrCcMeNull: Self = StObject.set(x, "sentToOrCcMe", null)
     
     @scala.inline
-    def setSentToMeNull: Self = this.set("sentToMe", null)
+    def setSentToOrCcMeUndefined: Self = StObject.set(x, "sentToOrCcMe", js.undefined)
     
     @scala.inline
-    def setSentToOrCcMe(value: NullableOption[Boolean]): Self = this.set("sentToOrCcMe", value.asInstanceOf[js.Any])
+    def setSubjectContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "subjectContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentToOrCcMe: Self = this.set("sentToOrCcMe", js.undefined)
+    def setSubjectContainsNull: Self = StObject.set(x, "subjectContains", null)
     
     @scala.inline
-    def setSentToOrCcMeNull: Self = this.set("sentToOrCcMe", null)
+    def setSubjectContainsUndefined: Self = StObject.set(x, "subjectContains", js.undefined)
     
     @scala.inline
-    def setSubjectContainsVarargs(value: String*): Self = this.set("subjectContains", js.Array(value :_*))
+    def setSubjectContainsVarargs(value: String*): Self = StObject.set(x, "subjectContains", js.Array(value :_*))
     
     @scala.inline
-    def setSubjectContains(value: NullableOption[js.Array[String]]): Self = this.set("subjectContains", value.asInstanceOf[js.Any])
+    def setWithinSizeRange(value: NullableOption[SizeRange]): Self = StObject.set(x, "withinSizeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubjectContains: Self = this.set("subjectContains", js.undefined)
+    def setWithinSizeRangeNull: Self = StObject.set(x, "withinSizeRange", null)
     
     @scala.inline
-    def setSubjectContainsNull: Self = this.set("subjectContains", null)
-    
-    @scala.inline
-    def setWithinSizeRange(value: NullableOption[SizeRange]): Self = this.set("withinSizeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithinSizeRange: Self = this.set("withinSizeRange", js.undefined)
-    
-    @scala.inline
-    def setWithinSizeRangeNull: Self = this.set("withinSizeRange", null)
+    def setWithinSizeRangeUndefined: Self = StObject.set(x, "withinSizeRange", js.undefined)
   }
 }

@@ -1,53 +1,57 @@
 package typings.materialSelect
 
-import typings.materialSelect.anon.ARIAHIDDEN
-import typings.materialSelect.anon.HELPERTEXTVALIDATIONMSG
 import typings.materialSelect.anon.PartialMDCSelectHelperTex
-import typings.materialSelect.helperTextAdapterMod.MDCSelectHelperTextAdapter
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select/helper-text/index", JSImport.Namespace)
-@js.native
-object indexMod extends js.Object {
+object indexMod {
   
+  @JSImport("@material/select/helper-text/index", "MDCSelectHelperText")
   @js.native
-  class MDCSelectHelperText ()
-    extends typings.materialSelect.helperTextComponentMod.MDCSelectHelperText
+  class MDCSelectHelperText protected ()
+    extends typings.materialSelect.helperTextComponentMod.MDCSelectHelperText {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSelectHelperText extends js.Object {
+  object MDCSelectHelperText {
     
+    @JSImport("@material/select/helper-text/index", "MDCSelectHelperText.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
   }
   
+  @JSImport("@material/select/helper-text/index", "MDCSelectHelperTextFoundation")
   @js.native
   class MDCSelectHelperTextFoundation ()
     extends typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundation {
     def this(adapter: PartialMDCSelectHelperTex) = this()
   }
-  /* static members */
-  @js.native
-  object MDCSelectHelperTextFoundation extends js.Object {
-    
-    def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
-    
-    /**
-      * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectHelperTextAdapter = js.native
-    
-    def strings: ARIAHIDDEN = js.native
-  }
   
-  @js.native
-  object helperTextCssClasses extends js.Object {
+  object helperTextCssClasses {
     
-    var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    @JSImport("@material/select/helper-text/index", "helperTextCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
+    @JSImport("@material/select/helper-text/index", "helperTextCssClasses.HELPER_TEXT_VALIDATION_MSG")
+    @js.native
+    def HELPER_TEXT_VALIDATION_MSG: String = js.native
+    @scala.inline
+    def HELPER_TEXT_VALIDATION_MSG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select/helper-text/index", "helperTextCssClasses.HELPER_TEXT_VALIDATION_MSG_PERSISTENT")
+    @js.native
+    def HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
+    @scala.inline
+    def HELPER_TEXT_VALIDATION_MSG_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG_PERSISTENT")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -72,11 +76,22 @@ object indexMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object helperTextStrings extends js.Object {
+  object helperTextStrings {
     
-    var ARIA_HIDDEN: String = js.native
+    @JSImport("@material/select/helper-text/index", "helperTextStrings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ROLE: String = js.native
+    @JSImport("@material/select/helper-text/index", "helperTextStrings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    @scala.inline
+    def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select/helper-text/index", "helperTextStrings.ROLE")
+    @js.native
+    def ROLE: String = js.native
+    @scala.inline
+    def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
   }
 }

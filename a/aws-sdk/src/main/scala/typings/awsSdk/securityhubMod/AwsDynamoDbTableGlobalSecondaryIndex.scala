@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableGlobalSecondaryIndex extends js.Object {
+trait AwsDynamoDbTableGlobalSecondaryIndex extends StObject {
   
   /**
     * Whether the index is currently backfilling.
@@ -61,75 +62,63 @@ object AwsDynamoDbTableGlobalSecondaryIndex {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableGlobalSecondaryIndexOps[Self <: AwsDynamoDbTableGlobalSecondaryIndex] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableGlobalSecondaryIndexMutableBuilder[Self <: AwsDynamoDbTableGlobalSecondaryIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackfilling(value: Boolean): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackfillingUndefined: Self = StObject.set(x, "Backfilling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexArn(value: NonEmptyString): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfilling(value: Boolean): Self = this.set("Backfilling", value.asInstanceOf[js.Any])
+    def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
     
     @scala.inline
-    def deleteBackfilling: Self = this.set("Backfilling", js.undefined)
+    def setIndexName(value: NonEmptyString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexArn(value: NonEmptyString): Self = this.set("IndexArn", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def deleteIndexArn: Self = this.set("IndexArn", js.undefined)
+    def setIndexSizeBytes(value: SizeBytes): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: NonEmptyString): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    def setIndexStatus(value: NonEmptyString): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexSizeBytes(value: SizeBytes): Self = this.set("IndexSizeBytes", value.asInstanceOf[js.Any])
+    def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
     
     @scala.inline
-    def deleteIndexSizeBytes: Self = this.set("IndexSizeBytes", js.undefined)
+    def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexStatus(value: NonEmptyString): Self = this.set("IndexStatus", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def deleteIndexStatus: Self = this.set("IndexStatus", js.undefined)
+    def setKeySchema(value: AwsDynamoDbTableKeySchemaList): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: Integer): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = this.set("KeySchema", js.Array(value :_*))
+    def setProjection(value: AwsDynamoDbTableProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySchema(value: AwsDynamoDbTableKeySchemaList): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     
     @scala.inline
-    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    def setProvisionedThroughput(value: AwsDynamoDbTableProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: AwsDynamoDbTableProjection): Self = this.set("Projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("Projection", js.undefined)
-    
-    @scala.inline
-    def setProvisionedThroughput(value: AwsDynamoDbTableProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+    def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
   }
 }

@@ -2,16 +2,16 @@ package typings.sipJs
 
 import typings.sipJs.levelsMod.Levels
 import typings.sipJs.loggerMod.Logger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/log/logger-factory", JSImport.Namespace)
-@js.native
-object loggerFactoryMod extends js.Object {
+object loggerFactoryMod {
   
+  @JSImport("sip.js/lib/core/log/logger-factory", "LoggerFactory")
   @js.native
-  class LoggerFactory () extends js.Object {
+  class LoggerFactory () extends StObject {
     
     var _connector: js.Any = js.native
     

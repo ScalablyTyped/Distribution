@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISignaturePromptInfo extends js.Object {
+trait ISignaturePromptInfo extends StObject {
   
   def Clone(): ISignaturePromptInfo = js.native
   
@@ -22,27 +23,15 @@ object ISignaturePromptInfo {
   }
   
   @scala.inline
-  implicit class ISignaturePromptInfoOps[Self <: ISignaturePromptInfo] (val x: Self) extends AnyVal {
+  implicit class ISignaturePromptInfoMutableBuilder[Self <: ISignaturePromptInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ISignaturePromptInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeaning(value: String): Self = StObject.set(x, "Meaning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClone(value: () => ISignaturePromptInfo): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMeaning(value: String): Self = this.set("Meaning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("Reason", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

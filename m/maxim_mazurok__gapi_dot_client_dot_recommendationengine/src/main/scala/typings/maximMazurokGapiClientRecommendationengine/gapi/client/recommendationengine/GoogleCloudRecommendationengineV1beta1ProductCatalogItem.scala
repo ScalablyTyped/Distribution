@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends StObject {
   
   /** Optional. The available quantity of the item. */
   var availableQuantity: js.UndefOr[String] = js.native
@@ -48,73 +49,61 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemOps[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItem] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableQuantity(value: String): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanonicalProductUri(value: String): Self = StObject.set(x, "canonicalProductUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableQuantity(value: String): Self = this.set("availableQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableQuantity: Self = this.set("availableQuantity", js.undefined)
-    
-    @scala.inline
-    def setCanonicalProductUri(value: String): Self = this.set("canonicalProductUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanonicalProductUri: Self = this.set("canonicalProductUri", js.undefined)
+    def setCanonicalProductUriUndefined: Self = StObject.set(x, "canonicalProductUri", js.undefined)
     
     @scala.inline
     def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem with TopLevel[js.Any]
-    ): Self = this.set("costs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCosts: Self = this.set("costs", js.undefined)
+    def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def setExactPrice(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice): Self = this.set("exactPrice", value.asInstanceOf[js.Any])
+    def setExactPrice(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice): Self = StObject.set(x, "exactPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExactPrice: Self = this.set("exactPrice", js.undefined)
+    def setExactPriceUndefined: Self = StObject.set(x, "exactPrice", js.undefined)
     
     @scala.inline
-    def setImagesVarargs(value: GoogleCloudRecommendationengineV1beta1Image*): Self = this.set("images", js.Array(value :_*))
+    def setImages(value: js.Array[GoogleCloudRecommendationengineV1beta1Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[GoogleCloudRecommendationengineV1beta1Image]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setImagesVarargs(value: GoogleCloudRecommendationengineV1beta1Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setPriceRange(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange): Self = this.set("priceRange", value.asInstanceOf[js.Any])
+    def setPriceRange(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange): Self = StObject.set(x, "priceRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriceRange: Self = this.set("priceRange", js.undefined)
+    def setPriceRangeUndefined: Self = StObject.set(x, "priceRange", js.undefined)
     
     @scala.inline
-    def setStockState(value: String): Self = this.set("stockState", value.asInstanceOf[js.Any])
+    def setStockState(value: String): Self = StObject.set(x, "stockState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStockState: Self = this.set("stockState", js.undefined)
+    def setStockStateUndefined: Self = StObject.set(x, "stockState", js.undefined)
   }
 }

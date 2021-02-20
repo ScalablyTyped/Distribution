@@ -1,5 +1,6 @@
 package typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for CreatePublicKey.
   */
 @js.native
-trait SchemaCreatePublicKeyRequest extends js.Object {
+trait SchemaCreatePublicKeyRequest extends StObject {
   
   /**
     * Key that should be added to the environment.
@@ -24,24 +25,12 @@ object SchemaCreatePublicKeyRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreatePublicKeyRequestOps[Self <: SchemaCreatePublicKeyRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreatePublicKeyRequestMutableBuilder[Self <: SchemaCreatePublicKeyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: SchemaPublicKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: SchemaPublicKey): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

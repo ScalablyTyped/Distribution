@@ -1,11 +1,12 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonFakeServerOptions extends js.Object {
+trait SinonFakeServerOptions extends StObject {
   
   /**
     * When set to true, causes the server to automatically respond to incoming requests after a timeout.
@@ -47,30 +48,18 @@ object SinonFakeServerOptions {
   }
   
   @scala.inline
-  implicit class SinonFakeServerOptionsOps[Self <: SinonFakeServerOptions] (val x: Self) extends AnyVal {
+  implicit class SinonFakeServerOptionsMutableBuilder[Self <: SinonFakeServerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRespond(value: Boolean): Self = this.set("autoRespond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoRespondAfter(value: Double): Self = this.set("autoRespondAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFakeHTTPMethods(value: Boolean): Self = this.set("fakeHTTPMethods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRespondImmediately(value: Boolean): Self = this.set("respondImmediately", value.asInstanceOf[js.Any])
+    def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
   }
 }

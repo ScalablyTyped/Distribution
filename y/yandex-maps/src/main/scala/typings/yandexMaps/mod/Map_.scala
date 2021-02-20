@@ -8,6 +8,7 @@ import typings.yandexMaps.mod.map.GeoObjects
 import typings.yandexMaps.mod.map.Hint
 import typings.yandexMaps.mod.map.ZoomRange
 import typings.yandexMaps.mod.map.action.Manager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,13 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/_Shard", JSImport.Namespace)
-@js.native
-object shardMod extends js.Object {
+object shardMod {
   
-  @JSName("_Shard")
+  @JSImport("@aws-sdk/client-kinesis-browser/model/_Shard", "_Shard")
+  @js.native
   val Shard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

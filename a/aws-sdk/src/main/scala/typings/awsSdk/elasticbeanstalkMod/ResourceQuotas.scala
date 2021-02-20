@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceQuotas extends js.Object {
+trait ResourceQuotas extends StObject {
   
   /**
     * The quota for applications in the AWS account.
@@ -41,48 +42,36 @@ object ResourceQuotas {
   }
   
   @scala.inline
-  implicit class ResourceQuotasOps[Self <: ResourceQuotas] (val x: Self) extends AnyVal {
+  implicit class ResourceQuotasMutableBuilder[Self <: ResourceQuotas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationQuota(value: ResourceQuota): Self = StObject.set(x, "ApplicationQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationQuotaUndefined: Self = StObject.set(x, "ApplicationQuota", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationVersionQuota(value: ResourceQuota): Self = StObject.set(x, "ApplicationVersionQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationQuota(value: ResourceQuota): Self = this.set("ApplicationQuota", value.asInstanceOf[js.Any])
+    def setApplicationVersionQuotaUndefined: Self = StObject.set(x, "ApplicationVersionQuota", js.undefined)
     
     @scala.inline
-    def deleteApplicationQuota: Self = this.set("ApplicationQuota", js.undefined)
+    def setConfigurationTemplateQuota(value: ResourceQuota): Self = StObject.set(x, "ConfigurationTemplateQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationVersionQuota(value: ResourceQuota): Self = this.set("ApplicationVersionQuota", value.asInstanceOf[js.Any])
+    def setConfigurationTemplateQuotaUndefined: Self = StObject.set(x, "ConfigurationTemplateQuota", js.undefined)
     
     @scala.inline
-    def deleteApplicationVersionQuota: Self = this.set("ApplicationVersionQuota", js.undefined)
+    def setCustomPlatformQuota(value: ResourceQuota): Self = StObject.set(x, "CustomPlatformQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationTemplateQuota(value: ResourceQuota): Self = this.set("ConfigurationTemplateQuota", value.asInstanceOf[js.Any])
+    def setCustomPlatformQuotaUndefined: Self = StObject.set(x, "CustomPlatformQuota", js.undefined)
     
     @scala.inline
-    def deleteConfigurationTemplateQuota: Self = this.set("ConfigurationTemplateQuota", js.undefined)
+    def setEnvironmentQuota(value: ResourceQuota): Self = StObject.set(x, "EnvironmentQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomPlatformQuota(value: ResourceQuota): Self = this.set("CustomPlatformQuota", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomPlatformQuota: Self = this.set("CustomPlatformQuota", js.undefined)
-    
-    @scala.inline
-    def setEnvironmentQuota(value: ResourceQuota): Self = this.set("EnvironmentQuota", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironmentQuota: Self = this.set("EnvironmentQuota", js.undefined)
+    def setEnvironmentQuotaUndefined: Self = StObject.set(x, "EnvironmentQuota", js.undefined)
   }
 }

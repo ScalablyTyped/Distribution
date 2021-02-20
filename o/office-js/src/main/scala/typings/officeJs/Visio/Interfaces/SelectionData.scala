@@ -1,12 +1,13 @@
 package typings.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "selection.toJSON()". */
 @js.native
-trait SelectionData extends js.Object {
+trait SelectionData extends StObject {
   
   /**
     *
@@ -25,27 +26,15 @@ object SelectionData {
   }
   
   @scala.inline
-  implicit class SelectionDataOps[Self <: SelectionData] (val x: Self) extends AnyVal {
+  implicit class SelectionDataMutableBuilder[Self <: SelectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShapesVarargs(value: ShapeData*): Self = this.set("shapes", js.Array(value :_*))
-    
-    @scala.inline
-    def setShapes(value: js.Array[ShapeData]): Self = this.set("shapes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapes: Self = this.set("shapes", js.undefined)
+    def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
   }
 }

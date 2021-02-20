@@ -1,11 +1,12 @@
 package typings.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONFormatter extends js.Object {
+trait JSONFormatter extends StObject {
   
   def get(): js.Object = js.native
   
@@ -32,33 +33,21 @@ object JSONFormatter {
   }
   
   @scala.inline
-  implicit class JSONFormatterOps[Self <: JSONFormatter] (val x: Self) extends AnyVal {
+  implicit class JSONFormatterMutableBuilder[Self <: JSONFormatter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: () => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: () => js.Object): Self = this.set("get", js.Any.fromFunction0(value))
+    def setSet(value: js.Object => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnError(value: String => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: js.Object => Unit): Self = this.set("set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

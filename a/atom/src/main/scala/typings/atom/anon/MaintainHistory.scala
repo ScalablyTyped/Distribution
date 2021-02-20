@@ -5,12 +5,13 @@ import typings.atom.atomStrings.never
 import typings.atom.atomStrings.overlap
 import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintainHistory extends js.Object {
+trait MaintainHistory extends StObject {
   
   var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
   
@@ -27,36 +28,24 @@ object MaintainHistory {
   }
   
   @scala.inline
-  implicit class MaintainHistoryOps[Self <: MaintainHistory] (val x: Self) extends AnyVal {
+  implicit class MaintainHistoryMutableBuilder[Self <: MaintainHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = this.set("invalidate", value.asInstanceOf[js.Any])
+    def setMaintainHistoryUndefined: Self = StObject.set(x, "maintainHistory", js.undefined)
     
     @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintainHistory(value: Boolean): Self = this.set("maintainHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaintainHistory: Self = this.set("maintainHistory", js.undefined)
-    
-    @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReversed: Self = this.set("reversed", js.undefined)
+    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

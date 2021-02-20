@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract.typesNumberMod
 
 import typings.formatjsEcma402Abstract.anon.RecordDecimalFormatNumLDM1000
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawCurrencyData extends js.Object {
+trait RawCurrencyData extends StObject {
   
   var accounting: String = js.native
   
@@ -27,36 +28,24 @@ object RawCurrencyData {
   }
   
   @scala.inline
-  implicit class RawCurrencyDataOps[Self <: RawCurrencyData] (val x: Self) extends AnyVal {
+  implicit class RawCurrencyDataMutableBuilder[Self <: RawCurrencyData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounting(value: String): Self = StObject.set(x, "accounting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencySpacing(value: CurrencySpacingData): Self = StObject.set(x, "currencySpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShort(value: RecordDecimalFormatNumLDM1000): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounting(value: String): Self = this.set("accounting", value.asInstanceOf[js.Any])
+    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
     @scala.inline
-    def setCurrencySpacing(value: CurrencySpacingData): Self = this.set("currencySpacing", value.asInstanceOf[js.Any])
+    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandard(value: String): Self = this.set("standard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitPattern(value: String): Self = this.set("unitPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShort(value: RecordDecimalFormatNumLDM1000): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort: Self = this.set("short", js.undefined)
+    def setUnitPattern(value: String): Self = StObject.set(x, "unitPattern", value.asInstanceOf[js.Any])
   }
 }

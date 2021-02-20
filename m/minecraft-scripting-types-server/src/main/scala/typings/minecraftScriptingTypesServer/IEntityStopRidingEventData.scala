@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.IEntity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever an entity stops riding another entity.
   */
 @js.native
-trait IEntityStopRidingEventData extends js.Object {
+trait IEntityStopRidingEventData extends StObject {
   
   /**
     * The entity that was riding another entity
@@ -45,30 +46,18 @@ object IEntityStopRidingEventData {
   }
   
   @scala.inline
-  implicit class IEntityStopRidingEventDataOps[Self <: IEntityStopRidingEventData] (val x: Self) extends AnyVal {
+  implicit class IEntityStopRidingEventDataMutableBuilder[Self <: IEntityStopRidingEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntity_is_being_destroyed(value: Boolean): Self = StObject.set(x, "entity_is_being_destroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExit_from_rider(value: Boolean): Self = StObject.set(x, "exit_from_rider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: IEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntity_is_being_destroyed(value: Boolean): Self = this.set("entity_is_being_destroyed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExit_from_rider(value: Boolean): Self = this.set("exit_from_rider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwitching_rides(value: Boolean): Self = this.set("switching_rides", value.asInstanceOf[js.Any])
+    def setSwitching_rides(value: Boolean): Self = StObject.set(x, "switching_rides", value.asInstanceOf[js.Any])
   }
 }

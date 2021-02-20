@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a single followup intent in the chain.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo extends js.Object {
+trait SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo extends StObject {
   
   /**
     * The unique identifier of the followup intent. Format:
@@ -31,30 +32,18 @@ object SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfoOps[Self <: SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfoMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowupIntentNameUndefined: Self = StObject.set(x, "followupIntentName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowupIntentName(value: String): Self = this.set("followupIntentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowupIntentName: Self = this.set("followupIntentName", js.undefined)
-    
-    @scala.inline
-    def setParentFollowupIntentName(value: String): Self = this.set("parentFollowupIntentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentFollowupIntentName: Self = this.set("parentFollowupIntentName", js.undefined)
+    def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
   }
 }

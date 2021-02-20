@@ -3,12 +3,13 @@ package typings.xstate.typesMod
 import typings.std.Set
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntryExitStates[TContext] extends js.Object {
+trait EntryExitStates[TContext] extends StObject {
   
   var entry: Set[StateNode[TContext, _, EventObject, ContextTContext[TContext]]] = js.native
   
@@ -26,24 +27,12 @@ object EntryExitStates {
   }
   
   @scala.inline
-  implicit class EntryExitStatesOps[Self <: EntryExitStates[_], TContext] (val x: Self with EntryExitStates[TContext]) extends AnyVal {
+  implicit class EntryExitStatesMutableBuilder[Self <: EntryExitStates[_], TContext] (val x: Self with EntryExitStates[TContext]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntry(value: Set[StateNode[TContext, _, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntry(value: Set[StateNode[TContext, _, EventObject, ContextTContext[TContext]]]): Self = this.set("entry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExit(value: Set[StateNode[TContext, _, EventObject, ContextTContext[TContext]]]): Self = this.set("exit", value.asInstanceOf[js.Any])
+    def setExit(value: Set[StateNode[TContext, _, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
   }
 }

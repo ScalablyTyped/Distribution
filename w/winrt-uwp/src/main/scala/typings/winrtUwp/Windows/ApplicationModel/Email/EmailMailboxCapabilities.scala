@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities associated with an email mailbox. */
 @js.native
-trait EmailMailboxCapabilities extends js.Object {
+trait EmailMailboxCapabilities extends StObject {
   
   /** Gets a Boolean value indicating if folders can be created in the mailbox. */
   var canCreateFolder: Boolean = js.native
@@ -19,27 +20,35 @@ trait EmailMailboxCapabilities extends js.Object {
   
   var canForwardMeetings: js.Any = js.native
   
-   /* unmapped type */ var canGetAndSetExternalAutoReplies: js.Any = js.native
+  /* unmapped type */
+  var canGetAndSetExternalAutoReplies: js.Any = js.native
   
-   /* unmapped type */ var canGetAndSetInternalAutoReplies: js.Any = js.native
+  /* unmapped type */
+  var canGetAndSetInternalAutoReplies: js.Any = js.native
   
-   /* unmapped type */ /** Gets a Boolean value indicating if folders in the mailbox can be moved. */
+  /* unmapped type */
+  /** Gets a Boolean value indicating if folders in the mailbox can be moved. */
   var canMoveFolder: Boolean = js.native
   
   var canProposeNewTimeForMeetings: js.Any = js.native
   
-   /* unmapped type */ /** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
+  /* unmapped type */
+  /** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
   var canResolveRecipients: Boolean = js.native
   
   var canServerSearchFolders: js.Any = js.native
   
-   /* unmapped type */ var canServerSearchMailbox: js.Any = js.native
+  /* unmapped type */
+  var canServerSearchMailbox: js.Any = js.native
   
-   /* unmapped type */ var canSmartSend: js.Any = js.native
+  /* unmapped type */
+  var canSmartSend: js.Any = js.native
   
-   /* unmapped type */ var canUpdateMeetingResponses: js.Any = js.native
+  /* unmapped type */
+  var canUpdateMeetingResponses: js.Any = js.native
   
-   /* unmapped type */ /** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */
+  /* unmapped type */
+  /** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */
   var canValidateCertificates: Boolean = js.native
 }
 object EmailMailboxCapabilities {
@@ -66,60 +75,48 @@ object EmailMailboxCapabilities {
   }
   
   @scala.inline
-  implicit class EmailMailboxCapabilitiesOps[Self <: EmailMailboxCapabilities] (val x: Self) extends AnyVal {
+  implicit class EmailMailboxCapabilitiesMutableBuilder[Self <: EmailMailboxCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanCreateFolder(value: Boolean): Self = StObject.set(x, "canCreateFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanDeleteFolder(value: Boolean): Self = StObject.set(x, "canDeleteFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanEmptyFolder(value: Boolean): Self = StObject.set(x, "canEmptyFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCreateFolder(value: Boolean): Self = this.set("canCreateFolder", value.asInstanceOf[js.Any])
+    def setCanForwardMeetings(value: js.Any): Self = StObject.set(x, "canForwardMeetings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanDeleteFolder(value: Boolean): Self = this.set("canDeleteFolder", value.asInstanceOf[js.Any])
+    def setCanGetAndSetExternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetExternalAutoReplies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanEmptyFolder(value: Boolean): Self = this.set("canEmptyFolder", value.asInstanceOf[js.Any])
+    def setCanGetAndSetInternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetInternalAutoReplies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanForwardMeetings(value: js.Any): Self = this.set("canForwardMeetings", value.asInstanceOf[js.Any])
+    def setCanMoveFolder(value: Boolean): Self = StObject.set(x, "canMoveFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanGetAndSetExternalAutoReplies(value: js.Any): Self = this.set("canGetAndSetExternalAutoReplies", value.asInstanceOf[js.Any])
+    def setCanProposeNewTimeForMeetings(value: js.Any): Self = StObject.set(x, "canProposeNewTimeForMeetings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanGetAndSetInternalAutoReplies(value: js.Any): Self = this.set("canGetAndSetInternalAutoReplies", value.asInstanceOf[js.Any])
+    def setCanResolveRecipients(value: Boolean): Self = StObject.set(x, "canResolveRecipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanMoveFolder(value: Boolean): Self = this.set("canMoveFolder", value.asInstanceOf[js.Any])
+    def setCanServerSearchFolders(value: js.Any): Self = StObject.set(x, "canServerSearchFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanProposeNewTimeForMeetings(value: js.Any): Self = this.set("canProposeNewTimeForMeetings", value.asInstanceOf[js.Any])
+    def setCanServerSearchMailbox(value: js.Any): Self = StObject.set(x, "canServerSearchMailbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanResolveRecipients(value: Boolean): Self = this.set("canResolveRecipients", value.asInstanceOf[js.Any])
+    def setCanSmartSend(value: js.Any): Self = StObject.set(x, "canSmartSend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanServerSearchFolders(value: js.Any): Self = this.set("canServerSearchFolders", value.asInstanceOf[js.Any])
+    def setCanUpdateMeetingResponses(value: js.Any): Self = StObject.set(x, "canUpdateMeetingResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanServerSearchMailbox(value: js.Any): Self = this.set("canServerSearchMailbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanSmartSend(value: js.Any): Self = this.set("canSmartSend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanUpdateMeetingResponses(value: js.Any): Self = this.set("canUpdateMeetingResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanValidateCertificates(value: Boolean): Self = this.set("canValidateCertificates", value.asInstanceOf[js.Any])
+    def setCanValidateCertificates(value: Boolean): Self = StObject.set(x, "canValidateCertificates", value.asInstanceOf[js.Any])
   }
 }

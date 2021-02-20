@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetComplianceSummaryInput extends js.Object {
+trait GetComplianceSummaryInput extends StObject {
   
   /**
     * A list of attributes to group the counts of noncompliant resources by. If supplied, the counts are sorted by those attributes.
@@ -51,75 +52,63 @@ object GetComplianceSummaryInput {
   }
   
   @scala.inline
-  implicit class GetComplianceSummaryInputOps[Self <: GetComplianceSummaryInput] (val x: Self) extends AnyVal {
+  implicit class GetComplianceSummaryInputMutableBuilder[Self <: GetComplianceSummaryInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupBy(value: GroupBy): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupByUndefined: Self = StObject.set(x, "GroupBy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupByVarargs(value: GroupByAttribute*): Self = StObject.set(x, "GroupBy", js.Array(value :_*))
     
     @scala.inline
-    def setGroupByVarargs(value: GroupByAttribute*): Self = this.set("GroupBy", js.Array(value :_*))
+    def setMaxResults(value: MaxResultsGetComplianceSummary): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: GroupBy): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteGroupBy: Self = this.set("GroupBy", js.undefined)
+    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResultsGetComplianceSummary): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setRegionFilters(value: RegionFilterList): Self = StObject.set(x, "RegionFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    def setRegionFiltersUndefined: Self = StObject.set(x, "RegionFilters", js.undefined)
     
     @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setRegionFiltersVarargs(value: Region*): Self = StObject.set(x, "RegionFilters", js.Array(value :_*))
     
     @scala.inline
-    def setRegionFiltersVarargs(value: Region*): Self = this.set("RegionFilters", js.Array(value :_*))
+    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = StObject.set(x, "ResourceTypeFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionFilters(value: RegionFilterList): Self = this.set("RegionFilters", value.asInstanceOf[js.Any])
+    def setResourceTypeFiltersUndefined: Self = StObject.set(x, "ResourceTypeFilters", js.undefined)
     
     @scala.inline
-    def deleteRegionFilters: Self = this.set("RegionFilters", js.undefined)
+    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = StObject.set(x, "ResourceTypeFilters", js.Array(value :_*))
     
     @scala.inline
-    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = this.set("ResourceTypeFilters", js.Array(value :_*))
+    def setTagKeyFilters(value: TagKeyFilterList): Self = StObject.set(x, "TagKeyFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = this.set("ResourceTypeFilters", value.asInstanceOf[js.Any])
+    def setTagKeyFiltersUndefined: Self = StObject.set(x, "TagKeyFilters", js.undefined)
     
     @scala.inline
-    def deleteResourceTypeFilters: Self = this.set("ResourceTypeFilters", js.undefined)
+    def setTagKeyFiltersVarargs(value: TagKey*): Self = StObject.set(x, "TagKeyFilters", js.Array(value :_*))
     
     @scala.inline
-    def setTagKeyFiltersVarargs(value: TagKey*): Self = this.set("TagKeyFilters", js.Array(value :_*))
+    def setTargetIdFilters(value: TargetIdFilterList): Self = StObject.set(x, "TargetIdFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagKeyFilters(value: TagKeyFilterList): Self = this.set("TagKeyFilters", value.asInstanceOf[js.Any])
+    def setTargetIdFiltersUndefined: Self = StObject.set(x, "TargetIdFilters", js.undefined)
     
     @scala.inline
-    def deleteTagKeyFilters: Self = this.set("TagKeyFilters", js.undefined)
-    
-    @scala.inline
-    def setTargetIdFiltersVarargs(value: TargetId*): Self = this.set("TargetIdFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetIdFilters(value: TargetIdFilterList): Self = this.set("TargetIdFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetIdFilters: Self = this.set("TargetIdFilters", js.undefined)
+    def setTargetIdFiltersVarargs(value: TargetId*): Self = StObject.set(x, "TargetIdFilters", js.Array(value :_*))
   }
 }

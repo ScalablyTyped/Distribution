@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CustomerFilter")
 @js.native
-class CustomerFilter () extends js.Object {
+class CustomerFilter () extends StObject {
   
   /**
     * A filter to select customers based on when they were created.

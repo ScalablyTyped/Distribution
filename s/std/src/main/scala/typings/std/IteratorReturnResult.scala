@@ -1,6 +1,7 @@
 package typings.std
 
 import typings.std.stdBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object IteratorReturnResult {
   }
   
   @scala.inline
-  implicit class IteratorReturnResultOps[Self <: IteratorReturnResult[_], TReturn] (val x: Self with IteratorReturnResult[TReturn]) extends AnyVal {
+  implicit class IteratorReturnResultMutableBuilder[Self <: IteratorReturnResult[_], TReturn] (val x: Self with IteratorReturnResult[TReturn]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDone(value: `true`): Self = this.set("done", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: TReturn): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: TReturn): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

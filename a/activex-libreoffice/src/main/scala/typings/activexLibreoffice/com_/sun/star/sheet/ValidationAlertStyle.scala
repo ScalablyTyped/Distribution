@@ -4,6 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
-trait ValidationAlertStyle extends js.Object
+trait ValidationAlertStyle extends StObject
 object ValidationAlertStyle {
   
   /** information message is shown and the user is asked whether the change will be accepted (defaulted to "Yes"). */

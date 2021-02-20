@@ -1,30 +1,35 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operators/race", JSImport.Namespace)
-@js.native
-object operatorsRaceMod extends js.Object {
+object operatorsRaceMod {
   
+  @JSImport("rxjs-compat/operators/race", "race")
+  @js.native
   def race[T](
     observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any) | (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
     ]))*
   ): js.Any = js.native
+  @JSImport("rxjs-compat/operators/race", "race")
+  @js.native
   def race[T](
     observables: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
     ]
   ): js.Any = js.native
-  @JSName("race")
+  @JSImport("rxjs-compat/operators/race", "race")
+  @js.native
   def race_TR[T, R](
     observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any) | (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
     ]))*
   ): js.Any = js.native
-  @JSName("race")
+  @JSImport("rxjs-compat/operators/race", "race")
+  @js.native
   def race_TR[T, R](
     observables: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _

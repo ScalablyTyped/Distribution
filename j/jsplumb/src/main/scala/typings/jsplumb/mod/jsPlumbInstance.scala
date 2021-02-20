@@ -7,13 +7,14 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.Record
 import typings.std.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsplumb", "jsPlumbInstance")
 @js.native
-class jsPlumbInstance () extends js.Object {
+class jsPlumbInstance () extends StObject {
   
   def addEndpoint(el: ElementGroupRef): Endpoint | js.Array[Endpoint] = js.native
   def addEndpoint(el: ElementGroupRef, params: js.UndefOr[scala.Nothing], referenceParams: EndpointOptions): Endpoint | js.Array[Endpoint] = js.native

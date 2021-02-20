@@ -107,36 +107,50 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("delegated-events", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("delegated-events", "fire")
+  @js.native
   def fire(target: Element, name: String): Boolean = js.native
+  @JSImport("delegated-events", "fire")
+  @js.native
   def fire(target: Element, name: String, detail: js.Any): Boolean = js.native
   
+  @JSImport("delegated-events", "off")
+  @js.native
   def off(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
+  @JSImport("delegated-events", "off")
+  @js.native
   def off(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
   
+  @JSImport("delegated-events", "on")
+  @js.native
   def on(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
+  @JSImport("delegated-events", "on")
+  @js.native
   def on(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_abort(
     name: abort,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_abort(
     name: abort,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationcancel(
     name: animationcancel,
     selector: String,
@@ -146,7 +160,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationcancel(
     name: animationcancel,
     selector: String,
@@ -157,7 +172,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationend(
     name: animationend,
     selector: String,
@@ -167,7 +183,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationend(
     name: animationend,
     selector: String,
@@ -178,7 +195,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationiteration(
     name: animationiteration,
     selector: String,
@@ -188,7 +206,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationiteration(
     name: animationiteration,
     selector: String,
@@ -199,7 +218,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationstart(
     name: animationstart,
     selector: String,
@@ -209,7 +229,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_animationstart(
     name: animationstart,
     selector: String,
@@ -220,7 +241,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_auxclick(
     name: auxclick,
     selector: String,
@@ -230,7 +252,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_auxclick(
     name: auxclick,
     selector: String,
@@ -241,7 +264,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_blur(
     name: blur,
     selector: String,
@@ -251,7 +275,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_blur(
     name: blur,
     selector: String,
@@ -262,59 +287,68 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_cancel(
     name: cancel,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_cancel(
     name: cancel,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_canplay(
     name: canplay,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_canplay(
     name: canplay,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_canplaythrough(
     name: canplaythrough,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_canplaythrough(
     name: canplaythrough,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_change(
     name: change,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_change(
     name: change,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_click(
     name: click,
     selector: String,
@@ -324,7 +358,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_click(
     name: click,
     selector: String,
@@ -335,20 +370,23 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_close(
     name: close,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_close(
     name: close,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_contextmenu(
     name: contextmenu,
     selector: String,
@@ -358,7 +396,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_contextmenu(
     name: contextmenu,
     selector: String,
@@ -369,20 +408,23 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_cuechange(
     name: cuechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_cuechange(
     name: cuechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dblclick(
     name: dblclick,
     selector: String,
@@ -392,7 +434,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dblclick(
     name: dblclick,
     selector: String,
@@ -403,7 +446,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_drag(
     name: drag,
     selector: String,
@@ -413,7 +457,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_drag(
     name: drag,
     selector: String,
@@ -424,7 +469,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragend(
     name: dragend,
     selector: String,
@@ -434,7 +480,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragend(
     name: dragend,
     selector: String,
@@ -445,7 +492,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragenter(
     name: dragenter,
     selector: String,
@@ -455,7 +503,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragenter(
     name: dragenter,
     selector: String,
@@ -466,20 +515,23 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragexit(
     name: dragexit,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragexit(
     name: dragexit,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragleave(
     name: dragleave,
     selector: String,
@@ -489,7 +541,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragleave(
     name: dragleave,
     selector: String,
@@ -500,7 +553,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragover(
     name: dragover,
     selector: String,
@@ -510,7 +564,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragover(
     name: dragover,
     selector: String,
@@ -521,7 +576,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragstart(
     name: dragstart,
     selector: String,
@@ -531,7 +587,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_dragstart(
     name: dragstart,
     selector: String,
@@ -542,7 +599,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_drop(
     name: drop,
     selector: String,
@@ -552,7 +610,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_drop(
     name: drop,
     selector: String,
@@ -563,46 +622,53 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_durationchange(
     name: durationchange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_durationchange(
     name: durationchange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_emptied(
     name: emptied,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_emptied(
     name: emptied,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_ended(
     name: ended,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_ended(
     name: ended,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_error(
     name: error,
     selector: String,
@@ -612,7 +678,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_error(
     name: error,
     selector: String,
@@ -623,7 +690,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_focus(
     name: focus,
     selector: String,
@@ -633,7 +701,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_focus(
     name: focus,
     selector: String,
@@ -644,7 +713,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_focusin(
     name: focusin,
     selector: String,
@@ -654,7 +724,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_focusin(
     name: focusin,
     selector: String,
@@ -665,7 +736,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_focusout(
     name: focusout,
     selector: String,
@@ -675,7 +747,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_focusout(
     name: focusout,
     selector: String,
@@ -686,7 +759,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_gotpointercapture(
     name: gotpointercapture,
     selector: String,
@@ -696,7 +770,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_gotpointercapture(
     name: gotpointercapture,
     selector: String,
@@ -707,33 +782,38 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_input(
     name: input,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_input(
     name: input,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_invalid(
     name: invalid,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_invalid(
     name: invalid,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_keydown(
     name: keydown,
     selector: String,
@@ -743,7 +823,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_keydown(
     name: keydown,
     selector: String,
@@ -754,7 +835,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_keypress(
     name: keypress,
     selector: String,
@@ -764,7 +846,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_keypress(
     name: keypress,
     selector: String,
@@ -775,7 +858,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_keyup(
     name: keyup,
     selector: String,
@@ -785,7 +869,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_keyup(
     name: keyup,
     selector: String,
@@ -796,59 +881,68 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_load(
     name: load,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_load(
     name: load,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_loadeddata(
     name: loadeddata,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_loadeddata(
     name: loadeddata,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_loadedmetadata(
     name: loadedmetadata,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_loadedmetadata(
     name: loadedmetadata,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_loadstart(
     name: loadstart,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_loadstart(
     name: loadstart,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_lostpointercapture(
     name: lostpointercapture,
     selector: String,
@@ -858,7 +952,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_lostpointercapture(
     name: lostpointercapture,
     selector: String,
@@ -869,7 +964,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mousedown(
     name: mousedown,
     selector: String,
@@ -879,7 +975,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mousedown(
     name: mousedown,
     selector: String,
@@ -890,7 +987,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseenter(
     name: mouseenter,
     selector: String,
@@ -900,7 +998,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseenter(
     name: mouseenter,
     selector: String,
@@ -911,7 +1010,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseleave(
     name: mouseleave,
     selector: String,
@@ -921,7 +1021,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseleave(
     name: mouseleave,
     selector: String,
@@ -932,7 +1033,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mousemove(
     name: mousemove,
     selector: String,
@@ -942,7 +1044,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mousemove(
     name: mousemove,
     selector: String,
@@ -953,7 +1056,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseout(
     name: mouseout,
     selector: String,
@@ -963,7 +1067,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseout(
     name: mouseout,
     selector: String,
@@ -974,7 +1079,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseover(
     name: mouseover,
     selector: String,
@@ -984,7 +1090,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseover(
     name: mouseover,
     selector: String,
@@ -995,7 +1102,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseup(
     name: mouseup,
     selector: String,
@@ -1005,7 +1113,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_mouseup(
     name: mouseup,
     selector: String,
@@ -1016,46 +1125,53 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pause(
     name: pause,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pause(
     name: pause,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_play(
     name: play,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_play(
     name: play,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_playing(
     name: playing,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_playing(
     name: playing,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointercancel(
     name: pointercancel,
     selector: String,
@@ -1065,7 +1181,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointercancel(
     name: pointercancel,
     selector: String,
@@ -1076,7 +1193,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerdown(
     name: pointerdown,
     selector: String,
@@ -1086,7 +1204,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerdown(
     name: pointerdown,
     selector: String,
@@ -1097,7 +1216,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerenter(
     name: pointerenter,
     selector: String,
@@ -1107,7 +1227,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerenter(
     name: pointerenter,
     selector: String,
@@ -1118,7 +1239,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerleave(
     name: pointerleave,
     selector: String,
@@ -1128,7 +1250,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerleave(
     name: pointerleave,
     selector: String,
@@ -1139,7 +1262,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointermove(
     name: pointermove,
     selector: String,
@@ -1149,7 +1273,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointermove(
     name: pointermove,
     selector: String,
@@ -1160,7 +1285,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerout(
     name: pointerout,
     selector: String,
@@ -1170,7 +1296,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerout(
     name: pointerout,
     selector: String,
@@ -1181,7 +1308,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerover(
     name: pointerover,
     selector: String,
@@ -1191,7 +1319,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerover(
     name: pointerover,
     selector: String,
@@ -1202,7 +1331,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerup(
     name: pointerup,
     selector: String,
@@ -1212,7 +1342,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_pointerup(
     name: pointerup,
     selector: String,
@@ -1223,7 +1354,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_progress(
     name: progress,
     selector: String,
@@ -1233,7 +1365,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_progress(
     name: progress,
     selector: String,
@@ -1244,59 +1377,68 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_ratechange(
     name: ratechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_ratechange(
     name: ratechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_reset(
     name: reset,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_reset(
     name: reset,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_resize(
     name: resize,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_resize(
     name: resize,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_scroll(
     name: scroll,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_scroll(
     name: scroll,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_securitypolicyviolation(
     name: securitypolicyviolation,
     selector: String,
@@ -1306,7 +1448,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_securitypolicyviolation(
     name: securitypolicyviolation,
     selector: String,
@@ -1317,137 +1460,158 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_seeked(
     name: seeked,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_seeked(
     name: seeked,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_seeking(
     name: seeking,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_seeking(
     name: seeking,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_select(
     name: select,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_select(
     name: select,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_selectionchange(
     name: selectionchange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_selectionchange(
     name: selectionchange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_selectstart(
     name: selectstart,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_selectstart(
     name: selectstart,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_stalled(
     name: stalled,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_stalled(
     name: stalled,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_submit(
     name: submit,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_submit(
     name: submit,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_suspend(
     name: suspend,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_suspend(
     name: suspend,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_timeupdate(
     name: timeupdate,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_timeupdate(
     name: timeupdate,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_toggle(
     name: toggle,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_toggle(
     name: toggle,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchcancel(
     name: touchcancel,
     selector: String,
@@ -1457,7 +1621,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchcancel(
     name: touchcancel,
     selector: String,
@@ -1468,7 +1633,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchend(
     name: touchend,
     selector: String,
@@ -1478,7 +1644,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchend(
     name: touchend,
     selector: String,
@@ -1489,7 +1656,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchmove(
     name: touchmove,
     selector: String,
@@ -1499,7 +1667,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchmove(
     name: touchmove,
     selector: String,
@@ -1510,7 +1679,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchstart(
     name: touchstart,
     selector: String,
@@ -1520,7 +1690,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_touchstart(
     name: touchstart,
     selector: String,
@@ -1531,7 +1702,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitioncancel(
     name: transitioncancel,
     selector: String,
@@ -1541,7 +1713,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitioncancel(
     name: transitioncancel,
     selector: String,
@@ -1552,7 +1725,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitionend(
     name: transitionend,
     selector: String,
@@ -1562,7 +1736,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitionend(
     name: transitionend,
     selector: String,
@@ -1573,7 +1748,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitionrun(
     name: transitionrun,
     selector: String,
@@ -1583,7 +1759,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitionrun(
     name: transitionrun,
     selector: String,
@@ -1594,7 +1771,8 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitionstart(
     name: transitionstart,
     selector: String,
@@ -1604,7 +1782,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_transitionstart(
     name: transitionstart,
     selector: String,
@@ -1615,33 +1794,38 @@ object mod extends js.Object {
     ],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_volumechange(
     name: volumechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_volumechange(
     name: volumechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_waiting(
     name: waiting,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_waiting(
     name: waiting,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_wheel(
     name: wheel,
     selector: String,
@@ -1651,7 +1835,8 @@ object mod extends js.Object {
       _
     ]
   ): Unit = js.native
-  @JSName("on")
+  @JSImport("delegated-events", "on")
+  @js.native
   def on_wheel(
     name: wheel,
     selector: String,

@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
 import typings.mendixmodelsdk.internalMod.AbstractEnum
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType")
 @js.native
-class DesignPropertyValueType () extends AbstractEnum
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType")
-@js.native
-object DesignPropertyValueType extends js.Object {
+class DesignPropertyValueType protected () extends AbstractEnum {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object DesignPropertyValueType {
   
-  var DropDown: DesignPropertyValueType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Toggle: DesignPropertyValueType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType.DropDown")
+  @js.native
+  def DropDown: DesignPropertyValueType = js.native
+  @scala.inline
+  def DropDown_=(x: DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropDown")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType.Toggle")
+  @js.native
+  def Toggle: DesignPropertyValueType = js.native
+  @scala.inline
+  def Toggle_=(x: DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
 }

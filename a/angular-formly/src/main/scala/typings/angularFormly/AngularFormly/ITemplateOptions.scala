@@ -1,6 +1,7 @@
 package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ trait ITemplateOptions
   //Bootstrap types
   var label: js.UndefOr[String] = js.native
   
-    // default: value
+  // default: value
   var labelProp: js.UndefOr[String] = js.native
   
   //attribute only
@@ -62,7 +63,7 @@ trait ITemplateOptions
   
   var `type`: js.UndefOr[String] = js.native
   
-    // default: group
+  // default: group
   var valueProp: js.UndefOr[String] = js.native
 }
 object ITemplateOptions {
@@ -74,180 +75,168 @@ object ITemplateOptions {
   }
   
   @scala.inline
-  implicit class ITemplateOptionsOps[Self <: ITemplateOptions] (val x: Self) extends AnyVal {
+  implicit class ITemplateOptionsMutableBuilder[Self <: ITemplateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGroupProp(value: String): Self = StObject.set(x, "groupProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setGroupPropUndefined: Self = StObject.set(x, "groupProp", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupProp(value: String): Self = this.set("groupProp", value.asInstanceOf[js.Any])
+    def setLabelProp(value: String): Self = StObject.set(x, "labelProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupProp: Self = this.set("groupProp", js.undefined)
+    def setLabelPropUndefined: Self = StObject.set(x, "labelProp", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelProp(value: String): Self = this.set("labelProp", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLabelProp: Self = this.set("labelProp", js.undefined)
+    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxlength(value: Double): Self = this.set("maxlength", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMaxlength: Self = this.set("maxlength", js.undefined)
+    def setMinlength(value: Double): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinlengthUndefined: Self = StObject.set(x, "minlength", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setOnBlur(value: String | IExpressionFunction): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinlength(value: Double): Self = this.set("minlength", value.asInstanceOf[js.Any])
+    def setOnBlurFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMinlength: Self = this.set("minlength", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnBlurFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onBlur", js.Any.fromFunction3(value))
+    def setOnChange(value: String | IExpressionFunction): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBlur(value: String | IExpressionFunction): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    def setOnChangeFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnChangeFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onChange", js.Any.fromFunction3(value))
+    def setOnClick(value: String | IExpressionFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: String | IExpressionFunction): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    def setOnClickFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnClickFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onClick", js.Any.fromFunction3(value))
+    def setOnFocus(value: String | IExpressionFunction): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: String | IExpressionFunction): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    def setOnFocusFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnFocusFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onFocus", js.Any.fromFunction3(value))
+    def setOnKeydown(value: String | IExpressionFunction): Self = StObject.set(x, "onKeydown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFocus(value: String | IExpressionFunction): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    def setOnKeydownFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onKeydown", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnKeydownUndefined: Self = StObject.set(x, "onKeydown", js.undefined)
     
     @scala.inline
-    def setOnKeydownFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onKeydown", js.Any.fromFunction3(value))
+    def setOnKeypress(value: String | IExpressionFunction): Self = StObject.set(x, "onKeypress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeydown(value: String | IExpressionFunction): Self = this.set("onKeydown", value.asInstanceOf[js.Any])
+    def setOnKeypressFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onKeypress", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnKeydown: Self = this.set("onKeydown", js.undefined)
+    def setOnKeypressUndefined: Self = StObject.set(x, "onKeypress", js.undefined)
     
     @scala.inline
-    def setOnKeypressFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onKeypress", js.Any.fromFunction3(value))
+    def setOnKeyup(value: String | IExpressionFunction): Self = StObject.set(x, "onKeyup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeypress(value: String | IExpressionFunction): Self = this.set("onKeypress", value.asInstanceOf[js.Any])
+    def setOnKeyupFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onKeyup", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnKeypress: Self = this.set("onKeypress", js.undefined)
+    def setOnKeyupUndefined: Self = StObject.set(x, "onKeyup", js.undefined)
     
     @scala.inline
-    def setOnKeyupFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("onKeyup", js.Any.fromFunction3(value))
+    def setOptions(value: js.Array[ISelectOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeyup(value: String | IExpressionFunction): Self = this.set("onKeyup", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOnKeyup: Self = this.set("onKeyup", js.undefined)
+    def setOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: ISelectOption*): Self = this.set("options", js.Array(value :_*))
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[ISelectOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setPlaceholder(value: Double | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: Double | String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabindex(value: Double): Self = this.set("tabindex", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTabindex: Self = this.set("tabindex", js.undefined)
+    def setValueProp(value: String): Self = StObject.set(x, "valueProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValueProp(value: String): Self = this.set("valueProp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueProp: Self = this.set("valueProp", js.undefined)
+    def setValuePropUndefined: Self = StObject.set(x, "valueProp", js.undefined)
   }
 }

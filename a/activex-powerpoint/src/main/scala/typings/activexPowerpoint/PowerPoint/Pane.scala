@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pane extends js.Object {
+trait Pane extends StObject {
   
   def Activate(): Unit = js.native
   
@@ -38,36 +39,24 @@ object Pane {
   }
   
   @scala.inline
-  implicit class PaneOps[Self <: Pane] (val x: Self) extends AnyVal {
+  implicit class PaneMutableBuilder[Self <: Pane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive(value: MsoTriState): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: () => Unit): Self = this.set("Activate", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: MsoTriState): Self = this.set("Active", value.asInstanceOf[js.Any])
+    def setPowerPointDotPane_typekey(value: Pane): Self = StObject.set(x, "PowerPoint.Pane_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotPane_typekey(value: Pane): Self = this.set("PowerPoint.Pane_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewType(value: PpViewType): Self = this.set("ViewType", value.asInstanceOf[js.Any])
+    def setViewType(value: PpViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
   }
 }

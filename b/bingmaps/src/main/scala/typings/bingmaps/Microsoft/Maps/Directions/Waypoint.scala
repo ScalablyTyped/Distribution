@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import typings.bingmaps.Microsoft.Maps.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Waypoint extends js.Object {
+trait Waypoint extends StObject {
   
   /** Releases any resources associated with the waypoint. */
   def dispose(): Unit = js.native
@@ -50,33 +51,21 @@ object Waypoint {
   }
   
   @scala.inline
-  implicit class WaypointOps[Self <: Waypoint] (val x: Self) extends AnyVal {
+  implicit class WaypointMutableBuilder[Self <: Waypoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAddress(value: () => String): Self = StObject.set(x, "getAddress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLocation(value: () => Location): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setIsViapoint(value: () => Boolean): Self = StObject.set(x, "isViapoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAddress(value: () => String): Self = this.set("getAddress", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocation(value: () => Location): Self = this.set("getLocation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsViapoint(value: () => Boolean): Self = this.set("isViapoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOptions(value: IWaypointOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetOptions(value: IWaypointOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

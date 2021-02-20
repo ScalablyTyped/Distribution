@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an account passed into the Account Manager on Glass.
   */
 @js.native
-trait SchemaAccount extends js.Object {
+trait SchemaAccount extends StObject {
   
   var authTokens: js.UndefOr[js.Array[SchemaAuthToken]] = js.native
   
@@ -27,51 +28,39 @@ object SchemaAccount {
   }
   
   @scala.inline
-  implicit class SchemaAccountOps[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountMutableBuilder[Self <: SchemaAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthTokens(value: js.Array[SchemaAuthToken]): Self = StObject.set(x, "authTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthTokensUndefined: Self = StObject.set(x, "authTokens", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthTokensVarargs(value: SchemaAuthToken*): Self = StObject.set(x, "authTokens", js.Array(value :_*))
     
     @scala.inline
-    def setAuthTokensVarargs(value: SchemaAuthToken*): Self = this.set("authTokens", js.Array(value :_*))
+    def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthTokens(value: js.Array[SchemaAuthToken]): Self = this.set("authTokens", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteAuthTokens: Self = this.set("authTokens", js.undefined)
+    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[String]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setUserData(value: js.Array[SchemaUserData]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUserDataVarargs(value: SchemaUserData*): Self = this.set("userData", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserData(value: js.Array[SchemaUserData]): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataVarargs(value: SchemaUserData*): Self = StObject.set(x, "userData", js.Array(value :_*))
   }
 }

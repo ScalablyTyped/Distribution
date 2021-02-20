@@ -1,5 +1,6 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,21 +22,9 @@ object PaySignCenterOptions {
   }
   
   @scala.inline
-  implicit class PaySignCenterOptionsOps[Self <: PaySignCenterOptions] (val x: Self) extends AnyVal {
+  implicit class PaySignCenterOptionsMutableBuilder[Self <: PaySignCenterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSignStr(value: String): Self = this.set("signStr", value.asInstanceOf[js.Any])
+    def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
   }
 }

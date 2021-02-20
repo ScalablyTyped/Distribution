@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutTreeSnapshot extends js.Object {
+trait LayoutTreeSnapshot extends StObject {
   
   /**
     * The absolute position bounding box.
@@ -70,81 +71,69 @@ object LayoutTreeSnapshot {
   }
   
   @scala.inline
-  implicit class LayoutTreeSnapshotOps[Self <: LayoutTreeSnapshot] (val x: Self) extends AnyVal {
+  implicit class LayoutTreeSnapshotMutableBuilder[Self <: LayoutTreeSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Array[Rectangle]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: Rectangle*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientRects(value: js.Array[Rectangle]): Self = StObject.set(x, "clientRects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Rectangle*): Self = this.set("bounds", js.Array(value :_*))
+    def setClientRectsUndefined: Self = StObject.set(x, "clientRects", js.undefined)
     
     @scala.inline
-    def setBounds(value: js.Array[Rectangle]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setClientRectsVarargs(value: Rectangle*): Self = StObject.set(x, "clientRects", js.Array(value :_*))
     
     @scala.inline
-    def setNodeIndexVarargs(value: integer*): Self = this.set("nodeIndex", js.Array(value :_*))
+    def setNodeIndex(value: js.Array[integer]): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIndex(value: js.Array[integer]): Self = this.set("nodeIndex", value.asInstanceOf[js.Any])
+    def setNodeIndexVarargs(value: integer*): Self = StObject.set(x, "nodeIndex", js.Array(value :_*))
     
     @scala.inline
-    def setStackingContexts(value: RareBooleanData): Self = this.set("stackingContexts", value.asInstanceOf[js.Any])
+    def setOffsetRects(value: js.Array[Rectangle]): Self = StObject.set(x, "offsetRects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesVarargs(value: ArrayOfStrings*): Self = this.set("styles", js.Array(value :_*))
+    def setOffsetRectsUndefined: Self = StObject.set(x, "offsetRects", js.undefined)
     
     @scala.inline
-    def setStyles(value: js.Array[ArrayOfStrings]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setOffsetRectsVarargs(value: Rectangle*): Self = StObject.set(x, "offsetRects", js.Array(value :_*))
     
     @scala.inline
-    def setTextVarargs(value: StringIndex*): Self = this.set("text", js.Array(value :_*))
+    def setPaintOrders(value: js.Array[integer]): Self = StObject.set(x, "paintOrders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: js.Array[StringIndex]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setPaintOrdersUndefined: Self = StObject.set(x, "paintOrders", js.undefined)
     
     @scala.inline
-    def setClientRectsVarargs(value: Rectangle*): Self = this.set("clientRects", js.Array(value :_*))
+    def setPaintOrdersVarargs(value: integer*): Self = StObject.set(x, "paintOrders", js.Array(value :_*))
     
     @scala.inline
-    def setClientRects(value: js.Array[Rectangle]): Self = this.set("clientRects", value.asInstanceOf[js.Any])
+    def setScrollRects(value: js.Array[Rectangle]): Self = StObject.set(x, "scrollRects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRects: Self = this.set("clientRects", js.undefined)
+    def setScrollRectsUndefined: Self = StObject.set(x, "scrollRects", js.undefined)
     
     @scala.inline
-    def setOffsetRectsVarargs(value: Rectangle*): Self = this.set("offsetRects", js.Array(value :_*))
+    def setScrollRectsVarargs(value: Rectangle*): Self = StObject.set(x, "scrollRects", js.Array(value :_*))
     
     @scala.inline
-    def setOffsetRects(value: js.Array[Rectangle]): Self = this.set("offsetRects", value.asInstanceOf[js.Any])
+    def setStackingContexts(value: RareBooleanData): Self = StObject.set(x, "stackingContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetRects: Self = this.set("offsetRects", js.undefined)
+    def setStyles(value: js.Array[ArrayOfStrings]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaintOrdersVarargs(value: integer*): Self = this.set("paintOrders", js.Array(value :_*))
+    def setStylesVarargs(value: ArrayOfStrings*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setPaintOrders(value: js.Array[integer]): Self = this.set("paintOrders", value.asInstanceOf[js.Any])
+    def setText(value: js.Array[StringIndex]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaintOrders: Self = this.set("paintOrders", js.undefined)
-    
-    @scala.inline
-    def setScrollRectsVarargs(value: Rectangle*): Self = this.set("scrollRects", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollRects(value: js.Array[Rectangle]): Self = this.set("scrollRects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollRects: Self = this.set("scrollRects", js.undefined)
+    def setTextVarargs(value: StringIndex*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

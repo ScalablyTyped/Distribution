@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMessageList extends js.Object {
+trait IMessageList extends StObject {
   
   /** MessageList messages */
   var messages: js.UndefOr[js.Array[IMessage] | Null] = js.native
@@ -19,30 +20,18 @@ object IMessageList {
   }
   
   @scala.inline
-  implicit class IMessageListOps[Self <: IMessageList] (val x: Self) extends AnyVal {
+  implicit class IMessageListMutableBuilder[Self <: IMessageList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: js.Array[IMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesNull: Self = StObject.set(x, "messages", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def setMessagesVarargs(value: IMessage*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[IMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
-    
-    @scala.inline
-    def setMessagesNull: Self = this.set("messages", null)
+    def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

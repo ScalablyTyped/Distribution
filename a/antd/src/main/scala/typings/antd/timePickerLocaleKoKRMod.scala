@@ -1,13 +1,20 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.timePickerMod.TimePickerLocale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/time-picker/locale/ko_KR", JSImport.Namespace)
-@js.native
-object timePickerLocaleKoKRMod extends js.Object {
+object timePickerLocaleKoKRMod extends Shortcut {
   
+  @JSImport("antd/lib/time-picker/locale/ko_KR", JSImport.Default)
+  @js.native
   val default: TimePickerLocale = js.native
+  
+  type _To = TimePickerLocale
+  
+  /* This means you don't have to write `default`, but can instead just say `timePickerLocaleKoKRMod.foo` */
+  override def _to: TimePickerLocale = default
 }

@@ -1,5 +1,6 @@
 package typings.regexpp.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object CharacterClassRange {
   }
   
   @scala.inline
-  implicit class CharacterClassRangeOps[Self <: CharacterClassRange] (val x: Self) extends AnyVal {
+  implicit class CharacterClassRangeMutableBuilder[Self <: CharacterClassRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Character): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMin(value: Character): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: CharacterClass): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Character): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: Character): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: CharacterClass): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.CharacterClassRange): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.regexpp.regexppStrings.CharacterClassRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

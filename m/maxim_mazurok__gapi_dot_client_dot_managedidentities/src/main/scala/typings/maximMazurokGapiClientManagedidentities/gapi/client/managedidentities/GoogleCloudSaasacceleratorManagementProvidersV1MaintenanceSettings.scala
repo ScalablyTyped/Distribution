@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends StObject {
   
   /**
     * Optional. Exclude instance from maintenance. When true, rollout service will not attempt maintenance on the instance. Rollout service will include the instance in reported rollout
@@ -34,34 +35,22 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettingsOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettingsMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExclude(value: Boolean): Self = this.set("exclude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
     def setMaintenancePolicies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.managedidentities.gapi.client.managedidentities.MaintenancePolicy}
       */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings with TopLevel[js.Any]
-    ): Self = this.set("maintenancePolicies", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maintenancePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaintenancePolicies: Self = this.set("maintenancePolicies", js.undefined)
+    def setMaintenancePoliciesUndefined: Self = StObject.set(x, "maintenancePolicies", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,54 +75,42 @@ object SocialPost {
   }
   
   @scala.inline
-  implicit class SocialPostOps[Self <: SocialPost] (val x: Self) extends AnyVal {
+  implicit class SocialPostMutableBuilder[Self <: SocialPost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_attachment(value: () => SocialAttachment): Self = StObject.set(x, "get_attachment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_attributes(value: () => SocialPostAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_authorIndex(value: () => Double): Self = StObject.set(x, "get_authorIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_attachment(value: () => SocialAttachment): Self = this.set("get_attachment", js.Any.fromFunction0(value))
+    def setGet_createdTime(value: () => String): Self = StObject.set(x, "get_createdTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_attributes(value: () => SocialPostAttributes): Self = this.set("get_attributes", js.Any.fromFunction0(value))
+    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_authorIndex(value: () => Double): Self = this.set("get_authorIndex", js.Any.fromFunction0(value))
+    def setGet_likerInfo(value: () => SocialPostActorInfo): Self = StObject.set(x, "get_likerInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_createdTime(value: () => String): Self = this.set("get_createdTime", js.Any.fromFunction0(value))
+    def setGet_modifiedTime(value: () => String): Self = StObject.set(x, "get_modifiedTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_id(value: () => String): Self = this.set("get_id", js.Any.fromFunction0(value))
+    def setGet_overlays(value: () => js.Array[SocialDataOverlay]): Self = StObject.set(x, "get_overlays", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_likerInfo(value: () => SocialPostActorInfo): Self = this.set("get_likerInfo", js.Any.fromFunction0(value))
+    def setGet_postType(value: () => SocialPostType): Self = StObject.set(x, "get_postType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_modifiedTime(value: () => String): Self = this.set("get_modifiedTime", js.Any.fromFunction0(value))
+    def setGet_preferredImageUri(value: () => String): Self = StObject.set(x, "get_preferredImageUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_overlays(value: () => js.Array[SocialDataOverlay]): Self = this.set("get_overlays", js.Any.fromFunction0(value))
+    def setGet_source(value: () => SocialLink): Self = StObject.set(x, "get_source", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_postType(value: () => SocialPostType): Self = this.set("get_postType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_preferredImageUri(value: () => String): Self = this.set("get_preferredImageUri", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_source(value: () => SocialLink): Self = this.set("get_source", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_text(value: () => String): Self = this.set("get_text", js.Any.fromFunction0(value))
+    def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
   }
 }

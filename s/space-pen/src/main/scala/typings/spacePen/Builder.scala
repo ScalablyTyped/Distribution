@@ -1,11 +1,12 @@
 package typings.spacePen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Builder extends js.Object {
+trait Builder extends StObject {
   
   def buildHtml(): js.Array[_] = js.native
   
@@ -47,54 +48,42 @@ object Builder {
   }
   
   @scala.inline
-  implicit class BuilderOps[Self <: Builder] (val x: Self) extends AnyVal {
+  implicit class BuilderMutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildHtml(value: () => js.Array[_]): Self = StObject.set(x, "buildHtml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseTag(value: String => Unit): Self = StObject.set(x, "closeTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocument(value: js.Array[_]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildHtml(value: () => js.Array[_]): Self = this.set("buildHtml", js.Any.fromFunction0(value))
+    def setDocumentVarargs(value: js.Any*): Self = StObject.set(x, "document", js.Array(value :_*))
     
     @scala.inline
-    def setCloseTag(value: String => Unit): Self = this.set("closeTag", js.Any.fromFunction1(value))
+    def setExtractOptions(value: js.Any => js.Any): Self = StObject.set(x, "extractOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDocumentVarargs(value: js.Any*): Self = this.set("document", js.Array(value :_*))
+    def setOpenTag(value: (String, js.Any) => Unit): Self = StObject.set(x, "openTag", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDocument(value: js.Array[_]): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setPostProcessingSteps(value: js.Array[_]): Self = StObject.set(x, "postProcessingSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractOptions(value: js.Any => js.Any): Self = this.set("extractOptions", js.Any.fromFunction1(value))
+    def setPostProcessingStepsVarargs(value: js.Any*): Self = StObject.set(x, "postProcessingSteps", js.Array(value :_*))
     
     @scala.inline
-    def setOpenTag(value: (String, js.Any) => Unit): Self = this.set("openTag", js.Any.fromFunction2(value))
+    def setRaw(value: String => Unit): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPostProcessingStepsVarargs(value: js.Any*): Self = this.set("postProcessingSteps", js.Array(value :_*))
+    def setSubview(value: (js.Any, View) => Unit): Self = StObject.set(x, "subview", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPostProcessingSteps(value: js.Array[_]): Self = this.set("postProcessingSteps", value.asInstanceOf[js.Any])
+    def setTag(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "tag", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRaw(value: String => Unit): Self = this.set("raw", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubview(value: (js.Any, View) => Unit): Self = this.set("subview", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTag(value: (String, /* repeated */ js.Any) => Unit): Self = this.set("tag", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setText(value: String => Unit): Self = this.set("text", js.Any.fromFunction1(value))
+    def setText(value: String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

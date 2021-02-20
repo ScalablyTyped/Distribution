@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublishedExtension extends js.Object {
+trait PublishedExtension extends StObject {
   
   var categories: js.Array[String] = js.native
   
@@ -75,87 +76,75 @@ object PublishedExtension {
   }
   
   @scala.inline
-  implicit class PublishedExtensionOps[Self <: PublishedExtension] (val x: Self) extends AnyVal {
+  implicit class PublishedExtensionMutableBuilder[Self <: PublishedExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentType(value: ExtensionDeploymentTechnology): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentType(value: ExtensionDeploymentTechnology): Self = this.set("deploymentType", value.asInstanceOf[js.Any])
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFlags(value: PublishedExtensionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionId(value: String): Self = this.set("extensionId", value.asInstanceOf[js.Any])
+    def setInstallationTargets(value: js.Array[InstallationTarget]): Self = StObject.set(x, "installationTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
+    def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value :_*))
     
     @scala.inline
-    def setFlags(value: PublishedExtensionFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTargetsVarargs(value: InstallationTarget*): Self = this.set("installationTargets", js.Array(value :_*))
+    def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTargets(value: js.Array[InstallationTarget]): Self = this.set("installationTargets", value.asInstanceOf[js.Any])
+    def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Date): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    def setPublisher(value: PublisherFacts): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDescription(value: String): Self = this.set("longDescription", value.asInstanceOf[js.Any])
+    def setReleaseDate(value: Date): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedDate(value: Date): Self = this.set("publishedDate", value.asInstanceOf[js.Any])
+    def setSharedWith(value: js.Array[ExtensionShare]): Self = StObject.set(x, "sharedWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisher(value: PublisherFacts): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setSharedWithVarargs(value: ExtensionShare*): Self = StObject.set(x, "sharedWith", js.Array(value :_*))
     
     @scala.inline
-    def setReleaseDate(value: Date): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
+    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedWithVarargs(value: ExtensionShare*): Self = this.set("sharedWith", js.Array(value :_*))
+    def setStatistics(value: js.Array[ExtensionStatistic]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedWith(value: js.Array[ExtensionShare]): Self = this.set("sharedWith", value.asInstanceOf[js.Any])
+    def setStatisticsVarargs(value: ExtensionStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
     @scala.inline
-    def setShortDescription(value: String): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticsVarargs(value: ExtensionStatistic*): Self = this.set("statistics", js.Array(value :_*))
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setStatistics(value: js.Array[ExtensionStatistic]): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setVersions(value: js.Array[ExtensionVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionsVarargs(value: ExtensionVersion*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[ExtensionVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setVersionsVarargs(value: ExtensionVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderLeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait BorderLeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The border-left CSS property is a shorthand that sets the values of border-left-width,
@@ -24,30 +25,18 @@ object BorderLeftProps {
   }
   
   @scala.inline
-  implicit class BorderLeftPropsOps[Self <: BorderLeftProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderLeftProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderLeftPropsMutableBuilder[Self <: BorderLeftProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderLeftProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderLeftNull: Self = StObject.set(x, "borderLeft", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
     @scala.inline
-    def setBorderLeftVarargs(value: (TVal | Null)*): Self = this.set("borderLeft", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderLeft(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
-    
-    @scala.inline
-    def setBorderLeftNull: Self = this.set("borderLeft", null)
+    def setBorderLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,54 +31,42 @@ object BuildOptions {
   }
   
   @scala.inline
-  implicit class BuildOptionsOps[Self <: BuildOptions] (val x: Self) extends AnyVal {
+  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssumeChangesOnlyAffectDirectDependencies(value: Boolean): Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssumeChangesOnlyAffectDirectDependenciesUndefined: Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDry(value: Boolean): Self = StObject.set(x, "dry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssumeChangesOnlyAffectDirectDependencies(value: Boolean): Self = this.set("assumeChangesOnlyAffectDirectDependencies", value.asInstanceOf[js.Any])
+    def setDryUndefined: Self = StObject.set(x, "dry", js.undefined)
     
     @scala.inline
-    def deleteAssumeChangesOnlyAffectDirectDependencies: Self = this.set("assumeChangesOnlyAffectDirectDependencies", js.undefined)
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDry(value: Boolean): Self = this.set("dry", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteDry: Self = this.set("dry", js.undefined)
+    def setIncremental(value: Boolean): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setTraceResolution(value: Boolean): Self = StObject.set(x, "traceResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncremental(value: Boolean): Self = this.set("incremental", value.asInstanceOf[js.Any])
+    def setTraceResolutionUndefined: Self = StObject.set(x, "traceResolution", js.undefined)
     
     @scala.inline
-    def deleteIncremental: Self = this.set("incremental", js.undefined)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraceResolution(value: Boolean): Self = this.set("traceResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceResolution: Self = this.set("traceResolution", js.undefined)
-    
-    @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

@@ -1,17 +1,18 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotificationType extends js.Object
+sealed trait NotificationType extends StObject
 /**
   * Notification Type
   */
 @JSGlobal("umbraco.services.NotificationType")
 @js.native
-object NotificationType extends js.Object {
+object NotificationType extends StObject {
   
   @js.native
   sealed trait error extends NotificationType

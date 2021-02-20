@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Price extends js.Object {
+trait Price extends StObject {
   
   /** The actual price with currency specified. */
   var amount: js.UndefOr[Money] = js.native
@@ -22,30 +23,18 @@ object Price {
   }
   
   @scala.inline
-  implicit class PriceOps[Self <: Price] (val x: Self) extends AnyVal {
+  implicit class PriceMutableBuilder[Self <: Price] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Money): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
-    
-    @scala.inline
-    def setPricingType(value: String): Self = this.set("pricingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePricingType: Self = this.set("pricingType", js.undefined)
+    def setPricingTypeUndefined: Self = StObject.set(x, "pricingType", js.undefined)
   }
 }

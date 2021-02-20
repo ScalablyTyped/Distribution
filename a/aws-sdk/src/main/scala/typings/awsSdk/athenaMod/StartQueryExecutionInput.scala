@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartQueryExecutionInput extends js.Object {
+trait StartQueryExecutionInput extends StObject {
   
   /**
     * A unique case-sensitive string used to ensure the request to create the query is idempotent (executes only once). If another StartQueryExecution request is received, the same response is returned and another query is not created. If a parameter has changed, for example, the QueryString, an error is returned.  This token is listed as not required because AWS SDKs (for example the AWS SDK for Java) auto-generate the token for users. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the action will fail. 
@@ -41,45 +42,33 @@ object StartQueryExecutionInput {
   }
   
   @scala.inline
-  implicit class StartQueryExecutionInputOps[Self <: StartQueryExecutionInput] (val x: Self) extends AnyVal {
+  implicit class StartQueryExecutionInputMutableBuilder[Self <: StartQueryExecutionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryExecutionContext(value: QueryExecutionContext): Self = StObject.set(x, "QueryExecutionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: QueryString): Self = this.set("QueryString", value.asInstanceOf[js.Any])
+    def setQueryExecutionContextUndefined: Self = StObject.set(x, "QueryExecutionContext", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: IdempotencyToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setResultConfiguration(value: ResultConfiguration): Self = StObject.set(x, "ResultConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryExecutionContext(value: QueryExecutionContext): Self = this.set("QueryExecutionContext", value.asInstanceOf[js.Any])
+    def setResultConfigurationUndefined: Self = StObject.set(x, "ResultConfiguration", js.undefined)
     
     @scala.inline
-    def deleteQueryExecutionContext: Self = this.set("QueryExecutionContext", js.undefined)
+    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultConfiguration(value: ResultConfiguration): Self = this.set("ResultConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultConfiguration: Self = this.set("ResultConfiguration", js.undefined)
-    
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkGroup: Self = this.set("WorkGroup", js.undefined)
+    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstAndThirdPartyAudience extends js.Object {
+trait FirstAndThirdPartyAudience extends StObject {
   
   /**
     * Output only. The estimated audience size for the Display network in the past month. If the size is less than 1000, the number will be hidden and 0 will be returned due to privacy
@@ -82,108 +83,96 @@ object FirstAndThirdPartyAudience {
   }
   
   @scala.inline
-  implicit class FirstAndThirdPartyAudienceOps[Self <: FirstAndThirdPartyAudience] (val x: Self) extends AnyVal {
+  implicit class FirstAndThirdPartyAudienceMutableBuilder[Self <: FirstAndThirdPartyAudience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDisplayAudienceSize(value: String): Self = StObject.set(x, "activeDisplayAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDisplayAudienceSizeUndefined: Self = StObject.set(x, "activeDisplayAudienceSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudienceSource(value: String): Self = StObject.set(x, "audienceSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDisplayAudienceSize(value: String): Self = this.set("activeDisplayAudienceSize", value.asInstanceOf[js.Any])
+    def setAudienceSourceUndefined: Self = StObject.set(x, "audienceSource", js.undefined)
     
     @scala.inline
-    def deleteActiveDisplayAudienceSize: Self = this.set("activeDisplayAudienceSize", js.undefined)
+    def setAudienceType(value: String): Self = StObject.set(x, "audienceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudienceSource(value: String): Self = this.set("audienceSource", value.asInstanceOf[js.Any])
+    def setAudienceTypeUndefined: Self = StObject.set(x, "audienceType", js.undefined)
     
     @scala.inline
-    def deleteAudienceSource: Self = this.set("audienceSource", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudienceType(value: String): Self = this.set("audienceType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAudienceType: Self = this.set("audienceType", js.undefined)
+    def setDisplayAudienceSize(value: String): Self = StObject.set(x, "displayAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayAudienceSizeUndefined: Self = StObject.set(x, "displayAudienceSize", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayDesktopAudienceSize(value: String): Self = StObject.set(x, "displayDesktopAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAudienceSize(value: String): Self = this.set("displayAudienceSize", value.asInstanceOf[js.Any])
+    def setDisplayDesktopAudienceSizeUndefined: Self = StObject.set(x, "displayDesktopAudienceSize", js.undefined)
     
     @scala.inline
-    def deleteDisplayAudienceSize: Self = this.set("displayAudienceSize", js.undefined)
+    def setDisplayMobileAppAudienceSize(value: String): Self = StObject.set(x, "displayMobileAppAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDesktopAudienceSize(value: String): Self = this.set("displayDesktopAudienceSize", value.asInstanceOf[js.Any])
+    def setDisplayMobileAppAudienceSizeUndefined: Self = StObject.set(x, "displayMobileAppAudienceSize", js.undefined)
     
     @scala.inline
-    def deleteDisplayDesktopAudienceSize: Self = this.set("displayDesktopAudienceSize", js.undefined)
+    def setDisplayMobileWebAudienceSize(value: String): Self = StObject.set(x, "displayMobileWebAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMobileAppAudienceSize(value: String): Self = this.set("displayMobileAppAudienceSize", value.asInstanceOf[js.Any])
+    def setDisplayMobileWebAudienceSizeUndefined: Self = StObject.set(x, "displayMobileWebAudienceSize", js.undefined)
     
     @scala.inline
-    def deleteDisplayMobileAppAudienceSize: Self = this.set("displayMobileAppAudienceSize", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMobileWebAudienceSize(value: String): Self = this.set("displayMobileWebAudienceSize", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDisplayMobileWebAudienceSize: Self = this.set("displayMobileWebAudienceSize", js.undefined)
+    def setFirstAndThirdPartyAudienceId(value: String): Self = StObject.set(x, "firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFirstAndThirdPartyAudienceIdUndefined: Self = StObject.set(x, "firstAndThirdPartyAudienceId", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFirstAndThirdPartyAudienceType(value: String): Self = StObject.set(x, "firstAndThirdPartyAudienceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAndThirdPartyAudienceId(value: String): Self = this.set("firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
+    def setFirstAndThirdPartyAudienceTypeUndefined: Self = StObject.set(x, "firstAndThirdPartyAudienceType", js.undefined)
     
     @scala.inline
-    def deleteFirstAndThirdPartyAudienceId: Self = this.set("firstAndThirdPartyAudienceId", js.undefined)
+    def setGmailAudienceSize(value: String): Self = StObject.set(x, "gmailAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAndThirdPartyAudienceType(value: String): Self = this.set("firstAndThirdPartyAudienceType", value.asInstanceOf[js.Any])
+    def setGmailAudienceSizeUndefined: Self = StObject.set(x, "gmailAudienceSize", js.undefined)
     
     @scala.inline
-    def deleteFirstAndThirdPartyAudienceType: Self = this.set("firstAndThirdPartyAudienceType", js.undefined)
+    def setMembershipDurationDays(value: String): Self = StObject.set(x, "membershipDurationDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGmailAudienceSize(value: String): Self = this.set("gmailAudienceSize", value.asInstanceOf[js.Any])
+    def setMembershipDurationDaysUndefined: Self = StObject.set(x, "membershipDurationDays", js.undefined)
     
     @scala.inline
-    def deleteGmailAudienceSize: Self = this.set("gmailAudienceSize", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembershipDurationDays(value: String): Self = this.set("membershipDurationDays", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMembershipDurationDays: Self = this.set("membershipDurationDays", js.undefined)
+    def setYoutubeAudienceSize(value: String): Self = StObject.set(x, "youtubeAudienceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setYoutubeAudienceSize(value: String): Self = this.set("youtubeAudienceSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoutubeAudienceSize: Self = this.set("youtubeAudienceSize", js.undefined)
+    def setYoutubeAudienceSizeUndefined: Self = StObject.set(x, "youtubeAudienceSize", js.undefined)
   }
 }

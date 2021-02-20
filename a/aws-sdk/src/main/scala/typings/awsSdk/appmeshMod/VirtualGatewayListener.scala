@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayListener extends js.Object {
+trait VirtualGatewayListener extends StObject {
   
   /**
     * The connection pool information for the virtual gateway listener.
@@ -36,39 +37,27 @@ object VirtualGatewayListener {
   }
   
   @scala.inline
-  implicit class VirtualGatewayListenerOps[Self <: VirtualGatewayListener] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayListenerMutableBuilder[Self <: VirtualGatewayListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionPool(value: VirtualGatewayConnectionPool): Self = StObject.set(x, "connectionPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionPoolUndefined: Self = StObject.set(x, "connectionPool", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthCheck(value: VirtualGatewayHealthCheckPolicy): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortMapping(value: VirtualGatewayPortMapping): Self = this.set("portMapping", value.asInstanceOf[js.Any])
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
     @scala.inline
-    def setConnectionPool(value: VirtualGatewayConnectionPool): Self = this.set("connectionPool", value.asInstanceOf[js.Any])
+    def setPortMapping(value: VirtualGatewayPortMapping): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectionPool: Self = this.set("connectionPool", js.undefined)
+    def setTls(value: VirtualGatewayListenerTls): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: VirtualGatewayHealthCheckPolicy): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
-    
-    @scala.inline
-    def setTls(value: VirtualGatewayListenerTls): Self = this.set("tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

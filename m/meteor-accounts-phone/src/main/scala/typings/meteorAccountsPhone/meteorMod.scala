@@ -1,19 +1,25 @@
 package typings.meteorAccountsPhone
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("meteor/meteor", JSImport.Namespace)
-@js.native
-object meteorMod extends js.Object {
+object meteorMod {
   
-  @js.native
-  object Meteor extends js.Object {
+  object Meteor {
     
+    @JSImport("meteor/meteor", "Meteor.loginWithPhoneAndPassword")
+    @js.native
     def loginWithPhoneAndPassword(selector: String, password: String): Unit = js.native
+    @JSImport("meteor/meteor", "Meteor.loginWithPhoneAndPassword")
+    @js.native
     def loginWithPhoneAndPassword(selector: String, password: String, callback: js.Function): Unit = js.native
+    @JSImport("meteor/meteor", "Meteor.loginWithPhoneAndPassword")
+    @js.native
     def loginWithPhoneAndPassword(selector: js.Object, password: String): Unit = js.native
+    @JSImport("meteor/meteor", "Meteor.loginWithPhoneAndPassword")
+    @js.native
     def loginWithPhoneAndPassword(selector: js.Object, password: String, callback: js.Function): Unit = js.native
   }
 }

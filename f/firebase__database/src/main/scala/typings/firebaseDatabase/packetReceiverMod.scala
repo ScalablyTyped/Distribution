@@ -1,15 +1,15 @@
 package typings.firebaseDatabase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/realtime/polling/PacketReceiver", JSImport.Namespace)
-@js.native
-object packetReceiverMod extends js.Object {
+object packetReceiverMod {
   
+  @JSImport("@firebase/database/dist/src/realtime/polling/PacketReceiver", "PacketReceiver")
   @js.native
-  class PacketReceiver protected () extends js.Object {
+  class PacketReceiver protected () extends StObject {
     /**
       * @param onMessage_
       */

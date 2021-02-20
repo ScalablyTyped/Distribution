@@ -3,6 +3,7 @@ package typings.atom.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atom.mod.global.HTMLElementTagNameMap
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

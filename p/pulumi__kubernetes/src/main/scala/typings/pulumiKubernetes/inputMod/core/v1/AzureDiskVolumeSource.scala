@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
   */
 @js.native
-trait AzureDiskVolumeSource extends js.Object {
+trait AzureDiskVolumeSource extends StObject {
   
   /**
     * Host Caching mode: None, Read Only, Read Write.
@@ -50,48 +51,36 @@ object AzureDiskVolumeSource {
   }
   
   @scala.inline
-  implicit class AzureDiskVolumeSourceOps[Self <: AzureDiskVolumeSource] (val x: Self) extends AnyVal {
+  implicit class AzureDiskVolumeSourceMutableBuilder[Self <: AzureDiskVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachingMode(value: Input[String]): Self = StObject.set(x, "cachingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachingModeUndefined: Self = StObject.set(x, "cachingMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskName(value: Input[String]): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskName(value: Input[String]): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    def setDiskURI(value: Input[String]): Self = StObject.set(x, "diskURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskURI(value: Input[String]): Self = this.set("diskURI", value.asInstanceOf[js.Any])
+    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachingMode(value: Input[String]): Self = this.set("cachingMode", value.asInstanceOf[js.Any])
+    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
     @scala.inline
-    def deleteCachingMode: Self = this.set("cachingMode", js.undefined)
+    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: Input[String]): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFsType: Self = this.set("fsType", js.undefined)
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: Input[String]): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

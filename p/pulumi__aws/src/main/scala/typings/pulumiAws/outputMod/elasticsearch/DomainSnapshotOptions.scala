@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainSnapshotOptions extends js.Object {
+trait DomainSnapshotOptions extends StObject {
   
   /**
     * Hour during which the service takes an automated daily snapshot of the indices in the domain.
@@ -21,21 +22,9 @@ object DomainSnapshotOptions {
   }
   
   @scala.inline
-  implicit class DomainSnapshotOptionsOps[Self <: DomainSnapshotOptions] (val x: Self) extends AnyVal {
+  implicit class DomainSnapshotOptionsMutableBuilder[Self <: DomainSnapshotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutomatedSnapshotStartHour(value: Double): Self = this.set("automatedSnapshotStartHour", value.asInstanceOf[js.Any])
+    def setAutomatedSnapshotStartHour(value: Double): Self = StObject.set(x, "automatedSnapshotStartHour", value.asInstanceOf[js.Any])
   }
 }

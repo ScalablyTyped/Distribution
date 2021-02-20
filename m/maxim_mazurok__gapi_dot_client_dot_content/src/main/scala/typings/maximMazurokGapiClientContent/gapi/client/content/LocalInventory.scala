@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalInventory extends js.Object {
+trait LocalInventory extends StObject {
   
   /** Availability of the product. For accepted attribute values, see the local product inventory feed specification. */
   var availability: js.UndefOr[String] = js.native
@@ -52,78 +53,66 @@ object LocalInventory {
   }
   
   @scala.inline
-  implicit class LocalInventoryOps[Self <: LocalInventory] (val x: Self) extends AnyVal {
+  implicit class LocalInventoryMutableBuilder[Self <: LocalInventory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstoreProductLocation(value: String): Self = StObject.set(x, "instoreProductLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: String): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setInstoreProductLocationUndefined: Self = StObject.set(x, "instoreProductLocation", js.undefined)
     
     @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstoreProductLocation(value: String): Self = this.set("instoreProductLocation", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInstoreProductLocation: Self = this.set("instoreProductLocation", js.undefined)
+    def setPickupMethod(value: String): Self = StObject.set(x, "pickupMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPickupMethodUndefined: Self = StObject.set(x, "pickupMethod", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPickupSla(value: String): Self = StObject.set(x, "pickupSla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickupMethod(value: String): Self = this.set("pickupMethod", value.asInstanceOf[js.Any])
+    def setPickupSlaUndefined: Self = StObject.set(x, "pickupSla", js.undefined)
     
     @scala.inline
-    def deletePickupMethod: Self = this.set("pickupMethod", js.undefined)
+    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickupSla(value: String): Self = this.set("pickupSla", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deletePickupSla: Self = this.set("pickupSla", js.undefined)
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: Price): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setSalePrice(value: Price): Self = StObject.set(x, "salePrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setSalePriceEffectiveDate(value: String): Self = StObject.set(x, "salePriceEffectiveDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setSalePriceEffectiveDateUndefined: Self = StObject.set(x, "salePriceEffectiveDate", js.undefined)
     
     @scala.inline
-    def setSalePrice(value: Price): Self = this.set("salePrice", value.asInstanceOf[js.Any])
+    def setSalePriceUndefined: Self = StObject.set(x, "salePrice", js.undefined)
     
     @scala.inline
-    def deleteSalePrice: Self = this.set("salePrice", js.undefined)
+    def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalePriceEffectiveDate(value: String): Self = this.set("salePriceEffectiveDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSalePriceEffectiveDate: Self = this.set("salePriceEffectiveDate", js.undefined)
-    
-    @scala.inline
-    def setStoreCode(value: String): Self = this.set("storeCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreCode: Self = this.set("storeCode", js.undefined)
+    def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.Flow.Voice.Mode
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Voice extends js.Object {
+trait Voice extends StObject {
   
   def addTickable(tickable: Tickable): Voice = js.native
   
@@ -48,14 +49,13 @@ trait Voice extends js.Object {
   
   def setVoiceGroup(g: VoiceGroup): Voice = js.native
 }
-@JSGlobal("Vex.Flow.Voice")
-@js.native
-object Voice extends js.Object {
+object Voice {
   
   @js.native
-  sealed trait Mode extends js.Object
+  sealed trait Mode extends StObject
+  @JSGlobal("Vex.Flow.Voice.Mode")
   @js.native
-  object Mode extends js.Object {
+  object Mode extends StObject {
     
     @js.native
     sealed trait FULL extends Mode

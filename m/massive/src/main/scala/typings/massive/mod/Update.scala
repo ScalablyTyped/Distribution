@@ -1,5 +1,6 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a UPDATE query. */
 @JSImport("massive", "Update")
 @js.native
-class Update protected () extends js.Object {
+class Update protected () extends StObject {
   /** Represents an UPDATE query. */
   def this(source: Readable, changes: AnyObject[_], criteria: AnyObject[_]) = this()
   def this(

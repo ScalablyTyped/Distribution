@@ -1,12 +1,13 @@
 package typings.ethersprojectProviders
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/providers/lib/browser-ipc-provider", JSImport.Namespace)
-@js.native
-object browserIpcProviderMod extends js.Object {
+object browserIpcProviderMod {
   
+  @JSImport("@ethersproject/providers/lib/browser-ipc-provider", "IpcProvider")
+  @js.native
   val IpcProvider: js.Any = js.native
 }

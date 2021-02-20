@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.rippled
 import typings.arcgisJsApi.arcgisJsApiStrings.slight
 import typings.arcgisJsApi.arcgisJsApiStrings.small
 import typings.arcgisJsApi.arcgisJsApiStrings.water
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

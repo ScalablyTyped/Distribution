@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mendixmodelsdk.mendixmodelsdkStrings.NO_WEBMODELER_TARGET_SELECTED
   - typings.mendixmodelsdk.mendixmodelsdkStrings.UNKNOWN
 */
-trait CannotFixAppState extends js.Object
+trait CannotFixAppState extends StObject
 object CannotFixAppState {
   
   @scala.inline

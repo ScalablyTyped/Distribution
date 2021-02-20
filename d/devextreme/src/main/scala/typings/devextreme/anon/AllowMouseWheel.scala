@@ -8,12 +8,13 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.pan
 import typings.devextreme.devextremeStrings.shift
 import typings.devextreme.devextremeStrings.zoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowMouseWheel extends js.Object {
+trait AllowMouseWheel extends StObject {
   
   var allowMouseWheel: js.UndefOr[Boolean] = js.native
   
@@ -38,60 +39,48 @@ object AllowMouseWheel {
   }
   
   @scala.inline
-  implicit class AllowMouseWheelOps[Self <: AllowMouseWheel] (val x: Self) extends AnyVal {
+  implicit class AllowMouseWheelMutableBuilder[Self <: AllowMouseWheel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMouseWheel(value: Boolean): Self = StObject.set(x, "allowMouseWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMouseWheelUndefined: Self = StObject.set(x, "allowMouseWheel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowTouchGestures(value: Boolean): Self = StObject.set(x, "allowTouchGestures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMouseWheel(value: Boolean): Self = this.set("allowMouseWheel", value.asInstanceOf[js.Any])
+    def setAllowTouchGesturesUndefined: Self = StObject.set(x, "allowTouchGestures", js.undefined)
     
     @scala.inline
-    def deleteAllowMouseWheel: Self = this.set("allowMouseWheel", js.undefined)
+    def setArgumentAxis(value: both | none | pan | zoom): Self = StObject.set(x, "argumentAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTouchGestures(value: Boolean): Self = this.set("allowTouchGestures", value.asInstanceOf[js.Any])
+    def setArgumentAxisUndefined: Self = StObject.set(x, "argumentAxis", js.undefined)
     
     @scala.inline
-    def deleteAllowTouchGestures: Self = this.set("allowTouchGestures", js.undefined)
+    def setDragBoxStyle(value: Opacity): Self = StObject.set(x, "dragBoxStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentAxis(value: both | none | pan | zoom): Self = this.set("argumentAxis", value.asInstanceOf[js.Any])
+    def setDragBoxStyleUndefined: Self = StObject.set(x, "dragBoxStyle", js.undefined)
     
     @scala.inline
-    def deleteArgumentAxis: Self = this.set("argumentAxis", js.undefined)
+    def setDragToZoom(value: Boolean): Self = StObject.set(x, "dragToZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragBoxStyle(value: Opacity): Self = this.set("dragBoxStyle", value.asInstanceOf[js.Any])
+    def setDragToZoomUndefined: Self = StObject.set(x, "dragToZoom", js.undefined)
     
     @scala.inline
-    def deleteDragBoxStyle: Self = this.set("dragBoxStyle", js.undefined)
+    def setPanKey(value: alt | ctrl | meta | shift): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragToZoom(value: Boolean): Self = this.set("dragToZoom", value.asInstanceOf[js.Any])
+    def setPanKeyUndefined: Self = StObject.set(x, "panKey", js.undefined)
     
     @scala.inline
-    def deleteDragToZoom: Self = this.set("dragToZoom", js.undefined)
+    def setValueAxis(value: both | none | pan | zoom): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanKey(value: alt | ctrl | meta | shift): Self = this.set("panKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePanKey: Self = this.set("panKey", js.undefined)
-    
-    @scala.inline
-    def setValueAxis(value: both | none | pan | zoom): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

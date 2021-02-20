@@ -1,12 +1,13 @@
 package typings.terminalKit.anon
 
 import typings.terminalKit.terminalMod.SingleLineMenuResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromisePromise extends js.Object {
+trait PromisePromise extends StObject {
   
   var promise: js.Promise[SingleLineMenuResponse] = js.native
 }
@@ -19,21 +20,9 @@ object PromisePromise {
   }
   
   @scala.inline
-  implicit class PromisePromiseOps[Self <: PromisePromise] (val x: Self) extends AnyVal {
+  implicit class PromisePromiseMutableBuilder[Self <: PromisePromise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPromise(value: js.Promise[SingleLineMenuResponse]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setPromise(value: js.Promise[SingleLineMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

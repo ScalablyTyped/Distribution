@@ -2,6 +2,7 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.stepper.Step
 import typings.kendoUi.kendo.stepper.StepOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

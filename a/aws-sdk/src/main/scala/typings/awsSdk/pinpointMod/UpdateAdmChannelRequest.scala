@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAdmChannelRequest extends js.Object {
+trait UpdateAdmChannelRequest extends StObject {
   
   var ADMChannelRequest: typings.awsSdk.pinpointMod.ADMChannelRequest = js.native
   
@@ -23,24 +24,12 @@ object UpdateAdmChannelRequest {
   }
   
   @scala.inline
-  implicit class UpdateAdmChannelRequestOps[Self <: UpdateAdmChannelRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAdmChannelRequestMutableBuilder[Self <: UpdateAdmChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADMChannelRequest(value: ADMChannelRequest): Self = StObject.set(x, "ADMChannelRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setADMChannelRequest(value: ADMChannelRequest): Self = this.set("ADMChannelRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

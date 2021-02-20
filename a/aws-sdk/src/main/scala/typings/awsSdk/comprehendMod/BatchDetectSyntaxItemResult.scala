@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetectSyntaxItemResult extends js.Object {
+trait BatchDetectSyntaxItemResult extends StObject {
   
   /**
     * The zero-based index of the document in the input list.
@@ -26,33 +27,21 @@ object BatchDetectSyntaxItemResult {
   }
   
   @scala.inline
-  implicit class BatchDetectSyntaxItemResultOps[Self <: BatchDetectSyntaxItemResult] (val x: Self) extends AnyVal {
+  implicit class BatchDetectSyntaxItemResultMutableBuilder[Self <: BatchDetectSyntaxItemResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSyntaxTokens(value: ListOfSyntaxTokens): Self = StObject.set(x, "SyntaxTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Integer): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setSyntaxTokensUndefined: Self = StObject.set(x, "SyntaxTokens", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("Index", js.undefined)
-    
-    @scala.inline
-    def setSyntaxTokensVarargs(value: SyntaxToken*): Self = this.set("SyntaxTokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setSyntaxTokens(value: ListOfSyntaxTokens): Self = this.set("SyntaxTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntaxTokens: Self = this.set("SyntaxTokens", js.undefined)
+    def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.sugar
 
 import typings.sugar.sugarjs.String.replaceFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait String extends js.Object {
+trait String extends StObject {
   
   def at[T](index: Double): T = js.native
   def at[T](index: Double, loop: Boolean): T = js.native

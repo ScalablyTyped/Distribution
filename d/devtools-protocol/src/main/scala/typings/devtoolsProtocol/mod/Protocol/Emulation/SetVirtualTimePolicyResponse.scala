@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetVirtualTimePolicyResponse extends js.Object {
+trait SetVirtualTimePolicyResponse extends StObject {
   
   /**
     * Absolute timestamp at which virtual time was first enabled (up time in milliseconds).
@@ -21,21 +22,9 @@ object SetVirtualTimePolicyResponse {
   }
   
   @scala.inline
-  implicit class SetVirtualTimePolicyResponseOps[Self <: SetVirtualTimePolicyResponse] (val x: Self) extends AnyVal {
+  implicit class SetVirtualTimePolicyResponseMutableBuilder[Self <: SetVirtualTimePolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualTimeTicksBase(value: Double): Self = this.set("virtualTimeTicksBase", value.asInstanceOf[js.Any])
+    def setVirtualTimeTicksBase(value: Double): Self = StObject.set(x, "virtualTimeTicksBase", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES
   - typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY
 */
-trait ContextFilter extends js.Object
+trait ContextFilter extends StObject
 object ContextFilter {
   
   @scala.inline

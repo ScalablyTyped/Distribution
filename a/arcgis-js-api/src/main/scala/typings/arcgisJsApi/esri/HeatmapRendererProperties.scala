@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,51 +52,39 @@ object HeatmapRendererProperties {
   }
   
   @scala.inline
-  implicit class HeatmapRendererPropertiesOps[Self <: HeatmapRendererProperties] (val x: Self) extends AnyVal {
+  implicit class HeatmapRendererPropertiesMutableBuilder[Self <: HeatmapRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurRadius(value: Double): Self = this.set("blurRadius", value.asInstanceOf[js.Any])
+    def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
     @scala.inline
-    def deleteBlurRadius: Self = this.set("blurRadius", js.undefined)
+    def setColorStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
     
     @scala.inline
-    def setColorStopsVarargs(value: HeatmapColorStopProperties*): Self = this.set("colorStops", js.Array(value :_*))
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorStops(value: js.Array[HeatmapColorStopProperties]): Self = this.set("colorStops", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteColorStops: Self = this.set("colorStops", js.undefined)
+    def setMaxPixelIntensity(value: Double): Self = StObject.set(x, "maxPixelIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setMaxPixelIntensityUndefined: Self = StObject.set(x, "maxPixelIntensity", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setMinPixelIntensity(value: Double): Self = StObject.set(x, "minPixelIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPixelIntensity(value: Double): Self = this.set("maxPixelIntensity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxPixelIntensity: Self = this.set("maxPixelIntensity", js.undefined)
-    
-    @scala.inline
-    def setMinPixelIntensity(value: Double): Self = this.set("minPixelIntensity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinPixelIntensity: Self = this.set("minPixelIntensity", js.undefined)
+    def setMinPixelIntensityUndefined: Self = StObject.set(x, "minPixelIntensity", js.undefined)
   }
 }

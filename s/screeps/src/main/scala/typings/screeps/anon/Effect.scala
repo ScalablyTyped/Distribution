@@ -2,12 +2,13 @@ package typings.screeps.anon
 
 import typings.screeps.screepsNumbers.`50`
 import typings.screeps.screepsStrings.operator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Effect extends js.Object {
+trait Effect extends StObject {
   
   var className: operator = js.native
   
@@ -55,25 +56,13 @@ object Effect {
   }
   
   @scala.inline
-  implicit class EffectOps[Self <: Effect] (val x: Self) extends AnyVal {
+  implicit class EffectMutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClassName(value: operator): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCooldown(value: `50`): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setCooldown(value: `50`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEffect(
@@ -84,7 +73,7 @@ object Effect {
           typings.screeps.screepsNumbers.`6`, 
           typings.screeps.screepsNumbers.`8`
         ]
-    ): Self = this.set("effect", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLevel(
@@ -95,6 +84,6 @@ object Effect {
           typings.screeps.screepsNumbers.`14`, 
           typings.screeps.screepsNumbers.`22`
         ]
-    ): Self = this.set("level", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

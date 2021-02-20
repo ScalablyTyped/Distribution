@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3MachineLearningModelResourceData extends js.Object {
+trait S3MachineLearningModelResourceData extends StObject {
   
   /**
     * The absolute local path of the resource inside the Lambda environment.
@@ -28,36 +29,24 @@ object S3MachineLearningModelResourceData {
   }
   
   @scala.inline
-  implicit class S3MachineLearningModelResourceDataOps[Self <: S3MachineLearningModelResourceData] (val x: Self) extends AnyVal {
+  implicit class S3MachineLearningModelResourceDataMutableBuilder[Self <: S3MachineLearningModelResourceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerSetting(value: ResourceDownloadOwnerSetting): Self = StObject.set(x, "OwnerSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPath(value: string): Self = this.set("DestinationPath", value.asInstanceOf[js.Any])
+    def setOwnerSettingUndefined: Self = StObject.set(x, "OwnerSetting", js.undefined)
     
     @scala.inline
-    def deleteDestinationPath: Self = this.set("DestinationPath", js.undefined)
+    def setS3Uri(value: string): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerSetting(value: ResourceDownloadOwnerSetting): Self = this.set("OwnerSetting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerSetting: Self = this.set("OwnerSetting", js.undefined)
-    
-    @scala.inline
-    def setS3Uri(value: string): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Uri: Self = this.set("S3Uri", js.undefined)
+    def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
   }
 }

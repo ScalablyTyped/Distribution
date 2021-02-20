@@ -1,11 +1,12 @@
 package typings.firebase.mod.default.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ControlParams extends js.Object {
+trait ControlParams extends StObject {
   
   var event_callback: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -24,48 +25,36 @@ object ControlParams {
   }
   
   @scala.inline
-  implicit class ControlParamsOps[Self <: ControlParams] (val x: Self) extends AnyVal {
+  implicit class ControlParamsMutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent_callbackUndefined: Self = StObject.set(x, "event_callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent_timeout(value: Double): Self = StObject.set(x, "event_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_callback(value: () => Unit): Self = this.set("event_callback", js.Any.fromFunction0(value))
+    def setEvent_timeoutUndefined: Self = StObject.set(x, "event_timeout", js.undefined)
     
     @scala.inline
-    def deleteEvent_callback: Self = this.set("event_callback", js.undefined)
+    def setGroups(value: String | js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_timeout(value: Double): Self = this.set("event_timeout", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteEvent_timeout: Self = this.set("event_timeout", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setSend_to(value: String | js.Array[String]): Self = StObject.set(x, "send_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: String | js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setSend_toUndefined: Self = StObject.set(x, "send_to", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
-    
-    @scala.inline
-    def setSend_toVarargs(value: String*): Self = this.set("send_to", js.Array(value :_*))
-    
-    @scala.inline
-    def setSend_to(value: String | js.Array[String]): Self = this.set("send_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend_to: Self = this.set("send_to", js.undefined)
+    def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value :_*))
   }
 }

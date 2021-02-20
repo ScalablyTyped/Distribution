@@ -3,6 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Callback
 import typings.playcanvas.pc.callbacks.CalculateMatrix
 import typings.playcanvas.pc.callbacks.XrError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

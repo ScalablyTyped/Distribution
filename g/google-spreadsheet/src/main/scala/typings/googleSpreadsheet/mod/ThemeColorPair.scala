@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemeColorPair extends js.Object {
+trait ThemeColorPair extends StObject {
   
   var color: ColorStyle = js.native
   
@@ -20,24 +21,12 @@ object ThemeColorPair {
   }
   
   @scala.inline
-  implicit class ThemeColorPairOps[Self <: ThemeColorPair] (val x: Self) extends AnyVal {
+  implicit class ThemeColorPairMutableBuilder[Self <: ThemeColorPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorStyle): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: ColorStyle): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColorType(value: ThemeColorType): Self = this.set("colorType", value.asInstanceOf[js.Any])
+    def setColorType(value: ThemeColorType): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
   }
 }

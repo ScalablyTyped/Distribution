@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndicesRolloverResponse extends js.Object {
+trait IndicesRolloverResponse extends StObject {
   
   var acknowledged: Boolean = js.native
   
@@ -39,39 +40,27 @@ object IndicesRolloverResponse {
   }
   
   @scala.inline
-  implicit class IndicesRolloverResponseOps[Self <: IndicesRolloverResponse] (val x: Self) extends AnyVal {
+  implicit class IndicesRolloverResponseMutableBuilder[Self <: IndicesRolloverResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: StringDictionary[Boolean]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcknowledged(value: Boolean): Self = this.set("acknowledged", value.asInstanceOf[js.Any])
+    def setNew_index(value: String): Self = StObject.set(x, "new_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: StringDictionary[Boolean]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setOld_index(value: String): Self = StObject.set(x, "old_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDry_run(value: Boolean): Self = this.set("dry_run", value.asInstanceOf[js.Any])
+    def setRolled_over(value: Boolean): Self = StObject.set(x, "rolled_over", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_index(value: String): Self = this.set("new_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOld_index(value: String): Self = this.set("old_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRolled_over(value: Boolean): Self = this.set("rolled_over", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShards_acknowledged(value: Boolean): Self = this.set("shards_acknowledged", value.asInstanceOf[js.Any])
+    def setShards_acknowledged(value: Boolean): Self = StObject.set(x, "shards_acknowledged", value.asInstanceOf[js.Any])
   }
 }

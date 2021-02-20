@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientBlockListRequest extends js.Object {
+trait IClientBlockListRequest extends StObject {
   
   /** ClientBlockListRequest blockIds */
   var blockIds: js.UndefOr[js.Array[String] | Null] = js.native
@@ -28,60 +29,48 @@ object IClientBlockListRequest {
   }
   
   @scala.inline
-  implicit class IClientBlockListRequestOps[Self <: IClientBlockListRequest] (val x: Self) extends AnyVal {
+  implicit class IClientBlockListRequestMutableBuilder[Self <: IClientBlockListRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockIds(value: js.Array[String]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIdsNull: Self = StObject.set(x, "blockIds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
     
     @scala.inline
-    def setBlockIdsVarargs(value: String*): Self = this.set("blockIds", js.Array(value :_*))
+    def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
     
     @scala.inline
-    def setBlockIds(value: js.Array[String]): Self = this.set("blockIds", value.asInstanceOf[js.Any])
+    def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockIds: Self = this.set("blockIds", js.undefined)
+    def setHeadIdNull: Self = StObject.set(x, "headId", null)
     
     @scala.inline
-    def setBlockIdsNull: Self = this.set("blockIds", null)
+    def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
     
     @scala.inline
-    def setHeadId(value: String): Self = this.set("headId", value.asInstanceOf[js.Any])
+    def setPaging(value: IClientPagingControls): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeadId: Self = this.set("headId", js.undefined)
+    def setPagingNull: Self = StObject.set(x, "paging", null)
     
     @scala.inline
-    def setHeadIdNull: Self = this.set("headId", null)
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def setPaging(value: IClientPagingControls): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setSorting(value: js.Array[IClientSortControls]): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setSortingNull: Self = StObject.set(x, "sorting", null)
     
     @scala.inline
-    def setPagingNull: Self = this.set("paging", null)
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
     @scala.inline
-    def setSortingVarargs(value: IClientSortControls*): Self = this.set("sorting", js.Array(value :_*))
-    
-    @scala.inline
-    def setSorting(value: js.Array[IClientSortControls]): Self = this.set("sorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
-    
-    @scala.inline
-    def setSortingNull: Self = this.set("sorting", null)
+    def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
   }
 }

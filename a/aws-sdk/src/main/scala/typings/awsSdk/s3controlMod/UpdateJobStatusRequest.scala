@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJobStatusRequest extends js.Object {
+trait UpdateJobStatusRequest extends StObject {
   
   /**
     * 
@@ -36,33 +37,21 @@ object UpdateJobStatusRequest {
   }
   
   @scala.inline
-  implicit class UpdateJobStatusRequestOps[Self <: UpdateJobStatusRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJobStatusRequestMutableBuilder[Self <: UpdateJobStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestedJobStatus(value: RequestedJobStatus): Self = StObject.set(x, "RequestedJobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestedJobStatus(value: RequestedJobStatus): Self = this.set("RequestedJobStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = this.set("StatusUpdateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusUpdateReason: Self = this.set("StatusUpdateReason", js.undefined)
+    def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyImageAttributeRequest extends js.Object {
+trait ModifyImageAttributeRequest extends StObject {
   
   /**
     * The name of the attribute to modify. The valid values are description, launchPermission, and productCodes.
@@ -66,84 +67,72 @@ object ModifyImageAttributeRequest {
   }
   
   @scala.inline
-  implicit class ModifyImageAttributeRequestOps[Self <: ModifyImageAttributeRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyImageAttributeRequestMutableBuilder[Self <: ModifyImageAttributeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: AttributeValue): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: ImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("Attribute", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttribute: Self = this.set("Attribute", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setDescription(value: AttributeValue): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLaunchPermission(value: LaunchPermissionModifications): Self = StObject.set(x, "LaunchPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setLaunchPermissionUndefined: Self = StObject.set(x, "LaunchPermission", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchPermission(value: LaunchPermissionModifications): Self = this.set("LaunchPermission", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
     
     @scala.inline
-    def deleteLaunchPermission: Self = this.set("LaunchPermission", js.undefined)
+    def setProductCodes(value: ProductCodeStringList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: OperationType): Self = this.set("OperationType", value.asInstanceOf[js.Any])
+    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("OperationType", js.undefined)
+    def setProductCodesVarargs(value: String*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
     @scala.inline
-    def setProductCodesVarargs(value: String*): Self = this.set("ProductCodes", js.Array(value :_*))
+    def setUserGroups(value: UserGroupStringList): Self = StObject.set(x, "UserGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCodes(value: ProductCodeStringList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    def setUserGroupsUndefined: Self = StObject.set(x, "UserGroups", js.undefined)
     
     @scala.inline
-    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    def setUserGroupsVarargs(value: String*): Self = StObject.set(x, "UserGroups", js.Array(value :_*))
     
     @scala.inline
-    def setUserGroupsVarargs(value: String*): Self = this.set("UserGroups", js.Array(value :_*))
+    def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserGroups(value: UserGroupStringList): Self = this.set("UserGroups", value.asInstanceOf[js.Any])
+    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
     @scala.inline
-    def deleteUserGroups: Self = this.set("UserGroups", js.undefined)
+    def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
     
     @scala.inline
-    def setUserIdsVarargs(value: String*): Self = this.set("UserIds", js.Array(value :_*))
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIds(value: UserIdStringList): Self = this.set("UserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIds: Self = this.set("UserIds", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

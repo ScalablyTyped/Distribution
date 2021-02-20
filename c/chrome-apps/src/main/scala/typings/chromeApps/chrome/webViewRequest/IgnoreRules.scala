@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +24,12 @@ object IgnoreRules {
   }
   
   @scala.inline
-  implicit class IgnoreRulesOps[Self <: IgnoreRules] (val x: Self) extends AnyVal {
+  implicit class IgnoreRulesMutableBuilder[Self <: IgnoreRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.IgnoreRules): Self = this.set("typeGuard", value.asInstanceOf[js.Any])
+    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.IgnoreRules): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

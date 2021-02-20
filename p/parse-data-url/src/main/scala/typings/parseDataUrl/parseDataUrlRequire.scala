@@ -1,5 +1,6 @@
 package typings.parseDataUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("parse-data-url", JSImport.Namespace)
 @js.native
-object parseDataUrlRequire extends js.Object
+object parseDataUrlRequire extends StObject

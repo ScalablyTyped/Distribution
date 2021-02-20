@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndOfMeetingReminder extends js.Object {
+trait EndOfMeetingReminder extends StObject {
   
   /**
     * Whether an end of meeting reminder is enabled or not.
@@ -31,39 +32,27 @@ object EndOfMeetingReminder {
   }
   
   @scala.inline
-  implicit class EndOfMeetingReminderOps[Self <: EndOfMeetingReminder] (val x: Self) extends AnyVal {
+  implicit class EndOfMeetingReminderMutableBuilder[Self <: EndOfMeetingReminder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = StObject.set(x, "ReminderAtMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setReminderAtMinutesUndefined: Self = StObject.set(x, "ReminderAtMinutes", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setReminderAtMinutesVarargs(value: Minutes*): Self = StObject.set(x, "ReminderAtMinutes", js.Array(value :_*))
     
     @scala.inline
-    def setReminderAtMinutesVarargs(value: Minutes*): Self = this.set("ReminderAtMinutes", js.Array(value :_*))
+    def setReminderType(value: EndOfMeetingReminderType): Self = StObject.set(x, "ReminderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = this.set("ReminderAtMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminderAtMinutes: Self = this.set("ReminderAtMinutes", js.undefined)
-    
-    @scala.inline
-    def setReminderType(value: EndOfMeetingReminderType): Self = this.set("ReminderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminderType: Self = this.set("ReminderType", js.undefined)
+    def setReminderTypeUndefined: Self = StObject.set(x, "ReminderType", js.undefined)
   }
 }

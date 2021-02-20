@@ -2,6 +2,7 @@ package typings.titanium.Titanium
 
 import typings.titanium.PossibleBatchQueryError
 import typings.titanium.Titanium.Filesystem.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The top-level `Database` module, used for creating and accessing the
   * in-application SQLite database.
   */
-@JSGlobal("Titanium.Database")
-@js.native
-object Database extends js.Object {
+object Database {
   
   /**
     * The `Database` instance returned by <Titanium.Database.open> or <Titanium.Database.install>.

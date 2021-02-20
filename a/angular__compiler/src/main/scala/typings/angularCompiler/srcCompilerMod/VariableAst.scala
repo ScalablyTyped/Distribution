@@ -1,5 +1,6 @@
 package typings.angularCompiler.srcCompilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,9 @@ class VariableAst protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@angular/compiler/src/compiler", "VariableAst")
-@js.native
-object VariableAst extends js.Object {
+object VariableAst {
   
+  @JSImport("@angular/compiler/src/compiler", "VariableAst.fromParsedVariable")
+  @js.native
   def fromParsedVariable(v: typings.angularCompiler.astMod.ParsedVariable): typings.angularCompiler.templateAstMod.VariableAst = js.native
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,162 +176,150 @@ object WMSLayerProperties {
   }
   
   @scala.inline
-  implicit class WMSLayerPropertiesOps[Self <: WMSLayerProperties] (val x: Self) extends AnyVal {
+  implicit class WMSLayerPropertiesMutableBuilder[Self <: WMSLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = StObject.set(x, "allSublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllSublayersUndefined: Self = StObject.set(x, "allSublayers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "allSublayers", js.Array(value :_*))
     
     @scala.inline
-    def setAllSublayersVarargs(value: WMSSublayerProperties*): Self = this.set("allSublayers", js.Array(value :_*))
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = this.set("allSublayers", value.asInstanceOf[js.Any])
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def deleteAllSublayers: Self = this.set("allSublayers", js.undefined)
+    def setCustomLayerParameters(value: js.Any): Self = StObject.set(x, "customLayerParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setCustomLayerParametersUndefined: Self = StObject.set(x, "customLayerParameters", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLayerParameters(value: js.Any): Self = this.set("customLayerParameters", value.asInstanceOf[js.Any])
+    def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
     @scala.inline
-    def deleteCustomLayerParameters: Self = this.set("customLayerParameters", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomParameters(value: js.Any): Self = this.set("customParameters", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomParameters: Self = this.set("customParameters", js.undefined)
+    def setFeatureInfoFormat(value: String): Self = StObject.set(x, "featureInfoFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFeatureInfoFormatUndefined: Self = StObject.set(x, "featureInfoFormat", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFeatureInfoUrl(value: String): Self = StObject.set(x, "featureInfoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureInfoFormat(value: String): Self = this.set("featureInfoFormat", value.asInstanceOf[js.Any])
+    def setFeatureInfoUrlUndefined: Self = StObject.set(x, "featureInfoUrl", js.undefined)
     
     @scala.inline
-    def deleteFeatureInfoFormat: Self = this.set("featureInfoFormat", js.undefined)
+    def setFullExtents(value: js.Array[ExtentProperties]): Self = StObject.set(x, "fullExtents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureInfoUrl(value: String): Self = this.set("featureInfoUrl", value.asInstanceOf[js.Any])
+    def setFullExtentsUndefined: Self = StObject.set(x, "fullExtents", js.undefined)
     
     @scala.inline
-    def deleteFeatureInfoUrl: Self = this.set("featureInfoUrl", js.undefined)
+    def setFullExtentsVarargs(value: ExtentProperties*): Self = StObject.set(x, "fullExtents", js.Array(value :_*))
     
     @scala.inline
-    def setFullExtentsVarargs(value: ExtentProperties*): Self = this.set("fullExtents", js.Array(value :_*))
+    def setImageFormat(value: String): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullExtents(value: js.Array[ExtentProperties]): Self = this.set("fullExtents", value.asInstanceOf[js.Any])
+    def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
     
     @scala.inline
-    def deleteFullExtents: Self = this.set("fullExtents", js.undefined)
+    def setImageMaxHeight(value: Double): Self = StObject.set(x, "imageMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageFormat(value: String): Self = this.set("imageFormat", value.asInstanceOf[js.Any])
+    def setImageMaxHeightUndefined: Self = StObject.set(x, "imageMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteImageFormat: Self = this.set("imageFormat", js.undefined)
+    def setImageMaxWidth(value: Double): Self = StObject.set(x, "imageMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMaxHeight(value: Double): Self = this.set("imageMaxHeight", value.asInstanceOf[js.Any])
+    def setImageMaxWidthUndefined: Self = StObject.set(x, "imageMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteImageMaxHeight: Self = this.set("imageMaxHeight", js.undefined)
+    def setImageTransparency(value: Boolean): Self = StObject.set(x, "imageTransparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMaxWidth(value: Double): Self = this.set("imageMaxWidth", value.asInstanceOf[js.Any])
+    def setImageTransparencyUndefined: Self = StObject.set(x, "imageTransparency", js.undefined)
     
     @scala.inline
-    def deleteImageMaxWidth: Self = this.set("imageMaxWidth", js.undefined)
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTransparency(value: Boolean): Self = this.set("imageTransparency", value.asInstanceOf[js.Any])
+    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     @scala.inline
-    def deleteImageTransparency: Self = this.set("imageTransparency", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteLegendEnabled: Self = this.set("legendEnabled", js.undefined)
+    def setSpatialReferences(value: js.Array[Double]): Self = StObject.set(x, "spatialReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    def setSpatialReferencesUndefined: Self = StObject.set(x, "spatialReferences", js.undefined)
     
     @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferencesVarargs(value: Double*): Self = StObject.set(x, "spatialReferences", js.Array(value :_*))
     
     @scala.inline
-    def setSpatialReferencesVarargs(value: Double*): Self = this.set("spatialReferences", js.Array(value :_*))
+    def setSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReferences(value: js.Array[Double]): Self = this.set("spatialReferences", value.asInstanceOf[js.Any])
+    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
     @scala.inline
-    def deleteSpatialReferences: Self = this.set("spatialReferences", js.undefined)
+    def setSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
     @scala.inline
-    def setSublayersVarargs(value: WMSSublayerProperties*): Self = this.set("sublayers", js.Array(value :_*))
+    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = this.set("sublayers", value.asInstanceOf[js.Any])
+    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
     @scala.inline
-    def deleteSublayers: Self = this.set("sublayers", js.undefined)
+    def setTimeInfo(value: TimeInfoProperties): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
+    def setTimeInfoUndefined: Self = StObject.set(x, "timeInfo", js.undefined)
     
     @scala.inline
-    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+    def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeInfo(value: TimeInfoProperties): Self = this.set("timeInfo", value.asInstanceOf[js.Any])
+    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
     
     @scala.inline
-    def deleteTimeInfo: Self = this.set("timeInfo", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeOffset(value: TimeIntervalProperties): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
+    def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUseViewTimeUndefined: Self = StObject.set(x, "useViewTime", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseViewTime(value: Boolean): Self = this.set("useViewTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseViewTime: Self = this.set("useViewTime", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

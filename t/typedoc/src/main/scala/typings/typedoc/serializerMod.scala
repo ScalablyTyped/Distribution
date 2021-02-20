@@ -1,18 +1,18 @@
 package typings.typedoc
 
 import typings.typedoc.anon.Begin
+import typings.typedoc.libUtilsMod.EventDispatcher
 import typings.typedoc.modelsMod.ProjectReflection
 import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.serializationComponentsMod.SerializerComponent
-import typings.typedoc.utilsEventsMod.EventDispatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/serialization/serializer", JSImport.Namespace)
-@js.native
-object serializerMod extends js.Object {
+object serializerMod {
   
+  @JSImport("typedoc/dist/lib/serialization/serializer", "Serializer")
   @js.native
   class Serializer () extends EventDispatcher {
     
@@ -29,11 +29,22 @@ object serializerMod extends js.Object {
     def toObject[T](value: T, init: js.Object): ModelToObject[T] = js.native
   }
   /* static members */
-  @js.native
-  object Serializer extends js.Object {
+  object Serializer {
     
-    var EVENT_BEGIN: String = js.native
+    @JSImport("typedoc/dist/lib/serialization/serializer", "Serializer")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var EVENT_END: String = js.native
+    @JSImport("typedoc/dist/lib/serialization/serializer", "Serializer.EVENT_BEGIN")
+    @js.native
+    def EVENT_BEGIN: String = js.native
+    @scala.inline
+    def EVENT_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_BEGIN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("typedoc/dist/lib/serialization/serializer", "Serializer.EVENT_END")
+    @js.native
+    def EVENT_END: String = js.native
+    @scala.inline
+    def EVENT_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_END")(x.asInstanceOf[js.Any])
   }
 }

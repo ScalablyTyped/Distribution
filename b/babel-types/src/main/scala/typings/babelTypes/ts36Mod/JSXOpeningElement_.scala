@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.JSXOpeningElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object JSXOpeningElement_ {
   }
   
   @scala.inline
-  implicit class JSXOpeningElement_Ops[Self <: JSXOpeningElement_] (val x: Self) extends AnyVal {
+  implicit class JSXOpeningElement_MutableBuilder[Self <: JSXOpeningElement_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[JSXAttribute_]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: JSXAttribute_ *): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: JSXIdentifier_ | JSXMemberExpression_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: JSXAttribute_ *): Self = this.set("attributes", js.Array(value :_*))
+    def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[JSXAttribute_]): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: JSXIdentifier_ | JSXMemberExpression_): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelfClosing(value: Boolean): Self = this.set("selfClosing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: JSXOpeningElement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: JSXOpeningElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

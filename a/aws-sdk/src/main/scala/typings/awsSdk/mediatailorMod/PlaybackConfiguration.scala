@@ -1,11 +1,12 @@
 package typings.awsSdk.mediatailorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaybackConfiguration extends js.Object {
+trait PlaybackConfiguration extends StObject {
   
   /**
     * The URL for the ad decision server (ADS). This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing, you can provide a static VAST URL. The maximum length is 25,000 characters.
@@ -96,114 +97,102 @@ object PlaybackConfiguration {
   }
   
   @scala.inline
-  implicit class PlaybackConfigurationOps[Self <: PlaybackConfiguration] (val x: Self) extends AnyVal {
+  implicit class PlaybackConfigurationMutableBuilder[Self <: PlaybackConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdDecisionServerUrl(value: string): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdDecisionServerUrlUndefined: Self = StObject.set(x, "AdDecisionServerUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailSuppression(value: AvailSuppression): Self = StObject.set(x, "AvailSuppression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdDecisionServerUrl(value: string): Self = this.set("AdDecisionServerUrl", value.asInstanceOf[js.Any])
+    def setAvailSuppressionUndefined: Self = StObject.set(x, "AvailSuppression", js.undefined)
     
     @scala.inline
-    def deleteAdDecisionServerUrl: Self = this.set("AdDecisionServerUrl", js.undefined)
+    def setBumper(value: Bumper): Self = StObject.set(x, "Bumper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailSuppression(value: AvailSuppression): Self = this.set("AvailSuppression", value.asInstanceOf[js.Any])
+    def setBumperUndefined: Self = StObject.set(x, "Bumper", js.undefined)
     
     @scala.inline
-    def deleteAvailSuppression: Self = this.set("AvailSuppression", js.undefined)
+    def setCdnConfiguration(value: CdnConfiguration): Self = StObject.set(x, "CdnConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBumper(value: Bumper): Self = this.set("Bumper", value.asInstanceOf[js.Any])
+    def setCdnConfigurationUndefined: Self = StObject.set(x, "CdnConfiguration", js.undefined)
     
     @scala.inline
-    def deleteBumper: Self = this.set("Bumper", js.undefined)
+    def setDashConfiguration(value: DashConfiguration): Self = StObject.set(x, "DashConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdnConfiguration(value: CdnConfiguration): Self = this.set("CdnConfiguration", value.asInstanceOf[js.Any])
+    def setDashConfigurationUndefined: Self = StObject.set(x, "DashConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCdnConfiguration: Self = this.set("CdnConfiguration", js.undefined)
+    def setHlsConfiguration(value: HlsConfiguration): Self = StObject.set(x, "HlsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashConfiguration(value: DashConfiguration): Self = this.set("DashConfiguration", value.asInstanceOf[js.Any])
+    def setHlsConfigurationUndefined: Self = StObject.set(x, "HlsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDashConfiguration: Self = this.set("DashConfiguration", js.undefined)
+    def setManifestProcessingRules(value: ManifestProcessingRules): Self = StObject.set(x, "ManifestProcessingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsConfiguration(value: HlsConfiguration): Self = this.set("HlsConfiguration", value.asInstanceOf[js.Any])
+    def setManifestProcessingRulesUndefined: Self = StObject.set(x, "ManifestProcessingRules", js.undefined)
     
     @scala.inline
-    def deleteHlsConfiguration: Self = this.set("HlsConfiguration", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestProcessingRules(value: ManifestProcessingRules): Self = this.set("ManifestProcessingRules", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteManifestProcessingRules: Self = this.set("ManifestProcessingRules", js.undefined)
+    def setPersonalizationThresholdSeconds(value: integerMin1): Self = StObject.set(x, "PersonalizationThresholdSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPersonalizationThresholdSecondsUndefined: Self = StObject.set(x, "PersonalizationThresholdSeconds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPlaybackConfigurationArn(value: string): Self = StObject.set(x, "PlaybackConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonalizationThresholdSeconds(value: integerMin1): Self = this.set("PersonalizationThresholdSeconds", value.asInstanceOf[js.Any])
+    def setPlaybackConfigurationArnUndefined: Self = StObject.set(x, "PlaybackConfigurationArn", js.undefined)
     
     @scala.inline
-    def deletePersonalizationThresholdSeconds: Self = this.set("PersonalizationThresholdSeconds", js.undefined)
+    def setPlaybackEndpointPrefix(value: string): Self = StObject.set(x, "PlaybackEndpointPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackConfigurationArn(value: string): Self = this.set("PlaybackConfigurationArn", value.asInstanceOf[js.Any])
+    def setPlaybackEndpointPrefixUndefined: Self = StObject.set(x, "PlaybackEndpointPrefix", js.undefined)
     
     @scala.inline
-    def deletePlaybackConfigurationArn: Self = this.set("PlaybackConfigurationArn", js.undefined)
+    def setSessionInitializationEndpointPrefix(value: string): Self = StObject.set(x, "SessionInitializationEndpointPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackEndpointPrefix(value: string): Self = this.set("PlaybackEndpointPrefix", value.asInstanceOf[js.Any])
+    def setSessionInitializationEndpointPrefixUndefined: Self = StObject.set(x, "SessionInitializationEndpointPrefix", js.undefined)
     
     @scala.inline
-    def deletePlaybackEndpointPrefix: Self = this.set("PlaybackEndpointPrefix", js.undefined)
+    def setSlateAdUrl(value: string): Self = StObject.set(x, "SlateAdUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionInitializationEndpointPrefix(value: string): Self = this.set("SessionInitializationEndpointPrefix", value.asInstanceOf[js.Any])
+    def setSlateAdUrlUndefined: Self = StObject.set(x, "SlateAdUrl", js.undefined)
     
     @scala.inline
-    def deleteSessionInitializationEndpointPrefix: Self = this.set("SessionInitializationEndpointPrefix", js.undefined)
+    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlateAdUrl(value: string): Self = this.set("SlateAdUrl", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSlateAdUrl: Self = this.set("SlateAdUrl", js.undefined)
+    def setTranscodeProfileName(value: string): Self = StObject.set(x, "TranscodeProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTranscodeProfileNameUndefined: Self = StObject.set(x, "TranscodeProfileName", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVideoContentSourceUrl(value: string): Self = StObject.set(x, "VideoContentSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranscodeProfileName(value: string): Self = this.set("TranscodeProfileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscodeProfileName: Self = this.set("TranscodeProfileName", js.undefined)
-    
-    @scala.inline
-    def setVideoContentSourceUrl(value: string): Self = this.set("VideoContentSourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoContentSourceUrl: Self = this.set("VideoContentSourceUrl", js.undefined)
+    def setVideoContentSourceUrlUndefined: Self = StObject.set(x, "VideoContentSourceUrl", js.undefined)
   }
 }

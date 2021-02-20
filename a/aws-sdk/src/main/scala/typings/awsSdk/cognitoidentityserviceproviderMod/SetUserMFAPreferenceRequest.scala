@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetUserMFAPreferenceRequest extends js.Object {
+trait SetUserMFAPreferenceRequest extends StObject {
   
   /**
     * The access token for the user.
@@ -31,33 +32,21 @@ object SetUserMFAPreferenceRequest {
   }
   
   @scala.inline
-  implicit class SetUserMFAPreferenceRequestOps[Self <: SetUserMFAPreferenceRequest] (val x: Self) extends AnyVal {
+  implicit class SetUserMFAPreferenceRequestMutableBuilder[Self <: SetUserMFAPreferenceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSMSMfaSettings(value: SMSMfaSettingsType): Self = StObject.set(x, "SMSMfaSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSMSMfaSettingsUndefined: Self = StObject.set(x, "SMSMfaSettings", js.undefined)
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    def setSoftwareTokenMfaSettings(value: SoftwareTokenMfaSettingsType): Self = StObject.set(x, "SoftwareTokenMfaSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMSMfaSettings(value: SMSMfaSettingsType): Self = this.set("SMSMfaSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMSMfaSettings: Self = this.set("SMSMfaSettings", js.undefined)
-    
-    @scala.inline
-    def setSoftwareTokenMfaSettings(value: SoftwareTokenMfaSettingsType): Self = this.set("SoftwareTokenMfaSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoftwareTokenMfaSettings: Self = this.set("SoftwareTokenMfaSettings", js.undefined)
+    def setSoftwareTokenMfaSettingsUndefined: Self = StObject.set(x, "SoftwareTokenMfaSettings", js.undefined)
   }
 }

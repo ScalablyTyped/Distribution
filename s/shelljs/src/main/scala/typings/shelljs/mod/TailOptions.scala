@@ -1,11 +1,12 @@
 package typings.shelljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TailOptions extends js.Object {
+trait TailOptions extends StObject {
   
   /** Show the last <num> lines of files. */
   var `-n`: Double = js.native
@@ -20,21 +21,9 @@ object TailOptions {
   }
   
   @scala.inline
-  implicit class TailOptionsOps[Self <: TailOptions] (val x: Self) extends AnyVal {
+  implicit class TailOptionsMutableBuilder[Self <: TailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `set-n`(value: Double): Self = this.set("-n", value.asInstanceOf[js.Any])
+    def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
   }
 }

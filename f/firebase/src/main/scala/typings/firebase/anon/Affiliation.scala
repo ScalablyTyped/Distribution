@@ -2,6 +2,7 @@ package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebase.mod.firebase.analytics.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,69 +36,57 @@ object Affiliation {
   }
   
   @scala.inline
-  implicit class AffiliationOps[Self <: Affiliation] (val x: Self) extends AnyVal {
+  implicit class AffiliationMutableBuilder[Self <: Affiliation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffiliation(value: String): Self = this.set("affiliation", value.asInstanceOf[js.Any])
+    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
     
     @scala.inline
-    def deleteAffiliation: Self = this.set("affiliation", js.undefined)
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    def setShipping(value: typings.firebase.mod.firebase.analytics.Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setTax(value: typings.firebase.mod.firebase.analytics.Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipping(value: typings.firebase.mod.firebase.analytics.Currency): Self = this.set("shipping", value.asInstanceOf[js.Any])
+    def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
     
     @scala.inline
-    def deleteShipping: Self = this.set("shipping", js.undefined)
+    def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTax(value: typings.firebase.mod.firebase.analytics.Currency): Self = this.set("tax", value.asInstanceOf[js.Any])
+    def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
     
     @scala.inline
-    def deleteTax: Self = this.set("tax", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransaction_id(value: String): Self = this.set("transaction_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction_id: Self = this.set("transaction_id", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

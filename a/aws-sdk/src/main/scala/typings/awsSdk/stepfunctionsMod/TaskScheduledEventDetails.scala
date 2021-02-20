@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskScheduledEventDetails extends js.Object {
+trait TaskScheduledEventDetails extends StObject {
   
   /**
     * The maximum allowed duration between two heartbeats for the task.
@@ -46,42 +47,30 @@ object TaskScheduledEventDetails {
   }
   
   @scala.inline
-  implicit class TaskScheduledEventDetailsOps[Self <: TaskScheduledEventDetails] (val x: Self) extends AnyVal {
+  implicit class TaskScheduledEventDetailsMutableBuilder[Self <: TaskScheduledEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "heartbeatInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeartbeatInSecondsUndefined: Self = StObject.set(x, "heartbeatInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: ConnectorParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ConnectorParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setRegion(value: Name): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: Name): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Name): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: Name): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = this.set("heartbeatInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeartbeatInSeconds: Self = this.set("heartbeatInSeconds", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = this.set("timeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInSeconds: Self = this.set("timeoutInSeconds", js.undefined)
+    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
   }
 }

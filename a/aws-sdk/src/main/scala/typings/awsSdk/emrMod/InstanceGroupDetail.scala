@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupDetail extends js.Object {
+trait InstanceGroupDetail extends StObject {
   
   /**
     * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
@@ -94,81 +95,69 @@ object InstanceGroupDetail {
   }
   
   @scala.inline
-  implicit class InstanceGroupDetailOps[Self <: InstanceGroupDetail] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupDetailMutableBuilder[Self <: InstanceGroupDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceRequestCount(value: Integer): Self = this.set("InstanceRequestCount", value.asInstanceOf[js.Any])
+    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
     @scala.inline
-    def setInstanceRole(value: InstanceRoleType): Self = this.set("InstanceRole", value.asInstanceOf[js.Any])
+    def setInstanceGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceRunningCount(value: Integer): Self = this.set("InstanceRunningCount", value.asInstanceOf[js.Any])
+    def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setInstanceRequestCount(value: Integer): Self = StObject.set(x, "InstanceRequestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarket(value: MarketType): Self = this.set("Market", value.asInstanceOf[js.Any])
+    def setInstanceRole(value: InstanceRoleType): Self = StObject.set(x, "InstanceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: InstanceGroupState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setInstanceRunningCount(value: Integer): Self = StObject.set(x, "InstanceRunningCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBidPrice(value: XmlStringMaxLen256): Self = this.set("BidPrice", value.asInstanceOf[js.Any])
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBidPrice: Self = this.set("BidPrice", js.undefined)
+    def setLastStateChangeReason(value: XmlString): Self = StObject.set(x, "LastStateChangeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDateTime(value: Date): Self = this.set("EndDateTime", value.asInstanceOf[js.Any])
+    def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
     
     @scala.inline
-    def deleteEndDateTime: Self = this.set("EndDateTime", js.undefined)
+    def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroupId(value: XmlStringMaxLen256): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstanceGroupId: Self = this.set("InstanceGroupId", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setLastStateChangeReason(value: XmlString): Self = this.set("LastStateChangeReason", value.asInstanceOf[js.Any])
+    def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastStateChangeReason: Self = this.set("LastStateChangeReason", js.undefined)
+    def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
     
     @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     
     @scala.inline
-    def setReadyDateTime(value: Date): Self = this.set("ReadyDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadyDateTime: Self = this.set("ReadyDateTime", js.undefined)
-    
-    @scala.inline
-    def setStartDateTime(value: Date): Self = this.set("StartDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDateTime: Self = this.set("StartDateTime", js.undefined)
+    def setState(value: InstanceGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

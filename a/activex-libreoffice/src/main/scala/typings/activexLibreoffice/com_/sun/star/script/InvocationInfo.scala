@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.reflection.ParamMode
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * parameters.
   */
 @js.native
-trait InvocationInfo extends js.Object {
+trait InvocationInfo extends StObject {
   
   /**
     * Only for property members: This field may contain zero or more constants of the {@link com.sun.star.beans.PropertyAttribute} constants group. It is
@@ -54,36 +55,24 @@ object InvocationInfo {
   }
   
   @scala.inline
-  implicit class InvocationInfoOps[Self <: InvocationInfo] (val x: Self) extends AnyVal {
+  implicit class InvocationInfoMutableBuilder[Self <: InvocationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAParamModes(value: SafeArray[ParamMode]): Self = StObject.set(x, "aParamModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAParamTypes(value: SafeArray[`type`]): Self = StObject.set(x, "aParamTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAttribute(value: Double): Self = this.set("PropertyAttribute", value.asInstanceOf[js.Any])
+    def setAType(value: `type`): Self = StObject.set(x, "aType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAName(value: String): Self = this.set("aName", value.asInstanceOf[js.Any])
+    def setEMemberType(value: MemberType): Self = StObject.set(x, "eMemberType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAParamModes(value: SafeArray[ParamMode]): Self = this.set("aParamModes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAParamTypes(value: SafeArray[`type`]): Self = this.set("aParamTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAType(value: `type`): Self = this.set("aType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEMemberType(value: MemberType): Self = this.set("eMemberType", value.asInstanceOf[js.Any])
+    def setPropertyAttribute(value: Double): Self = StObject.set(x, "PropertyAttribute", value.asInstanceOf[js.Any])
   }
 }

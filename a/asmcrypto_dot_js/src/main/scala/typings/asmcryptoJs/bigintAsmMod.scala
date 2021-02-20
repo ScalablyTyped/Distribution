@@ -2,19 +2,19 @@ package typings.asmcryptoJs
 
 import typings.asmcryptoJs.asmcryptoJsNumbers.`0`
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asmcrypto.js/dist_es8/bignum/bigint.asm", JSImport.Namespace)
-@js.native
-object bigintAsmMod extends js.Object {
+object bigintAsmMod {
   
-  @JSName("bigint_asm")
+  @JSImport("asmcrypto.js/dist_es8/bignum/bigint.asm", "bigint_asm")
+  @js.native
   def bigintAsm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): bigintresult = js.native
   
   @js.native
-  trait bigintresult extends js.Object {
+  trait bigintresult extends StObject {
     
     def add(
       A: js.UndefOr[Double],

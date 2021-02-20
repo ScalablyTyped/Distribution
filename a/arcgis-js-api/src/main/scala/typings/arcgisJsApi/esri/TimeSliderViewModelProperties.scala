@@ -4,12 +4,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-end`
 import typings.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`time-window`
 import typings.arcgisJsApi.arcgisJsApiStrings.instant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSliderViewModelProperties extends js.Object {
+trait TimeSliderViewModelProperties extends StObject {
   
   /**
     * The temporal extent of the entire slider.
@@ -69,63 +70,51 @@ object TimeSliderViewModelProperties {
   }
   
   @scala.inline
-  implicit class TimeSliderViewModelPropertiesOps[Self <: TimeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class TimeSliderViewModelPropertiesMutableBuilder[Self <: TimeSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullTimeExtent(value: TimeExtentProperties): Self = this.set("fullTimeExtent", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteFullTimeExtent: Self = this.set("fullTimeExtent", js.undefined)
+    def setMode(value: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setPlayRate(value: Double): Self = StObject.set(x, "playRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setPlayRateUndefined: Self = StObject.set(x, "playRate", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setStops(value: StopsByDates | StopsByCount | StopsByInterval): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayRate(value: Double): Self = this.set("playRate", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deletePlayRate: Self = this.set("playRate", js.undefined)
+    def setValues(value: js.Array[DateProperties]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStops(value: StopsByDates | StopsByCount | StopsByInterval): Self = this.set("stops", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
+    def setValuesVarargs(value: DateProperties*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setValuesVarargs(value: DateProperties*): Self = this.set("values", js.Array(value :_*))
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[DateProperties]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

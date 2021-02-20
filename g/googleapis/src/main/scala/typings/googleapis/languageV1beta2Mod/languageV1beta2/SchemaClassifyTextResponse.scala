@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The document classification response message.
   */
 @js.native
-trait SchemaClassifyTextResponse extends js.Object {
+trait SchemaClassifyTextResponse extends StObject {
   
   /**
     * Categories representing the input document.
@@ -24,27 +25,15 @@ object SchemaClassifyTextResponse {
   }
   
   @scala.inline
-  implicit class SchemaClassifyTextResponseOps[Self <: SchemaClassifyTextResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaClassifyTextResponseMutableBuilder[Self <: SchemaClassifyTextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[SchemaClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCategoriesVarargs(value: SchemaClassificationCategory*): Self = this.set("categories", js.Array(value :_*))
-    
-    @scala.inline
-    def setCategories(value: js.Array[SchemaClassificationCategory]): Self = this.set("categories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setCategoriesVarargs(value: SchemaClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

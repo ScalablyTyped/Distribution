@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Optional properties that control how the assistant responds. */
 @js.native
-trait MessageInputOptions extends js.Object {
+trait MessageInputOptions extends StObject {
   
   /** Whether to return more than one intent. Set to `true` to return all matching intents. */
   var alternate_intents: js.UndefOr[Boolean] = js.native
@@ -29,42 +30,30 @@ object MessageInputOptions {
   }
   
   @scala.inline
-  implicit class MessageInputOptionsOps[Self <: MessageInputOptions] (val x: Self) extends AnyVal {
+  implicit class MessageInputOptionsMutableBuilder[Self <: MessageInputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternate_intentsUndefined: Self = StObject.set(x, "alternate_intents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternate_intents(value: Boolean): Self = this.set("alternate_intents", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteAlternate_intents: Self = this.set("alternate_intents", js.undefined)
+    def setRestart(value: Boolean): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setRestartUndefined: Self = StObject.set(x, "restart", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setReturn_context(value: Boolean): Self = StObject.set(x, "return_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestart(value: Boolean): Self = this.set("restart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestart: Self = this.set("restart", js.undefined)
-    
-    @scala.inline
-    def setReturn_context(value: Boolean): Self = this.set("return_context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_context: Self = this.set("return_context", js.undefined)
+    def setReturn_contextUndefined: Self = StObject.set(x, "return_context", js.undefined)
   }
 }

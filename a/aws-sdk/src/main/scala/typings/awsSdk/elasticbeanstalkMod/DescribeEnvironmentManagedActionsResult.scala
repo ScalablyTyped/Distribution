@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEnvironmentManagedActionsResult extends js.Object {
+trait DescribeEnvironmentManagedActionsResult extends StObject {
   
   /**
     * A list of upcoming and in-progress managed actions.
@@ -21,27 +22,15 @@ object DescribeEnvironmentManagedActionsResult {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentManagedActionsResultOps[Self <: DescribeEnvironmentManagedActionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentManagedActionsResultMutableBuilder[Self <: DescribeEnvironmentManagedActionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagedActions(value: ManagedActions): Self = StObject.set(x, "ManagedActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedActionsUndefined: Self = StObject.set(x, "ManagedActions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setManagedActionsVarargs(value: ManagedAction*): Self = this.set("ManagedActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setManagedActions(value: ManagedActions): Self = this.set("ManagedActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedActions: Self = this.set("ManagedActions", js.undefined)
+    def setManagedActionsVarargs(value: ManagedAction*): Self = StObject.set(x, "ManagedActions", js.Array(value :_*))
   }
 }

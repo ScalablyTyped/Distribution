@@ -5,6 +5,7 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.CROSS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SQUARE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TRIANGLE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object ScatterDatasetConfig {
   }
   
   @scala.inline
-  implicit class ScatterDatasetConfigOps[Self <: ScatterDatasetConfig] (val x: Self) extends AnyVal {
+  implicit class ScatterDatasetConfigMutableBuilder[Self <: ScatterDatasetConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScatterShape(value: SQUARE | CIRCLE | TRIANGLE | CROSS | X): Self = StObject.set(x, "scatterShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScatterShapeHoleColor(value: Color): Self = StObject.set(x, "scatterShapeHoleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScatterShapeHoleColorUndefined: Self = StObject.set(x, "scatterShapeHoleColor", js.undefined)
     
     @scala.inline
-    def setScatterShape(value: SQUARE | CIRCLE | TRIANGLE | CROSS | X): Self = this.set("scatterShape", value.asInstanceOf[js.Any])
+    def setScatterShapeHoleRadius(value: Double): Self = StObject.set(x, "scatterShapeHoleRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScatterShape: Self = this.set("scatterShape", js.undefined)
+    def setScatterShapeHoleRadiusUndefined: Self = StObject.set(x, "scatterShapeHoleRadius", js.undefined)
     
     @scala.inline
-    def setScatterShapeHoleColor(value: Color): Self = this.set("scatterShapeHoleColor", value.asInstanceOf[js.Any])
+    def setScatterShapeSize(value: Double): Self = StObject.set(x, "scatterShapeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScatterShapeHoleColor: Self = this.set("scatterShapeHoleColor", js.undefined)
+    def setScatterShapeSizeUndefined: Self = StObject.set(x, "scatterShapeSize", js.undefined)
     
     @scala.inline
-    def setScatterShapeHoleRadius(value: Double): Self = this.set("scatterShapeHoleRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScatterShapeHoleRadius: Self = this.set("scatterShapeHoleRadius", js.undefined)
-    
-    @scala.inline
-    def setScatterShapeSize(value: Double): Self = this.set("scatterShapeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScatterShapeSize: Self = this.set("scatterShapeSize", js.undefined)
+    def setScatterShapeUndefined: Self = StObject.set(x, "scatterShape", js.undefined)
   }
 }

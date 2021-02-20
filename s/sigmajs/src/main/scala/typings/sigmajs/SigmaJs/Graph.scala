@@ -1,11 +1,12 @@
 package typings.sigmajs.SigmaJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Graph extends js.Object {
+trait Graph extends StObject {
   
   def addEdge(edge: Edge): Graph = js.native
   

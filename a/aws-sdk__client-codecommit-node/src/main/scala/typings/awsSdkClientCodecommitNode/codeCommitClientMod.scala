@@ -5,16 +5,16 @@ import typings.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitR
 import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/CodeCommitClient", JSImport.Namespace)
-@js.native
-object codeCommitClientMod extends js.Object {
+object codeCommitClientMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/CodeCommitClient", "CodeCommitClient")
   @js.native
-  class CodeCommitClient protected () extends js.Object {
+  class CodeCommitClient protected () extends StObject {
     def this(configuration: CodeCommitConfiguration) = this()
     
     val config: CodeCommitResolvedConfiguration = js.native

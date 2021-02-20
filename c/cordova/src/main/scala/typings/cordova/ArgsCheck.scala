@@ -1,12 +1,13 @@
 package typings.cordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // cordova/argscheck module
 @js.native
-trait ArgsCheck extends js.Object {
+trait ArgsCheck extends StObject {
   
   def checkArgs(argsSpec: String, functionName: String, args: js.Array[_]): Unit = js.native
   def checkArgs(argsSpec: String, functionName: String, args: js.Array[_], callee: js.Any): Unit = js.native

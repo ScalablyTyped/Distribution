@@ -5,6 +5,7 @@ import typings.react.mod.Component
 import typings.reactNativeSvg.mod.LinearGradientProps
 import typings.reactNativeSvg.mod.RadialGradientProps
 import typings.reactNativeSvgCharts.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,93 +48,81 @@ object StackedBarChartProps {
   }
   
   @scala.inline
-  implicit class StackedBarChartPropsOps[Self <: StackedBarChartProps[_], T] (val x: Self with StackedBarChartProps[T]) extends AnyVal {
+  implicit class StackedBarChartPropsMutableBuilder[Self <: StackedBarChartProps[_], T] (val x: Self with StackedBarChartProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtra(value: () => js.Object): Self = StObject.set(x, "extra", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setExtras(value: js.Array[_]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeysVarargs(value: (/* keyof T */ String)*): Self = this.set("keys", js.Array(value :_*))
+    def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
     @scala.inline
-    def setKeys(value: js.Array[/* keyof T */ String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setExtrasVarargs(value: js.Any*): Self = StObject.set(x, "extras", js.Array(value :_*))
     
     @scala.inline
-    def setExtra(value: () => js.Object): Self = this.set("extra", js.Any.fromFunction0(value))
+    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def setExtrasVarargs(value: js.Any*): Self = this.set("extras", js.Array(value :_*))
+    def setKeys(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtras(value: js.Array[_]): Self = this.set("extras", value.asInstanceOf[js.Any])
+    def setKeysVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def deleteExtras: Self = this.set("extras", js.undefined)
+    def setOffset(value: (/* series */ Series[js.Any, js.Any], /* order */ js.Array[Double]) => Unit): Self = StObject.set(x, "offset", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setOrder(value: /* series */ Series[js.Any, js.Any] => js.Array[Double]): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffset(value: (/* series */ Series[js.Any, js.Any], /* order */ js.Array[Double]) => Unit): Self = this.set("offset", js.Any.fromFunction2(value))
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setRenderGradient(value: /* props */ Id => Component[LinearGradientProps | RadialGradientProps, js.Object, _]): Self = StObject.set(x, "renderGradient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOrder(value: /* series */ Series[js.Any, js.Any] => js.Array[Double]): Self = this.set("order", js.Any.fromFunction1(value))
+    def setRenderGradientUndefined: Self = StObject.set(x, "renderGradient", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setShowGrid(value: Boolean): Self = StObject.set(x, "showGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderGradient(value: /* props */ Id => Component[LinearGradientProps | RadialGradientProps, js.Object, _]): Self = this.set("renderGradient", js.Any.fromFunction1(value))
+    def setShowGridUndefined: Self = StObject.set(x, "showGrid", js.undefined)
     
     @scala.inline
-    def deleteRenderGradient: Self = this.set("renderGradient", js.undefined)
+    def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGrid(value: Boolean): Self = this.set("showGrid", value.asInstanceOf[js.Any])
+    def setSpacingInnerUndefined: Self = StObject.set(x, "spacingInner", js.undefined)
     
     @scala.inline
-    def deleteShowGrid: Self = this.set("showGrid", js.undefined)
+    def setSpacingOuter(value: Double): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacingInner(value: Double): Self = this.set("spacingInner", value.asInstanceOf[js.Any])
+    def setSpacingOuterUndefined: Self = StObject.set(x, "spacingOuter", js.undefined)
     
     @scala.inline
-    def deleteSpacingInner: Self = this.set("spacingInner", js.undefined)
+    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacingOuter(value: Double): Self = this.set("spacingOuter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacingOuter: Self = this.set("spacingOuter", js.undefined)
-    
-    @scala.inline
-    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
   }
 }

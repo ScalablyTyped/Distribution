@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class Kanban protected ()
   extends typings.ejWebAll.ej.Kanban {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Kanban.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Kanban.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.Kanban")
-@js.native
-object Kanban extends js.Object {
+object Kanban {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.Kanban = js.native
-  
+  @JSGlobal("ej.Kanban")
   @js.native
-  object EditMode extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.Kanban.EditMode")
+  @js.native
+  object EditMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Kanban.EditMode with Double] = js.native
@@ -39,8 +38,9 @@ object Kanban extends js.Object {
     /* 3 */ val ExternalFormTemplate: typings.ejWebAll.ej.Kanban.EditMode.ExternalFormTemplate with Double = js.native
   }
   
+  @JSGlobal("ej.Kanban.EditingType")
   @js.native
-  object EditingType extends js.Object {
+  object EditingType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Kanban.EditingType with Double] = js.native
@@ -60,8 +60,9 @@ object Kanban extends js.Object {
     /* 5 */ val TextArea: typings.ejWebAll.ej.Kanban.EditingType.TextArea with Double = js.native
   }
   
+  @JSGlobal("ej.Kanban.FormPosition")
   @js.native
-  object FormPosition extends js.Object {
+  object FormPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Kanban.FormPosition with Double] = js.native
@@ -71,8 +72,16 @@ object Kanban extends js.Object {
     /* 1 */ val Right: typings.ejWebAll.ej.Kanban.FormPosition.Right with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.Kanban.Locale")
   @js.native
-  object SelectionType extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Kanban.SelectionType")
+  @js.native
+  object SelectionType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Kanban.SelectionType with Double] = js.native
@@ -82,8 +91,9 @@ object Kanban extends js.Object {
     /* 0 */ val Single: typings.ejWebAll.ej.Kanban.SelectionType.Single with Double = js.native
   }
   
+  @JSGlobal("ej.Kanban.Target")
   @js.native
-  object Target extends js.Object {
+  object Target extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Kanban.Target with Double] = js.native
@@ -96,4 +106,11 @@ object Kanban extends js.Object {
     
     /* 0 */ val Header: typings.ejWebAll.ej.Kanban.Target.Header with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.Kanban.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.Kanban = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.Kanban): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

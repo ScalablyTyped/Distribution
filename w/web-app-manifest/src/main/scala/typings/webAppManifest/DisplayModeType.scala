@@ -1,5 +1,6 @@
 package typings.webAppManifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webAppManifest.webAppManifestStrings.`minimal-ui`
   - typings.webAppManifest.webAppManifestStrings.browser
 */
-trait DisplayModeType extends js.Object
+trait DisplayModeType extends StObject
 object DisplayModeType {
   
   @scala.inline

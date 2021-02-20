@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.std.ClipboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +27,14 @@ class ClipboardInfo protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "ClipboardInfo")
-@js.native
-object ClipboardInfo extends js.Object {
+object ClipboardInfo {
   
   /**
     *  Get the clipboard event's type from the keycode.
     * @param keyCode Defines the keyCode for the current keyboard event.
     * @return {number}
     */
+  @JSImport("babylonjs/index", "ClipboardInfo.GetTypeFromCharacter")
+  @js.native
   def GetTypeFromCharacter(keyCode: Double): Double = js.native
 }

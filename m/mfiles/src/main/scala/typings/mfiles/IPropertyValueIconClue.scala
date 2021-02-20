@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyValueIconClue extends js.Object {
+trait IPropertyValueIconClue extends StObject {
   
   def Clone(): IPropertyValueIconClue = js.native
   
@@ -27,27 +28,15 @@ object IPropertyValueIconClue {
   }
   
   @scala.inline
-  implicit class IPropertyValueIconClueOps[Self <: IPropertyValueIconClue] (val x: Self) extends AnyVal {
+  implicit class IPropertyValueIconClueMutableBuilder[Self <: IPropertyValueIconClue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IPropertyValueIconClue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClone(value: () => IPropertyValueIconClue): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = this.set("PropertyDef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueListItem(value: Double): Self = this.set("ValueListItem", value.asInstanceOf[js.Any])
+    def setValueListItem(value: Double): Self = StObject.set(x, "ValueListItem", value.asInstanceOf[js.Any])
   }
 }

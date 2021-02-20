@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAssetModelRequest extends js.Object {
+trait UpdateAssetModelRequest extends StObject {
   
   /**
     * A description for the asset model.
@@ -46,54 +47,42 @@ object UpdateAssetModelRequest {
   }
   
   @scala.inline
-  implicit class UpdateAssetModelRequestOps[Self <: UpdateAssetModelRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAssetModelRequestMutableBuilder[Self <: UpdateAssetModelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetModelDescription(value: Description): Self = StObject.set(x, "assetModelDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetModelDescriptionUndefined: Self = StObject.set(x, "assetModelDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetModelHierarchies(value: AssetModelHierarchies): Self = StObject.set(x, "assetModelHierarchies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetModelId(value: ID): Self = this.set("assetModelId", value.asInstanceOf[js.Any])
+    def setAssetModelHierarchiesUndefined: Self = StObject.set(x, "assetModelHierarchies", js.undefined)
     
     @scala.inline
-    def setAssetModelName(value: Name): Self = this.set("assetModelName", value.asInstanceOf[js.Any])
+    def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value :_*))
     
     @scala.inline
-    def setAssetModelDescription(value: Description): Self = this.set("assetModelDescription", value.asInstanceOf[js.Any])
+    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetModelDescription: Self = this.set("assetModelDescription", js.undefined)
+    def setAssetModelName(value: Name): Self = StObject.set(x, "assetModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = this.set("assetModelHierarchies", js.Array(value :_*))
+    def setAssetModelProperties(value: AssetModelProperties): Self = StObject.set(x, "assetModelProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetModelHierarchies(value: AssetModelHierarchies): Self = this.set("assetModelHierarchies", value.asInstanceOf[js.Any])
+    def setAssetModelPropertiesUndefined: Self = StObject.set(x, "assetModelProperties", js.undefined)
     
     @scala.inline
-    def deleteAssetModelHierarchies: Self = this.set("assetModelHierarchies", js.undefined)
+    def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value :_*))
     
     @scala.inline
-    def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = this.set("assetModelProperties", js.Array(value :_*))
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetModelProperties(value: AssetModelProperties): Self = this.set("assetModelProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssetModelProperties: Self = this.set("assetModelProperties", js.undefined)
-    
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

@@ -1,17 +1,18 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviationIndicator extends js.Object
+sealed trait DeviationIndicator extends StObject
 /**
   * Enum of the available deviation markers for the NumericContent control.
   */
 @JSGlobal("sap.m.DeviationIndicator")
 @js.native
-object DeviationIndicator extends js.Object {
+object DeviationIndicator extends StObject {
   
   @js.native
   sealed trait Down extends DeviationIndicator

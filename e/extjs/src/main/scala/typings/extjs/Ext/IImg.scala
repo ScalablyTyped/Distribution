@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,60 +41,48 @@ object IImg {
   }
   
   @scala.inline
-  implicit class IImgOps[Self <: IImg] (val x: Self) extends AnyVal {
+  implicit class IImgMutableBuilder[Self <: IImg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: java.lang.String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: java.lang.String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setImgCls(value: java.lang.String): Self = StObject.set(x, "imgCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyph(value: js.Any): Self = this.set("glyph", value.asInstanceOf[js.Any])
+    def setImgClsUndefined: Self = StObject.set(x, "imgCls", js.undefined)
     
     @scala.inline
-    def deleteGlyph: Self = this.set("glyph", js.undefined)
+    def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImgCls(value: java.lang.String): Self = this.set("imgCls", value.asInstanceOf[js.Any])
+    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
     @scala.inline
-    def deleteImgCls: Self = this.set("imgCls", js.undefined)
+    def setSetSrc(value: /* src */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRender(value: () => Unit): Self = this.set("onRender", js.Any.fromFunction0(value))
+    def setSetSrcUndefined: Self = StObject.set(x, "setSrc", js.undefined)
     
     @scala.inline
-    def deleteOnRender: Self = this.set("onRender", js.undefined)
+    def setSrc(value: java.lang.String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSrc(value: /* src */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setSrc", js.Any.fromFunction1(value))
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteSetSrc: Self = this.set("setSrc", js.undefined)
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: java.lang.String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

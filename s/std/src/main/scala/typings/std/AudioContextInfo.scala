@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioContextInfo extends js.Object {
+trait AudioContextInfo extends StObject {
   
   var currentTime: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object AudioContextInfo {
   }
   
   @scala.inline
-  implicit class AudioContextInfoOps[Self <: AudioContextInfo] (val x: Self) extends AnyVal {
+  implicit class AudioContextInfoMutableBuilder[Self <: AudioContextInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentTime: Self = this.set("currentTime", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
   }
 }

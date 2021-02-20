@@ -1,6 +1,7 @@
 package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import typings.grpcGrpcJs.grpcGrpcJsStrings.eds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object EdsLoadBalancingConfig {
   }
   
   @scala.inline
-  implicit class EdsLoadBalancingConfigOps[Self <: EdsLoadBalancingConfig] (val x: Self) extends AnyVal {
+  implicit class EdsLoadBalancingConfigMutableBuilder[Self <: EdsLoadBalancingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEds(value: EdsLbConfig): Self = StObject.set(x, "eds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEds(value: EdsLbConfig): Self = this.set("eds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: eds): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: eds): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

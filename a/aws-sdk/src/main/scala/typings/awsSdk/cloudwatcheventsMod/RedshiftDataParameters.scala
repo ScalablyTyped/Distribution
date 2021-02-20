@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftDataParameters extends js.Object {
+trait RedshiftDataParameters extends StObject {
   
   /**
     * The name of the database. Required when authenticating using temporary credentials.
@@ -46,48 +47,36 @@ object RedshiftDataParameters {
   }
   
   @scala.inline
-  implicit class RedshiftDataParametersOps[Self <: RedshiftDataParameters] (val x: Self) extends AnyVal {
+  implicit class RedshiftDataParametersMutableBuilder[Self <: RedshiftDataParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbUser(value: DbUser): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
     @scala.inline
-    def setDatabase(value: Database): Self = this.set("Database", value.asInstanceOf[js.Any])
+    def setSecretManagerArn(value: RedshiftSecretManagerArn): Self = StObject.set(x, "SecretManagerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSql(value: Sql): Self = this.set("Sql", value.asInstanceOf[js.Any])
+    def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
     
     @scala.inline
-    def setDbUser(value: DbUser): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    def setSql(value: Sql): Self = StObject.set(x, "Sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDbUser: Self = this.set("DbUser", js.undefined)
+    def setStatementName(value: StatementName): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretManagerArn(value: RedshiftSecretManagerArn): Self = this.set("SecretManagerArn", value.asInstanceOf[js.Any])
+    def setStatementNameUndefined: Self = StObject.set(x, "StatementName", js.undefined)
     
     @scala.inline
-    def deleteSecretManagerArn: Self = this.set("SecretManagerArn", js.undefined)
+    def setWithEvent(value: Boolean): Self = StObject.set(x, "WithEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatementName(value: StatementName): Self = this.set("StatementName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatementName: Self = this.set("StatementName", js.undefined)
-    
-    @scala.inline
-    def setWithEvent(value: Boolean): Self = this.set("WithEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithEvent: Self = this.set("WithEvent", js.undefined)
+    def setWithEventUndefined: Self = StObject.set(x, "WithEvent", js.undefined)
   }
 }

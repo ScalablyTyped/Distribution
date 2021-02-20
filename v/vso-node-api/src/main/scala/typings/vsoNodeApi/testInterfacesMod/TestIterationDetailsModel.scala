@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestIterationDetailsModel extends js.Object {
+trait TestIterationDetailsModel extends StObject {
   
   var actionResults: js.Array[TestActionResultModel] = js.native
   
@@ -51,60 +52,48 @@ object TestIterationDetailsModel {
   }
   
   @scala.inline
-  implicit class TestIterationDetailsModelOps[Self <: TestIterationDetailsModel] (val x: Self) extends AnyVal {
+  implicit class TestIterationDetailsModelMutableBuilder[Self <: TestIterationDetailsModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionResults(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionResultsVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResults", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: js.Array[TestCaseResultAttachmentModel]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionResultsVarargs(value: TestActionResultModel*): Self = this.set("actionResults", js.Array(value :_*))
+    def setAttachmentsVarargs(value: TestCaseResultAttachmentModel*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setActionResults(value: js.Array[TestActionResultModel]): Self = this.set("actionResults", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: TestCaseResultAttachmentModel*): Self = this.set("attachments", js.Array(value :_*))
+    def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: js.Array[TestCaseResultAttachmentModel]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setDurationInMs(value: Double): Self = StObject.set(x, "durationInMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDate(value: Date): Self = this.set("completedDate", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInMs(value: Double): Self = this.set("durationInMs", value.asInstanceOf[js.Any])
+    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[TestResultParameterModel]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setParametersVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setOutcome(value: String): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersVarargs(value: TestResultParameterModel*): Self = this.set("parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: js.Array[TestResultParameterModel]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartedDate(value: Date): Self = this.set("startedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

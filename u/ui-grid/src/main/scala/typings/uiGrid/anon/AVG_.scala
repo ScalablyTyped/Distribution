@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AVG_ extends js.Object {
+trait AVG_ extends StObject {
   
   var AVG: String = js.native
   
@@ -26,33 +27,21 @@ object AVG_ {
   }
   
   @scala.inline
-  implicit class AVG_Ops[Self <: AVG_] (val x: Self) extends AnyVal {
+  implicit class AVG_MutableBuilder[Self <: AVG_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAVG(value: String): Self = StObject.set(x, "AVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOUNT(value: String): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMAX(value: String): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAVG(value: String): Self = this.set("AVG", value.asInstanceOf[js.Any])
+    def setMIN(value: String): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOUNT(value: String): Self = this.set("COUNT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMAX(value: String): Self = this.set("MAX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMIN(value: String): Self = this.set("MIN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSUM(value: String): Self = this.set("SUM", value.asInstanceOf[js.Any])
+    def setSUM(value: String): Self = StObject.set(x, "SUM", value.asInstanceOf[js.Any])
   }
 }

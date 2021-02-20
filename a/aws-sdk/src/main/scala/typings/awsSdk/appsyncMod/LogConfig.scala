@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogConfig extends js.Object {
+trait LogConfig extends StObject {
   
   /**
     * The service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account. 
@@ -31,30 +32,18 @@ object LogConfig {
   }
   
   @scala.inline
-  implicit class LogConfigOps[Self <: LogConfig] (val x: Self) extends AnyVal {
+  implicit class LogConfigMutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogsRoleArn(value: String): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeVerboseContent(value: Boolean): Self = StObject.set(x, "excludeVerboseContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeVerboseContentUndefined: Self = StObject.set(x, "excludeVerboseContent", js.undefined)
     
     @scala.inline
-    def setCloudWatchLogsRoleArn(value: String): Self = this.set("cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldLogLevel(value: FieldLogLevel): Self = this.set("fieldLogLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcludeVerboseContent(value: Boolean): Self = this.set("excludeVerboseContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludeVerboseContent: Self = this.set("excludeVerboseContent", js.undefined)
+    def setFieldLogLevel(value: FieldLogLevel): Self = StObject.set(x, "fieldLogLevel", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,15 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PMarker extends js.Object
+sealed trait PMarker extends StObject
 @JSGlobal("CUI.PMarker")
 @js.native
-object PMarker extends js.Object {
+object PMarker extends StObject {
   
   @js.native
   sealed trait beginSession extends PMarker

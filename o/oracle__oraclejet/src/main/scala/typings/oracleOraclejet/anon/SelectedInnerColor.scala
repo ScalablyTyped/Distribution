@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectedInnerColor extends js.Object {
+trait SelectedInnerColor extends StObject {
   
   var borderColor: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object SelectedInnerColor {
   }
   
   @scala.inline
-  implicit class SelectedInnerColorOps[Self <: SelectedInnerColor] (val x: Self) extends AnyVal {
+  implicit class SelectedInnerColorMutableBuilder[Self <: SelectedInnerColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setSelectedInnerColor(value: String): Self = StObject.set(x, "selectedInnerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverColor(value: String): Self = this.set("hoverColor", value.asInstanceOf[js.Any])
+    def setSelectedInnerColorUndefined: Self = StObject.set(x, "selectedInnerColor", js.undefined)
     
     @scala.inline
-    def deleteHoverColor: Self = this.set("hoverColor", js.undefined)
+    def setSelectedOuterColor(value: String): Self = StObject.set(x, "selectedOuterColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedInnerColor(value: String): Self = this.set("selectedInnerColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedInnerColor: Self = this.set("selectedInnerColor", js.undefined)
-    
-    @scala.inline
-    def setSelectedOuterColor(value: String): Self = this.set("selectedOuterColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedOuterColor: Self = this.set("selectedOuterColor", js.undefined)
+    def setSelectedOuterColorUndefined: Self = StObject.set(x, "selectedOuterColor", js.undefined)
   }
 }

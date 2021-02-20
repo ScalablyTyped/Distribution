@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilteredBidDetailRow extends js.Object {
+trait FilteredBidDetailRow extends StObject {
   
   /** The number of bids with the specified detail. */
   var bidCount: js.UndefOr[MetricValue] = js.native
@@ -32,42 +33,30 @@ object FilteredBidDetailRow {
   }
   
   @scala.inline
-  implicit class FilteredBidDetailRowOps[Self <: FilteredBidDetailRow] (val x: Self) extends AnyVal {
+  implicit class FilteredBidDetailRowMutableBuilder[Self <: FilteredBidDetailRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBidCount(value: MetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBidCount(value: MetricValue): Self = this.set("bidCount", value.asInstanceOf[js.Any])
+    def setDetailId(value: Double): Self = StObject.set(x, "detailId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBidCount: Self = this.set("bidCount", js.undefined)
+    def setDetailIdUndefined: Self = StObject.set(x, "detailId", js.undefined)
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
+    def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailId(value: Double): Self = this.set("detailId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetailId: Self = this.set("detailId", js.undefined)
-    
-    @scala.inline
-    def setRowDimensions(value: RowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
+    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
   }
 }

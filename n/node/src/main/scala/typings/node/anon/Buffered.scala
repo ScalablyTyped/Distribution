@@ -1,12 +1,13 @@
 package typings.node.anon
 
 import typings.node.perfHooksMod.EntryType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buffered extends js.Object {
+trait Buffered extends StObject {
   
   var buffered: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object Buffered {
   }
   
   @scala.inline
-  implicit class BufferedOps[Self <: Buffered] (val x: Self) extends AnyVal {
+  implicit class BufferedMutableBuilder[Self <: Buffered] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffered(value: Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryTypes(value: js.Array[EntryType]): Self = StObject.set(x, "entryTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryTypesVarargs(value: EntryType*): Self = this.set("entryTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntryTypes(value: js.Array[EntryType]): Self = this.set("entryTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBuffered(value: Boolean): Self = this.set("buffered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuffered: Self = this.set("buffered", js.undefined)
+    def setEntryTypesVarargs(value: EntryType*): Self = StObject.set(x, "entryTypes", js.Array(value :_*))
   }
 }

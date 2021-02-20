@@ -1,11 +1,12 @@
 package typings.awsSdk.stsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Credentials extends js.Object {
+trait Credentials extends StObject {
   
   /**
     * The access key ID that identifies the temporary security credentials.
@@ -41,30 +42,18 @@ object Credentials {
   }
   
   @scala.inline
-  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretAccessKey(value: accessKeySecretType): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpiration(value: dateType): Self = this.set("Expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretAccessKey(value: accessKeySecretType): Self = this.set("SecretAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionToken(value: tokenType): Self = this.set("SessionToken", value.asInstanceOf[js.Any])
+    def setSessionToken(value: tokenType): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
   }
 }

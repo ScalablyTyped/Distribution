@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderrorreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorGroupStats extends js.Object {
+trait ErrorGroupStats extends StObject {
   
   /**
     * Service contexts with a non-zero error count for the given filter criteria. This list can be truncated if multiple services are affected. Refer to `num_affected_services` for the
@@ -57,78 +58,66 @@ object ErrorGroupStats {
   }
   
   @scala.inline
-  implicit class ErrorGroupStatsOps[Self <: ErrorGroupStats] (val x: Self) extends AnyVal {
+  implicit class ErrorGroupStatsMutableBuilder[Self <: ErrorGroupStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffectedServices(value: js.Array[ServiceContext]): Self = StObject.set(x, "affectedServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffectedServicesUndefined: Self = StObject.set(x, "affectedServices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAffectedServicesVarargs(value: ServiceContext*): Self = StObject.set(x, "affectedServices", js.Array(value :_*))
     
     @scala.inline
-    def setAffectedServicesVarargs(value: ServiceContext*): Self = this.set("affectedServices", js.Array(value :_*))
+    def setAffectedUsersCount(value: String): Self = StObject.set(x, "affectedUsersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectedServices(value: js.Array[ServiceContext]): Self = this.set("affectedServices", value.asInstanceOf[js.Any])
+    def setAffectedUsersCountUndefined: Self = StObject.set(x, "affectedUsersCount", js.undefined)
     
     @scala.inline
-    def deleteAffectedServices: Self = this.set("affectedServices", js.undefined)
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectedUsersCount(value: String): Self = this.set("affectedUsersCount", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAffectedUsersCount: Self = this.set("affectedUsersCount", js.undefined)
+    def setFirstSeenTime(value: String): Self = StObject.set(x, "firstSeenTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFirstSeenTimeUndefined: Self = StObject.set(x, "firstSeenTime", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setGroup(value: ErrorGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSeenTime(value: String): Self = this.set("firstSeenTime", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteFirstSeenTime: Self = this.set("firstSeenTime", js.undefined)
+    def setLastSeenTime(value: String): Self = StObject.set(x, "lastSeenTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: ErrorGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setLastSeenTimeUndefined: Self = StObject.set(x, "lastSeenTime", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setNumAffectedServices(value: Double): Self = StObject.set(x, "numAffectedServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSeenTime(value: String): Self = this.set("lastSeenTime", value.asInstanceOf[js.Any])
+    def setNumAffectedServicesUndefined: Self = StObject.set(x, "numAffectedServices", js.undefined)
     
     @scala.inline
-    def deleteLastSeenTime: Self = this.set("lastSeenTime", js.undefined)
+    def setRepresentative(value: ErrorEvent): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumAffectedServices(value: Double): Self = this.set("numAffectedServices", value.asInstanceOf[js.Any])
+    def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
     
     @scala.inline
-    def deleteNumAffectedServices: Self = this.set("numAffectedServices", js.undefined)
+    def setTimedCounts(value: js.Array[TimedCount]): Self = StObject.set(x, "timedCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepresentative(value: ErrorEvent): Self = this.set("representative", value.asInstanceOf[js.Any])
+    def setTimedCountsUndefined: Self = StObject.set(x, "timedCounts", js.undefined)
     
     @scala.inline
-    def deleteRepresentative: Self = this.set("representative", js.undefined)
-    
-    @scala.inline
-    def setTimedCountsVarargs(value: TimedCount*): Self = this.set("timedCounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimedCounts(value: js.Array[TimedCount]): Self = this.set("timedCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedCounts: Self = this.set("timedCounts", js.undefined)
+    def setTimedCountsVarargs(value: TimedCount*): Self = StObject.set(x, "timedCounts", js.Array(value :_*))
   }
 }

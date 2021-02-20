@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/excel", JSImport.Namespace)
-@js.native
-object excelMod extends js.Object {
+object excelMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/excel", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

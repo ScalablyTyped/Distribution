@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +28,9 @@ class ItemGroup[TItem] () extends Property[ItemGroupDefinition] {
   def oneDeep(idOrName: String): TItem = js.native
 }
 /* static members */
-@JSImport("postman-collection", "ItemGroup")
-@js.native
-object ItemGroup extends js.Object {
+object ItemGroup {
   
+  @JSImport("postman-collection", "ItemGroup.isItemGroup")
+  @js.native
   def isItemGroup(obj: js.Any): Boolean = js.native
 }

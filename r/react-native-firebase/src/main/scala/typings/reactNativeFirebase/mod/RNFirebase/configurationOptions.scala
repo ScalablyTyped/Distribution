@@ -1,5 +1,6 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * That is, all of the following key/value pairs are optional if the native configuration is set.
   */
 @js.native
-trait configurationOptions extends js.Object {
+trait configurationOptions extends StObject {
   
   /**
     * default ""
@@ -94,90 +95,78 @@ object configurationOptions {
   }
   
   @scala.inline
-  implicit class configurationOptionsOps[Self <: configurationOptions] (val x: Self) extends AnyVal {
+  implicit class configurationOptionsMutableBuilder[Self <: configurationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPIKey(value: String): Self = StObject.set(x, "APIKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAPIKeyUndefined: Self = StObject.set(x, "APIKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidClientID(value: String): Self = StObject.set(x, "androidClientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPIKey(value: String): Self = this.set("APIKey", value.asInstanceOf[js.Any])
+    def setAndroidClientIDUndefined: Self = StObject.set(x, "androidClientID", js.undefined)
     
     @scala.inline
-    def deleteAPIKey: Self = this.set("APIKey", js.undefined)
+    def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGCMSenderID(value: String): Self = this.set("GCMSenderID", value.asInstanceOf[js.Any])
+    def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
     
     @scala.inline
-    def deleteGCMSenderID: Self = this.set("GCMSenderID", js.undefined)
+    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidClientID(value: String): Self = this.set("androidClientID", value.asInstanceOf[js.Any])
+    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
     @scala.inline
-    def deleteAndroidClientID: Self = this.set("androidClientID", js.undefined)
+    def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleID(value: String): Self = this.set("bundleID", value.asInstanceOf[js.Any])
+    def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
     
     @scala.inline
-    def deleteBundleID: Self = this.set("bundleID", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteClientID: Self = this.set("clientID", js.undefined)
+    def setDeepLinkURLScheme(value: String): Self = StObject.set(x, "deepLinkURLScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseURL(value: String): Self = this.set("databaseURL", value.asInstanceOf[js.Any])
+    def setDeepLinkURLSchemeUndefined: Self = StObject.set(x, "deepLinkURLScheme", js.undefined)
     
     @scala.inline
-    def deleteDatabaseURL: Self = this.set("databaseURL", js.undefined)
+    def setGCMSenderID(value: String): Self = StObject.set(x, "GCMSenderID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setGCMSenderIDUndefined: Self = StObject.set(x, "GCMSenderID", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setGoogleAppID(value: String): Self = StObject.set(x, "googleAppID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepLinkURLScheme(value: String): Self = this.set("deepLinkURLScheme", value.asInstanceOf[js.Any])
+    def setGoogleAppIDUndefined: Self = StObject.set(x, "googleAppID", js.undefined)
     
     @scala.inline
-    def deleteDeepLinkURLScheme: Self = this.set("deepLinkURLScheme", js.undefined)
+    def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAppID(value: String): Self = this.set("googleAppID", value.asInstanceOf[js.Any])
+    def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
     
     @scala.inline
-    def deleteGoogleAppID: Self = this.set("googleAppID", js.undefined)
+    def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistence(value: Boolean): Self = this.set("persistence", value.asInstanceOf[js.Any])
+    def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
     
     @scala.inline
-    def deletePersistence: Self = this.set("persistence", js.undefined)
+    def setTrackingID(value: String): Self = StObject.set(x, "trackingID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageBucket(value: String): Self = this.set("storageBucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageBucket: Self = this.set("storageBucket", js.undefined)
-    
-    @scala.inline
-    def setTrackingID(value: String): Self = this.set("trackingID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingID: Self = this.set("trackingID", js.undefined)
+    def setTrackingIDUndefined: Self = StObject.set(x, "trackingID", js.undefined)
   }
 }

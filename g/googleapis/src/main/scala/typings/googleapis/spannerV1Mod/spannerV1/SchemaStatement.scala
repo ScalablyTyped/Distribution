@@ -1,6 +1,7 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single DML statement.
   */
 @js.native
-trait SchemaStatement extends js.Object {
+trait SchemaStatement extends StObject {
   
   /**
     * It is not always possible for Cloud Spanner to infer the right SQL type
@@ -49,36 +50,24 @@ object SchemaStatement {
   }
   
   @scala.inline
-  implicit class SchemaStatementOps[Self <: SchemaStatement] (val x: Self) extends AnyVal {
+  implicit class SchemaStatementMutableBuilder[Self <: SchemaStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamTypes(value: StringDictionary[SchemaType]): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamTypes(value: StringDictionary[SchemaType]): Self = this.set("paramTypes", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteParamTypes: Self = this.set("paramTypes", js.undefined)
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSql: Self = this.set("sql", js.undefined)
+    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

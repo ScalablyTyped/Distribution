@@ -1,11 +1,12 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasTaskState extends js.Object {
+trait HasTaskState extends StObject {
   
   var change: TaskType = js.native
   
@@ -24,30 +25,18 @@ object HasTaskState {
   }
   
   @scala.inline
-  implicit class HasTaskStateOps[Self <: HasTaskState] (val x: Self) extends AnyVal {
+  implicit class HasTaskStateMutableBuilder[Self <: HasTaskState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: TaskType): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTask(value: Boolean): Self = StObject.set(x, "eventTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMacroTask(value: Boolean): Self = StObject.set(x, "macroTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: TaskType): Self = this.set("change", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventTask(value: Boolean): Self = this.set("eventTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMacroTask(value: Boolean): Self = this.set("macroTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMicroTask(value: Boolean): Self = this.set("microTask", value.asInstanceOf[js.Any])
+    def setMicroTask(value: Boolean): Self = StObject.set(x, "microTask", value.asInstanceOf[js.Any])
   }
 }

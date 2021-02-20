@@ -4,12 +4,13 @@ import typings.storybookAddons.typesMod.DecorateStoryFunction
 import typings.storybookAddons.typesMod.DecoratorFunction
 import typings.storybookAddons.typesMod.StoryFn
 import typings.storybookClientApi.storyStoreMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientApiParams extends js.Object {
+trait ClientApiParams extends StObject {
   
   var decorateStory: js.UndefOr[DecorateStoryFunction[_]] = js.native
   
@@ -26,33 +27,21 @@ object ClientApiParams {
   }
   
   @scala.inline
-  implicit class ClientApiParamsOps[Self <: ClientApiParams] (val x: Self) extends AnyVal {
+  implicit class ClientApiParamsMutableBuilder[Self <: ClientApiParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecorateStory(value: (/* storyFn */ StoryFn[_], /* decorators */ js.Array[DecoratorFunction[_]]) => StoryFn[_]): Self = StObject.set(x, "decorateStory", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecorateStoryUndefined: Self = StObject.set(x, "decorateStory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoStoryModuleAddMethodHotDispose(value: Boolean): Self = StObject.set(x, "noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoryStore(value: default): Self = this.set("storyStore", value.asInstanceOf[js.Any])
+    def setNoStoryModuleAddMethodHotDisposeUndefined: Self = StObject.set(x, "noStoryModuleAddMethodHotDispose", js.undefined)
     
     @scala.inline
-    def setDecorateStory(value: (/* storyFn */ StoryFn[_], /* decorators */ js.Array[DecoratorFunction[_]]) => StoryFn[_]): Self = this.set("decorateStory", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteDecorateStory: Self = this.set("decorateStory", js.undefined)
-    
-    @scala.inline
-    def setNoStoryModuleAddMethodHotDispose(value: Boolean): Self = this.set("noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoStoryModuleAddMethodHotDispose: Self = this.set("noStoryModuleAddMethodHotDispose", js.undefined)
+    def setStoryStore(value: default): Self = StObject.set(x, "storyStore", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for camaro
 
-Typings are for version 4.2.0
+Typings are for version 6.0.4
 
 ## Library description:
 Transforming XML to JSON using Node.js binding to native pugixml parser library
@@ -10,9 +10,9 @@ Transforming XML to JSON using Node.js binding to native pugixml parser library
 | ------------------ | :-------------: |
 | Full name          | camaro |
 | Keywords           | xpath, json, transform, pugixml, xml, parser, n-api, xml2json, webassembly, wasm |
-| # releases         | 50 |
-| # dependents       | 6 |
-| # downloads        | 69541 |
+| # releases         | 45 |
+| # dependents       | 14 |
+| # downloads        | 154734 |
 | # stars            | 2 |
 
 ## Links

@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypedLinkSpecifier extends js.Object {
+trait TypedLinkSpecifier extends StObject {
   
   /**
     * Identifies the attribute value to update.
@@ -41,33 +42,21 @@ object TypedLinkSpecifier {
   }
   
   @scala.inline
-  implicit class TypedLinkSpecifierOps[Self <: TypedLinkSpecifier] (val x: Self) extends AnyVal {
+  implicit class TypedLinkSpecifierMutableBuilder[Self <: TypedLinkSpecifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityAttributeValues(value: AttributeNameAndValueList): Self = StObject.set(x, "IdentityAttributeValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityAttributeValuesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "IdentityAttributeValues", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceObjectReference(value: ObjectReference): Self = StObject.set(x, "SourceObjectReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityAttributeValuesVarargs(value: AttributeNameAndValue*): Self = this.set("IdentityAttributeValues", js.Array(value :_*))
+    def setTargetObjectReference(value: ObjectReference): Self = StObject.set(x, "TargetObjectReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityAttributeValues(value: AttributeNameAndValueList): Self = this.set("IdentityAttributeValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceObjectReference(value: ObjectReference): Self = this.set("SourceObjectReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetObjectReference(value: ObjectReference): Self = this.set("TargetObjectReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypedLinkFacet(value: TypedLinkSchemaAndFacetName): Self = this.set("TypedLinkFacet", value.asInstanceOf[js.Any])
+    def setTypedLinkFacet(value: TypedLinkSchemaAndFacetName): Self = StObject.set(x, "TypedLinkFacet", value.asInstanceOf[js.Any])
   }
 }

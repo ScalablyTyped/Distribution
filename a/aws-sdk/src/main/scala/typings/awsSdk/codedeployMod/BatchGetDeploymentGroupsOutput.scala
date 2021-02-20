@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetDeploymentGroupsOutput extends js.Object {
+trait BatchGetDeploymentGroupsOutput extends StObject {
   
   /**
     * Information about the deployment groups.
@@ -26,33 +27,21 @@ object BatchGetDeploymentGroupsOutput {
   }
   
   @scala.inline
-  implicit class BatchGetDeploymentGroupsOutputOps[Self <: BatchGetDeploymentGroupsOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetDeploymentGroupsOutputMutableBuilder[Self <: BatchGetDeploymentGroupsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentGroupsInfo(value: DeploymentGroupInfoList): Self = StObject.set(x, "deploymentGroupsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentGroupsInfoUndefined: Self = StObject.set(x, "deploymentGroupsInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentGroupsInfoVarargs(value: DeploymentGroupInfo*): Self = StObject.set(x, "deploymentGroupsInfo", js.Array(value :_*))
     
     @scala.inline
-    def setDeploymentGroupsInfoVarargs(value: DeploymentGroupInfo*): Self = this.set("deploymentGroupsInfo", js.Array(value :_*))
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentGroupsInfo(value: DeploymentGroupInfoList): Self = this.set("deploymentGroupsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentGroupsInfo: Self = this.set("deploymentGroupsInfo", js.undefined)
-    
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

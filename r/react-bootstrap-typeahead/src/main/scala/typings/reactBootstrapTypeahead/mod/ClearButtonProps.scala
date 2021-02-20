@@ -2,6 +2,7 @@ package typings.reactBootstrapTypeahead.mod
 
 import typings.react.mod.HTMLAttributes
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object ClearButtonProps {
   }
   
   @scala.inline
-  implicit class ClearButtonPropsOps[Self <: ClearButtonProps] (val x: Self) extends AnyVal {
+  implicit class ClearButtonPropsMutableBuilder[Self <: ClearButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBsSize(value: TypeaheadBsSizes): Self = this.set("bsSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBsSize: Self = this.set("bsSize", js.undefined)
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

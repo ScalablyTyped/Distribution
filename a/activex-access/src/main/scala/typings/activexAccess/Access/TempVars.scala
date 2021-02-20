@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TempVars extends js.Object {
+trait TempVars extends StObject {
   
   def apply(Index: String): TempVar = js.native
   def apply(Index: Double): TempVar = js.native

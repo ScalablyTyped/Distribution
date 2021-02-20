@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTML extends js.Object {
+trait HTML extends StObject {
   
   var Cookie: js.UndefOr[typings.mathjax.MathJax.Cookie] = js.native
   
@@ -50,42 +51,30 @@ object HTML {
   }
   
   @scala.inline
-  implicit class HTMLOps[Self <: HTML] (val x: Self) extends AnyVal {
+  implicit class HTMLMutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddElement(value: (js.Any, String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddText(value: (js.Any, String) => js.Any): Self = StObject.set(x, "addText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookie(value: Cookie): Self = StObject.set(x, "Cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: (String, js.Any, js.Any) => js.Any): Self = this.set("Element", js.Any.fromFunction3(value))
+    def setCookieUndefined: Self = StObject.set(x, "Cookie", js.undefined)
     
     @scala.inline
-    def setTextNode(value: String => js.Any): Self = this.set("TextNode", js.Any.fromFunction1(value))
+    def setElement(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "Element", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddElement(value: (js.Any, String, js.Any, js.Any) => js.Any): Self = this.set("addElement", js.Any.fromFunction4(value))
+    def setGetScript(value: String => String): Self = StObject.set(x, "getScript", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddText(value: (js.Any, String) => js.Any): Self = this.set("addText", js.Any.fromFunction2(value))
+    def setSetScript(value: (String, String) => Unit): Self = StObject.set(x, "setScript", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetScript(value: String => String): Self = this.set("getScript", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetScript(value: (String, String) => Unit): Self = this.set("setScript", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCookie(value: Cookie): Self = this.set("Cookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCookie: Self = this.set("Cookie", js.undefined)
+    def setTextNode(value: String => js.Any): Self = StObject.set(x, "TextNode", js.Any.fromFunction1(value))
   }
 }

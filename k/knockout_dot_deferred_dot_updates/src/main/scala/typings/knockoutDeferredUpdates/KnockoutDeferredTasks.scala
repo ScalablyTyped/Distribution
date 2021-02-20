@@ -1,11 +1,12 @@
 package typings.knockoutDeferredUpdates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutDeferredTasks extends js.Object {
+trait KnockoutDeferredTasks extends StObject {
   
   def makeProcessedCallback(evaluator: js.Function): Unit = js.native
   

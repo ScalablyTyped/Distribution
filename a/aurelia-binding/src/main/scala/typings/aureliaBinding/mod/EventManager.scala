@@ -4,13 +4,14 @@ import typings.aureliaBinding.anon.Properties
 import typings.aureliaBinding.aureliaBindingBooleans.`true`
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "EventManager")
 @js.native
-class EventManager () extends js.Object {
+class EventManager () extends StObject {
   def this(escapeShadowRoot: Boolean) = this()
   
   def addEventListener(

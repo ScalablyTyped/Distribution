@@ -1,16 +1,16 @@
 package typings.plottable
 
 import typings.plottable.scalesMod.ITransformableScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/deferredRenderer", JSImport.Namespace)
-@js.native
-object deferredRendererMod extends js.Object {
+object deferredRendererMod {
   
+  @JSImport("plottable/build/src/plots/deferredRenderer", "DeferredRenderer")
   @js.native
-  class DeferredRenderer[X, Y] protected () extends js.Object {
+  class DeferredRenderer[X, Y] protected () extends StObject {
     def this(
       renderCallback: js.Function0[Unit],
       applyTransformCallback: js.Function4[/* tx */ Double, /* ty */ Double, /* sx */ Double, /* sy */ Double, Unit]
@@ -43,9 +43,16 @@ object deferredRendererMod extends js.Object {
     def updateDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
   }
   /* static members */
-  @js.native
-  object DeferredRenderer extends js.Object {
+  object DeferredRenderer {
     
-    var DEFERRED_RENDERING_DELAY: Double = js.native
+    @JSImport("plottable/build/src/plots/deferredRenderer", "DeferredRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/plots/deferredRenderer", "DeferredRenderer.DEFERRED_RENDERING_DELAY")
+    @js.native
+    def DEFERRED_RENDERING_DELAY: Double = js.native
+    @scala.inline
+    def DEFERRED_RENDERING_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFERRED_RENDERING_DELAY")(x.asInstanceOf[js.Any])
   }
 }

@@ -3,19 +3,19 @@ package typings.inversifyBindingDecorators
 import typings.inversify.interfacesMod.interfaces.Bind
 import typings.inversify.interfacesMod.interfaces.Context
 import typings.inversify.interfacesMod.interfaces.Request
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-binding-decorators/dts/interfaces/interfaces", JSImport.Namespace)
-@js.native
-object interfacesMod extends js.Object {
+object interfacesMod {
   
-  @js.native
-  object interfaces extends js.Object {
+  object interfaces {
+    
+    type BindConstraint = js.Function2[/* bind */ Bind, /* target */ js.Any, js.Any]
     
     @js.native
-    trait ProvideDoneSyntax extends js.Object {
+    trait ProvideDoneSyntax extends StObject {
       
       def done(): js.Function1[/* target */ js.Any, _] = js.native
       def done(force: Boolean): js.Function1[/* target */ js.Any, _] = js.native
@@ -42,7 +42,7 @@ object interfacesMod extends js.Object {
     }
     
     @js.native
-    trait ProvideSyntax extends js.Object {
+    trait ProvideSyntax extends StObject {
       
       def constraint(bind: Bind, target: js.Any): js.Any = js.native
       @JSName("constraint")
@@ -90,7 +90,5 @@ object interfacesMod extends js.Object {
       
       def whenTargetTagged(tag: String, value: js.Any): ProvideOnSyntax[T] = js.native
     }
-    
-    type BindConstraint = js.Function2[/* bind */ Bind, /* target */ js.Any, js.Any]
   }
 }

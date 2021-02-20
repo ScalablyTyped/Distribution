@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceIdKindPlaylistId extends js.Object {
+trait ResourceIdKindPlaylistId extends StObject {
   
   /**
     * The resourceId object contains information that identifies the resource associated with a bulletin post.
@@ -21,21 +22,9 @@ object ResourceIdKindPlaylistId {
   }
   
   @scala.inline
-  implicit class ResourceIdKindPlaylistIdOps[Self <: ResourceIdKindPlaylistId] (val x: Self) extends AnyVal {
+  implicit class ResourceIdKindPlaylistIdMutableBuilder[Self <: ResourceIdKindPlaylistId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceId(value: KindPlaylistId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setResourceId(value: KindPlaylistId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
   }
 }

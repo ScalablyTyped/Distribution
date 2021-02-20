@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.inspection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait XPropertyControlFactory extends js.Object {
+trait XPropertyControlFactory extends StObject {
   
   /**
     * creates a {@link XPropertyControl}
@@ -31,21 +32,9 @@ object XPropertyControlFactory {
   }
   
   @scala.inline
-  implicit class XPropertyControlFactoryOps[Self <: XPropertyControlFactory] (val x: Self) extends AnyVal {
+  implicit class XPropertyControlFactoryMutableBuilder[Self <: XPropertyControlFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreatePropertyControl(value: (Double, Boolean) => XPropertyControl): Self = this.set("createPropertyControl", js.Any.fromFunction2(value))
+    def setCreatePropertyControl(value: (Double, Boolean) => XPropertyControl): Self = StObject.set(x, "createPropertyControl", js.Any.fromFunction2(value))
   }
 }

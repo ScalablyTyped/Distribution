@@ -1,5 +1,6 @@
 package typings.reactNativeElements.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object SearchBarAndroid {
   }
   
   @scala.inline
-  implicit class SearchBarAndroidOps[Self <: SearchBarAndroid] (val x: Self) extends AnyVal {
+  implicit class SearchBarAndroidMutableBuilder[Self <: SearchBarAndroid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelIcon(value: IconNode): Self = StObject.set(x, "cancelIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancelIcon(value: IconNode): Self = this.set("cancelIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancelIcon: Self = this.set("cancelIcon", js.undefined)
+    def setCancelIconUndefined: Self = StObject.set(x, "cancelIcon", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,36 +52,24 @@ object VariableSizeGridProps {
   }
   
   @scala.inline
-  implicit class VariableSizeGridPropsOps[Self <: VariableSizeGridProps] (val x: Self) extends AnyVal {
+  implicit class VariableSizeGridPropsMutableBuilder[Self <: VariableSizeGridProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnWidth(value: Double => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedColumnWidth(value: Double): Self = StObject.set(x, "estimatedColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEstimatedColumnWidthUndefined: Self = StObject.set(x, "estimatedColumnWidth", js.undefined)
     
     @scala.inline
-    def setColumnWidth(value: Double => Double): Self = this.set("columnWidth", js.Any.fromFunction1(value))
+    def setEstimatedRowHeight(value: Double): Self = StObject.set(x, "estimatedRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeight(value: Double => Double): Self = this.set("rowHeight", js.Any.fromFunction1(value))
+    def setEstimatedRowHeightUndefined: Self = StObject.set(x, "estimatedRowHeight", js.undefined)
     
     @scala.inline
-    def setEstimatedColumnWidth(value: Double): Self = this.set("estimatedColumnWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedColumnWidth: Self = this.set("estimatedColumnWidth", js.undefined)
-    
-    @scala.inline
-    def setEstimatedRowHeight(value: Double): Self = this.set("estimatedRowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedRowHeight: Self = this.set("estimatedRowHeight", js.undefined)
+    def setRowHeight(value: Double => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
   }
 }

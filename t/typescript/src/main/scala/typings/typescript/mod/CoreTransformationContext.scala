@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreTransformationContext extends js.Object {
+trait CoreTransformationContext extends StObject {
   
   /** Ends a lexical environment, returning any declarations. */
   def endLexicalEnvironment(): js.UndefOr[js.Array[Statement]] = js.native
@@ -48,42 +49,30 @@ object CoreTransformationContext {
   }
   
   @scala.inline
-  implicit class CoreTransformationContextOps[Self <: CoreTransformationContext] (val x: Self) extends AnyVal {
+  implicit class CoreTransformationContextMutableBuilder[Self <: CoreTransformationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndLexicalEnvironment(value: () => js.UndefOr[js.Array[Statement]]): Self = StObject.set(x, "endLexicalEnvironment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFactory(value: NodeFactory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndLexicalEnvironment(value: () => js.UndefOr[js.Array[Statement]]): Self = this.set("endLexicalEnvironment", js.Any.fromFunction0(value))
+    def setHoistFunctionDeclaration(value: FunctionDeclaration => Unit): Self = StObject.set(x, "hoistFunctionDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFactory(value: NodeFactory): Self = this.set("factory", value.asInstanceOf[js.Any])
+    def setHoistVariableDeclaration(value: Identifier => Unit): Self = StObject.set(x, "hoistVariableDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCompilerOptions(value: () => CompilerOptions): Self = this.set("getCompilerOptions", js.Any.fromFunction0(value))
+    def setResumeLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "resumeLexicalEnvironment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHoistFunctionDeclaration(value: FunctionDeclaration => Unit): Self = this.set("hoistFunctionDeclaration", js.Any.fromFunction1(value))
+    def setStartLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "startLexicalEnvironment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHoistVariableDeclaration(value: Identifier => Unit): Self = this.set("hoistVariableDeclaration", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResumeLexicalEnvironment(value: () => Unit): Self = this.set("resumeLexicalEnvironment", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartLexicalEnvironment(value: () => Unit): Self = this.set("startLexicalEnvironment", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSuspendLexicalEnvironment(value: () => Unit): Self = this.set("suspendLexicalEnvironment", js.Any.fromFunction0(value))
+    def setSuspendLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "suspendLexicalEnvironment", js.Any.fromFunction0(value))
   }
 }

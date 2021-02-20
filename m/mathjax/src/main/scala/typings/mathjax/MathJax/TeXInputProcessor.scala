@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeXInputProcessor extends js.Object {
+trait TeXInputProcessor extends StObject {
   
   /*Because a definition of the form \def\x{\x aaa} \x would loop infinitely, and at the same time stack up lots
     * of a’s in MathJax’s equation buffer, the MAXBUFFER constant is used to limit the size of the string being
@@ -59,69 +60,57 @@ object TeXInputProcessor {
   }
   
   @scala.inline
-  implicit class TeXInputProcessorOps[Self <: TeXInputProcessor] (val x: Self) extends AnyVal {
+  implicit class TeXInputProcessorMutableBuilder[Self <: TeXInputProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquationNumbers(value: EquationNumbers): Self = StObject.set(x, "equationNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquationNumbersUndefined: Self = StObject.set(x, "equationNumbers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAXBUFFER(value: Double): Self = this.set("MAXBUFFER", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteMAXBUFFER: Self = this.set("MAXBUFFER", js.undefined)
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setMAXMACROS(value: Double): Self = this.set("MAXMACROS", value.asInstanceOf[js.Any])
+    def setMAXBUFFER(value: Double): Self = StObject.set(x, "MAXBUFFER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMAXMACROS: Self = this.set("MAXMACROS", js.undefined)
+    def setMAXBUFFERUndefined: Self = StObject.set(x, "MAXBUFFER", js.undefined)
     
     @scala.inline
-    def setMacros(value: js.Any): Self = this.set("Macros", value.asInstanceOf[js.Any])
+    def setMAXMACROS(value: Double): Self = StObject.set(x, "MAXMACROS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMacros: Self = this.set("Macros", js.undefined)
+    def setMAXMACROSUndefined: Self = StObject.set(x, "MAXMACROS", js.undefined)
     
     @scala.inline
-    def setMultLineWidth(value: String): Self = this.set("MultLineWidth", value.asInstanceOf[js.Any])
+    def setMacros(value: js.Any): Self = StObject.set(x, "Macros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultLineWidth: Self = this.set("MultLineWidth", js.undefined)
+    def setMacrosUndefined: Self = StObject.set(x, "Macros", js.undefined)
     
     @scala.inline
-    def setTagIndent(value: String): Self = this.set("TagIndent", value.asInstanceOf[js.Any])
+    def setMultLineWidth(value: String): Self = StObject.set(x, "MultLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTagIndent: Self = this.set("TagIndent", js.undefined)
+    def setMultLineWidthUndefined: Self = StObject.set(x, "MultLineWidth", js.undefined)
     
     @scala.inline
-    def setTagSide(value: String): Self = this.set("TagSide", value.asInstanceOf[js.Any])
+    def setTagIndent(value: String): Self = StObject.set(x, "TagIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTagSide: Self = this.set("TagSide", js.undefined)
+    def setTagIndentUndefined: Self = StObject.set(x, "TagIndent", js.undefined)
     
     @scala.inline
-    def setEquationNumbers(value: EquationNumbers): Self = this.set("equationNumbers", value.asInstanceOf[js.Any])
+    def setTagSide(value: String): Self = StObject.set(x, "TagSide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEquationNumbers: Self = this.set("equationNumbers", js.undefined)
-    
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
-    
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setTagSideUndefined: Self = StObject.set(x, "TagSide", js.undefined)
   }
 }

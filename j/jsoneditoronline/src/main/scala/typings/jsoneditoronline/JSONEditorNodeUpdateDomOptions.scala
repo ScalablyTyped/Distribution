@@ -1,11 +1,12 @@
 package typings.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditorNodeUpdateDomOptions extends js.Object {
+trait JSONEditorNodeUpdateDomOptions extends StObject {
   
   var recurse: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object JSONEditorNodeUpdateDomOptions {
   }
   
   @scala.inline
-  implicit class JSONEditorNodeUpdateDomOptionsOps[Self <: JSONEditorNodeUpdateDomOptions] (val x: Self) extends AnyVal {
+  implicit class JSONEditorNodeUpdateDomOptionsMutableBuilder[Self <: JSONEditorNodeUpdateDomOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateIndexes(value: Boolean): Self = StObject.set(x, "updateIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurse(value: Boolean): Self = this.set("recurse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecurse: Self = this.set("recurse", js.undefined)
-    
-    @scala.inline
-    def setUpdateIndexes(value: Boolean): Self = this.set("updateIndexes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateIndexes: Self = this.set("updateIndexes", js.undefined)
+    def setUpdateIndexesUndefined: Self = StObject.set(x, "updateIndexes", js.undefined)
   }
 }

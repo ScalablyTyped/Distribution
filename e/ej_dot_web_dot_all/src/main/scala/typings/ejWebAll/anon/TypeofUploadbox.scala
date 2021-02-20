@@ -1,21 +1,35 @@
 package typings.ejWebAll.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Uploadbox
-import typings.ejWebAll.ej.Uploadbox.Model
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofUploadbox
-  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Uploadbox]
-     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Uploadbox] {
+trait TypeofUploadbox extends StObject {
   
+  /* static member */
   var Locale: js.Any = js.native
   
+  /* static member */
   var fn: Uploadbox = js.native
+}
+object TypeofUploadbox {
+  
+  @scala.inline
+  def apply(Locale: js.Any, fn: Uploadbox): TypeofUploadbox = {
+    val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofUploadbox]
+  }
+  
+  @scala.inline
+  implicit class TypeofUploadboxMutableBuilder[Self <: TypeofUploadbox] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFn(value: Uploadbox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+  }
 }

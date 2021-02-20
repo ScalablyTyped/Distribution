@@ -4,14 +4,14 @@ import typings.babylonjs.lightMod.Light
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/hemisphericLight", JSImport.Namespace)
-@js.native
-object hemisphericLightMod extends js.Object {
+object hemisphericLightMod {
   
+  @JSImport("babylonjs/Lights/hemisphericLight", "HemisphericLight")
   @js.native
   class HemisphericLight protected () extends Light {
     /**

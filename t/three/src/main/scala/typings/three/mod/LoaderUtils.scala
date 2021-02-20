@@ -1,6 +1,7 @@
 package typings.three.mod
 
 import typings.three.polyfillsMod.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LoaderUtils ()
   extends typings.three.loaderUtilsMod.LoaderUtils
 /* static members */
-@JSImport("three", "LoaderUtils")
-@js.native
-object LoaderUtils extends js.Object {
+object LoaderUtils {
   
+  @JSImport("three", "LoaderUtils.decodeText")
+  @js.native
   def decodeText(array: TypedArray): String = js.native
   
+  @JSImport("three", "LoaderUtils.extractUrlBase")
+  @js.native
   def extractUrlBase(url: String): String = js.native
 }

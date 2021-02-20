@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgLinearGaugeMethods extends js.Object {
+trait IgLinearGaugeMethods extends StObject {
   
   /**
     * Adds a new range to the linear gauge.
@@ -110,57 +111,45 @@ object IgLinearGaugeMethods {
   }
   
   @scala.inline
-  implicit class IgLinearGaugeMethodsOps[Self <: IgLinearGaugeMethods] (val x: Self) extends AnyVal {
+  implicit class IgLinearGaugeMethodsMutableBuilder[Self <: IgLinearGaugeMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRange(value: js.Object => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddRange(value: js.Object => Unit): Self = this.set("addRange", js.Any.fromFunction1(value))
+    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = this.set("changeGlobalLanguage", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = this.set("changeGlobalRegional", js.Any.fromFunction0(value))
+    def setExportVisualData(value: () => js.Object): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = this.set("changeLocale", js.Any.fromFunction1(value))
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetRangeNames(value: () => String): Self = StObject.set(x, "getRangeNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportVisualData(value: () => js.Object): Self = this.set("exportVisualData", js.Any.fromFunction0(value))
+    def setGetValueForPoint(value: (js.Object, js.Object) => Double): Self = StObject.set(x, "getValueForPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    def setNeedleContainsPoint(value: (Double, Double) => Boolean): Self = StObject.set(x, "needleContainsPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRangeNames(value: () => String): Self = this.set("getRangeNames", js.Any.fromFunction0(value))
+    def setRemoveRange(value: js.Object => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValueForPoint(value: (js.Object, js.Object) => Double): Self = this.set("getValueForPoint", js.Any.fromFunction2(value))
+    def setStyleUpdated(value: () => Unit): Self = StObject.set(x, "styleUpdated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNeedleContainsPoint(value: (Double, Double) => Boolean): Self = this.set("needleContainsPoint", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveRange(value: js.Object => Unit): Self = this.set("removeRange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStyleUpdated(value: () => Unit): Self = this.set("styleUpdated", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateRange(value: js.Object => Unit): Self = this.set("updateRange", js.Any.fromFunction1(value))
+    def setUpdateRange(value: js.Object => Unit): Self = StObject.set(x, "updateRange", js.Any.fromFunction1(value))
   }
 }

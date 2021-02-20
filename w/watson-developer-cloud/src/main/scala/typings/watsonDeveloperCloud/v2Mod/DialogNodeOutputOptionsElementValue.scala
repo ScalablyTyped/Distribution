@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object defining the message input to be sent to the assistant if the user selects the corresponding option. */
 @js.native
-trait DialogNodeOutputOptionsElementValue extends js.Object {
+trait DialogNodeOutputOptionsElementValue extends StObject {
   
   /** An input object that includes the input text. */
   var input: js.UndefOr[MessageInput] = js.native
@@ -20,24 +21,12 @@ object DialogNodeOutputOptionsElementValue {
   }
   
   @scala.inline
-  implicit class DialogNodeOutputOptionsElementValueOps[Self <: DialogNodeOutputOptionsElementValue] (val x: Self) extends AnyVal {
+  implicit class DialogNodeOutputOptionsElementValueMutableBuilder[Self <: DialogNodeOutputOptionsElementValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInput(value: MessageInput): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultUserSettingOperations extends js.Object {
+trait IVaultUserSettingOperations extends StObject {
   
   def ChangeVaultLanguage(Language: Double): Unit = js.native
   
@@ -32,33 +33,21 @@ object IVaultUserSettingOperations {
   }
   
   @scala.inline
-  implicit class IVaultUserSettingOperationsOps[Self <: IVaultUserSettingOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultUserSettingOperationsMutableBuilder[Self <: IVaultUserSettingOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeVaultLanguage(value: Double => Unit): Self = StObject.set(x, "ChangeVaultLanguage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSubstituteUsers(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "GetSubstituteUsers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetVaultLanguage(value: () => Double): Self = StObject.set(x, "GetVaultLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeVaultLanguage(value: Double => Unit): Self = this.set("ChangeVaultLanguage", js.Any.fromFunction1(value))
+    def setGetVaultLanguageCode(value: () => String): Self = StObject.set(x, "GetVaultLanguageCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubstituteUsers(value: () => IUserOrUserGroupIDs): Self = this.set("GetSubstituteUsers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVaultLanguage(value: () => Double): Self = this.set("GetVaultLanguage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVaultLanguageCode(value: () => String): Self = this.set("GetVaultLanguageCode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetSubstituteUsers(value: IUserOrUserGroupIDs => Unit): Self = this.set("SetSubstituteUsers", js.Any.fromFunction1(value))
+    def setSetSubstituteUsers(value: IUserOrUserGroupIDs => Unit): Self = StObject.set(x, "SetSubstituteUsers", js.Any.fromFunction1(value))
   }
 }

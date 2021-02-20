@@ -4,14 +4,14 @@ import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.observableMod.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/gradientBlock", JSImport.Namespace)
-@js.native
-object gradientBlockMod extends js.Object {
+object gradientBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/gradientBlock", "GradientBlock")
   @js.native
   class GradientBlock protected () extends NodeMaterialBlock {
     /**
@@ -44,8 +44,9 @@ object gradientBlockMod extends js.Object {
     def output: NodeMaterialConnectionPoint = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/gradientBlock", "GradientBlockColorStep")
   @js.native
-  class GradientBlockColorStep protected () extends js.Object {
+  class GradientBlockColorStep protected () extends StObject {
     /**
       * Creates a new GradientBlockColorStep
       * @param step defines a value indicating which step this color is associated with (between 0 and 1)

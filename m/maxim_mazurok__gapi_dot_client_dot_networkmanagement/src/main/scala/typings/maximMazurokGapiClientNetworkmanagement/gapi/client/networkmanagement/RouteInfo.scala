@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteInfo extends js.Object {
+trait RouteInfo extends StObject {
   
   /** Destination IP range of the route. */
   var destIpRange: js.UndefOr[String] = js.native
@@ -43,75 +44,63 @@ object RouteInfo {
   }
   
   @scala.inline
-  implicit class RouteInfoOps[Self <: RouteInfo] (val x: Self) extends AnyVal {
+  implicit class RouteInfoMutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestIpRange(value: String): Self = StObject.set(x, "destIpRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestIpRangeUndefined: Self = StObject.set(x, "destIpRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestIpRange(value: String): Self = this.set("destIpRange", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDestIpRange: Self = this.set("destIpRange", js.undefined)
+    def setInstanceTags(value: js.Array[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInstanceTagsUndefined: Self = StObject.set(x, "instanceTags", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInstanceTagsVarargs(value: String*): Self = StObject.set(x, "instanceTags", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceTagsVarargs(value: String*): Self = this.set("instanceTags", js.Array(value :_*))
+    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTags(value: js.Array[String]): Self = this.set("instanceTags", value.asInstanceOf[js.Any])
+    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
     @scala.inline
-    def deleteInstanceTags: Self = this.set("instanceTags", js.undefined)
+    def setNextHop(value: String): Self = StObject.set(x, "nextHop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkUri(value: String): Self = this.set("networkUri", value.asInstanceOf[js.Any])
+    def setNextHopType(value: String): Self = StObject.set(x, "nextHopType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkUri: Self = this.set("networkUri", js.undefined)
+    def setNextHopTypeUndefined: Self = StObject.set(x, "nextHopType", js.undefined)
     
     @scala.inline
-    def setNextHop(value: String): Self = this.set("nextHop", value.asInstanceOf[js.Any])
+    def setNextHopUndefined: Self = StObject.set(x, "nextHop", js.undefined)
     
     @scala.inline
-    def deleteNextHop: Self = this.set("nextHop", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextHopType(value: String): Self = this.set("nextHopType", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteNextHopType: Self = this.set("nextHopType", js.undefined)
+    def setRouteType(value: String): Self = StObject.set(x, "routeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setRouteTypeUndefined: Self = StObject.set(x, "routeType", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteType(value: String): Self = this.set("routeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteType: Self = this.set("routeType", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

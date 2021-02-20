@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListLabelingJobsForWorkteamResponse extends js.Object {
+trait ListLabelingJobsForWorkteamResponse extends StObject {
   
   /**
     * An array of LabelingJobSummary objects, each describing a labeling job.
@@ -26,30 +27,18 @@ object ListLabelingJobsForWorkteamResponse {
   }
   
   @scala.inline
-  implicit class ListLabelingJobsForWorkteamResponseOps[Self <: ListLabelingJobsForWorkteamResponse] (val x: Self) extends AnyVal {
+  implicit class ListLabelingJobsForWorkteamResponseMutableBuilder[Self <: ListLabelingJobsForWorkteamResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelingJobSummaryList(value: LabelingJobForWorkteamSummaryList): Self = StObject.set(x, "LabelingJobSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelingJobSummaryListVarargs(value: LabelingJobForWorkteamSummary*): Self = StObject.set(x, "LabelingJobSummaryList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobSummaryListVarargs(value: LabelingJobForWorkteamSummary*): Self = this.set("LabelingJobSummaryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setLabelingJobSummaryList(value: LabelingJobForWorkteamSummaryList): Self = this.set("LabelingJobSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/subscriber/BroadcasterResult", JSImport.Namespace)
-@js.native
-object subscriberBroadcasterResultMod extends js.Object {
+object subscriberBroadcasterResultMod {
   
+  @JSImport("typeorm/subscriber/BroadcasterResult", "BroadcasterResult")
   @js.native
-  class BroadcasterResult () extends js.Object {
+  class BroadcasterResult () extends StObject {
     
     /**
       * Number of executed listeners and subscribers.

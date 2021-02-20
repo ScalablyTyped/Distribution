@@ -1,11 +1,12 @@
 package typings.escpos.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LENOFFSET extends js.Object {
+trait LENOFFSET extends StObject {
   
   var LEN_OFFSET: typings.escpos.escposNumbers.`3` = js.native
   
@@ -35,36 +36,24 @@ object LENOFFSET {
   }
   
   @scala.inline
-  implicit class LENOFFSETOps[Self <: LENOFFSET] (val x: Self) extends AnyVal {
+  implicit class LENOFFSETMutableBuilder[Self <: LENOFFSET] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLEN_OFFSET(value: typings.escpos.escposNumbers.`3`): Self = StObject.set(x, "LEN_OFFSET", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLEVEL(value: OPTIONS): Self = StObject.set(x, "LEVEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPIXEL_SIZE(value: CMD): Self = StObject.set(x, "PIXEL_SIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLEN_OFFSET(value: typings.escpos.escposNumbers.`3`): Self = this.set("LEN_OFFSET", value.asInstanceOf[js.Any])
+    def setPRINTBUF(value: CMDP2): Self = StObject.set(x, "PRINTBUF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLEVEL(value: OPTIONS): Self = this.set("LEVEL", value.asInstanceOf[js.Any])
+    def setSAVEBUF(value: CMDP1): Self = StObject.set(x, "SAVEBUF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPIXEL_SIZE(value: CMD): Self = this.set("PIXEL_SIZE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPRINTBUF(value: CMDP2): Self = this.set("PRINTBUF", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSAVEBUF(value: CMDP1): Self = this.set("SAVEBUF", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVERSION(value: DEFAULT): Self = this.set("VERSION", value.asInstanceOf[js.Any])
+    def setVERSION(value: DEFAULT): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
   }
 }

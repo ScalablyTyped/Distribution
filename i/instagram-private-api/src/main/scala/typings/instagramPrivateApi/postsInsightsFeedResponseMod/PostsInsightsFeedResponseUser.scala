@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.postsInsightsFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostsInsightsFeedResponseUser extends js.Object {
+trait PostsInsightsFeedResponseUser extends StObject {
   
   var business_manager: PostsInsightsFeedResponseBusinessManager = js.native
   
@@ -20,24 +21,12 @@ object PostsInsightsFeedResponseUser {
   }
   
   @scala.inline
-  implicit class PostsInsightsFeedResponseUserOps[Self <: PostsInsightsFeedResponseUser] (val x: Self) extends AnyVal {
+  implicit class PostsInsightsFeedResponseUserMutableBuilder[Self <: PostsInsightsFeedResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusiness_manager(value: PostsInsightsFeedResponseBusinessManager): Self = StObject.set(x, "business_manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBusiness_manager(value: PostsInsightsFeedResponseBusinessManager): Self = this.set("business_manager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

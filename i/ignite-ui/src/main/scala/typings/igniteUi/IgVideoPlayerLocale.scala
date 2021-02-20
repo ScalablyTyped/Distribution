@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,132 +136,120 @@ object IgVideoPlayerLocale {
   }
   
   @scala.inline
-  implicit class IgVideoPlayerLocaleOps[Self <: IgVideoPlayerLocale] (val x: Self) extends AnyVal {
+  implicit class IgVideoPlayerLocaleMutableBuilder[Self <: IgVideoPlayerLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdMessage(value: Boolean): Self = StObject.set(x, "adMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdMessageLong(value: Boolean): Self = StObject.set(x, "adMessageLong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdMessageLongUndefined: Self = StObject.set(x, "adMessageLong", js.undefined)
     
     @scala.inline
-    def setAdMessage(value: Boolean): Self = this.set("adMessage", value.asInstanceOf[js.Any])
+    def setAdMessageNoDuration(value: Boolean): Self = StObject.set(x, "adMessageNoDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdMessage: Self = this.set("adMessage", js.undefined)
+    def setAdMessageNoDurationUndefined: Self = StObject.set(x, "adMessageNoDuration", js.undefined)
     
     @scala.inline
-    def setAdMessageLong(value: Boolean): Self = this.set("adMessageLong", value.asInstanceOf[js.Any])
+    def setAdMessageUndefined: Self = StObject.set(x, "adMessage", js.undefined)
     
     @scala.inline
-    def deleteAdMessageLong: Self = this.set("adMessageLong", js.undefined)
+    def setAdNewWindowTip(value: Boolean): Self = StObject.set(x, "adNewWindowTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdMessageNoDuration(value: Boolean): Self = this.set("adMessageNoDuration", value.asInstanceOf[js.Any])
+    def setAdNewWindowTipUndefined: Self = StObject.set(x, "adNewWindowTip", js.undefined)
     
     @scala.inline
-    def deleteAdMessageNoDuration: Self = this.set("adMessageNoDuration", js.undefined)
+    def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdNewWindowTip(value: Boolean): Self = this.set("adNewWindowTip", value.asInstanceOf[js.Any])
+    def setBufferingUndefined: Self = StObject.set(x, "buffering", js.undefined)
     
     @scala.inline
-    def deleteAdNewWindowTip: Self = this.set("adNewWindowTip", js.undefined)
+    def setEnterFullscreen(value: Boolean): Self = StObject.set(x, "enterFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffering(value: Boolean): Self = this.set("buffering", value.asInstanceOf[js.Any])
+    def setEnterFullscreenUndefined: Self = StObject.set(x, "enterFullscreen", js.undefined)
     
     @scala.inline
-    def deleteBuffering: Self = this.set("buffering", js.undefined)
+    def setExitFullscreen(value: Boolean): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterFullscreen(value: Boolean): Self = this.set("enterFullscreen", value.asInstanceOf[js.Any])
+    def setExitFullscreenUndefined: Self = StObject.set(x, "exitFullscreen", js.undefined)
     
     @scala.inline
-    def deleteEnterFullscreen: Self = this.set("enterFullscreen", js.undefined)
+    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitFullscreen(value: Boolean): Self = this.set("exitFullscreen", value.asInstanceOf[js.Any])
+    def setLiveStream(value: Boolean): Self = StObject.set(x, "liveStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExitFullscreen: Self = this.set("exitFullscreen", js.undefined)
+    def setLiveStreamUndefined: Self = StObject.set(x, "liveStream", js.undefined)
     
     @scala.inline
-    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
     
     @scala.inline
-    def deleteLive: Self = this.set("live", js.undefined)
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveStream(value: Boolean): Self = this.set("liveStream", value.asInstanceOf[js.Any])
+    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
     @scala.inline
-    def deleteLiveStream: Self = this.set("liveStream", js.undefined)
+    def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def deletePaused: Self = this.set("paused", js.undefined)
+    def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: Boolean): Self = this.set("play", value.asInstanceOf[js.Any])
+    def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
     
     @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setProgressLabelLongFormat(value: Boolean): Self = StObject.set(x, "progressLabelLongFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaying(value: Boolean): Self = this.set("playing", value.asInstanceOf[js.Any])
+    def setProgressLabelLongFormatUndefined: Self = StObject.set(x, "progressLabelLongFormat", js.undefined)
     
     @scala.inline
-    def deletePlaying: Self = this.set("playing", js.undefined)
+    def setProgressLabelShortFormat(value: Boolean): Self = StObject.set(x, "progressLabelShortFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressLabelLongFormat(value: Boolean): Self = this.set("progressLabelLongFormat", value.asInstanceOf[js.Any])
+    def setProgressLabelShortFormatUndefined: Self = StObject.set(x, "progressLabelShortFormat", js.undefined)
     
     @scala.inline
-    def deleteProgressLabelLongFormat: Self = this.set("progressLabelLongFormat", js.undefined)
+    def setRelatedVideos(value: Boolean): Self = StObject.set(x, "relatedVideos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressLabelShortFormat(value: Boolean): Self = this.set("progressLabelShortFormat", value.asInstanceOf[js.Any])
+    def setRelatedVideosUndefined: Self = StObject.set(x, "relatedVideos", js.undefined)
     
     @scala.inline
-    def deleteProgressLabelShortFormat: Self = this.set("progressLabelShortFormat", js.undefined)
+    def setReplayButton(value: Boolean): Self = StObject.set(x, "replayButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedVideos(value: Boolean): Self = this.set("relatedVideos", value.asInstanceOf[js.Any])
+    def setReplayButtonUndefined: Self = StObject.set(x, "replayButton", js.undefined)
     
     @scala.inline
-    def deleteRelatedVideos: Self = this.set("relatedVideos", js.undefined)
+    def setReplayTooltip(value: Boolean): Self = StObject.set(x, "replayTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplayButton(value: Boolean): Self = this.set("replayButton", value.asInstanceOf[js.Any])
+    def setReplayTooltipUndefined: Self = StObject.set(x, "replayTooltip", js.undefined)
     
     @scala.inline
-    def deleteReplayButton: Self = this.set("replayButton", js.undefined)
+    def setSkipTo(value: Boolean): Self = StObject.set(x, "skipTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplayTooltip(value: Boolean): Self = this.set("replayTooltip", value.asInstanceOf[js.Any])
+    def setSkipToUndefined: Self = StObject.set(x, "skipTo", js.undefined)
     
     @scala.inline
-    def deleteReplayTooltip: Self = this.set("replayTooltip", js.undefined)
+    def setVolume(value: Boolean): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipTo(value: Boolean): Self = this.set("skipTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipTo: Self = this.set("skipTo", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Boolean): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

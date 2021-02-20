@@ -6,21 +6,24 @@ import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
 import typings.awsSdkTypes.utilMod.Provider
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/types/dist/cjs/serde", JSImport.Namespace)
-@js.native
-object serdeMod extends js.Object {
+object serdeMod {
   
   @js.native
-  trait EndpointBearer extends js.Object {
+  trait EndpointBearer extends StObject {
     
     def endpoint(): js.Promise[Endpoint] = js.native
     @JSName("endpoint")
     var endpoint_Original: Provider[Endpoint] = js.native
   }
+  
+  type RequestSerializer[Request, Context /* <: EndpointBearer */] = js.Function2[/* input */ js.Any, /* context */ Context, js.Promise[Request]]
+  
+  type ResponseDeserializer[OutputType, ResponseType, Context] = js.Function2[/* output */ ResponseType, /* context */ Context, js.Promise[OutputType]]
   
   @js.native
   trait SerdeContext extends EndpointBearer {
@@ -49,10 +52,6 @@ object serdeMod extends js.Object {
     @JSName("utf8Encoder")
     var utf8Encoder_Original: Encoder = js.native
   }
-  
-  type RequestSerializer[Request, Context /* <: EndpointBearer */] = js.Function2[/* input */ js.Any, /* context */ Context, js.Promise[Request]]
-  
-  type ResponseDeserializer[OutputType, ResponseType, Context] = js.Function2[/* output */ ResponseType, /* context */ Context, js.Promise[OutputType]]
   
   type StreamCollector = js.Function1[/* stream */ js.Any, js.Promise[Uint8Array]]
 }

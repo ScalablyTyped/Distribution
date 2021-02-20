@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1AnnotationValue extends js.Object {
+trait GoogleCloudDatalabelingV1beta1AnnotationValue extends StObject {
   
   /** Annotation value for image bounding box, oriented bounding box and polygon cases. */
   var imageBoundingPolyAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation] = js.native
@@ -46,72 +47,60 @@ object GoogleCloudDatalabelingV1beta1AnnotationValue {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AnnotationValueOps[Self <: GoogleCloudDatalabelingV1beta1AnnotationValue] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1AnnotationValueMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageBoundingPolyAnnotation(value: GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation): Self = StObject.set(x, "imageBoundingPolyAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageBoundingPolyAnnotationUndefined: Self = StObject.set(x, "imageBoundingPolyAnnotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageClassificationAnnotation(value: GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation): Self = StObject.set(x, "imageClassificationAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageBoundingPolyAnnotation(value: GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation): Self = this.set("imageBoundingPolyAnnotation", value.asInstanceOf[js.Any])
+    def setImageClassificationAnnotationUndefined: Self = StObject.set(x, "imageClassificationAnnotation", js.undefined)
     
     @scala.inline
-    def deleteImageBoundingPolyAnnotation: Self = this.set("imageBoundingPolyAnnotation", js.undefined)
+    def setImagePolylineAnnotation(value: GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation): Self = StObject.set(x, "imagePolylineAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageClassificationAnnotation(value: GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation): Self = this.set("imageClassificationAnnotation", value.asInstanceOf[js.Any])
+    def setImagePolylineAnnotationUndefined: Self = StObject.set(x, "imagePolylineAnnotation", js.undefined)
     
     @scala.inline
-    def deleteImageClassificationAnnotation: Self = this.set("imageClassificationAnnotation", js.undefined)
+    def setImageSegmentationAnnotation(value: GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation): Self = StObject.set(x, "imageSegmentationAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePolylineAnnotation(value: GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation): Self = this.set("imagePolylineAnnotation", value.asInstanceOf[js.Any])
+    def setImageSegmentationAnnotationUndefined: Self = StObject.set(x, "imageSegmentationAnnotation", js.undefined)
     
     @scala.inline
-    def deleteImagePolylineAnnotation: Self = this.set("imagePolylineAnnotation", js.undefined)
+    def setTextClassificationAnnotation(value: GoogleCloudDatalabelingV1beta1TextClassificationAnnotation): Self = StObject.set(x, "textClassificationAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSegmentationAnnotation(value: GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation): Self = this.set("imageSegmentationAnnotation", value.asInstanceOf[js.Any])
+    def setTextClassificationAnnotationUndefined: Self = StObject.set(x, "textClassificationAnnotation", js.undefined)
     
     @scala.inline
-    def deleteImageSegmentationAnnotation: Self = this.set("imageSegmentationAnnotation", js.undefined)
+    def setTextEntityExtractionAnnotation(value: GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation): Self = StObject.set(x, "textEntityExtractionAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextClassificationAnnotation(value: GoogleCloudDatalabelingV1beta1TextClassificationAnnotation): Self = this.set("textClassificationAnnotation", value.asInstanceOf[js.Any])
+    def setTextEntityExtractionAnnotationUndefined: Self = StObject.set(x, "textEntityExtractionAnnotation", js.undefined)
     
     @scala.inline
-    def deleteTextClassificationAnnotation: Self = this.set("textClassificationAnnotation", js.undefined)
+    def setVideoClassificationAnnotation(value: GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation): Self = StObject.set(x, "videoClassificationAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEntityExtractionAnnotation(value: GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation): Self = this.set("textEntityExtractionAnnotation", value.asInstanceOf[js.Any])
+    def setVideoClassificationAnnotationUndefined: Self = StObject.set(x, "videoClassificationAnnotation", js.undefined)
     
     @scala.inline
-    def deleteTextEntityExtractionAnnotation: Self = this.set("textEntityExtractionAnnotation", js.undefined)
+    def setVideoEventAnnotation(value: GoogleCloudDatalabelingV1beta1VideoEventAnnotation): Self = StObject.set(x, "videoEventAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoClassificationAnnotation(value: GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation): Self = this.set("videoClassificationAnnotation", value.asInstanceOf[js.Any])
+    def setVideoEventAnnotationUndefined: Self = StObject.set(x, "videoEventAnnotation", js.undefined)
     
     @scala.inline
-    def deleteVideoClassificationAnnotation: Self = this.set("videoClassificationAnnotation", js.undefined)
+    def setVideoObjectTrackingAnnotation(value: GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation): Self = StObject.set(x, "videoObjectTrackingAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoEventAnnotation(value: GoogleCloudDatalabelingV1beta1VideoEventAnnotation): Self = this.set("videoEventAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoEventAnnotation: Self = this.set("videoEventAnnotation", js.undefined)
-    
-    @scala.inline
-    def setVideoObjectTrackingAnnotation(value: GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation): Self = this.set("videoObjectTrackingAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoObjectTrackingAnnotation: Self = this.set("videoObjectTrackingAnnotation", js.undefined)
+    def setVideoObjectTrackingAnnotationUndefined: Self = StObject.set(x, "videoObjectTrackingAnnotation", js.undefined)
   }
 }

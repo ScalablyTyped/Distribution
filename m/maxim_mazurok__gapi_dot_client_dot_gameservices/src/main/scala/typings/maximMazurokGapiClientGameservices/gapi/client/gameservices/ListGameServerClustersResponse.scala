@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGameServerClustersResponse extends js.Object {
+trait ListGameServerClustersResponse extends StObject {
   
   /** The list of game server clusters. */
   var gameServerClusters: js.UndefOr[js.Array[GameServerCluster]] = js.native
@@ -25,42 +26,30 @@ object ListGameServerClustersResponse {
   }
   
   @scala.inline
-  implicit class ListGameServerClustersResponseOps[Self <: ListGameServerClustersResponse] (val x: Self) extends AnyVal {
+  implicit class ListGameServerClustersResponseMutableBuilder[Self <: ListGameServerClustersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameServerClusters(value: js.Array[GameServerCluster]): Self = StObject.set(x, "gameServerClusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameServerClustersUndefined: Self = StObject.set(x, "gameServerClusters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGameServerClustersVarargs(value: GameServerCluster*): Self = StObject.set(x, "gameServerClusters", js.Array(value :_*))
     
     @scala.inline
-    def setGameServerClustersVarargs(value: GameServerCluster*): Self = this.set("gameServerClusters", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerClusters(value: js.Array[GameServerCluster]): Self = this.set("gameServerClusters", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteGameServerClusters: Self = this.set("gameServerClusters", js.undefined)
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

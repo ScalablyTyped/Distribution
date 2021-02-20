@@ -1,11 +1,12 @@
 package typings.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonsGlobalApi extends js.Object {
+trait ButtonsGlobalApi extends StObject {
   
   def apply(): ButtonsApi = js.native
   def apply(groupSelector: js.UndefOr[scala.Nothing], buttonSelector: js.Any): ButtonsApi = js.native

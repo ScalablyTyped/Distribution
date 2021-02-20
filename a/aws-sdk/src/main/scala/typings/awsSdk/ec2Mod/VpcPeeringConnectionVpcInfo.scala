@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpcPeeringConnectionVpcInfo extends js.Object {
+trait VpcPeeringConnectionVpcInfo extends StObject {
   
   /**
     * The IPv4 CIDR block for the VPC.
@@ -51,66 +52,54 @@ object VpcPeeringConnectionVpcInfo {
   }
   
   @scala.inline
-  implicit class VpcPeeringConnectionVpcInfoOps[Self <: VpcPeeringConnectionVpcInfo] (val x: Self) extends AnyVal {
+  implicit class VpcPeeringConnectionVpcInfoMutableBuilder[Self <: VpcPeeringConnectionVpcInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrBlockSet(value: CidrBlockSet): Self = StObject.set(x, "CidrBlockSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrBlockSetUndefined: Self = StObject.set(x, "CidrBlockSet", js.undefined)
     
     @scala.inline
-    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    def setCidrBlockSetVarargs(value: CidrBlock*): Self = StObject.set(x, "CidrBlockSet", js.Array(value :_*))
     
     @scala.inline
-    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
     @scala.inline
-    def setCidrBlockSetVarargs(value: CidrBlock*): Self = this.set("CidrBlockSet", js.Array(value :_*))
+    def setIpv6CidrBlockSet(value: Ipv6CidrBlockSet): Self = StObject.set(x, "Ipv6CidrBlockSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlockSet(value: CidrBlockSet): Self = this.set("CidrBlockSet", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlockSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockSet", js.undefined)
     
     @scala.inline
-    def deleteCidrBlockSet: Self = this.set("CidrBlockSet", js.undefined)
+    def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = StObject.set(x, "Ipv6CidrBlockSet", js.Array(value :_*))
     
     @scala.inline
-    def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = this.set("Ipv6CidrBlockSet", js.Array(value :_*))
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6CidrBlockSet(value: Ipv6CidrBlockSet): Self = this.set("Ipv6CidrBlockSet", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteIpv6CidrBlockSet: Self = this.set("Ipv6CidrBlockSet", js.undefined)
+    def setPeeringOptions(value: VpcPeeringConnectionOptionsDescription): Self = StObject.set(x, "PeeringOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setPeeringOptionsUndefined: Self = StObject.set(x, "PeeringOptions", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeeringOptions(value: VpcPeeringConnectionOptionsDescription): Self = this.set("PeeringOptions", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deletePeeringOptions: Self = this.set("PeeringOptions", js.undefined)
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

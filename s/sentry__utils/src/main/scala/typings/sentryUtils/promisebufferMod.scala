@@ -1,15 +1,15 @@
 package typings.sentryUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/utils/dist/promisebuffer", JSImport.Namespace)
-@js.native
-object promisebufferMod extends js.Object {
+object promisebufferMod {
   
+  @JSImport("@sentry/utils/dist/promisebuffer", "PromiseBuffer")
   @js.native
-  class PromiseBuffer[T] () extends js.Object {
+  class PromiseBuffer[T] () extends StObject {
     def this(_limit: Double) = this()
     
     /** Internal set of queued Promises */

@@ -1,6 +1,7 @@
 package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,48 +32,36 @@ object Client {
   }
   
   @scala.inline
-  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessTokenLifetime(value: Double): Self = StObject.set(x, "accessTokenLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenLifetimeUndefined: Self = StObject.set(x, "accessTokenLifetime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrants(value: String | js.Array[String]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantsVarargs(value: String*): Self = this.set("grants", js.Array(value :_*))
+    def setGrantsVarargs(value: String*): Self = StObject.set(x, "grants", js.Array(value :_*))
     
     @scala.inline
-    def setGrants(value: String | js.Array[String]): Self = this.set("grants", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRedirectUris(value: String | js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessTokenLifetime(value: Double): Self = this.set("accessTokenLifetime", value.asInstanceOf[js.Any])
+    def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
     @scala.inline
-    def deleteAccessTokenLifetime: Self = this.set("accessTokenLifetime", js.undefined)
+    def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
     
     @scala.inline
-    def setRedirectUrisVarargs(value: String*): Self = this.set("redirectUris", js.Array(value :_*))
+    def setRefreshTokenLifetime(value: Double): Self = StObject.set(x, "refreshTokenLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectUris(value: String | js.Array[String]): Self = this.set("redirectUris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectUris: Self = this.set("redirectUris", js.undefined)
-    
-    @scala.inline
-    def setRefreshTokenLifetime(value: Double): Self = this.set("refreshTokenLifetime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshTokenLifetime: Self = this.set("refreshTokenLifetime", js.undefined)
+    def setRefreshTokenLifetimeUndefined: Self = StObject.set(x, "refreshTokenLifetime", js.undefined)
   }
 }

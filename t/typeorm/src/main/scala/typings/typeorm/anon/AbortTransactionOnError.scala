@@ -5,12 +5,13 @@ import typings.typeorm.typeormStrings.READ_UNCOMMITTED
 import typings.typeorm.typeormStrings.REPEATABLE_READ
 import typings.typeorm.typeormStrings.SERIALIZABLE
 import typings.typeorm.typeormStrings.SNAPSHOT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbortTransactionOnError extends js.Object {
+trait AbortTransactionOnError extends StObject {
   
   /**
     * A boolean determining whether to rollback a transaction automatically if any error is encountered during
@@ -141,144 +142,132 @@ object AbortTransactionOnError {
   }
   
   @scala.inline
-  implicit class AbortTransactionOnErrorOps[Self <: AbortTransactionOnError] (val x: Self) extends AnyVal {
+  implicit class AbortTransactionOnErrorMutableBuilder[Self <: AbortTransactionOnError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortTransactionOnError(value: Boolean): Self = StObject.set(x, "abortTransactionOnError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortTransactionOnErrorUndefined: Self = StObject.set(x, "abortTransactionOnError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCamelCaseColumns(value: Boolean): Self = StObject.set(x, "camelCaseColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortTransactionOnError(value: Boolean): Self = this.set("abortTransactionOnError", value.asInstanceOf[js.Any])
+    def setCamelCaseColumnsUndefined: Self = StObject.set(x, "camelCaseColumns", js.undefined)
     
     @scala.inline
-    def deleteAbortTransactionOnError: Self = this.set("abortTransactionOnError", js.undefined)
+    def setCancelTimeout(value: Double): Self = StObject.set(x, "cancelTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamelCaseColumns(value: Boolean): Self = this.set("camelCaseColumns", value.asInstanceOf[js.Any])
+    def setCancelTimeoutUndefined: Self = StObject.set(x, "cancelTimeout", js.undefined)
     
     @scala.inline
-    def deleteCamelCaseColumns: Self = this.set("camelCaseColumns", js.undefined)
+    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTimeout(value: Double): Self = this.set("cancelTimeout", value.asInstanceOf[js.Any])
+    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
     @scala.inline
-    def deleteCancelTimeout: Self = this.set("cancelTimeout", js.undefined)
+    def setConnectionIsolationLevel(value: READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT): Self = StObject.set(x, "connectionIsolationLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    def setConnectionIsolationLevelUndefined: Self = StObject.set(x, "connectionIsolationLevel", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    def setCryptoCredentialsDetails(value: js.Any): Self = StObject.set(x, "cryptoCredentialsDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionIsolationLevel(value: READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT): Self = this.set("connectionIsolationLevel", value.asInstanceOf[js.Any])
+    def setCryptoCredentialsDetailsUndefined: Self = StObject.set(x, "cryptoCredentialsDetails", js.undefined)
     
     @scala.inline
-    def deleteConnectionIsolationLevel: Self = this.set("connectionIsolationLevel", js.undefined)
+    def setDebug(value: Data): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoCredentialsDetails(value: js.Any): Self = this.set("cryptoCredentialsDetails", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCryptoCredentialsDetails: Self = this.set("cryptoCredentialsDetails", js.undefined)
+    def setDisableOutputReturning(value: Boolean): Self = StObject.set(x, "disableOutputReturning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Data): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDisableOutputReturningUndefined: Self = StObject.set(x, "disableOutputReturning", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setEnableAnsiNullDefault(value: Boolean): Self = StObject.set(x, "enableAnsiNullDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableOutputReturning(value: Boolean): Self = this.set("disableOutputReturning", value.asInstanceOf[js.Any])
+    def setEnableAnsiNullDefaultUndefined: Self = StObject.set(x, "enableAnsiNullDefault", js.undefined)
     
     @scala.inline
-    def deleteDisableOutputReturning: Self = this.set("disableOutputReturning", js.undefined)
+    def setEnableArithAbort(value: Boolean): Self = StObject.set(x, "enableArithAbort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAnsiNullDefault(value: Boolean): Self = this.set("enableAnsiNullDefault", value.asInstanceOf[js.Any])
+    def setEnableArithAbortUndefined: Self = StObject.set(x, "enableArithAbort", js.undefined)
     
     @scala.inline
-    def deleteEnableAnsiNullDefault: Self = this.set("enableAnsiNullDefault", js.undefined)
+    def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableArithAbort(value: Boolean): Self = this.set("enableArithAbort", value.asInstanceOf[js.Any])
+    def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
     
     @scala.inline
-    def deleteEnableArithAbort: Self = this.set("enableArithAbort", js.undefined)
+    def setFallbackToDefaultDb(value: Boolean): Self = StObject.set(x, "fallbackToDefaultDb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypt(value: Boolean): Self = this.set("encrypt", value.asInstanceOf[js.Any])
+    def setFallbackToDefaultDbUndefined: Self = StObject.set(x, "fallbackToDefaultDb", js.undefined)
     
     @scala.inline
-    def deleteEncrypt: Self = this.set("encrypt", js.undefined)
+    def setIsolation(value: READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackToDefaultDb(value: Boolean): Self = this.set("fallbackToDefaultDb", value.asInstanceOf[js.Any])
+    def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
     
     @scala.inline
-    def deleteFallbackToDefaultDb: Self = this.set("fallbackToDefaultDb", js.undefined)
+    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsolation(value: READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT): Self = this.set("isolation", value.asInstanceOf[js.Any])
+    def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
     @scala.inline
-    def deleteIsolation: Self = this.set("isolation", js.undefined)
+    def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setPacketSizeUndefined: Self = StObject.set(x, "packetSize", js.undefined)
     
     @scala.inline
-    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    def setReadOnlyIntent(value: Boolean): Self = StObject.set(x, "readOnlyIntent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketSize(value: Double): Self = this.set("packetSize", value.asInstanceOf[js.Any])
+    def setReadOnlyIntentUndefined: Self = StObject.set(x, "readOnlyIntent", js.undefined)
     
     @scala.inline
-    def deletePacketSize: Self = this.set("packetSize", js.undefined)
+    def setRowCollectionOnDone(value: Boolean): Self = StObject.set(x, "rowCollectionOnDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnlyIntent(value: Boolean): Self = this.set("readOnlyIntent", value.asInstanceOf[js.Any])
+    def setRowCollectionOnDoneUndefined: Self = StObject.set(x, "rowCollectionOnDone", js.undefined)
     
     @scala.inline
-    def deleteReadOnlyIntent: Self = this.set("readOnlyIntent", js.undefined)
+    def setRowCollectionOnRequestCompletion(value: Boolean): Self = StObject.set(x, "rowCollectionOnRequestCompletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCollectionOnDone(value: Boolean): Self = this.set("rowCollectionOnDone", value.asInstanceOf[js.Any])
+    def setRowCollectionOnRequestCompletionUndefined: Self = StObject.set(x, "rowCollectionOnRequestCompletion", js.undefined)
     
     @scala.inline
-    def deleteRowCollectionOnDone: Self = this.set("rowCollectionOnDone", js.undefined)
+    def setTdsVersion(value: String): Self = StObject.set(x, "tdsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCollectionOnRequestCompletion(value: Boolean): Self = this.set("rowCollectionOnRequestCompletion", value.asInstanceOf[js.Any])
+    def setTdsVersionUndefined: Self = StObject.set(x, "tdsVersion", js.undefined)
     
     @scala.inline
-    def deleteRowCollectionOnRequestCompletion: Self = this.set("rowCollectionOnRequestCompletion", js.undefined)
+    def setUseColumnNames(value: Boolean): Self = StObject.set(x, "useColumnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTdsVersion(value: String): Self = this.set("tdsVersion", value.asInstanceOf[js.Any])
+    def setUseColumnNamesUndefined: Self = StObject.set(x, "useColumnNames", js.undefined)
     
     @scala.inline
-    def deleteTdsVersion: Self = this.set("tdsVersion", js.undefined)
+    def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseColumnNames(value: Boolean): Self = this.set("useColumnNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseColumnNames: Self = this.set("useColumnNames", js.undefined)
-    
-    @scala.inline
-    def setUseUTC(value: Boolean): Self = this.set("useUTC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUTC: Self = this.set("useUTC", js.undefined)
+    def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
   }
 }

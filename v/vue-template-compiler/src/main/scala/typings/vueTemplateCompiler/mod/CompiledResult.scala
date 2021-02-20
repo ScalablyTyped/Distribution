@@ -1,11 +1,12 @@
 package typings.vueTemplateCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompiledResult[ErrorType] extends js.Object {
+trait CompiledResult[ErrorType] extends StObject {
   
   var ast: js.UndefOr[ASTElement] = js.native
   
@@ -31,45 +32,33 @@ object CompiledResult {
   }
   
   @scala.inline
-  implicit class CompiledResultOps[Self <: CompiledResult[_], ErrorType] (val x: Self with CompiledResult[ErrorType]) extends AnyVal {
+  implicit class CompiledResultMutableBuilder[Self <: CompiledResult[_], ErrorType] (val x: Self with CompiledResult[ErrorType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: ASTElement): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: ErrorType*): Self = this.set("errors", js.Array(value :_*))
+    def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrors(value: js.Array[ErrorType]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: String): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setStaticRenderFns(value: js.Array[String]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticRenderFnsVarargs(value: String*): Self = this.set("staticRenderFns", js.Array(value :_*))
+    def setStaticRenderFnsVarargs(value: String*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
     
     @scala.inline
-    def setStaticRenderFns(value: js.Array[String]): Self = this.set("staticRenderFns", value.asInstanceOf[js.Any])
+    def setTips(value: js.Array[ErrorType]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTipsVarargs(value: ErrorType*): Self = this.set("tips", js.Array(value :_*))
-    
-    @scala.inline
-    def setTips(value: js.Array[ErrorType]): Self = this.set("tips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAst(value: ASTElement): Self = this.set("ast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAst: Self = this.set("ast", js.undefined)
+    def setTipsVarargs(value: ErrorType*): Self = StObject.set(x, "tips", js.Array(value :_*))
   }
 }

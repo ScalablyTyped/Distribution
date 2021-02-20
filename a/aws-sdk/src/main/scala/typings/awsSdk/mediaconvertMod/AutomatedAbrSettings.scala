@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomatedAbrSettings extends js.Object {
+trait AutomatedAbrSettings extends StObject {
   
   /**
     * Optional. The maximum target bit rate used in your automated ABR stack. Use this value to set an upper limit on the bandwidth consumed by the highest-quality rendition. This is the rendition that is delivered to viewers with the fastest internet connections. If you don't specify a value, MediaConvert uses 8,000,000 (8 mb/s) by default.
@@ -31,36 +32,24 @@ object AutomatedAbrSettings {
   }
   
   @scala.inline
-  implicit class AutomatedAbrSettingsOps[Self <: AutomatedAbrSettings] (val x: Self) extends AnyVal {
+  implicit class AutomatedAbrSettingsMutableBuilder[Self <: AutomatedAbrSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaxAbrBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAbrBitrateUndefined: Self = StObject.set(x, "MaxAbrBitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRenditions(value: integerMin3Max15): Self = StObject.set(x, "MaxRenditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAbrBitrate(value: integerMin100000Max100000000): Self = this.set("MaxAbrBitrate", value.asInstanceOf[js.Any])
+    def setMaxRenditionsUndefined: Self = StObject.set(x, "MaxRenditions", js.undefined)
     
     @scala.inline
-    def deleteMaxAbrBitrate: Self = this.set("MaxAbrBitrate", js.undefined)
+    def setMinAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinAbrBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRenditions(value: integerMin3Max15): Self = this.set("MaxRenditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRenditions: Self = this.set("MaxRenditions", js.undefined)
-    
-    @scala.inline
-    def setMinAbrBitrate(value: integerMin100000Max100000000): Self = this.set("MinAbrBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinAbrBitrate: Self = this.set("MinAbrBitrate", js.undefined)
+    def setMinAbrBitrateUndefined: Self = StObject.set(x, "MinAbrBitrate", js.undefined)
   }
 }

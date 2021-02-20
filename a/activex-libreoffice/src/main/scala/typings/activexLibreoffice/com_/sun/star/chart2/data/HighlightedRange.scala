@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.chart2.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightedRange extends js.Object {
+trait HighlightedRange extends StObject {
   
   /**
     * If the highlighted range is visually highlighted and this member is `TRUE` , the range given in {@link RangeRepresentation} may be included in a
@@ -36,30 +37,18 @@ object HighlightedRange {
   }
   
   @scala.inline
-  implicit class HighlightedRangeOps[Self <: HighlightedRange] (val x: Self) extends AnyVal {
+  implicit class HighlightedRangeMutableBuilder[Self <: HighlightedRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMerginigWithOtherRanges(value: Boolean): Self = StObject.set(x, "AllowMerginigWithOtherRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreferredColor(value: Double): Self = StObject.set(x, "PreferredColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMerginigWithOtherRanges(value: Boolean): Self = this.set("AllowMerginigWithOtherRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredColor(value: Double): Self = this.set("PreferredColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRangeRepresentation(value: String): Self = this.set("RangeRepresentation", value.asInstanceOf[js.Any])
+    def setRangeRepresentation(value: String): Self = StObject.set(x, "RangeRepresentation", value.asInstanceOf[js.Any])
   }
 }

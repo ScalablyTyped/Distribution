@@ -4,14 +4,15 @@ import typings.popmotionPose.typesMod.DomPopmotionConfig
 import typings.popmotionPose.typesMod.DomPopmotionPoser
 import typings.poseCore.typesMod.ActiveActions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion-pose/lib/dom/events", JSImport.Namespace)
-@js.native
-object eventsMod extends js.Object {
+object eventsMod {
   
+  @JSImport("popmotion-pose/lib/dom/events", JSImport.Default)
+  @js.native
   def default(
     element: Element,
     activeActions: ActiveActions[

@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Alt
 import typings.maximMazurokGapiClientAndroidpublisher.anon.QuotaUser
 import typings.maximMazurokGapiClientAndroidpublisher.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditsResource extends js.Object {
+trait EditsResource extends StObject {
   
   var apks: ApksResource = js.native
   

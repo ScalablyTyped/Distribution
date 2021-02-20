@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email address of a contact. */
 @js.native
-trait ContactEmail extends js.Object {
+trait ContactEmail extends StObject {
   
   /** Gets and sets the email address of a contact. The maximum string length for the description is 321 characters. */
   var address: String = js.native
@@ -26,27 +27,15 @@ object ContactEmail {
   }
   
   @scala.inline
-  implicit class ContactEmailOps[Self <: ContactEmail] (val x: Self) extends AnyVal {
+  implicit class ContactEmailMutableBuilder[Self <: ContactEmail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: ContactEmailKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: ContactEmailKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

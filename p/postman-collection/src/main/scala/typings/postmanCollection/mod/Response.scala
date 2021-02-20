@@ -5,6 +5,7 @@ import typings.postmanCollection.anon.Body
 import typings.postmanCollection.anon.Code
 import typings.postmanCollection.anon.Format
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,11 +60,13 @@ class Response protected () extends Property[ResponseDefinition] {
   def update(options: ResponseDefinition): Unit = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Response")
-@js.native
-object Response extends js.Object {
+object Response {
   
+  @JSImport("postman-collection", "Response.createFromNode")
+  @js.native
   def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = js.native
   
+  @JSImport("postman-collection", "Response.isResponse")
+  @js.native
   def isResponse(obj: js.Any): Boolean = js.native
 }

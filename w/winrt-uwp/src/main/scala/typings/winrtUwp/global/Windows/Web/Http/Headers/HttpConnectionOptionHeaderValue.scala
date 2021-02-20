@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
 import typings.winrtUwp.anon.ConnectionOptionHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,21 +17,24 @@ class HttpConnectionOptionHeaderValue protected ()
     */
   def this(token: String) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue")
-@js.native
-object HttpConnectionOptionHeaderValue extends js.Object {
+object HttpConnectionOptionHeaderValue {
   
   /**
     * Converts a string to an HttpConnectionOptionHeaderValue instance.
     * @param input A string that represents the connection information in the Connection HTTP header.
     * @return An HttpConnectionOptionHeaderValue instance.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue.parse")
+  @js.native
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue = js.native
   
   /**
     * Determines whether a string is valid HttpConnectionOptionHeaderValue information.
     * @param input The string to validate.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue.tryParse")
+  @js.native
   def tryParse(input: String): ConnectionOptionHeaderValue = js.native
 }

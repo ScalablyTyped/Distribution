@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object Language {
   }
   
   @scala.inline
-  implicit class LanguageOps[Self <: Language] (val x: Self) extends AnyVal {
+  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_languageTag(value: () => String): Self = StObject.set(x, "get_languageTag", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet_displayName(value: () => String): Self = this.set("get_displayName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_languageTag(value: () => String): Self = this.set("get_languageTag", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_lcid(value: () => Double): Self = this.set("get_lcid", js.Any.fromFunction0(value))
+    def setGet_lcid(value: () => Double): Self = StObject.set(x, "get_lcid", js.Any.fromFunction0(value))
   }
 }

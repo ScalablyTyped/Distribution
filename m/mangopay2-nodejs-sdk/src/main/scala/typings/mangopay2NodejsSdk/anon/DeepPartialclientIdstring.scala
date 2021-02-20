@@ -1,13 +1,14 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.typesMod.DeepPartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<{  clientId :string,   apiVersion :string,  readonly id :string}> */
 @js.native
-trait DeepPartialclientIdstring extends js.Object {
+trait DeepPartialclientIdstring extends StObject {
   
   var apiVersion: js.UndefOr[DeepPartial[String]] = js.native
   
@@ -24,36 +25,24 @@ object DeepPartialclientIdstring {
   }
   
   @scala.inline
-  implicit class DeepPartialclientIdstringOps[Self <: DeepPartialclientIdstring] (val x: Self) extends AnyVal {
+  implicit class DeepPartialclientIdstringMutableBuilder[Self <: DeepPartialclientIdstring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: DeepPartial[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: DeepPartial[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: DeepPartial[String]): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setId(value: DeepPartial[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: DeepPartial[String]): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
-    
-    @scala.inline
-    def setId(value: DeepPartial[String]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientBigtableadmin.anon.Oauthtoken
 import typings.maximMazurokGapiClientBigtableadmin.anon.PrettyPrint
 import typings.maximMazurokGapiClientBigtableadmin.anon.QuotaUser
 import typings.maximMazurokGapiClientBigtableadmin.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupsResource extends js.Object {
+trait BackupsResource extends StObject {
   
   /**
     * Starts creating a new Cloud Bigtable Backup. The returned backup long-running operation can be used to track creation of the backup. The metadata field type is CreateBackupMetadata.

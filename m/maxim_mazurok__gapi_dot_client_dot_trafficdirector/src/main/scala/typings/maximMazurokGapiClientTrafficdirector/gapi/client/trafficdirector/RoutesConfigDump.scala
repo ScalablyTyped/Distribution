@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoutesConfigDump extends js.Object {
+trait RoutesConfigDump extends StObject {
   
   /** The dynamically loaded route configs. */
   var dynamicRouteConfigs: js.UndefOr[js.Array[DynamicRouteConfig]] = js.native
@@ -22,36 +23,24 @@ object RoutesConfigDump {
   }
   
   @scala.inline
-  implicit class RoutesConfigDumpOps[Self <: RoutesConfigDump] (val x: Self) extends AnyVal {
+  implicit class RoutesConfigDumpMutableBuilder[Self <: RoutesConfigDump] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicRouteConfigs(value: js.Array[DynamicRouteConfig]): Self = StObject.set(x, "dynamicRouteConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicRouteConfigsUndefined: Self = StObject.set(x, "dynamicRouteConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicRouteConfigsVarargs(value: DynamicRouteConfig*): Self = StObject.set(x, "dynamicRouteConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setDynamicRouteConfigsVarargs(value: DynamicRouteConfig*): Self = this.set("dynamicRouteConfigs", js.Array(value :_*))
+    def setStaticRouteConfigs(value: js.Array[StaticRouteConfig]): Self = StObject.set(x, "staticRouteConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicRouteConfigs(value: js.Array[DynamicRouteConfig]): Self = this.set("dynamicRouteConfigs", value.asInstanceOf[js.Any])
+    def setStaticRouteConfigsUndefined: Self = StObject.set(x, "staticRouteConfigs", js.undefined)
     
     @scala.inline
-    def deleteDynamicRouteConfigs: Self = this.set("dynamicRouteConfigs", js.undefined)
-    
-    @scala.inline
-    def setStaticRouteConfigsVarargs(value: StaticRouteConfig*): Self = this.set("staticRouteConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setStaticRouteConfigs(value: js.Array[StaticRouteConfig]): Self = this.set("staticRouteConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticRouteConfigs: Self = this.set("staticRouteConfigs", js.undefined)
+    def setStaticRouteConfigsVarargs(value: StaticRouteConfig*): Self = StObject.set(x, "staticRouteConfigs", js.Array(value :_*))
   }
 }

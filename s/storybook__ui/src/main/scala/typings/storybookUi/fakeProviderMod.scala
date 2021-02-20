@@ -8,29 +8,32 @@ import typings.std.HTMLDivElement
 import typings.storybookAddons.distMod.Collection
 import typings.storybookTheming.typesMod.Theme
 import typings.storybookUi.anon.PickDetailedHTMLPropsHTML
-import typings.storybookUi.providerMod.Provider
+import typings.storybookUi.providerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/ui/dist/FakeProvider", JSImport.Namespace)
-@js.native
-object fakeProviderMod extends js.Object {
+object fakeProviderMod {
   
+  @JSImport("@storybook/ui/dist/FakeProvider", "Centered")
+  @js.native
   val Centered: StyledComponent[
     DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
     PickDetailedHTMLPropsHTML, 
     Theme
   ] = js.native
   
+  @JSImport("@storybook/ui/dist/FakeProvider", "FakeProvider")
   @js.native
-  class FakeProvider () extends Provider {
+  class FakeProvider () extends default {
     
     def getElements(`type`: js.Any): Collection = js.native
     
     def renderPreview(): Element = js.native
   }
   
+  @JSImport("@storybook/ui/dist/FakeProvider", "PrettyFakeProvider")
   @js.native
   class PrettyFakeProvider () extends FakeProvider {
     

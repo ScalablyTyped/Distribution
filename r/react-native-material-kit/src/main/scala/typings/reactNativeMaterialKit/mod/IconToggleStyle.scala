@@ -1,11 +1,12 @@
 package typings.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IconToggleStyle extends js.Object {
+trait IconToggleStyle extends StObject {
   
   var offColor: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object IconToggleStyle {
   }
   
   @scala.inline
-  implicit class IconToggleStyleOps[Self <: IconToggleStyle] (val x: Self) extends AnyVal {
+  implicit class IconToggleStyleMutableBuilder[Self <: IconToggleStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffColor(value: String): Self = StObject.set(x, "offColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffColorUndefined: Self = StObject.set(x, "offColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnColor(value: String): Self = StObject.set(x, "onColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffColor(value: String): Self = this.set("offColor", value.asInstanceOf[js.Any])
+    def setOnColorUndefined: Self = StObject.set(x, "onColor", js.undefined)
     
     @scala.inline
-    def deleteOffColor: Self = this.set("offColor", js.undefined)
+    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnColor(value: String): Self = this.set("onColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnColor: Self = this.set("onColor", js.undefined)
-    
-    @scala.inline
-    def setRippleColor(value: String): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
   }
 }

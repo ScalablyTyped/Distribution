@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserImportJobType extends js.Object {
+trait UserImportJobType extends StObject {
   
   /**
     * The role ARN for the Amazon CloudWatch Logging role for the user import job. For more information, see "Creating the CloudWatch Logs IAM Role" in the Amazon Cognito Developer Guide.
@@ -81,96 +82,84 @@ object UserImportJobType {
   }
   
   @scala.inline
-  implicit class UserImportJobTypeOps[Self <: UserImportJobType] (val x: Self) extends AnyVal {
+  implicit class UserImportJobTypeMutableBuilder[Self <: UserImportJobType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogsRoleArn(value: ArnType): Self = StObject.set(x, "CloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "CloudWatchLogsRoleArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletionDate(value: DateType): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogsRoleArn(value: ArnType): Self = this.set("CloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
+    def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogsRoleArn: Self = this.set("CloudWatchLogsRoleArn", js.undefined)
+    def setCompletionMessage(value: CompletionMessageType): Self = StObject.set(x, "CompletionMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionDate(value: DateType): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    def setCompletionMessageUndefined: Self = StObject.set(x, "CompletionMessage", js.undefined)
     
     @scala.inline
-    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionMessage(value: CompletionMessageType): Self = this.set("CompletionMessage", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteCompletionMessage: Self = this.set("CompletionMessage", js.undefined)
+    def setFailedUsers(value: LongType): Self = StObject.set(x, "FailedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setFailedUsersUndefined: Self = StObject.set(x, "FailedUsers", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setImportedUsers(value: LongType): Self = StObject.set(x, "ImportedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedUsers(value: LongType): Self = this.set("FailedUsers", value.asInstanceOf[js.Any])
+    def setImportedUsersUndefined: Self = StObject.set(x, "ImportedUsers", js.undefined)
     
     @scala.inline
-    def deleteFailedUsers: Self = this.set("FailedUsers", js.undefined)
+    def setJobId(value: UserImportJobIdType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedUsers(value: LongType): Self = this.set("ImportedUsers", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     @scala.inline
-    def deleteImportedUsers: Self = this.set("ImportedUsers", js.undefined)
+    def setJobName(value: UserImportJobNameType): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: UserImportJobIdType): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("JobId", js.undefined)
+    def setPreSignedUrl(value: PreSignedUrlType): Self = StObject.set(x, "PreSignedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: UserImportJobNameType): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setPreSignedUrlUndefined: Self = StObject.set(x, "PreSignedUrl", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setSkippedUsers(value: LongType): Self = StObject.set(x, "SkippedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreSignedUrl(value: PreSignedUrlType): Self = this.set("PreSignedUrl", value.asInstanceOf[js.Any])
+    def setSkippedUsersUndefined: Self = StObject.set(x, "SkippedUsers", js.undefined)
     
     @scala.inline
-    def deletePreSignedUrl: Self = this.set("PreSignedUrl", js.undefined)
+    def setStartDate(value: DateType): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkippedUsers(value: LongType): Self = this.set("SkippedUsers", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     
     @scala.inline
-    def deleteSkippedUsers: Self = this.set("SkippedUsers", js.undefined)
+    def setStatus(value: UserImportJobStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: DateType): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: UserImportJobStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

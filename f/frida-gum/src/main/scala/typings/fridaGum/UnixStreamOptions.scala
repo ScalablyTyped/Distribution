@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnixStreamOptions extends js.Object {
+trait UnixStreamOptions extends StObject {
   
   /**
     * Whether the file descriptor should be closed when the stream is closed,
@@ -22,24 +23,12 @@ object UnixStreamOptions {
   }
   
   @scala.inline
-  implicit class UnixStreamOptionsOps[Self <: UnixStreamOptions] (val x: Self) extends AnyVal {
+  implicit class UnixStreamOptionsMutableBuilder[Self <: UnixStreamOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
   }
 }

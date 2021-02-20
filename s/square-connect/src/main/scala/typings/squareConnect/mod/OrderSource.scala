@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderSource")
 @js.native
-class OrderSource () extends js.Object {
+class OrderSource () extends StObject {
   
   /**
     * The name used to identify the place (physical or digital) that an order originates.

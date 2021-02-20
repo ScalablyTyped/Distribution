@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPreconfiguredWafSet extends js.Object {
+trait SchemaPreconfiguredWafSet extends StObject {
   
   /**
     * List of entities that are currently supported for WAF rules.
@@ -21,27 +22,15 @@ object SchemaPreconfiguredWafSet {
   }
   
   @scala.inline
-  implicit class SchemaPreconfiguredWafSetOps[Self <: SchemaPreconfiguredWafSet] (val x: Self) extends AnyVal {
+  implicit class SchemaPreconfiguredWafSetMutableBuilder[Self <: SchemaPreconfiguredWafSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpressionSets(value: js.Array[SchemaWafExpressionSet]): Self = StObject.set(x, "expressionSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionSetsUndefined: Self = StObject.set(x, "expressionSets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpressionSetsVarargs(value: SchemaWafExpressionSet*): Self = this.set("expressionSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setExpressionSets(value: js.Array[SchemaWafExpressionSet]): Self = this.set("expressionSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpressionSets: Self = this.set("expressionSets", js.undefined)
+    def setExpressionSetsVarargs(value: SchemaWafExpressionSet*): Self = StObject.set(x, "expressionSets", js.Array(value :_*))
   }
 }

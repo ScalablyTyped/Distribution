@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientContent.anon.CallbackFields
 import typings.maximMazurokGapiClientContent.anon.Country
 import typings.maximMazurokGapiClientContent.anon.Key
 import typings.maximMazurokGapiClientContent.anon.KeyOauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatafeedstatusesResource extends js.Object {
+trait DatafeedstatusesResource extends StObject {
   
   /** Gets multiple Merchant Center datafeed statuses in a single request. */
   def custombatch(request: KeyOauthtoken): Request[DatafeedstatusesCustomBatchResponse] = js.native

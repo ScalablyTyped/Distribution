@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PurchaseReservedInstancesOfferingRequest extends js.Object {
+trait PurchaseReservedInstancesOfferingRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -41,42 +42,30 @@ object PurchaseReservedInstancesOfferingRequest {
   }
   
   @scala.inline
-  implicit class PurchaseReservedInstancesOfferingRequestOps[Self <: PurchaseReservedInstancesOfferingRequest] (val x: Self) extends AnyVal {
+  implicit class PurchaseReservedInstancesOfferingRequestMutableBuilder[Self <: PurchaseReservedInstancesOfferingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    def setLimitPrice(value: ReservedInstanceLimitPrice): Self = StObject.set(x, "LimitPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstancesOfferingId(value: ReservedInstancesOfferingId): Self = this.set("ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
+    def setLimitPriceUndefined: Self = StObject.set(x, "LimitPrice", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPurchaseTime(value: DateTime): Self = StObject.set(x, "PurchaseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPurchaseTimeUndefined: Self = StObject.set(x, "PurchaseTime", js.undefined)
     
     @scala.inline
-    def setLimitPrice(value: ReservedInstanceLimitPrice): Self = this.set("LimitPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimitPrice: Self = this.set("LimitPrice", js.undefined)
-    
-    @scala.inline
-    def setPurchaseTime(value: DateTime): Self = this.set("PurchaseTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseTime: Self = this.set("PurchaseTime", js.undefined)
+    def setReservedInstancesOfferingId(value: ReservedInstancesOfferingId): Self = StObject.set(x, "ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhysicsRadialImpulseFalloff extends js.Object
+sealed trait PhysicsRadialImpulseFalloff extends StObject
 @JSGlobal("BABYLON.PhysicsRadialImpulseFalloff")
 @js.native
-object PhysicsRadialImpulseFalloff extends js.Object {
+object PhysicsRadialImpulseFalloff extends StObject {
   
   /** Defines that impulse is constant in strength across it's whole radius */
   @js.native

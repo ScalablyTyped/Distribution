@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobNotificationProperty extends js.Object {
+trait JobNotificationProperty extends StObject {
   
   /**
     * After a job run starts, the number of minutes to wait before sending a job run delay notification.
@@ -21,24 +22,12 @@ object JobNotificationProperty {
   }
   
   @scala.inline
-  implicit class JobNotificationPropertyOps[Self <: JobNotificationProperty] (val x: Self) extends AnyVal {
+  implicit class JobNotificationPropertyMutableBuilder[Self <: JobNotificationProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotifyDelayAfter(value: Double): Self = StObject.set(x, "notifyDelayAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotifyDelayAfter(value: Double): Self = this.set("notifyDelayAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotifyDelayAfter: Self = this.set("notifyDelayAfter", js.undefined)
+    def setNotifyDelayAfterUndefined: Self = StObject.set(x, "notifyDelayAfter", js.undefined)
   }
 }

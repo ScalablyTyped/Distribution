@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOCRPage extends js.Object {
+trait IOCRPage extends StObject {
   
   def Clone(): IOCRPage = js.native
   
@@ -22,27 +23,15 @@ object IOCRPage {
   }
   
   @scala.inline
-  implicit class IOCRPageOps[Self <: IOCRPage] (val x: Self) extends AnyVal {
+  implicit class IOCRPageMutableBuilder[Self <: IOCRPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IOCRPage): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOCRZones(value: IOCRZones): Self = StObject.set(x, "OCRZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClone(value: () => IOCRPage): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOCRZones(value: IOCRZones): Self = this.set("OCRZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageNum(value: Double): Self = this.set("PageNum", value.asInstanceOf[js.Any])
+    def setPageNum(value: Double): Self = StObject.set(x, "PageNum", value.asInstanceOf[js.Any])
   }
 }

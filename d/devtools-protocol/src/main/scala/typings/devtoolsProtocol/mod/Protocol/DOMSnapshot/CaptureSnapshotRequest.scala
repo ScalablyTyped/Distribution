@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptureSnapshotRequest extends js.Object {
+trait CaptureSnapshotRequest extends StObject {
   
   /**
     * Whitelist of computed styles to return.
@@ -31,36 +32,24 @@ object CaptureSnapshotRequest {
   }
   
   @scala.inline
-  implicit class CaptureSnapshotRequestOps[Self <: CaptureSnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class CaptureSnapshotRequestMutableBuilder[Self <: CaptureSnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputedStyles(value: js.Array[String]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedStylesVarargs(value: String*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeDOMRects(value: Boolean): Self = StObject.set(x, "includeDOMRects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedStylesVarargs(value: String*): Self = this.set("computedStyles", js.Array(value :_*))
+    def setIncludeDOMRectsUndefined: Self = StObject.set(x, "includeDOMRects", js.undefined)
     
     @scala.inline
-    def setComputedStyles(value: js.Array[String]): Self = this.set("computedStyles", value.asInstanceOf[js.Any])
+    def setIncludePaintOrder(value: Boolean): Self = StObject.set(x, "includePaintOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDOMRects(value: Boolean): Self = this.set("includeDOMRects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeDOMRects: Self = this.set("includeDOMRects", js.undefined)
-    
-    @scala.inline
-    def setIncludePaintOrder(value: Boolean): Self = this.set("includePaintOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludePaintOrder: Self = this.set("includePaintOrder", js.undefined)
+    def setIncludePaintOrderUndefined: Self = StObject.set(x, "includePaintOrder", js.undefined)
   }
 }

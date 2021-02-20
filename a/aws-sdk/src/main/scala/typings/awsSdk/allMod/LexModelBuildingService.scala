@@ -2,6 +2,7 @@ package typings.awsSdk.allMod
 
 import typings.awsSdk.lexmodelbuildingserviceMod.ClientConfiguration
 import typings.awsSdk.lexmodelbuildingserviceMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

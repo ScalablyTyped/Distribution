@@ -1,14 +1,15 @@
 package typings.winrt.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VirtualKeyModifiers extends js.Object
+sealed trait VirtualKeyModifiers extends StObject
 @JSGlobal("Windows.System.VirtualKeyModifiers")
 @js.native
-object VirtualKeyModifiers extends js.Object {
+object VirtualKeyModifiers extends StObject {
   
   @js.native
   sealed trait control extends VirtualKeyModifiers

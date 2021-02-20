@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateContactRequest extends js.Object {
+trait UpdateContactRequest extends StObject {
   
   /**
     * The attribute data attached to a contact.
@@ -41,45 +42,33 @@ object UpdateContactRequest {
   }
   
   @scala.inline
-  implicit class UpdateContactRequestOps[Self <: UpdateContactRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateContactRequestMutableBuilder[Self <: UpdateContactRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributesData(value: AttributesData): Self = StObject.set(x, "AttributesData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesDataUndefined: Self = StObject.set(x, "AttributesData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactListName(value: ContactListName): Self = this.set("ContactListName", value.asInstanceOf[js.Any])
+    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setTopicPreferences(value: TopicPreferenceList): Self = StObject.set(x, "TopicPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesData(value: AttributesData): Self = this.set("AttributesData", value.asInstanceOf[js.Any])
+    def setTopicPreferencesUndefined: Self = StObject.set(x, "TopicPreferences", js.undefined)
     
     @scala.inline
-    def deleteAttributesData: Self = this.set("AttributesData", js.undefined)
+    def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value :_*))
     
     @scala.inline
-    def setTopicPreferencesVarargs(value: TopicPreference*): Self = this.set("TopicPreferences", js.Array(value :_*))
+    def setUnsubscribeAll(value: UnsubscribeAll): Self = StObject.set(x, "UnsubscribeAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicPreferences(value: TopicPreferenceList): Self = this.set("TopicPreferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicPreferences: Self = this.set("TopicPreferences", js.undefined)
-    
-    @scala.inline
-    def setUnsubscribeAll(value: UnsubscribeAll): Self = this.set("UnsubscribeAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsubscribeAll: Self = this.set("UnsubscribeAll", js.undefined)
+    def setUnsubscribeAllUndefined: Self = StObject.set(x, "UnsubscribeAll", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataServiceOptions extends js.Object {
+trait DataServiceOptions extends StObject {
   
   var adapterName: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object DataServiceOptions {
   }
   
   @scala.inline
-  implicit class DataServiceOptionsOps[Self <: DataServiceOptions] (val x: Self) extends AnyVal {
+  implicit class DataServiceOptionsMutableBuilder[Self <: DataServiceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapterName(value: String): Self = StObject.set(x, "adapterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdapterNameUndefined: Self = StObject.set(x, "adapterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasServerMetadata(value: Boolean): Self = StObject.set(x, "hasServerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdapterName(value: String): Self = this.set("adapterName", value.asInstanceOf[js.Any])
+    def setHasServerMetadataUndefined: Self = StObject.set(x, "hasServerMetadata", js.undefined)
     
     @scala.inline
-    def deleteAdapterName: Self = this.set("adapterName", js.undefined)
+    def setJsonResultsAdapter(value: JsonResultsAdapter): Self = StObject.set(x, "jsonResultsAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasServerMetadata(value: Boolean): Self = this.set("hasServerMetadata", value.asInstanceOf[js.Any])
+    def setJsonResultsAdapterUndefined: Self = StObject.set(x, "jsonResultsAdapter", js.undefined)
     
     @scala.inline
-    def deleteHasServerMetadata: Self = this.set("hasServerMetadata", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonResultsAdapter(value: JsonResultsAdapter): Self = this.set("jsonResultsAdapter", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteJsonResultsAdapter: Self = this.set("jsonResultsAdapter", js.undefined)
+    def setUriBuilderName(value: String): Self = StObject.set(x, "uriBuilderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setUriBuilderNameUndefined: Self = StObject.set(x, "uriBuilderName", js.undefined)
     
     @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setUseJsonp(value: Boolean): Self = StObject.set(x, "useJsonp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUriBuilderName(value: String): Self = this.set("uriBuilderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUriBuilderName: Self = this.set("uriBuilderName", js.undefined)
-    
-    @scala.inline
-    def setUseJsonp(value: Boolean): Self = this.set("useJsonp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseJsonp: Self = this.set("useJsonp", js.undefined)
+    def setUseJsonpUndefined: Self = StObject.set(x, "useJsonp", js.undefined)
   }
 }

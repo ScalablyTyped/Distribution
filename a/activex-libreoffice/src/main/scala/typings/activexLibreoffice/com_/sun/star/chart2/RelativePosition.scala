@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.activexLibreoffice.com_.sun.star.drawing.Alignment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be outside this range, especially negative.
   */
 @js.native
-trait RelativePosition extends js.Object {
+trait RelativePosition extends StObject {
   
   /**
     * This indicates how the object is placed at the relative position.
@@ -49,27 +50,15 @@ object RelativePosition {
   }
   
   @scala.inline
-  implicit class RelativePositionOps[Self <: RelativePosition] (val x: Self) extends AnyVal {
+  implicit class RelativePositionMutableBuilder[Self <: RelativePosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Alignment): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnchor(value: Alignment): Self = this.set("Anchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimary(value: Double): Self = this.set("Primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondary(value: Double): Self = this.set("Secondary", value.asInstanceOf[js.Any])
+    def setSecondary(value: Double): Self = StObject.set(x, "Secondary", value.asInstanceOf[js.Any])
   }
 }

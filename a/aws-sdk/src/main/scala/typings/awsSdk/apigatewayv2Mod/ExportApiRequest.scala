@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportApiRequest extends js.Object {
+trait ExportApiRequest extends StObject {
   
   /**
     * The API identifier.
@@ -46,45 +47,33 @@ object ExportApiRequest {
   }
   
   @scala.inline
-  implicit class ExportApiRequestOps[Self <: ExportApiRequest] (val x: Self) extends AnyVal {
+  implicit class ExportApiRequestMutableBuilder[Self <: ExportApiRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportVersion(value: string): Self = StObject.set(x, "ExportVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportVersionUndefined: Self = StObject.set(x, "ExportVersion", js.undefined)
     
     @scala.inline
-    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setIncludeExtensions(value: boolean): Self = StObject.set(x, "IncludeExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputType(value: string): Self = this.set("OutputType", value.asInstanceOf[js.Any])
+    def setIncludeExtensionsUndefined: Self = StObject.set(x, "IncludeExtensions", js.undefined)
     
     @scala.inline
-    def setSpecification(value: string): Self = this.set("Specification", value.asInstanceOf[js.Any])
+    def setOutputType(value: string): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportVersion(value: string): Self = this.set("ExportVersion", value.asInstanceOf[js.Any])
+    def setSpecification(value: string): Self = StObject.set(x, "Specification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExportVersion: Self = this.set("ExportVersion", js.undefined)
+    def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExtensions(value: boolean): Self = this.set("IncludeExtensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeExtensions: Self = this.set("IncludeExtensions", js.undefined)
-    
-    @scala.inline
-    def setStageName(value: string): Self = this.set("StageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageName: Self = this.set("StageName", js.undefined)
+    def setStageNameUndefined: Self = StObject.set(x, "StageName", js.undefined)
   }
 }

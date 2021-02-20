@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "WebGLPipelineContext")
 @js.native
 class WebGLPipelineContext ()
-  extends typings.babylonjs.webGLPipelineContextMod.WebGLPipelineContext
+  extends typings.babylonjs.enginesIndexMod.WebGLPipelineContext

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyCredential extends js.Object {
+trait KeyCredential extends StObject {
   
   // Custom key identifier
   var customKeyIdentifier: js.UndefOr[NullableOption[Double]] = js.native
@@ -51,90 +52,78 @@ object KeyCredential {
   }
   
   @scala.inline
-  implicit class KeyCredentialOps[Self <: KeyCredential] (val x: Self) extends AnyVal {
+  implicit class KeyCredentialMutableBuilder[Self <: KeyCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomKeyIdentifier(value: NullableOption[Double]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomKeyIdentifierNull: Self = StObject.set(x, "customKeyIdentifier", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomKeyIdentifierUndefined: Self = StObject.set(x, "customKeyIdentifier", js.undefined)
     
     @scala.inline
-    def setCustomKeyIdentifier(value: NullableOption[Double]): Self = this.set("customKeyIdentifier", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomKeyIdentifier: Self = this.set("customKeyIdentifier", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setCustomKeyIdentifierNull: Self = this.set("customKeyIdentifier", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
     @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = this.set("endDateTime", value.asInstanceOf[js.Any])
+    def setKey(value: NullableOption[Double]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDateTime: Self = this.set("endDateTime", js.undefined)
+    def setKeyId(value: NullableOption[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDateTimeNull: Self = this.set("endDateTime", null)
+    def setKeyIdNull: Self = StObject.set(x, "keyId", null)
     
     @scala.inline
-    def setKey(value: NullableOption[Double]): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKeyId(value: NullableOption[String]): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyId: Self = this.set("keyId", js.undefined)
+    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
     @scala.inline
-    def setKeyIdNull: Self = this.set("keyId", null)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
     @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = this.set("startDateTime", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartDateTime: Self = this.set("startDateTime", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setStartDateTimeNull: Self = this.set("startDateTime", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setType(value: NullableOption[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUsage(value: NullableOption[String]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUsageNull: Self = StObject.set(x, "usage", null)
     
     @scala.inline
-    def setTypeNull: Self = this.set("type", null)
-    
-    @scala.inline
-    def setUsage(value: NullableOption[String]): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
-    
-    @scala.inline
-    def setUsageNull: Self = this.set("usage", null)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

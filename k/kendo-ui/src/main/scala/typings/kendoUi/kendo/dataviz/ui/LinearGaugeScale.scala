@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinearGaugeScale extends js.Object {
+trait LinearGaugeScale extends StObject {
   
   var labels: js.UndefOr[LinearGaugeScaleLabels] = js.native
   
@@ -44,105 +45,93 @@ object LinearGaugeScale {
   }
   
   @scala.inline
-  implicit class LinearGaugeScaleOps[Self <: LinearGaugeScale] (val x: Self) extends AnyVal {
+  implicit class LinearGaugeScaleMutableBuilder[Self <: LinearGaugeScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: LinearGaugeScaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine(value: LinearGaugeScaleLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: LinearGaugeScaleLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMajorTicks(value: LinearGaugeScaleMajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: LinearGaugeScaleLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setMajorUnit(value: Double): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTicks(value: LinearGaugeScaleMajorTicks): Self = this.set("majorTicks", value.asInstanceOf[js.Any])
+    def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
     @scala.inline
-    def deleteMajorTicks: Self = this.set("majorTicks", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorUnit(value: Double): Self = this.set("majorUnit", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteMajorUnit: Self = this.set("majorUnit", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMinorTicks(value: LinearGaugeScaleMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinorUnit(value: Double): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTicks(value: LinearGaugeScaleMinorTicks): Self = this.set("minorTicks", value.asInstanceOf[js.Any])
+    def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
     
     @scala.inline
-    def deleteMinorTicks: Self = this.set("minorTicks", js.undefined)
+    def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorUnit(value: Double): Self = this.set("minorUnit", value.asInstanceOf[js.Any])
+    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
     @scala.inline
-    def deleteMinorUnit: Self = this.set("minorUnit", js.undefined)
+    def setRangePlaceholderColor(value: String): Self = StObject.set(x, "rangePlaceholderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirror(value: Boolean): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setRangePlaceholderColorUndefined: Self = StObject.set(x, "rangePlaceholderColor", js.undefined)
     
     @scala.inline
-    def deleteMirror: Self = this.set("mirror", js.undefined)
+    def setRangeSize(value: Double): Self = StObject.set(x, "rangeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangePlaceholderColor(value: String): Self = this.set("rangePlaceholderColor", value.asInstanceOf[js.Any])
+    def setRangeSizeUndefined: Self = StObject.set(x, "rangeSize", js.undefined)
     
     @scala.inline
-    def deleteRangePlaceholderColor: Self = this.set("rangePlaceholderColor", js.undefined)
+    def setRanges(value: js.Array[LinearGaugeScaleRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeSize(value: Double): Self = this.set("rangeSize", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteRangeSize: Self = this.set("rangeSize", js.undefined)
+    def setRangesVarargs(value: LinearGaugeScaleRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
     @scala.inline
-    def setRangesVarargs(value: LinearGaugeScaleRange*): Self = this.set("ranges", js.Array(value :_*))
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanges(value: js.Array[LinearGaugeScaleRange]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

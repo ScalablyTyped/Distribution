@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CustomAttributeFilter")
 @js.native
-class CustomAttributeFilter () extends js.Object {
+class CustomAttributeFilter () extends StObject {
   
   /**
     * A query expression to filter items or item variations by matching their custom attributes'

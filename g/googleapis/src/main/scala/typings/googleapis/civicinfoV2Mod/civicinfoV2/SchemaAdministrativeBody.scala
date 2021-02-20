@@ -1,5 +1,6 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Elections).
   */
 @js.native
-trait SchemaAdministrativeBody extends js.Object {
+trait SchemaAdministrativeBody extends StObject {
   
   /**
     * A URL provided by this administrative body for information on absentee
@@ -93,111 +94,99 @@ object SchemaAdministrativeBody {
   }
   
   @scala.inline
-  implicit class SchemaAdministrativeBodyOps[Self <: SchemaAdministrativeBody] (val x: Self) extends AnyVal {
+  implicit class SchemaAdministrativeBodyMutableBuilder[Self <: SchemaAdministrativeBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsenteeVotingInfoUrl(value: String): Self = StObject.set(x, "absenteeVotingInfoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsenteeVotingInfoUrlUndefined: Self = StObject.set(x, "absenteeVotingInfoUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsenteeVotingInfoUrl(value: String): Self = this.set("absenteeVotingInfoUrl", value.asInstanceOf[js.Any])
+    def setAddressLinesUndefined: Self = StObject.set(x, "addressLines", js.undefined)
     
     @scala.inline
-    def deleteAbsenteeVotingInfoUrl: Self = this.set("absenteeVotingInfoUrl", js.undefined)
+    def setAddressLinesVarargs(value: String*): Self = StObject.set(x, "addressLines", js.Array(value :_*))
     
     @scala.inline
-    def setAddressLinesVarargs(value: String*): Self = this.set("addressLines", js.Array(value :_*))
+    def setBallotInfoUrl(value: String): Self = StObject.set(x, "ballotInfoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressLines(value: js.Array[String]): Self = this.set("addressLines", value.asInstanceOf[js.Any])
+    def setBallotInfoUrlUndefined: Self = StObject.set(x, "ballotInfoUrl", js.undefined)
     
     @scala.inline
-    def deleteAddressLines: Self = this.set("addressLines", js.undefined)
+    def setCorrespondenceAddress(value: SchemaSimpleAddressType): Self = StObject.set(x, "correspondenceAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBallotInfoUrl(value: String): Self = this.set("ballotInfoUrl", value.asInstanceOf[js.Any])
+    def setCorrespondenceAddressUndefined: Self = StObject.set(x, "correspondenceAddress", js.undefined)
     
     @scala.inline
-    def deleteBallotInfoUrl: Self = this.set("ballotInfoUrl", js.undefined)
+    def setElectionInfoUrl(value: String): Self = StObject.set(x, "electionInfoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrespondenceAddress(value: SchemaSimpleAddressType): Self = this.set("correspondenceAddress", value.asInstanceOf[js.Any])
+    def setElectionInfoUrlUndefined: Self = StObject.set(x, "electionInfoUrl", js.undefined)
     
     @scala.inline
-    def deleteCorrespondenceAddress: Self = this.set("correspondenceAddress", js.undefined)
+    def setElectionOfficials(value: js.Array[SchemaElectionOfficial]): Self = StObject.set(x, "electionOfficials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionInfoUrl(value: String): Self = this.set("electionInfoUrl", value.asInstanceOf[js.Any])
+    def setElectionOfficialsUndefined: Self = StObject.set(x, "electionOfficials", js.undefined)
     
     @scala.inline
-    def deleteElectionInfoUrl: Self = this.set("electionInfoUrl", js.undefined)
+    def setElectionOfficialsVarargs(value: SchemaElectionOfficial*): Self = StObject.set(x, "electionOfficials", js.Array(value :_*))
     
     @scala.inline
-    def setElectionOfficialsVarargs(value: SchemaElectionOfficial*): Self = this.set("electionOfficials", js.Array(value :_*))
+    def setElectionRegistrationConfirmationUrl(value: String): Self = StObject.set(x, "electionRegistrationConfirmationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionOfficials(value: js.Array[SchemaElectionOfficial]): Self = this.set("electionOfficials", value.asInstanceOf[js.Any])
+    def setElectionRegistrationConfirmationUrlUndefined: Self = StObject.set(x, "electionRegistrationConfirmationUrl", js.undefined)
     
     @scala.inline
-    def deleteElectionOfficials: Self = this.set("electionOfficials", js.undefined)
+    def setElectionRegistrationUrl(value: String): Self = StObject.set(x, "electionRegistrationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionRegistrationConfirmationUrl(value: String): Self = this.set("electionRegistrationConfirmationUrl", value.asInstanceOf[js.Any])
+    def setElectionRegistrationUrlUndefined: Self = StObject.set(x, "electionRegistrationUrl", js.undefined)
     
     @scala.inline
-    def deleteElectionRegistrationConfirmationUrl: Self = this.set("electionRegistrationConfirmationUrl", js.undefined)
+    def setElectionRulesUrl(value: String): Self = StObject.set(x, "electionRulesUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionRegistrationUrl(value: String): Self = this.set("electionRegistrationUrl", value.asInstanceOf[js.Any])
+    def setElectionRulesUrlUndefined: Self = StObject.set(x, "electionRulesUrl", js.undefined)
     
     @scala.inline
-    def deleteElectionRegistrationUrl: Self = this.set("electionRegistrationUrl", js.undefined)
+    def setHoursOfOperation(value: String): Self = StObject.set(x, "hoursOfOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionRulesUrl(value: String): Self = this.set("electionRulesUrl", value.asInstanceOf[js.Any])
+    def setHoursOfOperationUndefined: Self = StObject.set(x, "hoursOfOperation", js.undefined)
     
     @scala.inline
-    def deleteElectionRulesUrl: Self = this.set("electionRulesUrl", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoursOfOperation(value: String): Self = this.set("hoursOfOperation", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHoursOfOperation: Self = this.set("hoursOfOperation", js.undefined)
+    def setPhysicalAddress(value: SchemaSimpleAddressType): Self = StObject.set(x, "physicalAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPhysicalAddressUndefined: Self = StObject.set(x, "physicalAddress", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVoter_services(value: js.Array[String]): Self = StObject.set(x, "voter_services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalAddress(value: SchemaSimpleAddressType): Self = this.set("physicalAddress", value.asInstanceOf[js.Any])
+    def setVoter_servicesUndefined: Self = StObject.set(x, "voter_services", js.undefined)
     
     @scala.inline
-    def deletePhysicalAddress: Self = this.set("physicalAddress", js.undefined)
+    def setVoter_servicesVarargs(value: String*): Self = StObject.set(x, "voter_services", js.Array(value :_*))
     
     @scala.inline
-    def setVoter_servicesVarargs(value: String*): Self = this.set("voter_services", js.Array(value :_*))
+    def setVotingLocationFinderUrl(value: String): Self = StObject.set(x, "votingLocationFinderUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoter_services(value: js.Array[String]): Self = this.set("voter_services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoter_services: Self = this.set("voter_services", js.undefined)
-    
-    @scala.inline
-    def setVotingLocationFinderUrl(value: String): Self = this.set("votingLocationFinderUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVotingLocationFinderUrl: Self = this.set("votingLocationFinderUrl", js.undefined)
+    def setVotingLocationFinderUrlUndefined: Self = StObject.set(x, "votingLocationFinderUrl", js.undefined)
   }
 }

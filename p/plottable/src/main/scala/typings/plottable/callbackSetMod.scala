@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.setMod.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/utils/callbackSet", JSImport.Namespace)
-@js.native
-object callbackSetMod extends js.Object {
+object callbackSetMod {
   
+  @JSImport("plottable/build/src/utils/callbackSet", "CallbackSet")
   @js.native
   class CallbackSet[CB /* <: js.Function */] () extends Set[CB] {
     

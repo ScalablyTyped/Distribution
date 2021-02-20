@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an add account operation. */
 @js.native
-trait WebAccountProviderAddAccountOperation extends js.Object {
+trait WebAccountProviderAddAccountOperation extends StObject {
   
   /** Gets the kind of web account provider operation. */
   var kind: WebAccountProviderOperationKind = js.native
@@ -23,24 +24,12 @@ object WebAccountProviderAddAccountOperation {
   }
   
   @scala.inline
-  implicit class WebAccountProviderAddAccountOperationOps[Self <: WebAccountProviderAddAccountOperation] (val x: Self) extends AnyVal {
+  implicit class WebAccountProviderAddAccountOperationMutableBuilder[Self <: WebAccountProviderAddAccountOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = this.set("reportCompleted", js.Any.fromFunction0(value))
+    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
   }
 }

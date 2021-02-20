@@ -12,12 +12,13 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.ready
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.reassign
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.send
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.sign
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Events extends js.Object {
+trait Events extends StObject {
   
   var CANCEL: cancel = js.native
   
@@ -65,54 +66,42 @@ object Events {
   }
   
   @scala.inline
-  implicit class EventsOps[Self <: Events] (val x: Self) extends AnyVal {
+  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCANCEL(value: cancel): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCLOSE(value: close): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCREATE_TEMPLATE(value: createTemplate): Self = StObject.set(x, "CREATE_TEMPLATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCANCEL(value: cancel): Self = this.set("CANCEL", value.asInstanceOf[js.Any])
+    def setDECLINE(value: decline): Self = StObject.set(x, "DECLINE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLOSE(value: close): Self = this.set("CLOSE", value.asInstanceOf[js.Any])
+    def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCREATE_TEMPLATE(value: createTemplate): Self = this.set("CREATE_TEMPLATE", value.asInstanceOf[js.Any])
+    def setFINISH(value: finish): Self = StObject.set(x, "FINISH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDECLINE(value: decline): Self = this.set("DECLINE", value.asInstanceOf[js.Any])
+    def setMESSAGE(value: message): Self = StObject.set(x, "MESSAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: error): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setOPEN(value: open): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFINISH(value: finish): Self = this.set("FINISH", value.asInstanceOf[js.Any])
+    def setREADY(value: ready): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMESSAGE(value: message): Self = this.set("MESSAGE", value.asInstanceOf[js.Any])
+    def setREASSIGN(value: reassign): Self = StObject.set(x, "REASSIGN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOPEN(value: open): Self = this.set("OPEN", value.asInstanceOf[js.Any])
+    def setSEND(value: send): Self = StObject.set(x, "SEND", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREADY(value: ready): Self = this.set("READY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREASSIGN(value: reassign): Self = this.set("REASSIGN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSEND(value: send): Self = this.set("SEND", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSIGN(value: sign): Self = this.set("SIGN", value.asInstanceOf[js.Any])
+    def setSIGN(value: sign): Self = StObject.set(x, "SIGN", value.asInstanceOf[js.Any])
   }
 }

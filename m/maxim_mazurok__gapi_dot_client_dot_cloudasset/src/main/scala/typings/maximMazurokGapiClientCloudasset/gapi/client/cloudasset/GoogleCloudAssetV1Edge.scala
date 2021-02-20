@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudAssetV1Edge extends js.Object {
+trait GoogleCloudAssetV1Edge extends StObject {
   
   /** The source node of the edge. For example, it could be a full resource name for a resource node or an email of an identity. */
   var sourceNode: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudAssetV1Edge {
   }
   
   @scala.inline
-  implicit class GoogleCloudAssetV1EdgeOps[Self <: GoogleCloudAssetV1Edge] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudAssetV1EdgeMutableBuilder[Self <: GoogleCloudAssetV1Edge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceNode(value: String): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetNode(value: String): Self = StObject.set(x, "targetNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceNode(value: String): Self = this.set("sourceNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceNode: Self = this.set("sourceNode", js.undefined)
-    
-    @scala.inline
-    def setTargetNode(value: String): Self = this.set("targetNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetNode: Self = this.set("targetNode", js.undefined)
+    def setTargetNodeUndefined: Self = StObject.set(x, "targetNode", js.undefined)
   }
 }

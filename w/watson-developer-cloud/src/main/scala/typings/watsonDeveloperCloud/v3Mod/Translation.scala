@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Translation. */
 @js.native
-trait Translation extends js.Object {
+trait Translation extends StObject {
   
   /** Translation output in UTF-8. */
   var translation_output: String = js.native
@@ -20,21 +21,9 @@ object Translation {
   }
   
   @scala.inline
-  implicit class TranslationOps[Self <: Translation] (val x: Self) extends AnyVal {
+  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTranslation_output(value: String): Self = this.set("translation_output", value.asInstanceOf[js.Any])
+    def setTranslation_output(value: String): Self = StObject.set(x, "translation_output", value.asInstanceOf[js.Any])
   }
 }

@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposGetAccessRestrictionsEndpoint
 import typings.octokitTypes.endpointsMod.ReposGetAccessRestrictionsRequestOptions
 import typings.octokitTypes.endpointsMod.ReposGetAccessRestrictionsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposGetAccessRestrictionsEndpoint extends js.Object {
+trait ParametersReposGetAccessRestrictionsEndpoint extends StObject {
   
   var parameters: ReposGetAccessRestrictionsEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposGetAccessRestrictionsEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposGetAccessRestrictionsEndpointOps[Self <: ParametersReposGetAccessRestrictionsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposGetAccessRestrictionsEndpointMutableBuilder[Self <: ParametersReposGetAccessRestrictionsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposGetAccessRestrictionsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposGetAccessRestrictionsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposGetAccessRestrictionsEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposGetAccessRestrictionsRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetAccessRestrictionsResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposGetAccessRestrictionsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

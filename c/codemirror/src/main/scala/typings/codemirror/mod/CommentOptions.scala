@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentOptions extends js.Object {
+trait CommentOptions extends StObject {
   
   /** Override the [comment string properties](https://codemirror.net/doc/manual.html#mode_comment) of the mode with custom comment strings. */
   var blockCommentEnd: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object CommentOptions {
   }
   
   @scala.inline
-  implicit class CommentOptionsOps[Self <: CommentOptions] (val x: Self) extends AnyVal {
+  implicit class CommentOptionsMutableBuilder[Self <: CommentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockCommentEnd(value: String): Self = StObject.set(x, "blockCommentEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockCommentEndUndefined: Self = StObject.set(x, "blockCommentEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockCommentLead(value: String): Self = StObject.set(x, "blockCommentLead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockCommentEnd(value: String): Self = this.set("blockCommentEnd", value.asInstanceOf[js.Any])
+    def setBlockCommentLeadUndefined: Self = StObject.set(x, "blockCommentLead", js.undefined)
     
     @scala.inline
-    def deleteBlockCommentEnd: Self = this.set("blockCommentEnd", js.undefined)
+    def setBlockCommentStart(value: String): Self = StObject.set(x, "blockCommentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockCommentLead(value: String): Self = this.set("blockCommentLead", value.asInstanceOf[js.Any])
+    def setBlockCommentStartUndefined: Self = StObject.set(x, "blockCommentStart", js.undefined)
     
     @scala.inline
-    def deleteBlockCommentLead: Self = this.set("blockCommentLead", js.undefined)
+    def setCommentBlankLines(value: Boolean): Self = StObject.set(x, "commentBlankLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockCommentStart(value: String): Self = this.set("blockCommentStart", value.asInstanceOf[js.Any])
+    def setCommentBlankLinesUndefined: Self = StObject.set(x, "commentBlankLines", js.undefined)
     
     @scala.inline
-    def deleteBlockCommentStart: Self = this.set("blockCommentStart", js.undefined)
+    def setFullLines(value: Boolean): Self = StObject.set(x, "fullLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentBlankLines(value: Boolean): Self = this.set("commentBlankLines", value.asInstanceOf[js.Any])
+    def setFullLinesUndefined: Self = StObject.set(x, "fullLines", js.undefined)
     
     @scala.inline
-    def deleteCommentBlankLines: Self = this.set("commentBlankLines", js.undefined)
+    def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLines(value: Boolean): Self = this.set("fullLines", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteFullLines: Self = this.set("fullLines", js.undefined)
+    def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Boolean): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineComment(value: String): Self = this.set("lineComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineComment: Self = this.set("lineComment", js.undefined)
-    
-    @scala.inline
-    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

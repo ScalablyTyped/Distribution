@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See ServiceSpec for more details.  Not currently supported by Cloud Run.
   */
 @js.native
-trait SchemaServiceSpecReleaseType extends js.Object {
+trait SchemaServiceSpecReleaseType extends StObject {
   
   /**
     * The configuration for this service. All revisions from this service must
@@ -42,39 +43,27 @@ object SchemaServiceSpecReleaseType {
   }
   
   @scala.inline
-  implicit class SchemaServiceSpecReleaseTypeOps[Self <: SchemaServiceSpecReleaseType] (val x: Self) extends AnyVal {
+  implicit class SchemaServiceSpecReleaseTypeMutableBuilder[Self <: SchemaServiceSpecReleaseType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisions(value: js.Array[String]): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: SchemaConfigurationSpec): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setRevisionsVarargs(value: String*): Self = StObject.set(x, "revisions", js.Array(value :_*))
     
     @scala.inline
-    def setRevisionsVarargs(value: String*): Self = this.set("revisions", js.Array(value :_*))
+    def setRolloutPercent(value: Double): Self = StObject.set(x, "rolloutPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisions(value: js.Array[String]): Self = this.set("revisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisions: Self = this.set("revisions", js.undefined)
-    
-    @scala.inline
-    def setRolloutPercent(value: Double): Self = this.set("rolloutPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolloutPercent: Self = this.set("rolloutPercent", js.undefined)
+    def setRolloutPercentUndefined: Self = StObject.set(x, "rolloutPercent", js.undefined)
   }
 }

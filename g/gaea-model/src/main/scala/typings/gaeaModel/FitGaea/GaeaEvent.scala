@@ -1,11 +1,12 @@
 package typings.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GaeaEvent extends js.Object {
+trait GaeaEvent extends StObject {
   
   var effects: js.Array[EventAction] = js.native
   
@@ -20,30 +21,18 @@ object GaeaEvent {
   }
   
   @scala.inline
-  implicit class GaeaEventOps[Self <: GaeaEvent] (val x: Self) extends AnyVal {
+  implicit class GaeaEventMutableBuilder[Self <: GaeaEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffects(value: js.Array[EventAction]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectsVarargs(value: EventAction*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggers(value: js.Array[EventTriggerCondition]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectsVarargs(value: EventAction*): Self = this.set("effects", js.Array(value :_*))
-    
-    @scala.inline
-    def setEffects(value: js.Array[EventAction]): Self = this.set("effects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggersVarargs(value: EventTriggerCondition*): Self = this.set("triggers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggers(value: js.Array[EventTriggerCondition]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    def setTriggersVarargs(value: EventTriggerCondition*): Self = StObject.set(x, "triggers", js.Array(value :_*))
   }
 }

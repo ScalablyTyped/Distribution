@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FocalPointCropParams extends js.Object {
+trait FocalPointCropParams extends StObject {
   
   var `fp-debug`: js.UndefOr[ImgixParamType] = js.native
   
@@ -24,42 +25,30 @@ object FocalPointCropParams {
   }
   
   @scala.inline
-  implicit class FocalPointCropParamsOps[Self <: FocalPointCropParams] (val x: Self) extends AnyVal {
+  implicit class FocalPointCropParamsMutableBuilder[Self <: FocalPointCropParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setFp-debug`(value: ImgixParamType): Self = StObject.set(x, "fp-debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFp-debugUndefined`: Self = StObject.set(x, "fp-debug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setFp-x`(value: ImgixParamType): Self = StObject.set(x, "fp-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFp-debug`(value: ImgixParamType): Self = this.set("fp-debug", value.asInstanceOf[js.Any])
+    def `setFp-xUndefined`: Self = StObject.set(x, "fp-x", js.undefined)
     
     @scala.inline
-    def `deleteFp-debug`: Self = this.set("fp-debug", js.undefined)
+    def `setFp-y`(value: ImgixParamType): Self = StObject.set(x, "fp-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFp-x`(value: ImgixParamType): Self = this.set("fp-x", value.asInstanceOf[js.Any])
+    def `setFp-yUndefined`: Self = StObject.set(x, "fp-y", js.undefined)
     
     @scala.inline
-    def `deleteFp-x`: Self = this.set("fp-x", js.undefined)
+    def `setFp-z`(value: ImgixParamType): Self = StObject.set(x, "fp-z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFp-y`(value: ImgixParamType): Self = this.set("fp-y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFp-y`: Self = this.set("fp-y", js.undefined)
-    
-    @scala.inline
-    def `setFp-z`(value: ImgixParamType): Self = this.set("fp-z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFp-z`: Self = this.set("fp-z", js.undefined)
+    def `setFp-zUndefined`: Self = StObject.set(x, "fp-z", js.undefined)
   }
 }

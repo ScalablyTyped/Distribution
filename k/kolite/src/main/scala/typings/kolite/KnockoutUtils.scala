@@ -1,11 +1,12 @@
 package typings.kolite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutUtils extends js.Object {
+trait KnockoutUtils extends StObject {
   
   def wrapAccessor(accessor: js.Any): js.Function = js.native
 }
@@ -18,21 +19,9 @@ object KnockoutUtils {
   }
   
   @scala.inline
-  implicit class KnockoutUtilsOps[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
+  implicit class KnockoutUtilsMutableBuilder[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapAccessor(value: js.Any => js.Function): Self = this.set("wrapAccessor", js.Any.fromFunction1(value))
+    def setWrapAccessor(value: js.Any => js.Function): Self = StObject.set(x, "wrapAccessor", js.Any.fromFunction1(value))
   }
 }

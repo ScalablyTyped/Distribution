@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spring extends js.Object {
+trait Spring extends StObject {
   
   def applyForce(): Unit = js.native
   
@@ -53,54 +54,42 @@ object Spring {
   }
   
   @scala.inline
-  implicit class SpringOps[Self <: Spring] (val x: Self) extends AnyVal {
+  implicit class SpringMutableBuilder[Self <: Spring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyForce(value: () => Unit): Self = StObject.set(x, "applyForce", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyB(value: Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyForce(value: () => Unit): Self = this.set("applyForce", js.Any.fromFunction0(value))
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyA(value: Body): Self = this.set("bodyA", value.asInstanceOf[js.Any])
+    def setGetWorldAnchorA(value: Vec3 => Unit): Self = StObject.set(x, "getWorldAnchorA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBodyB(value: Body): Self = this.set("bodyB", value.asInstanceOf[js.Any])
+    def setGetWorldAnchorB(value: Vec3 => Unit): Self = StObject.set(x, "getWorldAnchorB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setLocalAnchorA(value: Vec3): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWorldAnchorA(value: Vec3 => Unit): Self = this.set("getWorldAnchorA", js.Any.fromFunction1(value))
+    def setLocalAnchorB(value: Vec3): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWorldAnchorB(value: Vec3 => Unit): Self = this.set("getWorldAnchorB", js.Any.fromFunction1(value))
+    def setRestLength(value: Double): Self = StObject.set(x, "restLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorA(value: Vec3): Self = this.set("localAnchorA", value.asInstanceOf[js.Any])
+    def setSetWorldAnchorA(value: Vec3 => Unit): Self = StObject.set(x, "setWorldAnchorA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocalAnchorB(value: Vec3): Self = this.set("localAnchorB", value.asInstanceOf[js.Any])
+    def setSetWorldAnchorB(value: Vec3 => Unit): Self = StObject.set(x, "setWorldAnchorB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRestLength(value: Double): Self = this.set("restLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetWorldAnchorA(value: Vec3 => Unit): Self = this.set("setWorldAnchorA", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetWorldAnchorB(value: Vec3 => Unit): Self = this.set("setWorldAnchorB", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStffness(value: Double): Self = this.set("stffness", value.asInstanceOf[js.Any])
+    def setStffness(value: Double): Self = StObject.set(x, "stffness", value.asInstanceOf[js.Any])
   }
 }

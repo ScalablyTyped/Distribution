@@ -1,5 +1,6 @@
 package typings.microsoftAjax.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link http://msdn.microsoft.com/en-us/library/cc679064(v=vs.100).aspx}
   */
 @js.native
-trait Browser extends js.Object {
+trait Browser extends StObject {
   
   //#region Fields
   /**
@@ -55,33 +56,21 @@ object Browser {
   }
   
   @scala.inline
-  implicit class BrowserOps[Self <: Browser] (val x: Self) extends AnyVal {
+  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentMode(value: Double): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasDebuggerStatement(value: Boolean): Self = StObject.set(x, "hasDebuggerStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgent(value: js.Any): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMode(value: Double): Self = this.set("documentMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasDebuggerStatement(value: Boolean): Self = this.set("hasDebuggerStatement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

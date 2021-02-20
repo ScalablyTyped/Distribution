@@ -7,6 +7,7 @@ import typings.stripe.mod.IList
 import typings.stripe.mod.IListOptions
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.charges.ICharge
 import typings.stripe.mod.charges.IChargeCaptureOptions
@@ -15,13 +16,15 @@ import typings.stripe.mod.charges.IChargeListOptions
 import typings.stripe.mod.charges.IChargeUpdateOptions
 import typings.stripe.mod.refunds.IRefund
 import typings.stripe.mod.refunds.IRefundCreationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Charges")
 @js.native
-class Charges () extends StripeResource {
+class Charges protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   /**
     * Capture the payment of an existing, uncaptured, charge. This is the second half of the two-step payment flow, where first

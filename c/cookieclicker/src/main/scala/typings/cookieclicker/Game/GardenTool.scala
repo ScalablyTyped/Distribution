@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GardenTool extends js.Object {
+trait GardenTool extends StObject {
   
   /**
     * An HTML string which describes the tool
@@ -58,54 +59,42 @@ object GardenTool {
   }
   
   @scala.inline
-  implicit class GardenToolOps[Self <: GardenTool] (val x: Self) extends AnyVal {
+  implicit class GardenToolMutableBuilder[Self <: GardenTool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescFunc(value: () => String): Self = StObject.set(x, "descFunc", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescFuncUndefined: Self = StObject.set(x, "descFunc", js.undefined)
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setFunc(value: () => Unit): Self = StObject.set(x, "func", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFunc(value: () => Unit): Self = this.set("func", js.Any.fromFunction0(value))
+    def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Double): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsDisplayed(value: () => Boolean): Self = StObject.set(x, "isDisplayed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setIsDisplayedUndefined: Self = StObject.set(x, "isDisplayed", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsOn(value: () => Boolean): Self = StObject.set(x, "isOn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDescFunc(value: () => String): Self = this.set("descFunc", js.Any.fromFunction0(value))
+    def setIsOnUndefined: Self = StObject.set(x, "isOn", js.undefined)
     
     @scala.inline
-    def deleteDescFunc: Self = this.set("descFunc", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisplayed(value: () => Boolean): Self = this.set("isDisplayed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsDisplayed: Self = this.set("isDisplayed", js.undefined)
-    
-    @scala.inline
-    def setIsOn(value: () => Boolean): Self = this.set("isOn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsOn: Self = this.set("isOn", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

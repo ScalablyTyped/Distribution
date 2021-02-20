@@ -1,11 +1,12 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILocaleNumberPatternDescriptor extends js.Object {
+trait ILocaleNumberPatternDescriptor extends StObject {
   
   var gSize: Double = js.native
   
@@ -44,45 +45,33 @@ object ILocaleNumberPatternDescriptor {
   }
   
   @scala.inline
-  implicit class ILocaleNumberPatternDescriptorOps[Self <: ILocaleNumberPatternDescriptor] (val x: Self) extends AnyVal {
+  implicit class ILocaleNumberPatternDescriptorMutableBuilder[Self <: ILocaleNumberPatternDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGSize(value: Double): Self = StObject.set(x, "gSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLgSize(value: Double): Self = StObject.set(x, "lgSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxFrac(value: Double): Self = StObject.set(x, "maxFrac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGSize(value: Double): Self = this.set("gSize", value.asInstanceOf[js.Any])
+    def setMinFrac(value: Double): Self = StObject.set(x, "minFrac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLgSize(value: Double): Self = this.set("lgSize", value.asInstanceOf[js.Any])
+    def setMinInt(value: Double): Self = StObject.set(x, "minInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFrac(value: Double): Self = this.set("maxFrac", value.asInstanceOf[js.Any])
+    def setNegPre(value: String): Self = StObject.set(x, "negPre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFrac(value: Double): Self = this.set("minFrac", value.asInstanceOf[js.Any])
+    def setNegSuf(value: String): Self = StObject.set(x, "negSuf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinInt(value: Double): Self = this.set("minInt", value.asInstanceOf[js.Any])
+    def setPosPre(value: String): Self = StObject.set(x, "posPre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegPre(value: String): Self = this.set("negPre", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegSuf(value: String): Self = this.set("negSuf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosPre(value: String): Self = this.set("posPre", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosSuf(value: String): Self = this.set("posSuf", value.asInstanceOf[js.Any])
+    def setPosSuf(value: String): Self = StObject.set(x, "posSuf", value.asInstanceOf[js.Any])
   }
 }

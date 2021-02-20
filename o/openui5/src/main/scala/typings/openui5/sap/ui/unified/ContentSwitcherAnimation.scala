@@ -1,17 +1,18 @@
 package typings.openui5.sap.ui.unified
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentSwitcherAnimation extends js.Object
+sealed trait ContentSwitcherAnimation extends StObject
 /**
   * Predefined animations for the ContentSwitcher
   */
 @JSGlobal("sap.ui.unified.ContentSwitcherAnimation")
 @js.native
-object ContentSwitcherAnimation extends js.Object {
+object ContentSwitcherAnimation extends StObject {
   
   @js.native
   sealed trait Fade extends ContentSwitcherAnimation

@@ -1,11 +1,12 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideServletResponse extends js.Object {
+trait GlideServletResponse extends StObject {
   
   def setContentType(`type`: String): Unit = js.native
   
@@ -22,27 +23,15 @@ object GlideServletResponse {
   }
   
   @scala.inline
-  implicit class GlideServletResponseOps[Self <: GlideServletResponse] (val x: Self) extends AnyVal {
+  implicit class GlideServletResponseMutableBuilder[Self <: GlideServletResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetContentType(value: String => Unit): Self = this.set("setContentType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = this.set("setHeader", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetStatus(value: Double => Unit): Self = this.set("setStatus", js.Any.fromFunction1(value))
+    def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriangleStrip extends js.Object {
+trait TriangleStrip extends StObject {
   
   /** Index into the vertex_offset array representing the next vertex in the triangle strip. */
   var vertexIndices: js.UndefOr[js.Array[Double]] = js.native
@@ -19,27 +20,15 @@ object TriangleStrip {
   }
   
   @scala.inline
-  implicit class TriangleStripOps[Self <: TriangleStrip] (val x: Self) extends AnyVal {
+  implicit class TriangleStripMutableBuilder[Self <: TriangleStrip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVertexIndices(value: js.Array[Double]): Self = StObject.set(x, "vertexIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVertexIndicesUndefined: Self = StObject.set(x, "vertexIndices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVertexIndicesVarargs(value: Double*): Self = this.set("vertexIndices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVertexIndices(value: js.Array[Double]): Self = this.set("vertexIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexIndices: Self = this.set("vertexIndices", js.undefined)
+    def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value :_*))
   }
 }

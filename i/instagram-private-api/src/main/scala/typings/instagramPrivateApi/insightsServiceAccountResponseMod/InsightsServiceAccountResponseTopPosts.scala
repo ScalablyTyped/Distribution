@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServiceAccountResponseTopPosts extends js.Object {
+trait InsightsServiceAccountResponseTopPosts extends StObject {
   
   var edges: js.Array[_] = js.native
 }
@@ -18,24 +19,12 @@ object InsightsServiceAccountResponseTopPosts {
   }
   
   @scala.inline
-  implicit class InsightsServiceAccountResponseTopPostsOps[Self <: InsightsServiceAccountResponseTopPosts] (val x: Self) extends AnyVal {
+  implicit class InsightsServiceAccountResponseTopPostsMutableBuilder[Self <: InsightsServiceAccountResponseTopPosts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdges(value: js.Array[_]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEdgesVarargs(value: js.Any*): Self = this.set("edges", js.Array(value :_*))
-    
-    @scala.inline
-    def setEdges(value: js.Array[_]): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see TabBarButton
   */
 @js.native
-trait XTabBar extends js.Object {
+trait XTabBar extends StObject {
   
   /**
     * Return a sequence of all the tab bar buttons.
@@ -83,36 +84,24 @@ object XTabBar {
   }
   
   @scala.inline
-  implicit class XTabBarOps[Self <: XTabBar] (val x: Self) extends AnyVal {
+  implicit class XTabBarMutableBuilder[Self <: XTabBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTabBarButtonAfter(value: (TabBarButton, TabBarButton) => Unit): Self = StObject.set(x, "addTabBarButtonAfter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendTabBarButton(value: TabBarButton => Unit): Self = StObject.set(x, "appendTabBarButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTabBarButtons(value: () => SafeArray[TabBarButton]): Self = StObject.set(x, "getTabBarButtons", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTabBarButtons(value: SafeArray[TabBarButton]): Self = this.set("TabBarButtons", value.asInstanceOf[js.Any])
+    def setHasTabBarButton(value: TabBarButton => Boolean): Self = StObject.set(x, "hasTabBarButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTabBarButtonAfter(value: (TabBarButton, TabBarButton) => Unit): Self = this.set("addTabBarButtonAfter", js.Any.fromFunction2(value))
+    def setRemoveTabBarButton(value: TabBarButton => Unit): Self = StObject.set(x, "removeTabBarButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendTabBarButton(value: TabBarButton => Unit): Self = this.set("appendTabBarButton", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTabBarButtons(value: () => SafeArray[TabBarButton]): Self = this.set("getTabBarButtons", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasTabBarButton(value: TabBarButton => Boolean): Self = this.set("hasTabBarButton", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveTabBarButton(value: TabBarButton => Unit): Self = this.set("removeTabBarButton", js.Any.fromFunction1(value))
+    def setTabBarButtons(value: SafeArray[TabBarButton]): Self = StObject.set(x, "TabBarButtons", value.asInstanceOf[js.Any])
   }
 }

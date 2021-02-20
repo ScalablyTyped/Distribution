@@ -7,14 +7,14 @@ import typings.awsSdkClientGlacierNode.typesInitiateVaultLockInputMod.InitiateVa
 import typings.awsSdkClientGlacierNode.typesInitiateVaultLockOutputMod.InitiateVaultLockOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/InitiateVaultLockCommand", JSImport.Namespace)
-@js.native
-object initiateVaultLockCommandMod extends js.Object {
+object initiateVaultLockCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/InitiateVaultLockCommand", "InitiateVaultLockCommand")
   @js.native
   class InitiateVaultLockCommand protected () extends Command[
           InputTypesUnion, 

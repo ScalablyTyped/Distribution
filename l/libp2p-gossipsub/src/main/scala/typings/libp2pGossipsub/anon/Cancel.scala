@@ -1,12 +1,13 @@
 package typings.libp2pGossipsub.anon
 
 import typings.node.NodeJS.Timeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancel extends js.Object {
+trait Cancel extends StObject {
   
   var _intervalId: js.UndefOr[Timeout] = js.native
   
@@ -23,30 +24,18 @@ object Cancel {
   }
   
   @scala.inline
-  implicit class CancelOps[Self <: Cancel] (val x: Self) extends AnyVal {
+  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRunPeriodically(value: (js.Function0[Unit], Double) => Unit): Self = StObject.set(x, "runPeriodically", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_intervalId(value: Timeout): Self = StObject.set(x, "_intervalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRunPeriodically(value: (js.Function0[Unit], Double) => Unit): Self = this.set("runPeriodically", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def set_intervalId(value: Timeout): Self = this.set("_intervalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_intervalId: Self = this.set("_intervalId", js.undefined)
+    def set_intervalIdUndefined: Self = StObject.set(x, "_intervalId", js.undefined)
   }
 }

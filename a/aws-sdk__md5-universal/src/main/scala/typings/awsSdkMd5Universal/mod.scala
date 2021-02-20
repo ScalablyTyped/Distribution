@@ -5,14 +5,14 @@ import typings.awsSdkMd5Universal.awsSdkMd5UniversalStrings.latin1
 import typings.awsSdkMd5Universal.awsSdkMd5UniversalStrings.utf8
 import typings.awsSdkTypes.cryptoMod.Hash
 import typings.awsSdkTypes.cryptoMod.SourceData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/md5-universal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/md5-universal", "Md5")
   @js.native
   class Md5 () extends Hash {
     

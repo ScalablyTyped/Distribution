@@ -9,14 +9,14 @@ import typings.std.HTMLMediaElement
 import typings.std.MediaStream
 import typings.three.audioListenerMod.AudioListener
 import typings.three.object3DMod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/audio/Audio", JSImport.Namespace)
-@js.native
-object audioMod extends js.Object {
+object audioMod {
   
+  @JSImport("three/src/audio/Audio", "Audio")
   @js.native
   class Audio[NodeType /* <: AudioNode */] protected () extends Object3D {
     def this(listener: AudioListener) = this()

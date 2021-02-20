@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateVPCEConfigurationRequest extends js.Object {
+trait UpdateVPCEConfigurationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the VPC endpoint configuration you want to update.
@@ -41,45 +42,33 @@ object UpdateVPCEConfigurationRequest {
   }
   
   @scala.inline
-  implicit class UpdateVPCEConfigurationRequestOps[Self <: UpdateVPCEConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateVPCEConfigurationRequestMutableBuilder[Self <: UpdateVPCEConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceDnsName(value: ServiceDnsName): Self = StObject.set(x, "serviceDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceDnsNameUndefined: Self = StObject.set(x, "serviceDnsName", js.undefined)
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = StObject.set(x, "vpceConfigurationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceDnsName(value: ServiceDnsName): Self = this.set("serviceDnsName", value.asInstanceOf[js.Any])
+    def setVpceConfigurationDescriptionUndefined: Self = StObject.set(x, "vpceConfigurationDescription", js.undefined)
     
     @scala.inline
-    def deleteServiceDnsName: Self = this.set("serviceDnsName", js.undefined)
+    def setVpceConfigurationName(value: VPCEConfigurationName): Self = StObject.set(x, "vpceConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = this.set("vpceConfigurationDescription", value.asInstanceOf[js.Any])
+    def setVpceConfigurationNameUndefined: Self = StObject.set(x, "vpceConfigurationName", js.undefined)
     
     @scala.inline
-    def deleteVpceConfigurationDescription: Self = this.set("vpceConfigurationDescription", js.undefined)
+    def setVpceServiceName(value: VPCEServiceName): Self = StObject.set(x, "vpceServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpceConfigurationName(value: VPCEConfigurationName): Self = this.set("vpceConfigurationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpceConfigurationName: Self = this.set("vpceConfigurationName", js.undefined)
-    
-    @scala.inline
-    def setVpceServiceName(value: VPCEServiceName): Self = this.set("vpceServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpceServiceName: Self = this.set("vpceServiceName", js.undefined)
+    def setVpceServiceNameUndefined: Self = StObject.set(x, "vpceServiceName", js.undefined)
   }
 }

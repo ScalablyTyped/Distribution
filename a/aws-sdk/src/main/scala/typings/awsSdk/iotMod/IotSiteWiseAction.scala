@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IotSiteWiseAction extends js.Object {
+trait IotSiteWiseAction extends StObject {
   
   /**
     * A list of asset property value entries.
@@ -26,27 +27,15 @@ object IotSiteWiseAction {
   }
   
   @scala.inline
-  implicit class IotSiteWiseActionOps[Self <: IotSiteWiseAction] (val x: Self) extends AnyVal {
+  implicit class IotSiteWiseActionMutableBuilder[Self <: IotSiteWiseAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPutAssetPropertyValueEntries(value: PutAssetPropertyValueEntryList): Self = StObject.set(x, "putAssetPropertyValueEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPutAssetPropertyValueEntriesVarargs(value: PutAssetPropertyValueEntry*): Self = StObject.set(x, "putAssetPropertyValueEntries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPutAssetPropertyValueEntriesVarargs(value: PutAssetPropertyValueEntry*): Self = this.set("putAssetPropertyValueEntries", js.Array(value :_*))
-    
-    @scala.inline
-    def setPutAssetPropertyValueEntries(value: PutAssetPropertyValueEntryList): Self = this.set("putAssetPropertyValueEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.tuyaPanelKit.mod
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.tuyaPanelKit.anon.Bic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevInfo[S] extends js.Object {
+trait DevInfo[S] extends StObject {
   
   var ability: Double = js.native
   
@@ -273,268 +274,256 @@ object DevInfo {
   }
   
   @scala.inline
-  implicit class DevInfoOps[Self <: DevInfo[_], S] (val x: Self with DevInfo[S]) extends AnyVal {
+  implicit class DevInfoMutableBuilder[Self <: DevInfo[_], S] (val x: Self with DevInfo[S]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbility(value: Double): Self = StObject.set(x, "ability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTime(value: Double): Self = StObject.set(x, "activeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppId(value: Double): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbility(value: Double): Self = this.set("ability", value.asInstanceOf[js.Any])
+    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTime(value: Double): Self = this.set("activeTime", value.asInstanceOf[js.Any])
+    def setAppOnline(value: Boolean): Self = StObject.set(x, "appOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: Double): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAttribute(value: Double): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppKey(value: String): Self = this.set("appKey", value.asInstanceOf[js.Any])
+    def setBaseAttribute(value: Double): Self = StObject.set(x, "baseAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppOnline(value: Boolean): Self = this.set("appOnline", value.asInstanceOf[js.Any])
+    def setBv(value: Double): Self = StObject.set(x, "bv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: Double): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setCapability(value: Double): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseAttribute(value: Double): Self = this.set("baseAttribute", value.asInstanceOf[js.Any])
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBv(value: Double): Self = this.set("bv", value.asInstanceOf[js.Any])
+    def setCategoryCode(value: String): Self = StObject.set(x, "categoryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapability(value: Double): Self = this.set("capability", value.asInstanceOf[js.Any])
+    def setCloudOnline(value: Boolean): Self = StObject.set(x, "cloudOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCodeIds(value: Record[String, String]): Self = StObject.set(x, "codeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryCode(value: String): Self = this.set("categoryCode", value.asInstanceOf[js.Any])
+    def setCommunication(value: Record[String, _]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudOnline(value: Boolean): Self = this.set("cloudOnline", value.asInstanceOf[js.Any])
+    def setDevAttribute(value: Double): Self = StObject.set(x, "devAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeIds(value: Record[String, String]): Self = this.set("codeIds", value.asInstanceOf[js.Any])
+    def setDevId(value: String): Self = StObject.set(x, "devId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommunication(value: Record[String, _]): Self = this.set("communication", value.asInstanceOf[js.Any])
+    def setDeviceOnline(value: Boolean): Self = StObject.set(x, "deviceOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevAttribute(value: Double): Self = this.set("devAttribute", value.asInstanceOf[js.Any])
+    def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevId(value: String): Self = this.set("devId", value.asInstanceOf[js.Any])
+    def setDisplayDps(value: js.Array[_]): Self = StObject.set(x, "displayDps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceOnline(value: Boolean): Self = this.set("deviceOnline", value.asInstanceOf[js.Any])
+    def setDisplayDpsVarargs(value: js.Any*): Self = StObject.set(x, "displayDps", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceType(value: Double): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    def setDisplayMsgs(value: Record[String, _]): Self = StObject.set(x, "displayMsgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDpsVarargs(value: js.Any*): Self = this.set("displayDps", js.Array(value :_*))
+    def setDisplayOrder(value: Double): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDps(value: js.Array[_]): Self = this.set("displayDps", value.asInstanceOf[js.Any])
+    def setDpMaxTime(value: Double): Self = StObject.set(x, "dpMaxTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMsgs(value: Record[String, _]): Self = this.set("displayMsgs", value.asInstanceOf[js.Any])
+    def setDpName(value: Record[String | Double, String]): Self = StObject.set(x, "dpName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOrder(value: Double): Self = this.set("displayOrder", value.asInstanceOf[js.Any])
+    def setDps(value: Record[Double, String]): Self = StObject.set(x, "dps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpMaxTime(value: Double): Self = this.set("dpMaxTime", value.asInstanceOf[js.Any])
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpName(value: Record[String | Double, String]): Self = this.set("dpName", value.asInstanceOf[js.Any])
+    def setFaultDps(value: js.Array[_]): Self = StObject.set(x, "faultDps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDps(value: Record[Double, String]): Self = this.set("dps", value.asInstanceOf[js.Any])
+    def setFaultDpsVarargs(value: js.Any*): Self = StObject.set(x, "faultDps", js.Array(value :_*))
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setGatewayVerCAD(value: String): Self = StObject.set(x, "gatewayVerCAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultDpsVarargs(value: js.Any*): Self = this.set("faultDps", js.Array(value :_*))
+    def setGwType(value: String): Self = StObject.set(x, "gwType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultDps(value: js.Array[_]): Self = this.set("faultDps", value.asInstanceOf[js.Any])
+    def setHomeDisplayOrder(value: Double): Self = StObject.set(x, "homeDisplayOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayVerCAD(value: String): Self = this.set("gatewayVerCAD", value.asInstanceOf[js.Any])
+    def setHomeId(value: Double): Self = StObject.set(x, "homeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGwType(value: String): Self = this.set("gwType", value.asInstanceOf[js.Any])
+    def setI18nTime(value: Double): Self = StObject.set(x, "i18nTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDisplayOrder(value: Double): Self = this.set("homeDisplayOrder", value.asInstanceOf[js.Any])
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeId(value: Double): Self = this.set("homeId", value.asInstanceOf[js.Any])
+    def setIdCodes(value: Record[Double, String]): Self = StObject.set(x, "idCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18nTime(value: Double): Self = this.set("i18nTime", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdCodes(value: Record[Double, String]): Self = this.set("idCodes", value.asInstanceOf[js.Any])
+    def setIsCloudOnline(value: Boolean): Self = StObject.set(x, "isCloudOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setIsLocalOnline(value: Boolean): Self = StObject.set(x, "isLocalOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAdmin(value: Boolean): Self = this.set("isAdmin", value.asInstanceOf[js.Any])
+    def setIsMeshBleOnline(value: Boolean): Self = StObject.set(x, "isMeshBleOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCloudOnline(value: Boolean): Self = this.set("isCloudOnline", value.asInstanceOf[js.Any])
+    def setIsNewFirmware(value: Boolean): Self = StObject.set(x, "isNewFirmware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocalOnline(value: Boolean): Self = this.set("isLocalOnline", value.asInstanceOf[js.Any])
+    def setIsShare(value: Boolean): Self = StObject.set(x, "isShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMeshBleOnline(value: Boolean): Self = this.set("isMeshBleOnline", value.asInstanceOf[js.Any])
+    def setIsUniversalPanel(value: Boolean): Self = StObject.set(x, "isUniversalPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNewFirmware(value: Boolean): Self = this.set("isNewFirmware", value.asInstanceOf[js.Any])
+    def setIsVDevice(value: Boolean): Self = StObject.set(x, "isVDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsShare(value: Boolean): Self = this.set("isShare", value.asInstanceOf[js.Any])
+    def setLatitude(value: String): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUniversalPanel(value: Boolean): Self = this.set("isUniversalPanel", value.asInstanceOf[js.Any])
+    def setLocalKey(value: String): Self = StObject.set(x, "localKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVDevice(value: Boolean): Self = this.set("isVDevice", value.asInstanceOf[js.Any])
+    def setLongitude(value: String): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: String): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLpv(value: Double): Self = StObject.set(x, "lpv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalKey(value: String): Self = this.set("localKey", value.asInstanceOf[js.Any])
+    def setMeshId(value: String): Self = StObject.set(x, "meshId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: String): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLpv(value: Double): Self = this.set("lpv", value.asInstanceOf[js.Any])
+    def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshId(value: String): Self = this.set("meshId", value.asInstanceOf[js.Any])
+    def setOriginJson(value: Record[String, _]): Self = StObject.set(x, "originJson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPanelConfig(value: Bic): Self = StObject.set(x, "panelConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkType(value: NetworkType): Self = this.set("networkType", value.asInstanceOf[js.Any])
+    def setPcc(value: String): Self = StObject.set(x, "pcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginJson(value: Record[String, _]): Self = this.set("originJson", value.asInstanceOf[js.Any])
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelConfig(value: Bic): Self = this.set("panelConfig", value.asInstanceOf[js.Any])
+    def setProtocolAttribute(value: Double): Self = StObject.set(x, "protocolAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcc(value: String): Self = this.set("pcc", value.asInstanceOf[js.Any])
+    def setPv(value: Double): Self = StObject.set(x, "pv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setQuickOpDps(value: js.Array[_]): Self = StObject.set(x, "quickOpDps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolAttribute(value: Double): Self = this.set("protocolAttribute", value.asInstanceOf[js.Any])
+    def setQuickOpDpsVarargs(value: js.Any*): Self = StObject.set(x, "quickOpDps", js.Array(value :_*))
     
     @scala.inline
-    def setPv(value: Double): Self = this.set("pv", value.asInstanceOf[js.Any])
+    def setRnFind(value: Boolean): Self = StObject.set(x, "rnFind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuickOpDpsVarargs(value: js.Any*): Self = this.set("quickOpDps", js.Array(value :_*))
+    def setRoomId(value: Double): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuickOpDps(value: js.Array[_]): Self = this.set("quickOpDps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRnFind(value: Boolean): Self = this.set("rnFind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoomId(value: Double): Self = this.set("roomId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuntimeEnv(value: String): Self = this.set("runtimeEnv", value.asInstanceOf[js.Any])
+    def setRuntimeEnv(value: String): Self = StObject.set(x, "runtimeEnv", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchema(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
       */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo with TopLevel[js.Any]
-    ): Self = this.set("schema", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaExt(value: String): Self = this.set("schemaExt", value.asInstanceOf[js.Any])
+    def setSchemaExt(value: String): Self = StObject.set(x, "schemaExt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedTime(value: Double): Self = this.set("sharedTime", value.asInstanceOf[js.Any])
+    def setSharedTime(value: Double): Self = StObject.set(x, "sharedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigmeshId(value: String): Self = this.set("sigmeshId", value.asInstanceOf[js.Any])
+    def setSigmeshId(value: String): Self = StObject.set(x, "sigmeshId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandSchemaModel(value: Record[String, _]): Self = this.set("standSchemaModel", value.asInstanceOf[js.Any])
+    def setStandSchemaModel(value: Record[String, _]): Self = StObject.set(x, "standSchemaModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandard(value: Boolean): Self = this.set("standard", value.asInstanceOf[js.Any])
+    def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: S): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportGroup(value: Boolean): Self = this.set("supportGroup", value.asInstanceOf[js.Any])
+    def setSupportGroup(value: Boolean): Self = StObject.set(x, "supportGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportSGroup(value: Boolean): Self = this.set("supportSGroup", value.asInstanceOf[js.Any])
+    def setSupportSGroup(value: Boolean): Self = StObject.set(x, "supportSGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezoneId(value: String): Self = this.set("timezoneId", value.asInstanceOf[js.Any])
+    def setTimezoneId(value: String): Self = StObject.set(x, "timezoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUi(value: String): Self = this.set("ui", value.asInstanceOf[js.Any])
+    def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiId(value: String): Self = this.set("uiId", value.asInstanceOf[js.Any])
+    def setUiId(value: String): Self = StObject.set(x, "uiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiPhase(value: String): Self = this.set("uiPhase", value.asInstanceOf[js.Any])
+    def setUiPhase(value: String): Self = StObject.set(x, "uiPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiType(value: String): Self = this.set("uiType", value.asInstanceOf[js.Any])
+    def setUiType(value: String): Self = StObject.set(x, "uiType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiVersion(value: String): Self = this.set("uiVersion", value.asInstanceOf[js.Any])
+    def setUiVersion(value: String): Self = StObject.set(x, "uiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpgrading(value: Boolean): Self = this.set("upgrading", value.asInstanceOf[js.Any])
+    def setUpgrading(value: Boolean): Self = StObject.set(x, "upgrading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVendorInfo(value: String): Self = this.set("vendorInfo", value.asInstanceOf[js.Any])
+    def setVendorInfo(value: String): Self = StObject.set(x, "vendorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerSw(value: String): Self = this.set("verSw", value.asInstanceOf[js.Any])
+    def setVerSw(value: String): Self = StObject.set(x, "verSw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtual(value: Boolean): Self = this.set("virtual", value.asInstanceOf[js.Any])
+    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
   }
 }

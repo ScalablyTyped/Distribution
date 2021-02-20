@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Product extends js.Object {
+trait Product extends StObject {
   
   /**
     * The URL used to activate the product.
@@ -61,75 +62,63 @@ object Product {
   }
   
   @scala.inline
-  implicit class ProductOps[Self <: Product] (val x: Self) extends AnyVal {
+  implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationUrl(value: NonEmptyString): Self = StObject.set(x, "ActivationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationUrlUndefined: Self = StObject.set(x, "ActivationUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategories(value: CategoryList): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductArn(value: NonEmptyString): Self = this.set("ProductArn", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
     
     @scala.inline
-    def setActivationUrl(value: NonEmptyString): Self = this.set("ActivationUrl", value.asInstanceOf[js.Any])
+    def setCategoriesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Categories", js.Array(value :_*))
     
     @scala.inline
-    def deleteActivationUrl: Self = this.set("ActivationUrl", js.undefined)
+    def setCompanyName(value: NonEmptyString): Self = StObject.set(x, "CompanyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: NonEmptyString*): Self = this.set("Categories", js.Array(value :_*))
+    def setCompanyNameUndefined: Self = StObject.set(x, "CompanyName", js.undefined)
     
     @scala.inline
-    def setCategories(value: CategoryList): Self = this.set("Categories", value.asInstanceOf[js.Any])
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategories: Self = this.set("Categories", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCompanyName(value: NonEmptyString): Self = this.set("CompanyName", value.asInstanceOf[js.Any])
+    def setIntegrationTypes(value: IntegrationTypeList): Self = StObject.set(x, "IntegrationTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("CompanyName", js.undefined)
+    def setIntegrationTypesUndefined: Self = StObject.set(x, "IntegrationTypes", js.undefined)
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIntegrationTypesVarargs(value: IntegrationType*): Self = StObject.set(x, "IntegrationTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setMarketplaceUrl(value: NonEmptyString): Self = StObject.set(x, "MarketplaceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationTypesVarargs(value: IntegrationType*): Self = this.set("IntegrationTypes", js.Array(value :_*))
+    def setMarketplaceUrlUndefined: Self = StObject.set(x, "MarketplaceUrl", js.undefined)
     
     @scala.inline
-    def setIntegrationTypes(value: IntegrationTypeList): Self = this.set("IntegrationTypes", value.asInstanceOf[js.Any])
+    def setProductArn(value: NonEmptyString): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntegrationTypes: Self = this.set("IntegrationTypes", js.undefined)
+    def setProductName(value: NonEmptyString): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketplaceUrl(value: NonEmptyString): Self = this.set("MarketplaceUrl", value.asInstanceOf[js.Any])
+    def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
     
     @scala.inline
-    def deleteMarketplaceUrl: Self = this.set("MarketplaceUrl", js.undefined)
+    def setProductSubscriptionResourcePolicy(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionResourcePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductName(value: NonEmptyString): Self = this.set("ProductName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductName: Self = this.set("ProductName", js.undefined)
-    
-    @scala.inline
-    def setProductSubscriptionResourcePolicy(value: NonEmptyString): Self = this.set("ProductSubscriptionResourcePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductSubscriptionResourcePolicy: Self = this.set("ProductSubscriptionResourcePolicy", js.undefined)
+    def setProductSubscriptionResourcePolicyUndefined: Self = StObject.set(x, "ProductSubscriptionResourcePolicy", js.undefined)
   }
 }

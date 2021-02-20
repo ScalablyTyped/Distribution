@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDrive.anon.AcknowledgeAbuseAlt
 import typings.maximMazurokGapiClientDrive.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientDrive.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientDrive.anon.RevisionId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionsResource extends js.Object {
+trait RevisionsResource extends StObject {
   
   /**
     * Permanently deletes a file version. You can only delete revisions for files with binary content in Google Drive, like images or videos. Revisions for other files, like Google Docs

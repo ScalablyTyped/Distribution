@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlendMixin extends js.Object {
+trait BlendMixin extends StObject {
   
   var blendMode: BlendMode = js.native
   
@@ -32,36 +33,24 @@ object BlendMixin {
   }
   
   @scala.inline
-  implicit class BlendMixinOps[Self <: BlendMixin] (val x: Self) extends AnyVal {
+  implicit class BlendMixinMutableBuilder[Self <: BlendMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectStyleId(value: String): Self = StObject.set(x, "effectStyleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendMode(value: BlendMode): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
     @scala.inline
-    def setEffectStyleId(value: String): Self = this.set("effectStyleId", value.asInstanceOf[js.Any])
+    def setIsMask(value: Boolean): Self = StObject.set(x, "isMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectsVarargs(value: Effect*): Self = this.set("effects", js.Array(value :_*))
-    
-    @scala.inline
-    def setEffects(value: js.Array[Effect]): Self = this.set("effects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMask(value: Boolean): Self = this.set("isMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }
 }

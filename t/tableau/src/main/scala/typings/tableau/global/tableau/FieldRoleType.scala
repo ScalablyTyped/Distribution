@@ -1,12 +1,13 @@
 package typings.tableau.global.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("tableau.FieldRoleType")
 @js.native
-object FieldRoleType extends js.Object {
+object FieldRoleType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.tableau.tableau.FieldRoleType with Double] = js.native

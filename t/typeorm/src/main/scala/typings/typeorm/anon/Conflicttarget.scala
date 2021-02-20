@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conflicttarget extends js.Object {
+trait Conflicttarget extends StObject {
   
   var columns: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,45 +23,33 @@ object Conflicttarget {
   }
   
   @scala.inline
-  implicit class ConflicttargetOps[Self <: Conflicttarget] (val x: Self) extends AnyVal {
+  implicit class ConflicttargetMutableBuilder[Self <: Conflicttarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    def setConflict_target(value: String | js.Array[String]): Self = StObject.set(x, "conflict_target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setConflict_targetUndefined: Self = StObject.set(x, "conflict_target", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setConflict_targetVarargs(value: String*): Self = StObject.set(x, "conflict_target", js.Array(value :_*))
     
     @scala.inline
-    def setConflict_targetVarargs(value: String*): Self = this.set("conflict_target", js.Array(value :_*))
+    def setOverwrite(value: js.Array[String]): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflict_target(value: String | js.Array[String]): Self = this.set("conflict_target", value.asInstanceOf[js.Any])
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def deleteConflict_target: Self = this.set("conflict_target", js.undefined)
-    
-    @scala.inline
-    def setOverwriteVarargs(value: String*): Self = this.set("overwrite", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverwrite(value: js.Array[String]): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setOverwriteVarargs(value: String*): Self = StObject.set(x, "overwrite", js.Array(value :_*))
   }
 }

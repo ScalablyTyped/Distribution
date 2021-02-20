@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientTranslate.anon.Callback
 import typings.maximMazurokGapiClientTranslate.anon.Filter
 import typings.maximMazurokGapiClientTranslate.anon.Key
 import typings.maximMazurokGapiClientTranslate.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationsResource extends js.Object {
+trait OperationsResource extends StObject {
   
   def cancel(request: Callback, body: CancelOperationRequest): Request[js.Object] = js.native
   /**

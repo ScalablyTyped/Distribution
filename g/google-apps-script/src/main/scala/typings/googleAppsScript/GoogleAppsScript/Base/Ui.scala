@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
 import typings.googleAppsScript.GoogleAppsScript.HTML.HtmlOutput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait Ui extends js.Object {
+trait Ui extends StObject {
   
   var Button: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Button */ js.Any = js.native
   

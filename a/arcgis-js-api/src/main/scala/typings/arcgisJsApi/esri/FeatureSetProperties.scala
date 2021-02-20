@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureSetProperties extends js.Object {
+trait FeatureSetProperties extends StObject {
   
   /**
     * The name of the layer's primary display field.
@@ -71,66 +72,54 @@ object FeatureSetProperties {
   }
   
   @scala.inline
-  implicit class FeatureSetPropertiesOps[Self <: FeatureSetProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureSetPropertiesMutableBuilder[Self <: FeatureSetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceededTransferLimit(value: Boolean): Self = StObject.set(x, "exceededTransferLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFieldName(value: String): Self = this.set("displayFieldName", value.asInstanceOf[js.Any])
+    def setExceededTransferLimitUndefined: Self = StObject.set(x, "exceededTransferLimit", js.undefined)
     
     @scala.inline
-    def deleteDisplayFieldName: Self = this.set("displayFieldName", js.undefined)
+    def setFeatures(value: js.Array[GraphicProperties]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceededTransferLimit(value: Boolean): Self = this.set("exceededTransferLimit", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteExceededTransferLimit: Self = this.set("exceededTransferLimit", js.undefined)
+    def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: GraphicProperties*): Self = this.set("features", js.Array(value :_*))
+    def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[GraphicProperties]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: FieldProperties*): Self = this.set("fields", js.Array(value :_*))
+    def setGeometryType(value: point | multipoint | polyline | polygon | extent | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[FieldProperties]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setQueryGeometry(value: GeometryProperties): Self = StObject.set(x, "queryGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryType(value: point | multipoint | polyline | polygon | extent | mesh): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    def setQueryGeometryUndefined: Self = StObject.set(x, "queryGeometry", js.undefined)
     
     @scala.inline
-    def deleteGeometryType: Self = this.set("geometryType", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryGeometry(value: GeometryProperties): Self = this.set("queryGeometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryGeometry: Self = this.set("queryGeometry", js.undefined)
-    
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.reactVirtualized.anon
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassNameBottomLeftGrid extends js.Object {
+trait ClassNameBottomLeftGrid extends StObject {
   
   var classNameBottomLeftGrid: Validator[String] = js.native
   
@@ -58,57 +59,45 @@ object ClassNameBottomLeftGrid {
   }
   
   @scala.inline
-  implicit class ClassNameBottomLeftGridOps[Self <: ClassNameBottomLeftGrid] (val x: Self) extends AnyVal {
+  implicit class ClassNameBottomLeftGridMutableBuilder[Self <: ClassNameBottomLeftGrid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassNameBottomLeftGrid(value: Validator[String]): Self = StObject.set(x, "classNameBottomLeftGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameBottomRightGrid(value: Validator[String]): Self = StObject.set(x, "classNameBottomRightGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassNameTopLeftGrid(value: Validator[String]): Self = StObject.set(x, "classNameTopLeftGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameBottomLeftGrid(value: Validator[String]): Self = this.set("classNameBottomLeftGrid", value.asInstanceOf[js.Any])
+    def setClassNameTopRightGrid(value: Validator[String]): Self = StObject.set(x, "classNameTopRightGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameBottomRightGrid(value: Validator[String]): Self = this.set("classNameBottomRightGrid", value.asInstanceOf[js.Any])
+    def setEnableFixedColumnScroll(value: Validator[Boolean]): Self = StObject.set(x, "enableFixedColumnScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameTopLeftGrid(value: Validator[String]): Self = this.set("classNameTopLeftGrid", value.asInstanceOf[js.Any])
+    def setEnableFixedRowScroll(value: Validator[Boolean]): Self = StObject.set(x, "enableFixedRowScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameTopRightGrid(value: Validator[String]): Self = this.set("classNameTopRightGrid", value.asInstanceOf[js.Any])
+    def setFixedColumnCount(value: Validator[Double]): Self = StObject.set(x, "fixedColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFixedColumnScroll(value: Validator[Boolean]): Self = this.set("enableFixedColumnScroll", value.asInstanceOf[js.Any])
+    def setFixedRowCount(value: Validator[Double]): Self = StObject.set(x, "fixedRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFixedRowScroll(value: Validator[Boolean]): Self = this.set("enableFixedRowScroll", value.asInstanceOf[js.Any])
+    def setStyle(value: Validator[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedColumnCount(value: Validator[Double]): Self = this.set("fixedColumnCount", value.asInstanceOf[js.Any])
+    def setStyleBottomLeftGrid(value: Validator[CSSProperties]): Self = StObject.set(x, "styleBottomLeftGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedRowCount(value: Validator[Double]): Self = this.set("fixedRowCount", value.asInstanceOf[js.Any])
+    def setStyleBottomRightGrid(value: Validator[CSSProperties]): Self = StObject.set(x, "styleBottomRightGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: Validator[CSSProperties]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleTopLeftGrid(value: Validator[CSSProperties]): Self = StObject.set(x, "styleTopLeftGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleBottomLeftGrid(value: Validator[CSSProperties]): Self = this.set("styleBottomLeftGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleBottomRightGrid(value: Validator[CSSProperties]): Self = this.set("styleBottomRightGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleTopLeftGrid(value: Validator[CSSProperties]): Self = this.set("styleTopLeftGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleTopRightGrid(value: Validator[CSSProperties]): Self = this.set("styleTopRightGrid", value.asInstanceOf[js.Any])
+    def setStyleTopRightGrid(value: Validator[CSSProperties]): Self = StObject.set(x, "styleTopRightGrid", value.asInstanceOf[js.Any])
   }
 }

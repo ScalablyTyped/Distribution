@@ -5,6 +5,7 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BOTTOM
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BOTTOM_INSIDE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP_INSIDE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,42 +30,30 @@ object xAxis {
   }
   
   @scala.inline
-  implicit class xAxisOps[Self <: xAxis] (val x: Self) extends AnyVal {
+  implicit class xAxisMutableBuilder[Self <: xAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidFirstLastClipping(value: Boolean): Self = StObject.set(x, "avoidFirstLastClipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidFirstLastClippingUndefined: Self = StObject.set(x, "avoidFirstLastClipping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelRotationAngle(value: Double): Self = StObject.set(x, "labelRotationAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidFirstLastClipping(value: Boolean): Self = this.set("avoidFirstLastClipping", value.asInstanceOf[js.Any])
+    def setLabelRotationAngleUndefined: Self = StObject.set(x, "labelRotationAngle", js.undefined)
     
     @scala.inline
-    def deleteAvoidFirstLastClipping: Self = this.set("avoidFirstLastClipping", js.undefined)
+    def setPosition(value: TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelRotationAngle(value: Double): Self = this.set("labelRotationAngle", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteLabelRotationAngle: Self = this.set("labelRotationAngle", js.undefined)
+    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setYOffset(value: Double): Self = this.set("yOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOffset: Self = this.set("yOffset", js.undefined)
+    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

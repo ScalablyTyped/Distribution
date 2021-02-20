@@ -1,12 +1,11 @@
 package typings.randomItem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-item", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get a random item from an array.
@@ -17,6 +16,8 @@ object mod extends js.Object {
   	//=> '🦄'
   	```
   	*/
+  @JSImport("random-item", JSImport.Namespace)
+  @js.native
   def apply[T](input: js.Array[T]): T = js.native
   
   /**
@@ -29,5 +30,7 @@ object mod extends js.Object {
   	//=> ['🌈', '🦄']
   	```
   	*/
+  @JSImport("random-item", "multiple")
+  @js.native
   def multiple[T](input: js.Array[T], count: Double): js.Array[T] = js.native
 }

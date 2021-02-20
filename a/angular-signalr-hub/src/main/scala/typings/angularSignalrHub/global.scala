@@ -1,16 +1,15 @@
 package typings.angularSignalrHub
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object ngSignalr extends js.Object {
+  object ngSignalr {
     
+    @JSGlobal("ngSignalr.Hub")
     @js.native
     class Hub ()
       extends typings.angularSignalrHub.ngSignalr.Hub

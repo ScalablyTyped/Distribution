@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Media.Core
 
 import typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

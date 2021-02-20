@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.FieldsKeyLinkId
 import typings.maximMazurokGapiClientAnalytics.anon.OauthtokenPrettyPrintQuotaUser
 import typings.maximMazurokGapiClientAnalytics.anon.QuotaUserUserIp
 import typings.maximMazurokGapiClientAnalytics.anon.Startindex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebpropertyUserLinksResource extends js.Object {
+trait WebpropertyUserLinksResource extends StObject {
   
   /** Removes a user from the given web property. */
   def delete(): Request[Unit] = js.native

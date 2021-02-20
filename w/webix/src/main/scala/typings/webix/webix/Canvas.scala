@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Canvas extends js.Object {
+trait Canvas extends StObject {
   
   def clearCanvas(): Unit = js.native
   
@@ -38,39 +39,27 @@ object Canvas {
   }
   
   @scala.inline
-  implicit class CanvasOps[Self <: Canvas] (val x: Self) extends AnyVal {
+  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearCanvas(value: () => Unit): Self = StObject.set(x, "clearCanvas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCanvas(value: String => js.Any): Self = StObject.set(x, "getCanvas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideCanvas(value: () => Unit): Self = StObject.set(x, "hideCanvas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearCanvas(value: () => Unit): Self = this.set("clearCanvas", js.Any.fromFunction0(value))
+    def setRenderText(value: (Double, Double, String, String, Double) => Unit): Self = StObject.set(x, "renderText", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetCanvas(value: String => js.Any): Self = this.set("getCanvas", js.Any.fromFunction1(value))
+    def setRenderTextAt(value: (String, String, Double, Double, String, String, Double) => Unit): Self = StObject.set(x, "renderTextAt", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setHideCanvas(value: () => Unit): Self = this.set("hideCanvas", js.Any.fromFunction0(value))
+    def setShowCanvas(value: () => Unit): Self = StObject.set(x, "showCanvas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderText(value: (Double, Double, String, String, Double) => Unit): Self = this.set("renderText", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setRenderTextAt(value: (String, String, Double, Double, String, String, Double) => Unit): Self = this.set("renderTextAt", js.Any.fromFunction7(value))
-    
-    @scala.inline
-    def setShowCanvas(value: () => Unit): Self = this.set("showCanvas", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggleCanvas(value: () => Unit): Self = this.set("toggleCanvas", js.Any.fromFunction0(value))
+    def setToggleCanvas(value: () => Unit): Self = StObject.set(x, "toggleCanvas", js.Any.fromFunction0(value))
   }
 }

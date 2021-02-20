@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEntitiesResponse extends js.Object {
+trait GetEntitiesResponse extends StObject {
   
   /**
     * An array of descriptions for the specified entities.
@@ -21,27 +22,15 @@ object GetEntitiesResponse {
   }
   
   @scala.inline
-  implicit class GetEntitiesResponseOps[Self <: GetEntitiesResponse] (val x: Self) extends AnyVal {
+  implicit class GetEntitiesResponseMutableBuilder[Self <: GetEntitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptions(value: EntityDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescriptionsVarargs(value: EntityDescription*): Self = this.set("descriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setDescriptions(value: EntityDescriptions): Self = this.set("descriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescriptions: Self = this.set("descriptions", js.undefined)
+    def setDescriptionsVarargs(value: EntityDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
   }
 }

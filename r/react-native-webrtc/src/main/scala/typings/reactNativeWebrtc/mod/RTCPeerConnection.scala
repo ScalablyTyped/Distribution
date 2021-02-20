@@ -2,13 +2,14 @@ package typings.reactNativeWebrtc.mod
 
 import typings.std.Error
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-webrtc", "RTCPeerConnection")
 @js.native
-class RTCPeerConnection protected () extends js.Object {
+class RTCPeerConnection protected () extends StObject {
   def this(configuration: RTCPeerConnectionConfiguration) = this()
   
   var _dataChannelIds: js.Any = js.native

@@ -2,16 +2,18 @@ package typings.typedoc
 
 import typings.typedoc.applicationMod.Application
 import typings.typedoc.componentMod.AbstractComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/utils/plugins", JSImport.Namespace)
-@js.native
-object utilsPluginsMod extends js.Object {
+object utilsPluginsMod {
   
+  @JSImport("typedoc/dist/lib/utils/plugins", "PluginHost")
   @js.native
-  class PluginHost () extends AbstractComponent[Application] {
+  class PluginHost protected () extends AbstractComponent[Application] {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Application) = this()
     
     var discoverNpmPlugins: js.Any = js.native
     

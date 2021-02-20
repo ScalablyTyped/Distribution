@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeImage_ extends js.Object {
+trait NativeImage_ extends StObject {
   
   /**
     * Add an image representation for a specific scale factor. This can be used to

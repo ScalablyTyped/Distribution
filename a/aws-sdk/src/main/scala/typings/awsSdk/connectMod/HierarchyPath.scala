@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HierarchyPath extends js.Object {
+trait HierarchyPath extends StObject {
   
   /**
     * Information about level five.
@@ -41,48 +42,36 @@ object HierarchyPath {
   }
   
   @scala.inline
-  implicit class HierarchyPathOps[Self <: HierarchyPath] (val x: Self) extends AnyVal {
+  implicit class HierarchyPathMutableBuilder[Self <: HierarchyPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevelFive(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelFive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelFiveUndefined: Self = StObject.set(x, "LevelFive", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevelFour(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelFour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelFive(value: HierarchyGroupSummary): Self = this.set("LevelFive", value.asInstanceOf[js.Any])
+    def setLevelFourUndefined: Self = StObject.set(x, "LevelFour", js.undefined)
     
     @scala.inline
-    def deleteLevelFive: Self = this.set("LevelFive", js.undefined)
+    def setLevelOne(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelOne", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelFour(value: HierarchyGroupSummary): Self = this.set("LevelFour", value.asInstanceOf[js.Any])
+    def setLevelOneUndefined: Self = StObject.set(x, "LevelOne", js.undefined)
     
     @scala.inline
-    def deleteLevelFour: Self = this.set("LevelFour", js.undefined)
+    def setLevelThree(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelThree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelOne(value: HierarchyGroupSummary): Self = this.set("LevelOne", value.asInstanceOf[js.Any])
+    def setLevelThreeUndefined: Self = StObject.set(x, "LevelThree", js.undefined)
     
     @scala.inline
-    def deleteLevelOne: Self = this.set("LevelOne", js.undefined)
+    def setLevelTwo(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelTwo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelThree(value: HierarchyGroupSummary): Self = this.set("LevelThree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevelThree: Self = this.set("LevelThree", js.undefined)
-    
-    @scala.inline
-    def setLevelTwo(value: HierarchyGroupSummary): Self = this.set("LevelTwo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevelTwo: Self = this.set("LevelTwo", js.undefined)
+    def setLevelTwoUndefined: Self = StObject.set(x, "LevelTwo", js.undefined)
   }
 }

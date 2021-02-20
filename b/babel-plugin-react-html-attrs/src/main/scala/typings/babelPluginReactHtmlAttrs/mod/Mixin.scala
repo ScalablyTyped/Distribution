@@ -1,6 +1,7 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,69 +35,57 @@ object Mixin {
   }
   
   @scala.inline
-  implicit class MixinOps[Self <: Mixin[_, _], P, S] (val x: Self with (Mixin[P, S])) extends AnyVal {
+  implicit class MixinMutableBuilder[Self <: Mixin[_, _], P, S] (val x: Self with (Mixin[P, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildContextTypes(value: ValidationMap[_]): Self = StObject.set(x, "childContextTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildContextTypesUndefined: Self = StObject.set(x, "childContextTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextTypes(value: ValidationMap[_]): Self = StObject.set(x, "contextTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildContextTypes(value: ValidationMap[_]): Self = this.set("childContextTypes", value.asInstanceOf[js.Any])
+    def setContextTypesUndefined: Self = StObject.set(x, "contextTypes", js.undefined)
     
     @scala.inline
-    def deleteChildContextTypes: Self = this.set("childContextTypes", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextTypes(value: ValidationMap[_]): Self = this.set("contextTypes", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteContextTypes: Self = this.set("contextTypes", js.undefined)
+    def setGetDefaultProps(value: () => P): Self = StObject.set(x, "getDefaultProps", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGetDefaultPropsUndefined: Self = StObject.set(x, "getDefaultProps", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setGetInitialState(value: () => S): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultProps(value: () => P): Self = this.set("getDefaultProps", js.Any.fromFunction0(value))
+    def setGetInitialStateUndefined: Self = StObject.set(x, "getInitialState", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultProps: Self = this.set("getDefaultProps", js.undefined)
+    def setMixins(value: js.Array[Mixin[P, S]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInitialState(value: () => S): Self = this.set("getInitialState", js.Any.fromFunction0(value))
+    def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
     @scala.inline
-    def deleteGetInitialState: Self = this.set("getInitialState", js.undefined)
+    def setMixinsVarargs(value: (Mixin[P, S])*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     
     @scala.inline
-    def setMixinsVarargs(value: (Mixin[P, S])*): Self = this.set("mixins", js.Array(value :_*))
+    def setPropTypes(value: ValidationMap[_]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixins(value: js.Array[Mixin[P, S]]): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
     
     @scala.inline
-    def deleteMixins: Self = this.set("mixins", js.undefined)
+    def setStatics(value: StringDictionary[js.Any]): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropTypes(value: ValidationMap[_]): Self = this.set("propTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropTypes: Self = this.set("propTypes", js.undefined)
-    
-    @scala.inline
-    def setStatics(value: StringDictionary[js.Any]): Self = this.set("statics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatics: Self = this.set("statics", js.undefined)
+    def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
   }
 }

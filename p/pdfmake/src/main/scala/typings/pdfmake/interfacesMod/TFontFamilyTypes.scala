@@ -1,12 +1,13 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfkit.PDFKit.Mixins.PDFFontSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TFontFamilyTypes extends js.Object {
+trait TFontFamilyTypes extends StObject {
   
   var bold: js.UndefOr[PDFFontSource] = js.native
   
@@ -25,42 +26,30 @@ object TFontFamilyTypes {
   }
   
   @scala.inline
-  implicit class TFontFamilyTypesOps[Self <: TFontFamilyTypes] (val x: Self) extends AnyVal {
+  implicit class TFontFamilyTypesMutableBuilder[Self <: TFontFamilyTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBold(value: PDFFontSource): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBolditalics(value: PDFFontSource): Self = StObject.set(x, "bolditalics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: PDFFontSource): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setBolditalicsUndefined: Self = StObject.set(x, "bolditalics", js.undefined)
     
     @scala.inline
-    def deleteBold: Self = this.set("bold", js.undefined)
+    def setItalics(value: PDFFontSource): Self = StObject.set(x, "italics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBolditalics(value: PDFFontSource): Self = this.set("bolditalics", value.asInstanceOf[js.Any])
+    def setItalicsUndefined: Self = StObject.set(x, "italics", js.undefined)
     
     @scala.inline
-    def deleteBolditalics: Self = this.set("bolditalics", js.undefined)
+    def setNormal(value: PDFFontSource): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalics(value: PDFFontSource): Self = this.set("italics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItalics: Self = this.set("italics", js.undefined)
-    
-    @scala.inline
-    def setNormal(value: PDFFontSource): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormal: Self = this.set("normal", js.undefined)
+    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
   }
 }

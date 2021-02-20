@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.s3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketWebsite extends js.Object {
+trait BucketWebsite extends StObject {
   
   /**
     * An absolute path to the document to return in case of a 4XX error.
@@ -37,42 +38,30 @@ object BucketWebsite {
   }
   
   @scala.inline
-  implicit class BucketWebsiteOps[Self <: BucketWebsite] (val x: Self) extends AnyVal {
+  implicit class BucketWebsiteMutableBuilder[Self <: BucketWebsite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorDocument(value: String): Self = StObject.set(x, "errorDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorDocumentUndefined: Self = StObject.set(x, "errorDocument", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexDocument(value: String): Self = StObject.set(x, "indexDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDocument(value: String): Self = this.set("errorDocument", value.asInstanceOf[js.Any])
+    def setIndexDocumentUndefined: Self = StObject.set(x, "indexDocument", js.undefined)
     
     @scala.inline
-    def deleteErrorDocument: Self = this.set("errorDocument", js.undefined)
+    def setRedirectAllRequestsTo(value: String): Self = StObject.set(x, "redirectAllRequestsTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexDocument(value: String): Self = this.set("indexDocument", value.asInstanceOf[js.Any])
+    def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "redirectAllRequestsTo", js.undefined)
     
     @scala.inline
-    def deleteIndexDocument: Self = this.set("indexDocument", js.undefined)
+    def setRoutingRules(value: String): Self = StObject.set(x, "routingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectAllRequestsTo(value: String): Self = this.set("redirectAllRequestsTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectAllRequestsTo: Self = this.set("redirectAllRequestsTo", js.undefined)
-    
-    @scala.inline
-    def setRoutingRules(value: String): Self = this.set("routingRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutingRules: Self = this.set("routingRules", js.undefined)
+    def setRoutingRulesUndefined: Self = StObject.set(x, "routingRules", js.undefined)
   }
 }

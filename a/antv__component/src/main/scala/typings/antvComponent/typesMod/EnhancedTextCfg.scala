@@ -4,12 +4,13 @@ import typings.antvComponent.antvComponentStrings.head
 import typings.antvComponent.antvComponentStrings.middle
 import typings.antvComponent.antvComponentStrings.tail
 import typings.antvGBase.typesMod.ShapeAttrs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnhancedTextCfg extends js.Object {
+trait EnhancedTextCfg extends StObject {
   
   /** 超出 maxLength 是否自动省略 */
   var autoEllipsis: js.UndefOr[Boolean] = js.native
@@ -44,63 +45,51 @@ object EnhancedTextCfg {
   }
   
   @scala.inline
-  implicit class EnhancedTextCfgOps[Self <: EnhancedTextCfg] (val x: Self) extends AnyVal {
+  implicit class EnhancedTextCfgMutableBuilder[Self <: EnhancedTextCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoEllipsis(value: Boolean): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoEllipsisUndefined: Self = StObject.set(x, "autoEllipsis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: EnhancedTextBackgroundCfg): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String | Double): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def setAutoEllipsis(value: Boolean): Self = this.set("autoEllipsis", value.asInstanceOf[js.Any])
+    def setContent(value: String | Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoEllipsis: Self = this.set("autoEllipsis", js.undefined)
+    def setEllipsisPosition(value: head | middle | tail): Self = StObject.set(x, "ellipsisPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: EnhancedTextBackgroundCfg): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setEllipsisPositionUndefined: Self = StObject.set(x, "ellipsisPosition", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsisPosition(value: head | middle | tail): Self = this.set("ellipsisPosition", value.asInstanceOf[js.Any])
+    def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     
     @scala.inline
-    def deleteEllipsisPosition: Self = this.set("ellipsisPosition", js.undefined)
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVertical(value: Boolean): Self = this.set("isVertical", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def deleteIsVertical: Self = this.set("isVertical", js.undefined)
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

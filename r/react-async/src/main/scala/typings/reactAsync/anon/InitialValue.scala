@@ -3,12 +3,13 @@ package typings.reactAsync.anon
 import typings.reactAsync.mod.AsyncProps
 import typings.reactAsync.mod.PromiseFn
 import typings.std.AbortController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitialValue[T] extends js.Object {
+trait InitialValue[T] extends StObject {
   
   var initialValue: js.UndefOr[typings.std.Error | T] = js.native
   
@@ -25,36 +26,24 @@ object InitialValue {
   }
   
   @scala.inline
-  implicit class InitialValueOps[Self <: InitialValue[_], T] (val x: Self with InitialValue[T]) extends AnyVal {
+  implicit class InitialValueMutableBuilder[Self <: InitialValue[_], T] (val x: Self with InitialValue[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialValue(value: typings.std.Error | T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialValue(value: typings.std.Error | T): Self = this.set("initialValue", value.asInstanceOf[js.Any])
+    def setPromiseFn(value: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]): Self = StObject.set(x, "promiseFn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteInitialValue: Self = this.set("initialValue", js.undefined)
+    def setPromiseFnUndefined: Self = StObject.set(x, "promiseFn", js.undefined)
     
     @scala.inline
-    def setPromise(value: js.Promise[T]): Self = this.set("promise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromise: Self = this.set("promise", js.undefined)
-    
-    @scala.inline
-    def setPromiseFn(value: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]): Self = this.set("promiseFn", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deletePromiseFn: Self = this.set("promiseFn", js.undefined)
+    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

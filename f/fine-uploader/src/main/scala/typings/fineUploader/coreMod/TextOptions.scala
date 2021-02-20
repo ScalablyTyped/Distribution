@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextOptions extends js.Object {
+trait TextOptions extends StObject {
   
   /**
     * In the event of non-200 response from the server sans the 'error' property, this message will be passed to the 'error' event handler
@@ -39,39 +40,27 @@ object TextOptions {
   }
   
   @scala.inline
-  implicit class TextOptionsOps[Self <: TextOptions] (val x: Self) extends AnyVal {
+  implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultResponseError(value: String): Self = StObject.set(x, "defaultResponseError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultResponseErrorUndefined: Self = StObject.set(x, "defaultResponseError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileInputTitle(value: String): Self = StObject.set(x, "fileInputTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultResponseError(value: String): Self = this.set("defaultResponseError", value.asInstanceOf[js.Any])
+    def setFileInputTitleUndefined: Self = StObject.set(x, "fileInputTitle", js.undefined)
     
     @scala.inline
-    def deleteDefaultResponseError: Self = this.set("defaultResponseError", js.undefined)
+    def setSizeSymbols(value: js.Array[String]): Self = StObject.set(x, "sizeSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileInputTitle(value: String): Self = this.set("fileInputTitle", value.asInstanceOf[js.Any])
+    def setSizeSymbolsUndefined: Self = StObject.set(x, "sizeSymbols", js.undefined)
     
     @scala.inline
-    def deleteFileInputTitle: Self = this.set("fileInputTitle", js.undefined)
-    
-    @scala.inline
-    def setSizeSymbolsVarargs(value: String*): Self = this.set("sizeSymbols", js.Array(value :_*))
-    
-    @scala.inline
-    def setSizeSymbols(value: js.Array[String]): Self = this.set("sizeSymbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeSymbols: Self = this.set("sizeSymbols", js.undefined)
+    def setSizeSymbolsVarargs(value: String*): Self = StObject.set(x, "sizeSymbols", js.Array(value :_*))
   }
 }

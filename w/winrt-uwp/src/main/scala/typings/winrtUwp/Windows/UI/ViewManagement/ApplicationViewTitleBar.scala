@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
 import typings.winrtUwp.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the title bar of an app. */
 @js.native
-trait ApplicationViewTitleBar extends js.Object {
+trait ApplicationViewTitleBar extends StObject {
   
   /** Gets or sets the color of the title bar background. */
   var backgroundColor: Color = js.native
@@ -67,54 +68,42 @@ object ApplicationViewTitleBar {
   }
   
   @scala.inline
-  implicit class ApplicationViewTitleBarOps[Self <: ApplicationViewTitleBar] (val x: Self) extends AnyVal {
+  implicit class ApplicationViewTitleBarMutableBuilder[Self <: ApplicationViewTitleBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonBackgroundColor(value: Color): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonForegroundColor(value: Color): Self = StObject.set(x, "buttonForegroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setButtonHoverBackgroundColor(value: Color): Self = StObject.set(x, "buttonHoverBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBackgroundColor(value: Color): Self = this.set("buttonBackgroundColor", value.asInstanceOf[js.Any])
+    def setButtonHoverForegroundColor(value: Color): Self = StObject.set(x, "buttonHoverForegroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonForegroundColor(value: Color): Self = this.set("buttonForegroundColor", value.asInstanceOf[js.Any])
+    def setButtonInactiveBackgroundColor(value: Color): Self = StObject.set(x, "buttonInactiveBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonHoverBackgroundColor(value: Color): Self = this.set("buttonHoverBackgroundColor", value.asInstanceOf[js.Any])
+    def setButtonInactiveForegroundColor(value: Color): Self = StObject.set(x, "buttonInactiveForegroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonHoverForegroundColor(value: Color): Self = this.set("buttonHoverForegroundColor", value.asInstanceOf[js.Any])
+    def setButtonPressedBackgroundColor(value: Color): Self = StObject.set(x, "buttonPressedBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonInactiveBackgroundColor(value: Color): Self = this.set("buttonInactiveBackgroundColor", value.asInstanceOf[js.Any])
+    def setButtonPressedForegroundColor(value: Color): Self = StObject.set(x, "buttonPressedForegroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonInactiveForegroundColor(value: Color): Self = this.set("buttonInactiveForegroundColor", value.asInstanceOf[js.Any])
+    def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonPressedBackgroundColor(value: Color): Self = this.set("buttonPressedBackgroundColor", value.asInstanceOf[js.Any])
+    def setInactiveBackgroundColor(value: Color): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonPressedForegroundColor(value: Color): Self = this.set("buttonPressedForegroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForegroundColor(value: Color): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInactiveBackgroundColor(value: Color): Self = this.set("inactiveBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInactiveForegroundColor(value: Color): Self = this.set("inactiveForegroundColor", value.asInstanceOf[js.Any])
+    def setInactiveForegroundColor(value: Color): Self = StObject.set(x, "inactiveForegroundColor", value.asInstanceOf[js.Any])
   }
 }

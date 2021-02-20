@@ -3,7 +3,9 @@ package typings.rascal.mod
 import typings.amqplib.mod.Channel
 import typings.amqplib.mod.Connection
 import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("rascal", "Vhost")
 @js.native
 class Vhost () extends EventEmitter {
+  def this(options: EventEmitterOptions) = this()
   
   def borrowChannel(next: js.Function2[/* err */ js.UndefOr[Error], /* channel */ js.UndefOr[Channel], Unit]): Unit = js.native
   
@@ -45,10 +48,10 @@ class Vhost () extends EventEmitter {
   def shutdown(next: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
 }
 /* static members */
-@JSImport("rascal", "Vhost")
-@js.native
-object Vhost extends js.Object {
+object Vhost {
   
+  @JSImport("rascal", "Vhost.create")
+  @js.native
   def create(
     config: VhostConfig,
     next: js.Function2[/* err */ js.UndefOr[Error], /* vhost */ js.UndefOr[this.type], Unit]

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInfo extends js.Object {
+trait NetworkInfo extends StObject {
   
   /**
     * The index of the default network card, starting at 0.
@@ -66,81 +67,69 @@ object NetworkInfo {
   }
   
   @scala.inline
-  implicit class NetworkInfoOps[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+  implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultNetworkCardIndex(value: DefaultNetworkCardIndex): Self = StObject.set(x, "DefaultNetworkCardIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultNetworkCardIndexUndefined: Self = StObject.set(x, "DefaultNetworkCardIndex", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEfaSupported(value: EfaSupportedFlag): Self = StObject.set(x, "EfaSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNetworkCardIndex(value: DefaultNetworkCardIndex): Self = this.set("DefaultNetworkCardIndex", value.asInstanceOf[js.Any])
+    def setEfaSupportedUndefined: Self = StObject.set(x, "EfaSupported", js.undefined)
     
     @scala.inline
-    def deleteDefaultNetworkCardIndex: Self = this.set("DefaultNetworkCardIndex", js.undefined)
+    def setEnaSupport(value: EnaSupport): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEfaSupported(value: EfaSupportedFlag): Self = this.set("EfaSupported", value.asInstanceOf[js.Any])
+    def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
     
     @scala.inline
-    def deleteEfaSupported: Self = this.set("EfaSupported", js.undefined)
+    def setIpv4AddressesPerInterface(value: MaxIpv4AddrPerInterface): Self = StObject.set(x, "Ipv4AddressesPerInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnaSupport(value: EnaSupport): Self = this.set("EnaSupport", value.asInstanceOf[js.Any])
+    def setIpv4AddressesPerInterfaceUndefined: Self = StObject.set(x, "Ipv4AddressesPerInterface", js.undefined)
     
     @scala.inline
-    def deleteEnaSupport: Self = this.set("EnaSupport", js.undefined)
+    def setIpv6AddressesPerInterface(value: MaxIpv6AddrPerInterface): Self = StObject.set(x, "Ipv6AddressesPerInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4AddressesPerInterface(value: MaxIpv4AddrPerInterface): Self = this.set("Ipv4AddressesPerInterface", value.asInstanceOf[js.Any])
+    def setIpv6AddressesPerInterfaceUndefined: Self = StObject.set(x, "Ipv6AddressesPerInterface", js.undefined)
     
     @scala.inline
-    def deleteIpv4AddressesPerInterface: Self = this.set("Ipv4AddressesPerInterface", js.undefined)
+    def setIpv6Supported(value: Ipv6Flag): Self = StObject.set(x, "Ipv6Supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6AddressesPerInterface(value: MaxIpv6AddrPerInterface): Self = this.set("Ipv6AddressesPerInterface", value.asInstanceOf[js.Any])
+    def setIpv6SupportedUndefined: Self = StObject.set(x, "Ipv6Supported", js.undefined)
     
     @scala.inline
-    def deleteIpv6AddressesPerInterface: Self = this.set("Ipv6AddressesPerInterface", js.undefined)
+    def setMaximumNetworkCards(value: MaximumNetworkCards): Self = StObject.set(x, "MaximumNetworkCards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6Supported(value: Ipv6Flag): Self = this.set("Ipv6Supported", value.asInstanceOf[js.Any])
+    def setMaximumNetworkCardsUndefined: Self = StObject.set(x, "MaximumNetworkCards", js.undefined)
     
     @scala.inline
-    def deleteIpv6Supported: Self = this.set("Ipv6Supported", js.undefined)
+    def setMaximumNetworkInterfaces(value: MaxNetworkInterfaces): Self = StObject.set(x, "MaximumNetworkInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumNetworkCards(value: MaximumNetworkCards): Self = this.set("MaximumNetworkCards", value.asInstanceOf[js.Any])
+    def setMaximumNetworkInterfacesUndefined: Self = StObject.set(x, "MaximumNetworkInterfaces", js.undefined)
     
     @scala.inline
-    def deleteMaximumNetworkCards: Self = this.set("MaximumNetworkCards", js.undefined)
+    def setNetworkCards(value: NetworkCardInfoList): Self = StObject.set(x, "NetworkCards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumNetworkInterfaces(value: MaxNetworkInterfaces): Self = this.set("MaximumNetworkInterfaces", value.asInstanceOf[js.Any])
+    def setNetworkCardsUndefined: Self = StObject.set(x, "NetworkCards", js.undefined)
     
     @scala.inline
-    def deleteMaximumNetworkInterfaces: Self = this.set("MaximumNetworkInterfaces", js.undefined)
+    def setNetworkCardsVarargs(value: NetworkCardInfo*): Self = StObject.set(x, "NetworkCards", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkCardsVarargs(value: NetworkCardInfo*): Self = this.set("NetworkCards", js.Array(value :_*))
+    def setNetworkPerformance(value: NetworkPerformance): Self = StObject.set(x, "NetworkPerformance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkCards(value: NetworkCardInfoList): Self = this.set("NetworkCards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkCards: Self = this.set("NetworkCards", js.undefined)
-    
-    @scala.inline
-    def setNetworkPerformance(value: NetworkPerformance): Self = this.set("NetworkPerformance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkPerformance: Self = this.set("NetworkPerformance", js.undefined)
+    def setNetworkPerformanceUndefined: Self = StObject.set(x, "NetworkPerformance", js.undefined)
   }
 }

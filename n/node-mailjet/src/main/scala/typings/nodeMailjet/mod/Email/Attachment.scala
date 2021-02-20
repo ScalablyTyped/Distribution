@@ -1,11 +1,12 @@
 package typings.nodeMailjet.mod.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachment extends js.Object {
+trait Attachment extends StObject {
   
   var Base64Content: String = js.native
   
@@ -22,27 +23,15 @@ object Attachment {
   }
   
   @scala.inline
-  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase64Content(value: String): Self = StObject.set(x, "Base64Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBase64Content(value: String): Self = this.set("Base64Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentType(value: String): Self = this.set("ContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilename(value: String): Self = this.set("Filename", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "Filename", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.obeliskJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "AbstractColor")
 @js.native
-class AbstractColor () extends js.Object {
+class AbstractColor () extends StObject {
   
   var border: Double = js.native
   

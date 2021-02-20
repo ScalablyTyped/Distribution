@@ -1,7 +1,8 @@
 package typings.emberData.mod.DS
 
-import typings.emberObject.mod.default
+import typings.ember.mod.default.Object
 import typings.rsvp.mod.default.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.Adapter")
 @js.native
-class Adapter () extends default {
+class Adapter () extends Object {
   
   /**
     * By default the store will try to coalesce all `fetchRecord` calls within the same runloop

@@ -2,13 +2,14 @@ package typings.jqueryui.JQueryUI
 
 import typings.jqueryui.JQuery
 import typings.jqueryui.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Draggable //////////////////////////////////////////////////
 @js.native
-trait DraggableEventUIParams extends js.Object {
+trait DraggableEventUIParams extends StObject {
   
   var helper: JQuery = js.native
   
@@ -25,27 +26,15 @@ object DraggableEventUIParams {
   }
   
   @scala.inline
-  implicit class DraggableEventUIParamsOps[Self <: DraggableEventUIParams] (val x: Self) extends AnyVal {
+  implicit class DraggableEventUIParamsMutableBuilder[Self <: DraggableEventUIParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffset(value: Left): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHelper(value: JQuery): Self = this.set("helper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: Left): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Left): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

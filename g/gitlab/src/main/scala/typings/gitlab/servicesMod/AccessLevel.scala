@@ -1,5 +1,6 @@
 package typings.gitlab.servicesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gitlab.gitlabNumbers.`40`
   - typings.gitlab.gitlabNumbers.`50`
 */
-trait AccessLevel extends js.Object
+trait AccessLevel extends StObject
 object AccessLevel {
   
   @scala.inline

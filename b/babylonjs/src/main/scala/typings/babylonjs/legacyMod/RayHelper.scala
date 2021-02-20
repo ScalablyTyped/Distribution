@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class RayHelper protected ()
   def this(ray: typings.babylonjs.rayMod.Ray) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "RayHelper")
-@js.native
-object RayHelper extends js.Object {
+object RayHelper {
   
   /**
     * Helper function to create a colored helper in a scene in one line.
@@ -29,6 +28,8 @@ object RayHelper extends js.Object {
     * @param color Defines the color we want to see the ray in
     * @returns The newly created ray helper.
     */
+  @JSImport("babylonjs/Legacy/legacy", "RayHelper.CreateAndShow")
+  @js.native
   def CreateAndShow(
     ray: typings.babylonjs.rayMod.Ray,
     scene: typings.babylonjs.sceneMod.Scene,

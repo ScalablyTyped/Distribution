@@ -2,12 +2,13 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import typings.googleapis.anon.FolderName
 import typings.googleapis.anon.MatchMyInterests
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUsersettings extends js.Object {
+trait SchemaUsersettings extends StObject {
   
   /**
     * Resource type.
@@ -30,36 +31,24 @@ object SchemaUsersettings {
   }
   
   @scala.inline
-  implicit class SchemaUsersettingsOps[Self <: SchemaUsersettings] (val x: Self) extends AnyVal {
+  implicit class SchemaUsersettingsMutableBuilder[Self <: SchemaUsersettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotesExport(value: FolderName): Self = StObject.set(x, "notesExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNotesExportUndefined: Self = StObject.set(x, "notesExport", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNotification(value: MatchMyInterests): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotesExport(value: FolderName): Self = this.set("notesExport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotesExport: Self = this.set("notesExport", js.undefined)
-    
-    @scala.inline
-    def setNotification(value: MatchMyInterests): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
   }
 }

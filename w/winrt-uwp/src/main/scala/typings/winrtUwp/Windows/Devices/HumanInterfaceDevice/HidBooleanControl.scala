@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a simple Boolean control on a HID device that returns on/off values. An example would be the LED light on a keyboard. */
 @js.native
-trait HidBooleanControl extends js.Object {
+trait HidBooleanControl extends StObject {
   
   /** Retrieves a description of the given Boolean control. */
   var controlDescription: HidBooleanControlDescription = js.native
@@ -38,33 +39,21 @@ object HidBooleanControl {
   }
   
   @scala.inline
-  implicit class HidBooleanControlOps[Self <: HidBooleanControl] (val x: Self) extends AnyVal {
+  implicit class HidBooleanControlMutableBuilder[Self <: HidBooleanControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlDescription(value: HidBooleanControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlDescription(value: HidBooleanControlDescription): Self = this.set("controlDescription", value.asInstanceOf[js.Any])
+    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageId(value: Double): Self = this.set("usageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsagePage(value: Double): Self = this.set("usagePage", value.asInstanceOf[js.Any])
+    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInconclusiveDetail extends js.Object {
+trait SchemaInconclusiveDetail extends StObject {
   
   /**
     * If the end user aborted the test execution before a pass or fail could be
@@ -31,30 +32,18 @@ object SchemaInconclusiveDetail {
   }
   
   @scala.inline
-  implicit class SchemaInconclusiveDetailOps[Self <: SchemaInconclusiveDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaInconclusiveDetailMutableBuilder[Self <: SchemaInconclusiveDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortedByUser(value: Boolean): Self = StObject.set(x, "abortedByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortedByUserUndefined: Self = StObject.set(x, "abortedByUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfrastructureFailure(value: Boolean): Self = StObject.set(x, "infrastructureFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortedByUser(value: Boolean): Self = this.set("abortedByUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAbortedByUser: Self = this.set("abortedByUser", js.undefined)
-    
-    @scala.inline
-    def setInfrastructureFailure(value: Boolean): Self = this.set("infrastructureFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfrastructureFailure: Self = this.set("infrastructureFailure", js.undefined)
+    def setInfrastructureFailureUndefined: Self = StObject.set(x, "infrastructureFailure", js.undefined)
   }
 }

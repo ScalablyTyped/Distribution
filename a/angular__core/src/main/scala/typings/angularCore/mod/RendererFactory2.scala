@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "RendererFactory2")
 @js.native
-abstract class RendererFactory2 () extends js.Object {
+abstract class RendererFactory2 () extends StObject {
   
   /**
     * A callback invoked when rendering has begun.

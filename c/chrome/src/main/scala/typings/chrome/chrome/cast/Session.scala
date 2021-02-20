@@ -4,12 +4,13 @@ import typings.chrome.anon.Name
 import typings.chrome.chrome.cast.media.LoadRequest
 import typings.chrome.chrome.cast.media.Media
 import typings.chrome.chrome.cast.media.QueueLoadRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Session extends js.Object {
+trait Session extends StObject {
   
   /**
     * @param {function(!chrome.cast.media.Media)} listener

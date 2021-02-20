@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetVirtualTimePolicyRequest extends js.Object {
+trait SetVirtualTimePolicyRequest extends StObject {
   
   /**
     * If set, after this many virtual milliseconds have elapsed virtual time will be paused and a
@@ -43,45 +44,33 @@ object SetVirtualTimePolicyRequest {
   }
   
   @scala.inline
-  implicit class SetVirtualTimePolicyRequestOps[Self <: SetVirtualTimePolicyRequest] (val x: Self) extends AnyVal {
+  implicit class SetVirtualTimePolicyRequestMutableBuilder[Self <: SetVirtualTimePolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetUndefined: Self = StObject.set(x, "budget", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialVirtualTime(value: TimeSinceEpoch): Self = StObject.set(x, "initialVirtualTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: VirtualTimePolicy): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setInitialVirtualTimeUndefined: Self = StObject.set(x, "initialVirtualTime", js.undefined)
     
     @scala.inline
-    def setBudget(value: Double): Self = this.set("budget", value.asInstanceOf[js.Any])
+    def setMaxVirtualTimeTaskStarvationCount(value: integer): Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBudget: Self = this.set("budget", js.undefined)
+    def setMaxVirtualTimeTaskStarvationCountUndefined: Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", js.undefined)
     
     @scala.inline
-    def setInitialVirtualTime(value: TimeSinceEpoch): Self = this.set("initialVirtualTime", value.asInstanceOf[js.Any])
+    def setPolicy(value: VirtualTimePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialVirtualTime: Self = this.set("initialVirtualTime", js.undefined)
+    def setWaitForNavigation(value: Boolean): Self = StObject.set(x, "waitForNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVirtualTimeTaskStarvationCount(value: integer): Self = this.set("maxVirtualTimeTaskStarvationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxVirtualTimeTaskStarvationCount: Self = this.set("maxVirtualTimeTaskStarvationCount", js.undefined)
-    
-    @scala.inline
-    def setWaitForNavigation(value: Boolean): Self = this.set("waitForNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForNavigation: Self = this.set("waitForNavigation", js.undefined)
+    def setWaitForNavigationUndefined: Self = StObject.set(x, "waitForNavigation", js.undefined)
   }
 }

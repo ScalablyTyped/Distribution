@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateVocabularyFilterRequest extends js.Object {
+trait UpdateVocabularyFilterRequest extends StObject {
   
   /**
     * The Amazon S3 location of a text file used as input to create the vocabulary filter. Only use characters from the character set defined for custom vocabularies. For a list of character sets, see Character Sets for Custom Vocabularies. The specified file must be less than 50 KB of UTF-8 characters. If you provide the location of a list of words in the VocabularyFilterFileUri parameter, you can't use the Words parameter.
@@ -31,36 +32,24 @@ object UpdateVocabularyFilterRequest {
   }
   
   @scala.inline
-  implicit class UpdateVocabularyFilterRequestOps[Self <: UpdateVocabularyFilterRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateVocabularyFilterRequestMutableBuilder[Self <: UpdateVocabularyFilterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVocabularyFilterFileUri(value: Uri): Self = StObject.set(x, "VocabularyFilterFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVocabularyFilterFileUriUndefined: Self = StObject.set(x, "VocabularyFilterFileUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVocabularyFilterName(value: VocabularyFilterName): Self = this.set("VocabularyFilterName", value.asInstanceOf[js.Any])
+    def setWords(value: Words): Self = StObject.set(x, "Words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVocabularyFilterFileUri(value: Uri): Self = this.set("VocabularyFilterFileUri", value.asInstanceOf[js.Any])
+    def setWordsUndefined: Self = StObject.set(x, "Words", js.undefined)
     
     @scala.inline
-    def deleteVocabularyFilterFileUri: Self = this.set("VocabularyFilterFileUri", js.undefined)
-    
-    @scala.inline
-    def setWordsVarargs(value: Word*): Self = this.set("Words", js.Array(value :_*))
-    
-    @scala.inline
-    def setWords(value: Words): Self = this.set("Words", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWords: Self = this.set("Words", js.undefined)
+    def setWordsVarargs(value: Word*): Self = StObject.set(x, "Words", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#stepmaneuver-object
   */
 @js.native
-trait StepManeuver extends js.Object {
+trait StepManeuver extends StObject {
   
   /**
     * The clockwise angle from true north to the direction of travel immediately after the maneuver. Range 0-359.
@@ -53,36 +54,24 @@ object StepManeuver {
   }
   
   @scala.inline
-  implicit class StepManeuverOps[Self <: StepManeuver] (val x: Self) extends AnyVal {
+  implicit class StepManeuverMutableBuilder[Self <: StepManeuver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearing_after(value: Double): Self = StObject.set(x, "bearing_after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearing_before(value: Double): Self = StObject.set(x, "bearing_before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearing_after(value: Double): Self = this.set("bearing_after", value.asInstanceOf[js.Any])
+    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def setBearing_before(value: Double): Self = this.set("bearing_before", value.asInstanceOf[js.Any])
+    def setModifier(value: Indication): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationVarargs(value: Double*): Self = this.set("location", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocation(value: Coordinate): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifier(value: Indication): Self = this.set("modifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: StepManeuverTypes): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: StepManeuverTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

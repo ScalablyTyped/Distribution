@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionTransport extends js.Object {
+trait ConnectionTransport extends StObject {
   
   def close(): Unit = js.native
   
@@ -24,36 +25,24 @@ object ConnectionTransport {
   }
   
   @scala.inline
-  implicit class ConnectionTransportOps[Self <: ConnectionTransport] (val x: Self) extends AnyVal {
+  implicit class ConnectionTransportMutableBuilder[Self <: ConnectionTransport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setOnmessage(value: /* message */ String => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSend(value: String => Unit): Self = this.set("send", js.Any.fromFunction1(value))
+    def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
     
     @scala.inline
-    def setOnclose(value: () => Unit): Self = this.set("onclose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnclose: Self = this.set("onclose", js.undefined)
-    
-    @scala.inline
-    def setOnmessage(value: /* message */ String => Unit): Self = this.set("onmessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnmessage: Self = this.set("onmessage", js.undefined)
+    def setSend(value: String => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }
 }

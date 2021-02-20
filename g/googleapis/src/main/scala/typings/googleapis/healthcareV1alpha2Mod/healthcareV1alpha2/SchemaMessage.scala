@@ -1,6 +1,7 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the standard.
   */
 @js.native
-trait SchemaMessage extends js.Object {
+trait SchemaMessage extends StObject {
   
   /**
     * The datetime when the message was created. Set by the server.
@@ -77,75 +78,63 @@ object SchemaMessage {
   }
   
   @scala.inline
-  implicit class SchemaMessageOps[Self <: SchemaMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaMessageMutableBuilder[Self <: SchemaMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: String): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessageType: Self = this.set("messageType", js.undefined)
+    def setParsedData(value: SchemaParsedData): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParsedDataUndefined: Self = StObject.set(x, "parsedData", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPatientIds(value: js.Array[SchemaPatientId]): Self = StObject.set(x, "patientIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedData(value: SchemaParsedData): Self = this.set("parsedData", value.asInstanceOf[js.Any])
+    def setPatientIdsUndefined: Self = StObject.set(x, "patientIds", js.undefined)
     
     @scala.inline
-    def deleteParsedData: Self = this.set("parsedData", js.undefined)
+    def setPatientIdsVarargs(value: SchemaPatientId*): Self = StObject.set(x, "patientIds", js.Array(value :_*))
     
     @scala.inline
-    def setPatientIdsVarargs(value: SchemaPatientId*): Self = this.set("patientIds", js.Array(value :_*))
+    def setSendFacility(value: String): Self = StObject.set(x, "sendFacility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatientIds(value: js.Array[SchemaPatientId]): Self = this.set("patientIds", value.asInstanceOf[js.Any])
+    def setSendFacilityUndefined: Self = StObject.set(x, "sendFacility", js.undefined)
     
     @scala.inline
-    def deletePatientIds: Self = this.set("patientIds", js.undefined)
+    def setSendTime(value: String): Self = StObject.set(x, "sendTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendFacility(value: String): Self = this.set("sendFacility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendFacility: Self = this.set("sendFacility", js.undefined)
-    
-    @scala.inline
-    def setSendTime(value: String): Self = this.set("sendTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendTime: Self = this.set("sendTime", js.undefined)
+    def setSendTimeUndefined: Self = StObject.set(x, "sendTime", js.undefined)
   }
 }

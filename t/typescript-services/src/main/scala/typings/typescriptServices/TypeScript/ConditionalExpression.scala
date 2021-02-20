@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object ConditionalExpression {
   }
   
   @scala.inline
-  implicit class ConditionalExpressionOps[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
+  implicit class ConditionalExpressionMutableBuilder[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStructuralEquals(value: (ConditionalExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWhenFalse(value: AST): Self = StObject.set(x, "whenFalse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: AST): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (ConditionalExpression, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWhenFalse(value: AST): Self = this.set("whenFalse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhenTrue(value: AST): Self = this.set("whenTrue", value.asInstanceOf[js.Any])
+    def setWhenTrue(value: AST): Self = StObject.set(x, "whenTrue", value.asInstanceOf[js.Any])
   }
 }

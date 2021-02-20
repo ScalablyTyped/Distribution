@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFunctionResponse extends js.Object {
+trait UpdateFunctionResponse extends StObject {
   
   /**
     * The Function object.
@@ -21,24 +22,12 @@ object UpdateFunctionResponse {
   }
   
   @scala.inline
-  implicit class UpdateFunctionResponseOps[Self <: UpdateFunctionResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateFunctionResponseMutableBuilder[Self <: UpdateFunctionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionConfiguration(value: FunctionConfiguration): Self = StObject.set(x, "functionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFunctionConfiguration(value: FunctionConfiguration): Self = this.set("functionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunctionConfiguration: Self = this.set("functionConfiguration", js.undefined)
+    def setFunctionConfigurationUndefined: Self = StObject.set(x, "functionConfiguration", js.undefined)
   }
 }

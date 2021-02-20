@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait hasSetTrackingTemplate extends js.Object {
+trait hasSetTrackingTemplate extends StObject {
   
   def setCustomParameters(customParameters: js.Object): Unit = js.native
   
@@ -20,24 +21,12 @@ object hasSetTrackingTemplate {
   }
   
   @scala.inline
-  implicit class hasSetTrackingTemplateOps[Self <: hasSetTrackingTemplate] (val x: Self) extends AnyVal {
+  implicit class hasSetTrackingTemplateMutableBuilder[Self <: hasSetTrackingTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetCustomParameters(value: js.Object => Unit): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetCustomParameters(value: js.Object => Unit): Self = this.set("setCustomParameters", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTrackingTemplate(value: String => Unit): Self = this.set("setTrackingTemplate", js.Any.fromFunction1(value))
+    def setSetTrackingTemplate(value: String => Unit): Self = StObject.set(x, "setTrackingTemplate", js.Any.fromFunction1(value))
   }
 }

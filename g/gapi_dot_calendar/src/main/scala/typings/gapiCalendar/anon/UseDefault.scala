@@ -1,11 +1,12 @@
 package typings.gapiCalendar.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseDefault extends js.Object {
+trait UseDefault extends StObject {
   
   var overrides: js.UndefOr[js.Array[Method]] = js.native
   
@@ -20,30 +21,18 @@ object UseDefault {
   }
   
   @scala.inline
-  implicit class UseDefaultOps[Self <: UseDefault] (val x: Self) extends AnyVal {
+  implicit class UseDefaultMutableBuilder[Self <: UseDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverrides(value: js.Array[Method]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverridesVarargs(value: Method*): Self = StObject.set(x, "overrides", js.Array(value :_*))
     
     @scala.inline
-    def setUseDefault(value: Boolean): Self = this.set("useDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverridesVarargs(value: Method*): Self = this.set("overrides", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverrides(value: js.Array[Method]): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
   }
 }

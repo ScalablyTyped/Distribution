@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Animations/animationPropertiesOverride", JSImport.Namespace)
-@js.native
-object animationPropertiesOverrideMod extends js.Object {
+object animationPropertiesOverrideMod {
   
+  @JSImport("babylonjs/Animations/animationPropertiesOverride", "AnimationPropertiesOverride")
   @js.native
-  class AnimationPropertiesOverride () extends js.Object {
+  class AnimationPropertiesOverride () extends StObject {
     
     /**
       * Gets or sets the blending speed to use when enableBlending is true

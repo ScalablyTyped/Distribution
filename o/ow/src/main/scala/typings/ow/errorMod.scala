@@ -3,14 +3,14 @@ package typings.ow
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/error", JSImport.Namespace)
-@js.native
-object errorMod extends js.Object {
+object errorMod {
   
+  @JSImport("ow/dist/source/predicates/error", "ErrorPredicate")
   @js.native
   /**
     @hidden

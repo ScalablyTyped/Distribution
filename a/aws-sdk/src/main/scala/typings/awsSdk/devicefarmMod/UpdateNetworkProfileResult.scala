@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateNetworkProfileResult extends js.Object {
+trait UpdateNetworkProfileResult extends StObject {
   
   /**
     * A list of the available network profiles.
@@ -21,24 +22,12 @@ object UpdateNetworkProfileResult {
   }
   
   @scala.inline
-  implicit class UpdateNetworkProfileResultOps[Self <: UpdateNetworkProfileResult] (val x: Self) extends AnyVal {
+  implicit class UpdateNetworkProfileResultMutableBuilder[Self <: UpdateNetworkProfileResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkProfile(value: NetworkProfile): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkProfile(value: NetworkProfile): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
   }
 }

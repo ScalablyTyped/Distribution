@@ -1,13 +1,20 @@
 package typings.rcPicker
 
+import org.scalablytyped.runtime.Shortcut
 import typings.rcPicker.interfaceMod.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-picker/es/locale/hu_HU", JSImport.Namespace)
-@js.native
-object huHUMod extends js.Object {
+object huHUMod extends Shortcut {
   
+  @JSImport("rc-picker/es/locale/hu_HU", JSImport.Default)
+  @js.native
   val default: Locale = js.native
+  
+  type _To = Locale
+  
+  /* This means you don't have to write `default`, but can instead just say `huHUMod.foo` */
+  override def _to: Locale = default
 }

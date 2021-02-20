@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDataConfig extends js.Object {
+trait InputDataConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
@@ -26,30 +27,18 @@ object InputDataConfig {
   }
   
   @scala.inline
-  implicit class InputDataConfigOps[Self <: InputDataConfig] (val x: Self) extends AnyVal {
+  implicit class InputDataConfigMutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupplementaryFeatures(value: SupplementaryFeatures): Self = StObject.set(x, "SupplementaryFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupplementaryFeaturesUndefined: Self = StObject.set(x, "SupplementaryFeatures", js.undefined)
     
     @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = this.set("DatasetGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupplementaryFeaturesVarargs(value: SupplementaryFeature*): Self = this.set("SupplementaryFeatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupplementaryFeatures(value: SupplementaryFeatures): Self = this.set("SupplementaryFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupplementaryFeatures: Self = this.set("SupplementaryFeatures", js.undefined)
+    def setSupplementaryFeaturesVarargs(value: SupplementaryFeature*): Self = StObject.set(x, "SupplementaryFeatures", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
 import typings.winrtUwp.anon.CookiePairHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,24 @@ class HttpCookiePairHeaderValue protected ()
     */
   def this(name: String, value: String) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue")
-@js.native
-object HttpCookiePairHeaderValue extends js.Object {
+object HttpCookiePairHeaderValue {
   
   /**
     * Converts a string to an HttpCookiePairHeaderValue instance.
     * @param input A string that represents the cookie name and value in the Cookie HTTP header.
     * @return An HttpCookiePairHeaderValue instance.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue.parse")
+  @js.native
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue = js.native
   
   /**
     * Determines whether a string is valid HttpCookiePairHeaderValue information.
     * @param input The string to validate.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue.tryParse")
+  @js.native
   def tryParse(input: String): CookiePairHeaderValue = js.native
 }

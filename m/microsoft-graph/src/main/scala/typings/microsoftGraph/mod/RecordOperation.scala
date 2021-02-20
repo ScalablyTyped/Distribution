@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object RecordOperation {
   }
   
   @scala.inline
-  implicit class RecordOperationOps[Self <: RecordOperation] (val x: Self) extends AnyVal {
+  implicit class RecordOperationMutableBuilder[Self <: RecordOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecordingAccessToken(value: NullableOption[String]): Self = StObject.set(x, "recordingAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecordingAccessTokenNull: Self = StObject.set(x, "recordingAccessToken", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordingAccessTokenUndefined: Self = StObject.set(x, "recordingAccessToken", js.undefined)
     
     @scala.inline
-    def setRecordingAccessToken(value: NullableOption[String]): Self = this.set("recordingAccessToken", value.asInstanceOf[js.Any])
+    def setRecordingLocation(value: NullableOption[String]): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordingAccessToken: Self = this.set("recordingAccessToken", js.undefined)
+    def setRecordingLocationNull: Self = StObject.set(x, "recordingLocation", null)
     
     @scala.inline
-    def setRecordingAccessTokenNull: Self = this.set("recordingAccessToken", null)
-    
-    @scala.inline
-    def setRecordingLocation(value: NullableOption[String]): Self = this.set("recordingLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordingLocation: Self = this.set("recordingLocation", js.undefined)
-    
-    @scala.inline
-    def setRecordingLocationNull: Self = this.set("recordingLocation", null)
+    def setRecordingLocationUndefined: Self = StObject.set(x, "recordingLocation", js.undefined)
   }
 }

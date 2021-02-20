@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,57 +32,45 @@ object CalendarGroup {
   }
   
   @scala.inline
-  implicit class CalendarGroupOps[Self <: CalendarGroup] (val x: Self) extends AnyVal {
+  implicit class CalendarGroupMutableBuilder[Self <: CalendarGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendars(value: NullableOption[js.Array[Calendar]]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarsNull: Self = StObject.set(x, "calendars", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
     @scala.inline
-    def setCalendarsVarargs(value: Calendar*): Self = this.set("calendars", js.Array(value :_*))
+    def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
     
     @scala.inline
-    def setCalendars(value: NullableOption[js.Array[Calendar]]): Self = this.set("calendars", value.asInstanceOf[js.Any])
+    def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendars: Self = this.set("calendars", js.undefined)
+    def setChangeKeyNull: Self = StObject.set(x, "changeKey", null)
     
     @scala.inline
-    def setCalendarsNull: Self = this.set("calendars", null)
+    def setChangeKeyUndefined: Self = StObject.set(x, "changeKey", js.undefined)
     
     @scala.inline
-    def setChangeKey(value: NullableOption[String]): Self = this.set("changeKey", value.asInstanceOf[js.Any])
+    def setClassId(value: NullableOption[String]): Self = StObject.set(x, "classId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChangeKey: Self = this.set("changeKey", js.undefined)
+    def setClassIdNull: Self = StObject.set(x, "classId", null)
     
     @scala.inline
-    def setChangeKeyNull: Self = this.set("changeKey", null)
+    def setClassIdUndefined: Self = StObject.set(x, "classId", js.undefined)
     
     @scala.inline
-    def setClassId(value: NullableOption[String]): Self = this.set("classId", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassId: Self = this.set("classId", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setClassIdNull: Self = this.set("classId", null)
-    
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

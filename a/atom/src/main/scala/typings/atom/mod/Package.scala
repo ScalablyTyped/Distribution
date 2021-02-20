@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.atom.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Package extends js.Object {
+trait Package extends StObject {
   
   /** If a previous rebuild failed, get the contents of stderr. */
   def getBuildFailureOutput(): String | Null = js.native
@@ -50,36 +51,24 @@ object Package {
   }
   
   @scala.inline
-  implicit class PackageOps[Self <: Package] (val x: Self) extends AnyVal {
+  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBuildFailureOutput(value: () => String | Null): Self = StObject.set(x, "getBuildFailureOutput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCompatible(value: () => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBuildFailureOutput(value: () => String | Null): Self = this.set("getBuildFailureOutput", js.Any.fromFunction0(value))
+    def setOnDidDeactivate(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDeactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsCompatible(value: () => Boolean): Self = this.set("isCompatible", js.Any.fromFunction0(value))
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnDidDeactivate(value: js.Function0[Unit] => Disposable): Self = this.set("onDidDeactivate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRebuild(value: () => js.Promise[Code]): Self = this.set("rebuild", js.Any.fromFunction0(value))
+    def setRebuild(value: () => js.Promise[Code]): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
   }
 }

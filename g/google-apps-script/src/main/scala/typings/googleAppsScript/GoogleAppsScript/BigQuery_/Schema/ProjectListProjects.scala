@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectListProjects extends js.Object {
+trait ProjectListProjects extends StObject {
   
   var friendlyName: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object ProjectListProjects {
   }
   
   @scala.inline
-  implicit class ProjectListProjectsOps[Self <: ProjectListProjects] (val x: Self) extends AnyVal {
+  implicit class ProjectListProjectsMutableBuilder[Self <: ProjectListProjects] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNumericId(value: String): Self = StObject.set(x, "numericId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNumericIdUndefined: Self = StObject.set(x, "numericId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setProjectReference(value: ProjectReference): Self = StObject.set(x, "projectReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericId(value: String): Self = this.set("numericId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericId: Self = this.set("numericId", js.undefined)
-    
-    @scala.inline
-    def setProjectReference(value: ProjectReference): Self = this.set("projectReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectReference: Self = this.set("projectReference", js.undefined)
+    def setProjectReferenceUndefined: Self = StObject.set(x, "projectReference", js.undefined)
   }
 }

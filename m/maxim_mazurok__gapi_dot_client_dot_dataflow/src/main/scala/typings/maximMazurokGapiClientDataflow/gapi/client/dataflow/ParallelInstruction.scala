@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParallelInstruction extends js.Object {
+trait ParallelInstruction extends StObject {
   
   /** Additional information for Flatten instructions. */
   var flatten: js.UndefOr[FlattenInstruction] = js.native
@@ -43,75 +44,63 @@ object ParallelInstruction {
   }
   
   @scala.inline
-  implicit class ParallelInstructionOps[Self <: ParallelInstruction] (val x: Self) extends AnyVal {
+  implicit class ParallelInstructionMutableBuilder[Self <: ParallelInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlatten(value: FlattenInstruction): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatten(value: FlattenInstruction): Self = this.set("flatten", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutputs(value: js.Array[InstructionOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    def setOutputsVarargs(value: InstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: InstructionOutput*): Self = this.set("outputs", js.Array(value :_*))
+    def setParDo(value: ParDoInstruction): Self = StObject.set(x, "parDo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: js.Array[InstructionOutput]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setParDoUndefined: Self = StObject.set(x, "parDo", js.undefined)
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setPartialGroupByKey(value: PartialGroupByKeyInstruction): Self = StObject.set(x, "partialGroupByKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParDo(value: ParDoInstruction): Self = this.set("parDo", value.asInstanceOf[js.Any])
+    def setPartialGroupByKeyUndefined: Self = StObject.set(x, "partialGroupByKey", js.undefined)
     
     @scala.inline
-    def deleteParDo: Self = this.set("parDo", js.undefined)
+    def setRead(value: ReadInstruction): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialGroupByKey(value: PartialGroupByKeyInstruction): Self = this.set("partialGroupByKey", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deletePartialGroupByKey: Self = this.set("partialGroupByKey", js.undefined)
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: ReadInstruction): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setWrite(value: WriteInstruction): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
-    
-    @scala.inline
-    def setWrite(value: WriteInstruction): Self = this.set("write", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

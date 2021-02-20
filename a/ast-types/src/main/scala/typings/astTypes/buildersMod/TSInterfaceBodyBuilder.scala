@@ -7,12 +7,13 @@ import typings.astTypes.kindsMod.TSIndexSignatureKind
 import typings.astTypes.kindsMod.TSMethodSignatureKind
 import typings.astTypes.kindsMod.TSPropertySignatureKind
 import typings.astTypes.namedTypesMod.namedTypes.TSInterfaceBody
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSInterfaceBodyBuilder extends js.Object {
+trait TSInterfaceBodyBuilder extends StObject {
   
   def apply(
     body: js.Array[

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2FixedSizeBucketingConfig extends js.Object {
+trait GooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
   
   /**
     * Required. Size of each bucket (except for minimum and maximum buckets). So if `lower_bound` = 10, `upper_bound` = 89, and `bucket_size` = 10, then the following buckets would be
@@ -34,36 +35,24 @@ object GooglePrivacyDlpV2FixedSizeBucketingConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2FixedSizeBucketingConfigOps[Self <: GooglePrivacyDlpV2FixedSizeBucketingConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2FixedSizeBucketingConfigMutableBuilder[Self <: GooglePrivacyDlpV2FixedSizeBucketingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowerBound(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketSize(value: Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
     @scala.inline
-    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    def setUpperBound(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerBound(value: GooglePrivacyDlpV2Value): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowerBound: Self = this.set("lowerBound", js.undefined)
-    
-    @scala.inline
-    def setUpperBound(value: GooglePrivacyDlpV2Value): Self = this.set("upperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperBound: Self = this.set("upperBound", js.undefined)
+    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

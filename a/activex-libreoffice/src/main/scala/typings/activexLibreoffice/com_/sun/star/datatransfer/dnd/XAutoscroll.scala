@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,27 +61,15 @@ object XAutoscroll {
   }
   
   @scala.inline
-  implicit class XAutoscrollOps[Self <: XAutoscroll] (val x: Self) extends AnyVal {
+  implicit class XAutoscrollMutableBuilder[Self <: XAutoscroll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscroll(value: (Double, Double) => Unit): Self = StObject.set(x, "autoscroll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscrollRegion(value: js.Any): Self = StObject.set(x, "AutoscrollRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoscrollRegion(value: js.Any): Self = this.set("AutoscrollRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoscroll(value: (Double, Double) => Unit): Self = this.set("autoscroll", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetAutoscrollRegion(value: () => js.Any): Self = this.set("getAutoscrollRegion", js.Any.fromFunction0(value))
+    def setGetAutoscrollRegion(value: () => js.Any): Self = StObject.set(x, "getAutoscrollRegion", js.Any.fromFunction0(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.glaze.anon
 
 import typings.glaze.glazeNumbers.`4`
 import typings.glaze.glazeNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `2` extends js.Object {
+trait `2` extends StObject {
   
   val `1`: typings.glaze.glazeNumbers.`1` = js.native
   
@@ -30,30 +31,18 @@ object `2` {
   }
   
   @scala.inline
-  implicit class `2Ops`[Self <: `2`] (val x: Self) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: typings.glaze.glazeNumbers.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set2(value: typings.glaze.glazeNumbers.`2`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set4(value: `4`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: typings.glaze.glazeNumbers.`1`): Self = this.set("1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set2(value: typings.glaze.glazeNumbers.`2`): Self = this.set("2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set4(value: `4`): Self = this.set("4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set8(value: `8`): Self = this.set("8", value.asInstanceOf[js.Any])
+    def set8(value: `8`): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
   }
 }

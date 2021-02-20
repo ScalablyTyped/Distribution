@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadDetails extends js.Object {
+trait ThreadDetails extends StObject {
   
   /**
     * Snapshot of CPU registers.
@@ -31,27 +32,15 @@ object ThreadDetails {
   }
   
   @scala.inline
-  implicit class ThreadDetailsOps[Self <: ThreadDetails] (val x: Self) extends AnyVal {
+  implicit class ThreadDetailsMutableBuilder[Self <: ThreadDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: ThreadId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: CpuContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: ThreadId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: ThreadState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: ThreadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

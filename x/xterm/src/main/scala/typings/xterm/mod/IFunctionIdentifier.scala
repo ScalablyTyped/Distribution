@@ -1,11 +1,12 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFunctionIdentifier extends js.Object {
+trait IFunctionIdentifier extends StObject {
   
   /**
     * Final byte, must be in range \x40 .. \x7e for CSI and DCS,
@@ -35,33 +36,21 @@ object IFunctionIdentifier {
   }
   
   @scala.inline
-  implicit class IFunctionIdentifierOps[Self <: IFunctionIdentifier] (val x: Self) extends AnyVal {
+  implicit class IFunctionIdentifierMutableBuilder[Self <: IFunctionIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinal(value: String): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntermediates(value: String): Self = StObject.set(x, "intermediates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntermediatesUndefined: Self = StObject.set(x, "intermediates", js.undefined)
     
     @scala.inline
-    def setFinal(value: String): Self = this.set("final", value.asInstanceOf[js.Any])
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntermediates(value: String): Self = this.set("intermediates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntermediates: Self = this.set("intermediates", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

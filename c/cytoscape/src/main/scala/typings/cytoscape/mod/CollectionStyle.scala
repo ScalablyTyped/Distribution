@@ -1,12 +1,13 @@
 package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionStyle extends js.Object {
+trait CollectionStyle extends StObject {
   
   /**
     * Add classes to elements.

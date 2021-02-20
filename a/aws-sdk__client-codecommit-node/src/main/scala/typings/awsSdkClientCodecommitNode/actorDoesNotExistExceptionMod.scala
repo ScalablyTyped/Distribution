@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/ActorDoesNotExistException", JSImport.Namespace)
-@js.native
-object actorDoesNotExistExceptionMod extends js.Object {
+object actorDoesNotExistExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/ActorDoesNotExistException", "ActorDoesNotExistException")
+  @js.native
   val ActorDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

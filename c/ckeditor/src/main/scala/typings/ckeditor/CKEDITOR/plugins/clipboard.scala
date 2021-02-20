@@ -3,16 +3,15 @@ package typings.ckeditor.CKEDITOR.plugins
 import typings.ckeditor.CKEDITOR.editor
 import typings.std.DataTransfer
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CKEDITOR.plugins.clipboard")
-@js.native
-object clipboard extends js.Object {
+object clipboard {
   
   @js.native
-  trait dataTransfer extends js.Object {
+  trait dataTransfer extends StObject {
     
     @JSName("$")
     val $: DataTransfer = js.native
@@ -40,7 +39,7 @@ object clipboard extends js.Object {
   }
   
   @js.native
-  trait fallbackDataTransfer extends js.Object {
+  trait fallbackDataTransfer extends StObject {
     
     def getData(`type`: String): String = js.native
     def getData(`type`: String, getNative: Boolean): String = js.native

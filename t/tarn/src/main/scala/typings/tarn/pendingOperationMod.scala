@@ -2,16 +2,16 @@ package typings.tarn
 
 import typings.std.Error
 import typings.tarn.utilsMod.Deferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tarn/dist/PendingOperation", JSImport.Namespace)
-@js.native
-object pendingOperationMod extends js.Object {
+object pendingOperationMod {
   
+  @JSImport("tarn/dist/PendingOperation", "PendingOperation")
   @js.native
-  class PendingOperation[T] protected () extends js.Object {
+  class PendingOperation[T] protected () extends StObject {
     def this(timeoutMillis: Double) = this()
     
     def abort(): Unit = js.native

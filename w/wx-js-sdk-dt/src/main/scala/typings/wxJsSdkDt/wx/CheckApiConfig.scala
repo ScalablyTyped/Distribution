@@ -1,6 +1,7 @@
 package typings.wxJsSdkDt.wx
 
 import typings.wxJsSdkDt.anon.CheckResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,27 +33,15 @@ object CheckApiConfig {
   }
   
   @scala.inline
-  implicit class CheckApiConfigOps[Self <: CheckApiConfig] (val x: Self) extends AnyVal {
+  implicit class CheckApiConfigMutableBuilder[Self <: CheckApiConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJsApiList(value: js.Array[String]): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJsApiListVarargs(value: String*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJsApiListVarargs(value: String*): Self = this.set("jsApiList", js.Array(value :_*))
-    
-    @scala.inline
-    def setJsApiList(value: js.Array[String]): Self = this.set("jsApiList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: CheckResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccess(value: CheckResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

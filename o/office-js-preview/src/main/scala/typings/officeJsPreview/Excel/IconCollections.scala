@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IconCollections extends js.Object {
+trait IconCollections extends StObject {
   
   var fiveArrows: FiveArrowsSet = js.native
   
@@ -77,78 +78,66 @@ object IconCollections {
   }
   
   @scala.inline
-  implicit class IconCollectionsOps[Self <: IconCollections] (val x: Self) extends AnyVal {
+  implicit class IconCollectionsMutableBuilder[Self <: IconCollections] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiveArrows(value: FiveArrowsSet): Self = StObject.set(x, "fiveArrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiveArrowsGray(value: FiveArrowsGraySet): Self = StObject.set(x, "fiveArrowsGray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiveBoxes(value: FiveBoxesSet): Self = StObject.set(x, "fiveBoxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiveArrows(value: FiveArrowsSet): Self = this.set("fiveArrows", value.asInstanceOf[js.Any])
+    def setFiveQuarters(value: FiveQuartersSet): Self = StObject.set(x, "fiveQuarters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiveArrowsGray(value: FiveArrowsGraySet): Self = this.set("fiveArrowsGray", value.asInstanceOf[js.Any])
+    def setFiveRating(value: FiveRatingSet): Self = StObject.set(x, "fiveRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiveBoxes(value: FiveBoxesSet): Self = this.set("fiveBoxes", value.asInstanceOf[js.Any])
+    def setFourArrows(value: FourArrowsSet): Self = StObject.set(x, "fourArrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiveQuarters(value: FiveQuartersSet): Self = this.set("fiveQuarters", value.asInstanceOf[js.Any])
+    def setFourArrowsGray(value: FourArrowsGraySet): Self = StObject.set(x, "fourArrowsGray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiveRating(value: FiveRatingSet): Self = this.set("fiveRating", value.asInstanceOf[js.Any])
+    def setFourRating(value: FourRatingSet): Self = StObject.set(x, "fourRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourArrows(value: FourArrowsSet): Self = this.set("fourArrows", value.asInstanceOf[js.Any])
+    def setFourRedToBlack(value: FourRedToBlackSet): Self = StObject.set(x, "fourRedToBlack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourArrowsGray(value: FourArrowsGraySet): Self = this.set("fourArrowsGray", value.asInstanceOf[js.Any])
+    def setFourTrafficLights(value: FourTrafficLightsSet): Self = StObject.set(x, "fourTrafficLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourRating(value: FourRatingSet): Self = this.set("fourRating", value.asInstanceOf[js.Any])
+    def setThreeArrows(value: ThreeArrowsSet): Self = StObject.set(x, "threeArrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourRedToBlack(value: FourRedToBlackSet): Self = this.set("fourRedToBlack", value.asInstanceOf[js.Any])
+    def setThreeArrowsGray(value: ThreeArrowsGraySet): Self = StObject.set(x, "threeArrowsGray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourTrafficLights(value: FourTrafficLightsSet): Self = this.set("fourTrafficLights", value.asInstanceOf[js.Any])
+    def setThreeFlags(value: ThreeFlagsSet): Self = StObject.set(x, "threeFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeArrows(value: ThreeArrowsSet): Self = this.set("threeArrows", value.asInstanceOf[js.Any])
+    def setThreeSigns(value: ThreeSignsSet): Self = StObject.set(x, "threeSigns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeArrowsGray(value: ThreeArrowsGraySet): Self = this.set("threeArrowsGray", value.asInstanceOf[js.Any])
+    def setThreeStars(value: ThreeStarsSet): Self = StObject.set(x, "threeStars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeFlags(value: ThreeFlagsSet): Self = this.set("threeFlags", value.asInstanceOf[js.Any])
+    def setThreeSymbols(value: ThreeSymbolsSet): Self = StObject.set(x, "threeSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeSigns(value: ThreeSignsSet): Self = this.set("threeSigns", value.asInstanceOf[js.Any])
+    def setThreeSymbols2(value: ThreeSymbols2Set): Self = StObject.set(x, "threeSymbols2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeStars(value: ThreeStarsSet): Self = this.set("threeStars", value.asInstanceOf[js.Any])
+    def setThreeTrafficLights1(value: ThreeTrafficLights1Set): Self = StObject.set(x, "threeTrafficLights1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeSymbols(value: ThreeSymbolsSet): Self = this.set("threeSymbols", value.asInstanceOf[js.Any])
+    def setThreeTrafficLights2(value: ThreeTrafficLights2Set): Self = StObject.set(x, "threeTrafficLights2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeSymbols2(value: ThreeSymbols2Set): Self = this.set("threeSymbols2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreeTrafficLights1(value: ThreeTrafficLights1Set): Self = this.set("threeTrafficLights1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreeTrafficLights2(value: ThreeTrafficLights2Set): Self = this.set("threeTrafficLights2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreeTriangles(value: ThreeTrianglesSet): Self = this.set("threeTriangles", value.asInstanceOf[js.Any])
+    def setThreeTriangles(value: ThreeTrianglesSet): Self = StObject.set(x, "threeTriangles", value.asInstanceOf[js.Any])
   }
 }

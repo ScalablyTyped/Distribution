@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.clipboard.AdditionalItems
 import typings.chromeApps.chrome.clipboard.ImageType
 import typings.chromeApps.chrome.events.Event
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofclipboard extends js.Object {
+trait Typeofclipboard extends StObject {
   
   /** @enum */
   val DataItemType: TEXTHTML = js.native

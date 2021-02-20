@@ -9,12 +9,13 @@ import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequestOptions
 import typings.stripeV3.stripeV3Strings.bank_account
 import typings.stripeV3.stripeV3Strings.pii
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stripe extends js.Object {
+trait Stripe extends StObject {
   
   /**
     * Use stripe.confirmCardPayment when the customer submits your payment form.

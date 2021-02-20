@@ -1,17 +1,18 @@
 package typings.tinymce.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tinymce", "FocusManager")
 @js.native
-class FocusManager () extends js.Object
+class FocusManager () extends StObject
 /* static members */
-@JSImport("tinymce", "FocusManager")
-@js.native
-object FocusManager extends js.Object {
+object FocusManager {
   
+  @JSImport("tinymce", "FocusManager.isEditorUIElement")
+  @js.native
   def isEditorUIElement(elm: Element): Boolean = js.native
 }

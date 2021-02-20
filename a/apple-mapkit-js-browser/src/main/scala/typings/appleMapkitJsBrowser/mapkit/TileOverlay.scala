@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An overlay that covers an area of the map with bitmap tiles.
   */
 @js.native
-trait TileOverlay extends js.Object {
+trait TileOverlay extends StObject {
   
   /**
     * Custom data used to populate the URL template.
@@ -58,41 +59,29 @@ object TileOverlay {
   }
   
   @scala.inline
-  implicit class TileOverlayOps[Self <: TileOverlay] (val x: Self) extends AnyVal {
+  implicit class TileOverlayMutableBuilder[Self <: TileOverlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumZ(value: Double): Self = this.set("maximumZ", value.asInstanceOf[js.Any])
+    def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinimumZ(value: Double): Self = this.set("minimumZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReload(value: () => Unit): Self = this.set("reload", js.Any.fromFunction0(value))
+    def setUrlTemplate(value: String | URLTemplateCallback): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUrlTemplateFunction5(
       value: (/* x */ Double, /* y */ Double, /* z */ Double, /* scale */ Double, /* data */ js.Object) => String
-    ): Self = this.set("urlTemplate", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setUrlTemplate(value: String | URLTemplateCallback): Self = this.set("urlTemplate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "urlTemplate", js.Any.fromFunction5(value))
   }
 }

@@ -2,13 +2,14 @@ package typings.angularCompiler.compileMetadataMod
 
 import typings.angularCompiler.anon.Deps
 import typings.angularCompiler.coreMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compile_metadata", "ProviderMeta")
 @js.native
-class ProviderMeta protected () extends js.Object {
+class ProviderMeta protected () extends StObject {
   def this(token: js.Any, hasUseClassUseValueUseExistingUseFactoryDepsMulti: Deps) = this()
   
   var dependencies: js.Array[js.Object] | Null = js.native

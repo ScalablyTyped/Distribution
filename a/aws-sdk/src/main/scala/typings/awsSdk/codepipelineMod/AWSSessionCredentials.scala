@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AWSSessionCredentials extends js.Object {
+trait AWSSessionCredentials extends StObject {
   
   /**
     * The access key for the session.
@@ -31,27 +32,15 @@ object AWSSessionCredentials {
   }
   
   @scala.inline
-  implicit class AWSSessionCredentialsOps[Self <: AWSSessionCredentials] (val x: Self) extends AnyVal {
+  implicit class AWSSessionCredentialsMutableBuilder[Self <: AWSSessionCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: AccessKeyId): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecretAccessKey(value: SecretAccessKey): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessKeyId(value: AccessKeyId): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretAccessKey(value: SecretAccessKey): Self = this.set("secretAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionToken(value: SessionToken): Self = this.set("sessionToken", value.asInstanceOf[js.Any])
+    def setSessionToken(value: SessionToken): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,14 @@ package typings.filepond.mod
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Blob & { readonly lastModified :number,  readonly name :string} */
 @js.native
-trait ActualFileObject extends js.Object {
+trait ActualFileObject extends StObject {
   
   def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
   

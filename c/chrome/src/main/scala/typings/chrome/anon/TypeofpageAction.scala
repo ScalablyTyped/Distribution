@@ -5,12 +5,13 @@ import typings.chrome.chrome.pageAction.IconDetails
 import typings.chrome.chrome.pageAction.PageActionClickedEvent
 import typings.chrome.chrome.pageAction.PopupDetails
 import typings.chrome.chrome.pageAction.TitleDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofpageAction extends js.Object {
+trait TypeofpageAction extends StObject {
   
   def getPopup(details: GetDetails, callback: js.Function1[/* result */ String, Unit]): Unit = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SSEDescription extends js.Object {
+trait SSEDescription extends StObject {
   
   /**
     * Indicates the time, in UNIX epoch date format, when DynamoDB detected that the table's AWS KMS key was inaccessible. This attribute will automatically be cleared when DynamoDB detects that the table's AWS KMS key is accessible again. DynamoDB will initiate the table archival process when table's AWS KMS key remains inaccessible for more than seven days from this date.
@@ -36,42 +37,30 @@ object SSEDescription {
   }
   
   @scala.inline
-  implicit class SSEDescriptionOps[Self <: SSEDescription] (val x: Self) extends AnyVal {
+  implicit class SSEDescriptionMutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInaccessibleEncryptionDateTime(value: Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKMSMasterKeyArn(value: KMSMasterKeyArn): Self = StObject.set(x, "KMSMasterKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInaccessibleEncryptionDateTime(value: Date): Self = this.set("InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
+    def setKMSMasterKeyArnUndefined: Self = StObject.set(x, "KMSMasterKeyArn", js.undefined)
     
     @scala.inline
-    def deleteInaccessibleEncryptionDateTime: Self = this.set("InaccessibleEncryptionDateTime", js.undefined)
+    def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSMasterKeyArn(value: KMSMasterKeyArn): Self = this.set("KMSMasterKeyArn", value.asInstanceOf[js.Any])
+    def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
     
     @scala.inline
-    def deleteKMSMasterKeyArn: Self = this.set("KMSMasterKeyArn", js.undefined)
+    def setStatus(value: SSEStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEType(value: SSEType): Self = this.set("SSEType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSEType: Self = this.set("SSEType", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SSEStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

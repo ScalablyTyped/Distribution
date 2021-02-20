@@ -1,11 +1,12 @@
 package typings.postcssSelectorParser.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeTypes extends js.Object {
+trait NodeTypes extends StObject {
   
   var attribute: Attribute_ = js.native
   
@@ -54,54 +55,42 @@ object NodeTypes {
   }
   
   @scala.inline
-  implicit class NodeTypesOps[Self <: NodeTypes] (val x: Self) extends AnyVal {
+  implicit class NodeTypesMutableBuilder[Self <: NodeTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: Attribute_): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: ClassName_): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCombinator(value: Combinator_): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: Attribute_): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setComment(value: Comment_): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: ClassName_): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setId(value: Identifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombinator(value: Combinator_): Self = this.set("combinator", value.asInstanceOf[js.Any])
+    def setNesting(value: Nesting_): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: Comment_): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setPseudo(value: Pseudo_): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNesting(value: Nesting_): Self = this.set("nesting", value.asInstanceOf[js.Any])
+    def setSelector(value: Selector_): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudo(value: Pseudo_): Self = this.set("pseudo", value.asInstanceOf[js.Any])
+    def setString(value: String_): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: Root_): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setTag(value: Tag_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: Selector_): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: String_): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: Tag_): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniversal(value: Universal_): Self = this.set("universal", value.asInstanceOf[js.Any])
+    def setUniversal(value: Universal_): Self = StObject.set(x, "universal", value.asInstanceOf[js.Any])
   }
 }

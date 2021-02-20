@@ -1,11 +1,12 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaThreatHit extends js.Object {
+trait SchemaThreatHit extends StObject {
   
   /**
     * Client-reported identification.
@@ -47,57 +48,45 @@ object SchemaThreatHit {
   }
   
   @scala.inline
-  implicit class SchemaThreatHitOps[Self <: SchemaThreatHit] (val x: Self) extends AnyVal {
+  implicit class SchemaThreatHitMutableBuilder[Self <: SchemaThreatHit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientInfo(value: SchemaClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntry(value: SchemaThreatEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInfo(value: SchemaClientInfo): Self = this.set("clientInfo", value.asInstanceOf[js.Any])
+    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
     @scala.inline
-    def deleteClientInfo: Self = this.set("clientInfo", js.undefined)
+    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: SchemaThreatEntry): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def deleteEntry: Self = this.set("entry", js.undefined)
+    def setResources(value: js.Array[SchemaThreatSource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setResourcesVarargs(value: SchemaThreatSource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: SchemaThreatSource*): Self = this.set("resources", js.Array(value :_*))
+    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[SchemaThreatSource]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setUserInfo(value: SchemaUserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatType: Self = this.set("threatType", js.undefined)
-    
-    @scala.inline
-    def setUserInfo(value: SchemaUserInfo): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

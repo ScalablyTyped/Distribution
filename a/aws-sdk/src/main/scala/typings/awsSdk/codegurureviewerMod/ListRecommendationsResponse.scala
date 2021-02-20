@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRecommendationsResponse extends js.Object {
+trait ListRecommendationsResponse extends StObject {
   
   /**
     *  Pagination token. 
@@ -26,33 +27,21 @@ object ListRecommendationsResponse {
   }
   
   @scala.inline
-  implicit class ListRecommendationsResponseOps[Self <: ListRecommendationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListRecommendationsResponseMutableBuilder[Self <: ListRecommendationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecommendationSummaries(value: RecommendationSummaries): Self = StObject.set(x, "RecommendationSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRecommendationSummariesUndefined: Self = StObject.set(x, "RecommendationSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = this.set("RecommendationSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecommendationSummaries(value: RecommendationSummaries): Self = this.set("RecommendationSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationSummaries: Self = this.set("RecommendationSummaries", js.undefined)
+    def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "RecommendationSummaries", js.Array(value :_*))
   }
 }

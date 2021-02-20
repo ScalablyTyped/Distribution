@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/lineargradient/#-new-lineargradient
   */
 @js.native
-trait LinearGradient extends js.Object {
+trait LinearGradient extends StObject {
   
   /**
     * _Colors of the gradient._
@@ -56,36 +57,24 @@ object LinearGradient {
   }
   
   @scala.inline
-  implicit class LinearGradientOps[Self <: LinearGradient] (val x: Self) extends AnyVal {
+  implicit class LinearGradientMutableBuilder[Self <: LinearGradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndPoint(value: Point): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsVarargs(value: Color*): Self = this.set("colors", js.Array(value :_*))
+    def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[Color]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setEndPoint(value: Point): Self = this.set("endPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationsVarargs(value: Double*): Self = this.set("locations", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocations(value: js.Array[Double]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPoint(value: Point): Self = this.set("startPoint", value.asInstanceOf[js.Any])
+    def setStartPoint(value: Point): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
   }
 }

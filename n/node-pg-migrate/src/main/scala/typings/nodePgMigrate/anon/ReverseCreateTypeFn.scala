@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.Value
 import typings.nodePgMigrate.typesTypesMod.CreateTypeFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateTypeFn extends js.Object {
+trait ReverseCreateTypeFn extends StObject {
   
   def reverse(
     typeName: typings.nodePgMigrate.generalTypesMod.Name,

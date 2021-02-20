@@ -1,11 +1,12 @@
 package typings.pulumiAws.containerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortMapping extends js.Object {
+trait PortMapping extends StObject {
   
   var containerPort: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object PortMapping {
   }
   
   @scala.inline
-  implicit class PortMappingOps[Self <: PortMapping] (val x: Self) extends AnyVal {
+  implicit class PortMappingMutableBuilder[Self <: PortMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostPort(value: Double): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerPort(value: Double): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
     @scala.inline
-    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
+    def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPort(value: Double): Self = this.set("hostPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostPort: Self = this.set("hostPort", js.undefined)
-    
-    @scala.inline
-    def setProtocol(value: Protocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,30 +58,18 @@ object XFrameLoaderQuery {
   }
   
   @scala.inline
-  implicit class XFrameLoaderQueryOps[Self <: XFrameLoaderQuery] (val x: Self) extends AnyVal {
+  implicit class XFrameLoaderQueryMutableBuilder[Self <: XFrameLoaderQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableFilterNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableFilterNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAvailableFilterNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableFilterNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLoaderProperties(value: String => SafeArray[PropertyValue]): Self = StObject.set(x, "getLoaderProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvailableFilterNames(value: SafeArray[String]): Self = this.set("AvailableFilterNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAvailableFilterNames(value: () => SafeArray[String]): Self = this.set("getAvailableFilterNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLoaderProperties(value: String => SafeArray[PropertyValue]): Self = this.set("getLoaderProperties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearchFilter(value: (String, SeqEquiv[PropertyValue]) => String): Self = this.set("searchFilter", js.Any.fromFunction2(value))
+    def setSearchFilter(value: (String, SeqEquiv[PropertyValue]) => String): Self = StObject.set(x, "searchFilter", js.Any.fromFunction2(value))
   }
 }

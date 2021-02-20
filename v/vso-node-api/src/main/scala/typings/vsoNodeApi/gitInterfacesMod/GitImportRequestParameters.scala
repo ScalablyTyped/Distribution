@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitImportRequestParameters extends js.Object {
+trait GitImportRequestParameters extends StObject {
   
   /**
     * Option to delete service endpoint when import is done
@@ -41,30 +42,18 @@ object GitImportRequestParameters {
   }
   
   @scala.inline
-  implicit class GitImportRequestParametersOps[Self <: GitImportRequestParameters] (val x: Self) extends AnyVal {
+  implicit class GitImportRequestParametersMutableBuilder[Self <: GitImportRequestParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteServiceEndpointAfterImportIsDone(value: Boolean): Self = StObject.set(x, "deleteServiceEndpointAfterImportIsDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGitSource(value: GitImportGitSource): Self = StObject.set(x, "gitSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceEndpointId(value: String): Self = StObject.set(x, "serviceEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteServiceEndpointAfterImportIsDone(value: Boolean): Self = this.set("deleteServiceEndpointAfterImportIsDone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGitSource(value: GitImportGitSource): Self = this.set("gitSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceEndpointId(value: String): Self = this.set("serviceEndpointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTfvcSource(value: GitImportTfvcSource): Self = this.set("tfvcSource", value.asInstanceOf[js.Any])
+    def setTfvcSource(value: GitImportTfvcSource): Self = StObject.set(x, "tfvcSource", value.asInstanceOf[js.Any])
   }
 }

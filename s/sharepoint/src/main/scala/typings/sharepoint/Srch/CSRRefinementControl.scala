@@ -1,5 +1,6 @@
 package typings.sharepoint.Srch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,45 +52,33 @@ object CSRRefinementControl {
   }
   
   @scala.inline
-  implicit class CSRRefinementControlOps[Self <: CSRRefinementControl] (val x: Self) extends AnyVal {
+  implicit class CSRRefinementControlMutableBuilder[Self <: CSRRefinementControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsr_displayTitle(value: String): Self = StObject.set(x, "csr_displayTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsr_filters(value: js.Array[CSRFilter]): Self = StObject.set(x, "csr_filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCsr_filtersVarargs(value: CSRFilter*): Self = StObject.set(x, "csr_filters", js.Array(value :_*))
     
     @scala.inline
-    def setCsr_displayTitle(value: String): Self = this.set("csr_displayTitle", value.asInstanceOf[js.Any])
+    def setCsr_isExpanded(value: String): Self = StObject.set(x, "csr_isExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsr_filtersVarargs(value: CSRFilter*): Self = this.set("csr_filters", js.Array(value :_*))
+    def setCsr_propertyName(value: String): Self = StObject.set(x, "csr_propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsr_filters(value: js.Array[CSRFilter]): Self = this.set("csr_filters", value.asInstanceOf[js.Any])
+    def setCsr_renderEmptyContainer(value: Boolean): Self = StObject.set(x, "csr_renderEmptyContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsr_isExpanded(value: String): Self = this.set("csr_isExpanded", value.asInstanceOf[js.Any])
+    def setCsr_showCounts(value: Boolean): Self = StObject.set(x, "csr_showCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsr_propertyName(value: String): Self = this.set("csr_propertyName", value.asInstanceOf[js.Any])
+    def setCsr_useContains(value: Boolean): Self = StObject.set(x, "csr_useContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsr_renderEmptyContainer(value: Boolean): Self = this.set("csr_renderEmptyContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCsr_showCounts(value: Boolean): Self = this.set("csr_showCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCsr_useContains(value: Boolean): Self = this.set("csr_useContains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCsr_useKQL(value: Boolean): Self = this.set("csr_useKQL", value.asInstanceOf[js.Any])
+    def setCsr_useKQL(value: Boolean): Self = StObject.set(x, "csr_useKQL", value.asInstanceOf[js.Any])
   }
 }

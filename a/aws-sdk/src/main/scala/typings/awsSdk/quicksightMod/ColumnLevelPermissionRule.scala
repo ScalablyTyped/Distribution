@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnLevelPermissionRule extends js.Object {
+trait ColumnLevelPermissionRule extends StObject {
   
   /**
     * An array of column names.
@@ -26,36 +27,24 @@ object ColumnLevelPermissionRule {
   }
   
   @scala.inline
-  implicit class ColumnLevelPermissionRuleOps[Self <: ColumnLevelPermissionRule] (val x: Self) extends AnyVal {
+  implicit class ColumnLevelPermissionRuleMutableBuilder[Self <: ColumnLevelPermissionRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNames(value: ColumnNameList): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
     
     @scala.inline
-    def setColumnNamesVarargs(value: String*): Self = this.set("ColumnNames", js.Array(value :_*))
+    def setPrincipals(value: PrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNames(value: ColumnNameList): Self = this.set("ColumnNames", value.asInstanceOf[js.Any])
+    def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
     @scala.inline
-    def deleteColumnNames: Self = this.set("ColumnNames", js.undefined)
-    
-    @scala.inline
-    def setPrincipalsVarargs(value: String*): Self = this.set("Principals", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrincipals(value: PrincipalList): Self = this.set("Principals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipals: Self = this.set("Principals", js.undefined)
+    def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "Principals", js.Array(value :_*))
   }
 }

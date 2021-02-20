@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Printer extends js.Object {
+trait Printer extends StObject {
   
   @JSName("Access.Printer_typekey")
   var AccessDotPrinter_typekey: Printer = js.native
@@ -91,90 +92,78 @@ object Printer {
   }
   
   @scala.inline
-  implicit class PrinterOps[Self <: Printer] (val x: Self) extends AnyVal {
+  implicit class PrinterMutableBuilder[Self <: Printer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotPrinter_typekey(value: Printer): Self = StObject.set(x, "Access.Printer_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorMode(value: AcPrintColor): Self = StObject.set(x, "ColorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDotPrinter_typekey(value: Printer): Self = this.set("Access.Printer_typekey", value.asInstanceOf[js.Any])
+    def setColumnSpacing(value: Double): Self = StObject.set(x, "ColumnSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMargin(value: Double): Self = this.set("BottomMargin", value.asInstanceOf[js.Any])
+    def setCopies(value: Double): Self = StObject.set(x, "Copies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMode(value: AcPrintColor): Self = this.set("ColorMode", value.asInstanceOf[js.Any])
+    def setDataOnly(value: Boolean): Self = StObject.set(x, "DataOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSpacing(value: Double): Self = this.set("ColumnSpacing", value.asInstanceOf[js.Any])
+    def setDefaultSize(value: Boolean): Self = StObject.set(x, "DefaultSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopies(value: Double): Self = this.set("Copies", value.asInstanceOf[js.Any])
+    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataOnly(value: Boolean): Self = this.set("DataOnly", value.asInstanceOf[js.Any])
+    def setDriverName(value: String): Self = StObject.set(x, "DriverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSize(value: Boolean): Self = this.set("DefaultSize", value.asInstanceOf[js.Any])
+    def setDuplex(value: AcPrintDuplex): Self = StObject.set(x, "Duplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDriverName(value: String): Self = this.set("DriverName", value.asInstanceOf[js.Any])
+    def setItemLayout(value: AcPrintItemLayout): Self = StObject.set(x, "ItemLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplex(value: AcPrintDuplex): Self = this.set("Duplex", value.asInstanceOf[js.Any])
+    def setItemSizeHeight(value: Double): Self = StObject.set(x, "ItemSizeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
+    def setItemSizeWidth(value: Double): Self = StObject.set(x, "ItemSizeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemLayout(value: AcPrintItemLayout): Self = this.set("ItemLayout", value.asInstanceOf[js.Any])
+    def setItemsAcross(value: Double): Self = StObject.set(x, "ItemsAcross", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSizeHeight(value: Double): Self = this.set("ItemSizeHeight", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSizeWidth(value: Double): Self = this.set("ItemSizeWidth", value.asInstanceOf[js.Any])
+    def setOrientation(value: AcPrintOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsAcross(value: Double): Self = this.set("ItemsAcross", value.asInstanceOf[js.Any])
+    def setPaperBin(value: AcPrintPaperBin): Self = StObject.set(x, "PaperBin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("LeftMargin", value.asInstanceOf[js.Any])
+    def setPaperSize(value: AcPrintPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: AcPrintOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setPort(value: String): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperBin(value: AcPrintPaperBin): Self = this.set("PaperBin", value.asInstanceOf[js.Any])
+    def setPrintQuality(value: AcPrintObjQuality): Self = StObject.set(x, "PrintQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperSize(value: AcPrintPaperSize): Self = this.set("PaperSize", value.asInstanceOf[js.Any])
+    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintQuality(value: AcPrintObjQuality): Self = this.set("PrintQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightMargin(value: Double): Self = this.set("RightMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowSpacing(value: Double): Self = this.set("RowSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopMargin(value: Double): Self = this.set("TopMargin", value.asInstanceOf[js.Any])
+    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
   }
 }

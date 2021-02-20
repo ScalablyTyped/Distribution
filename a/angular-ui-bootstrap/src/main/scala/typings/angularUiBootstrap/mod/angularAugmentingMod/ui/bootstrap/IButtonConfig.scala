@@ -1,11 +1,12 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IButtonConfig extends js.Object {
+trait IButtonConfig extends StObject {
   
   /**
     * @default: 'active'
@@ -26,30 +27,18 @@ object IButtonConfig {
   }
   
   @scala.inline
-  implicit class IButtonConfigOps[Self <: IButtonConfig] (val x: Self) extends AnyVal {
+  implicit class IButtonConfigMutableBuilder[Self <: IButtonConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToggleEvent(value: String): Self = StObject.set(x, "toggleEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
-    
-    @scala.inline
-    def setToggleEvent(value: String): Self = this.set("toggleEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleEvent: Self = this.set("toggleEvent", js.undefined)
+    def setToggleEventUndefined: Self = StObject.set(x, "toggleEvent", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxRecipient Class */
 @js.native
-trait FaxRecipient extends js.Object {
+trait FaxRecipient extends StObject {
   
   @JSName("FAXCOMEXLib.FaxRecipient_typekey")
   var FAXCOMEXLibDotFaxRecipient_typekey: FaxRecipient = js.native
@@ -27,27 +28,15 @@ object FaxRecipient {
   }
   
   @scala.inline
-  implicit class FaxRecipientOps[Self <: FaxRecipient] (val x: Self) extends AnyVal {
+  implicit class FaxRecipientMutableBuilder[Self <: FaxRecipient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFAXCOMEXLibDotFaxRecipient_typekey(value: FaxRecipient): Self = StObject.set(x, "FAXCOMEXLib.FaxRecipient_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaxNumber(value: String): Self = StObject.set(x, "FaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFAXCOMEXLibDotFaxRecipient_typekey(value: FaxRecipient): Self = this.set("FAXCOMEXLib.FaxRecipient_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFaxNumber(value: String): Self = this.set("FaxNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

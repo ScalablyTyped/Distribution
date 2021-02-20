@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesPutBucketTaggingInputMod.PutBucketTagg
 import typings.awsSdkClientS3Browser.typesPutBucketTaggingOutputMod.PutBucketTaggingOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/PutBucketTaggingCommand", JSImport.Namespace)
-@js.native
-object putBucketTaggingCommandMod extends js.Object {
+object putBucketTaggingCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/PutBucketTaggingCommand", "PutBucketTaggingCommand")
   @js.native
   class PutBucketTaggingCommand protected () extends Command[
           InputTypesUnion, 

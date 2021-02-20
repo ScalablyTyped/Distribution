@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePresignedNotebookInstanceUrlInput extends js.Object {
+trait CreatePresignedNotebookInstanceUrlInput extends StObject {
   
   /**
     * The name of the notebook instance.
@@ -26,27 +27,15 @@ object CreatePresignedNotebookInstanceUrlInput {
   }
   
   @scala.inline
-  implicit class CreatePresignedNotebookInstanceUrlInputOps[Self <: CreatePresignedNotebookInstanceUrlInput] (val x: Self) extends AnyVal {
+  implicit class CreatePresignedNotebookInstanceUrlInputMutableBuilder[Self <: CreatePresignedNotebookInstanceUrlInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotebookInstanceName(value: NotebookInstanceName): Self = this.set("NotebookInstanceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = this.set("SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionExpirationDurationInSeconds: Self = this.set("SessionExpirationDurationInSeconds", js.undefined)
+    def setSessionExpirationDurationInSecondsUndefined: Self = StObject.set(x, "SessionExpirationDurationInSeconds", js.undefined)
   }
 }

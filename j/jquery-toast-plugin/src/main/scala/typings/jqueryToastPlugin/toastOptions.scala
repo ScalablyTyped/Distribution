@@ -18,12 +18,13 @@ import typings.jqueryToastPlugin.jqueryToastPluginStrings.right
 import typings.jqueryToastPlugin.jqueryToastPluginStrings.slide
 import typings.jqueryToastPlugin.jqueryToastPluginStrings.success
 import typings.jqueryToastPlugin.jqueryToastPluginStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait toastOptions extends js.Object {
+trait toastOptions extends StObject {
   
   var afterHidden: js.UndefOr[js.Function0[_]] = js.native
   
@@ -70,119 +71,107 @@ object toastOptions {
   }
   
   @scala.inline
-  implicit class toastOptionsOps[Self <: toastOptions] (val x: Self) extends AnyVal {
+  implicit class toastOptionsMutableBuilder[Self <: toastOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterHidden(value: () => _): Self = StObject.set(x, "afterHidden", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterHiddenUndefined: Self = StObject.set(x, "afterHidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterShown(value: () => _): Self = StObject.set(x, "afterShown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setAfterShownUndefined: Self = StObject.set(x, "afterShown", js.undefined)
     
     @scala.inline
-    def setAfterHidden(value: () => _): Self = this.set("afterHidden", js.Any.fromFunction0(value))
+    def setAllowToastClose(value: Boolean): Self = StObject.set(x, "allowToastClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterHidden: Self = this.set("afterHidden", js.undefined)
+    def setAllowToastCloseUndefined: Self = StObject.set(x, "allowToastClose", js.undefined)
     
     @scala.inline
-    def setAfterShown(value: () => _): Self = this.set("afterShown", js.Any.fromFunction0(value))
+    def setBeforeHide(value: () => _): Self = StObject.set(x, "beforeHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteAfterShown: Self = this.set("afterShown", js.undefined)
+    def setBeforeHideUndefined: Self = StObject.set(x, "beforeHide", js.undefined)
     
     @scala.inline
-    def setAllowToastClose(value: Boolean): Self = this.set("allowToastClose", value.asInstanceOf[js.Any])
+    def setBeforeShow(value: () => _): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteAllowToastClose: Self = this.set("allowToastClose", js.undefined)
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def setBeforeHide(value: () => _): Self = this.set("beforeHide", js.Any.fromFunction0(value))
+    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeHide: Self = this.set("beforeHide", js.undefined)
+    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     @scala.inline
-    def setBeforeShow(value: () => _): Self = this.set("beforeShow", js.Any.fromFunction0(value))
+    def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def setBgColor(value: String): Self = this.set("bgColor", value.asInstanceOf[js.Any])
+    def setHideAfter(value: Double | `false`): Self = StObject.set(x, "hideAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    def setHideAfterUndefined: Self = StObject.set(x, "hideAfter", js.undefined)
     
     @scala.inline
-    def setHeading(value: String): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setIcon(value: info | warning | error | success): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setHideAfter(value: Double | `false`): Self = this.set("hideAfter", value.asInstanceOf[js.Any])
+    def setLoader(value: Boolean): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideAfter: Self = this.set("hideAfter", js.undefined)
+    def setLoaderBg(value: String): Self = StObject.set(x, "loaderBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: info | warning | error | success): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLoaderBgUndefined: Self = StObject.set(x, "loaderBg", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
-    
-    @scala.inline
-    def setLoader(value: Boolean): Self = this.set("loader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
-    
-    @scala.inline
-    def setLoaderBg(value: String): Self = this.set("loaderBg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaderBg: Self = this.set("loaderBg", js.undefined)
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
     def setPosition(
       value: `bottom-left` | `bottom-right` | `bottom-center` | `top-right` | `top-left` | `top-center` | `mid-center` | CustomPosition
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setShowHideTransition(value: fade | slide | plain): Self = this.set("showHideTransition", value.asInstanceOf[js.Any])
+    def setShowHideTransition(value: fade | slide | plain): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowHideTransition: Self = this.set("showHideTransition", js.undefined)
+    def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
     
     @scala.inline
-    def setStack(value: Double | `false`): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setStack(value: Double | `false`): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def setTextAlign(value: left | right | center): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    def setTextAlign(value: left | right | center): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

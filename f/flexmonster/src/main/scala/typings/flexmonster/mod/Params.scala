@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Params extends js.Object {
+trait Params extends StObject {
   
   // events
   var afterchartdraw: js.UndefOr[js.Function0[Unit]] = js.native
@@ -122,308 +123,296 @@ object Params {
   }
   
   @scala.inline
-  implicit class ParamsOps[Self <: Params] (val x: Self) extends AnyVal {
+  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterchartdraw(value: () => Unit): Self = StObject.set(x, "afterchartdraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterchartdrawUndefined: Self = StObject.set(x, "afterchartdraw", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAftergriddraw(value: /* param */ js.Object => Unit): Self = StObject.set(x, "aftergriddraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterchartdraw(value: () => Unit): Self = this.set("afterchartdraw", js.Any.fromFunction0(value))
+    def setAftergriddrawUndefined: Self = StObject.set(x, "aftergriddraw", js.undefined)
     
     @scala.inline
-    def deleteAfterchartdraw: Self = this.set("afterchartdraw", js.undefined)
+    def setBeforegriddraw(value: /* param */ js.Object => Unit): Self = StObject.set(x, "beforegriddraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAftergriddraw(value: /* param */ js.Object => Unit): Self = this.set("aftergriddraw", js.Any.fromFunction1(value))
+    def setBeforegriddrawUndefined: Self = StObject.set(x, "beforegriddraw", js.undefined)
     
     @scala.inline
-    def deleteAftergriddraw: Self = this.set("aftergriddraw", js.undefined)
+    def setBeforetoolbarcreated(value: /* toolbar */ Toolbar => Unit): Self = StObject.set(x, "beforetoolbarcreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforegriddraw(value: /* param */ js.Object => Unit): Self = this.set("beforegriddraw", js.Any.fromFunction1(value))
+    def setBeforetoolbarcreatedUndefined: Self = StObject.set(x, "beforetoolbarcreated", js.undefined)
     
     @scala.inline
-    def deleteBeforegriddraw: Self = this.set("beforegriddraw", js.undefined)
+    def setCellclick(value: /* cell */ CellData => Unit): Self = StObject.set(x, "cellclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforetoolbarcreated(value: /* toolbar */ Toolbar => Unit): Self = this.set("beforetoolbarcreated", js.Any.fromFunction1(value))
+    def setCellclickUndefined: Self = StObject.set(x, "cellclick", js.undefined)
     
     @scala.inline
-    def deleteBeforetoolbarcreated: Self = this.set("beforetoolbarcreated", js.undefined)
+    def setCelldoubleclick(value: /* cell */ CellData => Unit): Self = StObject.set(x, "celldoubleclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCellclick(value: /* cell */ CellData => Unit): Self = this.set("cellclick", js.Any.fromFunction1(value))
+    def setCelldoubleclickUndefined: Self = StObject.set(x, "celldoubleclick", js.undefined)
     
     @scala.inline
-    def deleteCellclick: Self = this.set("cellclick", js.undefined)
+    def setChartclick(value: /* data */ ChartData => Unit): Self = StObject.set(x, "chartclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCelldoubleclick(value: /* cell */ CellData => Unit): Self = this.set("celldoubleclick", js.Any.fromFunction1(value))
+    def setChartclickUndefined: Self = StObject.set(x, "chartclick", js.undefined)
     
     @scala.inline
-    def deleteCelldoubleclick: Self = this.set("celldoubleclick", js.undefined)
+    def setComponentFolder(value: String): Self = StObject.set(x, "componentFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartclick(value: /* data */ ChartData => Unit): Self = this.set("chartclick", js.Any.fromFunction1(value))
+    def setComponentFolderUndefined: Self = StObject.set(x, "componentFolder", js.undefined)
     
     @scala.inline
-    def deleteChartclick: Self = this.set("chartclick", js.undefined)
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentFolder(value: String): Self = this.set("componentFolder", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteComponentFolder: Self = this.set("componentFolder", js.undefined)
+    def setCustomizeCell(value: (/* cell */ CellBuilder, /* data */ CellData) => Unit): Self = StObject.set(x, "customizeCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
-    
-    @scala.inline
-    def setCustomizeCell(value: (/* cell */ CellBuilder, /* data */ CellData) => Unit): Self = this.set("customizeCell", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteCustomizeCell: Self = this.set("customizeCell", js.undefined)
+    def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
     
     @scala.inline
     def setCustomizeContextMenu(
       value: (/* items */ js.Array[ContextMenuItem], /* data */ CellData | ChartData, /* viewType */ String) => js.Array[ContextMenuItem]
-    ): Self = this.set("customizeContextMenu", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "customizeContextMenu", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCustomizeContextMenu: Self = this.set("customizeContextMenu", js.undefined)
+    def setCustomizeContextMenuUndefined: Self = StObject.set(x, "customizeContextMenu", js.undefined)
     
     @scala.inline
-    def setDatachanged(value: /* param */ js.Object => Unit): Self = this.set("datachanged", js.Any.fromFunction1(value))
+    def setDatachanged(value: /* param */ js.Object => Unit): Self = StObject.set(x, "datachanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDatachanged: Self = this.set("datachanged", js.undefined)
+    def setDatachangedUndefined: Self = StObject.set(x, "datachanged", js.undefined)
     
     @scala.inline
-    def setDataerror(value: /* param */ js.Object => Unit): Self = this.set("dataerror", js.Any.fromFunction1(value))
+    def setDataerror(value: /* param */ js.Object => Unit): Self = StObject.set(x, "dataerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDataerror: Self = this.set("dataerror", js.undefined)
+    def setDataerrorUndefined: Self = StObject.set(x, "dataerror", js.undefined)
     
     @scala.inline
-    def setDatafilecancelled(value: () => Unit): Self = this.set("datafilecancelled", js.Any.fromFunction0(value))
+    def setDatafilecancelled(value: () => Unit): Self = StObject.set(x, "datafilecancelled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDatafilecancelled: Self = this.set("datafilecancelled", js.undefined)
+    def setDatafilecancelledUndefined: Self = StObject.set(x, "datafilecancelled", js.undefined)
     
     @scala.inline
-    def setDataloaded(value: () => Unit): Self = this.set("dataloaded", js.Any.fromFunction0(value))
+    def setDataloaded(value: () => Unit): Self = StObject.set(x, "dataloaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDataloaded: Self = this.set("dataloaded", js.undefined)
+    def setDataloadedUndefined: Self = StObject.set(x, "dataloaded", js.undefined)
     
     @scala.inline
-    def setExportcomplete(value: () => Unit): Self = this.set("exportcomplete", js.Any.fromFunction0(value))
+    def setExportcomplete(value: () => Unit): Self = StObject.set(x, "exportcomplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteExportcomplete: Self = this.set("exportcomplete", js.undefined)
+    def setExportcompleteUndefined: Self = StObject.set(x, "exportcomplete", js.undefined)
     
     @scala.inline
-    def setExportstart(value: () => Unit): Self = this.set("exportstart", js.Any.fromFunction0(value))
+    def setExportstart(value: () => Unit): Self = StObject.set(x, "exportstart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteExportstart: Self = this.set("exportstart", js.undefined)
+    def setExportstartUndefined: Self = StObject.set(x, "exportstart", js.undefined)
     
     @scala.inline
-    def setFieldslistclose(value: () => Unit): Self = this.set("fieldslistclose", js.Any.fromFunction0(value))
+    def setFieldslistclose(value: () => Unit): Self = StObject.set(x, "fieldslistclose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFieldslistclose: Self = this.set("fieldslistclose", js.undefined)
+    def setFieldslistcloseUndefined: Self = StObject.set(x, "fieldslistclose", js.undefined)
     
     @scala.inline
-    def setFieldslistopen(value: () => Unit): Self = this.set("fieldslistopen", js.Any.fromFunction0(value))
+    def setFieldslistopen(value: () => Unit): Self = StObject.set(x, "fieldslistopen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFieldslistopen: Self = this.set("fieldslistopen", js.undefined)
+    def setFieldslistopenUndefined: Self = StObject.set(x, "fieldslistopen", js.undefined)
     
     @scala.inline
-    def setFilterclose(value: () => Unit): Self = this.set("filterclose", js.Any.fromFunction0(value))
+    def setFilterclose(value: () => Unit): Self = StObject.set(x, "filterclose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFilterclose: Self = this.set("filterclose", js.undefined)
+    def setFiltercloseUndefined: Self = StObject.set(x, "filterclose", js.undefined)
     
     @scala.inline
-    def setFilteropen(value: () => Unit): Self = this.set("filteropen", js.Any.fromFunction0(value))
+    def setFilteropen(value: () => Unit): Self = StObject.set(x, "filteropen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFilteropen: Self = this.set("filteropen", js.undefined)
+    def setFilteropenUndefined: Self = StObject.set(x, "filteropen", js.undefined)
     
     @scala.inline
-    def setGlobal(value: Report): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setGlobal(value: Report): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setLicenseKey(value: String): Self = this.set("licenseKey", value.asInstanceOf[js.Any])
+    def setLicenseKey(value: String): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicenseKey: Self = this.set("licenseKey", js.undefined)
+    def setLicenseKeyUndefined: Self = StObject.set(x, "licenseKey", js.undefined)
     
     @scala.inline
-    def setLoadingdata(value: () => Unit): Self = this.set("loadingdata", js.Any.fromFunction0(value))
+    def setLoadingdata(value: () => Unit): Self = StObject.set(x, "loadingdata", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLoadingdata: Self = this.set("loadingdata", js.undefined)
+    def setLoadingdataUndefined: Self = StObject.set(x, "loadingdata", js.undefined)
     
     @scala.inline
-    def setLoadinglocalization(value: () => Unit): Self = this.set("loadinglocalization", js.Any.fromFunction0(value))
+    def setLoadinglocalization(value: () => Unit): Self = StObject.set(x, "loadinglocalization", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLoadinglocalization: Self = this.set("loadinglocalization", js.undefined)
+    def setLoadinglocalizationUndefined: Self = StObject.set(x, "loadinglocalization", js.undefined)
     
     @scala.inline
-    def setLoadingolapstructure(value: () => Unit): Self = this.set("loadingolapstructure", js.Any.fromFunction0(value))
+    def setLoadingolapstructure(value: () => Unit): Self = StObject.set(x, "loadingolapstructure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLoadingolapstructure: Self = this.set("loadingolapstructure", js.undefined)
+    def setLoadingolapstructureUndefined: Self = StObject.set(x, "loadingolapstructure", js.undefined)
     
     @scala.inline
-    def setLoadingreportfile(value: () => Unit): Self = this.set("loadingreportfile", js.Any.fromFunction0(value))
+    def setLoadingreportfile(value: () => Unit): Self = StObject.set(x, "loadingreportfile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLoadingreportfile: Self = this.set("loadingreportfile", js.undefined)
+    def setLoadingreportfileUndefined: Self = StObject.set(x, "loadingreportfile", js.undefined)
     
     @scala.inline
-    def setLocalizationerror(value: () => Unit): Self = this.set("localizationerror", js.Any.fromFunction0(value))
+    def setLocalizationerror(value: () => Unit): Self = StObject.set(x, "localizationerror", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLocalizationerror: Self = this.set("localizationerror", js.undefined)
+    def setLocalizationerrorUndefined: Self = StObject.set(x, "localizationerror", js.undefined)
     
     @scala.inline
-    def setLocalizationloaded(value: () => Unit): Self = this.set("localizationloaded", js.Any.fromFunction0(value))
+    def setLocalizationloaded(value: () => Unit): Self = StObject.set(x, "localizationloaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLocalizationloaded: Self = this.set("localizationloaded", js.undefined)
+    def setLocalizationloadedUndefined: Self = StObject.set(x, "localizationloaded", js.undefined)
     
     @scala.inline
-    def setOlapstructureerror(value: () => Unit): Self = this.set("olapstructureerror", js.Any.fromFunction0(value))
+    def setOlapstructureerror(value: () => Unit): Self = StObject.set(x, "olapstructureerror", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOlapstructureerror: Self = this.set("olapstructureerror", js.undefined)
+    def setOlapstructureerrorUndefined: Self = StObject.set(x, "olapstructureerror", js.undefined)
     
     @scala.inline
-    def setOlapstructureloaded(value: () => Unit): Self = this.set("olapstructureloaded", js.Any.fromFunction0(value))
+    def setOlapstructureloaded(value: () => Unit): Self = StObject.set(x, "olapstructureloaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOlapstructureloaded: Self = this.set("olapstructureloaded", js.undefined)
+    def setOlapstructureloadedUndefined: Self = StObject.set(x, "olapstructureloaded", js.undefined)
     
     @scala.inline
-    def setOpeningreportfile(value: () => Unit): Self = this.set("openingreportfile", js.Any.fromFunction0(value))
+    def setOpeningreportfile(value: () => Unit): Self = StObject.set(x, "openingreportfile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOpeningreportfile: Self = this.set("openingreportfile", js.undefined)
+    def setOpeningreportfileUndefined: Self = StObject.set(x, "openingreportfile", js.undefined)
     
     @scala.inline
-    def setPrintcomplete(value: () => Unit): Self = this.set("printcomplete", js.Any.fromFunction0(value))
+    def setPrintcomplete(value: () => Unit): Self = StObject.set(x, "printcomplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePrintcomplete: Self = this.set("printcomplete", js.undefined)
+    def setPrintcompleteUndefined: Self = StObject.set(x, "printcomplete", js.undefined)
     
     @scala.inline
-    def setPrintstart(value: () => Unit): Self = this.set("printstart", js.Any.fromFunction0(value))
+    def setPrintstart(value: () => Unit): Self = StObject.set(x, "printstart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePrintstart: Self = this.set("printstart", js.undefined)
+    def setPrintstartUndefined: Self = StObject.set(x, "printstart", js.undefined)
     
     @scala.inline
-    def setQuerycomplete(value: () => Unit): Self = this.set("querycomplete", js.Any.fromFunction0(value))
+    def setQuerycomplete(value: () => Unit): Self = StObject.set(x, "querycomplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteQuerycomplete: Self = this.set("querycomplete", js.undefined)
+    def setQuerycompleteUndefined: Self = StObject.set(x, "querycomplete", js.undefined)
     
     @scala.inline
-    def setQueryerror(value: () => Unit): Self = this.set("queryerror", js.Any.fromFunction0(value))
+    def setQueryerror(value: () => Unit): Self = StObject.set(x, "queryerror", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteQueryerror: Self = this.set("queryerror", js.undefined)
+    def setQueryerrorUndefined: Self = StObject.set(x, "queryerror", js.undefined)
     
     @scala.inline
-    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def setReport(value: Report | String): Self = this.set("report", value.asInstanceOf[js.Any])
+    def setReport(value: Report | String): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReport: Self = this.set("report", js.undefined)
+    def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
     
     @scala.inline
-    def setReportchange(value: () => Unit): Self = this.set("reportchange", js.Any.fromFunction0(value))
+    def setReportchange(value: () => Unit): Self = StObject.set(x, "reportchange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReportchange: Self = this.set("reportchange", js.undefined)
+    def setReportchangeUndefined: Self = StObject.set(x, "reportchange", js.undefined)
     
     @scala.inline
-    def setReportcomplete(value: () => Unit): Self = this.set("reportcomplete", js.Any.fromFunction0(value))
+    def setReportcomplete(value: () => Unit): Self = StObject.set(x, "reportcomplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReportcomplete: Self = this.set("reportcomplete", js.undefined)
+    def setReportcompleteUndefined: Self = StObject.set(x, "reportcomplete", js.undefined)
     
     @scala.inline
-    def setReportfilecancelled(value: () => Unit): Self = this.set("reportfilecancelled", js.Any.fromFunction0(value))
+    def setReportfilecancelled(value: () => Unit): Self = StObject.set(x, "reportfilecancelled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReportfilecancelled: Self = this.set("reportfilecancelled", js.undefined)
+    def setReportfilecancelledUndefined: Self = StObject.set(x, "reportfilecancelled", js.undefined)
     
     @scala.inline
-    def setReportfileerror(value: () => Unit): Self = this.set("reportfileerror", js.Any.fromFunction0(value))
+    def setReportfileerror(value: () => Unit): Self = StObject.set(x, "reportfileerror", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReportfileerror: Self = this.set("reportfileerror", js.undefined)
+    def setReportfileerrorUndefined: Self = StObject.set(x, "reportfileerror", js.undefined)
     
     @scala.inline
-    def setReportfileloaded(value: () => Unit): Self = this.set("reportfileloaded", js.Any.fromFunction0(value))
+    def setReportfileloaded(value: () => Unit): Self = StObject.set(x, "reportfileloaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReportfileloaded: Self = this.set("reportfileloaded", js.undefined)
+    def setReportfileloadedUndefined: Self = StObject.set(x, "reportfileloaded", js.undefined)
     
     @scala.inline
-    def setRunningquery(value: () => Unit): Self = this.set("runningquery", js.Any.fromFunction0(value))
+    def setRunningquery(value: () => Unit): Self = StObject.set(x, "runningquery", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRunningquery: Self = this.set("runningquery", js.undefined)
+    def setRunningqueryUndefined: Self = StObject.set(x, "runningquery", js.undefined)
     
     @scala.inline
-    def setToolbar(value: Boolean): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setToolbar(value: Boolean): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,6 +1,8 @@
 package typings.simperium.mod
 
 import typings.simperium.anon.Sync
+import typings.simperium.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,10 +48,10 @@ trait Bucket[Name, T, Q] extends CustomEventEmitter[BucketEvent[T]] {
   def update(entityId: EntityId, updatedEntity: T, remoteInfo: RemoteInfo[T]): js.Promise[BucketObject[T]] = js.native
   def update(entityId: EntityId, updatedEntity: T, remoteInfo: RemoteInfo[T], options: Sync): js.Promise[BucketObject[T]] = js.native
 }
-@JSImport("simperium", "Bucket")
-@js.native
-object Bucket extends js.Object {
+object Bucket {
   
-  def apply[T](name: String, storeProvider: BucketStore[T, js.Object]): Bucket[T, Null, scala.Nothing] = js.native
-  def apply[T](name: String, storeProvider: BucketStore[T, js.Object], channel: Channel[T]): Bucket[T, Null, scala.Nothing] = js.native
+  @scala.inline
+  def apply[T](name: String, storeProvider: BucketStore[T, js.Object]): Bucket[T, Null, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("Bucket")(name.asInstanceOf[js.Any], storeProvider.asInstanceOf[js.Any])).asInstanceOf[Bucket[T, Null, scala.Nothing]]
+  @scala.inline
+  def apply[T](name: String, storeProvider: BucketStore[T, js.Object], channel: Channel[T]): Bucket[T, Null, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("Bucket")(name.asInstanceOf[js.Any], storeProvider.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Bucket[T, Null, scala.Nothing]]
 }

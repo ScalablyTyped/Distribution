@@ -7,6 +7,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.moderate
 import typings.arcgisJsApi.arcgisJsApiStrings.rippled
 import typings.arcgisJsApi.arcgisJsApiStrings.slight
 import typings.arcgisJsApi.arcgisJsApiStrings.small
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,45 +52,33 @@ object WaterSymbol3DLayerProperties {
   }
   
   @scala.inline
-  implicit class WaterSymbol3DLayerPropertiesOps[Self <: WaterSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  implicit class WaterSymbol3DLayerPropertiesMutableBuilder[Self <: WaterSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setWaterbodySize(value: small | medium | large): Self = StObject.set(x, "waterbodySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setWaterbodySizeUndefined: Self = StObject.set(x, "waterbodySize", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setWaveDirection(value: Double): Self = StObject.set(x, "waveDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaterbodySize(value: small | medium | large): Self = this.set("waterbodySize", value.asInstanceOf[js.Any])
+    def setWaveDirectionUndefined: Self = StObject.set(x, "waveDirection", js.undefined)
     
     @scala.inline
-    def deleteWaterbodySize: Self = this.set("waterbodySize", js.undefined)
+    def setWaveStrength(value: calm | rippled | slight | moderate): Self = StObject.set(x, "waveStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaveDirection(value: Double): Self = this.set("waveDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaveDirection: Self = this.set("waveDirection", js.undefined)
-    
-    @scala.inline
-    def setWaveStrength(value: calm | rippled | slight | moderate): Self = this.set("waveStrength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaveStrength: Self = this.set("waveStrength", js.undefined)
+    def setWaveStrengthUndefined: Self = StObject.set(x, "waveStrength", js.undefined)
   }
 }

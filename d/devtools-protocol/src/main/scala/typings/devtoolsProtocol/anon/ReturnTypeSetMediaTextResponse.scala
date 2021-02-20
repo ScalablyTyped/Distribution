@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeSetMediaTextResponse extends js.Object {
+trait ReturnTypeSetMediaTextResponse extends StObject {
   
   var paramsType: js.Array[SetMediaTextRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeSetMediaTextResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeSetMediaTextResponseOps[Self <: ReturnTypeSetMediaTextResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeSetMediaTextResponseMutableBuilder[Self <: ReturnTypeSetMediaTextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[SetMediaTextRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: SetMediaTextRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: SetMediaTextRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[SetMediaTextRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: SetMediaTextResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: SetMediaTextResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

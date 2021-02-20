@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFileClass extends js.Object {
+trait IFileClass extends StObject {
   
   def Clone(): IFileClass = js.native
   
@@ -41,42 +42,30 @@ object IFileClass {
   }
   
   @scala.inline
-  implicit class IFileClassOps[Self <: IFileClass] (val x: Self) extends AnyVal {
+  implicit class IFileClassMutableBuilder[Self <: IFileClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IFileClass): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDotAndExtension(value: String): Self = StObject.set(x, "DotAndExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IFileClass): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFileClass(value: String): Self = StObject.set(x, "FileClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotAndExtension(value: String): Self = this.set("DotAndExtension", value.asInstanceOf[js.Any])
+    def setLoadByExtension(value: String => Unit): Self = StObject.set(x, "LoadByExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("Extension", value.asInstanceOf[js.Any])
+    def setLoadByFileClass(value: (String, String) => Unit): Self = StObject.set(x, "LoadByFileClass", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFileClass(value: String): Self = this.set("FileClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadByExtension(value: String => Unit): Self = this.set("LoadByExtension", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadByFileClass(value: (String, String) => Unit): Self = this.set("LoadByFileClass", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetFileClassInfo(value: (String, String, String) => Unit): Self = this.set("SetFileClassInfo", js.Any.fromFunction3(value))
+    def setSetFileClassInfo(value: (String, String, String) => Unit): Self = StObject.set(x, "SetFileClassInfo", js.Any.fromFunction3(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,78 +60,66 @@ object ClaimResponseAddItemDetail {
   }
   
   @scala.inline
-  implicit class ClaimResponseAddItemDetailOps[Self <: ClaimResponseAddItemDetail] (val x: Self) extends AnyVal {
+  implicit class ClaimResponseAddItemDetailMutableBuilder[Self <: ClaimResponseAddItemDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = StObject.set(x, "adjudication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjudicationUndefined: Self = StObject.set(x, "adjudication", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value :_*))
     
     @scala.inline
-    def set_noteNumberVarargs(value: Element*): Self = this.set("_noteNumber", js.Array(value :_*))
+    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_noteNumber(value: js.Array[Element]): Self = this.set("_noteNumber", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def delete_noteNumber: Self = this.set("_noteNumber", js.undefined)
+    def setFee(value: Money): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = this.set("adjudication", js.Array(value :_*))
+    def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
     
     @scala.inline
-    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = this.set("adjudication", value.asInstanceOf[js.Any])
+    def setModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdjudication: Self = this.set("adjudication", js.undefined)
+    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "modifier", js.Array(value :_*))
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setNoteNumber(value: js.Array[positiveInt]): Self = StObject.set(x, "noteNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee(value: Money): Self = this.set("fee", value.asInstanceOf[js.Any])
+    def setNoteNumberUndefined: Self = StObject.set(x, "noteNumber", js.undefined)
     
     @scala.inline
-    def deleteFee: Self = this.set("fee", js.undefined)
+    def setNoteNumberVarargs(value: positiveInt*): Self = StObject.set(x, "noteNumber", js.Array(value :_*))
     
     @scala.inline
-    def setModifierVarargs(value: CodeableConcept*): Self = this.set("modifier", js.Array(value :_*))
+    def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifier(value: js.Array[CodeableConcept]): Self = this.set("modifier", value.asInstanceOf[js.Any])
+    def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
     @scala.inline
-    def deleteModifier: Self = this.set("modifier", js.undefined)
+    def setService(value: CodeableConcept): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteNumberVarargs(value: positiveInt*): Self = this.set("noteNumber", js.Array(value :_*))
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setNoteNumber(value: js.Array[positiveInt]): Self = this.set("noteNumber", value.asInstanceOf[js.Any])
+    def set_noteNumber(value: js.Array[Element]): Self = StObject.set(x, "_noteNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoteNumber: Self = this.set("noteNumber", js.undefined)
+    def set_noteNumberUndefined: Self = StObject.set(x, "_noteNumber", js.undefined)
     
     @scala.inline
-    def setRevenue(value: CodeableConcept): Self = this.set("revenue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevenue: Self = this.set("revenue", js.undefined)
-    
-    @scala.inline
-    def setService(value: CodeableConcept): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def set_noteNumberVarargs(value: Element*): Self = StObject.set(x, "_noteNumber", js.Array(value :_*))
   }
 }

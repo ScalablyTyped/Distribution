@@ -1,15 +1,15 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.slider")
-@js.native
-object slider extends js.Object {
+object slider {
   
+  @JSGlobal("ej.slider.sliderType")
   @js.native
-  object sliderType extends js.Object {
+  object sliderType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.slider.sliderType with Double] = js.native

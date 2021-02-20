@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCustomerGatewaysRequest extends js.Object {
+trait DescribeCustomerGatewaysRequest extends StObject {
   
   /**
     * One or more customer gateway IDs. Default: Describes all your customer gateways.
@@ -31,42 +32,30 @@ object DescribeCustomerGatewaysRequest {
   }
   
   @scala.inline
-  implicit class DescribeCustomerGatewaysRequestOps[Self <: DescribeCustomerGatewaysRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCustomerGatewaysRequestMutableBuilder[Self <: DescribeCustomerGatewaysRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerGatewayIds(value: CustomerGatewayIdStringList): Self = StObject.set(x, "CustomerGatewayIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerGatewayIdsUndefined: Self = StObject.set(x, "CustomerGatewayIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomerGatewayIdsVarargs(value: CustomerGatewayId*): Self = StObject.set(x, "CustomerGatewayIds", js.Array(value :_*))
     
     @scala.inline
-    def setCustomerGatewayIdsVarargs(value: CustomerGatewayId*): Self = this.set("CustomerGatewayIds", js.Array(value :_*))
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerGatewayIds(value: CustomerGatewayIdStringList): Self = this.set("CustomerGatewayIds", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteCustomerGatewayIds: Self = this.set("CustomerGatewayIds", js.undefined)
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
-    
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
   }
 }

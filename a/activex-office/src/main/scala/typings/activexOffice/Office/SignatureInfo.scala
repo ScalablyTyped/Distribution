@@ -1,12 +1,13 @@
 package typings.activexOffice.Office
 
 import typings.activexStdole.stdole.IPictureDisp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureInfo extends js.Object {
+trait SignatureInfo extends StObject {
   
   val Application: js.Any = js.native
   
@@ -77,75 +78,63 @@ object SignatureInfo {
   }
   
   @scala.inline
-  implicit class SignatureInfoOps[Self <: SignatureInfo] (val x: Self) extends AnyVal {
+  implicit class SignatureInfoMutableBuilder[Self <: SignatureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateVerificationResults(value: CertificateVerificationResults): Self = StObject.set(x, "CertificateVerificationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVerificationResults(value: ContentVerificationResults): Self = StObject.set(x, "ContentVerificationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateVerificationResults(value: CertificateVerificationResults): Self = this.set("CertificateVerificationResults", value.asInstanceOf[js.Any])
+    def setGetCertificateDetail(value: CertificateDetail => js.Any): Self = StObject.set(x, "GetCertificateDetail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentVerificationResults(value: ContentVerificationResults): Self = this.set("ContentVerificationResults", value.asInstanceOf[js.Any])
+    def setGetSignatureDetail(value: SignatureDetail => js.Any): Self = StObject.set(x, "GetSignatureDetail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIsCertificateExpired(value: Boolean): Self = StObject.set(x, "IsCertificateExpired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCertificateDetail(value: CertificateDetail => js.Any): Self = this.set("GetCertificateDetail", js.Any.fromFunction1(value))
+    def setIsCertificateRevoked(value: Boolean): Self = StObject.set(x, "IsCertificateRevoked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSignatureDetail(value: SignatureDetail => js.Any): Self = this.set("GetSignatureDetail", js.Any.fromFunction1(value))
+    def setIsCertificateUntrusted(value: Boolean): Self = StObject.set(x, "IsCertificateUntrusted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCertificateExpired(value: Boolean): Self = this.set("IsCertificateExpired", value.asInstanceOf[js.Any])
+    def setIsValid(value: Boolean): Self = StObject.set(x, "IsValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCertificateRevoked(value: Boolean): Self = this.set("IsCertificateRevoked", value.asInstanceOf[js.Any])
+    def setOfficeDotSignatureInfo_typekey(value: SignatureInfo): Self = StObject.set(x, "Office.SignatureInfo_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCertificateUntrusted(value: Boolean): Self = this.set("IsCertificateUntrusted", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("IsValid", value.asInstanceOf[js.Any])
+    def setSelectCertificateDetailByThumbprint(value: String => Unit): Self = StObject.set(x, "SelectCertificateDetailByThumbprint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOfficeDotSignatureInfo_typekey(value: SignatureInfo): Self = this.set("Office.SignatureInfo_typekey", value.asInstanceOf[js.Any])
+    def setSelectSignatureCertificate(value: js.Any => Unit): Self = StObject.set(x, "SelectSignatureCertificate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setShowSignatureCertificate(value: js.Any => Unit): Self = StObject.set(x, "ShowSignatureCertificate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectCertificateDetailByThumbprint(value: String => Unit): Self = this.set("SelectCertificateDetailByThumbprint", js.Any.fromFunction1(value))
+    def setSignatureComment(value: String): Self = StObject.set(x, "SignatureComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectSignatureCertificate(value: js.Any => Unit): Self = this.set("SelectSignatureCertificate", js.Any.fromFunction1(value))
+    def setSignatureImage(value: IPictureDisp): Self = StObject.set(x, "SignatureImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSignatureCertificate(value: js.Any => Unit): Self = this.set("ShowSignatureCertificate", js.Any.fromFunction1(value))
+    def setSignatureProvider(value: String): Self = StObject.set(x, "SignatureProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureComment(value: String): Self = this.set("SignatureComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureImage(value: IPictureDisp): Self = this.set("SignatureImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureProvider(value: String): Self = this.set("SignatureProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureText(value: String): Self = this.set("SignatureText", value.asInstanceOf[js.Any])
+    def setSignatureText(value: String): Self = StObject.set(x, "SignatureText", value.asInstanceOf[js.Any])
   }
 }

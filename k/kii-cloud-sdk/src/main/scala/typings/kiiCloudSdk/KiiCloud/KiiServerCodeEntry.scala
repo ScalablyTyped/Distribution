@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.KiiCloud
 
 import typings.kiiCloudSdk.anon.`24`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a server side code entry in KiiCloud.
   */
 @js.native
-trait KiiServerCodeEntry extends js.Object {
+trait KiiServerCodeEntry extends StObject {
   
   /**
     * Execute this server code entry.<br>

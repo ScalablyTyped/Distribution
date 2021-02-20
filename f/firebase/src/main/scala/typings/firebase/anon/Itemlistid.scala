@@ -2,6 +2,7 @@ package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebase.mod.firebase.analytics.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,39 +26,27 @@ object Itemlistid {
   }
   
   @scala.inline
-  implicit class ItemlistidOps[Self <: Itemlistid] (val x: Self) extends AnyVal {
+  implicit class ItemlistidMutableBuilder[Self <: Itemlistid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem_list_idUndefined: Self = StObject.set(x, "item_list_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem_list_name(value: String): Self = StObject.set(x, "item_list_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem_list_id(value: String): Self = this.set("item_list_id", value.asInstanceOf[js.Any])
+    def setItem_list_nameUndefined: Self = StObject.set(x, "item_list_name", js.undefined)
     
     @scala.inline
-    def deleteItem_list_id: Self = this.set("item_list_id", js.undefined)
+    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem_list_name(value: String): Self = this.set("item_list_name", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteItem_list_name: Self = this.set("item_list_name", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

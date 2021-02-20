@@ -9,12 +9,13 @@ import typings.reactMapGl.reactMapGlStrings.mapbox
 import typings.reactMapGl.reactMapGlStrings.terrarium
 import typings.reactMapGl.reactMapGlStrings.tms
 import typings.reactMapGl.reactMapGlStrings.xyz
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceProps extends js.Object {
+trait SourceProps extends StObject {
   
   var attribution: js.UndefOr[String] = js.native
   
@@ -74,167 +75,155 @@ object SourceProps {
   }
   
   @scala.inline
-  implicit class SourcePropsOps[Self <: SourceProps] (val x: Self) extends AnyVal {
+  implicit class SourcePropsMutableBuilder[Self <: SourceProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def setBounds(value: js.Array[Double]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setBuffer(value: Double): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setCluster(value: Boolean): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setClusterMaxZoom(value: Double): Self = StObject.set(x, "clusterMaxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClusterMaxZoomUndefined: Self = StObject.set(x, "clusterMaxZoom", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setClusterProperties(value: js.Object): Self = StObject.set(x, "clusterProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCluster(value: Boolean): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setClusterPropertiesUndefined: Self = StObject.set(x, "clusterProperties", js.undefined)
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterMaxZoom(value: Double): Self = this.set("clusterMaxZoom", value.asInstanceOf[js.Any])
+    def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
     @scala.inline
-    def deleteClusterMaxZoom: Self = this.set("clusterMaxZoom", js.undefined)
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def setClusterProperties(value: js.Object): Self = this.set("clusterProperties", value.asInstanceOf[js.Any])
+    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterProperties: Self = this.set("clusterProperties", js.undefined)
+    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
     @scala.inline
-    def setClusterRadius(value: Double): Self = this.set("clusterRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterRadius: Self = this.set("clusterRadius", js.undefined)
-    
-    @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = this.set("coordinates", js.Array(value :_*))
-    
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = this.set("coordinates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
+    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
     @scala.inline
     def setData(
       value: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
-    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setEncoding(value: terrarium | mapbox): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEncoding(value: terrarium | mapbox): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setGenerateId(value: Boolean): Self = this.set("generateId", value.asInstanceOf[js.Any])
+    def setGenerateId(value: Boolean): Self = StObject.set(x, "generateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerateId: Self = this.set("generateId", js.undefined)
+    def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setLineMetrics(value: Boolean): Self = this.set("lineMetrics", value.asInstanceOf[js.Any])
+    def setLineMetrics(value: Boolean): Self = StObject.set(x, "lineMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineMetrics: Self = this.set("lineMetrics", js.undefined)
+    def setLineMetricsUndefined: Self = StObject.set(x, "lineMetrics", js.undefined)
     
     @scala.inline
-    def setMaxzoom(value: Double): Self = this.set("maxzoom", value.asInstanceOf[js.Any])
+    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxzoom: Self = this.set("maxzoom", js.undefined)
+    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
     @scala.inline
-    def setMinzoom(value: Double): Self = this.set("minzoom", value.asInstanceOf[js.Any])
+    def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinzoom: Self = this.set("minzoom", js.undefined)
+    def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
     @scala.inline
-    def setScheme(value: xyz | tms): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setScheme(value: xyz | tms): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
     @scala.inline
-    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     @scala.inline
-    def setTilesVarargs(value: String*): Self = this.set("tiles", js.Array(value :_*))
+    def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiles(value: js.Array[String]): Self = this.set("tiles", value.asInstanceOf[js.Any])
+    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
     @scala.inline
-    def deleteTiles: Self = this.set("tiles", js.undefined)
+    def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
     @scala.inline
-    def setTolerance(value: Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
+    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    @scala.inline
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

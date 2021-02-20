@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesCreateCampaignInputMod.CreateCam
 import typings.awsSdkClientPinpointBrowser.typesCreateCampaignOutputMod.CreateCampaignOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/CreateCampaignCommand", JSImport.Namespace)
-@js.native
-object createCampaignCommandMod extends js.Object {
+object createCampaignCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/CreateCampaignCommand", "CreateCampaignCommand")
   @js.native
   class CreateCampaignCommand protected () extends Command[
           InputTypesUnion, 

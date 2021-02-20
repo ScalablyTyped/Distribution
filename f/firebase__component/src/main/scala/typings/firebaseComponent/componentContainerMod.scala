@@ -8,16 +8,16 @@ import typings.firebaseComponent.firebaseComponentStrings.ship
 import typings.firebaseComponent.firebaseComponentStrings.test
 import typings.firebaseComponent.providerMod.Provider
 import typings.firebaseComponent.typesMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/component/dist/src/component_container", JSImport.Namespace)
-@js.native
-object componentContainerMod extends js.Object {
+object componentContainerMod {
   
+  @JSImport("@firebase/component/dist/src/component_container", "ComponentContainer")
   @js.native
-  class ComponentContainer protected () extends js.Object {
+  class ComponentContainer protected () extends StObject {
     def this(name: String) = this()
     
     @JSName("addComponent")

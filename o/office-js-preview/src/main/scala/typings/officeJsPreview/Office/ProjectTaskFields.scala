@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProjectTaskFields extends js.Object
+sealed trait ProjectTaskFields extends StObject
 /**
   * Specifies the task fields that are available as a parameter for the {@link Office.Document | Document}.getTaskFieldAsync method.
   *
@@ -19,7 +20,7 @@ sealed trait ProjectTaskFields extends js.Object
   */
 @JSGlobal("Office.ProjectTaskFields")
 @js.native
-object ProjectTaskFields extends js.Object {
+object ProjectTaskFields extends StObject {
   
   /**
     * Indicates whether the task is active.

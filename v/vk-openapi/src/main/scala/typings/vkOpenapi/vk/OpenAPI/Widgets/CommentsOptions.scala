@@ -1,12 +1,13 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentsOptions extends js.Object {
+trait CommentsOptions extends StObject {
   
   var attach: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object CommentsOptions {
   }
   
   @scala.inline
-  implicit class CommentsOptionsOps[Self <: CommentsOptions] (val x: Self) extends AnyVal {
+  implicit class CommentsOptionsMutableBuilder[Self <: CommentsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttach(value: String): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachUndefined: Self = StObject.set(x, "attach", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPublish(value: NumericBoolean): Self = StObject.set(x, "autoPublish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttach(value: String): Self = this.set("attach", value.asInstanceOf[js.Any])
+    def setAutoPublishUndefined: Self = StObject.set(x, "autoPublish", js.undefined)
     
     @scala.inline
-    def deleteAttach: Self = this.set("attach", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPublish(value: NumericBoolean): Self = this.set("autoPublish", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteAutoPublish: Self = this.set("autoPublish", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setNorealtime(value: NumericBoolean): Self = StObject.set(x, "norealtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setNorealtimeUndefined: Self = StObject.set(x, "norealtime", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorealtime(value: NumericBoolean): Self = this.set("norealtime", value.asInstanceOf[js.Any])
+    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
     @scala.inline
-    def deleteNorealtime: Self = this.set("norealtime", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

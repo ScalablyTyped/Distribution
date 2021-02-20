@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueueLoadRequest extends js.Object {
+trait QueueLoadRequest extends StObject {
   
   var customData: js.Object = js.native
   
@@ -24,33 +25,21 @@ object QueueLoadRequest {
   }
   
   @scala.inline
-  implicit class QueueLoadRequestOps[Self <: QueueLoadRequest] (val x: Self) extends AnyVal {
+  implicit class QueueLoadRequestMutableBuilder[Self <: QueueLoadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[QueueItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: QueueItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
+    def setRepeatMode(value: RepeatMode): Self = StObject.set(x, "repeatMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: QueueItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[QueueItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatMode(value: RepeatMode): Self = this.set("repeatMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
   }
 }

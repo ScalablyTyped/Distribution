@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.flowcontrol.v1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NonResourcePolicyRule is a predicate that matches non-resource requests according to their verb and the target non-resource URL. A NonResourcePolicyRule matches a request if and only if both (a) at least one member of verbs matches the request and (b) at least one member of nonResourceURLs matches the request.
   */
 @js.native
-trait NonResourcePolicyRule extends js.Object {
+trait NonResourcePolicyRule extends StObject {
   
   /**
     * `nonResourceURLs` is a set of url prefixes that a user should have access to and may not be empty. For example:
@@ -35,30 +36,18 @@ object NonResourcePolicyRule {
   }
   
   @scala.inline
-  implicit class NonResourcePolicyRuleOps[Self <: NonResourcePolicyRule] (val x: Self) extends AnyVal {
+  implicit class NonResourcePolicyRuleMutableBuilder[Self <: NonResourcePolicyRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonResourceURLs(value: js.Array[String]): Self = StObject.set(x, "nonResourceURLs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonResourceURLsVarargs(value: String*): Self = StObject.set(x, "nonResourceURLs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVerbs(value: js.Array[String]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonResourceURLsVarargs(value: String*): Self = this.set("nonResourceURLs", js.Array(value :_*))
-    
-    @scala.inline
-    def setNonResourceURLs(value: js.Array[String]): Self = this.set("nonResourceURLs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbsVarargs(value: String*): Self = this.set("verbs", js.Array(value :_*))
-    
-    @scala.inline
-    def setVerbs(value: js.Array[String]): Self = this.set("verbs", value.asInstanceOf[js.Any])
+    def setVerbsVarargs(value: String*): Self = StObject.set(x, "verbs", js.Array(value :_*))
   }
 }

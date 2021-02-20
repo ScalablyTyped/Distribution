@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UntrackIndexedDBForOriginRequest extends js.Object {
+trait UntrackIndexedDBForOriginRequest extends StObject {
   
   /**
     * Security origin.
@@ -21,21 +22,9 @@ object UntrackIndexedDBForOriginRequest {
   }
   
   @scala.inline
-  implicit class UntrackIndexedDBForOriginRequestOps[Self <: UntrackIndexedDBForOriginRequest] (val x: Self) extends AnyVal {
+  implicit class UntrackIndexedDBForOriginRequestMutableBuilder[Self <: UntrackIndexedDBForOriginRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

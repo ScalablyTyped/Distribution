@@ -1,11 +1,12 @@
 package typings.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Theme extends js.Object {
+trait Theme extends StObject {
   
   var body: String = js.native
   
@@ -38,39 +39,27 @@ object Theme {
   }
   
   @scala.inline
-  implicit class ThemeOps[Self <: Theme] (val x: Self) extends AnyVal {
+  implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyBorder(value: String): Self = StObject.set(x, "bodyBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyContent(value: String): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBodyContentBorder(value: String): Self = StObject.set(x, "bodyContentBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyBorder(value: String): Self = this.set("bodyBorder", value.asInstanceOf[js.Any])
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyContent(value: String): Self = this.set("bodyContent", value.asInstanceOf[js.Any])
+    def setHeaderBorder(value: String): Self = StObject.set(x, "headerBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyContentBorder(value: String): Self = this.set("bodyContentBorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderBorder(value: String): Self = this.set("headerBorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

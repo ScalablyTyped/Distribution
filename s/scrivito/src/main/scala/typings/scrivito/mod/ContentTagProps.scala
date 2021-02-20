@@ -1,6 +1,7 @@
 package typings.scrivito.mod
 
 import typings.react.mod.HTMLAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object ContentTagProps {
   }
   
   @scala.inline
-  implicit class ContentTagPropsOps[Self <: ContentTagProps] (val x: Self) extends AnyVal {
+  implicit class ContentTagPropsMutableBuilder[Self <: ContentTagProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: Obj | Widget): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def setContent(value: Obj | Widget): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setWidgetProps(value: js.Object): Self = StObject.set(x, "widgetProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setWidgetProps(value: js.Object): Self = this.set("widgetProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidgetProps: Self = this.set("widgetProps", js.undefined)
+    def setWidgetPropsUndefined: Self = StObject.set(x, "widgetProps", js.undefined)
   }
 }

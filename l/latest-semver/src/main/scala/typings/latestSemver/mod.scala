@@ -1,12 +1,13 @@
 package typings.latestSemver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("latest-semver", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("latest-semver", JSImport.Namespace)
+  @js.native
   def apply(versions: js.Array[String]): js.UndefOr[String] = js.native
 }

@@ -32,6 +32,7 @@ import typings.chance.chanceStrings.street_suffixes
 import typings.chance.chanceStrings.territories
 import typings.chance.chanceStrings.us_states_and_dc
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -235,7 +236,7 @@ trait Chance extends Seeded {
   def month(): String = js.native
   def month(opts: Options): Month = js.native
   
-   // API return type not defined in docs
+  // API return type not defined in docs
   def months(): js.Array[Month] = js.native
   
   def n[T](generator: js.Function0[T], count: Double): js.Array[T] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConformancePackStatusDetail extends js.Object {
+trait ConformancePackStatusDetail extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of comformance pack.
@@ -63,48 +64,36 @@ object ConformancePackStatusDetail {
   }
   
   @scala.inline
-  implicit class ConformancePackStatusDetailOps[Self <: ConformancePackStatusDetail] (val x: Self) extends AnyVal {
+  implicit class ConformancePackStatusDetailMutableBuilder[Self <: ConformancePackStatusDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConformancePackArn(value: ConformancePackArn): Self = StObject.set(x, "ConformancePackArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConformancePackId(value: ConformancePackId): Self = StObject.set(x, "ConformancePackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackArn(value: ConformancePackArn): Self = this.set("ConformancePackArn", value.asInstanceOf[js.Any])
+    def setConformancePackState(value: ConformancePackState): Self = StObject.set(x, "ConformancePackState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackId(value: ConformancePackId): Self = this.set("ConformancePackId", value.asInstanceOf[js.Any])
+    def setConformancePackStatusReason(value: ConformancePackStatusReason): Self = StObject.set(x, "ConformancePackStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = this.set("ConformancePackName", value.asInstanceOf[js.Any])
+    def setConformancePackStatusReasonUndefined: Self = StObject.set(x, "ConformancePackStatusReason", js.undefined)
     
     @scala.inline
-    def setConformancePackState(value: ConformancePackState): Self = this.set("ConformancePackState", value.asInstanceOf[js.Any])
+    def setLastUpdateCompletedTime(value: Date): Self = StObject.set(x, "LastUpdateCompletedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateRequestedTime(value: Date): Self = this.set("LastUpdateRequestedTime", value.asInstanceOf[js.Any])
+    def setLastUpdateCompletedTimeUndefined: Self = StObject.set(x, "LastUpdateCompletedTime", js.undefined)
     
     @scala.inline
-    def setStackArn(value: StackArn): Self = this.set("StackArn", value.asInstanceOf[js.Any])
+    def setLastUpdateRequestedTime(value: Date): Self = StObject.set(x, "LastUpdateRequestedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackStatusReason(value: ConformancePackStatusReason): Self = this.set("ConformancePackStatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConformancePackStatusReason: Self = this.set("ConformancePackStatusReason", js.undefined)
-    
-    @scala.inline
-    def setLastUpdateCompletedTime(value: Date): Self = this.set("LastUpdateCompletedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateCompletedTime: Self = this.set("LastUpdateCompletedTime", js.undefined)
+    def setStackArn(value: StackArn): Self = StObject.set(x, "StackArn", value.asInstanceOf[js.Any])
   }
 }

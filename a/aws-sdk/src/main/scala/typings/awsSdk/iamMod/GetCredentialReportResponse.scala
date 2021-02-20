@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCredentialReportResponse extends js.Object {
+trait GetCredentialReportResponse extends StObject {
   
   /**
     * Contains the credential report. The report is Base64-encoded.
@@ -31,36 +32,24 @@ object GetCredentialReportResponse {
   }
   
   @scala.inline
-  implicit class GetCredentialReportResponseOps[Self <: GetCredentialReportResponse] (val x: Self) extends AnyVal {
+  implicit class GetCredentialReportResponseMutableBuilder[Self <: GetCredentialReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: ReportContentType): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeneratedTime(value: dateType): Self = StObject.set(x, "GeneratedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: ReportContentType): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setGeneratedTimeUndefined: Self = StObject.set(x, "GeneratedTime", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
+    def setReportFormat(value: ReportFormatType): Self = StObject.set(x, "ReportFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratedTime(value: dateType): Self = this.set("GeneratedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneratedTime: Self = this.set("GeneratedTime", js.undefined)
-    
-    @scala.inline
-    def setReportFormat(value: ReportFormatType): Self = this.set("ReportFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportFormat: Self = this.set("ReportFormat", js.undefined)
+    def setReportFormatUndefined: Self = StObject.set(x, "ReportFormat", js.undefined)
   }
 }

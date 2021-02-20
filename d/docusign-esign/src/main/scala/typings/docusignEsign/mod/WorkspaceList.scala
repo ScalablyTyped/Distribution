@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceList extends js.Object {
+trait WorkspaceList extends StObject {
   
   /**
     * The last index position in the result set.
@@ -45,55 +46,43 @@ object WorkspaceList {
   }
   
   @scala.inline
-  implicit class WorkspaceListOps[Self <: WorkspaceList] (val x: Self) extends AnyVal {
+  implicit class WorkspaceListMutableBuilder[Self <: WorkspaceList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSetSize(value: String): Self = this.set("resultSetSize", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteResultSetSize: Self = this.set("resultSetSize", js.undefined)
+    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
-    
-    @scala.inline
-    def setTotalSetSize(value: String): Self = this.set("totalSetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSetSize: Self = this.set("totalSetSize", js.undefined)
-    
-    @scala.inline
-    def setWorkspacesVarargs(value: (/* A DocuSign workspace is a collaboration area for sharing files and data. */ Workspace)*): Self = this.set("workspaces", js.Array(value :_*))
+    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
     
     @scala.inline
     def setWorkspaces(
       value: js.Array[
           /* A DocuSign workspace is a collaboration area for sharing files and data. */ Workspace
         ]
-    ): Self = this.set("workspaces", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkspaces: Self = this.set("workspaces", js.undefined)
+    def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
+    
+    @scala.inline
+    def setWorkspacesVarargs(value: (/* A DocuSign workspace is a collaboration area for sharing files and data. */ Workspace)*): Self = StObject.set(x, "workspaces", js.Array(value :_*))
   }
 }

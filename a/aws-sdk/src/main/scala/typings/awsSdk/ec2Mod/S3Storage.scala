@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Storage extends js.Object {
+trait S3Storage extends StObject {
   
   /**
     * The access key ID of the owner of the bucket. Before you specify a value for your access key ID, review and follow the guidance in Best Practices for Managing AWS Access Keys.
@@ -41,48 +42,36 @@ object S3Storage {
   }
   
   @scala.inline
-  implicit class S3StorageOps[Self <: S3Storage] (val x: Self) extends AnyVal {
+  implicit class S3StorageMutableBuilder[Self <: S3Storage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAWSAccessKeyId(value: String): Self = StObject.set(x, "AWSAccessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAWSAccessKeyIdUndefined: Self = StObject.set(x, "AWSAccessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAWSAccessKeyId(value: String): Self = this.set("AWSAccessKeyId", value.asInstanceOf[js.Any])
+    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
     @scala.inline
-    def deleteAWSAccessKeyId: Self = this.set("AWSAccessKeyId", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    def setUploadPolicy(value: _Blob): Self = StObject.set(x, "UploadPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    def setUploadPolicySignature(value: String): Self = StObject.set(x, "UploadPolicySignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    def setUploadPolicySignatureUndefined: Self = StObject.set(x, "UploadPolicySignature", js.undefined)
     
     @scala.inline
-    def setUploadPolicy(value: _Blob): Self = this.set("UploadPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadPolicy: Self = this.set("UploadPolicy", js.undefined)
-    
-    @scala.inline
-    def setUploadPolicySignature(value: String): Self = this.set("UploadPolicySignature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadPolicySignature: Self = this.set("UploadPolicySignature", js.undefined)
+    def setUploadPolicyUndefined: Self = StObject.set(x, "UploadPolicy", js.undefined)
   }
 }

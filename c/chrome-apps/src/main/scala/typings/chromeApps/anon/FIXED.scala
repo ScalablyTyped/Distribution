@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.fixed_
 import typings.chromeApps.chromeAppsStrings.removable_
 import typings.chromeApps.chromeAppsStrings.unknown__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FIXED extends js.Object {
+trait FIXED extends StObject {
   
   var FIXED: fixed_ = js.native
   
@@ -25,27 +26,15 @@ object FIXED {
   }
   
   @scala.inline
-  implicit class FIXEDOps[Self <: FIXED] (val x: Self) extends AnyVal {
+  implicit class FIXEDMutableBuilder[Self <: FIXED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFIXED(value: fixed_): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setREMOVABLE(value: removable_): Self = StObject.set(x, "REMOVABLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFIXED(value: fixed_): Self = this.set("FIXED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREMOVABLE(value: removable_): Self = this.set("REMOVABLE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNKNOWN(value: unknown__): Self = this.set("UNKNOWN", value.asInstanceOf[js.Any])
+    def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

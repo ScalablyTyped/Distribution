@@ -6,6 +6,7 @@ import typings.cytoscape.cytoscapeStrings.none
 import typings.cytoscape.cytoscapeStrings.visible
 import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/visibility
   */
 @js.native
-trait Visibility[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Object {
+trait Visibility[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject {
   
   /**
     * Whether to display the element; may be element for displayed or none for not displayed.
@@ -56,42 +57,30 @@ object Visibility {
   }
   
   @scala.inline
-  implicit class VisibilityOps[Self <: Visibility[_], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self with Visibility[SingularType]) extends AnyVal {
+  implicit class VisibilityMutableBuilder[Self <: Visibility[_], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self with Visibility[SingularType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: PropertyValue[SingularType, none | displayed]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFunction1(value: SingularType => none | displayed): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpacity(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFunction1(value: SingularType => none | displayed): Self = this.set("display", js.Any.fromFunction1(value))
+    def setOpacityFunction1(value: SingularType => Double): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplay(value: PropertyValue[SingularType, none | displayed]): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setVisibility(value: PropertyValue[SingularType, hidden | visible]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacityFunction1(value: SingularType => Double): Self = this.set("opacity", js.Any.fromFunction1(value))
+    def setVisibilityFunction1(value: SingularType => hidden | visible): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpacity(value: PropertyValue[SingularType, Double]): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def `setZ-index`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibilityFunction1(value: SingularType => hidden | visible): Self = this.set("visibility", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisibility(value: PropertyValue[SingularType, hidden | visible]): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setZ-indexFunction1`(value: SingularType => Double): Self = this.set("z-index", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setZ-index`(value: PropertyValue[SingularType, Double]): Self = this.set("z-index", value.asInstanceOf[js.Any])
+    def `setZ-indexFunction1`(value: SingularType => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
   }
 }

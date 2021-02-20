@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Payload extends js.Object {
+trait Payload extends StObject {
   
   /**
     * The content of the payload. You can use a string expression that includes quoted strings ('&lt;string&gt;'), variables ($variable.&lt;variable-name&gt;), input values ($input.&lt;input-name&gt;.&lt;path-to-datum&gt;), string concatenations, and quoted strings that contain ${} as the content. The recommended maximum size of a content expression is 1 KB.
@@ -27,24 +28,12 @@ object Payload {
   }
   
   @scala.inline
-  implicit class PayloadOps[Self <: Payload] (val x: Self) extends AnyVal {
+  implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentExpression(value: ContentExpression): Self = StObject.set(x, "contentExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentExpression(value: ContentExpression): Self = this.set("contentExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PayloadType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: PayloadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,14 @@ package typings.backbone.mod
 import typings.std.Location
 import typings.std.RegExp
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "History")
 @js.native
-class History_ () extends js.Object {
+class History_ () extends StObject {
   
   /* private */ def _updateHash(location: Location, fragment: String, replace: Boolean): Unit = js.native
   
@@ -52,10 +53,16 @@ class History_ () extends js.Object {
   
   def stop(): Unit = js.native
 }
-/* static members */
-@JSImport("backbone", "History")
-@js.native
-object History_ extends js.Object {
+object History_ {
   
-  var started: Boolean = js.native
+  @JSImport("backbone", "History")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("backbone", "History.started")
+  @js.native
+  def started: Boolean = js.native
+  @scala.inline
+  def started_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("started")(x.asInstanceOf[js.Any])
 }

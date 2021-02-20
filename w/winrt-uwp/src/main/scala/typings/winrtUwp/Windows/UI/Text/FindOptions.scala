@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FindOptions extends js.Object
+sealed trait FindOptions extends StObject
 /** Specifies the options to use when doing a text search. */
 @JSGlobal("Windows.UI.Text.FindOptions")
 @js.native
-object FindOptions extends js.Object {
+object FindOptions extends StObject {
   
   /** Match case; that is, a case-sensitive search. */
   @js.native

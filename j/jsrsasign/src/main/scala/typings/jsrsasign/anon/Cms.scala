@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cms extends js.Object {
+trait Cms extends StObject {
   
   var cms: String = js.native
 }
@@ -18,21 +19,9 @@ object Cms {
   }
   
   @scala.inline
-  implicit class CmsOps[Self <: Cms] (val x: Self) extends AnyVal {
+  implicit class CmsMutableBuilder[Self <: Cms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCms(value: String): Self = this.set("cms", value.asInstanceOf[js.Any])
+    def setCms(value: String): Self = StObject.set(x, "cms", value.asInstanceOf[js.Any])
   }
 }

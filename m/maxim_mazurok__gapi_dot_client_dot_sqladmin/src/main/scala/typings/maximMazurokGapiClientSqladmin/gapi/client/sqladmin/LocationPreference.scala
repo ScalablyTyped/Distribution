@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationPreference extends js.Object {
+trait LocationPreference extends StObject {
   
   /** The App Engine application to follow, it must be in the same region as the Cloud SQL instance. */
   var followGaeApplication: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object LocationPreference {
   }
   
   @scala.inline
-  implicit class LocationPreferenceOps[Self <: LocationPreference] (val x: Self) extends AnyVal {
+  implicit class LocationPreferenceMutableBuilder[Self <: LocationPreference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowGaeApplication(value: String): Self = StObject.set(x, "followGaeApplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowGaeApplicationUndefined: Self = StObject.set(x, "followGaeApplication", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowGaeApplication(value: String): Self = this.set("followGaeApplication", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFollowGaeApplication: Self = this.set("followGaeApplication", js.undefined)
+    def setSecondaryZone(value: String): Self = StObject.set(x, "secondaryZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSecondaryZoneUndefined: Self = StObject.set(x, "secondaryZone", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryZone(value: String): Self = this.set("secondaryZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryZone: Self = this.set("secondaryZone", js.undefined)
-    
-    @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

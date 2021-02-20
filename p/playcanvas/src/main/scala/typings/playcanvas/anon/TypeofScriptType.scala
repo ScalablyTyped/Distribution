@@ -1,14 +1,13 @@
 package typings.playcanvas.anon
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.playcanvas.pc.ScriptAttributes
-import typings.playcanvas.pc.ScriptType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofScriptType extends Instantiable1[/* args */ App, ScriptType] {
+trait TypeofScriptType extends StObject {
   
   /**
     * The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}.
@@ -22,6 +21,7 @@ trait TypeofScriptType extends Instantiable1[/* args */ App, ScriptType] {
     *     default: 22.2
     * });
     */
+  /* static member */
   val attributes: ScriptAttributes = js.native
   
   /**
@@ -39,10 +39,36 @@ trait TypeofScriptType extends Instantiable1[/* args */ App, ScriptType] {
     * });
     * @param methods - Object with methods, where key - is name of method, and value - is function.
     */
+  /* static member */
   def extend(methods: js.Any): Unit = js.native
   
   /**
     * Name of a Script Type
     */
+  /* static member */
   val scriptName: String | Null = js.native
+}
+object TypeofScriptType {
+  
+  @scala.inline
+  def apply(attributes: ScriptAttributes, extend: js.Any => Unit): TypeofScriptType = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend))
+    __obj.asInstanceOf[TypeofScriptType]
+  }
+  
+  @scala.inline
+  implicit class TypeofScriptTypeMutableBuilder[Self <: TypeofScriptType] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAttributes(value: ScriptAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExtend(value: js.Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScriptNameNull: Self = StObject.set(x, "scriptName", null)
+  }
 }

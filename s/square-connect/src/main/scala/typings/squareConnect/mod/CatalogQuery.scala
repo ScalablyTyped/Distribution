@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogQuery")
 @js.native
-class CatalogQuery () extends js.Object {
+class CatalogQuery () extends StObject {
   
   /**
     * An exact query expression to return objects with attribute name and value matching the specified attribute name and value exactly.

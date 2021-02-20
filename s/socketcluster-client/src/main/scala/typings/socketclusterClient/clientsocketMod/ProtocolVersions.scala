@@ -1,5 +1,6 @@
 package typings.socketclusterClient.clientsocketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.socketclusterClient.socketclusterClientNumbers.`1`
   - typings.socketclusterClient.socketclusterClientNumbers.`2`
 */
-trait ProtocolVersions extends js.Object
+trait ProtocolVersions extends StObject
 object ProtocolVersions {
   
   @scala.inline

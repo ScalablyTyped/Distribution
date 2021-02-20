@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * email etc.).
   */
 @js.native
-trait SchemaGetOobConfirmationCodeResponse extends js.Object {
+trait SchemaGetOobConfirmationCodeResponse extends StObject {
   
   /**
     * The email address that the email is sent to.
@@ -36,36 +37,24 @@ object SchemaGetOobConfirmationCodeResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetOobConfirmationCodeResponseOps[Self <: SchemaGetOobConfirmationCodeResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetOobConfirmationCodeResponseMutableBuilder[Self <: SchemaGetOobConfirmationCodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setOobCode(value: String): Self = this.set("oobCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOobCode: Self = this.set("oobCode", js.undefined)
+    def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
   }
 }

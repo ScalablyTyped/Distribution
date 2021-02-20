@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderFulfillmentRecipient")
 @js.native
-class OrderFulfillmentRecipient () extends js.Object {
+class OrderFulfillmentRecipient () extends StObject {
   
   /**
     * The address of the fulfillment recipient.

@@ -1,12 +1,15 @@
 package typings.keymaster
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var key: Keymaster = js.native
+  @JSGlobal("key")
+  @js.native
+  def key: Keymaster = js.native
+  @scala.inline
+  def key_=(x: Keymaster): Unit = js.Dynamic.global.updateDynamic("key")(x.asInstanceOf[js.Any])
 }

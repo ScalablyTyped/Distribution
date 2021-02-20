@@ -1,5 +1,6 @@
 package typings.ember.mod.Ember
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember", "Ember.Container")
 @js.native
-class Container () extends js.Object {
+class Container () extends StObject {
   
   /**
     * Given a fullName, return the corresponding factory. The consumer of the factory

@@ -1,41 +1,36 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FrequencySubDayTypes extends js.Object
+sealed trait FrequencySubDayTypes extends StObject
 @JSImport("azdata", "FrequencySubDayTypes")
 @js.native
-object FrequencySubDayTypes extends js.Object {
+object FrequencySubDayTypes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FrequencySubDayTypes with Double] = js.native
   
   @js.native
   sealed trait Hour extends FrequencySubDayTypes
-  /* 8 */ @js.native
-  object Hour extends TopLevel[Hour with Double]
+  /* 8 */ val Hour: typings.azdata.mod.FrequencySubDayTypes.Hour with Double = js.native
   
   @js.native
   sealed trait Minute extends FrequencySubDayTypes
-  /* 4 */ @js.native
-  object Minute extends TopLevel[Minute with Double]
+  /* 4 */ val Minute: typings.azdata.mod.FrequencySubDayTypes.Minute with Double = js.native
   
   @js.native
   sealed trait Once extends FrequencySubDayTypes
-  /* 1 */ @js.native
-  object Once extends TopLevel[Once with Double]
+  /* 1 */ val Once: typings.azdata.mod.FrequencySubDayTypes.Once with Double = js.native
   
   @js.native
   sealed trait Second extends FrequencySubDayTypes
-  /* 2 */ @js.native
-  object Second extends TopLevel[Second with Double]
+  /* 2 */ val Second: typings.azdata.mod.FrequencySubDayTypes.Second with Double = js.native
   
   @js.native
   sealed trait Unknown extends FrequencySubDayTypes
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  /* 0 */ val Unknown: typings.azdata.mod.FrequencySubDayTypes.Unknown with Double = js.native
 }

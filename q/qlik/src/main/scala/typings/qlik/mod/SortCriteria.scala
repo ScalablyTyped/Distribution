@@ -3,12 +3,13 @@ package typings.qlik.mod
 import typings.qlik.qlikNumbers.`-1`
 import typings.qlik.qlikNumbers.`0`
 import typings.qlik.qlikNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortCriteria extends js.Object {
+trait SortCriteria extends StObject {
   
   var qExpression: ValueExpr = js.native
   
@@ -41,39 +42,27 @@ object SortCriteria {
   }
   
   @scala.inline
-  implicit class SortCriteriaOps[Self <: SortCriteria] (val x: Self) extends AnyVal {
+  implicit class SortCriteriaMutableBuilder[Self <: SortCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQExpression(value: ValueExpr): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQSortByAscii(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByAscii", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQSortByExpression(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExpression(value: ValueExpr): Self = this.set("qExpression", value.asInstanceOf[js.Any])
+    def setQSortByFrequency(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSortByAscii(value: `-1` | `0` | `1`): Self = this.set("qSortByAscii", value.asInstanceOf[js.Any])
+    def setQSortByLoadOrder(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByLoadOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSortByExpression(value: `-1` | `0` | `1`): Self = this.set("qSortByExpression", value.asInstanceOf[js.Any])
+    def setQSortByNumeric(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByNumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSortByFrequency(value: `-1` | `0` | `1`): Self = this.set("qSortByFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSortByLoadOrder(value: `-1` | `0` | `1`): Self = this.set("qSortByLoadOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSortByNumeric(value: `-1` | `0` | `1`): Self = this.set("qSortByNumeric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSortByState(value: `-1` | `0` | `1`): Self = this.set("qSortByState", value.asInstanceOf[js.Any])
+    def setQSortByState(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByState", value.asInstanceOf[js.Any])
   }
 }

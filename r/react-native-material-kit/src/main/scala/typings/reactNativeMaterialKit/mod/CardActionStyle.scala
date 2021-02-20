@@ -3,12 +3,13 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.dashed
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.dotted
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardActionStyle extends js.Object {
+trait CardActionStyle extends StObject {
   
   var borderStyle: js.UndefOr[solid | dotted | dashed] = js.native
   
@@ -27,42 +28,30 @@ object CardActionStyle {
   }
   
   @scala.inline
-  implicit class CardActionStyleOps[Self <: CardActionStyle] (val x: Self) extends AnyVal {
+  implicit class CardActionStyleMutableBuilder[Self <: CardActionStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderStyle(value: solid | dotted | dashed): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderTopColor(value: String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStyle(value: solid | dotted | dashed): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
     @scala.inline
-    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    def setBorderTopWidth(value: Double): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopColor(value: String): Self = this.set("borderTopColor", value.asInstanceOf[js.Any])
+    def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderTopColor: Self = this.set("borderTopColor", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopWidth(value: Double): Self = this.set("borderTopWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderTopWidth: Self = this.set("borderTopWidth", js.undefined)
-    
-    @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

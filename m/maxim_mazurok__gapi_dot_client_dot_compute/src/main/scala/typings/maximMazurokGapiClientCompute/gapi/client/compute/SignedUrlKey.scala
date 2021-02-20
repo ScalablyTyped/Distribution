@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignedUrlKey extends js.Object {
+trait SignedUrlKey extends StObject {
   
   /**
     * Name of the key. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
@@ -26,30 +27,18 @@ object SignedUrlKey {
   }
   
   @scala.inline
-  implicit class SignedUrlKeyOps[Self <: SignedUrlKey] (val x: Self) extends AnyVal {
+  implicit class SignedUrlKeyMutableBuilder[Self <: SignedUrlKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyValue(value: String): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyName: Self = this.set("keyName", js.undefined)
-    
-    @scala.inline
-    def setKeyValue(value: String): Self = this.set("keyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
   }
 }

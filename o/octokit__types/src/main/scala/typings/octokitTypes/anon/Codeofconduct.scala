@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Codeofconduct extends js.Object {
+trait Codeofconduct extends StObject {
   
   var code_of_conduct: HtmlurlKey = js.native
   
@@ -35,36 +36,24 @@ object Codeofconduct {
   }
   
   @scala.inline
-  implicit class CodeofconductOps[Self <: Codeofconduct] (val x: Self) extends AnyVal {
+  implicit class CodeofconductMutableBuilder[Self <: Codeofconduct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode_of_conduct(value: HtmlurlKey): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributing(value: HtmlurlUrl): Self = StObject.set(x, "contributing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssue_template(value: HtmlurlUrl): Self = StObject.set(x, "issue_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_of_conduct(value: HtmlurlKey): Self = this.set("code_of_conduct", value.asInstanceOf[js.Any])
+    def setLicense(value: Spdxid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributing(value: HtmlurlUrl): Self = this.set("contributing", value.asInstanceOf[js.Any])
+    def setPull_request_template(value: HtmlurlUrl): Self = StObject.set(x, "pull_request_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssue_template(value: HtmlurlUrl): Self = this.set("issue_template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLicense(value: Spdxid): Self = this.set("license", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPull_request_template(value: HtmlurlUrl): Self = this.set("pull_request_template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadme(value: HtmlurlUrl): Self = this.set("readme", value.asInstanceOf[js.Any])
+    def setReadme(value: HtmlurlUrl): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
   }
 }

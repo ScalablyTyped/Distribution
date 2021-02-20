@@ -4,13 +4,19 @@ import typings.agentBase.mod.Agent
 import typings.node.streamMod.Readable
 import typings.pacProxyAgent.mod.PacProxyAgentOptions
 import typings.pacResolver.mod.FindProxyForURL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pac-proxy-agent/dist/agent", JSImport.Namespace)
-@js.native
-object agentMod extends js.Object {
+object agentMod {
+  
+  @JSImport("pac-proxy-agent/dist/agent", JSImport.Default)
+  @js.native
+  class default protected () extends PacProxyAgent {
+    def this(uri: String) = this()
+    def this(uri: String, opts: PacProxyAgentOptions) = this()
+  }
   
   @js.native
   trait PacProxyAgent extends Agent {
@@ -45,11 +51,5 @@ object agentMod extends js.Object {
     var resolverPromise: js.UndefOr[js.Promise[FindProxyForURL]] = js.native
     
     var uri: String = js.native
-  }
-  
-  @js.native
-  class default protected () extends PacProxyAgent {
-    def this(uri: String) = this()
-    def this(uri: String, opts: PacProxyAgentOptions) = this()
   }
 }

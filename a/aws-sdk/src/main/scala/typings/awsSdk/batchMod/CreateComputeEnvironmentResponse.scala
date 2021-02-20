@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateComputeEnvironmentResponse extends js.Object {
+trait CreateComputeEnvironmentResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the compute environment.
@@ -26,30 +27,18 @@ object CreateComputeEnvironmentResponse {
   }
   
   @scala.inline
-  implicit class CreateComputeEnvironmentResponseOps[Self <: CreateComputeEnvironmentResponse] (val x: Self) extends AnyVal {
+  implicit class CreateComputeEnvironmentResponseMutableBuilder[Self <: CreateComputeEnvironmentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeEnvironmentArn(value: String): Self = StObject.set(x, "computeEnvironmentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeEnvironmentArnUndefined: Self = StObject.set(x, "computeEnvironmentArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeEnvironmentArn(value: String): Self = this.set("computeEnvironmentArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputeEnvironmentArn: Self = this.set("computeEnvironmentArn", js.undefined)
-    
-    @scala.inline
-    def setComputeEnvironmentName(value: String): Self = this.set("computeEnvironmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputeEnvironmentName: Self = this.set("computeEnvironmentName", js.undefined)
+    def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
   }
 }

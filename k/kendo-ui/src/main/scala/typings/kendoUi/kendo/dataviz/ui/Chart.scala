@@ -9,6 +9,7 @@ import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.drawing.Surface
 import typings.kendoUi.kendo.ui.Widget
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

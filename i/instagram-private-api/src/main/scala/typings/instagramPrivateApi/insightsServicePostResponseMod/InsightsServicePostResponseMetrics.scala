@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServicePostResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServicePostResponseMetrics extends js.Object {
+trait InsightsServicePostResponseMetrics extends StObject {
   
   var hashtags_impressions: InsightsServicePostResponseHashtagsImpressions = js.native
   
@@ -44,45 +45,33 @@ object InsightsServicePostResponseMetrics {
   }
   
   @scala.inline
-  implicit class InsightsServicePostResponseMetricsOps[Self <: InsightsServicePostResponseMetrics] (val x: Self) extends AnyVal {
+  implicit class InsightsServicePostResponseMetricsMutableBuilder[Self <: InsightsServicePostResponseMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHashtags_impressions(value: InsightsServicePostResponseHashtagsImpressions): Self = StObject.set(x, "hashtags_impressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImpression_count(value: Double): Self = StObject.set(x, "impression_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressions(value: InsightsServicePostResponseImpressions): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashtags_impressions(value: InsightsServicePostResponseHashtagsImpressions): Self = this.set("hashtags_impressions", value.asInstanceOf[js.Any])
+    def setOwner_account_follows_count(value: Double): Self = StObject.set(x, "owner_account_follows_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpression_count(value: Double): Self = this.set("impression_count", value.asInstanceOf[js.Any])
+    def setOwner_profile_views_count(value: Double): Self = StObject.set(x, "owner_profile_views_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressions(value: InsightsServicePostResponseImpressions): Self = this.set("impressions", value.asInstanceOf[js.Any])
+    def setProfile_actions(value: InsightsServicePostResponseProfileActions): Self = StObject.set(x, "profile_actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner_account_follows_count(value: Double): Self = this.set("owner_account_follows_count", value.asInstanceOf[js.Any])
+    def setReach(value: InsightsServicePostResponseReach): Self = StObject.set(x, "reach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner_profile_views_count(value: Double): Self = this.set("owner_profile_views_count", value.asInstanceOf[js.Any])
+    def setReach_count(value: Double): Self = StObject.set(x, "reach_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_actions(value: InsightsServicePostResponseProfileActions): Self = this.set("profile_actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReach(value: InsightsServicePostResponseReach): Self = this.set("reach", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReach_count(value: Double): Self = this.set("reach_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShare_count(value: InsightsServicePostResponseShareCount): Self = this.set("share_count", value.asInstanceOf[js.Any])
+    def setShare_count(value: InsightsServicePostResponseShareCount): Self = StObject.set(x, "share_count", value.asInstanceOf[js.Any])
   }
 }

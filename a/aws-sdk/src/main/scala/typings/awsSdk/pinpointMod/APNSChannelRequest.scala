@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait APNSChannelRequest extends js.Object {
+trait APNSChannelRequest extends StObject {
   
   /**
     * The bundle identifier that's assigned to your iOS app. This identifier is used for APNs tokens.
@@ -56,66 +57,54 @@ object APNSChannelRequest {
   }
   
   @scala.inline
-  implicit class APNSChannelRequestOps[Self <: APNSChannelRequest] (val x: Self) extends AnyVal {
+  implicit class APNSChannelRequestMutableBuilder[Self <: APNSChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: string): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificate(value: string): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: string): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    def setDefaultAuthenticationMethod(value: string): Self = StObject.set(x, "DefaultAuthenticationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: string): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "DefaultAuthenticationMethod", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAuthenticationMethod(value: string): Self = this.set("DefaultAuthenticationMethod", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultAuthenticationMethod: Self = this.set("DefaultAuthenticationMethod", js.undefined)
+    def setPrivateKey(value: string): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setPrivateKeyUndefined: Self = StObject.set(x, "PrivateKey", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setTeamId(value: string): Self = StObject.set(x, "TeamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKey(value: string): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
+    def setTeamIdUndefined: Self = StObject.set(x, "TeamId", js.undefined)
     
     @scala.inline
-    def deletePrivateKey: Self = this.set("PrivateKey", js.undefined)
+    def setTokenKey(value: string): Self = StObject.set(x, "TokenKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamId(value: string): Self = this.set("TeamId", value.asInstanceOf[js.Any])
+    def setTokenKeyId(value: string): Self = StObject.set(x, "TokenKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTeamId: Self = this.set("TeamId", js.undefined)
+    def setTokenKeyIdUndefined: Self = StObject.set(x, "TokenKeyId", js.undefined)
     
     @scala.inline
-    def setTokenKey(value: string): Self = this.set("TokenKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenKey: Self = this.set("TokenKey", js.undefined)
-    
-    @scala.inline
-    def setTokenKeyId(value: string): Self = this.set("TokenKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenKeyId: Self = this.set("TokenKeyId", js.undefined)
+    def setTokenKeyUndefined: Self = StObject.set(x, "TokenKey", js.undefined)
   }
 }

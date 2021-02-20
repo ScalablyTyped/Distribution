@@ -39,6 +39,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Tomorrow
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.YearToDate
 import typings.officeJsPreview.officeJsPreviewStrings.Yesterday
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait PivotDateFilter extends js.Object {
+trait PivotDateFilter extends StObject {
   
   /**
     *
@@ -112,53 +113,41 @@ object PivotDateFilter {
   }
   
   @scala.inline
-  implicit class PivotDateFilterOps[Self <: PivotDateFilter] (val x: Self) extends AnyVal {
+  implicit class PivotDateFilterMutableBuilder[Self <: PivotDateFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparator(value: FilterDatetime): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
     @scala.inline
     def setCondition(
       value: DateFilterCondition | Unknown_ | Equals | Before | BeforeOrEqualTo | After | AfterOrEqualTo | Between | Tomorrow | Today | Yesterday | NextWeek | ThisWeek | LastWeek | NextMonth | ThisMonth | LastMonth | NextQuarter | ThisQuarter | LastQuarter | NextYear | ThisYear | LastYear | YearToDate | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodJanuary | AllDatesInPeriodFebruary | AllDatesInPeriodMarch | AllDatesInPeriodApril | AllDatesInPeriodMay | AllDatesInPeriodJune | AllDatesInPeriodJuly | AllDatesInPeriodAugust | AllDatesInPeriodSeptember | AllDatesInPeriodOctober | AllDatesInPeriodNovember | AllDatesInPeriodDecember
-    ): Self = this.set("condition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparator(value: FilterDatetime): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComparator: Self = this.set("comparator", js.undefined)
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
     @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
+    def setLowerBound(value: FilterDatetime): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
     @scala.inline
-    def setLowerBound(value: FilterDatetime): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
+    def setUpperBound(value: FilterDatetime): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLowerBound: Self = this.set("lowerBound", js.undefined)
+    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
     
     @scala.inline
-    def setUpperBound(value: FilterDatetime): Self = this.set("upperBound", value.asInstanceOf[js.Any])
+    def setWholeDays(value: Boolean): Self = StObject.set(x, "wholeDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpperBound: Self = this.set("upperBound", js.undefined)
-    
-    @scala.inline
-    def setWholeDays(value: Boolean): Self = this.set("wholeDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWholeDays: Self = this.set("wholeDays", js.undefined)
+    def setWholeDaysUndefined: Self = StObject.set(x, "wholeDays", js.undefined)
   }
 }

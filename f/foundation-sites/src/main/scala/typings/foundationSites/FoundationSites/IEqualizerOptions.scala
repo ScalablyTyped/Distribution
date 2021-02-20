@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEqualizerOptions extends js.Object {
+trait IEqualizerOptions extends StObject {
   
   var equalizeByRow: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IEqualizerOptions {
   }
   
   @scala.inline
-  implicit class IEqualizerOptionsOps[Self <: IEqualizerOptions] (val x: Self) extends AnyVal {
+  implicit class IEqualizerOptionsMutableBuilder[Self <: IEqualizerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEqualizeByRow(value: Boolean): Self = StObject.set(x, "equalizeByRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEqualizeByRowUndefined: Self = StObject.set(x, "equalizeByRow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEqualizeOn(value: String): Self = StObject.set(x, "equalizeOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqualizeByRow(value: Boolean): Self = this.set("equalizeByRow", value.asInstanceOf[js.Any])
+    def setEqualizeOnStack(value: Boolean): Self = StObject.set(x, "equalizeOnStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEqualizeByRow: Self = this.set("equalizeByRow", js.undefined)
+    def setEqualizeOnStackUndefined: Self = StObject.set(x, "equalizeOnStack", js.undefined)
     
     @scala.inline
-    def setEqualizeOn(value: String): Self = this.set("equalizeOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEqualizeOn: Self = this.set("equalizeOn", js.undefined)
-    
-    @scala.inline
-    def setEqualizeOnStack(value: Boolean): Self = this.set("equalizeOnStack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEqualizeOnStack: Self = this.set("equalizeOnStack", js.undefined)
+    def setEqualizeOnUndefined: Self = StObject.set(x, "equalizeOn", js.undefined)
   }
 }

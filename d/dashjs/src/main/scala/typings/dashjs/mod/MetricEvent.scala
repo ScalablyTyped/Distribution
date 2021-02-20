@@ -5,6 +5,7 @@ import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.metricAdded
 import typings.dashjs.dashjsStrings.metricUpdated
 import typings.dashjs.dashjsStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object MetricEvent {
   }
   
   @scala.inline
-  implicit class MetricEventOps[Self <: MetricEvent] (val x: Self) extends AnyVal {
+  implicit class MetricEventMutableBuilder[Self <: MetricEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetric(value: MetricType): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: metricAdded | metricUpdated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetric(value: MetricType): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: metricAdded | metricUpdated): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Object): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

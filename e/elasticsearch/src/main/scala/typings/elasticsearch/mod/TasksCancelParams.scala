@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,54 +27,42 @@ object TasksCancelParams {
   }
   
   @scala.inline
-  implicit class TasksCancelParamsOps[Self <: TasksCancelParams] (val x: Self) extends AnyVal {
+  implicit class TasksCancelParamsMutableBuilder[Self <: TasksCancelParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: NameList): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
     @scala.inline
-    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
     @scala.inline
-    def deleteNodeId: Self = this.set("nodeId", js.undefined)
+    def setParentTask(value: String): Self = StObject.set(x, "parentTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentNode(value: String): Self = this.set("parentNode", value.asInstanceOf[js.Any])
+    def setParentTaskUndefined: Self = StObject.set(x, "parentTask", js.undefined)
     
     @scala.inline
-    def deleteParentNode: Self = this.set("parentNode", js.undefined)
+    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTask(value: String): Self = this.set("parentTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentTask: Self = this.set("parentTask", js.undefined)
-    
-    @scala.inline
-    def setTaskId(value: String): Self = this.set("taskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskId: Self = this.set("taskId", js.undefined)
+    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

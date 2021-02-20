@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicalConnectionRequirements extends js.Object {
+trait PhysicalConnectionRequirements extends StObject {
   
   /**
     * The connection's Availability Zone. This field is redundant because the specified subnet implies the Availability Zone to be used. Currently the field must be populated, but it will be deprecated in the future.
@@ -31,39 +32,27 @@ object PhysicalConnectionRequirements {
   }
   
   @scala.inline
-  implicit class PhysicalConnectionRequirementsOps[Self <: PhysicalConnectionRequirements] (val x: Self) extends AnyVal {
+  implicit class PhysicalConnectionRequirementsMutableBuilder[Self <: PhysicalConnectionRequirements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: NameString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityGroupIdList(value: SecurityGroupIdList): Self = StObject.set(x, "SecurityGroupIdList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: NameString): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdListUndefined: Self = StObject.set(x, "SecurityGroupIdList", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setSecurityGroupIdListVarargs(value: NameString*): Self = StObject.set(x, "SecurityGroupIdList", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdListVarargs(value: NameString*): Self = this.set("SecurityGroupIdList", js.Array(value :_*))
+    def setSubnetId(value: NameString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIdList(value: SecurityGroupIdList): Self = this.set("SecurityGroupIdList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityGroupIdList: Self = this.set("SecurityGroupIdList", js.undefined)
-    
-    @scala.inline
-    def setSubnetId(value: NameString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

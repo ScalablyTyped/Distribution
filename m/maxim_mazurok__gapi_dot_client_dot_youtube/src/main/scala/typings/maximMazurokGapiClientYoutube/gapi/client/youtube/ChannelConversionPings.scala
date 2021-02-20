@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelConversionPings extends js.Object {
+trait ChannelConversionPings extends StObject {
   
   /** Pings that the app shall fire (authenticated by biscotti cookie). Each ping has a context, in which the app must fire the ping, and a url identifying the ping. */
   var pings: js.UndefOr[js.Array[ChannelConversionPing]] = js.native
@@ -19,27 +20,15 @@ object ChannelConversionPings {
   }
   
   @scala.inline
-  implicit class ChannelConversionPingsOps[Self <: ChannelConversionPings] (val x: Self) extends AnyVal {
+  implicit class ChannelConversionPingsMutableBuilder[Self <: ChannelConversionPings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPings(value: js.Array[ChannelConversionPing]): Self = StObject.set(x, "pings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPingsUndefined: Self = StObject.set(x, "pings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPingsVarargs(value: ChannelConversionPing*): Self = this.set("pings", js.Array(value :_*))
-    
-    @scala.inline
-    def setPings(value: js.Array[ChannelConversionPing]): Self = this.set("pings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePings: Self = this.set("pings", js.undefined)
+    def setPingsVarargs(value: ChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value :_*))
   }
 }

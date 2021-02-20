@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventDetailsErrorItem extends js.Object {
+trait EventDetailsErrorItem extends StObject {
   
   /**
     * A message that describes the error.
@@ -31,36 +32,24 @@ object EventDetailsErrorItem {
   }
   
   @scala.inline
-  implicit class EventDetailsErrorItemOps[Self <: EventDetailsErrorItem] (val x: Self) extends AnyVal {
+  implicit class EventDetailsErrorItemMutableBuilder[Self <: EventDetailsErrorItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorNameUndefined: Self = StObject.set(x, "errorName", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorName(value: String): Self = this.set("errorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorName: Self = this.set("errorName", js.undefined)
-    
-    @scala.inline
-    def setEventArn(value: eventArn): Self = this.set("eventArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventArn: Self = this.set("eventArn", js.undefined)
+    def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
   }
 }

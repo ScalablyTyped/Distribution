@@ -1,55 +1,50 @@
 package typings.ndnJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ndnJs.blobMod.Blob
 import typings.ndnJs.nameMod.Name
 import typings.ndnJs.nameMod.Name.Component
 import typings.ndnJs.signatureMod.Signature
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js/data", JSImport.Namespace)
-@js.native
-object dataMod extends js.Object {
+object dataMod {
   
   @js.native
-  sealed trait ContentType extends js.Object
+  sealed trait ContentType extends StObject
+  @JSImport("ndn-js/data", "ContentType")
   @js.native
-  object ContentType extends js.Object {
+  object ContentType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
     
     @js.native
     sealed trait BLOB extends ContentType
-    /* 0 */ @js.native
-    object BLOB extends TopLevel[BLOB with Double]
+    /* 0 */ val BLOB: typings.ndnJs.dataMod.ContentType.BLOB with Double = js.native
     
     @js.native
     sealed trait KEY extends ContentType
-    /* 2 */ @js.native
-    object KEY extends TopLevel[KEY with Double]
+    /* 2 */ val KEY: typings.ndnJs.dataMod.ContentType.KEY with Double = js.native
     
     @js.native
     sealed trait LINK extends ContentType
-    /* 1 */ @js.native
-    object LINK extends TopLevel[LINK with Double]
+    /* 1 */ val LINK: typings.ndnJs.dataMod.ContentType.LINK with Double = js.native
     
     @js.native
     sealed trait NACK extends ContentType
-    /* 3 */ @js.native
-    object NACK extends TopLevel[NACK with Double]
+    /* 3 */ val NACK: typings.ndnJs.dataMod.ContentType.NACK with Double = js.native
     
     @js.native
     sealed trait OTHER_CODE extends ContentType
-    /* 0x7fff */ @js.native
-    object OTHER_CODE extends TopLevel[OTHER_CODE with Double]
+    /* 0x7fff */ val OTHER_CODE: typings.ndnJs.dataMod.ContentType.OTHER_CODE with Double = js.native
   }
   
+  @JSImport("ndn-js/data", "Data")
   @js.native
-  class Data () extends js.Object {
+  class Data () extends StObject {
     def this(data: Data) = this()
     def this(name: String) = this()
     def this(name: Name) = this()
@@ -83,8 +78,9 @@ object dataMod extends js.Object {
     def wireEncode(): Blob = js.native
   }
   
+  @JSImport("ndn-js/data", "MetaInfo")
   @js.native
-  class MetaInfo () extends js.Object {
+  class MetaInfo () extends StObject {
     def this(meta: MetaInfo) = this()
     
     def getFinalBlockId(): Component = js.native

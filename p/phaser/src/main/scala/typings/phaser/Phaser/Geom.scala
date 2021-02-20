@@ -2,13 +2,12 @@ package typings.phaser.Phaser
 
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Geom")
-@js.native
-object Geom extends js.Object {
+object Geom {
   
   /**
     * A Circle object.
@@ -18,7 +17,7 @@ object Geom extends js.Object {
     * To render a Circle you should look at the capabilities of the Graphics class.
     */
   @js.native
-  trait Circle extends js.Object {
+  trait Circle extends StObject {
     
     /**
       * The bottom position of the Circle.
@@ -147,7 +146,7 @@ object Geom extends js.Object {
     * To render an Ellipse you should look at the capabilities of the Graphics class.
     */
   @js.native
-  trait Ellipse extends js.Object {
+  trait Ellipse extends StObject {
     
     /**
       * The bottom position of the Ellipse.
@@ -282,7 +281,7 @@ object Geom extends js.Object {
     * Defines a Line segment, a part of a line between two endpoints.
     */
   @js.native
-  trait Line extends js.Object {
+  trait Line extends StObject {
     
     /**
       * The bottom position of the Line.
@@ -409,7 +408,7 @@ object Geom extends js.Object {
     * Defines a Point in 2D space, with an x and y component.
     */
   @js.native
-  trait Point extends js.Object {
+  trait Point extends StObject {
     
     /**
       * Set the x and y coordinates of the point to the given values.
@@ -448,7 +447,7 @@ object Geom extends js.Object {
     * To render a Polygon you should look at the capabilities of the Graphics class.
     */
   @js.native
-  trait Polygon extends js.Object {
+  trait Polygon extends StObject {
     
     /**
       * The area of this Polygon.
@@ -511,7 +510,7 @@ object Geom extends js.Object {
     * Encapsulates a 2D rectangle defined by its corner point in the top-left and its extends in x (width) and y (height)
     */
   @js.native
-  trait Rectangle extends js.Object {
+  trait Rectangle extends StObject {
     
     /**
       * The sum of the y and height properties.
@@ -680,7 +679,7 @@ object Geom extends js.Object {
     * specify the second point, and the last two arguments specify the third point.
     */
   @js.native
-  trait Triangle extends js.Object {
+  trait Triangle extends StObject {
     
     /**
       * Bottom most Y coordinate of the triangle. Setting it moves the triangle on the Y axis accordingly.

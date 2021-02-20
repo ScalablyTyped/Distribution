@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NeedsInvestigation extends js.Object {
+trait NeedsInvestigation extends StObject {
   
   var aborted: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object NeedsInvestigation {
   }
   
   @scala.inline
-  implicit class NeedsInvestigationOps[Self <: NeedsInvestigation] (val x: Self) extends AnyVal {
+  implicit class NeedsInvestigationMutableBuilder[Self <: NeedsInvestigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAborted(value: scala.Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAborted(value: scala.Double): Self = this.set("aborted", value.asInstanceOf[js.Any])
+    def setNeedsInvestigation(value: scala.Double): Self = StObject.set(x, "needsInvestigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: scala.Double): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
+    def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedsInvestigation(value: scala.Double): Self = this.set("needsInvestigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotStarted(value: scala.Double): Self = this.set("notStarted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnspecified(value: scala.Double): Self = this.set("unspecified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaiting(value: scala.Double): Self = this.set("waiting", value.asInstanceOf[js.Any])
+    def setWaiting(value: scala.Double): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
   }
 }

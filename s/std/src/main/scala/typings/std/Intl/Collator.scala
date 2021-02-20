@@ -1,11 +1,12 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collator extends js.Object {
+trait Collator extends StObject {
   
   def compare(x: String, y: String): Double = js.native
   
@@ -20,24 +21,12 @@ object Collator {
   }
   
   @scala.inline
-  implicit class CollatorOps[Self <: Collator] (val x: Self) extends AnyVal {
+  implicit class CollatorMutableBuilder[Self <: Collator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompare(value: (String, String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompare(value: (String, String) => Double): Self = this.set("compare", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResolvedOptions(value: () => ResolvedCollatorOptions): Self = this.set("resolvedOptions", js.Any.fromFunction0(value))
+    def setResolvedOptions(value: () => ResolvedCollatorOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
   }
 }

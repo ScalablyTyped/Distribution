@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageFree extends js.Object {
+trait StorageFree extends StObject {
   
   var storageFree: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object StorageFree {
   }
   
   @scala.inline
-  implicit class StorageFreeOps[Self <: StorageFree] (val x: Self) extends AnyVal {
+  implicit class StorageFreeMutableBuilder[Self <: StorageFree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStorageFree(value: String): Self = StObject.set(x, "storageFree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStorageFreeUndefined: Self = StObject.set(x, "storageFree", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageTotal(value: String): Self = StObject.set(x, "storageTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageFree(value: String): Self = this.set("storageFree", value.asInstanceOf[js.Any])
+    def setStorageTotalUndefined: Self = StObject.set(x, "storageTotal", js.undefined)
     
     @scala.inline
-    def deleteStorageFree: Self = this.set("storageFree", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageTotal(value: String): Self = this.set("storageTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageTotal: Self = this.set("storageTotal", js.undefined)
-    
-    @scala.inline
-    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelativeTimeFormat extends js.Object {
+trait RelativeTimeFormat extends StObject {
   
   /**
     * Formats a value and a unit according to the locale
@@ -94,27 +95,15 @@ object RelativeTimeFormat {
   }
   
   @scala.inline
-  implicit class RelativeTimeFormatOps[Self <: RelativeTimeFormat] (val x: Self) extends AnyVal {
+  implicit class RelativeTimeFormatMutableBuilder[Self <: RelativeTimeFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: (Double, RelativeTimeFormatUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatToParts(value: (Double, RelativeTimeFormatUnit) => js.Array[RelativeTimeFormatPart]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormat(value: (Double, RelativeTimeFormatUnit) => String): Self = this.set("format", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setFormatToParts(value: (Double, RelativeTimeFormatUnit) => js.Array[RelativeTimeFormatPart]): Self = this.set("formatToParts", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResolvedOptions(value: () => ResolvedRelativeTimeFormatOptions): Self = this.set("resolvedOptions", js.Any.fromFunction0(value))
+    def setResolvedOptions(value: () => ResolvedRelativeTimeFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
   }
 }

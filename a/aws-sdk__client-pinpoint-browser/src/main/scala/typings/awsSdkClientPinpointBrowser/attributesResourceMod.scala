@@ -1,13 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/_AttributesResource", JSImport.Namespace)
-@js.native
-object attributesResourceMod extends js.Object {
+object attributesResourceMod {
   
-  @JSName("_AttributesResource")
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/_AttributesResource", "_AttributesResource")
+  @js.native
   val AttributesResource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

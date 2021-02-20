@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information on an approval URL.
   */
 @js.native
-trait SchemaApprovalUrlInfo extends js.Object {
+trait SchemaApprovalUrlInfo extends StObject {
   
   /**
     * A URL that displays a product&#39;s permissions and that can also be used
@@ -31,30 +32,18 @@ object SchemaApprovalUrlInfo {
   }
   
   @scala.inline
-  implicit class SchemaApprovalUrlInfoOps[Self <: SchemaApprovalUrlInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaApprovalUrlInfoMutableBuilder[Self <: SchemaApprovalUrlInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalUrl(value: String): Self = this.set("approvalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalUrl: Self = this.set("approvalUrl", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

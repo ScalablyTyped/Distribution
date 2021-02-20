@@ -1,6 +1,7 @@
 package typings.go.mod
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The InputEvent class constructor produces an empty InputEvent.
   */
-class InputEvent () extends js.Object {
+class InputEvent () extends StObject {
   
   /**Gets or sets whether the alt key is being held down.*/
   var alt: Boolean = js.native

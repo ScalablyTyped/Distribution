@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientVault.anon.PageSize
 import typings.maximMazurokGapiClientVault.anon.PrettyPrint
 import typings.maximMazurokGapiClientVault.anon.QuotaUser
 import typings.maximMazurokGapiClientVault.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HoldsResource extends js.Object {
+trait HoldsResource extends StObject {
   
   var accounts: AccountsResource = js.native
   

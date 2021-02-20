@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HorizontalAlignment extends js.Object
+sealed trait HorizontalAlignment extends StObject
 /**
   * An enumeration of the supported horizontal alignment types.
   *
@@ -30,7 +31,7 @@ sealed trait HorizontalAlignment extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.HorizontalAlignment")
 @js.native
-object HorizontalAlignment extends js.Object {
+object HorizontalAlignment extends StObject {
   
   @js.native
   sealed trait CENTER extends HorizontalAlignment

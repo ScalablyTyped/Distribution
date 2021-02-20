@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.default
   - typings.fridaGum.fridaGumStrings.all
 */
-trait CodeTraps extends js.Object
+trait CodeTraps extends StObject
 object CodeTraps {
   
   @scala.inline
-  def all: typings.fridaGum.fridaGumStrings.all = "all".asInstanceOf[typings.fridaGum.fridaGumStrings.all]
+  def default: typings.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typings.fridaGum.fridaGumStrings.default]
   
   @scala.inline
-  def default: typings.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typings.fridaGum.fridaGumStrings.default]
+  def all: typings.fridaGum.fridaGumStrings.all = "all".asInstanceOf[typings.fridaGum.fridaGumStrings.all]
 }

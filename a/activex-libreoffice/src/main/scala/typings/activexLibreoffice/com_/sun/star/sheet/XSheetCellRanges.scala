@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,36 +82,24 @@ object XSheetCellRanges {
   }
   
   @scala.inline
-  implicit class XSheetCellRangesOps[Self <: XSheetCellRanges] (val x: Self) extends AnyVal {
+  implicit class XSheetCellRangesMutableBuilder[Self <: XSheetCellRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: XEnumerationAccess): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCells(value: () => XEnumerationAccess): Self = StObject.set(x, "getCells", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRangeAddresses(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRangeAddresses", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCells(value: XEnumerationAccess): Self = this.set("Cells", value.asInstanceOf[js.Any])
+    def setGetRangeAddressesAsString(value: () => String): Self = StObject.set(x, "getRangeAddressesAsString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRangeAddresses(value: SafeArray[CellRangeAddress]): Self = this.set("RangeAddresses", value.asInstanceOf[js.Any])
+    def setRangeAddresses(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "RangeAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeAddressesAsString(value: String): Self = this.set("RangeAddressesAsString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCells(value: () => XEnumerationAccess): Self = this.set("getCells", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRangeAddresses(value: () => SafeArray[CellRangeAddress]): Self = this.set("getRangeAddresses", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRangeAddressesAsString(value: () => String): Self = this.set("getRangeAddressesAsString", js.Any.fromFunction0(value))
+    def setRangeAddressesAsString(value: String): Self = StObject.set(x, "RangeAddressesAsString", value.asInstanceOf[js.Any])
   }
 }

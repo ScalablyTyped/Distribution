@@ -1,11 +1,12 @@
 package typings.stremioAddonSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultVideo extends js.Object {
+trait DefaultVideo extends StObject {
   
   /**
     * Set to a Video Object id in order to open the Detail page directly to that video's streams.
@@ -21,24 +22,12 @@ object DefaultVideo {
   }
   
   @scala.inline
-  implicit class DefaultVideoOps[Self <: DefaultVideo] (val x: Self) extends AnyVal {
+  implicit class DefaultVideoMutableBuilder[Self <: DefaultVideo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultVideo(value: Boolean | String): Self = StObject.set(x, "defaultVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultVideo(value: Boolean | String): Self = this.set("defaultVideo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultVideo: Self = this.set("defaultVideo", js.undefined)
+    def setDefaultVideoUndefined: Self = StObject.set(x, "defaultVideo", js.undefined)
   }
 }

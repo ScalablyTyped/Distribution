@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInlineStylesForNodeResponse extends js.Object {
+trait GetInlineStylesForNodeResponse extends StObject {
   
   /**
     * Attribute-defined element style (e.g. resulting from "width=20 height=100%").
@@ -26,30 +27,18 @@ object GetInlineStylesForNodeResponse {
   }
   
   @scala.inline
-  implicit class GetInlineStylesForNodeResponseOps[Self <: GetInlineStylesForNodeResponse] (val x: Self) extends AnyVal {
+  implicit class GetInlineStylesForNodeResponseMutableBuilder[Self <: GetInlineStylesForNodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributesStyle(value: CSSStyle): Self = StObject.set(x, "attributesStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesStyleUndefined: Self = StObject.set(x, "attributesStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesStyle(value: CSSStyle): Self = this.set("attributesStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributesStyle: Self = this.set("attributesStyle", js.undefined)
-    
-    @scala.inline
-    def setInlineStyle(value: CSSStyle): Self = this.set("inlineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineStyle: Self = this.set("inlineStyle", js.undefined)
+    def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
   }
 }

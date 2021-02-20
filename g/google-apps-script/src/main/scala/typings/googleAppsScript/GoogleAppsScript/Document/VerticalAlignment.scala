@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalAlignment extends js.Object
+sealed trait VerticalAlignment extends StObject
 /**
   * An enumeration of the supported vertical alignment types.
   *
@@ -27,7 +28,7 @@ sealed trait VerticalAlignment extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.VerticalAlignment")
 @js.native
-object VerticalAlignment extends js.Object {
+object VerticalAlignment extends StObject {
   
   @js.native
   sealed trait BOTTOM extends VerticalAlignment

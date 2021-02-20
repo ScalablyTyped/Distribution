@@ -1,11 +1,12 @@
 package typings.tizenCommonWeb.applicationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestedApplicationControl extends js.Object {
+trait RequestedApplicationControl extends StObject {
   
   /**
     * An attribute to store the application control object that describes the caller application's request.

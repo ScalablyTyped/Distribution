@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionAttribute extends js.Object {
+trait DimensionAttribute extends StObject {
   
   /**
     * Get dimension
@@ -53,33 +54,21 @@ object DimensionAttribute {
   }
   
   @scala.inline
-  implicit class DimensionAttributeOps[Self <: DimensionAttribute] (val x: Self) extends AnyVal {
+  implicit class DimensionAttributeMutableBuilder[Self <: DimensionAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDimension(value: () => Dimension): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKeyProperty(value: () => js.Any): Self = StObject.set(x, "getKeyProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDimension(value: () => Dimension): Self = this.set("getDimension", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeyProperty(value: () => js.Any): Self = this.set("getKeyProperty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLabelText(value: () => String): Self = this.set("getLabelText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextProperty(value: () => js.Any): Self = this.set("getTextProperty", js.Any.fromFunction0(value))
+    def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
   }
 }

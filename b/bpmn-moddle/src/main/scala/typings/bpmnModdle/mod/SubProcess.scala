@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,51 +60,39 @@ object SubProcess {
   }
   
   @scala.inline
-  implicit class SubProcessOps[Self <: SubProcess] (val x: Self) extends AnyVal {
+  implicit class SubProcessMutableBuilder[Self <: SubProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "flowElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactsVarargs(value: Artifact*): Self = this.set("artifacts", js.Array(value :_*))
+    def setFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "flowElements", js.Array(value :_*))
     
     @scala.inline
-    def setArtifacts(value: js.Array[Artifact]): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setIncomingConversationLinks(value: js.Array[ConversationLink]): Self = StObject.set(x, "incomingConversationLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowElementsVarargs(value: FlowElement*): Self = this.set("flowElements", js.Array(value :_*))
+    def setIncomingConversationLinksVarargs(value: ConversationLink*): Self = StObject.set(x, "incomingConversationLinks", js.Array(value :_*))
     
     @scala.inline
-    def setFlowElements(value: js.Array[FlowElement]): Self = this.set("flowElements", value.asInstanceOf[js.Any])
+    def setLaneSets(value: js.Array[LaneSet]): Self = StObject.set(x, "laneSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingConversationLinksVarargs(value: ConversationLink*): Self = this.set("incomingConversationLinks", js.Array(value :_*))
+    def setLaneSetsVarargs(value: LaneSet*): Self = StObject.set(x, "laneSets", js.Array(value :_*))
     
     @scala.inline
-    def setIncomingConversationLinks(value: js.Array[ConversationLink]): Self = this.set("incomingConversationLinks", value.asInstanceOf[js.Any])
+    def setOutgoingConversationLinks(value: js.Array[ConversationLink]): Self = StObject.set(x, "outgoingConversationLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaneSetsVarargs(value: LaneSet*): Self = this.set("laneSets", js.Array(value :_*))
+    def setOutgoingConversationLinksVarargs(value: ConversationLink*): Self = StObject.set(x, "outgoingConversationLinks", js.Array(value :_*))
     
     @scala.inline
-    def setLaneSets(value: js.Array[LaneSet]): Self = this.set("laneSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoingConversationLinksVarargs(value: ConversationLink*): Self = this.set("outgoingConversationLinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutgoingConversationLinks(value: js.Array[ConversationLink]): Self = this.set("outgoingConversationLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggeredByEvent(value: Boolean): Self = this.set("triggeredByEvent", value.asInstanceOf[js.Any])
+    def setTriggeredByEvent(value: Boolean): Self = StObject.set(x, "triggeredByEvent", value.asInstanceOf[js.Any])
   }
 }

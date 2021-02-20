@@ -6,6 +6,7 @@ import typings.activexShdocvw.activexShdocvwNumbers.`2`
 import typings.activexShdocvw.activexShdocvwNumbers.`32`
 import typings.activexShdocvw.activexShdocvwNumbers.`4`
 import typings.activexShdocvw.activexShdocvwNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShdocvw.activexShdocvwNumbers.`8`
   - typings.activexShdocvw.activexShdocvwNumbers.`1`
 */
-trait OLECMDF extends js.Object
+trait OLECMDF extends StObject
 object OLECMDF {
   
   @scala.inline

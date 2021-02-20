@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blessed.blessedStrings.`insert item`
   - typings.blessed.blessedStrings.`set items`
 */
-trait ListElementEventType extends js.Object
+trait ListElementEventType extends StObject
 object ListElementEventType {
   
   @scala.inline

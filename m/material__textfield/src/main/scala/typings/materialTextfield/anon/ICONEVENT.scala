@@ -1,11 +1,12 @@
 package typings.materialTextfield.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICONEVENT extends js.Object {
+trait ICONEVENT extends StObject {
   
   var ICON_EVENT: String = js.native
   
@@ -20,24 +21,12 @@ object ICONEVENT {
   }
   
   @scala.inline
-  implicit class ICONEVENTOps[Self <: ICONEVENT] (val x: Self) extends AnyVal {
+  implicit class ICONEVENTMutableBuilder[Self <: ICONEVENT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setICON_EVENT(value: String): Self = StObject.set(x, "ICON_EVENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setICON_EVENT(value: String): Self = this.set("ICON_EVENT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setICON_ROLE(value: String): Self = this.set("ICON_ROLE", value.asInstanceOf[js.Any])
+    def setICON_ROLE(value: String): Self = StObject.set(x, "ICON_ROLE", value.asInstanceOf[js.Any])
   }
 }

@@ -3,14 +3,14 @@ package typings.tensorflowTfjsData
 import typings.tensorflowTfjsData.datasourceMod.DataSource
 import typings.tensorflowTfjsData.fileChunkIteratorMod.FileChunkIteratorOptions
 import typings.tensorflowTfjsData.typesMod.FileElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/sources/file_data_source", JSImport.Namespace)
-@js.native
-object fileDataSourceMod extends js.Object {
+object fileDataSourceMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/sources/file_data_source", "FileDataSource")
   @js.native
   class FileDataSource protected () extends DataSource {
     def this(input: String) = this()

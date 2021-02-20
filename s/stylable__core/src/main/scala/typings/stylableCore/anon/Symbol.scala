@@ -2,12 +2,13 @@ package typings.stylableCore.anon
 
 import typings.stylableCore.stylableMetaMod.StylableSymbol
 import typings.stylableCore.stylableProcessorMod.StylableMeta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Symbol extends js.Object {
+trait Symbol extends StObject {
   
   var meta: StylableMeta = js.native
   
@@ -22,24 +23,12 @@ object Symbol {
   }
   
   @scala.inline
-  implicit class SymbolOps[Self <: Symbol] (val x: Self) extends AnyVal {
+  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeta(value: StylableMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMeta(value: StylableMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: StylableSymbol): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: StylableSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

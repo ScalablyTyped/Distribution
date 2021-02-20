@@ -2,12 +2,13 @@ package typings.reactLeaflet.mod
 
 import typings.leaflet.mod.LeafletEvent
 import typings.leaflet.mod.TileEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileLayerEvents extends js.Object {
+trait TileLayerEvents extends StObject {
   
   var onload: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.native
   
@@ -30,54 +31,42 @@ object TileLayerEvents {
   }
   
   @scala.inline
-  implicit class TileLayerEventsOps[Self <: TileLayerEvents] (val x: Self) extends AnyVal {
+  implicit class TileLayerEventsMutableBuilder[Self <: TileLayerEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnload(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnloading(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onloading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnload(value: /* event */ LeafletEvent => Unit): Self = this.set("onload", js.Any.fromFunction1(value))
+    def setOnloadingUndefined: Self = StObject.set(x, "onloading", js.undefined)
     
     @scala.inline
-    def deleteOnload: Self = this.set("onload", js.undefined)
+    def setOntileerror(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnloading(value: /* event */ LeafletEvent => Unit): Self = this.set("onloading", js.Any.fromFunction1(value))
+    def setOntileerrorUndefined: Self = StObject.set(x, "ontileerror", js.undefined)
     
     @scala.inline
-    def deleteOnloading: Self = this.set("onloading", js.undefined)
+    def setOntileload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOntileerror(value: /* event */ TileEvent => Unit): Self = this.set("ontileerror", js.Any.fromFunction1(value))
+    def setOntileloadUndefined: Self = StObject.set(x, "ontileload", js.undefined)
     
     @scala.inline
-    def deleteOntileerror: Self = this.set("ontileerror", js.undefined)
+    def setOntileloadstart(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileloadstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOntileload(value: /* event */ TileEvent => Unit): Self = this.set("ontileload", js.Any.fromFunction1(value))
+    def setOntileloadstartUndefined: Self = StObject.set(x, "ontileloadstart", js.undefined)
     
     @scala.inline
-    def deleteOntileload: Self = this.set("ontileload", js.undefined)
+    def setOntileunload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileunload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOntileloadstart(value: /* event */ TileEvent => Unit): Self = this.set("ontileloadstart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOntileloadstart: Self = this.set("ontileloadstart", js.undefined)
-    
-    @scala.inline
-    def setOntileunload(value: /* event */ TileEvent => Unit): Self = this.set("ontileunload", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOntileunload: Self = this.set("ontileunload", js.undefined)
+    def setOntileunloadUndefined: Self = StObject.set(x, "ontileunload", js.undefined)
   }
 }

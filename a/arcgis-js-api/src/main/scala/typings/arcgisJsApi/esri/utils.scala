@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait utils extends js.Object {
+trait utils extends StObject {
   
   /**
     * Formats a UNIX timestamp to a basic date string.
@@ -33,24 +34,12 @@ object utils {
   }
   
   @scala.inline
-  implicit class utilsOps[Self <: utils] (val x: Self) extends AnyVal {
+  implicit class utilsMutableBuilder[Self <: utils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatDateLabel(value: Double => String): Self = StObject.set(x, "formatDateLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormatDateLabel(value: Double => String): Self = this.set("formatDateLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDeviationValues(value: (Double, Double, Double) => js.Array[Double]): Self = this.set("getDeviationValues", js.Any.fromFunction3(value))
+    def setGetDeviationValues(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "getDeviationValues", js.Any.fromFunction3(value))
   }
 }

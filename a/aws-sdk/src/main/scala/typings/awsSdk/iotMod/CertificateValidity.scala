@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateValidity extends js.Object {
+trait CertificateValidity extends StObject {
   
   /**
     * The certificate is not valid after this date.
@@ -26,30 +27,18 @@ object CertificateValidity {
   }
   
   @scala.inline
-  implicit class CertificateValidityOps[Self <: CertificateValidity] (val x: Self) extends AnyVal {
+  implicit class CertificateValidityMutableBuilder[Self <: CertificateValidity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotAfter(value: DateType): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotBefore(value: DateType): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfter(value: DateType): Self = this.set("notAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotAfter: Self = this.set("notAfter", js.undefined)
-    
-    @scala.inline
-    def setNotBefore(value: DateType): Self = this.set("notBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
   }
 }

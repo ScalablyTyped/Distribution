@@ -2,12 +2,13 @@ package typings.fabric.anon
 
 import typings.fabric.fabricImplMod.IGradientOptionsColorStops
 import typings.fabric.fabricImplMod.IGradientOptionsCoords
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorStops extends js.Object {
+trait ColorStops extends StObject {
   
   var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.native
   
@@ -30,57 +31,45 @@ object ColorStops {
   }
   
   @scala.inline
-  implicit class ColorStopsOps[Self <: ColorStops] (val x: Self) extends AnyVal {
+  implicit class ColorStopsMutableBuilder[Self <: ColorStops] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorStops(value: IGradientOptionsColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
     
     @scala.inline
-    def setColorStopsVarargs(value: Color*): Self = this.set("colorStops", js.Array(value :_*))
+    def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorStops(value: IGradientOptionsColorStops): Self = this.set("colorStops", value.asInstanceOf[js.Any])
+    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
     @scala.inline
-    def deleteColorStops: Self = this.set("colorStops", js.undefined)
+    def setGradientUnits(value: js.Any): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoords(value: IGradientOptionsCoords): Self = this.set("coords", value.asInstanceOf[js.Any])
+    def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
     
     @scala.inline
-    def deleteCoords: Self = this.set("coords", js.undefined)
+    def setOffsetX(value: js.Any): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientUnits(value: js.Any): Self = this.set("gradientUnits", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteGradientUnits: Self = this.set("gradientUnits", js.undefined)
+    def setOffsetY(value: js.Any): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: js.Any): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: js.Any): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

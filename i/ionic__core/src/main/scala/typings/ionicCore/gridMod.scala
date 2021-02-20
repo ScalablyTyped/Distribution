@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/grid/grid", JSImport.Namespace)
-@js.native
-object gridMod extends js.Object {
+object gridMod {
   
+  @JSImport("@ionic/core/dist/types/components/grid/grid", "Grid")
   @js.native
   class Grid () extends ComponentInterface {
     

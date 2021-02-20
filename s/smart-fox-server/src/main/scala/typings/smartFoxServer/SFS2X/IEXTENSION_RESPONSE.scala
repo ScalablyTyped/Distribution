@@ -1,11 +1,12 @@
 package typings.smartFoxServer.SFS2X
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEXTENSION_RESPONSE extends js.Object {
+trait IEXTENSION_RESPONSE extends StObject {
   
   var cmd: String = js.native
   
@@ -22,27 +23,15 @@ object IEXTENSION_RESPONSE {
   }
   
   @scala.inline
-  implicit class IEXTENSION_RESPONSEOps[Self <: IEXTENSION_RESPONSE] (val x: Self) extends AnyVal {
+  implicit class IEXTENSION_RESPONSEMutableBuilder[Self <: IEXTENSION_RESPONSE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParams(value: js.Object): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceRoom(value: Double): Self = this.set("sourceRoom", value.asInstanceOf[js.Any])
+    def setSourceRoom(value: Double): Self = StObject.set(x, "sourceRoom", value.asInstanceOf[js.Any])
   }
 }

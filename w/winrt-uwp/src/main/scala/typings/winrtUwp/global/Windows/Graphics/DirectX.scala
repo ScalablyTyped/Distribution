@@ -1,21 +1,20 @@
 package typings.winrtUwp.global.Windows.Graphics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies pixel formats for use with Winrt Direct3D 11 interop surfaces. */
-@JSGlobal("Windows.Graphics.DirectX")
-@js.native
-object DirectX extends js.Object {
+object DirectX {
   
   /** Provides Windows Runtime projections of Microsoft Direct3D APIs to enable Windows Runtime components to exchange Direct3D surfaces and devices. */
-  @js.native
-  object Direct3D11 extends js.Object {
+  object Direct3D11 {
     
     /** A Windows Runtime projection of the D3D11_BIND_FLAG enumeration. Identifies the ways in which a resource may be bound to the graphics pipeline. */
+    @JSGlobal("Windows.Graphics.DirectX.Direct3D11.Direct3DBindings")
     @js.native
-    object Direct3DBindings extends js.Object {
+    object Direct3DBindings extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -44,8 +43,9 @@ object DirectX extends js.Object {
     }
     
     /** A Windows Runtime projection of the D3D11_USAGE enumeration. Identifies expected resource use during rendering. The usage directly reflects whether a resource is accessible by the CPU and/or the graphics processing unit (GPU). */
+    @JSGlobal("Windows.Graphics.DirectX.Direct3D11.Direct3DUsage")
     @js.native
-    object Direct3DUsage extends js.Object {
+    object Direct3DUsage extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage with Double] = js.native
@@ -61,8 +61,9 @@ object DirectX extends js.Object {
   }
   
   /** Identifies the alpha value, transparency behavior, of a surface. This is a managed version of the DXGI_APLAHA_MODE enumeration. */
+  @JSGlobal("Windows.Graphics.DirectX.DirectXAlphaMode")
   @js.native
-  object DirectXAlphaMode extends js.Object {
+  object DirectXAlphaMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.DirectX.DirectXAlphaMode with Double] = js.native
@@ -77,8 +78,9 @@ object DirectX extends js.Object {
   }
   
   /** Specifies pixel formats, which includes fully-typed and type-less formats. This is a managed version of the DXGI_FORMAT enumeration. */
+  @JSGlobal("Windows.Graphics.DirectX.DirectXPixelFormat")
   @js.native
-  object DirectXPixelFormat extends js.Object {
+  object DirectXPixelFormat extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.DirectX.DirectXPixelFormat with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadProcessConfig extends js.Object {
+trait LoadProcessConfig extends StObject {
   
   var sampleInterval: js.UndefOr[Double] = js.native
 }
@@ -18,24 +19,12 @@ object LoadProcessConfig {
   }
   
   @scala.inline
-  implicit class LoadProcessConfigOps[Self <: LoadProcessConfig] (val x: Self) extends AnyVal {
+  implicit class LoadProcessConfigMutableBuilder[Self <: LoadProcessConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSampleInterval(value: Double): Self = this.set("sampleInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleInterval: Self = this.set("sampleInterval", js.undefined)
+    def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
   }
 }

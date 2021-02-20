@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "InvoicePaymentRequest")
 @js.native
-class InvoicePaymentRequest () extends js.Object {
+class InvoicePaymentRequest () extends StObject {
   
   /**
     * If the request method is `CHARGE_CARD_ON_FILE`, this field provides the card to charge.

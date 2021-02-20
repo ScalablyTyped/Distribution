@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Detailed settings of a broadcast.
   */
 @js.native
-trait SchemaLiveBroadcastContentDetails extends js.Object {
+trait SchemaLiveBroadcastContentDetails extends StObject {
   
   /**
     * This value uniquely identifies the live stream bound to the broadcast.
@@ -121,114 +122,102 @@ object SchemaLiveBroadcastContentDetails {
   }
   
   @scala.inline
-  implicit class SchemaLiveBroadcastContentDetailsOps[Self <: SchemaLiveBroadcastContentDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveBroadcastContentDetailsMutableBuilder[Self <: SchemaLiveBroadcastContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundStreamId(value: String): Self = StObject.set(x, "boundStreamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundStreamIdUndefined: Self = StObject.set(x, "boundStreamId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundStreamLastUpdateTimeMs(value: String): Self = StObject.set(x, "boundStreamLastUpdateTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundStreamId(value: String): Self = this.set("boundStreamId", value.asInstanceOf[js.Any])
+    def setBoundStreamLastUpdateTimeMsUndefined: Self = StObject.set(x, "boundStreamLastUpdateTimeMs", js.undefined)
     
     @scala.inline
-    def deleteBoundStreamId: Self = this.set("boundStreamId", js.undefined)
+    def setClosedCaptionsType(value: String): Self = StObject.set(x, "closedCaptionsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundStreamLastUpdateTimeMs(value: String): Self = this.set("boundStreamLastUpdateTimeMs", value.asInstanceOf[js.Any])
+    def setClosedCaptionsTypeUndefined: Self = StObject.set(x, "closedCaptionsType", js.undefined)
     
     @scala.inline
-    def deleteBoundStreamLastUpdateTimeMs: Self = this.set("boundStreamLastUpdateTimeMs", js.undefined)
+    def setEnableAutoStart(value: Boolean): Self = StObject.set(x, "enableAutoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedCaptionsType(value: String): Self = this.set("closedCaptionsType", value.asInstanceOf[js.Any])
+    def setEnableAutoStartUndefined: Self = StObject.set(x, "enableAutoStart", js.undefined)
     
     @scala.inline
-    def deleteClosedCaptionsType: Self = this.set("closedCaptionsType", js.undefined)
+    def setEnableClosedCaptions(value: Boolean): Self = StObject.set(x, "enableClosedCaptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoStart(value: Boolean): Self = this.set("enableAutoStart", value.asInstanceOf[js.Any])
+    def setEnableClosedCaptionsUndefined: Self = StObject.set(x, "enableClosedCaptions", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoStart: Self = this.set("enableAutoStart", js.undefined)
+    def setEnableContentEncryption(value: Boolean): Self = StObject.set(x, "enableContentEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableClosedCaptions(value: Boolean): Self = this.set("enableClosedCaptions", value.asInstanceOf[js.Any])
+    def setEnableContentEncryptionUndefined: Self = StObject.set(x, "enableContentEncryption", js.undefined)
     
     @scala.inline
-    def deleteEnableClosedCaptions: Self = this.set("enableClosedCaptions", js.undefined)
+    def setEnableDvr(value: Boolean): Self = StObject.set(x, "enableDvr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableContentEncryption(value: Boolean): Self = this.set("enableContentEncryption", value.asInstanceOf[js.Any])
+    def setEnableDvrUndefined: Self = StObject.set(x, "enableDvr", js.undefined)
     
     @scala.inline
-    def deleteEnableContentEncryption: Self = this.set("enableContentEncryption", js.undefined)
+    def setEnableEmbed(value: Boolean): Self = StObject.set(x, "enableEmbed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDvr(value: Boolean): Self = this.set("enableDvr", value.asInstanceOf[js.Any])
+    def setEnableEmbedUndefined: Self = StObject.set(x, "enableEmbed", js.undefined)
     
     @scala.inline
-    def deleteEnableDvr: Self = this.set("enableDvr", js.undefined)
+    def setEnableLowLatency(value: Boolean): Self = StObject.set(x, "enableLowLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableEmbed(value: Boolean): Self = this.set("enableEmbed", value.asInstanceOf[js.Any])
+    def setEnableLowLatencyUndefined: Self = StObject.set(x, "enableLowLatency", js.undefined)
     
     @scala.inline
-    def deleteEnableEmbed: Self = this.set("enableEmbed", js.undefined)
+    def setLatencyPreference(value: String): Self = StObject.set(x, "latencyPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLowLatency(value: Boolean): Self = this.set("enableLowLatency", value.asInstanceOf[js.Any])
+    def setLatencyPreferenceUndefined: Self = StObject.set(x, "latencyPreference", js.undefined)
     
     @scala.inline
-    def deleteEnableLowLatency: Self = this.set("enableLowLatency", js.undefined)
+    def setMesh(value: String): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatencyPreference(value: String): Self = this.set("latencyPreference", value.asInstanceOf[js.Any])
+    def setMeshUndefined: Self = StObject.set(x, "mesh", js.undefined)
     
     @scala.inline
-    def deleteLatencyPreference: Self = this.set("latencyPreference", js.undefined)
+    def setMonitorStream(value: SchemaMonitorStreamInfo): Self = StObject.set(x, "monitorStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMesh(value: String): Self = this.set("mesh", value.asInstanceOf[js.Any])
+    def setMonitorStreamUndefined: Self = StObject.set(x, "monitorStream", js.undefined)
     
     @scala.inline
-    def deleteMesh: Self = this.set("mesh", js.undefined)
+    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorStream(value: SchemaMonitorStreamInfo): Self = this.set("monitorStream", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteMonitorStream: Self = this.set("monitorStream", js.undefined)
+    def setRecordFromStart(value: Boolean): Self = StObject.set(x, "recordFromStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setRecordFromStartUndefined: Self = StObject.set(x, "recordFromStart", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setStartWithSlate(value: Boolean): Self = StObject.set(x, "startWithSlate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordFromStart(value: Boolean): Self = this.set("recordFromStart", value.asInstanceOf[js.Any])
+    def setStartWithSlateUndefined: Self = StObject.set(x, "startWithSlate", js.undefined)
     
     @scala.inline
-    def deleteRecordFromStart: Self = this.set("recordFromStart", js.undefined)
+    def setStereoLayout(value: String): Self = StObject.set(x, "stereoLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartWithSlate(value: Boolean): Self = this.set("startWithSlate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartWithSlate: Self = this.set("startWithSlate", js.undefined)
-    
-    @scala.inline
-    def setStereoLayout(value: String): Self = this.set("stereoLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStereoLayout: Self = this.set("stereoLayout", js.undefined)
+    def setStereoLayoutUndefined: Self = StObject.set(x, "stereoLayout", js.undefined)
   }
 }

@@ -1,13 +1,12 @@
 package typings.typescriptTuple
 
 import typings.typescriptTuple.utilsMod.IndexesNormalize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-tuple/lib", JSImport.Namespace)
-@js.native
-object libMod extends js.Object {
+object libMod {
   
   type AllIndexesEqual[Type, Tuple /* <: js.Array[_] */] = IndexesNormalize[
     typings.typescriptTuple.utilsMod.AllIndexesEqual[Type, Tuple, js.Array[js.Any], js.Array[js.Any]]

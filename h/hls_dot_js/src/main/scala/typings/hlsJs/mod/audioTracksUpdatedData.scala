@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait audioTracksUpdatedData extends js.Object {
+trait audioTracksUpdatedData extends StObject {
   
   var audioTracks: js.Array[HlsAudioTrack] = js.native
 }
@@ -18,24 +19,12 @@ object audioTracksUpdatedData {
   }
   
   @scala.inline
-  implicit class audioTracksUpdatedDataOps[Self <: audioTracksUpdatedData] (val x: Self) extends AnyVal {
+  implicit class audioTracksUpdatedDataMutableBuilder[Self <: audioTracksUpdatedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioTracks(value: js.Array[HlsAudioTrack]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudioTracksVarargs(value: HlsAudioTrack*): Self = this.set("audioTracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setAudioTracks(value: js.Array[HlsAudioTrack]): Self = this.set("audioTracks", value.asInstanceOf[js.Any])
+    def setAudioTracksVarargs(value: HlsAudioTrack*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
   }
 }

@@ -1,18 +1,20 @@
 package typings.struct
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("struct", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("struct", JSImport.Default)
+  @js.native
   def default[T](): Struct[T] = js.native
   
+  @JSImport("struct", "Struct")
   @js.native
-  class Struct[T] () extends js.Object {
+  class Struct[T] () extends StObject {
     
     def allocate(): Struct[T] = js.native
     

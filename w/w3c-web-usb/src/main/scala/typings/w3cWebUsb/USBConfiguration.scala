@@ -1,11 +1,12 @@
 package typings.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait USBConfiguration extends js.Object {
+trait USBConfiguration extends StObject {
   
   val configurationName: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object USBConfiguration {
   }
   
   @scala.inline
-  implicit class USBConfigurationOps[Self <: USBConfiguration] (val x: Self) extends AnyVal {
+  implicit class USBConfigurationMutableBuilder[Self <: USBConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationValue(value: Double): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationValue(value: Double): Self = this.set("configurationValue", value.asInstanceOf[js.Any])
+    def setInterfaces(value: js.Array[USBInterface]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfacesVarargs(value: USBInterface*): Self = this.set("interfaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setInterfaces(value: js.Array[USBInterface]): Self = this.set("interfaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfigurationName(value: String): Self = this.set("configurationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationName: Self = this.set("configurationName", js.undefined)
+    def setInterfacesVarargs(value: USBInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
   }
 }

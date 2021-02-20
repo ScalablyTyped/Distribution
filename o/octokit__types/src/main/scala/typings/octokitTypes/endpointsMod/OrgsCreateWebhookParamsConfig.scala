@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrgsCreateWebhookParamsConfig extends js.Object {
+trait OrgsCreateWebhookParamsConfig extends StObject {
   
   var content_type: js.UndefOr[String] = js.native
   
@@ -24,39 +25,27 @@ object OrgsCreateWebhookParamsConfig {
   }
   
   @scala.inline
-  implicit class OrgsCreateWebhookParamsConfigOps[Self <: OrgsCreateWebhookParamsConfig] (val x: Self) extends AnyVal {
+  implicit class OrgsCreateWebhookParamsConfigMutableBuilder[Self <: OrgsCreateWebhookParamsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsecure_ssl(value: String): Self = StObject.set(x, "insecure_ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setInsecure_sslUndefined: Self = StObject.set(x, "insecure_ssl", js.undefined)
     
     @scala.inline
-    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent_type: Self = this.set("content_type", js.undefined)
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
     @scala.inline
-    def setInsecure_ssl(value: String): Self = this.set("insecure_ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsecure_ssl: Self = this.set("insecure_ssl", js.undefined)
-    
-    @scala.inline
-    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

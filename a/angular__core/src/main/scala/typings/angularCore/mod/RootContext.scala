@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * were bootstrapped with {@link renderComponent}.
   */
 @js.native
-trait RootContext extends js.Object {
+trait RootContext extends StObject {
   
   /**
     * A promise which is resolved when all components are considered clean (not dirty).
@@ -54,39 +55,27 @@ object RootContext {
   }
   
   @scala.inline
-  implicit class RootContextOps[Self <: RootContext] (val x: Self) extends AnyVal {
+  implicit class RootContextMutableBuilder[Self <: RootContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClean(value: js.Promise[Null]): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponents(value: js.Array[js.Object]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentsVarargs(value: js.Object*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def setClean(value: js.Promise[Null]): Self = this.set("clean", value.asInstanceOf[js.Any])
+    def setFlags(value: RootContextFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsVarargs(value: js.Object*): Self = this.set("components", js.Array(value :_*))
+    def setPlayerHandler(value: ɵPlayerHandler): Self = StObject.set(x, "playerHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: js.Array[js.Object]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setPlayerHandlerNull: Self = StObject.set(x, "playerHandler", null)
     
     @scala.inline
-    def setFlags(value: RootContextFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheduler(value: js.Function0[Unit] => Unit): Self = this.set("scheduler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPlayerHandler(value: ɵPlayerHandler): Self = this.set("playerHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayerHandlerNull: Self = this.set("playerHandler", null)
+    def setScheduler(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
   }
 }

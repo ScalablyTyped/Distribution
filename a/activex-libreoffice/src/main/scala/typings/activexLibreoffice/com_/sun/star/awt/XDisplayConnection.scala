@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,36 +69,24 @@ object XDisplayConnection {
   }
   
   @scala.inline
-  implicit class XDisplayConnectionOps[Self <: XDisplayConnection] (val x: Self) extends AnyVal {
+  implicit class XDisplayConnectionMutableBuilder[Self <: XDisplayConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "addErrorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEventHandler(value: (js.Any, XEventHandler, Double) => Unit): Self = StObject.set(x, "addEventHandler", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIdentifier(value: js.Any): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddErrorHandler(value: XEventHandler => Unit): Self = this.set("addErrorHandler", js.Any.fromFunction1(value))
+    def setRemoveErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "removeErrorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddEventHandler(value: (js.Any, XEventHandler, Double) => Unit): Self = this.set("addEventHandler", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetIdentifier(value: () => js.Any): Self = this.set("getIdentifier", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveErrorHandler(value: XEventHandler => Unit): Self = this.set("removeErrorHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveEventHandler(value: (js.Any, XEventHandler) => Unit): Self = this.set("removeEventHandler", js.Any.fromFunction2(value))
+    def setRemoveEventHandler(value: (js.Any, XEventHandler) => Unit): Self = StObject.set(x, "removeEventHandler", js.Any.fromFunction2(value))
   }
 }

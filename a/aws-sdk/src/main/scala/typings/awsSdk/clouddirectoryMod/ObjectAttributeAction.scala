@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectAttributeAction extends js.Object {
+trait ObjectAttributeAction extends StObject {
   
   /**
     * A type that can be either Update or Delete.
@@ -26,30 +27,18 @@ object ObjectAttributeAction {
   }
   
   @scala.inline
-  implicit class ObjectAttributeActionOps[Self <: ObjectAttributeAction] (val x: Self) extends AnyVal {
+  implicit class ObjectAttributeActionMutableBuilder[Self <: ObjectAttributeAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectAttributeActionType(value: UpdateActionType): Self = StObject.set(x, "ObjectAttributeActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectAttributeActionTypeUndefined: Self = StObject.set(x, "ObjectAttributeActionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectAttributeUpdateValue(value: TypedAttributeValue): Self = StObject.set(x, "ObjectAttributeUpdateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectAttributeActionType(value: UpdateActionType): Self = this.set("ObjectAttributeActionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectAttributeActionType: Self = this.set("ObjectAttributeActionType", js.undefined)
-    
-    @scala.inline
-    def setObjectAttributeUpdateValue(value: TypedAttributeValue): Self = this.set("ObjectAttributeUpdateValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectAttributeUpdateValue: Self = this.set("ObjectAttributeUpdateValue", js.undefined)
+    def setObjectAttributeUpdateValueUndefined: Self = StObject.set(x, "ObjectAttributeUpdateValue", js.undefined)
   }
 }

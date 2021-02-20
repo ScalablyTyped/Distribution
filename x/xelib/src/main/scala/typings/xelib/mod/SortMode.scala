@@ -1,15 +1,15 @@
 package typings.xelib.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortMode extends js.Object
+sealed trait SortMode extends StObject
 @JSImport("xelib", "SortMode")
 @js.native
-object SortMode extends js.Object {
+object SortMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SortMode with Double] = js.native
@@ -21,8 +21,7 @@ object SortMode extends js.Object {
     */
   @js.native
   sealed trait EditorID extends SortMode
-  /* 2 */ @js.native
-  object EditorID extends TopLevel[EditorID with Double]
+  /* 2 */ val EditorID: typings.xelib.mod.SortMode.EditorID with Double = js.native
   
   /**
     * Files are sorted by load order,
@@ -31,8 +30,7 @@ object SortMode extends js.Object {
     */
   @js.native
   sealed trait FormID extends SortMode
-  /* 1 */ @js.native
-  object FormID extends TopLevel[FormID with Double]
+  /* 1 */ val FormID: typings.xelib.mod.SortMode.FormID with Double = js.native
   
   /**
     * Files are sorted by filename,
@@ -41,8 +39,7 @@ object SortMode extends js.Object {
     */
   @js.native
   sealed trait Name extends SortMode
-  /* 3 */ @js.native
-  object Name extends TopLevel[Name with Double]
+  /* 3 */ val Name: typings.xelib.mod.SortMode.Name with Double = js.native
   
   /**
     * No sorting.
@@ -50,6 +47,5 @@ object SortMode extends js.Object {
     */
   @js.native
   sealed trait None extends SortMode
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.xelib.mod.SortMode.None with Double = js.native
 }

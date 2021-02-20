@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProtocolServerCapabilities extends js.Object {
+trait DataProtocolServerCapabilities extends StObject {
   
   var adminServicesProvider: AdminServicesOptions = js.native
   
@@ -35,39 +36,27 @@ object DataProtocolServerCapabilities {
   }
   
   @scala.inline
-  implicit class DataProtocolServerCapabilitiesOps[Self <: DataProtocolServerCapabilities] (val x: Self) extends AnyVal {
+  implicit class DataProtocolServerCapabilitiesMutableBuilder[Self <: DataProtocolServerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminServicesProvider(value: AdminServicesOptions): Self = StObject.set(x, "adminServicesProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionProvider(value: ConnectionProviderOptions): Self = StObject.set(x, "connectionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatures(value: js.Array[FeatureMetadataProvider]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminServicesProvider(value: AdminServicesOptions): Self = this.set("adminServicesProvider", value.asInstanceOf[js.Any])
+    def setFeaturesVarargs(value: FeatureMetadataProvider*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionProvider(value: ConnectionProviderOptions): Self = this.set("connectionProvider", value.asInstanceOf[js.Any])
+    def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturesVarargs(value: FeatureMetadataProvider*): Self = this.set("features", js.Array(value :_*))
+    def setProviderDisplayName(value: String): Self = StObject.set(x, "providerDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[FeatureMetadataProvider]): Self = this.set("features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocolVersion(value: String): Self = this.set("protocolVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderDisplayName(value: String): Self = this.set("providerDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderName(value: String): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
   }
 }

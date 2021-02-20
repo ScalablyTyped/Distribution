@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRemediationConfigurationsResponse extends js.Object {
+trait PutRemediationConfigurationsResponse extends StObject {
   
   /**
     * Returns a list of failed remediation batch objects.
@@ -21,27 +22,15 @@ object PutRemediationConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class PutRemediationConfigurationsResponseOps[Self <: PutRemediationConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class PutRemediationConfigurationsResponseMutableBuilder[Self <: PutRemediationConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedBatches(value: FailedRemediationBatches): Self = StObject.set(x, "FailedBatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedBatchesUndefined: Self = StObject.set(x, "FailedBatches", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedBatchesVarargs(value: FailedRemediationBatch*): Self = this.set("FailedBatches", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedBatches(value: FailedRemediationBatches): Self = this.set("FailedBatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedBatches: Self = this.set("FailedBatches", js.undefined)
+    def setFailedBatchesVarargs(value: FailedRemediationBatch*): Self = StObject.set(x, "FailedBatches", js.Array(value :_*))
   }
 }

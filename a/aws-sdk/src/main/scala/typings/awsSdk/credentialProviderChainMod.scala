@@ -2,19 +2,19 @@ package typings.awsSdk
 
 import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.errorMod.AWSError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/credentials/credential_provider_chain", JSImport.Namespace)
-@js.native
-object credentialProviderChainMod extends js.Object {
+object credentialProviderChainMod {
   
+  @JSImport("aws-sdk/lib/credentials/credential_provider_chain", "CredentialProviderChain")
   @js.native
   /**
     * Creates a new CredentialProviderChain with a default set of providers specified by defaultProviders.
     */
-  class CredentialProviderChain () extends js.Object {
+  class CredentialProviderChain () extends StObject {
     def this(providers: js.Array[provider]) = this()
     
     /**
@@ -33,10 +33,17 @@ object credentialProviderChainMod extends js.Object {
     def resolvePromise(): js.Promise[Credentials] = js.native
   }
   /* static members */
-  @js.native
-  object CredentialProviderChain extends js.Object {
+  object CredentialProviderChain {
     
-    var defaultProviders: js.Array[provider] = js.native
+    @JSImport("aws-sdk/lib/credentials/credential_provider_chain", "CredentialProviderChain")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("aws-sdk/lib/credentials/credential_provider_chain", "CredentialProviderChain.defaultProviders")
+    @js.native
+    def defaultProviders: js.Array[provider] = js.native
+    @scala.inline
+    def defaultProviders_=(x: js.Array[provider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProviders")(x.asInstanceOf[js.Any])
   }
   
   type provider = js.Function0[Credentials]

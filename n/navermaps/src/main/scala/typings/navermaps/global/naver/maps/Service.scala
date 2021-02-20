@@ -5,35 +5,21 @@ import typings.navermaps.naver.maps.Service.GeocodeServiceOptions
 import typings.navermaps.naver.maps.Service.ReverseGeocodeResponse
 import typings.navermaps.naver.maps.Service.ReverseServiceOptions
 import typings.navermaps.naver.maps.Service.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("naver.maps.Service")
-@js.native
-object Service extends js.Object {
+object Service {
   
   // Sub module: geocoder
+  @JSGlobal("naver.maps.Service")
+  @js.native
   def apply(): Unit = js.native
   
-  def fromAddrToCoord(): Unit = js.native
-  
-  def fromCoordToAddr(): Unit = js.native
-  
-  def geocode(options: GeocodeServiceOptions): Unit = js.native
-  def geocode(
-    options: GeocodeServiceOptions,
-    callback: js.Function2[/* status */ Status, /* response */ GeocodeResponse, Unit]
-  ): Unit = js.native
-  
-  def reverseGeocode(options: ReverseServiceOptions): Unit = js.native
-  def reverseGeocode(
-    options: ReverseServiceOptions,
-    callback: js.Function2[/* status */ Status, /* response */ ReverseGeocodeResponse, Unit]
-  ): Unit = js.native
-  
+  @JSGlobal("naver.maps.Service.CoordType")
   @js.native
-  object CoordType extends js.Object {
+  object CoordType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.Service.CoordType with Double] = js.native
@@ -43,8 +29,9 @@ object Service extends js.Object {
     /* 1 */ val TM128: typings.navermaps.naver.maps.Service.CoordType.TM128 with Double = js.native
   }
   
+  @JSGlobal("naver.maps.Service.Encoding")
   @js.native
-  object Encoding extends js.Object {
+  object Encoding extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.Service.Encoding with Double] = js.native
@@ -54,8 +41,9 @@ object Service extends js.Object {
     /* 0 */ val UTF_8: typings.navermaps.naver.maps.Service.Encoding.UTF_8 with Double = js.native
   }
   
+  @JSGlobal("naver.maps.Service.Status")
   @js.native
-  object Status extends js.Object {
+  object Status extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.Service.Status with Double] = js.native
@@ -64,4 +52,32 @@ object Service extends js.Object {
     
     /* 0 */ val OK: typings.navermaps.naver.maps.Service.Status.OK with Double = js.native
   }
+  
+  @JSGlobal("naver.maps.Service.fromAddrToCoord")
+  @js.native
+  def fromAddrToCoord(): Unit = js.native
+  
+  @JSGlobal("naver.maps.Service.fromCoordToAddr")
+  @js.native
+  def fromCoordToAddr(): Unit = js.native
+  
+  @JSGlobal("naver.maps.Service.geocode")
+  @js.native
+  def geocode(options: GeocodeServiceOptions): Unit = js.native
+  @JSGlobal("naver.maps.Service.geocode")
+  @js.native
+  def geocode(
+    options: GeocodeServiceOptions,
+    callback: js.Function2[/* status */ Status, /* response */ GeocodeResponse, Unit]
+  ): Unit = js.native
+  
+  @JSGlobal("naver.maps.Service.reverseGeocode")
+  @js.native
+  def reverseGeocode(options: ReverseServiceOptions): Unit = js.native
+  @JSGlobal("naver.maps.Service.reverseGeocode")
+  @js.native
+  def reverseGeocode(
+    options: ReverseServiceOptions,
+    callback: js.Function2[/* status */ Status, /* response */ ReverseGeocodeResponse, Unit]
+  ): Unit = js.native
 }

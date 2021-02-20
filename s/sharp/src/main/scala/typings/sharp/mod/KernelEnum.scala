@@ -5,12 +5,13 @@ import typings.sharp.sharpStrings.lanczos2
 import typings.sharp.sharpStrings.lanczos3
 import typings.sharp.sharpStrings.mitchell
 import typings.sharp.sharpStrings.nearest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KernelEnum extends js.Object {
+trait KernelEnum extends StObject {
   
   var cubic: typings.sharp.sharpStrings.cubic = js.native
   
@@ -31,33 +32,21 @@ object KernelEnum {
   }
   
   @scala.inline
-  implicit class KernelEnumOps[Self <: KernelEnum] (val x: Self) extends AnyVal {
+  implicit class KernelEnumMutableBuilder[Self <: KernelEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCubic(value: cubic): Self = StObject.set(x, "cubic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanczos2(value: lanczos2): Self = StObject.set(x, "lanczos2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanczos3(value: lanczos3): Self = StObject.set(x, "lanczos3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubic(value: cubic): Self = this.set("cubic", value.asInstanceOf[js.Any])
+    def setMitchell(value: mitchell): Self = StObject.set(x, "mitchell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanczos2(value: lanczos2): Self = this.set("lanczos2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanczos3(value: lanczos3): Self = this.set("lanczos3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMitchell(value: mitchell): Self = this.set("mitchell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNearest(value: nearest): Self = this.set("nearest", value.asInstanceOf[js.Any])
+    def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
   }
 }

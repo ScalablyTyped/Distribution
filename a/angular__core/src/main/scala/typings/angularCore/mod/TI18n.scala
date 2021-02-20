@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Store information for the i18n translation block.
   */
 @js.native
-trait TI18n extends js.Object {
+trait TI18n extends StObject {
   
   /**
     * A set of OpCodes which will create the Text Nodes and ICU anchors for the translation blocks.
@@ -32,24 +33,12 @@ object TI18n {
   }
   
   @scala.inline
-  implicit class TI18nOps[Self <: TI18n] (val x: Self) extends AnyVal {
+  implicit class TI18nMutableBuilder[Self <: TI18n] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: I18nCreateOpCodes): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: I18nCreateOpCodes): Self = this.set("create", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: I18nUpdateOpCodes): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdate(value: I18nUpdateOpCodes): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   var compositeFilter: js.UndefOr[CompositeFilter] = js.native
   
@@ -20,30 +21,18 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompositeFilter(value: CompositeFilter): Self = StObject.set(x, "compositeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompositeFilterUndefined: Self = StObject.set(x, "compositeFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueFilter(value: ValueFilter): Self = StObject.set(x, "valueFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompositeFilter(value: CompositeFilter): Self = this.set("compositeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompositeFilter: Self = this.set("compositeFilter", js.undefined)
-    
-    @scala.inline
-    def setValueFilter(value: ValueFilter): Self = this.set("valueFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFilter: Self = this.set("valueFilter", js.undefined)
+    def setValueFilterUndefined: Self = StObject.set(x, "valueFilter", js.undefined)
   }
 }

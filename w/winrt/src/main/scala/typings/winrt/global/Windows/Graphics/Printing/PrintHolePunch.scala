@@ -1,19 +1,20 @@
 package typings.winrt.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Graphics.Printing.PrintHolePunch")
 @js.native
-object PrintHolePunch extends js.Object {
+object PrintHolePunch extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Printing.PrintHolePunch with Double] = js.native
   
-  /* 7 */ val bottomEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.bottomEdge with Double = js.native
-  
   /* 0 */ val default: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.default with Double = js.native
+  
+  /* 7 */ val bottomEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.bottomEdge with Double = js.native
   
   /* 4 */ val leftEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.leftEdge with Double = js.native
   

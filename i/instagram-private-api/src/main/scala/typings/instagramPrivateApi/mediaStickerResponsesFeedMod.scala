@@ -1,16 +1,18 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.feedMod.Feed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/feeds/media.sticker-responses.feed", JSImport.Namespace)
-@js.native
-object mediaStickerResponsesFeedMod extends js.Object {
+object mediaStickerResponsesFeedMod {
   
+  @JSImport("instagram-private-api/dist/feeds/media.sticker-responses.feed", "MediaStickerResponsesFeed")
   @js.native
-  class MediaStickerResponsesFeed[T, I] () extends Feed[T, I] {
+  class MediaStickerResponsesFeed[T, I] protected () extends Feed[T, I] {
+    def this(client: IgApiClient) = this()
     
     var itemName: String = js.native
     

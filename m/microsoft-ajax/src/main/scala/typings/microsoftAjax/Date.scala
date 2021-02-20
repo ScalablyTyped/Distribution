@@ -1,5 +1,6 @@
 package typings.microsoftAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * @see {@link http://msdn.microsoft.com/en-us/library/bb310850(v=vs.100).aspx}
 */
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   /**
     * Formats a date by using the invariant (culture-independent) culture.
@@ -31,24 +32,12 @@ object Date {
   }
   
   @scala.inline
-  implicit class DateOps[Self <: Date] (val x: Self) extends AnyVal {
+  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormat(value: java.lang.String => java.lang.String): Self = this.set("format", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocaleFormat(value: java.lang.String => java.lang.String): Self = this.set("localeFormat", js.Any.fromFunction1(value))
+    def setLocaleFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction1(value))
   }
 }

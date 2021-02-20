@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestedDocumentStyle extends js.Object {
+trait SuggestedDocumentStyle extends StObject {
   
   /**
     * A DocumentStyle that only includes the changes made in this suggestion. This can be used along with the document_style_suggestion_state to see which fields have changed and their
@@ -25,30 +26,18 @@ object SuggestedDocumentStyle {
   }
   
   @scala.inline
-  implicit class SuggestedDocumentStyleOps[Self <: SuggestedDocumentStyle] (val x: Self) extends AnyVal {
+  implicit class SuggestedDocumentStyleMutableBuilder[Self <: SuggestedDocumentStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentStyleSuggestionState(value: DocumentStyleSuggestionState): Self = StObject.set(x, "documentStyleSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentStyleSuggestionStateUndefined: Self = StObject.set(x, "documentStyleSuggestionState", js.undefined)
     
     @scala.inline
-    def setDocumentStyle(value: DocumentStyle): Self = this.set("documentStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentStyle: Self = this.set("documentStyle", js.undefined)
-    
-    @scala.inline
-    def setDocumentStyleSuggestionState(value: DocumentStyleSuggestionState): Self = this.set("documentStyleSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentStyleSuggestionState: Self = this.set("documentStyleSuggestionState", js.undefined)
+    def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
   }
 }

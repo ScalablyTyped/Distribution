@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeometryProperties extends js.Object {
+trait GeometryProperties extends StObject {
   
   /**
     * Indicates if the geometry has M values.
@@ -37,36 +38,24 @@ object GeometryProperties {
   }
   
   @scala.inline
-  implicit class GeometryPropertiesOps[Self <: GeometryProperties] (val x: Self) extends AnyVal {
+  implicit class GeometryPropertiesMutableBuilder[Self <: GeometryProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasM(value: Boolean): Self = this.set("hasM", value.asInstanceOf[js.Any])
+    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
     @scala.inline
-    def deleteHasM: Self = this.set("hasM", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasZ(value: Boolean): Self = this.set("hasZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasZ: Self = this.set("hasZ", js.undefined)
-    
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

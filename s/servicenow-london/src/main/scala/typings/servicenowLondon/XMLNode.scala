@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLNode extends js.Object {
+trait XMLNode extends StObject {
   
   def getAttribute(attribute: String): String = js.native
   
@@ -41,42 +42,30 @@ object XMLNode {
   }
   
   @scala.inline
-  implicit class XMLNodeOps[Self <: XMLNode] (val x: Self) extends AnyVal {
+  implicit class XMLNodeMutableBuilder[Self <: XMLNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChildNodeIterator(value: () => XMLNodeIterator): Self = StObject.set(x, "getChildNodeIterator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFirstChild(value: () => XMLNode): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttribute(value: String => String): Self = this.set("getAttribute", js.Any.fromFunction1(value))
+    def setGetLastChild(value: () => XMLNode): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildNodeIterator(value: () => XMLNodeIterator): Self = this.set("getChildNodeIterator", js.Any.fromFunction0(value))
+    def setGetNodeName(value: () => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFirstChild(value: () => XMLNode): Self = this.set("getFirstChild", js.Any.fromFunction0(value))
+    def setGetNodeValue(value: () => String): Self = StObject.set(x, "getNodeValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLastChild(value: () => XMLNode): Self = this.set("getLastChild", js.Any.fromFunction0(value))
+    def setGetTextContent(value: () => String): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeName(value: () => String): Self = this.set("getNodeName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNodeValue(value: () => String): Self = this.set("getNodeValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextContent(value: () => String): Self = this.set("getTextContent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasAttribute(value: String => Boolean): Self = this.set("hasAttribute", js.Any.fromFunction1(value))
+    def setHasAttribute(value: String => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction1(value))
   }
 }

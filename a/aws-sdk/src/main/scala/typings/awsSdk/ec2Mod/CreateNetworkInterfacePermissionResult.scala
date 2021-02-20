@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNetworkInterfacePermissionResult extends js.Object {
+trait CreateNetworkInterfacePermissionResult extends StObject {
   
   /**
     * Information about the permission for the network interface.
@@ -21,24 +22,12 @@ object CreateNetworkInterfacePermissionResult {
   }
   
   @scala.inline
-  implicit class CreateNetworkInterfacePermissionResultOps[Self <: CreateNetworkInterfacePermissionResult] (val x: Self) extends AnyVal {
+  implicit class CreateNetworkInterfacePermissionResultMutableBuilder[Self <: CreateNetworkInterfacePermissionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterfacePermission(value: NetworkInterfacePermission): Self = StObject.set(x, "InterfacePermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInterfacePermission(value: NetworkInterfacePermission): Self = this.set("InterfacePermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterfacePermission: Self = this.set("InterfacePermission", js.undefined)
+    def setInterfacePermissionUndefined: Self = StObject.set(x, "InterfacePermission", js.undefined)
   }
 }

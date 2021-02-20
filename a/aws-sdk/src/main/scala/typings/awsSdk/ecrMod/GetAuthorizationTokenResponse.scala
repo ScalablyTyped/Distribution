@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAuthorizationTokenResponse extends js.Object {
+trait GetAuthorizationTokenResponse extends StObject {
   
   /**
     * A list of authorization token data objects that correspond to the registryIds values in the request.
@@ -21,27 +22,15 @@ object GetAuthorizationTokenResponse {
   }
   
   @scala.inline
-  implicit class GetAuthorizationTokenResponseOps[Self <: GetAuthorizationTokenResponse] (val x: Self) extends AnyVal {
+  implicit class GetAuthorizationTokenResponseMutableBuilder[Self <: GetAuthorizationTokenResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationData(value: AuthorizationDataList): Self = StObject.set(x, "authorizationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationDataUndefined: Self = StObject.set(x, "authorizationData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthorizationDataVarargs(value: AuthorizationData*): Self = this.set("authorizationData", js.Array(value :_*))
-    
-    @scala.inline
-    def setAuthorizationData(value: AuthorizationDataList): Self = this.set("authorizationData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizationData: Self = this.set("authorizationData", js.undefined)
+    def setAuthorizationDataVarargs(value: AuthorizationData*): Self = StObject.set(x, "authorizationData", js.Array(value :_*))
   }
 }

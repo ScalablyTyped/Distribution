@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,51 +45,39 @@ object MeasureReportGroup {
   }
   
   @scala.inline
-  implicit class MeasureReportGroupOps[Self <: MeasureReportGroup] (val x: Self) extends AnyVal {
+  implicit class MeasureReportGroupMutableBuilder[Self <: MeasureReportGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeasureScore(value: decimal): Self = StObject.set(x, "measureScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasureScoreUndefined: Self = StObject.set(x, "measureScore", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPopulation(value: js.Array[MeasureReportGroupPopulation]): Self = StObject.set(x, "population", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_measureScore(value: Element): Self = this.set("_measureScore", value.asInstanceOf[js.Any])
+    def setPopulationUndefined: Self = StObject.set(x, "population", js.undefined)
     
     @scala.inline
-    def delete_measureScore: Self = this.set("_measureScore", js.undefined)
+    def setPopulationVarargs(value: MeasureReportGroupPopulation*): Self = StObject.set(x, "population", js.Array(value :_*))
     
     @scala.inline
-    def setMeasureScore(value: decimal): Self = this.set("measureScore", value.asInstanceOf[js.Any])
+    def setStratifier(value: js.Array[MeasureReportGroupStratifier]): Self = StObject.set(x, "stratifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeasureScore: Self = this.set("measureScore", js.undefined)
+    def setStratifierUndefined: Self = StObject.set(x, "stratifier", js.undefined)
     
     @scala.inline
-    def setPopulationVarargs(value: MeasureReportGroupPopulation*): Self = this.set("population", js.Array(value :_*))
+    def setStratifierVarargs(value: MeasureReportGroupStratifier*): Self = StObject.set(x, "stratifier", js.Array(value :_*))
     
     @scala.inline
-    def setPopulation(value: js.Array[MeasureReportGroupPopulation]): Self = this.set("population", value.asInstanceOf[js.Any])
+    def set_measureScore(value: Element): Self = StObject.set(x, "_measureScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopulation: Self = this.set("population", js.undefined)
-    
-    @scala.inline
-    def setStratifierVarargs(value: MeasureReportGroupStratifier*): Self = this.set("stratifier", js.Array(value :_*))
-    
-    @scala.inline
-    def setStratifier(value: js.Array[MeasureReportGroupStratifier]): Self = this.set("stratifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStratifier: Self = this.set("stratifier", js.undefined)
+    def set_measureScoreUndefined: Self = StObject.set(x, "_measureScore", js.undefined)
   }
 }

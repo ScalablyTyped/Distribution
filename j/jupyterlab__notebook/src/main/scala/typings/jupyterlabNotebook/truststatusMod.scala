@@ -1,28 +1,28 @@
 package typings.jupyterlabNotebook
 
+import typings.jupyterlabApputils.mod.VDomModel
 import typings.jupyterlabApputils.mod.VDomRenderer
-import typings.jupyterlabApputils.vdomMod.VDomModel
 import typings.jupyterlabNotebook.mod.Notebook
 import typings.jupyterlabNotebook.truststatusMod.NotebookTrustStatus.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/notebook/lib/truststatus", JSImport.Namespace)
-@js.native
-object truststatusMod extends js.Object {
+object truststatusMod {
   
+  @JSImport("@jupyterlab/notebook/lib/truststatus", "NotebookTrustStatus")
   @js.native
   /**
     * Construct a new status item.
     */
   class NotebookTrustStatus () extends VDomRenderer[Model]
-  @js.native
-  object NotebookTrustStatus extends js.Object {
+  object NotebookTrustStatus {
     
     /**
       * A VDomModel for the NotebookTrust status item.
       */
+    @JSImport("@jupyterlab/notebook/lib/truststatus", "NotebookTrustStatus.Model")
     @js.native
     class Model () extends VDomModel {
       

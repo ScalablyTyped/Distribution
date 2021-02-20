@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait History extends js.Object {
+trait History extends StObject {
   
   def clear(): Unit = js.native
   
@@ -44,45 +45,33 @@ object History {
   }
   
   @scala.inline
-  implicit class HistoryOps[Self <: History] (val x: Self) extends AnyVal {
+  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setList(value: () => js.Array[HistoryEvent]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setListRedo(value: () => js.Array[HistoryEvent]): Self = StObject.set(x, "listRedo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDepth(value: () => Double): Self = this.set("depth", js.Any.fromFunction0(value))
+    def setMarkAllDirty(value: () => Unit): Self = StObject.set(x, "markAllDirty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setList(value: () => js.Array[HistoryEvent]): Self = this.set("list", js.Any.fromFunction0(value))
+    def setPeek(value: () => HistoryEvent): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setListRedo(value: () => js.Array[HistoryEvent]): Self = this.set("listRedo", js.Any.fromFunction0(value))
+    def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMarkAllDirty(value: () => Unit): Self = this.set("markAllDirty", js.Any.fromFunction0(value))
+    def setPush(value: HistoryEvent => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPeek(value: () => HistoryEvent): Self = this.set("peek", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPop(value: () => Unit): Self = this.set("pop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPush(value: HistoryEvent => Unit): Self = this.set("push", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRedo(value: () => Unit): Self = this.set("redo", js.Any.fromFunction0(value))
+    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
   }
 }

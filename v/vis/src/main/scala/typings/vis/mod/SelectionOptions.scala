@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectionOptions extends js.Object {
+trait SelectionOptions extends StObject {
   
   var highlightEdges: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object SelectionOptions {
   }
   
   @scala.inline
-  implicit class SelectionOptionsOps[Self <: SelectionOptions] (val x: Self) extends AnyVal {
+  implicit class SelectionOptionsMutableBuilder[Self <: SelectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightEdges(value: Boolean): Self = StObject.set(x, "highlightEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightEdgesUndefined: Self = StObject.set(x, "highlightEdges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnselectAll(value: Boolean): Self = StObject.set(x, "unselectAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightEdges(value: Boolean): Self = this.set("highlightEdges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlightEdges: Self = this.set("highlightEdges", js.undefined)
-    
-    @scala.inline
-    def setUnselectAll(value: Boolean): Self = this.set("unselectAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselectAll: Self = this.set("unselectAll", js.undefined)
+    def setUnselectAllUndefined: Self = StObject.set(x, "unselectAll", js.undefined)
   }
 }

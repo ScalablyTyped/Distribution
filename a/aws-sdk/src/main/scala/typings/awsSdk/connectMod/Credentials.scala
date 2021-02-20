@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Credentials extends js.Object {
+trait Credentials extends StObject {
   
   /**
     * An access token generated for a federated user to access Amazon Connect.
@@ -36,42 +37,30 @@ object Credentials {
   }
   
   @scala.inline
-  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: SecurityToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenExpiration(value: timestamp): Self = StObject.set(x, "AccessTokenExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessTokenExpirationUndefined: Self = StObject.set(x, "AccessTokenExpiration", js.undefined)
     
     @scala.inline
-    def setAccessToken(value: SecurityToken): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
+    def setRefreshToken(value: SecurityToken): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessTokenExpiration(value: timestamp): Self = this.set("AccessTokenExpiration", value.asInstanceOf[js.Any])
+    def setRefreshTokenExpiration(value: timestamp): Self = StObject.set(x, "RefreshTokenExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessTokenExpiration: Self = this.set("AccessTokenExpiration", js.undefined)
+    def setRefreshTokenExpirationUndefined: Self = StObject.set(x, "RefreshTokenExpiration", js.undefined)
     
     @scala.inline
-    def setRefreshToken(value: SecurityToken): Self = this.set("RefreshToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshToken: Self = this.set("RefreshToken", js.undefined)
-    
-    @scala.inline
-    def setRefreshTokenExpiration(value: timestamp): Self = this.set("RefreshTokenExpiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshTokenExpiration: Self = this.set("RefreshTokenExpiration", js.undefined)
+    def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
   }
 }

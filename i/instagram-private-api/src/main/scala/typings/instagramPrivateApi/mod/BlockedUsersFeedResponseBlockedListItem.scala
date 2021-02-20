@@ -1,10 +1,13 @@
 package typings.instagramPrivateApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api", "BlockedUsersFeedResponseBlockedListItem")
 @js.native
-class BlockedUsersFeedResponseBlockedListItem ()
-  extends typings.instagramPrivateApi.blockedUsersFeedResponseMod.BlockedUsersFeedResponseBlockedListItem
+class BlockedUsersFeedResponseBlockedListItem protected ()
+  extends typings.instagramPrivateApi.responsesMod.BlockedUsersFeedResponseBlockedListItem {
+  def this(client: typings.instagramPrivateApi.clientMod.IgApiClient) = this()
+}

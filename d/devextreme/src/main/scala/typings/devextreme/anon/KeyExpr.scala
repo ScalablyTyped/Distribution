@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyExpr extends js.Object {
+trait KeyExpr extends StObject {
   
   var dataSource: js.UndefOr[
     js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
@@ -29,51 +30,39 @@ object KeyExpr {
   }
   
   @scala.inline
-  implicit class KeyExprOps[Self <: KeyExpr] (val x: Self) extends AnyVal {
+  implicit class KeyExprMutableBuilder[Self <: KeyExpr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = this.set("dataSource", js.Array(value :_*))
+    def setKeyExpr(value: String | js.Function): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setPredecessorIdExpr(value: String | js.Function): Self = StObject.set(x, "predecessorIdExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyExpr(value: String | js.Function): Self = this.set("keyExpr", value.asInstanceOf[js.Any])
+    def setPredecessorIdExprUndefined: Self = StObject.set(x, "predecessorIdExpr", js.undefined)
     
     @scala.inline
-    def deleteKeyExpr: Self = this.set("keyExpr", js.undefined)
+    def setSuccessorIdExpr(value: String | js.Function): Self = StObject.set(x, "successorIdExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredecessorIdExpr(value: String | js.Function): Self = this.set("predecessorIdExpr", value.asInstanceOf[js.Any])
+    def setSuccessorIdExprUndefined: Self = StObject.set(x, "successorIdExpr", js.undefined)
     
     @scala.inline
-    def deletePredecessorIdExpr: Self = this.set("predecessorIdExpr", js.undefined)
+    def setTypeExpr(value: String | js.Function): Self = StObject.set(x, "typeExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessorIdExpr(value: String | js.Function): Self = this.set("successorIdExpr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessorIdExpr: Self = this.set("successorIdExpr", js.undefined)
-    
-    @scala.inline
-    def setTypeExpr(value: String | js.Function): Self = this.set("typeExpr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeExpr: Self = this.set("typeExpr", js.undefined)
+    def setTypeExprUndefined: Self = StObject.set(x, "typeExpr", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.shelljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyFunction extends js.Object {
+trait CopyFunction extends StObject {
   
   /**
     * Copies files. The wildcard `*` is accepted.
@@ -21,8 +22,8 @@ trait CopyFunction extends js.Object {
     * @param dest   The destination.
     * @return       Object with shell exit code, stderr and stdout.
     */
-  def apply(options: String, source: String, dest: String): ShellString = js.native
-  def apply(options: String, source: js.Array[String], dest: String): ShellString = js.native
+  def apply(options: String, source: String, dest: String): typings.shelljs.mod.ShellString = js.native
+  def apply(options: String, source: js.Array[String], dest: String): typings.shelljs.mod.ShellString = js.native
   /**
     * Copies files. The wildcard `*` is accepted.
     *
@@ -30,6 +31,6 @@ trait CopyFunction extends js.Object {
     * @param dest   The destination.
     * @return       Object with shell exit code, stderr and stdout.
     */
-  def apply(source: String, dest: String): ShellString = js.native
-  def apply(source: js.Array[String], dest: String): ShellString = js.native
+  def apply(source: String, dest: String): typings.shelljs.mod.ShellString = js.native
+  def apply(source: js.Array[String], dest: String): typings.shelljs.mod.ShellString = js.native
 }

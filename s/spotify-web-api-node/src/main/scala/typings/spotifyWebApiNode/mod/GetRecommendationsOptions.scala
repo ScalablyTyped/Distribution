@@ -1,5 +1,6 @@
 package typings.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,297 +109,285 @@ object GetRecommendationsOptions {
   }
   
   @scala.inline
-  implicit class GetRecommendationsOptionsOps[Self <: GetRecommendationsOptions] (val x: Self) extends AnyVal {
+  implicit class GetRecommendationsOptionsMutableBuilder[Self <: GetRecommendationsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax_acousticness(value: Double): Self = StObject.set(x, "max_acousticness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax_acousticnessUndefined: Self = StObject.set(x, "max_acousticness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax_danceability(value: Double): Self = StObject.set(x, "max_danceability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_acousticness(value: Double): Self = this.set("max_acousticness", value.asInstanceOf[js.Any])
+    def setMax_danceabilityUndefined: Self = StObject.set(x, "max_danceability", js.undefined)
     
     @scala.inline
-    def deleteMax_acousticness: Self = this.set("max_acousticness", js.undefined)
+    def setMax_duration_ms(value: Double): Self = StObject.set(x, "max_duration_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_danceability(value: Double): Self = this.set("max_danceability", value.asInstanceOf[js.Any])
+    def setMax_duration_msUndefined: Self = StObject.set(x, "max_duration_ms", js.undefined)
     
     @scala.inline
-    def deleteMax_danceability: Self = this.set("max_danceability", js.undefined)
+    def setMax_energy(value: Double): Self = StObject.set(x, "max_energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_duration_ms(value: Double): Self = this.set("max_duration_ms", value.asInstanceOf[js.Any])
+    def setMax_energyUndefined: Self = StObject.set(x, "max_energy", js.undefined)
     
     @scala.inline
-    def deleteMax_duration_ms: Self = this.set("max_duration_ms", js.undefined)
+    def setMax_instrumentalness(value: Double): Self = StObject.set(x, "max_instrumentalness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_energy(value: Double): Self = this.set("max_energy", value.asInstanceOf[js.Any])
+    def setMax_instrumentalnessUndefined: Self = StObject.set(x, "max_instrumentalness", js.undefined)
     
     @scala.inline
-    def deleteMax_energy: Self = this.set("max_energy", js.undefined)
+    def setMax_key(value: Double): Self = StObject.set(x, "max_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_instrumentalness(value: Double): Self = this.set("max_instrumentalness", value.asInstanceOf[js.Any])
+    def setMax_keyUndefined: Self = StObject.set(x, "max_key", js.undefined)
     
     @scala.inline
-    def deleteMax_instrumentalness: Self = this.set("max_instrumentalness", js.undefined)
+    def setMax_liveness(value: Double): Self = StObject.set(x, "max_liveness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_key(value: Double): Self = this.set("max_key", value.asInstanceOf[js.Any])
+    def setMax_livenessUndefined: Self = StObject.set(x, "max_liveness", js.undefined)
     
     @scala.inline
-    def deleteMax_key: Self = this.set("max_key", js.undefined)
+    def setMax_loudness(value: Double): Self = StObject.set(x, "max_loudness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_liveness(value: Double): Self = this.set("max_liveness", value.asInstanceOf[js.Any])
+    def setMax_loudnessUndefined: Self = StObject.set(x, "max_loudness", js.undefined)
     
     @scala.inline
-    def deleteMax_liveness: Self = this.set("max_liveness", js.undefined)
+    def setMax_mode(value: Double): Self = StObject.set(x, "max_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_loudness(value: Double): Self = this.set("max_loudness", value.asInstanceOf[js.Any])
+    def setMax_modeUndefined: Self = StObject.set(x, "max_mode", js.undefined)
     
     @scala.inline
-    def deleteMax_loudness: Self = this.set("max_loudness", js.undefined)
+    def setMax_popularity(value: Double): Self = StObject.set(x, "max_popularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_mode(value: Double): Self = this.set("max_mode", value.asInstanceOf[js.Any])
+    def setMax_popularityUndefined: Self = StObject.set(x, "max_popularity", js.undefined)
     
     @scala.inline
-    def deleteMax_mode: Self = this.set("max_mode", js.undefined)
+    def setMax_speechiness(value: Double): Self = StObject.set(x, "max_speechiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_popularity(value: Double): Self = this.set("max_popularity", value.asInstanceOf[js.Any])
+    def setMax_speechinessUndefined: Self = StObject.set(x, "max_speechiness", js.undefined)
     
     @scala.inline
-    def deleteMax_popularity: Self = this.set("max_popularity", js.undefined)
+    def setMax_tempo(value: Double): Self = StObject.set(x, "max_tempo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_speechiness(value: Double): Self = this.set("max_speechiness", value.asInstanceOf[js.Any])
+    def setMax_tempoUndefined: Self = StObject.set(x, "max_tempo", js.undefined)
     
     @scala.inline
-    def deleteMax_speechiness: Self = this.set("max_speechiness", js.undefined)
+    def setMax_time_signature(value: Double): Self = StObject.set(x, "max_time_signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_tempo(value: Double): Self = this.set("max_tempo", value.asInstanceOf[js.Any])
+    def setMax_time_signatureUndefined: Self = StObject.set(x, "max_time_signature", js.undefined)
     
     @scala.inline
-    def deleteMax_tempo: Self = this.set("max_tempo", js.undefined)
+    def setMax_valence(value: Double): Self = StObject.set(x, "max_valence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_time_signature(value: Double): Self = this.set("max_time_signature", value.asInstanceOf[js.Any])
+    def setMax_valenceUndefined: Self = StObject.set(x, "max_valence", js.undefined)
     
     @scala.inline
-    def deleteMax_time_signature: Self = this.set("max_time_signature", js.undefined)
+    def setMin_acousticness(value: Double): Self = StObject.set(x, "min_acousticness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_valence(value: Double): Self = this.set("max_valence", value.asInstanceOf[js.Any])
+    def setMin_acousticnessUndefined: Self = StObject.set(x, "min_acousticness", js.undefined)
     
     @scala.inline
-    def deleteMax_valence: Self = this.set("max_valence", js.undefined)
+    def setMin_danceability(value: Double): Self = StObject.set(x, "min_danceability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_acousticness(value: Double): Self = this.set("min_acousticness", value.asInstanceOf[js.Any])
+    def setMin_danceabilityUndefined: Self = StObject.set(x, "min_danceability", js.undefined)
     
     @scala.inline
-    def deleteMin_acousticness: Self = this.set("min_acousticness", js.undefined)
+    def setMin_duration_ms(value: Double): Self = StObject.set(x, "min_duration_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_danceability(value: Double): Self = this.set("min_danceability", value.asInstanceOf[js.Any])
+    def setMin_duration_msUndefined: Self = StObject.set(x, "min_duration_ms", js.undefined)
     
     @scala.inline
-    def deleteMin_danceability: Self = this.set("min_danceability", js.undefined)
+    def setMin_energy(value: Double): Self = StObject.set(x, "min_energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_duration_ms(value: Double): Self = this.set("min_duration_ms", value.asInstanceOf[js.Any])
+    def setMin_energyUndefined: Self = StObject.set(x, "min_energy", js.undefined)
     
     @scala.inline
-    def deleteMin_duration_ms: Self = this.set("min_duration_ms", js.undefined)
+    def setMin_instrumentalness(value: Double): Self = StObject.set(x, "min_instrumentalness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_energy(value: Double): Self = this.set("min_energy", value.asInstanceOf[js.Any])
+    def setMin_instrumentalnessUndefined: Self = StObject.set(x, "min_instrumentalness", js.undefined)
     
     @scala.inline
-    def deleteMin_energy: Self = this.set("min_energy", js.undefined)
+    def setMin_key(value: Double): Self = StObject.set(x, "min_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_instrumentalness(value: Double): Self = this.set("min_instrumentalness", value.asInstanceOf[js.Any])
+    def setMin_keyUndefined: Self = StObject.set(x, "min_key", js.undefined)
     
     @scala.inline
-    def deleteMin_instrumentalness: Self = this.set("min_instrumentalness", js.undefined)
+    def setMin_liveness(value: Double): Self = StObject.set(x, "min_liveness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_key(value: Double): Self = this.set("min_key", value.asInstanceOf[js.Any])
+    def setMin_livenessUndefined: Self = StObject.set(x, "min_liveness", js.undefined)
     
     @scala.inline
-    def deleteMin_key: Self = this.set("min_key", js.undefined)
+    def setMin_loudness(value: Double): Self = StObject.set(x, "min_loudness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_liveness(value: Double): Self = this.set("min_liveness", value.asInstanceOf[js.Any])
+    def setMin_loudnessUndefined: Self = StObject.set(x, "min_loudness", js.undefined)
     
     @scala.inline
-    def deleteMin_liveness: Self = this.set("min_liveness", js.undefined)
+    def setMin_mode(value: Double): Self = StObject.set(x, "min_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_loudness(value: Double): Self = this.set("min_loudness", value.asInstanceOf[js.Any])
+    def setMin_modeUndefined: Self = StObject.set(x, "min_mode", js.undefined)
     
     @scala.inline
-    def deleteMin_loudness: Self = this.set("min_loudness", js.undefined)
+    def setMin_popularity(value: Double): Self = StObject.set(x, "min_popularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_mode(value: Double): Self = this.set("min_mode", value.asInstanceOf[js.Any])
+    def setMin_popularityUndefined: Self = StObject.set(x, "min_popularity", js.undefined)
     
     @scala.inline
-    def deleteMin_mode: Self = this.set("min_mode", js.undefined)
+    def setMin_speechiness(value: Double): Self = StObject.set(x, "min_speechiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_popularity(value: Double): Self = this.set("min_popularity", value.asInstanceOf[js.Any])
+    def setMin_speechinessUndefined: Self = StObject.set(x, "min_speechiness", js.undefined)
     
     @scala.inline
-    def deleteMin_popularity: Self = this.set("min_popularity", js.undefined)
+    def setMin_tempo(value: Double): Self = StObject.set(x, "min_tempo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_speechiness(value: Double): Self = this.set("min_speechiness", value.asInstanceOf[js.Any])
+    def setMin_tempoUndefined: Self = StObject.set(x, "min_tempo", js.undefined)
     
     @scala.inline
-    def deleteMin_speechiness: Self = this.set("min_speechiness", js.undefined)
+    def setMin_time_signature(value: Double): Self = StObject.set(x, "min_time_signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_tempo(value: Double): Self = this.set("min_tempo", value.asInstanceOf[js.Any])
+    def setMin_time_signatureUndefined: Self = StObject.set(x, "min_time_signature", js.undefined)
     
     @scala.inline
-    def deleteMin_tempo: Self = this.set("min_tempo", js.undefined)
+    def setMin_valence(value: Double): Self = StObject.set(x, "min_valence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_time_signature(value: Double): Self = this.set("min_time_signature", value.asInstanceOf[js.Any])
+    def setMin_valenceUndefined: Self = StObject.set(x, "min_valence", js.undefined)
     
     @scala.inline
-    def deleteMin_time_signature: Self = this.set("min_time_signature", js.undefined)
+    def setSeed_artists(value: js.Array[String] | String): Self = StObject.set(x, "seed_artists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_valence(value: Double): Self = this.set("min_valence", value.asInstanceOf[js.Any])
+    def setSeed_artistsUndefined: Self = StObject.set(x, "seed_artists", js.undefined)
     
     @scala.inline
-    def deleteMin_valence: Self = this.set("min_valence", js.undefined)
+    def setSeed_artistsVarargs(value: String*): Self = StObject.set(x, "seed_artists", js.Array(value :_*))
     
     @scala.inline
-    def setSeed_artistsVarargs(value: String*): Self = this.set("seed_artists", js.Array(value :_*))
+    def setSeed_genres(value: js.Array[String] | String): Self = StObject.set(x, "seed_genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeed_artists(value: js.Array[String] | String): Self = this.set("seed_artists", value.asInstanceOf[js.Any])
+    def setSeed_genresUndefined: Self = StObject.set(x, "seed_genres", js.undefined)
     
     @scala.inline
-    def deleteSeed_artists: Self = this.set("seed_artists", js.undefined)
+    def setSeed_genresVarargs(value: String*): Self = StObject.set(x, "seed_genres", js.Array(value :_*))
     
     @scala.inline
-    def setSeed_genresVarargs(value: String*): Self = this.set("seed_genres", js.Array(value :_*))
+    def setSeed_tracks(value: js.Array[String] | String): Self = StObject.set(x, "seed_tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeed_genres(value: js.Array[String] | String): Self = this.set("seed_genres", value.asInstanceOf[js.Any])
+    def setSeed_tracksUndefined: Self = StObject.set(x, "seed_tracks", js.undefined)
     
     @scala.inline
-    def deleteSeed_genres: Self = this.set("seed_genres", js.undefined)
+    def setSeed_tracksVarargs(value: String*): Self = StObject.set(x, "seed_tracks", js.Array(value :_*))
     
     @scala.inline
-    def setSeed_tracksVarargs(value: String*): Self = this.set("seed_tracks", js.Array(value :_*))
+    def setTarget_acousticness(value: Double): Self = StObject.set(x, "target_acousticness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeed_tracks(value: js.Array[String] | String): Self = this.set("seed_tracks", value.asInstanceOf[js.Any])
+    def setTarget_acousticnessUndefined: Self = StObject.set(x, "target_acousticness", js.undefined)
     
     @scala.inline
-    def deleteSeed_tracks: Self = this.set("seed_tracks", js.undefined)
+    def setTarget_danceability(value: Double): Self = StObject.set(x, "target_danceability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_acousticness(value: Double): Self = this.set("target_acousticness", value.asInstanceOf[js.Any])
+    def setTarget_danceabilityUndefined: Self = StObject.set(x, "target_danceability", js.undefined)
     
     @scala.inline
-    def deleteTarget_acousticness: Self = this.set("target_acousticness", js.undefined)
+    def setTarget_duration_ms(value: Double): Self = StObject.set(x, "target_duration_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_danceability(value: Double): Self = this.set("target_danceability", value.asInstanceOf[js.Any])
+    def setTarget_duration_msUndefined: Self = StObject.set(x, "target_duration_ms", js.undefined)
     
     @scala.inline
-    def deleteTarget_danceability: Self = this.set("target_danceability", js.undefined)
+    def setTarget_energy(value: Double): Self = StObject.set(x, "target_energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_duration_ms(value: Double): Self = this.set("target_duration_ms", value.asInstanceOf[js.Any])
+    def setTarget_energyUndefined: Self = StObject.set(x, "target_energy", js.undefined)
     
     @scala.inline
-    def deleteTarget_duration_ms: Self = this.set("target_duration_ms", js.undefined)
+    def setTarget_instrumentalness(value: Double): Self = StObject.set(x, "target_instrumentalness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_energy(value: Double): Self = this.set("target_energy", value.asInstanceOf[js.Any])
+    def setTarget_instrumentalnessUndefined: Self = StObject.set(x, "target_instrumentalness", js.undefined)
     
     @scala.inline
-    def deleteTarget_energy: Self = this.set("target_energy", js.undefined)
+    def setTarget_key(value: Double): Self = StObject.set(x, "target_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_instrumentalness(value: Double): Self = this.set("target_instrumentalness", value.asInstanceOf[js.Any])
+    def setTarget_keyUndefined: Self = StObject.set(x, "target_key", js.undefined)
     
     @scala.inline
-    def deleteTarget_instrumentalness: Self = this.set("target_instrumentalness", js.undefined)
+    def setTarget_liveness(value: Double): Self = StObject.set(x, "target_liveness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_key(value: Double): Self = this.set("target_key", value.asInstanceOf[js.Any])
+    def setTarget_livenessUndefined: Self = StObject.set(x, "target_liveness", js.undefined)
     
     @scala.inline
-    def deleteTarget_key: Self = this.set("target_key", js.undefined)
+    def setTarget_loudness(value: Double): Self = StObject.set(x, "target_loudness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_liveness(value: Double): Self = this.set("target_liveness", value.asInstanceOf[js.Any])
+    def setTarget_loudnessUndefined: Self = StObject.set(x, "target_loudness", js.undefined)
     
     @scala.inline
-    def deleteTarget_liveness: Self = this.set("target_liveness", js.undefined)
+    def setTarget_mode(value: Double): Self = StObject.set(x, "target_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_loudness(value: Double): Self = this.set("target_loudness", value.asInstanceOf[js.Any])
+    def setTarget_modeUndefined: Self = StObject.set(x, "target_mode", js.undefined)
     
     @scala.inline
-    def deleteTarget_loudness: Self = this.set("target_loudness", js.undefined)
+    def setTarget_popularity(value: Double): Self = StObject.set(x, "target_popularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_mode(value: Double): Self = this.set("target_mode", value.asInstanceOf[js.Any])
+    def setTarget_popularityUndefined: Self = StObject.set(x, "target_popularity", js.undefined)
     
     @scala.inline
-    def deleteTarget_mode: Self = this.set("target_mode", js.undefined)
+    def setTarget_speechiness(value: Double): Self = StObject.set(x, "target_speechiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_popularity(value: Double): Self = this.set("target_popularity", value.asInstanceOf[js.Any])
+    def setTarget_speechinessUndefined: Self = StObject.set(x, "target_speechiness", js.undefined)
     
     @scala.inline
-    def deleteTarget_popularity: Self = this.set("target_popularity", js.undefined)
+    def setTarget_tempo(value: Double): Self = StObject.set(x, "target_tempo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_speechiness(value: Double): Self = this.set("target_speechiness", value.asInstanceOf[js.Any])
+    def setTarget_tempoUndefined: Self = StObject.set(x, "target_tempo", js.undefined)
     
     @scala.inline
-    def deleteTarget_speechiness: Self = this.set("target_speechiness", js.undefined)
+    def setTarget_time_signature(value: Double): Self = StObject.set(x, "target_time_signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_tempo(value: Double): Self = this.set("target_tempo", value.asInstanceOf[js.Any])
+    def setTarget_time_signatureUndefined: Self = StObject.set(x, "target_time_signature", js.undefined)
     
     @scala.inline
-    def deleteTarget_tempo: Self = this.set("target_tempo", js.undefined)
+    def setTarget_valence(value: Double): Self = StObject.set(x, "target_valence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_time_signature(value: Double): Self = this.set("target_time_signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget_time_signature: Self = this.set("target_time_signature", js.undefined)
-    
-    @scala.inline
-    def setTarget_valence(value: Double): Self = this.set("target_valence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget_valence: Self = this.set("target_valence", js.undefined)
+    def setTarget_valenceUndefined: Self = StObject.set(x, "target_valence", js.undefined)
   }
 }

@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/places/child-friendly", JSImport.Namespace)
-@js.native
-object childFriendlyMod extends js.Object {
+object childFriendlyMod {
   
+  @JSImport("material-ui/svg-icons/places/child-friendly", JSImport.Default)
+  @js.native
+  class default () extends PlacesChildFriendly
+  
+  @JSImport("material-ui/svg-icons/places/child-friendly", "PlacesChildFriendly")
   @js.native
   class PlacesChildFriendly ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowedConfigList extends js.Object {
+trait AllowedConfigList extends StObject {
   
   /**
     * Required. All Certificates issued by the CertificateAuthority must match at least one listed ReusableConfigWrapper. If a ReusableConfigWrapper has an empty field, any value will be
@@ -22,27 +23,15 @@ object AllowedConfigList {
   }
   
   @scala.inline
-  implicit class AllowedConfigListOps[Self <: AllowedConfigList] (val x: Self) extends AnyVal {
+  implicit class AllowedConfigListMutableBuilder[Self <: AllowedConfigList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedConfigValues(value: js.Array[ReusableConfigWrapper]): Self = StObject.set(x, "allowedConfigValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedConfigValuesUndefined: Self = StObject.set(x, "allowedConfigValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowedConfigValuesVarargs(value: ReusableConfigWrapper*): Self = this.set("allowedConfigValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setAllowedConfigValues(value: js.Array[ReusableConfigWrapper]): Self = this.set("allowedConfigValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowedConfigValues: Self = this.set("allowedConfigValues", js.undefined)
+    def setAllowedConfigValuesVarargs(value: ReusableConfigWrapper*): Self = StObject.set(x, "allowedConfigValues", js.Array(value :_*))
   }
 }

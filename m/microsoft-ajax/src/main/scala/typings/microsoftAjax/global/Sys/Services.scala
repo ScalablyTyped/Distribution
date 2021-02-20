@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For more information @{see Using Web Services in ASP.NET AJAX {@link http://msdn.microsoft.com/en-us/library/bb515101(v=vs.100).aspx}}
   * @see {@link http://msdn.microsoft.com/en-us/library/bb311017(v=vs.100).aspx}
   */
-@JSGlobal("Sys.Services")
-@js.native
-object Services extends js.Object {
+object Services {
   
   /**
     * Provides the client proxy class for the authentication service.
@@ -24,6 +23,7 @@ object Services extends js.Object {
     * It calls methods of the authentication service through the same infrastructure used to call any other Web service method.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310861(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Services.AuthenticationService")
   @js.native
   //#region Constructors
   /**
@@ -38,6 +38,7 @@ object Services extends js.Object {
     * Profile group properties are accessed as subproperties of the related group, as shown in the following ECMAScript (JavaScript) example:
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310801(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Services.ProfileGroup")
   @js.native
   //#region Constructors
   class ProfileGroup ()
@@ -54,25 +55,39 @@ object Services extends js.Object {
     * Provides the client proxy class for the profile service.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb383800(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Services.ProfileService")
   @js.native
   class ProfileService ()
     extends typings.microsoftAjax.Sys.Services.ProfileService
-  /* static members */
-  @js.native
-  object ProfileService extends js.Object {
+  object ProfileService {
+    
+    @JSGlobal("Sys.Services.ProfileService")
+    @js.native
+    val ^ : js.Any = js.native
     
     //#region Fields
     /**
       * Specifies the path of the default profile service.
       */
-    var DefaultWebServicePath: String = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.DefaultWebServicePath")
+    @js.native
+    def DefaultWebServicePath: String = js.native
+    @scala.inline
+    def DefaultWebServicePath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultWebServicePath")(x.asInstanceOf[js.Any])
     
     /**
       * Gets or sets the default succeeded callback function for the service.
       * @return
       *      A reference to the succeeded callback function for the service.
       */
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.defaultSucceededCallback")
+    @js.native
     def defaultSucceededCallback(): js.Function = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.defaultSucceededCallback")
+    @js.native
     def defaultSucceededCallback(value: js.Function): Unit = js.native
     
     /**
@@ -80,29 +95,50 @@ object Services extends js.Object {
       * @return
       *      A reference to the user context for the service.
       */
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.defaultUserContext")
+    @js.native
     def defaultUserContext(): js.Object = js.native
     /**
       * Gets or sets the default user context for the service.
       */
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.defaultUserContext")
+    @js.native
     def defaultUserContext(value: js.Object): Unit = js.native
     
-    def get_defaultFailedCallback(): js.Function = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.get_defaultFailedCallback")
+    @js.native
+    def getDefaultFailedCallback(): js.Function = js.native
     
-    def get_defaultLoadCompletedCallback(): js.Function = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.get_defaultLoadCompletedCallback")
+    @js.native
+    def getDefaultLoadCompletedCallback(): js.Function = js.native
     
-    def get_defaultSaveCompletedCallback(): js.Function = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.get_defaultSaveCompletedCallback")
+    @js.native
+    def getDefaultSaveCompletedCallback(): js.Function = js.native
     
     /**
       * Gets or sets the profile service path.
       * @return
       *      The profile path
       */
-    def get_path(): String = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.get_path")
+    @js.native
+    def getPath(): String = js.native
     
     /**
       * Gets or sets the profile service time-out value.
       */
-    def get_timeout(): Double = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.get_timeout")
+    @js.native
+    def getTimeout(): Double = js.native
     
     //#endregion
     //#region Methods
@@ -124,6 +160,9 @@ object Services extends js.Object {
       * @param userContext
       *      User context information passed to the callback functions.
       */
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.load")
+    @js.native
     def load(
       propertyNames: js.Array[String],
       loadCompletedCallback: js.Function,
@@ -135,7 +174,12 @@ object Services extends js.Object {
       * Contains the loaded profile data. You can access the loaded profile data directly from the properties field.
       * An element in the properties field can be a property group of type ProfileGroup. If it is, the related properties appear as sub-properties. For more information, see Sys.Services.ProfileGroup Class.
       */
-    var properties: js.Any = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.properties")
+    @js.native
+    def properties: js.Any = js.native
+    @scala.inline
+    def properties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
     
     /**
       * @param propertyNames
@@ -147,6 +191,9 @@ object Services extends js.Object {
       * @param userContext
       *      User context information passed to the callback functions.
       */
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.save")
+    @js.native
     def save(
       propertyNames: js.Array[String],
       saveCompletedCallback: js.Function,
@@ -161,7 +208,10 @@ object Services extends js.Object {
       * @param value
       *      A string that contains the name of the default failure callback function.
       */
-    def set_defaultFailedCallback(value: String): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.set_defaultFailedCallback")
+    @js.native
+    def setDefaultFailedCallback(value: String): Unit = js.native
     
     /**
       * Gets or sets the name of the default load-completed callback function.
@@ -169,21 +219,30 @@ object Services extends js.Object {
       * @param value
       *      A string that contains the name of the default load-completed callback function.
       */
-    def set_defaultLoadCompletedCallback(value: String): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.set_defaultLoadCompletedCallback")
+    @js.native
+    def setDefaultLoadCompletedCallback(value: String): Unit = js.native
     
     /**
       * Gets or sets the name of the default save-completed callback function.
       * @param value
       *      A string that contains the name of the default save-completed callback function.
       */
-    def set_defaultSaveCompletedCallback(value: String): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.set_defaultSaveCompletedCallback")
+    @js.native
+    def setDefaultSaveCompletedCallback(value: String): Unit = js.native
     
     /**
       * Gets or sets the profile service path.
       * @param value
       *          A string that contains the profile service path.
       */
-    def set_path(value: String): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.set_path")
+    @js.native
+    def setPath(value: String): Unit = js.native
     
     /**
       * Gets or sets the profile service time-out value.
@@ -193,13 +252,17 @@ object Services extends js.Object {
       * @param value
       *          The time-out value in milliseconds.
       */
-    def set_timeout(value: Double): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.Services.ProfileService.set_timeout")
+    @js.native
+    def setTimeout(value: Double): Unit = js.native
   }
   
   /**
     * Provides the client proxy class for the role service.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb513880(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Services.RoleService")
   @js.native
   class RoleService ()
     extends typings.microsoftAjax.Sys.Services.RoleService

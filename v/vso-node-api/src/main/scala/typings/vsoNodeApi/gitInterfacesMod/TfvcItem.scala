@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,39 +52,27 @@ object TfvcItem {
   }
   
   @scala.inline
-  implicit class TfvcItemOps[Self <: TfvcItem] (val x: Self) extends AnyVal {
+  implicit class TfvcItemMutableBuilder[Self <: TfvcItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeDate(value: Date): Self = StObject.set(x, "changeDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletionId(value: Double): Self = StObject.set(x, "deletionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashValue(value: String): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDate(value: Date): Self = this.set("changeDate", value.asInstanceOf[js.Any])
+    def setIsBranch(value: Boolean): Self = StObject.set(x, "isBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionId(value: Double): Self = this.set("deletionId", value.asInstanceOf[js.Any])
+    def setIsPendingChange(value: Boolean): Self = StObject.set(x, "isPendingChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashValue(value: String): Self = this.set("hashValue", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBranch(value: Boolean): Self = this.set("isBranch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPendingChange(value: Boolean): Self = this.set("isPendingChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

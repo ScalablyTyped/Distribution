@@ -1,6 +1,7 @@
 package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,9 +77,7 @@ class Root () extends NamespaceBase {
   def resolvePath(origin: String, target: String): String | Null = js.native
 }
 /* static members */
-@JSImport("protobufjs", "Root")
-@js.native
-object Root extends js.Object {
+object Root {
   
   /**
     * Loads a namespace descriptor into a root namespace.
@@ -86,6 +85,10 @@ object Root extends js.Object {
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
+  @JSImport("protobufjs", "Root.fromJSON")
+  @js.native
   def fromJSON(json: INamespace): Root = js.native
+  @JSImport("protobufjs", "Root.fromJSON")
+  @js.native
   def fromJSON(json: INamespace, root: Root): Root = js.native
 }

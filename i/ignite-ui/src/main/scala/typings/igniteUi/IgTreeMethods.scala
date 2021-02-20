@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgTreeMethods extends js.Object {
+trait IgTreeMethods extends StObject {
   
   /**
     * Adds a new array of nodes to the tree. New nodes are appended to the root or to a specified parent node, at a specified index.

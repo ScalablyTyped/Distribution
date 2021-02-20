@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pixiJs.pixiJsStrings.added
   - typings.pixiJs.pixiJsStrings.removed
 */
-trait InteractionEventTypes extends js.Object
+trait InteractionEventTypes extends StObject
 object InteractionEventTypes {
   
   @scala.inline

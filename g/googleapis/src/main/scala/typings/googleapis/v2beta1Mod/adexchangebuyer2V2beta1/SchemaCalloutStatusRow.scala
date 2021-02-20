@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by the specified callout status.
   */
 @js.native
-trait SchemaCalloutStatusRow extends js.Object {
+trait SchemaCalloutStatusRow extends StObject {
   
   /**
     * The ID of the callout status. See
@@ -38,36 +39,24 @@ object SchemaCalloutStatusRow {
   }
   
   @scala.inline
-  implicit class SchemaCalloutStatusRowOps[Self <: SchemaCalloutStatusRow] (val x: Self) extends AnyVal {
+  implicit class SchemaCalloutStatusRowMutableBuilder[Self <: SchemaCalloutStatusRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalloutStatusId(value: Double): Self = StObject.set(x, "calloutStatusId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalloutStatusIdUndefined: Self = StObject.set(x, "calloutStatusId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressionCount(value: SchemaMetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalloutStatusId(value: Double): Self = this.set("calloutStatusId", value.asInstanceOf[js.Any])
+    def setImpressionCountUndefined: Self = StObject.set(x, "impressionCount", js.undefined)
     
     @scala.inline
-    def deleteCalloutStatusId: Self = this.set("calloutStatusId", js.undefined)
+    def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionCount(value: SchemaMetricValue): Self = this.set("impressionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressionCount: Self = this.set("impressionCount", js.undefined)
-    
-    @scala.inline
-    def setRowDimensions(value: SchemaRowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
+    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
   }
 }

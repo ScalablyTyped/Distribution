@@ -2,16 +2,16 @@ package typings.jestCucumber
 
 import typings.jestCucumber.scenarioResultTrackerMod.IScenarioResult
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-cucumber/dist/src/reporting/report-event-generation/TestCaseEventGenerator", JSImport.Namespace)
-@js.native
-object testCaseEventGeneratorMod extends js.Object {
+object testCaseEventGeneratorMod {
   
+  @JSImport("jest-cucumber/dist/src/reporting/report-event-generation/TestCaseEventGenerator", "TestCaseEventGenerator")
   @js.native
-  class TestCaseEventGenerator protected () extends js.Object {
+  class TestCaseEventGenerator protected () extends StObject {
     def this(eventBroadcaster: EventEmitter, eventDataCollector: js.Any) = this()
     
     var eventBroadcaster: js.Any = js.native

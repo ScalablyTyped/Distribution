@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object IIRFilterOptions {
   }
   
   @scala.inline
-  implicit class IIRFilterOptionsOps[Self <: IIRFilterOptions] (val x: Self) extends AnyVal {
+  implicit class IIRFilterOptionsMutableBuilder[Self <: IIRFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedback(value: js.Array[Double]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackVarargs(value: Double*): Self = StObject.set(x, "feedback", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedforward(value: js.Array[Double]): Self = StObject.set(x, "feedforward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackVarargs(value: Double*): Self = this.set("feedback", js.Array(value :_*))
-    
-    @scala.inline
-    def setFeedback(value: js.Array[Double]): Self = this.set("feedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeedforwardVarargs(value: Double*): Self = this.set("feedforward", js.Array(value :_*))
-    
-    @scala.inline
-    def setFeedforward(value: js.Array[Double]): Self = this.set("feedforward", value.asInstanceOf[js.Any])
+    def setFeedforwardVarargs(value: Double*): Self = StObject.set(x, "feedforward", js.Array(value :_*))
   }
 }

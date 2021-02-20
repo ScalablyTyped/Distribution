@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchStopResponse extends js.Object {
+trait BatchStopResponse extends StObject {
   
   /**
     * List of failed operations
@@ -26,36 +27,24 @@ object BatchStopResponse {
   }
   
   @scala.inline
-  implicit class BatchStopResponseOps[Self <: BatchStopResponse] (val x: Self) extends AnyVal {
+  implicit class BatchStopResponseMutableBuilder[Self <: BatchStopResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailed(value: listOfBatchFailedResultModel): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedVarargs(value: BatchFailedResultModel*): Self = StObject.set(x, "Failed", js.Array(value :_*))
     
     @scala.inline
-    def setFailedVarargs(value: BatchFailedResultModel*): Self = this.set("Failed", js.Array(value :_*))
+    def setSuccessful(value: listOfBatchSuccessfulResultModel): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: listOfBatchFailedResultModel): Self = this.set("Failed", value.asInstanceOf[js.Any])
+    def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
     @scala.inline
-    def deleteFailed: Self = this.set("Failed", js.undefined)
-    
-    @scala.inline
-    def setSuccessfulVarargs(value: BatchSuccessfulResultModel*): Self = this.set("Successful", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuccessful(value: listOfBatchSuccessfulResultModel): Self = this.set("Successful", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessful: Self = this.set("Successful", js.undefined)
+    def setSuccessfulVarargs(value: BatchSuccessfulResultModel*): Self = StObject.set(x, "Successful", js.Array(value :_*))
   }
 }

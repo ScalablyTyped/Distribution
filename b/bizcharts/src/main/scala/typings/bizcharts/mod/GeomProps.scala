@@ -4,6 +4,7 @@ import typings.antvG2.mod.Styles.line
 import typings.bizcharts.anon.DodgeBy
 import typings.bizcharts.anon.Name
 import typings.react.mod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait GeomProps
   
   var adjust: js.UndefOr[String | (js.Array[DodgeBy | String])] = js.native
   
-   // 图形激活交互开关
+  // 图形激活交互开关
   var animate: js.UndefOr[js.Any] = js.native
   
   var color: js.UndefOr[
@@ -61,86 +62,74 @@ object GeomProps {
   }
   
   @scala.inline
-  implicit class GeomPropsOps[Self <: GeomProps] (val x: Self) extends AnyVal {
+  implicit class GeomPropsMutableBuilder[Self <: GeomProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjust(value: String | (js.Array[DodgeBy | String])): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAdjustVarargs(value: (DodgeBy | String)*): Self = StObject.set(x, "adjust", js.Array(value :_*))
     
     @scala.inline
-    def setAdjustVarargs(value: (DodgeBy | String)*): Self = this.set("adjust", js.Array(value :_*))
+    def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjust(value: String | (js.Array[DodgeBy | String])): Self = this.set("adjust", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdjust: Self = this.set("adjust", js.undefined)
-    
-    @scala.inline
-    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
     def setColor(
       value: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String]) | String])
-    ): Self = this.set("color", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setLine(value: line | Boolean): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLine(value: line | Boolean): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def setOpacity(value: String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[_], Double]])): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOpacity(value: String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[_], Double]])): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setSelect(value: Boolean | (js.Tuple2[Boolean, _])): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSelect(value: Boolean | (js.Tuple2[Boolean, _])): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
     def setShape(
       value: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String])])
-    ): Self = this.set("shape", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
     def setSize(
@@ -148,27 +137,27 @@ object GeomProps {
           String, 
           (js.Function1[/* d */ js.UndefOr[_], Double]) | (js.Tuple2[Double, Double])
         ])
-    ): Self = this.set("size", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setStyle(value: js.Object | (js.Tuple2[String, js.Object])): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: js.Object | (js.Tuple2[String, js.Object])): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setTooltip(value: Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ _, Name]])): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTooltip(value: Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ _, Name]])): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def setType(value: GeomType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: GeomType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

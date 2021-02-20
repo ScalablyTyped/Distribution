@@ -1,11 +1,12 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICompositeDefinition extends js.Object {
+trait ICompositeDefinition extends StObject {
   
   /**
     * An array of `Body` that are _direct_ children of this composite.
@@ -95,75 +96,63 @@ object ICompositeDefinition {
   }
   
   @scala.inline
-  implicit class ICompositeDefinitionOps[Self <: ICompositeDefinition] (val x: Self) extends AnyVal {
+  implicit class ICompositeDefinitionMutableBuilder[Self <: ICompositeDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodies(value: js.Array[Body]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodiesVarargs(value: Body*): Self = StObject.set(x, "bodies", js.Array(value :_*))
     
     @scala.inline
-    def setBodiesVarargs(value: Body*): Self = this.set("bodies", js.Array(value :_*))
+    def setComposites(value: js.Array[Composite]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodies(value: js.Array[Body]): Self = this.set("bodies", value.asInstanceOf[js.Any])
+    def setCompositesUndefined: Self = StObject.set(x, "composites", js.undefined)
     
     @scala.inline
-    def deleteBodies: Self = this.set("bodies", js.undefined)
+    def setCompositesVarargs(value: Composite*): Self = StObject.set(x, "composites", js.Array(value :_*))
     
     @scala.inline
-    def setCompositesVarargs(value: Composite*): Self = this.set("composites", js.Array(value :_*))
+    def setConstraints(value: js.Array[Constraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposites(value: js.Array[Composite]): Self = this.set("composites", value.asInstanceOf[js.Any])
+    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
     @scala.inline
-    def deleteComposites: Self = this.set("composites", js.undefined)
+    def setConstraintsVarargs(value: Constraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
     @scala.inline
-    def setConstraintsVarargs(value: Constraint*): Self = this.set("constraints", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: js.Array[Constraint]): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteConstraints: Self = this.set("constraints", js.undefined)
+    def setIsModified(value: Boolean): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsModified(value: Boolean): Self = this.set("isModified", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIsModified: Self = this.set("isModified", js.undefined)
+    def setParent(value: Composite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Composite): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

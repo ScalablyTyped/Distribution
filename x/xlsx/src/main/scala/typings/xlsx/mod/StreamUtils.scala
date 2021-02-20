@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamUtils extends js.Object {
+trait StreamUtils extends StObject {
   
   /** CSV output stream, generate one line at a time */
   def to_csv(sheet: WorkSheet): js.Any = js.native

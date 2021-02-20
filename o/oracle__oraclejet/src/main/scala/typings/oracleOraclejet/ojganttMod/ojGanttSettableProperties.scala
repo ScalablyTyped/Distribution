@@ -21,6 +21,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.single
 import typings.oracleOraclejet.oracleOraclejetStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,102 +111,90 @@ object ojGanttSettableProperties {
   }
   
   @scala.inline
-  implicit class ojGanttSettablePropertiesOps[Self <: ojGanttSettableProperties[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojGanttSettableProperties[K1, K2, D1, D2])) extends AnyVal {
+  implicit class ojGanttSettablePropertiesMutableBuilder[Self <: ojGanttSettableProperties[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojGanttSettableProperties[K1, K2, D1, D2])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationOnDisplay(value: auto | none): Self = StObject.set(x, "animationOnDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOnDataChange(value: auto | none): Self = this.set("animationOnDataChange", value.asInstanceOf[js.Any])
+    def setAxisPosition(value: bottom | top): Self = StObject.set(x, "axisPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOnDisplay(value: auto | none): Self = this.set("animationOnDisplay", value.asInstanceOf[js.Any])
+    def setDependencyData(value: DataProvider[K1, D1]): Self = StObject.set(x, "dependencyData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setDependencyDataUndefined: Self = StObject.set(x, "dependencyData", js.undefined)
     
     @scala.inline
-    def setAxisPosition(value: bottom | top): Self = this.set("axisPosition", value.asInstanceOf[js.Any])
+    def setDnd(value: Move): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnd(value: Move): Self = this.set("dnd", value.asInstanceOf[js.Any])
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setGridlines(value: Vertical): Self = StObject.set(x, "gridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridlines(value: Vertical): Self = this.set("gridlines", value.asInstanceOf[js.Any])
+    def setMajorAxis(value: Scale): Self = StObject.set(x, "majorAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorAxis(value: Scale): Self = this.set("majorAxis", value.asInstanceOf[js.Any])
+    def setMinorAxis(value: Scale): Self = StObject.set(x, "minorAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorAxis(value: Scale): Self = this.set("minorAxis", value.asInstanceOf[js.Any])
+    def setReferenceObjects(value: js.Array[ReferenceObject]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceObjectsVarargs(value: ReferenceObject*): Self = this.set("referenceObjects", js.Array(value :_*))
+    def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
     
     @scala.inline
-    def setReferenceObjects(value: js.Array[ReferenceObject]): Self = this.set("referenceObjects", value.asInstanceOf[js.Any])
+    def setRowAxis(value: MaxWidth[K2, D2]): Self = StObject.set(x, "rowAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowAxis(value: MaxWidth[K2, D2]): Self = this.set("rowAxis", value.asInstanceOf[js.Any])
+    def setRowDefaults(value: `8`): Self = StObject.set(x, "rowDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDefaults(value: `8`): Self = this.set("rowDefaults", value.asInstanceOf[js.Any])
+    def setScrollPosition(value: OffsetY): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPosition(value: OffsetY): Self = this.set("scrollPosition", value.asInstanceOf[js.Any])
+    def setSelection(value: js.Array[K2]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionVarargs(value: K2*): Self = this.set("selection", js.Array(value :_*))
+    def setSelectionMode(value: single | multiple | none): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: js.Array[K2]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelectionVarargs(value: K2*): Self = StObject.set(x, "selection", js.Array(value :_*))
     
     @scala.inline
-    def setSelectionMode(value: single | multiple | none): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTaskData(value: DataProvider[K2, D2]): Self = StObject.set(x, "taskData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskDefaults(value: Baseline): Self = this.set("taskDefaults", value.asInstanceOf[js.Any])
+    def setTaskDataUndefined: Self = StObject.set(x, "taskData", js.undefined)
     
     @scala.inline
-    def setTooltip(value: `9`[K2, D2]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTaskDefaults(value: Baseline): Self = StObject.set(x, "taskDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: AccessibleDependencyInfo): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setTooltip(value: `9`[K2, D2]): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueFormats(value: BaselineDate): Self = this.set("valueFormats", value.asInstanceOf[js.Any])
+    def setTranslations(value: AccessibleDependencyInfo): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportEnd(value: String): Self = this.set("viewportEnd", value.asInstanceOf[js.Any])
+    def setValueFormats(value: BaselineDate): Self = StObject.set(x, "valueFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportStart(value: String): Self = this.set("viewportStart", value.asInstanceOf[js.Any])
+    def setViewportEnd(value: String): Self = StObject.set(x, "viewportEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyData(value: DataProvider[K1, D1]): Self = this.set("dependencyData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDependencyData: Self = this.set("dependencyData", js.undefined)
-    
-    @scala.inline
-    def setTaskData(value: DataProvider[K2, D2]): Self = this.set("taskData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskData: Self = this.set("taskData", js.undefined)
+    def setViewportStart(value: String): Self = StObject.set(x, "viewportStart", value.asInstanceOf[js.Any])
   }
 }

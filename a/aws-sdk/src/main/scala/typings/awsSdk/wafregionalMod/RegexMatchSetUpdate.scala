@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexMatchSetUpdate extends js.Object {
+trait RegexMatchSetUpdate extends StObject {
   
   /**
     * Specifies whether to insert or delete a RegexMatchTuple.
@@ -26,24 +27,12 @@ object RegexMatchSetUpdate {
   }
   
   @scala.inline
-  implicit class RegexMatchSetUpdateOps[Self <: RegexMatchSetUpdate] (val x: Self) extends AnyVal {
+  implicit class RegexMatchSetUpdateMutableBuilder[Self <: RegexMatchSetUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: ChangeAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexMatchTuple(value: RegexMatchTuple): Self = this.set("RegexMatchTuple", value.asInstanceOf[js.Any])
+    def setRegexMatchTuple(value: RegexMatchTuple): Self = StObject.set(x, "RegexMatchTuple", value.asInstanceOf[js.Any])
   }
 }

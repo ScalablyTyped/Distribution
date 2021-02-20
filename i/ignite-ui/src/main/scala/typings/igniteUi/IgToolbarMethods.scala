@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgToolbarMethods extends js.Object {
+trait IgToolbarMethods extends StObject {
   
   /**
     * Activate item matching provided index.
@@ -92,51 +93,39 @@ object IgToolbarMethods {
   }
   
   @scala.inline
-  implicit class IgToolbarMethodsOps[Self <: IgToolbarMethods] (val x: Self) extends AnyVal {
+  implicit class IgToolbarMethodsMutableBuilder[Self <: IgToolbarMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "activateItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddItem(value: js.Object => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivateItem(value: (js.Object, js.Object) => Unit): Self = this.set("activateItem", js.Any.fromFunction2(value))
+    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddItem(value: js.Object => Unit): Self = this.set("addItem", js.Any.fromFunction1(value))
+    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = this.set("changeGlobalLanguage", js.Any.fromFunction0(value))
+    def setDeactivateAll(value: () => Unit): Self = StObject.set(x, "deactivateAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = this.set("changeGlobalRegional", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeLocale(value: () => Unit): Self = this.set("changeLocale", js.Any.fromFunction0(value))
+    def setDisableItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeactivateAll(value: () => Unit): Self = this.set("deactivateAll", js.Any.fromFunction0(value))
+    def setGetItem(value: js.Object => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setRemoveItem(value: js.Object => js.Object): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisableItem(value: (js.Object, js.Object) => Unit): Self = this.set("disableItem", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetItem(value: js.Object => js.Object): Self = this.set("getItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveItem(value: js.Object => js.Object): Self = this.set("removeItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWidget(value: () => Unit): Self = this.set("widget", js.Any.fromFunction0(value))
+    def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

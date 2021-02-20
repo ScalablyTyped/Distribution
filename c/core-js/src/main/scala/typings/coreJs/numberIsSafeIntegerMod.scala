@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/number/is-safe-integer", JSImport.Namespace)
-@js.native
-object numberIsSafeIntegerMod
-  extends TopLevel[js.Function1[/* number */ Double, Boolean]]
+object numberIsSafeIntegerMod {
+  
+  /* was `typeof core.Number.isSafeInteger` */
+  @JSImport("core-js/library/fn/number/is-safe-integer", JSImport.Namespace)
+  @js.native
+  def apply(number: Double): Boolean = js.native
+}

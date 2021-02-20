@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Collisions/intersectionInfo", JSImport.Namespace)
-@js.native
-object intersectionInfoMod extends js.Object {
+object intersectionInfoMod {
   
+  @JSImport("babylonjs/Collisions/intersectionInfo", "IntersectionInfo")
   @js.native
-  class IntersectionInfo protected () extends js.Object {
+  class IntersectionInfo protected () extends StObject {
     def this(bu: Nullable[Double], bv: Nullable[Double], distance: Double) = this()
     
     var bu: Nullable[Double] = js.native

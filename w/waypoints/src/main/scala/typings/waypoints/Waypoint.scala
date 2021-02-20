@@ -1,12 +1,13 @@
 package typings.waypoints
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Waypoint extends js.Object {
+trait Waypoint extends StObject {
   
   // properties
   var adapter: WaypointAdapter = js.native
@@ -28,7 +29,7 @@ trait Waypoint extends js.Object {
   
   var options: WaypointOptions = js.native
   
-   // actually `null` not string
+  // actually `null` not string
   def previous(): Waypoint | String = js.native
   
   var triggerPoint: Double = js.native
@@ -54,51 +55,39 @@ object Waypoint {
   }
   
   @scala.inline
-  implicit class WaypointOps[Self <: Waypoint] (val x: Self) extends AnyVal {
+  implicit class WaypointMutableBuilder[Self <: Waypoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapter(value: WaypointAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: WaypointContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: () => Waypoint): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdapter(value: WaypointAdapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    def setDisable(value: () => Waypoint): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContext(value: WaypointContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Waypoint): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setEnable(value: () => Waypoint): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => Waypoint): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setGroup(value: WaypointGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setNext(value: () => Waypoint | String): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnable(value: () => Waypoint): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setOptions(value: WaypointOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: WaypointGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setPrevious(value: () => Waypoint | String): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => Waypoint | String): Self = this.set("next", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOptions(value: WaypointOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevious(value: () => Waypoint | String): Self = this.set("previous", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTriggerPoint(value: Double): Self = this.set("triggerPoint", value.asInstanceOf[js.Any])
+    def setTriggerPoint(value: Double): Self = StObject.set(x, "triggerPoint", value.asInstanceOf[js.Any])
   }
 }

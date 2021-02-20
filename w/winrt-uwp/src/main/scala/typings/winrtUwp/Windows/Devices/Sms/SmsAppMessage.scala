@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface for manipulating an SMS Application message. Application messages are those which cannot be characterized as any other message type. */
 @js.native
-trait SmsAppMessage extends js.Object {
+trait SmsAppMessage extends StObject {
   
   /** Reads or writes the binary part of the Application message. */
   var binaryBody: IBuffer = js.native
@@ -88,69 +89,57 @@ object SmsAppMessage {
   }
   
   @scala.inline
-  implicit class SmsAppMessageOps[Self <: SmsAppMessage] (val x: Self) extends AnyVal {
+  implicit class SmsAppMessageMutableBuilder[Self <: SmsAppMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryBody(value: IBuffer): Self = StObject.set(x, "binaryBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackNumber(value: String): Self = StObject.set(x, "callbackNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryBody(value: IBuffer): Self = this.set("binaryBody", value.asInstanceOf[js.Any])
+    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackNumber(value: String): Self = this.set("callbackNumber", value.asInstanceOf[js.Any])
+    def setEncoding(value: SmsEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setIsDeliveryNotificationEnabled(value: Boolean): Self = StObject.set(x, "isDeliveryNotificationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: SmsEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeliveryNotificationEnabled(value: Boolean): Self = this.set("isDeliveryNotificationEnabled", value.asInstanceOf[js.Any])
+    def setPortNumber(value: Double): Self = StObject.set(x, "portNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = this.set("messageClass", value.asInstanceOf[js.Any])
+    def setProtocolId(value: Double): Self = StObject.set(x, "protocolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: SmsMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setRetryAttemptCount(value: Double): Self = StObject.set(x, "retryAttemptCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortNumber(value: Double): Self = this.set("portNumber", value.asInstanceOf[js.Any])
+    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolId(value: Double): Self = this.set("protocolId", value.asInstanceOf[js.Any])
+    def setTeleserviceId(value: Double): Self = StObject.set(x, "teleserviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryAttemptCount(value: Double): Self = this.set("retryAttemptCount", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimIccId(value: String): Self = this.set("simIccId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeleserviceId(value: Double): Self = this.set("teleserviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Corner
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEvent extends js.Object {
+trait IEvent extends StObject {
   
   var absolutePointer: js.UndefOr[Point] = js.native
   
@@ -34,66 +35,54 @@ object IEvent {
   }
   
   @scala.inline
-  implicit class IEventOps[Self <: IEvent] (val x: Self) extends AnyVal {
+  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePointer(value: Point): Self = StObject.set(x, "absolutePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePointerUndefined: Self = StObject.set(x, "absolutePointer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: Event): Self = this.set("e", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def setAbsolutePointer(value: Point): Self = this.set("absolutePointer", value.asInstanceOf[js.Any])
+    def setE(value: Event): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAbsolutePointer: Self = this.set("absolutePointer", js.undefined)
+    def setIsClick(value: Boolean): Self = StObject.set(x, "isClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setIsClickUndefined: Self = StObject.set(x, "isClick", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setPointer(value: Point): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClick(value: Boolean): Self = this.set("isClick", value.asInstanceOf[js.Any])
+    def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
     
     @scala.inline
-    def deleteIsClick: Self = this.set("isClick", js.undefined)
+    def setSubTargets(value: js.Array[Object]): Self = StObject.set(x, "subTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointer(value: Point): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    def setSubTargetsUndefined: Self = StObject.set(x, "subTargets", js.undefined)
     
     @scala.inline
-    def deletePointer: Self = this.set("pointer", js.undefined)
+    def setSubTargetsVarargs(value: Object*): Self = StObject.set(x, "subTargets", js.Array(value :_*))
     
     @scala.inline
-    def setSubTargetsVarargs(value: Object*): Self = this.set("subTargets", js.Array(value :_*))
+    def setTarget(value: Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTargets(value: js.Array[Object]): Self = this.set("subTargets", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteSubTargets: Self = this.set("subTargets", js.undefined)
+    def setTransform(value: Corner): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Object): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setTransform(value: Corner): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

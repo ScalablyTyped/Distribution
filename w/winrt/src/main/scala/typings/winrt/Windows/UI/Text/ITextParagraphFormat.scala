@@ -1,12 +1,13 @@
 package typings.winrt.Windows.UI.Text
 
 import typings.winrt.anon.Align
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextParagraphFormat extends js.Object {
+trait ITextParagraphFormat extends StObject {
   
   def addTab(position: Double, align: TabAlignment, leader: TabLeader): Unit = js.native
   
@@ -111,111 +112,99 @@ object ITextParagraphFormat {
   }
   
   @scala.inline
-  implicit class ITextParagraphFormatOps[Self <: ITextParagraphFormat] (val x: Self) extends AnyVal {
+  implicit class ITextParagraphFormatMutableBuilder[Self <: ITextParagraphFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTab(value: (Double, TabAlignment, TabLeader) => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignment(value: ParagraphAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearAllTabs(value: () => Unit): Self = StObject.set(x, "clearAllTabs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTab(value: (Double, TabAlignment, TabLeader) => Unit): Self = this.set("addTab", js.Any.fromFunction3(value))
+    def setDeleteTab(value: Double => Unit): Self = StObject.set(x, "deleteTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignment(value: ParagraphAlignment): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearAllTabs(value: () => Unit): Self = this.set("clearAllTabs", js.Any.fromFunction0(value))
+    def setGetClone(value: () => ITextParagraphFormat): Self = StObject.set(x, "getClone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteTab(value: Double => Unit): Self = this.set("deleteTab", js.Any.fromFunction1(value))
+    def setGetTab(value: Double => Align): Self = StObject.set(x, "getTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirstLineIndent(value: Double): Self = this.set("firstLineIndent", value.asInstanceOf[js.Any])
+    def setIsEqual(value: ITextParagraphFormat => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetClone(value: () => ITextParagraphFormat): Self = this.set("getClone", js.Any.fromFunction0(value))
+    def setKeepTogether(value: FormatEffect): Self = StObject.set(x, "keepTogether", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTab(value: Double => Align): Self = this.set("getTab", js.Any.fromFunction1(value))
+    def setKeepWithNext(value: FormatEffect): Self = StObject.set(x, "keepWithNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEqual(value: ITextParagraphFormat => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepTogether(value: FormatEffect): Self = this.set("keepTogether", value.asInstanceOf[js.Any])
+    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepWithNext(value: FormatEffect): Self = this.set("keepWithNext", value.asInstanceOf[js.Any])
+    def setLineSpacingRule(value: LineSpacingRule): Self = StObject.set(x, "lineSpacingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIndent(value: Double): Self = this.set("leftIndent", value.asInstanceOf[js.Any])
+    def setListAlignment(value: MarkerAlignment): Self = StObject.set(x, "listAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Double): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setListLevelIndex(value: Double): Self = StObject.set(x, "listLevelIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacingRule(value: LineSpacingRule): Self = this.set("lineSpacingRule", value.asInstanceOf[js.Any])
+    def setListStart(value: Double): Self = StObject.set(x, "listStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListAlignment(value: MarkerAlignment): Self = this.set("listAlignment", value.asInstanceOf[js.Any])
+    def setListStyle(value: MarkerStyle): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListLevelIndex(value: Double): Self = this.set("listLevelIndex", value.asInstanceOf[js.Any])
+    def setListTab(value: Double): Self = StObject.set(x, "listTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStart(value: Double): Self = this.set("listStart", value.asInstanceOf[js.Any])
+    def setListType(value: MarkerType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStyle(value: MarkerStyle): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    def setNoLineNumber(value: FormatEffect): Self = StObject.set(x, "noLineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListTab(value: Double): Self = this.set("listTab", value.asInstanceOf[js.Any])
+    def setPageBreakBefore(value: FormatEffect): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListType(value: MarkerType): Self = this.set("listType", value.asInstanceOf[js.Any])
+    def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoLineNumber(value: FormatEffect): Self = this.set("noLineNumber", value.asInstanceOf[js.Any])
+    def setRightToLeft(value: FormatEffect): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageBreakBefore(value: FormatEffect): Self = this.set("pageBreakBefore", value.asInstanceOf[js.Any])
+    def setSetClone(value: ITextParagraphFormat => Unit): Self = StObject.set(x, "setClone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRightIndent(value: Double): Self = this.set("rightIndent", value.asInstanceOf[js.Any])
+    def setSetIndents(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setIndents", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRightToLeft(value: FormatEffect): Self = this.set("rightToLeft", value.asInstanceOf[js.Any])
+    def setSetLineSpacing(value: (LineSpacingRule, Double) => Unit): Self = StObject.set(x, "setLineSpacing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetClone(value: ITextParagraphFormat => Unit): Self = this.set("setClone", js.Any.fromFunction1(value))
+    def setSpaceAfter(value: Double): Self = StObject.set(x, "spaceAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetIndents(value: (Double, Double, Double) => Unit): Self = this.set("setIndents", js.Any.fromFunction3(value))
+    def setSpaceBefore(value: Double): Self = StObject.set(x, "spaceBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetLineSpacing(value: (LineSpacingRule, Double) => Unit): Self = this.set("setLineSpacing", js.Any.fromFunction2(value))
+    def setStyle(value: ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfter(value: Double): Self = this.set("spaceAfter", value.asInstanceOf[js.Any])
+    def setTabCount(value: Double): Self = StObject.set(x, "tabCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBefore(value: Double): Self = this.set("spaceBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: ParagraphStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabCount(value: Double): Self = this.set("tabCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidowControl(value: FormatEffect): Self = this.set("widowControl", value.asInstanceOf[js.Any])
+    def setWidowControl(value: FormatEffect): Self = StObject.set(x, "widowControl", value.asInstanceOf[js.Any])
   }
 }

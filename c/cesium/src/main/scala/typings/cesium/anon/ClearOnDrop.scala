@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.DefaultProxy
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearOnDrop extends js.Object {
+trait ClearOnDrop extends StObject {
   
   var clampToGround: js.UndefOr[Boolean] = js.native
   
@@ -28,48 +29,36 @@ object ClearOnDrop {
   }
   
   @scala.inline
-  implicit class ClearOnDropOps[Self <: ClearOnDrop] (val x: Self) extends AnyVal {
+  implicit class ClearOnDropMutableBuilder[Self <: ClearOnDrop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClampToGround(value: Boolean): Self = StObject.set(x, "clampToGround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClampToGroundUndefined: Self = StObject.set(x, "clampToGround", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearOnDrop(value: Boolean): Self = StObject.set(x, "clearOnDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClampToGround(value: Boolean): Self = this.set("clampToGround", value.asInstanceOf[js.Any])
+    def setClearOnDropUndefined: Self = StObject.set(x, "clearOnDrop", js.undefined)
     
     @scala.inline
-    def deleteClampToGround: Self = this.set("clampToGround", js.undefined)
+    def setDropTarget(value: Element | String): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearOnDrop(value: Boolean): Self = this.set("clearOnDrop", value.asInstanceOf[js.Any])
+    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     
     @scala.inline
-    def deleteClearOnDrop: Self = this.set("clearOnDrop", js.undefined)
+    def setFlyToOnDrop(value: Boolean): Self = StObject.set(x, "flyToOnDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropTarget(value: Element | String): Self = this.set("dropTarget", value.asInstanceOf[js.Any])
+    def setFlyToOnDropUndefined: Self = StObject.set(x, "flyToOnDrop", js.undefined)
     
     @scala.inline
-    def deleteDropTarget: Self = this.set("dropTarget", js.undefined)
+    def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlyToOnDrop(value: Boolean): Self = this.set("flyToOnDrop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlyToOnDrop: Self = this.set("flyToOnDrop", js.undefined)
-    
-    @scala.inline
-    def setProxy(value: DefaultProxy): Self = this.set("proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
   }
 }

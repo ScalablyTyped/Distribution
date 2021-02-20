@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.linguistic2
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,24 +48,12 @@ object DictionaryListEvent {
   }
   
   @scala.inline
-  implicit class DictionaryListEventOps[Self <: DictionaryListEvent] (val x: Self) extends AnyVal {
+  implicit class DictionaryListEventMutableBuilder[Self <: DictionaryListEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = StObject.set(x, "aDictionaryEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = this.set("aDictionaryEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNCondensedEvent(value: Double): Self = this.set("nCondensedEvent", value.asInstanceOf[js.Any])
+    def setNCondensedEvent(value: Double): Self = StObject.set(x, "nCondensedEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientCloudasset.anon.Accesstoken
 import typings.maximMazurokGapiClientCloudasset.anon.Alt
 import typings.maximMazurokGapiClientCloudasset.anon.Callback
 import typings.maximMazurokGapiClientCloudasset.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeedsResource extends js.Object {
+trait FeedsResource extends StObject {
   
   /** Creates a feed in a parent project/folder/organization to listen to its asset updates. */
   def create(request: Accesstoken): Request[Feed] = js.native

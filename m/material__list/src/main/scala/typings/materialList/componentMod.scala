@@ -4,16 +4,18 @@ import typings.materialBase.componentMod.MDCComponent
 import typings.materialList.foundationMod.MDCListFoundation
 import typings.materialList.typesMod.MDCListIndex
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/list/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/list/component", "MDCList")
   @js.native
-  class MDCList () extends MDCComponent[MDCListFoundation] {
+  class MDCList protected () extends MDCComponent[MDCListFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCListFoundation, args: js.Any*) = this()
     
     /**
       * Extracts the primary text from a list item.
@@ -72,9 +74,10 @@ object componentMod extends js.Object {
     def wrapFocus_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCList extends js.Object {
+  object MDCList {
     
+    @JSImport("@material/list/component", "MDCList.attachTo")
+    @js.native
     def attachTo(root: Element): MDCList = js.native
   }
   

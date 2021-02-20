@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,117 +133,105 @@ object IgDoughnutChart {
   }
   
   @scala.inline
-  implicit class IgDoughnutChartOps[Self <: IgDoughnutChart] (val x: Self) extends AnyVal {
+  implicit class IgDoughnutChartMutableBuilder[Self <: IgDoughnutChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSliceExplosion(value: Boolean): Self = StObject.set(x, "allowSliceExplosion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSliceExplosionUndefined: Self = StObject.set(x, "allowSliceExplosion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowSliceSelection(value: Boolean): Self = StObject.set(x, "allowSliceSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSliceExplosion(value: Boolean): Self = this.set("allowSliceExplosion", value.asInstanceOf[js.Any])
+    def setAllowSliceSelectionUndefined: Self = StObject.set(x, "allowSliceSelection", js.undefined)
     
     @scala.inline
-    def deleteAllowSliceExplosion: Self = this.set("allowSliceExplosion", js.undefined)
+    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = StObject.set(x, "browserNotSupported", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAllowSliceSelection(value: Boolean): Self = this.set("allowSliceSelection", value.asInstanceOf[js.Any])
+    def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
     @scala.inline
-    def deleteAllowSliceSelection: Self = this.set("allowSliceSelection", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = this.set("browserNotSupported", js.Any.fromFunction2(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteBrowserNotSupported: Self = this.set("browserNotSupported", js.undefined)
+    def setHoleDimensionsChanged(value: (/* event */ Event, /* ui */ HoleDimensionsChangedEventUIParam) => Unit): Self = StObject.set(x, "holeDimensionsChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHoleDimensionsChangedUndefined: Self = StObject.set(x, "holeDimensionsChanged", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInnerExtent(value: Double): Self = StObject.set(x, "innerExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoleDimensionsChanged(value: (/* event */ Event, /* ui */ HoleDimensionsChangedEventUIParam) => Unit): Self = this.set("holeDimensionsChanged", js.Any.fromFunction2(value))
+    def setInnerExtentUndefined: Self = StObject.set(x, "innerExtent", js.undefined)
     
     @scala.inline
-    def deleteHoleDimensionsChanged: Self = this.set("holeDimensionsChanged", js.undefined)
+    def setIsSurfaceInteractionDisabled(value: Boolean): Self = StObject.set(x, "isSurfaceInteractionDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerExtent(value: Double): Self = this.set("innerExtent", value.asInstanceOf[js.Any])
+    def setIsSurfaceInteractionDisabledUndefined: Self = StObject.set(x, "isSurfaceInteractionDisabled", js.undefined)
     
     @scala.inline
-    def deleteInnerExtent: Self = this.set("innerExtent", js.undefined)
+    def setPixelScalingRatio(value: Double): Self = StObject.set(x, "pixelScalingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSurfaceInteractionDisabled(value: Boolean): Self = this.set("isSurfaceInteractionDisabled", value.asInstanceOf[js.Any])
+    def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
     @scala.inline
-    def deleteIsSurfaceInteractionDisabled: Self = this.set("isSurfaceInteractionDisabled", js.undefined)
+    def setSelectedStyle(value: js.Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
     @scala.inline
-    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    def setSeries(value: js.Array[IgDoughnutChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedStyle(value: js.Any): Self = this.set("selectedStyle", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteSelectedStyle: Self = this.set("selectedStyle", js.undefined)
+    def setSeriesVarargs(value: IgDoughnutChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSeriesVarargs(value: IgDoughnutChartSeries*): Self = this.set("series", js.Array(value :_*))
+    def setSliceClick(value: (/* event */ Event, /* ui */ SliceClickEventUIParam) => Unit): Self = StObject.set(x, "sliceClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeries(value: js.Array[IgDoughnutChartSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSliceClickUndefined: Self = StObject.set(x, "sliceClick", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = StObject.set(x, "tooltipHidden", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSliceClick(value: (/* event */ Event, /* ui */ SliceClickEventUIParam) => Unit): Self = this.set("sliceClick", js.Any.fromFunction2(value))
+    def setTooltipHiddenUndefined: Self = StObject.set(x, "tooltipHidden", js.undefined)
     
     @scala.inline
-    def deleteSliceClick: Self = this.set("sliceClick", js.undefined)
+    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = StObject.set(x, "tooltipHiding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = this.set("tooltipHidden", js.Any.fromFunction2(value))
+    def setTooltipHidingUndefined: Self = StObject.set(x, "tooltipHiding", js.undefined)
     
     @scala.inline
-    def deleteTooltipHidden: Self = this.set("tooltipHidden", js.undefined)
+    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = StObject.set(x, "tooltipShowing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = this.set("tooltipHiding", js.Any.fromFunction2(value))
+    def setTooltipShowingUndefined: Self = StObject.set(x, "tooltipShowing", js.undefined)
     
     @scala.inline
-    def deleteTooltipHiding: Self = this.set("tooltipHiding", js.undefined)
+    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = StObject.set(x, "tooltipShown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = this.set("tooltipShowing", js.Any.fromFunction2(value))
+    def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
     
     @scala.inline
-    def deleteTooltipShowing: Self = this.set("tooltipShowing", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = this.set("tooltipShown", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTooltipShown: Self = this.set("tooltipShown", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

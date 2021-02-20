@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentDemographics extends js.Object {
+trait SegmentDemographics extends StObject {
   
   /**
     * The app version criteria for the segment.
@@ -46,54 +47,42 @@ object SegmentDemographics {
   }
   
   @scala.inline
-  implicit class SegmentDemographicsOps[Self <: SegmentDemographics] (val x: Self) extends AnyVal {
+  implicit class SegmentDemographicsMutableBuilder[Self <: SegmentDemographics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppVersion(value: SetDimension): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannel(value: SetDimension): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: SetDimension): Self = this.set("AppVersion", value.asInstanceOf[js.Any])
+    def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
     
     @scala.inline
-    def deleteAppVersion: Self = this.set("AppVersion", js.undefined)
+    def setDeviceType(value: SetDimension): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: SetDimension): Self = this.set("Channel", value.asInstanceOf[js.Any])
+    def setDeviceTypeUndefined: Self = StObject.set(x, "DeviceType", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("Channel", js.undefined)
+    def setMake(value: SetDimension): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceType(value: SetDimension): Self = this.set("DeviceType", value.asInstanceOf[js.Any])
+    def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
     
     @scala.inline
-    def deleteDeviceType: Self = this.set("DeviceType", js.undefined)
+    def setModel(value: SetDimension): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMake(value: SetDimension): Self = this.set("Make", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
     @scala.inline
-    def deleteMake: Self = this.set("Make", js.undefined)
+    def setPlatform(value: SetDimension): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: SetDimension): Self = this.set("Model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("Model", js.undefined)
-    
-    @scala.inline
-    def setPlatform(value: SetDimension): Self = this.set("Platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("Platform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
   }
 }

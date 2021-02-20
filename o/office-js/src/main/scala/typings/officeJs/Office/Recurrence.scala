@@ -1,6 +1,7 @@
 package typings.officeJs.Office
 
 import typings.officeJs.Office.MailboxEnums.RecurrenceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * </table>
   */
 @js.native
-trait Recurrence extends js.Object {
+trait Recurrence extends StObject {
   
   /**
     * Returns the current recurrence object of an appointment series.

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHLSStreamingSessionURLOutput extends js.Object {
+trait GetHLSStreamingSessionURLOutput extends StObject {
   
   /**
     * The URL (containing the session token) that a media player can use to retrieve the HLS master playlist.
@@ -21,24 +22,12 @@ object GetHLSStreamingSessionURLOutput {
   }
   
   @scala.inline
-  implicit class GetHLSStreamingSessionURLOutputOps[Self <: GetHLSStreamingSessionURLOutput] (val x: Self) extends AnyVal {
+  implicit class GetHLSStreamingSessionURLOutputMutableBuilder[Self <: GetHLSStreamingSessionURLOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHLSStreamingSessionURL(value: HLSStreamingSessionURL): Self = StObject.set(x, "HLSStreamingSessionURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHLSStreamingSessionURL(value: HLSStreamingSessionURL): Self = this.set("HLSStreamingSessionURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHLSStreamingSessionURL: Self = this.set("HLSStreamingSessionURL", js.undefined)
+    def setHLSStreamingSessionURLUndefined: Self = StObject.set(x, "HLSStreamingSessionURL", js.undefined)
   }
 }

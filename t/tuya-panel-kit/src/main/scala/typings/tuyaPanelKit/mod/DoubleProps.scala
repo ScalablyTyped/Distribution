@@ -1,6 +1,7 @@
 package typings.tuyaPanelKit.mod
 
 import typings.tuyaPanelKit.anon.MaxValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,90 +42,78 @@ object DoubleProps {
   }
   
   @scala.inline
-  implicit class DoublePropsOps[Self <: DoubleProps] (val x: Self) extends AnyVal {
+  implicit class DoublePropsMutableBuilder[Self <: DoubleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndColorUndefined: Self = StObject.set(x, "endColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColor(value: String): Self = this.set("endColor", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteEndColor: Self = this.set("endColor", js.undefined)
+    def setMinThumbFill(value: String): Self = StObject.set(x, "minThumbFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinThumbFillUndefined: Self = StObject.set(x, "minThumbFill", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setMinThumbStroke(value: String): Self = StObject.set(x, "minThumbStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinThumbFill(value: String): Self = this.set("minThumbFill", value.asInstanceOf[js.Any])
+    def setMinThumbStrokeUndefined: Self = StObject.set(x, "minThumbStroke", js.undefined)
     
     @scala.inline
-    def deleteMinThumbFill: Self = this.set("minThumbFill", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinThumbStroke(value: String): Self = this.set("minThumbStroke", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMinThumbStroke: Self = this.set("minThumbStroke", js.undefined)
+    def setOnSlidingComplete(value: /* argus */ MaxValue => Unit): Self = StObject.set(x, "onSlidingComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setOnSlidingCompleteUndefined: Self = StObject.set(x, "onSlidingComplete", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setOnValueChange(value: /* argus */ MaxValue => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSlidingComplete(value: /* argus */ MaxValue => Unit): Self = this.set("onSlidingComplete", js.Any.fromFunction1(value))
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def deleteOnSlidingComplete: Self = this.set("onSlidingComplete", js.undefined)
+    def setStartColor(value: String): Self = StObject.set(x, "startColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: /* argus */ MaxValue => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
+    def setStartColorUndefined: Self = StObject.set(x, "startColor", js.undefined)
     
     @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
+    def setThumbFill(value: String): Self = StObject.set(x, "thumbFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColor(value: String): Self = this.set("startColor", value.asInstanceOf[js.Any])
+    def setThumbFillUndefined: Self = StObject.set(x, "thumbFill", js.undefined)
     
     @scala.inline
-    def deleteStartColor: Self = this.set("startColor", js.undefined)
+    def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbFill(value: String): Self = this.set("thumbFill", value.asInstanceOf[js.Any])
+    def setThumbRadiusUndefined: Self = StObject.set(x, "thumbRadius", js.undefined)
     
     @scala.inline
-    def deleteThumbFill: Self = this.set("thumbFill", js.undefined)
+    def setThumbStroke(value: String): Self = StObject.set(x, "thumbStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbRadius(value: Double): Self = this.set("thumbRadius", value.asInstanceOf[js.Any])
+    def setThumbStrokeUndefined: Self = StObject.set(x, "thumbStroke", js.undefined)
     
     @scala.inline
-    def deleteThumbRadius: Self = this.set("thumbRadius", js.undefined)
+    def setThumbStrokeWidth(value: Double): Self = StObject.set(x, "thumbStrokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbStroke(value: String): Self = this.set("thumbStroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbStroke: Self = this.set("thumbStroke", js.undefined)
-    
-    @scala.inline
-    def setThumbStrokeWidth(value: Double): Self = this.set("thumbStrokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbStrokeWidth: Self = this.set("thumbStrokeWidth", js.undefined)
+    def setThumbStrokeWidthUndefined: Self = StObject.set(x, "thumbStrokeWidth", js.undefined)
   }
 }

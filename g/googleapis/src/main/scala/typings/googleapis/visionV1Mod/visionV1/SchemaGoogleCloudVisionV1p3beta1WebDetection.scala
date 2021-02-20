@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Relevant information for the image from the Internet.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1WebDetection extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1WebDetection extends StObject {
   
   /**
     * The service&#39;s best guess as to the topic of the request image.
@@ -53,72 +54,60 @@ object SchemaGoogleCloudVisionV1p3beta1WebDetection {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1WebDetectionOps[Self <: SchemaGoogleCloudVisionV1p3beta1WebDetection] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1WebDetectionMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1WebDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBestGuessLabels(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebLabel]): Self = StObject.set(x, "bestGuessLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBestGuessLabelsUndefined: Self = StObject.set(x, "bestGuessLabels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBestGuessLabelsVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebLabel*): Self = StObject.set(x, "bestGuessLabels", js.Array(value :_*))
     
     @scala.inline
-    def setBestGuessLabelsVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebLabel*): Self = this.set("bestGuessLabels", js.Array(value :_*))
+    def setFullMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBestGuessLabels(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebLabel]): Self = this.set("bestGuessLabels", value.asInstanceOf[js.Any])
+    def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
     
     @scala.inline
-    def deleteBestGuessLabels: Self = this.set("bestGuessLabels", js.undefined)
+    def setFullMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setFullMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = this.set("fullMatchingImages", js.Array(value :_*))
+    def setPagesWithMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage]): Self = StObject.set(x, "pagesWithMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = this.set("fullMatchingImages", value.asInstanceOf[js.Any])
+    def setPagesWithMatchingImagesUndefined: Self = StObject.set(x, "pagesWithMatchingImages", js.undefined)
     
     @scala.inline
-    def deleteFullMatchingImages: Self = this.set("fullMatchingImages", js.undefined)
+    def setPagesWithMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage*): Self = StObject.set(x, "pagesWithMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setPagesWithMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage*): Self = this.set("pagesWithMatchingImages", js.Array(value :_*))
+    def setPartialMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagesWithMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage]): Self = this.set("pagesWithMatchingImages", value.asInstanceOf[js.Any])
+    def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
     
     @scala.inline
-    def deletePagesWithMatchingImages: Self = this.set("pagesWithMatchingImages", js.undefined)
+    def setPartialMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setPartialMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = this.set("partialMatchingImages", js.Array(value :_*))
+    def setVisuallySimilarImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = StObject.set(x, "visuallySimilarImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = this.set("partialMatchingImages", value.asInstanceOf[js.Any])
+    def setVisuallySimilarImagesUndefined: Self = StObject.set(x, "visuallySimilarImages", js.undefined)
     
     @scala.inline
-    def deletePartialMatchingImages: Self = this.set("partialMatchingImages", js.undefined)
+    def setVisuallySimilarImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = StObject.set(x, "visuallySimilarImages", js.Array(value :_*))
     
     @scala.inline
-    def setVisuallySimilarImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = this.set("visuallySimilarImages", js.Array(value :_*))
+    def setWebEntities(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity]): Self = StObject.set(x, "webEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisuallySimilarImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = this.set("visuallySimilarImages", value.asInstanceOf[js.Any])
+    def setWebEntitiesUndefined: Self = StObject.set(x, "webEntities", js.undefined)
     
     @scala.inline
-    def deleteVisuallySimilarImages: Self = this.set("visuallySimilarImages", js.undefined)
-    
-    @scala.inline
-    def setWebEntitiesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity*): Self = this.set("webEntities", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebEntities(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity]): Self = this.set("webEntities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebEntities: Self = this.set("webEntities", js.undefined)
+    def setWebEntitiesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebEntity*): Self = StObject.set(x, "webEntities", js.Array(value :_*))
   }
 }

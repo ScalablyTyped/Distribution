@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the Cloud Storage destination where errors will be recorded.
   */
 @js.native
-trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination extends js.Object {
+trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination extends StObject {
   
   /**
     * URI for a Cloud Storage directory to which error report files should be
@@ -28,24 +29,12 @@ object SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestinationOps[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUriPrefix(value: String): Self = this.set("uriPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUriPrefix: Self = this.set("uriPrefix", js.undefined)
+    def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }
 }

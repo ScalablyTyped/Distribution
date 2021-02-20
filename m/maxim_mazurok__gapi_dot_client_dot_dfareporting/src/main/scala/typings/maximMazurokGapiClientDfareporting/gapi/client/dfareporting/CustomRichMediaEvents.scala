@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomRichMediaEvents extends js.Object {
+trait CustomRichMediaEvents extends StObject {
   
   /** List of custom rich media event IDs. Dimension values must be all of type dfa:richMediaEventTypeIdAndName. */
   var filteredEventIds: js.UndefOr[js.Array[DimensionValue]] = js.native
@@ -22,33 +23,21 @@ object CustomRichMediaEvents {
   }
   
   @scala.inline
-  implicit class CustomRichMediaEventsOps[Self <: CustomRichMediaEvents] (val x: Self) extends AnyVal {
+  implicit class CustomRichMediaEventsMutableBuilder[Self <: CustomRichMediaEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilteredEventIds(value: js.Array[DimensionValue]): Self = StObject.set(x, "filteredEventIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilteredEventIdsUndefined: Self = StObject.set(x, "filteredEventIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilteredEventIdsVarargs(value: DimensionValue*): Self = StObject.set(x, "filteredEventIds", js.Array(value :_*))
     
     @scala.inline
-    def setFilteredEventIdsVarargs(value: DimensionValue*): Self = this.set("filteredEventIds", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteredEventIds(value: js.Array[DimensionValue]): Self = this.set("filteredEventIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilteredEventIds: Self = this.set("filteredEventIds", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

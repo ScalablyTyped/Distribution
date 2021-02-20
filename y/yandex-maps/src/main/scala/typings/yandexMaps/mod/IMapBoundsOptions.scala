@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,33 +21,21 @@ object IMapBoundsOptions {
   }
   
   @scala.inline
-  implicit class IMapBoundsOptionsOps[Self <: IMapBoundsOptions] (val x: Self) extends AnyVal {
+  implicit class IMapBoundsOptionsMutableBuilder[Self <: IMapBoundsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreciseZoom(value: Boolean): Self = StObject.set(x, "preciseZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreciseZoomUndefined: Self = StObject.set(x, "preciseZoom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setZoomMargin(value: js.Array[js.Array[Double] | Double]): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreciseZoom(value: Boolean): Self = this.set("preciseZoom", value.asInstanceOf[js.Any])
+    def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     
     @scala.inline
-    def deletePreciseZoom: Self = this.set("preciseZoom", js.undefined)
-    
-    @scala.inline
-    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("zoomMargin", js.Array(value :_*))
-    
-    @scala.inline
-    def setZoomMargin(value: js.Array[js.Array[Double] | Double]): Self = this.set("zoomMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMargin: Self = this.set("zoomMargin", js.undefined)
+    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddRuleResponse extends js.Object {
+trait AddRuleResponse extends StObject {
   
   /**
     * The newly created rule.
@@ -21,21 +22,9 @@ object AddRuleResponse {
   }
   
   @scala.inline
-  implicit class AddRuleResponseOps[Self <: AddRuleResponse] (val x: Self) extends AnyVal {
+  implicit class AddRuleResponseMutableBuilder[Self <: AddRuleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRule(value: CSSRule): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

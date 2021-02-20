@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemTypeStateColors extends js.Object {
+trait WorkItemTypeStateColors extends StObject {
   
   /**
     * Work item type state colors
@@ -26,27 +27,15 @@ object WorkItemTypeStateColors {
   }
   
   @scala.inline
-  implicit class WorkItemTypeStateColorsOps[Self <: WorkItemTypeStateColors] (val x: Self) extends AnyVal {
+  implicit class WorkItemTypeStateColorsMutableBuilder[Self <: WorkItemTypeStateColors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStateColors(value: js.Array[WorkItemStateColor]): Self = StObject.set(x, "stateColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateColorsVarargs(value: WorkItemStateColor*): Self = StObject.set(x, "stateColors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStateColorsVarargs(value: WorkItemStateColor*): Self = this.set("stateColors", js.Array(value :_*))
-    
-    @scala.inline
-    def setStateColors(value: js.Array[WorkItemStateColor]): Self = this.set("stateColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemTypeName(value: String): Self = this.set("workItemTypeName", value.asInstanceOf[js.Any])
+    def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
   }
 }

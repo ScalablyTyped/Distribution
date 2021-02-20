@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.Depth
 import typings.three.bufferGeometryMod.BufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/BoxBufferGeometry", JSImport.Namespace)
-@js.native
-object boxBufferGeometryMod extends js.Object {
+object boxBufferGeometryMod {
   
+  @JSImport("three/src/geometries/BoxBufferGeometry", "BoxBufferGeometry")
   @js.native
   class BoxBufferGeometry protected () extends BufferGeometry {
     /**

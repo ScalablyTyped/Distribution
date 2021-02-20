@@ -5,6 +5,7 @@ import typings.jsrsasign.anon.Namehash
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertificateRequest
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertificateRequestList
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.OCSPUtil.ResponseInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [RFC 6960 4.1.1](https://tools.ietf.org/html/rfc6960#section-4.1.1).
   * - `KJUR.asn1.ocsp.OCSPUtil for static utility methods.
   */
-@JSImport("jsrsasign", "KJUR.asn1.ocsp")
-@js.native
-object ocsp extends js.Object {
+object ocsp {
   
   /**
     * ASN.1 CertID class for OCSP
@@ -59,6 +58,7 @@ object ocsp extends js.Object {
     * // constructor with values
     * o = new KJUR.asn1.ocsp.CertID({namehash: "1a...", keyhash: "ad...", serial: "1234", alg: "sha256"});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.ocsp.CertID")
   @js.native
   class CertID ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertID {
@@ -87,6 +87,7 @@ object ocsp extends js.Object {
     *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
     * ]});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.ocsp.OCSPRequest")
   @js.native
   class OCSPRequest ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.OCSPRequest {
@@ -100,8 +101,7 @@ object ocsp extends js.Object {
     * - `KJUR.asn1.ocsp.OCSPUtil.getRequestHex` - generates hexadecimal string of OCSP request
     *
     */
-  @js.native
-  object OCSPUtil extends js.Object {
+  object OCSPUtil {
     
     /**
       * parse OCSPResponse
@@ -120,6 +120,8 @@ object ocsp extends js.Object {
       * @example
       * info = KJUR.asn1.ocsp.OCSPUtil.getOCSPResponseInfo("3082...");
       */
+    @JSImport("jsrsasign", "KJUR.asn1.ocsp.OCSPUtil.getOCSPResponseInfo")
+    @js.native
     def getOCSPResponseInfo(h: String): ResponseInfo = js.native
     
     /**
@@ -134,6 +136,8 @@ object ocsp extends js.Object {
       * // generate OCSP request using sha1 algorithnm by default.
       * hReq = KJUR.asn1.ocsp.OCSPUtil.getRequestHex("-----BEGIN...", "-----BEGIN...");
       */
+    @JSImport("jsrsasign", "KJUR.asn1.ocsp.OCSPUtil.getRequestHex")
+    @js.native
     def getRequestHex(issuerCert: String, subjectCert: String, alg: String): String = js.native
   }
   
@@ -159,6 +163,7 @@ object ocsp extends js.Object {
     * // constructor with values
     * o = new KJUR.asn1.ocsp.Request({namehash: "1a...", keyhash: "ad...", serial: "1234", alg: "sha256"});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.ocsp.Request")
   @js.native
   class Request ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.Request {
@@ -188,6 +193,7 @@ object ocsp extends js.Object {
     *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
     * ]});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.ocsp.TBSRequest")
   @js.native
   class TBSRequest ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.TBSRequest {

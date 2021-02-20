@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListImageVersionsResponse extends js.Object {
+trait ListImageVersionsResponse extends StObject {
   
   /** The list of supported ImageVersions in a location. */
   var imageVersions: js.UndefOr[js.Array[ImageVersion]] = js.native
@@ -22,33 +23,21 @@ object ListImageVersionsResponse {
   }
   
   @scala.inline
-  implicit class ListImageVersionsResponseOps[Self <: ListImageVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListImageVersionsResponseMutableBuilder[Self <: ListImageVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageVersions(value: js.Array[ImageVersion]): Self = StObject.set(x, "imageVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageVersionsUndefined: Self = StObject.set(x, "imageVersions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageVersionsVarargs(value: ImageVersion*): Self = StObject.set(x, "imageVersions", js.Array(value :_*))
     
     @scala.inline
-    def setImageVersionsVarargs(value: ImageVersion*): Self = this.set("imageVersions", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersions(value: js.Array[ImageVersion]): Self = this.set("imageVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageVersions: Self = this.set("imageVersions", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

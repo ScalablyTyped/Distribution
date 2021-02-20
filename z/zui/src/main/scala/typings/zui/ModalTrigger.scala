@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalTrigger extends js.Object {
+trait ModalTrigger extends StObject {
   
   def adjustPostion(): js.Any = js.native
   def adjustPostion(option: ModalTriggerOption): js.Any = js.native

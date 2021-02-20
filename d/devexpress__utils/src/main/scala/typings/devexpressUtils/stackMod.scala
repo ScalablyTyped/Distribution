@@ -1,15 +1,15 @@
 package typings.devexpressUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/stack", JSImport.Namespace)
-@js.native
-object stackMod extends js.Object {
+object stackMod {
   
+  @JSImport("@devexpress/utils/lib/class/stack", "Stack")
   @js.native
-  class Stack[T] () extends js.Object {
+  class Stack[T] () extends StObject {
     
     var _count: js.Any = js.native
     

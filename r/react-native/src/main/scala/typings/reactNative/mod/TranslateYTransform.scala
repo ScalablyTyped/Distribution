@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranslateYTransform extends js.Object {
+trait TranslateYTransform extends StObject {
   
   var translateY: Double = js.native
 }
@@ -18,21 +19,9 @@ object TranslateYTransform {
   }
   
   @scala.inline
-  implicit class TranslateYTransformOps[Self <: TranslateYTransform] (val x: Self) extends AnyVal {
+  implicit class TranslateYTransformMutableBuilder[Self <: TranslateYTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTranslateY(value: Double): Self = this.set("translateY", value.asInstanceOf[js.Any])
+    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
   }
 }

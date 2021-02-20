@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResolverRuleAssociationRequest extends js.Object {
+trait GetResolverRuleAssociationRequest extends StObject {
   
   /**
     * The ID of the Resolver rule association that you want to get information about.
@@ -21,21 +22,9 @@ object GetResolverRuleAssociationRequest {
   }
   
   @scala.inline
-  implicit class GetResolverRuleAssociationRequestOps[Self <: GetResolverRuleAssociationRequest] (val x: Self) extends AnyVal {
+  implicit class GetResolverRuleAssociationRequestMutableBuilder[Self <: GetResolverRuleAssociationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolverRuleAssociationId(value: ResourceId): Self = this.set("ResolverRuleAssociationId", value.asInstanceOf[js.Any])
+    def setResolverRuleAssociationId(value: ResourceId): Self = StObject.set(x, "ResolverRuleAssociationId", value.asInstanceOf[js.Any])
   }
 }

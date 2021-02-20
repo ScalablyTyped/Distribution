@@ -1,5 +1,6 @@
 package typings.suitescript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 @js.native
-trait nlobjError extends js.Object {
+trait nlobjError extends StObject {
   
   /**
     * return the error code for this system or user-defined error.
@@ -101,36 +102,24 @@ object nlobjError {
   }
   
   @scala.inline
-  implicit class nlobjErrorOps[Self <: nlobjError] (val x: Self) extends AnyVal {
+  implicit class nlobjErrorMutableBuilder[Self <: nlobjError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDetails(value: () => String): Self = StObject.set(x, "getDetails", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCode(value: () => String): Self = this.set("getCode", js.Any.fromFunction0(value))
+    def setGetInternalId(value: () => js.Any): Self = StObject.set(x, "getInternalId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDetails(value: () => String): Self = this.set("getDetails", js.Any.fromFunction0(value))
+    def setGetStackTrace(value: () => Unit): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetInternalId(value: () => js.Any): Self = this.set("getInternalId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStackTrace(value: () => Unit): Self = this.set("getStackTrace", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUserEvent(value: () => String): Self = this.set("getUserEvent", js.Any.fromFunction0(value))
+    def setGetUserEvent(value: () => String): Self = StObject.set(x, "getUserEvent", js.Any.fromFunction0(value))
   }
 }

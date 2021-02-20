@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddPermissionRequest extends js.Object {
+trait AddPermissionRequest extends StObject {
   
   /**
     * The action that the principal can use on the function. For example, lambda:InvokeFunction or lambda:GetFunction.
@@ -61,60 +62,48 @@ object AddPermissionRequest {
   }
   
   @scala.inline
-  implicit class AddPermissionRequestOps[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class AddPermissionRequestMutableBuilder[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventSourceToken(value: EventSourceToken): Self = StObject.set(x, "EventSourceToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventSourceTokenUndefined: Self = StObject.set(x, "EventSourceToken", js.undefined)
     
     @scala.inline
-    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipal(value: Principal): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatementId(value: StatementId): Self = this.set("StatementId", value.asInstanceOf[js.Any])
+    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
     
     @scala.inline
-    def setEventSourceToken(value: EventSourceToken): Self = this.set("EventSourceToken", value.asInstanceOf[js.Any])
+    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventSourceToken: Self = this.set("EventSourceToken", js.undefined)
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def setQualifier(value: Qualifier): Self = this.set("Qualifier", value.asInstanceOf[js.Any])
+    def setSourceAccount(value: SourceOwner): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQualifier: Self = this.set("Qualifier", js.undefined)
+    def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setSourceArn(value: Arn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def setSourceAccount(value: SourceOwner): Self = this.set("SourceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceAccount: Self = this.set("SourceAccount", js.undefined)
-    
-    @scala.inline
-    def setSourceArn(value: Arn): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
   }
 }

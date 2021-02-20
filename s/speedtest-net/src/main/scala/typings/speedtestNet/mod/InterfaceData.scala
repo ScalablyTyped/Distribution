@@ -1,11 +1,12 @@
 package typings.speedtestNet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InterfaceData extends js.Object {
+trait InterfaceData extends StObject {
   
   var externalIp: String = js.native
   
@@ -26,33 +27,21 @@ object InterfaceData {
   }
   
   @scala.inline
-  implicit class InterfaceDataOps[Self <: InterfaceData] (val x: Self) extends AnyVal {
+  implicit class InterfaceDataMutableBuilder[Self <: InterfaceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInternalIp(value: String): Self = StObject.set(x, "internalIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsVpn(value: Boolean): Self = StObject.set(x, "isVpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalIp(value: String): Self = this.set("externalIp", value.asInstanceOf[js.Any])
+    def setMacAddr(value: String): Self = StObject.set(x, "macAddr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalIp(value: String): Self = this.set("internalIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsVpn(value: Boolean): Self = this.set("isVpn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMacAddr(value: String): Self = this.set("macAddr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

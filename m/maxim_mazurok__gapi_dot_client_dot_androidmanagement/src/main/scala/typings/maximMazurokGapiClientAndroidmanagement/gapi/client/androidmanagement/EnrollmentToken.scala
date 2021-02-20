@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnrollmentToken extends js.Object {
+trait EnrollmentToken extends StObject {
   
   /**
     * Optional, arbitrary data associated with the enrollment token. This could contain, for example, the ID of an org unit the device is assigned to after enrollment. After a device
@@ -64,78 +65,66 @@ object EnrollmentToken {
   }
   
   @scala.inline
-  implicit class EnrollmentTokenOps[Self <: EnrollmentToken] (val x: Self) extends AnyVal {
+  implicit class EnrollmentTokenMutableBuilder[Self <: EnrollmentToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowPersonalUsage(value: String): Self = StObject.set(x, "allowPersonalUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalData(value: String): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    def setAllowPersonalUsageUndefined: Self = StObject.set(x, "allowPersonalUsage", js.undefined)
     
     @scala.inline
-    def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPersonalUsage(value: String): Self = this.set("allowPersonalUsage", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteAllowPersonalUsage: Self = this.set("allowPersonalUsage", js.undefined)
+    def setExpirationTimestamp(value: String): Self = StObject.set(x, "expirationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setExpirationTimestampUndefined: Self = StObject.set(x, "expirationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTimestamp(value: String): Self = this.set("expirationTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteExpirationTimestamp: Self = this.set("expirationTimestamp", js.undefined)
+    def setOneTimeOnly(value: Boolean): Self = StObject.set(x, "oneTimeOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOneTimeOnlyUndefined: Self = StObject.set(x, "oneTimeOnly", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneTimeOnly(value: Boolean): Self = this.set("oneTimeOnly", value.asInstanceOf[js.Any])
+    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
     
     @scala.inline
-    def deleteOneTimeOnly: Self = this.set("oneTimeOnly", js.undefined)
+    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyName(value: String): Self = this.set("policyName", value.asInstanceOf[js.Any])
+    def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
     
     @scala.inline
-    def deletePolicyName: Self = this.set("policyName", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQrCode(value: String): Self = this.set("qrCode", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteQrCode: Self = this.set("qrCode", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

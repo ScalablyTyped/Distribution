@@ -1,11 +1,12 @@
 package typings.hystrixjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandFactory_ extends js.Object {
+trait CommandFactory_ extends StObject {
   
   def getOrCreate(commandKey: String): CommandBuilder = js.native
   def getOrCreate(commandKey: String, commandGroup: String): CommandBuilder = js.native

@@ -13,12 +13,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.arraybuffer
 import typings.wechatMiniprogram.wechatMiniprogramStrings.json
 import typings.wechatMiniprogram.wechatMiniprogramStrings.text
 import typings.wechatMiniprogram.wechatMiniprogramStrings.其他
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestOption extends js.Object {
+trait RequestOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[RequestCompleteCallback] = js.native
@@ -98,93 +99,81 @@ object RequestOption {
   }
   
   @scala.inline
-  implicit class RequestOptionOps[Self <: RequestOption] (val x: Self) extends AnyVal {
+  implicit class RequestOptionMutableBuilder[Self <: RequestOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String | IAnyObject | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setDataType(value: json | 其他): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setData(value: String | IAnyObject | ArrayBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEnableCache(value: Boolean): Self = StObject.set(x, "enableCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEnableCacheUndefined: Self = StObject.set(x, "enableCache", js.undefined)
     
     @scala.inline
-    def setDataType(value: json | 其他): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setEnableHttp2(value: Boolean): Self = StObject.set(x, "enableHttp2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setEnableHttp2Undefined: Self = StObject.set(x, "enableHttp2", js.undefined)
     
     @scala.inline
-    def setEnableCache(value: Boolean): Self = this.set("enableCache", value.asInstanceOf[js.Any])
+    def setEnableQuic(value: Boolean): Self = StObject.set(x, "enableQuic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableCache: Self = this.set("enableCache", js.undefined)
+    def setEnableQuicUndefined: Self = StObject.set(x, "enableQuic", js.undefined)
     
     @scala.inline
-    def setEnableHttp2(value: Boolean): Self = this.set("enableHttp2", value.asInstanceOf[js.Any])
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEnableHttp2: Self = this.set("enableHttp2", js.undefined)
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setEnableQuic(value: Boolean): Self = this.set("enableQuic", value.asInstanceOf[js.Any])
+    def setHeader(value: IAnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableQuic: Self = this.set("enableQuic", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setMethod(value: OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeader(value: IAnyObject): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setResponseType(value: text | arraybuffer): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def setMethod(value: OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* result */ RequestSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setResponseType(value: text | arraybuffer): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setSuccess(value: /* result */ RequestSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

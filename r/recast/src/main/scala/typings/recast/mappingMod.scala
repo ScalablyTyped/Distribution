@@ -3,16 +3,24 @@ package typings.recast
 import typings.astTypes.namedTypesMod.namedTypes.Position
 import typings.astTypes.namedTypesMod.namedTypes.SourceLocation
 import typings.recast.linesMod.Lines
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("recast/lib/mapping", JSImport.Namespace)
-@js.native
-object mappingMod extends js.Object {
+object mappingMod {
+  
+  @JSImport("recast/lib/mapping", JSImport.Default)
+  @js.native
+  class default protected () extends Mapping {
+    def this(sourceLines: Lines, sourceLoc: Loc) = this()
+    def this(sourceLines: Lines, sourceLoc: Loc, targetLoc: Loc) = this()
+  }
+  
+  type Loc = SourceLocation
   
   @js.native
-  trait Mapping extends js.Object {
+  trait Mapping extends StObject {
     
     def add(line: Double, column: Double): Mapping = js.native
     
@@ -32,14 +40,6 @@ object mappingMod extends js.Object {
     
     var targetLoc: Loc = js.native
   }
-  
-  @js.native
-  class default protected () extends Mapping {
-    def this(sourceLines: Lines, sourceLoc: Loc) = this()
-    def this(sourceLines: Lines, sourceLoc: Loc, targetLoc: Loc) = this()
-  }
-  
-  type Loc = SourceLocation
   
   type Pos = Position
 }

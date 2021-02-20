@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the advanced photo capture behavior on a capture device. */
 @js.native
-trait AdvancedPhotoControl extends js.Object {
+trait AdvancedPhotoControl extends StObject {
   
   /**
     * Configures the AdvancedPhotoControl object with the specified settings.
@@ -38,30 +39,18 @@ object AdvancedPhotoControl {
   }
   
   @scala.inline
-  implicit class AdvancedPhotoControlOps[Self <: AdvancedPhotoControl] (val x: Self) extends AnyVal {
+  implicit class AdvancedPhotoControlMutableBuilder[Self <: AdvancedPhotoControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigure(value: AdvancedPhotoCaptureSettings => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigure(value: AdvancedPhotoCaptureSettings => Unit): Self = this.set("configure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMode(value: AdvancedPhotoMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedModes(value: IVectorView[AdvancedPhotoMode]): Self = this.set("supportedModes", value.asInstanceOf[js.Any])
+    def setSupportedModes(value: IVectorView[AdvancedPhotoMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityStartedEventDetails extends js.Object {
+trait ActivityStartedEventDetails extends StObject {
   
   /**
     * The name of the worker that the task is assigned to. These names are provided by the workers when calling GetActivityTask.
@@ -21,24 +22,12 @@ object ActivityStartedEventDetails {
   }
   
   @scala.inline
-  implicit class ActivityStartedEventDetailsOps[Self <: ActivityStartedEventDetails] (val x: Self) extends AnyVal {
+  implicit class ActivityStartedEventDetailsMutableBuilder[Self <: ActivityStartedEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkerName(value: Identity): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkerName(value: Identity): Self = this.set("workerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerName: Self = this.set("workerName", js.undefined)
+    def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
   }
 }

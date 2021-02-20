@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait corePromise extends js.Object {
+trait corePromise extends StObject {
   
   /**
     * `isFulfilled()` may be used to verify if creating an instance of the class is fulfilled (either resolved or rejected).

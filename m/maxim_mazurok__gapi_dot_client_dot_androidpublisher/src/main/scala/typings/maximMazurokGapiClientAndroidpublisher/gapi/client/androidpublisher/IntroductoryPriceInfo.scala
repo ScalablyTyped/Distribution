@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntroductoryPriceInfo extends js.Object {
+trait IntroductoryPriceInfo extends StObject {
   
   /**
     * Introductory price of the subscription, not including tax. The currency is the same as price_currency_code. Price is expressed in micro-units, where 1,000,000 micro-units represents
@@ -34,42 +35,30 @@ object IntroductoryPriceInfo {
   }
   
   @scala.inline
-  implicit class IntroductoryPriceInfoOps[Self <: IntroductoryPriceInfo] (val x: Self) extends AnyVal {
+  implicit class IntroductoryPriceInfoMutableBuilder[Self <: IntroductoryPriceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntroductoryPriceAmountMicros(value: String): Self = StObject.set(x, "introductoryPriceAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntroductoryPriceAmountMicrosUndefined: Self = StObject.set(x, "introductoryPriceAmountMicros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntroductoryPriceCurrencyCode(value: String): Self = StObject.set(x, "introductoryPriceCurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroductoryPriceAmountMicros(value: String): Self = this.set("introductoryPriceAmountMicros", value.asInstanceOf[js.Any])
+    def setIntroductoryPriceCurrencyCodeUndefined: Self = StObject.set(x, "introductoryPriceCurrencyCode", js.undefined)
     
     @scala.inline
-    def deleteIntroductoryPriceAmountMicros: Self = this.set("introductoryPriceAmountMicros", js.undefined)
+    def setIntroductoryPriceCycles(value: Double): Self = StObject.set(x, "introductoryPriceCycles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroductoryPriceCurrencyCode(value: String): Self = this.set("introductoryPriceCurrencyCode", value.asInstanceOf[js.Any])
+    def setIntroductoryPriceCyclesUndefined: Self = StObject.set(x, "introductoryPriceCycles", js.undefined)
     
     @scala.inline
-    def deleteIntroductoryPriceCurrencyCode: Self = this.set("introductoryPriceCurrencyCode", js.undefined)
+    def setIntroductoryPricePeriod(value: String): Self = StObject.set(x, "introductoryPricePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroductoryPriceCycles(value: Double): Self = this.set("introductoryPriceCycles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntroductoryPriceCycles: Self = this.set("introductoryPriceCycles", js.undefined)
-    
-    @scala.inline
-    def setIntroductoryPricePeriod(value: String): Self = this.set("introductoryPricePeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntroductoryPricePeriod: Self = this.set("introductoryPricePeriod", js.undefined)
+    def setIntroductoryPricePeriodUndefined: Self = StObject.set(x, "introductoryPricePeriod", js.undefined)
   }
 }

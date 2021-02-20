@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.mod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle")
 @js.native
-class DataViewReadOnlyStyle ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewReadOnlyStyle
-/* static members */
-@JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle")
-@js.native
-object DataViewReadOnlyStyle extends js.Object {
+class DataViewReadOnlyStyle protected ()
+  extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewReadOnlyStyle {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object DataViewReadOnlyStyle {
   
-  var Control: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle = js.native
+  @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Text: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle.Control")
+  @js.native
+  def Control: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle = js.native
+  @scala.inline
+  def Control_=(x: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle.Text")
+  @js.native
+  def Text: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle = js.native
+  @scala.inline
+  def Text_=(x: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

@@ -11,16 +11,19 @@ import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rbx/base/helpers/factory", JSImport.Namespace)
-@js.native
-object factoryMod extends js.Object {
+object factoryMod {
   
+  @JSImport("rbx/base/helpers/factory", "makePropTypesFactory")
+  @js.native
   val makePropTypesFactory: MakePropTypesFactoryFunction = js.native
   
+  @JSImport("rbx/base/helpers/factory", "makeRootValidatingTransformFactory")
+  @js.native
   def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[_, _]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param mvtfs because its type T is not an array type */ mvtfs: T
   ): js.Function1[
@@ -51,6 +54,8 @@ object factoryMod extends js.Object {
     ]
   ] = js.native
   
+  @JSImport("rbx/base/helpers/factory", "makeValidatingTransformFactory")
+  @js.native
   def makeValidatingTransformFactory[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
     makePropTypesFunc: MakePropTypesFunction,
     transformFunc: TransformFunction[TTransformProps, TNewProps]

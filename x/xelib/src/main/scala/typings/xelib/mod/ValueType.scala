@@ -1,71 +1,60 @@
 package typings.xelib.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ValueType extends js.Object
+sealed trait ValueType extends StObject
 @JSImport("xelib", "ValueType")
 @js.native
-object ValueType extends js.Object {
+object ValueType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ValueType with Double] = js.native
   
   @js.native
   sealed trait vtArray extends ValueType
-  /* 9 */ @js.native
-  object vtArray extends TopLevel[vtArray with Double]
+  /* 9 */ val vtArray: typings.xelib.mod.ValueType.vtArray with Double = js.native
   
   @js.native
   sealed trait vtBytes extends ValueType
-  /* 1 */ @js.native
-  object vtBytes extends TopLevel[vtBytes with Double]
+  /* 1 */ val vtBytes: typings.xelib.mod.ValueType.vtBytes with Double = js.native
   
   @js.native
   sealed trait vtColor extends ValueType
-  /* 8 */ @js.native
-  object vtColor extends TopLevel[vtColor with Double]
+  /* 8 */ val vtColor: typings.xelib.mod.ValueType.vtColor with Double = js.native
   
   @js.native
   sealed trait vtEnum extends ValueType
-  /* 7 */ @js.native
-  object vtEnum extends TopLevel[vtEnum with Double]
+  /* 7 */ val vtEnum: typings.xelib.mod.ValueType.vtEnum with Double = js.native
   
   @js.native
   sealed trait vtFlags extends ValueType
-  /* 6 */ @js.native
-  object vtFlags extends TopLevel[vtFlags with Double]
+  /* 6 */ val vtFlags: typings.xelib.mod.ValueType.vtFlags with Double = js.native
   
   @js.native
   sealed trait vtNumber extends ValueType
-  /* 2 */ @js.native
-  object vtNumber extends TopLevel[vtNumber with Double]
+  /* 2 */ val vtNumber: typings.xelib.mod.ValueType.vtNumber with Double = js.native
   
   @js.native
   sealed trait vtReference extends ValueType
-  /* 5 */ @js.native
-  object vtReference extends TopLevel[vtReference with Double]
+  /* 5 */ val vtReference: typings.xelib.mod.ValueType.vtReference with Double = js.native
   
   @js.native
   sealed trait vtString extends ValueType
-  /* 3 */ @js.native
-  object vtString extends TopLevel[vtString with Double]
+  /* 3 */ val vtString: typings.xelib.mod.ValueType.vtString with Double = js.native
   
   @js.native
   sealed trait vtStruct extends ValueType
-  /* 10 */ @js.native
-  object vtStruct extends TopLevel[vtStruct with Double]
+  /* 10 */ val vtStruct: typings.xelib.mod.ValueType.vtStruct with Double = js.native
   
   @js.native
   sealed trait vtText extends ValueType
-  /* 4 */ @js.native
-  object vtText extends TopLevel[vtText with Double]
+  /* 4 */ val vtText: typings.xelib.mod.ValueType.vtText with Double = js.native
   
   @js.native
   sealed trait vtUnknown extends ValueType
-  /* 0 */ @js.native
-  object vtUnknown extends TopLevel[vtUnknown with Double]
+  /* 0 */ val vtUnknown: typings.xelib.mod.ValueType.vtUnknown with Double = js.native
 }

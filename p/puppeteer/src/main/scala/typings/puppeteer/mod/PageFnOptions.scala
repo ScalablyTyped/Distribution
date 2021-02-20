@@ -2,6 +2,7 @@ package typings.puppeteer.mod
 
 import typings.puppeteer.puppeteerStrings.mutation
 import typings.puppeteer.puppeteerStrings.raf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object PageFnOptions {
   }
   
   @scala.inline
-  implicit class PageFnOptionsOps[Self <: PageFnOptions] (val x: Self) extends AnyVal {
+  implicit class PageFnOptionsMutableBuilder[Self <: PageFnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolling(value: raf | mutation | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolling(value: raf | mutation | Double): Self = this.set("polling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolling: Self = this.set("polling", js.undefined)
+    def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
   }
 }

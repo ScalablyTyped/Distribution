@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLoggingOptionsResponse extends js.Object {
+trait DescribeLoggingOptionsResponse extends StObject {
   
   /**
     * The current settings of the AWS IoT Events logging options.
@@ -21,24 +22,12 @@ object DescribeLoggingOptionsResponse {
   }
   
   @scala.inline
-  implicit class DescribeLoggingOptionsResponseOps[Self <: DescribeLoggingOptionsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLoggingOptionsResponseMutableBuilder[Self <: DescribeLoggingOptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoggingOptions(value: LoggingOptions): Self = StObject.set(x, "loggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoggingOptions(value: LoggingOptions): Self = this.set("loggingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingOptions: Self = this.set("loggingOptions", js.undefined)
+    def setLoggingOptionsUndefined: Self = StObject.set(x, "loggingOptions", js.undefined)
   }
 }

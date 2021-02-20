@@ -29,6 +29,7 @@ import typings.devextreme.devextremeStrings.thousands
 import typings.devextreme.devextremeStrings.trillions
 import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.ui._format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,50 +58,38 @@ object Currency {
   }
   
   @scala.inline
-  implicit class CurrencyOps[Self <: Currency] (val x: Self) extends AnyVal {
+  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatter(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setParser(value: /* value */ String => Double | typings.std.Date): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatter(value: /* value */ Double | typings.std.Date => String): Self = this.set("formatter", js.Any.fromFunction1(value))
+    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParser(value: /* value */ String => Double | typings.std.Date): Self = this.set("parser", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteParser: Self = this.set("parser", js.undefined)
-    
-    @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
     def setType(
       value: billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

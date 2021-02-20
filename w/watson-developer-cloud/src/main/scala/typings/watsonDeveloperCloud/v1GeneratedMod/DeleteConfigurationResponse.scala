@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DeleteConfigurationResponse. */
 @js.native
-trait DeleteConfigurationResponse extends js.Object {
+trait DeleteConfigurationResponse extends StObject {
   
   /** The unique identifier for the configuration. */
   var configuration_id: String = js.native
@@ -26,33 +27,21 @@ object DeleteConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DeleteConfigurationResponseOps[Self <: DeleteConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteConfigurationResponseMutableBuilder[Self <: DeleteConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
     
     @scala.inline
-    def setConfiguration_id(value: String): Self = this.set("configuration_id", value.asInstanceOf[js.Any])
+    def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoticesVarargs(value: Notice*): Self = this.set("notices", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotices(value: js.Array[Notice]): Self = this.set("notices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotices: Self = this.set("notices", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

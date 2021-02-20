@@ -1,13 +1,14 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.anon.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "ErrorMessageTracker")
 @js.native
-class ErrorMessageTracker () extends js.Object {
+class ErrorMessageTracker () extends StObject {
   
   var _messages: js.Any = js.native
   

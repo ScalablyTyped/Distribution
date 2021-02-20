@@ -1,18 +1,19 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PowerFormSendersResponse extends js.Object {
+trait PowerFormSendersResponse extends StObject {
   
   /**
     * The last index position in the result set.
     */
   var endPosition: js.UndefOr[Double] = js.native
   
-   // int32
+  // int32
   /**
     * The URI for the next chunk of records based on the search request. It is `null` if this is the last set of results for the search.
     */
@@ -33,13 +34,13 @@ trait PowerFormSendersResponse extends js.Object {
     */
   var resultSetSize: js.UndefOr[Double] = js.native
   
-   // int32
+  // int32
   /**
     * The starting index position of the current result set.
     */
   var startPosition: js.UndefOr[Double] = js.native
   
-   // int32
+  // int32
   /**
     * The total number of items in the result set. This value is always greater than or equal to the value of `resultSetSize`.
     */
@@ -54,63 +55,51 @@ object PowerFormSendersResponse {
   }
   
   @scala.inline
-  implicit class PowerFormSendersResponseOps[Self <: PowerFormSendersResponse] (val x: Self) extends AnyVal {
+  implicit class PowerFormSendersResponseMutableBuilder[Self <: PowerFormSendersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: Double): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setPowerFormSenders(value: js.Array[UserInfo]): Self = StObject.set(x, "powerFormSenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextUri(value: String): Self = this.set("nextUri", value.asInstanceOf[js.Any])
+    def setPowerFormSendersUndefined: Self = StObject.set(x, "powerFormSenders", js.undefined)
     
     @scala.inline
-    def deleteNextUri: Self = this.set("nextUri", js.undefined)
+    def setPowerFormSendersVarargs(value: UserInfo*): Self = StObject.set(x, "powerFormSenders", js.Array(value :_*))
     
     @scala.inline
-    def setPowerFormSendersVarargs(value: UserInfo*): Self = this.set("powerFormSenders", js.Array(value :_*))
+    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerFormSenders(value: js.Array[UserInfo]): Self = this.set("powerFormSenders", value.asInstanceOf[js.Any])
+    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
     @scala.inline
-    def deletePowerFormSenders: Self = this.set("powerFormSenders", js.undefined)
+    def setResultSetSize(value: Double): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousUri(value: String): Self = this.set("previousUri", value.asInstanceOf[js.Any])
+    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
     @scala.inline
-    def deletePreviousUri: Self = this.set("previousUri", js.undefined)
+    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSetSize(value: Double): Self = this.set("resultSetSize", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteResultSetSize: Self = this.set("resultSetSize", js.undefined)
+    def setTotalSetSize(value: Double): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: Double): Self = this.set("startPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
-    
-    @scala.inline
-    def setTotalSetSize(value: Double): Self = this.set("totalSetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSetSize: Self = this.set("totalSetSize", js.undefined)
+    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

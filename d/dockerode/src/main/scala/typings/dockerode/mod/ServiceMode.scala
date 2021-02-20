@@ -2,12 +2,13 @@ package typings.dockerode.mod
 
 import typings.dockerode.anon.MaxConcurrent
 import typings.dockerode.anon.Replicas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceMode extends js.Object {
+trait ServiceMode extends StObject {
   
   var Global: js.UndefOr[js.Object] = js.native
   
@@ -26,42 +27,30 @@ object ServiceMode {
   }
   
   @scala.inline
-  implicit class ServiceModeOps[Self <: ServiceMode] (val x: Self) extends AnyVal {
+  implicit class ServiceModeMutableBuilder[Self <: ServiceMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobal(value: js.Object): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalJob(value: js.Object): Self = StObject.set(x, "GlobalJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalJobUndefined: Self = StObject.set(x, "GlobalJob", js.undefined)
     
     @scala.inline
-    def setGlobal(value: js.Object): Self = this.set("Global", value.asInstanceOf[js.Any])
+    def setGlobalUndefined: Self = StObject.set(x, "Global", js.undefined)
     
     @scala.inline
-    def deleteGlobal: Self = this.set("Global", js.undefined)
+    def setReplicated(value: Replicas): Self = StObject.set(x, "Replicated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalJob(value: js.Object): Self = this.set("GlobalJob", value.asInstanceOf[js.Any])
+    def setReplicatedJob(value: MaxConcurrent): Self = StObject.set(x, "ReplicatedJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalJob: Self = this.set("GlobalJob", js.undefined)
+    def setReplicatedJobUndefined: Self = StObject.set(x, "ReplicatedJob", js.undefined)
     
     @scala.inline
-    def setReplicated(value: Replicas): Self = this.set("Replicated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicated: Self = this.set("Replicated", js.undefined)
-    
-    @scala.inline
-    def setReplicatedJob(value: MaxConcurrent): Self = this.set("ReplicatedJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicatedJob: Self = this.set("ReplicatedJob", js.undefined)
+    def setReplicatedUndefined: Self = StObject.set(x, "Replicated", js.undefined)
   }
 }

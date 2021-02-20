@@ -3,6 +3,7 @@ package typings.antdMobile.mod
 import typings.antdMobile.anon.ListPrefixCls
 import typings.antdMobile.anon.TypeofIndexedList
 import typings.antdMobile.listViewMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ListView () extends default
 /* static members */
-@JSImport("antd-mobile", "ListView")
-@js.native
-object ListView extends js.Object {
+object ListView {
   
-  var DataSource: js.Any = js.native
+  @JSImport("antd-mobile", "ListView")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var IndexedList: TypeofIndexedList = js.native
+  @JSImport("antd-mobile", "ListView.DataSource")
+  @js.native
+  def DataSource: js.Any = js.native
+  @scala.inline
+  def DataSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
   
-  var defaultProps: ListPrefixCls = js.native
+  @JSImport("antd-mobile", "ListView.IndexedList")
+  @js.native
+  def IndexedList: TypeofIndexedList = js.native
+  @scala.inline
+  def IndexedList_=(x: TypeofIndexedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedList")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile", "ListView.defaultProps")
+  @js.native
+  def defaultProps: ListPrefixCls = js.native
+  @scala.inline
+  def defaultProps_=(x: ListPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

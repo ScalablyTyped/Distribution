@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SipMediaApplicationEndpoint extends js.Object {
+trait SipMediaApplicationEndpoint extends StObject {
   
   /**
     * Valid Amazon Resource Name (ARN) of the Lambda function of the same AWS Region where the SIP media application is created.
@@ -21,24 +22,12 @@ object SipMediaApplicationEndpoint {
   }
   
   @scala.inline
-  implicit class SipMediaApplicationEndpointOps[Self <: SipMediaApplicationEndpoint] (val x: Self) extends AnyVal {
+  implicit class SipMediaApplicationEndpointMutableBuilder[Self <: SipMediaApplicationEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLambdaArn(value: FunctionArn): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLambdaArn(value: FunctionArn): Self = this.set("LambdaArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambdaArn: Self = this.set("LambdaArn", js.undefined)
+    def setLambdaArnUndefined: Self = StObject.set(x, "LambdaArn", js.undefined)
   }
 }

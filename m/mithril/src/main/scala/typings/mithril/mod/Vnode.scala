@@ -1,12 +1,13 @@
 package typings.mithril.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Virtual DOM nodes, or vnodes, are Javascript objects that represent an element (or parts of the DOM). */
 @js.native
-trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends js.Object {
+trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends StObject {
   
   /** A hashmap of DOM attributes, events, properties and lifecycle methods. */
   var attrs: Attrs = js.native
@@ -39,48 +40,36 @@ object Vnode {
   }
   
   @scala.inline
-  implicit class VnodeOps[Self <: Vnode[_, _], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self with (Vnode[Attrs, State])) extends AnyVal {
+  implicit class VnodeMutableBuilder[Self <: Vnode[_, _], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self with (Vnode[Attrs, State])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: ChildArrayOrPrimitive): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setAttrs(value: Attrs): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: State): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setTagFunction1(value: /* vnode */ Vnode[Attrs, js.Object] => Component[Attrs, js.Object]): Self = this.set("tag", js.Any.fromFunction1(value))
+    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String | (ComponentTypes[Attrs, State])): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: String | (ComponentTypes[Attrs, State])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ChildArrayOrPrimitive): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setTagFunction1(value: /* vnode */ Vnode[Attrs, js.Object] => Component[Attrs, js.Object]): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setText(value: String | Double | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | Double): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setText(value: String | Double | Boolean): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

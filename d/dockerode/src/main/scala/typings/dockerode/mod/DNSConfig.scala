@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DNSConfig extends js.Object {
+trait DNSConfig extends StObject {
   
   var Nameservers: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,45 +23,33 @@ object DNSConfig {
   }
   
   @scala.inline
-  implicit class DNSConfigOps[Self <: DNSConfig] (val x: Self) extends AnyVal {
+  implicit class DNSConfigMutableBuilder[Self <: DNSConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameservers(value: js.Array[String]): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameserversUndefined: Self = StObject.set(x, "Nameservers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameserversVarargs(value: String*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
     
     @scala.inline
-    def setNameserversVarargs(value: String*): Self = this.set("Nameservers", js.Array(value :_*))
+    def setOptions(value: js.Array[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameservers(value: js.Array[String]): Self = this.set("Nameservers", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     @scala.inline
-    def deleteNameservers: Self = this.set("Nameservers", js.undefined)
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "Options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("Options", js.Array(value :_*))
+    def setSearch(value: js.Array[String]): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[String]): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("Options", js.undefined)
-    
-    @scala.inline
-    def setSearchVarargs(value: String*): Self = this.set("Search", js.Array(value :_*))
-    
-    @scala.inline
-    def setSearch(value: js.Array[String]): Self = this.set("Search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("Search", js.undefined)
+    def setSearchVarargs(value: String*): Self = StObject.set(x, "Search", js.Array(value :_*))
   }
 }

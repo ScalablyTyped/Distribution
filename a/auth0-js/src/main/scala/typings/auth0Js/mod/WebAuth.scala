@@ -1,13 +1,14 @@
 package typings.auth0Js.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "WebAuth")
 @js.native
-class WebAuth protected () extends js.Object {
+class WebAuth protected () extends StObject {
   def this(options: AuthOptions) = this()
   
   /**

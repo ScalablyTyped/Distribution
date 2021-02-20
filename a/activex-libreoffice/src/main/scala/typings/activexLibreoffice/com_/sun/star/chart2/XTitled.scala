@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object XTitled {
   }
   
   @scala.inline
-  implicit class XTitledOps[Self <: XTitled] (val x: Self) extends AnyVal {
+  implicit class XTitledMutableBuilder[Self <: XTitled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTitleObject(value: () => XTitle): Self = StObject.set(x, "getTitleObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetTitleObject(value: XTitle => Unit): Self = StObject.set(x, "setTitleObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTitleObject(value: XTitle): Self = this.set("TitleObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetTitleObject(value: () => XTitle): Self = this.set("getTitleObject", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetTitleObject(value: XTitle => Unit): Self = this.set("setTitleObject", js.Any.fromFunction1(value))
+    def setTitleObject(value: XTitle): Self = StObject.set(x, "TitleObject", value.asInstanceOf[js.Any])
   }
 }

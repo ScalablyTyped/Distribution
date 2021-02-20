@@ -1,12 +1,13 @@
 package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerBuild extends js.Object {
+trait ContainerBuild extends StObject {
   
   /**
     * An optional map of named build-time argument variables to set during the Docker build.  This flag allows you
@@ -45,42 +46,30 @@ object ContainerBuild {
   }
   
   @scala.inline
-  implicit class ContainerBuildOps[Self <: ContainerBuild] (val x: Self) extends AnyVal {
+  implicit class ContainerBuildMutableBuilder[Self <: ContainerBuild] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: StringDictionary[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheFrom(value: Boolean | CacheFrom): Self = StObject.set(x, "cacheFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: StringDictionary[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setCacheFromUndefined: Self = StObject.set(x, "cacheFrom", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheFrom(value: Boolean | CacheFrom): Self = this.set("cacheFrom", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCacheFrom: Self = this.set("cacheFrom", js.undefined)
+    def setDockerfile(value: String): Self = StObject.set(x, "dockerfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setDockerfile(value: String): Self = this.set("dockerfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDockerfile: Self = this.set("dockerfile", js.undefined)
+    def setDockerfileUndefined: Self = StObject.set(x, "dockerfile", js.undefined)
   }
 }

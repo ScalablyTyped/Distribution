@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.suppress
   - typings.microsoftGraph.microsoftGraphStrings.force
 */
-trait Win32LobAppRestartBehavior extends js.Object
+trait Win32LobAppRestartBehavior extends StObject
 object Win32LobAppRestartBehavior {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalTopBottomCriterionType extends js.Object
+sealed trait ConditionalTopBottomCriterionType extends StObject
 /**
   *
   * Represents the criteria for the above/below average conditional format type.
@@ -14,7 +15,7 @@ sealed trait ConditionalTopBottomCriterionType extends js.Object
   */
 @JSGlobal("Excel.ConditionalTopBottomCriterionType")
 @js.native
-object ConditionalTopBottomCriterionType extends js.Object {
+object ConditionalTopBottomCriterionType extends StObject {
   
   @js.native
   sealed trait bottomItems extends ConditionalTopBottomCriterionType

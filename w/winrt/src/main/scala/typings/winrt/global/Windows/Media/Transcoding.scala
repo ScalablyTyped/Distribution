@@ -1,23 +1,25 @@
 package typings.winrt.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Transcoding")
-@js.native
-object Transcoding extends js.Object {
+object Transcoding {
   
+  @JSGlobal("Windows.Media.Transcoding.MediaTranscoder")
   @js.native
   class MediaTranscoder ()
     extends typings.winrt.Windows.Media.Transcoding.MediaTranscoder
   
+  @JSGlobal("Windows.Media.Transcoding.PrepareTranscodeResult")
   @js.native
   class PrepareTranscodeResult ()
     extends typings.winrt.Windows.Media.Transcoding.PrepareTranscodeResult
   
+  @JSGlobal("Windows.Media.Transcoding.TranscodeFailureReason")
   @js.native
-  object TranscodeFailureReason extends js.Object {
+  object TranscodeFailureReason extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason with Double] = js.native

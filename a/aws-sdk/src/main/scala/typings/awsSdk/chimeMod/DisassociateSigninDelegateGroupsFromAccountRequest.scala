@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateSigninDelegateGroupsFromAccountRequest extends js.Object {
+trait DisassociateSigninDelegateGroupsFromAccountRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -26,27 +27,15 @@ object DisassociateSigninDelegateGroupsFromAccountRequest {
   }
   
   @scala.inline
-  implicit class DisassociateSigninDelegateGroupsFromAccountRequestOps[Self <: DisassociateSigninDelegateGroupsFromAccountRequest] (val x: Self) extends AnyVal {
+  implicit class DisassociateSigninDelegateGroupsFromAccountRequestMutableBuilder[Self <: DisassociateSigninDelegateGroupsFromAccountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupNames(value: NonEmptyStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupNamesVarargs(value: String*): Self = this.set("GroupNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupNames(value: NonEmptyStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
+    def setGroupNamesVarargs(value: String*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
   }
 }

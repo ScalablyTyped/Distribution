@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurationRange extends js.Object {
+trait DurationRange extends StObject {
   
   /**
     * The maximum value of the duration range. Must be less than or equal to 604800 seconds (1 week).
@@ -26,30 +27,18 @@ object DurationRange {
   }
   
   @scala.inline
-  implicit class DurationRangeOps[Self <: DurationRange] (val x: Self) extends AnyVal {
+  implicit class DurationRangeMutableBuilder[Self <: DurationRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "maxSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSecondsUndefined: Self = StObject.set(x, "maxSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "minSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSeconds(value: AssessmentRunDuration): Self = this.set("maxSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSeconds: Self = this.set("maxSeconds", js.undefined)
-    
-    @scala.inline
-    def setMinSeconds(value: AssessmentRunDuration): Self = this.set("minSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSeconds: Self = this.set("minSeconds", js.undefined)
+    def setMinSecondsUndefined: Self = StObject.set(x, "minSeconds", js.undefined)
   }
 }

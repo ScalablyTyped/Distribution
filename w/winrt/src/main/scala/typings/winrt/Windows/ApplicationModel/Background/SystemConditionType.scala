@@ -1,14 +1,15 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemConditionType extends js.Object
+sealed trait SystemConditionType extends StObject
 @JSGlobal("Windows.ApplicationModel.Background.SystemConditionType")
 @js.native
-object SystemConditionType extends js.Object {
+object SystemConditionType extends StObject {
   
   @js.native
   sealed trait internetAvailable extends SystemConditionType

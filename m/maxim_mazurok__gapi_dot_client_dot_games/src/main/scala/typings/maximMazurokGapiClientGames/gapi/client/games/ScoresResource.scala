@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientGames.anon.QuotaUser
 import typings.maximMazurokGapiClientGames.anon.Resource
 import typings.maximMazurokGapiClientGames.anon.ResultsAbove
 import typings.maximMazurokGapiClientGames.anon.Score
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScoresResource extends js.Object {
+trait ScoresResource extends StObject {
   
   /**
     * Get high scores, and optionally ranks, in leaderboards for the currently authenticated player. For a specific time span, `leaderboardId` can be set to `ALL` to retrieve data for all

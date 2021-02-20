@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object ItemDefinition {
   }
   
   @scala.inline
-  implicit class ItemDefinitionOps[Self <: ItemDefinition] (val x: Self) extends AnyVal {
+  implicit class ItemDefinitionMutableBuilder[Self <: ItemDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImport(value: Import): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemKind(value: ItemKind): Self = StObject.set(x, "itemKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImport(value: Import): Self = this.set("import", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsCollection(value: Boolean): Self = this.set("isCollection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemKind(value: ItemKind): Self = this.set("itemKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureRef(value: String): Self = this.set("structureRef", value.asInstanceOf[js.Any])
+    def setStructureRef(value: String): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcquisitionOptions extends js.Object {
+trait AcquisitionOptions extends StObject {
   
   /**
     * Default Operation for the ItemId in this target
@@ -41,33 +42,21 @@ object AcquisitionOptions {
   }
   
   @scala.inline
-  implicit class AcquisitionOptionsOps[Self <: AcquisitionOptions] (val x: Self) extends AnyVal {
+  implicit class AcquisitionOptionsMutableBuilder[Self <: AcquisitionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultOperation(value: AcquisitionOperation): Self = StObject.set(x, "defaultOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperations(value: js.Array[AcquisitionOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOperation(value: AcquisitionOperation): Self = this.set("defaultOperation", value.asInstanceOf[js.Any])
+    def setOperationsVarargs(value: AcquisitionOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
     @scala.inline
-    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperationsVarargs(value: AcquisitionOperation*): Self = this.set("operations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperations(value: js.Array[AcquisitionOperation]): Self = this.set("operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

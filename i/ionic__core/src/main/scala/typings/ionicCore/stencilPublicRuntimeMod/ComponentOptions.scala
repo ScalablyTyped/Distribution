@@ -1,12 +1,13 @@
 package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentOptions extends js.Object {
+trait ComponentOptions extends StObject {
   
   /**
     * Array of relative links to folders of assets required by the component.
@@ -62,63 +63,51 @@ object ComponentOptions {
   }
   
   @scala.inline
-  implicit class ComponentOptionsOps[Self <: ComponentOptions] (val x: Self) extends AnyVal {
+  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetsDirs(value: js.Array[String]): Self = StObject.set(x, "assetsDirs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsDirsUndefined: Self = StObject.set(x, "assetsDirs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetsDirsVarargs(value: String*): Self = StObject.set(x, "assetsDirs", js.Array(value :_*))
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetsDirsVarargs(value: String*): Self = this.set("assetsDirs", js.Array(value :_*))
+    def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
     @scala.inline
-    def setAssetsDirs(value: js.Array[String]): Self = this.set("assetsDirs", value.asInstanceOf[js.Any])
+    def setShadow(value: Boolean | ShadowRootOptions): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetsDirs: Self = this.set("assetsDirs", js.undefined)
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def setScoped(value: Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
+    def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScoped: Self = this.set("scoped", js.undefined)
+    def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
     
     @scala.inline
-    def setShadow(value: Boolean | ShadowRootOptions): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setStyleUrls(value: js.Array[String] | ModeStyles): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
     @scala.inline
-    def setStyleUrl(value: String): Self = this.set("styleUrl", value.asInstanceOf[js.Any])
+    def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
     
     @scala.inline
-    def deleteStyleUrl: Self = this.set("styleUrl", js.undefined)
+    def setStyles(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleUrlsVarargs(value: String*): Self = this.set("styleUrls", js.Array(value :_*))
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStyleUrls(value: js.Array[String] | ModeStyles): Self = this.set("styleUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleUrls: Self = this.set("styleUrls", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: String | StringDictionary[js.Any]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

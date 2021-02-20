@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagnosticMessageChain extends js.Object {
+trait DiagnosticMessageChain extends StObject {
   
   var category: DiagnosticCategory = js.native
   
@@ -24,36 +25,24 @@ object DiagnosticMessageChain {
   }
   
   @scala.inline
-  implicit class DiagnosticMessageChainOps[Self <: DiagnosticMessageChain] (val x: Self) extends AnyVal {
+  implicit class DiagnosticMessageChainMutableBuilder[Self <: DiagnosticMessageChain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: DiagnosticCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageText(value: java.lang.String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: DiagnosticCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setNext(value: js.Array[DiagnosticMessageChain]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def setMessageText(value: java.lang.String): Self = this.set("messageText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextVarargs(value: DiagnosticMessageChain*): Self = this.set("next", js.Array(value :_*))
-    
-    @scala.inline
-    def setNext(value: js.Array[DiagnosticMessageChain]): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setNextVarargs(value: DiagnosticMessageChain*): Self = StObject.set(x, "next", js.Array(value :_*))
   }
 }

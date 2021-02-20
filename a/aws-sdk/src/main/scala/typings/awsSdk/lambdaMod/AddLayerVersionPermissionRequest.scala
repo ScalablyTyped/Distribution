@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddLayerVersionPermissionRequest extends js.Object {
+trait AddLayerVersionPermissionRequest extends StObject {
   
   /**
     * The API action that grants access to the layer. For example, lambda:GetLayerVersion.
@@ -57,45 +58,33 @@ object AddLayerVersionPermissionRequest {
   }
   
   @scala.inline
-  implicit class AddLayerVersionPermissionRequestOps[Self <: AddLayerVersionPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class AddLayerVersionPermissionRequestMutableBuilder[Self <: AddLayerVersionPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: LayerPermissionAllowedAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: LayerPermissionAllowedAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
     @scala.inline
-    def setLayerName(value: LayerName): Self = this.set("LayerName", value.asInstanceOf[js.Any])
+    def setPrincipal(value: LayerPermissionAllowedPrincipal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipal(value: LayerPermissionAllowedPrincipal): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatementId(value: StatementId): Self = this.set("StatementId", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def setVersionNumber(value: LayerVersionNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
-    
-    @scala.inline
-    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setVersionNumber(value: LayerVersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

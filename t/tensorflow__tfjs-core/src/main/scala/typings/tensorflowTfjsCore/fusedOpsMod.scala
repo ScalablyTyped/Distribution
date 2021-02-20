@@ -7,33 +7,26 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/fused_ops", JSImport.Namespace)
-@js.native
-object fusedOpsMod extends js.Object {
+object fusedOpsMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/fused_ops", "conv2d")
   @js.native
-  object conv2d extends js.Object {
-    
-    def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
-    ): T = js.native
-  }
+  def conv2d[T /* <: Tensor3D | Tensor4D */](
+    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
+  ): T = js.native
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/fused_ops", "depthwiseConv2d")
   @js.native
-  object depthwiseConv2d extends js.Object {
-    
-    def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Bias[T]
-    ): T = js.native
-  }
+  def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
+    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Bias[T]
+  ): T = js.native
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/fused_ops", "matMul")
   @js.native
-  object matMul extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = js.native
-  }
+  def matMul[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = js.native
 }

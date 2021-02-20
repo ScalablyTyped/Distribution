@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRdsDbInstancesResult extends js.Object {
+trait DescribeRdsDbInstancesResult extends StObject {
   
   /**
     * An a array of RdsDbInstance objects that describe the instances.
@@ -21,27 +22,15 @@ object DescribeRdsDbInstancesResult {
   }
   
   @scala.inline
-  implicit class DescribeRdsDbInstancesResultOps[Self <: DescribeRdsDbInstancesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeRdsDbInstancesResultMutableBuilder[Self <: DescribeRdsDbInstancesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRdsDbInstances(value: RdsDbInstances): Self = StObject.set(x, "RdsDbInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRdsDbInstancesUndefined: Self = StObject.set(x, "RdsDbInstances", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRdsDbInstancesVarargs(value: RdsDbInstance*): Self = this.set("RdsDbInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setRdsDbInstances(value: RdsDbInstances): Self = this.set("RdsDbInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRdsDbInstances: Self = this.set("RdsDbInstances", js.undefined)
+    def setRdsDbInstancesVarargs(value: RdsDbInstance*): Self = StObject.set(x, "RdsDbInstances", js.Array(value :_*))
   }
 }

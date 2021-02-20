@@ -8,14 +8,14 @@ import typings.sipJs.invitationRejectOptionsMod.InvitationRejectOptions
 import typings.sipJs.inviteMod.IncomingInviteRequest
 import typings.sipJs.sessionMod.Session
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/invitation", JSImport.Namespace)
-@js.native
-object invitationMod extends js.Object {
+object invitationMod {
   
+  @JSImport("sip.js/lib/api/invitation", "Invitation")
   @js.native
   class Invitation protected () extends Session {
     /** @internal */

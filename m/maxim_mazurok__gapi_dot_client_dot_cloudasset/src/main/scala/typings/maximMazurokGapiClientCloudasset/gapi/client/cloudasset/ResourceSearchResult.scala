@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceSearchResult extends js.Object {
+trait ResourceSearchResult extends StObject {
   
   /**
     * The additional searchable attributes of this resource. The attributes may vary from one resource type to another. Examples: `projectId` for Project, `dnsName` for DNS ManagedZone.
@@ -81,83 +82,71 @@ object ResourceSearchResult {
   }
   
   @scala.inline
-  implicit class ResourceSearchResultOps[Self <: ResourceSearchResult] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ResourceSearchResultMutableBuilder[Self <: ResourceSearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAdditionalAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult with TopLevel[js.Any]
-    ): Self = this.set("additionalAttributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "additionalAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalAttributes: Self = this.set("additionalAttributes", js.undefined)
+    def setAdditionalAttributesUndefined: Self = StObject.set(x, "additionalAttributes", js.undefined)
     
     @scala.inline
-    def setAssetType(value: String): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNetworkTagsVarargs(value: String*): Self = this.set("networkTags", js.Array(value :_*))
+    def setNetworkTags(value: js.Array[String]): Self = StObject.set(x, "networkTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkTags(value: js.Array[String]): Self = this.set("networkTags", value.asInstanceOf[js.Any])
+    def setNetworkTagsUndefined: Self = StObject.set(x, "networkTags", js.undefined)
     
     @scala.inline
-    def deleteNetworkTags: Self = this.set("networkTags", js.undefined)
+    def setNetworkTagsVarargs(value: String*): Self = StObject.set(x, "networkTags", js.Array(value :_*))
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

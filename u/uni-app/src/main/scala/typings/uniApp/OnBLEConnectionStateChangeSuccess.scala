@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnBLEConnectionStateChangeSuccess extends js.Object {
+trait OnBLEConnectionStateChangeSuccess extends StObject {
   
   /**
     * 连接目前的状态
@@ -26,30 +27,18 @@ object OnBLEConnectionStateChangeSuccess {
   }
   
   @scala.inline
-  implicit class OnBLEConnectionStateChangeSuccessOps[Self <: OnBLEConnectionStateChangeSuccess] (val x: Self) extends AnyVal {
+  implicit class OnBLEConnectionStateChangeSuccessMutableBuilder[Self <: OnBLEConnectionStateChangeSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected(value: Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnected: Self = this.set("connected", js.undefined)
-    
-    @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
   }
 }

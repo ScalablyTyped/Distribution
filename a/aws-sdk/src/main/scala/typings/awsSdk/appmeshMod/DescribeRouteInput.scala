@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRouteInput extends js.Object {
+trait DescribeRouteInput extends StObject {
   
   /**
     * The name of the service mesh that the route resides in.
@@ -36,33 +37,21 @@ object DescribeRouteInput {
   }
   
   @scala.inline
-  implicit class DescribeRouteInputOps[Self <: DescribeRouteInput] (val x: Self) extends AnyVal {
+  implicit class DescribeRouteInputMutableBuilder[Self <: DescribeRouteInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
     
     @scala.inline
-    def setMeshName(value: ResourceName): Self = this.set("meshName", value.asInstanceOf[js.Any])
+    def setRouteName(value: ResourceName): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteName(value: ResourceName): Self = this.set("routeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualRouterName(value: ResourceName): Self = this.set("virtualRouterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = this.set("meshOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeshOwner: Self = this.set("meshOwner", js.undefined)
+    def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }
 }

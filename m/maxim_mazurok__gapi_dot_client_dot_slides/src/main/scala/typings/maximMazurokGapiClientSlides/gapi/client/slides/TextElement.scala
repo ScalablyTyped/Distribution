@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextElement extends js.Object {
+trait TextElement extends StObject {
   
   /** A TextElement representing a spot in the text that is dynamically replaced with content that can change over time. */
   var autoText: js.UndefOr[AutoText] = js.native
@@ -37,48 +38,36 @@ object TextElement {
   }
   
   @scala.inline
-  implicit class TextElementOps[Self <: TextElement] (val x: Self) extends AnyVal {
+  implicit class TextElementMutableBuilder[Self <: TextElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoText(value: AutoText): Self = this.set("autoText", value.asInstanceOf[js.Any])
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def deleteAutoText: Self = this.set("autoText", js.undefined)
+    def setParagraphMarker(value: ParagraphMarker): Self = StObject.set(x, "paragraphMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setParagraphMarkerUndefined: Self = StObject.set(x, "paragraphMarker", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphMarker(value: ParagraphMarker): Self = this.set("paragraphMarker", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteParagraphMarker: Self = this.set("paragraphMarker", js.undefined)
+    def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
-    
-    @scala.inline
-    def setTextRun(value: TextRun): Self = this.set("textRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextRun: Self = this.set("textRun", js.undefined)
+    def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
   }
 }

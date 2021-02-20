@@ -1,5 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://developer.spotify.com/web-api/get-categorys-playlists/
   */
 @js.native
-trait CategoryPlaylistsResponse extends js.Object {
+trait CategoryPlaylistsResponse extends StObject {
   
   var playlists: PagingObject[PlaylistObjectSimplified] = js.native
 }
@@ -24,21 +25,9 @@ object CategoryPlaylistsResponse {
   }
   
   @scala.inline
-  implicit class CategoryPlaylistsResponseOps[Self <: CategoryPlaylistsResponse] (val x: Self) extends AnyVal {
+  implicit class CategoryPlaylistsResponseMutableBuilder[Self <: CategoryPlaylistsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = this.set("playlists", value.asInstanceOf[js.Any])
+    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
   }
 }

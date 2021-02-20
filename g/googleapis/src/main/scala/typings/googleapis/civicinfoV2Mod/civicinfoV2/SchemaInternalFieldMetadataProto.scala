@@ -1,11 +1,12 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInternalFieldMetadataProto extends js.Object {
+trait SchemaInternalFieldMetadataProto extends StObject {
   
   var isAuto: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object SchemaInternalFieldMetadataProto {
   }
   
   @scala.inline
-  implicit class SchemaInternalFieldMetadataProtoOps[Self <: SchemaInternalFieldMetadataProto] (val x: Self) extends AnyVal {
+  implicit class SchemaInternalFieldMetadataProtoMutableBuilder[Self <: SchemaInternalFieldMetadataProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceSummary(value: SchemaInternalSourceSummaryProto): Self = StObject.set(x, "sourceSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAuto(value: Boolean): Self = this.set("isAuto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsAuto: Self = this.set("isAuto", js.undefined)
-    
-    @scala.inline
-    def setSourceSummary(value: SchemaInternalSourceSummaryProto): Self = this.set("sourceSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSummary: Self = this.set("sourceSummary", js.undefined)
+    def setSourceSummaryUndefined: Self = StObject.set(x, "sourceSummary", js.undefined)
   }
 }

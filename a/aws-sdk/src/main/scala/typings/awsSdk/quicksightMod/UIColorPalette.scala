@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIColorPalette extends js.Object {
+trait UIColorPalette extends StObject {
   
   /**
     * This color is that applies to selected states and buttons.
@@ -96,114 +97,102 @@ object UIColorPalette {
   }
   
   @scala.inline
-  implicit class UIColorPaletteOps[Self <: UIColorPalette] (val x: Self) extends AnyVal {
+  implicit class UIColorPaletteMutableBuilder[Self <: UIColorPalette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccent(value: HexColor): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccentForeground(value: HexColor): Self = StObject.set(x, "AccentForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccentForegroundUndefined: Self = StObject.set(x, "AccentForeground", js.undefined)
     
     @scala.inline
-    def setAccent(value: HexColor): Self = this.set("Accent", value.asInstanceOf[js.Any])
+    def setAccentUndefined: Self = StObject.set(x, "Accent", js.undefined)
     
     @scala.inline
-    def deleteAccent: Self = this.set("Accent", js.undefined)
+    def setDanger(value: HexColor): Self = StObject.set(x, "Danger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccentForeground(value: HexColor): Self = this.set("AccentForeground", value.asInstanceOf[js.Any])
+    def setDangerForeground(value: HexColor): Self = StObject.set(x, "DangerForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccentForeground: Self = this.set("AccentForeground", js.undefined)
+    def setDangerForegroundUndefined: Self = StObject.set(x, "DangerForeground", js.undefined)
     
     @scala.inline
-    def setDanger(value: HexColor): Self = this.set("Danger", value.asInstanceOf[js.Any])
+    def setDangerUndefined: Self = StObject.set(x, "Danger", js.undefined)
     
     @scala.inline
-    def deleteDanger: Self = this.set("Danger", js.undefined)
+    def setDimension(value: HexColor): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDangerForeground(value: HexColor): Self = this.set("DangerForeground", value.asInstanceOf[js.Any])
+    def setDimensionForeground(value: HexColor): Self = StObject.set(x, "DimensionForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDangerForeground: Self = this.set("DangerForeground", js.undefined)
+    def setDimensionForegroundUndefined: Self = StObject.set(x, "DimensionForeground", js.undefined)
     
     @scala.inline
-    def setDimension(value: HexColor): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    def setDimensionUndefined: Self = StObject.set(x, "Dimension", js.undefined)
     
     @scala.inline
-    def deleteDimension: Self = this.set("Dimension", js.undefined)
+    def setMeasure(value: HexColor): Self = StObject.set(x, "Measure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionForeground(value: HexColor): Self = this.set("DimensionForeground", value.asInstanceOf[js.Any])
+    def setMeasureForeground(value: HexColor): Self = StObject.set(x, "MeasureForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensionForeground: Self = this.set("DimensionForeground", js.undefined)
+    def setMeasureForegroundUndefined: Self = StObject.set(x, "MeasureForeground", js.undefined)
     
     @scala.inline
-    def setMeasure(value: HexColor): Self = this.set("Measure", value.asInstanceOf[js.Any])
+    def setMeasureUndefined: Self = StObject.set(x, "Measure", js.undefined)
     
     @scala.inline
-    def deleteMeasure: Self = this.set("Measure", js.undefined)
+    def setPrimaryBackground(value: HexColor): Self = StObject.set(x, "PrimaryBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureForeground(value: HexColor): Self = this.set("MeasureForeground", value.asInstanceOf[js.Any])
+    def setPrimaryBackgroundUndefined: Self = StObject.set(x, "PrimaryBackground", js.undefined)
     
     @scala.inline
-    def deleteMeasureForeground: Self = this.set("MeasureForeground", js.undefined)
+    def setPrimaryForeground(value: HexColor): Self = StObject.set(x, "PrimaryForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryBackground(value: HexColor): Self = this.set("PrimaryBackground", value.asInstanceOf[js.Any])
+    def setPrimaryForegroundUndefined: Self = StObject.set(x, "PrimaryForeground", js.undefined)
     
     @scala.inline
-    def deletePrimaryBackground: Self = this.set("PrimaryBackground", js.undefined)
+    def setSecondaryBackground(value: HexColor): Self = StObject.set(x, "SecondaryBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryForeground(value: HexColor): Self = this.set("PrimaryForeground", value.asInstanceOf[js.Any])
+    def setSecondaryBackgroundUndefined: Self = StObject.set(x, "SecondaryBackground", js.undefined)
     
     @scala.inline
-    def deletePrimaryForeground: Self = this.set("PrimaryForeground", js.undefined)
+    def setSecondaryForeground(value: HexColor): Self = StObject.set(x, "SecondaryForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryBackground(value: HexColor): Self = this.set("SecondaryBackground", value.asInstanceOf[js.Any])
+    def setSecondaryForegroundUndefined: Self = StObject.set(x, "SecondaryForeground", js.undefined)
     
     @scala.inline
-    def deleteSecondaryBackground: Self = this.set("SecondaryBackground", js.undefined)
+    def setSuccess(value: HexColor): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryForeground(value: HexColor): Self = this.set("SecondaryForeground", value.asInstanceOf[js.Any])
+    def setSuccessForeground(value: HexColor): Self = StObject.set(x, "SuccessForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecondaryForeground: Self = this.set("SecondaryForeground", js.undefined)
+    def setSuccessForegroundUndefined: Self = StObject.set(x, "SuccessForeground", js.undefined)
     
     @scala.inline
-    def setSuccess(value: HexColor): Self = this.set("Success", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("Success", js.undefined)
+    def setWarning(value: HexColor): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessForeground(value: HexColor): Self = this.set("SuccessForeground", value.asInstanceOf[js.Any])
+    def setWarningForeground(value: HexColor): Self = StObject.set(x, "WarningForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuccessForeground: Self = this.set("SuccessForeground", js.undefined)
+    def setWarningForegroundUndefined: Self = StObject.set(x, "WarningForeground", js.undefined)
     
     @scala.inline
-    def setWarning(value: HexColor): Self = this.set("Warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("Warning", js.undefined)
-    
-    @scala.inline
-    def setWarningForeground(value: HexColor): Self = this.set("WarningForeground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningForeground: Self = this.set("WarningForeground", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

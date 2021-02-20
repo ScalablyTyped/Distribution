@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecServiceDiscovery extends js.Object {
+trait VirtualNodeSpecServiceDiscovery extends StObject {
   
   /**
     * Specifies any AWS Cloud Map information for the virtual node.
@@ -27,30 +28,18 @@ object VirtualNodeSpecServiceDiscovery {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecServiceDiscoveryOps[Self <: VirtualNodeSpecServiceDiscovery] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecServiceDiscoveryMutableBuilder[Self <: VirtualNodeSpecServiceDiscovery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsCloudMap(value: Input[VirtualNodeSpecServiceDiscoveryAwsCloudMap]): Self = StObject.set(x, "awsCloudMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsCloudMapUndefined: Self = StObject.set(x, "awsCloudMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDns(value: Input[VirtualNodeSpecServiceDiscoveryDns]): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsCloudMap(value: Input[VirtualNodeSpecServiceDiscoveryAwsCloudMap]): Self = this.set("awsCloudMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsCloudMap: Self = this.set("awsCloudMap", js.undefined)
-    
-    @scala.inline
-    def setDns(value: Input[VirtualNodeSpecServiceDiscoveryDns]): Self = this.set("dns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDns: Self = this.set("dns", js.undefined)
+    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
   }
 }

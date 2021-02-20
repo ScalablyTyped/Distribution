@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsConverter.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttrParamMapper extends js.Object {
+trait AttrParamMapper extends StObject {
   
   var AttrParamMapper: Required = js.native
   
@@ -35,36 +36,24 @@ object AttrParamMapper {
   }
   
   @scala.inline
-  implicit class AttrParamMapperOps[Self <: AttrParamMapper] (val x: Self) extends AnyVal {
+  implicit class AttrParamMapperMutableBuilder[Self <: AttrParamMapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrParamMapper(value: Required): Self = StObject.set(x, "AttrParamMapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategory(value: Enum): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputParamMapper(value: Properties): Self = StObject.set(x, "InputParamMapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrParamMapper(value: Required): Self = this.set("AttrParamMapper", value.asInstanceOf[js.Any])
+    def setOpExecutor(value: AdditionalPropertiesType): Self = StObject.set(x, "OpExecutor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: Enum): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setOpMapper(value: AdditionalProperties): Self = StObject.set(x, "OpMapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputParamMapper(value: Properties): Self = this.set("InputParamMapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpExecutor(value: AdditionalPropertiesType): Self = this.set("OpExecutor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpMapper(value: AdditionalProperties): Self = this.set("OpMapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParamTypes(value: Enum): Self = this.set("ParamTypes", value.asInstanceOf[js.Any])
+    def setParamTypes(value: Enum): Self = StObject.set(x, "ParamTypes", value.asInstanceOf[js.Any])
   }
 }

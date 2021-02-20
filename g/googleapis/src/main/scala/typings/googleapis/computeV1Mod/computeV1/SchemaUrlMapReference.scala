@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUrlMapReference extends js.Object {
+trait SchemaUrlMapReference extends StObject {
   
   var urlMap: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object SchemaUrlMapReference {
   }
   
   @scala.inline
-  implicit class SchemaUrlMapReferenceOps[Self <: SchemaUrlMapReference] (val x: Self) extends AnyVal {
+  implicit class SchemaUrlMapReferenceMutableBuilder[Self <: SchemaUrlMapReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUrlMap(value: String): Self = this.set("urlMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlMap: Self = this.set("urlMap", js.undefined)
+    def setUrlMapUndefined: Self = StObject.set(x, "urlMap", js.undefined)
   }
 }

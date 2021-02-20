@@ -5,18 +5,19 @@ import typings.awsSdkSsecMiddleware.anon.Instantiable
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/ssec-middleware", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/ssec-middleware", "ssecMiddleware")
+  @js.native
   def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): js.Any = js.native
   
   @js.native
-  trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends js.Object {
+  trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends StObject {
     
     def base64Encoder(input: Uint8Array): String = js.native
     @JSName("base64Encoder")

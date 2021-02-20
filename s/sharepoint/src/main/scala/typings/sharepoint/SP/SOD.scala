@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SOD extends js.Object {
+trait SOD extends StObject {
   
   def delayUntilEventNotified(func: js.Function1[/* repeated */ js.Any, Unit], eventName: String): Unit = js.native
   

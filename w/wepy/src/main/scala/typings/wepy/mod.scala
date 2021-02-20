@@ -2,20 +2,67 @@ package typings.wepy
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.Shortcut
 import typings.wepy.anon.FnCall
 import typings.wepy.appMod.AppConfig
 import typings.wepy.appMod.AppConstructor
+import typings.wepy.appMod.default
 import typings.wepy.pageMod.PageConstructor
 import typings.wepy.wxEnhancedMod.WxEnhances
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wepy", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val default: DefaultExport = js.native
+  object default extends Shortcut {
+    
+    @JSImport("wepy", JSImport.Default)
+    @js.native
+    val ^ : DefaultExport = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("wepy", "default.app")
+    @js.native
+    class app ()
+      extends typings.wepy.appMod.default
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("wepy", "default.component")
+    @js.native
+    class component ()
+      extends typings.wepy.componentMod.default
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("wepy", "default.event")
+    @js.native
+    class event protected ()
+      extends typings.wepy.eventMod.default {
+      def this(name: String, source: js.Any, `type`: js.Any) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("wepy", "default.mixin")
+    @js.native
+    class mixin ()
+      extends typings.wepy.mixinMod.default
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("wepy", "default.page")
+    @js.native
+    class page ()
+      extends typings.wepy.pageMod.default
+    
+    type _To = DefaultExport
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: DefaultExport = ^
+  }
+  
+  type App = Instantiable0[default]
+  
+  type Component = Instantiable0[typings.wepy.componentMod.default]
   
   @js.native
   trait DefaultExport extends WxEnhances {
@@ -28,13 +75,7 @@ object mod extends js.Object {
     var $copy_Original: FnCall = js.native
     
     @JSName("$createApp")
-    var $createApp: js.UndefOr[
-        js.Function2[
-          /* appClass */ AppConstructor, 
-          /* appConfig */ AppConfig, 
-          typings.wepy.appMod.default
-        ]
-      ] = js.native
+    var $createApp: js.UndefOr[js.Function2[/* appClass */ AppConstructor, /* appConfig */ AppConfig, default]] = js.native
     
     @JSName("$createPage")
     var $createPage: js.UndefOr[
@@ -109,10 +150,6 @@ object mod extends js.Object {
     
     var page: Page = js.native
   }
-  
-  type App = Instantiable0[typings.wepy.appMod.default]
-  
-  type Component = Instantiable0[typings.wepy.componentMod.default]
   
   type Event = Instantiable3[
     /* name */ String, 

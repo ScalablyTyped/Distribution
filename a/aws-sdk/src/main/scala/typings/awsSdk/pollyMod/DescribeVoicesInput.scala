@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVoicesInput extends js.Object {
+trait DescribeVoicesInput extends StObject {
   
   /**
     * Specifies the engine (standard or neural) used by Amazon Polly when processing input text for speech synthesis. 
@@ -36,42 +37,30 @@ object DescribeVoicesInput {
   }
   
   @scala.inline
-  implicit class DescribeVoicesInputOps[Self <: DescribeVoicesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeVoicesInputMutableBuilder[Self <: DescribeVoicesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeAdditionalLanguageCodes(value: IncludeAdditionalLanguageCodes): Self = StObject.set(x, "IncludeAdditionalLanguageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: Engine): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setIncludeAdditionalLanguageCodesUndefined: Self = StObject.set(x, "IncludeAdditionalLanguageCodes", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAdditionalLanguageCodes(value: IncludeAdditionalLanguageCodes): Self = this.set("IncludeAdditionalLanguageCodes", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteIncludeAdditionalLanguageCodes: Self = this.set("IncludeAdditionalLanguageCodes", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

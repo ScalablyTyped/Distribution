@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BgBorder extends js.Object {
+trait BgBorder extends StObject {
   
   var bgBorder: js.UndefOr[String] = js.native
   
@@ -40,96 +41,84 @@ object BgBorder {
   }
   
   @scala.inline
-  implicit class BgBorderOps[Self <: BgBorder] (val x: Self) extends AnyVal {
+  implicit class BgBorderMutableBuilder[Self <: BgBorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgBorder(value: String): Self = StObject.set(x, "bgBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgBorderUndefined: Self = StObject.set(x, "bgBorder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgBorderWidth(value: Double): Self = StObject.set(x, "bgBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgBorder(value: String): Self = this.set("bgBorder", value.asInstanceOf[js.Any])
+    def setBgBorderWidthUndefined: Self = StObject.set(x, "bgBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteBgBorder: Self = this.set("bgBorder", js.undefined)
+    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgBorderWidth(value: Double): Self = this.set("bgBorderWidth", value.asInstanceOf[js.Any])
+    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     @scala.inline
-    def deleteBgBorderWidth: Self = this.set("bgBorderWidth", js.undefined)
+    def setBgHeight(value: Double): Self = StObject.set(x, "bgHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgColor(value: String): Self = this.set("bgColor", value.asInstanceOf[js.Any])
+    def setBgHeightUndefined: Self = StObject.set(x, "bgHeight", js.undefined)
     
     @scala.inline
-    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgHeight(value: Double): Self = this.set("bgHeight", value.asInstanceOf[js.Any])
+    def setBgRadiusUndefined: Self = StObject.set(x, "bgRadius", js.undefined)
     
     @scala.inline
-    def deleteBgHeight: Self = this.set("bgHeight", js.undefined)
+    def setBgWidth(value: Double): Self = StObject.set(x, "bgWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgRadius(value: Double): Self = this.set("bgRadius", value.asInstanceOf[js.Any])
+    def setBgWidthUndefined: Self = StObject.set(x, "bgWidth", js.undefined)
     
     @scala.inline
-    def deleteBgRadius: Self = this.set("bgRadius", js.undefined)
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgWidth(value: Double): Self = this.set("bgWidth", value.asInstanceOf[js.Any])
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def deleteBgWidth: Self = this.set("bgWidth", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setLoadingBackground(value: String): Self = StObject.set(x, "loadingBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setLoadingBackgroundUndefined: Self = StObject.set(x, "loadingBackground", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setLoadingColor(value: String): Self = StObject.set(x, "loadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingBackground(value: String): Self = this.set("loadingBackground", value.asInstanceOf[js.Any])
+    def setLoadingColorUndefined: Self = StObject.set(x, "loadingColor", js.undefined)
     
     @scala.inline
-    def deleteLoadingBackground: Self = this.set("loadingBackground", js.undefined)
+    def setMargin(value: js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingColor(value: String): Self = this.set("loadingColor", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLoadingColor: Self = this.set("loadingColor", js.undefined)
+    def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setMarginVarargs(value: Double*): Self = this.set("margin", js.Array(value :_*))
+    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: js.Array[Double]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
-    
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
-    
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
   }
 }

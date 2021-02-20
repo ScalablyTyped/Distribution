@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateMaintenanceStartTimeInput extends js.Object {
+trait UpdateMaintenanceStartTimeInput extends StObject {
   
   /**
     * The day of the month component of the maintenance start time represented as an ordinal number from 1 to 28, where 1 represents the first day of the month and 28 represents the last day of the month.
@@ -38,39 +39,27 @@ object UpdateMaintenanceStartTimeInput {
   }
   
   @scala.inline
-  implicit class UpdateMaintenanceStartTimeInputOps[Self <: UpdateMaintenanceStartTimeInput] (val x: Self) extends AnyVal {
+  implicit class UpdateMaintenanceStartTimeInputMutableBuilder[Self <: UpdateMaintenanceStartTimeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayOfMonthUndefined: Self = StObject.set(x, "DayOfMonth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "DayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setDayOfWeekUndefined: Self = StObject.set(x, "DayOfWeek", js.undefined)
     
     @scala.inline
-    def setHourOfDay(value: HourOfDay): Self = this.set("HourOfDay", value.asInstanceOf[js.Any])
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinuteOfHour(value: MinuteOfHour): Self = this.set("MinuteOfHour", value.asInstanceOf[js.Any])
+    def setHourOfDay(value: HourOfDay): Self = StObject.set(x, "HourOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfMonth(value: DayOfMonth): Self = this.set("DayOfMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDayOfMonth: Self = this.set("DayOfMonth", js.undefined)
-    
-    @scala.inline
-    def setDayOfWeek(value: DayOfWeek): Self = this.set("DayOfWeek", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDayOfWeek: Self = this.set("DayOfWeek", js.undefined)
+    def setMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "MinuteOfHour", value.asInstanceOf[js.Any])
   }
 }

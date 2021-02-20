@@ -1,18 +1,17 @@
 package typings.jqueryFancytree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object Fancytree extends js.Object {
+  object Fancytree {
     
+    @JSGlobal("Fancytree.FancytreeClickFolderMode")
     @js.native
-    object FancytreeClickFolderMode extends js.Object {
+    object FancytreeClickFolderMode extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.jqueryFancytree.Fancytree.FancytreeClickFolderMode with Double] = js.native
@@ -26,8 +25,9 @@ object global extends js.Object {
       /* 2 */ val expand: typings.jqueryFancytree.Fancytree.FancytreeClickFolderMode.expand with Double = js.native
     }
     
+    @JSGlobal("Fancytree.FancytreeSelectMode")
     @js.native
-    object FancytreeSelectMode extends js.Object {
+    object FancytreeSelectMode extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.jqueryFancytree.Fancytree.FancytreeSelectMode with Double] = js.native

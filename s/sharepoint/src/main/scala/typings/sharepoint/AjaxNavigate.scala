@@ -2,12 +2,13 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLFormElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AjaxNavigate extends js.Object {
+trait AjaxNavigate extends StObject {
   
   def add_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
   
@@ -54,48 +55,36 @@ object AjaxNavigate {
   }
   
   @scala.inline
-  implicit class AjaxNavigateOps[Self <: AjaxNavigate] (val x: Self) extends AnyVal {
+  implicit class AjaxNavigateMutableBuilder[Self <: AjaxNavigate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = StObject.set(x, "add_navigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertMDSURLtoRegularURL(value: String => String): Self = StObject.set(x, "convertMDSURLtoRegularURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetParam(value: String => String): Self = StObject.set(x, "getParam", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = this.set("add_navigate", js.Any.fromFunction1(value))
+    def setGetSavedFormAction(value: () => String): Self = StObject.set(x, "getSavedFormAction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConvertMDSURLtoRegularURL(value: String => String): Self = this.set("convertMDSURLtoRegularURL", js.Any.fromFunction1(value))
+    def setGet_hash(value: () => String): Self = StObject.set(x, "get_hash", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParam(value: String => String): Self = this.set("getParam", js.Any.fromFunction1(value))
+    def setGet_href(value: () => String): Self = StObject.set(x, "get_href", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSavedFormAction(value: () => String): Self = this.set("getSavedFormAction", js.Any.fromFunction0(value))
+    def setGet_search(value: () => String): Self = StObject.set(x, "get_search", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_hash(value: () => String): Self = this.set("get_hash", js.Any.fromFunction0(value))
+    def setRemove_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = StObject.set(x, "remove_navigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_href(value: () => String): Self = this.set("get_href", js.Any.fromFunction0(value))
+    def setSubmit(value: HTMLFormElement => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_search(value: () => String): Self = this.set("get_search", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = this.set("remove_navigate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubmit(value: HTMLFormElement => Unit): Self = this.set("submit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: (String, StringDictionary[String | Double], Boolean, String) => Unit): Self = this.set("update", js.Any.fromFunction4(value))
+    def setUpdate(value: (String, StringDictionary[String | Double], Boolean, String) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
   }
 }

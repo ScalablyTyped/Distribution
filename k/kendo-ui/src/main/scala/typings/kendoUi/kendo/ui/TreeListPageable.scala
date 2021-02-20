@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeListPageable extends js.Object {
+trait TreeListPageable extends StObject {
   
   var alwaysVisible: js.UndefOr[Boolean] = js.native
   
@@ -38,84 +39,72 @@ object TreeListPageable {
   }
   
   @scala.inline
-  implicit class TreeListPageableOps[Self <: TreeListPageable] (val x: Self) extends AnyVal {
+  implicit class TreeListPageableMutableBuilder[Self <: TreeListPageable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysVisibleUndefined: Self = StObject.set(x, "alwaysVisible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonCount(value: Double): Self = StObject.set(x, "buttonCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysVisible(value: Boolean): Self = this.set("alwaysVisible", value.asInstanceOf[js.Any])
+    def setButtonCountUndefined: Self = StObject.set(x, "buttonCount", js.undefined)
     
     @scala.inline
-    def deleteAlwaysVisible: Self = this.set("alwaysVisible", js.undefined)
+    def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonCount(value: Double): Self = this.set("buttonCount", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteButtonCount: Self = this.set("buttonCount", js.undefined)
+    def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: Boolean): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setMessages(value: TreeListPageableMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Boolean): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: TreeListPageableMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumeric(value: Boolean): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteNumeric: Self = this.set("numeric", js.undefined)
+    def setPageSizes(value: Boolean | js.Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPreviousNext(value: Boolean): Self = StObject.set(x, "previousNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizes(value: Boolean | js.Any): Self = this.set("pageSizes", value.asInstanceOf[js.Any])
+    def setPreviousNextUndefined: Self = StObject.set(x, "previousNext", js.undefined)
     
     @scala.inline
-    def deletePageSizes: Self = this.set("pageSizes", js.undefined)
+    def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousNext(value: Boolean): Self = this.set("previousNext", value.asInstanceOf[js.Any])
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
     @scala.inline
-    def deletePreviousNext: Self = this.set("previousNext", js.undefined)
+    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
-    
-    @scala.inline
-    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
   }
 }

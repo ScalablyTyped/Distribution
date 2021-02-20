@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  disableGlobalFilter :boolean | undefined}> */
 @js.native
-trait UseGlobalFiltersColumnOptions[D /* <: js.Object */] extends js.Object {
+trait UseGlobalFiltersColumnOptions[D /* <: js.Object */] extends StObject {
   
   var disableGlobalFilter: js.UndefOr[Boolean] = js.native
 }
@@ -19,24 +20,12 @@ object UseGlobalFiltersColumnOptions {
   }
   
   @scala.inline
-  implicit class UseGlobalFiltersColumnOptionsOps[Self <: UseGlobalFiltersColumnOptions[_], D /* <: js.Object */] (val x: Self with UseGlobalFiltersColumnOptions[D]) extends AnyVal {
+  implicit class UseGlobalFiltersColumnOptionsMutableBuilder[Self <: UseGlobalFiltersColumnOptions[_], D /* <: js.Object */] (val x: Self with UseGlobalFiltersColumnOptions[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisableGlobalFilter(value: Boolean): Self = this.set("disableGlobalFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableGlobalFilter: Self = this.set("disableGlobalFilter", js.undefined)
+    def setDisableGlobalFilterUndefined: Self = StObject.set(x, "disableGlobalFilter", js.undefined)
   }
 }

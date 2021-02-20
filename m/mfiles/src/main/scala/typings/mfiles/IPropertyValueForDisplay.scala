@@ -3,12 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import typings.mfiles.MFiles.MFContentType
 import typings.mfiles.MFiles.MFDataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyValueForDisplay extends js.Object {
+trait IPropertyValueForDisplay extends StObject {
   
   def Clone(): IPropertyValueForDisplay = js.native
   
@@ -44,42 +45,30 @@ object IPropertyValueForDisplay {
   }
   
   @scala.inline
-  implicit class IPropertyValueForDisplayOps[Self <: IPropertyValueForDisplay] (val x: Self) extends AnyVal {
+  implicit class IPropertyValueForDisplayMutableBuilder[Self <: IPropertyValueForDisplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IPropertyValueForDisplay): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentType(value: MFContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IPropertyValueForDisplay): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: MFContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: MFDataType): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setPropertyDefName(value: String): Self = StObject.set(x, "PropertyDefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayValue(value: String): Self = this.set("DisplayValue", value.asInstanceOf[js.Any])
+    def setPropertyValue(value: IPropertyValue): Self = StObject.set(x, "PropertyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = this.set("PropertyDef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyDefName(value: String): Self = this.set("PropertyDefName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyValue(value: IPropertyValue): Self = this.set("PropertyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
   }
 }

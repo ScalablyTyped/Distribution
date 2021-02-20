@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,111 +53,99 @@ object DeviceComplianceSettingState {
   }
   
   @scala.inline
-  implicit class DeviceComplianceSettingStateOps[Self <: DeviceComplianceSettingState] (val x: Self) extends AnyVal {
+  implicit class DeviceComplianceSettingStateMutableBuilder[Self <: DeviceComplianceSettingState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceGracePeriodExpirationDateTime(value: String): Self = StObject.set(x, "complianceGracePeriodExpirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceGracePeriodExpirationDateTimeUndefined: Self = StObject.set(x, "complianceGracePeriodExpirationDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceGracePeriodExpirationDateTime(value: String): Self = this.set("complianceGracePeriodExpirationDateTime", value.asInstanceOf[js.Any])
+    def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
     @scala.inline
-    def deleteComplianceGracePeriodExpirationDateTime: Self = this.set("complianceGracePeriodExpirationDateTime", js.undefined)
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def setDeviceId(value: NullableOption[String]): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setDeviceModel(value: NullableOption[String]): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setDeviceModelNull: Self = StObject.set(x, "deviceModel", null)
     
     @scala.inline
-    def setDeviceIdNull: Self = this.set("deviceId", null)
+    def setDeviceModelUndefined: Self = StObject.set(x, "deviceModel", js.undefined)
     
     @scala.inline
-    def setDeviceModel(value: NullableOption[String]): Self = this.set("deviceModel", value.asInstanceOf[js.Any])
+    def setDeviceName(value: NullableOption[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceModel: Self = this.set("deviceModel", js.undefined)
+    def setDeviceNameNull: Self = StObject.set(x, "deviceName", null)
     
     @scala.inline
-    def setDeviceModelNull: Self = this.set("deviceModel", null)
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def setDeviceName(value: NullableOption[String]): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setSetting(value: NullableOption[String]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    def setSettingName(value: NullableOption[String]): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceNameNull: Self = this.set("deviceName", null)
+    def setSettingNameNull: Self = StObject.set(x, "settingName", null)
     
     @scala.inline
-    def setSetting(value: NullableOption[String]): Self = this.set("setting", value.asInstanceOf[js.Any])
+    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
     
     @scala.inline
-    def deleteSetting: Self = this.set("setting", js.undefined)
+    def setSettingNull: Self = StObject.set(x, "setting", null)
     
     @scala.inline
-    def setSettingNull: Self = this.set("setting", null)
+    def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
     
     @scala.inline
-    def setSettingName(value: NullableOption[String]): Self = this.set("settingName", value.asInstanceOf[js.Any])
+    def setState(value: ComplianceStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingName: Self = this.set("settingName", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setSettingNameNull: Self = this.set("settingName", null)
+    def setUserEmail(value: NullableOption[String]): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ComplianceStatus): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setUserEmailNull: Self = StObject.set(x, "userEmail", null)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
     
     @scala.inline
-    def setUserEmail(value: NullableOption[String]): Self = this.set("userEmail", value.asInstanceOf[js.Any])
+    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     @scala.inline
-    def setUserEmailNull: Self = this.set("userEmail", null)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def setUserId(value: NullableOption[String]): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserName(value: NullableOption[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserNameNull: Self = StObject.set(x, "userName", null)
     
     @scala.inline
-    def setUserIdNull: Self = this.set("userId", null)
+    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     
     @scala.inline
-    def setUserName(value: NullableOption[String]): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserName: Self = this.set("userName", js.undefined)
+    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     @scala.inline
-    def setUserNameNull: Self = this.set("userName", null)
-    
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
-    
-    @scala.inline
-    def setUserPrincipalNameNull: Self = this.set("userPrincipalName", null)
+    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

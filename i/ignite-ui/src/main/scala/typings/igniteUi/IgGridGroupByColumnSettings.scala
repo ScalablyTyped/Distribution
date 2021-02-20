@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,66 +85,54 @@ object IgGridGroupByColumnSettings {
   }
   
   @scala.inline
-  implicit class IgGridGroupByColumnSettingsOps[Self <: IgGridGroupByColumnSettings] (val x: Self) extends AnyVal {
+  implicit class IgGridGroupByColumnSettingsMutableBuilder[Self <: IgGridGroupByColumnSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowGrouping(value: Boolean): Self = StObject.set(x, "allowGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowGroupingUndefined: Self = StObject.set(x, "allowGrouping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompareFunc(value: String | js.Function): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowGrouping(value: Boolean): Self = this.set("allowGrouping", value.asInstanceOf[js.Any])
+    def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
     
     @scala.inline
-    def deleteAllowGrouping: Self = this.set("allowGrouping", js.undefined)
+    def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareFunc(value: String | js.Function): Self = this.set("compareFunc", value.asInstanceOf[js.Any])
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def deleteCompareFunc: Self = this.set("compareFunc", js.undefined)
+    def setGroupComparerFunction(value: js.Function): Self = StObject.set(x, "groupComparerFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: js.Any): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setGroupComparerFunctionUndefined: Self = StObject.set(x, "groupComparerFunction", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
+    def setGroupLabelFormatter(value: String | js.Function): Self = StObject.set(x, "groupLabelFormatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupComparerFunction(value: js.Function): Self = this.set("groupComparerFunction", value.asInstanceOf[js.Any])
+    def setGroupLabelFormatterUndefined: Self = StObject.set(x, "groupLabelFormatter", js.undefined)
     
     @scala.inline
-    def deleteGroupComparerFunction: Self = this.set("groupComparerFunction", js.undefined)
+    def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupLabelFormatter(value: String | js.Function): Self = this.set("groupLabelFormatter", value.asInstanceOf[js.Any])
+    def setGroupSummariesUndefined: Self = StObject.set(x, "groupSummaries", js.undefined)
     
     @scala.inline
-    def deleteGroupLabelFormatter: Self = this.set("groupLabelFormatter", js.undefined)
+    def setIsGroupBy(value: Boolean): Self = StObject.set(x, "isGroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupSummaries(value: js.Any): Self = this.set("groupSummaries", value.asInstanceOf[js.Any])
+    def setIsGroupByUndefined: Self = StObject.set(x, "isGroupBy", js.undefined)
     
     @scala.inline
-    def deleteGroupSummaries: Self = this.set("groupSummaries", js.undefined)
+    def setSummaries(value: IgGridGroupByColumnSettingsSummaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGroupBy(value: Boolean): Self = this.set("isGroupBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsGroupBy: Self = this.set("isGroupBy", js.undefined)
-    
-    @scala.inline
-    def setSummaries(value: IgGridGroupByColumnSettingsSummaries): Self = this.set("summaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaries: Self = this.set("summaries", js.undefined)
+    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
   }
 }

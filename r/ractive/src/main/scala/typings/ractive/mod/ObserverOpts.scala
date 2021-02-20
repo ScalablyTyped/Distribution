@@ -1,5 +1,6 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object ObserverOpts {
   }
   
   @scala.inline
-  implicit class ObserverOptsOps[Self <: ObserverOpts] (val x: Self) extends AnyVal {
+  implicit class ObserverOptsMutableBuilder[Self <: ObserverOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOld(value: ObserverCallback[Ractive[Ractive[_]]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: Boolean): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOld(value: ObserverCallback[Ractive[Ractive[_]]]): Self = this.set("old", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOld: Self = this.set("old", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

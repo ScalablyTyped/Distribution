@@ -5,12 +5,13 @@ import typings.react.mod.StatelessComponent
 import typings.reactJsonschemaForm.anon.Content
 import typings.reactJsonschemaForm.anon.Description
 import typings.reactJsonschemaForm.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectFieldTemplateProps[T] extends js.Object {
+trait ObjectFieldTemplateProps[T] extends StObject {
   
   var DescriptionField: StatelessComponent[Description] = js.native
   
@@ -55,54 +56,42 @@ object ObjectFieldTemplateProps {
   }
   
   @scala.inline
-  implicit class ObjectFieldTemplatePropsOps[Self <: ObjectFieldTemplateProps[_], T] (val x: Self with ObjectFieldTemplateProps[T]) extends AnyVal {
+  implicit class ObjectFieldTemplatePropsMutableBuilder[Self <: ObjectFieldTemplateProps[_], T] (val x: Self with ObjectFieldTemplateProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionField(value: StatelessComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionField(value: StatelessComponent[Description]): Self = this.set("DescriptionField", value.asInstanceOf[js.Any])
+    def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleField(value: StatelessComponent[Id]): Self = this.set("TitleField", value.asInstanceOf[js.Any])
+    def setIdSchema(value: IdSchema[_]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Array[Content]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormContext(value: js.Any): Self = this.set("formContext", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(value: Content*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setFormData(value: T): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdSchema(value: IdSchema[_]): Self = this.set("idSchema", value.asInstanceOf[js.Any])
+    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertiesVarargs(value: Content*): Self = this.set("properties", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[Content]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setTitleField(value: StatelessComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: JSONSchema6): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUiSchema(value: UiSchema): Self = this.set("uiSchema", value.asInstanceOf[js.Any])
+    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }
 }

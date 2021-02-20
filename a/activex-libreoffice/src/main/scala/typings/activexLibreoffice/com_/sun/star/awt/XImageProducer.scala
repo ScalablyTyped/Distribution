@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,27 +51,15 @@ object XImageProducer {
   }
   
   @scala.inline
-  implicit class XImageProducerOps[Self <: XImageProducer] (val x: Self) extends AnyVal {
+  implicit class XImageProducerMutableBuilder[Self <: XImageProducer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "addConsumer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "removeConsumer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddConsumer(value: XImageConsumer => Unit): Self = this.set("addConsumer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveConsumer(value: XImageConsumer => Unit): Self = this.set("removeConsumer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartProduction(value: () => Unit): Self = this.set("startProduction", js.Any.fromFunction0(value))
+    def setStartProduction(value: () => Unit): Self = StObject.set(x, "startProduction", js.Any.fromFunction0(value))
   }
 }

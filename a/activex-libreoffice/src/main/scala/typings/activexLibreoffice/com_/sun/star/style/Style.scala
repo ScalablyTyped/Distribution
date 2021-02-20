@@ -15,6 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -146,45 +147,33 @@ object Style {
   }
   
   @scala.inline
-  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowStyle(value: String): Self = StObject.set(x, "FollowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowStyle(value: String): Self = this.set("FollowStyle", value.asInstanceOf[js.Any])
+    def setIsAutoUpdate(value: String): Self = StObject.set(x, "IsAutoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("Hidden", value.asInstanceOf[js.Any])
+    def setIsPhysical(value: Boolean): Self = StObject.set(x, "IsPhysical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoUpdate(value: String): Self = this.set("IsAutoUpdate", value.asInstanceOf[js.Any])
+    def setParaStyleConditions(value: SafeArray[NamedValue]): Self = StObject.set(x, "ParaStyleConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPhysical(value: Boolean): Self = this.set("IsPhysical", value.asInstanceOf[js.Any])
+    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleConditions(value: SafeArray[NamedValue]): Self = this.set("ParaStyleConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("StyleInteropGrabBag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
+    def setStyleInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "StyleInteropGrabBag", value.asInstanceOf[js.Any])
   }
 }

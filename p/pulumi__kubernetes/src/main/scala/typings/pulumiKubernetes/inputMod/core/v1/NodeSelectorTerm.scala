@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
   */
 @js.native
-trait NodeSelectorTerm extends js.Object {
+trait NodeSelectorTerm extends StObject {
   
   /**
     * A list of node selector requirements by node's labels.
@@ -30,36 +31,24 @@ object NodeSelectorTerm {
   }
   
   @scala.inline
-  implicit class NodeSelectorTermOps[Self <: NodeSelectorTerm] (val x: Self) extends AnyVal {
+  implicit class NodeSelectorTermMutableBuilder[Self <: NodeSelectorTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchExpressions(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchExpressionsUndefined: Self = StObject.set(x, "matchExpressions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchExpressionsVarargs(value: Input[NodeSelectorRequirement]*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setMatchExpressionsVarargs(value: Input[NodeSelectorRequirement]*): Self = this.set("matchExpressions", js.Array(value :_*))
+    def setMatchFields(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = StObject.set(x, "matchFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchExpressions(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = this.set("matchExpressions", value.asInstanceOf[js.Any])
+    def setMatchFieldsUndefined: Self = StObject.set(x, "matchFields", js.undefined)
     
     @scala.inline
-    def deleteMatchExpressions: Self = this.set("matchExpressions", js.undefined)
-    
-    @scala.inline
-    def setMatchFieldsVarargs(value: Input[NodeSelectorRequirement]*): Self = this.set("matchFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatchFields(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = this.set("matchFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchFields: Self = this.set("matchFields", js.undefined)
+    def setMatchFieldsVarargs(value: Input[NodeSelectorRequirement]*): Self = StObject.set(x, "matchFields", js.Array(value :_*))
   }
 }

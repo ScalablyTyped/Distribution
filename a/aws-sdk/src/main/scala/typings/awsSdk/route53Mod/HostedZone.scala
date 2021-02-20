@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HostedZone extends js.Object {
+trait HostedZone extends StObject {
   
   /**
     * The value that you specified for CallerReference when you created the hosted zone.
@@ -46,45 +47,33 @@ object HostedZone {
   }
   
   @scala.inline
-  implicit class HostedZoneOps[Self <: HostedZone] (val x: Self) extends AnyVal {
+  implicit class HostedZoneMutableBuilder[Self <: HostedZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfig(value: HostedZoneConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
     
     @scala.inline
-    def setCallerReference(value: Nonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLinkedService(value: LinkedService): Self = StObject.set(x, "LinkedService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DNSName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setLinkedServiceUndefined: Self = StObject.set(x, "LinkedService", js.undefined)
     
     @scala.inline
-    def setConfig(value: HostedZoneConfig): Self = this.set("Config", value.asInstanceOf[js.Any])
+    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfig: Self = this.set("Config", js.undefined)
+    def setResourceRecordSetCount(value: HostedZoneRRSetCount): Self = StObject.set(x, "ResourceRecordSetCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedService(value: LinkedService): Self = this.set("LinkedService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkedService: Self = this.set("LinkedService", js.undefined)
-    
-    @scala.inline
-    def setResourceRecordSetCount(value: HostedZoneRRSetCount): Self = this.set("ResourceRecordSetCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceRecordSetCount: Self = this.set("ResourceRecordSetCount", js.undefined)
+    def setResourceRecordSetCountUndefined: Self = StObject.set(x, "ResourceRecordSetCount", js.undefined)
   }
 }

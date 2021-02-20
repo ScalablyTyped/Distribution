@@ -2,6 +2,7 @@ package typings.jquery.anon
 
 import typings.jquery.JQuery.Event
 import typings.jquery.JQuery._SpecialEventHook
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,21 +22,9 @@ object PostDispatch {
   }
   
   @scala.inline
-  implicit class PostDispatchOps[Self <: PostDispatch[_], TTarget] (val x: Self with PostDispatch[TTarget]) extends AnyVal {
+  implicit class PostDispatchMutableBuilder[Self <: PostDispatch[_], TTarget] (val x: Self with PostDispatch[TTarget]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPostDispatch(value: Event => Unit): Self = this.set("postDispatch", js.Any.fromFunction1(value))
+    def setPostDispatch(value: Event => Unit): Self = StObject.set(x, "postDispatch", js.Any.fromFunction1(value))
   }
 }

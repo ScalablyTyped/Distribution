@@ -1,12 +1,15 @@
 package typings.nanp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var nanp: Nanp = js.native
+  @JSGlobal("nanp")
+  @js.native
+  def nanp: Nanp = js.native
+  @scala.inline
+  def nanp_=(x: Nanp): Unit = js.Dynamic.global.updateDynamic("nanp")(x.asInstanceOf[js.Any])
 }

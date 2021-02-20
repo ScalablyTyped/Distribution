@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
 import typings.arcgisJsApi.arcgisJsApiStrings.expanded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputFieldGroupProperties extends js.Object {
+trait InputFieldGroupProperties extends StObject {
   
   /**
     * The group's description.
@@ -34,36 +35,24 @@ object InputFieldGroupProperties {
   }
   
   @scala.inline
-  implicit class InputFieldGroupPropertiesOps[Self <: InputFieldGroupProperties] (val x: Self) extends AnyVal {
+  implicit class InputFieldGroupPropertiesMutableBuilder[Self <: InputFieldGroupProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: expanded | collapsed): Self = this.set("initialState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
-    
-    @scala.inline
-    def setVisibilityExpression(value: String): Self = this.set("visibilityExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibilityExpression: Self = this.set("visibilityExpression", js.undefined)
+    def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
   }
 }

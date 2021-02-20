@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * create/delete node pools based on the current needs.
   */
 @js.native
-trait SchemaClusterAutoscaling extends js.Object {
+trait SchemaClusterAutoscaling extends StObject {
   
   /**
     * Enables automatic node pool creation and deletion.
@@ -32,33 +33,21 @@ object SchemaClusterAutoscaling {
   }
   
   @scala.inline
-  implicit class SchemaClusterAutoscalingOps[Self <: SchemaClusterAutoscaling] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterAutoscalingMutableBuilder[Self <: SchemaClusterAutoscaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableNodeAutoprovisioningUndefined: Self = StObject.set(x, "enableNodeAutoprovisioning", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceLimits(value: js.Array[SchemaResourceLimit]): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableNodeAutoprovisioning(value: Boolean): Self = this.set("enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
+    def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
     
     @scala.inline
-    def deleteEnableNodeAutoprovisioning: Self = this.set("enableNodeAutoprovisioning", js.undefined)
-    
-    @scala.inline
-    def setResourceLimitsVarargs(value: SchemaResourceLimit*): Self = this.set("resourceLimits", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceLimits(value: js.Array[SchemaResourceLimit]): Self = this.set("resourceLimits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLimits: Self = this.set("resourceLimits", js.undefined)
+    def setResourceLimitsVarargs(value: SchemaResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BinLogCoordinates extends js.Object {
+trait BinLogCoordinates extends StObject {
   
   /** Name of the binary log file for a Cloud SQL instance. */
   var binLogFileName: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object BinLogCoordinates {
   }
   
   @scala.inline
-  implicit class BinLogCoordinatesOps[Self <: BinLogCoordinates] (val x: Self) extends AnyVal {
+  implicit class BinLogCoordinatesMutableBuilder[Self <: BinLogCoordinates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinLogFileName(value: String): Self = StObject.set(x, "binLogFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinLogFileNameUndefined: Self = StObject.set(x, "binLogFileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinLogPosition(value: String): Self = StObject.set(x, "binLogPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinLogFileName(value: String): Self = this.set("binLogFileName", value.asInstanceOf[js.Any])
+    def setBinLogPositionUndefined: Self = StObject.set(x, "binLogPosition", js.undefined)
     
     @scala.inline
-    def deleteBinLogFileName: Self = this.set("binLogFileName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinLogPosition(value: String): Self = this.set("binLogPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinLogPosition: Self = this.set("binLogPosition", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

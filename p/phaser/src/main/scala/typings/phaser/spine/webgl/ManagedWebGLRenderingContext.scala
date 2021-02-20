@@ -4,12 +4,13 @@ import typings.phaser.spine.Restorable
 import typings.std.HTMLCanvasElement
 import typings.std.OffscreenCanvas
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedWebGLRenderingContext extends js.Object {
+trait ManagedWebGLRenderingContext extends StObject {
   
   def addRestorable(restorable: Restorable): Unit = js.native
   
@@ -36,33 +37,21 @@ object ManagedWebGLRenderingContext {
   }
   
   @scala.inline
-  implicit class ManagedWebGLRenderingContextOps[Self <: ManagedWebGLRenderingContext] (val x: Self) extends AnyVal {
+  implicit class ManagedWebGLRenderingContextMutableBuilder[Self <: ManagedWebGLRenderingContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRestorable(value: Restorable => Unit): Self = StObject.set(x, "addRestorable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRestorable(value: Restorable => Unit): Self = this.set("addRestorable", js.Any.fromFunction1(value))
+    def setRemoveRestorable(value: Restorable => Unit): Self = StObject.set(x, "removeRestorable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = this.set("canvas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGl(value: WebGLRenderingContext): Self = this.set("gl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveRestorable(value: Restorable => Unit): Self = this.set("removeRestorable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRestorables(value: js.Any): Self = this.set("restorables", value.asInstanceOf[js.Any])
+    def setRestorables(value: js.Any): Self = StObject.set(x, "restorables", value.asInstanceOf[js.Any])
   }
 }

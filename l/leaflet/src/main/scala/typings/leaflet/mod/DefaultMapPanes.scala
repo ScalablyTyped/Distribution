@@ -1,12 +1,13 @@
 package typings.leaflet.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultMapPanes extends js.Object {
+trait DefaultMapPanes extends StObject {
   
   var mapPane: HTMLElement = js.native
   
@@ -39,39 +40,27 @@ object DefaultMapPanes {
   }
   
   @scala.inline
-  implicit class DefaultMapPanesOps[Self <: DefaultMapPanes] (val x: Self) extends AnyVal {
+  implicit class DefaultMapPanesMutableBuilder[Self <: DefaultMapPanes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerPane(value: HTMLElement): Self = StObject.set(x, "markerPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverlayPane(value: HTMLElement): Self = StObject.set(x, "overlayPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapPane(value: HTMLElement): Self = this.set("mapPane", value.asInstanceOf[js.Any])
+    def setPopupPane(value: HTMLElement): Self = StObject.set(x, "popupPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerPane(value: HTMLElement): Self = this.set("markerPane", value.asInstanceOf[js.Any])
+    def setShadowPane(value: HTMLElement): Self = StObject.set(x, "shadowPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayPane(value: HTMLElement): Self = this.set("overlayPane", value.asInstanceOf[js.Any])
+    def setTilePane(value: HTMLElement): Self = StObject.set(x, "tilePane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupPane(value: HTMLElement): Self = this.set("popupPane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowPane(value: HTMLElement): Self = this.set("shadowPane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTilePane(value: HTMLElement): Self = this.set("tilePane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipPane(value: HTMLElement): Self = this.set("tooltipPane", value.asInstanceOf[js.Any])
+    def setTooltipPane(value: HTMLElement): Self = StObject.set(x, "tooltipPane", value.asInstanceOf[js.Any])
   }
 }

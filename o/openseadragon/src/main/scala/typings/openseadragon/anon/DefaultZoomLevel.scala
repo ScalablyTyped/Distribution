@@ -1,11 +1,12 @@
 package typings.openseadragon.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultZoomLevel extends js.Object {
+trait DefaultZoomLevel extends StObject {
   
   var animationTime: js.UndefOr[Double] = js.native
   
@@ -42,93 +43,81 @@ object DefaultZoomLevel {
   }
   
   @scala.inline
-  implicit class DefaultZoomLevelOps[Self <: DefaultZoomLevel] (val x: Self) extends AnyVal {
+  implicit class DefaultZoomLevelMutableBuilder[Self <: DefaultZoomLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationTime(value: Double): Self = StObject.set(x, "animationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationTimeUndefined: Self = StObject.set(x, "animationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultZoomLevel(value: Double): Self = StObject.set(x, "defaultZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargins(value: js.Object): Self = this.set("margins", value.asInstanceOf[js.Any])
+    def setDefaultZoomLevelUndefined: Self = StObject.set(x, "defaultZoomLevel", js.undefined)
     
     @scala.inline
-    def setAnimationTime(value: Double): Self = this.set("animationTime", value.asInstanceOf[js.Any])
+    def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationTime: Self = this.set("animationTime", js.undefined)
+    def setDegreesUndefined: Self = StObject.set(x, "degrees", js.undefined)
     
     @scala.inline
-    def setDefaultZoomLevel(value: Double): Self = this.set("defaultZoomLevel", value.asInstanceOf[js.Any])
+    def setHomeFillsViewer(value: Boolean): Self = StObject.set(x, "homeFillsViewer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultZoomLevel: Self = this.set("defaultZoomLevel", js.undefined)
+    def setHomeFillsViewerUndefined: Self = StObject.set(x, "homeFillsViewer", js.undefined)
     
     @scala.inline
-    def setDegrees(value: Double): Self = this.set("degrees", value.asInstanceOf[js.Any])
+    def setMargins(value: js.Object): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDegrees: Self = this.set("degrees", js.undefined)
+    def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeFillsViewer(value: Boolean): Self = this.set("homeFillsViewer", value.asInstanceOf[js.Any])
+    def setMaxZoomLevelUndefined: Self = StObject.set(x, "maxZoomLevel", js.undefined)
     
     @scala.inline
-    def deleteHomeFillsViewer: Self = this.set("homeFillsViewer", js.undefined)
+    def setMaxZoomPixelRatio(value: Double): Self = StObject.set(x, "maxZoomPixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomLevel(value: Double): Self = this.set("maxZoomLevel", value.asInstanceOf[js.Any])
+    def setMaxZoomPixelRatioUndefined: Self = StObject.set(x, "maxZoomPixelRatio", js.undefined)
     
     @scala.inline
-    def deleteMaxZoomLevel: Self = this.set("maxZoomLevel", js.undefined)
+    def setMinZoomImageRatio(value: Double): Self = StObject.set(x, "minZoomImageRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomPixelRatio(value: Double): Self = this.set("maxZoomPixelRatio", value.asInstanceOf[js.Any])
+    def setMinZoomImageRatioUndefined: Self = StObject.set(x, "minZoomImageRatio", js.undefined)
     
     @scala.inline
-    def deleteMaxZoomPixelRatio: Self = this.set("maxZoomPixelRatio", js.undefined)
+    def setMinZoomLevel(value: Double): Self = StObject.set(x, "minZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoomImageRatio(value: Double): Self = this.set("minZoomImageRatio", value.asInstanceOf[js.Any])
+    def setMinZoomLevelUndefined: Self = StObject.set(x, "minZoomLevel", js.undefined)
     
     @scala.inline
-    def deleteMinZoomImageRatio: Self = this.set("minZoomImageRatio", js.undefined)
+    def setSpringStiffness(value: Double): Self = StObject.set(x, "springStiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoomLevel(value: Double): Self = this.set("minZoomLevel", value.asInstanceOf[js.Any])
+    def setSpringStiffnessUndefined: Self = StObject.set(x, "springStiffness", js.undefined)
     
     @scala.inline
-    def deleteMinZoomLevel: Self = this.set("minZoomLevel", js.undefined)
+    def setVisibilityRatio(value: Double): Self = StObject.set(x, "visibilityRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpringStiffness(value: Double): Self = this.set("springStiffness", value.asInstanceOf[js.Any])
+    def setVisibilityRatioUndefined: Self = StObject.set(x, "visibilityRatio", js.undefined)
     
     @scala.inline
-    def deleteSpringStiffness: Self = this.set("springStiffness", js.undefined)
+    def setWrapHorizontal(value: Boolean): Self = StObject.set(x, "wrapHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibilityRatio(value: Double): Self = this.set("visibilityRatio", value.asInstanceOf[js.Any])
+    def setWrapHorizontalUndefined: Self = StObject.set(x, "wrapHorizontal", js.undefined)
     
     @scala.inline
-    def deleteVisibilityRatio: Self = this.set("visibilityRatio", js.undefined)
+    def setWrapVertical(value: Boolean): Self = StObject.set(x, "wrapVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapHorizontal(value: Boolean): Self = this.set("wrapHorizontal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapHorizontal: Self = this.set("wrapHorizontal", js.undefined)
-    
-    @scala.inline
-    def setWrapVertical(value: Boolean): Self = this.set("wrapVertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapVertical: Self = this.set("wrapVertical", js.undefined)
+    def setWrapVerticalUndefined: Self = StObject.set(x, "wrapVertical", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringInput extends js.Object {
+trait MonitoringInput extends StObject {
   
   /**
     * The endpoint for a monitoring job.
@@ -21,21 +22,9 @@ object MonitoringInput {
   }
   
   @scala.inline
-  implicit class MonitoringInputOps[Self <: MonitoringInput] (val x: Self) extends AnyVal {
+  implicit class MonitoringInputMutableBuilder[Self <: MonitoringInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndpointInput(value: EndpointInput): Self = this.set("EndpointInput", value.asInstanceOf[js.Any])
+    def setEndpointInput(value: EndpointInput): Self = StObject.set(x, "EndpointInput", value.asInstanceOf[js.Any])
   }
 }

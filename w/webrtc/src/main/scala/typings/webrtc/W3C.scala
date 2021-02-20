@@ -1,12 +1,11 @@
 package typings.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("W3C")
-@js.native
-object W3C extends js.Object {
+object W3C {
   
   type ConstrainBoolean = Boolean | ConstrainBooleanParameters
   

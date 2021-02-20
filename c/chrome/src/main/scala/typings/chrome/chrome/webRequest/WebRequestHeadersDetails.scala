@@ -1,5 +1,6 @@
 package typings.chrome.chrome.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +30,15 @@ object WebRequestHeadersDetails {
   }
   
   @scala.inline
-  implicit class WebRequestHeadersDetailsOps[Self <: WebRequestHeadersDetails] (val x: Self) extends AnyVal {
+  implicit class WebRequestHeadersDetailsMutableBuilder[Self <: WebRequestHeadersDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestHeadersVarargs(value: HttpHeader*): Self = this.set("requestHeaders", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequestHeaders(value: js.Array[HttpHeader]): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
   }
 }

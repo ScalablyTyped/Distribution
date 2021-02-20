@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteReplicationGroupMessage extends js.Object {
+trait DeleteReplicationGroupMessage extends StObject {
   
   /**
     * The name of a final node group (shard) snapshot. ElastiCache creates the snapshot from the primary node in the cluster, rather than one of the replicas; this is to ensure that it captures the freshest data. After the final snapshot is taken, the replication group is immediately deleted.
@@ -31,33 +32,21 @@ object DeleteReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class DeleteReplicationGroupMessageOps[Self <: DeleteReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteReplicationGroupMessageMutableBuilder[Self <: DeleteReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalSnapshotIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    def setRetainPrimaryCluster(value: BooleanOptional): Self = StObject.set(x, "RetainPrimaryCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalSnapshotIdentifier(value: String): Self = this.set("FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalSnapshotIdentifier: Self = this.set("FinalSnapshotIdentifier", js.undefined)
-    
-    @scala.inline
-    def setRetainPrimaryCluster(value: BooleanOptional): Self = this.set("RetainPrimaryCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainPrimaryCluster: Self = this.set("RetainPrimaryCluster", js.undefined)
+    def setRetainPrimaryClusterUndefined: Self = StObject.set(x, "RetainPrimaryCluster", js.undefined)
   }
 }

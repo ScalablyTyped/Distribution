@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FamilyName extends js.Object {
+trait FamilyName extends StObject {
   
   var familyName: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object FamilyName {
   }
   
   @scala.inline
-  implicit class FamilyNameOps[Self <: FamilyName] (val x: Self) extends AnyVal {
+  implicit class FamilyNameMutableBuilder[Self <: FamilyName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFamilyName: Self = this.set("familyName", js.undefined)
-    
-    @scala.inline
-    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
   }
 }

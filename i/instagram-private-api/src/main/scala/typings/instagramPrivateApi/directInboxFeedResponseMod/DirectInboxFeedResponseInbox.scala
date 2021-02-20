@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.directInboxFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectInboxFeedResponseInbox extends js.Object {
+trait DirectInboxFeedResponseInbox extends StObject {
   
   var blended_inbox_enabled: Boolean = js.native
   
@@ -35,39 +36,27 @@ object DirectInboxFeedResponseInbox {
   }
   
   @scala.inline
-  implicit class DirectInboxFeedResponseInboxOps[Self <: DirectInboxFeedResponseInbox] (val x: Self) extends AnyVal {
+  implicit class DirectInboxFeedResponseInboxMutableBuilder[Self <: DirectInboxFeedResponseInbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlended_inbox_enabled(value: Boolean): Self = StObject.set(x, "blended_inbox_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHas_older(value: Boolean): Self = StObject.set(x, "has_older", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldest_cursor(value: String): Self = StObject.set(x, "oldest_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlended_inbox_enabled(value: Boolean): Self = this.set("blended_inbox_enabled", value.asInstanceOf[js.Any])
+    def setThreads(value: js.Array[DirectInboxFeedResponseThreadsItem]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_older(value: Boolean): Self = this.set("has_older", value.asInstanceOf[js.Any])
+    def setThreadsVarargs(value: DirectInboxFeedResponseThreadsItem*): Self = StObject.set(x, "threads", js.Array(value :_*))
     
     @scala.inline
-    def setOldest_cursor(value: String): Self = this.set("oldest_cursor", value.asInstanceOf[js.Any])
+    def setUnseen_count(value: Double): Self = StObject.set(x, "unseen_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadsVarargs(value: DirectInboxFeedResponseThreadsItem*): Self = this.set("threads", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreads(value: js.Array[DirectInboxFeedResponseThreadsItem]): Self = this.set("threads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnseen_count(value: Double): Self = this.set("unseen_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnseen_count_ts(value: String): Self = this.set("unseen_count_ts", value.asInstanceOf[js.Any])
+    def setUnseen_count_ts(value: String): Self = StObject.set(x, "unseen_count_ts", value.asInstanceOf[js.Any])
   }
 }

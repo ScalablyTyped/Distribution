@@ -6,12 +6,13 @@ import typings.astTypes.kindsMod.StringLiteralKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.kindsMod.TSTypeParameterInstantiationKind
 import typings.astTypes.namedTypesMod.namedTypes.TSImportType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSImportTypeBuilder extends js.Object {
+trait TSImportTypeBuilder extends StObject {
   
   def apply(argument: StringLiteralKind): TSImportType = js.native
   def apply(

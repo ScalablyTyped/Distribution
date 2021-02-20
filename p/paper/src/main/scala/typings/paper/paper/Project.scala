@@ -1,6 +1,7 @@
 package typings.paper.paper
 
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link PaperScope#projects} variable.
   */
 @js.native
-trait Project extends js.Object {
+trait Project extends StObject {
   
   /** 
     * Activates this project, so all newly created items will be placed

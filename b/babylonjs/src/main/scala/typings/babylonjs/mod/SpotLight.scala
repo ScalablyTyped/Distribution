@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,11 +30,21 @@ class SpotLight protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "SpotLight")
-@js.native
-object SpotLight extends js.Object {
+object SpotLight {
   
-  var _IsProceduralTexture: js.Any = js.native
+  @JSImport("babylonjs", "SpotLight")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _IsTexture: js.Any = js.native
+  @JSImport("babylonjs", "SpotLight._IsProceduralTexture")
+  @js.native
+  def _IsProceduralTexture: js.Any = js.native
+  @scala.inline
+  def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs", "SpotLight._IsTexture")
+  @js.native
+  def _IsTexture: js.Any = js.native
+  @scala.inline
+  def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
 }

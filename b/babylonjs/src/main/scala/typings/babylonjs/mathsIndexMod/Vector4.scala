@@ -3,6 +3,7 @@ package typings.babylonjs.mathsIndexMod
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +31,7 @@ class Vector4 protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Maths/index", "Vector4")
-@js.native
-object Vector4 extends js.Object {
+object Vector4 {
   
   /**
     * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
@@ -40,6 +39,8 @@ object Vector4 extends js.Object {
     * @param value2 value to calulate the center between
     * @return the center between the two vectors
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.Center")
+  @js.native
   def Center(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
@@ -51,6 +52,8 @@ object Vector4 extends js.Object {
     * @param value2 value to calulate the distance between
     * @return the distance between the two vectors
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.Distance")
+  @js.native
   def Distance(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
@@ -62,6 +65,8 @@ object Vector4 extends js.Object {
     * @param value2 value to calulate the distance between
     * @return the distance between the two vectors squared
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.DistanceSquared")
+  @js.native
   def DistanceSquared(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
@@ -73,7 +78,11 @@ object Vector4 extends js.Object {
     * @param offset the offset into the array to start at
     * @returns the new vector
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  @JSImport("babylonjs/Maths/index", "Vector4.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Vector4 = js.native
   
   /**
@@ -82,6 +91,8 @@ object Vector4 extends js.Object {
     * @param offset the offset into the array to start at
     * @param result the vector to store the result in
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.FromArrayToRef")
+  @js.native
   def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
@@ -94,6 +105,8 @@ object Vector4 extends js.Object {
     * @param offset the offset into the array to start at
     * @param result the vector to store the result in
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.FromFloatArrayToRef")
+  @js.native
   def FromFloatArrayToRef(
     array: DeepImmutable[Float32Array],
     offset: Double,
@@ -108,6 +121,8 @@ object Vector4 extends js.Object {
     * @param w float to set from
     * @param result the vector to the floats in
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.FromFloatsToRef")
+  @js.native
   def FromFloatsToRef(x: Double, y: Double, z: Double, w: Double, result: typings.babylonjs.mathVectorMod.Vector4): Unit = js.native
   
   /**
@@ -116,7 +131,11 @@ object Vector4 extends js.Object {
     * @param w defines the 4th component (default is 0)
     * @returns a new Vector4
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.FromVector3")
+  @js.native
   def FromVector3(source: typings.babylonjs.mathVectorMod.Vector3): typings.babylonjs.mathVectorMod.Vector4 = js.native
+  @JSImport("babylonjs/Maths/index", "Vector4.FromVector3")
+  @js.native
   def FromVector3(source: typings.babylonjs.mathVectorMod.Vector3, w: Double): typings.babylonjs.mathVectorMod.Vector4 = js.native
   
   /**
@@ -125,6 +144,8 @@ object Vector4 extends js.Object {
     * @param right right vector to maximize
     * @returns a new vector with the maximum of the left and right vector values
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.Maximize")
+  @js.native
   def Maximize(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
@@ -136,6 +157,8 @@ object Vector4 extends js.Object {
     * @param right right vector to minimize
     * @returns a new vector with the minimum of the left and right vector values
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.Minimize")
+  @js.native
   def Minimize(
     left: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     right: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
@@ -146,6 +169,8 @@ object Vector4 extends js.Object {
     * @param vector the vector to normalize
     * @returns the vector
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.Normalize")
+  @js.native
   def Normalize(vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]): typings.babylonjs.mathVectorMod.Vector4 = js.native
   
   /**
@@ -153,6 +178,8 @@ object Vector4 extends js.Object {
     * @param vector the vector to normalize
     * @param result the vector to store the result in
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.NormalizeToRef")
+  @js.native
   def NormalizeToRef(
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     result: typings.babylonjs.mathVectorMod.Vector4
@@ -162,6 +189,8 @@ object Vector4 extends js.Object {
     * Returns a new Vector4 set to (1.0, 1.0, 1.0, 1.0)
     * @returns the new vector
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.One")
+  @js.native
   def One(): typings.babylonjs.mathVectorMod.Vector4 = js.native
   
   /**
@@ -171,6 +200,8 @@ object Vector4 extends js.Object {
     * @param transformation the transformation matrix to apply
     * @returns the new vector
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.TransformNormal")
+  @js.native
   def TransformNormal(
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
@@ -186,6 +217,8 @@ object Vector4 extends js.Object {
     * @param transformation the transformation matrix to apply
     * @param result the vector to store the results in
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.TransformNormalFromFloatsToRef")
+  @js.native
   def TransformNormalFromFloatsToRef(
     x: Double,
     y: Double,
@@ -202,6 +235,8 @@ object Vector4 extends js.Object {
     * @param transformation the transformation matrix to apply
     * @param result the vector to store the result in
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.TransformNormalToRef")
+  @js.native
   def TransformNormalToRef(
     vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
     transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
@@ -212,5 +247,7 @@ object Vector4 extends js.Object {
     * Returns a new Vector4 set to (0.0, 0.0, 0.0, 0.0)
     * @returns the new vector
     */
+  @JSImport("babylonjs/Maths/index", "Vector4.Zero")
+  @js.native
   def Zero(): typings.babylonjs.mathVectorMod.Vector4 = js.native
 }

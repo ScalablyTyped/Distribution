@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeiSCSIAttributes extends js.Object {
+trait VolumeiSCSIAttributes extends StObject {
   
   /**
     * Indicates whether mutual CHAP is enabled for the iSCSI target.
@@ -41,48 +42,36 @@ object VolumeiSCSIAttributes {
   }
   
   @scala.inline
-  implicit class VolumeiSCSIAttributesOps[Self <: VolumeiSCSIAttributes] (val x: Self) extends AnyVal {
+  implicit class VolumeiSCSIAttributesMutableBuilder[Self <: VolumeiSCSIAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChapEnabled(value: scala.Boolean): Self = StObject.set(x, "ChapEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChapEnabledUndefined: Self = StObject.set(x, "ChapEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLunNumber(value: PositiveIntObject): Self = StObject.set(x, "LunNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChapEnabled(value: scala.Boolean): Self = this.set("ChapEnabled", value.asInstanceOf[js.Any])
+    def setLunNumberUndefined: Self = StObject.set(x, "LunNumber", js.undefined)
     
     @scala.inline
-    def deleteChapEnabled: Self = this.set("ChapEnabled", js.undefined)
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLunNumber(value: PositiveIntObject): Self = this.set("LunNumber", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
     @scala.inline
-    def deleteLunNumber: Self = this.set("LunNumber", js.undefined)
+    def setNetworkInterfacePort(value: integer): Self = StObject.set(x, "NetworkInterfacePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    def setNetworkInterfacePortUndefined: Self = StObject.set(x, "NetworkInterfacePort", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfacePort(value: integer): Self = this.set("NetworkInterfacePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkInterfacePort: Self = this.set("NetworkInterfacePort", js.undefined)
-    
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = this.set("TargetARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetARN: Self = this.set("TargetARN", js.undefined)
+    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
   }
 }

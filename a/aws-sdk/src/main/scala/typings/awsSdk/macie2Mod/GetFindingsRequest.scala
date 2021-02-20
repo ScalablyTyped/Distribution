@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFindingsRequest extends js.Object {
+trait GetFindingsRequest extends StObject {
   
   /**
     * An array of strings that lists the unique identifiers for the findings to retrieve.
@@ -26,30 +27,18 @@ object GetFindingsRequest {
   }
   
   @scala.inline
-  implicit class GetFindingsRequestOps[Self <: GetFindingsRequest] (val x: Self) extends AnyVal {
+  implicit class GetFindingsRequestMutableBuilder[Self <: GetFindingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindingIds(value: listOfString): Self = StObject.set(x, "findingIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingIdsVarargs(value: string*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingIdsVarargs(value: string*): Self = this.set("findingIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setFindingIds(value: listOfString): Self = this.set("findingIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortCriteria(value: SortCriteria): Self = this.set("sortCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortCriteria: Self = this.set("sortCriteria", js.undefined)
+    def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
   }
 }

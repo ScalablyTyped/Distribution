@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateLabelsPayload extends js.Object {
+trait UpdateLabelsPayload extends StObject {
   
   /**
     * Kubernetes labels to be added or updated.
@@ -26,33 +27,21 @@ object UpdateLabelsPayload {
   }
   
   @scala.inline
-  implicit class UpdateLabelsPayloadOps[Self <: UpdateLabelsPayload] (val x: Self) extends AnyVal {
+  implicit class UpdateLabelsPayloadMutableBuilder[Self <: UpdateLabelsPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOrUpdateLabels(value: labelsMap): Self = StObject.set(x, "addOrUpdateLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOrUpdateLabelsUndefined: Self = StObject.set(x, "addOrUpdateLabels", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveLabels(value: labelsKeyList): Self = StObject.set(x, "removeLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOrUpdateLabels(value: labelsMap): Self = this.set("addOrUpdateLabels", value.asInstanceOf[js.Any])
+    def setRemoveLabelsUndefined: Self = StObject.set(x, "removeLabels", js.undefined)
     
     @scala.inline
-    def deleteAddOrUpdateLabels: Self = this.set("addOrUpdateLabels", js.undefined)
-    
-    @scala.inline
-    def setRemoveLabelsVarargs(value: String*): Self = this.set("removeLabels", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveLabels(value: labelsKeyList): Self = this.set("removeLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveLabels: Self = this.set("removeLabels", js.undefined)
+    def setRemoveLabelsVarargs(value: String*): Self = StObject.set(x, "removeLabels", js.Array(value :_*))
   }
 }

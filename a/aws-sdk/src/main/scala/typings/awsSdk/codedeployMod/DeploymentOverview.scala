@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentOverview extends js.Object {
+trait DeploymentOverview extends StObject {
   
   /**
     * The number of instances in the deployment in a failed state.
@@ -46,54 +47,42 @@ object DeploymentOverview {
   }
   
   @scala.inline
-  implicit class DeploymentOverviewOps[Self <: DeploymentOverview] (val x: Self) extends AnyVal {
+  implicit class DeploymentOverviewMutableBuilder[Self <: DeploymentOverview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailed(value: InstanceCount): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInProgress(value: InstanceCount): Self = StObject.set(x, "InProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: InstanceCount): Self = this.set("Failed", value.asInstanceOf[js.Any])
+    def setInProgressUndefined: Self = StObject.set(x, "InProgress", js.undefined)
     
     @scala.inline
-    def deleteFailed: Self = this.set("Failed", js.undefined)
+    def setPending(value: InstanceCount): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgress(value: InstanceCount): Self = this.set("InProgress", value.asInstanceOf[js.Any])
+    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
     
     @scala.inline
-    def deleteInProgress: Self = this.set("InProgress", js.undefined)
+    def setReady(value: InstanceCount): Self = StObject.set(x, "Ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: InstanceCount): Self = this.set("Pending", value.asInstanceOf[js.Any])
+    def setReadyUndefined: Self = StObject.set(x, "Ready", js.undefined)
     
     @scala.inline
-    def deletePending: Self = this.set("Pending", js.undefined)
+    def setSkipped(value: InstanceCount): Self = StObject.set(x, "Skipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReady(value: InstanceCount): Self = this.set("Ready", value.asInstanceOf[js.Any])
+    def setSkippedUndefined: Self = StObject.set(x, "Skipped", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("Ready", js.undefined)
+    def setSucceeded(value: InstanceCount): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipped(value: InstanceCount): Self = this.set("Skipped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipped: Self = this.set("Skipped", js.undefined)
-    
-    @scala.inline
-    def setSucceeded(value: InstanceCount): Self = this.set("Succeeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSucceeded: Self = this.set("Succeeded", js.undefined)
+    def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
   }
 }

@@ -175,13 +175,14 @@ import typings.styledComponents.styledComponentsStrings.video
 import typings.styledComponents.styledComponentsStrings.view
 import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ TTag in keyof react.react.<global>.JSX.IntrinsicElements ]: styled-components.styled-components.ThemedStyledFunction<TTag, T, {}, never>} */
 @js.native
-trait ThemedStyledComponentFactories[T /* <: js.Object */] extends js.Object {
+trait ThemedStyledComponentFactories[T /* <: js.Object */] extends StObject {
   
   var a: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.a, T, js.Object, scala.Nothing] = js.native
   
@@ -830,543 +831,531 @@ object ThemedStyledComponentFactories {
   }
   
   @scala.inline
-  implicit class ThemedStyledComponentFactoriesOps[Self <: ThemedStyledComponentFactories[_], T /* <: js.Object */] (val x: Self with ThemedStyledComponentFactories[T]) extends AnyVal {
+  implicit class ThemedStyledComponentFactoriesMutableBuilder[Self <: ThemedStyledComponentFactories[_], T /* <: js.Object */] (val x: Self with ThemedStyledComponentFactories[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: ThemedStyledFunction[a, T, js.Object, scala.Nothing]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbbr(value: ThemedStyledFunction[abbr, T, js.Object, scala.Nothing]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress(value: ThemedStyledFunction[address, T, js.Object, scala.Nothing]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: ThemedStyledFunction[a, T, js.Object, scala.Nothing]): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setAnimate(value: ThemedStyledFunction[animate, T, js.Object, scala.Nothing]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbr(value: ThemedStyledFunction[abbr, T, js.Object, scala.Nothing]): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    def setAnimateMotion(value: ThemedStyledFunction[animateMotion, T, js.Object, scala.Nothing]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: ThemedStyledFunction[address, T, js.Object, scala.Nothing]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAnimateTransform(value: ThemedStyledFunction[animateTransform, T, js.Object, scala.Nothing]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: ThemedStyledFunction[animate, T, js.Object, scala.Nothing]): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setArea(value: ThemedStyledFunction[area, T, js.Object, scala.Nothing]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateMotion(value: ThemedStyledFunction[animateMotion, T, js.Object, scala.Nothing]): Self = this.set("animateMotion", value.asInstanceOf[js.Any])
+    def setArticle(value: ThemedStyledFunction[article, T, js.Object, scala.Nothing]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateTransform(value: ThemedStyledFunction[animateTransform, T, js.Object, scala.Nothing]): Self = this.set("animateTransform", value.asInstanceOf[js.Any])
+    def setAside(value: ThemedStyledFunction[aside, T, js.Object, scala.Nothing]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: ThemedStyledFunction[area, T, js.Object, scala.Nothing]): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setAudio(value: ThemedStyledFunction[audio, T, js.Object, scala.Nothing]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArticle(value: ThemedStyledFunction[article, T, js.Object, scala.Nothing]): Self = this.set("article", value.asInstanceOf[js.Any])
+    def setB(value: ThemedStyledFunction[b, T, js.Object, scala.Nothing]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAside(value: ThemedStyledFunction[aside, T, js.Object, scala.Nothing]): Self = this.set("aside", value.asInstanceOf[js.Any])
+    def setBase(value: ThemedStyledFunction[base, T, js.Object, scala.Nothing]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: ThemedStyledFunction[audio, T, js.Object, scala.Nothing]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setBdi(value: ThemedStyledFunction[bdi, T, js.Object, scala.Nothing]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: ThemedStyledFunction[b, T, js.Object, scala.Nothing]): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setBdo(value: ThemedStyledFunction[bdo, T, js.Object, scala.Nothing]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: ThemedStyledFunction[base, T, js.Object, scala.Nothing]): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setBig(value: ThemedStyledFunction[big, T, js.Object, scala.Nothing]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBdi(value: ThemedStyledFunction[bdi, T, js.Object, scala.Nothing]): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    def setBlockquote(value: ThemedStyledFunction[blockquote, T, js.Object, scala.Nothing]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBdo(value: ThemedStyledFunction[bdo, T, js.Object, scala.Nothing]): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    def setBody(value: ThemedStyledFunction[body, T, js.Object, scala.Nothing]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBig(value: ThemedStyledFunction[big, T, js.Object, scala.Nothing]): Self = this.set("big", value.asInstanceOf[js.Any])
+    def setBr(value: ThemedStyledFunction[br, T, js.Object, scala.Nothing]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockquote(value: ThemedStyledFunction[blockquote, T, js.Object, scala.Nothing]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    def setButton(value: ThemedStyledFunction[button, T, js.Object, scala.Nothing]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: ThemedStyledFunction[body, T, js.Object, scala.Nothing]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCanvas(value: ThemedStyledFunction[canvas, T, js.Object, scala.Nothing]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBr(value: ThemedStyledFunction[br, T, js.Object, scala.Nothing]): Self = this.set("br", value.asInstanceOf[js.Any])
+    def setCaption(value: ThemedStyledFunction[caption, T, js.Object, scala.Nothing]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: ThemedStyledFunction[button, T, js.Object, scala.Nothing]): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCircle(value: ThemedStyledFunction[circle, T, js.Object, scala.Nothing]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: ThemedStyledFunction[canvas, T, js.Object, scala.Nothing]): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCite(value: ThemedStyledFunction[cite, T, js.Object, scala.Nothing]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: ThemedStyledFunction[caption, T, js.Object, scala.Nothing]): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setClipPath(value: ThemedStyledFunction[clipPath, T, js.Object, scala.Nothing]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: ThemedStyledFunction[circle, T, js.Object, scala.Nothing]): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setCode(value: ThemedStyledFunction[code, T, js.Object, scala.Nothing]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCite(value: ThemedStyledFunction[cite, T, js.Object, scala.Nothing]): Self = this.set("cite", value.asInstanceOf[js.Any])
+    def setCol(value: ThemedStyledFunction[col, T, js.Object, scala.Nothing]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPath(value: ThemedStyledFunction[clipPath, T, js.Object, scala.Nothing]): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    def setColgroup(value: ThemedStyledFunction[colgroup, T, js.Object, scala.Nothing]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: ThemedStyledFunction[code, T, js.Object, scala.Nothing]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setData(value: ThemedStyledFunction[data, T, js.Object, scala.Nothing]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: ThemedStyledFunction[col, T, js.Object, scala.Nothing]): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setDatalist(value: ThemedStyledFunction[datalist, T, js.Object, scala.Nothing]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColgroup(value: ThemedStyledFunction[colgroup, T, js.Object, scala.Nothing]): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    def setDd(value: ThemedStyledFunction[dd, T, js.Object, scala.Nothing]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: ThemedStyledFunction[data, T, js.Object, scala.Nothing]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDefs(value: ThemedStyledFunction[defs, T, js.Object, scala.Nothing]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatalist(value: ThemedStyledFunction[datalist, T, js.Object, scala.Nothing]): Self = this.set("datalist", value.asInstanceOf[js.Any])
+    def setDel(value: ThemedStyledFunction[del, T, js.Object, scala.Nothing]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDd(value: ThemedStyledFunction[dd, T, js.Object, scala.Nothing]): Self = this.set("dd", value.asInstanceOf[js.Any])
+    def setDesc(value: ThemedStyledFunction[desc, T, js.Object, scala.Nothing]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefs(value: ThemedStyledFunction[defs, T, js.Object, scala.Nothing]): Self = this.set("defs", value.asInstanceOf[js.Any])
+    def setDetails(value: ThemedStyledFunction[details, T, js.Object, scala.Nothing]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDel(value: ThemedStyledFunction[del, T, js.Object, scala.Nothing]): Self = this.set("del", value.asInstanceOf[js.Any])
+    def setDfn(value: ThemedStyledFunction[dfn, T, js.Object, scala.Nothing]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: ThemedStyledFunction[desc, T, js.Object, scala.Nothing]): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setDialog(value: ThemedStyledFunction[dialog, T, js.Object, scala.Nothing]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: ThemedStyledFunction[details, T, js.Object, scala.Nothing]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setDiv(value: ThemedStyledFunction[div, T, js.Object, scala.Nothing]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDfn(value: ThemedStyledFunction[dfn, T, js.Object, scala.Nothing]): Self = this.set("dfn", value.asInstanceOf[js.Any])
+    def setDl(value: ThemedStyledFunction[dl, T, js.Object, scala.Nothing]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialog(value: ThemedStyledFunction[dialog, T, js.Object, scala.Nothing]): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    def setDt(value: ThemedStyledFunction[dt, T, js.Object, scala.Nothing]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiv(value: ThemedStyledFunction[div, T, js.Object, scala.Nothing]): Self = this.set("div", value.asInstanceOf[js.Any])
+    def setEllipse(value: ThemedStyledFunction[ellipse, T, js.Object, scala.Nothing]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDl(value: ThemedStyledFunction[dl, T, js.Object, scala.Nothing]): Self = this.set("dl", value.asInstanceOf[js.Any])
+    def setEm(value: ThemedStyledFunction[em, T, js.Object, scala.Nothing]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDt(value: ThemedStyledFunction[dt, T, js.Object, scala.Nothing]): Self = this.set("dt", value.asInstanceOf[js.Any])
+    def setEmbed(value: ThemedStyledFunction[embed, T, js.Object, scala.Nothing]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipse(value: ThemedStyledFunction[ellipse, T, js.Object, scala.Nothing]): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    def setFeBlend(value: ThemedStyledFunction[feBlend, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEm(value: ThemedStyledFunction[em, T, js.Object, scala.Nothing]): Self = this.set("em", value.asInstanceOf[js.Any])
+    def setFeColorMatrix(value: ThemedStyledFunction[feColorMatrix, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbed(value: ThemedStyledFunction[embed, T, js.Object, scala.Nothing]): Self = this.set("embed", value.asInstanceOf[js.Any])
+    def setFeComponentTransfer(value: ThemedStyledFunction[feComponentTransfer, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeBlend(value: ThemedStyledFunction[feBlend, T, js.Object, scala.Nothing]): Self = this.set("feBlend", value.asInstanceOf[js.Any])
+    def setFeComposite(value: ThemedStyledFunction[feComposite, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeColorMatrix(value: ThemedStyledFunction[feColorMatrix, T, js.Object, scala.Nothing]): Self = this.set("feColorMatrix", value.asInstanceOf[js.Any])
+    def setFeConvolveMatrix(value: ThemedStyledFunction[feConvolveMatrix, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeComponentTransfer(value: ThemedStyledFunction[feComponentTransfer, T, js.Object, scala.Nothing]): Self = this.set("feComponentTransfer", value.asInstanceOf[js.Any])
+    def setFeDiffuseLighting(value: ThemedStyledFunction[feDiffuseLighting, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeComposite(value: ThemedStyledFunction[feComposite, T, js.Object, scala.Nothing]): Self = this.set("feComposite", value.asInstanceOf[js.Any])
+    def setFeDisplacementMap(value: ThemedStyledFunction[feDisplacementMap, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeConvolveMatrix(value: ThemedStyledFunction[feConvolveMatrix, T, js.Object, scala.Nothing]): Self = this.set("feConvolveMatrix", value.asInstanceOf[js.Any])
+    def setFeDistantLight(value: ThemedStyledFunction[feDistantLight, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeDiffuseLighting(value: ThemedStyledFunction[feDiffuseLighting, T, js.Object, scala.Nothing]): Self = this.set("feDiffuseLighting", value.asInstanceOf[js.Any])
+    def setFeDropShadow(value: ThemedStyledFunction[feDropShadow, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeDisplacementMap(value: ThemedStyledFunction[feDisplacementMap, T, js.Object, scala.Nothing]): Self = this.set("feDisplacementMap", value.asInstanceOf[js.Any])
+    def setFeFlood(value: ThemedStyledFunction[feFlood, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeDistantLight(value: ThemedStyledFunction[feDistantLight, T, js.Object, scala.Nothing]): Self = this.set("feDistantLight", value.asInstanceOf[js.Any])
+    def setFeFuncA(value: ThemedStyledFunction[feFuncA, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeDropShadow(value: ThemedStyledFunction[feDropShadow, T, js.Object, scala.Nothing]): Self = this.set("feDropShadow", value.asInstanceOf[js.Any])
+    def setFeFuncB(value: ThemedStyledFunction[feFuncB, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeFlood(value: ThemedStyledFunction[feFlood, T, js.Object, scala.Nothing]): Self = this.set("feFlood", value.asInstanceOf[js.Any])
+    def setFeFuncG(value: ThemedStyledFunction[feFuncG, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeFuncA(value: ThemedStyledFunction[feFuncA, T, js.Object, scala.Nothing]): Self = this.set("feFuncA", value.asInstanceOf[js.Any])
+    def setFeFuncR(value: ThemedStyledFunction[feFuncR, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeFuncB(value: ThemedStyledFunction[feFuncB, T, js.Object, scala.Nothing]): Self = this.set("feFuncB", value.asInstanceOf[js.Any])
+    def setFeGaussianBlur(value: ThemedStyledFunction[feGaussianBlur, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeFuncG(value: ThemedStyledFunction[feFuncG, T, js.Object, scala.Nothing]): Self = this.set("feFuncG", value.asInstanceOf[js.Any])
+    def setFeImage(value: ThemedStyledFunction[feImage, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeFuncR(value: ThemedStyledFunction[feFuncR, T, js.Object, scala.Nothing]): Self = this.set("feFuncR", value.asInstanceOf[js.Any])
+    def setFeMerge(value: ThemedStyledFunction[feMerge, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeGaussianBlur(value: ThemedStyledFunction[feGaussianBlur, T, js.Object, scala.Nothing]): Self = this.set("feGaussianBlur", value.asInstanceOf[js.Any])
+    def setFeMergeNode(value: ThemedStyledFunction[feMergeNode, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeImage(value: ThemedStyledFunction[feImage, T, js.Object, scala.Nothing]): Self = this.set("feImage", value.asInstanceOf[js.Any])
+    def setFeMorphology(value: ThemedStyledFunction[feMorphology, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeMerge(value: ThemedStyledFunction[feMerge, T, js.Object, scala.Nothing]): Self = this.set("feMerge", value.asInstanceOf[js.Any])
+    def setFeOffset(value: ThemedStyledFunction[feOffset, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeMergeNode(value: ThemedStyledFunction[feMergeNode, T, js.Object, scala.Nothing]): Self = this.set("feMergeNode", value.asInstanceOf[js.Any])
+    def setFePointLight(value: ThemedStyledFunction[fePointLight, T, js.Object, scala.Nothing]): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeMorphology(value: ThemedStyledFunction[feMorphology, T, js.Object, scala.Nothing]): Self = this.set("feMorphology", value.asInstanceOf[js.Any])
+    def setFeSpecularLighting(value: ThemedStyledFunction[feSpecularLighting, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeOffset(value: ThemedStyledFunction[feOffset, T, js.Object, scala.Nothing]): Self = this.set("feOffset", value.asInstanceOf[js.Any])
+    def setFeSpotLight(value: ThemedStyledFunction[feSpotLight, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFePointLight(value: ThemedStyledFunction[fePointLight, T, js.Object, scala.Nothing]): Self = this.set("fePointLight", value.asInstanceOf[js.Any])
+    def setFeTile(value: ThemedStyledFunction[feTile, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeSpecularLighting(value: ThemedStyledFunction[feSpecularLighting, T, js.Object, scala.Nothing]): Self = this.set("feSpecularLighting", value.asInstanceOf[js.Any])
+    def setFeTurbulence(value: ThemedStyledFunction[feTurbulence, T, js.Object, scala.Nothing]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeSpotLight(value: ThemedStyledFunction[feSpotLight, T, js.Object, scala.Nothing]): Self = this.set("feSpotLight", value.asInstanceOf[js.Any])
+    def setFieldset(value: ThemedStyledFunction[fieldset, T, js.Object, scala.Nothing]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeTile(value: ThemedStyledFunction[feTile, T, js.Object, scala.Nothing]): Self = this.set("feTile", value.asInstanceOf[js.Any])
+    def setFigcaption(value: ThemedStyledFunction[figcaption, T, js.Object, scala.Nothing]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeTurbulence(value: ThemedStyledFunction[feTurbulence, T, js.Object, scala.Nothing]): Self = this.set("feTurbulence", value.asInstanceOf[js.Any])
+    def setFigure(value: ThemedStyledFunction[figure, T, js.Object, scala.Nothing]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldset(value: ThemedStyledFunction[fieldset, T, js.Object, scala.Nothing]): Self = this.set("fieldset", value.asInstanceOf[js.Any])
+    def setFilter(value: ThemedStyledFunction[filter, T, js.Object, scala.Nothing]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFigcaption(value: ThemedStyledFunction[figcaption, T, js.Object, scala.Nothing]): Self = this.set("figcaption", value.asInstanceOf[js.Any])
+    def setFooter(value: ThemedStyledFunction[footer, T, js.Object, scala.Nothing]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFigure(value: ThemedStyledFunction[figure, T, js.Object, scala.Nothing]): Self = this.set("figure", value.asInstanceOf[js.Any])
+    def setForeignObject(value: ThemedStyledFunction[foreignObject, T, js.Object, scala.Nothing]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: ThemedStyledFunction[filter, T, js.Object, scala.Nothing]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setForm(value: ThemedStyledFunction[form, T, js.Object, scala.Nothing]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: ThemedStyledFunction[footer, T, js.Object, scala.Nothing]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setG(value: ThemedStyledFunction[g, T, js.Object, scala.Nothing]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignObject(value: ThemedStyledFunction[foreignObject, T, js.Object, scala.Nothing]): Self = this.set("foreignObject", value.asInstanceOf[js.Any])
+    def setH1(value: ThemedStyledFunction[h1, T, js.Object, scala.Nothing]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: ThemedStyledFunction[form, T, js.Object, scala.Nothing]): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setH2(value: ThemedStyledFunction[h2, T, js.Object, scala.Nothing]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setG(value: ThemedStyledFunction[g, T, js.Object, scala.Nothing]): Self = this.set("g", value.asInstanceOf[js.Any])
+    def setH3(value: ThemedStyledFunction[h3, T, js.Object, scala.Nothing]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH1(value: ThemedStyledFunction[h1, T, js.Object, scala.Nothing]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    def setH4(value: ThemedStyledFunction[h4, T, js.Object, scala.Nothing]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH2(value: ThemedStyledFunction[h2, T, js.Object, scala.Nothing]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    def setH5(value: ThemedStyledFunction[h5, T, js.Object, scala.Nothing]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH3(value: ThemedStyledFunction[h3, T, js.Object, scala.Nothing]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    def setH6(value: ThemedStyledFunction[h6, T, js.Object, scala.Nothing]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH4(value: ThemedStyledFunction[h4, T, js.Object, scala.Nothing]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    def setHead(value: ThemedStyledFunction[head, T, js.Object, scala.Nothing]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH5(value: ThemedStyledFunction[h5, T, js.Object, scala.Nothing]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    def setHeader(value: ThemedStyledFunction[header, T, js.Object, scala.Nothing]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH6(value: ThemedStyledFunction[h6, T, js.Object, scala.Nothing]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    def setHgroup(value: ThemedStyledFunction[hgroup, T, js.Object, scala.Nothing]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead(value: ThemedStyledFunction[head, T, js.Object, scala.Nothing]): Self = this.set("head", value.asInstanceOf[js.Any])
+    def setHr(value: ThemedStyledFunction[hr, T, js.Object, scala.Nothing]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: ThemedStyledFunction[header, T, js.Object, scala.Nothing]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHtml(value: ThemedStyledFunction[html, T, js.Object, scala.Nothing]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHgroup(value: ThemedStyledFunction[hgroup, T, js.Object, scala.Nothing]): Self = this.set("hgroup", value.asInstanceOf[js.Any])
+    def setI(value: ThemedStyledFunction[i, T, js.Object, scala.Nothing]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHr(value: ThemedStyledFunction[hr, T, js.Object, scala.Nothing]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    def setIframe(value: ThemedStyledFunction[iframe, T, js.Object, scala.Nothing]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: ThemedStyledFunction[html, T, js.Object, scala.Nothing]): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setImage(value: ThemedStyledFunction[image, T, js.Object, scala.Nothing]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI(value: ThemedStyledFunction[i, T, js.Object, scala.Nothing]): Self = this.set("i", value.asInstanceOf[js.Any])
+    def setImg(value: ThemedStyledFunction[img, T, js.Object, scala.Nothing]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframe(value: ThemedStyledFunction[iframe, T, js.Object, scala.Nothing]): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    def setInput(value: ThemedStyledFunction[input, T, js.Object, scala.Nothing]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ThemedStyledFunction[image, T, js.Object, scala.Nothing]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setIns(value: ThemedStyledFunction[ins, T, js.Object, scala.Nothing]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImg(value: ThemedStyledFunction[img, T, js.Object, scala.Nothing]): Self = this.set("img", value.asInstanceOf[js.Any])
+    def setKbd(value: ThemedStyledFunction[kbd, T, js.Object, scala.Nothing]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: ThemedStyledFunction[input, T, js.Object, scala.Nothing]): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setKeygen(value: ThemedStyledFunction[keygen, T, js.Object, scala.Nothing]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIns(value: ThemedStyledFunction[ins, T, js.Object, scala.Nothing]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    def setLabel(value: ThemedStyledFunction[label, T, js.Object, scala.Nothing]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKbd(value: ThemedStyledFunction[kbd, T, js.Object, scala.Nothing]): Self = this.set("kbd", value.asInstanceOf[js.Any])
+    def setLegend(value: ThemedStyledFunction[legend, T, js.Object, scala.Nothing]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeygen(value: ThemedStyledFunction[keygen, T, js.Object, scala.Nothing]): Self = this.set("keygen", value.asInstanceOf[js.Any])
+    def setLi(value: ThemedStyledFunction[li, T, js.Object, scala.Nothing]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ThemedStyledFunction[label, T, js.Object, scala.Nothing]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLine(value: ThemedStyledFunction[line, T, js.Object, scala.Nothing]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: ThemedStyledFunction[legend, T, js.Object, scala.Nothing]): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLinearGradient(value: ThemedStyledFunction[linearGradient, T, js.Object, scala.Nothing]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLi(value: ThemedStyledFunction[li, T, js.Object, scala.Nothing]): Self = this.set("li", value.asInstanceOf[js.Any])
+    def setLink(value: ThemedStyledFunction[link, T, js.Object, scala.Nothing]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: ThemedStyledFunction[line, T, js.Object, scala.Nothing]): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMain(value: ThemedStyledFunction[main, T, js.Object, scala.Nothing]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearGradient(value: ThemedStyledFunction[linearGradient, T, js.Object, scala.Nothing]): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
+    def setMap(value: ThemedStyledFunction[map, T, js.Object, scala.Nothing]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: ThemedStyledFunction[link, T, js.Object, scala.Nothing]): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setMark(value: ThemedStyledFunction[mark, T, js.Object, scala.Nothing]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: ThemedStyledFunction[main, T, js.Object, scala.Nothing]): Self = this.set("main", value.asInstanceOf[js.Any])
+    def setMarker(value: ThemedStyledFunction[marker, T, js.Object, scala.Nothing]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: ThemedStyledFunction[map, T, js.Object, scala.Nothing]): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMask(value: ThemedStyledFunction[mask, T, js.Object, scala.Nothing]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMark(value: ThemedStyledFunction[mark, T, js.Object, scala.Nothing]): Self = this.set("mark", value.asInstanceOf[js.Any])
+    def setMenu(value: ThemedStyledFunction[menu, T, js.Object, scala.Nothing]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: ThemedStyledFunction[marker, T, js.Object, scala.Nothing]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMenuitem(value: ThemedStyledFunction[menuitem, T, js.Object, scala.Nothing]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: ThemedStyledFunction[mask, T, js.Object, scala.Nothing]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setMeta(value: ThemedStyledFunction[meta, T, js.Object, scala.Nothing]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: ThemedStyledFunction[menu, T, js.Object, scala.Nothing]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMetadata(value: ThemedStyledFunction[metadata, T, js.Object, scala.Nothing]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuitem(value: ThemedStyledFunction[menuitem, T, js.Object, scala.Nothing]): Self = this.set("menuitem", value.asInstanceOf[js.Any])
+    def setMeter(value: ThemedStyledFunction[meter, T, js.Object, scala.Nothing]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: ThemedStyledFunction[meta, T, js.Object, scala.Nothing]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setMpath(value: ThemedStyledFunction[mpath, T, js.Object, scala.Nothing]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ThemedStyledFunction[metadata, T, js.Object, scala.Nothing]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNav(value: ThemedStyledFunction[nav, T, js.Object, scala.Nothing]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeter(value: ThemedStyledFunction[meter, T, js.Object, scala.Nothing]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    def setNoindex(value: ThemedStyledFunction[noindex, T, js.Object, scala.Nothing]): Self = StObject.set(x, "noindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpath(value: ThemedStyledFunction[mpath, T, js.Object, scala.Nothing]): Self = this.set("mpath", value.asInstanceOf[js.Any])
+    def setNoscript(value: ThemedStyledFunction[noscript, T, js.Object, scala.Nothing]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNav(value: ThemedStyledFunction[nav, T, js.Object, scala.Nothing]): Self = this.set("nav", value.asInstanceOf[js.Any])
+    def setObject(value: ThemedStyledFunction[`object`, T, js.Object, scala.Nothing]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoindex(value: ThemedStyledFunction[noindex, T, js.Object, scala.Nothing]): Self = this.set("noindex", value.asInstanceOf[js.Any])
+    def setOl(value: ThemedStyledFunction[ol, T, js.Object, scala.Nothing]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoscript(value: ThemedStyledFunction[noscript, T, js.Object, scala.Nothing]): Self = this.set("noscript", value.asInstanceOf[js.Any])
+    def setOptgroup(value: ThemedStyledFunction[optgroup, T, js.Object, scala.Nothing]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: ThemedStyledFunction[`object`, T, js.Object, scala.Nothing]): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setOption(value: ThemedStyledFunction[option, T, js.Object, scala.Nothing]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOl(value: ThemedStyledFunction[ol, T, js.Object, scala.Nothing]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    def setOutput(value: ThemedStyledFunction[output, T, js.Object, scala.Nothing]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptgroup(value: ThemedStyledFunction[optgroup, T, js.Object, scala.Nothing]): Self = this.set("optgroup", value.asInstanceOf[js.Any])
+    def setP(value: ThemedStyledFunction[p, T, js.Object, scala.Nothing]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: ThemedStyledFunction[option, T, js.Object, scala.Nothing]): Self = this.set("option", value.asInstanceOf[js.Any])
+    def setParam(value: ThemedStyledFunction[param, T, js.Object, scala.Nothing]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: ThemedStyledFunction[output, T, js.Object, scala.Nothing]): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setPath(value: ThemedStyledFunction[path, T, js.Object, scala.Nothing]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: ThemedStyledFunction[p, T, js.Object, scala.Nothing]): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setPattern(value: ThemedStyledFunction[pattern, T, js.Object, scala.Nothing]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParam(value: ThemedStyledFunction[param, T, js.Object, scala.Nothing]): Self = this.set("param", value.asInstanceOf[js.Any])
+    def setPicture(value: ThemedStyledFunction[picture, T, js.Object, scala.Nothing]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: ThemedStyledFunction[path, T, js.Object, scala.Nothing]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPolygon(value: ThemedStyledFunction[polygon, T, js.Object, scala.Nothing]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: ThemedStyledFunction[pattern, T, js.Object, scala.Nothing]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setPolyline(value: ThemedStyledFunction[polyline, T, js.Object, scala.Nothing]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: ThemedStyledFunction[picture, T, js.Object, scala.Nothing]): Self = this.set("picture", value.asInstanceOf[js.Any])
+    def setPre(value: ThemedStyledFunction[pre, T, js.Object, scala.Nothing]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon(value: ThemedStyledFunction[polygon, T, js.Object, scala.Nothing]): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    def setProgress(value: ThemedStyledFunction[progress, T, js.Object, scala.Nothing]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyline(value: ThemedStyledFunction[polyline, T, js.Object, scala.Nothing]): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    def setQ(value: ThemedStyledFunction[q, T, js.Object, scala.Nothing]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPre(value: ThemedStyledFunction[pre, T, js.Object, scala.Nothing]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    def setRadialGradient(value: ThemedStyledFunction[radialGradient, T, js.Object, scala.Nothing]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: ThemedStyledFunction[progress, T, js.Object, scala.Nothing]): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setRect(value: ThemedStyledFunction[rect, T, js.Object, scala.Nothing]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: ThemedStyledFunction[q, T, js.Object, scala.Nothing]): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setRp(value: ThemedStyledFunction[rp, T, js.Object, scala.Nothing]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadialGradient(value: ThemedStyledFunction[radialGradient, T, js.Object, scala.Nothing]): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
+    def setRt(value: ThemedStyledFunction[rt, T, js.Object, scala.Nothing]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRect(value: ThemedStyledFunction[rect, T, js.Object, scala.Nothing]): Self = this.set("rect", value.asInstanceOf[js.Any])
+    def setRuby(value: ThemedStyledFunction[ruby, T, js.Object, scala.Nothing]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRp(value: ThemedStyledFunction[rp, T, js.Object, scala.Nothing]): Self = this.set("rp", value.asInstanceOf[js.Any])
+    def setS(value: ThemedStyledFunction[s, T, js.Object, scala.Nothing]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRt(value: ThemedStyledFunction[rt, T, js.Object, scala.Nothing]): Self = this.set("rt", value.asInstanceOf[js.Any])
+    def setSamp(value: ThemedStyledFunction[samp, T, js.Object, scala.Nothing]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuby(value: ThemedStyledFunction[ruby, T, js.Object, scala.Nothing]): Self = this.set("ruby", value.asInstanceOf[js.Any])
+    def setScript(value: ThemedStyledFunction[script, T, js.Object, scala.Nothing]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: ThemedStyledFunction[s, T, js.Object, scala.Nothing]): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setSection(value: ThemedStyledFunction[section, T, js.Object, scala.Nothing]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamp(value: ThemedStyledFunction[samp, T, js.Object, scala.Nothing]): Self = this.set("samp", value.asInstanceOf[js.Any])
+    def setSelect(value: ThemedStyledFunction[select, T, js.Object, scala.Nothing]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: ThemedStyledFunction[script, T, js.Object, scala.Nothing]): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setSlot(value: ThemedStyledFunction[slot, T, js.Object, scala.Nothing]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: ThemedStyledFunction[section, T, js.Object, scala.Nothing]): Self = this.set("section", value.asInstanceOf[js.Any])
+    def setSmall(value: ThemedStyledFunction[small, T, js.Object, scala.Nothing]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: ThemedStyledFunction[select, T, js.Object, scala.Nothing]): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSource(value: ThemedStyledFunction[source, T, js.Object, scala.Nothing]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlot(value: ThemedStyledFunction[slot, T, js.Object, scala.Nothing]): Self = this.set("slot", value.asInstanceOf[js.Any])
+    def setSpan(value: ThemedStyledFunction[span, T, js.Object, scala.Nothing]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmall(value: ThemedStyledFunction[small, T, js.Object, scala.Nothing]): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setStop(value: ThemedStyledFunction[stop, T, js.Object, scala.Nothing]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: ThemedStyledFunction[source, T, js.Object, scala.Nothing]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setStrong(value: ThemedStyledFunction[strong, T, js.Object, scala.Nothing]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpan(value: ThemedStyledFunction[span, T, js.Object, scala.Nothing]): Self = this.set("span", value.asInstanceOf[js.Any])
+    def setStyle(value: ThemedStyledFunction[style, T, js.Object, scala.Nothing]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: ThemedStyledFunction[stop, T, js.Object, scala.Nothing]): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setSub(value: ThemedStyledFunction[sub, T, js.Object, scala.Nothing]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrong(value: ThemedStyledFunction[strong, T, js.Object, scala.Nothing]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    def setSummary(value: ThemedStyledFunction[summary, T, js.Object, scala.Nothing]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: ThemedStyledFunction[style, T, js.Object, scala.Nothing]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSup(value: ThemedStyledFunction[sup, T, js.Object, scala.Nothing]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: ThemedStyledFunction[sub, T, js.Object, scala.Nothing]): Self = this.set("sub", value.asInstanceOf[js.Any])
+    def setSvg(value: ThemedStyledFunction[svg, T, js.Object, scala.Nothing]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: ThemedStyledFunction[summary, T, js.Object, scala.Nothing]): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSwitch(value: ThemedStyledFunction[switch, T, js.Object, scala.Nothing]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSup(value: ThemedStyledFunction[sup, T, js.Object, scala.Nothing]): Self = this.set("sup", value.asInstanceOf[js.Any])
+    def setSymbol(value: ThemedStyledFunction[symbol, T, js.Object, scala.Nothing]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: ThemedStyledFunction[svg, T, js.Object, scala.Nothing]): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setTable(value: ThemedStyledFunction[table, T, js.Object, scala.Nothing]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitch(value: ThemedStyledFunction[switch, T, js.Object, scala.Nothing]): Self = this.set("switch", value.asInstanceOf[js.Any])
+    def setTbody(value: ThemedStyledFunction[tbody, T, js.Object, scala.Nothing]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol(value: ThemedStyledFunction[symbol, T, js.Object, scala.Nothing]): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setTd(value: ThemedStyledFunction[td, T, js.Object, scala.Nothing]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: ThemedStyledFunction[table, T, js.Object, scala.Nothing]): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTemplate(value: ThemedStyledFunction[template, T, js.Object, scala.Nothing]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbody(value: ThemedStyledFunction[tbody, T, js.Object, scala.Nothing]): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    def setText(value: ThemedStyledFunction[text, T, js.Object, scala.Nothing]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTd(value: ThemedStyledFunction[td, T, js.Object, scala.Nothing]): Self = this.set("td", value.asInstanceOf[js.Any])
+    def setTextPath(value: ThemedStyledFunction[textPath, T, js.Object, scala.Nothing]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: ThemedStyledFunction[template, T, js.Object, scala.Nothing]): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTextarea(value: ThemedStyledFunction[textarea, T, js.Object, scala.Nothing]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: ThemedStyledFunction[text, T, js.Object, scala.Nothing]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTfoot(value: ThemedStyledFunction[tfoot, T, js.Object, scala.Nothing]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextPath(value: ThemedStyledFunction[textPath, T, js.Object, scala.Nothing]): Self = this.set("textPath", value.asInstanceOf[js.Any])
+    def setTh(value: ThemedStyledFunction[th, T, js.Object, scala.Nothing]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextarea(value: ThemedStyledFunction[textarea, T, js.Object, scala.Nothing]): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    def setThead(value: ThemedStyledFunction[thead, T, js.Object, scala.Nothing]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTfoot(value: ThemedStyledFunction[tfoot, T, js.Object, scala.Nothing]): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    def setTime(value: ThemedStyledFunction[time, T, js.Object, scala.Nothing]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTh(value: ThemedStyledFunction[th, T, js.Object, scala.Nothing]): Self = this.set("th", value.asInstanceOf[js.Any])
+    def setTitle(value: ThemedStyledFunction[title, T, js.Object, scala.Nothing]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThead(value: ThemedStyledFunction[thead, T, js.Object, scala.Nothing]): Self = this.set("thead", value.asInstanceOf[js.Any])
+    def setTr(value: ThemedStyledFunction[tr, T, js.Object, scala.Nothing]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: ThemedStyledFunction[time, T, js.Object, scala.Nothing]): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTrack(value: ThemedStyledFunction[track, T, js.Object, scala.Nothing]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: ThemedStyledFunction[title, T, js.Object, scala.Nothing]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTspan(value: ThemedStyledFunction[tspan, T, js.Object, scala.Nothing]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTr(value: ThemedStyledFunction[tr, T, js.Object, scala.Nothing]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    def setU(value: ThemedStyledFunction[u, T, js.Object, scala.Nothing]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack(value: ThemedStyledFunction[track, T, js.Object, scala.Nothing]): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setUl(value: ThemedStyledFunction[ul, T, js.Object, scala.Nothing]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTspan(value: ThemedStyledFunction[tspan, T, js.Object, scala.Nothing]): Self = this.set("tspan", value.asInstanceOf[js.Any])
+    def setUse(value: ThemedStyledFunction[use, T, js.Object, scala.Nothing]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setU(value: ThemedStyledFunction[u, T, js.Object, scala.Nothing]): Self = this.set("u", value.asInstanceOf[js.Any])
+    def setVar(value: ThemedStyledFunction[`var`, T, js.Object, scala.Nothing]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUl(value: ThemedStyledFunction[ul, T, js.Object, scala.Nothing]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    def setVideo(value: ThemedStyledFunction[video, T, js.Object, scala.Nothing]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse(value: ThemedStyledFunction[use, T, js.Object, scala.Nothing]): Self = this.set("use", value.asInstanceOf[js.Any])
+    def setView(value: ThemedStyledFunction[view, T, js.Object, scala.Nothing]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVar(value: ThemedStyledFunction[`var`, T, js.Object, scala.Nothing]): Self = this.set("var", value.asInstanceOf[js.Any])
+    def setWbr(value: ThemedStyledFunction[wbr, T, js.Object, scala.Nothing]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: ThemedStyledFunction[video, T, js.Object, scala.Nothing]): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setView(value: ThemedStyledFunction[view, T, js.Object, scala.Nothing]): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWbr(value: ThemedStyledFunction[wbr, T, js.Object, scala.Nothing]): Self = this.set("wbr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebview(value: ThemedStyledFunction[webview, T, js.Object, scala.Nothing]): Self = this.set("webview", value.asInstanceOf[js.Any])
+    def setWebview(value: ThemedStyledFunction[webview, T, js.Object, scala.Nothing]): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
   }
 }

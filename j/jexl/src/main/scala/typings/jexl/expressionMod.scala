@@ -1,16 +1,23 @@
 package typings.jexl
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jexl/Expression", JSImport.Namespace)
-@js.native
-object expressionMod extends js.Object {
+object expressionMod {
+  
+  @JSImport("jexl/Expression", JSImport.Default)
+  @js.native
+  class default protected () extends Expression {
+    def this(lang: js.Any, exprStr: String) = this()
+  }
+  
+  type Context = StringDictionary[js.Any]
   
   @js.native
-  trait Expression extends js.Object {
+  trait Expression extends StObject {
     
     def _getAst(): js.Any = js.native
     
@@ -41,11 +48,4 @@ object expressionMod extends js.Object {
     def evalSync(): js.Any = js.native
     def evalSync(context: Context): js.Any = js.native
   }
-  
-  @js.native
-  class default protected () extends Expression {
-    def this(lang: js.Any, exprStr: String) = this()
-  }
-  
-  type Context = StringDictionary[js.Any]
 }

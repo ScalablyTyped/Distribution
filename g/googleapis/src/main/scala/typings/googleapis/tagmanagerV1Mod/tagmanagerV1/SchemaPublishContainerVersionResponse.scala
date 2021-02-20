@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Publish container version response.
   */
 @js.native
-trait SchemaPublishContainerVersionResponse extends js.Object {
+trait SchemaPublishContainerVersionResponse extends StObject {
   
   /**
     * Compiler errors or not.
@@ -29,30 +30,18 @@ object SchemaPublishContainerVersionResponse {
   }
   
   @scala.inline
-  implicit class SchemaPublishContainerVersionResponseOps[Self <: SchemaPublishContainerVersionResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaPublishContainerVersionResponseMutableBuilder[Self <: SchemaPublishContainerVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerVersion(value: SchemaContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilerError(value: Boolean): Self = this.set("compilerError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompilerError: Self = this.set("compilerError", js.undefined)
-    
-    @scala.inline
-    def setContainerVersion(value: SchemaContainerVersion): Self = this.set("containerVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerVersion: Self = this.set("containerVersion", js.undefined)
+    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
   }
 }

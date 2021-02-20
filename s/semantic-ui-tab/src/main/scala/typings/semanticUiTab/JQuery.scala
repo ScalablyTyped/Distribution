@@ -56,12 +56,13 @@ import typings.semanticUiTab.semanticUiTabStrings.silent
 import typings.semanticUiTab.semanticUiTabStrings.state
 import typings.semanticUiTab.semanticUiTabStrings.templates
 import typings.semanticUiTab.semanticUiTabStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def tab(): JQuery = js.native
   def tab(behavior: setting, name: alwaysRefresh, value: js.UndefOr[scala.Nothing]): Boolean = js.native

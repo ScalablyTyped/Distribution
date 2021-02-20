@@ -1,13 +1,14 @@
 package typings.astTypes
 
 import typings.astTypes.astTypesMod.Fork
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ast-types/def/babel", JSImport.Namespace)
-@js.native
-object babelMod extends js.Object {
+object babelMod {
   
+  @JSImport("ast-types/def/babel", JSImport.Default)
+  @js.native
   def default(fork: Fork): Unit = js.native
 }

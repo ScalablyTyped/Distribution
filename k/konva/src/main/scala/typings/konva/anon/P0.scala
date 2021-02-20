@@ -1,12 +1,13 @@
 package typings.konva.anon
 
 import typings.konva.typesMod.Vector2d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P0 extends js.Object {
+trait P0 extends StObject {
   
   var p0: Vector2d = js.native
   
@@ -29,36 +30,24 @@ object P0 {
   }
   
   @scala.inline
-  implicit class P0Ops[Self <: P0] (val x: Self) extends AnyVal {
+  implicit class P0MutableBuilder[Self <: P0] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setP0(value: Vector2d): Self = StObject.set(x, "p0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setP1(value: Vector2d): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP0(value: Vector2d): Self = this.set("p0", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP1(value: Vector2d): Self = this.set("p1", value.asInstanceOf[js.Any])
+    def setTransposeX(value: Double): Self = StObject.set(x, "transposeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransposeX(value: Double): Self = this.set("transposeX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransposeY(value: Double): Self = this.set("transposeY", value.asInstanceOf[js.Any])
+    def setTransposeY(value: Double): Self = StObject.set(x, "transposeY", value.asInstanceOf[js.Any])
   }
 }

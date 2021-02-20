@@ -1,6 +1,7 @@
 package typings.braintree.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("braintree", "VisaCheckoutCard")
 @js.native
 class VisaCheckoutCard () extends PaymentMethod {
+  
+  var default: Boolean = js.native
   
   var billingAddress: Address = js.native
   
@@ -30,8 +33,6 @@ class VisaCheckoutCard () extends PaymentMethod {
   var customerLocation: CustomerLocation = js.native
   
   var debit: Debit = js.native
-  
-  var default: Boolean = js.native
   
   var durbinRegulated: DurbinRegulated = js.native
   

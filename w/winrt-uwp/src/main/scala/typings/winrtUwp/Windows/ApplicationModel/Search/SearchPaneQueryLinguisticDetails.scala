@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Search
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about query text that the user enters through an Input Method Editor (IME). */
 @js.native
-trait SearchPaneQueryLinguisticDetails extends js.Object {
+trait SearchPaneQueryLinguisticDetails extends StObject {
   
   /** A list of the text alternatives for the current query text. These alternatives account for uncomposed text the user is entering in an IME. */
   var queryTextAlternatives: IVectorView[String] = js.native
@@ -31,27 +32,15 @@ object SearchPaneQueryLinguisticDetails {
   }
   
   @scala.inline
-  implicit class SearchPaneQueryLinguisticDetailsOps[Self <: SearchPaneQueryLinguisticDetails] (val x: Self) extends AnyVal {
+  implicit class SearchPaneQueryLinguisticDetailsMutableBuilder[Self <: SearchPaneQueryLinguisticDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryTextCompositionLength(value: Double): Self = StObject.set(x, "queryTextCompositionLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueryTextAlternatives(value: IVectorView[String]): Self = this.set("queryTextAlternatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryTextCompositionLength(value: Double): Self = this.set("queryTextCompositionLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryTextCompositionStart(value: Double): Self = this.set("queryTextCompositionStart", value.asInstanceOf[js.Any])
+    def setQueryTextCompositionStart(value: Double): Self = StObject.set(x, "queryTextCompositionStart", value.asInstanceOf[js.Any])
   }
 }

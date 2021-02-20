@@ -1,15 +1,15 @@
 package typings.javaApplet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("JavaAppletStatus")
   @js.native
-  object JavaAppletStatus extends js.Object {
+  object JavaAppletStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.javaApplet.JavaAppletStatus with Double] = js.native

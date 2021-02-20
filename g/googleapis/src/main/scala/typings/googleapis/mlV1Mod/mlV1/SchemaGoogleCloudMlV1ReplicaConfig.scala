@@ -1,5 +1,6 @@
 package typings.googleapis.mlV1Mod.mlV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the configuration for a replica in a cluster.
   */
 @js.native
-trait SchemaGoogleCloudMlV1ReplicaConfig extends js.Object {
+trait SchemaGoogleCloudMlV1ReplicaConfig extends StObject {
   
   /**
     * Represents the type and number of accelerators used by the replica.
@@ -33,30 +34,18 @@ object SchemaGoogleCloudMlV1ReplicaConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudMlV1ReplicaConfigOps[Self <: SchemaGoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudMlV1ReplicaConfigMutableBuilder[Self <: SchemaGoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorConfig(value: SchemaGoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorConfig(value: SchemaGoogleCloudMlV1AcceleratorConfig): Self = this.set("acceleratorConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorConfig: Self = this.set("acceleratorConfig", js.undefined)
-    
-    @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

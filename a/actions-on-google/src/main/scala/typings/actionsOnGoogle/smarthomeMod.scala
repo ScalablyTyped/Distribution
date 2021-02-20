@@ -1,13 +1,14 @@
 package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.smarthomeSmarthomeMod.SmartHome_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/smarthome", JSImport.Namespace)
-@js.native
-object smarthomeMod extends js.Object {
+object smarthomeMod {
   
+  @JSImport("actions-on-google/dist/service/smarthome", "smarthome")
+  @js.native
   val smarthome: SmartHome_ = js.native
 }

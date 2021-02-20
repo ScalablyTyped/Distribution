@@ -1,5 +1,6 @@
 package typings.awsCryptoSha256Js
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@aws-crypto/sha256-js", JSImport.Namespace)
 @js.native
-object awsCryptoSha256JsRequire extends js.Object
+object awsCryptoSha256JsRequire extends StObject

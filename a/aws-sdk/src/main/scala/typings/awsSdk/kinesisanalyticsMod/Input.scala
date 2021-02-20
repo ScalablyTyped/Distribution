@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Input extends js.Object {
+trait Input extends StObject {
   
   /**
     * Describes the number of in-application streams to create.  Data from your source is routed to these in-application input streams.  (see Configuring Application Input.
@@ -46,48 +47,36 @@ object Input {
   }
   
   @scala.inline
-  implicit class InputOps[Self <: Input] (val x: Self) extends AnyVal {
+  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputParallelism(value: InputParallelism): Self = StObject.set(x, "InputParallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputParallelismUndefined: Self = StObject.set(x, "InputParallelism", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSchema(value: SourceSchema): Self = this.set("InputSchema", value.asInstanceOf[js.Any])
+    def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "InputProcessingConfiguration", js.undefined)
     
     @scala.inline
-    def setNamePrefix(value: InAppStreamName): Self = this.set("NamePrefix", value.asInstanceOf[js.Any])
+    def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputParallelism(value: InputParallelism): Self = this.set("InputParallelism", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseInput(value: KinesisFirehoseInput): Self = StObject.set(x, "KinesisFirehoseInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputParallelism: Self = this.set("InputParallelism", js.undefined)
+    def setKinesisFirehoseInputUndefined: Self = StObject.set(x, "KinesisFirehoseInput", js.undefined)
     
     @scala.inline
-    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = this.set("InputProcessingConfiguration", value.asInstanceOf[js.Any])
+    def setKinesisStreamsInput(value: KinesisStreamsInput): Self = StObject.set(x, "KinesisStreamsInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputProcessingConfiguration: Self = this.set("InputProcessingConfiguration", js.undefined)
+    def setKinesisStreamsInputUndefined: Self = StObject.set(x, "KinesisStreamsInput", js.undefined)
     
     @scala.inline
-    def setKinesisFirehoseInput(value: KinesisFirehoseInput): Self = this.set("KinesisFirehoseInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisFirehoseInput: Self = this.set("KinesisFirehoseInput", js.undefined)
-    
-    @scala.inline
-    def setKinesisStreamsInput(value: KinesisStreamsInput): Self = this.set("KinesisStreamsInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStreamsInput: Self = this.set("KinesisStreamsInput", js.undefined)
+    def setNamePrefix(value: InAppStreamName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
   }
 }

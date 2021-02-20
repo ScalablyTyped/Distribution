@@ -1,6 +1,6 @@
 package typings.emberData.mod.DS
 
-import typings.emberObject.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.AbortError")
 @js.native
-class AbortError () extends default
+class AbortError () extends AdapterError

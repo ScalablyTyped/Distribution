@@ -1,5 +1,6 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,36 +50,24 @@ object IELangEditDefaults {
   }
   
   @scala.inline
-  implicit class IELangEditDefaultsOps[Self <: IELangEditDefaults] (val x: Self) extends AnyVal {
+  implicit class IELangEditDefaultsMutableBuilder[Self <: IELangEditDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddButtonHtml(value: String): Self = StObject.set(x, "addButtonHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddButtonLabel(value: String): Self = StObject.set(x, "addButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditFieldHtml(value: String): Self = StObject.set(x, "editFieldHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddButtonHtml(value: String): Self = this.set("addButtonHtml", value.asInstanceOf[js.Any])
+    def setEditFormHtml(value: String): Self = StObject.set(x, "editFormHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddButtonLabel(value: String): Self = this.set("addButtonLabel", value.asInstanceOf[js.Any])
+    def setEditKeyLabel(value: String): Self = StObject.set(x, "editKeyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditFieldHtml(value: String): Self = this.set("editFieldHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditFormHtml(value: String): Self = this.set("editFormHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditKeyLabel(value: String): Self = this.set("editKeyLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditValueLabel(value: String): Self = this.set("editValueLabel", value.asInstanceOf[js.Any])
+    def setEditValueLabel(value: String): Self = StObject.set(x, "editValueLabel", value.asInstanceOf[js.Any])
   }
 }

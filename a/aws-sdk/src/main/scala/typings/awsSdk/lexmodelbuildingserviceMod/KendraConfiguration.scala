@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KendraConfiguration extends js.Object {
+trait KendraConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Kendra index that you want the AMAZON.KendraSearchIntent intent to search. The index must be in the same account and Region as the Amazon Lex bot. If the Amazon Kendra index does not exist, you get an exception when you call the PutIntent operation.
@@ -31,30 +32,18 @@ object KendraConfiguration {
   }
   
   @scala.inline
-  implicit class KendraConfigurationOps[Self <: KendraConfiguration] (val x: Self) extends AnyVal {
+  implicit class KendraConfigurationMutableBuilder[Self <: KendraConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKendraIndex(value: KendraIndexArn): Self = StObject.set(x, "kendraIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryFilterString(value: QueryFilterString): Self = StObject.set(x, "queryFilterString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryFilterStringUndefined: Self = StObject.set(x, "queryFilterString", js.undefined)
     
     @scala.inline
-    def setKendraIndex(value: KendraIndexArn): Self = this.set("kendraIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: roleArn): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryFilterString(value: QueryFilterString): Self = this.set("queryFilterString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryFilterString: Self = this.set("queryFilterString", js.undefined)
+    def setRole(value: roleArn): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

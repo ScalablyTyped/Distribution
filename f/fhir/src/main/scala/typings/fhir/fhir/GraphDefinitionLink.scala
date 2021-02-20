@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,81 +75,69 @@ object GraphDefinitionLink {
   }
   
   @scala.inline
-  implicit class GraphDefinitionLinkOps[Self <: GraphDefinitionLink] (val x: Self) extends AnyVal {
+  implicit class GraphDefinitionLinkMutableBuilder[Self <: GraphDefinitionLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setTargetVarargs(value: GraphDefinitionLinkTarget*): Self = this.set("target", js.Array(value :_*))
+    def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: js.Array[GraphDefinitionLinkTarget]): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setSliceName(value: String): Self = StObject.set(x, "sliceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_max(value: Element): Self = this.set("_max", value.asInstanceOf[js.Any])
+    def setSliceNameUndefined: Self = StObject.set(x, "sliceName", js.undefined)
     
     @scala.inline
-    def delete_max: Self = this.set("_max", js.undefined)
+    def setTarget(value: js.Array[GraphDefinitionLinkTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_min(value: Element): Self = this.set("_min", value.asInstanceOf[js.Any])
+    def setTargetVarargs(value: GraphDefinitionLinkTarget*): Self = StObject.set(x, "target", js.Array(value :_*))
     
     @scala.inline
-    def delete_min: Self = this.set("_min", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def delete_path: Self = this.set("_path", js.undefined)
+    def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sliceName(value: Element): Self = this.set("_sliceName", value.asInstanceOf[js.Any])
+    def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
     
     @scala.inline
-    def delete_sliceName: Self = this.set("_sliceName", js.undefined)
+    def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def set_sliceName(value: Element): Self = StObject.set(x, "_sliceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: integer): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
-    
-    @scala.inline
-    def setSliceName(value: String): Self = this.set("sliceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSliceName: Self = this.set("sliceName", js.undefined)
+    def set_sliceNameUndefined: Self = StObject.set(x, "_sliceName", js.undefined)
   }
 }

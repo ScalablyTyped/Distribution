@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultElectronicSignatureOperationsAsync extends js.Object {
+trait IVaultElectronicSignatureOperationsAsync extends StObject {
   
   def AddEmptySignature(ObjVer: IObjVer, SignatureIdentifier: String): Unit = js.native
   def AddEmptySignature(

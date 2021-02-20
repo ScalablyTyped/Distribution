@@ -3,19 +3,25 @@ package typings.phaser.anon
 import org.scalablytyped.runtime.Instantiable1
 import typings.phaser.spine.canvas.AssetManager
 import typings.phaser.spine.canvas.CanvasTexture
+import typings.phaser.spine.canvas.SkeletonRenderer
+import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofcanvas extends js.Object {
+trait Typeofcanvas extends StObject {
   
   var AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], typings.phaser.spine.canvas.AssetManager] = js.native
   
   var CanvasTexture: Instantiable1[/* image */ HTMLImageElement, typings.phaser.spine.canvas.CanvasTexture] = js.native
   
-  var SkeletonRenderer: TypeofSkeletonRenderer = js.native
+  var SkeletonRenderer: (Instantiable1[
+    /* context */ CanvasRenderingContext2D, 
+    typings.phaser.spine.canvas.SkeletonRenderer
+  ]) with TypeofSkeletonRenderer = js.native
 }
 object Typeofcanvas {
   
@@ -23,34 +29,24 @@ object Typeofcanvas {
   def apply(
     AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager],
     CanvasTexture: Instantiable1[/* image */ HTMLImageElement, CanvasTexture],
-    SkeletonRenderer: TypeofSkeletonRenderer
+    SkeletonRenderer: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) with TypeofSkeletonRenderer
   ): Typeofcanvas = {
     val __obj = js.Dynamic.literal(AssetManager = AssetManager.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], SkeletonRenderer = SkeletonRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofcanvas]
   }
   
   @scala.inline
-  implicit class TypeofcanvasOps[Self <: Typeofcanvas] (val x: Self) extends AnyVal {
+  implicit class TypeofcanvasMutableBuilder[Self <: Typeofcanvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetManager(value: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager]): Self = StObject.set(x, "AssetManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasTexture(value: Instantiable1[/* image */ HTMLImageElement, CanvasTexture]): Self = StObject.set(x, "CanvasTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssetManager(value: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager]): Self = this.set("AssetManager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanvasTexture(value: Instantiable1[/* image */ HTMLImageElement, CanvasTexture]): Self = this.set("CanvasTexture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkeletonRenderer(value: TypeofSkeletonRenderer): Self = this.set("SkeletonRenderer", value.asInstanceOf[js.Any])
+    def setSkeletonRenderer(
+      value: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) with TypeofSkeletonRenderer
+    ): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
   }
 }

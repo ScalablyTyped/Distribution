@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides data to pass through to the worker harness.
   */
 @js.native
-trait SchemaWorkerSettings extends js.Object {
+trait SchemaWorkerSettings extends StObject {
   
   /**
     * The base URL for accessing Google Cloud APIs.  When workers access Google
@@ -59,54 +60,42 @@ object SchemaWorkerSettings {
   }
   
   @scala.inline
-  implicit class SchemaWorkerSettingsOps[Self <: SchemaWorkerSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkerSettingsMutableBuilder[Self <: SchemaWorkerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportingEnabled(value: Boolean): Self = StObject.set(x, "reportingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setReportingEnabledUndefined: Self = StObject.set(x, "reportingEnabled", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportingEnabled(value: Boolean): Self = this.set("reportingEnabled", value.asInstanceOf[js.Any])
+    def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
     
     @scala.inline
-    def deleteReportingEnabled: Self = this.set("reportingEnabled", js.undefined)
+    def setShuffleServicePath(value: String): Self = StObject.set(x, "shuffleServicePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicePath(value: String): Self = this.set("servicePath", value.asInstanceOf[js.Any])
+    def setShuffleServicePathUndefined: Self = StObject.set(x, "shuffleServicePath", js.undefined)
     
     @scala.inline
-    def deleteServicePath: Self = this.set("servicePath", js.undefined)
+    def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShuffleServicePath(value: String): Self = this.set("shuffleServicePath", value.asInstanceOf[js.Any])
+    def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
     @scala.inline
-    def deleteShuffleServicePath: Self = this.set("shuffleServicePath", js.undefined)
+    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTempStoragePrefix(value: String): Self = this.set("tempStoragePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTempStoragePrefix: Self = this.set("tempStoragePrefix", js.undefined)
-    
-    @scala.inline
-    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

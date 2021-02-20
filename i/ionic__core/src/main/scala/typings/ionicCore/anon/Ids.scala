@@ -2,12 +2,13 @@ package typings.ionicCore.anon
 
 import typings.ionicCore.interfaceMod.NavOutletElement
 import typings.ionicCore.interfaceMod.RouteID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ids extends js.Object {
+trait Ids extends StObject {
   
   var ids: js.Array[RouteID] = js.native
   
@@ -22,30 +23,18 @@ object Ids {
   }
   
   @scala.inline
-  implicit class IdsOps[Self <: Ids] (val x: Self) extends AnyVal {
+  implicit class IdsMutableBuilder[Self <: Ids] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIds(value: js.Array[RouteID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdsVarargs(value: RouteID*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutlet(value: NavOutletElement): Self = StObject.set(x, "outlet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: RouteID*): Self = this.set("ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setIds(value: js.Array[RouteID]): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlet(value: NavOutletElement): Self = this.set("outlet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlet: Self = this.set("outlet", js.undefined)
+    def setOutletUndefined: Self = StObject.set(x, "outlet", js.undefined)
   }
 }

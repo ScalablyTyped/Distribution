@@ -71,16 +71,15 @@ import typings.rxjsCompat.anon.FnCallThisWindowBoundaries
 import typings.rxjsCompat.anon.FnCallThisWindowSizeStartWindowEvery
 import typings.rxjsCompat.anon.FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Observable", JSImport.Namespace)
-@js.native
-object internalObservableMod extends js.Object {
+object internalObservableMod {
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     def _catch[T, R](
       selector: js.Function2[
@@ -2002,57 +2001,212 @@ object internalObservableMod extends js.Object {
       observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any) | (js.Function1[/* repeated */ T, R]))*
     ): js.Any = js.native
   }
-  @js.native
-  object Observable extends js.Object {
+  object Observable {
     
-    var ajax: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var bindCallback: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticBindCallback */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.ajax")
+    @js.native
+    def ajax: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any = js.native
+    @scala.inline
+    def ajax_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ajax")(x.asInstanceOf[js.Any])
     
-    var bindNodeCallback: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticBindNodeCallback */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.bindCallback")
+    @js.native
+    def bindCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ js.Any = js.native
+    @scala.inline
+    def bindCallback_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindCallback")(x.asInstanceOf[js.Any])
     
-    var combineLatest: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof combineLatestStatic */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.bindNodeCallback")
+    @js.native
+    def bindNodeCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ js.Any = js.native
+    @scala.inline
+    def bindNodeCallback_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindNodeCallback")(x.asInstanceOf[js.Any])
     
-    var concat: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof concatStatic */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.combineLatest")
+    @js.native
+    def combineLatest: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ js.Any = js.native
+    @scala.inline
+    def combineLatest_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combineLatest")(x.asInstanceOf[js.Any])
     
-    var defer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticDefer */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.concat")
+    @js.native
+    def concat: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ js.Any = js.native
+    @scala.inline
+    def concat_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("concat")(x.asInstanceOf[js.Any])
     
-    var empty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticEmpty */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.defer")
+    @js.native
+    def defer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ js.Any = js.native
+    @scala.inline
+    def defer_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defer")(x.asInstanceOf[js.Any])
     
-    var forkJoin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticForkJoin */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.empty")
+    @js.native
+    def empty: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ js.Any = js.native
+    @scala.inline
+    def empty_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
     
-    var from: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticFrom */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.forkJoin")
+    @js.native
+    def forkJoin: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ js.Any = js.native
+    @scala.inline
+    def forkJoin_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forkJoin")(x.asInstanceOf[js.Any])
     
-    var fromEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticFromEvent */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.from")
+    @js.native
+    def from: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ js.Any = js.native
     
-    var fromEventPattern: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticFromEventPattern */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.fromEvent")
+    @js.native
+    def fromEvent: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ js.Any = js.native
     
-    var fromPromise: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticFromPromise */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.fromEventPattern")
+    @js.native
+    def fromEventPattern: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ js.Any = js.native
+    @scala.inline
+    def fromEventPattern_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEventPattern")(x.asInstanceOf[js.Any])
     
-    var generate: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticGenerate */ js.Any = js.native
+    @scala.inline
+    def fromEvent_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEvent")(x.asInstanceOf[js.Any])
     
-    var interval: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticInterval */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.fromPromise")
+    @js.native
+    def fromPromise: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ js.Any = js.native
+    @scala.inline
+    def fromPromise_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPromise")(x.asInstanceOf[js.Any])
     
-    var merge: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mergeStatic */ js.Any = js.native
+    @scala.inline
+    def from_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("from")(x.asInstanceOf[js.Any])
     
-    var of: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticOf */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.generate")
+    @js.native
+    def generate: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ js.Any = js.native
+    @scala.inline
+    def generate_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generate")(x.asInstanceOf[js.Any])
     
-    var onErrorResumeNext: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticOnErrorResumeNext */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.interval")
+    @js.native
+    def interval: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ js.Any = js.native
+    @scala.inline
+    def interval_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interval")(x.asInstanceOf[js.Any])
     
-    var pairs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticPairs */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.merge")
+    @js.native
+    def merge: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ js.Any = js.native
+    @scala.inline
+    def merge_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
     
-    var race: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticRace */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.of")
+    @js.native
+    def of: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ js.Any = js.native
+    @scala.inline
+    def of_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
     
-    var range: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticRange */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.onErrorResumeNext")
+    @js.native
+    def onErrorResumeNext: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ js.Any = js.native
+    @scala.inline
+    def onErrorResumeNext_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onErrorResumeNext")(x.asInstanceOf[js.Any])
     
-    var throwError: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticThrowError */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.pairs")
+    @js.native
+    def pairs: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ js.Any = js.native
+    @scala.inline
+    def pairs_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pairs")(x.asInstanceOf[js.Any])
     
-    var timer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticTimer */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.race")
+    @js.native
+    def race: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ js.Any = js.native
+    @scala.inline
+    def race_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("race")(x.asInstanceOf[js.Any])
     
-    var using: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticUsing */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.range")
+    @js.native
+    def range: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ js.Any = js.native
+    @scala.inline
+    def range_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("range")(x.asInstanceOf[js.Any])
     
-    var webSocket: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof staticWebSocket */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.throwError")
+    @js.native
+    def throwError: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ js.Any = js.native
+    @scala.inline
+    def throwError_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwError")(x.asInstanceOf[js.Any])
     
-    var zip: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof zipStatic */ js.Any = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.timer")
+    @js.native
+    def timer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ js.Any = js.native
+    @scala.inline
+    def timer_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timer")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rxjs/internal/Observable", "Observable.using")
+    @js.native
+    def using: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticUsing */ js.Any = js.native
+    @scala.inline
+    def using_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticUsing */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("using")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rxjs/internal/Observable", "Observable.webSocket")
+    @js.native
+    def webSocket: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ js.Any = js.native
+    @scala.inline
+    def webSocket_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webSocket")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rxjs/internal/Observable", "Observable.zip")
+    @js.native
+    def zip: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ js.Any = js.native
+    @scala.inline
+    def zip_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zip")(x.asInstanceOf[js.Any])
   }
 }

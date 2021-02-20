@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/fill/BackwardFill", JSImport.Namespace)
-@js.native
-object backwardFillMod extends js.Object {
+object backwardFillMod {
   
+  @JSImport("@ant-design/icons-angular/icons/fill/BackwardFill", "BackwardFill")
+  @js.native
   val BackwardFill: IconDefinition = js.native
 }

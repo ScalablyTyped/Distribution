@@ -1,11 +1,12 @@
 package typings.node.dnsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NaptrRecord extends js.Object {
+trait NaptrRecord extends StObject {
   
   var flags: String = js.native
   
@@ -35,36 +36,24 @@ object NaptrRecord {
   }
   
   @scala.inline
-  implicit class NaptrRecordOps[Self <: NaptrRecord] (val x: Self) extends AnyVal {
+  implicit class NaptrRecordMutableBuilder[Self <: NaptrRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreference(value: Double): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreference(value: Double): Self = this.set("preference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexp(value: String): Self = this.set("regexp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplacement(value: String): Self = this.set("replacement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
   }
 }

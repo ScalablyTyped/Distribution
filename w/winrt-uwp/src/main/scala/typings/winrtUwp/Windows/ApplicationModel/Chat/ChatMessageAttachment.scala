@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an attachment to a chat message. */
 @js.native
-trait ChatMessageAttachment extends js.Object {
+trait ChatMessageAttachment extends StObject {
   
   /** Gets or sets a stream reference for a message attachment. */
   var dataStreamReference: IRandomAccessStreamReference = js.native
@@ -47,39 +48,27 @@ object ChatMessageAttachment {
   }
   
   @scala.inline
-  implicit class ChatMessageAttachmentOps[Self <: ChatMessageAttachment] (val x: Self) extends AnyVal {
+  implicit class ChatMessageAttachmentMutableBuilder[Self <: ChatMessageAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataStreamReference(value: IRandomAccessStreamReference): Self = StObject.set(x, "dataStreamReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupId(value: Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataStreamReference(value: IRandomAccessStreamReference): Self = this.set("dataStreamReference", value.asInstanceOf[js.Any])
+    def setOriginalFileName(value: String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: Double): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalFileName(value: String): Self = this.set("originalFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransferProgress(value: Double): Self = this.set("transferProgress", value.asInstanceOf[js.Any])
+    def setTransferProgress(value: Double): Self = StObject.set(x, "transferProgress", value.asInstanceOf[js.Any])
   }
 }

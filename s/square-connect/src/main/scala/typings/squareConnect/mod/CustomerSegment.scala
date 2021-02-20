@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CustomerSegment")
 @js.native
-class CustomerSegment () extends js.Object {
+class CustomerSegment () extends StObject {
   
   /**
     * The timestamp when the segment was created, in RFC 3339 format.

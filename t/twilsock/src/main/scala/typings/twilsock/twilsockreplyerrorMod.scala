@@ -1,14 +1,14 @@
 package typings.twilsock
 
 import typings.twilsock.twilsockerrorMod.TwilsockError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/error/twilsockreplyerror", JSImport.Namespace)
-@js.native
-object twilsockreplyerrorMod extends js.Object {
+object twilsockreplyerrorMod {
   
+  @JSImport("twilsock/lib/error/twilsockreplyerror", "TwilsockReplyError")
   @js.native
   class TwilsockReplyError protected () extends TwilsockError {
     def this(description: String, reply: js.Any) = this()

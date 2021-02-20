@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalePolicyTab extends js.Object {
+trait LocalePolicyTab extends StObject {
   
   var addressFormat: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object LocalePolicyTab {
   }
   
   @scala.inline
-  implicit class LocalePolicyTabOps[Self <: LocalePolicyTab] (val x: Self) extends AnyVal {
+  implicit class LocalePolicyTabMutableBuilder[Self <: LocalePolicyTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressFormat(value: String): Self = StObject.set(x, "addressFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressFormatUndefined: Self = StObject.set(x, "addressFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalendarType(value: String): Self = StObject.set(x, "calendarType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressFormat(value: String): Self = this.set("addressFormat", value.asInstanceOf[js.Any])
+    def setCalendarTypeUndefined: Self = StObject.set(x, "calendarType", js.undefined)
     
     @scala.inline
-    def deleteAddressFormat: Self = this.set("addressFormat", js.undefined)
+    def setCultureName(value: String): Self = StObject.set(x, "cultureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarType(value: String): Self = this.set("calendarType", value.asInstanceOf[js.Any])
+    def setCultureNameUndefined: Self = StObject.set(x, "cultureName", js.undefined)
     
     @scala.inline
-    def deleteCalendarType: Self = this.set("calendarType", js.undefined)
+    def setCurrencyNegativeFormat(value: String): Self = StObject.set(x, "currencyNegativeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCultureName(value: String): Self = this.set("cultureName", value.asInstanceOf[js.Any])
+    def setCurrencyNegativeFormatUndefined: Self = StObject.set(x, "currencyNegativeFormat", js.undefined)
     
     @scala.inline
-    def deleteCultureName: Self = this.set("cultureName", js.undefined)
+    def setCurrencyPositiveFormat(value: String): Self = StObject.set(x, "currencyPositiveFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyNegativeFormat(value: String): Self = this.set("currencyNegativeFormat", value.asInstanceOf[js.Any])
+    def setCurrencyPositiveFormatUndefined: Self = StObject.set(x, "currencyPositiveFormat", js.undefined)
     
     @scala.inline
-    def deleteCurrencyNegativeFormat: Self = this.set("currencyNegativeFormat", js.undefined)
+    def setCustomDateFormat(value: String): Self = StObject.set(x, "customDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyPositiveFormat(value: String): Self = this.set("currencyPositiveFormat", value.asInstanceOf[js.Any])
+    def setCustomDateFormatUndefined: Self = StObject.set(x, "customDateFormat", js.undefined)
     
     @scala.inline
-    def deleteCurrencyPositiveFormat: Self = this.set("currencyPositiveFormat", js.undefined)
+    def setCustomTimeFormat(value: String): Self = StObject.set(x, "customTimeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDateFormat(value: String): Self = this.set("customDateFormat", value.asInstanceOf[js.Any])
+    def setCustomTimeFormatUndefined: Self = StObject.set(x, "customTimeFormat", js.undefined)
     
     @scala.inline
-    def deleteCustomDateFormat: Self = this.set("customDateFormat", js.undefined)
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomTimeFormat(value: String): Self = this.set("customTimeFormat", value.asInstanceOf[js.Any])
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def deleteCustomTimeFormat: Self = this.set("customTimeFormat", js.undefined)
+    def setInitialFormat(value: String): Self = StObject.set(x, "initialFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setInitialFormatUndefined: Self = StObject.set(x, "initialFormat", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setNameFormat(value: String): Self = StObject.set(x, "nameFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialFormat(value: String): Self = this.set("initialFormat", value.asInstanceOf[js.Any])
+    def setNameFormatUndefined: Self = StObject.set(x, "nameFormat", js.undefined)
     
     @scala.inline
-    def deleteInitialFormat: Self = this.set("initialFormat", js.undefined)
+    def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameFormat(value: String): Self = this.set("nameFormat", value.asInstanceOf[js.Any])
+    def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
     
     @scala.inline
-    def deleteNameFormat: Self = this.set("nameFormat", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeFormat(value: String): Self = this.set("timeFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeFormat: Self = this.set("timeFormat", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

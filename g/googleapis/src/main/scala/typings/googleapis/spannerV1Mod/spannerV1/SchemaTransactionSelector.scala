@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * transactions.
   */
 @js.native
-trait SchemaTransactionSelector extends js.Object {
+trait SchemaTransactionSelector extends StObject {
   
   /**
     * Begin a new transaction and execute this read or SQL query in it. The
@@ -40,36 +41,24 @@ object SchemaTransactionSelector {
   }
   
   @scala.inline
-  implicit class SchemaTransactionSelectorOps[Self <: SchemaTransactionSelector] (val x: Self) extends AnyVal {
+  implicit class SchemaTransactionSelectorMutableBuilder[Self <: SchemaTransactionSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBegin(value: SchemaTransactionOptions): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: SchemaTransactionOptions): Self = this.set("begin", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteBegin: Self = this.set("begin", js.undefined)
+    def setSingleUse(value: SchemaTransactionOptions): Self = StObject.set(x, "singleUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setSingleUse(value: SchemaTransactionOptions): Self = this.set("singleUse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleUse: Self = this.set("singleUse", js.undefined)
+    def setSingleUseUndefined: Self = StObject.set(x, "singleUse", js.undefined)
   }
 }

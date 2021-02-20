@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckpointConfiguration extends js.Object {
+trait CheckpointConfiguration extends StObject {
   
   /**
     * Describes the interval in milliseconds between checkpoint operations.   If CheckpointConfiguration.ConfigurationType is DEFAULT, the application will use a CheckpointInterval vaue of 60000, even if this value is set to another value using this API or in application code. 
@@ -36,39 +37,27 @@ object CheckpointConfiguration {
   }
   
   @scala.inline
-  implicit class CheckpointConfigurationOps[Self <: CheckpointConfiguration] (val x: Self) extends AnyVal {
+  implicit class CheckpointConfigurationMutableBuilder[Self <: CheckpointConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckpointInterval(value: CheckpointInterval): Self = StObject.set(x, "CheckpointInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckpointIntervalUndefined: Self = StObject.set(x, "CheckpointInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckpointingEnabled(value: BooleanObject): Self = StObject.set(x, "CheckpointingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationType(value: ConfigurationType): Self = this.set("ConfigurationType", value.asInstanceOf[js.Any])
+    def setCheckpointingEnabledUndefined: Self = StObject.set(x, "CheckpointingEnabled", js.undefined)
     
     @scala.inline
-    def setCheckpointInterval(value: CheckpointInterval): Self = this.set("CheckpointInterval", value.asInstanceOf[js.Any])
+    def setConfigurationType(value: ConfigurationType): Self = StObject.set(x, "ConfigurationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckpointInterval: Self = this.set("CheckpointInterval", js.undefined)
+    def setMinPauseBetweenCheckpoints(value: MinPauseBetweenCheckpoints): Self = StObject.set(x, "MinPauseBetweenCheckpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckpointingEnabled(value: BooleanObject): Self = this.set("CheckpointingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckpointingEnabled: Self = this.set("CheckpointingEnabled", js.undefined)
-    
-    @scala.inline
-    def setMinPauseBetweenCheckpoints(value: MinPauseBetweenCheckpoints): Self = this.set("MinPauseBetweenCheckpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinPauseBetweenCheckpoints: Self = this.set("MinPauseBetweenCheckpoints", js.undefined)
+    def setMinPauseBetweenCheckpointsUndefined: Self = StObject.set(x, "MinPauseBetweenCheckpoints", js.undefined)
   }
 }

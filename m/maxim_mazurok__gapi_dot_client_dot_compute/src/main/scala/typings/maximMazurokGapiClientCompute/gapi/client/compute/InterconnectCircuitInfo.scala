@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InterconnectCircuitInfo extends js.Object {
+trait InterconnectCircuitInfo extends StObject {
   
   /** Customer-side demarc ID for this circuit. */
   var customerDemarcId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object InterconnectCircuitInfo {
   }
   
   @scala.inline
-  implicit class InterconnectCircuitInfoOps[Self <: InterconnectCircuitInfo] (val x: Self) extends AnyVal {
+  implicit class InterconnectCircuitInfoMutableBuilder[Self <: InterconnectCircuitInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerDemarcId(value: String): Self = StObject.set(x, "customerDemarcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerDemarcIdUndefined: Self = StObject.set(x, "customerDemarcId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoogleCircuitId(value: String): Self = StObject.set(x, "googleCircuitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerDemarcId(value: String): Self = this.set("customerDemarcId", value.asInstanceOf[js.Any])
+    def setGoogleCircuitIdUndefined: Self = StObject.set(x, "googleCircuitId", js.undefined)
     
     @scala.inline
-    def deleteCustomerDemarcId: Self = this.set("customerDemarcId", js.undefined)
+    def setGoogleDemarcId(value: String): Self = StObject.set(x, "googleDemarcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleCircuitId(value: String): Self = this.set("googleCircuitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleCircuitId: Self = this.set("googleCircuitId", js.undefined)
-    
-    @scala.inline
-    def setGoogleDemarcId(value: String): Self = this.set("googleDemarcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleDemarcId: Self = this.set("googleDemarcId", js.undefined)
+    def setGoogleDemarcIdUndefined: Self = StObject.set(x, "googleDemarcId", js.undefined)
   }
 }

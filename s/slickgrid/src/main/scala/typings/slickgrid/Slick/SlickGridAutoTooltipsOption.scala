@@ -1,5 +1,6 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object SlickGridAutoTooltipsOption {
   }
   
   @scala.inline
-  implicit class SlickGridAutoTooltipsOptionOps[Self <: SlickGridAutoTooltipsOption] (val x: Self) extends AnyVal {
+  implicit class SlickGridAutoTooltipsOptionMutableBuilder[Self <: SlickGridAutoTooltipsOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableForCells(value: Boolean): Self = StObject.set(x, "enableForCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableForCellsUndefined: Self = StObject.set(x, "enableForCells", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableForHeaderCells(value: Boolean): Self = StObject.set(x, "enableForHeaderCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableForCells(value: Boolean): Self = this.set("enableForCells", value.asInstanceOf[js.Any])
+    def setEnableForHeaderCellsUndefined: Self = StObject.set(x, "enableForHeaderCells", js.undefined)
     
     @scala.inline
-    def deleteEnableForCells: Self = this.set("enableForCells", js.undefined)
+    def setMaxToolTipLength(value: Double): Self = StObject.set(x, "maxToolTipLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableForHeaderCells(value: Boolean): Self = this.set("enableForHeaderCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableForHeaderCells: Self = this.set("enableForHeaderCells", js.undefined)
-    
-    @scala.inline
-    def setMaxToolTipLength(value: Double): Self = this.set("maxToolTipLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxToolTipLength: Self = this.set("maxToolTipLength", js.undefined)
+    def setMaxToolTipLengthUndefined: Self = StObject.set(x, "maxToolTipLength", js.undefined)
   }
 }

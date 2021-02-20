@@ -4,12 +4,13 @@ import typings.evernote.mod.Types.SharedNotebookPrivilegeLevel
 import typings.evernote.mod.Types.SharedNotebookRecipientSettings
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Email extends js.Object {
+trait Email extends StObject {
   
   var email: js.UndefOr[String] = js.native
   
@@ -52,114 +53,102 @@ object Email {
   }
   
   @scala.inline
-  implicit class EmailOps[Self <: Email] (val x: Self) extends AnyVal {
+  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setGlobalIdUndefined: Self = StObject.set(x, "globalId", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalId(value: String): Self = this.set("globalId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGlobalId: Self = this.set("globalId", js.undefined)
+    def setNotebookGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "notebookGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNotebookGuidUndefined: Self = StObject.set(x, "notebookGuid", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNotebookModifiable(value: Boolean): Self = StObject.set(x, "notebookModifiable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("notebookGuid", value.asInstanceOf[js.Any])
+    def setNotebookModifiableUndefined: Self = StObject.set(x, "notebookModifiable", js.undefined)
     
     @scala.inline
-    def deleteNotebookGuid: Self = this.set("notebookGuid", js.undefined)
+    def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookModifiable(value: Boolean): Self = this.set("notebookModifiable", value.asInstanceOf[js.Any])
+    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
     @scala.inline
-    def deleteNotebookModifiable: Self = this.set("notebookModifiable", js.undefined)
+    def setRecipientIdentityId(value: typings.evernote.mod.Types.IdentityID): Self = StObject.set(x, "recipientIdentityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    def setRecipientIdentityIdUndefined: Self = StObject.set(x, "recipientIdentityId", js.undefined)
     
     @scala.inline
-    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    def setRecipientSettings(value: SharedNotebookRecipientSettings): Self = StObject.set(x, "recipientSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientIdentityId(value: typings.evernote.mod.Types.IdentityID): Self = this.set("recipientIdentityId", value.asInstanceOf[js.Any])
+    def setRecipientSettingsUndefined: Self = StObject.set(x, "recipientSettings", js.undefined)
     
     @scala.inline
-    def deleteRecipientIdentityId: Self = this.set("recipientIdentityId", js.undefined)
+    def setRecipientUserId(value: UserID): Self = StObject.set(x, "recipientUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientSettings(value: SharedNotebookRecipientSettings): Self = this.set("recipientSettings", value.asInstanceOf[js.Any])
+    def setRecipientUserIdUndefined: Self = StObject.set(x, "recipientUserId", js.undefined)
     
     @scala.inline
-    def deleteRecipientSettings: Self = this.set("recipientSettings", js.undefined)
+    def setRecipientUsername(value: String): Self = StObject.set(x, "recipientUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientUserId(value: UserID): Self = this.set("recipientUserId", value.asInstanceOf[js.Any])
+    def setRecipientUsernameUndefined: Self = StObject.set(x, "recipientUsername", js.undefined)
     
     @scala.inline
-    def deleteRecipientUserId: Self = this.set("recipientUserId", js.undefined)
+    def setServiceAssigned(value: Timestamp): Self = StObject.set(x, "serviceAssigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientUsername(value: String): Self = this.set("recipientUsername", value.asInstanceOf[js.Any])
+    def setServiceAssignedUndefined: Self = StObject.set(x, "serviceAssigned", js.undefined)
     
     @scala.inline
-    def deleteRecipientUsername: Self = this.set("recipientUsername", js.undefined)
+    def setServiceCreated(value: Timestamp): Self = StObject.set(x, "serviceCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAssigned(value: Timestamp): Self = this.set("serviceAssigned", value.asInstanceOf[js.Any])
+    def setServiceCreatedUndefined: Self = StObject.set(x, "serviceCreated", js.undefined)
     
     @scala.inline
-    def deleteServiceAssigned: Self = this.set("serviceAssigned", js.undefined)
+    def setServiceUpdated(value: Timestamp): Self = StObject.set(x, "serviceUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCreated(value: Timestamp): Self = this.set("serviceCreated", value.asInstanceOf[js.Any])
+    def setServiceUpdatedUndefined: Self = StObject.set(x, "serviceUpdated", js.undefined)
     
     @scala.inline
-    def deleteServiceCreated: Self = this.set("serviceCreated", js.undefined)
+    def setSharerUserId(value: UserID): Self = StObject.set(x, "sharerUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdated(value: Timestamp): Self = this.set("serviceUpdated", value.asInstanceOf[js.Any])
+    def setSharerUserIdUndefined: Self = StObject.set(x, "sharerUserId", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdated: Self = this.set("serviceUpdated", js.undefined)
+    def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharerUserId(value: UserID): Self = this.set("sharerUserId", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def deleteSharerUserId: Self = this.set("sharerUserId", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: UserID): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

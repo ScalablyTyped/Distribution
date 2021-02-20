@@ -2,6 +2,7 @@ package typings.typeorm.browserMod
 
 import typings.typeorm.indexMetadataMod.IndexMetadata
 import typings.typeorm.tableIndexOptionsMod.TableIndexOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,12 @@ class TableIndex protected ()
   def this(options: TableIndexOptions) = this()
 }
 /* static members */
-@JSImport("typeorm/browser", "TableIndex")
-@js.native
-object TableIndex extends js.Object {
+object TableIndex {
   
   /**
     * Creates index from the index metadata object.
     */
+  @JSImport("typeorm/browser", "TableIndex.create")
+  @js.native
   def create(indexMetadata: IndexMetadata): typings.typeorm.tableIndexMod.TableIndex = js.native
 }

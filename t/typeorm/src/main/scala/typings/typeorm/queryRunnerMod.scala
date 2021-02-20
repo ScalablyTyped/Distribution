@@ -16,16 +16,15 @@ import typings.typeorm.tableIndexMod.TableIndex
 import typings.typeorm.tableMod.Table
 import typings.typeorm.tableUniqueMod.TableUnique
 import typings.typeorm.viewMod.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-runner/QueryRunner", JSImport.Namespace)
-@js.native
-object queryRunnerMod extends js.Object {
+object queryRunnerMod {
   
   @js.native
-  trait QueryRunner extends js.Object {
+  trait QueryRunner extends StObject {
     
     def addColumn(table: String, column: TableColumn): js.Promise[Unit] = js.native
     /**

@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCloudbilling.anon.Name
 import typings.maximMazurokGapiClientCloudbilling.anon.Oauthtoken
 import typings.maximMazurokGapiClientCloudbilling.anon.PrettyPrint
 import typings.maximMazurokGapiClientCloudbilling.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingAccountsResource extends js.Object {
+trait BillingAccountsResource extends StObject {
   
   /**
     * Creates a billing account. This method can only be used to create [billing subaccounts](https://cloud.google.com/billing/docs/concepts) by Google Cloud resellers. When creating a

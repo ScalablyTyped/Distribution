@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy.
   */
 @js.native
-trait PodDNSConfig extends js.Object {
+trait PodDNSConfig extends StObject {
   
   /**
     * A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
@@ -35,45 +36,33 @@ object PodDNSConfig {
   }
   
   @scala.inline
-  implicit class PodDNSConfigOps[Self <: PodDNSConfig] (val x: Self) extends AnyVal {
+  implicit class PodDNSConfigMutableBuilder[Self <: PodDNSConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameservers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nameservers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameserversUndefined: Self = StObject.set(x, "nameservers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameserversVarargs(value: Input[String]*): Self = StObject.set(x, "nameservers", js.Array(value :_*))
     
     @scala.inline
-    def setNameserversVarargs(value: Input[String]*): Self = this.set("nameservers", js.Array(value :_*))
+    def setOptions(value: Input[js.Array[Input[PodDNSConfigOption]]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameservers(value: Input[js.Array[Input[String]]]): Self = this.set("nameservers", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteNameservers: Self = this.set("nameservers", js.undefined)
+    def setOptionsVarargs(value: Input[PodDNSConfigOption]*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: Input[PodDNSConfigOption]*): Self = this.set("options", js.Array(value :_*))
+    def setSearches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "searches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Input[js.Array[Input[PodDNSConfigOption]]]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSearchesUndefined: Self = StObject.set(x, "searches", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setSearchesVarargs(value: Input[String]*): Self = this.set("searches", js.Array(value :_*))
-    
-    @scala.inline
-    def setSearches(value: Input[js.Array[Input[String]]]): Self = this.set("searches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearches: Self = this.set("searches", js.undefined)
+    def setSearchesVarargs(value: Input[String]*): Self = StObject.set(x, "searches", js.Array(value :_*))
   }
 }

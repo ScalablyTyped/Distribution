@@ -1,5 +1,6 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object ReadBlobOptions {
   }
   
   @scala.inline
-  implicit class ReadBlobOptionsOps[Self <: ReadBlobOptions] (val x: Self) extends AnyVal {
+  implicit class ReadBlobOptionsMutableBuilder[Self <: ReadBlobOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableContentMD5Validation(value: Boolean): Self = StObject.set(x, "disableContentMD5Validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableContentMD5ValidationUndefined: Self = StObject.set(x, "disableContentMD5Validation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableContentMD5Validation(value: Boolean): Self = this.set("disableContentMD5Validation", value.asInstanceOf[js.Any])
+    def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
     @scala.inline
-    def deleteDisableContentMD5Validation: Self = this.set("disableContentMD5Validation", js.undefined)
+    def setRangeStart(value: String): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeEnd(value: String): Self = this.set("rangeEnd", value.asInstanceOf[js.Any])
+    def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
     
     @scala.inline
-    def deleteRangeEnd: Self = this.set("rangeEnd", js.undefined)
+    def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeStart(value: String): Self = this.set("rangeStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeStart: Self = this.set("rangeStart", js.undefined)
-    
-    @scala.inline
-    def setUseTransactionalMD5(value: Boolean): Self = this.set("useTransactionalMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTransactionalMD5: Self = this.set("useTransactionalMD5", js.undefined)
+    def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
   }
 }

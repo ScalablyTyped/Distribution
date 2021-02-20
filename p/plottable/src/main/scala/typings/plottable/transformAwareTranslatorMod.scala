@@ -4,18 +4,16 @@ import typings.plottable.componentMod.Component
 import typings.plottable.interfacesMod.Point
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/utils/transformAwareTranslator", JSImport.Namespace)
-@js.native
-object transformAwareTranslatorMod extends js.Object {
+object transformAwareTranslatorMod {
   
-  def getTranslator(component: Component): Translator = js.native
-  
+  @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator")
   @js.native
-  class Translator protected () extends js.Object {
+  class Translator protected () extends StObject {
     def this(_rootElement: HTMLElement) = this()
     
     var _rootElement: js.Any = js.native
@@ -33,12 +31,17 @@ object transformAwareTranslatorMod extends js.Object {
     def computePosition(clientX: Double, clientY: Double): Point = js.native
   }
   /* static members */
-  @js.native
-  object Translator extends js.Object {
+  object Translator {
     
     /**
       * Is the event's target part of the given component's DOM tree?
       */
+    @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator.isEventInside")
+    @js.native
     def isEventInside(component: Component, e: Event): Boolean = js.native
   }
+  
+  @JSImport("plottable/build/src/utils/transformAwareTranslator", "getTranslator")
+  @js.native
+  def getTranslator(component: Component): Translator = js.native
 }

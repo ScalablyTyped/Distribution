@@ -6,6 +6,7 @@ import typings.kiiCloudSdk.anon.`1`
 import typings.kiiCloudSdk.anon.`2`
 import typings.kiiCloudSdk.anon.`3`
 import typings.kiiCloudSdk.anon.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Application administrator context. Entities obtained from this class will be manipulated by application admin.
   */
 @js.native
-trait KiiAppAdminContext extends js.Object {
+trait KiiAppAdminContext extends StObject {
   
   /**
     * Creates a reference to a bucket operated by app admin.

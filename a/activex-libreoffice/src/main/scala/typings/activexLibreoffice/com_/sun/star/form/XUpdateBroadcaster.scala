@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,24 +46,12 @@ object XUpdateBroadcaster {
   }
   
   @scala.inline
-  implicit class XUpdateBroadcasterOps[Self <: XUpdateBroadcaster] (val x: Self) extends AnyVal {
+  implicit class XUpdateBroadcasterMutableBuilder[Self <: XUpdateBroadcaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddUpdateListener(value: XUpdateListener => Unit): Self = StObject.set(x, "addUpdateListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddUpdateListener(value: XUpdateListener => Unit): Self = this.set("addUpdateListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveUpdateListener(value: XUpdateListener => Unit): Self = this.set("removeUpdateListener", js.Any.fromFunction1(value))
+    def setRemoveUpdateListener(value: XUpdateListener => Unit): Self = StObject.set(x, "removeUpdateListener", js.Any.fromFunction1(value))
   }
 }

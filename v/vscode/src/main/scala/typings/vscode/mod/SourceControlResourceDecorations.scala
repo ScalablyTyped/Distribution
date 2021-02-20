@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object SourceControlResourceDecorations {
   }
   
   @scala.inline
-  implicit class SourceControlResourceDecorationsOps[Self <: SourceControlResourceDecorations] (val x: Self) extends AnyVal {
+  implicit class SourceControlResourceDecorationsMutableBuilder[Self <: SourceControlResourceDecorations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDark(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaded(value: Boolean): Self = StObject.set(x, "faded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: SourceControlResourceThemableDecorations): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setFadedUndefined: Self = StObject.set(x, "faded", js.undefined)
     
     @scala.inline
-    def deleteDark: Self = this.set("dark", js.undefined)
+    def setLight(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaded(value: Boolean): Self = this.set("faded", value.asInstanceOf[js.Any])
+    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
     @scala.inline
-    def deleteFaded: Self = this.set("faded", js.undefined)
+    def setStrikeThrough(value: Boolean): Self = StObject.set(x, "strikeThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLight(value: SourceControlResourceThemableDecorations): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setStrikeThroughUndefined: Self = StObject.set(x, "strikeThrough", js.undefined)
     
     @scala.inline
-    def deleteLight: Self = this.set("light", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeThrough(value: Boolean): Self = this.set("strikeThrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrikeThrough: Self = this.set("strikeThrough", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

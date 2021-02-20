@@ -1,15 +1,16 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CropBar extends js.Object {
+trait CropBar extends StObject {
   
   var cropBar: js.UndefOr[Boolean] = js.native
   
-   // Example [[1, 1], [3, 2], [4, 3], [5, 4], [7, 5], [16, 9]],
+  // Example [[1, 1], [3, 2], [4, 3], [5, 4], [7, 5], [16, 9]],
   var cropMask: js.UndefOr[Boolean] = js.native
   
   var ratios: js.UndefOr[js.Any] = js.native
@@ -23,36 +24,24 @@ object CropBar {
   }
   
   @scala.inline
-  implicit class CropBarOps[Self <: CropBar] (val x: Self) extends AnyVal {
+  implicit class CropBarMutableBuilder[Self <: CropBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCropBar(value: Boolean): Self = StObject.set(x, "cropBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCropBarUndefined: Self = StObject.set(x, "cropBar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCropMask(value: Boolean): Self = StObject.set(x, "cropMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropBar(value: Boolean): Self = this.set("cropBar", value.asInstanceOf[js.Any])
+    def setCropMaskUndefined: Self = StObject.set(x, "cropMask", js.undefined)
     
     @scala.inline
-    def deleteCropBar: Self = this.set("cropBar", js.undefined)
+    def setRatios(value: js.Any): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropMask(value: Boolean): Self = this.set("cropMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCropMask: Self = this.set("cropMask", js.undefined)
-    
-    @scala.inline
-    def setRatios(value: js.Any): Self = this.set("ratios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRatios: Self = this.set("ratios", js.undefined)
+    def setRatiosUndefined: Self = StObject.set(x, "ratios", js.undefined)
   }
 }

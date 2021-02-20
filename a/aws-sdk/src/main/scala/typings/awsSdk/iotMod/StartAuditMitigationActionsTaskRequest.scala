@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartAuditMitigationActionsTaskRequest extends js.Object {
+trait StartAuditMitigationActionsTaskRequest extends StObject {
   
   /**
     * For an audit check, specifies which mitigation actions to apply. Those actions must be defined in your AWS account.
@@ -41,30 +42,18 @@ object StartAuditMitigationActionsTaskRequest {
   }
   
   @scala.inline
-  implicit class StartAuditMitigationActionsTaskRequestOps[Self <: StartAuditMitigationActionsTaskRequest] (val x: Self) extends AnyVal {
+  implicit class StartAuditMitigationActionsTaskRequestMutableBuilder[Self <: StartAuditMitigationActionsTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: AuditMitigationActionsTaskTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = this.set("auditCheckToActionsMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: AuditMitigationActionsTaskTarget): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

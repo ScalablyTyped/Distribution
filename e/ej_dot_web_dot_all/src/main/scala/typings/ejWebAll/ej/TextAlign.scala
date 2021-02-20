@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextAlign extends js.Object
+sealed trait TextAlign extends StObject
 @JSGlobal("ej.TextAlign")
 @js.native
-object TextAlign extends js.Object {
+object TextAlign extends StObject {
   
   //string
   @js.native

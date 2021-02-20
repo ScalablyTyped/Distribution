@@ -1,5 +1,6 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,20 +119,39 @@ class ZonedDateTime protected () extends ChronoZonedDateTime {
   
   def zone(): ZoneId = js.native
 }
-/* static members */
-@JSImport("js-joda", "ZonedDateTime")
-@js.native
-object ZonedDateTime extends js.Object {
+object ZonedDateTime {
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.from")
+  @js.native
   def from(temporal: TemporalAccessor): ZonedDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.now")
+  @js.native
   def now(): ZonedDateTime = js.native
+  @JSImport("js-joda", "ZonedDateTime.now")
+  @js.native
   def now(clockOrZone: Clock): ZonedDateTime = js.native
+  @JSImport("js-joda", "ZonedDateTime.now")
+  @js.native
   def now(clockOrZone: ZoneId): ZonedDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.of")
+  @js.native
   def of(): js.Any = js.native
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.of")
+  @js.native
   def of(date: LocalDate, time: LocalTime, zone: ZoneId): ZonedDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.of")
+  @js.native
   def of(localDateTime: LocalDateTime, zone: ZoneId): ZonedDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.of")
+  @js.native
   def of(
     year: Double,
     month: Double,
@@ -143,15 +163,37 @@ object ZonedDateTime extends js.Object {
     zone: ZoneId
   ): ZonedDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.ofInstant")
+  @js.native
   def ofInstant(): ZonedDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.ofInstant")
+  @js.native
   def ofInstant(instant: Instant, zone: ZoneId): ZonedDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.ofInstant")
+  @js.native
   def ofInstant(localDateTime: LocalDateTime, offset: ZoneOffset, zone: ZoneId): ZonedDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.ofLocal")
+  @js.native
   def ofLocal(localDateTime: LocalDateTime, zone: ZoneId): ZonedDateTime = js.native
+  @JSImport("js-joda", "ZonedDateTime.ofLocal")
+  @js.native
   def ofLocal(localDateTime: LocalDateTime, zone: ZoneId, preferredOffset: ZoneOffset): ZonedDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.ofStrict")
+  @js.native
   def ofStrict(localDateTime: LocalDateTime, offset: ZoneOffset, zone: ZoneId): ZonedDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "ZonedDateTime.parse")
+  @js.native
   def parse(text: String): ZonedDateTime = js.native
+  @JSImport("js-joda", "ZonedDateTime.parse")
+  @js.native
   def parse(text: String, formatter: DateTimeFormatter): ZonedDateTime = js.native
 }

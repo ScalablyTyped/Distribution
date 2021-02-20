@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmergencyContact extends js.Object {
+trait EmergencyContact extends StObject {
   
   /**
     * Additional notes regarding the contact. 
@@ -31,33 +32,21 @@ object EmergencyContact {
   }
   
   @scala.inline
-  implicit class EmergencyContactOps[Self <: EmergencyContact] (val x: Self) extends AnyVal {
+  implicit class EmergencyContactMutableBuilder[Self <: EmergencyContact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactNotes(value: ContactNotes): Self = StObject.set(x, "ContactNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactNotesUndefined: Self = StObject.set(x, "ContactNotes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactNotes(value: ContactNotes): Self = this.set("ContactNotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactNotes: Self = this.set("ContactNotes", js.undefined)
-    
-    @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
   }
 }

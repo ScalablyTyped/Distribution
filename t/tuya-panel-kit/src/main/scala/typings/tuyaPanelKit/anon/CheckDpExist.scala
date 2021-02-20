@@ -6,12 +6,13 @@ import typings.tuyaPanelKit.mod.DpSchema
 import typings.tuyaPanelKit.mod.DpType
 import typings.tuyaPanelKit.mod.DpValue
 import typings.tuyaPanelKit.mod.I18NLanMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckDpExist extends js.Object {
+trait CheckDpExist extends StObject {
   
   def checkDpExist(idOrCode: String): Boolean = js.native
   def checkDpExist(idOrCode: Double): Boolean = js.native

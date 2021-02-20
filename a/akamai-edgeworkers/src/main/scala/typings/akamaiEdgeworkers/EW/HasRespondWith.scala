@@ -1,11 +1,12 @@
 package typings.akamaiEdgeworkers.EW
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasRespondWith extends js.Object {
+trait HasRespondWith extends StObject {
   
   /**
     * Indicates that a complete response is being generated for a

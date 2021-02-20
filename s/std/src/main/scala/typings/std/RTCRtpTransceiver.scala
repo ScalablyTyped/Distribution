@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCRtpTransceiver extends js.Object {
+trait RTCRtpTransceiver extends StObject {
   
   val currentDirection: RTCRtpTransceiverDirection | Null = js.native
   

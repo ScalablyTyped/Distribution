@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCheckerIpRangesResponse extends js.Object {
+trait GetCheckerIpRangesResponse extends StObject {
   
   /**
     * A complex type that contains sorted list of IP ranges in CIDR format for Amazon Route 53 health checkers.
@@ -21,24 +22,12 @@ object GetCheckerIpRangesResponse {
   }
   
   @scala.inline
-  implicit class GetCheckerIpRangesResponseOps[Self <: GetCheckerIpRangesResponse] (val x: Self) extends AnyVal {
+  implicit class GetCheckerIpRangesResponseMutableBuilder[Self <: GetCheckerIpRangesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckerIpRanges(value: CheckerIpRanges): Self = StObject.set(x, "CheckerIpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckerIpRangesVarargs(value: IPAddressCidr*): Self = this.set("CheckerIpRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setCheckerIpRanges(value: CheckerIpRanges): Self = this.set("CheckerIpRanges", value.asInstanceOf[js.Any])
+    def setCheckerIpRangesVarargs(value: IPAddressCidr*): Self = StObject.set(x, "CheckerIpRanges", js.Array(value :_*))
   }
 }

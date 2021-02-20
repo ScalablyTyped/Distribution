@@ -2,16 +2,16 @@ package typings.guacamoleClient
 
 import typings.guacamoleClient.clientMod.Client
 import typings.guacamoleClient.statusMod.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/OutputStream", JSImport.Namespace)
-@js.native
-object outputStreamMod extends js.Object {
+object outputStreamMod {
   
+  @JSImport("guacamole-client/lib/OutputStream", "OutputStream")
   @js.native
-  class OutputStream protected () extends js.Object {
+  class OutputStream protected () extends StObject {
     /**
       * @param client The client owning this stream.
       * @param index The index of this stream.

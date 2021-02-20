@@ -7,13 +7,12 @@ import typings.twilioSync.mapitemMod.MapItemDescriptor
 import typings.twilioSync.syncdocumentMod.SyncDocumentImpl
 import typings.twilioSync.synclistMod.SyncListImpl
 import typings.twilioSync.syncmapMod.SyncMapImpl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * @class Client
@@ -33,23 +32,38 @@ object mod extends js.Object {
     * @property {Client#ConnectionState} connectionState - Contains current service connection state.
     * Valid options are ['connecting', 'connected', 'disconnecting', 'disconnected', 'denied', 'error'].
     */
+  @JSImport("twilio-sync", JSImport.Default)
+  @js.native
+  class default protected ()
+    extends typings.twilioSync.clientMod.SyncClient {
+    def this(fpaToken: String) = this()
+    def this(fpaToken: String, options: js.Any) = this()
+  }
+  
+  /**
+    * @class Client
+    * @classdesc
+    * Client for the Twilio Sync service.
+    * @constructor
+    * @param {String} token - Twilio access token.
+    * @param {Client#ClientOptions} [options] - Options to customize the Client.
+    * @example
+    * // Using NPM
+    * var SyncClient = require('twilio-sync');
+    * var syncClient = new SyncClient(token, { logLevel: 'debug' });
+    *
+    * // Using CDN
+    * var SyncClient = new Twilio.Sync.Client(token, { logLevel: 'debug' });
+    *
+    * @property {Client#ConnectionState} connectionState - Contains current service connection state.
+    * Valid options are ['connecting', 'connected', 'disconnecting', 'disconnected', 'denied', 'error'].
+    */
+  @JSImport("twilio-sync", "SyncClient")
   @js.native
   class SyncClient protected ()
     extends typings.twilioSync.clientMod.SyncClient {
     def this(fpaToken: String) = this()
     def this(fpaToken: String, options: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object SyncClient extends js.Object {
-    
-    /**
-      * Current version of Sync client.
-      * @name Client#version
-      * @type String
-      * @readonly
-      */
-    def version: js.Any = js.native
   }
   
   /**
@@ -66,16 +80,11 @@ object mod extends js.Object {
     * @fires Document#removed
     * @fires Document#updated
     */
+  @JSImport("twilio-sync", "SyncDocument")
   @js.native
   class SyncDocument protected ()
     extends typings.twilioSync.syncdocumentMod.SyncDocument {
     def this(syncDocumentImpl: SyncDocumentImpl) = this()
-  }
-  /* static members */
-  @js.native
-  object SyncDocument extends js.Object {
-    
-    def `type`: String = js.native
   }
   
   /**
@@ -92,16 +101,11 @@ object mod extends js.Object {
     * @fires List#itemRemoved
     * @fires List#itemUpdated
     */
+  @JSImport("twilio-sync", "SyncList")
   @js.native
   class SyncList protected ()
     extends typings.twilioSync.synclistMod.SyncList {
     def this(syncListImpl: SyncListImpl) = this()
-  }
-  /* static members */
-  @js.native
-  object SyncList extends js.Object {
-    
-    def `type`: String = js.native
   }
   
   /**
@@ -113,6 +117,7 @@ object mod extends js.Object {
     * @property {Object} value The contents of the item.
     * @property {Date} dateUpdated Date when the List Item was last updated.
     */
+  @JSImport("twilio-sync", "SyncListItem")
   @js.native
   class SyncListItem protected () extends ListItem {
     /**
@@ -141,16 +146,11 @@ object mod extends js.Object {
     * @fires Map#itemRemoved
     * @fires Map#itemUpdated
     */
+  @JSImport("twilio-sync", "SyncMap")
   @js.native
   class SyncMap protected ()
     extends typings.twilioSync.syncmapMod.SyncMap {
     def this(syncMapImpl: SyncMapImpl) = this()
-  }
-  /* static members */
-  @js.native
-  object SyncMap extends js.Object {
-    
-    def `type`: String = js.native
   }
   
   /**
@@ -161,6 +161,7 @@ object mod extends js.Object {
     * @property {Object} value The contents of the item.
     * @property {Date} dateUpdated Date when the Map Item was last updated, given in UTC ISO 8601 format (e.g., '2018-04-26T15:23:19.732Z')
     */
+  @JSImport("twilio-sync", "SyncMapItem")
   @js.native
   class SyncMapItem protected () extends MapItem {
     /**
@@ -168,42 +169,5 @@ object mod extends js.Object {
       * @constructor
       */
     def this(descriptor: MapItemDescriptor) = this()
-  }
-  
-  /**
-    * @class Client
-    * @classdesc
-    * Client for the Twilio Sync service.
-    * @constructor
-    * @param {String} token - Twilio access token.
-    * @param {Client#ClientOptions} [options] - Options to customize the Client.
-    * @example
-    * // Using NPM
-    * var SyncClient = require('twilio-sync');
-    * var syncClient = new SyncClient(token, { logLevel: 'debug' });
-    *
-    * // Using CDN
-    * var SyncClient = new Twilio.Sync.Client(token, { logLevel: 'debug' });
-    *
-    * @property {Client#ConnectionState} connectionState - Contains current service connection state.
-    * Valid options are ['connecting', 'connected', 'disconnecting', 'disconnected', 'denied', 'error'].
-    */
-  @js.native
-  class default protected ()
-    extends typings.twilioSync.clientMod.SyncClient {
-    def this(fpaToken: String) = this()
-    def this(fpaToken: String, options: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    /**
-      * Current version of Sync client.
-      * @name Client#version
-      * @type String
-      * @readonly
-      */
-    def version: js.Any = js.native
   }
 }

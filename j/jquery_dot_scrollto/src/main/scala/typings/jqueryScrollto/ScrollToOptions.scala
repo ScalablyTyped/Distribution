@@ -1,11 +1,12 @@
 package typings.jqueryScrollto
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollToOptions extends js.Object {
+trait ScrollToOptions extends StObject {
   
   /**
     * Which axis must be scrolled, use 'x', 'y', 'xy' or 'yx'.
@@ -64,72 +65,60 @@ object ScrollToOptions {
   }
   
   @scala.inline
-  implicit class ScrollToOptionsOps[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
+  implicit class ScrollToOptionsMutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: js.Any): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setMargin(value: Boolean): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Boolean): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setOnAfter(value: () => Unit): Self = StObject.set(x, "onAfter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOnAfterFirst(value: () => Unit): Self = StObject.set(x, "onAfterFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOnAfterFirstUndefined: Self = StObject.set(x, "onAfterFirst", js.undefined)
     
     @scala.inline
-    def setOnAfter(value: () => Unit): Self = this.set("onAfter", js.Any.fromFunction0(value))
+    def setOnAfterUndefined: Self = StObject.set(x, "onAfter", js.undefined)
     
     @scala.inline
-    def deleteOnAfter: Self = this.set("onAfter", js.undefined)
+    def setOver(value: js.Any): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAfterFirst(value: () => Unit): Self = this.set("onAfterFirst", js.Any.fromFunction0(value))
+    def setOverUndefined: Self = StObject.set(x, "over", js.undefined)
     
     @scala.inline
-    def deleteOnAfterFirst: Self = this.set("onAfterFirst", js.undefined)
+    def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOver(value: js.Any): Self = this.set("over", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOver: Self = this.set("over", js.undefined)
-    
-    @scala.inline
-    def setQueue(value: Boolean): Self = this.set("queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
   }
 }

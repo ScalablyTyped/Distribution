@@ -1,20 +1,22 @@
 package typings.gitlab
 
+import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/services/SystemHooks", JSImport.Namespace)
-@js.native
-object systemHooksMod extends js.Object {
+object systemHooksMod {
   
+  @JSImport("gitlab/dist/types/core/services/SystemHooks", "SystemHooks")
   @js.native
   class SystemHooks () extends BaseService {
+    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(url: String): js.Promise[js.Object] = js.native
     def add(url: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

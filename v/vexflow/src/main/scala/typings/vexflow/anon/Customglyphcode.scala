@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Customglyphcode extends js.Object {
+trait Customglyphcode extends StObject {
   
   var custom_glyph_code: js.UndefOr[String] = js.native
   
@@ -40,81 +41,69 @@ object Customglyphcode {
   }
   
   @scala.inline
-  implicit class CustomglyphcodeOps[Self <: Customglyphcode] (val x: Self) extends AnyVal {
+  implicit class CustomglyphcodeMutableBuilder[Self <: Customglyphcode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom_glyph_code(value: String): Self = StObject.set(x, "custom_glyph_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom_glyph_codeUndefined: Self = StObject.set(x, "custom_glyph_code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplaced(value: Boolean): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setDisplacedUndefined: Self = StObject.set(x, "displaced", js.undefined)
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX_shift(value: Double): Self = this.set("x_shift", value.asInstanceOf[js.Any])
+    def setGlyph_font_scale(value: Double): Self = StObject.set(x, "glyph_font_scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_glyph_code(value: String): Self = this.set("custom_glyph_code", value.asInstanceOf[js.Any])
+    def setGlyph_font_scaleUndefined: Self = StObject.set(x, "glyph_font_scale", js.undefined)
     
     @scala.inline
-    def deleteCustom_glyph_code: Self = this.set("custom_glyph_code", js.undefined)
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaced(value: Boolean): Self = this.set("displaced", value.asInstanceOf[js.Any])
+    def setNote_type(value: String): Self = StObject.set(x, "note_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplaced: Self = this.set("displaced", js.undefined)
+    def setNote_typeUndefined: Self = StObject.set(x, "note_type", js.undefined)
     
     @scala.inline
-    def setGlyph_font_scale(value: Double): Self = this.set("glyph_font_scale", value.asInstanceOf[js.Any])
+    def setSlashed(value: Boolean): Self = StObject.set(x, "slashed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlyph_font_scale: Self = this.set("glyph_font_scale", js.undefined)
+    def setSlashedUndefined: Self = StObject.set(x, "slashed", js.undefined)
     
     @scala.inline
-    def setNote_type(value: String): Self = this.set("note_type", value.asInstanceOf[js.Any])
+    def setStem_direction(value: Double): Self = StObject.set(x, "stem_direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNote_type: Self = this.set("note_type", js.undefined)
+    def setStem_directionUndefined: Self = StObject.set(x, "stem_direction", js.undefined)
     
     @scala.inline
-    def setSlashed(value: Boolean): Self = this.set("slashed", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSlashed: Self = this.set("slashed", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStem_direction(value: Double): Self = this.set("stem_direction", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStem_direction: Self = this.set("stem_direction", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setX_shift(value: Double): Self = StObject.set(x, "x_shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

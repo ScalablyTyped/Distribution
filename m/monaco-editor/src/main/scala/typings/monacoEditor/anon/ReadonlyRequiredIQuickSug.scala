@@ -1,12 +1,13 @@
 package typings.monacoEditor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IQuickSuggestionsOptions>> */
 @js.native
-trait ReadonlyRequiredIQuickSug extends js.Object {
+trait ReadonlyRequiredIQuickSug extends StObject {
   
   val comments: Boolean = js.native
   
@@ -23,27 +24,15 @@ object ReadonlyRequiredIQuickSug {
   }
   
   @scala.inline
-  implicit class ReadonlyRequiredIQuickSugOps[Self <: ReadonlyRequiredIQuickSug] (val x: Self) extends AnyVal {
+  implicit class ReadonlyRequiredIQuickSugMutableBuilder[Self <: ReadonlyRequiredIQuickSug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOther(value: Boolean): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComments(value: Boolean): Self = this.set("comments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOther(value: Boolean): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrings(value: Boolean): Self = this.set("strings", value.asInstanceOf[js.Any])
+    def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
   }
 }

@@ -6,12 +6,13 @@ import typings.reactDates.mod.ModifiersShape
 import typings.reactDates.mod.ScrollableOrientationShape
 import typings.std.HTMLDivElement
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstVisibleMonthIndex extends js.Object {
+trait FirstVisibleMonthIndex extends StObject {
   
   var firstVisibleMonthIndex: js.UndefOr[Double] = js.native
   
@@ -46,93 +47,81 @@ object FirstVisibleMonthIndex {
   }
   
   @scala.inline
-  implicit class FirstVisibleMonthIndexOps[Self <: FirstVisibleMonthIndex] (val x: Self) extends AnyVal {
+  implicit class FirstVisibleMonthIndexMutableBuilder[Self <: FirstVisibleMonthIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstVisibleMonthIndex(value: Double): Self = StObject.set(x, "firstVisibleMonthIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstVisibleMonthIndexUndefined: Self = StObject.set(x, "firstVisibleMonthIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialMonth(value: Moment): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstVisibleMonthIndex(value: Double): Self = this.set("firstVisibleMonthIndex", value.asInstanceOf[js.Any])
+    def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
     
     @scala.inline
-    def deleteFirstVisibleMonthIndex: Self = this.set("firstVisibleMonthIndex", js.undefined)
+    def setIsAnimating(value: Boolean): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialMonth(value: Moment): Self = this.set("initialMonth", value.asInstanceOf[js.Any])
+    def setIsAnimatingUndefined: Self = StObject.set(x, "isAnimating", js.undefined)
     
     @scala.inline
-    def deleteInitialMonth: Self = this.set("initialMonth", js.undefined)
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAnimating(value: Boolean): Self = this.set("isAnimating", value.asInstanceOf[js.Any])
+    def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
     
     @scala.inline
-    def deleteIsAnimating: Self = this.set("isAnimating", js.undefined)
+    def setModifiers(value: Record[String, Record[String, ModifiersShape]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def deleteIsRTL: Self = this.set("isRTL", js.undefined)
+    def setNumberOfMonths(value: Double): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiers(value: Record[String, Record[String, ModifiersShape]]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setOnMonthChange(value: /* newMonth */ Moment => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumberOfMonths(value: Double): Self = this.set("numberOfMonths", value.asInstanceOf[js.Any])
+    def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
     
     @scala.inline
-    def deleteNumberOfMonths: Self = this.set("numberOfMonths", js.undefined)
+    def setOnMonthTransitionEnd(value: /* event */ js.UndefOr[TransitionEvent[HTMLDivElement]] => Unit): Self = StObject.set(x, "onMonthTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMonthChange(value: /* newMonth */ Moment => Unit): Self = this.set("onMonthChange", js.Any.fromFunction1(value))
+    def setOnMonthTransitionEndUndefined: Self = StObject.set(x, "onMonthTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteOnMonthChange: Self = this.set("onMonthChange", js.undefined)
+    def setOnYearChange(value: /* newMonth */ Moment => Unit): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMonthTransitionEnd(value: /* event */ js.UndefOr[TransitionEvent[HTMLDivElement]] => Unit): Self = this.set("onMonthTransitionEnd", js.Any.fromFunction1(value))
+    def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
     
     @scala.inline
-    def deleteOnMonthTransitionEnd: Self = this.set("onMonthTransitionEnd", js.undefined)
+    def setOrientation(value: ScrollableOrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnYearChange(value: /* newMonth */ Moment => Unit): Self = this.set("onYearChange", js.Any.fromFunction1(value))
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteOnYearChange: Self = this.set("onYearChange", js.undefined)
+    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: ScrollableOrientationShape): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setTranslationValue(value: Double): Self = StObject.set(x, "translationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setTranslationValueNull: Self = StObject.set(x, "translationValue", null)
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
-    
-    @scala.inline
-    def setTranslationValue(value: Double): Self = this.set("translationValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslationValue: Self = this.set("translationValue", js.undefined)
-    
-    @scala.inline
-    def setTranslationValueNull: Self = this.set("translationValue", null)
+    def setTranslationValueUndefined: Self = StObject.set(x, "translationValue", js.undefined)
   }
 }

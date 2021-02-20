@@ -3,12 +3,13 @@ package typings.popperjsCore.typesMod
 import typings.std.ClientRect
 import typings.std.DOMRect
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualElement extends js.Object {
+trait VirtualElement extends StObject {
   
   var contextElement: js.UndefOr[Element] = js.native
   
@@ -23,27 +24,15 @@ object VirtualElement {
   }
   
   @scala.inline
-  implicit class VirtualElementOps[Self <: VirtualElement] (val x: Self) extends AnyVal {
+  implicit class VirtualElementMutableBuilder[Self <: VirtualElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextElement(value: Element): Self = StObject.set(x, "contextElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextElementUndefined: Self = StObject.set(x, "contextElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetBoundingClientRect(value: () => ClientRect | DOMRect): Self = this.set("getBoundingClientRect", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setContextElement(value: Element): Self = this.set("contextElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextElement: Self = this.set("contextElement", js.undefined)
+    def setGetBoundingClientRect(value: () => ClientRect | DOMRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
   }
 }

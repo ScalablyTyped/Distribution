@@ -9,14 +9,14 @@ import typings.typeorm.objectLiteralMod.ObjectLiteral
 import typings.typeorm.postgresConnectionCredentialsOptionsMod.PostgresConnectionCredentialsOptions
 import typings.typeorm.postgresConnectionOptionsMod.PostgresConnectionOptions
 import typings.typeorm.queryRunnerMod.QueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/driver/postgres/PostgresDriver", JSImport.Namespace)
-@js.native
-object postgresDriverMod extends js.Object {
+object postgresDriverMod {
   
+  @JSImport("typeorm/browser/driver/postgres/PostgresDriver", "PostgresDriver")
   @js.native
   class PostgresDriver () extends Driver {
     def this(connection: Connection) = this()

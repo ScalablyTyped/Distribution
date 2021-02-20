@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,27 +56,15 @@ object XDispatchInformationProvider {
   }
   
   @scala.inline
-  implicit class XDispatchInformationProviderOps[Self <: XDispatchInformationProvider] (val x: Self) extends AnyVal {
+  implicit class XDispatchInformationProviderMutableBuilder[Self <: XDispatchInformationProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetConfigurableDispatchInformation(value: Double => SafeArray[DispatchInformation]): Self = StObject.set(x, "getConfigurableDispatchInformation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSupportedCommandGroups(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedCommandGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSupportedCommandGroups(value: SafeArray[Double]): Self = this.set("SupportedCommandGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetConfigurableDispatchInformation(value: Double => SafeArray[DispatchInformation]): Self = this.set("getConfigurableDispatchInformation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSupportedCommandGroups(value: () => SafeArray[Double]): Self = this.set("getSupportedCommandGroups", js.Any.fromFunction0(value))
+    def setSupportedCommandGroups(value: SafeArray[Double]): Self = StObject.set(x, "SupportedCommandGroups", value.asInstanceOf[js.Any])
   }
 }

@@ -4,16 +4,16 @@ import typings.mendixmodelsdk.abstractModelMod.AbstractModel
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaSender", JSImport.Namespace)
-@js.native
-object deltaSenderMod extends js.Object {
+object deltaSenderMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaSender", "DeltaSender")
   @js.native
-  class DeltaSender protected () extends js.Object {
+  class DeltaSender protected () extends StObject {
     def this(model: AbstractModel, flushCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
     
     def closeConnection(): Unit = js.native

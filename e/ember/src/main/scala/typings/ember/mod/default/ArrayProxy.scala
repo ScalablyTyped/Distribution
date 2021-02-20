@@ -1,10 +1,11 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember", "ArrayProxy")
+@JSImport("ember", "default.ArrayProxy")
 @js.native
 class ArrayProxy[T] ()
-  extends typings.emberArray.proxyMod.ArrayProxy[T]
+  extends typings.ember.mod.Ember.ArrayProxy[T]

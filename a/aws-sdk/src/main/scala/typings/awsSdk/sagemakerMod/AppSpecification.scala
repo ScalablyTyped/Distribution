@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppSpecification extends js.Object {
+trait AppSpecification extends StObject {
   
   /**
     * The arguments for a container used to run a processing job.
@@ -31,39 +32,27 @@ object AppSpecification {
   }
   
   @scala.inline
-  implicit class AppSpecificationOps[Self <: AppSpecification] (val x: Self) extends AnyVal {
+  implicit class AppSpecificationMutableBuilder[Self <: AppSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerArguments(value: ContainerArguments): Self = StObject.set(x, "ContainerArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerArgumentsUndefined: Self = StObject.set(x, "ContainerArguments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerArgumentsVarargs(value: ContainerArgument*): Self = StObject.set(x, "ContainerArguments", js.Array(value :_*))
     
     @scala.inline
-    def setImageUri(value: ImageUri): Self = this.set("ImageUri", value.asInstanceOf[js.Any])
+    def setContainerEntrypoint(value: ContainerEntrypoint): Self = StObject.set(x, "ContainerEntrypoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerArgumentsVarargs(value: ContainerArgument*): Self = this.set("ContainerArguments", js.Array(value :_*))
+    def setContainerEntrypointUndefined: Self = StObject.set(x, "ContainerEntrypoint", js.undefined)
     
     @scala.inline
-    def setContainerArguments(value: ContainerArguments): Self = this.set("ContainerArguments", value.asInstanceOf[js.Any])
+    def setContainerEntrypointVarargs(value: ContainerEntrypointString*): Self = StObject.set(x, "ContainerEntrypoint", js.Array(value :_*))
     
     @scala.inline
-    def deleteContainerArguments: Self = this.set("ContainerArguments", js.undefined)
-    
-    @scala.inline
-    def setContainerEntrypointVarargs(value: ContainerEntrypointString*): Self = this.set("ContainerEntrypoint", js.Array(value :_*))
-    
-    @scala.inline
-    def setContainerEntrypoint(value: ContainerEntrypoint): Self = this.set("ContainerEntrypoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerEntrypoint: Self = this.set("ContainerEntrypoint", js.undefined)
+    def setImageUri(value: ImageUri): Self = StObject.set(x, "ImageUri", value.asInstanceOf[js.Any])
   }
 }

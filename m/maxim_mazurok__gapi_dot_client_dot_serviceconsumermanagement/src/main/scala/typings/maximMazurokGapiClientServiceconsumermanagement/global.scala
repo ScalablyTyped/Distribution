@@ -4,29 +4,33 @@ import typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.servi
 import typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement.ServicesResource
 import typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.serviceconsumermanagement
 import typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Service Consumer Management API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: serviceconsumermanagement, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: serviceconsumermanagement, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object serviceconsumermanagement extends js.Object {
+      object serviceconsumermanagement {
         
+        @JSGlobal("gapi.client.serviceconsumermanagement.operations")
+        @js.native
         val operations: OperationsResource = js.native
         
+        @JSGlobal("gapi.client.serviceconsumermanagement.services")
+        @js.native
         val services: ServicesResource = js.native
       }
     }

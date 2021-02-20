@@ -7,12 +7,13 @@ import typings.dateFns.dateFnsNumbers.`4`
 import typings.dateFns.dateFnsNumbers.`5`
 import typings.dateFns.dateFnsNumbers.`6`
 import typings.dateFns.dateFnsNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstWeekContainsDateWeekStartsOn extends js.Object {
+trait FirstWeekContainsDateWeekStartsOn extends StObject {
   
   var firstWeekContainsDate: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
   
@@ -27,30 +28,18 @@ object FirstWeekContainsDateWeekStartsOn {
   }
   
   @scala.inline
-  implicit class FirstWeekContainsDateWeekStartsOnOps[Self <: FirstWeekContainsDateWeekStartsOn] (val x: Self) extends AnyVal {
+  implicit class FirstWeekContainsDateWeekStartsOnMutableBuilder[Self <: FirstWeekContainsDateWeekStartsOn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstWeekContainsDate(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "firstWeekContainsDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstWeekContainsDateUndefined: Self = StObject.set(x, "firstWeekContainsDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWeekStartsOn(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstWeekContainsDate(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = this.set("firstWeekContainsDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstWeekContainsDate: Self = this.set("firstWeekContainsDate", js.undefined)
-    
-    @scala.inline
-    def setWeekStartsOn(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = this.set("weekStartsOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekStartsOn: Self = this.set("weekStartsOn", js.undefined)
+    def setWeekStartsOnUndefined: Self = StObject.set(x, "weekStartsOn", js.undefined)
   }
 }

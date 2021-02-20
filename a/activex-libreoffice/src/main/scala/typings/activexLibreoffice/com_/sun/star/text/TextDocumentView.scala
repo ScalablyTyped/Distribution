@@ -7,10 +7,9 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
-import typings.activexLibreoffice.com_.sun.star.view.XControlAccess
+import typings.activexLibreoffice.com_.sun.star.view.OfficeDocumentView
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
-import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
-import typings.activexLibreoffice.com_.sun.star.view.XViewSettingsSupplier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** specifies the view of a {@link TextDocument} . */
 @js.native
 trait TextDocumentView
-  extends XSelectionSupplier
-     with XViewSettingsSupplier
-     with XControlAccess
+  extends OfficeDocumentView
      with XTextViewCursorSupplier
      with XPropertySet {
   
@@ -89,30 +86,18 @@ object TextDocumentView {
   }
   
   @scala.inline
-  implicit class TextDocumentViewOps[Self <: TextDocumentView] (val x: Self) extends AnyVal {
+  implicit class TextDocumentViewMutableBuilder[Self <: TextDocumentView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsConstantSpellcheck(value: Boolean): Self = StObject.set(x, "IsConstantSpellcheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsHideSpellMarks(value: Boolean): Self = StObject.set(x, "IsHideSpellMarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineCount(value: Double): Self = StObject.set(x, "LineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConstantSpellcheck(value: Boolean): Self = this.set("IsConstantSpellcheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsHideSpellMarks(value: Boolean): Self = this.set("IsHideSpellMarks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineCount(value: Double): Self = this.set("LineCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageCount(value: Double): Self = this.set("PageCount", value.asInstanceOf[js.Any])
+    def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
   }
 }

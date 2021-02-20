@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternalAppSharingArtifact extends js.Object {
+trait InternalAppSharingArtifact extends StObject {
   
   /** The sha256 fingerprint of the certificate used to sign the generated artifact. */
   var certificateFingerprint: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object InternalAppSharingArtifact {
   }
   
   @scala.inline
-  implicit class InternalAppSharingArtifactOps[Self <: InternalAppSharingArtifact] (val x: Self) extends AnyVal {
+  implicit class InternalAppSharingArtifactMutableBuilder[Self <: InternalAppSharingArtifact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateFingerprint(value: String): Self = StObject.set(x, "certificateFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateFingerprintUndefined: Self = StObject.set(x, "certificateFingerprint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateFingerprint(value: String): Self = this.set("certificateFingerprint", value.asInstanceOf[js.Any])
+    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
     @scala.inline
-    def deleteCertificateFingerprint: Self = this.set("certificateFingerprint", js.undefined)
+    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadUrl(value: String): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownloadUrl: Self = this.set("downloadUrl", js.undefined)
-    
-    @scala.inline
-    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSha256: Self = this.set("sha256", js.undefined)
+    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

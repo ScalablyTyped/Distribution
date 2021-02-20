@@ -1,17 +1,19 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
+import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/plugins/JavascriptIndexPlugin", JSImport.Namespace)
-@js.native
-object javascriptIndexPluginMod extends js.Object {
+object javascriptIndexPluginMod {
   
+  @JSImport("typedoc/dist/lib/output/plugins/JavascriptIndexPlugin", "JavascriptIndexPlugin")
   @js.native
-  class JavascriptIndexPlugin () extends AbstractComponent[Renderer] {
+  class JavascriptIndexPlugin protected () extends RendererComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Renderer) = this()
     
     var onRendererBegin: js.Any = js.native
   }

@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomAction extends js.Object {
+trait CustomAction extends StObject {
   
   /**
     * The custom action associated with the action name.
@@ -26,24 +27,12 @@ object CustomAction {
   }
   
   @scala.inline
-  implicit class CustomActionOps[Self <: CustomAction] (val x: Self) extends AnyVal {
+  implicit class CustomActionMutableBuilder[Self <: CustomAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionDefinition(value: ActionDefinition): Self = StObject.set(x, "ActionDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionDefinition(value: ActionDefinition): Self = this.set("ActionDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionName(value: ActionName): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    def setActionName(value: ActionName): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
   }
 }

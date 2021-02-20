@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowRunStatistics extends js.Object {
+trait WorkflowRunStatistics extends StObject {
   
   /**
     * Total number of Actions that have failed.
@@ -46,54 +47,42 @@ object WorkflowRunStatistics {
   }
   
   @scala.inline
-  implicit class WorkflowRunStatisticsOps[Self <: WorkflowRunStatistics] (val x: Self) extends AnyVal {
+  implicit class WorkflowRunStatisticsMutableBuilder[Self <: WorkflowRunStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedActions(value: IntegerValue): Self = StObject.set(x, "FailedActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedActionsUndefined: Self = StObject.set(x, "FailedActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunningActions(value: IntegerValue): Self = StObject.set(x, "RunningActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedActions(value: IntegerValue): Self = this.set("FailedActions", value.asInstanceOf[js.Any])
+    def setRunningActionsUndefined: Self = StObject.set(x, "RunningActions", js.undefined)
     
     @scala.inline
-    def deleteFailedActions: Self = this.set("FailedActions", js.undefined)
+    def setStoppedActions(value: IntegerValue): Self = StObject.set(x, "StoppedActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunningActions(value: IntegerValue): Self = this.set("RunningActions", value.asInstanceOf[js.Any])
+    def setStoppedActionsUndefined: Self = StObject.set(x, "StoppedActions", js.undefined)
     
     @scala.inline
-    def deleteRunningActions: Self = this.set("RunningActions", js.undefined)
+    def setSucceededActions(value: IntegerValue): Self = StObject.set(x, "SucceededActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoppedActions(value: IntegerValue): Self = this.set("StoppedActions", value.asInstanceOf[js.Any])
+    def setSucceededActionsUndefined: Self = StObject.set(x, "SucceededActions", js.undefined)
     
     @scala.inline
-    def deleteStoppedActions: Self = this.set("StoppedActions", js.undefined)
+    def setTimeoutActions(value: IntegerValue): Self = StObject.set(x, "TimeoutActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceededActions(value: IntegerValue): Self = this.set("SucceededActions", value.asInstanceOf[js.Any])
+    def setTimeoutActionsUndefined: Self = StObject.set(x, "TimeoutActions", js.undefined)
     
     @scala.inline
-    def deleteSucceededActions: Self = this.set("SucceededActions", js.undefined)
+    def setTotalActions(value: IntegerValue): Self = StObject.set(x, "TotalActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutActions(value: IntegerValue): Self = this.set("TimeoutActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutActions: Self = this.set("TimeoutActions", js.undefined)
-    
-    @scala.inline
-    def setTotalActions(value: IntegerValue): Self = this.set("TotalActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalActions: Self = this.set("TotalActions", js.undefined)
+    def setTotalActionsUndefined: Self = StObject.set(x, "TotalActions", js.undefined)
   }
 }

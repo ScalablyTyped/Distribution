@@ -1,12 +1,13 @@
 package typings.baiduApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  bubbles :boolean,   composed :boolean,   capturePhase :boolean}> */
 @js.native
-trait Partialbubblesbooleancomp extends js.Object {
+trait Partialbubblesbooleancomp extends StObject {
   
   var bubbles: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object Partialbubblesbooleancomp {
   }
   
   @scala.inline
-  implicit class PartialbubblesbooleancompOps[Self <: Partialbubblesbooleancomp] (val x: Self) extends AnyVal {
+  implicit class PartialbubblesbooleancompMutableBuilder[Self <: Partialbubblesbooleancomp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapturePhase(value: Boolean): Self = StObject.set(x, "capturePhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setCapturePhaseUndefined: Self = StObject.set(x, "capturePhase", js.undefined)
     
     @scala.inline
-    def deleteBubbles: Self = this.set("bubbles", js.undefined)
+    def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapturePhase(value: Boolean): Self = this.set("capturePhase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapturePhase: Self = this.set("capturePhase", js.undefined)
-    
-    @scala.inline
-    def setComposed(value: Boolean): Self = this.set("composed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComposed: Self = this.set("composed", js.undefined)
+    def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
   }
 }

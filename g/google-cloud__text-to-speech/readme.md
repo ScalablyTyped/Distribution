@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__text-to-speech
 
-Typings are for version 0.5
+Typings are for version 3.1.2
 
 ## Library description:
 Cloud Text-to-Speech API client for Node.js
@@ -10,9 +10,9 @@ Cloud Text-to-Speech API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/text-to-speech |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
-| # releases         | 22 |
-| # dependents       | 15 |
-| # downloads        | 198014 |
+| # releases         | 28 |
+| # dependents       | 40 |
+| # downloads        | 334587 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ Cloud Text-to-Speech API client for Node.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

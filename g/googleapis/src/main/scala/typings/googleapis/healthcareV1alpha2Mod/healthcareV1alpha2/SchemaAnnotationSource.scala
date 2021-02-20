@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AnnotationSource holds the source information of the annotation.
   */
 @js.native
-trait SchemaAnnotationSource extends js.Object {
+trait SchemaAnnotationSource extends StObject {
   
   /**
     * Cloud Healthcare API resource.
@@ -24,24 +25,12 @@ object SchemaAnnotationSource {
   }
   
   @scala.inline
-  implicit class SchemaAnnotationSourceOps[Self <: SchemaAnnotationSource] (val x: Self) extends AnyVal {
+  implicit class SchemaAnnotationSourceMutableBuilder[Self <: SchemaAnnotationSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudHealthcareSource(value: SchemaCloudHealthcareSource): Self = StObject.set(x, "cloudHealthcareSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudHealthcareSource(value: SchemaCloudHealthcareSource): Self = this.set("cloudHealthcareSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudHealthcareSource: Self = this.set("cloudHealthcareSource", js.undefined)
+    def setCloudHealthcareSourceUndefined: Self = StObject.set(x, "cloudHealthcareSource", js.undefined)
   }
 }

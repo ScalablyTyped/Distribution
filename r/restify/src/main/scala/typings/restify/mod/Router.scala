@@ -1,13 +1,13 @@
 package typings.restify.mod
 
-import typings.bunyan.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("restify", "Router")
 @js.native
-class Router protected () extends js.Object {
+class Router protected () extends StObject {
   def this(options: RouterOptions) = this()
   
   /**
@@ -26,7 +26,7 @@ class Router protected () extends js.Object {
     */
   def getRoutes(): js.Array[Route] = js.native
   
-  var log: js.UndefOr[^] = js.native
+  var log: js.UndefOr[typings.bunyan.mod.^] = js.native
   
   /**
     * Lookup for route

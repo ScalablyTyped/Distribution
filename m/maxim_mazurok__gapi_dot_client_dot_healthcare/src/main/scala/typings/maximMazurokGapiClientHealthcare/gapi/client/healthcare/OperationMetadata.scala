@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationMetadata extends js.Object {
+trait OperationMetadata extends StObject {
   
   /** The name of the API method that initiated the operation. */
   var apiMethodName: js.UndefOr[String] = js.native
@@ -33,54 +34,42 @@ object OperationMetadata {
   }
   
   @scala.inline
-  implicit class OperationMetadataOps[Self <: OperationMetadata] (val x: Self) extends AnyVal {
+  implicit class OperationMetadataMutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiMethodName(value: String): Self = StObject.set(x, "apiMethodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiMethodNameUndefined: Self = StObject.set(x, "apiMethodName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelRequested(value: Boolean): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiMethodName(value: String): Self = this.set("apiMethodName", value.asInstanceOf[js.Any])
+    def setCancelRequestedUndefined: Self = StObject.set(x, "cancelRequested", js.undefined)
     
     @scala.inline
-    def deleteApiMethodName: Self = this.set("apiMethodName", js.undefined)
+    def setCounter(value: ProgressCounter): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelRequested(value: Boolean): Self = this.set("cancelRequested", value.asInstanceOf[js.Any])
+    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
     @scala.inline
-    def deleteCancelRequested: Self = this.set("cancelRequested", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounter(value: ProgressCounter): Self = this.set("counter", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCounter: Self = this.set("counter", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setLogsUrl(value: String): Self = StObject.set(x, "logsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
-    
-    @scala.inline
-    def setLogsUrl(value: String): Self = this.set("logsUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogsUrl: Self = this.set("logsUrl", js.undefined)
+    def setLogsUrlUndefined: Self = StObject.set(x, "logsUrl", js.undefined)
   }
 }

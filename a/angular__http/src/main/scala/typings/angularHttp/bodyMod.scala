@@ -4,16 +4,16 @@ import typings.angularHttp.angularHttpStrings.`iso-8859`
 import typings.angularHttp.angularHttpStrings.legacy
 import typings.std.ArrayBuffer
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/body", JSImport.Namespace)
-@js.native
-object bodyMod extends js.Object {
+object bodyMod {
   
+  @JSImport("@angular/http/src/body", "Body")
   @js.native
-  abstract class Body () extends js.Object {
+  abstract class Body () extends StObject {
     
     /**
       * Return the body as an ArrayBuffer

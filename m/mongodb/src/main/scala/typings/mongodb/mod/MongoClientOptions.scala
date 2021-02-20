@@ -9,6 +9,7 @@ import typings.mongodb.mongodbStrings.`MONGODB-CR`
 import typings.mongodb.mongodbStrings.`MONGODB-X509`
 import typings.mongodb.mongodbStrings.`SCRAM-SHA-1`
 import typings.mongodb.mongodbStrings.`SCRAM-SHA-256`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,122 +114,110 @@ object MongoClientOptions {
   }
   
   @scala.inline
-  implicit class MongoClientOptionsOps[Self <: MongoClientOptions] (val x: Self) extends AnyVal {
+  implicit class MongoClientOptionsMutableBuilder[Self <: MongoClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "acceptableLatencyMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptableLatencyMSUndefined: Self = StObject.set(x, "acceptableLatencyMS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppname(value: String): Self = StObject.set(x, "appname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptableLatencyMS(value: scala.Double): Self = this.set("acceptableLatencyMS", value.asInstanceOf[js.Any])
+    def setAppnameUndefined: Self = StObject.set(x, "appname", js.undefined)
     
     @scala.inline
-    def deleteAcceptableLatencyMS: Self = this.set("acceptableLatencyMS", js.undefined)
-    
-    @scala.inline
-    def setAppname(value: String): Self = this.set("appname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppname: Self = this.set("appname", js.undefined)
-    
-    @scala.inline
-    def setAuth(value: Password): Self = this.set("auth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAuthMechanism(
       value: DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String
-    ): Self = this.set("authMechanism", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthMechanism: Self = this.set("authMechanism", js.undefined)
+    def setAuthMechanismUndefined: Self = StObject.set(x, "authMechanism", js.undefined)
     
     @scala.inline
-    def setCompression(value: Compressors): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setCompression(value: Compressors): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectWithNoPrimary(value: Boolean): Self = this.set("connectWithNoPrimary", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteConnectWithNoPrimary: Self = this.set("connectWithNoPrimary", js.undefined)
+    def setConnectWithNoPrimary(value: Boolean): Self = StObject.set(x, "connectWithNoPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHa(value: Boolean): Self = this.set("ha", value.asInstanceOf[js.Any])
+    def setConnectWithNoPrimaryUndefined: Self = StObject.set(x, "connectWithNoPrimary", js.undefined)
     
     @scala.inline
-    def deleteHa: Self = this.set("ha", js.undefined)
+    def setHa(value: Boolean): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggerFunction2(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = this.set("logger", js.Any.fromFunction2(value))
+    def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
     
     @scala.inline
-    def setLogger(value: js.Object | log): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setLogger(value: js.Object | log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setLoggerFunction2(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoggerLevel(value: String): Self = this.set("loggerLevel", value.asInstanceOf[js.Any])
+    def setLoggerLevel(value: String): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoggerLevel: Self = this.set("loggerLevel", js.undefined)
+    def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
     
     @scala.inline
-    def setMaxStalenessSeconds(value: scala.Double): Self = this.set("maxStalenessSeconds", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteMaxStalenessSeconds: Self = this.set("maxStalenessSeconds", js.undefined)
+    def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfRetries(value: scala.Double): Self = this.set("numberOfRetries", value.asInstanceOf[js.Any])
+    def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
     
     @scala.inline
-    def deleteNumberOfRetries: Self = this.set("numberOfRetries", js.undefined)
+    def setNumberOfRetries(value: scala.Double): Self = StObject.set(x, "numberOfRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreferenceTagsVarargs(value: String*): Self = this.set("readPreferenceTags", js.Array(value :_*))
+    def setNumberOfRetriesUndefined: Self = StObject.set(x, "numberOfRetries", js.undefined)
     
     @scala.inline
-    def setReadPreferenceTags(value: js.Array[String]): Self = this.set("readPreferenceTags", value.asInstanceOf[js.Any])
+    def setReadPreferenceTags(value: js.Array[String]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadPreferenceTags: Self = this.set("readPreferenceTags", js.undefined)
+    def setReadPreferenceTagsUndefined: Self = StObject.set(x, "readPreferenceTags", js.undefined)
     
     @scala.inline
-    def setReplicaSet(value: String): Self = this.set("replicaSet", value.asInstanceOf[js.Any])
+    def setReadPreferenceTagsVarargs(value: String*): Self = StObject.set(x, "readPreferenceTags", js.Array(value :_*))
     
     @scala.inline
-    def deleteReplicaSet: Self = this.set("replicaSet", js.undefined)
+    def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryAcceptableLatencyMS(value: scala.Double): Self = this.set("secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
+    def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
     
     @scala.inline
-    def deleteSecondaryAcceptableLatencyMS: Self = this.set("secondaryAcceptableLatencyMS", js.undefined)
+    def setSecondaryAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNewUrlParser(value: Boolean): Self = this.set("useNewUrlParser", value.asInstanceOf[js.Any])
+    def setSecondaryAcceptableLatencyMSUndefined: Self = StObject.set(x, "secondaryAcceptableLatencyMS", js.undefined)
     
     @scala.inline
-    def deleteUseNewUrlParser: Self = this.set("useNewUrlParser", js.undefined)
+    def setUseNewUrlParser(value: Boolean): Self = StObject.set(x, "useNewUrlParser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateOptions(value: js.Object | Boolean): Self = this.set("validateOptions", value.asInstanceOf[js.Any])
+    def setUseNewUrlParserUndefined: Self = StObject.set(x, "useNewUrlParser", js.undefined)
     
     @scala.inline
-    def deleteValidateOptions: Self = this.set("validateOptions", js.undefined)
+    def setValidateOptions(value: js.Object | Boolean): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalculatedColumn extends js.Object {
+trait CalculatedColumn extends StObject {
   
   // For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
   var format: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object CalculatedColumn {
   }
   
   @scala.inline
-  implicit class CalculatedColumnOps[Self <: CalculatedColumn] (val x: Self) extends AnyVal {
+  implicit class CalculatedColumnMutableBuilder[Self <: CalculatedColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatNull: Self = StObject.set(x, "format", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormat(value: NullableOption[String]): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormulaNull: Self = StObject.set(x, "formula", null)
     
     @scala.inline
-    def setFormatNull: Self = this.set("format", null)
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def setFormula(value: NullableOption[String]): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setOutputType(value: NullableOption[String]): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setOutputTypeNull: Self = StObject.set(x, "outputType", null)
     
     @scala.inline
-    def setFormulaNull: Self = this.set("formula", null)
-    
-    @scala.inline
-    def setOutputType(value: NullableOption[String]): Self = this.set("outputType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputType: Self = this.set("outputType", js.undefined)
-    
-    @scala.inline
-    def setOutputTypeNull: Self = this.set("outputType", null)
+    def setOutputTypeUndefined: Self = StObject.set(x, "outputType", js.undefined)
   }
 }

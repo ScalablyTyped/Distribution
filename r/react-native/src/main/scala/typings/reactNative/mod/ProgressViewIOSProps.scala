@@ -2,6 +2,7 @@ package typings.reactNative.mod
 
 import typings.reactNative.reactNativeStrings.bar
 import typings.reactNative.reactNativeStrings.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,60 +49,48 @@ object ProgressViewIOSProps {
   }
   
   @scala.inline
-  implicit class ProgressViewIOSPropsOps[Self <: ProgressViewIOSProps] (val x: Self) extends AnyVal {
+  implicit class ProgressViewIOSPropsMutableBuilder[Self <: ProgressViewIOSProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgressImage(value: ImageURISource | js.Array[ImageURISource]): Self = StObject.set(x, "progressImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgressImageUndefined: Self = StObject.set(x, "progressImage", js.undefined)
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setProgressImageVarargs(value: ImageURISource*): Self = StObject.set(x, "progressImage", js.Array(value :_*))
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressTintColor(value: ColorValue): Self = StObject.set(x, "progressTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressImageVarargs(value: ImageURISource*): Self = this.set("progressImage", js.Array(value :_*))
+    def setProgressTintColorUndefined: Self = StObject.set(x, "progressTintColor", js.undefined)
     
     @scala.inline
-    def setProgressImage(value: ImageURISource | js.Array[ImageURISource]): Self = this.set("progressImage", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteProgressImage: Self = this.set("progressImage", js.undefined)
+    def setProgressViewStyle(value: default | bar): Self = StObject.set(x, "progressViewStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressTintColor(value: ColorValue): Self = this.set("progressTintColor", value.asInstanceOf[js.Any])
+    def setProgressViewStyleUndefined: Self = StObject.set(x, "progressViewStyle", js.undefined)
     
     @scala.inline
-    def deleteProgressTintColor: Self = this.set("progressTintColor", js.undefined)
+    def setTrackImage(value: ImageURISource | js.Array[ImageURISource]): Self = StObject.set(x, "trackImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressViewStyle(value: default | bar): Self = this.set("progressViewStyle", value.asInstanceOf[js.Any])
+    def setTrackImageUndefined: Self = StObject.set(x, "trackImage", js.undefined)
     
     @scala.inline
-    def deleteProgressViewStyle: Self = this.set("progressViewStyle", js.undefined)
+    def setTrackImageVarargs(value: ImageURISource*): Self = StObject.set(x, "trackImage", js.Array(value :_*))
     
     @scala.inline
-    def setTrackImageVarargs(value: ImageURISource*): Self = this.set("trackImage", js.Array(value :_*))
+    def setTrackTintColor(value: ColorValue): Self = StObject.set(x, "trackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackImage(value: ImageURISource | js.Array[ImageURISource]): Self = this.set("trackImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackImage: Self = this.set("trackImage", js.undefined)
-    
-    @scala.inline
-    def setTrackTintColor(value: ColorValue): Self = this.set("trackTintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackTintColor: Self = this.set("trackTintColor", js.undefined)
+    def setTrackTintColorUndefined: Self = StObject.set(x, "trackTintColor", js.undefined)
   }
 }

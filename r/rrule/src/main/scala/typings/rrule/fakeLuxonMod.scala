@@ -1,16 +1,16 @@
 package typings.rrule
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rrule/dist/esm/src/fake-luxon", JSImport.Namespace)
-@js.native
-object fakeLuxonMod extends js.Object {
+object fakeLuxonMod {
   
-  @js.native
-  object DateTime extends js.Object {
+  object DateTime {
     
+    @JSImport("rrule/dist/esm/src/fake-luxon", "DateTime.fromJSDate")
+    @js.native
     def fromJSDate(): scala.Nothing = js.native
   }
 }

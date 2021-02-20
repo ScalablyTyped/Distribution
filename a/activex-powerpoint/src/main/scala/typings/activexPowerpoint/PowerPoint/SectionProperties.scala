@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SectionProperties extends js.Object {
+trait SectionProperties extends StObject {
   
   def AddBeforeSlide(SlideIndex: Double, sectionName: String): Double = js.native
   

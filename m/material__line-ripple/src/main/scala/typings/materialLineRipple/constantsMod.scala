@@ -1,12 +1,11 @@
 package typings.materialLineRipple
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/line-ripple/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
   /**
     * @license
@@ -30,11 +29,22 @@ object constantsMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var LINE_RIPPLE_ACTIVE: String = js.native
+    @JSImport("@material/line-ripple/constants", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var LINE_RIPPLE_DEACTIVATING: String = js.native
+    @JSImport("@material/line-ripple/constants", "cssClasses.LINE_RIPPLE_ACTIVE")
+    @js.native
+    def LINE_RIPPLE_ACTIVE: String = js.native
+    @scala.inline
+    def LINE_RIPPLE_ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_ACTIVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/line-ripple/constants", "cssClasses.LINE_RIPPLE_DEACTIVATING")
+    @js.native
+    def LINE_RIPPLE_DEACTIVATING: String = js.native
+    @scala.inline
+    def LINE_RIPPLE_DEACTIVATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_DEACTIVATING")(x.asInstanceOf[js.Any])
   }
 }

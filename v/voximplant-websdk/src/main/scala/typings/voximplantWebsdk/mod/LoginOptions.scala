@@ -1,5 +1,6 @@
 package typings.voximplantWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *    VoxImplant login options
   */
 @js.native
-trait LoginOptions extends js.Object {
+trait LoginOptions extends StObject {
   
   /**
     *    If set to false Web SDK can be used only for ACD status management
@@ -29,30 +30,18 @@ object LoginOptions {
   }
   
   @scala.inline
-  implicit class LoginOptionsOps[Self <: LoginOptions] (val x: Self) extends AnyVal {
+  implicit class LoginOptionsMutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReceiveCalls(value: Boolean): Self = StObject.set(x, "receiveCalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReceiveCallsUndefined: Self = StObject.set(x, "receiveCalls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerPresenceControl(value: Boolean): Self = StObject.set(x, "serverPresenceControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveCalls(value: Boolean): Self = this.set("receiveCalls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReceiveCalls: Self = this.set("receiveCalls", js.undefined)
-    
-    @scala.inline
-    def setServerPresenceControl(value: Boolean): Self = this.set("serverPresenceControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerPresenceControl: Self = this.set("serverPresenceControl", js.undefined)
+    def setServerPresenceControlUndefined: Self = StObject.set(x, "serverPresenceControl", js.undefined)
   }
 }

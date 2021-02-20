@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateClusterRequest extends js.Object {
+trait CreateClusterRequest extends StObject {
   
   /**
     * 
@@ -93,72 +94,60 @@ object CreateClusterRequest {
   }
   
   @scala.inline
-  implicit class CreateClusterRequestOps[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
+  implicit class CreateClusterRequestMutableBuilder[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = StObject.set(x, "BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientAuthentication(value: ClientAuthentication): Self = StObject.set(x, "ClientAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientAuthenticationUndefined: Self = StObject.set(x, "ClientAuthentication", js.undefined)
     
     @scala.inline
-    def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = this.set("BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
+    def setClusterName(value: stringMin1Max64): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: stringMin1Max64): Self = this.set("ClusterName", value.asInstanceOf[js.Any])
+    def setConfigurationInfo(value: ConfigurationInfo): Self = StObject.set(x, "ConfigurationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKafkaVersion(value: stringMin1Max128): Self = this.set("KafkaVersion", value.asInstanceOf[js.Any])
+    def setConfigurationInfoUndefined: Self = StObject.set(x, "ConfigurationInfo", js.undefined)
     
     @scala.inline
-    def setNumberOfBrokerNodes(value: integerMin1Max15): Self = this.set("NumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "EncryptionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAuthentication(value: ClientAuthentication): Self = this.set("ClientAuthentication", value.asInstanceOf[js.Any])
+    def setEncryptionInfoUndefined: Self = StObject.set(x, "EncryptionInfo", js.undefined)
     
     @scala.inline
-    def deleteClientAuthentication: Self = this.set("ClientAuthentication", js.undefined)
+    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationInfo(value: ConfigurationInfo): Self = this.set("ConfigurationInfo", value.asInstanceOf[js.Any])
+    def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
     
     @scala.inline
-    def deleteConfigurationInfo: Self = this.set("ConfigurationInfo", js.undefined)
+    def setKafkaVersion(value: stringMin1Max128): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionInfo(value: EncryptionInfo): Self = this.set("EncryptionInfo", value.asInstanceOf[js.Any])
+    def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionInfo: Self = this.set("EncryptionInfo", js.undefined)
+    def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
     
     @scala.inline
-    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    def setNumberOfBrokerNodes(value: integerMin1Max15): Self = StObject.set(x, "NumberOfBrokerNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnhancedMonitoring: Self = this.set("EnhancedMonitoring", js.undefined)
+    def setOpenMonitoring(value: OpenMonitoringInfo): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingInfo(value: LoggingInfo): Self = this.set("LoggingInfo", value.asInstanceOf[js.Any])
+    def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
     
     @scala.inline
-    def deleteLoggingInfo: Self = this.set("LoggingInfo", js.undefined)
+    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenMonitoring(value: OpenMonitoringInfo): Self = this.set("OpenMonitoring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenMonitoring: Self = this.set("OpenMonitoring", js.undefined)
-    
-    @scala.inline
-    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

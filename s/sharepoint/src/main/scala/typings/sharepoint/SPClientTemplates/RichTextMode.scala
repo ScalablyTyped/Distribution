@@ -1,14 +1,15 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RichTextMode extends js.Object
+sealed trait RichTextMode extends StObject
 @JSGlobal("SPClientTemplates.RichTextMode")
 @js.native
-object RichTextMode extends js.Object {
+object RichTextMode extends StObject {
   
   @js.native
   sealed trait Compatible extends RichTextMode

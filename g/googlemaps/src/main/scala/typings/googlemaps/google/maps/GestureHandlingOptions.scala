@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlemaps.googlemapsStrings.none
   - typings.googlemaps.googlemapsStrings.auto
 */
-trait GestureHandlingOptions extends js.Object
+trait GestureHandlingOptions extends StObject
 object GestureHandlingOptions {
   
   @scala.inline

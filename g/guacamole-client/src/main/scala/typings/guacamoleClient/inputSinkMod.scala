@@ -1,16 +1,16 @@
 package typings.guacamoleClient
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/InputSink", JSImport.Namespace)
-@js.native
-object inputSinkMod extends js.Object {
+object inputSinkMod {
   
+  @JSImport("guacamole-client/lib/InputSink", "InputSink")
   @js.native
-  class InputSink () extends js.Object {
+  class InputSink () extends StObject {
     
     /**
       * Attempts to focus the underlying input field. The focus attempt occurs

@@ -1,12 +1,13 @@
 package typings.dynogels.mod
 
 import typings.joi.mod.ValidationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelConfiguration extends js.Object {
+trait ModelConfiguration extends StObject {
   
   var createdAt: js.UndefOr[Boolean | String] = js.native
   
@@ -37,81 +38,69 @@ object ModelConfiguration {
   }
   
   @scala.inline
-  implicit class ModelConfigurationOps[Self <: ModelConfiguration] (val x: Self) extends AnyVal {
+  implicit class ModelConfigurationMutableBuilder[Self <: ModelConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Boolean | String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashKey(value: String): Self = this.set("hashKey", value.asInstanceOf[js.Any])
+    def setIndexes(value: js.Array[_]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Boolean | String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
     @scala.inline
-    def setIndexesVarargs(value: js.Any*): Self = this.set("indexes", js.Array(value :_*))
+    def setLog(value: Log_): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexes(value: js.Array[_]): Self = this.set("indexes", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteIndexes: Self = this.set("indexes", js.undefined)
+    def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: Log_): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeKey(value: String): Self = this.set("rangeKey", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteRangeKey: Self = this.set("rangeKey", js.undefined)
+    def setTableName(value: String | tableResolve): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: SchemaType): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setTableNameFunction0(value: () => String): Self = StObject.set(x, "tableName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
     @scala.inline
-    def setTableNameFunction0(value: () => String): Self = this.set("tableName", js.Any.fromFunction0(value))
+    def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: String | tableResolve): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
     @scala.inline
-    def deleteTableName: Self = this.set("tableName", js.undefined)
+    def setUpdatedAt(value: Boolean | String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamps(value: Boolean): Self = this.set("timestamps", value.asInstanceOf[js.Any])
+    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
     
     @scala.inline
-    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
+    def setValidation(value: ValidationOptions): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAt(value: Boolean | String): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
-    
-    @scala.inline
-    def setValidation(value: ValidationOptions): Self = this.set("validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidation: Self = this.set("validation", js.undefined)
+    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

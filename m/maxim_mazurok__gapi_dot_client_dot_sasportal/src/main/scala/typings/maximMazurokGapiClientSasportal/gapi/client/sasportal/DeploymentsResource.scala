@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSasportal.anon.Name
 import typings.maximMazurokGapiClientSasportal.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentsResource extends js.Object {
+trait DeploymentsResource extends StObject {
   
   var devices: DevicesResource = js.native
   

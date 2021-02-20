@@ -1,12 +1,13 @@
 package typings.smartFoxServer.SFS2X
 
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUSER_FIND_RESULT extends js.Object {
+trait IUSER_FIND_RESULT extends StObject {
   
   var users: js.Array[SFSUser] = js.native
 }
@@ -19,24 +20,12 @@ object IUSER_FIND_RESULT {
   }
   
   @scala.inline
-  implicit class IUSER_FIND_RESULTOps[Self <: IUSER_FIND_RESULT] (val x: Self) extends AnyVal {
+  implicit class IUSER_FIND_RESULTMutableBuilder[Self <: IUSER_FIND_RESULT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUsersVarargs(value: SFSUser*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: js.Array[SFSUser]): Self = this.set("users", value.asInstanceOf[js.Any])
+    def setUsersVarargs(value: SFSUser*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

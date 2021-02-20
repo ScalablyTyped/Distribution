@@ -17,6 +17,7 @@ import typings.ssh2.ssh2Strings.timeout
 import typings.ssh2.ssh2Strings.x11
 import typings.ssh2Streams.mod.Prompt
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Backup extends js.Object {
+trait Backup extends StObject {
   
   /** Output only. Capacity of the source file share when the backup was created. */
   var capacityGb: js.UndefOr[String] = js.native
@@ -57,88 +58,76 @@ object Backup {
   }
   
   @scala.inline
-  implicit class BackupOps[Self <: Backup] (val x: Self) extends AnyVal {
+  implicit class BackupMutableBuilder[Self <: Backup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityGbUndefined: Self = StObject.set(x, "capacityGb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityGb(value: String): Self = this.set("capacityGb", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCapacityGb: Self = this.set("capacityGb", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDownloadBytes(value: String): Self = StObject.set(x, "downloadBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setDownloadBytes(value: String): Self = this.set("downloadBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownloadBytes: Self = this.set("downloadBytes", js.undefined)
+    def setDownloadBytesUndefined: Self = StObject.set(x, "downloadBytes", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setSourceFileShare(value: String): Self = this.set("sourceFileShare", value.asInstanceOf[js.Any])
+    def setSourceFileShare(value: String): Self = StObject.set(x, "sourceFileShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceFileShare: Self = this.set("sourceFileShare", js.undefined)
+    def setSourceFileShareUndefined: Self = StObject.set(x, "sourceFileShare", js.undefined)
     
     @scala.inline
-    def setSourceInstance(value: String): Self = this.set("sourceInstance", value.asInstanceOf[js.Any])
+    def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceInstance: Self = this.set("sourceInstance", js.undefined)
+    def setSourceInstanceTier(value: String): Self = StObject.set(x, "sourceInstanceTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceInstanceTier(value: String): Self = this.set("sourceInstanceTier", value.asInstanceOf[js.Any])
+    def setSourceInstanceTierUndefined: Self = StObject.set(x, "sourceInstanceTier", js.undefined)
     
     @scala.inline
-    def deleteSourceInstanceTier: Self = this.set("sourceInstanceTier", js.undefined)
+    def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setStorageBytes(value: String): Self = this.set("storageBytes", value.asInstanceOf[js.Any])
+    def setStorageBytes(value: String): Self = StObject.set(x, "storageBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStorageBytes: Self = this.set("storageBytes", js.undefined)
+    def setStorageBytesUndefined: Self = StObject.set(x, "storageBytes", js.undefined)
   }
 }

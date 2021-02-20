@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsKmsKeyDetails extends js.Object {
+trait AwsKmsKeyDetails extends StObject {
   
   /**
     * The twelve-digit account ID of the AWS account that owns the CMK.
@@ -51,60 +52,48 @@ object AwsKmsKeyDetails {
   }
   
   @scala.inline
-  implicit class AwsKmsKeyDetailsOps[Self <: AwsKmsKeyDetails] (val x: Self) extends AnyVal {
+  implicit class AwsKmsKeyDetailsMutableBuilder[Self <: AwsKmsKeyDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAWSAccountId(value: NonEmptyString): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAWSAccountId(value: NonEmptyString): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteAWSAccountId: Self = this.set("AWSAccountId", js.undefined)
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setKeyId(value: NonEmptyString): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setKeyManager(value: NonEmptyString): Self = StObject.set(x, "KeyManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: NonEmptyString): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setKeyManagerUndefined: Self = StObject.set(x, "KeyManager", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setKeyState(value: NonEmptyString): Self = StObject.set(x, "KeyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyManager(value: NonEmptyString): Self = this.set("KeyManager", value.asInstanceOf[js.Any])
+    def setKeyStateUndefined: Self = StObject.set(x, "KeyState", js.undefined)
     
     @scala.inline
-    def deleteKeyManager: Self = this.set("KeyManager", js.undefined)
+    def setOrigin(value: NonEmptyString): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyState(value: NonEmptyString): Self = this.set("KeyState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyState: Self = this.set("KeyState", js.undefined)
-    
-    @scala.inline
-    def setOrigin(value: NonEmptyString): Self = this.set("Origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
   }
 }

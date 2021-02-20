@@ -6,13 +6,14 @@ import typings.atom.anon.Heads
 import typings.atom.anon.NewLines
 import typings.atom.anon.RefreshOnWindowFocus
 import typings.atom.atomStrings.git
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "GitRepository")
 @js.native
-class GitRepository protected () extends js.Object {
+class GitRepository protected () extends StObject {
   def this(path: String) = this()
   def this(path: String, options: typings.atom.anon.Config) = this()
   
@@ -156,12 +157,14 @@ class GitRepository protected () extends js.Object {
   def relativize(): String = js.native
 }
 /* static members */
-@JSImport("atom", "GitRepository")
-@js.native
-object GitRepository extends js.Object {
+object GitRepository {
   
   // Construction
   /** Creates a new GitRepository instance. */
+  @JSImport("atom", "GitRepository.open")
+  @js.native
   def open(path: String): GitRepository = js.native
+  @JSImport("atom", "GitRepository.open")
+  @js.native
   def open(path: String, options: RefreshOnWindowFocus): GitRepository = js.native
 }

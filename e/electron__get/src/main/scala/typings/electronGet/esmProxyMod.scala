@@ -1,12 +1,13 @@
 package typings.electronGet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@electron/get/dist/esm/proxy", JSImport.Namespace)
-@js.native
-object esmProxyMod extends js.Object {
+object esmProxyMod {
   
+  @JSImport("@electron/get/dist/esm/proxy", "initializeProxy")
+  @js.native
   def initializeProxy(): Unit = js.native
 }

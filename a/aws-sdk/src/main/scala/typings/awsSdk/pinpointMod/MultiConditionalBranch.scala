@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiConditionalBranch extends js.Object {
+trait MultiConditionalBranch extends StObject {
   
   /**
     * The condition to evaluate for the activity path.
@@ -26,30 +27,18 @@ object MultiConditionalBranch {
   }
   
   @scala.inline
-  implicit class MultiConditionalBranchOps[Self <: MultiConditionalBranch] (val x: Self) extends AnyVal {
+  implicit class MultiConditionalBranchMutableBuilder[Self <: MultiConditionalBranch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: SimpleCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: SimpleCondition): Self = this.set("Condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("Condition", js.undefined)
-    
-    @scala.inline
-    def setNextActivity(value: string): Self = this.set("NextActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextActivity: Self = this.set("NextActivity", js.undefined)
+    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Modules: core.string.escape-html
 // #############################################################################################
 @js.native
-trait String extends js.Object {
+trait String extends StObject {
   
   def at(index: Double): java.lang.String = js.native
   

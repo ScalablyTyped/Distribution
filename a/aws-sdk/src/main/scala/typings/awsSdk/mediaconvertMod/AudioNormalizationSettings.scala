@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioNormalizationSettings extends js.Object {
+trait AudioNormalizationSettings extends StObject {
   
   /**
     * Choose one of the following audio normalization algorithms: ITU-R BS.1770-1: Ungated loudness. A measurement of ungated average loudness for an entire piece of content, suitable for measurement of short-form content under ATSC recommendation A/85. Supports up to 5.1 audio channels. ITU-R BS.1770-2: Gated loudness. A measurement of gated average loudness compliant with the requirements of EBU-R128. Supports up to 5.1 audio channels. ITU-R BS.1770-3: Modified peak. The same loudness measurement algorithm as 1770-2, with an updated true peak measurement. ITU-R BS.1770-4: Higher channel count. Allows for more audio channels than the other algorithms, including configurations such as 7.1.
@@ -46,54 +47,42 @@ object AudioNormalizationSettings {
   }
   
   @scala.inline
-  implicit class AudioNormalizationSettingsOps[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
+  implicit class AudioNormalizationSettingsMutableBuilder[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: AudioNormalizationAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = StObject.set(x, "AlgorithmControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlgorithmControlUndefined: Self = StObject.set(x, "AlgorithmControl", js.undefined)
     
     @scala.inline
-    def setAlgorithm(value: AudioNormalizationAlgorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("Algorithm", js.undefined)
+    def setCorrectionGateLevel(value: integerMinNegative70Max0): Self = StObject.set(x, "CorrectionGateLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = this.set("AlgorithmControl", value.asInstanceOf[js.Any])
+    def setCorrectionGateLevelUndefined: Self = StObject.set(x, "CorrectionGateLevel", js.undefined)
     
     @scala.inline
-    def deleteAlgorithmControl: Self = this.set("AlgorithmControl", js.undefined)
+    def setLoudnessLogging(value: AudioNormalizationLoudnessLogging): Self = StObject.set(x, "LoudnessLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectionGateLevel(value: integerMinNegative70Max0): Self = this.set("CorrectionGateLevel", value.asInstanceOf[js.Any])
+    def setLoudnessLoggingUndefined: Self = StObject.set(x, "LoudnessLogging", js.undefined)
     
     @scala.inline
-    def deleteCorrectionGateLevel: Self = this.set("CorrectionGateLevel", js.undefined)
+    def setPeakCalculation(value: AudioNormalizationPeakCalculation): Self = StObject.set(x, "PeakCalculation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoudnessLogging(value: AudioNormalizationLoudnessLogging): Self = this.set("LoudnessLogging", value.asInstanceOf[js.Any])
+    def setPeakCalculationUndefined: Self = StObject.set(x, "PeakCalculation", js.undefined)
     
     @scala.inline
-    def deleteLoudnessLogging: Self = this.set("LoudnessLogging", js.undefined)
+    def setTargetLkfs(value: doubleMinNegative59Max0): Self = StObject.set(x, "TargetLkfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeakCalculation(value: AudioNormalizationPeakCalculation): Self = this.set("PeakCalculation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeakCalculation: Self = this.set("PeakCalculation", js.undefined)
-    
-    @scala.inline
-    def setTargetLkfs(value: doubleMinNegative59Max0): Self = this.set("TargetLkfs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLkfs: Self = this.set("TargetLkfs", js.undefined)
+    def setTargetLkfsUndefined: Self = StObject.set(x, "TargetLkfs", js.undefined)
   }
 }

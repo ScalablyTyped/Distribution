@@ -1,11 +1,12 @@
 package typings.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactProviderType[T] extends js.Object {
+trait ReactProviderType[T] extends StObject {
   
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol | Double = js.native
@@ -22,24 +23,12 @@ object ReactProviderType {
   }
   
   @scala.inline
-  implicit class ReactProviderTypeOps[Self <: ReactProviderType[_], T] (val x: Self with ReactProviderType[T]) extends AnyVal {
+  implicit class ReactProviderTypeMutableBuilder[Self <: ReactProviderType[_], T] (val x: Self with ReactProviderType[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDollarDollartypeof(value: js.Symbol | Double): Self = this.set("$$typeof", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_context(value: ReactContext[T]): Self = this.set("_context", value.asInstanceOf[js.Any])
+    def set_context(value: ReactContext[T]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
   }
 }

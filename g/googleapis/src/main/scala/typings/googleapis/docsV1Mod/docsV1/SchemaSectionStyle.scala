@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The styling that applies to a section.
   */
 @js.native
-trait SchemaSectionStyle extends js.Object {
+trait SchemaSectionStyle extends StObject {
   
   /**
     * The section&#39;s columns properties.  If empty, the section contains one
@@ -37,39 +38,27 @@ object SchemaSectionStyle {
   }
   
   @scala.inline
-  implicit class SchemaSectionStyleOps[Self <: SchemaSectionStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaSectionStyleMutableBuilder[Self <: SchemaSectionStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnProperties(value: js.Array[SchemaSectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnPropertiesVarargs(value: SchemaSectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
     
     @scala.inline
-    def setColumnPropertiesVarargs(value: SchemaSectionColumnProperties*): Self = this.set("columnProperties", js.Array(value :_*))
+    def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnProperties(value: js.Array[SchemaSectionColumnProperties]): Self = this.set("columnProperties", value.asInstanceOf[js.Any])
+    def setColumnSeparatorStyleUndefined: Self = StObject.set(x, "columnSeparatorStyle", js.undefined)
     
     @scala.inline
-    def deleteColumnProperties: Self = this.set("columnProperties", js.undefined)
+    def setContentDirection(value: String): Self = StObject.set(x, "contentDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSeparatorStyle(value: String): Self = this.set("columnSeparatorStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnSeparatorStyle: Self = this.set("columnSeparatorStyle", js.undefined)
-    
-    @scala.inline
-    def setContentDirection(value: String): Self = this.set("contentDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentDirection: Self = this.set("contentDirection", js.undefined)
+    def setContentDirectionUndefined: Self = StObject.set(x, "contentDirection", js.undefined)
   }
 }

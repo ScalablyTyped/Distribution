@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableDimension extends js.Object {
+trait DraggableDimension extends StObject {
   
   // relative to the viewport when the drag started
   var client: BoxModel = js.native
@@ -37,33 +38,21 @@ object DraggableDimension {
   }
   
   @scala.inline
-  implicit class DraggableDimensionOps[Self <: DraggableDimension] (val x: Self) extends AnyVal {
+  implicit class DraggableDimensionMutableBuilder[Self <: DraggableDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: BoxModel): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptor(value: DraggableDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplaceBy(value: Position): Self = StObject.set(x, "displaceBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: BoxModel): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptor(value: DraggableDescriptor): Self = this.set("descriptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplaceBy(value: Position): Self = this.set("displaceBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPage(value: BoxModel): Self = this.set("page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceholder(value: Placeholder): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.Omit<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.bankingAlias.CreateIBANBankingAlias, 'CreditedUserId'>> */
 @js.native
-trait PartialOmitCreateIBANBank extends js.Object {
+trait PartialOmitCreateIBANBank extends StObject {
   
   var Country: js.UndefOr[CountryISO] = js.native
   
@@ -24,36 +25,24 @@ object PartialOmitCreateIBANBank {
   }
   
   @scala.inline
-  implicit class PartialOmitCreateIBANBankOps[Self <: PartialOmitCreateIBANBank] (val x: Self) extends AnyVal {
+  implicit class PartialOmitCreateIBANBankMutableBuilder[Self <: PartialOmitCreateIBANBank] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: CountryISO): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("Country", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerName(value: String): Self = this.set("OwnerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerName: Self = this.set("OwnerName", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

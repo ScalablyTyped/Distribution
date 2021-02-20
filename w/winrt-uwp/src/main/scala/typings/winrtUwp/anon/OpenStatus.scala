@@ -2,12 +2,13 @@ package typings.winrtUwp.anon
 
 import typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus
 import typings.winrtUwp.Windows.Devices.Gpio.GpioPin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenStatus extends js.Object {
+trait OpenStatus extends StObject {
   
   /** An enumeration value that indicates either that the attempt to open the GPIO pin succeeded, or the reason that the attempt to open the GPIO pin failed. */ var openStatus: GpioOpenStatus = js.native
   
@@ -24,27 +25,15 @@ object OpenStatus {
   }
   
   @scala.inline
-  implicit class OpenStatusOps[Self <: OpenStatus] (val x: Self) extends AnyVal {
+  implicit class OpenStatusMutableBuilder[Self <: OpenStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenStatus(value: GpioOpenStatus): Self = StObject.set(x, "openStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPin(value: GpioPin): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenStatus(value: GpioOpenStatus): Self = this.set("openStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPin(value: GpioPin): Self = this.set("pin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorkspaceImagePermissionsResult extends js.Object {
+trait DescribeWorkspaceImagePermissionsResult extends StObject {
   
   /**
     * The identifier of the image.
@@ -31,39 +32,27 @@ object DescribeWorkspaceImagePermissionsResult {
   }
   
   @scala.inline
-  implicit class DescribeWorkspaceImagePermissionsResultOps[Self <: DescribeWorkspaceImagePermissionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeWorkspaceImagePermissionsResultMutableBuilder[Self <: DescribeWorkspaceImagePermissionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
     
     @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setImagePermissionsVarargs(value: ImagePermission*): Self = StObject.set(x, "ImagePermissions", js.Array(value :_*))
     
     @scala.inline
-    def setImagePermissionsVarargs(value: ImagePermission*): Self = this.set("ImagePermissions", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePermissions(value: ImagePermissions): Self = this.set("ImagePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImagePermissions: Self = this.set("ImagePermissions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

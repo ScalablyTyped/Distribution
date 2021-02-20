@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait jsonUtils extends js.Object {
+trait jsonUtils extends StObject {
   
   /**
     * Creates a new instance of an appropriate [Geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html) class and initializes it with values from a JSON object generated from a product in the ArcGIS platform.
@@ -30,24 +31,12 @@ object jsonUtils {
   }
   
   @scala.inline
-  implicit class jsonUtilsOps[Self <: jsonUtils] (val x: Self) extends AnyVal {
+  implicit class jsonUtilsMutableBuilder[Self <: jsonUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromJSON(value: js.Any => Geometry_): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromJSON(value: js.Any => Geometry_): Self = this.set("fromJSON", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetJsonType(value: Geometry_ => String): Self = this.set("getJsonType", js.Any.fromFunction1(value))
+    def setGetJsonType(value: Geometry_ => String): Self = StObject.set(x, "getJsonType", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation extends js.Object {
+trait GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation extends StObject {
   
   /** Object category's labeling confidence of this track. */
   var confidence: js.UndefOr[Double] = js.native
@@ -40,57 +41,45 @@ object GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotationOps[Self <: GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntity(value: GoogleCloudVideointelligenceV1p3beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: GoogleCloudVideointelligenceV1p3beta1Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
+    def setFramesVarargs(value: GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setFramesVarargs(value: GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame*): Self = this.set("frames", js.Array(value :_*))
+    def setSegment(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
     @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
+    def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegment(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment): Self = this.set("segment", value.asInstanceOf[js.Any])
+    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
     
     @scala.inline
-    def deleteSegment: Self = this.set("segment", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackId(value: String): Self = this.set("trackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackId: Self = this.set("trackId", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

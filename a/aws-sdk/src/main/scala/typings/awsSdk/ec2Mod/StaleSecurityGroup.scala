@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaleSecurityGroup extends js.Object {
+trait StaleSecurityGroup extends StObject {
   
   /**
     * The description of the security group.
@@ -46,60 +47,48 @@ object StaleSecurityGroup {
   }
   
   @scala.inline
-  implicit class StaleSecurityGroupOps[Self <: StaleSecurityGroup] (val x: Self) extends AnyVal {
+  implicit class StaleSecurityGroupMutableBuilder[Self <: StaleSecurityGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    def setStaleIpPermissions(value: StaleIpPermissionSet): Self = StObject.set(x, "StaleIpPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setStaleIpPermissionsEgress(value: StaleIpPermissionSet): Self = StObject.set(x, "StaleIpPermissionsEgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setStaleIpPermissionsEgressUndefined: Self = StObject.set(x, "StaleIpPermissionsEgress", js.undefined)
     
     @scala.inline
-    def setStaleIpPermissionsVarargs(value: StaleIpPermission*): Self = this.set("StaleIpPermissions", js.Array(value :_*))
+    def setStaleIpPermissionsEgressVarargs(value: StaleIpPermission*): Self = StObject.set(x, "StaleIpPermissionsEgress", js.Array(value :_*))
     
     @scala.inline
-    def setStaleIpPermissions(value: StaleIpPermissionSet): Self = this.set("StaleIpPermissions", value.asInstanceOf[js.Any])
+    def setStaleIpPermissionsUndefined: Self = StObject.set(x, "StaleIpPermissions", js.undefined)
     
     @scala.inline
-    def deleteStaleIpPermissions: Self = this.set("StaleIpPermissions", js.undefined)
+    def setStaleIpPermissionsVarargs(value: StaleIpPermission*): Self = StObject.set(x, "StaleIpPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setStaleIpPermissionsEgressVarargs(value: StaleIpPermission*): Self = this.set("StaleIpPermissionsEgress", js.Array(value :_*))
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaleIpPermissionsEgress(value: StaleIpPermissionSet): Self = this.set("StaleIpPermissionsEgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaleIpPermissionsEgress: Self = this.set("StaleIpPermissionsEgress", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

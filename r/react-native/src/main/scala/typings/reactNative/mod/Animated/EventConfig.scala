@@ -1,12 +1,13 @@
 package typings.reactNative.mod.Animated
 
 import typings.reactNative.mod.NativeSyntheticEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventConfig[T] extends js.Object {
+trait EventConfig[T] extends StObject {
   
   var listener: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[T], Unit]] = js.native
   
@@ -21,27 +22,15 @@ object EventConfig {
   }
   
   @scala.inline
-  implicit class EventConfigOps[Self <: EventConfig[_], T] (val x: Self with EventConfig[T]) extends AnyVal {
+  implicit class EventConfigMutableBuilder[Self <: EventConfig[_], T] (val x: Self with EventConfig[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListener(value: /* event */ NativeSyntheticEvent[T] => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListener(value: /* event */ NativeSyntheticEvent[T] => Unit): Self = this.set("listener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteListener: Self = this.set("listener", js.undefined)
+    def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
   }
 }

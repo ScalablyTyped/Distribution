@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordDetail extends js.Object {
+trait RecordDetail extends StObject {
   
   /**
     * The UTC time stamp of the creation time.
@@ -86,108 +87,96 @@ object RecordDetail {
   }
   
   @scala.inline
-  implicit class RecordDetailOps[Self <: RecordDetail] (val x: Self) extends AnyVal {
+  implicit class RecordDetailMutableBuilder[Self <: RecordDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchRoleArn(value: RoleArn): Self = StObject.set(x, "LaunchRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: CreatedTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setLaunchRoleArnUndefined: Self = StObject.set(x, "LaunchRoleArn", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchRoleArn(value: RoleArn): Self = this.set("LaunchRoleArn", value.asInstanceOf[js.Any])
+    def setPathIdUndefined: Self = StObject.set(x, "PathId", js.undefined)
     
     @scala.inline
-    def deleteLaunchRoleArn: Self = this.set("LaunchRoleArn", js.undefined)
+    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathId(value: Id): Self = this.set("PathId", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
     @scala.inline
-    def deletePathId: Self = this.set("PathId", js.undefined)
+    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
+    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
     
     @scala.inline
-    def deleteProvisionedProductId: Self = this.set("ProvisionedProductId", js.undefined)
+    def setProvisionedProductType(value: ProvisionedProductType): Self = StObject.set(x, "ProvisionedProductType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
+    def setProvisionedProductTypeUndefined: Self = StObject.set(x, "ProvisionedProductType", js.undefined)
     
     @scala.inline
-    def deleteProvisionedProductName: Self = this.set("ProvisionedProductName", js.undefined)
+    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductType(value: ProvisionedProductType): Self = this.set("ProvisionedProductType", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
     
     @scala.inline
-    def deleteProvisionedProductType: Self = this.set("ProvisionedProductType", js.undefined)
+    def setRecordErrors(value: RecordErrors): Self = StObject.set(x, "RecordErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    def setRecordErrorsUndefined: Self = StObject.set(x, "RecordErrors", js.undefined)
     
     @scala.inline
-    def deleteProvisioningArtifactId: Self = this.set("ProvisioningArtifactId", js.undefined)
+    def setRecordErrorsVarargs(value: RecordError*): Self = StObject.set(x, "RecordErrors", js.Array(value :_*))
     
     @scala.inline
-    def setRecordErrorsVarargs(value: RecordError*): Self = this.set("RecordErrors", js.Array(value :_*))
+    def setRecordId(value: Id): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordErrors(value: RecordErrors): Self = this.set("RecordErrors", value.asInstanceOf[js.Any])
+    def setRecordIdUndefined: Self = StObject.set(x, "RecordId", js.undefined)
     
     @scala.inline
-    def deleteRecordErrors: Self = this.set("RecordErrors", js.undefined)
+    def setRecordTags(value: RecordTags): Self = StObject.set(x, "RecordTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordId(value: Id): Self = this.set("RecordId", value.asInstanceOf[js.Any])
+    def setRecordTagsUndefined: Self = StObject.set(x, "RecordTags", js.undefined)
     
     @scala.inline
-    def deleteRecordId: Self = this.set("RecordId", js.undefined)
+    def setRecordTagsVarargs(value: RecordTag*): Self = StObject.set(x, "RecordTags", js.Array(value :_*))
     
     @scala.inline
-    def setRecordTagsVarargs(value: RecordTag*): Self = this.set("RecordTags", js.Array(value :_*))
+    def setRecordType(value: RecordType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordTags(value: RecordTags): Self = this.set("RecordTags", value.asInstanceOf[js.Any])
+    def setRecordTypeUndefined: Self = StObject.set(x, "RecordType", js.undefined)
     
     @scala.inline
-    def deleteRecordTags: Self = this.set("RecordTags", js.undefined)
+    def setStatus(value: RecordStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordType(value: RecordType): Self = this.set("RecordType", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRecordType: Self = this.set("RecordType", js.undefined)
+    def setUpdatedTime(value: UpdatedTime): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: RecordStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUpdatedTime(value: UpdatedTime): Self = this.set("UpdatedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTime: Self = this.set("UpdatedTime", js.undefined)
+    def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
   }
 }

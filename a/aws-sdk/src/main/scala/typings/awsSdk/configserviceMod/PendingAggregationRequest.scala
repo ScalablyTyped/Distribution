@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PendingAggregationRequest extends js.Object {
+trait PendingAggregationRequest extends StObject {
   
   /**
     * The 12-digit account ID of the account requesting to aggregate data.
@@ -26,30 +27,18 @@ object PendingAggregationRequest {
   }
   
   @scala.inline
-  implicit class PendingAggregationRequestOps[Self <: PendingAggregationRequest] (val x: Self) extends AnyVal {
+  implicit class PendingAggregationRequestMutableBuilder[Self <: PendingAggregationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequesterAccountId(value: AccountId): Self = StObject.set(x, "RequesterAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequesterAccountIdUndefined: Self = StObject.set(x, "RequesterAccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequesterAwsRegion(value: AwsRegion): Self = StObject.set(x, "RequesterAwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterAccountId(value: AccountId): Self = this.set("RequesterAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterAccountId: Self = this.set("RequesterAccountId", js.undefined)
-    
-    @scala.inline
-    def setRequesterAwsRegion(value: AwsRegion): Self = this.set("RequesterAwsRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterAwsRegion: Self = this.set("RequesterAwsRegion", js.undefined)
+    def setRequesterAwsRegionUndefined: Self = StObject.set(x, "RequesterAwsRegion", js.undefined)
   }
 }

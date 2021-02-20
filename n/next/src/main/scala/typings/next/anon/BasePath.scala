@@ -3,12 +3,13 @@ package typings.next.anon
 import typings.next.serverRouterMod.DynamicRoutes
 import typings.next.serverRouterMod.PageChecker
 import typings.next.serverRouterMod.Route_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasePath extends js.Object {
+trait BasePath extends StObject {
   
   var basePath: String = js.native
   
@@ -49,69 +50,57 @@ object BasePath {
   }
   
   @scala.inline
-  implicit class BasePathOps[Self <: BasePath] (val x: Self) extends AnyVal {
+  implicit class BasePathMutableBuilder[Self <: BasePath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatchAllRoute(value: Route_): Self = StObject.set(x, "catchAllRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicRoutes(value: DynamicRoutes): Self = StObject.set(x, "dynamicRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    def setDynamicRoutesUndefined: Self = StObject.set(x, "dynamicRoutes", js.undefined)
     
     @scala.inline
-    def setCatchAllRoute(value: Route_): Self = this.set("catchAllRoute", value.asInstanceOf[js.Any])
+    def setDynamicRoutesVarargs(value: Match*): Self = StObject.set(x, "dynamicRoutes", js.Array(value :_*))
     
     @scala.inline
-    def setFsRoutesVarargs(value: Route_ *): Self = this.set("fsRoutes", js.Array(value :_*))
+    def setFsRoutes(value: js.Array[Route_]): Self = StObject.set(x, "fsRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsRoutes(value: js.Array[Route_]): Self = this.set("fsRoutes", value.asInstanceOf[js.Any])
+    def setFsRoutesVarargs(value: Route_ *): Self = StObject.set(x, "fsRoutes", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: Route_ *): Self = this.set("headers", js.Array(value :_*))
+    def setHeaders(value: js.Array[Route_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[Route_]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: Route_ *): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setLocalesVarargs(value: String*): Self = this.set("locales", js.Array(value :_*))
+    def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocales(value: js.Array[String]): Self = this.set("locales", value.asInstanceOf[js.Any])
+    def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
     @scala.inline
-    def setPageChecker(value: /* pathname */ String => js.Promise[Boolean]): Self = this.set("pageChecker", js.Any.fromFunction1(value))
+    def setPageChecker(value: /* pathname */ String => js.Promise[Boolean]): Self = StObject.set(x, "pageChecker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRedirectsVarargs(value: Route_ *): Self = this.set("redirects", js.Array(value :_*))
+    def setRedirects(value: js.Array[Route_]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirects(value: js.Array[Route_]): Self = this.set("redirects", value.asInstanceOf[js.Any])
+    def setRedirectsVarargs(value: Route_ *): Self = StObject.set(x, "redirects", js.Array(value :_*))
     
     @scala.inline
-    def setRewritesVarargs(value: Route_ *): Self = this.set("rewrites", js.Array(value :_*))
+    def setRewrites(value: js.Array[Route_]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRewrites(value: js.Array[Route_]): Self = this.set("rewrites", value.asInstanceOf[js.Any])
+    def setRewritesVarargs(value: Route_ *): Self = StObject.set(x, "rewrites", js.Array(value :_*))
     
     @scala.inline
-    def setUseFileSystemPublicRoutes(value: Boolean): Self = this.set("useFileSystemPublicRoutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDynamicRoutesVarargs(value: Match*): Self = this.set("dynamicRoutes", js.Array(value :_*))
-    
-    @scala.inline
-    def setDynamicRoutes(value: DynamicRoutes): Self = this.set("dynamicRoutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicRoutes: Self = this.set("dynamicRoutes", js.undefined)
+    def setUseFileSystemPublicRoutes(value: Boolean): Self = StObject.set(x, "useFileSystemPublicRoutes", value.asInstanceOf[js.Any])
   }
 }

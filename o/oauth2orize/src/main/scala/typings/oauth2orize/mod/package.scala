@@ -1,5 +1,6 @@
 package typings.oauth2orize
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,4 +119,9 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
+  @scala.inline
+  def createServer(): typings.oauth2orize.mod.OAuth2Server = typings.oauth2orize.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.oauth2orize.mod.OAuth2Server]
+  @scala.inline
+  def createServer(options: typings.oauth2orize.mod.ServerOptions): typings.oauth2orize.mod.OAuth2Server = typings.oauth2orize.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.oauth2orize.mod.OAuth2Server]
 }

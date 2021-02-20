@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recipes extends js.Object {
+trait Recipes extends StObject {
   
   /**
     * An array of custom recipe names to be run following a configure event.
@@ -41,63 +42,51 @@ object Recipes {
   }
   
   @scala.inline
-  implicit class RecipesOps[Self <: Recipes] (val x: Self) extends AnyVal {
+  implicit class RecipesMutableBuilder[Self <: Recipes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigure(value: Strings): Self = StObject.set(x, "Configure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigureUndefined: Self = StObject.set(x, "Configure", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigureVarargs(value: String*): Self = StObject.set(x, "Configure", js.Array(value :_*))
     
     @scala.inline
-    def setConfigureVarargs(value: String*): Self = this.set("Configure", js.Array(value :_*))
+    def setDeploy(value: Strings): Self = StObject.set(x, "Deploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigure(value: Strings): Self = this.set("Configure", value.asInstanceOf[js.Any])
+    def setDeployUndefined: Self = StObject.set(x, "Deploy", js.undefined)
     
     @scala.inline
-    def deleteConfigure: Self = this.set("Configure", js.undefined)
+    def setDeployVarargs(value: String*): Self = StObject.set(x, "Deploy", js.Array(value :_*))
     
     @scala.inline
-    def setDeployVarargs(value: String*): Self = this.set("Deploy", js.Array(value :_*))
+    def setSetup(value: Strings): Self = StObject.set(x, "Setup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploy(value: Strings): Self = this.set("Deploy", value.asInstanceOf[js.Any])
+    def setSetupUndefined: Self = StObject.set(x, "Setup", js.undefined)
     
     @scala.inline
-    def deleteDeploy: Self = this.set("Deploy", js.undefined)
+    def setSetupVarargs(value: String*): Self = StObject.set(x, "Setup", js.Array(value :_*))
     
     @scala.inline
-    def setSetupVarargs(value: String*): Self = this.set("Setup", js.Array(value :_*))
+    def setShutdown(value: Strings): Self = StObject.set(x, "Shutdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetup(value: Strings): Self = this.set("Setup", value.asInstanceOf[js.Any])
+    def setShutdownUndefined: Self = StObject.set(x, "Shutdown", js.undefined)
     
     @scala.inline
-    def deleteSetup: Self = this.set("Setup", js.undefined)
+    def setShutdownVarargs(value: String*): Self = StObject.set(x, "Shutdown", js.Array(value :_*))
     
     @scala.inline
-    def setShutdownVarargs(value: String*): Self = this.set("Shutdown", js.Array(value :_*))
+    def setUndeploy(value: Strings): Self = StObject.set(x, "Undeploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShutdown(value: Strings): Self = this.set("Shutdown", value.asInstanceOf[js.Any])
+    def setUndeployUndefined: Self = StObject.set(x, "Undeploy", js.undefined)
     
     @scala.inline
-    def deleteShutdown: Self = this.set("Shutdown", js.undefined)
-    
-    @scala.inline
-    def setUndeployVarargs(value: String*): Self = this.set("Undeploy", js.Array(value :_*))
-    
-    @scala.inline
-    def setUndeploy(value: Strings): Self = this.set("Undeploy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndeploy: Self = this.set("Undeploy", js.undefined)
+    def setUndeployVarargs(value: String*): Self = StObject.set(x, "Undeploy", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkSendTestResponse extends js.Object {
+trait BulkSendTestResponse extends StObject {
   
   /**
     * When **true**, the envelope or template is compatible with the bulk send list and can be sent by using the [BulkSend::createBulkSendRequest][BulkSendRequest] method.
@@ -37,42 +38,30 @@ object BulkSendTestResponse {
   }
   
   @scala.inline
-  implicit class BulkSendTestResponseOps[Self <: BulkSendTestResponse] (val x: Self) extends AnyVal {
+  implicit class BulkSendTestResponseMutableBuilder[Self <: BulkSendTestResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanBeSent(value: Boolean): Self = StObject.set(x, "canBeSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanBeSentUndefined: Self = StObject.set(x, "canBeSent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidationErrorDetails(value: js.Array[String]): Self = StObject.set(x, "validationErrorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeSent(value: Boolean): Self = this.set("canBeSent", value.asInstanceOf[js.Any])
+    def setValidationErrorDetailsUndefined: Self = StObject.set(x, "validationErrorDetails", js.undefined)
     
     @scala.inline
-    def deleteCanBeSent: Self = this.set("canBeSent", js.undefined)
+    def setValidationErrorDetailsVarargs(value: String*): Self = StObject.set(x, "validationErrorDetails", js.Array(value :_*))
     
     @scala.inline
-    def setValidationErrorDetailsVarargs(value: String*): Self = this.set("validationErrorDetails", js.Array(value :_*))
+    def setValidationErrors(value: js.Array[String]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationErrorDetails(value: js.Array[String]): Self = this.set("validationErrorDetails", value.asInstanceOf[js.Any])
+    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
     @scala.inline
-    def deleteValidationErrorDetails: Self = this.set("validationErrorDetails", js.undefined)
-    
-    @scala.inline
-    def setValidationErrorsVarargs(value: String*): Self = this.set("validationErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationErrors(value: js.Array[String]): Self = this.set("validationErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationErrors: Self = this.set("validationErrors", js.undefined)
+    def setValidationErrorsVarargs(value: String*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
   }
 }

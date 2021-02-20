@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRobotApplicationRequest extends js.Object {
+trait UpdateRobotApplicationRequest extends StObject {
   
   /**
     * The application information for the robot application.
@@ -36,36 +37,24 @@ object UpdateRobotApplicationRequest {
   }
   
   @scala.inline
-  implicit class UpdateRobotApplicationRequestOps[Self <: UpdateRobotApplicationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRobotApplicationRequestMutableBuilder[Self <: UpdateRobotApplicationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
     
     @scala.inline
-    def setApplication(value: Arn): Self = this.set("application", value.asInstanceOf[js.Any])
+    def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = StObject.set(x, "robotSoftwareSuite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = this.set("robotSoftwareSuite", value.asInstanceOf[js.Any])
+    def setSources(value: SourceConfigs): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcesVarargs(value: SourceConfig*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: SourceConfigs): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentRevisionId(value: RevisionId): Self = this.set("currentRevisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentRevisionId: Self = this.set("currentRevisionId", js.undefined)
+    def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

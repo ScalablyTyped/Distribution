@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to access information specific to a WWAN connection. */
 @js.native
-trait WwanConnectionProfileDetails extends js.Object {
+trait WwanConnectionProfileDetails extends StObject {
   
   /** Indicates the name of the access point used to establish the WWAN connection. */
   var accessPointName: String = js.native
@@ -40,30 +41,18 @@ object WwanConnectionProfileDetails {
   }
   
   @scala.inline
-  implicit class WwanConnectionProfileDetailsOps[Self <: WwanConnectionProfileDetails] (val x: Self) extends AnyVal {
+  implicit class WwanConnectionProfileDetailsMutableBuilder[Self <: WwanConnectionProfileDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentDataClass(value: () => WwanDataClass): Self = StObject.set(x, "getCurrentDataClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNetworkRegistrationState(value: () => WwanNetworkRegistrationState): Self = StObject.set(x, "getNetworkRegistrationState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessPointName(value: String): Self = this.set("accessPointName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCurrentDataClass(value: () => WwanDataClass): Self = this.set("getCurrentDataClass", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNetworkRegistrationState(value: () => WwanNetworkRegistrationState): Self = this.set("getNetworkRegistrationState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHomeProviderId(value: String): Self = this.set("homeProviderId", value.asInstanceOf[js.Any])
+    def setHomeProviderId(value: String): Self = StObject.set(x, "homeProviderId", value.asInstanceOf[js.Any])
   }
 }

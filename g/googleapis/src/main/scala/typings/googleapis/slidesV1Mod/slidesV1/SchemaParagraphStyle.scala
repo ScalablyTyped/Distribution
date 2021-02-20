@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * represented as unset fields in this message.
   */
 @js.native
-trait SchemaParagraphStyle extends js.Object {
+trait SchemaParagraphStyle extends StObject {
   
   /**
     * The text alignment for this paragraph.
@@ -82,72 +83,60 @@ object SchemaParagraphStyle {
   }
   
   @scala.inline
-  implicit class SchemaParagraphStyleOps[Self <: SchemaParagraphStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaParagraphStyleMutableBuilder[Self <: SchemaParagraphStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setIndentEnd(value: SchemaDimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setIndentFirstLine(value: SchemaDimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentEnd(value: SchemaDimension): Self = this.set("indentEnd", value.asInstanceOf[js.Any])
+    def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
     
     @scala.inline
-    def deleteIndentEnd: Self = this.set("indentEnd", js.undefined)
+    def setIndentStart(value: SchemaDimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentFirstLine(value: SchemaDimension): Self = this.set("indentFirstLine", value.asInstanceOf[js.Any])
+    def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
     
     @scala.inline
-    def deleteIndentFirstLine: Self = this.set("indentFirstLine", js.undefined)
+    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentStart(value: SchemaDimension): Self = this.set("indentStart", value.asInstanceOf[js.Any])
+    def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
     
     @scala.inline
-    def deleteIndentStart: Self = this.set("indentStart", js.undefined)
+    def setSpaceAbove(value: SchemaDimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Double): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
     
     @scala.inline
-    def deleteLineSpacing: Self = this.set("lineSpacing", js.undefined)
+    def setSpaceBelow(value: SchemaDimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAbove(value: SchemaDimension): Self = this.set("spaceAbove", value.asInstanceOf[js.Any])
+    def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
     
     @scala.inline
-    def deleteSpaceAbove: Self = this.set("spaceAbove", js.undefined)
+    def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBelow(value: SchemaDimension): Self = this.set("spaceBelow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpaceBelow: Self = this.set("spaceBelow", js.undefined)
-    
-    @scala.inline
-    def setSpacingMode(value: String): Self = this.set("spacingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacingMode: Self = this.set("spacingMode", js.undefined)
+    def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
   }
 }

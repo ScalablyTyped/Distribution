@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ChartBinOptionsLoadOptions extends js.Object {
+trait ChartBinOptionsLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -84,66 +85,54 @@ object ChartBinOptionsLoadOptions {
   }
   
   @scala.inline
-  implicit class ChartBinOptionsLoadOptionsOps[Self <: ChartBinOptionsLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ChartBinOptionsLoadOptionsMutableBuilder[Self <: ChartBinOptionsLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAllowOverflowUndefined: Self = StObject.set(x, "allowOverflow", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setAllowUnderflow(value: Boolean): Self = StObject.set(x, "allowUnderflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOverflow(value: Boolean): Self = this.set("allowOverflow", value.asInstanceOf[js.Any])
+    def setAllowUnderflowUndefined: Self = StObject.set(x, "allowUnderflow", js.undefined)
     
     @scala.inline
-    def deleteAllowOverflow: Self = this.set("allowOverflow", js.undefined)
+    def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnderflow(value: Boolean): Self = this.set("allowUnderflow", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAllowUnderflow: Self = this.set("allowUnderflow", js.undefined)
+    def setOverflowValue(value: Boolean): Self = StObject.set(x, "overflowValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Boolean): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setOverflowValueUndefined: Self = StObject.set(x, "overflowValue", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowValue(value: Boolean): Self = this.set("overflowValue", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteOverflowValue: Self = this.set("overflowValue", js.undefined)
+    def setUnderflowValue(value: Boolean): Self = StObject.set(x, "underflowValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnderflowValueUndefined: Self = StObject.set(x, "underflowValue", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderflowValue(value: Boolean): Self = this.set("underflowValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderflowValue: Self = this.set("underflowValue", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.htmlWebpackTemplate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("html-webpack-template", JSImport.Namespace)
 @js.native
-object htmlWebpackTemplateRequire extends js.Object
+object htmlWebpackTemplateRequire extends StObject

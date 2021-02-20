@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabControl extends js.Object {
+trait TabControl extends StObject {
   
   @JSName("Access.TabControl_typekey")
   var AccessDotTabControl_typekey: TabControl = js.native

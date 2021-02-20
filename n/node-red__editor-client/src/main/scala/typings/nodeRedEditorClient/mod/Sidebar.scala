@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.anon.EnableOnEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sidebar extends js.Object {
+trait Sidebar extends StObject {
   
   def addTab(options: EnableOnEdit): Unit = js.native
   
@@ -51,51 +52,39 @@ object Sidebar {
   }
   
   @scala.inline
-  implicit class SidebarOps[Self <: Sidebar] (val x: Self) extends AnyVal {
+  implicit class SidebarMutableBuilder[Self <: Sidebar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTab(value: EnableOnEdit => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfig(value: SidebarConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsTab(value: String => Boolean): Self = StObject.set(x, "containsTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTab(value: EnableOnEdit => Unit): Self = this.set("addTab", js.Any.fromFunction1(value))
+    def setContext(value: SidebarContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: SidebarConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setHelp(value: SidebarHelp): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsTab(value: String => Boolean): Self = this.set("containsTab", js.Any.fromFunction1(value))
+    def setInfo(value: SidebarInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SidebarContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHelp(value: SidebarHelp): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setRemoveTab(value: String => Unit): Self = StObject.set(x, "removeTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInfo(value: SidebarInfo): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setToggleSidebar(value: Boolean => Unit): Self = StObject.set(x, "toggleSidebar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveTab(value: String => Unit): Self = this.set("removeTab", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShow(value: String => Unit): Self = this.set("show", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleSidebar(value: Boolean => Unit): Self = this.set("toggleSidebar", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVersionControl(value: SidebarVersionControl): Self = this.set("versionControl", value.asInstanceOf[js.Any])
+    def setVersionControl(value: SidebarVersionControl): Self = StObject.set(x, "versionControl", value.asInstanceOf[js.Any])
   }
 }

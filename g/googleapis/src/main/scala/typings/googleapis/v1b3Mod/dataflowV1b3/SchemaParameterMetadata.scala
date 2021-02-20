@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata for a specific parameter.
   */
 @js.native
-trait SchemaParameterMetadata extends js.Object {
+trait SchemaParameterMetadata extends StObject {
   
   /**
     * Required. The help text to display for the parameter.
@@ -44,51 +45,39 @@ object SchemaParameterMetadata {
   }
   
   @scala.inline
-  implicit class SchemaParameterMetadataOps[Self <: SchemaParameterMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaParameterMetadataMutableBuilder[Self <: SchemaParameterMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelpTextUndefined: Self = StObject.set(x, "helpText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("helpText", value.asInstanceOf[js.Any])
+    def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
     
     @scala.inline
-    def deleteHelpText: Self = this.set("helpText", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOptional(value: Boolean): Self = this.set("isOptional", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIsOptional: Self = this.set("isOptional", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRegexesVarargs(value: String*): Self = this.set("regexes", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegexes(value: js.Array[String]): Self = this.set("regexes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexes: Self = this.set("regexes", js.undefined)
+    def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
   }
 }

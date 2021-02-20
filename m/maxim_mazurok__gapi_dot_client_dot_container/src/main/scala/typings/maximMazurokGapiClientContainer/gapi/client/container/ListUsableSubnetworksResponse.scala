@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUsableSubnetworksResponse extends js.Object {
+trait ListUsableSubnetworksResponse extends StObject {
   
   /**
     * This token allows you to get the next page of results for list requests. If the number of results is larger than `page_size`, use the `next_page_token` as a value for the query
@@ -25,33 +26,21 @@ object ListUsableSubnetworksResponse {
   }
   
   @scala.inline
-  implicit class ListUsableSubnetworksResponseOps[Self <: ListUsableSubnetworksResponse] (val x: Self) extends AnyVal {
+  implicit class ListUsableSubnetworksResponseMutableBuilder[Self <: ListUsableSubnetworksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetworks(value: js.Array[UsableSubnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setSubnetworksVarargs(value: UsableSubnetwork*): Self = this.set("subnetworks", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubnetworks(value: js.Array[UsableSubnetwork]): Self = this.set("subnetworks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetworks: Self = this.set("subnetworks", js.undefined)
+    def setSubnetworksVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.activexAccess.AccWizObjects.FieldList
 import typings.activexAccess.AccWizObjects.ImexGrid
 import typings.activexAccess.AccWizObjects.WizShellLinkA
 import typings.activexAccess.Access.Application
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ACCWIZ.FieldListCtrl")
   var ACCWIZDotFieldListCtrl: FieldList = js.native
@@ -39,30 +40,18 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setACCWIZDotFieldListCtrl(value: FieldList): Self = StObject.set(x, "ACCWIZ.FieldListCtrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACCWIZDotImexGridCtrl(value: ImexGrid): Self = StObject.set(x, "ACCWIZ.ImexGridCtrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessDotApplication(value: Application): Self = StObject.set(x, "Access.Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACCWIZDotFieldListCtrl(value: FieldList): Self = this.set("ACCWIZ.FieldListCtrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setACCWIZDotImexGridCtrl(value: ImexGrid): Self = this.set("ACCWIZ.ImexGridCtrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessDotApplication(value: Application): Self = this.set("Access.Application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLnkfile(value: WizShellLinkA): Self = this.set("lnkfile", value.asInstanceOf[js.Any])
+    def setLnkfile(value: WizShellLinkA): Self = StObject.set(x, "lnkfile", value.asInstanceOf[js.Any])
   }
 }

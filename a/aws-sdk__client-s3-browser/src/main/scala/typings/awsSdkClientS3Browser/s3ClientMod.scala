@@ -5,17 +5,17 @@ import typings.awsSdkClientS3Browser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientS3Browser.s3ConfigurationMod.S3Configuration
 import typings.awsSdkClientS3Browser.s3ConfigurationMod.S3ResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/S3Client", JSImport.Namespace)
-@js.native
-object s3ClientMod extends js.Object {
+object s3ClientMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.AWSClient<InputTypesUnion, OutputTypesUnion, Blob> * / any */ @js.native
-  class S3Client protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.AWSClient<InputTypesUnion, OutputTypesUnion, Blob> * / any */ @JSImport("@aws-sdk/client-s3-browser/S3Client", "S3Client")
+  @js.native
+  class S3Client protected () extends StObject {
     def this(configuration: S3Configuration) = this()
     
     val config: S3ResolvedConfiguration = js.native

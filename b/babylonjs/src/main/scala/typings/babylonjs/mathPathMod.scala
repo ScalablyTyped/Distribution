@@ -1,20 +1,19 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Maths/math.path", JSImport.Namespace)
-@js.native
-object mathPathMod extends js.Object {
+object mathPathMod {
   
+  @JSImport("babylonjs/Maths/math.path", "Angle")
   @js.native
-  class Angle protected () extends js.Object {
+  class Angle protected () extends StObject {
     /**
       * Creates an Angle object of "radians" radians (float).
       * @param radians the angle in radians
@@ -36,8 +35,7 @@ object mathPathMod extends js.Object {
     def radians(): Double = js.native
   }
   /* static members */
-  @js.native
-  object Angle extends js.Object {
+  object Angle {
     
     /**
       * Gets a new Angle object valued with the gradient angle, in radians, of the line joining two points
@@ -45,6 +43,8 @@ object mathPathMod extends js.Object {
       * @param b defines point
       * @returns a new Angle
       */
+    @JSImport("babylonjs/Maths/math.path", "Angle.BetweenTwoPoints")
+    @js.native
     def BetweenTwoPoints(a: DeepImmutable[Vector2], b: DeepImmutable[Vector2]): Angle = js.native
     
     /**
@@ -52,6 +52,8 @@ object mathPathMod extends js.Object {
       * @param degrees defines the angle value in degrees
       * @returns a new Angle
       */
+    @JSImport("babylonjs/Maths/math.path", "Angle.FromDegrees")
+    @js.native
     def FromDegrees(degrees: Double): Angle = js.native
     
     /**
@@ -59,11 +61,14 @@ object mathPathMod extends js.Object {
       * @param radians defines the angle value in radians
       * @returns a new Angle
       */
+    @JSImport("babylonjs/Maths/math.path", "Angle.FromRadians")
+    @js.native
     def FromRadians(radians: Double): Angle = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.path", "Arc2")
   @js.native
-  class Arc2 protected () extends js.Object {
+  class Arc2 protected () extends StObject {
     /**
       * Creates an Arc object from the three given points : start, middle and end.
       * @param startPoint Defines the start point of the arc
@@ -114,11 +119,11 @@ object mathPathMod extends js.Object {
     var startPoint: Vector2 = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.path", "BezierCurve")
   @js.native
-  class BezierCurve () extends js.Object
+  class BezierCurve () extends StObject
   /* static members */
-  @js.native
-  object BezierCurve extends js.Object {
+  object BezierCurve {
     
     /**
       * Returns the cubic Bezier interpolated value (float) at "t" (float) from the given x1, y1, x2, y2 floats
@@ -129,11 +134,14 @@ object mathPathMod extends js.Object {
       * @param y2 defines the right coordinate on Y axis
       * @returns the interpolated value
       */
+    @JSImport("babylonjs/Maths/math.path", "BezierCurve.Interpolate")
+    @js.native
     def Interpolate(t: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.path", "Curve3")
   @js.native
-  class Curve3 protected () extends js.Object {
+  class Curve3 protected () extends StObject {
     /**
       * A Curve3 object is a logical object, so not a mesh, to handle curves in the 3D geometric space.
       * A Curve3 is designed from a series of successive Vector3.
@@ -168,8 +176,7 @@ object mathPathMod extends js.Object {
     def length(): Double = js.native
   }
   /* static members */
-  @js.native
-  object Curve3 extends js.Object {
+  object Curve3 {
     
     /**
       * Returns a Curve3 object along a CatmullRom Spline curve :
@@ -178,7 +185,11 @@ object mathPathMod extends js.Object {
       * @param closed (boolean) optional with default false, when true forms a closed loop from the points
       * @returns the created Curve3
       */
+    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateCatmullRomSpline")
+    @js.native
     def CreateCatmullRomSpline(points: DeepImmutable[js.Array[Vector3]], nbPoints: Double): Curve3 = js.native
+    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateCatmullRomSpline")
+    @js.native
     def CreateCatmullRomSpline(points: DeepImmutable[js.Array[Vector3]], nbPoints: Double, closed: Boolean): Curve3 = js.native
     
     /**
@@ -190,6 +201,8 @@ object mathPathMod extends js.Object {
       * @param nbPoints (integer) the wanted number of points in the curve
       * @returns the created Curve3
       */
+    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateCubicBezier")
+    @js.native
     def CreateCubicBezier(
       v0: DeepImmutable[Vector3],
       v1: DeepImmutable[Vector3],
@@ -207,6 +220,8 @@ object mathPathMod extends js.Object {
       * @param nbPoints (integer) the wanted number of points in the curve
       * @returns the created Curve3
       */
+    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateHermiteSpline")
+    @js.native
     def CreateHermiteSpline(
       p1: DeepImmutable[Vector3],
       t1: DeepImmutable[Vector3],
@@ -223,6 +238,8 @@ object mathPathMod extends js.Object {
       * @param nbPoints (integer) the wanted number of points in the curve
       * @returns the created Curve3
       */
+    @JSImport("babylonjs/Maths/math.path", "Curve3.CreateQuadraticBezier")
+    @js.native
     def CreateQuadraticBezier(
       v0: DeepImmutable[Vector3],
       v1: DeepImmutable[Vector3],
@@ -232,9 +249,10 @@ object mathPathMod extends js.Object {
   }
   
   @js.native
-  sealed trait Orientation extends js.Object
+  sealed trait Orientation extends StObject
+  @JSImport("babylonjs/Maths/math.path", "Orientation")
   @js.native
-  object Orientation extends js.Object {
+  object Orientation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
@@ -242,20 +260,19 @@ object mathPathMod extends js.Object {
     /** Counter clockwise */
     @js.native
     sealed trait CCW extends Orientation
-    /* 1 */ @js.native
-    object CCW extends TopLevel[CCW with Double]
+    /* 1 */ val CCW: typings.babylonjs.mathPathMod.Orientation.CCW with Double = js.native
     
     /**
       * Clockwise
       */
     @js.native
     sealed trait CW extends Orientation
-    /* 0 */ @js.native
-    object CW extends TopLevel[CW with Double]
+    /* 0 */ val CW: typings.babylonjs.mathPathMod.Orientation.CW with Double = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.path", "Path2")
   @js.native
-  class Path2 protected () extends js.Object {
+  class Path2 protected () extends StObject {
     /**
       * Creates a Path2 object from the starting 2D coordinates x and y.
       * @param x the starting points x value
@@ -318,8 +335,7 @@ object mathPathMod extends js.Object {
     def length(): Double = js.native
   }
   /* static members */
-  @js.native
-  object Path2 extends js.Object {
+  object Path2 {
     
     /**
       * Creates a new path starting from an x and y position
@@ -327,11 +343,14 @@ object mathPathMod extends js.Object {
       * @param y starting y value
       * @returns a new Path2 starting at the coordinates (x, y).
       */
+    @JSImport("babylonjs/Maths/math.path", "Path2.StartingAt")
+    @js.native
     def StartingAt(x: Double, y: Double): Path2 = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.path", "Path3D")
   @js.native
-  class Path3D protected () extends js.Object {
+  class Path3D protected () extends StObject {
     /**
       * new Path3D(path, normal, raw)
       * Creates a Path3D. A Path3D is a logical math object, so not a mesh.

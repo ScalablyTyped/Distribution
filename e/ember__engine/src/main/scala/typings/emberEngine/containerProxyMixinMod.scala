@@ -1,20 +1,22 @@
 package typings.emberEngine
 
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/engine/-private/container-proxy-mixin", JSImport.Namespace)
-@js.native
-object containerProxyMixinMod extends js.Object {
+object containerProxyMixinMod extends Shortcut {
   
+  @JSImport("@ember/engine/-private/container-proxy-mixin", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[ContainerProxyMixin, typings.emberObject.mod.default] = js.native
   
   /**
     * Given a fullName return a factory manager.
     */
   @js.native
-  trait ContainerProxyMixin extends js.Object {
+  trait ContainerProxyMixin extends StObject {
     
     /**
       * Given a fullName return a corresponding factory.
@@ -34,4 +36,9 @@ object containerProxyMixinMod extends js.Object {
       */
     def ownerInjection(): js.Object = js.native
   }
+  
+  type _To = typings.emberObject.mixinMod.default[ContainerProxyMixin, typings.emberObject.mod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `containerProxyMixinMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[ContainerProxyMixin, typings.emberObject.mod.default] = default
 }

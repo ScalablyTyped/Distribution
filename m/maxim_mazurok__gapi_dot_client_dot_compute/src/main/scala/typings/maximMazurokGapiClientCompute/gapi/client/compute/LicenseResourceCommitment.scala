@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LicenseResourceCommitment extends js.Object {
+trait LicenseResourceCommitment extends StObject {
   
   /** The number of licenses purchased. */
   var amount: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object LicenseResourceCommitment {
   }
   
   @scala.inline
-  implicit class LicenseResourceCommitmentOps[Self <: LicenseResourceCommitment] (val x: Self) extends AnyVal {
+  implicit class LicenseResourceCommitmentMutableBuilder[Self <: LicenseResourceCommitment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoresPerLicense(value: String): Self = StObject.set(x, "coresPerLicense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setCoresPerLicenseUndefined: Self = StObject.set(x, "coresPerLicense", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoresPerLicense(value: String): Self = this.set("coresPerLicense", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoresPerLicense: Self = this.set("coresPerLicense", js.undefined)
-    
-    @scala.inline
-    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicense: Self = this.set("license", js.undefined)
+    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
   }
 }

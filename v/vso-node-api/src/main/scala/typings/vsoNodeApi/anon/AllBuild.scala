@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllBuild extends js.Object {
+trait AllBuild extends StObject {
   
   var all: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object AllBuild {
   }
   
   @scala.inline
-  implicit class AllBuildOps[Self <: AllBuild] (val x: Self) extends AnyVal {
+  implicit class AllBuildMutableBuilder[Self <: AllBuild] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBuild(value: scala.Double): Self = this.set("build", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelease(value: scala.Double): Self = this.set("release", value.asInstanceOf[js.Any])
+    def setRelease(value: scala.Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

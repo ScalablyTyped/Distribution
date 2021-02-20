@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param graph - The root pc.GraphNode of the skeleton.
   */
 @js.native
-trait Skeleton extends js.Object {
+trait Skeleton extends StObject {
   
   /**
     * Progresses The animation assigned to The specified skeleton by The
@@ -87,42 +88,30 @@ object Skeleton {
   }
   
   @scala.inline
-  implicit class SkeletonOps[Self <: Skeleton] (val x: Self) extends AnyVal {
+  implicit class SkeletonMutableBuilder[Self <: Skeleton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTime(value: Double => Unit): Self = StObject.set(x, "addTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlend(value: (Skeleton, Skeleton, Double) => Unit): Self = StObject.set(x, "blend", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddTime(value: Double => Unit): Self = this.set("addTime", js.Any.fromFunction1(value))
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Animation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlend(value: (Skeleton, Skeleton, Double) => Unit): Self = this.set("blend", js.Any.fromFunction3(value))
+    def setNumNodes(value: Double): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setSetGraph(value: GraphNode => Unit): Self = StObject.set(x, "setGraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLooping(value: Boolean): Self = this.set("looping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumNodes(value: Double): Self = this.set("numNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetGraph(value: GraphNode => Unit): Self = this.set("setGraph", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateGraph(value: () => Unit): Self = this.set("updateGraph", js.Any.fromFunction0(value))
+    def setUpdateGraph(value: () => Unit): Self = StObject.set(x, "updateGraph", js.Any.fromFunction0(value))
   }
 }

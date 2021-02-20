@@ -1,5 +1,6 @@
 package typings.angularCompiler.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,17 +18,19 @@ class Unary protected () extends Binary {
   var operator: String = js.native
 }
 /* static members */
-@JSImport("@angular/compiler/src/expression_parser/ast", "Unary")
-@js.native
-object Unary extends js.Object {
+object Unary {
   
   /**
     * Creates a unary minus expression "-x", represented as `Binary` using "0 - x".
     */
+  @JSImport("@angular/compiler/src/expression_parser/ast", "Unary.createMinus")
+  @js.native
   def createMinus(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expr: AST): Unary = js.native
   
   /**
     * Creates a unary plus expression "+x", represented as `Binary` using "x - 0".
     */
+  @JSImport("@angular/compiler/src/expression_parser/ast", "Unary.createPlus")
+  @js.native
   def createPlus(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expr: AST): Unary = js.native
 }

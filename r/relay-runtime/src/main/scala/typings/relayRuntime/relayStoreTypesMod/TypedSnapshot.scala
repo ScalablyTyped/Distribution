@@ -1,11 +1,12 @@
 package typings.relayRuntime.relayStoreTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypedSnapshot[TData] extends js.Object {
+trait TypedSnapshot[TData] extends StObject {
   
   val data: TData = js.native
   
@@ -24,30 +25,18 @@ object TypedSnapshot {
   }
   
   @scala.inline
-  implicit class TypedSnapshotOps[Self <: TypedSnapshot[_], TData] (val x: Self with TypedSnapshot[TData]) extends AnyVal {
+  implicit class TypedSnapshotMutableBuilder[Self <: TypedSnapshot[_], TData] (val x: Self with TypedSnapshot[TData]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMissingData(value: Boolean): Self = StObject.set(x, "isMissingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeenRecords(value: RecordMap): Self = StObject.set(x, "seenRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: TData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMissingData(value: Boolean): Self = this.set("isMissingData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeenRecords(value: RecordMap): Self = this.set("seenRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: SingularReaderSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelector(value: SingularReaderSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

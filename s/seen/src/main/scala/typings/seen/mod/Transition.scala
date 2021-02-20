@@ -2,13 +2,14 @@ package typings.seen.mod
 
 import typings.seen.anon.Duration
 import typings.seen.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Transition")
 @js.native
-class Transition () extends js.Object {
+class Transition () extends StObject {
   def this(options: `1`) = this()
   
   var defaults: Duration = js.native

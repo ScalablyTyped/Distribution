@@ -1,11 +1,12 @@
 package typings.dhtmlxscheduler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerSizes extends js.Object {
+trait SchedulerSizes extends StObject {
   
   /**
     * the height of day cells in the month view
@@ -101,60 +102,48 @@ object SchedulerSizes {
   }
   
   @scala.inline
-  implicit class SchedulerSizesOps[Self <: SchedulerSizes] (val x: Self) extends AnyVal {
+  implicit class SchedulerSizesMutableBuilder[Self <: SchedulerSizes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBar_height(value: Double): Self = StObject.set(x, "bar_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditor_width(value: Double): Self = StObject.set(x, "editor_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBar_height(value: Double): Self = this.set("bar_height", value.asInstanceOf[js.Any])
+    def setMap_date_width(value: Double): Self = StObject.set(x, "map_date_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor_width(value: Double): Self = this.set("editor_width", value.asInstanceOf[js.Any])
+    def setMap_description_width(value: Double): Self = StObject.set(x, "map_description_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightbox_additional_height(value: Double): Self = this.set("lightbox_additional_height", value.asInstanceOf[js.Any])
+    def setMargin_left(value: Double): Self = StObject.set(x, "margin_left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap_date_width(value: Double): Self = this.set("map_date_width", value.asInstanceOf[js.Any])
+    def setMargin_top(value: Double): Self = StObject.set(x, "margin_top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap_description_width(value: Double): Self = this.set("map_description_width", value.asInstanceOf[js.Any])
+    def setMenu_width(value: Double): Self = StObject.set(x, "menu_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin_left(value: Double): Self = this.set("margin_left", value.asInstanceOf[js.Any])
+    def setMin_event_height(value: Double): Self = StObject.set(x, "min_event_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin_top(value: Double): Self = this.set("margin_top", value.asInstanceOf[js.Any])
+    def setMonth_scale_height(value: Double): Self = StObject.set(x, "month_scale_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu_width(value: Double): Self = this.set("menu_width", value.asInstanceOf[js.Any])
+    def setNav_height(value: Double): Self = StObject.set(x, "nav_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_event_height(value: Double): Self = this.set("min_event_height", value.asInstanceOf[js.Any])
+    def setScale_height(value: Double): Self = StObject.set(x, "scale_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth_scale_height(value: Double): Self = this.set("month_scale_height", value.asInstanceOf[js.Any])
+    def setScale_width(value: Double): Self = StObject.set(x, "scale_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNav_height(value: Double): Self = this.set("nav_height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale_height(value: Double): Self = this.set("scale_height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale_width(value: Double): Self = this.set("scale_width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScroll_width(value: Double): Self = this.set("scroll_width", value.asInstanceOf[js.Any])
+    def setScroll_width(value: Double): Self = StObject.set(x, "scroll_width", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,36 +68,24 @@ object XLoadable {
   }
   
   @scala.inline
-  implicit class XLoadableOps[Self <: XLoadable] (val x: Self) extends AnyVal {
+  implicit class XLoadableMutableBuilder[Self <: XLoadable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "addLoadListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLoaded(value: () => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddLoadListener(value: XLoadListener => Unit): Self = this.set("addLoadListener", js.Any.fromFunction1(value))
+    def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsLoaded(value: () => Boolean): Self = this.set("isLoaded", js.Any.fromFunction0(value))
+    def setRemoveLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "removeLoadListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoad(value: () => Unit): Self = this.set("load", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReload(value: () => Unit): Self = this.set("reload", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveLoadListener(value: XLoadListener => Unit): Self = this.set("removeLoadListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnload(value: () => Unit): Self = this.set("unload", js.Any.fromFunction0(value))
+    def setUnload(value: () => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction0(value))
   }
 }

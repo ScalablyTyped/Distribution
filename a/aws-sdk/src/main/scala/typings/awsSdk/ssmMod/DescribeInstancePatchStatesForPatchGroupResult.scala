@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstancePatchStatesForPatchGroupResult extends js.Object {
+trait DescribeInstancePatchStatesForPatchGroupResult extends StObject {
   
   /**
     * The high-level patch state for the requested instances. 
@@ -26,33 +27,21 @@ object DescribeInstancePatchStatesForPatchGroupResult {
   }
   
   @scala.inline
-  implicit class DescribeInstancePatchStatesForPatchGroupResultOps[Self <: DescribeInstancePatchStatesForPatchGroupResult] (val x: Self) extends AnyVal {
+  implicit class DescribeInstancePatchStatesForPatchGroupResultMutableBuilder[Self <: DescribeInstancePatchStatesForPatchGroupResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstancePatchStates(value: InstancePatchStatesList): Self = StObject.set(x, "InstancePatchStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancePatchStatesUndefined: Self = StObject.set(x, "InstancePatchStates", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = StObject.set(x, "InstancePatchStates", js.Array(value :_*))
     
     @scala.inline
-    def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = this.set("InstancePatchStates", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancePatchStates(value: InstancePatchStatesList): Self = this.set("InstancePatchStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancePatchStates: Self = this.set("InstancePatchStates", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

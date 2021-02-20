@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableTextLabelsToolbar extends js.Object {
+trait MUIDataTableTextLabelsToolbar extends StObject {
   
   var downloadCsv: String = js.native
   
@@ -26,33 +27,21 @@ object MUIDataTableTextLabelsToolbar {
   }
   
   @scala.inline
-  implicit class MUIDataTableTextLabelsToolbarOps[Self <: MUIDataTableTextLabelsToolbar] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableTextLabelsToolbarMutableBuilder[Self <: MUIDataTableTextLabelsToolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadCsv(value: String): Self = StObject.set(x, "downloadCsv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterTable(value: String): Self = StObject.set(x, "filterTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadCsv(value: String): Self = this.set("downloadCsv", value.asInstanceOf[js.Any])
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterTable(value: String): Self = this.set("filterTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrint(value: String): Self = this.set("print", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewColumns(value: String): Self = this.set("viewColumns", value.asInstanceOf[js.Any])
+    def setViewColumns(value: String): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOrderableReplicationInstancesResponse extends js.Object {
+trait DescribeOrderableReplicationInstancesResponse extends StObject {
   
   /**
     *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
@@ -26,33 +27,21 @@ object DescribeOrderableReplicationInstancesResponse {
   }
   
   @scala.inline
-  implicit class DescribeOrderableReplicationInstancesResponseOps[Self <: DescribeOrderableReplicationInstancesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeOrderableReplicationInstancesResponseMutableBuilder[Self <: DescribeOrderableReplicationInstancesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderableReplicationInstances(value: OrderableReplicationInstanceList): Self = StObject.set(x, "OrderableReplicationInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setOrderableReplicationInstancesUndefined: Self = StObject.set(x, "OrderableReplicationInstances", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setOrderableReplicationInstancesVarargs(value: OrderableReplicationInstance*): Self = this.set("OrderableReplicationInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrderableReplicationInstances(value: OrderableReplicationInstanceList): Self = this.set("OrderableReplicationInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderableReplicationInstances: Self = this.set("OrderableReplicationInstances", js.undefined)
+    def setOrderableReplicationInstancesVarargs(value: OrderableReplicationInstance*): Self = StObject.set(x, "OrderableReplicationInstances", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.plugapi.mod.Event
 
 import typings.plugapi.mod.RawChatMessage
 import typings.plugapi.mod.User.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,39 +46,27 @@ object Command {
   }
   
   @scala.inline
-  implicit class CommandOps[Self <: Command] (val x: Self) extends AnyVal {
+  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setHavePermission(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "havePermission", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setIsFrom(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "isFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setRespond(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "respond", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHavePermission(value: /* repeated */ js.Any => Boolean): Self = this.set("havePermission", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFrom(value: /* repeated */ js.Any => Boolean): Self = this.set("isFrom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRespond(value: /* repeated */ js.Any => js.Any): Self = this.set("respond", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRespondTimeout(value: /* repeated */ js.Any => js.Any): Self = this.set("respondTimeout", js.Any.fromFunction1(value))
+    def setRespondTimeout(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "respondTimeout", js.Any.fromFunction1(value))
   }
 }

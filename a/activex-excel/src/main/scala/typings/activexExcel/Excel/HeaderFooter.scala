@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderFooter extends js.Object {
+trait HeaderFooter extends StObject {
   
   @JSName("Excel.HeaderFooter_typekey")
   var ExcelDotHeaderFooter_typekey: HeaderFooter = js.native
@@ -24,27 +25,15 @@ object HeaderFooter {
   }
   
   @scala.inline
-  implicit class HeaderFooterOps[Self <: HeaderFooter] (val x: Self) extends AnyVal {
+  implicit class HeaderFooterMutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcelDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "Excel.HeaderFooter_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPicture(value: Graphic): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExcelDotHeaderFooter_typekey(value: HeaderFooter): Self = this.set("Excel.HeaderFooter_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPicture(value: Graphic): Self = this.set("Picture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Analytics custom metric.
   */
 @js.native
-trait SchemaCustomMetrics extends js.Object {
+trait SchemaCustomMetrics extends StObject {
   
   /**
     * Collection of custom metrics.
@@ -66,69 +67,57 @@ object SchemaCustomMetrics {
   }
   
   @scala.inline
-  implicit class SchemaCustomMetricsOps[Self <: SchemaCustomMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomMetricsMutableBuilder[Self <: SchemaCustomMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[SchemaCustomMetric]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
     @scala.inline
-    def setItemsVarargs(value: SchemaCustomMetric*): Self = this.set("items", js.Array(value :_*))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[SchemaCustomMetric]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: SchemaCustomMetric*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsPerPage(value: Double): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextLinkUndefined: Self = StObject.set(x, "nextLink", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPreviousLink(value: String): Self = StObject.set(x, "previousLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextLink(value: String): Self = this.set("nextLink", value.asInstanceOf[js.Any])
+    def setPreviousLinkUndefined: Self = StObject.set(x, "previousLink", js.undefined)
     
     @scala.inline
-    def deleteNextLink: Self = this.set("nextLink", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousLink(value: String): Self = this.set("previousLink", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deletePreviousLink: Self = this.set("previousLink", js.undefined)
+    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
     
     @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalResults(value: Double): Self = this.set("totalResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResults: Self = this.set("totalResults", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

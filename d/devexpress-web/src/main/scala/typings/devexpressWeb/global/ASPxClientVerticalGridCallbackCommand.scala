@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientVerticalGridCallbackCommand ()
   extends typings.devexpressWeb.ASPxClientVerticalGridCallbackCommand
-/* static members */
-@JSGlobal("ASPxClientVerticalGridCallbackCommand")
-@js.native
-object ASPxClientVerticalGridCallbackCommand extends js.Object {
+object ASPxClientVerticalGridCallbackCommand {
   
   /**
     * Default value: "EXPANDROW"
     */
+  /* static member */
+  @JSGlobal("ASPxClientVerticalGridCallbackCommand.ExpandRow")
+  @js.native
   val ExpandRow: String = js.native
 }

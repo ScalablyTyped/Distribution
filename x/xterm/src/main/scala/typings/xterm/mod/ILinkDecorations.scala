@@ -1,5 +1,6 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of decorations that can be applied to links.
   */
 @js.native
-trait ILinkDecorations extends js.Object {
+trait ILinkDecorations extends StObject {
   
   /**
     * Whether the cursor is set to pointer.
@@ -29,24 +30,12 @@ object ILinkDecorations {
   }
   
   @scala.inline
-  implicit class ILinkDecorationsOps[Self <: ILinkDecorations] (val x: Self) extends AnyVal {
+  implicit class ILinkDecorationsMutableBuilder[Self <: ILinkDecorations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPointerCursor(value: Boolean): Self = StObject.set(x, "pointerCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPointerCursor(value: Boolean): Self = this.set("pointerCursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
+    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interface bufferEosData {}
 @js.native
-trait bufferFlushingData extends js.Object {
+trait bufferFlushingData extends StObject {
   
   var endOffset: Double = js.native
   
@@ -21,24 +22,12 @@ object bufferFlushingData {
   }
   
   @scala.inline
-  implicit class bufferFlushingDataOps[Self <: bufferFlushingData] (val x: Self) extends AnyVal {
+  implicit class bufferFlushingDataMutableBuilder[Self <: bufferFlushingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndOffset(value: Double): Self = this.set("endOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartOffset(value: Double): Self = this.set("startOffset", value.asInstanceOf[js.Any])
+    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
   }
 }

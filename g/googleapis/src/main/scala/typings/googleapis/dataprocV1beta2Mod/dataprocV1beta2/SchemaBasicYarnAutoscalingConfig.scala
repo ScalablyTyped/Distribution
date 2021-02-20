@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Basic autoscaling configurations for YARN.
   */
 @js.native
-trait SchemaBasicYarnAutoscalingConfig extends js.Object {
+trait SchemaBasicYarnAutoscalingConfig extends StObject {
   
   /**
     * Required. Timeout for YARN graceful decommissioning of Node Managers.
@@ -66,48 +67,36 @@ object SchemaBasicYarnAutoscalingConfig {
   }
   
   @scala.inline
-  implicit class SchemaBasicYarnAutoscalingConfigOps[Self <: SchemaBasicYarnAutoscalingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaBasicYarnAutoscalingConfigMutableBuilder[Self <: SchemaBasicYarnAutoscalingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGracefulDecommissionTimeout(value: String): Self = StObject.set(x, "gracefulDecommissionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGracefulDecommissionTimeoutUndefined: Self = StObject.set(x, "gracefulDecommissionTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScaleDownFactor(value: Double): Self = StObject.set(x, "scaleDownFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGracefulDecommissionTimeout(value: String): Self = this.set("gracefulDecommissionTimeout", value.asInstanceOf[js.Any])
+    def setScaleDownFactorUndefined: Self = StObject.set(x, "scaleDownFactor", js.undefined)
     
     @scala.inline
-    def deleteGracefulDecommissionTimeout: Self = this.set("gracefulDecommissionTimeout", js.undefined)
+    def setScaleDownMinWorkerFraction(value: Double): Self = StObject.set(x, "scaleDownMinWorkerFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleDownFactor(value: Double): Self = this.set("scaleDownFactor", value.asInstanceOf[js.Any])
+    def setScaleDownMinWorkerFractionUndefined: Self = StObject.set(x, "scaleDownMinWorkerFraction", js.undefined)
     
     @scala.inline
-    def deleteScaleDownFactor: Self = this.set("scaleDownFactor", js.undefined)
+    def setScaleUpFactor(value: Double): Self = StObject.set(x, "scaleUpFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleDownMinWorkerFraction(value: Double): Self = this.set("scaleDownMinWorkerFraction", value.asInstanceOf[js.Any])
+    def setScaleUpFactorUndefined: Self = StObject.set(x, "scaleUpFactor", js.undefined)
     
     @scala.inline
-    def deleteScaleDownMinWorkerFraction: Self = this.set("scaleDownMinWorkerFraction", js.undefined)
+    def setScaleUpMinWorkerFraction(value: Double): Self = StObject.set(x, "scaleUpMinWorkerFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleUpFactor(value: Double): Self = this.set("scaleUpFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleUpFactor: Self = this.set("scaleUpFactor", js.undefined)
-    
-    @scala.inline
-    def setScaleUpMinWorkerFraction(value: Double): Self = this.set("scaleUpMinWorkerFraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleUpMinWorkerFraction: Self = this.set("scaleUpMinWorkerFraction", js.undefined)
+    def setScaleUpMinWorkerFractionUndefined: Self = StObject.set(x, "scaleUpMinWorkerFraction", js.undefined)
   }
 }

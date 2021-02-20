@@ -3,9 +3,10 @@ package typings.googleGax.mod.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IOneOf
 import typings.protobufjs.mod.OneOfDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobuf.OneOf")
 @js.native
@@ -21,9 +22,29 @@ class OneOf protected ()
   def this(name: String) = this()
   def this(name: String, fieldNames: js.Array[String]) = this()
   def this(name: String, fieldNames: StringDictionary[js.Any]) = this()
+  def this(name: String, fieldNames: js.UndefOr[scala.Nothing], options: StringDictionary[js.Any]) = this()
   def this(name: String, fieldNames: js.Array[String], options: StringDictionary[js.Any]) = this()
   def this(name: String, fieldNames: StringDictionary[js.Any], options: StringDictionary[js.Any]) = this()
+  def this(
+    name: String,
+    fieldNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    fieldNames: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: String
+  ) = this()
+  def this(name: String, fieldNames: js.Array[String], options: js.UndefOr[scala.Nothing], comment: String) = this()
   def this(name: String, fieldNames: js.Array[String], options: StringDictionary[js.Any], comment: String) = this()
+  def this(
+    name: String,
+    fieldNames: StringDictionary[js.Any],
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
   def this(
     name: String,
     fieldNames: StringDictionary[js.Any],
@@ -31,17 +52,18 @@ class OneOf protected ()
     comment: String
   ) = this()
 }
-
 /* static members */
-@JSImport("google-gax", "protobuf.OneOf")
-@js.native
-object OneOf extends js.Object {
+object OneOf {
+  
   /**
     * OneOf decorator (TypeScript).
     * @param fieldNames Field names
     * @returns Decorator function
     */
+  @JSImport("google-gax", "protobuf.OneOf.d")
+  @js.native
   def d[T /* <: String */](fieldNames: String*): OneOfDecorator = js.native
+  
   /**
     * Constructs a oneof from a oneof descriptor.
     * @param name Oneof name
@@ -49,6 +71,7 @@ object OneOf extends js.Object {
     * @returns Created oneof
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("google-gax", "protobuf.OneOf.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IOneOf): typings.protobufjs.mod.OneOf = js.native
 }
-

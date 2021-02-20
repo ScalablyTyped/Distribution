@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirewallRuleInfo extends js.Object {
+trait FirewallRuleInfo extends StObject {
   
   var endIpAddress: String = js.native
   
@@ -22,27 +23,15 @@ object FirewallRuleInfo {
   }
   
   @scala.inline
-  implicit class FirewallRuleInfoOps[Self <: FirewallRuleInfo] (val x: Self) extends AnyVal {
+  implicit class FirewallRuleInfoMutableBuilder[Self <: FirewallRuleInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIpAddress(value: String): Self = StObject.set(x, "endIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndIpAddress(value: String): Self = this.set("endIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerName(value: String): Self = this.set("serverName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartIpAddress(value: String): Self = this.set("startIpAddress", value.asInstanceOf[js.Any])
+    def setStartIpAddress(value: String): Self = StObject.set(x, "startIpAddress", value.asInstanceOf[js.Any])
   }
 }

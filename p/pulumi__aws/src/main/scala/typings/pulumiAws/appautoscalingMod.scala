@@ -9,14 +9,14 @@ import typings.pulumiAws.targetMod.TargetState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/appautoscaling", JSImport.Namespace)
-@js.native
-object appautoscalingMod extends js.Object {
+object appautoscalingMod {
   
+  @JSImport("@pulumi/aws/appautoscaling", "Policy")
   @js.native
   class Policy protected ()
     extends typings.pulumiAws.policyMod.Policy {
@@ -31,8 +31,7 @@ object appautoscalingMod extends js.Object {
     def this(name: String, args: PolicyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Policy extends js.Object {
+  object Policy {
     
     /**
       * Get an existing Policy resource's state with the given name, ID, and optional extra
@@ -43,18 +42,29 @@ object appautoscalingMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/appautoscaling", "Policy.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.policyMod.Policy = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "Policy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.policyMod.Policy = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "Policy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.policyMod.Policy = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "Policy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.policyMod.Policy = js.native
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/appautoscaling", "Policy.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/policy.Policy */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/appautoscaling", "ScheduledAction")
   @js.native
   class ScheduledAction protected ()
     extends typings.pulumiAws.scheduledActionMod.ScheduledAction {
@@ -69,8 +79,7 @@ object appautoscalingMod extends js.Object {
     def this(name: String, args: ScheduledActionArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ScheduledAction extends js.Object {
+  object ScheduledAction {
     
     /**
       * Get an existing ScheduledAction resource's state with the given name, ID, and optional extra
@@ -81,18 +90,29 @@ object appautoscalingMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/appautoscaling", "ScheduledAction.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.scheduledActionMod.ScheduledAction = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "ScheduledAction.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.scheduledActionMod.ScheduledAction = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "ScheduledAction.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ScheduledActionState): typings.pulumiAws.scheduledActionMod.ScheduledAction = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "ScheduledAction.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ScheduledActionState, opts: CustomResourceOptions): typings.pulumiAws.scheduledActionMod.ScheduledAction = js.native
     
     /**
       * Returns true if the given object is an instance of ScheduledAction.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/appautoscaling", "ScheduledAction.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/scheduledAction.ScheduledAction */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/appautoscaling", "Target")
   @js.native
   class Target protected ()
     extends typings.pulumiAws.targetMod.Target {
@@ -107,8 +127,7 @@ object appautoscalingMod extends js.Object {
     def this(name: String, args: TargetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Target extends js.Object {
+  object Target {
     
     /**
       * Get an existing Target resource's state with the given name, ID, and optional extra
@@ -119,15 +138,25 @@ object appautoscalingMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/appautoscaling", "Target.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.targetMod.Target = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "Target.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.targetMod.Target = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "Target.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TargetState): typings.pulumiAws.targetMod.Target = js.native
+    @JSImport("@pulumi/aws/appautoscaling", "Target.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TargetState, opts: CustomResourceOptions): typings.pulumiAws.targetMod.Target = js.native
     
     /**
       * Returns true if the given object is an instance of Target.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/appautoscaling", "Target.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean = js.native
   }
 }

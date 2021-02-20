@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.FieldsInsertionOrderId
 import typings.maximMazurokGapiClientDisplayvideo.anon.InsertionOrderId
 import typings.maximMazurokGapiClientDisplayvideo.anon.InsertionOrderIdKey
 import typings.maximMazurokGapiClientDisplayvideo.anon.OauthtokenPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertionOrdersResource extends js.Object {
+trait InsertionOrdersResource extends StObject {
   
   def create(request: AdvertiserId, body: InsertionOrder): Request[InsertionOrder] = js.native
   /** Creates a new insertion order. Returns the newly created insertion order if successful. */

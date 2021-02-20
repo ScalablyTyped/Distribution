@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpcConfigurationUpdate extends js.Object {
+trait VpcConfigurationUpdate extends StObject {
   
   /**
     * Describes updates to the array of SecurityGroup IDs used by the VPC configuration.
@@ -31,39 +32,27 @@ object VpcConfigurationUpdate {
   }
   
   @scala.inline
-  implicit class VpcConfigurationUpdateOps[Self <: VpcConfigurationUpdate] (val x: Self) extends AnyVal {
+  implicit class VpcConfigurationUpdateMutableBuilder[Self <: VpcConfigurationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurityGroupIdUpdates(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIdUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecurityGroupIdUpdatesUndefined: Self = StObject.set(x, "SecurityGroupIdUpdates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityGroupIdUpdatesVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIdUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setVpcConfigurationId(value: Id): Self = this.set("VpcConfigurationId", value.asInstanceOf[js.Any])
+    def setSubnetIdUpdates(value: SubnetIds): Self = StObject.set(x, "SubnetIdUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIdUpdatesVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroupIdUpdates", js.Array(value :_*))
+    def setSubnetIdUpdatesUndefined: Self = StObject.set(x, "SubnetIdUpdates", js.undefined)
     
     @scala.inline
-    def setSecurityGroupIdUpdates(value: SecurityGroupIds): Self = this.set("SecurityGroupIdUpdates", value.asInstanceOf[js.Any])
+    def setSubnetIdUpdatesVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIdUpdates", js.Array(value :_*))
     
     @scala.inline
-    def deleteSecurityGroupIdUpdates: Self = this.set("SecurityGroupIdUpdates", js.undefined)
-    
-    @scala.inline
-    def setSubnetIdUpdatesVarargs(value: SubnetId*): Self = this.set("SubnetIdUpdates", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubnetIdUpdates(value: SubnetIds): Self = this.set("SubnetIdUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetIdUpdates: Self = this.set("SubnetIdUpdates", js.undefined)
+    def setVpcConfigurationId(value: Id): Self = StObject.set(x, "VpcConfigurationId", value.asInstanceOf[js.Any])
   }
 }

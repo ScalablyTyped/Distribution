@@ -1,16 +1,16 @@
 package typings.firebaseDatabase
 
 import typings.firebaseDatabase.changeMod.Change
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/ChildChangeAccumulator", JSImport.Namespace)
-@js.native
-object childChangeAccumulatorMod extends js.Object {
+object childChangeAccumulatorMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/ChildChangeAccumulator", "ChildChangeAccumulator")
   @js.native
-  class ChildChangeAccumulator () extends js.Object {
+  class ChildChangeAccumulator () extends StObject {
     
     val changeMap: js.Any = js.native
     

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwaitPromiseRequest extends js.Object {
+trait AwaitPromiseRequest extends StObject {
   
   /**
     * Whether preview should be generated for the result.
@@ -31,33 +32,21 @@ object AwaitPromiseRequest {
   }
   
   @scala.inline
-  implicit class AwaitPromiseRequestOps[Self <: AwaitPromiseRequest] (val x: Self) extends AnyVal {
+  implicit class AwaitPromiseRequestMutableBuilder[Self <: AwaitPromiseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPromiseObjectId(value: RemoteObjectId): Self = StObject.set(x, "promiseObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromiseObjectId(value: RemoteObjectId): Self = this.set("promiseObjectId", value.asInstanceOf[js.Any])
+    def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratePreview(value: Boolean): Self = this.set("generatePreview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneratePreview: Self = this.set("generatePreview", js.undefined)
-    
-    @scala.inline
-    def setReturnByValue(value: Boolean): Self = this.set("returnByValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnByValue: Self = this.set("returnByValue", js.undefined)
+    def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
   }
 }

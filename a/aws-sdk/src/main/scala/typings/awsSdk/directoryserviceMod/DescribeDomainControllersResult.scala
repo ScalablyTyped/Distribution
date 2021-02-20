@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDomainControllersResult extends js.Object {
+trait DescribeDomainControllersResult extends StObject {
   
   /**
     * List of the DomainController objects that were retrieved.
@@ -26,33 +27,21 @@ object DescribeDomainControllersResult {
   }
   
   @scala.inline
-  implicit class DescribeDomainControllersResultOps[Self <: DescribeDomainControllersResult] (val x: Self) extends AnyVal {
+  implicit class DescribeDomainControllersResultMutableBuilder[Self <: DescribeDomainControllersResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainControllers(value: DomainControllers): Self = StObject.set(x, "DomainControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainControllersUndefined: Self = StObject.set(x, "DomainControllers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainControllersVarargs(value: DomainController*): Self = StObject.set(x, "DomainControllers", js.Array(value :_*))
     
     @scala.inline
-    def setDomainControllersVarargs(value: DomainController*): Self = this.set("DomainControllers", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainControllers(value: DomainControllers): Self = this.set("DomainControllers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainControllers: Self = this.set("DomainControllers", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialProvider extends js.Object {
+trait CredentialProvider extends StObject {
   
   def deleteCredential(credentialId: String): Thenable[Boolean] = js.native
   
@@ -30,30 +31,18 @@ object CredentialProvider {
   }
   
   @scala.inline
-  implicit class CredentialProviderOps[Self <: CredentialProvider] (val x: Self) extends AnyVal {
+  implicit class CredentialProviderMutableBuilder[Self <: CredentialProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteCredential(value: String => Thenable[Boolean]): Self = StObject.set(x, "deleteCredential", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadCredential(value: String => Thenable[Credential]): Self = StObject.set(x, "readCredential", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteCredential(value: String => Thenable[Boolean]): Self = this.set("deleteCredential", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHandle(value: Double): Self = this.set("handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadCredential(value: String => Thenable[Credential]): Self = this.set("readCredential", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSaveCredential(value: (String, String) => Thenable[Boolean]): Self = this.set("saveCredential", js.Any.fromFunction2(value))
+    def setSaveCredential(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "saveCredential", js.Any.fromFunction2(value))
   }
 }

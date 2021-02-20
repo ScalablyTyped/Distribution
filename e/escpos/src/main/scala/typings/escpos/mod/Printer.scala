@@ -11,13 +11,14 @@ import typings.escpos.escposNumbers.`2`
 import typings.escpos.escposStrings.A
 import typings.escpos.escposStrings.B
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Printer")
 @js.native
-class Printer protected () extends js.Object {
+class Printer protected () extends StObject {
   def this(adapter: Adapter) = this()
   def this(adapter: Adapter, options: Encoding) = this()
   
@@ -209,9 +210,9 @@ class Printer protected () extends js.Object {
   def text(content: String, encoding: String): Printer = js.native
 }
 /* static members */
-@JSImport("escpos", "Printer")
-@js.native
-object Printer extends js.Object {
+object Printer {
   
+  @JSImport("escpos", "Printer.create")
+  @js.native
   def create(device: Adapter): js.Promise[Printer] = js.native
 }

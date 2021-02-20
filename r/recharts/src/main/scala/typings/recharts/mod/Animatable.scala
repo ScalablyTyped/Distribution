@@ -1,11 +1,12 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animatable extends js.Object {
+trait Animatable extends StObject {
   
   var animationBegin: js.UndefOr[Double] = js.native
   
@@ -32,66 +33,54 @@ object Animatable {
   }
   
   @scala.inline
-  implicit class AnimatableOps[Self <: Animatable] (val x: Self) extends AnyVal {
+  implicit class AnimatableMutableBuilder[Self <: Animatable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationBegin(value: Double): Self = StObject.set(x, "animationBegin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationBeginUndefined: Self = StObject.set(x, "animationBegin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationBegin(value: Double): Self = this.set("animationBegin", value.asInstanceOf[js.Any])
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def deleteAnimationBegin: Self = this.set("animationBegin", js.undefined)
+    def setAnimationEasing(value: AnimationEasingType): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setAnimationId(value: Double): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEasing(value: AnimationEasingType): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    def setAnimationIdUndefined: Self = StObject.set(x, "animationId", js.undefined)
     
     @scala.inline
-    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    def setIsAnimationActive(value: Boolean): Self = StObject.set(x, "isAnimationActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationId(value: Double): Self = this.set("animationId", value.asInstanceOf[js.Any])
+    def setIsAnimationActiveUndefined: Self = StObject.set(x, "isAnimationActive", js.undefined)
     
     @scala.inline
-    def deleteAnimationId: Self = this.set("animationId", js.undefined)
+    def setIsUpdateAnimationActive(value: Boolean): Self = StObject.set(x, "isUpdateAnimationActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAnimationActive(value: Boolean): Self = this.set("isAnimationActive", value.asInstanceOf[js.Any])
+    def setIsUpdateAnimationActiveUndefined: Self = StObject.set(x, "isUpdateAnimationActive", js.undefined)
     
     @scala.inline
-    def deleteIsAnimationActive: Self = this.set("isAnimationActive", js.undefined)
+    def setOnAnimationEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsUpdateAnimationActive(value: Boolean): Self = this.set("isUpdateAnimationActive", value.asInstanceOf[js.Any])
+    def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
     @scala.inline
-    def deleteIsUpdateAnimationActive: Self = this.set("isUpdateAnimationActive", js.undefined)
+    def setOnAnimationStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationEnd(value: /* repeated */ js.Any => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
-    
-    @scala.inline
-    def setOnAnimationStart(value: /* repeated */ js.Any => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
   }
 }

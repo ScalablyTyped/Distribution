@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadDefaultKeyPairResult extends js.Object {
+trait DownloadDefaultKeyPairResult extends StObject {
   
   /**
     * A base64-encoded RSA private key.
@@ -26,30 +27,18 @@ object DownloadDefaultKeyPairResult {
   }
   
   @scala.inline
-  implicit class DownloadDefaultKeyPairResultOps[Self <: DownloadDefaultKeyPairResult] (val x: Self) extends AnyVal {
+  implicit class DownloadDefaultKeyPairResultMutableBuilder[Self <: DownloadDefaultKeyPairResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivateKeyBase64(value: Base64): Self = StObject.set(x, "privateKeyBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateKeyBase64Undefined: Self = StObject.set(x, "privateKeyBase64", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKeyBase64(value: Base64): Self = StObject.set(x, "publicKeyBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeyBase64(value: Base64): Self = this.set("privateKeyBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKeyBase64: Self = this.set("privateKeyBase64", js.undefined)
-    
-    @scala.inline
-    def setPublicKeyBase64(value: Base64): Self = this.set("publicKeyBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyBase64: Self = this.set("publicKeyBase64", js.undefined)
+    def setPublicKeyBase64Undefined: Self = StObject.set(x, "publicKeyBase64", js.undefined)
   }
 }

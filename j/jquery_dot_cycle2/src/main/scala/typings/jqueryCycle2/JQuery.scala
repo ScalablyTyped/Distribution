@@ -34,12 +34,13 @@ import typings.jqueryCycle2.jqueryCycle2Strings.remove
 import typings.jqueryCycle2.jqueryCycle2Strings.resume
 import typings.jqueryCycle2.jqueryCycle2Strings.stop
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def cycle(): JQuery = js.native
   def cycle(methodNameDontCallMe: String, arg1DontCallMe: js.Any, arg2DontCallMe: js.Any): JQuery = js.native
@@ -48,7 +49,7 @@ trait JQuery extends js.Object {
   var cycle_Original: Cycle2 = js.native
   @JSName("cycle")
   def cycle_add(methodName: add, newSlide: js.Any): JQuery = js.native
-   // string or JQuery
+  // string or JQuery
   @JSName("cycle")
   def cycle_destroy(methodName: destroy): JQuery = js.native
   @JSName("cycle")

@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateClusterKafkaVersionResponse extends js.Object {
+trait UpdateClusterKafkaVersionResponse extends StObject {
   
   /**
     * 
@@ -30,30 +31,18 @@ object UpdateClusterKafkaVersionResponse {
   }
   
   @scala.inline
-  implicit class UpdateClusterKafkaVersionResponseOps[Self <: UpdateClusterKafkaVersionResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateClusterKafkaVersionResponseMutableBuilder[Self <: UpdateClusterKafkaVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterOperationArn(value: string): Self = StObject.set(x, "ClusterOperationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
-    
-    @scala.inline
-    def setClusterOperationArn(value: string): Self = this.set("ClusterOperationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterOperationArn: Self = this.set("ClusterOperationArn", js.undefined)
+    def setClusterOperationArnUndefined: Self = StObject.set(x, "ClusterOperationArn", js.undefined)
   }
 }

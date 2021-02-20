@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object ConcurrencyValues {
   }
   
   @scala.inline
-  implicit class ConcurrencyValuesOps[Self <: ConcurrencyValues] (val x: Self) extends AnyVal {
+  implicit class ConcurrencyValuesMutableBuilder[Self <: ConcurrencyValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMac_vms(value: Double): Self = StObject.set(x, "mac_vms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMac_vmsUndefined: Self = StObject.set(x, "mac_vms", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRds(value: Double): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMac_vms(value: Double): Self = this.set("mac_vms", value.asInstanceOf[js.Any])
+    def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
     
     @scala.inline
-    def deleteMac_vms: Self = this.set("mac_vms", js.undefined)
+    def setVms(value: Double): Self = StObject.set(x, "vms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRds(value: Double): Self = this.set("rds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRds: Self = this.set("rds", js.undefined)
-    
-    @scala.inline
-    def setVms(value: Double): Self = this.set("vms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVms: Self = this.set("vms", js.undefined)
+    def setVmsUndefined: Self = StObject.set(x, "vms", js.undefined)
   }
 }

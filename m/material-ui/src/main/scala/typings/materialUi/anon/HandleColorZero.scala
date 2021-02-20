@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandleColorZero extends js.Object {
+trait HandleColorZero extends StObject {
   
   var handleColorZero: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object HandleColorZero {
   }
   
   @scala.inline
-  implicit class HandleColorZeroOps[Self <: HandleColorZero] (val x: Self) extends AnyVal {
+  implicit class HandleColorZeroMutableBuilder[Self <: HandleColorZero] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleColorZero(value: String): Self = StObject.set(x, "handleColorZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleColorZeroUndefined: Self = StObject.set(x, "handleColorZero", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleFillColor(value: String): Self = StObject.set(x, "handleFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleColorZero(value: String): Self = this.set("handleColorZero", value.asInstanceOf[js.Any])
+    def setHandleFillColorUndefined: Self = StObject.set(x, "handleFillColor", js.undefined)
     
     @scala.inline
-    def deleteHandleColorZero: Self = this.set("handleColorZero", js.undefined)
+    def setHandleSize(value: Double): Self = StObject.set(x, "handleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleFillColor(value: String): Self = this.set("handleFillColor", value.asInstanceOf[js.Any])
+    def setHandleSizeActive(value: Double): Self = StObject.set(x, "handleSizeActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHandleFillColor: Self = this.set("handleFillColor", js.undefined)
+    def setHandleSizeActiveUndefined: Self = StObject.set(x, "handleSizeActive", js.undefined)
     
     @scala.inline
-    def setHandleSize(value: Double): Self = this.set("handleSize", value.asInstanceOf[js.Any])
+    def setHandleSizeDisabled(value: Double): Self = StObject.set(x, "handleSizeDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHandleSize: Self = this.set("handleSize", js.undefined)
+    def setHandleSizeDisabledUndefined: Self = StObject.set(x, "handleSizeDisabled", js.undefined)
     
     @scala.inline
-    def setHandleSizeActive(value: Double): Self = this.set("handleSizeActive", value.asInstanceOf[js.Any])
+    def setHandleSizeUndefined: Self = StObject.set(x, "handleSize", js.undefined)
     
     @scala.inline
-    def deleteHandleSizeActive: Self = this.set("handleSizeActive", js.undefined)
+    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleSizeDisabled(value: Double): Self = this.set("handleSizeDisabled", value.asInstanceOf[js.Any])
+    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
     
     @scala.inline
-    def deleteHandleSizeDisabled: Self = this.set("handleSizeDisabled", js.undefined)
+    def setSelectionColor(value: String): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRippleColor(value: String): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
+    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
     @scala.inline
-    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    def setTrackColor(value: String): Self = StObject.set(x, "trackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionColor(value: String): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    def setTrackColorSelected(value: String): Self = StObject.set(x, "trackColorSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    def setTrackColorSelectedUndefined: Self = StObject.set(x, "trackColorSelected", js.undefined)
     
     @scala.inline
-    def setTrackColor(value: String): Self = this.set("trackColor", value.asInstanceOf[js.Any])
+    def setTrackColorUndefined: Self = StObject.set(x, "trackColor", js.undefined)
     
     @scala.inline
-    def deleteTrackColor: Self = this.set("trackColor", js.undefined)
+    def setTrackSize(value: Double): Self = StObject.set(x, "trackSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackColorSelected(value: String): Self = this.set("trackColorSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackColorSelected: Self = this.set("trackColorSelected", js.undefined)
-    
-    @scala.inline
-    def setTrackSize(value: Double): Self = this.set("trackSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackSize: Self = this.set("trackSize", js.undefined)
+    def setTrackSizeUndefined: Self = StObject.set(x, "trackSize", js.undefined)
   }
 }

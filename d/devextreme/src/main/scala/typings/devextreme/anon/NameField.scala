@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.viz.PieChartSeries
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NameField extends js.Object {
+trait NameField extends StObject {
   
   var customizeSeries: js.UndefOr[js.Function1[/* seriesName */ js.Any, PieChartSeries]] = js.native
   
@@ -21,30 +22,18 @@ object NameField {
   }
   
   @scala.inline
-  implicit class NameFieldOps[Self <: NameField] (val x: Self) extends AnyVal {
+  implicit class NameFieldMutableBuilder[Self <: NameField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomizeSeries(value: /* seriesName */ js.Any => PieChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeSeries(value: /* seriesName */ js.Any => PieChartSeries): Self = this.set("customizeSeries", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCustomizeSeries: Self = this.set("customizeSeries", js.undefined)
-    
-    @scala.inline
-    def setNameField(value: String): Self = this.set("nameField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameField: Self = this.set("nameField", js.undefined)
+    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
   }
 }

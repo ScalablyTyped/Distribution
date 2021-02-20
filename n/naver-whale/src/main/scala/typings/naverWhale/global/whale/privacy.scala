@@ -1,5 +1,6 @@
 package typings.naverWhale.global.whale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Chrome Privacy Whitepaper gives background detail regarding the features which this API can control.
   * @since Chrome 18.
   */
-@JSGlobal("chrome.privacy")
-@js.native
-object privacy extends js.Object
+object privacy

@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Deferral
 import typings.winrtUwp.Windows.Networking.Sockets.SocketSslErrorSeverity
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to allow the application to indicate whether the credentials provided by a peer are valid. */
 @js.native
-trait AllJoynCredentialsVerificationRequestedEventArgs extends js.Object {
+trait AllJoynCredentialsVerificationRequestedEventArgs extends StObject {
   
   /** Calling this method indicates that the credentials provided for authentication are valid. */
   def accept(): Unit = js.native
@@ -58,42 +59,30 @@ object AllJoynCredentialsVerificationRequestedEventArgs {
   }
   
   @scala.inline
-  implicit class AllJoynCredentialsVerificationRequestedEventArgsOps[Self <: AllJoynCredentialsVerificationRequestedEventArgs] (val x: Self) extends AnyVal {
+  implicit class AllJoynCredentialsVerificationRequestedEventArgsMutableBuilder[Self <: AllJoynCredentialsVerificationRequestedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccept(value: () => Unit): Self = this.set("accept", js.Any.fromFunction0(value))
+    def setPeerCertificate(value: Certificate): Self = StObject.set(x, "peerCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = this.set("authenticationMechanism", value.asInstanceOf[js.Any])
+    def setPeerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = StObject.set(x, "peerCertificateErrorSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
+    def setPeerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = StObject.set(x, "peerCertificateErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerCertificate(value: Certificate): Self = this.set("peerCertificate", value.asInstanceOf[js.Any])
+    def setPeerIntermediateCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "peerIntermediateCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = this.set("peerCertificateErrorSeverity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = this.set("peerCertificateErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerIntermediateCertificates(value: IVectorView[Certificate]): Self = this.set("peerIntermediateCertificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerUniqueName(value: String): Self = this.set("peerUniqueName", value.asInstanceOf[js.Any])
+    def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
   }
 }

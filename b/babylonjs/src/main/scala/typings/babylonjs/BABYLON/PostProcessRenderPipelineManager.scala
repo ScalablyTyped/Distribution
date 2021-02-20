@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostProcessRenderPipelineManager extends js.Object {
+trait PostProcessRenderPipelineManager extends StObject {
   
   /** @hidden */
   def _rebuild(): Unit = js.native

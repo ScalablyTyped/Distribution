@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * maximum zoom, opacity, and custom data.
   */
 @js.native
-trait TileOverlayConstructorOptions extends js.Object {
+trait TileOverlayConstructorOptions extends StObject {
   
   /**
     * Custom data used to populate the URL template.
@@ -40,42 +41,30 @@ object TileOverlayConstructorOptions {
   }
   
   @scala.inline
-  implicit class TileOverlayConstructorOptionsOps[Self <: TileOverlayConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class TileOverlayConstructorOptionsMutableBuilder[Self <: TileOverlayConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumZ(value: Double): Self = this.set("maximumZ", value.asInstanceOf[js.Any])
+    def setMinimumZUndefined: Self = StObject.set(x, "minimumZ", js.undefined)
     
     @scala.inline
-    def deleteMaximumZ: Self = this.set("maximumZ", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumZ(value: Double): Self = this.set("minimumZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumZ: Self = this.set("minimumZ", js.undefined)
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

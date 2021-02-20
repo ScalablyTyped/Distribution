@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Threshold extends js.Object {
+trait Threshold extends StObject {
   
   /**
     * The type of comparison. Only "less than" (LT) comparisons are supported.
@@ -26,30 +27,18 @@ object Threshold {
   }
   
   @scala.inline
-  implicit class ThresholdOps[Self <: Threshold] (val x: Self) extends AnyVal {
+  implicit class ThresholdMutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparison(value: Comparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparisonUndefined: Self = StObject.set(x, "Comparison", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThresholdValue(value: ThresholdValue): Self = StObject.set(x, "ThresholdValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparison(value: Comparison): Self = this.set("Comparison", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComparison: Self = this.set("Comparison", js.undefined)
-    
-    @scala.inline
-    def setThresholdValue(value: ThresholdValue): Self = this.set("ThresholdValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholdValue: Self = this.set("ThresholdValue", js.undefined)
+    def setThresholdValueUndefined: Self = StObject.set(x, "ThresholdValue", js.undefined)
   }
 }

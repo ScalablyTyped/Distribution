@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseTvGuide extends js.Object {
+trait TopicalExploreFeedResponseTvGuide extends StObject {
   
   var channels: js.Array[TopicalExploreFeedResponseChannelsItem] = js.native
 }
@@ -18,24 +19,12 @@ object TopicalExploreFeedResponseTvGuide {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseTvGuideOps[Self <: TopicalExploreFeedResponseTvGuide] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseTvGuideMutableBuilder[Self <: TopicalExploreFeedResponseTvGuide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[TopicalExploreFeedResponseChannelsItem]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannelsVarargs(value: TopicalExploreFeedResponseChannelsItem*): Self = this.set("channels", js.Array(value :_*))
-    
-    @scala.inline
-    def setChannels(value: js.Array[TopicalExploreFeedResponseChannelsItem]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setChannelsVarargs(value: TopicalExploreFeedResponseChannelsItem*): Self = StObject.set(x, "channels", js.Array(value :_*))
   }
 }

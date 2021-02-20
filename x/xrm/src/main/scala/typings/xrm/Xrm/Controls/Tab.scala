@@ -4,6 +4,7 @@ import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.DisplayState
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import typings.xrm.Xrm.Ui
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,39 +83,27 @@ object Tab {
   }
   
   @scala.inline
-  implicit class TabOps[Self <: Tab] (val x: Self) extends AnyVal {
+  implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTabStateChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addTabStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTabStateChange(value: ContextSensitiveHandler => Unit): Self = this.set("addTabStateChange", js.Any.fromFunction1(value))
+    def setGetParent(value: () => Ui): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayState(value: () => DisplayState): Self = this.set("getDisplayState", js.Any.fromFunction0(value))
+    def setRemoveTabStateChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeTabStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setSections(value: ItemCollection[Section]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetParent(value: () => Ui): Self = this.set("getParent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveTabStateChange(value: ContextSensitiveHandler => Unit): Self = this.set("removeTabStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSections(value: ItemCollection[Section]): Self = this.set("sections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetDisplayState(value: DisplayState => Unit): Self = this.set("setDisplayState", js.Any.fromFunction1(value))
+    def setSetDisplayState(value: DisplayState => Unit): Self = StObject.set(x, "setDisplayState", js.Any.fromFunction1(value))
   }
 }

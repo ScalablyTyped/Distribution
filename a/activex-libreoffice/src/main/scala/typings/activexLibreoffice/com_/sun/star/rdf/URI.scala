@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.rdf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,27 +52,15 @@ object URI {
   }
   
   @scala.inline
-  implicit class URIOps[Self <: URI] (val x: Self) extends AnyVal {
+  implicit class URIMutableBuilder[Self <: URI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateKnown(value: Double => Unit): Self = StObject.set(x, "createKnown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: String => Unit): Self = this.set("create", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateKnown(value: Double => Unit): Self = this.set("createKnown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateNS(value: (String, String) => Unit): Self = this.set("createNS", js.Any.fromFunction2(value))
+    def setCreateNS(value: (String, String) => Unit): Self = StObject.set(x, "createNS", js.Any.fromFunction2(value))
   }
 }

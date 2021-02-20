@@ -1,13 +1,12 @@
 package typings.openui5.global.sap.m
 
 import typings.openui5.sap.ui.core.Control
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.m.ImageHelper")
-@js.native
-object ImageHelper extends js.Object {
+object ImageHelper {
   
   /**
     * Creates or updates an image control.
@@ -20,6 +19,8 @@ object ImageHelper extends js.Object {
     * @param aCssClassesToRemove all css clases that oImageControl has and which are contained in this
     * arrayare removed bevore adding the css classes listed in aCssClassesToAdd.
     */
+  @JSGlobal("sap.m.ImageHelper.getImageControl")
+  @js.native
   def getImageControl(
     sImgId: String,
     oImageControl: typings.openui5.sap.m.Image,

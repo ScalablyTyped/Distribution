@@ -1,11 +1,12 @@
 package typings.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventOnCandidate extends js.Object {
+trait EventOnCandidate extends StObject {
   
   var candidate: RTCIceCandidateType = js.native
 }
@@ -18,21 +19,9 @@ object EventOnCandidate {
   }
   
   @scala.inline
-  implicit class EventOnCandidateOps[Self <: EventOnCandidate] (val x: Self) extends AnyVal {
+  implicit class EventOnCandidateMutableBuilder[Self <: EventOnCandidate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCandidate(value: RTCIceCandidateType): Self = this.set("candidate", value.asInstanceOf[js.Any])
+    def setCandidate(value: RTCIceCandidateType): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
   }
 }

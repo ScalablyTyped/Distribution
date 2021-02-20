@@ -1,19 +1,19 @@
 package typings.babylonjs
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/States/depthCullingState", JSImport.Namespace)
-@js.native
-object depthCullingStateMod extends js.Object {
+object depthCullingStateMod {
   
+  @JSImport("babylonjs/States/depthCullingState", "DepthCullingState")
   @js.native
   /**
     * Initializes the state.
     */
-  class DepthCullingState () extends js.Object {
+  class DepthCullingState () extends StObject {
     
     var _cull: js.Any = js.native
     

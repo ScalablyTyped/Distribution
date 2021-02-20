@@ -7,12 +7,13 @@ import typings.screeps.screepsNumbers.`0.8`
 import typings.screeps.screepsNumbers.`1.0`
 import typings.screeps.screepsNumbers.`50`
 import typings.screeps.screepsStrings.operator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CooldownEffect extends js.Object {
+trait CooldownEffect extends StObject {
   
   var className: operator = js.native
   
@@ -54,28 +55,16 @@ object CooldownEffect {
   }
   
   @scala.inline
-  implicit class CooldownEffectOps[Self <: CooldownEffect] (val x: Self) extends AnyVal {
+  implicit class CooldownEffectMutableBuilder[Self <: CooldownEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCooldown(value: `50`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClassName(value: operator): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCooldown(value: `50`): Self = this.set("cooldown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEffect(value: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`]): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setEffect(value: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLevel(
@@ -86,12 +75,12 @@ object CooldownEffect {
           typings.screeps.screepsNumbers.`14`, 
           typings.screeps.screepsNumbers.`22`
         ]
-    ): Self = this.set("level", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOps(value: typings.screeps.screepsNumbers.`2`): Self = this.set("ops", value.asInstanceOf[js.Any])
+    def setOps(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: typings.screeps.screepsNumbers.`3`): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

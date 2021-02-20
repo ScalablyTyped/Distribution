@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Core
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a reusable hashing object and contains the result of a hashing operation. */
 @js.native
-trait CryptographicHash extends js.Object {
+trait CryptographicHash extends StObject {
   
   /**
     * Appends a binary encoded string to the data stored in the CryptographicHash object.
@@ -30,24 +31,12 @@ object CryptographicHash {
   }
   
   @scala.inline
-  implicit class CryptographicHashOps[Self <: CryptographicHash] (val x: Self) extends AnyVal {
+  implicit class CryptographicHashMutableBuilder[Self <: CryptographicHash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppend(value: IBuffer => Unit): Self = this.set("append", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetValueAndReset(value: () => IBuffer): Self = this.set("getValueAndReset", js.Any.fromFunction0(value))
+    def setGetValueAndReset(value: () => IBuffer): Self = StObject.set(x, "getValueAndReset", js.Any.fromFunction0(value))
   }
 }

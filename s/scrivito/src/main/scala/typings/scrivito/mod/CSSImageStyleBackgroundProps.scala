@@ -7,6 +7,7 @@ import typings.csstype.mod.BackgroundOriginProperty
 import typings.csstype.mod.BackgroundPositionProperty
 import typings.csstype.mod.BackgroundRepeatProperty
 import typings.csstype.mod.BackgroundSizeProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Component definitions
   */
 @js.native
-trait CSSImageStyleBackgroundProps extends js.Object {
+trait CSSImageStyleBackgroundProps extends StObject {
   
   var attachment: js.UndefOr[BackgroundAttachmentProperty] = js.native
   
@@ -42,63 +43,51 @@ object CSSImageStyleBackgroundProps {
   }
   
   @scala.inline
-  implicit class CSSImageStyleBackgroundPropsOps[Self <: CSSImageStyleBackgroundProps] (val x: Self) extends AnyVal {
+  implicit class CSSImageStyleBackgroundPropsMutableBuilder[Self <: CSSImageStyleBackgroundProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: BackgroundAttachmentProperty): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClip(value: BackgroundClipProperty): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Obj | Binary | String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     @scala.inline
-    def setAttachment(value: BackgroundAttachmentProperty): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setColor(value: BackgroundColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setClip(value: BackgroundClipProperty): Self = this.set("clip", value.asInstanceOf[js.Any])
+    def setImage(value: Obj | Binary | String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setOrigin(value: BackgroundOriginProperty): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: BackgroundColorProperty): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPosition(value: BackgroundPositionProperty[String | Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: BackgroundOriginProperty): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setRepeat(value: BackgroundRepeatProperty): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: BackgroundPositionProperty[String | Double]): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSize(value: BackgroundSizeProperty[String | Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: BackgroundRepeatProperty): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
-    
-    @scala.inline
-    def setSize(value: BackgroundSizeProperty[String | Double]): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

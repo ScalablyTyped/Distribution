@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartExportSVGOptions extends js.Object {
+trait ChartExportSVGOptions extends StObject {
   
   var raw: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object ChartExportSVGOptions {
   }
   
   @scala.inline
-  implicit class ChartExportSVGOptionsOps[Self <: ChartExportSVGOptions] (val x: Self) extends AnyVal {
+  implicit class ChartExportSVGOptionsMutableBuilder[Self <: ChartExportSVGOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

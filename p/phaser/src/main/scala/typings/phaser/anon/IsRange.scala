@@ -1,11 +1,12 @@
 package typings.phaser.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsRange extends js.Object {
+trait IsRange extends StObject {
   
   var isRange: Boolean = js.native
   
@@ -38,42 +39,30 @@ object IsRange {
   }
   
   @scala.inline
-  implicit class IsRangeOps[Self <: IsRange] (val x: Self) extends AnyVal {
+  implicit class IsRangeMutableBuilder[Self <: IsRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRange(value: Boolean): Self = StObject.set(x, "isRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRange(value: Boolean): Self = this.set("isRange", value.asInstanceOf[js.Any])
+    def setParts(value: js.Array[Double]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value :_*))
     
     @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartsVarargs(value: Double*): Self = this.set("parts", js.Array(value :_*))
+    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParts(value: js.Array[Double]): Self = this.set("parts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrerelease(value: String): Self = this.set("prerelease", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

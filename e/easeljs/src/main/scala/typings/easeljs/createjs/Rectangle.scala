@@ -1,11 +1,12 @@
 package typings.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rectangle extends js.Object {
+trait Rectangle extends StObject {
   
   def contains(x: Double, y: Double): Boolean = js.native
   def contains(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Boolean = js.native

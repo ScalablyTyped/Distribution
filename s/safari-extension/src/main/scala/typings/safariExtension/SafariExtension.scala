@@ -1,11 +1,12 @@
 package typings.safariExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariExtension extends js.Object {
+trait SafariExtension extends StObject {
   
   def addContentScript(source: String, whitelist: js.Array[String], blacklist: js.Array[String], runAtEnd: Boolean): String = js.native
   

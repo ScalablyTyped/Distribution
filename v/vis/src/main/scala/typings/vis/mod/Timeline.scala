@@ -6,13 +6,14 @@ import typings.std.HTMLElement
 import typings.vis.anon.Animation
 import typings.vis.anon.Groups
 import typings.vis.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vis", "Timeline")
 @js.native
-class Timeline protected () extends js.Object {
+class Timeline protected () extends StObject {
   def this(container: HTMLElement, items: DataItemCollectionType) = this()
   def this(container: HTMLElement, items: DataItemCollectionType, groups: DataGroupCollectionType) = this()
   def this(container: HTMLElement, items: DataItemCollectionType, options: TimelineOptions) = this()

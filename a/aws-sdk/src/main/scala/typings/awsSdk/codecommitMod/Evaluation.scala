@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Evaluation extends js.Object {
+trait Evaluation extends StObject {
   
   /**
     * The names of the approval rules that have not had their conditions met.
@@ -36,48 +37,36 @@ object Evaluation {
   }
   
   @scala.inline
-  implicit class EvaluationOps[Self <: Evaluation] (val x: Self) extends AnyVal {
+  implicit class EvaluationMutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalRulesNotSatisfied(value: ApprovalRulesNotSatisfiedList): Self = StObject.set(x, "approvalRulesNotSatisfied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalRulesNotSatisfiedUndefined: Self = StObject.set(x, "approvalRulesNotSatisfied", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprovalRulesNotSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesNotSatisfied", js.Array(value :_*))
     
     @scala.inline
-    def setApprovalRulesNotSatisfiedVarargs(value: ApprovalRuleName*): Self = this.set("approvalRulesNotSatisfied", js.Array(value :_*))
+    def setApprovalRulesSatisfied(value: ApprovalRulesSatisfiedList): Self = StObject.set(x, "approvalRulesSatisfied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRulesNotSatisfied(value: ApprovalRulesNotSatisfiedList): Self = this.set("approvalRulesNotSatisfied", value.asInstanceOf[js.Any])
+    def setApprovalRulesSatisfiedUndefined: Self = StObject.set(x, "approvalRulesSatisfied", js.undefined)
     
     @scala.inline
-    def deleteApprovalRulesNotSatisfied: Self = this.set("approvalRulesNotSatisfied", js.undefined)
+    def setApprovalRulesSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesSatisfied", js.Array(value :_*))
     
     @scala.inline
-    def setApprovalRulesSatisfiedVarargs(value: ApprovalRuleName*): Self = this.set("approvalRulesSatisfied", js.Array(value :_*))
+    def setApproved(value: Approved): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRulesSatisfied(value: ApprovalRulesSatisfiedList): Self = this.set("approvalRulesSatisfied", value.asInstanceOf[js.Any])
+    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
     @scala.inline
-    def deleteApprovalRulesSatisfied: Self = this.set("approvalRulesSatisfied", js.undefined)
+    def setOverridden(value: Overridden): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: Approved): Self = this.set("approved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApproved: Self = this.set("approved", js.undefined)
-    
-    @scala.inline
-    def setOverridden(value: Overridden): Self = this.set("overridden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverridden: Self = this.set("overridden", js.undefined)
+    def setOverriddenUndefined: Self = StObject.set(x, "overridden", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCustomDataIdentifierRequest extends js.Object {
+trait TestCustomDataIdentifierRequest extends StObject {
   
   /**
     * An array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.
@@ -41,48 +42,36 @@ object TestCustomDataIdentifierRequest {
   }
   
   @scala.inline
-  implicit class TestCustomDataIdentifierRequestOps[Self <: TestCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
+  implicit class TestCustomDataIdentifierRequestMutableBuilder[Self <: TestCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreWords(value: listOfString): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreWordsUndefined: Self = StObject.set(x, "ignoreWords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreWordsVarargs(value: string*): Self = StObject.set(x, "ignoreWords", js.Array(value :_*))
     
     @scala.inline
-    def setRegex(value: string): Self = this.set("regex", value.asInstanceOf[js.Any])
+    def setKeywords(value: listOfString): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleText(value: string): Self = this.set("sampleText", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def setIgnoreWordsVarargs(value: string*): Self = this.set("ignoreWords", js.Array(value :_*))
+    def setKeywordsVarargs(value: string*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreWords(value: listOfString): Self = this.set("ignoreWords", value.asInstanceOf[js.Any])
+    def setMaximumMatchDistance(value: integer): Self = StObject.set(x, "maximumMatchDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreWords: Self = this.set("ignoreWords", js.undefined)
+    def setMaximumMatchDistanceUndefined: Self = StObject.set(x, "maximumMatchDistance", js.undefined)
     
     @scala.inline
-    def setKeywordsVarargs(value: string*): Self = this.set("keywords", js.Array(value :_*))
+    def setRegex(value: string): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: listOfString): Self = this.set("keywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
-    
-    @scala.inline
-    def setMaximumMatchDistance(value: integer): Self = this.set("maximumMatchDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumMatchDistance: Self = this.set("maximumMatchDistance", js.undefined)
+    def setSampleText(value: string): Self = StObject.set(x, "sampleText", value.asInstanceOf[js.Any])
   }
 }

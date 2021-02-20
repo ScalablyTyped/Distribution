@@ -1,12 +1,13 @@
 package typings.highlightJs
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageDetail extends js.Object {
+trait LanguageDetail extends StObject {
   
   var aliases: js.UndefOr[js.Array[String]] = js.native
   
@@ -37,81 +38,69 @@ object LanguageDetail {
   }
   
   @scala.inline
-  implicit class LanguageDetailOps[Self <: LanguageDetail] (val x: Self) extends AnyVal {
+  implicit class LanguageDetailMutableBuilder[Self <: LanguageDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setContainsVarargs(value: Mode*): Self = this.set("contains", js.Array(value :_*))
+    def setCase_insensitive(value: Boolean): Self = StObject.set(x, "case_insensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: js.Array[Mode]): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setCase_insensitiveUndefined: Self = StObject.set(x, "case_insensitive", js.undefined)
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    def setClassNameAliases(value: Record[String, String]): Self = StObject.set(x, "classNameAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setClassNameAliasesUndefined: Self = StObject.set(x, "classNameAliases", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCase_insensitive(value: Boolean): Self = this.set("case_insensitive", value.asInstanceOf[js.Any])
+    def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
     
     @scala.inline
-    def deleteCase_insensitive: Self = this.set("case_insensitive", js.undefined)
+    def setContains(value: js.Array[Mode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameAliases(value: Record[String, String]): Self = this.set("classNameAliases", value.asInstanceOf[js.Any])
+    def setContainsVarargs(value: Mode*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
     @scala.inline
-    def deleteClassNameAliases: Self = this.set("classNameAliases", js.undefined)
+    def setDisableAutodetect(value: Boolean): Self = StObject.set(x, "disableAutodetect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompiled(value: Boolean): Self = this.set("compiled", value.asInstanceOf[js.Any])
+    def setDisableAutodetectUndefined: Self = StObject.set(x, "disableAutodetect", js.undefined)
     
     @scala.inline
-    def deleteCompiled: Self = this.set("compiled", js.undefined)
+    def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAutodetect(value: Boolean): Self = this.set("disableAutodetect", value.asInstanceOf[js.Any])
+    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
     @scala.inline
-    def deleteDisableAutodetect: Self = this.set("disableAutodetect", js.undefined)
+    def setKeywords(value: (Record[String, _]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExports(value: js.Any): Self = this.set("exports", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteExports: Self = this.set("exports", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: (Record[String, _]) | String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setRawDefinition(value: () => Language): Self = StObject.set(x, "rawDefinition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRawDefinition(value: () => Language): Self = this.set("rawDefinition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteRawDefinition: Self = this.set("rawDefinition", js.undefined)
+    def setRawDefinitionUndefined: Self = StObject.set(x, "rawDefinition", js.undefined)
   }
 }

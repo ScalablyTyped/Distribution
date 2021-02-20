@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Credit")
 @js.native
-class Credit protected () extends js.Object {
+class Credit protected () extends StObject {
   def this(html: String) = this()
   def this(html: String, showOnScreen: Boolean) = this()
   
@@ -29,10 +30,10 @@ class Credit protected () extends js.Object {
   
   val text: String = js.native
 }
-/* static members */
-@JSImport("cesium", "Credit")
-@js.native
-object Credit extends js.Object {
+object Credit {
   
-  def equals(left: Credit, right: Credit): Boolean = js.native
+  /* static member */
+  @JSImport("cesium", "Credit.equals")
+  @js.native
+  def equals_(left: Credit, right: Credit): Boolean = js.native
 }

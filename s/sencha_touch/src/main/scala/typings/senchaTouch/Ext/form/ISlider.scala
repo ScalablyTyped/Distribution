@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.form
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,132 +107,120 @@ object ISlider {
   }
   
   @scala.inline
-  implicit class ISliderOps[Self <: ISlider] (val x: Self) extends AnyVal {
+  implicit class ISliderMutableBuilder[Self <: ISlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIncrement(value: () => Double): Self = StObject.set(x, "getIncrement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCls(value: () => String): Self = this.set("getCls", js.Any.fromFunction0(value))
+    def setGetIncrementUndefined: Self = StObject.set(x, "getIncrement", js.undefined)
     
     @scala.inline
-    def deleteGetCls: Self = this.set("getCls", js.undefined)
+    def setGetMaxValue(value: () => Double): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIncrement(value: () => Double): Self = this.set("getIncrement", js.Any.fromFunction0(value))
+    def setGetMaxValueUndefined: Self = StObject.set(x, "getMaxValue", js.undefined)
     
     @scala.inline
-    def deleteGetIncrement: Self = this.set("getIncrement", js.undefined)
+    def setGetMinValue(value: () => Double): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxValue(value: () => Double): Self = this.set("getMaxValue", js.Any.fromFunction0(value))
+    def setGetMinValueUndefined: Self = StObject.set(x, "getMinValue", js.undefined)
     
     @scala.inline
-    def deleteGetMaxValue: Self = this.set("getMaxValue", js.undefined)
+    def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinValue(value: () => Double): Self = this.set("getMinValue", js.Any.fromFunction0(value))
+    def setGetReadOnlyUndefined: Self = StObject.set(x, "getReadOnly", js.undefined)
     
     @scala.inline
-    def deleteGetMinValue: Self = this.set("getMinValue", js.undefined)
+    def setGetValues(value: () => _): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReadOnly(value: () => Boolean): Self = this.set("getReadOnly", js.Any.fromFunction0(value))
+    def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
     @scala.inline
-    def deleteGetReadOnly: Self = this.set("getReadOnly", js.undefined)
+    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValues(value: () => _): Self = this.set("getValues", js.Any.fromFunction0(value))
+    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
     @scala.inline
-    def deleteGetValues: Self = this.set("getValues", js.undefined)
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteIncrement: Self = this.set("increment", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setReset(value: () => typings.senchaTouch.Ext.field.IField): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => typings.senchaTouch.Ext.field.IField): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setSetIncrement(value: /* increment */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setIncrement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = this.set("setCls", js.Any.fromFunction1(value))
+    def setSetIncrementUndefined: Self = StObject.set(x, "setIncrement", js.undefined)
     
     @scala.inline
-    def deleteSetCls: Self = this.set("setCls", js.undefined)
+    def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIncrement(value: /* increment */ js.UndefOr[Double] => Unit): Self = this.set("setIncrement", js.Any.fromFunction1(value))
+    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
     @scala.inline
-    def deleteSetIncrement: Self = this.set("setIncrement", js.undefined)
+    def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Unit): Self = this.set("setMaxValue", js.Any.fromFunction1(value))
+    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
     @scala.inline
-    def deleteSetMaxValue: Self = this.set("setMaxValue", js.undefined)
+    def setSetReadOnly(value: /* readOnly */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Unit): Self = this.set("setMinValue", js.Any.fromFunction1(value))
+    def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
     @scala.inline
-    def deleteSetMinValue: Self = this.set("setMinValue", js.undefined)
+    def setSetTabIndex(value: /* tabIndex */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTabIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetReadOnly(value: /* readOnly */ js.UndefOr[Boolean] => Unit): Self = this.set("setReadOnly", js.Any.fromFunction1(value))
+    def setSetTabIndexUndefined: Self = StObject.set(x, "setTabIndex", js.undefined)
     
     @scala.inline
-    def deleteSetReadOnly: Self = this.set("setReadOnly", js.undefined)
+    def setSetValues(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTabIndex(value: /* tabIndex */ js.UndefOr[js.Any] => Unit): Self = this.set("setTabIndex", js.Any.fromFunction1(value))
+    def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
     
     @scala.inline
-    def deleteSetTabIndex: Self = this.set("setTabIndex", js.undefined)
+    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValues(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setValues", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetValues: Self = this.set("setValues", js.undefined)
-    
-    @scala.inline
-    def setValues(value: js.Any): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmCardPaymentOptions extends js.Object {
+trait ConfirmCardPaymentOptions extends StObject {
   
   /*
     * Set this to false if you want to handle next actions yourself, or if
@@ -23,24 +24,12 @@ object ConfirmCardPaymentOptions {
   }
   
   @scala.inline
-  implicit class ConfirmCardPaymentOptionsOps[Self <: ConfirmCardPaymentOptions] (val x: Self) extends AnyVal {
+  implicit class ConfirmCardPaymentOptionsMutableBuilder[Self <: ConfirmCardPaymentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleActions(value: Boolean): Self = StObject.set(x, "handleActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHandleActions(value: Boolean): Self = this.set("handleActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleActions: Self = this.set("handleActions", js.undefined)
+    def setHandleActionsUndefined: Self = StObject.set(x, "handleActions", js.undefined)
   }
 }

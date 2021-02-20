@@ -1,14 +1,17 @@
 package typings.ionicReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/components/utils/ionRenderToString", JSImport.Namespace)
-@js.native
-object ionRenderToStringMod extends js.Object {
+object ionRenderToStringMod {
   
+  @JSImport("@ionic/react/dist/types/components/utils/ionRenderToString", "ionRenderToString")
+  @js.native
   def ionRenderToString(html: String, userAgent: String): js.Promise[String] = js.native
+  @JSImport("@ionic/react/dist/types/components/utils/ionRenderToString", "ionRenderToString")
+  @js.native
   def ionRenderToString(
     html: String,
     userAgent: String,

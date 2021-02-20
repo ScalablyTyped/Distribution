@@ -1,12 +1,13 @@
 package typings.sharepoint
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MQuery extends js.Object {
+trait MQuery extends StObject {
   
   def apply(objectOrElement: js.Array[HTMLElement]): MQueryResultSetElements = js.native
   def apply(objectOrElement: MQueryResultSetElements): MQueryResultSetElements = js.native

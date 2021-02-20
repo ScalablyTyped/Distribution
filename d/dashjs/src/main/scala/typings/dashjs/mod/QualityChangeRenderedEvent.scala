@@ -4,6 +4,7 @@ import typings.dashjs.dashjsStrings.audio
 import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.qualityChangeRendered
 import typings.dashjs.dashjsStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object QualityChangeRenderedEvent {
   }
   
   @scala.inline
-  implicit class QualityChangeRenderedEventOps[Self <: QualityChangeRenderedEvent] (val x: Self) extends AnyVal {
+  implicit class QualityChangeRenderedEventMutableBuilder[Self <: QualityChangeRenderedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewQuality(value: Double): Self = StObject.set(x, "newQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldQuality(value: Double): Self = StObject.set(x, "oldQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewQuality(value: Double): Self = this.set("newQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldQuality(value: Double): Self = this.set("oldQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: qualityChangeRendered): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: qualityChangeRendered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

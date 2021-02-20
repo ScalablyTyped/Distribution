@@ -1,16 +1,15 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Query")
 @js.native
-class Query () extends js.Object
+class Query () extends StObject
 /* static members */
-@JSImport("matter-js", "Query")
-@js.native
-object Query extends js.Object {
+object Query {
   
   /**
     * Finds a list of collisions between body and bodies.
@@ -19,6 +18,8 @@ object Query extends js.Object {
     * @param {body[]} bodies
     * @return {object[]} Collisions
     */
+  @JSImport("matter-js", "Query.collides")
+  @js.native
   def collides(body: Body, bodies: js.Array[Body]): js.Array[_] = js.native
   
   /**
@@ -28,6 +29,8 @@ object Query extends js.Object {
     * @param {vector} point
     * @return {body[]} The bodies matching the query
     */
+  @JSImport("matter-js", "Query.point")
+  @js.native
   def point(bodies: js.Array[Body], point: Vector): js.Array[Body] = js.native
   
   /**
@@ -39,7 +42,11 @@ object Query extends js.Object {
     * @param {number} [rayWidth]
     * @return {object[]} Collisions
     */
+  @JSImport("matter-js", "Query.ray")
+  @js.native
   def ray(bodies: js.Array[Body], startPoint: Vector, endPoint: Vector): js.Array[_] = js.native
+  @JSImport("matter-js", "Query.ray")
+  @js.native
   def ray(bodies: js.Array[Body], startPoint: Vector, endPoint: Vector, rayWidth: Double): js.Array[_] = js.native
   
   /**
@@ -50,6 +57,10 @@ object Query extends js.Object {
     * @param {bool} [outside=false]
     * @return {body[]} The bodies matching the query
     */
+  @JSImport("matter-js", "Query.region")
+  @js.native
   def region(bodies: js.Array[Body], bounds: Bounds): js.Array[Body] = js.native
+  @JSImport("matter-js", "Query.region")
+  @js.native
   def region(bodies: js.Array[Body], bounds: Bounds, outside: Boolean): js.Array[Body] = js.native
 }

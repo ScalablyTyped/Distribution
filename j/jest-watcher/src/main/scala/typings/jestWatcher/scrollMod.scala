@@ -2,13 +2,14 @@ package typings.jestWatcher
 
 import typings.jestWatcher.anon.End
 import typings.jestWatcher.typesMod.ScrollOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-watcher/build/lib/scroll", JSImport.Namespace)
-@js.native
-object scrollMod extends js.Object {
+object scrollMod {
   
+  @JSImport("jest-watcher/build/lib/scroll", JSImport.Default)
+  @js.native
   def default(size: Double, hasOffsetMax: ScrollOptions): End = js.native
 }

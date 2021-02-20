@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryRun extends js.Object {
+trait CanaryRun extends StObject {
   
   /**
     * The location where the canary stored artifacts from the run. Artifacts include the log file, screenshots, and HAR files.
@@ -41,48 +42,36 @@ object CanaryRun {
   }
   
   @scala.inline
-  implicit class CanaryRunOps[Self <: CanaryRun] (val x: Self) extends AnyVal {
+  implicit class CanaryRunMutableBuilder[Self <: CanaryRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactS3LocationUndefined: Self = StObject.set(x, "ArtifactS3Location", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactS3Location(value: String): Self = this.set("ArtifactS3Location", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteArtifactS3Location: Self = this.set("ArtifactS3Location", js.undefined)
+    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: UUID): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setStatus(value: CanaryRunStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CanaryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setTimeline(value: CanaryRunTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: CanaryRunStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTimeline(value: CanaryRunTimeline): Self = this.set("Timeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeline: Self = this.set("Timeline", js.undefined)
+    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
   }
 }

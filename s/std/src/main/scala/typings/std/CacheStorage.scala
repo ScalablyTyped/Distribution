@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The storage for Cache objects. */
 @js.native
-trait CacheStorage extends js.Object {
+trait CacheStorage extends StObject {
   
   def delete(cacheName: java.lang.String): js.Promise[scala.Boolean] = js.native
   

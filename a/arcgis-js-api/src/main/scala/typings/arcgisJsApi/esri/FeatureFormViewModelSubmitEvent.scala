@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureFormViewModelSubmitEvent extends js.Object {
+trait FeatureFormViewModelSubmitEvent extends StObject {
   
   var invalid: js.Array[String] = js.native
   
@@ -22,33 +23,21 @@ object FeatureFormViewModelSubmitEvent {
   }
   
   @scala.inline
-  implicit class FeatureFormViewModelSubmitEventOps[Self <: FeatureFormViewModelSubmitEvent] (val x: Self) extends AnyVal {
+  implicit class FeatureFormViewModelSubmitEventMutableBuilder[Self <: FeatureFormViewModelSubmitEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalid(value: js.Array[String]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidVarargs(value: String*): Self = StObject.set(x, "invalid", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValid(value: js.Array[String]): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidVarargs(value: String*): Self = this.set("invalid", js.Array(value :_*))
+    def setValidVarargs(value: String*): Self = StObject.set(x, "valid", js.Array(value :_*))
     
     @scala.inline
-    def setInvalid(value: js.Array[String]): Self = this.set("invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidVarargs(value: String*): Self = this.set("valid", js.Array(value :_*))
-    
-    @scala.inline
-    def setValid(value: js.Array[String]): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: js.Any): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

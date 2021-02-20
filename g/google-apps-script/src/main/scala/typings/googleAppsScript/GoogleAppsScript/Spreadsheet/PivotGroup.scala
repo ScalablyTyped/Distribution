@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and modify pivot table breakout groups.
   */
 @js.native
-trait PivotGroup extends js.Object {
+trait PivotGroup extends StObject {
   
   def addManualGroupingRule(groupName: String, groupMembers: js.Array[_]): PivotGroup = js.native
   
@@ -87,84 +88,72 @@ object PivotGroup {
   }
   
   @scala.inline
-  implicit class PivotGroupOps[Self <: PivotGroup] (val x: Self) extends AnyVal {
+  implicit class PivotGroupMutableBuilder[Self <: PivotGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddManualGroupingRule(value: (String, js.Array[_]) => PivotGroup): Self = StObject.set(x, "addManualGroupingRule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreLabelsRepeated(value: () => Boolean): Self = StObject.set(x, "areLabelsRepeated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearGroupingRule(value: () => PivotGroup): Self = StObject.set(x, "clearGroupingRule", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddManualGroupingRule(value: (String, js.Array[_]) => PivotGroup): Self = this.set("addManualGroupingRule", js.Any.fromFunction2(value))
+    def setClearSort(value: () => PivotGroup): Self = StObject.set(x, "clearSort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAreLabelsRepeated(value: () => Boolean): Self = this.set("areLabelsRepeated", js.Any.fromFunction0(value))
+    def setGetDimension(value: () => Dimension): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearGroupingRule(value: () => PivotGroup): Self = this.set("clearGroupingRule", js.Any.fromFunction0(value))
+    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearSort(value: () => PivotGroup): Self = this.set("clearSort", js.Any.fromFunction0(value))
+    def setGetPivotTable(value: () => PivotTable): Self = StObject.set(x, "getPivotTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDimension(value: () => Dimension): Self = this.set("getDimension", js.Any.fromFunction0(value))
+    def setGetSourceDataColumn(value: () => Integer): Self = StObject.set(x, "getSourceDataColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: () => Integer): Self = this.set("getIndex", js.Any.fromFunction0(value))
+    def setHideRepeatedLabels(value: () => PivotGroup): Self = StObject.set(x, "hideRepeatedLabels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPivotTable(value: () => PivotTable): Self = this.set("getPivotTable", js.Any.fromFunction0(value))
+    def setIsSortAscending(value: () => Boolean): Self = StObject.set(x, "isSortAscending", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSourceDataColumn(value: () => Integer): Self = this.set("getSourceDataColumn", js.Any.fromFunction0(value))
+    def setMoveToIndex(value: Integer => PivotGroup): Self = StObject.set(x, "moveToIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideRepeatedLabels(value: () => PivotGroup): Self = this.set("hideRepeatedLabels", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsSortAscending(value: () => Boolean): Self = this.set("isSortAscending", js.Any.fromFunction0(value))
+    def setRemoveManualGroupingRule(value: String => PivotGroup): Self = StObject.set(x, "removeManualGroupingRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveToIndex(value: Integer => PivotGroup): Self = this.set("moveToIndex", js.Any.fromFunction1(value))
+    def setResetDisplayName(value: () => PivotGroup): Self = StObject.set(x, "resetDisplayName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setSetDisplayName(value: String => PivotGroup): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveManualGroupingRule(value: String => PivotGroup): Self = this.set("removeManualGroupingRule", js.Any.fromFunction1(value))
+    def setSetHistogramGroupingRule(value: (Integer, Integer, Integer) => PivotGroup): Self = StObject.set(x, "setHistogramGroupingRule", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setResetDisplayName(value: () => PivotGroup): Self = this.set("resetDisplayName", js.Any.fromFunction0(value))
+    def setShowRepeatedLabels(value: () => PivotGroup): Self = StObject.set(x, "showRepeatedLabels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetDisplayName(value: String => PivotGroup): Self = this.set("setDisplayName", js.Any.fromFunction1(value))
+    def setShowTotals(value: Boolean => PivotGroup): Self = StObject.set(x, "showTotals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHistogramGroupingRule(value: (Integer, Integer, Integer) => PivotGroup): Self = this.set("setHistogramGroupingRule", js.Any.fromFunction3(value))
+    def setSortAscending(value: () => PivotGroup): Self = StObject.set(x, "sortAscending", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowRepeatedLabels(value: () => PivotGroup): Self = this.set("showRepeatedLabels", js.Any.fromFunction0(value))
+    def setSortBy(value: (PivotValue, js.Array[_]) => PivotGroup): Self = StObject.set(x, "sortBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setShowTotals(value: Boolean => PivotGroup): Self = this.set("showTotals", js.Any.fromFunction1(value))
+    def setSortDescending(value: () => PivotGroup): Self = StObject.set(x, "sortDescending", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSortAscending(value: () => PivotGroup): Self = this.set("sortAscending", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSortBy(value: (PivotValue, js.Array[_]) => PivotGroup): Self = this.set("sortBy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSortDescending(value: () => PivotGroup): Self = this.set("sortDescending", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTotalsAreShown(value: () => Boolean): Self = this.set("totalsAreShown", js.Any.fromFunction0(value))
+    def setTotalsAreShown(value: () => Boolean): Self = StObject.set(x, "totalsAreShown", js.Any.fromFunction0(value))
   }
 }

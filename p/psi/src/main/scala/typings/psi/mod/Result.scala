@@ -1,11 +1,12 @@
 package typings.psi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Result extends js.Object {
+trait Result extends StObject {
   
   var analysisUTCTimestamp: String = js.native
   
@@ -41,42 +42,30 @@ object Result {
   }
   
   @scala.inline
-  implicit class ResultOps[Self <: Result] (val x: Self) extends AnyVal {
+  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptchaResult(value: String): Self = StObject.set(x, "captchaResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisUTCTimestamp(value: String): Self = this.set("analysisUTCTimestamp", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptchaResult(value: String): Self = this.set("captchaResult", value.asInstanceOf[js.Any])
+    def setLighthouseResult(value: LighthouseResult): Self = StObject.set(x, "lighthouseResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLoadingExperience(value: Experience): Self = StObject.set(x, "loadingExperience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOriginLoadingExperience(value: Experience): Self = StObject.set(x, "originLoadingExperience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighthouseResult(value: LighthouseResult): Self = this.set("lighthouseResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadingExperience(value: Experience): Self = this.set("loadingExperience", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginLoadingExperience(value: Experience): Self = this.set("originLoadingExperience", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

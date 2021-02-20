@@ -7,6 +7,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`top-center`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,167 +189,155 @@ object PopupProperties {
   }
   
   @scala.inline
-  implicit class PopupPropertiesOps[Self <: PopupProperties] (val x: Self) extends AnyVal {
+  implicit class PopupPropertiesMutableBuilder[Self <: PopupProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: CollectionProperties[ActionButtonProperties | ActionToggleProperties]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = this.set("actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setActions(value: CollectionProperties[ActionButtonProperties | ActionToggleProperties]): Self = this.set("actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
     def setAlignment(
       value: auto | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right` | js.Function
-    ): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def setAutoCloseEnabled(value: Boolean): Self = this.set("autoCloseEnabled", value.asInstanceOf[js.Any])
+    def setAutoCloseEnabled(value: Boolean): Self = StObject.set(x, "autoCloseEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCloseEnabled: Self = this.set("autoCloseEnabled", js.undefined)
+    def setAutoCloseEnabledUndefined: Self = StObject.set(x, "autoCloseEnabled", js.undefined)
     
     @scala.inline
-    def setAutoOpenEnabled(value: Boolean): Self = this.set("autoOpenEnabled", value.asInstanceOf[js.Any])
+    def setAutoOpenEnabled(value: Boolean): Self = StObject.set(x, "autoOpenEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoOpenEnabled: Self = this.set("autoOpenEnabled", js.undefined)
+    def setAutoOpenEnabledUndefined: Self = StObject.set(x, "autoOpenEnabled", js.undefined)
     
     @scala.inline
-    def setCollapseEnabled(value: Boolean): Self = this.set("collapseEnabled", value.asInstanceOf[js.Any])
+    def setCollapseEnabled(value: Boolean): Self = StObject.set(x, "collapseEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapseEnabled: Self = this.set("collapseEnabled", js.undefined)
+    def setCollapseEnabledUndefined: Self = StObject.set(x, "collapseEnabled", js.undefined)
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def setContent(value: String | HTMLElement | WidgetProperties): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: String | HTMLElement | WidgetProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setDefaultPopupTemplateEnabled(value: Boolean): Self = this.set("defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
+    def setDefaultPopupTemplateEnabled(value: Boolean): Self = StObject.set(x, "defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultPopupTemplateEnabled: Self = this.set("defaultPopupTemplateEnabled", js.undefined)
+    def setDefaultPopupTemplateEnabledUndefined: Self = StObject.set(x, "defaultPopupTemplateEnabled", js.undefined)
     
     @scala.inline
-    def setDockEnabled(value: Boolean): Self = this.set("dockEnabled", value.asInstanceOf[js.Any])
+    def setDockEnabled(value: Boolean): Self = StObject.set(x, "dockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDockEnabled: Self = this.set("dockEnabled", js.undefined)
+    def setDockEnabledUndefined: Self = StObject.set(x, "dockEnabled", js.undefined)
     
     @scala.inline
-    def setDockOptions(value: PopupDockOptions): Self = this.set("dockOptions", value.asInstanceOf[js.Any])
+    def setDockOptions(value: PopupDockOptions): Self = StObject.set(x, "dockOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDockOptions: Self = this.set("dockOptions", js.undefined)
+    def setDockOptionsUndefined: Self = StObject.set(x, "dockOptions", js.undefined)
     
     @scala.inline
-    def setFeatureNavigationEnabled(value: Boolean): Self = this.set("featureNavigationEnabled", value.asInstanceOf[js.Any])
+    def setFeatureNavigationEnabled(value: Boolean): Self = StObject.set(x, "featureNavigationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeatureNavigationEnabled: Self = this.set("featureNavigationEnabled", js.undefined)
+    def setFeatureNavigationEnabledUndefined: Self = StObject.set(x, "featureNavigationEnabled", js.undefined)
     
     @scala.inline
-    def setFeaturesVarargs(value: GraphicProperties*): Self = this.set("features", js.Array(value :_*))
+    def setFeatures(value: js.Array[GraphicProperties]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[GraphicProperties]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setHighlightEnabled(value: Boolean): Self = this.set("highlightEnabled", value.asInstanceOf[js.Any])
+    def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightEnabled: Self = this.set("highlightEnabled", js.undefined)
+    def setHighlightEnabledUndefined: Self = StObject.set(x, "highlightEnabled", js.undefined)
     
     @scala.inline
-    def setLocation(value: PointProperties): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setMaxInlineActions(value: Double | js.Any): Self = this.set("maxInlineActions", value.asInstanceOf[js.Any])
+    def setMaxInlineActions(value: Double | js.Any): Self = StObject.set(x, "maxInlineActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxInlineActions: Self = this.set("maxInlineActions", js.undefined)
+    def setMaxInlineActionsUndefined: Self = StObject.set(x, "maxInlineActions", js.undefined)
     
     @scala.inline
-    def setPromisesVarargs(value: js.Promise[js.Any]*): Self = this.set("promises", js.Array(value :_*))
+    def setPromises(value: js.Array[js.Promise[_]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromises(value: js.Array[js.Promise[_]]): Self = this.set("promises", value.asInstanceOf[js.Any])
+    def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)
     
     @scala.inline
-    def deletePromises: Self = this.set("promises", js.undefined)
+    def setPromisesVarargs(value: js.Promise[js.Any]*): Self = StObject.set(x, "promises", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedFeatureIndex(value: Double): Self = this.set("selectedFeatureIndex", value.asInstanceOf[js.Any])
+    def setSelectedFeatureIndex(value: Double): Self = StObject.set(x, "selectedFeatureIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedFeatureIndex: Self = this.set("selectedFeatureIndex", js.undefined)
+    def setSelectedFeatureIndexUndefined: Self = StObject.set(x, "selectedFeatureIndex", js.undefined)
     
     @scala.inline
-    def setSpinnerEnabled(value: Boolean): Self = this.set("spinnerEnabled", value.asInstanceOf[js.Any])
+    def setSpinnerEnabled(value: Boolean): Self = StObject.set(x, "spinnerEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpinnerEnabled: Self = this.set("spinnerEnabled", js.undefined)
+    def setSpinnerEnabledUndefined: Self = StObject.set(x, "spinnerEnabled", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewModel(value: PopupViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: PopupViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleElements(value: PopupVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibleElements(value: PopupVisibleElements): Self = this.set("visibleElements", value.asInstanceOf[js.Any])
+    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
     
     @scala.inline
-    def deleteVisibleElements: Self = this.set("visibleElements", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

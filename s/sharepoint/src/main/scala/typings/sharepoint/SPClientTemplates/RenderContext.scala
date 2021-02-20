@@ -1,11 +1,12 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderContext extends js.Object {
+trait RenderContext extends StObject {
   
   var BaseViewID: js.UndefOr[Double] = js.native
   
@@ -56,150 +57,138 @@ object RenderContext {
   }
   
   @scala.inline
-  implicit class RenderContextOps[Self <: RenderContext] (val x: Self) extends AnyVal {
+  implicit class RenderContextMutableBuilder[Self <: RenderContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseViewID(value: Double): Self = StObject.set(x, "BaseViewID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseViewIDUndefined: Self = StObject.set(x, "BaseViewID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlMode(value: ClientControlMode): Self = StObject.set(x, "ControlMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseViewID(value: Double): Self = this.set("BaseViewID", value.asInstanceOf[js.Any])
+    def setControlModeUndefined: Self = StObject.set(x, "ControlMode", js.undefined)
     
     @scala.inline
-    def deleteBaseViewID: Self = this.set("BaseViewID", js.undefined)
+    def setCurrentCultureName(value: String): Self = StObject.set(x, "CurrentCultureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlMode(value: ClientControlMode): Self = this.set("ControlMode", value.asInstanceOf[js.Any])
+    def setCurrentCultureNameUndefined: Self = StObject.set(x, "CurrentCultureName", js.undefined)
     
     @scala.inline
-    def deleteControlMode: Self = this.set("ControlMode", js.undefined)
+    def setCurrentLanguage(value: Double): Self = StObject.set(x, "CurrentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentCultureName(value: String): Self = this.set("CurrentCultureName", value.asInstanceOf[js.Any])
+    def setCurrentLanguageUndefined: Self = StObject.set(x, "CurrentLanguage", js.undefined)
     
     @scala.inline
-    def deleteCurrentCultureName: Self = this.set("CurrentCultureName", js.undefined)
+    def setCurrentSelectedItems(value: js.Any): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLanguage(value: Double): Self = this.set("CurrentLanguage", value.asInstanceOf[js.Any])
+    def setCurrentSelectedItemsUndefined: Self = StObject.set(x, "CurrentSelectedItems", js.undefined)
     
     @scala.inline
-    def deleteCurrentLanguage: Self = this.set("CurrentLanguage", js.undefined)
+    def setCurrentUICultureName(value: String): Self = StObject.set(x, "CurrentUICultureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSelectedItems(value: js.Any): Self = this.set("CurrentSelectedItems", value.asInstanceOf[js.Any])
+    def setCurrentUICultureNameUndefined: Self = StObject.set(x, "CurrentUICultureName", js.undefined)
     
     @scala.inline
-    def deleteCurrentSelectedItems: Self = this.set("CurrentSelectedItems", js.undefined)
+    def setListTemplateType(value: Double): Self = StObject.set(x, "ListTemplateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentUICultureName(value: String): Self = this.set("CurrentUICultureName", value.asInstanceOf[js.Any])
+    def setListTemplateTypeUndefined: Self = StObject.set(x, "ListTemplateType", js.undefined)
     
     @scala.inline
-    def deleteCurrentUICultureName: Self = this.set("CurrentUICultureName", js.undefined)
+    def setOnPostRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPostRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListTemplateType(value: Double): Self = this.set("ListTemplateType", value.asInstanceOf[js.Any])
+    def setOnPostRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = StObject.set(x, "OnPostRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteListTemplateType: Self = this.set("ListTemplateType", js.undefined)
+    def setOnPostRenderUndefined: Self = StObject.set(x, "OnPostRender", js.undefined)
     
     @scala.inline
-    def setOnPostRenderVarargs(value: RenderCallback*): Self = this.set("OnPostRender", js.Array(value :_*))
+    def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value :_*))
     
     @scala.inline
-    def setOnPostRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = this.set("OnPostRender", js.Any.fromFunction1(value))
+    def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPreRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPostRender(value: RenderCallback | js.Array[RenderCallback]): Self = this.set("OnPostRender", value.asInstanceOf[js.Any])
+    def setOnPreRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = StObject.set(x, "OnPreRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPostRender: Self = this.set("OnPostRender", js.undefined)
+    def setOnPreRenderUndefined: Self = StObject.set(x, "OnPreRender", js.undefined)
     
     @scala.inline
-    def setOnPreRenderVarargs(value: RenderCallback*): Self = this.set("OnPreRender", js.Array(value :_*))
+    def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value :_*))
     
     @scala.inline
-    def setOnPreRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = this.set("OnPreRender", js.Any.fromFunction1(value))
+    def setOnRefreshFailed(value: js.Any): Self = StObject.set(x, "onRefreshFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = this.set("OnPreRender", value.asInstanceOf[js.Any])
+    def setOnRefreshFailedUndefined: Self = StObject.set(x, "onRefreshFailed", js.undefined)
     
     @scala.inline
-    def deleteOnPreRender: Self = this.set("OnPreRender", js.undefined)
+    def setRenderBody(value: RenderContext => String): Self = StObject.set(x, "RenderBody", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderBody(value: RenderContext => String): Self = this.set("RenderBody", js.Any.fromFunction1(value))
+    def setRenderBodyUndefined: Self = StObject.set(x, "RenderBody", js.undefined)
     
     @scala.inline
-    def deleteRenderBody: Self = this.set("RenderBody", js.undefined)
+    def setRenderFieldByName(value: (RenderContext, /* fieldName */ String) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRenderFieldByName(value: (RenderContext, /* fieldName */ String) => String): Self = this.set("RenderFieldByName", js.Any.fromFunction2(value))
+    def setRenderFieldByNameUndefined: Self = StObject.set(x, "RenderFieldByName", js.undefined)
     
     @scala.inline
-    def deleteRenderFieldByName: Self = this.set("RenderFieldByName", js.undefined)
+    def setRenderFields(value: RenderContext => String): Self = StObject.set(x, "RenderFields", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderFields(value: RenderContext => String): Self = this.set("RenderFields", js.Any.fromFunction1(value))
+    def setRenderFieldsUndefined: Self = StObject.set(x, "RenderFields", js.undefined)
     
     @scala.inline
-    def deleteRenderFields: Self = this.set("RenderFields", js.undefined)
+    def setRenderFooter(value: RenderContext => String): Self = StObject.set(x, "RenderFooter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderFooter(value: RenderContext => String): Self = this.set("RenderFooter", js.Any.fromFunction1(value))
+    def setRenderFooterUndefined: Self = StObject.set(x, "RenderFooter", js.undefined)
     
     @scala.inline
-    def deleteRenderFooter: Self = this.set("RenderFooter", js.undefined)
+    def setRenderGroups(value: RenderContext => String): Self = StObject.set(x, "RenderGroups", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderGroups(value: RenderContext => String): Self = this.set("RenderGroups", js.Any.fromFunction1(value))
+    def setRenderGroupsUndefined: Self = StObject.set(x, "RenderGroups", js.undefined)
     
     @scala.inline
-    def deleteRenderGroups: Self = this.set("RenderGroups", js.undefined)
+    def setRenderHeader(value: RenderContext => String): Self = StObject.set(x, "RenderHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderHeader(value: RenderContext => String): Self = this.set("RenderHeader", js.Any.fromFunction1(value))
+    def setRenderHeaderUndefined: Self = StObject.set(x, "RenderHeader", js.undefined)
     
     @scala.inline
-    def deleteRenderHeader: Self = this.set("RenderHeader", js.undefined)
+    def setRenderItems(value: RenderContext => String): Self = StObject.set(x, "RenderItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderItems(value: RenderContext => String): Self = this.set("RenderItems", js.Any.fromFunction1(value))
+    def setRenderItemsUndefined: Self = StObject.set(x, "RenderItems", js.undefined)
     
     @scala.inline
-    def deleteRenderItems: Self = this.set("RenderItems", js.undefined)
+    def setRenderView(value: RenderContext => String): Self = StObject.set(x, "RenderView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderView(value: RenderContext => String): Self = this.set("RenderView", js.Any.fromFunction1(value))
+    def setRenderViewUndefined: Self = StObject.set(x, "RenderView", js.undefined)
     
     @scala.inline
-    def deleteRenderView: Self = this.set("RenderView", js.undefined)
+    def setSiteClientTag(value: String): Self = StObject.set(x, "SiteClientTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteClientTag(value: String): Self = this.set("SiteClientTag", value.asInstanceOf[js.Any])
+    def setSiteClientTagUndefined: Self = StObject.set(x, "SiteClientTag", js.undefined)
     
     @scala.inline
-    def deleteSiteClientTag: Self = this.set("SiteClientTag", js.undefined)
+    def setTemplates(value: Templates): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplates(value: Templates): Self = this.set("Templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("Templates", js.undefined)
-    
-    @scala.inline
-    def setOnRefreshFailed(value: js.Any): Self = this.set("onRefreshFailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnRefreshFailed: Self = this.set("onRefreshFailed", js.undefined)
+    def setTemplatesUndefined: Self = StObject.set(x, "Templates", js.undefined)
   }
 }

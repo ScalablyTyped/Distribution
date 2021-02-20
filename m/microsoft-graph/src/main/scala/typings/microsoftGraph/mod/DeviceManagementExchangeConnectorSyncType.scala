@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.fullSync
   - typings.microsoftGraph.microsoftGraphStrings.deltaSync
 */
-trait DeviceManagementExchangeConnectorSyncType extends js.Object
+trait DeviceManagementExchangeConnectorSyncType extends StObject
 object DeviceManagementExchangeConnectorSyncType {
   
   @scala.inline

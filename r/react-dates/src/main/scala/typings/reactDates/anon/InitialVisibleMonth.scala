@@ -2,12 +2,13 @@ package typings.reactDates.anon
 
 import typings.moment.mod.Moment
 import typings.reactDates.mod.ScrollableOrientationShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitialVisibleMonth extends js.Object {
+trait InitialVisibleMonth extends StObject {
   
   var date: Moment | Null = js.native
   

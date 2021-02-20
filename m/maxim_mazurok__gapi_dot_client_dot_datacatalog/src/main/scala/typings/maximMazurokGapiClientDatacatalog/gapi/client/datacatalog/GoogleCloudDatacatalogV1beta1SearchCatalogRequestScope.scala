@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends js.Object {
+trait GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends StObject {
   
   /**
     * If `true`, include Google Cloud Platform (GCP) public datasets in the search results. Info on GCP public datasets is available at https://cloud.google.com/public-datasets/. By
@@ -37,51 +38,39 @@ object GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogRequestScopeOps[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogRequestScopeMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeGcpPublicDatasets(value: Boolean): Self = StObject.set(x, "includeGcpPublicDatasets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeGcpPublicDatasetsUndefined: Self = StObject.set(x, "includeGcpPublicDatasets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeOrgIds(value: js.Array[String]): Self = StObject.set(x, "includeOrgIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeGcpPublicDatasets(value: Boolean): Self = this.set("includeGcpPublicDatasets", value.asInstanceOf[js.Any])
+    def setIncludeOrgIdsUndefined: Self = StObject.set(x, "includeOrgIds", js.undefined)
     
     @scala.inline
-    def deleteIncludeGcpPublicDatasets: Self = this.set("includeGcpPublicDatasets", js.undefined)
+    def setIncludeOrgIdsVarargs(value: String*): Self = StObject.set(x, "includeOrgIds", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeOrgIdsVarargs(value: String*): Self = this.set("includeOrgIds", js.Array(value :_*))
+    def setIncludeProjectIds(value: js.Array[String]): Self = StObject.set(x, "includeProjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOrgIds(value: js.Array[String]): Self = this.set("includeOrgIds", value.asInstanceOf[js.Any])
+    def setIncludeProjectIdsUndefined: Self = StObject.set(x, "includeProjectIds", js.undefined)
     
     @scala.inline
-    def deleteIncludeOrgIds: Self = this.set("includeOrgIds", js.undefined)
+    def setIncludeProjectIdsVarargs(value: String*): Self = StObject.set(x, "includeProjectIds", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeProjectIdsVarargs(value: String*): Self = this.set("includeProjectIds", js.Array(value :_*))
+    def setRestrictedLocations(value: js.Array[String]): Self = StObject.set(x, "restrictedLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeProjectIds(value: js.Array[String]): Self = this.set("includeProjectIds", value.asInstanceOf[js.Any])
+    def setRestrictedLocationsUndefined: Self = StObject.set(x, "restrictedLocations", js.undefined)
     
     @scala.inline
-    def deleteIncludeProjectIds: Self = this.set("includeProjectIds", js.undefined)
-    
-    @scala.inline
-    def setRestrictedLocationsVarargs(value: String*): Self = this.set("restrictedLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRestrictedLocations(value: js.Array[String]): Self = this.set("restrictedLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictedLocations: Self = this.set("restrictedLocations", js.undefined)
+    def setRestrictedLocationsVarargs(value: String*): Self = StObject.set(x, "restrictedLocations", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCertificatesResponse extends js.Object {
+trait ListCertificatesResponse extends StObject {
   
   /**
     * A list of ACM certificates.
@@ -26,33 +27,21 @@ object ListCertificatesResponse {
   }
   
   @scala.inline
-  implicit class ListCertificatesResponseOps[Self <: ListCertificatesResponse] (val x: Self) extends AnyVal {
+  implicit class ListCertificatesResponseMutableBuilder[Self <: ListCertificatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateSummaryList(value: CertificateSummaryList): Self = StObject.set(x, "CertificateSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateSummaryListUndefined: Self = StObject.set(x, "CertificateSummaryList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateSummaryListVarargs(value: CertificateSummary*): Self = StObject.set(x, "CertificateSummaryList", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateSummaryListVarargs(value: CertificateSummary*): Self = this.set("CertificateSummaryList", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateSummaryList(value: CertificateSummaryList): Self = this.set("CertificateSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateSummaryList: Self = this.set("CertificateSummaryList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

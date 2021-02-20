@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for CreateTask.
   */
 @js.native
-trait SchemaCreateTaskRequest extends js.Object {
+trait SchemaCreateTaskRequest extends StObject {
   
   /**
     * The response_view specifies which subset of the Task will be returned. By
@@ -56,30 +57,18 @@ object SchemaCreateTaskRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateTaskRequestOps[Self <: SchemaCreateTaskRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateTaskRequestMutableBuilder[Self <: SchemaCreateTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTask(value: SchemaTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseView: Self = this.set("responseView", js.undefined)
-    
-    @scala.inline
-    def setTask(value: SchemaTask): Self = this.set("task", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTask: Self = this.set("task", js.undefined)
+    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

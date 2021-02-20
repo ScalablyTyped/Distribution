@@ -1,9 +1,10 @@
 package typings.emberData.mod.DS
 
 import typings.ember.mod.default.ComputedProperty
+import typings.ember.mod.default.Object
 import typings.emberArray.enumerableMod.Enumerable
 import typings.emberObject.eventedMod.Evented
-import typings.emberObject.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("ember-data", "DS.Errors")
 @js.native
 class Errors ()
-  extends default
+  extends Object
      with Enumerable[js.Any]
      with Evented {
   

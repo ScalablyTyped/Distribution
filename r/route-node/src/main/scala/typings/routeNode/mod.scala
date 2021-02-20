@@ -2,14 +2,14 @@ package typings.routeNode
 
 import typings.routeNode.routeNodeMod.Route
 import typings.routeNode.routeNodeMod.RouteNodeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("route-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("route-node", "RouteNode")
   @js.native
   class RouteNode ()
     extends typings.routeNode.routeNodeMod.RouteNode {

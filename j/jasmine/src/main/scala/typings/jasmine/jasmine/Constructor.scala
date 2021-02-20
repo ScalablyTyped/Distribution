@@ -1,5 +1,6 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // More info: https://stackoverflow.com/a/38642922/2009373
 /* Inlined std.Function & {  prototype :any} */
 @js.native
-trait Constructor extends js.Object {
+trait Constructor extends StObject {
   
   /**
     * Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.

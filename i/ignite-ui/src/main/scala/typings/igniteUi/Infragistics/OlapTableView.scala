@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlapTableView extends js.Object {
+trait OlapTableView extends StObject {
   
   /**
     * Returns the column sort direction items, which were applied during the $.ig.OlapTableView initialization.

@@ -50,6 +50,7 @@ import typings.vueCompilerCore.vueCompilerCoreNumbers.`6`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`7`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`8`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,7 +107,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.vueCompilerCoreNumbers.`48`
   - typings.vueCompilerCore.vueCompilerCoreNumbers.`49`
 */
-trait ErrorCodes extends js.Object
+trait ErrorCodes extends StObject
 object ErrorCodes {
   
   @scala.inline

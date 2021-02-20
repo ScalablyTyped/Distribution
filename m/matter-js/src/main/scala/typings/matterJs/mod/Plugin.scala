@@ -5,13 +5,14 @@ import typings.matterJs.anon.Dict
 import typings.matterJs.anon.IsRange
 import typings.matterJs.anon.Name
 import typings.matterJs.anon.Uses
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Plugin")
 @js.native
-class Plugin () extends js.Object {
+class Plugin () extends StObject {
   
   var `for`: js.UndefOr[String] = js.native
   
@@ -22,9 +23,7 @@ class Plugin () extends js.Object {
   var version: String = js.native
 }
 /* static members */
-@JSImport("matter-js", "Plugin")
-@js.native
-object Plugin extends js.Object {
+object Plugin {
   
   /**
     * Recursively finds all of a module's dependencies and returns a flat dependency graph.
@@ -32,7 +31,11 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {object} A dependency graph.
     */
+  @JSImport("matter-js", "Plugin.dependencies")
+  @js.native
   def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
+  @JSImport("matter-js", "Plugin.dependencies")
+  @js.native
   def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
   
   /**
@@ -44,6 +47,8 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency of the format `'module-name'` or `'module-name@version'`.
     * @return {object} The dependency parsed into its components.
     */
+  @JSImport("matter-js", "Plugin.dependencyParse")
+  @js.native
   def dependencyParse(dependency: Dependency): Name = js.native
   
   /**
@@ -55,6 +60,8 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
+  @JSImport("matter-js", "Plugin.isFor")
+  @js.native
   def isFor(plugin: Plugin, module: Dict): Boolean = js.native
   
   /**
@@ -67,6 +74,8 @@ object Plugin extends js.Object {
     * @param obj {} The obj to test.
     * @return {boolean} `true` if the object can be considered a plugin otherwise `false`.
     */
+  @JSImport("matter-js", "Plugin.isPlugin")
+  @js.native
   def isPlugin(obj: js.Object): Boolean = js.native
   
   /**
@@ -75,6 +84,8 @@ object Plugin extends js.Object {
     * @param plugin {} The plugin to register.
     * @return {object} The plugin.
     */
+  @JSImport("matter-js", "Plugin.register")
+  @js.native
   def register(plugin: Plugin): Plugin = js.native
   
   /**
@@ -84,6 +95,8 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency.
     * @return {object} The plugin if resolved, otherwise `undefined`.
     */
+  @JSImport("matter-js", "Plugin.resolve")
+  @js.native
   def resolve(dependency: String): js.UndefOr[Plugin] = js.native
   
   /**
@@ -92,7 +105,11 @@ object Plugin extends js.Object {
     * @param plugin {} The plugin.
     * @return {string} Pretty printed plugin name and version.
     */
+  @JSImport("matter-js", "Plugin.toString")
+  @js.native
   def toString(plugin: String): String = js.native
+  @JSImport("matter-js", "Plugin.toString")
+  @js.native
   def toString(plugin: Plugin): String = js.native
   
   /**
@@ -111,6 +128,8 @@ object Plugin extends js.Object {
     * @param module {} The module install plugins on.
     * @param [plugins=module.uses] {} The plugins to install on module (optional, defaults to `module.uses`).
     */
+  @JSImport("matter-js", "Plugin.use")
+  @js.native
   def use(module: Uses, plugins: js.Array[Plugin | String]): Unit = js.native
   
   /**
@@ -127,6 +146,8 @@ object Plugin extends js.Object {
     * @param range {string} The version string.
     * @return {object} The version range parsed into its components.
     */
+  @JSImport("matter-js", "Plugin.versionParse")
+  @js.native
   def versionParse(range: String): IsRange = js.native
   
   /**
@@ -138,5 +159,7 @@ object Plugin extends js.Object {
     * @param range {string} The range string.
     * @return {boolean} `true` if `version` satisfies `range`, otherwise `false`.
     */
+  @JSImport("matter-js", "Plugin.versionSatisfies")
+  @js.native
   def versionSatisfies(version: String, range: String): Boolean = js.native
 }

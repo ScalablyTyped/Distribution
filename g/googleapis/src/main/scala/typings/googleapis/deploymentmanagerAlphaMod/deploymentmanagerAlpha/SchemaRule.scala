@@ -1,5 +1,6 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A rule to be applied in a Policy.
   */
 @js.native
-trait SchemaRule extends js.Object {
+trait SchemaRule extends StObject {
   
   /**
     * Required
@@ -61,75 +62,63 @@ object SchemaRule {
   }
   
   @scala.inline
-  implicit class SchemaRuleOps[Self <: SchemaRule] (val x: Self) extends AnyVal {
+  implicit class SchemaRuleMutableBuilder[Self <: SchemaRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[SchemaCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setConditionsVarargs(value: SchemaCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: SchemaCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[SchemaCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setIns(value: js.Array[String]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInsUndefined: Self = StObject.set(x, "ins", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value :_*))
     
     @scala.inline
-    def setInsVarargs(value: String*): Self = this.set("ins", js.Array(value :_*))
+    def setLogConfigs(value: js.Array[SchemaLogConfig]): Self = StObject.set(x, "logConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIns(value: js.Array[String]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    def setLogConfigsUndefined: Self = StObject.set(x, "logConfigs", js.undefined)
     
     @scala.inline
-    def deleteIns: Self = this.set("ins", js.undefined)
+    def setLogConfigsVarargs(value: SchemaLogConfig*): Self = StObject.set(x, "logConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setLogConfigsVarargs(value: SchemaLogConfig*): Self = this.set("logConfigs", js.Array(value :_*))
+    def setNotIns(value: js.Array[String]): Self = StObject.set(x, "notIns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogConfigs(value: js.Array[SchemaLogConfig]): Self = this.set("logConfigs", value.asInstanceOf[js.Any])
+    def setNotInsUndefined: Self = StObject.set(x, "notIns", js.undefined)
     
     @scala.inline
-    def deleteLogConfigs: Self = this.set("logConfigs", js.undefined)
+    def setNotInsVarargs(value: String*): Self = StObject.set(x, "notIns", js.Array(value :_*))
     
     @scala.inline
-    def setNotInsVarargs(value: String*): Self = this.set("notIns", js.Array(value :_*))
+    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotIns(value: js.Array[String]): Self = this.set("notIns", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteNotIns: Self = this.set("notIns", js.undefined)
-    
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = this.set("permissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

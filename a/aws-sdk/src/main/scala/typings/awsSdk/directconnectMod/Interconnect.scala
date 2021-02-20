@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Interconnect extends js.Object {
+trait Interconnect extends StObject {
   
   /**
     * The Direct Connect endpoint on which the physical connection terminates.
@@ -86,105 +87,93 @@ object Interconnect {
   }
   
   @scala.inline
-  implicit class InterconnectOps[Self <: Interconnect] (val x: Self) extends AnyVal {
+  implicit class InterconnectMutableBuilder[Self <: Interconnect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsDevice(value: AwsDevice): Self = StObject.set(x, "awsDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsDeviceUndefined: Self = StObject.set(x, "awsDevice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsDeviceV2(value: AwsDeviceV2): Self = StObject.set(x, "awsDeviceV2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsDevice(value: AwsDevice): Self = this.set("awsDevice", value.asInstanceOf[js.Any])
+    def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
     
     @scala.inline
-    def deleteAwsDevice: Self = this.set("awsDevice", js.undefined)
+    def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsDeviceV2(value: AwsDeviceV2): Self = this.set("awsDeviceV2", value.asInstanceOf[js.Any])
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def deleteAwsDeviceV2: Self = this.set("awsDeviceV2", js.undefined)
+    def setHasLogicalRedundancy(value: HasLogicalRedundancy): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: Bandwidth): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setHasLogicalRedundancyUndefined: Self = StObject.set(x, "hasLogicalRedundancy", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasLogicalRedundancy(value: HasLogicalRedundancy): Self = this.set("hasLogicalRedundancy", value.asInstanceOf[js.Any])
+    def setInterconnectIdUndefined: Self = StObject.set(x, "interconnectId", js.undefined)
     
     @scala.inline
-    def deleteHasLogicalRedundancy: Self = this.set("hasLogicalRedundancy", js.undefined)
+    def setInterconnectName(value: InterconnectName): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterconnectId(value: InterconnectId): Self = this.set("interconnectId", value.asInstanceOf[js.Any])
+    def setInterconnectNameUndefined: Self = StObject.set(x, "interconnectName", js.undefined)
     
     @scala.inline
-    def deleteInterconnectId: Self = this.set("interconnectId", js.undefined)
+    def setInterconnectState(value: InterconnectState): Self = StObject.set(x, "interconnectState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterconnectName(value: InterconnectName): Self = this.set("interconnectName", value.asInstanceOf[js.Any])
+    def setInterconnectStateUndefined: Self = StObject.set(x, "interconnectState", js.undefined)
     
     @scala.inline
-    def deleteInterconnectName: Self = this.set("interconnectName", js.undefined)
+    def setJumboFrameCapable(value: JumboFrameCapable): Self = StObject.set(x, "jumboFrameCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterconnectState(value: InterconnectState): Self = this.set("interconnectState", value.asInstanceOf[js.Any])
+    def setJumboFrameCapableUndefined: Self = StObject.set(x, "jumboFrameCapable", js.undefined)
     
     @scala.inline
-    def deleteInterconnectState: Self = this.set("interconnectState", js.undefined)
+    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumboFrameCapable(value: JumboFrameCapable): Self = this.set("jumboFrameCapable", value.asInstanceOf[js.Any])
+    def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
     
     @scala.inline
-    def deleteJumboFrameCapable: Self = this.set("jumboFrameCapable", js.undefined)
+    def setLoaIssueTime(value: LoaIssueTime): Self = StObject.set(x, "loaIssueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    def setLoaIssueTimeUndefined: Self = StObject.set(x, "loaIssueTime", js.undefined)
     
     @scala.inline
-    def deleteLagId: Self = this.set("lagId", js.undefined)
+    def setLocation(value: LocationCode): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaIssueTime(value: LoaIssueTime): Self = this.set("loaIssueTime", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLoaIssueTime: Self = this.set("loaIssueTime", js.undefined)
+    def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LocationCode): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -3,12 +3,13 @@ package typings.exceljs.mod
 import typings.exceljs.exceljsStrings.normal
 import typings.exceljs.exceljsStrings.pageBreakPreview
 import typings.exceljs.exceljsStrings.pageLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetViewNormal extends js.Object {
+trait WorksheetViewNormal extends StObject {
   
   /**
   	 * Controls the view state
@@ -29,24 +30,12 @@ object WorksheetViewNormal {
   }
   
   @scala.inline
-  implicit class WorksheetViewNormalOps[Self <: WorksheetViewNormal] (val x: Self) extends AnyVal {
+  implicit class WorksheetViewNormalMutableBuilder[Self <: WorksheetViewNormal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: normal): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setState(value: normal): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: pageBreakPreview | pageLayout): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: pageBreakPreview | pageLayout): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

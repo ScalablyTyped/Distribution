@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkPathComponent extends js.Object {
+trait NetworkPathComponent extends StObject {
   
   /**
     * The identifier of a component in the network path.
@@ -36,42 +37,30 @@ object NetworkPathComponent {
   }
   
   @scala.inline
-  implicit class NetworkPathComponentOps[Self <: NetworkPathComponent] (val x: Self) extends AnyVal {
+  implicit class NetworkPathComponentMutableBuilder[Self <: NetworkPathComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentId(value: NonEmptyString): Self = StObject.set(x, "ComponentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentIdUndefined: Self = StObject.set(x, "ComponentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentType(value: NonEmptyString): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentId(value: NonEmptyString): Self = this.set("ComponentId", value.asInstanceOf[js.Any])
+    def setComponentTypeUndefined: Self = StObject.set(x, "ComponentType", js.undefined)
     
     @scala.inline
-    def deleteComponentId: Self = this.set("ComponentId", js.undefined)
+    def setEgress(value: NetworkHeader): Self = StObject.set(x, "Egress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentType(value: NonEmptyString): Self = this.set("ComponentType", value.asInstanceOf[js.Any])
+    def setEgressUndefined: Self = StObject.set(x, "Egress", js.undefined)
     
     @scala.inline
-    def deleteComponentType: Self = this.set("ComponentType", js.undefined)
+    def setIngress(value: NetworkHeader): Self = StObject.set(x, "Ingress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgress(value: NetworkHeader): Self = this.set("Egress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEgress: Self = this.set("Egress", js.undefined)
-    
-    @scala.inline
-    def setIngress(value: NetworkHeader): Self = this.set("Ingress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIngress: Self = this.set("Ingress", js.undefined)
+    def setIngressUndefined: Self = StObject.set(x, "Ingress", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ModelBreak")
 @js.native
-class ModelBreak () extends js.Object {
+class ModelBreak () extends StObject {
   
   /**
     * The `BreakType` this `Break` was templated on.

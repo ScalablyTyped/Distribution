@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityTypeConfiguration extends js.Object {
+trait ActivityTypeConfiguration extends StObject {
   
   /**
     *  The default maximum time, in seconds, before which a worker processing a task must report progress by calling RecordActivityTaskHeartbeat. You can specify this value only when registering an activity type. The registered default value can be overridden when you schedule a task through the ScheduleActivityTask Decision. If the activity worker subsequently attempts to record a heartbeat or returns a result, the activity worker receives an UnknownResource fault. In this case, Amazon SWF no longer considers the activity task to be valid; the activity worker should clean up the activity task. The duration is specified in seconds, an integer greater than or equal to 0. You can use NONE to specify unlimited duration.
@@ -46,54 +47,42 @@ object ActivityTypeConfiguration {
   }
   
   @scala.inline
-  implicit class ActivityTypeConfigurationOps[Self <: ActivityTypeConfiguration] (val x: Self) extends AnyVal {
+  implicit class ActivityTypeConfigurationMutableBuilder[Self <: ActivityTypeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultTaskHeartbeatTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskHeartbeatTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTaskHeartbeatTimeoutUndefined: Self = StObject.set(x, "defaultTaskHeartbeatTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTaskList(value: TaskList): Self = StObject.set(x, "defaultTaskList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTaskHeartbeatTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskHeartbeatTimeout", value.asInstanceOf[js.Any])
+    def setDefaultTaskListUndefined: Self = StObject.set(x, "defaultTaskList", js.undefined)
     
     @scala.inline
-    def deleteDefaultTaskHeartbeatTimeout: Self = this.set("defaultTaskHeartbeatTimeout", js.undefined)
+    def setDefaultTaskPriority(value: TaskPriority): Self = StObject.set(x, "defaultTaskPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTaskList(value: TaskList): Self = this.set("defaultTaskList", value.asInstanceOf[js.Any])
+    def setDefaultTaskPriorityUndefined: Self = StObject.set(x, "defaultTaskPriority", js.undefined)
     
     @scala.inline
-    def deleteDefaultTaskList: Self = this.set("defaultTaskList", js.undefined)
+    def setDefaultTaskScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskScheduleToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTaskPriority(value: TaskPriority): Self = this.set("defaultTaskPriority", value.asInstanceOf[js.Any])
+    def setDefaultTaskScheduleToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskScheduleToCloseTimeout", js.undefined)
     
     @scala.inline
-    def deleteDefaultTaskPriority: Self = this.set("defaultTaskPriority", js.undefined)
+    def setDefaultTaskScheduleToStartTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskScheduleToStartTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTaskScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskScheduleToCloseTimeout", value.asInstanceOf[js.Any])
+    def setDefaultTaskScheduleToStartTimeoutUndefined: Self = StObject.set(x, "defaultTaskScheduleToStartTimeout", js.undefined)
     
     @scala.inline
-    def deleteDefaultTaskScheduleToCloseTimeout: Self = this.set("defaultTaskScheduleToCloseTimeout", js.undefined)
+    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTaskScheduleToStartTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskScheduleToStartTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultTaskScheduleToStartTimeout: Self = this.set("defaultTaskScheduleToStartTimeout", js.undefined)
-    
-    @scala.inline
-    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultTaskStartToCloseTimeout: Self = this.set("defaultTaskStartToCloseTimeout", js.undefined)
+    def setDefaultTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskStartToCloseTimeout", js.undefined)
   }
 }

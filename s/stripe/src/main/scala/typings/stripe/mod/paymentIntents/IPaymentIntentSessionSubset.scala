@@ -1,6 +1,7 @@
 package typings.stripe.mod.paymentIntents
 
 import typings.stripe.mod.IMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used in checkout session creation
   */
 @js.native
-trait IPaymentIntentSessionSubset extends js.Object {
+trait IPaymentIntentSessionSubset extends StObject {
   
   /**
     * The amount of the application fee (if any) that will be applied to the payment and transferred to the application owner’s Stripe account. To use an application fee, the request must be made on behalf of another account, using the `Stripe-Account` header or an OAuth key.
@@ -68,75 +69,63 @@ object IPaymentIntentSessionSubset {
   }
   
   @scala.inline
-  implicit class IPaymentIntentSessionSubsetOps[Self <: IPaymentIntentSessionSubset] (val x: Self) extends AnyVal {
+  implicit class IPaymentIntentSessionSubsetMutableBuilder[Self <: IPaymentIntentSessionSubset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication_fee_amount(value: Double): Self = StObject.set(x, "application_fee_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication_fee_amountUndefined: Self = StObject.set(x, "application_fee_amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture_method(value: PaymentIntentDataCaptureMethodOptions): Self = StObject.set(x, "capture_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication_fee_amount(value: Double): Self = this.set("application_fee_amount", value.asInstanceOf[js.Any])
+    def setCapture_methodUndefined: Self = StObject.set(x, "capture_method", js.undefined)
     
     @scala.inline
-    def deleteApplication_fee_amount: Self = this.set("application_fee_amount", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture_method(value: PaymentIntentDataCaptureMethodOptions): Self = this.set("capture_method", value.asInstanceOf[js.Any])
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def deleteCapture_method: Self = this.set("capture_method", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_behalf_of(value: String): Self = this.set("on_behalf_of", value.asInstanceOf[js.Any])
+    def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
     
     @scala.inline
-    def deleteOn_behalf_of: Self = this.set("on_behalf_of", js.undefined)
+    def setSetup_future_usage(value: PaymentIntendDataFutureUsageOptions): Self = StObject.set(x, "setup_future_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceipt_email(value: String): Self = this.set("receipt_email", value.asInstanceOf[js.Any])
+    def setSetup_future_usageUndefined: Self = StObject.set(x, "setup_future_usage", js.undefined)
     
     @scala.inline
-    def deleteReceipt_email: Self = this.set("receipt_email", js.undefined)
+    def setShipping(value: IPaymentIntentDataShipping): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetup_future_usage(value: PaymentIntendDataFutureUsageOptions): Self = this.set("setup_future_usage", value.asInstanceOf[js.Any])
+    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
     @scala.inline
-    def deleteSetup_future_usage: Self = this.set("setup_future_usage", js.undefined)
+    def setTransfer_data(value: IPaymentIntentDataTransferDataOptions): Self = StObject.set(x, "transfer_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipping(value: IPaymentIntentDataShipping): Self = this.set("shipping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipping: Self = this.set("shipping", js.undefined)
-    
-    @scala.inline
-    def setTransfer_data(value: IPaymentIntentDataTransferDataOptions): Self = this.set("transfer_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransfer_data: Self = this.set("transfer_data", js.undefined)
+    def setTransfer_dataUndefined: Self = StObject.set(x, "transfer_data", js.undefined)
   }
 }

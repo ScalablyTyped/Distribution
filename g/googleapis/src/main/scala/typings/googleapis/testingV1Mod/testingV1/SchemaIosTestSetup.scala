@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A description of how to set up an iOS device prior to a test.
   */
 @js.native
-trait SchemaIosTestSetup extends js.Object {
+trait SchemaIosTestSetup extends StObject {
   
   /**
     * The network traffic profile used for running the test. Available network
@@ -27,24 +28,12 @@ object SchemaIosTestSetup {
   }
   
   @scala.inline
-  implicit class SchemaIosTestSetupOps[Self <: SchemaIosTestSetup] (val x: Self) extends AnyVal {
+  implicit class SchemaIosTestSetupMutableBuilder[Self <: SchemaIosTestSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkProfile(value: String): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
   }
 }

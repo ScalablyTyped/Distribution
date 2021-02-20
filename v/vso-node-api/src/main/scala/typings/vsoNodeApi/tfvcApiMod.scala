@@ -22,13 +22,19 @@ import typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionDescriptor
 import typings.vsoNodeApi.tfvcInterfacesMod.VersionControlRecursionType
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/TfvcApi", JSImport.Namespace)
-@js.native
-object tfvcApiMod extends js.Object {
+object tfvcApiMod {
+  
+  @JSImport("vso-node-api/TfvcApi", "TfvcApi")
+  @js.native
+  class TfvcApi protected () extends ITfvcApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait ITfvcApi extends ClientApiBase {
@@ -538,11 +544,5 @@ object tfvcApiMod extends js.Object {
     def getShelvesets(requestData: TfvcShelvesetRequestData, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
     def getShelvesets(requestData: TfvcShelvesetRequestData, top: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
     def getShelvesets(requestData: TfvcShelvesetRequestData, top: Double, skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
-  }
-  
-  @js.native
-  class TfvcApi protected () extends ITfvcApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * but does also support rendering items in an iframe, incase serverside processing is needed, or its a non-angular page
   */
 @js.native
-trait IDialogService extends js.Object {
+trait IDialogService extends StObject {
   
   /**
     * @ngdoc method
@@ -240,78 +241,66 @@ object IDialogService {
   }
   
   @scala.inline
-  implicit class IDialogServiceOps[Self <: IDialogService] (val x: Self) extends AnyVal {
+  implicit class IDialogServiceMutableBuilder[Self <: IDialogService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: (IDialog, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseAll(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "closeAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseDialog(value: IDialog => Unit): Self = StObject.set(x, "closeDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: (IDialog, /* repeated */ js.Any) => Unit): Self = this.set("close", js.Any.fromFunction2(value))
+    def setContentPicker(value: IContentPickerOptions => IModal): Self = StObject.set(x, "contentPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseAll(value: /* repeated */ js.Any => Unit): Self = this.set("closeAll", js.Any.fromFunction1(value))
+    def setDialogs(value: js.Array[_]): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseDialog(value: IDialog => Unit): Self = this.set("closeDialog", js.Any.fromFunction1(value))
+    def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
     
     @scala.inline
-    def setContentPicker(value: IContentPickerOptions => IModal): Self = this.set("contentPicker", js.Any.fromFunction1(value))
+    def setDialogsVarargs(value: js.Any*): Self = StObject.set(x, "dialogs", js.Array(value :_*))
     
     @scala.inline
-    def setEmbedDialog(value: js.Any => Unit): Self = this.set("embedDialog", js.Any.fromFunction1(value))
+    def setEmbedDialog(value: js.Any => Unit): Self = StObject.set(x, "embedDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIconPicker(value: IIconPickerOptions => IModal): Self = this.set("iconPicker", js.Any.fromFunction1(value))
+    def setIconPicker(value: IIconPickerOptions => IModal): Self = StObject.set(x, "iconPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLinkPicker(value: ILinkPickerOptions => IModal): Self = this.set("linkPicker", js.Any.fromFunction1(value))
+    def setLinkPicker(value: ILinkPickerOptions => IModal): Self = StObject.set(x, "linkPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMacroPicker(value: IMacroPickerOptions => IModal): Self = this.set("macroPicker", js.Any.fromFunction1(value))
+    def setMacroPicker(value: IMacroPickerOptions => IModal): Self = StObject.set(x, "macroPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMediaPicker(value: IMediaPickerOptions => IModal): Self = this.set("mediaPicker", js.Any.fromFunction1(value))
+    def setMediaPicker(value: IMediaPickerOptions => IModal): Self = StObject.set(x, "mediaPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMemberGroupPicker(value: IMemberGroupPickerOptions => IModal): Self = this.set("memberGroupPicker", js.Any.fromFunction1(value))
+    def setMemberGroupPicker(value: IMemberGroupPickerOptions => IModal): Self = StObject.set(x, "memberGroupPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMemberPicker(value: IMemberPickerOptions => IModal): Self = this.set("memberPicker", js.Any.fromFunction1(value))
+    def setMemberPicker(value: IMemberPickerOptions => IModal): Self = StObject.set(x, "memberPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: IDialogRenderingOptions => IModal): Self = this.set("open", js.Any.fromFunction1(value))
+    def setOpen(value: IDialogRenderingOptions => IModal): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpenDialog(value: IDialogRenderingOptions => IModal): Self = this.set("openDialog", js.Any.fromFunction1(value))
+    def setOpenDialog(value: IDialogRenderingOptions => IModal): Self = StObject.set(x, "openDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPropertyDialog(value: IPropertyDialogOptions => IModal): Self = this.set("propertyDialog", js.Any.fromFunction1(value))
+    def setPropertyDialog(value: IPropertyDialogOptions => IModal): Self = StObject.set(x, "propertyDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAllDialogs(value: /* repeated */ js.Any => Unit): Self = this.set("removeAllDialogs", js.Any.fromFunction1(value))
+    def setRemoveAllDialogs(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeAllDialogs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTreePicker(value: ITreePickerOptions => IModal): Self = this.set("treePicker", js.Any.fromFunction1(value))
+    def setTreePicker(value: ITreePickerOptions => IModal): Self = StObject.set(x, "treePicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setYsodDialog(value: js.Any => Unit): Self = this.set("ysodDialog", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDialogsVarargs(value: js.Any*): Self = this.set("dialogs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDialogs(value: js.Array[_]): Self = this.set("dialogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDialogs: Self = this.set("dialogs", js.undefined)
+    def setYsodDialog(value: js.Any => Unit): Self = StObject.set(x, "ysodDialog", js.Any.fromFunction1(value))
   }
 }

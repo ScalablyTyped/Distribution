@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart.series
 
 import typings.senchaTouch.Ext.chart.axis.IAxis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,102 +84,90 @@ object ICartesian {
   }
   
   @scala.inline
-  implicit class ICartesianOps[Self <: ICartesian] (val x: Self) extends AnyVal {
+  implicit class ICartesianMutableBuilder[Self <: ICartesian] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetXAxis(value: () => IAxis): Self = StObject.set(x, "getXAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => _): Self = this.set("getItemForPoint", js.Any.fromFunction2(value))
+    def setGetXAxisUndefined: Self = StObject.set(x, "getXAxis", js.undefined)
     
     @scala.inline
-    def deleteGetItemForPoint: Self = this.set("getItemForPoint", js.undefined)
+    def setGetXField(value: () => String): Self = StObject.set(x, "getXField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetXAxis(value: () => IAxis): Self = this.set("getXAxis", js.Any.fromFunction0(value))
+    def setGetXFieldUndefined: Self = StObject.set(x, "getXField", js.undefined)
     
     @scala.inline
-    def deleteGetXAxis: Self = this.set("getXAxis", js.undefined)
+    def setGetYAxis(value: () => IAxis): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetXField(value: () => String): Self = this.set("getXField", js.Any.fromFunction0(value))
+    def setGetYAxisUndefined: Self = StObject.set(x, "getYAxis", js.undefined)
     
     @scala.inline
-    def deleteGetXField: Self = this.set("getXField", js.undefined)
+    def setGetYField(value: () => String): Self = StObject.set(x, "getYField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetYAxis(value: () => IAxis): Self = this.set("getYAxis", js.Any.fromFunction0(value))
+    def setGetYFieldUndefined: Self = StObject.set(x, "getYField", js.undefined)
     
     @scala.inline
-    def deleteGetYAxis: Self = this.set("getYAxis", js.undefined)
+    def setProvideLegendInfo(value: /* target */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "provideLegendInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetYField(value: () => String): Self = this.set("getYField", js.Any.fromFunction0(value))
+    def setProvideLegendInfoUndefined: Self = StObject.set(x, "provideLegendInfo", js.undefined)
     
     @scala.inline
-    def deleteGetYField: Self = this.set("getYField", js.undefined)
+    def setSetXAxis(value: /* xAxis */ js.UndefOr[IAxis] => Unit): Self = StObject.set(x, "setXAxis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProvideLegendInfo(value: /* target */ js.UndefOr[js.Any] => Unit): Self = this.set("provideLegendInfo", js.Any.fromFunction1(value))
+    def setSetXAxisUndefined: Self = StObject.set(x, "setXAxis", js.undefined)
     
     @scala.inline
-    def deleteProvideLegendInfo: Self = this.set("provideLegendInfo", js.undefined)
+    def setSetXField(value: /* xField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setXField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetXAxis(value: /* xAxis */ js.UndefOr[IAxis] => Unit): Self = this.set("setXAxis", js.Any.fromFunction1(value))
+    def setSetXFieldUndefined: Self = StObject.set(x, "setXField", js.undefined)
     
     @scala.inline
-    def deleteSetXAxis: Self = this.set("setXAxis", js.undefined)
+    def setSetYAxis(value: /* yAxis */ js.UndefOr[IAxis] => Unit): Self = StObject.set(x, "setYAxis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetXField(value: /* xField */ js.UndefOr[String] => Unit): Self = this.set("setXField", js.Any.fromFunction1(value))
+    def setSetYAxisUndefined: Self = StObject.set(x, "setYAxis", js.undefined)
     
     @scala.inline
-    def deleteSetXField: Self = this.set("setXField", js.undefined)
+    def setSetYField(value: /* yField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setYField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetYAxis(value: /* yAxis */ js.UndefOr[IAxis] => Unit): Self = this.set("setYAxis", js.Any.fromFunction1(value))
+    def setSetYFieldUndefined: Self = StObject.set(x, "setYField", js.undefined)
     
     @scala.inline
-    def deleteSetYAxis: Self = this.set("setYAxis", js.undefined)
+    def setXAxis(value: IAxis): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetYField(value: /* yField */ js.UndefOr[String] => Unit): Self = this.set("setYField", js.Any.fromFunction1(value))
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def deleteSetYField: Self = this.set("setYField", js.undefined)
+    def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: IAxis): Self = this.set("xAxis", value.asInstanceOf[js.Any])
+    def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
     
     @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
+    def setYAxis(value: IAxis): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXField(value: String): Self = this.set("xField", value.asInstanceOf[js.Any])
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
     @scala.inline
-    def deleteXField: Self = this.set("xField", js.undefined)
+    def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYAxis(value: IAxis): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
-    
-    @scala.inline
-    def setYField(value: String): Self = this.set("yField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYField: Self = this.set("yField", js.undefined)
+    def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
   }
 }

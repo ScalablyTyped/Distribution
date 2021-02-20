@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressDetail extends js.Object {
+trait ProgressDetail extends StObject {
   
   /**
     * The current progress status.  Validating  Validating the deployment.  DownloadingExtracting  Downloading and extracting the bundle on the robot.  ExecutingPreLaunch  Executing pre-launch script(s) if provided.  Launching  Launching the robot application.  ExecutingPostLaunch  Executing post-launch script(s) if provided.  Finished  Deployment is complete.  
@@ -36,42 +37,30 @@ object ProgressDetail {
   }
   
   @scala.inline
-  implicit class ProgressDetailOps[Self <: ProgressDetail] (val x: Self) extends AnyVal {
+  implicit class ProgressDetailMutableBuilder[Self <: ProgressDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentProgress(value: RobotDeploymentStep): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentProgressUndefined: Self = StObject.set(x, "currentProgress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEstimatedTimeRemainingSeconds(value: GenericInteger): Self = StObject.set(x, "estimatedTimeRemainingSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentProgress(value: RobotDeploymentStep): Self = this.set("currentProgress", value.asInstanceOf[js.Any])
+    def setEstimatedTimeRemainingSecondsUndefined: Self = StObject.set(x, "estimatedTimeRemainingSeconds", js.undefined)
     
     @scala.inline
-    def deleteCurrentProgress: Self = this.set("currentProgress", js.undefined)
+    def setPercentDone(value: PercentDone): Self = StObject.set(x, "percentDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedTimeRemainingSeconds(value: GenericInteger): Self = this.set("estimatedTimeRemainingSeconds", value.asInstanceOf[js.Any])
+    def setPercentDoneUndefined: Self = StObject.set(x, "percentDone", js.undefined)
     
     @scala.inline
-    def deleteEstimatedTimeRemainingSeconds: Self = this.set("estimatedTimeRemainingSeconds", js.undefined)
+    def setTargetResource(value: GenericString): Self = StObject.set(x, "targetResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentDone(value: PercentDone): Self = this.set("percentDone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentDone: Self = this.set("percentDone", js.undefined)
-    
-    @scala.inline
-    def setTargetResource(value: GenericString): Self = this.set("targetResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResource: Self = this.set("targetResource", js.undefined)
+    def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorMetadata extends js.Object {
+trait ConnectorMetadata extends StObject {
   
   /**
     *  The connector metadata specific to Amplitude. 
@@ -101,120 +102,108 @@ object ConnectorMetadata {
   }
   
   @scala.inline
-  implicit class ConnectorMetadataOps[Self <: ConnectorMetadata] (val x: Self) extends AnyVal {
+  implicit class ConnectorMetadataMutableBuilder[Self <: ConnectorMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmplitude(value: AmplitudeMetadata): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatadog(value: DatadogMetadata): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmplitude(value: AmplitudeMetadata): Self = this.set("Amplitude", value.asInstanceOf[js.Any])
+    def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
     
     @scala.inline
-    def deleteAmplitude: Self = this.set("Amplitude", js.undefined)
+    def setDynatrace(value: DynatraceMetadata): Self = StObject.set(x, "Dynatrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatadog(value: DatadogMetadata): Self = this.set("Datadog", value.asInstanceOf[js.Any])
+    def setDynatraceUndefined: Self = StObject.set(x, "Dynatrace", js.undefined)
     
     @scala.inline
-    def deleteDatadog: Self = this.set("Datadog", js.undefined)
+    def setEventBridge(value: EventBridgeMetadata): Self = StObject.set(x, "EventBridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynatrace(value: DynatraceMetadata): Self = this.set("Dynatrace", value.asInstanceOf[js.Any])
+    def setEventBridgeUndefined: Self = StObject.set(x, "EventBridge", js.undefined)
     
     @scala.inline
-    def deleteDynatrace: Self = this.set("Dynatrace", js.undefined)
+    def setGoogleAnalytics(value: GoogleAnalyticsMetadata): Self = StObject.set(x, "GoogleAnalytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBridge(value: EventBridgeMetadata): Self = this.set("EventBridge", value.asInstanceOf[js.Any])
+    def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
     @scala.inline
-    def deleteEventBridge: Self = this.set("EventBridge", js.undefined)
+    def setInforNexus(value: InforNexusMetadata): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAnalytics(value: GoogleAnalyticsMetadata): Self = this.set("GoogleAnalytics", value.asInstanceOf[js.Any])
+    def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
     
     @scala.inline
-    def deleteGoogleAnalytics: Self = this.set("GoogleAnalytics", js.undefined)
+    def setMarketo(value: MarketoMetadata): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInforNexus(value: InforNexusMetadata): Self = this.set("InforNexus", value.asInstanceOf[js.Any])
+    def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
     
     @scala.inline
-    def deleteInforNexus: Self = this.set("InforNexus", js.undefined)
+    def setRedshift(value: RedshiftMetadata): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketo(value: MarketoMetadata): Self = this.set("Marketo", value.asInstanceOf[js.Any])
+    def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
     
     @scala.inline
-    def deleteMarketo: Self = this.set("Marketo", js.undefined)
+    def setS3(value: S3Metadata): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshift(value: RedshiftMetadata): Self = this.set("Redshift", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
     @scala.inline
-    def deleteRedshift: Self = this.set("Redshift", js.undefined)
+    def setSalesforce(value: SalesforceMetadata): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3(value: S3Metadata): Self = this.set("S3", value.asInstanceOf[js.Any])
+    def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
     
     @scala.inline
-    def deleteS3: Self = this.set("S3", js.undefined)
+    def setServiceNow(value: ServiceNowMetadata): Self = StObject.set(x, "ServiceNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforce(value: SalesforceMetadata): Self = this.set("Salesforce", value.asInstanceOf[js.Any])
+    def setServiceNowUndefined: Self = StObject.set(x, "ServiceNow", js.undefined)
     
     @scala.inline
-    def deleteSalesforce: Self = this.set("Salesforce", js.undefined)
+    def setSingular(value: SingularMetadata): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNow(value: ServiceNowMetadata): Self = this.set("ServiceNow", value.asInstanceOf[js.Any])
+    def setSingularUndefined: Self = StObject.set(x, "Singular", js.undefined)
     
     @scala.inline
-    def deleteServiceNow: Self = this.set("ServiceNow", js.undefined)
+    def setSlack(value: SlackMetadata): Self = StObject.set(x, "Slack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingular(value: SingularMetadata): Self = this.set("Singular", value.asInstanceOf[js.Any])
+    def setSlackUndefined: Self = StObject.set(x, "Slack", js.undefined)
     
     @scala.inline
-    def deleteSingular: Self = this.set("Singular", js.undefined)
+    def setSnowflake(value: SnowflakeMetadata): Self = StObject.set(x, "Snowflake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlack(value: SlackMetadata): Self = this.set("Slack", value.asInstanceOf[js.Any])
+    def setSnowflakeUndefined: Self = StObject.set(x, "Snowflake", js.undefined)
     
     @scala.inline
-    def deleteSlack: Self = this.set("Slack", js.undefined)
+    def setTrendmicro(value: TrendmicroMetadata): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnowflake(value: SnowflakeMetadata): Self = this.set("Snowflake", value.asInstanceOf[js.Any])
+    def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
     
     @scala.inline
-    def deleteSnowflake: Self = this.set("Snowflake", js.undefined)
+    def setVeeva(value: VeevaMetadata): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendmicro(value: TrendmicroMetadata): Self = this.set("Trendmicro", value.asInstanceOf[js.Any])
+    def setVeevaUndefined: Self = StObject.set(x, "Veeva", js.undefined)
     
     @scala.inline
-    def deleteTrendmicro: Self = this.set("Trendmicro", js.undefined)
+    def setZendesk(value: ZendeskMetadata): Self = StObject.set(x, "Zendesk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVeeva(value: VeevaMetadata): Self = this.set("Veeva", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVeeva: Self = this.set("Veeva", js.undefined)
-    
-    @scala.inline
-    def setZendesk(value: ZendeskMetadata): Self = this.set("Zendesk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZendesk: Self = this.set("Zendesk", js.undefined)
+    def setZendeskUndefined: Self = StObject.set(x, "Zendesk", js.undefined)
   }
 }

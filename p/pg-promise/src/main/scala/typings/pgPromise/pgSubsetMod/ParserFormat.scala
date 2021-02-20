@@ -1,5 +1,6 @@
 package typings.pgPromise.pgSubsetMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pgPromise.pgPromiseStrings.text
   - typings.pgPromise.pgPromiseStrings.binary
 */
-trait ParserFormat extends js.Object
+trait ParserFormat extends StObject
 object ParserFormat {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PagerMessages extends js.Object {
+trait PagerMessages extends StObject {
   
   var allPages: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object PagerMessages {
   }
   
   @scala.inline
-  implicit class PagerMessagesOps[Self <: PagerMessages] (val x: Self) extends AnyVal {
+  implicit class PagerMessagesMutableBuilder[Self <: PagerMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllPages(value: String): Self = StObject.set(x, "allPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllPagesUndefined: Self = StObject.set(x, "allPages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllPages(value: String): Self = this.set("allPages", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def deleteAllPages: Self = this.set("allPages", js.undefined)
+    def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: String): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setItemsPerPage(value: String): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: String): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsPerPage(value: String): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: String): Self = this.set("last", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setOf(value: String): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOf(value: String): Self = this.set("of", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteOf: Self = this.set("of", js.undefined)
+    def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: String): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setRefresh(value: String): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious(value: String): Self = this.set("previous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevious: Self = this.set("previous", js.undefined)
-    
-    @scala.inline
-    def setRefresh(value: String): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

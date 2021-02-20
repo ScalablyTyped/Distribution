@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the American Association of Motor Vehicle Administrators (AAMVA) card data from the AamvaCardDataReceived event. */
 @js.native
-trait MagneticStripeReaderAamvaCardDataReceivedEventArgs extends js.Object {
+trait MagneticStripeReaderAamvaCardDataReceivedEventArgs extends StObject {
   
   /** Gets the address from the swiped AAMVA card. */
   var address: String = js.native
@@ -95,75 +96,63 @@ object MagneticStripeReaderAamvaCardDataReceivedEventArgs {
   }
   
   @scala.inline
-  implicit class MagneticStripeReaderAamvaCardDataReceivedEventArgsOps[Self <: MagneticStripeReaderAamvaCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class MagneticStripeReaderAamvaCardDataReceivedEventArgsMutableBuilder[Self <: MagneticStripeReaderAamvaCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBirthDate(value: String): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirthDate(value: String): Self = this.set("birthDate", value.asInstanceOf[js.Any])
+    def setEndorsements(value: String): Self = StObject.set(x, "endorsements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setEyeColor(value: String): Self = StObject.set(x, "eyeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndorsements(value: String): Self = this.set("endorsements", value.asInstanceOf[js.Any])
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: String): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEyeColor(value: String): Self = this.set("eyeColor", value.asInstanceOf[js.Any])
+    def setHairColor(value: String): Self = StObject.set(x, "hairColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setLicenseNumber(value: String): Self = StObject.set(x, "licenseNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHairColor(value: String): Self = this.set("hairColor", value.asInstanceOf[js.Any])
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseNumber(value: String): Self = this.set("licenseNumber", value.asInstanceOf[js.Any])
+    def setRestrictions(value: String): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReport(value: MagneticStripeReaderReport): Self = this.set("report", value.asInstanceOf[js.Any])
+    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictions(value: String): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurname(value: String): Self = this.set("surname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: String): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

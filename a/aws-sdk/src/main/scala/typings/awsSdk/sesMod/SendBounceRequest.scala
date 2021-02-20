@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendBounceRequest extends js.Object {
+trait SendBounceRequest extends StObject {
   
   /**
     * The address to use in the "From" header of the bounce message. This must be an identity that you have verified with Amazon SES.
@@ -50,48 +51,36 @@ object SendBounceRequest {
   }
   
   @scala.inline
-  implicit class SendBounceRequestOps[Self <: SendBounceRequest] (val x: Self) extends AnyVal {
+  implicit class SendBounceRequestMutableBuilder[Self <: SendBounceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounceSender(value: Address): Self = StObject.set(x, "BounceSender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBounceSenderArn(value: AmazonResourceName): Self = StObject.set(x, "BounceSenderArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounceSenderArnUndefined: Self = StObject.set(x, "BounceSenderArn", js.undefined)
     
     @scala.inline
-    def setBounceSender(value: Address): Self = this.set("BounceSender", value.asInstanceOf[js.Any])
+    def setBouncedRecipientInfoList(value: BouncedRecipientInfoList): Self = StObject.set(x, "BouncedRecipientInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBouncedRecipientInfoListVarargs(value: BouncedRecipientInfo*): Self = this.set("BouncedRecipientInfoList", js.Array(value :_*))
+    def setBouncedRecipientInfoListVarargs(value: BouncedRecipientInfo*): Self = StObject.set(x, "BouncedRecipientInfoList", js.Array(value :_*))
     
     @scala.inline
-    def setBouncedRecipientInfoList(value: BouncedRecipientInfoList): Self = this.set("BouncedRecipientInfoList", value.asInstanceOf[js.Any])
+    def setExplanation(value: Explanation): Self = StObject.set(x, "Explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalMessageId(value: MessageId): Self = this.set("OriginalMessageId", value.asInstanceOf[js.Any])
+    def setExplanationUndefined: Self = StObject.set(x, "Explanation", js.undefined)
     
     @scala.inline
-    def setBounceSenderArn(value: AmazonResourceName): Self = this.set("BounceSenderArn", value.asInstanceOf[js.Any])
+    def setMessageDsn(value: MessageDsn): Self = StObject.set(x, "MessageDsn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounceSenderArn: Self = this.set("BounceSenderArn", js.undefined)
+    def setMessageDsnUndefined: Self = StObject.set(x, "MessageDsn", js.undefined)
     
     @scala.inline
-    def setExplanation(value: Explanation): Self = this.set("Explanation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExplanation: Self = this.set("Explanation", js.undefined)
-    
-    @scala.inline
-    def setMessageDsn(value: MessageDsn): Self = this.set("MessageDsn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageDsn: Self = this.set("MessageDsn", js.undefined)
+    def setOriginalMessageId(value: MessageId): Self = StObject.set(x, "OriginalMessageId", value.asInstanceOf[js.Any])
   }
 }

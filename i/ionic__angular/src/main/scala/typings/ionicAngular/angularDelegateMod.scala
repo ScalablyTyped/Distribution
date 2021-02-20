@@ -8,32 +8,16 @@ import typings.angularCore.mod.ViewContainerRef
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.std.HTMLElement
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/providers/angular-delegate", JSImport.Namespace)
-@js.native
-object angularDelegateMod extends js.Object {
+object angularDelegateMod {
   
-  def attachView(
-    zone: NgZone,
-    resolver: ComponentFactoryResolver,
-    injector: Injector,
-    location: ViewContainerRef,
-    appRef: ApplicationRef,
-    elRefMap: WeakMap[HTMLElement, _],
-    elEventsMap: WeakMap[HTMLElement, js.Function0[Unit]],
-    container: js.Any,
-    component: js.Any,
-    params: js.Any,
-    cssClasses: js.Array[String]
-  ): js.Any = js.native
-  
-  def bindLifecycleEvents(zone: NgZone, instance: js.Any, element: HTMLElement): js.Function0[Unit] = js.native
-  
+  @JSImport("@ionic/angular/providers/angular-delegate", "AngularDelegate")
   @js.native
-  class AngularDelegate protected () extends js.Object {
+  class AngularDelegate protected () extends StObject {
     def this(zone: NgZone, appRef: ApplicationRef) = this()
     
     var appRef: js.Any = js.native
@@ -44,6 +28,7 @@ object angularDelegateMod extends js.Object {
     var zone: js.Any = js.native
   }
   
+  @JSImport("@ionic/angular/providers/angular-delegate", "AngularFrameworkDelegate")
   @js.native
   class AngularFrameworkDelegate protected () extends FrameworkDelegate {
     def this(
@@ -75,4 +60,24 @@ object angularDelegateMod extends js.Object {
     
     var zone: js.Any = js.native
   }
+  
+  @JSImport("@ionic/angular/providers/angular-delegate", "attachView")
+  @js.native
+  def attachView(
+    zone: NgZone,
+    resolver: ComponentFactoryResolver,
+    injector: Injector,
+    location: ViewContainerRef,
+    appRef: ApplicationRef,
+    elRefMap: WeakMap[HTMLElement, _],
+    elEventsMap: WeakMap[HTMLElement, js.Function0[Unit]],
+    container: js.Any,
+    component: js.Any,
+    params: js.Any,
+    cssClasses: js.Array[String]
+  ): js.Any = js.native
+  
+  @JSImport("@ionic/angular/providers/angular-delegate", "bindLifecycleEvents")
+  @js.native
+  def bindLifecycleEvents(zone: NgZone, instance: js.Any, element: HTMLElement): js.Function0[Unit] = js.native
 }

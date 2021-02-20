@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   */
 @js.native
-trait InjectStreamConfig extends js.Object {
+trait InjectStreamConfig extends StObject {
   
   /**
     * Audio bitrate of the added stream to the broadcast.
@@ -106,66 +107,54 @@ object InjectStreamConfig {
   }
   
   @scala.inline
-  implicit class InjectStreamConfigOps[Self <: InjectStreamConfig] (val x: Self) extends AnyVal {
+  implicit class InjectStreamConfigMutableBuilder[Self <: InjectStreamConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioBitrate(value: Double): Self = StObject.set(x, "audioBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioBitrateUndefined: Self = StObject.set(x, "audioBitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioChannels(value: Double): Self = StObject.set(x, "audioChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBitrate(value: Double): Self = this.set("audioBitrate", value.asInstanceOf[js.Any])
+    def setAudioChannelsUndefined: Self = StObject.set(x, "audioChannels", js.undefined)
     
     @scala.inline
-    def deleteAudioBitrate: Self = this.set("audioBitrate", js.undefined)
+    def setAudioSampleRate(value: Double): Self = StObject.set(x, "audioSampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioChannels(value: Double): Self = this.set("audioChannels", value.asInstanceOf[js.Any])
+    def setAudioSampleRateUndefined: Self = StObject.set(x, "audioSampleRate", js.undefined)
     
     @scala.inline
-    def deleteAudioChannels: Self = this.set("audioChannels", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioSampleRate(value: Double): Self = this.set("audioSampleRate", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteAudioSampleRate: Self = this.set("audioSampleRate", js.undefined)
+    def setVideoBitrate(value: Double): Self = StObject.set(x, "videoBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setVideoBitrateUndefined: Self = StObject.set(x, "videoBitrate", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setVideoFramerate(value: Double): Self = StObject.set(x, "videoFramerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoBitrate(value: Double): Self = this.set("videoBitrate", value.asInstanceOf[js.Any])
+    def setVideoFramerateUndefined: Self = StObject.set(x, "videoFramerate", js.undefined)
     
     @scala.inline
-    def deleteVideoBitrate: Self = this.set("videoBitrate", js.undefined)
+    def setVideoGop(value: Double): Self = StObject.set(x, "videoGop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoFramerate(value: Double): Self = this.set("videoFramerate", value.asInstanceOf[js.Any])
+    def setVideoGopUndefined: Self = StObject.set(x, "videoGop", js.undefined)
     
     @scala.inline
-    def deleteVideoFramerate: Self = this.set("videoFramerate", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoGop(value: Double): Self = this.set("videoGop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoGop: Self = this.set("videoGop", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

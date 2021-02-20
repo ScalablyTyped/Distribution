@@ -1,12 +1,13 @@
 package typings.mssql.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IResult[T] extends js.Object {
+trait IResult[T] extends StObject {
   
   var output: StringDictionary[js.Any] = js.native
   
@@ -30,36 +31,24 @@ object IResult {
   }
   
   @scala.inline
-  implicit class IResultOps[Self <: IResult[_], T] (val x: Self with IResult[T]) extends AnyVal {
+  implicit class IResultMutableBuilder[Self <: IResult[_], T] (val x: Self with IResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutput(value: StringDictionary[js.Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecordset(value: IRecordSet[T]): Self = StObject.set(x, "recordset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordsets(value: js.Array[IRecordSet[T]]): Self = StObject.set(x, "recordsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: StringDictionary[js.Any]): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setRecordsetsVarargs(value: IRecordSet[T]*): Self = StObject.set(x, "recordsets", js.Array(value :_*))
     
     @scala.inline
-    def setRecordset(value: IRecordSet[T]): Self = this.set("recordset", value.asInstanceOf[js.Any])
+    def setRowsAffected(value: js.Array[Double]): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsetsVarargs(value: IRecordSet[T]*): Self = this.set("recordsets", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecordsets(value: js.Array[IRecordSet[T]]): Self = this.set("recordsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsAffectedVarargs(value: Double*): Self = this.set("rowsAffected", js.Array(value :_*))
-    
-    @scala.inline
-    def setRowsAffected(value: js.Array[Double]): Self = this.set("rowsAffected", value.asInstanceOf[js.Any])
+    def setRowsAffectedVarargs(value: Double*): Self = StObject.set(x, "rowsAffected", js.Array(value :_*))
   }
 }

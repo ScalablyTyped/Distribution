@@ -6,6 +6,7 @@ import typings.stellarBase.mod.Signer.Ed25519PublicKey
 import typings.stellarBase.mod.Signer.PreAuthTx
 import typings.stellarBase.mod.Signer.Sha256Hash
 import typings.stellarBase.mod.SignerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,69 +42,57 @@ object SetOptions_ {
   }
   
   @scala.inline
-  implicit class SetOptions_Ops[Self <: SetOptions_[_], T /* <: SignerOptions */] (val x: Self with SetOptions_[T]) extends AnyVal {
+  implicit class SetOptions_MutableBuilder[Self <: SetOptions_[_], T /* <: SignerOptions */] (val x: Self with SetOptions_[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearFlags(value: AuthFlag): Self = StObject.set(x, "clearFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearFlagsUndefined: Self = StObject.set(x, "clearFlags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighThreshold(value: Double): Self = StObject.set(x, "highThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigner(value: PreAuthTx | Sha256Hash | Ed25519PublicKey): Self = this.set("signer", value.asInstanceOf[js.Any])
+    def setHighThresholdUndefined: Self = StObject.set(x, "highThreshold", js.undefined)
     
     @scala.inline
-    def setClearFlags(value: AuthFlag): Self = this.set("clearFlags", value.asInstanceOf[js.Any])
+    def setHomeDomain(value: String): Self = StObject.set(x, "homeDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearFlags: Self = this.set("clearFlags", js.undefined)
+    def setHomeDomainUndefined: Self = StObject.set(x, "homeDomain", js.undefined)
     
     @scala.inline
-    def setHighThreshold(value: Double): Self = this.set("highThreshold", value.asInstanceOf[js.Any])
+    def setInflationDest(value: String): Self = StObject.set(x, "inflationDest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighThreshold: Self = this.set("highThreshold", js.undefined)
+    def setInflationDestUndefined: Self = StObject.set(x, "inflationDest", js.undefined)
     
     @scala.inline
-    def setHomeDomain(value: String): Self = this.set("homeDomain", value.asInstanceOf[js.Any])
+    def setLowThreshold(value: Double): Self = StObject.set(x, "lowThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHomeDomain: Self = this.set("homeDomain", js.undefined)
+    def setLowThresholdUndefined: Self = StObject.set(x, "lowThreshold", js.undefined)
     
     @scala.inline
-    def setInflationDest(value: String): Self = this.set("inflationDest", value.asInstanceOf[js.Any])
+    def setMasterWeight(value: Double): Self = StObject.set(x, "masterWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInflationDest: Self = this.set("inflationDest", js.undefined)
+    def setMasterWeightUndefined: Self = StObject.set(x, "masterWeight", js.undefined)
     
     @scala.inline
-    def setLowThreshold(value: Double): Self = this.set("lowThreshold", value.asInstanceOf[js.Any])
+    def setMedThreshold(value: Double): Self = StObject.set(x, "medThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLowThreshold: Self = this.set("lowThreshold", js.undefined)
+    def setMedThresholdUndefined: Self = StObject.set(x, "medThreshold", js.undefined)
     
     @scala.inline
-    def setMasterWeight(value: Double): Self = this.set("masterWeight", value.asInstanceOf[js.Any])
+    def setSetFlags(value: AuthFlag): Self = StObject.set(x, "setFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterWeight: Self = this.set("masterWeight", js.undefined)
+    def setSetFlagsUndefined: Self = StObject.set(x, "setFlags", js.undefined)
     
     @scala.inline
-    def setMedThreshold(value: Double): Self = this.set("medThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedThreshold: Self = this.set("medThreshold", js.undefined)
-    
-    @scala.inline
-    def setSetFlags(value: AuthFlag): Self = this.set("setFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetFlags: Self = this.set("setFlags", js.undefined)
+    def setSigner(value: PreAuthTx | Sha256Hash | Ed25519PublicKey): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
   }
 }

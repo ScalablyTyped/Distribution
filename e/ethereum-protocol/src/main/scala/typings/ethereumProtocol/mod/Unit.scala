@@ -1,5 +1,6 @@
 package typings.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ethereumProtocol.ethereumProtocolStrings.gether
   - typings.ethereumProtocol.ethereumProtocolStrings.tether
 */
-trait Unit extends js.Object
+trait Unit extends StObject
 object Unit {
   
   @scala.inline

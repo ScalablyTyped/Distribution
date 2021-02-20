@@ -1,11 +1,12 @@
 package typings.baseui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NextPageNumber extends js.Object {
+trait NextPageNumber extends StObject {
   
   var nextPage: Double = js.native
 }
@@ -18,21 +19,9 @@ object NextPageNumber {
   }
   
   @scala.inline
-  implicit class NextPageNumberOps[Self <: NextPageNumber] (val x: Self) extends AnyVal {
+  implicit class NextPageNumberMutableBuilder[Self <: NextPageNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNextPage(value: Double): Self = this.set("nextPage", value.asInstanceOf[js.Any])
+    def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
   }
 }

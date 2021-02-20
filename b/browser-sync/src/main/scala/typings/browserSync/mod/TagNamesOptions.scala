@@ -1,11 +1,12 @@
 package typings.browserSync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagNamesOptions extends js.Object {
+trait TagNamesOptions extends StObject {
   
   var css: js.UndefOr[String] = js.native
   
@@ -35,72 +36,60 @@ object TagNamesOptions {
   }
   
   @scala.inline
-  implicit class TagNamesOptionsOps[Self <: TagNamesOptions] (val x: Self) extends AnyVal {
+  implicit class TagNamesOptionsMutableBuilder[Self <: TagNamesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGif(value: String): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setGifUndefined: Self = StObject.set(x, "gif", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setJpeg(value: String): Self = StObject.set(x, "jpeg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGif(value: String): Self = this.set("gif", value.asInstanceOf[js.Any])
+    def setJpegUndefined: Self = StObject.set(x, "jpeg", js.undefined)
     
     @scala.inline
-    def deleteGif: Self = this.set("gif", js.undefined)
+    def setJpg(value: String): Self = StObject.set(x, "jpg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJpeg(value: String): Self = this.set("jpeg", value.asInstanceOf[js.Any])
+    def setJpgUndefined: Self = StObject.set(x, "jpg", js.undefined)
     
     @scala.inline
-    def deleteJpeg: Self = this.set("jpeg", js.undefined)
+    def setJs_(value: String): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJpg(value: String): Self = this.set("jpg", value.asInstanceOf[js.Any])
+    def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
     
     @scala.inline
-    def deleteJpg: Self = this.set("jpg", js.undefined)
+    def setLess(value: String): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJs_(value: String): Self = this.set("js", value.asInstanceOf[js.Any])
+    def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
     
     @scala.inline
-    def deleteJs_ : Self = this.set("js", js.undefined)
+    def setPng(value: String): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLess(value: String): Self = this.set("less", value.asInstanceOf[js.Any])
+    def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
     
     @scala.inline
-    def deleteLess: Self = this.set("less", js.undefined)
+    def setScss(value: String): Self = StObject.set(x, "scss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPng(value: String): Self = this.set("png", value.asInstanceOf[js.Any])
+    def setScssUndefined: Self = StObject.set(x, "scss", js.undefined)
     
     @scala.inline
-    def deletePng: Self = this.set("png", js.undefined)
+    def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScss(value: String): Self = this.set("scss", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScss: Self = this.set("scss", js.undefined)
-    
-    @scala.inline
-    def setSvg(value: String): Self = this.set("svg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
   }
 }

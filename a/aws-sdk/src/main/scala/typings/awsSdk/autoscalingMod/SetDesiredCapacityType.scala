@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetDesiredCapacityType extends js.Object {
+trait SetDesiredCapacityType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -31,30 +32,18 @@ object SetDesiredCapacityType {
   }
   
   @scala.inline
-  implicit class SetDesiredCapacityTypeOps[Self <: SetDesiredCapacityType] (val x: Self) extends AnyVal {
+  implicit class SetDesiredCapacityTypeMutableBuilder[Self <: SetDesiredCapacityType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHonorCooldown(value: HonorCooldown): Self = StObject.set(x, "HonorCooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = this.set("DesiredCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHonorCooldown(value: HonorCooldown): Self = this.set("HonorCooldown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHonorCooldown: Self = this.set("HonorCooldown", js.undefined)
+    def setHonorCooldownUndefined: Self = StObject.set(x, "HonorCooldown", js.undefined)
   }
 }

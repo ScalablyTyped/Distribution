@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.userMod.User
 import typings.contentfulManagement.userMod.UserProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofuser extends js.Object {
+trait Typeofuser extends StObject {
   
   def wrapUser(http: AxiosInstance, data: UserProps): User = js.native
   
@@ -28,24 +29,12 @@ object Typeofuser {
   }
   
   @scala.inline
-  implicit class TypeofuserOps[Self <: Typeofuser] (val x: Self) extends AnyVal {
+  implicit class TypeofuserMutableBuilder[Self <: Typeofuser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWrapUser(value: (AxiosInstance, UserProps) => User): Self = StObject.set(x, "wrapUser", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapUser(value: (AxiosInstance, UserProps) => User): Self = this.set("wrapUser", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWrapUserCollection(value: (AxiosInstance, CollectionProp[UserProps]) => Collection[User, UserProps]): Self = this.set("wrapUserCollection", js.Any.fromFunction2(value))
+    def setWrapUserCollection(value: (AxiosInstance, CollectionProp[UserProps]) => Collection[User, UserProps]): Self = StObject.set(x, "wrapUserCollection", js.Any.fromFunction2(value))
   }
 }

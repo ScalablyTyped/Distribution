@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for how to upload assets and insert a creative.
   */
 @js.native
-trait SchemaCreativeAssetMetadata extends js.Object {
+trait SchemaCreativeAssetMetadata extends StObject {
   
   /**
     * ID of the creative asset. This is a required field.
@@ -77,69 +78,57 @@ object SchemaCreativeAssetMetadata {
   }
   
   @scala.inline
-  implicit class SchemaCreativeAssetMetadataOps[Self <: SchemaCreativeAssetMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeAssetMetadataMutableBuilder[Self <: SchemaCreativeAssetMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetIdentifier(value: SchemaCreativeAssetId): Self = StObject.set(x, "assetIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetIdentifierUndefined: Self = StObject.set(x, "assetIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickTags(value: js.Array[SchemaClickTag]): Self = StObject.set(x, "clickTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetIdentifier(value: SchemaCreativeAssetId): Self = this.set("assetIdentifier", value.asInstanceOf[js.Any])
+    def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
     
     @scala.inline
-    def deleteAssetIdentifier: Self = this.set("assetIdentifier", js.undefined)
+    def setClickTagsVarargs(value: SchemaClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
     
     @scala.inline
-    def setClickTagsVarargs(value: SchemaClickTag*): Self = this.set("clickTags", js.Array(value :_*))
+    def setDetectedFeatures(value: js.Array[String]): Self = StObject.set(x, "detectedFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickTags(value: js.Array[SchemaClickTag]): Self = this.set("clickTags", value.asInstanceOf[js.Any])
+    def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
     
     @scala.inline
-    def deleteClickTags: Self = this.set("clickTags", js.undefined)
+    def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setDetectedFeaturesVarargs(value: String*): Self = this.set("detectedFeatures", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedFeatures(value: js.Array[String]): Self = this.set("detectedFeatures", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetectedFeatures: Self = this.set("detectedFeatures", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setWarnedValidationRules(value: js.Array[String]): Self = StObject.set(x, "warnedValidationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setWarnedValidationRulesUndefined: Self = StObject.set(x, "warnedValidationRules", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setWarnedValidationRulesVarargs(value: String*): Self = this.set("warnedValidationRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnedValidationRules(value: js.Array[String]): Self = this.set("warnedValidationRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnedValidationRules: Self = this.set("warnedValidationRules", js.undefined)
+    def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value :_*))
   }
 }

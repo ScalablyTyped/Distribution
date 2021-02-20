@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.services
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait ISearchService extends js.Object {
+trait ISearchService extends StObject {
   
   /**
     * @ngdoc method
@@ -83,30 +84,18 @@ object ISearchService {
   }
   
   @scala.inline
-  implicit class ISearchServiceOps[Self <: ISearchService] (val x: Self) extends AnyVal {
+  implicit class ISearchServiceMutableBuilder[Self <: ISearchService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearchAll(value: ISearchArgs => IPromise[_]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = StObject.set(x, "searchContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchMedia(value: ISearchArgs => IPromise[js.Array[ISearchMedia]]): Self = StObject.set(x, "searchMedia", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearchAll(value: ISearchArgs => IPromise[_]): Self = this.set("searchAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = this.set("searchContent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearchMedia(value: ISearchArgs => IPromise[js.Array[ISearchMedia]]): Self = this.set("searchMedia", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearchMembers(value: ISearchArgs => IPromise[js.Array[ISearchMember]]): Self = this.set("searchMembers", js.Any.fromFunction1(value))
+    def setSearchMembers(value: ISearchArgs => IPromise[js.Array[ISearchMember]]): Self = StObject.set(x, "searchMembers", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAbideOptions extends js.Object {
+trait IAbideOptions extends StObject {
   
   var formErrorClass: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object IAbideOptions {
   }
   
   @scala.inline
-  implicit class IAbideOptionsOps[Self <: IAbideOptions] (val x: Self) extends AnyVal {
+  implicit class IAbideOptionsMutableBuilder[Self <: IAbideOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormErrorClass(value: String): Self = StObject.set(x, "formErrorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormErrorClassUndefined: Self = StObject.set(x, "formErrorClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormErrorSelector(value: String): Self = StObject.set(x, "formErrorSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormErrorClass(value: String): Self = this.set("formErrorClass", value.asInstanceOf[js.Any])
+    def setFormErrorSelectorUndefined: Self = StObject.set(x, "formErrorSelector", js.undefined)
     
     @scala.inline
-    def deleteFormErrorClass: Self = this.set("formErrorClass", js.undefined)
+    def setInputErrorClass(value: String): Self = StObject.set(x, "inputErrorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormErrorSelector(value: String): Self = this.set("formErrorSelector", value.asInstanceOf[js.Any])
+    def setInputErrorClassUndefined: Self = StObject.set(x, "inputErrorClass", js.undefined)
     
     @scala.inline
-    def deleteFormErrorSelector: Self = this.set("formErrorSelector", js.undefined)
+    def setLabelErrorClass(value: String): Self = StObject.set(x, "labelErrorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputErrorClass(value: String): Self = this.set("inputErrorClass", value.asInstanceOf[js.Any])
+    def setLabelErrorClassUndefined: Self = StObject.set(x, "labelErrorClass", js.undefined)
     
     @scala.inline
-    def deleteInputErrorClass: Self = this.set("inputErrorClass", js.undefined)
+    def setLiveValidate(value: Boolean): Self = StObject.set(x, "liveValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelErrorClass(value: String): Self = this.set("labelErrorClass", value.asInstanceOf[js.Any])
+    def setLiveValidateUndefined: Self = StObject.set(x, "liveValidate", js.undefined)
     
     @scala.inline
-    def deleteLabelErrorClass: Self = this.set("labelErrorClass", js.undefined)
+    def setValidateOn(value: String): Self = StObject.set(x, "validateOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveValidate(value: Boolean): Self = this.set("liveValidate", value.asInstanceOf[js.Any])
+    def setValidateOnUndefined: Self = StObject.set(x, "validateOn", js.undefined)
     
     @scala.inline
-    def deleteLiveValidate: Self = this.set("liveValidate", js.undefined)
+    def setValidators(value: js.Any): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateOn(value: String): Self = this.set("validateOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOn: Self = this.set("validateOn", js.undefined)
-    
-    @scala.inline
-    def setValidators(value: js.Any): Self = this.set("validators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
   }
 }

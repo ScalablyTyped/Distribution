@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codedeploy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption extends js.Object {
+trait DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption extends StObject {
   
   /**
     * When to reroute traffic from an original environment to a replacement environment in a blue/green deployment.
@@ -28,30 +29,18 @@ object DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption {
   }
   
   @scala.inline
-  implicit class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOps[Self <: DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionMutableBuilder[Self <: DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionOnTimeout(value: String): Self = StObject.set(x, "actionOnTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionOnTimeoutUndefined: Self = StObject.set(x, "actionOnTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWaitTimeInMinutes(value: Double): Self = StObject.set(x, "waitTimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionOnTimeout(value: String): Self = this.set("actionOnTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionOnTimeout: Self = this.set("actionOnTimeout", js.undefined)
-    
-    @scala.inline
-    def setWaitTimeInMinutes(value: Double): Self = this.set("waitTimeInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitTimeInMinutes: Self = this.set("waitTimeInMinutes", js.undefined)
+    def setWaitTimeInMinutesUndefined: Self = StObject.set(x, "waitTimeInMinutes", js.undefined)
   }
 }

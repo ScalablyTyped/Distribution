@@ -1,5 +1,6 @@
 package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gdata
   */
 @js.native
-trait SchemaGdataDiffDownloadResponse extends js.Object {
+trait SchemaGdataDiffDownloadResponse extends StObject {
   
   /**
     * gdata
@@ -24,24 +25,12 @@ object SchemaGdataDiffDownloadResponse {
   }
   
   @scala.inline
-  implicit class SchemaGdataDiffDownloadResponseOps[Self <: SchemaGdataDiffDownloadResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGdataDiffDownloadResponseMutableBuilder[Self <: SchemaGdataDiffDownloadResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectLocation(value: SchemaGdataCompositeMedia): Self = this.set("objectLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectLocation: Self = this.set("objectLocation", js.undefined)
+    def setObjectLocationUndefined: Self = StObject.set(x, "objectLocation", js.undefined)
   }
 }

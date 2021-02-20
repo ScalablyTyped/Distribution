@@ -1,6 +1,7 @@
 package typings.webidl2.mod
 
 import typings.webidl2.webidl2Strings.interface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object InterfaceType {
   }
   
   @scala.inline
-  implicit class InterfaceTypeOps[Self <: InterfaceType] (val x: Self) extends AnyVal {
+  implicit class InterfaceTypeMutableBuilder[Self <: InterfaceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInheritanceNull: Self = StObject.set(x, "inheritance", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembers(value: js.Array[IDLInterfaceMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembersVarargs(value: IDLInterfaceMemberType*): Self = this.set("members", js.Array(value :_*))
+    def setMembersVarargs(value: IDLInterfaceMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembers(value: js.Array[IDLInterfaceMemberType]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Null): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: interface): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInheritance(value: String): Self = this.set("inheritance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInheritanceNull: Self = this.set("inheritance", null)
+    def setType(value: interface): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

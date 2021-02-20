@@ -1,14 +1,15 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapPopupControlCloseReason extends js.Object
+sealed trait BootstrapPopupControlCloseReason extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapPopupControlCloseReason")
 @js.native
-object BootstrapPopupControlCloseReason extends js.Object {
+object BootstrapPopupControlCloseReason extends StObject {
   
   @js.native
   sealed trait API extends BootstrapPopupControlCloseReason

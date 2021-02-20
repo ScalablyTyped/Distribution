@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DialAppStopResult extends js.Object
+sealed trait DialAppStopResult extends StObject
 /** The result of attempting to stop an app from running on a remote device. */
 @JSGlobal("Windows.Media.DialProtocol.DialAppStopResult")
 @js.native
-object DialAppStopResult extends js.Object {
+object DialAppStopResult extends StObject {
   
   /** An error occurred while attempting to retrieve the state. */
   @js.native

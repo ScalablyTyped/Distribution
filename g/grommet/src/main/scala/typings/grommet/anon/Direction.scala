@@ -2,12 +2,13 @@ package typings.grommet.anon
 
 import typings.grommet.grommetStrings.asc
 import typings.grommet.grommetStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Direction extends js.Object {
+trait Direction extends StObject {
   
   var direction: asc | desc = js.native
   
@@ -24,30 +25,18 @@ object Direction {
   }
   
   @scala.inline
-  implicit class DirectionOps[Self <: Direction] (val x: Self) extends AnyVal {
+  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
     @scala.inline
-    def setDirection(value: asc | desc): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExternal(value: Boolean): Self = this.set("external", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternal: Self = this.set("external", js.undefined)
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

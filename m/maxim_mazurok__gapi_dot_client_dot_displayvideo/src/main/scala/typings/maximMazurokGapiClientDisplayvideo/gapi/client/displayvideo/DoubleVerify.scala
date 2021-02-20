@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleVerify extends js.Object {
+trait DoubleVerify extends StObject {
   
   /** Avoid bidding on apps with the star ratings. */
   var appStarRating: js.UndefOr[DoubleVerifyAppStarRating] = js.native
@@ -40,63 +41,51 @@ object DoubleVerify {
   }
   
   @scala.inline
-  implicit class DoubleVerifyOps[Self <: DoubleVerify] (val x: Self) extends AnyVal {
+  implicit class DoubleVerifyMutableBuilder[Self <: DoubleVerify] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppStarRating(value: DoubleVerifyAppStarRating): Self = StObject.set(x, "appStarRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppStarRatingUndefined: Self = StObject.set(x, "appStarRating", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidedAgeRatings(value: js.Array[String]): Self = StObject.set(x, "avoidedAgeRatings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppStarRating(value: DoubleVerifyAppStarRating): Self = this.set("appStarRating", value.asInstanceOf[js.Any])
+    def setAvoidedAgeRatingsUndefined: Self = StObject.set(x, "avoidedAgeRatings", js.undefined)
     
     @scala.inline
-    def deleteAppStarRating: Self = this.set("appStarRating", js.undefined)
+    def setAvoidedAgeRatingsVarargs(value: String*): Self = StObject.set(x, "avoidedAgeRatings", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidedAgeRatingsVarargs(value: String*): Self = this.set("avoidedAgeRatings", js.Array(value :_*))
+    def setBrandSafetyCategories(value: DoubleVerifyBrandSafetyCategories): Self = StObject.set(x, "brandSafetyCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidedAgeRatings(value: js.Array[String]): Self = this.set("avoidedAgeRatings", value.asInstanceOf[js.Any])
+    def setBrandSafetyCategoriesUndefined: Self = StObject.set(x, "brandSafetyCategories", js.undefined)
     
     @scala.inline
-    def deleteAvoidedAgeRatings: Self = this.set("avoidedAgeRatings", js.undefined)
+    def setCustomSegmentId(value: String): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandSafetyCategories(value: DoubleVerifyBrandSafetyCategories): Self = this.set("brandSafetyCategories", value.asInstanceOf[js.Any])
+    def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
     
     @scala.inline
-    def deleteBrandSafetyCategories: Self = this.set("brandSafetyCategories", js.undefined)
+    def setDisplayViewability(value: DoubleVerifyDisplayViewability): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSegmentId(value: String): Self = this.set("customSegmentId", value.asInstanceOf[js.Any])
+    def setDisplayViewabilityUndefined: Self = StObject.set(x, "displayViewability", js.undefined)
     
     @scala.inline
-    def deleteCustomSegmentId: Self = this.set("customSegmentId", js.undefined)
+    def setFraudInvalidTraffic(value: DoubleVerifyFraudInvalidTraffic): Self = StObject.set(x, "fraudInvalidTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayViewability(value: DoubleVerifyDisplayViewability): Self = this.set("displayViewability", value.asInstanceOf[js.Any])
+    def setFraudInvalidTrafficUndefined: Self = StObject.set(x, "fraudInvalidTraffic", js.undefined)
     
     @scala.inline
-    def deleteDisplayViewability: Self = this.set("displayViewability", js.undefined)
+    def setVideoViewability(value: DoubleVerifyVideoViewability): Self = StObject.set(x, "videoViewability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFraudInvalidTraffic(value: DoubleVerifyFraudInvalidTraffic): Self = this.set("fraudInvalidTraffic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFraudInvalidTraffic: Self = this.set("fraudInvalidTraffic", js.undefined)
-    
-    @scala.inline
-    def setVideoViewability(value: DoubleVerifyVideoViewability): Self = this.set("videoViewability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoViewability: Self = this.set("videoViewability", js.undefined)
+    def setVideoViewabilityUndefined: Self = StObject.set(x, "videoViewability", js.undefined)
   }
 }

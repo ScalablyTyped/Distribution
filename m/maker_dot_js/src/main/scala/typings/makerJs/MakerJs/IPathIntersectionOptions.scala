@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object IPathIntersectionOptions {
   }
   
   @scala.inline
-  implicit class IPathIntersectionOptionsOps[Self <: IPathIntersectionOptions] (val x: Self) extends AnyVal {
+  implicit class IPathIntersectionOptionsMutableBuilder[Self <: IPathIntersectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath1Offset(value: IPoint): Self = StObject.set(x, "path1Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath1OffsetUndefined: Self = StObject.set(x, "path1Offset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath2Offset(value: IPoint): Self = StObject.set(x, "path2Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath1Offset(value: IPoint): Self = this.set("path1Offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath1Offset: Self = this.set("path1Offset", js.undefined)
-    
-    @scala.inline
-    def setPath2Offset(value: IPoint): Self = this.set("path2Offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath2Offset: Self = this.set("path2Offset", js.undefined)
+    def setPath2OffsetUndefined: Self = StObject.set(x, "path2Offset", js.undefined)
   }
 }

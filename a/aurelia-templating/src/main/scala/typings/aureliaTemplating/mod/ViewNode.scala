@@ -1,11 +1,12 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewNode extends js.Object {
+trait ViewNode extends StObject {
   
   /**
     * Triggers the attach for the node and its children.

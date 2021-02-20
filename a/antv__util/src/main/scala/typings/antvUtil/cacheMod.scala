@@ -1,16 +1,16 @@
 package typings.antvUtil
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/cache", JSImport.Namespace)
-@js.native
-object cacheMod extends js.Object {
+object cacheMod {
   
+  @JSImport("@antv/util/lib/cache", JSImport.Default)
   @js.native
-  class default[T] () extends js.Object {
+  class default[T] () extends StObject {
     
     def clear(): Unit = js.native
     

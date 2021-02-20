@@ -3,17 +3,22 @@ package typings.ol
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.sizeMod.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/centerconstraint", JSImport.Namespace)
-@js.native
-object centerconstraintMod extends js.Object {
+object centerconstraintMod {
   
+  @JSImport("ol/centerconstraint", "createExtent")
+  @js.native
   def createExtent(extent: Extent, onlyCenter: Boolean, smooth: Boolean): Type = js.native
   
+  @JSImport("ol/centerconstraint", "none")
+  @js.native
   def none(): js.UndefOr[Coordinate] = js.native
+  @JSImport("ol/centerconstraint", "none")
+  @js.native
   def none(center: Coordinate): js.UndefOr[Coordinate] = js.native
   
   type Type = js.Function4[

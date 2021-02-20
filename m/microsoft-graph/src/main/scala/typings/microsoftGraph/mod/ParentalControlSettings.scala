@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentalControlSettings extends js.Object {
+trait ParentalControlSettings extends StObject {
   
   /**
     * Specifies the two-letter ISO country codes. Access to the application will be blocked for minors from the countries
@@ -32,39 +33,27 @@ object ParentalControlSettings {
   }
   
   @scala.inline
-  implicit class ParentalControlSettingsOps[Self <: ParentalControlSettings] (val x: Self) extends AnyVal {
+  implicit class ParentalControlSettingsMutableBuilder[Self <: ParentalControlSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountriesBlockedForMinors(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "countriesBlockedForMinors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountriesBlockedForMinorsNull: Self = StObject.set(x, "countriesBlockedForMinors", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountriesBlockedForMinorsUndefined: Self = StObject.set(x, "countriesBlockedForMinors", js.undefined)
     
     @scala.inline
-    def setCountriesBlockedForMinorsVarargs(value: String*): Self = this.set("countriesBlockedForMinors", js.Array(value :_*))
+    def setCountriesBlockedForMinorsVarargs(value: String*): Self = StObject.set(x, "countriesBlockedForMinors", js.Array(value :_*))
     
     @scala.inline
-    def setCountriesBlockedForMinors(value: NullableOption[js.Array[String]]): Self = this.set("countriesBlockedForMinors", value.asInstanceOf[js.Any])
+    def setLegalAgeGroupRule(value: NullableOption[String]): Self = StObject.set(x, "legalAgeGroupRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountriesBlockedForMinors: Self = this.set("countriesBlockedForMinors", js.undefined)
+    def setLegalAgeGroupRuleNull: Self = StObject.set(x, "legalAgeGroupRule", null)
     
     @scala.inline
-    def setCountriesBlockedForMinorsNull: Self = this.set("countriesBlockedForMinors", null)
-    
-    @scala.inline
-    def setLegalAgeGroupRule(value: NullableOption[String]): Self = this.set("legalAgeGroupRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegalAgeGroupRule: Self = this.set("legalAgeGroupRule", js.undefined)
-    
-    @scala.inline
-    def setLegalAgeGroupRuleNull: Self = this.set("legalAgeGroupRule", null)
+    def setLegalAgeGroupRuleUndefined: Self = StObject.set(x, "legalAgeGroupRule", js.undefined)
   }
 }

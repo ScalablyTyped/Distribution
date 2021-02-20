@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pipeline extends js.Object {
+trait Pipeline extends StObject {
   
   /** The list of actions to execute, in the order they are specified. */
   var actions: js.UndefOr[js.Array[Action]] = js.native
@@ -39,49 +40,37 @@ object Pipeline {
   }
   
   @scala.inline
-  implicit class PipelineOps[Self <: Pipeline] (val x: Self) extends AnyVal {
+  implicit class PipelineMutableBuilder[Self <: Pipeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionsVarargs(value: Action*): Self = this.set("actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setActions(value: js.Array[Action]): Self = this.set("actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
     def setEnvironment(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Pipeline with TopLevel[js.Any]
-    ): Self = this.set("environment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def setResources(value: Resources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

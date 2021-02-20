@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BatchRetrieveInventoryChangesRequest")
 @js.native
-class BatchRetrieveInventoryChangesRequest () extends js.Object {
+class BatchRetrieveInventoryChangesRequest () extends StObject {
   
   /**
     * The filter to return results by `CatalogObject` ID. The filter is only applicable when set. The default value is null.

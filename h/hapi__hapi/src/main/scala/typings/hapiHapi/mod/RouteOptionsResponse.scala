@@ -8,12 +8,13 @@ import typings.hapiHapi.mod.Util.Dictionary
 import typings.joi.mod.ValidationOptions
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsResponse extends js.Object {
+trait RouteOptionsResponse extends StObject {
   
   /**
     * The default HTTP status code used to set a response error when the request is closed or aborted before the
@@ -55,7 +56,7 @@ trait RouteOptionsResponse extends js.Object {
     */
   var options: js.UndefOr[ValidationOptions] = js.native
   
-   // TODO needs validation
+  // TODO needs validation
   /**
     * @default true.
     * If false, payload range support is disabled.
@@ -102,82 +103,70 @@ object RouteOptionsResponse {
   }
   
   @scala.inline
-  implicit class RouteOptionsResponseOps[Self <: RouteOptionsResponse] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsResponseMutableBuilder[Self <: RouteOptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisconnectStatusCode(value: Double): Self = StObject.set(x, "disconnectStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisconnectStatusCodeUndefined: Self = StObject.set(x, "disconnectStatusCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmptyStatusCode(value: `200` | `204`): Self = StObject.set(x, "emptyStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisconnectStatusCode(value: Double): Self = this.set("disconnectStatusCode", value.asInstanceOf[js.Any])
+    def setEmptyStatusCodeUndefined: Self = StObject.set(x, "emptyStatusCode", js.undefined)
     
     @scala.inline
-    def deleteDisconnectStatusCode: Self = this.set("disconnectStatusCode", js.undefined)
-    
-    @scala.inline
-    def setEmptyStatusCode(value: `200` | `204`): Self = this.set("emptyStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmptyStatusCode: Self = this.set("emptyStatusCode", js.undefined)
+    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
-    ): Self = this.set("failAction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFailAction(value: FailAction): Self = this.set("failAction", value.asInstanceOf[js.Any])
+    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
     @scala.inline
-    def deleteFailAction: Self = this.set("failAction", js.undefined)
+    def setModify(value: Boolean): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModify(value: Boolean): Self = this.set("modify", value.asInstanceOf[js.Any])
+    def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
     
     @scala.inline
-    def deleteModify: Self = this.set("modify", js.undefined)
+    def setOptions(value: ValidationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ValidationOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanges(value: Boolean): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setSample(value: Double): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSample(value: Double): Self = this.set("sample", value.asInstanceOf[js.Any])
+    def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
     
     @scala.inline
-    def deleteSample: Self = this.set("sample", js.undefined)
+    def setSchema(value: RouteOptionsResponseSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchemaFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
-    ): Self = this.set("schema", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "schema", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSchema(value: RouteOptionsResponseSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setStatus(value: Dictionary[RouteOptionsResponseSchema]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Dictionary[RouteOptionsResponseSchema]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.oracledb.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used to control statement execution.
   */
 @js.native
-trait ExecuteManyOptions extends js.Object {
+trait ExecuteManyOptions extends StObject {
   
   /**
     * If true, the transaction in the current connection is automatically committed at the end of statement execution.
@@ -67,45 +68,33 @@ object ExecuteManyOptions {
   }
   
   @scala.inline
-  implicit class ExecuteManyOptionsOps[Self <: ExecuteManyOptions] (val x: Self) extends AnyVal {
+  implicit class ExecuteManyOptionsMutableBuilder[Self <: ExecuteManyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchErrors(value: Boolean): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCommit(value: Boolean): Self = this.set("autoCommit", value.asInstanceOf[js.Any])
+    def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
     
     @scala.inline
-    def deleteAutoCommit: Self = this.set("autoCommit", js.undefined)
+    def setBindDefs(value: (Record[String, BindDefinition]) | js.Array[BindDefinition]): Self = StObject.set(x, "bindDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchErrors(value: Boolean): Self = this.set("batchErrors", value.asInstanceOf[js.Any])
+    def setBindDefsUndefined: Self = StObject.set(x, "bindDefs", js.undefined)
     
     @scala.inline
-    def deleteBatchErrors: Self = this.set("batchErrors", js.undefined)
+    def setBindDefsVarargs(value: BindDefinition*): Self = StObject.set(x, "bindDefs", js.Array(value :_*))
     
     @scala.inline
-    def setBindDefsVarargs(value: BindDefinition*): Self = this.set("bindDefs", js.Array(value :_*))
+    def setDmlRowCounts(value: Boolean): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindDefs(value: (Record[String, BindDefinition]) | js.Array[BindDefinition]): Self = this.set("bindDefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBindDefs: Self = this.set("bindDefs", js.undefined)
-    
-    @scala.inline
-    def setDmlRowCounts(value: Boolean): Self = this.set("dmlRowCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDmlRowCounts: Self = this.set("dmlRowCounts", js.undefined)
+    def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
   }
 }

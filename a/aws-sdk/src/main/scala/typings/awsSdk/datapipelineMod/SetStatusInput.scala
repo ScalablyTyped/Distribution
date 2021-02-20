@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetStatusInput extends js.Object {
+trait SetStatusInput extends StObject {
   
   /**
     * The IDs of the objects. The corresponding objects can be either physical or components, but not a mix of both types.
@@ -31,30 +32,18 @@ object SetStatusInput {
   }
   
   @scala.inline
-  implicit class SetStatusInputOps[Self <: SetStatusInput] (val x: Self) extends AnyVal {
+  implicit class SetStatusInputMutableBuilder[Self <: SetStatusInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectIdsVarargs(value: id*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIdsVarargs(value: id*): Self = this.set("objectIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjectIds(value: idList): Self = this.set("objectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

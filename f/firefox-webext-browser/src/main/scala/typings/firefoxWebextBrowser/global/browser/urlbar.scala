@@ -13,6 +13,7 @@ import typings.firefoxWebextBrowser.browser.urlbar.UrlbarOnResultsRequestedEvent
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.inactive
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.restricting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,23 +25,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Not allowed in: Content scripts, Devtools pages
   */
-@JSGlobal("browser.urlbar")
-@js.native
-object urlbar extends js.Object {
+object urlbar {
   
   /* urlbar functions */
   /** Closes the urlbar view in the current window. */
+  @JSGlobal("browser.urlbar.closeView")
+  @js.native
   def closeView(): js.Promise[_] = js.native
   
   /* urlbar properties */
   /** Enables or disables the engagement telemetry. */
+  @JSGlobal("browser.urlbar.engagementTelemetry")
+  @js.native
   val engagementTelemetry: Setting = js.native
   
   /**
     * Focuses the urlbar in the current window.
     * @param [select] If true, the text in the urlbar will also be selected.
     */
+  @JSGlobal("browser.urlbar.focus")
+  @js.native
   def focus(): js.Promise[_] = js.native
+  @JSGlobal("browser.urlbar.focus")
+  @js.native
   def focus(select: Boolean): js.Promise[_] = js.native
   
   /* urlbar events */
@@ -49,18 +56,24 @@ object urlbar extends js.Object {
     * @param query The query for which the behavior is requested.
     * @returns The behavior of the provider for the query.
     */
+  @JSGlobal("browser.urlbar.onBehaviorRequested")
+  @js.native
   val onBehaviorRequested: UrlbarOnBehaviorRequestedEvent[js.Function1[/* query */ Query, active | inactive | restricting]] = js.native
   
   /**
     * This event is fired when the user starts and ends an engagement with the urlbar.
     * @param state The state of the engagement.
     */
+  @JSGlobal("browser.urlbar.onEngagement")
+  @js.native
   val onEngagement: UrlbarOnEngagementEvent[js.Function1[/* state */ EngagementState, Unit]] = js.native
   
   /**
     * This event is fired for the given provider when a query is canceled. The listener should stop any ongoing fetch or creation of results and clean up its resources.
     * @param query The query that was canceled.
     */
+  @JSGlobal("browser.urlbar.onQueryCanceled")
+  @js.native
   val onQueryCanceled: UrlbarOnQueryCanceledEvent[js.Function1[/* query */ Query, Unit]] = js.native
   
   /**
@@ -68,6 +81,8 @@ object urlbar extends js.Object {
     * @param payload The payload of the result that was picked.
     * @param elementName If the result is a dynamic type, this is the name of the element in the result view that was picked. If the result is not a dynamic type, this is an empty string.
     */
+  @JSGlobal("browser.urlbar.onResultPicked")
+  @js.native
   val onResultPicked: UrlbarOnResultPickedEvent[js.Function2[/* payload */ js.Object, /* elementName */ String, Unit]] = js.native
   
   /**
@@ -75,6 +90,8 @@ object urlbar extends js.Object {
     * @param query The query for which results are requested.
     * @returns The results that the provider fetched for the query.
     */
+  @JSGlobal("browser.urlbar.onResultsRequested")
+  @js.native
   val onResultsRequested: UrlbarOnResultsRequestedEvent[js.Function1[/* query */ Query, js.Array[Result]]] = js.native
   
   /**
@@ -82,6 +99,10 @@ object urlbar extends js.Object {
     * @param searchString The search string.
     * @param [options] Options for the search.
     */
+  @JSGlobal("browser.urlbar.search")
+  @js.native
   def search(searchString: String): js.Promise[_] = js.native
+  @JSGlobal("browser.urlbar.search")
+  @js.native
   def search(searchString: String, options: SearchOptions): js.Promise[_] = js.native
 }

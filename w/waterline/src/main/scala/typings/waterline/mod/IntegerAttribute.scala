@@ -1,6 +1,7 @@
 package typings.waterline.mod
 
 import typings.waterline.waterlineStrings.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,105 +48,93 @@ object IntegerAttribute {
   }
   
   @scala.inline
-  implicit class IntegerAttributeOps[Self <: IntegerAttribute] (val x: Self) extends AnyVal {
+  implicit class IntegerAttributeMutableBuilder[Self <: IntegerAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCreatedAt(value: Boolean): Self = StObject.set(x, "autoCreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: js.UndefOr[String] with integer): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAutoCreatedAtUndefined: Self = StObject.set(x, "autoCreatedAt", js.undefined)
     
     @scala.inline
-    def setAllowNull(value: Boolean): Self = this.set("allowNull", value.asInstanceOf[js.Any])
+    def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowNull: Self = this.set("allowNull", js.undefined)
+    def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
     
     @scala.inline
-    def setAutoCreatedAt(value: Boolean): Self = this.set("autoCreatedAt", value.asInstanceOf[js.Any])
+    def setAutoUpdatedAt(value: Boolean): Self = StObject.set(x, "autoUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCreatedAt: Self = this.set("autoCreatedAt", js.undefined)
+    def setAutoUpdatedAtUndefined: Self = StObject.set(x, "autoUpdatedAt", js.undefined)
     
     @scala.inline
-    def setAutoIncrement(value: Boolean): Self = this.set("autoIncrement", value.asInstanceOf[js.Any])
+    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoIncrement: Self = this.set("autoIncrement", js.undefined)
+    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
     @scala.inline
-    def setAutoUpdatedAt(value: Boolean): Self = this.set("autoUpdatedAt", value.asInstanceOf[js.Any])
+    def setDefaultsTo(value: Double | DefaultsToFn[Double]): Self = StObject.set(x, "defaultsTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoUpdatedAt: Self = this.set("autoUpdatedAt", js.undefined)
+    def setDefaultsToFunction0(value: () => Double): Self = StObject.set(x, "defaultsTo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    def setDefaultsToUndefined: Self = StObject.set(x, "defaultsTo", js.undefined)
     
     @scala.inline
-    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    def setEnum(value: js.Array[Double]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultsToFunction0(value: () => Double): Self = this.set("defaultsTo", js.Any.fromFunction0(value))
+    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
     @scala.inline
-    def setDefaultsTo(value: Double | DefaultsToFn[Double]): Self = this.set("defaultsTo", value.asInstanceOf[js.Any])
+    def setEnumVarargs(value: Double*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultsTo: Self = this.set("defaultsTo", js.undefined)
+    def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumVarargs(value: Double*): Self = this.set("enum", js.Array(value :_*))
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setEnum(value: js.Array[Double]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnum: Self = this.set("enum", js.undefined)
+    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def setIndex(value: Boolean): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setPrimaryKey(value: Boolean): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setType(value: js.UndefOr[String] with integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setValidations(value: AttributeValidations): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
-    
-    @scala.inline
-    def setValidations(value: AttributeValidations): Self = this.set("validations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidations: Self = this.set("validations", js.undefined)
+    def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
   }
 }

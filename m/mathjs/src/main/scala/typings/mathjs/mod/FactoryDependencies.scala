@@ -1,6 +1,7 @@
 package typings.mathjs.mod
 
 import typings.mathjs.anon.PartialMathJsStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Factory and Dependencies
   ************************************************************************/
 @js.native
-trait FactoryDependencies extends js.Object {
+trait FactoryDependencies extends StObject {
   
   var AccessorNodeDependencies: FactoryFunctionMap = js.native
   

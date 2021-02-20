@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarkerStyle extends js.Object
+sealed trait MarkerStyle extends StObject
 @JSGlobal("Windows.UI.Text.MarkerStyle")
 @js.native
-object MarkerStyle extends js.Object {
+object MarkerStyle extends StObject {
   
   @js.native
   sealed trait minus extends MarkerStyle

@@ -1,11 +1,12 @@
 package typings.nodeHueApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `1` extends js.Object {
+trait `1` extends StObject {
   
   var `1`: String = js.native
   
@@ -49,42 +50,30 @@ object `1` {
   }
   
   @scala.inline
-  implicit class `1Ops`[Self <: `1`] (val x: Self) extends AnyVal {
+  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: String): Self = this.set("1", value.asInstanceOf[js.Any])
+    def set4(value: String): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set2(value: String): Self = this.set("2", value.asInstanceOf[js.Any])
+    def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set3(value: String): Self = this.set("3", value.asInstanceOf[js.Any])
+    def set6(value: String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set4(value: String): Self = this.set("4", value.asInstanceOf[js.Any])
+    def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set5(value: String): Self = this.set("5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set6(value: String): Self = this.set("6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set7(value: String): Self = this.set("7", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set8(value: String): Self = this.set("8", value.asInstanceOf[js.Any])
+    def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
   }
 }

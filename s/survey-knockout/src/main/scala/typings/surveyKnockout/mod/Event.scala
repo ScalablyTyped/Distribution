@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Event")
 @js.native
-class Event[T /* <: js.Function */, Options] () extends js.Object {
+class Event[T /* <: js.Function */, Options] () extends StObject {
   
   def add(func: T): Unit = js.native
   

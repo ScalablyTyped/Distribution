@@ -1,12 +1,13 @@
 package typings.winrt.Windows.UI.Text
 
 import typings.winrt.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextConstantsStatics extends js.Object {
+trait ITextConstantsStatics extends StObject {
   
   var autoColor: Color = js.native
   
@@ -42,42 +43,30 @@ object ITextConstantsStatics {
   }
   
   @scala.inline
-  implicit class ITextConstantsStaticsOps[Self <: ITextConstantsStatics] (val x: Self) extends AnyVal {
+  implicit class ITextConstantsStaticsMutableBuilder[Self <: ITextConstantsStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoColor(value: Color): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxUnitCount(value: Double): Self = StObject.set(x, "maxUnitCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinUnitCount(value: Double): Self = StObject.set(x, "minUnitCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoColor(value: Color): Self = this.set("autoColor", value.asInstanceOf[js.Any])
+    def setUndefinedColor(value: Color): Self = StObject.set(x, "undefinedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUnitCount(value: Double): Self = this.set("maxUnitCount", value.asInstanceOf[js.Any])
+    def setUndefinedFloatValue(value: Double): Self = StObject.set(x, "undefinedFloatValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinUnitCount(value: Double): Self = this.set("minUnitCount", value.asInstanceOf[js.Any])
+    def setUndefinedFontStretch(value: FontStretch): Self = StObject.set(x, "undefinedFontStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndefinedColor(value: Color): Self = this.set("undefinedColor", value.asInstanceOf[js.Any])
+    def setUndefinedFontStyle(value: FontStyle): Self = StObject.set(x, "undefinedFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndefinedFloatValue(value: Double): Self = this.set("undefinedFloatValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefinedFontStretch(value: FontStretch): Self = this.set("undefinedFontStretch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefinedFontStyle(value: FontStyle): Self = this.set("undefinedFontStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefinedInt32Value(value: Double): Self = this.set("undefinedInt32Value", value.asInstanceOf[js.Any])
+    def setUndefinedInt32Value(value: Double): Self = StObject.set(x, "undefinedInt32Value", value.asInstanceOf[js.Any])
   }
 }

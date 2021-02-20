@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetDevEndpointsResponse extends js.Object {
+trait BatchGetDevEndpointsResponse extends StObject {
   
   /**
     * A list of DevEndpoint definitions.
@@ -26,36 +27,24 @@ object BatchGetDevEndpointsResponse {
   }
   
   @scala.inline
-  implicit class BatchGetDevEndpointsResponseOps[Self <: BatchGetDevEndpointsResponse] (val x: Self) extends AnyVal {
+  implicit class BatchGetDevEndpointsResponseMutableBuilder[Self <: BatchGetDevEndpointsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevEndpoints(value: DevEndpointList): Self = StObject.set(x, "DevEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevEndpointsNotFound(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointsNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevEndpointsNotFoundUndefined: Self = StObject.set(x, "DevEndpointsNotFound", js.undefined)
     
     @scala.inline
-    def setDevEndpointsVarargs(value: DevEndpoint*): Self = this.set("DevEndpoints", js.Array(value :_*))
+    def setDevEndpointsNotFoundVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointsNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setDevEndpoints(value: DevEndpointList): Self = this.set("DevEndpoints", value.asInstanceOf[js.Any])
+    def setDevEndpointsUndefined: Self = StObject.set(x, "DevEndpoints", js.undefined)
     
     @scala.inline
-    def deleteDevEndpoints: Self = this.set("DevEndpoints", js.undefined)
-    
-    @scala.inline
-    def setDevEndpointsNotFoundVarargs(value: GenericString*): Self = this.set("DevEndpointsNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setDevEndpointsNotFound(value: DevEndpointNames): Self = this.set("DevEndpointsNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevEndpointsNotFound: Self = this.set("DevEndpointsNotFound", js.undefined)
+    def setDevEndpointsVarargs(value: DevEndpoint*): Self = StObject.set(x, "DevEndpoints", js.Array(value :_*))
   }
 }

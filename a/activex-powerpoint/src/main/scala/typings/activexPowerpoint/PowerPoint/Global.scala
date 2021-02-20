@@ -2,12 +2,13 @@ package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.CommandBar
 import typings.activexOffice.Office.CommandBars
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Global extends js.Object {
+trait Global extends StObject {
   
   val ActivePresentation: Presentation = js.native
   

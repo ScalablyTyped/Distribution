@@ -4,14 +4,14 @@ import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import typings.tensorflowTfjsData.anon.Spectrogram
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.MicrophoneConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/iterators/microphone_iterator", JSImport.Namespace)
-@js.native
-object microphoneIteratorMod extends js.Object {
+object microphoneIteratorMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/microphone_iterator", "MicrophoneIterator")
   @js.native
   class MicrophoneIterator protected () extends LazyIterator[TensorContainer] {
     
@@ -60,10 +60,13 @@ object microphoneIteratorMod extends js.Object {
     var timeData: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object MicrophoneIterator extends js.Object {
+  object MicrophoneIterator {
     
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/microphone_iterator", "MicrophoneIterator.create")
+    @js.native
     def create(): js.Promise[MicrophoneIterator] = js.native
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/microphone_iterator", "MicrophoneIterator.create")
+    @js.native
     def create(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = js.native
   }
 }

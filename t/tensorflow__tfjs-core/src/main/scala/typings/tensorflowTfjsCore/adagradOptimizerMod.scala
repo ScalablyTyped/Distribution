@@ -4,14 +4,14 @@ import typings.tensorflowTfjsCore.optimizerMod.Optimizer
 import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.Serializable
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", JSImport.Namespace)
-@js.native
-object adagradOptimizerMod extends js.Object {
+object adagradOptimizerMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", "AdagradOptimizer")
   @js.native
   class AdagradOptimizer protected () extends Optimizer {
     def this(learningRate: Double) = this()
@@ -24,13 +24,22 @@ object adagradOptimizerMod extends js.Object {
     var learningRate: Double = js.native
   }
   /* static members */
-  @js.native
-  object AdagradOptimizer extends js.Object {
+  object AdagradOptimizer {
+    
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", "AdagradOptimizer")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** @nocollapse */
-    var className: String = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", "AdagradOptimizer.className")
+    @js.native
+    def className: String = js.native
+    @scala.inline
+    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", "AdagradOptimizer.fromConfig")
+    @js.native
     def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
   }
 }

@@ -1,12 +1,13 @@
 package typings.chrome.global.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.SessionStatus")
 @js.native
-object SessionStatus extends js.Object {
+object SessionStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.SessionStatus with String] = js.native

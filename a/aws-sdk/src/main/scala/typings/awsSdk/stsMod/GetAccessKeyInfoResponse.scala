@@ -1,11 +1,12 @@
 package typings.awsSdk.stsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccessKeyInfoResponse extends js.Object {
+trait GetAccessKeyInfoResponse extends StObject {
   
   /**
     * The number used to identify the AWS account.
@@ -21,24 +22,12 @@ object GetAccessKeyInfoResponse {
   }
   
   @scala.inline
-  implicit class GetAccessKeyInfoResponseOps[Self <: GetAccessKeyInfoResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccessKeyInfoResponseMutableBuilder[Self <: GetAccessKeyInfoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: accountType): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccount(value: accountType): Self = this.set("Account", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccount: Self = this.set("Account", js.undefined)
+    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
   }
 }

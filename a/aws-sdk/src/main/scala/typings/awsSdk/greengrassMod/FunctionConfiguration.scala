@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionConfiguration extends js.Object {
+trait FunctionConfiguration extends StObject {
   
   /**
     * The expected encoding type of the input payload for the function. The default is ''json''.
@@ -51,60 +52,48 @@ object FunctionConfiguration {
   }
   
   @scala.inline
-  implicit class FunctionConfigurationOps[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+  implicit class FunctionConfigurationMutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironment(value: FunctionConfigurationEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    def setExecArgs(value: string): Self = StObject.set(x, "ExecArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: FunctionConfigurationEnvironment): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setExecArgsUndefined: Self = StObject.set(x, "ExecArgs", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setExecutable(value: string): Self = StObject.set(x, "Executable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecArgs(value: string): Self = this.set("ExecArgs", value.asInstanceOf[js.Any])
+    def setExecutableUndefined: Self = StObject.set(x, "Executable", js.undefined)
     
     @scala.inline
-    def deleteExecArgs: Self = this.set("ExecArgs", js.undefined)
+    def setMemorySize(value: integer): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutable(value: string): Self = this.set("Executable", value.asInstanceOf[js.Any])
+    def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
     
     @scala.inline
-    def deleteExecutable: Self = this.set("Executable", js.undefined)
+    def setPinned(value: boolean): Self = StObject.set(x, "Pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorySize(value: integer): Self = this.set("MemorySize", value.asInstanceOf[js.Any])
+    def setPinnedUndefined: Self = StObject.set(x, "Pinned", js.undefined)
     
     @scala.inline
-    def deleteMemorySize: Self = this.set("MemorySize", js.undefined)
+    def setTimeout(value: integer): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: boolean): Self = this.set("Pinned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePinned: Self = this.set("Pinned", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: integer): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
   }
 }

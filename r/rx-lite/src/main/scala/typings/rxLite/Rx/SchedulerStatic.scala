@@ -2,6 +2,7 @@ package typings.rxLite.Rx
 
 import org.scalablytyped.runtime.Instantiable4
 import typings.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,14 +31,14 @@ trait SchedulerStatic
       Scheduler
     ] {
   
-  var currentThread: ICurrentThreadScheduler = js.native
-  
   var default: IScheduler = js.native
+  
+  var currentThread: ICurrentThreadScheduler = js.native
   
   var immediate: IScheduler = js.native
   
   def normalize(timeSpan: Double): Double = js.native
   
-   // alias for Scheduler.timeout
+  // alias for Scheduler.timeout
   var timeout: IScheduler = js.native
 }

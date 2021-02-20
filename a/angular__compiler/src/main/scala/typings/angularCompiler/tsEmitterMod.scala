@@ -6,19 +6,14 @@ import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.ExternalReference
 import typings.angularCompiler.outputAstMod.Statement
 import typings.angularCompiler.outputAstMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/output/ts_emitter", JSImport.Namespace)
-@js.native
-object tsEmitterMod extends js.Object {
+object tsEmitterMod {
   
-  def debugOutputAstAsTypeScript(ast: js.Array[_]): String = js.native
-  def debugOutputAstAsTypeScript(ast: Expression): String = js.native
-  def debugOutputAstAsTypeScript(ast: Statement): String = js.native
-  def debugOutputAstAsTypeScript(ast: Type): String = js.native
-  
+  @JSImport("@angular/compiler/src/output/ts_emitter", "TypeScriptEmitter")
   @js.native
   class TypeScriptEmitter () extends OutputEmitter {
     
@@ -124,6 +119,19 @@ object tsEmitterMod extends js.Object {
       importFilter: ReferenceFilter
     ): Context = js.native
   }
+  
+  @JSImport("@angular/compiler/src/output/ts_emitter", "debugOutputAstAsTypeScript")
+  @js.native
+  def debugOutputAstAsTypeScript(ast: js.Array[_]): String = js.native
+  @JSImport("@angular/compiler/src/output/ts_emitter", "debugOutputAstAsTypeScript")
+  @js.native
+  def debugOutputAstAsTypeScript(ast: Expression): String = js.native
+  @JSImport("@angular/compiler/src/output/ts_emitter", "debugOutputAstAsTypeScript")
+  @js.native
+  def debugOutputAstAsTypeScript(ast: Statement): String = js.native
+  @JSImport("@angular/compiler/src/output/ts_emitter", "debugOutputAstAsTypeScript")
+  @js.native
+  def debugOutputAstAsTypeScript(ast: Type): String = js.native
   
   type ReferenceFilter = js.Function1[/* reference */ ExternalReference, Boolean]
 }

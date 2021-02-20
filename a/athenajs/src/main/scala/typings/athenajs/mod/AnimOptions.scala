@@ -1,11 +1,12 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimOptions extends js.Object {
+trait AnimOptions extends StObject {
   
   var frameDuration: Double = js.native
   
@@ -30,48 +31,36 @@ object AnimOptions {
   }
   
   @scala.inline
-  implicit class AnimOptionsOps[Self <: AnimOptions] (val x: Self) extends AnyVal {
+  implicit class AnimOptionsMutableBuilder[Self <: AnimOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameHeight(value: Double): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameSpacing(value: Double): Self = StObject.set(x, "frameSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameDuration(value: Double): Self = this.set("frameDuration", value.asInstanceOf[js.Any])
+    def setFrameSpacingUndefined: Self = StObject.set(x, "frameSpacing", js.undefined)
     
     @scala.inline
-    def setFrameHeight(value: Double): Self = this.set("frameHeight", value.asInstanceOf[js.Any])
+    def setFrameWidth(value: Double): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameWidth(value: Double): Self = this.set("frameWidth", value.asInstanceOf[js.Any])
+    def setNumFrames(value: Double): Self = StObject.set(x, "numFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFrames(value: Double): Self = this.set("numFrames", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameSpacing(value: Double): Self = this.set("frameSpacing", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteFrameSpacing: Self = this.set("frameSpacing", js.undefined)
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
-    
-    @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
   }
 }

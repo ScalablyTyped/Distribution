@@ -1,11 +1,17 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Default extends js.Object {
+trait Default extends StObject {
+  
+  /**
+    * default = 'DefaultLayout'
+    */
+  var default: String = js.native
   
   /**
     * Array of base paths for the layouts.
@@ -14,11 +20,6 @@ trait Default extends js.Object {
     * @type {string[]}
     */
   var basePaths: js.Array[String] = js.native
-  
-  /**
-    * default = 'DefaultLayout'
-    */
-  var default: String = js.native
 }
 object Default {
   
@@ -29,27 +30,15 @@ object Default {
   }
   
   @scala.inline
-  implicit class DefaultOps[Self <: Default] (val x: Self) extends AnyVal {
+  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBasePathsVarargs(value: String*): Self = this.set("basePaths", js.Array(value :_*))
-    
-    @scala.inline
-    def setBasePaths(value: js.Array[String]): Self = this.set("basePaths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

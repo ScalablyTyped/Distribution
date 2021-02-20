@@ -8,14 +8,14 @@ import typings.mendixmodelsdk.unitsMod.IModelUnit
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import typings.mendixmodelsdk.unitsMod.StructuralUnit
 import typings.mobx.observablevalueMod.IObservableValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/properties/structural", JSImport.Namespace)
-@js.native
-object structuralMod extends js.Object {
+object structuralMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/structural", "StructuralChildListProperty")
   @js.native
   class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
     extends AbstractProperty[js.Array[T], IList[T]] {
@@ -44,6 +44,7 @@ object structuralMod extends js.Object {
     def removeChild(child: T): Boolean = js.native
   }
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/structural", "StructuralChildProperty")
   @js.native
   class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected () extends AbstractProperty[T | Null, IObservableValue[T | Null]] {
     def this(declaredOn: IStructureClass, parent: StructuralUnit[IAbstractModel], name: String) = this()

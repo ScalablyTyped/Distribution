@@ -1,5 +1,6 @@
 package typings.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.remarkable.remarkableNumbers.`8`
   - typings.remarkable.remarkableNumbers.`9`
 */
-trait HeadingValue extends js.Object
+trait HeadingValue extends StObject
 object HeadingValue {
   
   @scala.inline

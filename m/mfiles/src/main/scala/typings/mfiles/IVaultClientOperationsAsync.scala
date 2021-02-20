@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFOfflineTransitionResultFlags
 import typings.mfiles.MFiles.MFOnlineTransitionResultFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultClientOperationsAsync extends js.Object {
+trait IVaultClientOperationsAsync extends StObject {
   
   def DisableCheckInReminderForCallingProcess(): Unit = js.native
   def DisableCheckInReminderForCallingProcess(

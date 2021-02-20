@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryRequestInput extends js.Object {
+trait QueryRequestInput extends StObject {
   
   /** Payload containing third-party device IDs. */
   var payload: js.UndefOr[QueryRequestPayload] = js.native
@@ -19,24 +20,12 @@ object QueryRequestInput {
   }
   
   @scala.inline
-  implicit class QueryRequestInputOps[Self <: QueryRequestInput] (val x: Self) extends AnyVal {
+  implicit class QueryRequestInputMutableBuilder[Self <: QueryRequestInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload(value: QueryRequestPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPayload(value: QueryRequestPayload): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

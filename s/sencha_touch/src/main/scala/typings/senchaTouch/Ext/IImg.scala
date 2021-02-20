@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,102 +81,90 @@ object IImg {
   }
   
   @scala.inline
-  implicit class IImgOps[Self <: IImg] (val x: Self) extends AnyVal {
+  implicit class IImgMutableBuilder[Self <: IImg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundCls(value: java.lang.String): Self = StObject.set(x, "backgroundCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundClsUndefined: Self = StObject.set(x, "backgroundCls", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBackgroundCls(value: () => java.lang.String): Self = StObject.set(x, "getBackgroundCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBackgroundCls(value: java.lang.String): Self = this.set("backgroundCls", value.asInstanceOf[js.Any])
+    def setGetBackgroundClsUndefined: Self = StObject.set(x, "getBackgroundCls", js.undefined)
     
     @scala.inline
-    def deleteBackgroundCls: Self = this.set("backgroundCls", js.undefined)
+    def setGetImageCls(value: () => java.lang.String): Self = StObject.set(x, "getImageCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBackgroundCls(value: () => java.lang.String): Self = this.set("getBackgroundCls", js.Any.fromFunction0(value))
+    def setGetImageClsUndefined: Self = StObject.set(x, "getImageCls", js.undefined)
     
     @scala.inline
-    def deleteGetBackgroundCls: Self = this.set("getBackgroundCls", js.undefined)
+    def setGetMode(value: () => java.lang.String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImageCls(value: () => java.lang.String): Self = this.set("getImageCls", js.Any.fromFunction0(value))
+    def setGetModeUndefined: Self = StObject.set(x, "getMode", js.undefined)
     
     @scala.inline
-    def deleteGetImageCls: Self = this.set("getImageCls", js.undefined)
+    def setGetSrc(value: () => java.lang.String): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMode(value: () => java.lang.String): Self = this.set("getMode", js.Any.fromFunction0(value))
+    def setGetSrcUndefined: Self = StObject.set(x, "getSrc", js.undefined)
     
     @scala.inline
-    def deleteGetMode: Self = this.set("getMode", js.undefined)
+    def setHide(value: () => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSrc(value: () => java.lang.String): Self = this.set("getSrc", js.Any.fromFunction0(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteGetSrc: Self = this.set("getSrc", js.undefined)
+    def setImageCls(value: java.lang.String): Self = StObject.set(x, "imageCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: () => IComponent): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setImageClsUndefined: Self = StObject.set(x, "imageCls", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setMode(value: java.lang.String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageCls(value: java.lang.String): Self = this.set("imageCls", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteImageCls: Self = this.set("imageCls", js.undefined)
+    def setSetBackgroundCls(value: /* backgroundCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setBackgroundCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMode(value: java.lang.String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSetBackgroundClsUndefined: Self = StObject.set(x, "setBackgroundCls", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSetImageCls(value: /* imageCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setImageCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBackgroundCls(value: /* backgroundCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setBackgroundCls", js.Any.fromFunction1(value))
+    def setSetImageClsUndefined: Self = StObject.set(x, "setImageCls", js.undefined)
     
     @scala.inline
-    def deleteSetBackgroundCls: Self = this.set("setBackgroundCls", js.undefined)
+    def setSetMode(value: /* mode */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageCls(value: /* imageCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setImageCls", js.Any.fromFunction1(value))
+    def setSetModeUndefined: Self = StObject.set(x, "setMode", js.undefined)
     
     @scala.inline
-    def deleteSetImageCls: Self = this.set("setImageCls", js.undefined)
+    def setSetSrc(value: /* src */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMode(value: /* mode */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setMode", js.Any.fromFunction1(value))
+    def setSetSrcUndefined: Self = StObject.set(x, "setSrc", js.undefined)
     
     @scala.inline
-    def deleteSetMode: Self = this.set("setMode", js.undefined)
+    def setShow(value: () => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetSrc(value: /* src */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setSrc", js.Any.fromFunction1(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSetSrc: Self = this.set("setSrc", js.undefined)
+    def setSrc(value: java.lang.String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => IComponent): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setSrc(value: java.lang.String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

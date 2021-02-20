@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trail extends js.Object {
+trait Trail extends StObject {
   
   /**
     * Specifies an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered.
@@ -96,114 +97,102 @@ object Trail {
   }
   
   @scala.inline
-  implicit class TrailOps[Self <: Trail] (val x: Self) extends AnyVal {
+  implicit class TrailMutableBuilder[Self <: Trail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogsLogGroupArn(value: String): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogsLogGroupArnUndefined: Self = StObject.set(x, "CloudWatchLogsLogGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWatchLogsRoleArn(value: String): Self = StObject.set(x, "CloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogsLogGroupArn(value: String): Self = this.set("CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
+    def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "CloudWatchLogsRoleArn", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogsLogGroupArn: Self = this.set("CloudWatchLogsLogGroupArn", js.undefined)
+    def setHasCustomEventSelectors(value: Boolean): Self = StObject.set(x, "HasCustomEventSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogsRoleArn(value: String): Self = this.set("CloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
+    def setHasCustomEventSelectorsUndefined: Self = StObject.set(x, "HasCustomEventSelectors", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogsRoleArn: Self = this.set("CloudWatchLogsRoleArn", js.undefined)
+    def setHasInsightSelectors(value: Boolean): Self = StObject.set(x, "HasInsightSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCustomEventSelectors(value: Boolean): Self = this.set("HasCustomEventSelectors", value.asInstanceOf[js.Any])
+    def setHasInsightSelectorsUndefined: Self = StObject.set(x, "HasInsightSelectors", js.undefined)
     
     @scala.inline
-    def deleteHasCustomEventSelectors: Self = this.set("HasCustomEventSelectors", js.undefined)
+    def setHomeRegion(value: String): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasInsightSelectors(value: Boolean): Self = this.set("HasInsightSelectors", value.asInstanceOf[js.Any])
+    def setHomeRegionUndefined: Self = StObject.set(x, "HomeRegion", js.undefined)
     
     @scala.inline
-    def deleteHasInsightSelectors: Self = this.set("HasInsightSelectors", js.undefined)
+    def setIncludeGlobalServiceEvents(value: Boolean): Self = StObject.set(x, "IncludeGlobalServiceEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeRegion(value: String): Self = this.set("HomeRegion", value.asInstanceOf[js.Any])
+    def setIncludeGlobalServiceEventsUndefined: Self = StObject.set(x, "IncludeGlobalServiceEvents", js.undefined)
     
     @scala.inline
-    def deleteHomeRegion: Self = this.set("HomeRegion", js.undefined)
+    def setIsMultiRegionTrail(value: Boolean): Self = StObject.set(x, "IsMultiRegionTrail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeGlobalServiceEvents(value: Boolean): Self = this.set("IncludeGlobalServiceEvents", value.asInstanceOf[js.Any])
+    def setIsMultiRegionTrailUndefined: Self = StObject.set(x, "IsMultiRegionTrail", js.undefined)
     
     @scala.inline
-    def deleteIncludeGlobalServiceEvents: Self = this.set("IncludeGlobalServiceEvents", js.undefined)
+    def setIsOrganizationTrail(value: Boolean): Self = StObject.set(x, "IsOrganizationTrail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMultiRegionTrail(value: Boolean): Self = this.set("IsMultiRegionTrail", value.asInstanceOf[js.Any])
+    def setIsOrganizationTrailUndefined: Self = StObject.set(x, "IsOrganizationTrail", js.undefined)
     
     @scala.inline
-    def deleteIsMultiRegionTrail: Self = this.set("IsMultiRegionTrail", js.undefined)
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOrganizationTrail(value: Boolean): Self = this.set("IsOrganizationTrail", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteIsOrganizationTrail: Self = this.set("IsOrganizationTrail", js.undefined)
+    def setLogFileValidationEnabled(value: Boolean): Self = StObject.set(x, "LogFileValidationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setLogFileValidationEnabledUndefined: Self = StObject.set(x, "LogFileValidationEnabled", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogFileValidationEnabled(value: Boolean): Self = this.set("LogFileValidationEnabled", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLogFileValidationEnabled: Self = this.set("LogFileValidationEnabled", js.undefined)
+    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setS3KeyPrefix(value: String): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
     
     @scala.inline
-    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    def setSnsTopicARN(value: String): Self = StObject.set(x, "SnsTopicARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3KeyPrefix(value: String): Self = this.set("S3KeyPrefix", value.asInstanceOf[js.Any])
+    def setSnsTopicARNUndefined: Self = StObject.set(x, "SnsTopicARN", js.undefined)
     
     @scala.inline
-    def deleteS3KeyPrefix: Self = this.set("S3KeyPrefix", js.undefined)
+    def setSnsTopicName(value: String): Self = StObject.set(x, "SnsTopicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnsTopicARN(value: String): Self = this.set("SnsTopicARN", value.asInstanceOf[js.Any])
+    def setSnsTopicNameUndefined: Self = StObject.set(x, "SnsTopicName", js.undefined)
     
     @scala.inline
-    def deleteSnsTopicARN: Self = this.set("SnsTopicARN", js.undefined)
+    def setTrailARN(value: String): Self = StObject.set(x, "TrailARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnsTopicName(value: String): Self = this.set("SnsTopicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsTopicName: Self = this.set("SnsTopicName", js.undefined)
-    
-    @scala.inline
-    def setTrailARN(value: String): Self = this.set("TrailARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailARN: Self = this.set("TrailARN", js.undefined)
+    def setTrailARNUndefined: Self = StObject.set(x, "TrailARN", js.undefined)
   }
 }

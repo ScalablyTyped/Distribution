@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnumTypeName extends js.Object {
+trait EnumTypeName extends StObject {
   
   var enumTypeName: js.Any = js.native
   
@@ -20,24 +21,12 @@ object EnumTypeName {
   }
   
   @scala.inline
-  implicit class EnumTypeNameOps[Self <: EnumTypeName] (val x: Self) extends AnyVal {
+  implicit class EnumTypeNameMutableBuilder[Self <: EnumTypeName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnumTypeName(value: js.Any): Self = StObject.set(x, "enumTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnumTypeName(value: js.Any): Self = this.set("enumTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnumTypeSchema(value: js.Any): Self = this.set("enumTypeSchema", value.asInstanceOf[js.Any])
+    def setEnumTypeSchema(value: js.Any): Self = StObject.set(x, "enumTypeSchema", value.asInstanceOf[js.Any])
   }
 }

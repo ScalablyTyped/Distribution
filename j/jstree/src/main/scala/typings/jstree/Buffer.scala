@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buffer extends js.Object {
+trait Buffer extends StObject {
   
   var inst: js.Any = js.native
   
@@ -22,30 +23,18 @@ object Buffer {
   }
   
   @scala.inline
-  implicit class BufferOps[Self <: Buffer] (val x: Self) extends AnyVal {
+  implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInst(value: js.Any): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode(value: js.Array[_]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInst(value: js.Any): Self = this.set("inst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeVarargs(value: js.Any*): Self = this.set("node", js.Array(value :_*))
-    
-    @scala.inline
-    def setNode(value: js.Array[_]): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNodeVarargs(value: js.Any*): Self = StObject.set(x, "node", js.Array(value :_*))
   }
 }

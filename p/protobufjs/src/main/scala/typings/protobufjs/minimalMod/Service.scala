@@ -2,6 +2,7 @@ package typings.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +21,7 @@ class Service protected ()
   def this(name: String, options: StringDictionary[js.Any]) = this()
 }
 /* static members */
-@JSImport("protobufjs/minimal", "Service")
-@js.native
-object Service extends js.Object {
+object Service {
   
   /**
     * Constructs a service from a service descriptor.
@@ -31,5 +30,7 @@ object Service extends js.Object {
     * @returns Created service
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("protobufjs/minimal", "Service.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IService): typings.protobufjs.mod.Service = js.native
 }

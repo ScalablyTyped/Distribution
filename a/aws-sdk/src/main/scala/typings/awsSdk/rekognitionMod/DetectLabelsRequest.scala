@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectLabelsRequest extends js.Object {
+trait DetectLabelsRequest extends StObject {
   
   /**
     * The input image as base64-encoded bytes or an S3 object. If you use the AWS CLI to call Amazon Rekognition operations, passing image bytes is not supported. Images stored in an S3 Bucket do not need to be base64-encoded. If you are using an AWS SDK to call Amazon Rekognition, you might not need to base64-encode image bytes passed using the Bytes field. For more information, see Images in the Amazon Rekognition developer guide.
@@ -31,33 +32,21 @@ object DetectLabelsRequest {
   }
   
   @scala.inline
-  implicit class DetectLabelsRequestOps[Self <: DetectLabelsRequest] (val x: Self) extends AnyVal {
+  implicit class DetectLabelsRequestMutableBuilder[Self <: DetectLabelsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLabels(value: UInteger): Self = StObject.set(x, "MaxLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxLabelsUndefined: Self = StObject.set(x, "MaxLabels", js.undefined)
     
     @scala.inline
-    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLabels(value: UInteger): Self = this.set("MaxLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLabels: Self = this.set("MaxLabels", js.undefined)
-    
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = this.set("MinConfidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinConfidence: Self = this.set("MinConfidence", js.undefined)
+    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KinesisStreamSourceDescription extends js.Object {
+trait KinesisStreamSourceDescription extends StObject {
   
   /**
     * Kinesis Data Firehose starts retrieving records from the Kinesis data stream starting with this timestamp.
@@ -31,36 +32,24 @@ object KinesisStreamSourceDescription {
   }
   
   @scala.inline
-  implicit class KinesisStreamSourceDescriptionOps[Self <: KinesisStreamSourceDescription] (val x: Self) extends AnyVal {
+  implicit class KinesisStreamSourceDescriptionMutableBuilder[Self <: KinesisStreamSourceDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStartTimestamp(value: DeliveryStartTimestamp): Self = StObject.set(x, "DeliveryStartTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryStartTimestampUndefined: Self = StObject.set(x, "DeliveryStartTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKinesisStreamARN(value: KinesisStreamARN): Self = StObject.set(x, "KinesisStreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryStartTimestamp(value: DeliveryStartTimestamp): Self = this.set("DeliveryStartTimestamp", value.asInstanceOf[js.Any])
+    def setKinesisStreamARNUndefined: Self = StObject.set(x, "KinesisStreamARN", js.undefined)
     
     @scala.inline
-    def deleteDeliveryStartTimestamp: Self = this.set("DeliveryStartTimestamp", js.undefined)
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisStreamARN(value: KinesisStreamARN): Self = this.set("KinesisStreamARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStreamARN: Self = this.set("KinesisStreamARN", js.undefined)
-    
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeveloperInfo extends js.Object {
+trait DeveloperInfo extends StObject {
   
   /**
     * The name of the developer.
@@ -36,42 +37,30 @@ object DeveloperInfo {
   }
   
   @scala.inline
-  implicit class DeveloperInfoOps[Self <: DeveloperInfo] (val x: Self) extends AnyVal {
+  implicit class DeveloperInfoMutableBuilder[Self <: DeveloperInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeveloperName(value: DeveloperName): Self = StObject.set(x, "DeveloperName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperNameUndefined: Self = StObject.set(x, "DeveloperName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperName(value: DeveloperName): Self = this.set("DeveloperName", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
     @scala.inline
-    def deleteDeveloperName: Self = this.set("DeveloperName", js.undefined)
+    def setPrivacyPolicy(value: PrivacyPolicy): Self = StObject.set(x, "PrivacyPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setPrivacyPolicyUndefined: Self = StObject.set(x, "PrivacyPolicy", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("Email", js.undefined)
+    def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyPolicy(value: PrivacyPolicy): Self = this.set("PrivacyPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyPolicy: Self = this.set("PrivacyPolicy", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: Url): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

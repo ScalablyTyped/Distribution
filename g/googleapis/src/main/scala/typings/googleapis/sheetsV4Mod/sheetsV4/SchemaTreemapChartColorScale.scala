@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A color scale for a treemap chart.
   */
 @js.native
-trait SchemaTreemapChartColorScale extends js.Object {
+trait SchemaTreemapChartColorScale extends StObject {
   
   /**
     * The background color for cells with a color value greater than or equal
@@ -43,42 +44,30 @@ object SchemaTreemapChartColorScale {
   }
   
   @scala.inline
-  implicit class SchemaTreemapChartColorScaleOps[Self <: SchemaTreemapChartColorScale] (val x: Self) extends AnyVal {
+  implicit class SchemaTreemapChartColorScaleMutableBuilder[Self <: SchemaTreemapChartColorScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxValueColor(value: SchemaColor): Self = StObject.set(x, "maxValueColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxValueColorUndefined: Self = StObject.set(x, "maxValueColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMidValueColor(value: SchemaColor): Self = StObject.set(x, "midValueColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValueColor(value: SchemaColor): Self = this.set("maxValueColor", value.asInstanceOf[js.Any])
+    def setMidValueColorUndefined: Self = StObject.set(x, "midValueColor", js.undefined)
     
     @scala.inline
-    def deleteMaxValueColor: Self = this.set("maxValueColor", js.undefined)
+    def setMinValueColor(value: SchemaColor): Self = StObject.set(x, "minValueColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidValueColor(value: SchemaColor): Self = this.set("midValueColor", value.asInstanceOf[js.Any])
+    def setMinValueColorUndefined: Self = StObject.set(x, "minValueColor", js.undefined)
     
     @scala.inline
-    def deleteMidValueColor: Self = this.set("midValueColor", js.undefined)
+    def setNoDataColor(value: SchemaColor): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValueColor(value: SchemaColor): Self = this.set("minValueColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinValueColor: Self = this.set("minValueColor", js.undefined)
-    
-    @scala.inline
-    def setNoDataColor(value: SchemaColor): Self = this.set("noDataColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDataColor: Self = this.set("noDataColor", js.undefined)
+    def setNoDataColorUndefined: Self = StObject.set(x, "noDataColor", js.undefined)
   }
 }

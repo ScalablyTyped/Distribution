@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListChannelsResult extends js.Object {
+trait ListChannelsResult extends StObject {
   
   var channels: js.Array[Channel] = js.native
   
@@ -24,36 +25,24 @@ object ListChannelsResult {
   }
   
   @scala.inline
-  implicit class ListChannelsResultOps[Self <: ListChannelsResult] (val x: Self) extends AnyVal {
+  implicit class ListChannelsResultMutableBuilder[Self <: ListChannelsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[Channel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = this.set("channels", js.Array(value :_*))
+    def setNextMarker(value: String): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[Channel]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setNextMarkerNull: Self = StObject.set(x, "nextMarker", null)
     
     @scala.inline
-    def setIsTruncated(value: Boolean): Self = this.set("isTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextMarker(value: String): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextMarkerNull: Self = this.set("nextMarker", null)
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryPreferencesEditable extends js.Object {
+trait DeliveryPreferencesEditable extends StObject {
   
   var deliveryPreferencesEditable: scala.Double = js.native
   
@@ -41,42 +42,30 @@ object DeliveryPreferencesEditable {
   }
   
   @scala.inline
-  implicit class DeliveryPreferencesEditableOps[Self <: DeliveryPreferencesEditable] (val x: Self) extends AnyVal {
+  implicit class DeliveryPreferencesEditableMutableBuilder[Self <: DeliveryPreferencesEditable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryPreferencesEditable(value: scala.Double): Self = StObject.set(x, "deliveryPreferencesEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsGroup(value: scala.Double): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTeam(value: scala.Double): Self = StObject.set(x, "isTeam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryPreferencesEditable(value: scala.Double): Self = this.set("deliveryPreferencesEditable", value.asInstanceOf[js.Any])
+    def setIsUser(value: scala.Double): Self = StObject.set(x, "isUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGroup(value: scala.Double): Self = this.set("isGroup", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTeam(value: scala.Double): Self = this.set("isTeam", value.asInstanceOf[js.Any])
+    def setSupportsEachMemberDelivery(value: scala.Double): Self = StObject.set(x, "supportsEachMemberDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUser(value: scala.Double): Self = this.set("isUser", value.asInstanceOf[js.Any])
+    def setSupportsNoDelivery(value: scala.Double): Self = StObject.set(x, "supportsNoDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsEachMemberDelivery(value: scala.Double): Self = this.set("supportsEachMemberDelivery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsNoDelivery(value: scala.Double): Self = this.set("supportsNoDelivery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsPreferredEmailAddressDelivery(value: scala.Double): Self = this.set("supportsPreferredEmailAddressDelivery", value.asInstanceOf[js.Any])
+    def setSupportsPreferredEmailAddressDelivery(value: scala.Double): Self = StObject.set(x, "supportsPreferredEmailAddressDelivery", value.asInstanceOf[js.Any])
   }
 }

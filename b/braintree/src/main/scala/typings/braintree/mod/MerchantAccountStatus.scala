@@ -1,5 +1,6 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.Active
   - typings.braintree.braintreeStrings.Suspended
 */
-trait MerchantAccountStatus extends js.Object
+trait MerchantAccountStatus extends StObject
 object MerchantAccountStatus {
   
   @scala.inline

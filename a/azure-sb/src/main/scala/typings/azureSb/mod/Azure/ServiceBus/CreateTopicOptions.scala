@@ -1,12 +1,13 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateTopicOptions> */
 @js.native
-trait CreateTopicOptions extends js.Object {
+trait CreateTopicOptions extends StObject {
   
   var DefaultMessageTimeToLive: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object CreateTopicOptions {
   }
   
   @scala.inline
-  implicit class CreateTopicOptionsOps[Self <: CreateTopicOptions] (val x: Self) extends AnyVal {
+  implicit class CreateTopicOptionsMutableBuilder[Self <: CreateTopicOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = this.set("DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    def setDuplicateDetectionHistoryTimeWindowUndefined: Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", js.undefined)
     
     @scala.inline
-    def deleteDefaultMessageTimeToLive: Self = this.set("DefaultMessageTimeToLive", js.undefined)
+    def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateDetectionHistoryTimeWindow(value: String): Self = this.set("DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    def setEnableBatchedOperationsUndefined: Self = StObject.set(x, "EnableBatchedOperations", js.undefined)
     
     @scala.inline
-    def deleteDuplicateDetectionHistoryTimeWindow: Self = this.set("DuplicateDetectionHistoryTimeWindow", js.undefined)
+    def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBatchedOperations(value: Boolean): Self = this.set("EnableBatchedOperations", value.asInstanceOf[js.Any])
+    def setEnablePartitioningUndefined: Self = StObject.set(x, "EnablePartitioning", js.undefined)
     
     @scala.inline
-    def deleteEnableBatchedOperations: Self = this.set("EnableBatchedOperations", js.undefined)
+    def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePartitioning(value: Boolean): Self = this.set("EnablePartitioning", value.asInstanceOf[js.Any])
+    def setMaxSizeInMegabytesUndefined: Self = StObject.set(x, "MaxSizeInMegabytes", js.undefined)
     
     @scala.inline
-    def deleteEnablePartitioning: Self = this.set("EnablePartitioning", js.undefined)
+    def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSizeInMegabytes(value: Double): Self = this.set("MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    def setRequiresDuplicateDetectionUndefined: Self = StObject.set(x, "RequiresDuplicateDetection", js.undefined)
     
     @scala.inline
-    def deleteMaxSizeInMegabytes: Self = this.set("MaxSizeInMegabytes", js.undefined)
+    def setSizeInBytes(value: Boolean): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresDuplicateDetection(value: Boolean): Self = this.set("RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+    def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteRequiresDuplicateDetection: Self = this.set("RequiresDuplicateDetection", js.undefined)
+    def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInBytes(value: Boolean): Self = this.set("SizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeInBytes: Self = this.set("SizeInBytes", js.undefined)
-    
-    @scala.inline
-    def setSupportOrdering(value: Boolean): Self = this.set("SupportOrdering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportOrdering: Self = this.set("SupportOrdering", js.undefined)
+    def setSupportOrderingUndefined: Self = StObject.set(x, "SupportOrdering", js.undefined)
   }
 }

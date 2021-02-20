@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserSignaturesInformation extends js.Object {
+trait UserSignaturesInformation extends StObject {
   
   /**
     * An array of  `userSignature` objects.
@@ -21,27 +22,15 @@ object UserSignaturesInformation {
   }
   
   @scala.inline
-  implicit class UserSignaturesInformationOps[Self <: UserSignaturesInformation] (val x: Self) extends AnyVal {
+  implicit class UserSignaturesInformationMutableBuilder[Self <: UserSignaturesInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserSignatures(value: js.Array[UserSignature]): Self = StObject.set(x, "userSignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserSignaturesUndefined: Self = StObject.set(x, "userSignatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserSignaturesVarargs(value: UserSignature*): Self = this.set("userSignatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserSignatures(value: js.Array[UserSignature]): Self = this.set("userSignatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSignatures: Self = this.set("userSignatures", js.undefined)
+    def setUserSignaturesVarargs(value: UserSignature*): Self = StObject.set(x, "userSignatures", js.Array(value :_*))
   }
 }

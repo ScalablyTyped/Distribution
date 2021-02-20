@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceAssetCallback extends js.Object {
+trait DataSourceAssetCallback extends StObject {
   
   var getRowData: js.UndefOr[
     js.Function3[/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String, _]
@@ -26,42 +27,30 @@ object DataSourceAssetCallback {
   }
   
   @scala.inline
-  implicit class DataSourceAssetCallbackOps[Self <: DataSourceAssetCallback] (val x: Self) extends AnyVal {
+  implicit class DataSourceAssetCallbackMutableBuilder[Self <: DataSourceAssetCallback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRowData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => _): Self = StObject.set(x, "getRowData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRowDataUndefined: Self = StObject.set(x, "getRowData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSectionHeaderData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => _): Self = StObject.set(x, "getSectionHeaderData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRowData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => _): Self = this.set("getRowData", js.Any.fromFunction3(value))
+    def setGetSectionHeaderDataUndefined: Self = StObject.set(x, "getSectionHeaderData", js.undefined)
     
     @scala.inline
-    def deleteGetRowData: Self = this.set("getRowData", js.undefined)
+    def setRowHasChanged(value: (/* r1 */ js.Any, /* r2 */ js.Any) => Boolean): Self = StObject.set(x, "rowHasChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSectionHeaderData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => _): Self = this.set("getSectionHeaderData", js.Any.fromFunction2(value))
+    def setRowHasChangedUndefined: Self = StObject.set(x, "rowHasChanged", js.undefined)
     
     @scala.inline
-    def deleteGetSectionHeaderData: Self = this.set("getSectionHeaderData", js.undefined)
+    def setSectionHeaderHasChanged(value: (/* h1 */ js.Any, /* h2 */ js.Any) => Boolean): Self = StObject.set(x, "sectionHeaderHasChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowHasChanged(value: (/* r1 */ js.Any, /* r2 */ js.Any) => Boolean): Self = this.set("rowHasChanged", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRowHasChanged: Self = this.set("rowHasChanged", js.undefined)
-    
-    @scala.inline
-    def setSectionHeaderHasChanged(value: (/* h1 */ js.Any, /* h2 */ js.Any) => Boolean): Self = this.set("sectionHeaderHasChanged", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSectionHeaderHasChanged: Self = this.set("sectionHeaderHasChanged", js.undefined)
+    def setSectionHeaderHasChangedUndefined: Self = StObject.set(x, "sectionHeaderHasChanged", js.undefined)
   }
 }

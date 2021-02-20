@@ -10,9 +10,9 @@ Configurable, input validated routing for koa.
 | ------------------ | :-------------: |
 | Full name          | koa-joi-router |
 | Keywords           | joi, koa, router, validate, validator, validation |
-| # releases         | 5 |
-| # dependents       | 23 |
-| # downloads        | 240220 |
+| # releases         | 6 |
+| # dependents       | 26 |
+| # downloads        | 255375 |
 | # stars            | 2 |
 
 ## Links

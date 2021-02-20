@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about a subject alternative name. */
 @js.native
-trait SubjectAlternativeNameInfo extends js.Object {
+trait SubjectAlternativeNameInfo extends StObject {
   
   /** Gets the distinguished name. */
   var distinguishedName: IVectorView[String] = js.native
@@ -43,36 +44,24 @@ object SubjectAlternativeNameInfo {
   }
   
   @scala.inline
-  implicit class SubjectAlternativeNameInfoOps[Self <: SubjectAlternativeNameInfo] (val x: Self) extends AnyVal {
+  implicit class SubjectAlternativeNameInfoMutableBuilder[Self <: SubjectAlternativeNameInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistinguishedName(value: IVectorView[String]): Self = StObject.set(x, "distinguishedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsName(value: IVectorView[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailName(value: IVectorView[String]): Self = StObject.set(x, "emailName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinguishedName(value: IVectorView[String]): Self = this.set("distinguishedName", value.asInstanceOf[js.Any])
+    def setIpAddress(value: IVectorView[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsName(value: IVectorView[String]): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    def setPrincipalName(value: IVectorView[String]): Self = StObject.set(x, "principalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailName(value: IVectorView[String]): Self = this.set("emailName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIpAddress(value: IVectorView[String]): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrincipalName(value: IVectorView[String]): Self = this.set("principalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: IVectorView[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: IVectorView[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

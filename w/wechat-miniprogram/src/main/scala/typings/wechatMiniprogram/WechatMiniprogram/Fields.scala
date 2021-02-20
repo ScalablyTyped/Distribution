@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fields extends js.Object {
+trait Fields extends StObject {
   
   /** 指定样式名列表，返回节点对应样式名的当前值
     *
@@ -52,84 +53,72 @@ object Fields {
   }
   
   @scala.inline
-  implicit class FieldsOps[Self <: Fields] (val x: Self) extends AnyVal {
+  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputedStyle(value: js.Array[String]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedStyleUndefined: Self = StObject.set(x, "computedStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputedStyleVarargs(value: String*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
     
     @scala.inline
-    def setComputedStyleVarargs(value: String*): Self = this.set("computedStyle", js.Array(value :_*))
+    def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedStyle(value: js.Array[String]): Self = this.set("computedStyle", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteComputedStyle: Self = this.set("computedStyle", js.undefined)
+    def setDataset(value: Boolean): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Boolean): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: Boolean): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNode(value: Boolean): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMark(value: Boolean): Self = this.set("mark", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteMark: Self = this.set("mark", js.undefined)
+    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: Boolean): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setPropertiesVarargs(value: String*): Self = this.set("properties", js.Array(value :_*))
+    def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setScrollOffset(value: Boolean): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRect(value: Boolean): Self = this.set("rect", value.asInstanceOf[js.Any])
+    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
     @scala.inline
-    def deleteRect: Self = this.set("rect", js.undefined)
+    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOffset(value: Boolean): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollOffset: Self = this.set("scrollOffset", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

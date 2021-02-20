@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUserRequestItem extends js.Object {
+trait UpdateUserRequestItem extends StObject {
   
   /**
     * The Alexa for Business metadata.
@@ -36,39 +37,27 @@ object UpdateUserRequestItem {
   }
   
   @scala.inline
-  implicit class UpdateUserRequestItemOps[Self <: UpdateUserRequestItem] (val x: Self) extends AnyVal {
+  implicit class UpdateUserRequestItemMutableBuilder[Self <: UpdateUserRequestItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = StObject.set(x, "AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlexaForBusinessMetadataUndefined: Self = StObject.set(x, "AlexaForBusinessMetadata", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLicenseType(value: License): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: NonEmptyString): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setLicenseTypeUndefined: Self = StObject.set(x, "LicenseType", js.undefined)
     
     @scala.inline
-    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = this.set("AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
+    def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlexaForBusinessMetadata: Self = this.set("AlexaForBusinessMetadata", js.undefined)
+    def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseType(value: License): Self = this.set("LicenseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicenseType: Self = this.set("LicenseType", js.undefined)
-    
-    @scala.inline
-    def setUserType(value: UserType): Self = this.set("UserType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserType: Self = this.set("UserType", js.undefined)
+    def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or more side inputs, and produces zero or more outputs. Runs user code.
   */
 @js.native
-trait SchemaParDoInstruction extends js.Object {
+trait SchemaParDoInstruction extends StObject {
   
   /**
     * The input.
@@ -46,54 +47,42 @@ object SchemaParDoInstruction {
   }
   
   @scala.inline
-  implicit class SchemaParDoInstructionOps[Self <: SchemaParDoInstruction] (val x: Self) extends AnyVal {
+  implicit class SchemaParDoInstructionMutableBuilder[Self <: SchemaParDoInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiOutputInfos(value: js.Array[SchemaMultiOutputInfo]): Self = StObject.set(x, "multiOutputInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: SchemaInstructionInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setMultiOutputInfosUndefined: Self = StObject.set(x, "multiOutputInfos", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setMultiOutputInfosVarargs(value: SchemaMultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value :_*))
     
     @scala.inline
-    def setMultiOutputInfosVarargs(value: SchemaMultiOutputInfo*): Self = this.set("multiOutputInfos", js.Array(value :_*))
+    def setNumOutputs(value: Double): Self = StObject.set(x, "numOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiOutputInfos(value: js.Array[SchemaMultiOutputInfo]): Self = this.set("multiOutputInfos", value.asInstanceOf[js.Any])
+    def setNumOutputsUndefined: Self = StObject.set(x, "numOutputs", js.undefined)
     
     @scala.inline
-    def deleteMultiOutputInfos: Self = this.set("multiOutputInfos", js.undefined)
+    def setSideInputs(value: js.Array[SchemaSideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumOutputs(value: Double): Self = this.set("numOutputs", value.asInstanceOf[js.Any])
+    def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
     @scala.inline
-    def deleteNumOutputs: Self = this.set("numOutputs", js.undefined)
+    def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
     
     @scala.inline
-    def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = this.set("sideInputs", js.Array(value :_*))
+    def setUserFn(value: StringDictionary[js.Any]): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideInputs(value: js.Array[SchemaSideInputInfo]): Self = this.set("sideInputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideInputs: Self = this.set("sideInputs", js.undefined)
-    
-    @scala.inline
-    def setUserFn(value: StringDictionary[js.Any]): Self = this.set("userFn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserFn: Self = this.set("userFn", js.undefined)
+    def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
   }
 }

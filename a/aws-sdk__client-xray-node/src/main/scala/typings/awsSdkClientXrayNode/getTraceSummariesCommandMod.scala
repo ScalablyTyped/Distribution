@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesGetTraceSummariesOutputMod.GetTraceSumm
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/GetTraceSummariesCommand", JSImport.Namespace)
-@js.native
-object getTraceSummariesCommandMod extends js.Object {
+object getTraceSummariesCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/GetTraceSummariesCommand", "GetTraceSummariesCommand")
   @js.native
   class GetTraceSummariesCommand protected () extends Command[
           InputTypesUnion, 

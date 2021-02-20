@@ -1,5 +1,6 @@
 package typings.fridaGum.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Module ()
   extends typings.fridaGum.Module
-/* static members */
-@JSGlobal("Module")
-@js.native
-object Module extends js.Object {
+object Module {
   
   /**
     * Ensures that initializers of the specified module have been run. This is important during early instrumentation,
@@ -19,6 +17,9 @@ object Module extends js.Object {
     *
     * One such use-case is interacting with ObjC classes provided by a given module.
     */
+  /* static member */
+  @JSGlobal("Module.ensureInitialized")
+  @js.native
   def ensureInitialized(name: String): Unit = js.native
   
   /**
@@ -26,6 +27,9 @@ object Module extends js.Object {
     *
     * @param name Module name or path.
     */
+  /* static member */
+  @JSGlobal("Module.findBaseAddress")
+  @js.native
   def findBaseAddress(name: String): typings.fridaGum.NativePointer | Null = js.native
   
   /**
@@ -37,7 +41,12 @@ object Module extends js.Object {
     * @param moduleName Module name or path.
     * @param exportName Export name to find the address of.
     */
+  /* static member */
+  @JSGlobal("Module.findExportByName")
+  @js.native
   def findExportByName(moduleName: String, exportName: String): typings.fridaGum.NativePointer | Null = js.native
+  @JSGlobal("Module.findExportByName")
+  @js.native
   def findExportByName(moduleName: Null, exportName: String): typings.fridaGum.NativePointer | Null = js.native
   
   /**
@@ -45,6 +54,9 @@ object Module extends js.Object {
     *
     * @param name Module name or path.
     */
+  /* static member */
+  @JSGlobal("Module.getBaseAddress")
+  @js.native
   def getBaseAddress(name: String): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -56,11 +68,19 @@ object Module extends js.Object {
     * @param moduleName Module name or path.
     * @param exportName Export name to find the address of.
     */
+  /* static member */
+  @JSGlobal("Module.getExportByName")
+  @js.native
   def getExportByName(moduleName: String, exportName: String): typings.fridaGum.NativePointer = js.native
+  @JSGlobal("Module.getExportByName")
+  @js.native
   def getExportByName(moduleName: Null, exportName: String): typings.fridaGum.NativePointer = js.native
   
   /**
     * Loads the specified module.
     */
+  /* static member */
+  @JSGlobal("Module.load")
+  @js.native
   def load(name: String): typings.fridaGum.Module = js.native
 }

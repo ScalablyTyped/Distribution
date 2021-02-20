@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationTaskIndividualAssessment extends js.Object {
+trait ReplicationTaskIndividualAssessment extends StObject {
   
   /**
     * Name of this individual assessment.
@@ -41,48 +42,36 @@ object ReplicationTaskIndividualAssessment {
   }
   
   @scala.inline
-  implicit class ReplicationTaskIndividualAssessmentOps[Self <: ReplicationTaskIndividualAssessment] (val x: Self) extends AnyVal {
+  implicit class ReplicationTaskIndividualAssessmentMutableBuilder[Self <: ReplicationTaskIndividualAssessment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndividualAssessmentName(value: String): Self = StObject.set(x, "IndividualAssessmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndividualAssessmentNameUndefined: Self = StObject.set(x, "IndividualAssessmentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividualAssessmentName(value: String): Self = this.set("IndividualAssessmentName", value.asInstanceOf[js.Any])
+    def setReplicationTaskAssessmentRunArnUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", js.undefined)
     
     @scala.inline
-    def deleteIndividualAssessmentName: Self = this.set("IndividualAssessmentName", js.undefined)
+    def setReplicationTaskIndividualAssessmentArn(value: String): Self = StObject.set(x, "ReplicationTaskIndividualAssessmentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskAssessmentRunArn(value: String): Self = this.set("ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
+    def setReplicationTaskIndividualAssessmentArnUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessmentArn", js.undefined)
     
     @scala.inline
-    def deleteReplicationTaskAssessmentRunArn: Self = this.set("ReplicationTaskAssessmentRunArn", js.undefined)
+    def setReplicationTaskIndividualAssessmentStartDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskIndividualAssessmentStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskIndividualAssessmentArn(value: String): Self = this.set("ReplicationTaskIndividualAssessmentArn", value.asInstanceOf[js.Any])
+    def setReplicationTaskIndividualAssessmentStartDateUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessmentStartDate", js.undefined)
     
     @scala.inline
-    def deleteReplicationTaskIndividualAssessmentArn: Self = this.set("ReplicationTaskIndividualAssessmentArn", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskIndividualAssessmentStartDate(value: TStamp): Self = this.set("ReplicationTaskIndividualAssessmentStartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationTaskIndividualAssessmentStartDate: Self = this.set("ReplicationTaskIndividualAssessmentStartDate", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

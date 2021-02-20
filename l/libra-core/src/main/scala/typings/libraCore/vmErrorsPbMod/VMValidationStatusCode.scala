@@ -1,101 +1,84 @@
 package typings.libraCore.vmErrorsPbMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VMValidationStatusCode extends js.Object
+sealed trait VMValidationStatusCode extends StObject
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatusCode")
 @js.native
-object VMValidationStatusCode extends js.Object {
+object VMValidationStatusCode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VMValidationStatusCode with Double] = js.native
   
   @js.native
   sealed trait EXCEEDEDMAXTRANSACTIONSIZE extends VMValidationStatusCode
-  /* 10 */ @js.native
-  object EXCEEDEDMAXTRANSACTIONSIZE extends TopLevel[EXCEEDEDMAXTRANSACTIONSIZE with Double]
+  /* 10 */ val EXCEEDEDMAXTRANSACTIONSIZE: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.EXCEEDEDMAXTRANSACTIONSIZE with Double = js.native
   
   @js.native
   sealed trait GASUNITPRICEABOVEMAXBOUND extends VMValidationStatusCode
-  /* 16 */ @js.native
-  object GASUNITPRICEABOVEMAXBOUND extends TopLevel[GASUNITPRICEABOVEMAXBOUND with Double]
+  /* 16 */ val GASUNITPRICEABOVEMAXBOUND: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.GASUNITPRICEABOVEMAXBOUND with Double = js.native
   
   @js.native
   sealed trait GASUNITPRICEBELOWMINBOUND extends VMValidationStatusCode
-  /* 15 */ @js.native
-  object GASUNITPRICEBELOWMINBOUND extends TopLevel[GASUNITPRICEBELOWMINBOUND with Double]
+  /* 15 */ val GASUNITPRICEBELOWMINBOUND: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.GASUNITPRICEBELOWMINBOUND with Double = js.native
   
   @js.native
   sealed trait INSUFFICIENTBALANCEFORTRANSACTIONFEE extends VMValidationStatusCode
-  /* 5 */ @js.native
-  object INSUFFICIENTBALANCEFORTRANSACTIONFEE extends TopLevel[INSUFFICIENTBALANCEFORTRANSACTIONFEE with Double]
+  /* 5 */ val INSUFFICIENTBALANCEFORTRANSACTIONFEE: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.INSUFFICIENTBALANCEFORTRANSACTIONFEE with Double = js.native
   
   @js.native
   sealed trait INVALIDAUTHKEY extends VMValidationStatusCode
-  /* 2 */ @js.native
-  object INVALIDAUTHKEY extends TopLevel[INVALIDAUTHKEY with Double]
+  /* 2 */ val INVALIDAUTHKEY: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.INVALIDAUTHKEY with Double = js.native
   
   @js.native
   sealed trait INVALIDSIGNATURE extends VMValidationStatusCode
-  /* 1 */ @js.native
-  object INVALIDSIGNATURE extends TopLevel[INVALIDSIGNATURE with Double]
+  /* 1 */ val INVALIDSIGNATURE: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.INVALIDSIGNATURE with Double = js.native
   
   @js.native
   sealed trait INVALIDWRITESET extends VMValidationStatusCode
-  /* 9 */ @js.native
-  object INVALIDWRITESET extends TopLevel[INVALIDWRITESET with Double]
+  /* 9 */ val INVALIDWRITESET: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.INVALIDWRITESET with Double = js.native
   
   @js.native
   sealed trait MAXGASUNITSBELOWMINTRANSACTIONGASUNITS extends VMValidationStatusCode
-  /* 14 */ @js.native
-  object MAXGASUNITSBELOWMINTRANSACTIONGASUNITS extends TopLevel[MAXGASUNITSBELOWMINTRANSACTIONGASUNITS with Double]
+  /* 14 */ val MAXGASUNITSBELOWMINTRANSACTIONGASUNITS: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.MAXGASUNITSBELOWMINTRANSACTIONGASUNITS with Double = js.native
   
   @js.native
   sealed trait MAXGASUNITSEXCEEDSMAXGASUNITSBOUND extends VMValidationStatusCode
-  /* 13 */ @js.native
-  object MAXGASUNITSEXCEEDSMAXGASUNITSBOUND extends TopLevel[MAXGASUNITSEXCEEDSMAXGASUNITSBOUND with Double]
+  /* 13 */ val MAXGASUNITSEXCEEDSMAXGASUNITSBOUND: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.MAXGASUNITSEXCEEDSMAXGASUNITSBOUND with Double = js.native
   
   @js.native
   sealed trait REJECTEDWRITESET extends VMValidationStatusCode
-  /* 8 */ @js.native
-  object REJECTEDWRITESET extends TopLevel[REJECTEDWRITESET with Double]
+  /* 8 */ val REJECTEDWRITESET: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.REJECTEDWRITESET with Double = js.native
   
   @js.native
   sealed trait SENDINGACCOUNTDOESNOTEXIST extends VMValidationStatusCode
-  /* 7 */ @js.native
-  object SENDINGACCOUNTDOESNOTEXIST extends TopLevel[SENDINGACCOUNTDOESNOTEXIST with Double]
+  /* 7 */ val SENDINGACCOUNTDOESNOTEXIST: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.SENDINGACCOUNTDOESNOTEXIST with Double = js.native
   
   @js.native
   sealed trait SEQUENCENUMBERTOONEW extends VMValidationStatusCode
-  /* 4 */ @js.native
-  object SEQUENCENUMBERTOONEW extends TopLevel[SEQUENCENUMBERTOONEW with Double]
+  /* 4 */ val SEQUENCENUMBERTOONEW: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.SEQUENCENUMBERTOONEW with Double = js.native
   
   @js.native
   sealed trait SEQUENCENUMBERTOOOLD extends VMValidationStatusCode
-  /* 3 */ @js.native
-  object SEQUENCENUMBERTOOOLD extends TopLevel[SEQUENCENUMBERTOOOLD with Double]
+  /* 3 */ val SEQUENCENUMBERTOOOLD: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.SEQUENCENUMBERTOOOLD with Double = js.native
   
   @js.native
   sealed trait TRANSACTIONEXPIRED extends VMValidationStatusCode
-  /* 6 */ @js.native
-  object TRANSACTIONEXPIRED extends TopLevel[TRANSACTIONEXPIRED with Double]
+  /* 6 */ val TRANSACTIONEXPIRED: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.TRANSACTIONEXPIRED with Double = js.native
   
   @js.native
   sealed trait UNKNOWNMODULE extends VMValidationStatusCode
-  /* 12 */ @js.native
-  object UNKNOWNMODULE extends TopLevel[UNKNOWNMODULE with Double]
+  /* 12 */ val UNKNOWNMODULE: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.UNKNOWNMODULE with Double = js.native
   
   @js.native
   sealed trait UNKNOWNSCRIPT extends VMValidationStatusCode
-  /* 11 */ @js.native
-  object UNKNOWNSCRIPT extends TopLevel[UNKNOWNSCRIPT with Double]
+  /* 11 */ val UNKNOWNSCRIPT: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.UNKNOWNSCRIPT with Double = js.native
   
   @js.native
   sealed trait UNKNOWNVALIDATIONSTATUS extends VMValidationStatusCode
-  /* 0 */ @js.native
-  object UNKNOWNVALIDATIONSTATUS extends TopLevel[UNKNOWNVALIDATIONSTATUS with Double]
+  /* 0 */ val UNKNOWNVALIDATIONSTATUS: typings.libraCore.vmErrorsPbMod.VMValidationStatusCode.UNKNOWNVALIDATIONSTATUS with Double = js.native
 }

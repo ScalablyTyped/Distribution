@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseReference extends js.Object {
+trait ReleaseReference extends StObject {
   
   var definitionId: Double = js.native
   
@@ -38,39 +39,27 @@ object ReleaseReference {
   }
   
   @scala.inline
-  implicit class ReleaseReferenceOps[Self <: ReleaseReference] (val x: Self) extends AnyVal {
+  implicit class ReleaseReferenceMutableBuilder[Self <: ReleaseReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentDefinitionId(value: Double): Self = StObject.set(x, "environmentDefinitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentDefinitionName(value: String): Self = StObject.set(x, "environmentDefinitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: Double): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentDefinitionId(value: Double): Self = this.set("environmentDefinitionId", value.asInstanceOf[js.Any])
+    def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentDefinitionName(value: String): Self = this.set("environmentDefinitionName", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: Double): Self = this.set("environmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnvironmentName(value: String): Self = this.set("environmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

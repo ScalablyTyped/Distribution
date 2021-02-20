@@ -1,12 +1,13 @@
 package typings.tizenCommonWeb.applicationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/application", "ApplicationControlData")
 @js.native
-class ApplicationControlData protected () extends js.Object {
+class ApplicationControlData protected () extends StObject {
   def this(key: String, value: js.Array[String]) = this()
   
   /**

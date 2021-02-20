@@ -10,12 +10,13 @@ import typings.gapiYoutube.anon.EmbedHtml
 import typings.gapiYoutube.anon.Embeddable
 import typings.gapiYoutube.anon.Location
 import typings.gapiYoutube.anon.TopicIds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiYouTubeVideoResource extends js.Object {
+trait GoogleApiYouTubeVideoResource extends StObject {
   
   /**
     * The contentDetails object contains information about the video content, including the length of the video and its aspect ratio.
@@ -106,57 +107,45 @@ object GoogleApiYouTubeVideoResource {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubeVideoResourceOps[Self <: GoogleApiYouTubeVideoResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiYouTubeVideoResourceMutableBuilder[Self <: GoogleApiYouTubeVideoResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentDetails(value: Caption): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileDetails(value: AudioStreams): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: Caption): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDetails(value: AudioStreams): Self = this.set("fileDetails", value.asInstanceOf[js.Any])
+    def setPlayer(value: EmbedHtml): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProcessingDetails(value: EditorSuggestionsAvailability): Self = StObject.set(x, "processingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRecordingDetails(value: Location): Self = StObject.set(x, "recordingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayer(value: EmbedHtml): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setSnippet(value: CategoryId): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingDetails(value: EditorSuggestionsAvailability): Self = this.set("processingDetails", value.asInstanceOf[js.Any])
+    def setStatistics(value: DislikeCount): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordingDetails(value: Location): Self = this.set("recordingDetails", value.asInstanceOf[js.Any])
+    def setStatus(value: Embeddable): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: CategoryId): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSuggestions(value: EditorSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: DislikeCount): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Embeddable): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestions(value: EditorSuggestions): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicDetails(value: TopicIds): Self = this.set("topicDetails", value.asInstanceOf[js.Any])
+    def setTopicDetails(value: TopicIds): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
   }
 }

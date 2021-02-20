@@ -3,12 +3,13 @@ package typings.stripe.anon
 import typings.stripe.stripeStrings.listed
 import typings.stripe.stripeStrings.rejectedDotlisted
 import typings.stripe.stripeStrings.under_review
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pastdue extends js.Object {
+trait Pastdue extends StObject {
   
   /**
     * If the cardholder is disabled, this string describes why. Can be one of listed, rejected.listed, or under_review.
@@ -29,27 +30,15 @@ object Pastdue {
   }
   
   @scala.inline
-  implicit class PastdueOps[Self <: Pastdue] (val x: Self) extends AnyVal {
+  implicit class PastdueMutableBuilder[Self <: Pastdue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled_reason(value: listed | rejectedDotlisted | under_review): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisabled_reason(value: listed | rejectedDotlisted | under_review): Self = this.set("disabled_reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPast_dueVarargs(value: String*): Self = this.set("past_due", js.Array(value :_*))
-    
-    @scala.inline
-    def setPast_due(value: js.Array[String]): Self = this.set("past_due", value.asInstanceOf[js.Any])
+    def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
   }
 }

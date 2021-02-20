@@ -5,6 +5,7 @@ import typings.chromeApps.chrome.identity.TokenDetails
 import typings.chromeApps.chrome.identity.TokenInformation
 import typings.chromeApps.chrome.identity.UserInfo
 import typings.chromeApps.chrome.identity.WebAuthFlowOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[Identity User]{@link https://developer.chrome.com/apps/app_identity}
   * @since Chrome 29.
   */
-@JSGlobal("chrome.identity")
-@js.native
-object identity extends js.Object {
+object identity {
   
   /**
     * @requires(dev) **Dev channel only.**
@@ -30,6 +29,8 @@ object identity extends js.Object {
     * Retrieves a list of AccountInfo objects describing the accounts present on the profile.
     * getAccounts is only supported on dev channel.
     */
+  @JSGlobal("chrome.identity.getAccounts")
+  @js.native
   def getAccounts(callback: js.Function1[/* accounts */ js.Array[AccountInfo], Unit]): Unit = js.native
   
   /**
@@ -50,7 +51,11 @@ object identity extends js.Object {
     * @param [callback] Called with an OAuth2 access token as specified by the manifest,
     *                   or undefined if there was an error.
     */
+  @JSGlobal("chrome.identity.getAuthToken")
+  @js.native
   def getAuthToken(details: TokenDetails): Unit = js.native
+  @JSGlobal("chrome.identity.getAuthToken")
+  @js.native
   def getAuthToken(details: TokenDetails, callback: js.Function1[/* token */ String, Unit]): Unit = js.native
   
   /**
@@ -59,6 +64,8 @@ object identity extends js.Object {
     * The information returned is available offline, and it only applies to the primary account for the profile.
     * @since Chrome 37.
     */
+  @JSGlobal("chrome.identity.getProfileUserInfo")
+  @js.native
   def getProfileUserInfo(callback: js.Function1[/* userInfo */ UserInfo, Unit]): Unit = js.native
   
   /**
@@ -67,7 +74,11 @@ object identity extends js.Object {
     * @since Chrome 33.
     * @param path The path appended to the end of the generated URL.
     */
+  @JSGlobal("chrome.identity.getRedirectURL")
+  @js.native
   def getRedirectURL(): String = js.native
+  @JSGlobal("chrome.identity.getRedirectURL")
+  @js.native
   def getRedirectURL(path: String): String = js.native
   
   /**
@@ -85,12 +96,16 @@ object identity extends js.Object {
     * The callback parameter should be a function that looks like this:
     * function(string responseUrl) {...};
     */
+  @JSGlobal("chrome.identity.launchWebAuthFlow")
+  @js.native
   def launchWebAuthFlow(details: WebAuthFlowOptions, callback: js.Function1[/* responseUrl */ js.UndefOr[String], Unit]): Unit = js.native
   
   /**
     * Fired when signin state changes for an account on the user's profile.
     * @since Chrome 33.
     */
+  @JSGlobal("chrome.identity.onSignInChanged")
+  @js.native
   val onSignInChanged: typings.chromeApps.chrome.events.Event[js.Function2[/* account */ AccountInfo, /* signedIn */ Boolean, Unit]] = js.native
   
   /**
@@ -101,6 +116,10 @@ object identity extends js.Object {
     * @param details Token information.
     * @param callback Called when the token has been removed from the cache.
     */
+  @JSGlobal("chrome.identity.removeCachedAuthToken")
+  @js.native
   def removeCachedAuthToken(details: TokenInformation): Unit = js.native
+  @JSGlobal("chrome.identity.removeCachedAuthToken")
+  @js.native
   def removeCachedAuthToken(details: TokenInformation, callback: js.Function0[Unit]): Unit = js.native
 }

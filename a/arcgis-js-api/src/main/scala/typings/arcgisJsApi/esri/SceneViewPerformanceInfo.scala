@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html)
   */
 @js.native
-trait SceneViewPerformanceInfo extends js.Object {
+trait SceneViewPerformanceInfo extends StObject {
   
   /**
     * An estimate of the memory used by the [Edges3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-Edges3D.html) feature when added to 3D objects in [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) or to polygons with [ExtrudeSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html) symbols.
@@ -70,39 +71,27 @@ object SceneViewPerformanceInfo {
   }
   
   @scala.inline
-  implicit class SceneViewPerformanceInfoOps[Self <: SceneViewPerformanceInfo] (val x: Self) extends AnyVal {
+  implicit class SceneViewPerformanceInfoMutableBuilder[Self <: SceneViewPerformanceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdgesMemory(value: Double): Self = StObject.set(x, "edgesMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerPerformanceInfos(value: js.Array[LayerPerformanceInfo]): Self = StObject.set(x, "layerPerformanceInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayerPerformanceInfosVarargs(value: LayerPerformanceInfo*): Self = StObject.set(x, "layerPerformanceInfos", js.Array(value :_*))
     
     @scala.inline
-    def setEdgesMemory(value: Double): Self = this.set("edgesMemory", value.asInstanceOf[js.Any])
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerPerformanceInfosVarargs(value: LayerPerformanceInfo*): Self = this.set("layerPerformanceInfos", js.Array(value :_*))
+    def setTerrainMemory(value: Double): Self = StObject.set(x, "terrainMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerPerformanceInfos(value: js.Array[LayerPerformanceInfo]): Self = this.set("layerPerformanceInfos", value.asInstanceOf[js.Any])
+    def setTotalMemory(value: Double): Self = StObject.set(x, "totalMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerrainMemory(value: Double): Self = this.set("terrainMemory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalMemory(value: Double): Self = this.set("totalMemory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedMemory(value: Double): Self = this.set("usedMemory", value.asInstanceOf[js.Any])
+    def setUsedMemory(value: Double): Self = StObject.set(x, "usedMemory", value.asInstanceOf[js.Any])
   }
 }

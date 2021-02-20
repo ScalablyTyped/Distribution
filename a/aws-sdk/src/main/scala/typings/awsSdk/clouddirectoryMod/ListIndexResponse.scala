@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIndexResponse extends js.Object {
+trait ListIndexResponse extends StObject {
   
   /**
     * The objects and indexed values attached to the index.
@@ -26,33 +27,21 @@ object ListIndexResponse {
   }
   
   @scala.inline
-  implicit class ListIndexResponseOps[Self <: ListIndexResponse] (val x: Self) extends AnyVal {
+  implicit class ListIndexResponseMutableBuilder[Self <: ListIndexResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexAttachments(value: IndexAttachmentList): Self = StObject.set(x, "IndexAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexAttachmentsUndefined: Self = StObject.set(x, "IndexAttachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexAttachmentsVarargs(value: IndexAttachment*): Self = StObject.set(x, "IndexAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setIndexAttachmentsVarargs(value: IndexAttachment*): Self = this.set("IndexAttachments", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexAttachments(value: IndexAttachmentList): Self = this.set("IndexAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexAttachments: Self = this.set("IndexAttachments", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.activexShell.Shell32
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Folder Item */
 @js.native
-trait ShellFolderItem extends js.Object {
+trait ShellFolderItem extends StObject {
   
   /** Get Application object */
   val Application: js.Any = js.native

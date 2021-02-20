@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientFirestore.anon.Accesstoken
 import typings.maximMazurokGapiClientFirestore.anon.FieldsKey
 import typings.maximMazurokGapiClientFirestore.anon.KeyName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabasesResource extends js.Object {
+trait DatabasesResource extends StObject {
   
   var collectionGroups: CollectionGroupsResource = js.native
   

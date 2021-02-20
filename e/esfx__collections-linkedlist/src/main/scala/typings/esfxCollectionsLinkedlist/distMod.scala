@@ -5,14 +5,14 @@ import typings.esfxEquatable.distMod.Equaler
 import typings.esfxEquatable.distMod.EqualityComparison
 import typings.std.Iterable
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@esfx/collections-linkedlist/dist", JSImport.Namespace)
-@js.native
-object distMod extends js.Object {
+object distMod {
   
+  @JSImport("@esfx/collections-linkedlist/dist", "LinkedList")
   @js.native
   class LinkedList[T] () extends Collection[T] {
     def this(equaler: Equaler[T]) = this()
@@ -341,8 +341,9 @@ object distMod extends js.Object {
     def values(): IterableIterator[T] = js.native
   }
   
+  @JSImport("@esfx/collections-linkedlist/dist", "LinkedListNode")
   @js.native
-  class LinkedListNode[T] protected () extends js.Object {
+  class LinkedListNode[T] protected () extends StObject {
     def this(value: T) = this()
     
     def detachSelf(): Boolean = js.native

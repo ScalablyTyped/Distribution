@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanPreventDefault extends js.Object {
+trait CanPreventDefault extends StObject {
   
   var canPreventDefault: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object CanPreventDefault {
   }
   
   @scala.inline
-  implicit class CanPreventDefaultOps[Self <: CanPreventDefault] (val x: Self) extends AnyVal {
+  implicit class CanPreventDefaultMutableBuilder[Self <: CanPreventDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanPreventDefault(value: Boolean): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanPreventDefaultUndefined: Self = StObject.set(x, "canPreventDefault", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPreventDefault(value: Boolean): Self = this.set("canPreventDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanPreventDefault: Self = this.set("canPreventDefault", js.undefined)
-    
-    @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

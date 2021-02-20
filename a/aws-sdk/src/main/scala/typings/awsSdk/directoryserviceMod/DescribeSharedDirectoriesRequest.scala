@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSharedDirectoriesRequest extends js.Object {
+trait DescribeSharedDirectoriesRequest extends StObject {
   
   /**
     * The number of shared directories to return in the response object.
@@ -36,42 +37,30 @@ object DescribeSharedDirectoriesRequest {
   }
   
   @scala.inline
-  implicit class DescribeSharedDirectoriesRequestOps[Self <: DescribeSharedDirectoriesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeSharedDirectoriesRequestMutableBuilder[Self <: DescribeSharedDirectoriesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerDirectoryId(value: DirectoryId): Self = this.set("OwnerDirectoryId", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setOwnerDirectoryId(value: DirectoryId): Self = StObject.set(x, "OwnerDirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setSharedDirectoryIds(value: DirectoryIds): Self = StObject.set(x, "SharedDirectoryIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSharedDirectoryIdsUndefined: Self = StObject.set(x, "SharedDirectoryIds", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSharedDirectoryIdsVarargs(value: DirectoryId*): Self = this.set("SharedDirectoryIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSharedDirectoryIds(value: DirectoryIds): Self = this.set("SharedDirectoryIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedDirectoryIds: Self = this.set("SharedDirectoryIds", js.undefined)
+    def setSharedDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "SharedDirectoryIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HookCbSkipInterface[Context] extends js.Object {
+trait HookCbSkipInterface[Context] extends StObject {
   
   /** Skip this hook. */
   def apply(implementation: CbImplementation[Context]): Unit = js.native

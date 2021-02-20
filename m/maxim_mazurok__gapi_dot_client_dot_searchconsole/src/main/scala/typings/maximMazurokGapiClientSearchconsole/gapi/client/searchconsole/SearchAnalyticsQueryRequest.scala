@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchAnalyticsQueryRequest extends js.Object {
+trait SearchAnalyticsQueryRequest extends StObject {
   
   /**
     * [Optional; Default is \"auto\"] How data is aggregated. If aggregated by property, all data for the same property is aggregated; if aggregated by page, all data is aggregated by
@@ -52,72 +53,60 @@ object SearchAnalyticsQueryRequest {
   }
   
   @scala.inline
-  implicit class SearchAnalyticsQueryRequestOps[Self <: SearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
+  implicit class SearchAnalyticsQueryRequestMutableBuilder[Self <: SearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionFilterGroups(value: js.Array[ApiDimensionFilterGroup]): Self = StObject.set(x, "dimensionFilterGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationType(value: String): Self = this.set("aggregationType", value.asInstanceOf[js.Any])
+    def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
     
     @scala.inline
-    def deleteAggregationType: Self = this.set("aggregationType", js.undefined)
+    def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = this.set("dimensionFilterGroups", js.Array(value :_*))
+    def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilterGroups(value: js.Array[ApiDimensionFilterGroup]): Self = this.set("dimensionFilterGroups", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilterGroups: Self = this.set("dimensionFilterGroups", js.undefined)
+    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: String*): Self = this.set("dimensions", js.Array(value :_*))
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Array[String]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowLimit(value: Double): Self = this.set("rowLimit", value.asInstanceOf[js.Any])
+    def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
     
     @scala.inline
-    def deleteRowLimit: Self = this.set("rowLimit", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchType(value: String): Self = this.set("searchType", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteSearchType: Self = this.set("searchType", js.undefined)
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
-    
-    @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
   }
 }

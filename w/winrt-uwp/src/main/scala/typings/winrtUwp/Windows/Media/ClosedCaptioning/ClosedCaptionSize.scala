@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.ClosedCaptioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClosedCaptionSize extends js.Object
+sealed trait ClosedCaptionSize extends StObject
 /** Specifies the size of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionSize")
 @js.native
-object ClosedCaptionSize extends js.Object {
+object ClosedCaptionSize extends StObject {
   
   /** Default text size. */
   @js.native

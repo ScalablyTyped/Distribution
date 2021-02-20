@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instance extends js.Object {
+trait Instance extends StObject {
   
   /**
     * The full name of the Google Compute Engine [network](https://cloud.google.com/vpc/docs/vpc) to which the instance is connected. If left unspecified, the `default` network will be
@@ -85,127 +86,115 @@ object Instance {
   }
   
   @scala.inline
-  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizedNetwork(value: String): Self = StObject.set(x, "authorizedNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizedNetworkUndefined: Self = StObject.set(x, "authorizedNetwork", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedNetwork(value: String): Self = this.set("authorizedNetwork", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAuthorizedNetwork: Self = this.set("authorizedNetwork", js.undefined)
+    def setDiscoveryEndpoint(value: String): Self = StObject.set(x, "discoveryEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDiscoveryEndpointUndefined: Self = StObject.set(x, "discoveryEndpoint", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscoveryEndpoint(value: String): Self = this.set("discoveryEndpoint", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDiscoveryEndpoint: Self = this.set("discoveryEndpoint", js.undefined)
+    def setInstanceMessages(value: js.Array[InstanceMessage]): Self = StObject.set(x, "instanceMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInstanceMessagesUndefined: Self = StObject.set(x, "instanceMessages", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setInstanceMessagesVarargs(value: InstanceMessage*): Self = this.set("instanceMessages", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceMessages(value: js.Array[InstanceMessage]): Self = this.set("instanceMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceMessages: Self = this.set("instanceMessages", js.undefined)
+    def setInstanceMessagesVarargs(value: InstanceMessage*): Self = StObject.set(x, "instanceMessages", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setMemcacheFullVersion(value: String): Self = this.set("memcacheFullVersion", value.asInstanceOf[js.Any])
+    def setMemcacheFullVersion(value: String): Self = StObject.set(x, "memcacheFullVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemcacheFullVersion: Self = this.set("memcacheFullVersion", js.undefined)
+    def setMemcacheFullVersionUndefined: Self = StObject.set(x, "memcacheFullVersion", js.undefined)
     
     @scala.inline
-    def setMemcacheNodesVarargs(value: Node*): Self = this.set("memcacheNodes", js.Array(value :_*))
+    def setMemcacheNodes(value: js.Array[Node]): Self = StObject.set(x, "memcacheNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemcacheNodes(value: js.Array[Node]): Self = this.set("memcacheNodes", value.asInstanceOf[js.Any])
+    def setMemcacheNodesUndefined: Self = StObject.set(x, "memcacheNodes", js.undefined)
     
     @scala.inline
-    def deleteMemcacheNodes: Self = this.set("memcacheNodes", js.undefined)
+    def setMemcacheNodesVarargs(value: Node*): Self = StObject.set(x, "memcacheNodes", js.Array(value :_*))
     
     @scala.inline
-    def setMemcacheVersion(value: String): Self = this.set("memcacheVersion", value.asInstanceOf[js.Any])
+    def setMemcacheVersion(value: String): Self = StObject.set(x, "memcacheVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemcacheVersion: Self = this.set("memcacheVersion", js.undefined)
+    def setMemcacheVersionUndefined: Self = StObject.set(x, "memcacheVersion", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNodeConfig(value: NodeConfig): Self = this.set("nodeConfig", value.asInstanceOf[js.Any])
+    def setNodeConfig(value: NodeConfig): Self = StObject.set(x, "nodeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeConfig: Self = this.set("nodeConfig", js.undefined)
+    def setNodeConfigUndefined: Self = StObject.set(x, "nodeConfig", js.undefined)
     
     @scala.inline
-    def setNodeCount(value: Double): Self = this.set("nodeCount", value.asInstanceOf[js.Any])
+    def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeCount: Self = this.set("nodeCount", js.undefined)
+    def setNodeCountUndefined: Self = StObject.set(x, "nodeCount", js.undefined)
     
     @scala.inline
-    def setParameters(value: MemcacheParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: MemcacheParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def setZonesVarargs(value: String*): Self = this.set("zones", js.Array(value :_*))
+    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZones(value: js.Array[String]): Self = this.set("zones", value.asInstanceOf[js.Any])
+    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
     @scala.inline
-    def deleteZones: Self = this.set("zones", js.undefined)
+    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

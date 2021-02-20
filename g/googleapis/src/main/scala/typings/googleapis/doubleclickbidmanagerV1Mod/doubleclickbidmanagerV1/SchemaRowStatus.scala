@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the upload status of a row in the request.
   */
 @js.native
-trait SchemaRowStatus extends js.Object {
+trait SchemaRowStatus extends StObject {
   
   /**
     * Whether the stored entity is changed as a result of upload.
@@ -49,57 +50,45 @@ object SchemaRowStatus {
   }
   
   @scala.inline
-  implicit class SchemaRowStatusOps[Self <: SchemaRowStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaRowStatusMutableBuilder[Self <: SchemaRowStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanged(value: Boolean): Self = this.set("changed", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def deleteChanged: Self = this.set("changed", js.undefined)
+    def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
     
     @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityName(value: String): Self = this.set("entityName", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteEntityName: Self = this.set("entityName", js.undefined)
+    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: String*): Self = this.set("errors", js.Array(value :_*))
+    def setPersisted(value: Boolean): Self = StObject.set(x, "persisted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[String]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setPersistedUndefined: Self = StObject.set(x, "persisted", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setRowNumber(value: Double): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersisted(value: Boolean): Self = this.set("persisted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersisted: Self = this.set("persisted", js.undefined)
-    
-    @scala.inline
-    def setRowNumber(value: Double): Self = this.set("rowNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowNumber: Self = this.set("rowNumber", js.undefined)
+    def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
   }
 }

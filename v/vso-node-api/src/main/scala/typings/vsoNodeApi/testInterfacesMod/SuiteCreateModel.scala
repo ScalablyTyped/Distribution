@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuiteCreateModel extends js.Object {
+trait SuiteCreateModel extends StObject {
   
   var name: String = js.native
   
@@ -24,33 +25,21 @@ object SuiteCreateModel {
   }
   
   @scala.inline
-  implicit class SuiteCreateModelOps[Self <: SuiteCreateModel] (val x: Self) extends AnyVal {
+  implicit class SuiteCreateModelMutableBuilder[Self <: SuiteCreateModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequirementIds(value: js.Array[Double]): Self = StObject.set(x, "requirementIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRequirementIdsVarargs(value: Double*): Self = StObject.set(x, "requirementIds", js.Array(value :_*))
     
     @scala.inline
-    def setQueryString(value: String): Self = this.set("queryString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequirementIdsVarargs(value: Double*): Self = this.set("requirementIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequirementIds(value: js.Array[Double]): Self = this.set("requirementIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuiteType(value: String): Self = this.set("suiteType", value.asInstanceOf[js.Any])
+    def setSuiteType(value: String): Self = StObject.set(x, "suiteType", value.asInstanceOf[js.Any])
   }
 }

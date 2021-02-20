@@ -2,16 +2,21 @@ package typings.ranjs.mod
 
 import typings.ranjs.anon.Accepted
 import typings.ranjs.anon.Cv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ranjs", "_mc")
-@js.native
-object _mc extends js.Object {
+object _mc {
   
   @js.native
-  trait MCMC extends js.Object {
+  sealed trait State extends StObject
+  @JSImport("ranjs", "_mc.State")
+  @js.native
+  object State extends StObject
+  
+  @js.native
+  trait MCMC extends StObject {
     
     def ac(): js.Array[Double] = js.native
     
@@ -36,9 +41,4 @@ object _mc extends js.Object {
     def warmUp(progress: js.Function1[/* percentage */ Double, Unit]): Unit = js.native
     def warmUp(progress: js.Function1[/* percentage */ Double, Unit], maxBatches: Double): Unit = js.native
   }
-  
-  @js.native
-  sealed trait State extends js.Object
-  @js.native
-  object State extends js.Object
 }

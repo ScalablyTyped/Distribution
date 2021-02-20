@@ -1,5 +1,6 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object RemoveResult {
   }
   
   @scala.inline
-  implicit class RemoveResultOps[Self <: RemoveResult[_], T /* <: js.Object */] (val x: Self with RemoveResult[T]) extends AnyVal {
+  implicit class RemoveResultMutableBuilder[Self <: RemoveResult[_], T /* <: js.Object */] (val x: Self with RemoveResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOld(value: Document[T]): Self = this.set("old", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOld: Self = this.set("old", js.undefined)
+    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
   }
 }

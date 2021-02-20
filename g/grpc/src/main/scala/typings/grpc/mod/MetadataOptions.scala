@@ -1,11 +1,12 @@
 package typings.grpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataOptions extends js.Object {
+trait MetadataOptions extends StObject {
   
   /* Signal that the call is cacheable. GRPC is free to use GET verb.
     * Defaults to false */
@@ -30,42 +31,30 @@ object MetadataOptions {
   }
   
   @scala.inline
-  implicit class MetadataOptionsOps[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+  implicit class MetadataOptionsMutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheableRequest(value: Boolean): Self = StObject.set(x, "cacheableRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheableRequestUndefined: Self = StObject.set(x, "cacheableRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorked(value: Boolean): Self = StObject.set(x, "corked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheableRequest(value: Boolean): Self = this.set("cacheableRequest", value.asInstanceOf[js.Any])
+    def setCorkedUndefined: Self = StObject.set(x, "corked", js.undefined)
     
     @scala.inline
-    def deleteCacheableRequest: Self = this.set("cacheableRequest", js.undefined)
+    def setIdempotentRequest(value: Boolean): Self = StObject.set(x, "idempotentRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorked(value: Boolean): Self = this.set("corked", value.asInstanceOf[js.Any])
+    def setIdempotentRequestUndefined: Self = StObject.set(x, "idempotentRequest", js.undefined)
     
     @scala.inline
-    def deleteCorked: Self = this.set("corked", js.undefined)
+    def setWaitForReady(value: Boolean): Self = StObject.set(x, "waitForReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdempotentRequest(value: Boolean): Self = this.set("idempotentRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdempotentRequest: Self = this.set("idempotentRequest", js.undefined)
-    
-    @scala.inline
-    def setWaitForReady(value: Boolean): Self = this.set("waitForReady", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForReady: Self = this.set("waitForReady", js.undefined)
+    def setWaitForReadyUndefined: Self = StObject.set(x, "waitForReady", js.undefined)
   }
 }

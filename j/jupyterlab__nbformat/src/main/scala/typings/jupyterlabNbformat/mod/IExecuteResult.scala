@@ -1,6 +1,7 @@
 package typings.jupyterlabNbformat.mod
 
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,33 +41,21 @@ object IExecuteResult {
   }
   
   @scala.inline
-  implicit class IExecuteResultOps[Self <: IExecuteResult] (val x: Self) extends AnyVal {
+  implicit class IExecuteResultMutableBuilder[Self <: IExecuteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecution_count(value: ExecutionCount): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecution_countNull: Self = StObject.set(x, "execution_count", null)
     
     @scala.inline
-    def setData(value: IMimeBundle): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMetadata(value: OutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: OutputMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutput_type(value: execute_result): Self = this.set("output_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecution_count(value: ExecutionCount): Self = this.set("execution_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecution_countNull: Self = this.set("execution_count", null)
+    def setOutput_type(value: execute_result): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

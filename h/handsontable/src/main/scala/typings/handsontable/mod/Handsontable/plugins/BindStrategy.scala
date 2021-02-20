@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindStrategy extends js.Object {
+trait BindStrategy extends StObject {
   
   def clearMap(): Unit = js.native
   
@@ -44,45 +45,33 @@ object BindStrategy {
   }
   
   @scala.inline
-  implicit class BindStrategyOps[Self <: BindStrategy] (val x: Self) extends AnyVal {
+  implicit class BindStrategyMutableBuilder[Self <: BindStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearMap(value: () => Unit): Self = StObject.set(x, "clearMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateMap(value: Double => Unit): Self = StObject.set(x, "createMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateRow(value: js.Any => Unit): Self = StObject.set(x, "createRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearMap(value: () => Unit): Self = this.set("clearMap", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateMap(value: Double => Unit): Self = this.set("createMap", js.Any.fromFunction1(value))
+    def setKlass(value: () => Unit): Self = StObject.set(x, "klass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateRow(value: js.Any => Unit): Self = this.set("createRow", js.Any.fromFunction1(value))
+    def setRemoveRow(value: js.Any => Unit): Self = StObject.set(x, "removeRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setSetStrategy(value: String => Unit): Self = StObject.set(x, "setStrategy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKlass(value: () => Unit): Self = this.set("klass", js.Any.fromFunction0(value))
+    def setStrategy(value: String | Unit): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveRow(value: js.Any => Unit): Self = this.set("removeRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStrategy(value: String => Unit): Self = this.set("setStrategy", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStrategy(value: String | Unit): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslate(value: js.Any => Unit): Self = this.set("translate", js.Any.fromFunction1(value))
+    def setTranslate(value: js.Any => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
   }
 }

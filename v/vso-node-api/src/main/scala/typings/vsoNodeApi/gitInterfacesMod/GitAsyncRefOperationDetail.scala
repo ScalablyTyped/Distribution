@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitAsyncRefOperationDetail extends js.Object {
+trait GitAsyncRefOperationDetail extends StObject {
   
   /**
     * Indicates if there was a conflict generated when trying to cherry pick or revert the changes.
@@ -53,36 +54,24 @@ object GitAsyncRefOperationDetail {
   }
   
   @scala.inline
-  implicit class GitAsyncRefOperationDetailOps[Self <: GitAsyncRefOperationDetail] (val x: Self) extends AnyVal {
+  implicit class GitAsyncRefOperationDetailMutableBuilder[Self <: GitAsyncRefOperationDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflict(value: Boolean): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentCommitId(value: String): Self = StObject.set(x, "currentCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflict(value: Boolean): Self = this.set("conflict", value.asInstanceOf[js.Any])
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentCommitId(value: String): Self = this.set("currentCommitId", value.asInstanceOf[js.Any])
+    def setStatus(value: GitAsyncRefOperationFailureStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessage(value: String): Self = this.set("failureMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: GitAsyncRefOperationFailureStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimedout(value: Boolean): Self = this.set("timedout", value.asInstanceOf[js.Any])
+    def setTimedout(value: Boolean): Self = StObject.set(x, "timedout", value.asInstanceOf[js.Any])
   }
 }

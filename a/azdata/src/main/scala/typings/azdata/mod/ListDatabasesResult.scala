@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDatabasesResult extends js.Object {
+trait ListDatabasesResult extends StObject {
   
   var databaseNames: js.Array[String] = js.native
   
@@ -20,33 +21,21 @@ object ListDatabasesResult {
   }
   
   @scala.inline
-  implicit class ListDatabasesResultOps[Self <: ListDatabasesResult] (val x: Self) extends AnyVal {
+  implicit class ListDatabasesResultMutableBuilder[Self <: ListDatabasesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseNames(value: js.Array[String]): Self = StObject.set(x, "databaseNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabases(value: js.Array[DatabaseInfo]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseNamesVarargs(value: String*): Self = this.set("databaseNames", js.Array(value :_*))
+    def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
     @scala.inline
-    def setDatabaseNames(value: js.Array[String]): Self = this.set("databaseNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDatabasesVarargs(value: DatabaseInfo*): Self = this.set("databases", js.Array(value :_*))
-    
-    @scala.inline
-    def setDatabases(value: js.Array[DatabaseInfo]): Self = this.set("databases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatabases: Self = this.set("databases", js.undefined)
+    def setDatabasesVarargs(value: DatabaseInfo*): Self = StObject.set(x, "databases", js.Array(value :_*))
   }
 }

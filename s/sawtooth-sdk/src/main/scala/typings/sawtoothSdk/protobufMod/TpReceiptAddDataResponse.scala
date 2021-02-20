@@ -1,12 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.TpReceiptAddDataResponse.Status
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,16 +31,41 @@ class TpReceiptAddDataResponse () extends ITpReceiptAddDataResponse {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse")
-@js.native
-object TpReceiptAddDataResponse extends js.Object {
+object TpReceiptAddDataResponse {
+  
+  @js.native
+  sealed trait Status extends StObject
+  /** Status enum. */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.Status")
+  @js.native
+  object Status extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    
+    @js.native
+    sealed trait ERROR extends Status
+    /* 2 */ val ERROR: typings.sawtoothSdk.protobufMod.TpReceiptAddDataResponse.Status.ERROR with Double = js.native
+    
+    @js.native
+    sealed trait OK extends Status
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.TpReceiptAddDataResponse.Status.OK with Double = js.native
+    
+    @js.native
+    sealed trait STATUS_UNSET extends Status
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.TpReceiptAddDataResponse.Status.STATUS_UNSET with Double = js.native
+  }
   
   /**
     * Creates a new TpReceiptAddDataResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns TpReceiptAddDataResponse instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.create")
+  @js.native
   def create(): TpReceiptAddDataResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.create")
+  @js.native
   def create(properties: ITpReceiptAddDataResponse): TpReceiptAddDataResponse = js.native
   
   /**
@@ -51,9 +76,17 @@ object TpReceiptAddDataResponse extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.decode")
+  @js.native
   def decode(reader: Reader): TpReceiptAddDataResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.decode")
+  @js.native
   def decode(reader: Reader, length: Double): TpReceiptAddDataResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.decode")
+  @js.native
   def decode(reader: Uint8Array): TpReceiptAddDataResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): TpReceiptAddDataResponse = js.native
   
   /**
@@ -63,7 +96,11 @@ object TpReceiptAddDataResponse extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): TpReceiptAddDataResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): TpReceiptAddDataResponse = js.native
   
   /**
@@ -72,7 +109,11 @@ object TpReceiptAddDataResponse extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.encode")
+  @js.native
   def encode(message: ITpReceiptAddDataResponse): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.encode")
+  @js.native
   def encode(message: ITpReceiptAddDataResponse, writer: Writer): Writer = js.native
   
   /**
@@ -81,7 +122,11 @@ object TpReceiptAddDataResponse extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITpReceiptAddDataResponse): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITpReceiptAddDataResponse, writer: Writer): Writer = js.native
   
   /**
@@ -89,6 +134,8 @@ object TpReceiptAddDataResponse extends js.Object {
     * @param object Plain object
     * @returns TpReceiptAddDataResponse
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): TpReceiptAddDataResponse = js.native
   
   /**
@@ -97,7 +144,11 @@ object TpReceiptAddDataResponse extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.toObject")
+  @js.native
   def toObject(message: TpReceiptAddDataResponse): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.toObject")
+  @js.native
   def toObject(message: TpReceiptAddDataResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -105,30 +156,7 @@ object TpReceiptAddDataResponse extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataResponse.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
-  
-  @js.native
-  sealed trait Status extends js.Object
-  /** Status enum. */
-  @js.native
-  object Status extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Status with Double] = js.native
-    
-    @js.native
-    sealed trait ERROR extends Status
-    /* 2 */ @js.native
-    object ERROR extends TopLevel[ERROR with Double]
-    
-    @js.native
-    sealed trait OK extends Status
-    /* 1 */ @js.native
-    object OK extends TopLevel[OK with Double]
-    
-    @js.native
-    sealed trait STATUS_UNSET extends Status
-    /* 0 */ @js.native
-    object STATUS_UNSET extends TopLevel[STATUS_UNSET with Double]
-  }
 }

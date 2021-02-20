@@ -1,11 +1,12 @@
 package typings.saucelabs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeBaseline extends js.Object {
+trait IncludeBaseline extends StObject {
   
   var includeBaseline: js.UndefOr[Boolean] = js.native
   
@@ -22,33 +23,21 @@ object IncludeBaseline {
   }
   
   @scala.inline
-  implicit class IncludeBaselineOps[Self <: IncludeBaseline] (val x: Self) extends AnyVal {
+  implicit class IncludeBaselineMutableBuilder[Self <: IncludeBaseline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeBaseline(value: Boolean): Self = StObject.set(x, "includeBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeBaselineUndefined: Self = StObject.set(x, "includeBaseline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = this.set("metricNames", js.Array(value :_*))
+    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
     @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = this.set("metricNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderIndex(value: Double): Self = this.set("orderIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeBaseline(value: Boolean): Self = this.set("includeBaseline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeBaseline: Self = this.set("includeBaseline", js.undefined)
+    def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
   }
 }

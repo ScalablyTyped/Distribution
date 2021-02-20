@@ -3,6 +3,7 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.WebGLUniformLocation
 import typings.std.Float32Array
 import typings.std.Int32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullRequest extends js.Object {
+trait PullRequest extends StObject {
   
   /** Required. The maximum number of messages to return for this request. Must be a positive integer. The Pub/Sub system may return fewer than the number specified. */
   var maxMessages: js.UndefOr[Double] = js.native
@@ -26,30 +27,18 @@ object PullRequest {
   }
   
   @scala.inline
-  implicit class PullRequestOps[Self <: PullRequest] (val x: Self) extends AnyVal {
+  implicit class PullRequestMutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMessages(value: Double): Self = this.set("maxMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxMessages: Self = this.set("maxMessages", js.undefined)
-    
-    @scala.inline
-    def setReturnImmediately(value: Boolean): Self = this.set("returnImmediately", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnImmediately: Self = this.set("returnImmediately", js.undefined)
+    def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
   }
 }

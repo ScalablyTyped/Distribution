@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides additional information about a Geocoordinate . This information is only applicable to position estimates obtained using satellite signals. */
 @js.native
-trait GeocoordinateSatelliteData extends js.Object {
+trait GeocoordinateSatelliteData extends StObject {
   
   /** Gets the horizontal dilution of precision (HDOP) of a Geocoordinate . */
   var horizontalDilutionOfPrecision: Double = js.native
@@ -30,27 +31,15 @@ object GeocoordinateSatelliteData {
   }
   
   @scala.inline
-  implicit class GeocoordinateSatelliteDataOps[Self <: GeocoordinateSatelliteData] (val x: Self) extends AnyVal {
+  implicit class GeocoordinateSatelliteDataMutableBuilder[Self <: GeocoordinateSatelliteData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontalDilutionOfPrecision(value: Double): Self = StObject.set(x, "horizontalDilutionOfPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionDilutionOfPrecision(value: Double): Self = StObject.set(x, "positionDilutionOfPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHorizontalDilutionOfPrecision(value: Double): Self = this.set("horizontalDilutionOfPrecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionDilutionOfPrecision(value: Double): Self = this.set("positionDilutionOfPrecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalDilutionOfPrecision(value: Double): Self = this.set("verticalDilutionOfPrecision", value.asInstanceOf[js.Any])
+    def setVerticalDilutionOfPrecision(value: Double): Self = StObject.set(x, "verticalDilutionOfPrecision", value.asInstanceOf[js.Any])
   }
 }

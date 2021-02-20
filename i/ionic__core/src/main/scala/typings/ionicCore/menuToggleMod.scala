@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle", JSImport.Namespace)
-@js.native
-object menuToggleMod extends js.Object {
+object menuToggleMod {
   
+  @JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle", "MenuToggle")
   @js.native
   class MenuToggle () extends ComponentInterface {
     

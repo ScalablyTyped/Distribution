@@ -1,6 +1,7 @@
 package typings.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,90 +43,78 @@ object EggPlugin {
   }
   
   @scala.inline
-  implicit class EggPluginOps[Self <: EggPlugin] (val x: Self) extends AnyVal {
+  implicit class EggPluginMutableBuilder[Self <: EggPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevelopment(value: EggPluginItem): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setI18n(value: EggPluginItem): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevelopment(value: EggPluginItem): Self = this.set("development", value.asInstanceOf[js.Any])
+    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
     @scala.inline
-    def deleteDevelopment: Self = this.set("development", js.undefined)
+    def setJsonp(value: EggPluginItem): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: EggPluginItem): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
     @scala.inline
-    def deleteI18n: Self = this.set("i18n", js.undefined)
+    def setLogrotator(value: EggPluginItem): Self = StObject.set(x, "logrotator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonp(value: EggPluginItem): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    def setLogrotatorUndefined: Self = StObject.set(x, "logrotator", js.undefined)
     
     @scala.inline
-    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    def setMultipart(value: EggPluginItem): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogrotator(value: EggPluginItem): Self = this.set("logrotator", value.asInstanceOf[js.Any])
+    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
     @scala.inline
-    def deleteLogrotator: Self = this.set("logrotator", js.undefined)
+    def setOnerror(value: EggPluginItem): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipart(value: EggPluginItem): Self = this.set("multipart", value.asInstanceOf[js.Any])
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def deleteMultipart: Self = this.set("multipart", js.undefined)
+    def setSchedule(value: EggPluginItem): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnerror(value: EggPluginItem): Self = this.set("onerror", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setSecurity(value: EggPluginItem): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: EggPluginItem): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setSession(value: EggPluginItem): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurity(value: EggPluginItem): Self = this.set("security", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deleteSecurity: Self = this.set("security", js.undefined)
+    def setStatic(value: EggPluginItem): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: EggPluginItem): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setView(value: EggPluginItem): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatic(value: EggPluginItem): Self = this.set("static", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
+    def setWatcher(value: EggPluginItem): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: EggPluginItem): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWatcher(value: EggPluginItem): Self = this.set("watcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatcher: Self = this.set("watcher", js.undefined)
+    def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
   }
 }

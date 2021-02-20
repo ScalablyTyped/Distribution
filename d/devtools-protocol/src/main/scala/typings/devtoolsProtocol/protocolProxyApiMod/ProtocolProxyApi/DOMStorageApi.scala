@@ -13,12 +13,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOMStorage.GetDOMStorageItemsReques
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.GetDOMStorageItemsResponse
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.RemoveDOMStorageItemRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.SetDOMStorageItemRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMStorageApi extends js.Object {
+trait DOMStorageApi extends StObject {
   
   def clear(params: ClearRequest): js.Promise[Unit] = js.native
   

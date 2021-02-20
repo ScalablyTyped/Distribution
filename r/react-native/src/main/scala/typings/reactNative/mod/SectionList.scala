@@ -1,14 +1,21 @@
 package typings.reactNative.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "SectionList")
 @js.native
-class SectionList[ItemT, SectionT] ()
+class SectionList[ItemT, SectionT] protected ()
   extends Component[SectionListProps[ItemT, SectionT], js.Object, js.Any] {
+  def this(props: SectionListProps[ItemT, SectionT]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: SectionListProps[ItemT, SectionT], context: js.Any) = this()
   
   /**
     * Displays the scroll indicators momentarily.

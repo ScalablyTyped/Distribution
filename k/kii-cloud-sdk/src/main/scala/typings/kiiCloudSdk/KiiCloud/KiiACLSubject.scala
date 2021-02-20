@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.kiiCloudSdk.KiiCloud.KiiAnonymousUser
   - typings.kiiCloudSdk.KiiCloud.KiiThing
 */
-trait KiiACLSubject extends js.Object
+trait KiiACLSubject extends StObject

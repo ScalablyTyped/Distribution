@@ -6,6 +6,7 @@ import typings.tensorflowTfjsLayers.initializersMod.Initializer
 import typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier
 import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.variablesMod.LayerVariable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +62,16 @@ class SimpleRNNCell protected () extends RNNCell {
   val useBias: Boolean = js.native
 }
 /* static members */
-@JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "SimpleRNNCell")
-@js.native
-object SimpleRNNCell extends js.Object {
+object SimpleRNNCell {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "SimpleRNNCell")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "SimpleRNNCell.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

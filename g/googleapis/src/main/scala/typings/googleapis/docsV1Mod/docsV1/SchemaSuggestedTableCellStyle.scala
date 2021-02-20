@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A suggested change to a TableCellStyle.
   */
 @js.native
-trait SchemaSuggestedTableCellStyle extends js.Object {
+trait SchemaSuggestedTableCellStyle extends StObject {
   
   /**
     * A TableCellStyle that only includes the changes made in this suggestion.
@@ -32,30 +33,18 @@ object SchemaSuggestedTableCellStyle {
   }
   
   @scala.inline
-  implicit class SchemaSuggestedTableCellStyleOps[Self <: SchemaSuggestedTableCellStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaSuggestedTableCellStyleMutableBuilder[Self <: SchemaSuggestedTableCellStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTableCellStyle(value: SchemaTableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTableCellStyleSuggestionState(value: SchemaTableCellStyleSuggestionState): Self = StObject.set(x, "tableCellStyleSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableCellStyleSuggestionStateUndefined: Self = StObject.set(x, "tableCellStyleSuggestionState", js.undefined)
     
     @scala.inline
-    def setTableCellStyle(value: SchemaTableCellStyle): Self = this.set("tableCellStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellStyle: Self = this.set("tableCellStyle", js.undefined)
-    
-    @scala.inline
-    def setTableCellStyleSuggestionState(value: SchemaTableCellStyleSuggestionState): Self = this.set("tableCellStyleSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellStyleSuggestionState: Self = this.set("tableCellStyleSuggestionState", js.undefined)
+    def setTableCellStyleUndefined: Self = StObject.set(x, "tableCellStyle", js.undefined)
   }
 }

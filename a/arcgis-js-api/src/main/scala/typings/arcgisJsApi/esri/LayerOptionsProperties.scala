@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerOptionsProperties extends js.Object {
+trait LayerOptionsProperties extends StObject {
   
   /**
     * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
@@ -30,30 +31,18 @@ object LayerOptionsProperties {
   }
   
   @scala.inline
-  implicit class LayerOptionsPropertiesOps[Self <: LayerOptionsProperties] (val x: Self) extends AnyVal {
+  implicit class LayerOptionsPropertiesMutableBuilder[Self <: LayerOptionsProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReturnTopmostRaster(value: Boolean): Self = StObject.set(x, "returnTopmostRaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReturnTopmostRasterUndefined: Self = StObject.set(x, "returnTopmostRaster", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowNoDataRecords(value: Boolean): Self = StObject.set(x, "showNoDataRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnTopmostRaster(value: Boolean): Self = this.set("returnTopmostRaster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnTopmostRaster: Self = this.set("returnTopmostRaster", js.undefined)
-    
-    @scala.inline
-    def setShowNoDataRecords(value: Boolean): Self = this.set("showNoDataRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowNoDataRecords: Self = this.set("showNoDataRecords", js.undefined)
+    def setShowNoDataRecordsUndefined: Self = StObject.set(x, "showNoDataRecords", js.undefined)
   }
 }

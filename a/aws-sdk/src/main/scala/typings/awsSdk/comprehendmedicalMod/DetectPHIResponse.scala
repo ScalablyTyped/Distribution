@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendmedicalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectPHIResponse extends js.Object {
+trait DetectPHIResponse extends StObject {
   
   /**
     *  The collection of PHI entities extracted from the input text and their associated information. For each entity, the response provides the entity text, the entity category, where the entity text begins and ends, and the level of confidence that Amazon Comprehend Medical has in its detection. 
@@ -31,33 +32,21 @@ object DetectPHIResponse {
   }
   
   @scala.inline
-  implicit class DetectPHIResponseOps[Self <: DetectPHIResponse] (val x: Self) extends AnyVal {
+  implicit class DetectPHIResponseMutableBuilder[Self <: DetectPHIResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: EntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = this.set("Entities", js.Array(value :_*))
+    def setPaginationToken(value: String): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: EntityList): Self = this.set("Entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModelVersion(value: String): Self = this.set("ModelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaginationToken(value: String): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
   }
 }

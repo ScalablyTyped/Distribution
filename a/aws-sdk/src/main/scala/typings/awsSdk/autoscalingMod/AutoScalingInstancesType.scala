@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingInstancesType extends js.Object {
+trait AutoScalingInstancesType extends StObject {
   
   /**
     * The instances.
@@ -26,33 +27,21 @@ object AutoScalingInstancesType {
   }
   
   @scala.inline
-  implicit class AutoScalingInstancesTypeOps[Self <: AutoScalingInstancesType] (val x: Self) extends AnyVal {
+  implicit class AutoScalingInstancesTypeMutableBuilder[Self <: AutoScalingInstancesType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingInstances(value: AutoScalingInstances): Self = StObject.set(x, "AutoScalingInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingInstancesUndefined: Self = StObject.set(x, "AutoScalingInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = StObject.set(x, "AutoScalingInstances", js.Array(value :_*))
     
     @scala.inline
-    def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = this.set("AutoScalingInstances", js.Array(value :_*))
+    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingInstances(value: AutoScalingInstances): Self = this.set("AutoScalingInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoScalingInstances: Self = this.set("AutoScalingInstances", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

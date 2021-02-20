@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindThreatMatchesRequest extends js.Object {
+trait FindThreatMatchesRequest extends StObject {
   
   /** The client metadata. */
   var client: js.UndefOr[ClientInfo] = js.native
@@ -22,30 +23,18 @@ object FindThreatMatchesRequest {
   }
   
   @scala.inline
-  implicit class FindThreatMatchesRequestOps[Self <: FindThreatMatchesRequest] (val x: Self) extends AnyVal {
+  implicit class FindThreatMatchesRequestMutableBuilder[Self <: FindThreatMatchesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreatInfo(value: ThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: ClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
-    
-    @scala.inline
-    def setThreatInfo(value: ThreatInfo): Self = this.set("threatInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatInfo: Self = this.set("threatInfo", js.undefined)
+    def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
   }
 }

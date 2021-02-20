@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleItem extends js.Object {
+trait ScheduleItem extends StObject {
   
   // The date, time, and time zone that the corresponding event ends.
   var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
@@ -37,72 +38,60 @@ object ScheduleItem {
   }
   
   @scala.inline
-  implicit class ScheduleItemOps[Self <: ScheduleItem] (val x: Self) extends AnyVal {
+  implicit class ScheduleItemMutableBuilder[Self <: ScheduleItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndNull: Self = StObject.set(x, "end", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setEnd(value: NullableOption[DateTimeTimeZone]): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setIsPrivate(value: NullableOption[Boolean]): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setIsPrivateNull: Self = StObject.set(x, "isPrivate", null)
     
     @scala.inline
-    def setEndNull: Self = this.set("end", null)
+    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
     @scala.inline
-    def setIsPrivate(value: NullableOption[Boolean]): Self = this.set("isPrivate", value.asInstanceOf[js.Any])
+    def setLocation(value: NullableOption[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsPrivate: Self = this.set("isPrivate", js.undefined)
+    def setLocationNull: Self = StObject.set(x, "location", null)
     
     @scala.inline
-    def setIsPrivateNull: Self = this.set("isPrivate", null)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLocation(value: NullableOption[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setStart(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setStartNull: Self = StObject.set(x, "start", null)
     
     @scala.inline
-    def setLocationNull: Self = this.set("location", null)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setStart(value: NullableOption[DateTimeTimeZone]): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setStartNull: Self = this.set("start", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: NullableOption[FreeBusyStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubjectNull: Self = StObject.set(x, "subject", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
-    
-    @scala.inline
-    def setSubject(value: NullableOption[String]): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setSubjectNull: Self = this.set("subject", null)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

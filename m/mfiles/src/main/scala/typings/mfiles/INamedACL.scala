@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFNamedACLType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INamedACL extends js.Object {
+trait INamedACL extends StObject {
   
   var AccessControlList: IAccessControlList = js.native
   
@@ -36,36 +37,24 @@ object INamedACL {
   }
   
   @scala.inline
-  implicit class INamedACLOps[Self <: INamedACL] (val x: Self) extends AnyVal {
+  implicit class INamedACLMutableBuilder[Self <: INamedACL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => INamedACL): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => INamedACL): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGUID(value: String): Self = this.set("GUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamedACLType(value: MFNamedACLType): Self = this.set("NamedACLType", value.asInstanceOf[js.Any])
+    def setNamedACLType(value: MFNamedACLType): Self = StObject.set(x, "NamedACLType", value.asInstanceOf[js.Any])
   }
 }

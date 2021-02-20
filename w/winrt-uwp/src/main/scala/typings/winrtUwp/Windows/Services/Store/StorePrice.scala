@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Services.Store
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains pricing info for a product listing in the Windows Store. */
 @js.native
-trait StorePrice extends js.Object {
+trait StorePrice extends StObject {
   
   /** Gets the ISO 4217 currency code for the market of the current user. */
   var currencyCode: String = js.native
@@ -43,36 +44,24 @@ object StorePrice {
   }
   
   @scala.inline
-  implicit class StorePriceOps[Self <: StorePrice] (val x: Self) extends AnyVal {
+  implicit class StorePriceMutableBuilder[Self <: StorePrice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormattedBasePrice(value: String): Self = StObject.set(x, "formattedBasePrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setFormattedRecurrencePrice(value: String): Self = StObject.set(x, "formattedRecurrencePrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedBasePrice(value: String): Self = this.set("formattedBasePrice", value.asInstanceOf[js.Any])
+    def setIsOnSale(value: Boolean): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedPrice(value: String): Self = this.set("formattedPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormattedRecurrencePrice(value: String): Self = this.set("formattedRecurrencePrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsOnSale(value: Boolean): Self = this.set("isOnSale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaleEndDate(value: Date): Self = this.set("saleEndDate", value.asInstanceOf[js.Any])
+    def setSaleEndDate(value: Date): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
   }
 }

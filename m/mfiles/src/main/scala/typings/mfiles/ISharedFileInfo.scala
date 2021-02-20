@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISharedFileInfo extends js.Object {
+trait ISharedFileInfo extends StObject {
   
   val ChangeTimeUtc: Date = js.native
   
@@ -36,36 +37,24 @@ object ISharedFileInfo {
   }
   
   @scala.inline
-  implicit class ISharedFileInfoOps[Self <: ISharedFileInfo] (val x: Self) extends AnyVal {
+  implicit class ISharedFileInfoMutableBuilder[Self <: ISharedFileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => ISharedFileInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeTimeUtc(value: Date): Self = this.set("ChangeTimeUtc", value.asInstanceOf[js.Any])
+    def setLogicalSize(value: Double): Self = StObject.set(x, "LogicalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISharedFileInfo): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setLogicalSize_32bit(value: Double): Self = StObject.set(x, "LogicalSize_32bit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("Extension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalSize(value: Double): Self = this.set("LogicalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalSize_32bit(value: Double): Self = this.set("LogicalSize_32bit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

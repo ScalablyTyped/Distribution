@@ -9,13 +9,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.MapChangedEventHandler
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.mapchanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the settings in a settings container. The ApplicationDataContainer.Values property returns an object that can be cast to this type. */
 @js.native
-trait ApplicationDataContainerSettings extends js.Object {
+trait ApplicationDataContainerSettings extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

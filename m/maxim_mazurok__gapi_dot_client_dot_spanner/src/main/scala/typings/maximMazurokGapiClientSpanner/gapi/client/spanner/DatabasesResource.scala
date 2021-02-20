@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientSpanner.anon.OauthtokenParent
 import typings.maximMazurokGapiClientSpanner.anon.Parent
 import typings.maximMazurokGapiClientSpanner.anon.ParentPrettyPrint
 import typings.maximMazurokGapiClientSpanner.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabasesResource extends js.Object {
+trait DatabasesResource extends StObject {
   
   def create(request: OauthtokenParent, body: CreateDatabaseRequest): Request[Operation] = js.native
   /**

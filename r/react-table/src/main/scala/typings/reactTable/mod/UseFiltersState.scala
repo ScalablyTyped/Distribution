@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
 import typings.reactTable.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseFiltersState[D /* <: js.Object */] extends js.Object {
+trait UseFiltersState[D /* <: js.Object */] extends StObject {
   
   var filters: Filters[D] = js.native
 }
@@ -19,24 +20,12 @@ object UseFiltersState {
   }
   
   @scala.inline
-  implicit class UseFiltersStateOps[Self <: UseFiltersState[_], D /* <: js.Object */] (val x: Self with UseFiltersState[D]) extends AnyVal {
+  implicit class UseFiltersStateMutableBuilder[Self <: UseFiltersState[_], D /* <: js.Object */] (val x: Self with UseFiltersState[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: Filters[D]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiltersVarargs(value: Value[D]*): Self = this.set("filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: Filters[D]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setFiltersVarargs(value: Value[D]*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

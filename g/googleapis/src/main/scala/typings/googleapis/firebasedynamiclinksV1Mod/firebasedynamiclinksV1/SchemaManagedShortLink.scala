@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Managed Short Link.
   */
 @js.native
-trait SchemaManagedShortLink extends js.Object {
+trait SchemaManagedShortLink extends StObject {
   
   /**
     * Creation timestamp of the short link.
@@ -50,57 +51,45 @@ object SchemaManagedShortLink {
   }
   
   @scala.inline
-  implicit class SchemaManagedShortLinkOps[Self <: SchemaManagedShortLink] (val x: Self) extends AnyVal {
+  implicit class SchemaManagedShortLinkMutableBuilder[Self <: SchemaManagedShortLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlaggedAttribute(value: js.Array[String]): Self = StObject.set(x, "flaggedAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setFlaggedAttributeUndefined: Self = StObject.set(x, "flaggedAttribute", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setFlaggedAttributeVarargs(value: String*): Self = StObject.set(x, "flaggedAttribute", js.Array(value :_*))
     
     @scala.inline
-    def setFlaggedAttributeVarargs(value: String*): Self = this.set("flaggedAttribute", js.Array(value :_*))
+    def setInfo(value: SchemaDynamicLinkInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlaggedAttribute(value: js.Array[String]): Self = this.set("flaggedAttribute", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteFlaggedAttribute: Self = this.set("flaggedAttribute", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: SchemaDynamicLinkInfo): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setLinkName(value: String): Self = StObject.set(x, "linkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setLinkNameUndefined: Self = StObject.set(x, "linkName", js.undefined)
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkName(value: String): Self = this.set("linkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkName: Self = this.set("linkName", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Overlay/Overlay.base", JSImport.Namespace)
-@js.native
-object overlayBaseMod extends js.Object {
+object overlayBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Overlay/Overlay.base", "OverlayBase")
   @js.native
   class OverlayBase protected ()
     extends Component[IOverlayProps, js.Object, js.Any] {

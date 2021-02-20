@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object IgTreeGridPagingLocale {
   }
   
   @scala.inline
-  implicit class IgTreeGridPagingLocaleOps[Self <: IgTreeGridPagingLocale] (val x: Self) extends AnyVal {
+  implicit class IgTreeGridPagingLocaleMutableBuilder[Self <: IgTreeGridPagingLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextRowLoadingTextUndefined: Self = StObject.set(x, "contextRowLoadingText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextRowRootText(value: String): Self = StObject.set(x, "contextRowRootText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextRowLoadingText(value: String): Self = this.set("contextRowLoadingText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextRowLoadingText: Self = this.set("contextRowLoadingText", js.undefined)
-    
-    @scala.inline
-    def setContextRowRootText(value: String): Self = this.set("contextRowRootText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextRowRootText: Self = this.set("contextRowRootText", js.undefined)
+    def setContextRowRootTextUndefined: Self = StObject.set(x, "contextRowRootText", js.undefined)
   }
 }

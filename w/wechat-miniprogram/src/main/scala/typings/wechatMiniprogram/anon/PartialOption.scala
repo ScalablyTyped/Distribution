@@ -6,13 +6,14 @@ import typings.wechatMiniprogram.WechatMiniprogram.OnThemeChangeCallback
 import typings.wechatMiniprogram.WechatMiniprogram.OnThemeChangeCallbackResult
 import typings.wechatMiniprogram.WechatMiniprogram.OnUnhandledRejectionCallback
 import typings.wechatMiniprogram.WechatMiniprogram.OnUnhandledRejectionCallbackResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.App.Option> */
 @js.native
-trait PartialOption extends js.Object {
+trait PartialOption extends StObject {
   
   var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.native
   
@@ -37,60 +38,48 @@ object PartialOption {
   }
   
   @scala.inline
-  implicit class PartialOptionOps[Self <: PartialOption] (val x: Self) extends AnyVal {
+  implicit class PartialOptionMutableBuilder[Self <: PartialOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: /* error */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* error */ String => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnLaunch(value: /* options */ LaunchShowOption => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnPageNotFound(value: /* options */ PageNotFoundOption => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLaunch(value: /* options */ LaunchShowOption => Unit): Self = this.set("onLaunch", js.Any.fromFunction1(value))
+    def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
     
     @scala.inline
-    def deleteOnLaunch: Self = this.set("onLaunch", js.undefined)
+    def setOnShow(value: /* options */ LaunchShowOption => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPageNotFound(value: /* options */ PageNotFoundOption => Unit): Self = this.set("onPageNotFound", js.Any.fromFunction1(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnPageNotFound: Self = this.set("onPageNotFound", js.undefined)
+    def setOnThemeChange(value: /* result */ OnThemeChangeCallbackResult => Unit): Self = StObject.set(x, "onThemeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnShow(value: /* options */ LaunchShowOption => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
+    def setOnThemeChangeUndefined: Self = StObject.set(x, "onThemeChange", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnUnhandledRejection(value: /* result */ OnUnhandledRejectionCallbackResult => Unit): Self = StObject.set(x, "onUnhandledRejection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnThemeChange(value: /* result */ OnThemeChangeCallbackResult => Unit): Self = this.set("onThemeChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnThemeChange: Self = this.set("onThemeChange", js.undefined)
-    
-    @scala.inline
-    def setOnUnhandledRejection(value: /* result */ OnUnhandledRejectionCallbackResult => Unit): Self = this.set("onUnhandledRejection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnUnhandledRejection: Self = this.set("onUnhandledRejection", js.undefined)
+    def setOnUnhandledRejectionUndefined: Self = StObject.set(x, "onUnhandledRejection", js.undefined)
   }
 }

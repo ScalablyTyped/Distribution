@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -179,228 +180,216 @@ object RequestGroupAction {
   }
   
   @scala.inline
-  implicit class RequestGroupActionOps[Self <: RequestGroupAction] (val x: Self) extends AnyVal {
+  implicit class RequestGroupActionMutableBuilder[Self <: RequestGroupAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Array[RequestGroupAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionVarargs(value: RequestGroupAction*): Self = StObject.set(x, "action", js.Array(value :_*))
     
     @scala.inline
-    def set_cardinalityBehavior(value: Element): Self = this.set("_cardinalityBehavior", value.asInstanceOf[js.Any])
+    def setCardinalityBehavior(value: code): Self = StObject.set(x, "cardinalityBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_cardinalityBehavior: Self = this.set("_cardinalityBehavior", js.undefined)
+    def setCardinalityBehaviorUndefined: Self = StObject.set(x, "cardinalityBehavior", js.undefined)
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set_groupingBehavior(value: Element): Self = this.set("_groupingBehavior", value.asInstanceOf[js.Any])
+    def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value :_*))
     
     @scala.inline
-    def delete_groupingBehavior: Self = this.set("_groupingBehavior", js.undefined)
+    def setCondition(value: js.Array[RequestGroupActionCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_label(value: Element): Self = this.set("_label", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def delete_label: Self = this.set("_label", js.undefined)
+    def setConditionVarargs(value: RequestGroupActionCondition*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
     @scala.inline
-    def set_precheckBehavior(value: Element): Self = this.set("_precheckBehavior", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_precheckBehavior: Self = this.set("_precheckBehavior", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set_requiredBehavior(value: Element): Self = this.set("_requiredBehavior", value.asInstanceOf[js.Any])
+    def setDocumentation(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_requiredBehavior: Self = this.set("_requiredBehavior", js.undefined)
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def set_selectionBehavior(value: Element): Self = this.set("_selectionBehavior", value.asInstanceOf[js.Any])
+    def setDocumentationVarargs(value: RelatedArtifact*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
     @scala.inline
-    def delete_selectionBehavior: Self = this.set("_selectionBehavior", js.undefined)
+    def setGroupingBehavior(value: code): Self = StObject.set(x, "groupingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_textEquivalent(value: Element): Self = this.set("_textEquivalent", value.asInstanceOf[js.Any])
+    def setGroupingBehaviorUndefined: Self = StObject.set(x, "groupingBehavior", js.undefined)
     
     @scala.inline
-    def delete_textEquivalent: Self = this.set("_textEquivalent", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_timingDateTime(value: Element): Self = this.set("_timingDateTime", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def delete_timingDateTime: Self = this.set("_timingDateTime", js.undefined)
+    def setParticipant(value: js.Array[Reference]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def setParticipantVarargs(value: Reference*): Self = StObject.set(x, "participant", js.Array(value :_*))
     
     @scala.inline
-    def setActionVarargs(value: RequestGroupAction*): Self = this.set("action", js.Array(value :_*))
+    def setPrecheckBehavior(value: code): Self = StObject.set(x, "precheckBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: js.Array[RequestGroupAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setPrecheckBehaviorUndefined: Self = StObject.set(x, "precheckBehavior", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setRelatedAction(value: js.Array[RequestGroupActionRelatedAction]): Self = StObject.set(x, "relatedAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinalityBehavior(value: code): Self = this.set("cardinalityBehavior", value.asInstanceOf[js.Any])
+    def setRelatedActionUndefined: Self = StObject.set(x, "relatedAction", js.undefined)
     
     @scala.inline
-    def deleteCardinalityBehavior: Self = this.set("cardinalityBehavior", js.undefined)
+    def setRelatedActionVarargs(value: RequestGroupActionRelatedAction*): Self = StObject.set(x, "relatedAction", js.Array(value :_*))
     
     @scala.inline
-    def setCodeVarargs(value: CodeableConcept*): Self = this.set("code", js.Array(value :_*))
+    def setRequiredBehavior(value: code): Self = StObject.set(x, "requiredBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: js.Array[CodeableConcept]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setRequiredBehaviorUndefined: Self = StObject.set(x, "requiredBehavior", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionVarargs(value: RequestGroupActionCondition*): Self = this.set("condition", js.Array(value :_*))
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setCondition(value: js.Array[RequestGroupActionCondition]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setSelectionBehavior(value: code): Self = StObject.set(x, "selectionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setSelectionBehaviorUndefined: Self = StObject.set(x, "selectionBehavior", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTextEquivalent(value: String): Self = StObject.set(x, "textEquivalent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTextEquivalentUndefined: Self = StObject.set(x, "textEquivalent", js.undefined)
     
     @scala.inline
-    def setDocumentationVarargs(value: RelatedArtifact*): Self = this.set("documentation", js.Array(value :_*))
+    def setTimingDateTime(value: dateTime): Self = StObject.set(x, "timingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: js.Array[RelatedArtifact]): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setTimingDateTimeUndefined: Self = StObject.set(x, "timingDateTime", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setTimingDuration(value: Duration): Self = StObject.set(x, "timingDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingBehavior(value: code): Self = this.set("groupingBehavior", value.asInstanceOf[js.Any])
+    def setTimingDurationUndefined: Self = StObject.set(x, "timingDuration", js.undefined)
     
     @scala.inline
-    def deleteGroupingBehavior: Self = this.set("groupingBehavior", js.undefined)
+    def setTimingPeriod(value: Period): Self = StObject.set(x, "timingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setTimingPeriodUndefined: Self = StObject.set(x, "timingPeriod", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setTimingRange(value: Range): Self = StObject.set(x, "timingRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantVarargs(value: Reference*): Self = this.set("participant", js.Array(value :_*))
+    def setTimingRangeUndefined: Self = StObject.set(x, "timingRange", js.undefined)
     
     @scala.inline
-    def setParticipant(value: js.Array[Reference]): Self = this.set("participant", value.asInstanceOf[js.Any])
+    def setTimingTiming(value: Timing): Self = StObject.set(x, "timingTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParticipant: Self = this.set("participant", js.undefined)
+    def setTimingTimingUndefined: Self = StObject.set(x, "timingTiming", js.undefined)
     
     @scala.inline
-    def setPrecheckBehavior(value: code): Self = this.set("precheckBehavior", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecheckBehavior: Self = this.set("precheckBehavior", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setRelatedActionVarargs(value: RequestGroupActionRelatedAction*): Self = this.set("relatedAction", js.Array(value :_*))
+    def setType(value: Coding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedAction(value: js.Array[RequestGroupActionRelatedAction]): Self = this.set("relatedAction", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRelatedAction: Self = this.set("relatedAction", js.undefined)
+    def set_cardinalityBehavior(value: Element): Self = StObject.set(x, "_cardinalityBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredBehavior(value: code): Self = this.set("requiredBehavior", value.asInstanceOf[js.Any])
+    def set_cardinalityBehaviorUndefined: Self = StObject.set(x, "_cardinalityBehavior", js.undefined)
     
     @scala.inline
-    def deleteRequiredBehavior: Self = this.set("requiredBehavior", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Reference): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def set_groupingBehavior(value: Element): Self = StObject.set(x, "_groupingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionBehavior(value: code): Self = this.set("selectionBehavior", value.asInstanceOf[js.Any])
+    def set_groupingBehaviorUndefined: Self = StObject.set(x, "_groupingBehavior", js.undefined)
     
     @scala.inline
-    def deleteSelectionBehavior: Self = this.set("selectionBehavior", js.undefined)
+    def set_label(value: Element): Self = StObject.set(x, "_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEquivalent(value: String): Self = this.set("textEquivalent", value.asInstanceOf[js.Any])
+    def set_labelUndefined: Self = StObject.set(x, "_label", js.undefined)
     
     @scala.inline
-    def deleteTextEquivalent: Self = this.set("textEquivalent", js.undefined)
+    def set_precheckBehavior(value: Element): Self = StObject.set(x, "_precheckBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingDateTime(value: dateTime): Self = this.set("timingDateTime", value.asInstanceOf[js.Any])
+    def set_precheckBehaviorUndefined: Self = StObject.set(x, "_precheckBehavior", js.undefined)
     
     @scala.inline
-    def deleteTimingDateTime: Self = this.set("timingDateTime", js.undefined)
+    def set_requiredBehavior(value: Element): Self = StObject.set(x, "_requiredBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingDuration(value: Duration): Self = this.set("timingDuration", value.asInstanceOf[js.Any])
+    def set_requiredBehaviorUndefined: Self = StObject.set(x, "_requiredBehavior", js.undefined)
     
     @scala.inline
-    def deleteTimingDuration: Self = this.set("timingDuration", js.undefined)
+    def set_selectionBehavior(value: Element): Self = StObject.set(x, "_selectionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingPeriod(value: Period): Self = this.set("timingPeriod", value.asInstanceOf[js.Any])
+    def set_selectionBehaviorUndefined: Self = StObject.set(x, "_selectionBehavior", js.undefined)
     
     @scala.inline
-    def deleteTimingPeriod: Self = this.set("timingPeriod", js.undefined)
+    def set_textEquivalent(value: Element): Self = StObject.set(x, "_textEquivalent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingRange(value: Range): Self = this.set("timingRange", value.asInstanceOf[js.Any])
+    def set_textEquivalentUndefined: Self = StObject.set(x, "_textEquivalent", js.undefined)
     
     @scala.inline
-    def deleteTimingRange: Self = this.set("timingRange", js.undefined)
+    def set_timingDateTime(value: Element): Self = StObject.set(x, "_timingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingTiming(value: Timing): Self = this.set("timingTiming", value.asInstanceOf[js.Any])
+    def set_timingDateTimeUndefined: Self = StObject.set(x, "_timingDateTime", js.undefined)
     
     @scala.inline
-    def deleteTimingTiming: Self = this.set("timingTiming", js.undefined)
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: Coding): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
   }
 }

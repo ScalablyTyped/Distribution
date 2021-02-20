@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoscalingPolicyLoadBalancingUtilization extends js.Object {
+trait AutoscalingPolicyLoadBalancingUtilization extends StObject {
   
   /**
     * Fraction of backend capacity utilization (set in HTTP(S) load balancing configuration) that autoscaler should maintain. Must be a positive float value. If not defined, the default
@@ -22,24 +23,12 @@ object AutoscalingPolicyLoadBalancingUtilization {
   }
   
   @scala.inline
-  implicit class AutoscalingPolicyLoadBalancingUtilizationOps[Self <: AutoscalingPolicyLoadBalancingUtilization] (val x: Self) extends AnyVal {
+  implicit class AutoscalingPolicyLoadBalancingUtilizationMutableBuilder[Self <: AutoscalingPolicyLoadBalancingUtilization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUtilizationTarget(value: Double): Self = this.set("utilizationTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilizationTarget: Self = this.set("utilizationTarget", js.undefined)
+    def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
   }
 }

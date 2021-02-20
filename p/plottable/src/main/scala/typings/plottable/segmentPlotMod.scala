@@ -4,14 +4,14 @@ import typings.plottable.commonsMod.IAccessorScaleBinding
 import typings.plottable.drawersMod.ProxyDrawer
 import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.xyPlotMod.XYPlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/segmentPlot", JSImport.Namespace)
-@js.native
-object segmentPlotMod extends js.Object {
+object segmentPlotMod {
   
+  @JSImport("plottable/build/src/plots/segmentPlot", "Segment")
   @js.native
   /**
     * A Segment Plot displays line segments based on the data.
@@ -59,11 +59,22 @@ object segmentPlotMod extends js.Object {
     def y2(y2: IAccessor[Double | Y]): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Segment extends js.Object {
+  object Segment {
     
-    var _X2_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/segmentPlot", "Segment")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _Y2_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/segmentPlot", "Segment._X2_KEY")
+    @js.native
+    def _X2_KEY: js.Any = js.native
+    @scala.inline
+    def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/segmentPlot", "Segment._Y2_KEY")
+    @js.native
+    def _Y2_KEY: js.Any = js.native
+    @scala.inline
+    def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
 }

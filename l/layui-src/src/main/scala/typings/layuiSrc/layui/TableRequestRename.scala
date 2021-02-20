@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableRequestRename extends js.Object {
+trait TableRequestRename extends StObject {
   
   var limitName: String = js.native
   
@@ -20,24 +21,12 @@ object TableRequestRename {
   }
   
   @scala.inline
-  implicit class TableRequestRenameOps[Self <: TableRequestRename] (val x: Self) extends AnyVal {
+  implicit class TableRequestRenameMutableBuilder[Self <: TableRequestRename] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimitName(value: String): Self = StObject.set(x, "limitName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLimitName(value: String): Self = this.set("limitName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageName(value: String): Self = this.set("pageName", value.asInstanceOf[js.Any])
+    def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
   }
 }

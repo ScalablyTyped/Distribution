@@ -1,11 +1,12 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogFacebookResult extends js.Object {
+trait DialogFacebookResult extends StObject {
   
   var buttonType: Double = js.native
   
@@ -20,27 +21,15 @@ object DialogFacebookResult {
   }
   
   @scala.inline
-  implicit class DialogFacebookResultOps[Self <: DialogFacebookResult] (val x: Self) extends AnyVal {
+  implicit class DialogFacebookResultMutableBuilder[Self <: DialogFacebookResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonType(value: Double): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelection(value: js.Array[DialogFacebookResultSelection]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setButtonType(value: Double): Self = this.set("buttonType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionVarargs(value: DialogFacebookResultSelection*): Self = this.set("selection", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelection(value: js.Array[DialogFacebookResultSelection]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelectionVarargs(value: DialogFacebookResultSelection*): Self = StObject.set(x, "selection", js.Array(value :_*))
   }
 }

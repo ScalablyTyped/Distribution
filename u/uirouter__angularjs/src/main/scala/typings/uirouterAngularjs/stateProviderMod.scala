@@ -5,16 +5,16 @@ import typings.uirouterCore.mod.StateRegistry
 import typings.uirouterCore.mod.StateService
 import typings.uirouterCore.stateBuilderMod.BuilderFunction
 import typings.uirouterCore.stateServiceMod.OnInvalidCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/angularjs/lib/stateProvider", JSImport.Namespace)
-@js.native
-object stateProviderMod extends js.Object {
+object stateProviderMod {
   
+  @JSImport("@uirouter/angularjs/lib/stateProvider", "StateProvider")
   @js.native
-  class StateProvider protected () extends js.Object {
+  class StateProvider protected () extends StObject {
     def this(stateRegistry: StateRegistry, stateService: StateService) = this()
     
     /**

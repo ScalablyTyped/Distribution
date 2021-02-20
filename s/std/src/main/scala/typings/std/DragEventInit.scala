@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +19,15 @@ object DragEventInit {
   }
   
   @scala.inline
-  implicit class DragEventInitOps[Self <: DragEventInit] (val x: Self) extends AnyVal {
+  implicit class DragEventInitMutableBuilder[Self <: DragEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataTransfer(value: DataTransfer): Self = StObject.set(x, "dataTransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTransferNull: Self = StObject.set(x, "dataTransfer", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataTransfer(value: DataTransfer): Self = this.set("dataTransfer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataTransfer: Self = this.set("dataTransfer", js.undefined)
-    
-    @scala.inline
-    def setDataTransferNull: Self = this.set("dataTransfer", null)
+    def setDataTransferUndefined: Self = StObject.set(x, "dataTransfer", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * 最低基础库： `2.7.0` */
 @js.native
-trait Canvas extends js.Object {
+trait Canvas extends StObject {
   
   /** [Canvas.cancelAnimationFrame(number requestID)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.cancelAnimationFrame.html)
     *
@@ -109,45 +110,33 @@ object Canvas {
   }
   
   @scala.inline
-  implicit class CanvasOps[Self <: Canvas] (val x: Self) extends AnyVal {
+  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateImage(value: () => Image): Self = StObject.set(x, "createImage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateImageData(value: () => ImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancelAnimationFrame(value: Double => Unit): Self = this.set("cancelAnimationFrame", js.Any.fromFunction1(value))
+    def setCreatePath2D(value: Path2D => Path2D): Self = StObject.set(x, "createPath2D", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateImage(value: () => Image): Self = this.set("createImage", js.Any.fromFunction0(value))
+    def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateImageData(value: () => ImageData): Self = this.set("createImageData", js.Any.fromFunction0(value))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatePath2D(value: Path2D => Path2D): Self = this.set("createPath2D", js.Any.fromFunction1(value))
+    def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, _] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContext(value: String => js.Any): Self = this.set("getContext", js.Any.fromFunction1(value))
+    def setToDataURL(value: (String, Double) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, _] => Double): Self = this.set("requestAnimationFrame", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToDataURL(value: (String, Double) => String): Self = this.set("toDataURL", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

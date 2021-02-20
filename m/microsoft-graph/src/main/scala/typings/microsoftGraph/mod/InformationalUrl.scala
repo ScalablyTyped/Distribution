@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InformationalUrl extends js.Object {
+trait InformationalUrl extends StObject {
   
   // CDN URL to the application's logo, Read-only.
   var logoUrl: js.UndefOr[NullableOption[String]] = js.native
@@ -31,63 +32,51 @@ object InformationalUrl {
   }
   
   @scala.inline
-  implicit class InformationalUrlOps[Self <: InformationalUrl] (val x: Self) extends AnyVal {
+  implicit class InformationalUrlMutableBuilder[Self <: InformationalUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogoUrl(value: NullableOption[String]): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogoUrlNull: Self = StObject.set(x, "logoUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogoUrlUndefined: Self = StObject.set(x, "logoUrl", js.undefined)
     
     @scala.inline
-    def setLogoUrl(value: NullableOption[String]): Self = this.set("logoUrl", value.asInstanceOf[js.Any])
+    def setMarketingUrl(value: NullableOption[String]): Self = StObject.set(x, "marketingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogoUrl: Self = this.set("logoUrl", js.undefined)
+    def setMarketingUrlNull: Self = StObject.set(x, "marketingUrl", null)
     
     @scala.inline
-    def setLogoUrlNull: Self = this.set("logoUrl", null)
+    def setMarketingUrlUndefined: Self = StObject.set(x, "marketingUrl", js.undefined)
     
     @scala.inline
-    def setMarketingUrl(value: NullableOption[String]): Self = this.set("marketingUrl", value.asInstanceOf[js.Any])
+    def setPrivacyStatementUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyStatementUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarketingUrl: Self = this.set("marketingUrl", js.undefined)
+    def setPrivacyStatementUrlNull: Self = StObject.set(x, "privacyStatementUrl", null)
     
     @scala.inline
-    def setMarketingUrlNull: Self = this.set("marketingUrl", null)
+    def setPrivacyStatementUrlUndefined: Self = StObject.set(x, "privacyStatementUrl", js.undefined)
     
     @scala.inline
-    def setPrivacyStatementUrl(value: NullableOption[String]): Self = this.set("privacyStatementUrl", value.asInstanceOf[js.Any])
+    def setSupportUrl(value: NullableOption[String]): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivacyStatementUrl: Self = this.set("privacyStatementUrl", js.undefined)
+    def setSupportUrlNull: Self = StObject.set(x, "supportUrl", null)
     
     @scala.inline
-    def setPrivacyStatementUrlNull: Self = this.set("privacyStatementUrl", null)
+    def setSupportUrlUndefined: Self = StObject.set(x, "supportUrl", js.undefined)
     
     @scala.inline
-    def setSupportUrl(value: NullableOption[String]): Self = this.set("supportUrl", value.asInstanceOf[js.Any])
+    def setTermsOfServiceUrl(value: NullableOption[String]): Self = StObject.set(x, "termsOfServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSupportUrl: Self = this.set("supportUrl", js.undefined)
+    def setTermsOfServiceUrlNull: Self = StObject.set(x, "termsOfServiceUrl", null)
     
     @scala.inline
-    def setSupportUrlNull: Self = this.set("supportUrl", null)
-    
-    @scala.inline
-    def setTermsOfServiceUrl(value: NullableOption[String]): Self = this.set("termsOfServiceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermsOfServiceUrl: Self = this.set("termsOfServiceUrl", js.undefined)
-    
-    @scala.inline
-    def setTermsOfServiceUrlNull: Self = this.set("termsOfServiceUrl", null)
+    def setTermsOfServiceUrlUndefined: Self = StObject.set(x, "termsOfServiceUrl", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statementdescriptor extends js.Object {
+trait Statementdescriptor extends StObject {
   
   /**
     * The default text that appears on credit card statements when a charge is
@@ -35,42 +36,30 @@ object Statementdescriptor {
   }
   
   @scala.inline
-  implicit class StatementdescriptorOps[Self <: Statementdescriptor] (val x: Self) extends AnyVal {
+  implicit class StatementdescriptorMutableBuilder[Self <: Statementdescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatement_descriptor_kana(value: String): Self = StObject.set(x, "statement_descriptor_kana", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatement_descriptor(value: String): Self = this.set("statement_descriptor", value.asInstanceOf[js.Any])
+    def setStatement_descriptor_kanaNull: Self = StObject.set(x, "statement_descriptor_kana", null)
     
     @scala.inline
-    def deleteStatement_descriptor: Self = this.set("statement_descriptor", js.undefined)
+    def setStatement_descriptor_kanaUndefined: Self = StObject.set(x, "statement_descriptor_kana", js.undefined)
     
     @scala.inline
-    def setStatement_descriptor_kana(value: String): Self = this.set("statement_descriptor_kana", value.asInstanceOf[js.Any])
+    def setStatement_descriptor_kanji(value: String): Self = StObject.set(x, "statement_descriptor_kanji", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatement_descriptor_kana: Self = this.set("statement_descriptor_kana", js.undefined)
+    def setStatement_descriptor_kanjiNull: Self = StObject.set(x, "statement_descriptor_kanji", null)
     
     @scala.inline
-    def setStatement_descriptor_kanaNull: Self = this.set("statement_descriptor_kana", null)
-    
-    @scala.inline
-    def setStatement_descriptor_kanji(value: String): Self = this.set("statement_descriptor_kanji", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatement_descriptor_kanji: Self = this.set("statement_descriptor_kanji", js.undefined)
-    
-    @scala.inline
-    def setStatement_descriptor_kanjiNull: Self = this.set("statement_descriptor_kanji", null)
+    def setStatement_descriptor_kanjiUndefined: Self = StObject.set(x, "statement_descriptor_kanji", js.undefined)
   }
 }

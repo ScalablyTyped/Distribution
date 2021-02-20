@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,72 +72,60 @@ object ParamsResourceNamespacesDomainmappingsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceNamespacesDomainmappingsListOps[Self <: ParamsResourceNamespacesDomainmappingsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceNamespacesDomainmappingsListMutableBuilder[Self <: ParamsResourceNamespacesDomainmappingsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinue(value: String): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setFieldSelector(value: String): Self = StObject.set(x, "fieldSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinue(value: String): Self = this.set("continue", value.asInstanceOf[js.Any])
+    def setFieldSelectorUndefined: Self = StObject.set(x, "fieldSelector", js.undefined)
     
     @scala.inline
-    def deleteContinue: Self = this.set("continue", js.undefined)
+    def setIncludeUninitialized(value: Boolean): Self = StObject.set(x, "includeUninitialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldSelector(value: String): Self = this.set("fieldSelector", value.asInstanceOf[js.Any])
+    def setIncludeUninitializedUndefined: Self = StObject.set(x, "includeUninitialized", js.undefined)
     
     @scala.inline
-    def deleteFieldSelector: Self = this.set("fieldSelector", js.undefined)
+    def setLabelSelector(value: String): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeUninitialized(value: Boolean): Self = this.set("includeUninitialized", value.asInstanceOf[js.Any])
+    def setLabelSelectorUndefined: Self = StObject.set(x, "labelSelector", js.undefined)
     
     @scala.inline
-    def deleteIncludeUninitialized: Self = this.set("includeUninitialized", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSelector(value: String): Self = this.set("labelSelector", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteLabelSelector: Self = this.set("labelSelector", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceVersion: Self = this.set("resourceVersion", js.undefined)
-    
-    @scala.inline
-    def setWatch(value: Boolean): Self = this.set("watch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatch: Self = this.set("watch", js.undefined)
+    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

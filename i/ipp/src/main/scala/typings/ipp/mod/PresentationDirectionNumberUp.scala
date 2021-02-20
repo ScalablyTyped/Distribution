@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`totop-toleft`
   - typings.ipp.ippStrings.`totop-toright`
 */
-trait PresentationDirectionNumberUp extends js.Object
+trait PresentationDirectionNumberUp extends StObject
 object PresentationDirectionNumberUp {
   
   @scala.inline

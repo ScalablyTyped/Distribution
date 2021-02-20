@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LinkedDataTypeState extends js.Object
+sealed trait LinkedDataTypeState extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.LinkedDataTypeState")
 @js.native
-object LinkedDataTypeState extends js.Object {
+object LinkedDataTypeState extends StObject {
   
   @js.native
   sealed trait brokenLinkedData extends LinkedDataTypeState

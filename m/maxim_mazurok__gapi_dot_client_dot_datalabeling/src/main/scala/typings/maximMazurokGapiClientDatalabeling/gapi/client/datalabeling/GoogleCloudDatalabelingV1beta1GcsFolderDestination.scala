@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1GcsFolderDestination extends js.Object {
+trait GoogleCloudDatalabelingV1beta1GcsFolderDestination extends StObject {
   
   /** Required. Cloud Storage directory to export data to. */
   var outputFolderUri: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudDatalabelingV1beta1GcsFolderDestination {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1GcsFolderDestinationOps[Self <: GoogleCloudDatalabelingV1beta1GcsFolderDestination] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1GcsFolderDestinationMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1GcsFolderDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputFolderUri(value: String): Self = StObject.set(x, "outputFolderUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputFolderUri(value: String): Self = this.set("outputFolderUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputFolderUri: Self = this.set("outputFolderUri", js.undefined)
+    def setOutputFolderUriUndefined: Self = StObject.set(x, "outputFolderUri", js.undefined)
   }
 }

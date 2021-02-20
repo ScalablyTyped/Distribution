@@ -5,16 +5,16 @@ import typings.classValidator.validationErrorMod.ValidationError
 import typings.classValidator.validationMetadataMod.ValidationMetadata
 import typings.classValidator.validatorMod.Validator
 import typings.classValidator.validatorOptionsMod.ValidatorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/validation/ValidationExecutor", JSImport.Namespace)
-@js.native
-object validationExecutorMod extends js.Object {
+object validationExecutorMod {
   
+  @JSImport("class-validator/types/validation/ValidationExecutor", "ValidationExecutor")
   @js.native
-  class ValidationExecutor protected () extends js.Object {
+  class ValidationExecutor protected () extends StObject {
     def this(validator: Validator) = this()
     def this(validator: Validator, validatorOptions: ValidatorOptions) = this()
     

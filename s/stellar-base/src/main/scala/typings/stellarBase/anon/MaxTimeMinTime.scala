@@ -1,11 +1,12 @@
 package typings.stellarBase.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxTimeMinTime extends js.Object {
+trait MaxTimeMinTime extends StObject {
   
   var maxTime: js.UndefOr[Double | String] = js.native
   
@@ -20,30 +21,18 @@ object MaxTimeMinTime {
   }
   
   @scala.inline
-  implicit class MaxTimeMinTimeOps[Self <: MaxTimeMinTime] (val x: Self) extends AnyVal {
+  implicit class MaxTimeMinTimeMutableBuilder[Self <: MaxTimeMinTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxTime(value: Double | String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinTime(value: Double | String): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTime(value: Double | String): Self = this.set("maxTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTime: Self = this.set("maxTime", js.undefined)
-    
-    @scala.inline
-    def setMinTime(value: Double | String): Self = this.set("minTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinTime: Self = this.set("minTime", js.undefined)
+    def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
   }
 }

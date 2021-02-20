@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.asc
 import typings.devextreme.devextremeStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupColumn extends js.Object {
+trait GroupColumn extends StObject {
   
   var groupColumn: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object GroupColumn {
   }
   
   @scala.inline
-  implicit class GroupColumnOps[Self <: GroupColumn] (val x: Self) extends AnyVal {
+  implicit class GroupColumnMutableBuilder[Self <: GroupColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupColumn(value: String): Self = StObject.set(x, "groupColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupColumnUndefined: Self = StObject.set(x, "groupColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupColumn(value: String): Self = this.set("groupColumn", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def deleteGroupColumn: Self = this.set("groupColumn", js.undefined)
+    def setSummaryItem(value: String | Double): Self = StObject.set(x, "summaryItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: asc | desc): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
-    
-    @scala.inline
-    def setSummaryItem(value: String | Double): Self = this.set("summaryItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryItem: Self = this.set("summaryItem", js.undefined)
+    def setSummaryItemUndefined: Self = StObject.set(x, "summaryItem", js.undefined)
   }
 }

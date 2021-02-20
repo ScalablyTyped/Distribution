@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,48 +123,36 @@ object DataPilotDescriptor {
   }
   
   @scala.inline
-  implicit class DataPilotDescriptorOps[Self <: DataPilotDescriptor] (val x: Self) extends AnyVal {
+  implicit class DataPilotDescriptorMutableBuilder[Self <: DataPilotDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrillDownOnDoubleClick(value: Boolean): Self = StObject.set(x, "DrillDownOnDoubleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrandTotalName(value: String): Self = StObject.set(x, "GrandTotalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGrand(value: Boolean): Self = this.set("ColumnGrand", value.asInstanceOf[js.Any])
+    def setIgnoreEmptyRows(value: Boolean): Self = StObject.set(x, "IgnoreEmptyRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillDownOnDoubleClick(value: Boolean): Self = this.set("DrillDownOnDoubleClick", value.asInstanceOf[js.Any])
+    def setImportDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ImportDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrandTotalName(value: String): Self = this.set("GrandTotalName", value.asInstanceOf[js.Any])
+    def setRepeatIfEmpty(value: Boolean): Self = StObject.set(x, "RepeatIfEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreEmptyRows(value: Boolean): Self = this.set("IgnoreEmptyRows", value.asInstanceOf[js.Any])
+    def setRowGrand(value: Boolean): Self = StObject.set(x, "RowGrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportDescriptor(value: SafeArray[PropertyValue]): Self = this.set("ImportDescriptor", value.asInstanceOf[js.Any])
+    def setServiceArguments(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ServiceArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatIfEmpty(value: Boolean): Self = this.set("RepeatIfEmpty", value.asInstanceOf[js.Any])
+    def setShowFilterButton(value: Boolean): Self = StObject.set(x, "ShowFilterButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowGrand(value: Boolean): Self = this.set("RowGrand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceArguments(value: SafeArray[PropertyValue]): Self = this.set("ServiceArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowFilterButton(value: Boolean): Self = this.set("ShowFilterButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceServiceName(value: String): Self = this.set("SourceServiceName", value.asInstanceOf[js.Any])
+    def setSourceServiceName(value: String): Self = StObject.set(x, "SourceServiceName", value.asInstanceOf[js.Any])
   }
 }

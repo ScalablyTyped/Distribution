@@ -1,11 +1,12 @@
 package typings.convertLayout
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait layout extends js.Object {
+trait layout extends StObject {
   
   def fromEn(s: String): String = js.native
   
@@ -20,24 +21,12 @@ object layout {
   }
   
   @scala.inline
-  implicit class layoutOps[Self <: layout] (val x: Self) extends AnyVal {
+  implicit class layoutMutableBuilder[Self <: layout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromEn(value: String => String): Self = StObject.set(x, "fromEn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromEn(value: String => String): Self = this.set("fromEn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToEn(value: String => String): Self = this.set("toEn", js.Any.fromFunction1(value))
+    def setToEn(value: String => String): Self = StObject.set(x, "toEn", js.Any.fromFunction1(value))
   }
 }

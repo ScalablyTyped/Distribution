@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response of getting recaptcha param.
   */
 @js.native
-trait SchemaGetRecaptchaParamResponse extends js.Object {
+trait SchemaGetRecaptchaParamResponse extends StObject {
   
   /**
     * The fixed string &quot;identitytoolkit#GetRecaptchaParamResponse&quot;.
@@ -35,36 +36,24 @@ object SchemaGetRecaptchaParamResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetRecaptchaParamResponseOps[Self <: SchemaGetRecaptchaParamResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetRecaptchaParamResponseMutableBuilder[Self <: SchemaGetRecaptchaParamResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecaptchaSiteKey(value: String): Self = StObject.set(x, "recaptchaSiteKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRecaptchaSiteKeyUndefined: Self = StObject.set(x, "recaptchaSiteKey", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRecaptchaStoken(value: String): Self = StObject.set(x, "recaptchaStoken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecaptchaSiteKey(value: String): Self = this.set("recaptchaSiteKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecaptchaSiteKey: Self = this.set("recaptchaSiteKey", js.undefined)
-    
-    @scala.inline
-    def setRecaptchaStoken(value: String): Self = this.set("recaptchaStoken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecaptchaStoken: Self = this.set("recaptchaStoken", js.undefined)
+    def setRecaptchaStokenUndefined: Self = StObject.set(x, "recaptchaStoken", js.undefined)
   }
 }

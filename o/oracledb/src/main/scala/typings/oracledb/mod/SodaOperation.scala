@@ -1,6 +1,7 @@
 package typings.oracledb.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A SodaOperation object is an internal object. You should not directly modify its properties.
   */
 @js.native
-trait SodaOperation extends js.Object {
+trait SodaOperation extends StObject {
   
   /**
     * Finds the number of documents matching the given SodaOperation query criteria.

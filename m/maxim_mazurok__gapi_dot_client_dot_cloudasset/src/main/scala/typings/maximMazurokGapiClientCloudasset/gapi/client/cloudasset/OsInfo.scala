@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OsInfo extends js.Object {
+trait OsInfo extends StObject {
   
   /** The system architecture of the operating system. */
   var architecture: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object OsInfo {
   }
   
   @scala.inline
-  implicit class OsInfoOps[Self <: OsInfo] (val x: Self) extends AnyVal {
+  implicit class OsInfoMutableBuilder[Self <: OsInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteArchitecture: Self = this.set("architecture", js.undefined)
+    def setKernelRelease(value: String): Self = StObject.set(x, "kernelRelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setKernelReleaseUndefined: Self = StObject.set(x, "kernelRelease", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelRelease(value: String): Self = this.set("kernelRelease", value.asInstanceOf[js.Any])
+    def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
     
     @scala.inline
-    def deleteKernelRelease: Self = this.set("kernelRelease", js.undefined)
+    def setLongName(value: String): Self = StObject.set(x, "longName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelVersion(value: String): Self = this.set("kernelVersion", value.asInstanceOf[js.Any])
+    def setLongNameUndefined: Self = StObject.set(x, "longName", js.undefined)
     
     @scala.inline
-    def deleteKernelVersion: Self = this.set("kernelVersion", js.undefined)
+    def setOsconfigAgentVersion(value: String): Self = StObject.set(x, "osconfigAgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongName(value: String): Self = this.set("longName", value.asInstanceOf[js.Any])
+    def setOsconfigAgentVersionUndefined: Self = StObject.set(x, "osconfigAgentVersion", js.undefined)
     
     @scala.inline
-    def deleteLongName: Self = this.set("longName", js.undefined)
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsconfigAgentVersion(value: String): Self = this.set("osconfigAgentVersion", value.asInstanceOf[js.Any])
+    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
     @scala.inline
-    def deleteOsconfigAgentVersion: Self = this.set("osconfigAgentVersion", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortName: Self = this.set("shortName", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

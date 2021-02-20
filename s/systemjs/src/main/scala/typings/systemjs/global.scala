@@ -6,16 +6,14 @@ import typings.systemjs.System.ImportFn
 import typings.systemjs.System.Module
 import typings.systemjs.System.UpdateModuleFn
 import typings.systemjs.systemjsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object System extends js.Object {
+  object System {
     
     /**
       * Delete a module from the module registry. Note that the moduleId almost always must be a full url and that
@@ -23,11 +21,15 @@ object global extends js.Object {
       * The returned function is intended for use after re-importing the module. Calling the function
       * will re-bind all the exports of the re-imported module to every module that depends on the module.
       */
+    @JSGlobal("System.delete")
+    @js.native
     def delete(moduleId: String): `false` | UpdateModuleFn = js.native
     
     /**
       * Use for (let entry of System.entries()) to access all of the modules in the SystemJS registry.
       */
+    @JSGlobal("System.entries")
+    @js.native
     def entries(): Iterable[js.Tuple2[String, Module]] = js.native
     
     /**
@@ -35,29 +37,21 @@ object global extends js.Object {
       * and that you might need to call System.resolve() to obtain the moduleId. If the module does not exist in
       * the registry, null is returned.
       */
+    @JSGlobal("System.get")
+    @js.native
     def get(moduleId: String): Module | Null = js.native
     // tslint:disable-next-line no-unnecessary-generics
-    @JSName("get")
+    @JSGlobal("System.get")
+    @js.native
     def get_T[T](moduleId: String): T | Null = js.native
     
     /**
       * Indicates whether the SystemJS module registry contains a module. Note that the moduleId almost always
       * must be a full url and that you might need to call System.resolve() to obtain the moduleId.
       */
+    @JSGlobal("System.has")
+    @js.native
     def has(moduleId: String): Boolean = js.native
-    
-    /**
-      * Loads a javascript module from either a url or bare specifier that is in an import map.
-      * You may optionally provide a parentUrl that will be used for resolving relative urls.
-      */
-    def `import`[T /* <: Module */](moduleId: String): js.Promise[T] = js.native
-    def `import`[T /* <: Module */](moduleId: String, parentUrl: String): js.Promise[T] = js.native
-    /**
-      * Loads a javascript module from either a url or bare specifier that is in an import map.
-      * You may optionally provide a parentUrl that will be used for resolving relative urls.
-      */
-    @JSName("import")
-    var import_Original: ImportFn = js.native
     
     /**
       * Inserts a new module into the SystemJS module registry. The System.register format is
@@ -66,7 +60,11 @@ object global extends js.Object {
       * Register may be called with a name argument if you are using the named-register extra. (See
       * https://github.com/systemjs/systemjs#extras).
       */
+    @JSGlobal("System.register")
+    @js.native
     def register(dependencies: js.Array[String], declare: DeclareFn): Unit = js.native
+    @JSGlobal("System.register")
+    @js.native
     def register(name: String, dependencies: js.Array[String], declare: DeclareFn): Unit = js.native
     
     /**
@@ -75,13 +73,37 @@ object global extends js.Object {
       * relative to the parentUrl or the current browser page's base url. For a full url, resolve() is
       * a no-op.
       */
+    @JSGlobal("System.resolve")
+    @js.native
     def resolve(moduleId: String): String = js.native
+    @JSGlobal("System.resolve")
+    @js.native
     def resolve(moduleId: String, parentUrl: String): String = js.native
     
     /**
       * An alternative to System.register(), this allows you to insert a module into the module registry. Note that
       * the moduleId you provide will go straight into the registry without being resolved first.
       */
+    @JSGlobal("System.set")
+    @js.native
     def set(moduleId: String, module: Module): Unit = js.native
+    
+    /**
+      * Loads a javascript module from either a url or bare specifier that is in an import map.
+      * You may optionally provide a parentUrl that will be used for resolving relative urls.
+      */
+    @JSGlobal("System.import")
+    @js.native
+    val `import`: ImportFn = js.native
+    /**
+      * Loads a javascript module from either a url or bare specifier that is in an import map.
+      * You may optionally provide a parentUrl that will be used for resolving relative urls.
+      */
+    @JSGlobal("System.import")
+    @js.native
+    def `import`[T /* <: Module */](moduleId: String): js.Promise[T] = js.native
+    @JSGlobal("System.import")
+    @js.native
+    def `import`[T /* <: Module */](moduleId: String, parentUrl: String): js.Promise[T] = js.native
   }
 }

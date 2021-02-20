@@ -4,12 +4,13 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.textMapTypesMod.ITextMap
 import typings.playable.tooltipTypesMod.ITooltipService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventEmitterTextMap extends js.Object {
+trait EventEmitterTextMap extends StObject {
   
   var engine: IPlaybackEngine = js.native
   
@@ -33,30 +34,18 @@ object EventEmitterTextMap {
   }
   
   @scala.inline
-  implicit class EventEmitterTextMapOps[Self <: EventEmitterTextMap] (val x: Self) extends AnyVal {
+  implicit class EventEmitterTextMapMutableBuilder[Self <: EventEmitterTextMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = this.set("engine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = this.set("textMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = this.set("tooltipService", value.asInstanceOf[js.Any])
+    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

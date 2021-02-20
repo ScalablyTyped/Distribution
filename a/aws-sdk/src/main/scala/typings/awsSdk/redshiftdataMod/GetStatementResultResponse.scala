@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftdataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStatementResultResponse extends js.Object {
+trait GetStatementResultResponse extends StObject {
   
   /**
     * The properties (metadata) of a column. 
@@ -36,45 +37,33 @@ object GetStatementResultResponse {
   }
   
   @scala.inline
-  implicit class GetStatementResultResponseOps[Self <: GetStatementResultResponse] (val x: Self) extends AnyVal {
+  implicit class GetStatementResultResponseMutableBuilder[Self <: GetStatementResultResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnMetadata(value: ColumnMetadataList): Self = StObject.set(x, "ColumnMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnMetadataUndefined: Self = StObject.set(x, "ColumnMetadata", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setRecordsVarargs(value: FieldList*): Self = this.set("Records", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecords(value: SqlRecords): Self = this.set("Records", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setColumnMetadataVarargs(value: ColumnMetadata*): Self = this.set("ColumnMetadata", js.Array(value :_*))
+    def setRecords(value: SqlRecords): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnMetadata(value: ColumnMetadataList): Self = this.set("ColumnMetadata", value.asInstanceOf[js.Any])
+    def setRecordsVarargs(value: FieldList*): Self = StObject.set(x, "Records", js.Array(value :_*))
     
     @scala.inline
-    def deleteColumnMetadata: Self = this.set("ColumnMetadata", js.undefined)
+    def setTotalNumRows(value: Long): Self = StObject.set(x, "TotalNumRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTotalNumRows(value: Long): Self = this.set("TotalNumRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalNumRows: Self = this.set("TotalNumRows", js.undefined)
+    def setTotalNumRowsUndefined: Self = StObject.set(x, "TotalNumRows", js.undefined)
   }
 }

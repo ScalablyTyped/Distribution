@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceOrderConfig extends js.Object {
+trait SourceOrderConfig extends StObject {
   
   /**
     * the color to outline the child elements in.
@@ -27,24 +28,12 @@ object SourceOrderConfig {
   }
   
   @scala.inline
-  implicit class SourceOrderConfigOps[Self <: SourceOrderConfig] (val x: Self) extends AnyVal {
+  implicit class SourceOrderConfigMutableBuilder[Self <: SourceOrderConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildOutlineColor(value: RGBA): Self = StObject.set(x, "childOutlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildOutlineColor(value: RGBA): Self = this.set("childOutlineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentOutlineColor(value: RGBA): Self = this.set("parentOutlineColor", value.asInstanceOf[js.Any])
+    def setParentOutlineColor(value: RGBA): Self = StObject.set(x, "parentOutlineColor", value.asInstanceOf[js.Any])
   }
 }

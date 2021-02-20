@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.postmanCollection.anon.Created
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,9 @@ class Collection () extends ItemGroup[Item] {
   var version: js.UndefOr[Version] = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
   
+  @JSImport("postman-collection", "Collection.isCollection")
+  @js.native
   def isCollection(obj: js.Any): Boolean = js.native
 }

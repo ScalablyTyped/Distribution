@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.List
 import typings.lodash.mod.MemoIteratorCapped
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashReduce1x2[TResult] extends js.Object {
+trait LodashReduce1x2[TResult] extends StObject {
   
   def apply[T](callback: MemoIteratorCapped[T, TResult]): TResult = js.native
   def apply[T /* <: js.Object */](

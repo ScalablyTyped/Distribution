@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApksListResponse extends js.Object {
+trait ApksListResponse extends StObject {
   
   /** All APKs. */
   var apks: js.UndefOr[js.Array[Apk]] = js.native
@@ -22,33 +23,21 @@ object ApksListResponse {
   }
   
   @scala.inline
-  implicit class ApksListResponseOps[Self <: ApksListResponse] (val x: Self) extends AnyVal {
+  implicit class ApksListResponseMutableBuilder[Self <: ApksListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApks(value: js.Array[Apk]): Self = StObject.set(x, "apks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApksUndefined: Self = StObject.set(x, "apks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApksVarargs(value: Apk*): Self = StObject.set(x, "apks", js.Array(value :_*))
     
     @scala.inline
-    def setApksVarargs(value: Apk*): Self = this.set("apks", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApks(value: js.Array[Apk]): Self = this.set("apks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApks: Self = this.set("apks", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

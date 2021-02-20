@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaConflictHandlerConfig extends js.Object {
+trait LambdaConflictHandlerConfig extends StObject {
   
   /**
     * The Arn for the Lambda function to use as the Conflict Handler.
@@ -21,24 +22,12 @@ object LambdaConflictHandlerConfig {
   }
   
   @scala.inline
-  implicit class LambdaConflictHandlerConfigOps[Self <: LambdaConflictHandlerConfig] (val x: Self) extends AnyVal {
+  implicit class LambdaConflictHandlerConfigMutableBuilder[Self <: LambdaConflictHandlerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLambdaConflictHandlerArn(value: String): Self = StObject.set(x, "lambdaConflictHandlerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLambdaConflictHandlerArn(value: String): Self = this.set("lambdaConflictHandlerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambdaConflictHandlerArn: Self = this.set("lambdaConflictHandlerArn", js.undefined)
+    def setLambdaConflictHandlerArnUndefined: Self = StObject.set(x, "lambdaConflictHandlerArn", js.undefined)
   }
 }

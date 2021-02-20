@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsyncBatchAnnotateFilesRequest extends js.Object {
+trait AsyncBatchAnnotateFilesRequest extends StObject {
   
   /**
     * Optional. Target project and location to make a call. Format: `projects/{project-id}/locations/{location-id}`. If no parent is specified, a region will be chosen automatically.
@@ -25,33 +26,21 @@ object AsyncBatchAnnotateFilesRequest {
   }
   
   @scala.inline
-  implicit class AsyncBatchAnnotateFilesRequestOps[Self <: AsyncBatchAnnotateFilesRequest] (val x: Self) extends AnyVal {
+  implicit class AsyncBatchAnnotateFilesRequestMutableBuilder[Self <: AsyncBatchAnnotateFilesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequests(value: js.Array[AsyncAnnotateFileRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setRequestsVarargs(value: AsyncAnnotateFileRequest*): Self = this.set("requests", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequests(value: js.Array[AsyncAnnotateFileRequest]): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
+    def setRequestsVarargs(value: AsyncAnnotateFileRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

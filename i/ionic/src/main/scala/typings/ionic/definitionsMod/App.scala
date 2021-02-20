@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   var association: js.UndefOr[Null | AppAssociation] = js.native
   
@@ -29,48 +30,36 @@ object App {
   }
   
   @scala.inline
-  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
+  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociation(value: AppAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationNull: Self = StObject.set(x, "association", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    def setOrg_(value: Org): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociation(value: AppAssociation): Self = this.set("association", value.asInstanceOf[js.Any])
+    def setOrg_Null: Self = StObject.set(x, "org", null)
     
     @scala.inline
-    def deleteAssociation: Self = this.set("association", js.undefined)
+    def setRepo_url(value: String): Self = StObject.set(x, "repo_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationNull: Self = this.set("association", null)
+    def setRepo_urlUndefined: Self = StObject.set(x, "repo_url", js.undefined)
     
     @scala.inline
-    def setOrg_(value: Org): Self = this.set("org", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrg_Null: Self = this.set("org", null)
-    
-    @scala.inline
-    def setRepo_url(value: String): Self = this.set("repo_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepo_url: Self = this.set("repo_url", js.undefined)
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
   }
 }

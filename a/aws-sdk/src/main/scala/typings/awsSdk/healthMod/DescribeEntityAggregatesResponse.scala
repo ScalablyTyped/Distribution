@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEntityAggregatesResponse extends js.Object {
+trait DescribeEntityAggregatesResponse extends StObject {
   
   /**
     * The number of entities that are affected by each of the specified events.
@@ -21,27 +22,15 @@ object DescribeEntityAggregatesResponse {
   }
   
   @scala.inline
-  implicit class DescribeEntityAggregatesResponseOps[Self <: DescribeEntityAggregatesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEntityAggregatesResponseMutableBuilder[Self <: DescribeEntityAggregatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityAggregates(value: EntityAggregateList): Self = StObject.set(x, "entityAggregates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityAggregatesUndefined: Self = StObject.set(x, "entityAggregates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntityAggregatesVarargs(value: EntityAggregate*): Self = this.set("entityAggregates", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntityAggregates(value: EntityAggregateList): Self = this.set("entityAggregates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityAggregates: Self = this.set("entityAggregates", js.undefined)
+    def setEntityAggregatesVarargs(value: EntityAggregate*): Self = StObject.set(x, "entityAggregates", js.Array(value :_*))
   }
 }

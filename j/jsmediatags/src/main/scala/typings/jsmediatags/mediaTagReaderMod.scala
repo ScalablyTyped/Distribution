@@ -5,16 +5,32 @@ import typings.jsmediatags.typesMod.ByteRange
 import typings.jsmediatags.typesMod.CallbackType
 import typings.jsmediatags.typesMod.LoadCallbackType
 import typings.jsmediatags.typesMod.TagType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/MediaTagReader", JSImport.Namespace)
-@js.native
-object mediaTagReaderMod extends js.Object {
+object mediaTagReaderMod {
+  
+  @JSImport("jsmediatags/build2/MediaTagReader", JSImport.Default)
+  @js.native
+  class default protected () extends MediaTagReader {
+    def this(mediaFileReader: typings.jsmediatags.mediaFileReaderMod.default) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("jsmediatags/build2/MediaTagReader", "default.canReadTagFormat")
+    @js.native
+    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
+    
+    @JSImport("jsmediatags/build2/MediaTagReader", "default.getTagIdentifierByteRange")
+    @js.native
+    def getTagIdentifierByteRange(): ByteRange = js.native
+  }
   
   @js.native
-  trait MediaTagReader extends js.Object {
+  trait MediaTagReader extends StObject {
     
     def _expandShortcutTags(): js.Array[String] | Null = js.native
     def _expandShortcutTags(tagsWithShortcuts: js.Array[String]): js.Array[String] | Null = js.native
@@ -33,18 +49,5 @@ object mediaTagReaderMod extends js.Object {
     def read(callbacks: CallbackType): Unit = js.native
     
     def setTagsToRead(tags: js.Array[String]): MediaTagReader = js.native
-  }
-  
-  @js.native
-  class default protected () extends MediaTagReader {
-    def this(mediaFileReader: typings.jsmediatags.mediaFileReaderMod.default) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
-    
-    def getTagIdentifierByteRange(): ByteRange = js.native
   }
 }

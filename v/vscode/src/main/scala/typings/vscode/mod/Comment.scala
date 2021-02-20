@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   /**
     * The [author information](#CommentAuthorInformation) of the comment
@@ -62,48 +63,36 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: CommentAuthorInformation): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: String | MarkdownString): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: CommentAuthorInformation): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
     @scala.inline
-    def setBody(value: String | MarkdownString): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: CommentMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setContextValue(value: String): Self = this.set("contextValue", value.asInstanceOf[js.Any])
+    def setMode(value: CommentMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContextValue: Self = this.set("contextValue", js.undefined)
+    def setReactions(value: js.Array[CommentReaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setReactionsVarargs(value: CommentReaction*): Self = this.set("reactions", js.Array(value :_*))
-    
-    @scala.inline
-    def setReactions(value: js.Array[CommentReaction]): Self = this.set("reactions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReactions: Self = this.set("reactions", js.undefined)
+    def setReactionsVarargs(value: CommentReaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
   }
 }

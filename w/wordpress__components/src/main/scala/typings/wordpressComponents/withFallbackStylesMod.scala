@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.std.HTMLDivElement
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/components/higher-order/with-fallback-styles", JSImport.Namespace)
-@js.native
-object withFallbackStylesMod extends js.Object {
+object withFallbackStylesMod {
   
+  @JSImport("@wordpress/components/higher-order/with-fallback-styles", JSImport.Default)
+  @js.native
   def default[FSP](
     mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[js.Any], FSP]
   ): js.Function1[

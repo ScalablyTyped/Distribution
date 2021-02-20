@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidInstrumentationTest extends js.Object {
+trait AndroidInstrumentationTest extends StObject {
   
   /** The APK for the application under test. */
   var appApk: js.UndefOr[FileReference] = js.native
@@ -50,75 +51,63 @@ object AndroidInstrumentationTest {
   }
   
   @scala.inline
-  implicit class AndroidInstrumentationTestOps[Self <: AndroidInstrumentationTest] (val x: Self) extends AnyVal {
+  implicit class AndroidInstrumentationTestMutableBuilder[Self <: AndroidInstrumentationTest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppApk(value: FileReference): Self = this.set("appApk", value.asInstanceOf[js.Any])
+    def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
     
     @scala.inline
-    def deleteAppApk: Self = this.set("appApk", js.undefined)
+    def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppBundle(value: AppBundle): Self = this.set("appBundle", value.asInstanceOf[js.Any])
+    def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
     @scala.inline
-    def deleteAppBundle: Self = this.set("appBundle", js.undefined)
+    def setOrchestratorOption(value: String): Self = StObject.set(x, "orchestratorOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppPackageId(value: String): Self = this.set("appPackageId", value.asInstanceOf[js.Any])
+    def setOrchestratorOptionUndefined: Self = StObject.set(x, "orchestratorOption", js.undefined)
     
     @scala.inline
-    def deleteAppPackageId: Self = this.set("appPackageId", js.undefined)
+    def setShardingOption(value: ShardingOption): Self = StObject.set(x, "shardingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrchestratorOption(value: String): Self = this.set("orchestratorOption", value.asInstanceOf[js.Any])
+    def setShardingOptionUndefined: Self = StObject.set(x, "shardingOption", js.undefined)
     
     @scala.inline
-    def deleteOrchestratorOption: Self = this.set("orchestratorOption", js.undefined)
+    def setTestApk(value: FileReference): Self = StObject.set(x, "testApk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardingOption(value: ShardingOption): Self = this.set("shardingOption", value.asInstanceOf[js.Any])
+    def setTestApkUndefined: Self = StObject.set(x, "testApk", js.undefined)
     
     @scala.inline
-    def deleteShardingOption: Self = this.set("shardingOption", js.undefined)
+    def setTestPackageId(value: String): Self = StObject.set(x, "testPackageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestApk(value: FileReference): Self = this.set("testApk", value.asInstanceOf[js.Any])
+    def setTestPackageIdUndefined: Self = StObject.set(x, "testPackageId", js.undefined)
     
     @scala.inline
-    def deleteTestApk: Self = this.set("testApk", js.undefined)
+    def setTestRunnerClass(value: String): Self = StObject.set(x, "testRunnerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestPackageId(value: String): Self = this.set("testPackageId", value.asInstanceOf[js.Any])
+    def setTestRunnerClassUndefined: Self = StObject.set(x, "testRunnerClass", js.undefined)
     
     @scala.inline
-    def deleteTestPackageId: Self = this.set("testPackageId", js.undefined)
+    def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestRunnerClass(value: String): Self = this.set("testRunnerClass", value.asInstanceOf[js.Any])
+    def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
     @scala.inline
-    def deleteTestRunnerClass: Self = this.set("testRunnerClass", js.undefined)
-    
-    @scala.inline
-    def setTestTargetsVarargs(value: String*): Self = this.set("testTargets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestTargets(value: js.Array[String]): Self = this.set("testTargets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestTargets: Self = this.set("testTargets", js.undefined)
+    def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
   }
 }

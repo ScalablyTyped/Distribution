@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends js.Object {
+trait SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends StObject {
   
   /**
     * The carrier handling the shipment. See shipments[].carrier in the  Orders
@@ -33,36 +34,24 @@ object SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
   }
   
   @scala.inline
-  implicit class SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfoOps[Self <: SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfoMutableBuilder[Self <: SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
     
     @scala.inline
-    def deleteCarrier: Self = this.set("carrier", js.undefined)
+    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipmentId(value: String): Self = this.set("shipmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipmentId: Self = this.set("shipmentId", js.undefined)
-    
-    @scala.inline
-    def setTrackingId(value: String): Self = this.set("trackingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingId: Self = this.set("trackingId", js.undefined)
+    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
   }
 }

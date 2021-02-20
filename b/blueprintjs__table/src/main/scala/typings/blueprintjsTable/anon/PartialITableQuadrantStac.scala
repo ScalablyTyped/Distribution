@@ -8,13 +8,14 @@ import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/quadrants/tableQuadrantStack.ITableQuadrantStackProps> */
 @js.native
-trait PartialITableQuadrantStac extends js.Object {
+trait PartialITableQuadrantStac extends StObject {
   
   var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
   
@@ -104,189 +105,177 @@ object PartialITableQuadrantStac {
   }
   
   @scala.inline
-  implicit class PartialITableQuadrantStacOps[Self <: PartialITableQuadrantStac] (val x: Self) extends AnyVal {
+  implicit class PartialITableQuadrantStacMutableBuilder[Self <: PartialITableQuadrantStac] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBodyRef(value: /* ref */ HTMLElement | Null => _): Self = this.set("bodyRef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBodyRef: Self = this.set("bodyRef", js.undefined)
+    def setBodyRefUndefined: Self = StObject.set(x, "bodyRef", js.undefined)
     
     @scala.inline
     def setBodyRenderer(
       value: (/* quadrantType */ QuadrantType, /* showFrozenRowsOnly */ js.UndefOr[Boolean], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => Element
-    ): Self = this.set("bodyRenderer", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "bodyRenderer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteBodyRenderer: Self = this.set("bodyRenderer", js.undefined)
+    def setBodyRendererUndefined: Self = StObject.set(x, "bodyRenderer", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
     def setColumnHeaderCellRenderer(
       value: (/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => Element
-    ): Self = this.set("columnHeaderCellRenderer", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteColumnHeaderCellRenderer: Self = this.set("columnHeaderCellRenderer", js.undefined)
+    def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
     
     @scala.inline
-    def setColumnHeaderRef(value: /* ref */ HTMLElement | Null => Unit): Self = this.set("columnHeaderRef", js.Any.fromFunction1(value))
+    def setColumnHeaderRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "columnHeaderRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnHeaderRef: Self = this.set("columnHeaderRef", js.undefined)
+    def setColumnHeaderRefUndefined: Self = StObject.set(x, "columnHeaderRef", js.undefined)
     
     @scala.inline
-    def setEnableColumnInteractionBar(value: Boolean): Self = this.set("enableColumnInteractionBar", value.asInstanceOf[js.Any])
+    def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableColumnInteractionBar: Self = this.set("enableColumnInteractionBar", js.undefined)
+    def setEnableColumnInteractionBarUndefined: Self = StObject.set(x, "enableColumnInteractionBar", js.undefined)
     
     @scala.inline
-    def setEnableRowHeader(value: Boolean): Self = this.set("enableRowHeader", value.asInstanceOf[js.Any])
+    def setEnableRowHeader(value: Boolean): Self = StObject.set(x, "enableRowHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableRowHeader: Self = this.set("enableRowHeader", js.undefined)
+    def setEnableRowHeaderUndefined: Self = StObject.set(x, "enableRowHeader", js.undefined)
     
     @scala.inline
-    def setGrid(value: Grid): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def setHandleColumnResizeGuide(value: /* verticalGuides */ js.Array[Double] => Unit): Self = this.set("handleColumnResizeGuide", js.Any.fromFunction1(value))
+    def setHandleColumnResizeGuide(value: /* verticalGuides */ js.Array[Double] => Unit): Self = StObject.set(x, "handleColumnResizeGuide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHandleColumnResizeGuide: Self = this.set("handleColumnResizeGuide", js.undefined)
+    def setHandleColumnResizeGuideUndefined: Self = StObject.set(x, "handleColumnResizeGuide", js.undefined)
     
     @scala.inline
-    def setHandleColumnsReordering(value: /* verticalGuides */ js.Array[Double] => Unit): Self = this.set("handleColumnsReordering", js.Any.fromFunction1(value))
+    def setHandleColumnsReordering(value: /* verticalGuides */ js.Array[Double] => Unit): Self = StObject.set(x, "handleColumnsReordering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHandleColumnsReordering: Self = this.set("handleColumnsReordering", js.undefined)
+    def setHandleColumnsReorderingUndefined: Self = StObject.set(x, "handleColumnsReordering", js.undefined)
     
     @scala.inline
-    def setHandleRowResizeGuide(value: /* horizontalGuides */ js.Array[Double] => Unit): Self = this.set("handleRowResizeGuide", js.Any.fromFunction1(value))
+    def setHandleRowResizeGuide(value: /* horizontalGuides */ js.Array[Double] => Unit): Self = StObject.set(x, "handleRowResizeGuide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHandleRowResizeGuide: Self = this.set("handleRowResizeGuide", js.undefined)
+    def setHandleRowResizeGuideUndefined: Self = StObject.set(x, "handleRowResizeGuide", js.undefined)
     
     @scala.inline
-    def setHandleRowsReordering(value: /* horizontalGuides */ js.Array[Double] => Unit): Self = this.set("handleRowsReordering", js.Any.fromFunction1(value))
+    def setHandleRowsReordering(value: /* horizontalGuides */ js.Array[Double] => Unit): Self = StObject.set(x, "handleRowsReordering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHandleRowsReordering: Self = this.set("handleRowsReordering", js.undefined)
+    def setHandleRowsReorderingUndefined: Self = StObject.set(x, "handleRowsReordering", js.undefined)
     
     @scala.inline
-    def setIsHorizontalScrollDisabled(value: Boolean): Self = this.set("isHorizontalScrollDisabled", value.asInstanceOf[js.Any])
+    def setIsHorizontalScrollDisabled(value: Boolean): Self = StObject.set(x, "isHorizontalScrollDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsHorizontalScrollDisabled: Self = this.set("isHorizontalScrollDisabled", js.undefined)
+    def setIsHorizontalScrollDisabledUndefined: Self = StObject.set(x, "isHorizontalScrollDisabled", js.undefined)
     
     @scala.inline
-    def setIsVerticalScrollDisabled(value: Boolean): Self = this.set("isVerticalScrollDisabled", value.asInstanceOf[js.Any])
+    def setIsVerticalScrollDisabled(value: Boolean): Self = StObject.set(x, "isVerticalScrollDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsVerticalScrollDisabled: Self = this.set("isVerticalScrollDisabled", js.undefined)
+    def setIsVerticalScrollDisabledUndefined: Self = StObject.set(x, "isVerticalScrollDisabled", js.undefined)
     
     @scala.inline
-    def setLoadingOptionsVarargs(value: TableLoadingOption*): Self = this.set("loadingOptions", js.Array(value :_*))
+    def setLoadingOptions(value: js.Array[TableLoadingOption]): Self = StObject.set(x, "loadingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingOptions(value: js.Array[TableLoadingOption]): Self = this.set("loadingOptions", value.asInstanceOf[js.Any])
+    def setLoadingOptionsUndefined: Self = StObject.set(x, "loadingOptions", js.undefined)
     
     @scala.inline
-    def deleteLoadingOptions: Self = this.set("loadingOptions", js.undefined)
+    def setLoadingOptionsVarargs(value: TableLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value :_*))
     
     @scala.inline
-    def setMenuRenderer(value: /* refHandler */ js.Function1[/* ref */ HTMLElement, Unit] => Element): Self = this.set("menuRenderer", js.Any.fromFunction1(value))
+    def setMenuRenderer(value: /* refHandler */ js.Function1[/* ref */ HTMLElement, Unit] => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMenuRenderer: Self = this.set("menuRenderer", js.undefined)
+    def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
     
     @scala.inline
-    def setNumColumns(value: Double): Self = this.set("numColumns", value.asInstanceOf[js.Any])
+    def setNumColumns(value: Double): Self = StObject.set(x, "numColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumColumns: Self = this.set("numColumns", js.undefined)
+    def setNumColumnsUndefined: Self = StObject.set(x, "numColumns", js.undefined)
     
     @scala.inline
-    def setNumFrozenColumns(value: Double): Self = this.set("numFrozenColumns", value.asInstanceOf[js.Any])
+    def setNumFrozenColumns(value: Double): Self = StObject.set(x, "numFrozenColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumFrozenColumns: Self = this.set("numFrozenColumns", js.undefined)
+    def setNumFrozenColumnsUndefined: Self = StObject.set(x, "numFrozenColumns", js.undefined)
     
     @scala.inline
-    def setNumFrozenRows(value: Double): Self = this.set("numFrozenRows", value.asInstanceOf[js.Any])
+    def setNumFrozenRows(value: Double): Self = StObject.set(x, "numFrozenRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumFrozenRows: Self = this.set("numFrozenRows", js.undefined)
+    def setNumFrozenRowsUndefined: Self = StObject.set(x, "numFrozenRows", js.undefined)
     
     @scala.inline
-    def setNumRows(value: Double): Self = this.set("numRows", value.asInstanceOf[js.Any])
+    def setNumRows(value: Double): Self = StObject.set(x, "numRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumRows: Self = this.set("numRows", js.undefined)
+    def setNumRowsUndefined: Self = StObject.set(x, "numRows", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setOnScroll(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setQuadrantRef(value: /* ref */ HTMLElement | Null => Unit): Self = this.set("quadrantRef", js.Any.fromFunction1(value))
+    def setQuadrantRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteQuadrantRef: Self = this.set("quadrantRef", js.undefined)
+    def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
     
     @scala.inline
     def setRowHeaderCellRenderer(
       value: (/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenRowsOnly */ js.UndefOr[Boolean]) => Element
-    ): Self = this.set("rowHeaderCellRenderer", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteRowHeaderCellRenderer: Self = this.set("rowHeaderCellRenderer", js.undefined)
+    def setRowHeaderCellRendererUndefined: Self = StObject.set(x, "rowHeaderCellRenderer", js.undefined)
     
     @scala.inline
-    def setRowHeaderRef(value: /* ref */ HTMLElement | Null => _): Self = this.set("rowHeaderRef", js.Any.fromFunction1(value))
+    def setRowHeaderRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "rowHeaderRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRowHeaderRef: Self = this.set("rowHeaderRef", js.undefined)
+    def setRowHeaderRefUndefined: Self = StObject.set(x, "rowHeaderRef", js.undefined)
     
     @scala.inline
-    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => _): Self = this.set("scrollContainerRef", js.Any.fromFunction1(value))
+    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollContainerRef: Self = this.set("scrollContainerRef", js.undefined)
+    def setScrollContainerRefUndefined: Self = StObject.set(x, "scrollContainerRef", js.undefined)
     
     @scala.inline
-    def setThrottleScrolling(value: Boolean): Self = this.set("throttleScrolling", value.asInstanceOf[js.Any])
+    def setThrottleScrolling(value: Boolean): Self = StObject.set(x, "throttleScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThrottleScrolling: Self = this.set("throttleScrolling", js.undefined)
+    def setThrottleScrollingUndefined: Self = StObject.set(x, "throttleScrolling", js.undefined)
     
     @scala.inline
-    def setViewSyncDelay(value: Double): Self = this.set("viewSyncDelay", value.asInstanceOf[js.Any])
+    def setViewSyncDelay(value: Double): Self = StObject.set(x, "viewSyncDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewSyncDelay: Self = this.set("viewSyncDelay", js.undefined)
+    def setViewSyncDelayUndefined: Self = StObject.set(x, "viewSyncDelay", js.undefined)
   }
 }

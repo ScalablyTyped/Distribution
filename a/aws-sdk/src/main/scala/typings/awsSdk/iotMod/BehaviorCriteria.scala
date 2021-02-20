@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BehaviorCriteria extends js.Object {
+trait BehaviorCriteria extends StObject {
   
   /**
     * The operator that relates the thing measured (metric) to the criteria (containing a value or statisticalThreshold).
@@ -46,54 +47,42 @@ object BehaviorCriteria {
   }
   
   @scala.inline
-  implicit class BehaviorCriteriaOps[Self <: BehaviorCriteria] (val x: Self) extends AnyVal {
+  implicit class BehaviorCriteriaMutableBuilder[Self <: BehaviorCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparisonOperatorUndefined: Self = StObject.set(x, "comparisonOperator", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsecutiveDatapointsToAlarm(value: ConsecutiveDatapointsToAlarm): Self = StObject.set(x, "consecutiveDatapointsToAlarm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    def setConsecutiveDatapointsToAlarmUndefined: Self = StObject.set(x, "consecutiveDatapointsToAlarm", js.undefined)
     
     @scala.inline
-    def deleteComparisonOperator: Self = this.set("comparisonOperator", js.undefined)
+    def setConsecutiveDatapointsToClear(value: ConsecutiveDatapointsToClear): Self = StObject.set(x, "consecutiveDatapointsToClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsecutiveDatapointsToAlarm(value: ConsecutiveDatapointsToAlarm): Self = this.set("consecutiveDatapointsToAlarm", value.asInstanceOf[js.Any])
+    def setConsecutiveDatapointsToClearUndefined: Self = StObject.set(x, "consecutiveDatapointsToClear", js.undefined)
     
     @scala.inline
-    def deleteConsecutiveDatapointsToAlarm: Self = this.set("consecutiveDatapointsToAlarm", js.undefined)
+    def setDurationSeconds(value: DurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsecutiveDatapointsToClear(value: ConsecutiveDatapointsToClear): Self = this.set("consecutiveDatapointsToClear", value.asInstanceOf[js.Any])
+    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
     
     @scala.inline
-    def deleteConsecutiveDatapointsToClear: Self = this.set("consecutiveDatapointsToClear", js.undefined)
+    def setStatisticalThreshold(value: StatisticalThreshold): Self = StObject.set(x, "statisticalThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: DurationSeconds): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    def setStatisticalThresholdUndefined: Self = StObject.set(x, "statisticalThreshold", js.undefined)
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    def setValue(value: MetricValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticalThreshold(value: StatisticalThreshold): Self = this.set("statisticalThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticalThreshold: Self = this.set("statisticalThreshold", js.undefined)
-    
-    @scala.inline
-    def setValue(value: MetricValue): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetSecurityTokenServicePreferencesRequest extends js.Object {
+trait SetSecurityTokenServicePreferencesRequest extends StObject {
   
   /**
     * The version of the global endpoint token. Version 1 tokens are valid only in AWS Regions that are available by default. These tokens do not work in manually enabled Regions, such as Asia Pacific (Hong Kong). Version 2 tokens are valid in all Regions. However, version 2 tokens are longer and might affect systems where you temporarily store tokens. For information, see Activating and Deactivating STS in an AWS Region in the IAM User Guide.
@@ -21,21 +22,9 @@ object SetSecurityTokenServicePreferencesRequest {
   }
   
   @scala.inline
-  implicit class SetSecurityTokenServicePreferencesRequestOps[Self <: SetSecurityTokenServicePreferencesRequest] (val x: Self) extends AnyVal {
+  implicit class SetSecurityTokenServicePreferencesRequestMutableBuilder[Self <: SetSecurityTokenServicePreferencesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGlobalEndpointTokenVersion(value: globalEndpointTokenVersion): Self = this.set("GlobalEndpointTokenVersion", value.asInstanceOf[js.Any])
+    def setGlobalEndpointTokenVersion(value: globalEndpointTokenVersion): Self = StObject.set(x, "GlobalEndpointTokenVersion", value.asInstanceOf[js.Any])
   }
 }

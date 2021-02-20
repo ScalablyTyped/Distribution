@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.com_.sun.star.util.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatchProvider.queryDispatches()
   */
 @js.native
-trait DispatchDescriptor extends js.Object {
+trait DispatchDescriptor extends StObject {
   
   /**
     * specifies the URL of the resource/function
@@ -48,27 +49,15 @@ object DispatchDescriptor {
   }
   
   @scala.inline
-  implicit class DispatchDescriptorOps[Self <: DispatchDescriptor] (val x: Self) extends AnyVal {
+  implicit class DispatchDescriptorMutableBuilder[Self <: DispatchDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameName(value: String): Self = StObject.set(x, "FrameName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFeatureURL(value: URL): Self = this.set("FeatureURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrameName(value: String): Self = this.set("FrameName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchFlags(value: Double): Self = this.set("SearchFlags", value.asInstanceOf[js.Any])
+    def setSearchFlags(value: Double): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
   }
 }

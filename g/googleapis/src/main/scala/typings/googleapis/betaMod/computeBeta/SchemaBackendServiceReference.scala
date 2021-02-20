@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaBackendServiceReference extends js.Object {
+trait SchemaBackendServiceReference extends StObject {
   
   var backendService: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object SchemaBackendServiceReference {
   }
   
   @scala.inline
-  implicit class SchemaBackendServiceReferenceOps[Self <: SchemaBackendServiceReference] (val x: Self) extends AnyVal {
+  implicit class SchemaBackendServiceReferenceMutableBuilder[Self <: SchemaBackendServiceReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackendService(value: String): Self = this.set("backendService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackendService: Self = this.set("backendService", js.undefined)
+    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
   }
 }

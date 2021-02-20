@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsConverter
 
 import typings.tensorflowTfjsConverter.operationsTypesMod.OpMapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-converter/dist/operations/op_list/evaluation", JSImport.Namespace)
-@js.native
-object evaluationMod extends js.Object {
+object evaluationMod {
   
+  @JSImport("@tensorflow/tfjs-converter/dist/operations/op_list/evaluation", "json")
+  @js.native
   val json: js.Array[OpMapper] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessKeyLastUsed extends js.Object {
+trait AccessKeyLastUsed extends StObject {
   
   /**
     * The date and time, in ISO 8601 date-time format, when the access key was most recently used. This field is null in the following situations:   The user does not have an access key.   An access key exists but has not been used since IAM began tracking this information.   There is no sign-in data associated with the user.  
@@ -31,27 +32,15 @@ object AccessKeyLastUsed {
   }
   
   @scala.inline
-  implicit class AccessKeyLastUsedOps[Self <: AccessKeyLastUsed] (val x: Self) extends AnyVal {
+  implicit class AccessKeyLastUsedMutableBuilder[Self <: AccessKeyLastUsed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUsedDate(value: dateType): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLastUsedDate(value: dateType): Self = this.set("LastUsedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegion(value: stringType): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: stringType): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    def setServiceName(value: stringType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
   }
 }

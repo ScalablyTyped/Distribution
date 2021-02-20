@@ -1,6 +1,7 @@
 package typings.weixinApp.wx
 
 import typings.weixinApp.anon.Env
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 云开发
 // 文档：https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html
 @js.native
-trait Cloud extends js.Object {
+trait Cloud extends StObject {
   
   /**
     * 接受一个 name 参数，指定需引用的集合名称
@@ -34,27 +35,15 @@ object Cloud {
   }
   
   @scala.inline
-  implicit class CloudOps[Self <: Cloud] (val x: Self) extends AnyVal {
+  implicit class CloudMutableBuilder[Self <: Cloud] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection(value: String => js.Object): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabase(value: Env => js.Object): Self = StObject.set(x, "database", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollection(value: String => js.Object): Self = this.set("collection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDatabase(value: Env => js.Object): Self = this.set("database", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInit(value: InitCloudOptions => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setInit(value: InitCloudOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

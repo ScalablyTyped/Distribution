@@ -25,16 +25,16 @@ import typings.sipJs.sessionSessionMod.SignalingState
 import typings.sipJs.transactionsMod.InviteClientTransaction
 import typings.sipJs.transactionsMod.InviteServerTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/dialogs/session-dialog", JSImport.Namespace)
-@js.native
-object sessionDialogMod extends js.Object {
+object sessionDialogMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.sipJs.sessionSessionMod.Session because var conflicts: callId, id, localTag, localURI, remoteTag, remoteTarget, remoteURI. Inlined delegate, sessionState, signalingState, answer, offer, bye, bye, bye, bye, info, info, info, info, invite, invite, invite, invite, message, message, message, message, notify, notify, notify, notify, prack, prack, prack, prack, refer, refer, refer, refer */ @js.native
+  - typings.sipJs.sessionSessionMod.Session because var conflicts: callId, id, localTag, localURI, remoteTag, remoteTarget, remoteURI. Inlined delegate, sessionState, signalingState, answer, offer, bye, bye, bye, bye, info, info, info, info, invite, invite, invite, invite, message, message, message, message, notify, notify, notify, notify, prack, prack, prack, prack, refer, refer, refer, refer */ @JSImport("sip.js/lib/core/dialogs/session-dialog", "SessionDialog")
+  @js.native
   class SessionDialog protected () extends Dialog {
     def this(initialTransaction: InviteClientTransaction, core: UserAgentCore, state: DialogState) = this()
     def this(initialTransaction: InviteServerTransaction, core: UserAgentCore, state: DialogState) = this()

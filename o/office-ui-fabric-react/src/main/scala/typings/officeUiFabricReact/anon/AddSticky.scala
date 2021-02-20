@@ -2,12 +2,13 @@ package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.stickyStickyMod.Sticky
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddSticky extends js.Object {
+trait AddSticky extends StObject {
   
   def addSticky(sticky: Sticky): scala.Unit = js.native
   

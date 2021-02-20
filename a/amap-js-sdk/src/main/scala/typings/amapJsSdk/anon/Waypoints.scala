@@ -1,12 +1,13 @@
 package typings.amapJsSdk.anon
 
 import typings.amapJsSdk.AMap.LngLat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Waypoints extends js.Object {
+trait Waypoints extends StObject {
   
   var waypoints: js.Array[LngLat] = js.native
 }
@@ -19,24 +20,12 @@ object Waypoints {
   }
   
   @scala.inline
-  implicit class WaypointsOps[Self <: Waypoints] (val x: Self) extends AnyVal {
+  implicit class WaypointsMutableBuilder[Self <: Waypoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWaypoints(value: js.Array[LngLat]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWaypointsVarargs(value: LngLat*): Self = this.set("waypoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setWaypoints(value: js.Array[LngLat]): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+    def setWaypointsVarargs(value: LngLat*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

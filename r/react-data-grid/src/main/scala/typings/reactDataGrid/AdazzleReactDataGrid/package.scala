@@ -1,5 +1,6 @@
 package typings.reactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,4 @@ package object AdazzleReactDataGrid {
     /* args */ typings.reactDataGrid.anon.Name, 
     scala.Unit
   ]
-  
-  type ReactDataGrid[T] = typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid_[T]
 }

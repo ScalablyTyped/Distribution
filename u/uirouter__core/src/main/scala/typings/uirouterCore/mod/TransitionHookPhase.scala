@@ -1,12 +1,13 @@
 package typings.uirouterCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "TransitionHookPhase")
 @js.native
-object TransitionHookPhase extends js.Object {
+object TransitionHookPhase extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase with Double] = js.native

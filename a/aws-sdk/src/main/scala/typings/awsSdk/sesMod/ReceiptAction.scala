@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceiptAction extends js.Object {
+trait ReceiptAction extends StObject {
   
   /**
     * Adds a header to the received email.
@@ -51,60 +52,48 @@ object ReceiptAction {
   }
   
   @scala.inline
-  implicit class ReceiptActionOps[Self <: ReceiptAction] (val x: Self) extends AnyVal {
+  implicit class ReceiptActionMutableBuilder[Self <: ReceiptAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddHeaderAction(value: AddHeaderAction): Self = StObject.set(x, "AddHeaderAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddHeaderActionUndefined: Self = StObject.set(x, "AddHeaderAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounceAction(value: BounceAction): Self = StObject.set(x, "BounceAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddHeaderAction(value: AddHeaderAction): Self = this.set("AddHeaderAction", value.asInstanceOf[js.Any])
+    def setBounceActionUndefined: Self = StObject.set(x, "BounceAction", js.undefined)
     
     @scala.inline
-    def deleteAddHeaderAction: Self = this.set("AddHeaderAction", js.undefined)
+    def setLambdaAction(value: LambdaAction): Self = StObject.set(x, "LambdaAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceAction(value: BounceAction): Self = this.set("BounceAction", value.asInstanceOf[js.Any])
+    def setLambdaActionUndefined: Self = StObject.set(x, "LambdaAction", js.undefined)
     
     @scala.inline
-    def deleteBounceAction: Self = this.set("BounceAction", js.undefined)
+    def setS3Action(value: S3Action): Self = StObject.set(x, "S3Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaAction(value: LambdaAction): Self = this.set("LambdaAction", value.asInstanceOf[js.Any])
+    def setS3ActionUndefined: Self = StObject.set(x, "S3Action", js.undefined)
     
     @scala.inline
-    def deleteLambdaAction: Self = this.set("LambdaAction", js.undefined)
+    def setSNSAction(value: SNSAction): Self = StObject.set(x, "SNSAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Action(value: S3Action): Self = this.set("S3Action", value.asInstanceOf[js.Any])
+    def setSNSActionUndefined: Self = StObject.set(x, "SNSAction", js.undefined)
     
     @scala.inline
-    def deleteS3Action: Self = this.set("S3Action", js.undefined)
+    def setStopAction(value: StopAction): Self = StObject.set(x, "StopAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSNSAction(value: SNSAction): Self = this.set("SNSAction", value.asInstanceOf[js.Any])
+    def setStopActionUndefined: Self = StObject.set(x, "StopAction", js.undefined)
     
     @scala.inline
-    def deleteSNSAction: Self = this.set("SNSAction", js.undefined)
+    def setWorkmailAction(value: WorkmailAction): Self = StObject.set(x, "WorkmailAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopAction(value: StopAction): Self = this.set("StopAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopAction: Self = this.set("StopAction", js.undefined)
-    
-    @scala.inline
-    def setWorkmailAction(value: WorkmailAction): Self = this.set("WorkmailAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkmailAction: Self = this.set("WorkmailAction", js.undefined)
+    def setWorkmailActionUndefined: Self = StObject.set(x, "WorkmailAction", js.undefined)
   }
 }

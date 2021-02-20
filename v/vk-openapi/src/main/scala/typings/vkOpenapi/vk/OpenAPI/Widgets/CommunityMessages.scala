@@ -1,12 +1,13 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import typings.vkOpenapi.vkOpenapiNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommunityMessages extends js.Object {
+trait CommunityMessages extends StObject {
   
   def destroy(elementId: String): Unit = js.native
   

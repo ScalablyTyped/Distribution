@@ -1,11 +1,12 @@
 package typings.jsoneditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Color extends js.Object {
+trait Color extends StObject {
   
   var hex: String = js.native
   
@@ -38,45 +39,33 @@ object Color {
   }
   
   @scala.inline
-  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHslString(value: String): Self = StObject.set(x, "hslString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHsla(value: js.Array[Double]): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHex(value: String): Self = this.set("hex", value.asInstanceOf[js.Any])
+    def setHslaString(value: String): Self = StObject.set(x, "hslaString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHslString(value: String): Self = this.set("hslString", value.asInstanceOf[js.Any])
+    def setHslaVarargs(value: Double*): Self = StObject.set(x, "hsla", js.Array(value :_*))
     
     @scala.inline
-    def setHslaVarargs(value: Double*): Self = this.set("hsla", js.Array(value :_*))
+    def setRgbString(value: String): Self = StObject.set(x, "rgbString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsla(value: js.Array[Double]): Self = this.set("hsla", value.asInstanceOf[js.Any])
+    def setRgba(value: js.Array[Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHslaString(value: String): Self = this.set("hslaString", value.asInstanceOf[js.Any])
+    def setRgbaString(value: String): Self = StObject.set(x, "rgbaString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRgbString(value: String): Self = this.set("rgbString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRgbaVarargs(value: Double*): Self = this.set("rgba", js.Array(value :_*))
-    
-    @scala.inline
-    def setRgba(value: js.Array[Double]): Self = this.set("rgba", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRgbaString(value: String): Self = this.set("rgbaString", value.asInstanceOf[js.Any])
+    def setRgbaVarargs(value: Double*): Self = StObject.set(x, "rgba", js.Array(value :_*))
   }
 }

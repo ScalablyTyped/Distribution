@@ -1,5 +1,6 @@
 package typings.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Class for performing management operations against a cluster.
   */
 @js.native
-trait ClusterManager extends js.Object {
+trait ClusterManager extends StObject {
   
   /**
     *

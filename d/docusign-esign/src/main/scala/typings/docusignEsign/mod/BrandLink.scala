@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrandLink extends js.Object {
+trait BrandLink extends StObject {
   
   /**
     * The text used for the link.
@@ -39,42 +40,30 @@ object BrandLink {
   }
   
   @scala.inline
-  implicit class BrandLinkOps[Self <: BrandLink] (val x: Self) extends AnyVal {
+  implicit class BrandLinkMutableBuilder[Self <: BrandLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkText(value: String): Self = this.set("linkText", value.asInstanceOf[js.Any])
+    def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     
     @scala.inline
-    def deleteLinkText: Self = this.set("linkText", js.undefined)
+    def setShowLink(value: String): Self = StObject.set(x, "showLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkType(value: String): Self = this.set("linkType", value.asInstanceOf[js.Any])
+    def setShowLinkUndefined: Self = StObject.set(x, "showLink", js.undefined)
     
     @scala.inline
-    def deleteLinkType: Self = this.set("linkType", js.undefined)
+    def setUrlOrMailTo(value: String): Self = StObject.set(x, "urlOrMailTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLink(value: String): Self = this.set("showLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowLink: Self = this.set("showLink", js.undefined)
-    
-    @scala.inline
-    def setUrlOrMailTo(value: String): Self = this.set("urlOrMailTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlOrMailTo: Self = this.set("urlOrMailTo", js.undefined)
+    def setUrlOrMailToUndefined: Self = StObject.set(x, "urlOrMailTo", js.undefined)
   }
 }

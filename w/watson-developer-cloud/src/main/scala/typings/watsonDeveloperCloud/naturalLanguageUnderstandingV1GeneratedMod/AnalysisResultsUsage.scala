@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** API usage information for the request. */
 @js.native
-trait AnalysisResultsUsage extends js.Object {
+trait AnalysisResultsUsage extends StObject {
   
   /** Number of features used in the API call. */
   var features: js.UndefOr[Double] = js.native
@@ -26,36 +27,24 @@ object AnalysisResultsUsage {
   }
   
   @scala.inline
-  implicit class AnalysisResultsUsageOps[Self <: AnalysisResultsUsage] (val x: Self) extends AnyVal {
+  implicit class AnalysisResultsUsageMutableBuilder[Self <: AnalysisResultsUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: Double): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText_characters(value: Double): Self = StObject.set(x, "text_characters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: Double): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setText_charactersUndefined: Self = StObject.set(x, "text_characters", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setText_units(value: Double): Self = StObject.set(x, "text_units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText_characters(value: Double): Self = this.set("text_characters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText_characters: Self = this.set("text_characters", js.undefined)
-    
-    @scala.inline
-    def setText_units(value: Double): Self = this.set("text_units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText_units: Self = this.set("text_units", js.undefined)
+    def setText_unitsUndefined: Self = StObject.set(x, "text_units", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateConditionalFormatRuleResponse extends js.Object {
+trait UpdateConditionalFormatRuleResponse extends StObject {
   
   /** The index of the new rule. */
   var newIndex: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object UpdateConditionalFormatRuleResponse {
   }
   
   @scala.inline
-  implicit class UpdateConditionalFormatRuleResponseOps[Self <: UpdateConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateConditionalFormatRuleResponseMutableBuilder[Self <: UpdateConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewRule(value: ConditionalFormatRule): Self = StObject.set(x, "newRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewIndex(value: Double): Self = this.set("newIndex", value.asInstanceOf[js.Any])
+    def setNewRuleUndefined: Self = StObject.set(x, "newRule", js.undefined)
     
     @scala.inline
-    def deleteNewIndex: Self = this.set("newIndex", js.undefined)
+    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewRule(value: ConditionalFormatRule): Self = this.set("newRule", value.asInstanceOf[js.Any])
+    def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
     
     @scala.inline
-    def deleteNewRule: Self = this.set("newRule", js.undefined)
+    def setOldRule(value: ConditionalFormatRule): Self = StObject.set(x, "oldRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldIndex(value: Double): Self = this.set("oldIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldIndex: Self = this.set("oldIndex", js.undefined)
-    
-    @scala.inline
-    def setOldRule(value: ConditionalFormatRule): Self = this.set("oldRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldRule: Self = this.set("oldRule", js.undefined)
+    def setOldRuleUndefined: Self = StObject.set(x, "oldRule", js.undefined)
   }
 }

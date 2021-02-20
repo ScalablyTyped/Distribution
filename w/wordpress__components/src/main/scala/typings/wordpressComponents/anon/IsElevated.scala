@@ -1,12 +1,13 @@
 package typings.wordpressComponents.anon
 
 import typings.wordpressComponents.cardMod.Card.CardSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsElevated[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends js.Object {
+trait IsElevated[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends StObject {
   
   /**
     * Render as a different element type
@@ -44,48 +45,36 @@ object IsElevated {
   }
   
   @scala.inline
-  implicit class IsElevatedOps[Self <: IsElevated[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self with IsElevated[T]) extends AnyVal {
+  implicit class IsElevatedMutableBuilder[Self <: IsElevated[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self with IsElevated[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: T): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setIsBorderless(value: Boolean): Self = StObject.set(x, "isBorderless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setIsBorderlessUndefined: Self = StObject.set(x, "isBorderless", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setIsElevated(value: Boolean): Self = StObject.set(x, "isElevated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBorderless(value: Boolean): Self = this.set("isBorderless", value.asInstanceOf[js.Any])
+    def setIsElevatedUndefined: Self = StObject.set(x, "isElevated", js.undefined)
     
     @scala.inline
-    def deleteIsBorderless: Self = this.set("isBorderless", js.undefined)
+    def setSize(value: CardSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsElevated(value: Boolean): Self = this.set("isElevated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsElevated: Self = this.set("isElevated", js.undefined)
-    
-    @scala.inline
-    def setSize(value: CardSize): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTagsForResourceMessage extends js.Object {
+trait UpdateTagsForResourceMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resouce to be updated. Must be the ARN of an Elastic Beanstalk resource.
@@ -31,39 +32,27 @@ object UpdateTagsForResourceMessage {
   }
   
   @scala.inline
-  implicit class UpdateTagsForResourceMessageOps[Self <: UpdateTagsForResourceMessage] (val x: Self) extends AnyVal {
+  implicit class UpdateTagsForResourceMessageMutableBuilder[Self <: UpdateTagsForResourceMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTagsToAdd(value: TagList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
     @scala.inline
-    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setTagsToAddVarargs(value: Tag*): Self = this.set("TagsToAdd", js.Array(value :_*))
+    def setTagsToRemove(value: TagKeyList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsToAdd(value: TagList): Self = this.set("TagsToAdd", value.asInstanceOf[js.Any])
+    def setTagsToRemoveUndefined: Self = StObject.set(x, "TagsToRemove", js.undefined)
     
     @scala.inline
-    def deleteTagsToAdd: Self = this.set("TagsToAdd", js.undefined)
-    
-    @scala.inline
-    def setTagsToRemoveVarargs(value: TagKey*): Self = this.set("TagsToRemove", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagsToRemove(value: TagKeyList): Self = this.set("TagsToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagsToRemove: Self = this.set("TagsToRemove", js.undefined)
+    def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
   }
 }

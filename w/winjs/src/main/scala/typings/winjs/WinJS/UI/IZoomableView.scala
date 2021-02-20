@@ -3,6 +3,7 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.Utilities.IPosition
 import typings.winjs.anon.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Supports semantic zoom functionality by exposing a control as either the zoomed in or the zoomed out view of the SemanticZoom control.
   **/
 @js.native
-trait IZoomableView[T] extends js.Object {
+trait IZoomableView[T] extends StObject {
   
   //#region Methods
   /**
@@ -84,42 +85,30 @@ object IZoomableView {
   }
   
   @scala.inline
-  implicit class IZoomableViewOps[Self <: IZoomableView[_], T] (val x: Self with IZoomableView[T]) extends AnyVal {
+  implicit class IZoomableViewMutableBuilder[Self <: IZoomableView[_], T] (val x: Self with IZoomableView[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginZoom(value: () => Unit): Self = StObject.set(x, "beginZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigureForZoom(value: (Boolean, Boolean, js.Function, Double) => Unit): Self = StObject.set(x, "configureForZoom", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndZoom(value: Boolean => Unit): Self = StObject.set(x, "endZoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeginZoom(value: () => Unit): Self = this.set("beginZoom", js.Any.fromFunction0(value))
+    def setGetCurrentItem(value: () => Promise[Item[T]]): Self = StObject.set(x, "getCurrentItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigureForZoom(value: (Boolean, Boolean, js.Function, Double) => Unit): Self = this.set("configureForZoom", js.Any.fromFunction4(value))
+    def setGetPanAxis(value: () => String): Self = StObject.set(x, "getPanAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndZoom(value: Boolean => Unit): Self = this.set("endZoom", js.Any.fromFunction1(value))
+    def setHandlePointer(value: String => Unit): Self = StObject.set(x, "handlePointer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentItem(value: () => Promise[Item[T]]): Self = this.set("getCurrentItem", js.Any.fromFunction0(value))
+    def setPositionItem(value: (T, IPosition) => Unit): Self = StObject.set(x, "positionItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPanAxis(value: () => String): Self = this.set("getPanAxis", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHandlePointer(value: String => Unit): Self = this.set("handlePointer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPositionItem(value: (T, IPosition) => Unit): Self = this.set("positionItem", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetCurrentItem(value: (Double, Double) => Unit): Self = this.set("setCurrentItem", js.Any.fromFunction2(value))
+    def setSetCurrentItem(value: (Double, Double) => Unit): Self = StObject.set(x, "setCurrentItem", js.Any.fromFunction2(value))
   }
 }

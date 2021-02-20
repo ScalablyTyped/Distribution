@@ -3,13 +3,14 @@ package typings.watsonDeveloperCloud.v3Mod
 import typings.ibmCloudSdkCore.helperMod.FileObject
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createModel` operation. */
 @js.native
-trait CreateModelParams extends js.Object {
+trait CreateModelParams extends StObject {
   
   /** The model ID of the model to use as the base for customization. To see available models, use the `List models` method. Usually all IBM provided models are customizable. In addition, all your models that have been created via parallel corpus customization, can be further customized with a forced glossary. */
   var base_model_id: String = js.native
@@ -36,51 +37,39 @@ object CreateModelParams {
   }
   
   @scala.inline
-  implicit class CreateModelParamsOps[Self <: CreateModelParams] (val x: Self) extends AnyVal {
+  implicit class CreateModelParamsMutableBuilder[Self <: CreateModelParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase_model_id(value: String): Self = StObject.set(x, "base_model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForced_glossary(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "forced_glossary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForced_glossaryUndefined: Self = StObject.set(x, "forced_glossary", js.undefined)
     
     @scala.inline
-    def setBase_model_id(value: String): Self = this.set("base_model_id", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForced_glossary(value: ReadableStream | FileObject | Buffer): Self = this.set("forced_glossary", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteForced_glossary: Self = this.set("forced_glossary", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setParallel_corpus(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "parallel_corpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParallel_corpusUndefined: Self = StObject.set(x, "parallel_corpus", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallel_corpus(value: ReadableStream | FileObject | Buffer): Self = this.set("parallel_corpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallel_corpus: Self = this.set("parallel_corpus", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

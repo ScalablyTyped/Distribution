@@ -1,13 +1,14 @@
 package typings.angularForms.mod
 
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "AbstractControlDirective")
 @js.native
-abstract class AbstractControlDirective () extends js.Object {
+abstract class AbstractControlDirective () extends StObject {
   
   /**
     * Contains the result of merging asynchronous validators into a single validator function

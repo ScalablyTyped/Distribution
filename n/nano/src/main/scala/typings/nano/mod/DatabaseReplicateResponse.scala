@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
 @js.native
-trait DatabaseReplicateResponse extends js.Object {
+trait DatabaseReplicateResponse extends StObject {
   
   // Replication history
   var history: js.Array[DatabaseReplicationHistoryItem] = js.native
@@ -38,36 +39,24 @@ object DatabaseReplicateResponse {
   }
   
   @scala.inline
-  implicit class DatabaseReplicateResponseOps[Self <: DatabaseReplicateResponse] (val x: Self) extends AnyVal {
+  implicit class DatabaseReplicateResponseMutableBuilder[Self <: DatabaseReplicateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistory(value: js.Array[DatabaseReplicationHistoryItem]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistoryVarargs(value: DatabaseReplicationHistoryItem*): Self = StObject.set(x, "history", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryVarargs(value: DatabaseReplicationHistoryItem*): Self = this.set("history", js.Array(value :_*))
+    def setReplication_id_version(value: Double): Self = StObject.set(x, "replication_id_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: js.Array[DatabaseReplicationHistoryItem]): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOk(value: Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplication_id_version(value: Double): Self = this.set("replication_id_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession_id(value: String): Self = this.set("session_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource_last_seq(value: Double): Self = this.set("source_last_seq", value.asInstanceOf[js.Any])
+    def setSource_last_seq(value: Double): Self = StObject.set(x, "source_last_seq", value.asInstanceOf[js.Any])
   }
 }

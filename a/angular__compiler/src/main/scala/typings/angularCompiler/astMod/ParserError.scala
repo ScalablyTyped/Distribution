@@ -1,12 +1,13 @@
 package typings.angularCompiler.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "ParserError")
 @js.native
-class ParserError protected () extends js.Object {
+class ParserError protected () extends StObject {
   def this(message: String, input: String, errLocation: String) = this()
   def this(message: String, input: String, errLocation: String, ctxLocation: js.Any) = this()
   

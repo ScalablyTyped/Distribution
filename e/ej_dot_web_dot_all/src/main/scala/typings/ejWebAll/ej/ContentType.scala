@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentType extends js.Object
+sealed trait ContentType extends StObject
 @JSGlobal("ej.ContentType")
 @js.native
-object ContentType extends js.Object {
+object ContentType extends StObject {
   
   //Supports to display  image for both ends of the button
   @js.native

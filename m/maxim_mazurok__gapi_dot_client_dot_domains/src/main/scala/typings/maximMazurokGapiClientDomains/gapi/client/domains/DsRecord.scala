@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DsRecord extends js.Object {
+trait DsRecord extends StObject {
   
   /** The algorithm used to generate the referenced DNSKEY. */
   var algorithm: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object DsRecord {
   }
   
   @scala.inline
-  implicit class DsRecordOps[Self <: DsRecord] (val x: Self) extends AnyVal {
+  implicit class DsRecordMutableBuilder[Self <: DsRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setDigestType(value: String): Self = StObject.set(x, "digestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setDigestTypeUndefined: Self = StObject.set(x, "digestType", js.undefined)
     
     @scala.inline
-    def setDigest(value: String): Self = this.set("digest", value.asInstanceOf[js.Any])
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
+    def setKeyTag(value: Double): Self = StObject.set(x, "keyTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigestType(value: String): Self = this.set("digestType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigestType: Self = this.set("digestType", js.undefined)
-    
-    @scala.inline
-    def setKeyTag(value: Double): Self = this.set("keyTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyTag: Self = this.set("keyTag", js.undefined)
+    def setKeyTagUndefined: Self = StObject.set(x, "keyTag", js.undefined)
   }
 }

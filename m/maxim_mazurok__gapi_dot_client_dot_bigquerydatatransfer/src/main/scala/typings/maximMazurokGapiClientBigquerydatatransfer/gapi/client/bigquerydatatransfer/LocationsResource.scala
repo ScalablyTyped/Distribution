@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBigquerydatatransfer.anon.Alt
 import typings.maximMazurokGapiClientBigquerydatatransfer.anon.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationsResource extends js.Object {
+trait LocationsResource extends StObject {
   
   var dataSources: DataSourcesResource = js.native
   

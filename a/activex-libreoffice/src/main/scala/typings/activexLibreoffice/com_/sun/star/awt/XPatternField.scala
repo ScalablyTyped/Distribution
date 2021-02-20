@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,39 +52,27 @@ object XPatternField {
   }
   
   @scala.inline
-  implicit class XPatternFieldOps[Self <: XPatternField] (val x: Self) extends AnyVal {
+  implicit class XPatternFieldMutableBuilder[Self <: XPatternField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMasks(value: (js.Array[String], js.Array[String]) => Unit): Self = StObject.set(x, "getMasks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsStrictFormat(value: () => Boolean): Self = StObject.set(x, "isStrictFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setString(value: String): Self = this.set("String", value.asInstanceOf[js.Any])
+    def setSetMasks(value: (String, String) => Unit): Self = StObject.set(x, "setMasks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetMasks(value: (js.Array[String], js.Array[String]) => Unit): Self = this.set("getMasks", js.Any.fromFunction2(value))
+    def setSetStrictFormat(value: Boolean => Unit): Self = StObject.set(x, "setStrictFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetString(value: () => String): Self = this.set("getString", js.Any.fromFunction0(value))
+    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsStrictFormat(value: () => Boolean): Self = this.set("isStrictFormat", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetMasks(value: (String, String) => Unit): Self = this.set("setMasks", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetStrictFormat(value: Boolean => Unit): Self = this.set("setStrictFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetString(value: String => Unit): Self = this.set("setString", js.Any.fromFunction1(value))
+    def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
   }
 }

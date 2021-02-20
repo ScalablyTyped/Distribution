@@ -1,11 +1,12 @@
 package typings.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientHelper extends js.Object {
+trait ClientHelper extends StObject {
   
   def authentication(): AbstractHandshake = js.native
   @JSName("authentication")

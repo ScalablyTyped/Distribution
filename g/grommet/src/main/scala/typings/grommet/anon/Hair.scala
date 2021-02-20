@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hair extends js.Object {
+trait Hair extends StObject {
   
   var hair: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object Hair {
   }
   
   @scala.inline
-  implicit class HairOps[Self <: Hair] (val x: Self) extends AnyVal {
+  implicit class HairMutableBuilder[Self <: Hair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHair(value: String): Self = StObject.set(x, "hair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHairUndefined: Self = StObject.set(x, "hair", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHair(value: String): Self = this.set("hair", value.asInstanceOf[js.Any])
+    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
     @scala.inline
-    def deleteHair: Self = this.set("hair", js.undefined)
+    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge(value: String): Self = this.set("large", value.asInstanceOf[js.Any])
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def deleteLarge: Self = this.set("large", js.undefined)
+    def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: String): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
     @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
+    def setResponsiveBreakpoint(value: String): Self = StObject.set(x, "responsiveBreakpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: String): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setResponsiveBreakpointUndefined: Self = StObject.set(x, "responsiveBreakpoint", js.undefined)
     
     @scala.inline
-    def deleteNone: Self = this.set("none", js.undefined)
+    def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveBreakpoint(value: String): Self = this.set("responsiveBreakpoint", value.asInstanceOf[js.Any])
+    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
     @scala.inline
-    def deleteResponsiveBreakpoint: Self = this.set("responsiveBreakpoint", js.undefined)
+    def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmall(value: String): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
     
     @scala.inline
-    def deleteSmall: Self = this.set("small", js.undefined)
+    def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlarge(value: String): Self = this.set("xlarge", value.asInstanceOf[js.Any])
+    def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
     
     @scala.inline
-    def deleteXlarge: Self = this.set("xlarge", js.undefined)
+    def setXxsmall(value: String): Self = StObject.set(x, "xxsmall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXsmall(value: String): Self = this.set("xsmall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXsmall: Self = this.set("xsmall", js.undefined)
-    
-    @scala.inline
-    def setXxsmall(value: String): Self = this.set("xxsmall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXxsmall: Self = this.set("xxsmall", js.undefined)
+    def setXxsmallUndefined: Self = StObject.set(x, "xxsmall", js.undefined)
   }
 }

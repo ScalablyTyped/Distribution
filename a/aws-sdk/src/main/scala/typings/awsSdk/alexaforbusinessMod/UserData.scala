@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserData extends js.Object {
+trait UserData extends StObject {
   
   /**
     * The email of a user.
@@ -46,54 +47,42 @@ object UserData {
   }
   
   @scala.inline
-  implicit class UserDataOps[Self <: UserData] (val x: Self) extends AnyVal {
+  implicit class UserDataMutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnrollmentId(value: EnrollmentId): Self = StObject.set(x, "EnrollmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setEnrollmentIdUndefined: Self = StObject.set(x, "EnrollmentId", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("Email", js.undefined)
+    def setEnrollmentStatus(value: EnrollmentStatus): Self = StObject.set(x, "EnrollmentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrollmentId(value: EnrollmentId): Self = this.set("EnrollmentId", value.asInstanceOf[js.Any])
+    def setEnrollmentStatusUndefined: Self = StObject.set(x, "EnrollmentStatus", js.undefined)
     
     @scala.inline
-    def deleteEnrollmentId: Self = this.set("EnrollmentId", js.undefined)
+    def setFirstName(value: userFirstName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrollmentStatus(value: EnrollmentStatus): Self = this.set("EnrollmentStatus", value.asInstanceOf[js.Any])
+    def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
     
     @scala.inline
-    def deleteEnrollmentStatus: Self = this.set("EnrollmentStatus", js.undefined)
+    def setLastName(value: userLastName): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: userFirstName): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
     
     @scala.inline
-    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: userLastName): Self = this.set("LastName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastName: Self = this.set("LastName", js.undefined)
-    
-    @scala.inline
-    def setUserArn(value: Arn): Self = this.set("UserArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserArn: Self = this.set("UserArn", js.undefined)
+    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

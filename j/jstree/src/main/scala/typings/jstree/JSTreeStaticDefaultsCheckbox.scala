@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStaticDefaultsCheckbox extends js.Object {
+trait JSTreeStaticDefaultsCheckbox extends StObject {
   
   /**
     * This setting controls how cascading and undetermined nodes are applied.
@@ -87,42 +88,30 @@ object JSTreeStaticDefaultsCheckbox {
   }
   
   @scala.inline
-  implicit class JSTreeStaticDefaultsCheckboxOps[Self <: JSTreeStaticDefaultsCheckbox] (val x: Self) extends AnyVal {
+  implicit class JSTreeStaticDefaultsCheckboxMutableBuilder[Self <: JSTreeStaticDefaultsCheckbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCascade(value: String): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCascade_to_disabled(value: Boolean): Self = StObject.set(x, "cascade_to_disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCascade_to_hidden(value: Boolean): Self = StObject.set(x, "cascade_to_hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCascade(value: String): Self = this.set("cascade", value.asInstanceOf[js.Any])
+    def setKeep_selected_style(value: Boolean): Self = StObject.set(x, "keep_selected_style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCascade_to_disabled(value: Boolean): Self = this.set("cascade_to_disabled", value.asInstanceOf[js.Any])
+    def setThree_state(value: Boolean): Self = StObject.set(x, "three_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCascade_to_hidden(value: Boolean): Self = this.set("cascade_to_hidden", value.asInstanceOf[js.Any])
+    def setTie_selection(value: Boolean): Self = StObject.set(x, "tie_selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeep_selected_style(value: Boolean): Self = this.set("keep_selected_style", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThree_state(value: Boolean): Self = this.set("three_state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTie_selection(value: Boolean): Self = this.set("tie_selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhole_node(value: Boolean): Self = this.set("whole_node", value.asInstanceOf[js.Any])
+    def setWhole_node(value: Boolean): Self = StObject.set(x, "whole_node", value.asInstanceOf[js.Any])
   }
 }

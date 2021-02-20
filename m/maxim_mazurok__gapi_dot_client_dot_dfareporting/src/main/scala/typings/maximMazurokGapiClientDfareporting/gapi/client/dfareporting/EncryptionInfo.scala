@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionInfo extends js.Object {
+trait EncryptionInfo extends StObject {
   
   /** The encryption entity ID. This should match the encryption configuration for ad serving or Data Transfer. */
   var encryptionEntityId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object EncryptionInfo {
   }
   
   @scala.inline
-  implicit class EncryptionInfoOps[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
+  implicit class EncryptionInfoMutableBuilder[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionEntityId(value: String): Self = StObject.set(x, "encryptionEntityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionEntityIdUndefined: Self = StObject.set(x, "encryptionEntityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionEntityType(value: String): Self = StObject.set(x, "encryptionEntityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionEntityId(value: String): Self = this.set("encryptionEntityId", value.asInstanceOf[js.Any])
+    def setEncryptionEntityTypeUndefined: Self = StObject.set(x, "encryptionEntityType", js.undefined)
     
     @scala.inline
-    def deleteEncryptionEntityId: Self = this.set("encryptionEntityId", js.undefined)
+    def setEncryptionSource(value: String): Self = StObject.set(x, "encryptionSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionEntityType(value: String): Self = this.set("encryptionEntityType", value.asInstanceOf[js.Any])
+    def setEncryptionSourceUndefined: Self = StObject.set(x, "encryptionSource", js.undefined)
     
     @scala.inline
-    def deleteEncryptionEntityType: Self = this.set("encryptionEntityType", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionSource(value: String): Self = this.set("encryptionSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionSource: Self = this.set("encryptionSource", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

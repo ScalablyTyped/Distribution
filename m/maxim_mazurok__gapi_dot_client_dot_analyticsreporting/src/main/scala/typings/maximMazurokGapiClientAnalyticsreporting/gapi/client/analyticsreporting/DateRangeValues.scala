@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateRangeValues extends js.Object {
+trait DateRangeValues extends StObject {
   
   /** The values of each pivot region. */
   var pivotValueRegions: js.UndefOr[js.Array[PivotValueRegion]] = js.native
@@ -22,36 +23,24 @@ object DateRangeValues {
   }
   
   @scala.inline
-  implicit class DateRangeValuesOps[Self <: DateRangeValues] (val x: Self) extends AnyVal {
+  implicit class DateRangeValuesMutableBuilder[Self <: DateRangeValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
     
     @scala.inline
-    def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = this.set("pivotValueRegions", js.Array(value :_*))
+    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = this.set("pivotValueRegions", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deletePivotValueRegions: Self = this.set("pivotValueRegions", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

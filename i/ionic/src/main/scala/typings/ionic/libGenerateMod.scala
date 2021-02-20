@@ -17,14 +17,14 @@ import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
 import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/generate", JSImport.Namespace)
-@js.native
-object libGenerateMod extends js.Object {
+object libGenerateMod {
   
+  @JSImport("ionic/lib/generate", "GenerateRunner")
   @js.native
   abstract class GenerateRunner[T /* <: GenerateOptions */] () extends Runner[T, Unit] {
     
@@ -38,7 +38,7 @@ object libGenerateMod extends js.Object {
   }
   
   @js.native
-  trait GenerateRunnerDeps extends js.Object {
+  trait GenerateRunnerDeps extends StObject {
     
     val config: IConfig = js.native
     

@@ -3,12 +3,13 @@ package typings.storybookClientApi.typesMod
 import typings.storybookAddons.typesMod.DecoratorFunction
 import typings.storybookAddons.typesMod.LoaderFunction
 import typings.storybookAddons.typesMod.Parameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoryMetadata extends js.Object {
+trait StoryMetadata extends StObject {
   
   var decorators: js.UndefOr[js.Array[DecoratorFunction[_]]] = js.native
   
@@ -25,42 +26,30 @@ object StoryMetadata {
   }
   
   @scala.inline
-  implicit class StoryMetadataOps[Self <: StoryMetadata] (val x: Self) extends AnyVal {
+  implicit class StoryMetadataMutableBuilder[Self <: StoryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecorators(value: js.Array[DecoratorFunction[_]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecoratorsVarargs(value: DecoratorFunction[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setDecoratorsVarargs(value: DecoratorFunction[js.Any]*): Self = this.set("decorators", js.Array(value :_*))
+    def setLoaders(value: js.Array[LoaderFunction]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: js.Array[DecoratorFunction[_]]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setLoadersUndefined: Self = StObject.set(x, "loaders", js.undefined)
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setLoadersVarargs(value: LoaderFunction*): Self = StObject.set(x, "loaders", js.Array(value :_*))
     
     @scala.inline
-    def setLoadersVarargs(value: LoaderFunction*): Self = this.set("loaders", js.Array(value :_*))
+    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaders(value: js.Array[LoaderFunction]): Self = this.set("loaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaders: Self = this.set("loaders", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: Parameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

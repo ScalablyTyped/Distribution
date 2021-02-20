@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p4beta1FaceAnnotation extends js.Object {
+trait GoogleCloudVisionV1p4beta1FaceAnnotation extends StObject {
   
   /** Anger likelihood. */
   var angerLikelihood: js.UndefOr[String] = js.native
@@ -74,120 +75,108 @@ object GoogleCloudVisionV1p4beta1FaceAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1FaceAnnotationOps[Self <: GoogleCloudVisionV1p4beta1FaceAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p4beta1FaceAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p4beta1FaceAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngerLikelihood(value: String): Self = StObject.set(x, "angerLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngerLikelihoodUndefined: Self = StObject.set(x, "angerLikelihood", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlurredLikelihood(value: String): Self = StObject.set(x, "blurredLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngerLikelihood(value: String): Self = this.set("angerLikelihood", value.asInstanceOf[js.Any])
+    def setBlurredLikelihoodUndefined: Self = StObject.set(x, "blurredLikelihood", js.undefined)
     
     @scala.inline
-    def deleteAngerLikelihood: Self = this.set("angerLikelihood", js.undefined)
+    def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurredLikelihood(value: String): Self = this.set("blurredLikelihood", value.asInstanceOf[js.Any])
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def deleteBlurredLikelihood: Self = this.set("blurredLikelihood", js.undefined)
+    def setDetectionConfidence(value: Double): Self = StObject.set(x, "detectionConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setDetectionConfidenceUndefined: Self = StObject.set(x, "detectionConfidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    def setFdBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "fdBoundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectionConfidence(value: Double): Self = this.set("detectionConfidence", value.asInstanceOf[js.Any])
+    def setFdBoundingPolyUndefined: Self = StObject.set(x, "fdBoundingPoly", js.undefined)
     
     @scala.inline
-    def deleteDetectionConfidence: Self = this.set("detectionConfidence", js.undefined)
+    def setHeadwearLikelihood(value: String): Self = StObject.set(x, "headwearLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFdBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = this.set("fdBoundingPoly", value.asInstanceOf[js.Any])
+    def setHeadwearLikelihoodUndefined: Self = StObject.set(x, "headwearLikelihood", js.undefined)
     
     @scala.inline
-    def deleteFdBoundingPoly: Self = this.set("fdBoundingPoly", js.undefined)
+    def setJoyLikelihood(value: String): Self = StObject.set(x, "joyLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadwearLikelihood(value: String): Self = this.set("headwearLikelihood", value.asInstanceOf[js.Any])
+    def setJoyLikelihoodUndefined: Self = StObject.set(x, "joyLikelihood", js.undefined)
     
     @scala.inline
-    def deleteHeadwearLikelihood: Self = this.set("headwearLikelihood", js.undefined)
+    def setLandmarkingConfidence(value: Double): Self = StObject.set(x, "landmarkingConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoyLikelihood(value: String): Self = this.set("joyLikelihood", value.asInstanceOf[js.Any])
+    def setLandmarkingConfidenceUndefined: Self = StObject.set(x, "landmarkingConfidence", js.undefined)
     
     @scala.inline
-    def deleteJoyLikelihood: Self = this.set("joyLikelihood", js.undefined)
+    def setLandmarks(value: js.Array[GoogleCloudVisionV1p4beta1FaceAnnotationLandmark]): Self = StObject.set(x, "landmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarkingConfidence(value: Double): Self = this.set("landmarkingConfidence", value.asInstanceOf[js.Any])
+    def setLandmarksUndefined: Self = StObject.set(x, "landmarks", js.undefined)
     
     @scala.inline
-    def deleteLandmarkingConfidence: Self = this.set("landmarkingConfidence", js.undefined)
+    def setLandmarksVarargs(value: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark*): Self = StObject.set(x, "landmarks", js.Array(value :_*))
     
     @scala.inline
-    def setLandmarksVarargs(value: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark*): Self = this.set("landmarks", js.Array(value :_*))
+    def setPanAngle(value: Double): Self = StObject.set(x, "panAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarks(value: js.Array[GoogleCloudVisionV1p4beta1FaceAnnotationLandmark]): Self = this.set("landmarks", value.asInstanceOf[js.Any])
+    def setPanAngleUndefined: Self = StObject.set(x, "panAngle", js.undefined)
     
     @scala.inline
-    def deleteLandmarks: Self = this.set("landmarks", js.undefined)
+    def setRecognitionResult(value: js.Array[GoogleCloudVisionV1p4beta1FaceRecognitionResult]): Self = StObject.set(x, "recognitionResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanAngle(value: Double): Self = this.set("panAngle", value.asInstanceOf[js.Any])
+    def setRecognitionResultUndefined: Self = StObject.set(x, "recognitionResult", js.undefined)
     
     @scala.inline
-    def deletePanAngle: Self = this.set("panAngle", js.undefined)
+    def setRecognitionResultVarargs(value: GoogleCloudVisionV1p4beta1FaceRecognitionResult*): Self = StObject.set(x, "recognitionResult", js.Array(value :_*))
     
     @scala.inline
-    def setRecognitionResultVarargs(value: GoogleCloudVisionV1p4beta1FaceRecognitionResult*): Self = this.set("recognitionResult", js.Array(value :_*))
+    def setRollAngle(value: Double): Self = StObject.set(x, "rollAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecognitionResult(value: js.Array[GoogleCloudVisionV1p4beta1FaceRecognitionResult]): Self = this.set("recognitionResult", value.asInstanceOf[js.Any])
+    def setRollAngleUndefined: Self = StObject.set(x, "rollAngle", js.undefined)
     
     @scala.inline
-    def deleteRecognitionResult: Self = this.set("recognitionResult", js.undefined)
+    def setSorrowLikelihood(value: String): Self = StObject.set(x, "sorrowLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollAngle(value: Double): Self = this.set("rollAngle", value.asInstanceOf[js.Any])
+    def setSorrowLikelihoodUndefined: Self = StObject.set(x, "sorrowLikelihood", js.undefined)
     
     @scala.inline
-    def deleteRollAngle: Self = this.set("rollAngle", js.undefined)
+    def setSurpriseLikelihood(value: String): Self = StObject.set(x, "surpriseLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorrowLikelihood(value: String): Self = this.set("sorrowLikelihood", value.asInstanceOf[js.Any])
+    def setSurpriseLikelihoodUndefined: Self = StObject.set(x, "surpriseLikelihood", js.undefined)
     
     @scala.inline
-    def deleteSorrowLikelihood: Self = this.set("sorrowLikelihood", js.undefined)
+    def setTiltAngle(value: Double): Self = StObject.set(x, "tiltAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurpriseLikelihood(value: String): Self = this.set("surpriseLikelihood", value.asInstanceOf[js.Any])
+    def setTiltAngleUndefined: Self = StObject.set(x, "tiltAngle", js.undefined)
     
     @scala.inline
-    def deleteSurpriseLikelihood: Self = this.set("surpriseLikelihood", js.undefined)
+    def setUnderExposedLikelihood(value: String): Self = StObject.set(x, "underExposedLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiltAngle(value: Double): Self = this.set("tiltAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiltAngle: Self = this.set("tiltAngle", js.undefined)
-    
-    @scala.inline
-    def setUnderExposedLikelihood(value: String): Self = this.set("underExposedLikelihood", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderExposedLikelihood: Self = this.set("underExposedLikelihood", js.undefined)
+    def setUnderExposedLikelihoodUndefined: Self = StObject.set(x, "underExposedLikelihood", js.undefined)
   }
 }

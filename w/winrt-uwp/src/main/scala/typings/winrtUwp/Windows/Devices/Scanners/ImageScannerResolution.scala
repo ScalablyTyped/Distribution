@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the scan resolution. */
 @js.native
-trait ImageScannerResolution extends js.Object {
+trait ImageScannerResolution extends StObject {
   
   /** The horizontal size. */
   var dpiX: Double = js.native
@@ -23,24 +24,12 @@ object ImageScannerResolution {
   }
   
   @scala.inline
-  implicit class ImageScannerResolutionOps[Self <: ImageScannerResolution] (val x: Self) extends AnyVal {
+  implicit class ImageScannerResolutionMutableBuilder[Self <: ImageScannerResolution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDpiX(value: Double): Self = this.set("dpiX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDpiY(value: Double): Self = this.set("dpiY", value.asInstanceOf[js.Any])
+    def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
   }
 }

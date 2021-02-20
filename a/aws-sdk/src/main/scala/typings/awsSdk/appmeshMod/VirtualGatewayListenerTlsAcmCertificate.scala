@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayListenerTlsAcmCertificate extends js.Object {
+trait VirtualGatewayListenerTlsAcmCertificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the certificate. The certificate must meet specific requirements and you must have proxy authorization enabled. For more information, see Transport Layer Security (TLS).
@@ -21,21 +22,9 @@ object VirtualGatewayListenerTlsAcmCertificate {
   }
   
   @scala.inline
-  implicit class VirtualGatewayListenerTlsAcmCertificateOps[Self <: VirtualGatewayListenerTlsAcmCertificate] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayListenerTlsAcmCertificateMutableBuilder[Self <: VirtualGatewayListenerTlsAcmCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    def setCertificateArn(value: Arn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
   }
 }

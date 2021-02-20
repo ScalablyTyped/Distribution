@@ -7,6 +7,7 @@ import typings.p2.anon.Pairs
 import typings.p2.anon.Relaxation
 import typings.p2.anon.ShapeA
 import typings.p2.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +54,7 @@ class World () extends EventEmitter {
   
   var defaultMaterial: Material = js.native
   
-   //Body | boolean
+  //Body | boolean
   def disableBodyCollision(bodyA: Body, bodyB: Body): Unit = js.native
   
   var doProfiling: Boolean = js.native
@@ -98,7 +99,7 @@ class World () extends EventEmitter {
   
   var removeBodyEvent: typings.p2.anon.Body = js.native
   
-   // ContactMaterial | boolean
+  // ContactMaterial | boolean
   def removeConstraint(constraint: Constraint): Unit = js.native
   
   def removeContactMaterial(cm: ContactMaterial): Unit = js.native
@@ -133,13 +134,27 @@ class World () extends EventEmitter {
   var useWorldGravityAsFrictionGravity: Boolean = js.native
 }
 /* static members */
-@JSImport("p2", "World")
-@js.native
-object World extends js.Object {
+object World {
   
-  var BODY_SLEEPING: Double = js.native
+  @JSImport("p2", "World")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ISLAND_SLEEPING: Double = js.native
+  @JSImport("p2", "World.BODY_SLEEPING")
+  @js.native
+  def BODY_SLEEPING: Double = js.native
+  @scala.inline
+  def BODY_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
   
-  var NO_SLEEPING: Double = js.native
+  @JSImport("p2", "World.ISLAND_SLEEPING")
+  @js.native
+  def ISLAND_SLEEPING: Double = js.native
+  @scala.inline
+  def ISLAND_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND_SLEEPING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("p2", "World.NO_SLEEPING")
+  @js.native
+  def NO_SLEEPING: Double = js.native
+  @scala.inline
+  def NO_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SLEEPING")(x.asInstanceOf[js.Any])
 }

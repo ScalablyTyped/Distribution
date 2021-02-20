@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributeValue extends js.Object {
+trait AttributeValue extends StObject {
   
   /**
     * For number values, expressed as double.
@@ -36,45 +37,33 @@ object AttributeValue {
   }
   
   @scala.inline
-  implicit class AttributeValueOps[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setN(value: DoubleObject): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS(value: NonZeroAndMaxString): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: DoubleObject): Self = this.set("N", value.asInstanceOf[js.Any])
+    def setSDM(value: StringDoubleMap): Self = StObject.set(x, "SDM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteN: Self = this.set("N", js.undefined)
+    def setSDMUndefined: Self = StObject.set(x, "SDM", js.undefined)
     
     @scala.inline
-    def setS(value: NonZeroAndMaxString): Self = this.set("S", value.asInstanceOf[js.Any])
+    def setSL(value: StringList): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteS: Self = this.set("S", js.undefined)
+    def setSLUndefined: Self = StObject.set(x, "SL", js.undefined)
     
     @scala.inline
-    def setSDM(value: StringDoubleMap): Self = this.set("SDM", value.asInstanceOf[js.Any])
+    def setSLVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "SL", js.Array(value :_*))
     
     @scala.inline
-    def deleteSDM: Self = this.set("SDM", js.undefined)
-    
-    @scala.inline
-    def setSLVarargs(value: NonZeroAndMaxString*): Self = this.set("SL", js.Array(value :_*))
-    
-    @scala.inline
-    def setSL(value: StringList): Self = this.set("SL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSL: Self = this.set("SL", js.undefined)
+    def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }
 }

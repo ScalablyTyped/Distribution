@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentTypeProfile extends js.Object {
+trait ContentTypeProfile extends StObject {
   
   /**
     * The content type for a field-level encryption content type-profile mapping. 
@@ -31,30 +32,18 @@ object ContentTypeProfile {
   }
   
   @scala.inline
-  implicit class ContentTypeProfileOps[Self <: ContentTypeProfile] (val x: Self) extends AnyVal {
+  implicit class ContentTypeProfileMutableBuilder[Self <: ContentTypeProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfileId(value: String): Self = StObject.set(x, "ProfileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("ContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: Format): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfileId(value: String): Self = this.set("ProfileId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileId: Self = this.set("ProfileId", js.undefined)
+    def setProfileIdUndefined: Self = StObject.set(x, "ProfileId", js.undefined)
   }
 }

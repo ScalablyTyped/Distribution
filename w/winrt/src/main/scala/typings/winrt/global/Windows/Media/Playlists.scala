@@ -2,26 +2,28 @@ package typings.winrt.global.Windows.Media
 
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Playlists")
-@js.native
-object Playlists extends js.Object {
+object Playlists {
   
+  @JSGlobal("Windows.Media.Playlists.Playlist")
   @js.native
   class Playlist ()
     extends typings.winrt.Windows.Media.Playlists.Playlist
   /* static members */
-  @js.native
-  object Playlist extends js.Object {
+  object Playlist {
     
+    @JSGlobal("Windows.Media.Playlists.Playlist.loadAsync")
+    @js.native
     def loadAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Media.Playlists.Playlist] = js.native
   }
   
+  @JSGlobal("Windows.Media.Playlists.PlaylistFormat")
   @js.native
-  object PlaylistFormat extends js.Object {
+  object PlaylistFormat extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Playlists.PlaylistFormat with Double] = js.native

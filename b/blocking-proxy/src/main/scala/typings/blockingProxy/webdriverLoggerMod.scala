@@ -2,16 +2,16 @@ package typings.blockingProxy
 
 import typings.blockingProxy.webdriverCommandsMod.WebDriverCommand
 import typings.node.streamMod.Writable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blocking-proxy/built/lib/webdriver_logger", JSImport.Namespace)
-@js.native
-object webdriverLoggerMod extends js.Object {
+object webdriverLoggerMod {
   
+  @JSImport("blocking-proxy/built/lib/webdriver_logger", "WebDriverLogger")
   @js.native
-  class WebDriverLogger () extends js.Object {
+  class WebDriverLogger () extends StObject {
     
     /**
       * Log an arbitrary event to the log file.

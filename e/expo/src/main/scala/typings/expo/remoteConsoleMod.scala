@@ -1,17 +1,23 @@
 package typings.expo
 
 import typings.std.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo/build/logs/RemoteConsole", JSImport.Namespace)
-@js.native
-object remoteConsoleMod extends js.Object {
+object remoteConsoleMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var createRemoteConsole: js.Function1[/* originalConsole */ Console, Console] = js.native
+    @JSImport("expo/build/logs/RemoteConsole", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("expo/build/logs/RemoteConsole", "default.createRemoteConsole")
+    @js.native
+    def createRemoteConsole: js.Function1[/* originalConsole */ Console, Console] = js.native
+    @scala.inline
+    def createRemoteConsole_=(x: js.Function1[/* originalConsole */ Console, Console]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRemoteConsole")(x.asInstanceOf[js.Any])
   }
 }

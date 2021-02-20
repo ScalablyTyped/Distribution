@@ -1,21 +1,22 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/platform/BrowserConnectionOptionsReaderDummy", JSImport.Namespace)
-@js.native
-object browserConnectionOptionsReaderDummyMod extends js.Object {
+object browserConnectionOptionsReaderDummyMod {
   
+  @JSImport("typeorm/browser/platform/BrowserConnectionOptionsReaderDummy", "ConnectionOptionsEnvReader")
   @js.native
-  class ConnectionOptionsEnvReader () extends js.Object {
+  class ConnectionOptionsEnvReader () extends StObject {
     
     def read(): js.Promise[Unit] = js.native
   }
   
+  @JSImport("typeorm/browser/platform/BrowserConnectionOptionsReaderDummy", "ConnectionOptionsReader")
   @js.native
-  class ConnectionOptionsReader () extends js.Object {
+  class ConnectionOptionsReader () extends StObject {
     
     def all(): js.Promise[Unit] = js.native
     
@@ -24,14 +25,16 @@ object browserConnectionOptionsReaderDummyMod extends js.Object {
     def has(): js.Promise[Unit] = js.native
   }
   
+  @JSImport("typeorm/browser/platform/BrowserConnectionOptionsReaderDummy", "ConnectionOptionsXmlReader")
   @js.native
-  class ConnectionOptionsXmlReader () extends js.Object {
+  class ConnectionOptionsXmlReader () extends StObject {
     
     def read(path: String): js.Promise[Unit] = js.native
   }
   
+  @JSImport("typeorm/browser/platform/BrowserConnectionOptionsReaderDummy", "ConnectionOptionsYmlReader")
   @js.native
-  class ConnectionOptionsYmlReader () extends js.Object {
+  class ConnectionOptionsYmlReader () extends StObject {
     
     def read(path: String): js.Promise[Unit] = js.native
   }

@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationEvents extends js.Object {
+trait ApplicationEvents extends StObject {
   
   @JSName("InfoPath.ApplicationEvents_typekey")
   var InfoPathDotApplicationEvents_typekey: ApplicationEvents = js.native
@@ -20,21 +21,9 @@ object ApplicationEvents {
   }
   
   @scala.inline
-  implicit class ApplicationEventsOps[Self <: ApplicationEvents] (val x: Self) extends AnyVal {
+  implicit class ApplicationEventsMutableBuilder[Self <: ApplicationEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfoPathDotApplicationEvents_typekey(value: ApplicationEvents): Self = this.set("InfoPath.ApplicationEvents_typekey", value.asInstanceOf[js.Any])
+    def setInfoPathDotApplicationEvents_typekey(value: ApplicationEvents): Self = StObject.set(x, "InfoPath.ApplicationEvents_typekey", value.asInstanceOf[js.Any])
   }
 }

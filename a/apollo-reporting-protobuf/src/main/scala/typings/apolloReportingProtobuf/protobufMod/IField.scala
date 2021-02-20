@@ -1,11 +1,12 @@
 package typings.apolloReportingProtobuf.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IField extends js.Object {
+trait IField extends StObject {
   
   /** Field name */
   var name: js.UndefOr[String | Null] = js.native
@@ -22,36 +23,24 @@ object IField {
   }
   
   @scala.inline
-  implicit class IFieldOps[Self <: IField] (val x: Self) extends AnyVal {
+  implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setReturnType(value: String): Self = this.set("returnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
-    
-    @scala.inline
-    def setReturnTypeNull: Self = this.set("returnType", null)
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
   }
 }

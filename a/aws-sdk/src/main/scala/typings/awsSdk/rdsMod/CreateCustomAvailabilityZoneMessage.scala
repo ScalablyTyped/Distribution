@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCustomAvailabilityZoneMessage extends js.Object {
+trait CreateCustomAvailabilityZoneMessage extends StObject {
   
   /**
     * The name of the custom Availability Zone (AZ).
@@ -36,39 +37,27 @@ object CreateCustomAvailabilityZoneMessage {
   }
   
   @scala.inline
-  implicit class CreateCustomAvailabilityZoneMessageOps[Self <: CreateCustomAvailabilityZoneMessage] (val x: Self) extends AnyVal {
+  implicit class CreateCustomAvailabilityZoneMessageMutableBuilder[Self <: CreateCustomAvailabilityZoneMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAvailabilityZoneName(value: String): Self = StObject.set(x, "CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExistingVpnId(value: String): Self = StObject.set(x, "ExistingVpnId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExistingVpnIdUndefined: Self = StObject.set(x, "ExistingVpnId", js.undefined)
     
     @scala.inline
-    def setCustomAvailabilityZoneName(value: String): Self = this.set("CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
+    def setNewVpnTunnelName(value: String): Self = StObject.set(x, "NewVpnTunnelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExistingVpnId(value: String): Self = this.set("ExistingVpnId", value.asInstanceOf[js.Any])
+    def setNewVpnTunnelNameUndefined: Self = StObject.set(x, "NewVpnTunnelName", js.undefined)
     
     @scala.inline
-    def deleteExistingVpnId: Self = this.set("ExistingVpnId", js.undefined)
+    def setVpnTunnelOriginatorIP(value: String): Self = StObject.set(x, "VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewVpnTunnelName(value: String): Self = this.set("NewVpnTunnelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewVpnTunnelName: Self = this.set("NewVpnTunnelName", js.undefined)
-    
-    @scala.inline
-    def setVpnTunnelOriginatorIP(value: String): Self = this.set("VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnTunnelOriginatorIP: Self = this.set("VpnTunnelOriginatorIP", js.undefined)
+    def setVpnTunnelOriginatorIPUndefined: Self = StObject.set(x, "VpnTunnelOriginatorIP", js.undefined)
   }
 }

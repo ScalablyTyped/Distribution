@@ -1,6 +1,7 @@
 package typings.xregexp.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is an element in the `XRegExpMatchChainArray` that also specifies a specific back reference.
   */
 @js.native
-trait ChainArrayElement extends js.Object {
+trait ChainArrayElement extends StObject {
   
   /**
     * The specific backreference.
@@ -30,24 +31,12 @@ object ChainArrayElement {
   }
   
   @scala.inline
-  implicit class ChainArrayElementOps[Self <: ChainArrayElement] (val x: Self) extends AnyVal {
+  implicit class ChainArrayElementMutableBuilder[Self <: ChainArrayElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackref(value: Double | String): Self = StObject.set(x, "backref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackref(value: Double | String): Self = this.set("backref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexp(value: RegExp): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
   }
 }

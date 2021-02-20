@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgGridUpdatingMethods extends js.Object {
+trait IgGridUpdatingMethods extends StObject {
   
   /**
     * Adds a new row to the grid. It also creates a transaction and updates the UI.

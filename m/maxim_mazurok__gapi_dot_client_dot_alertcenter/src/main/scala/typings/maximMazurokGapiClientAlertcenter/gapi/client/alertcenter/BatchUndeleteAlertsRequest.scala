@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUndeleteAlertsRequest extends js.Object {
+trait BatchUndeleteAlertsRequest extends StObject {
   
   /** Required. list of alert IDs. */
   var alertId: js.UndefOr[js.Array[String]] = js.native
@@ -22,33 +23,21 @@ object BatchUndeleteAlertsRequest {
   }
   
   @scala.inline
-  implicit class BatchUndeleteAlertsRequestOps[Self <: BatchUndeleteAlertsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchUndeleteAlertsRequestMutableBuilder[Self <: BatchUndeleteAlertsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertId(value: js.Array[String]): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertIdVarargs(value: String*): Self = StObject.set(x, "alertId", js.Array(value :_*))
     
     @scala.inline
-    def setAlertIdVarargs(value: String*): Self = this.set("alertId", js.Array(value :_*))
+    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertId(value: js.Array[String]): Self = this.set("alertId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlertId: Self = this.set("alertId", js.undefined)
-    
-    @scala.inline
-    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
   }
 }

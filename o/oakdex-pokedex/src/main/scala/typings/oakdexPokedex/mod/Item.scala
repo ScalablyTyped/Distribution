@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   var category: String = js.native
   
@@ -38,51 +39,39 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptions(value: js.Array[ItemDescription]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionsVarargs(value: ItemDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setEffects(value: js.Array[ItemEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionsVarargs(value: ItemDescription*): Self = this.set("descriptions", js.Array(value :_*))
+    def setEffectsVarargs(value: ItemEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
     @scala.inline
-    def setDescriptions(value: js.Array[ItemDescription]): Self = this.set("descriptions", value.asInstanceOf[js.Any])
+    def setFling_power(value: Double): Self = StObject.set(x, "fling_power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectsVarargs(value: ItemEffect*): Self = this.set("effects", js.Array(value :_*))
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffects(value: js.Array[ItemEffect]): Self = this.set("effects", value.asInstanceOf[js.Any])
+    def setPockets(value: js.Array[ItemPocket]): Self = StObject.set(x, "pockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFling_power(value: Double): Self = this.set("fling_power", value.asInstanceOf[js.Any])
+    def setPocketsVarargs(value: ItemPocket*): Self = StObject.set(x, "pockets", js.Array(value :_*))
     
     @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setPrices(value: js.Array[ItemPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPocketsVarargs(value: ItemPocket*): Self = this.set("pockets", js.Array(value :_*))
-    
-    @scala.inline
-    def setPockets(value: js.Array[ItemPocket]): Self = this.set("pockets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPricesVarargs(value: ItemPrice*): Self = this.set("prices", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrices(value: js.Array[ItemPrice]): Self = this.set("prices", value.asInstanceOf[js.Any])
+    def setPricesVarargs(value: ItemPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
   }
 }

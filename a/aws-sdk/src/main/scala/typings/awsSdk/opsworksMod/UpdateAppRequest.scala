@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAppRequest extends js.Object {
+trait UpdateAppRequest extends StObject {
   
   /**
     * The app ID.
@@ -71,90 +72,78 @@ object UpdateAppRequest {
   }
   
   @scala.inline
-  implicit class UpdateAppRequestOps[Self <: UpdateAppRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAppRequestMutableBuilder[Self <: UpdateAppRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppSource(value: Source): Self = StObject.set(x, "AppSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppSourceUndefined: Self = StObject.set(x, "AppSource", js.undefined)
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("AppId", value.asInstanceOf[js.Any])
+    def setAttributes(value: AppAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppSource(value: Source): Self = this.set("AppSource", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def deleteAppSource: Self = this.set("AppSource", js.undefined)
+    def setDataSources(value: DataSources): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: AppAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourcesVarargs(value: DataSource*): Self = this.set("DataSources", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: DataSources): Self = this.set("DataSources", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDataSources: Self = this.set("DataSources", js.undefined)
+    def setDomains(value: Strings): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDomainsVarargs(value: String*): Self = StObject.set(x, "Domains", js.Array(value :_*))
     
     @scala.inline
-    def setDomainsVarargs(value: String*): Self = this.set("Domains", js.Array(value :_*))
+    def setEnableSsl(value: Boolean): Self = StObject.set(x, "EnableSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomains(value: Strings): Self = this.set("Domains", value.asInstanceOf[js.Any])
+    def setEnableSslUndefined: Self = StObject.set(x, "EnableSsl", js.undefined)
     
     @scala.inline
-    def deleteDomains: Self = this.set("Domains", js.undefined)
+    def setEnvironment(value: EnvironmentVariables): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSsl(value: Boolean): Self = this.set("EnableSsl", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def deleteEnableSsl: Self = this.set("EnableSsl", js.undefined)
+    def setEnvironmentVarargs(value: EnvironmentVariable*): Self = StObject.set(x, "Environment", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentVarargs(value: EnvironmentVariable*): Self = this.set("Environment", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: EnvironmentVariables): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setSslConfiguration(value: SslConfiguration): Self = StObject.set(x, "SslConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSslConfigurationUndefined: Self = StObject.set(x, "SslConfiguration", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setType(value: AppType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslConfiguration(value: SslConfiguration): Self = this.set("SslConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslConfiguration: Self = this.set("SslConfiguration", js.undefined)
-    
-    @scala.inline
-    def setType(value: AppType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

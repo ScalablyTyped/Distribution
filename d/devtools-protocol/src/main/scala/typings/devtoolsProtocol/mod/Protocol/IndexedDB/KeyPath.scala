@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`null`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.array
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyPath extends js.Object {
+trait KeyPath extends StObject {
   
   /**
     * Array value.
@@ -35,36 +36,24 @@ object KeyPath {
   }
   
   @scala.inline
-  implicit class KeyPathOps[Self <: KeyPath] (val x: Self) extends AnyVal {
+  implicit class KeyPathMutableBuilder[Self <: KeyPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: `null` | string | array): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayVarargs(value: String*): Self = this.set("array", js.Array(value :_*))
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
     @scala.inline
-    def setArray(value: js.Array[String]): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setType(value: `null` | string | array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

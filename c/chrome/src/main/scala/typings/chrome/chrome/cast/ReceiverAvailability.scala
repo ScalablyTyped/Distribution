@@ -1,14 +1,15 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReceiverAvailability extends js.Object
+sealed trait ReceiverAvailability extends StObject
 @JSGlobal("chrome.cast.ReceiverAvailability")
 @js.native
-object ReceiverAvailability extends js.Object {
+object ReceiverAvailability extends StObject {
   
   @js.native
   sealed trait AVAILABLE extends ReceiverAvailability

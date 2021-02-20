@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BalloonCalloutStyle extends js.Object
+sealed trait BalloonCalloutStyle extends StObject
 @JSGlobal("__esri.CIM.BalloonCalloutStyle")
 @js.native
-object BalloonCalloutStyle extends js.Object {
+object BalloonCalloutStyle extends StObject {
   
   /**
     * Oval style.

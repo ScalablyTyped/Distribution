@@ -5,6 +5,7 @@ import typings.kendoUi.kendo.Router
 import typings.kendoUi.kendo.mobile.ui.Pane
 import typings.kendoUi.kendo.mobile.ui.Scroller
 import typings.kendoUi.kendo.mobile.ui.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.GraphicLocation
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,42 +102,30 @@ object UserIndex {
   }
   
   @scala.inline
-  implicit class UserIndexOps[Self <: UserIndex] (val x: Self) extends AnyVal {
+  implicit class UserIndexMutableBuilder[Self <: UserIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFromEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromEmbeddedObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFromGraphicObjects(value: Boolean): Self = StObject.set(x, "CreateFromGraphicObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateFromMarks(value: Boolean): Self = StObject.set(x, "CreateFromMarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromEmbeddedObjects(value: Boolean): Self = this.set("CreateFromEmbeddedObjects", value.asInstanceOf[js.Any])
+    def setCreateFromTables(value: Boolean): Self = StObject.set(x, "CreateFromTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromGraphicObjects(value: Boolean): Self = this.set("CreateFromGraphicObjects", value.asInstanceOf[js.Any])
+    def setCreateFromTextFrames(value: Boolean): Self = StObject.set(x, "CreateFromTextFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromMarks(value: Boolean): Self = this.set("CreateFromMarks", value.asInstanceOf[js.Any])
+    def setLevelParagraphStyles(value: XIndexReplace): Self = StObject.set(x, "LevelParagraphStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromTables(value: Boolean): Self = this.set("CreateFromTables", value.asInstanceOf[js.Any])
+    def setUseLevelFromSource(value: Boolean): Self = StObject.set(x, "UseLevelFromSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromTextFrames(value: Boolean): Self = this.set("CreateFromTextFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevelParagraphStyles(value: XIndexReplace): Self = this.set("LevelParagraphStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseLevelFromSource(value: Boolean): Self = this.set("UseLevelFromSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserIndexName(value: String): Self = this.set("UserIndexName", value.asInstanceOf[js.Any])
+    def setUserIndexName(value: String): Self = StObject.set(x, "UserIndexName", value.asInstanceOf[js.Any])
   }
 }

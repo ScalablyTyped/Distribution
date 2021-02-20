@@ -3,32 +3,53 @@ package typings.d3Dsv
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-dsv", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-dsv", "autoType")
+  @js.native
   def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
   `object`: js.Array[String]): ParsedRow = js.native
+  @JSImport("d3-dsv", "autoType")
+  @js.native
   def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
   `object`: DSVRowString[Columns]): ParsedRow = js.native
   
+  @JSImport("d3-dsv", "csvFormat")
+  @js.native
   def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+  @JSImport("d3-dsv", "csvFormat")
+  @js.native
   def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
   
+  @JSImport("d3-dsv", "csvFormatBody")
+  @js.native
   def csvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+  @JSImport("d3-dsv", "csvFormatBody")
+  @js.native
   def csvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
   
+  @JSImport("d3-dsv", "csvFormatRow")
+  @js.native
   def csvFormatRow(row: js.Array[String]): String = js.native
   
+  @JSImport("d3-dsv", "csvFormatRows")
+  @js.native
   def csvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
   
+  @JSImport("d3-dsv", "csvFormatValue")
+  @js.native
   def csvFormatValue(value: String): String = js.native
   
+  @JSImport("d3-dsv", "csvParse")
+  @js.native
   def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = js.native
+  @JSImport("d3-dsv", "csvParse")
+  @js.native
   def csvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
     csvString: String,
     row: js.Function3[
@@ -39,27 +60,51 @@ object mod extends js.Object {
     ]
   ): DSVParsedArray[ParsedRow] = js.native
   
+  @JSImport("d3-dsv", "csvParseRows")
+  @js.native
   def csvParseRows(csvString: String): js.Array[js.Array[String]] = js.native
+  @JSImport("d3-dsv", "csvParseRows")
+  @js.native
   def csvParseRows[ParsedRow /* <: js.Object */](
     csvString: String,
     row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
   ): js.Array[ParsedRow] = js.native
   
+  @JSImport("d3-dsv", "dsvFormat")
+  @js.native
   def dsvFormat(delimiter: String): DSV = js.native
   
+  @JSImport("d3-dsv", "tsvFormat")
+  @js.native
   def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+  @JSImport("d3-dsv", "tsvFormat")
+  @js.native
   def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
   
+  @JSImport("d3-dsv", "tsvFormatBody")
+  @js.native
   def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+  @JSImport("d3-dsv", "tsvFormatBody")
+  @js.native
   def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
   
+  @JSImport("d3-dsv", "tsvFormatRow")
+  @js.native
   def tsvFormatRow(row: js.Array[String]): String = js.native
   
+  @JSImport("d3-dsv", "tsvFormatRows")
+  @js.native
   def tsvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
   
+  @JSImport("d3-dsv", "tsvFormatValue")
+  @js.native
   def tsvFormatValue(value: String): String = js.native
   
+  @JSImport("d3-dsv", "tsvParse")
+  @js.native
   def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = js.native
+  @JSImport("d3-dsv", "tsvParse")
+  @js.native
   def tsvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
     tsvString: String,
     row: js.Function3[
@@ -70,14 +115,18 @@ object mod extends js.Object {
     ]
   ): DSVParsedArray[ParsedRow] = js.native
   
+  @JSImport("d3-dsv", "tsvParseRows")
+  @js.native
   def tsvParseRows(tsvString: String): js.Array[js.Array[String]] = js.native
+  @JSImport("d3-dsv", "tsvParseRows")
+  @js.native
   def tsvParseRows[ParsedRow /* <: js.Object */](
     tsvString: String,
     row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
   ): js.Array[ParsedRow] = js.native
   
   @js.native
-  trait DSV extends js.Object {
+  trait DSV extends StObject {
     
     /**
       * Formats the specified array of object rows as delimiter-separated values, returning a string.
@@ -217,6 +266,12 @@ object mod extends js.Object {
     var columns: js.Array[/* keyof T */ String] = js.native
   }
   
+  type DSVRaw[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof T ]: string | undefined}
+    */ typings.d3Dsv.d3DsvStrings.DSVRaw with TopLevel[js.Any]
+  
+  type DSVRowAny = StringDictionary[js.Any]
+  
   @js.native
   trait DSVRowArray[Columns /* <: String */] extends Array[DSVRowString[Columns]] {
     
@@ -225,12 +280,6 @@ object mod extends js.Object {
       */
     var columns: js.Array[Columns] = js.native
   }
-  
-  type DSVRaw[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]: string | undefined}
-    */ typings.d3Dsv.d3DsvStrings.DSVRaw with TopLevel[js.Any]
-  
-  type DSVRowAny = StringDictionary[js.Any]
   
   type DSVRowString[Columns /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Columns ]: string | undefined}

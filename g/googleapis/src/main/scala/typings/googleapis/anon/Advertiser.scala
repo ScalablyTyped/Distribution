@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Advertiser extends js.Object {
+trait Advertiser extends StObject {
   
   var advertiser: js.UndefOr[String] = js.native
   
@@ -40,93 +41,81 @@ object Advertiser {
   }
   
   @scala.inline
-  implicit class AdvertiserOps[Self <: Advertiser] (val x: Self) extends AnyVal {
+  implicit class AdvertiserMutableBuilder[Self <: Advertiser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiser(value: String): Self = StObject.set(x, "advertiser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserUndefined: Self = StObject.set(x, "advertiser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIcon(value: Height): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiser(value: String): Self = this.set("advertiser", value.asInstanceOf[js.Any])
+    def setAppIconUndefined: Self = StObject.set(x, "appIcon", js.undefined)
     
     @scala.inline
-    def deleteAdvertiser: Self = this.set("advertiser", js.undefined)
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIcon(value: Height): Self = this.set("appIcon", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteAppIcon: Self = this.set("appIcon", js.undefined)
+    def setCallToAction(value: String): Self = StObject.set(x, "callToAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCallToActionUndefined: Self = StObject.set(x, "callToAction", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallToAction(value: String): Self = this.set("callToAction", value.asInstanceOf[js.Any])
+    def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
     
     @scala.inline
-    def deleteCallToAction: Self = this.set("callToAction", js.undefined)
+    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickTrackingUrl(value: String): Self = this.set("clickTrackingUrl", value.asInstanceOf[js.Any])
+    def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
     @scala.inline
-    def deleteClickTrackingUrl: Self = this.set("clickTrackingUrl", js.undefined)
+    def setImage(value: Height): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteHeadline: Self = this.set("headline", js.undefined)
+    def setImpressionTrackingUrl(value: js.Array[String]): Self = StObject.set(x, "impressionTrackingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Height): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImpressionTrackingUrlUndefined: Self = StObject.set(x, "impressionTrackingUrl", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value :_*))
     
     @scala.inline
-    def setImpressionTrackingUrlVarargs(value: String*): Self = this.set("impressionTrackingUrl", js.Array(value :_*))
+    def setLogo(value: Height): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionTrackingUrl(value: js.Array[String]): Self = this.set("impressionTrackingUrl", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteImpressionTrackingUrl: Self = this.set("impressionTrackingUrl", js.undefined)
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: Height): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarRating(value: Double): Self = this.set("starRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarRating: Self = this.set("starRating", js.undefined)
-    
-    @scala.inline
-    def setStore(value: String): Self = this.set("store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
   }
 }

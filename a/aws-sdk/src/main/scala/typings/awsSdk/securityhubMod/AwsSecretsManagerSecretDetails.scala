@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsSecretsManagerSecretDetails extends js.Object {
+trait AwsSecretsManagerSecretDetails extends StObject {
   
   /**
     * Whether the secret is deleted.
@@ -56,66 +57,54 @@ object AwsSecretsManagerSecretDetails {
   }
   
   @scala.inline
-  implicit class AwsSecretsManagerSecretDetailsOps[Self <: AwsSecretsManagerSecretDetails] (val x: Self) extends AnyVal {
+  implicit class AwsSecretsManagerSecretDetailsMutableBuilder[Self <: AwsSecretsManagerSecretDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("Deleted", js.undefined)
+    def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: NonEmptyString): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setRotationEnabled(value: Boolean): Self = StObject.set(x, "RotationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRotationEnabledUndefined: Self = StObject.set(x, "RotationEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRotationLambdaArn(value: NonEmptyString): Self = StObject.set(x, "RotationLambdaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationEnabled(value: Boolean): Self = this.set("RotationEnabled", value.asInstanceOf[js.Any])
+    def setRotationLambdaArnUndefined: Self = StObject.set(x, "RotationLambdaArn", js.undefined)
     
     @scala.inline
-    def deleteRotationEnabled: Self = this.set("RotationEnabled", js.undefined)
+    def setRotationOccurredWithinFrequency(value: Boolean): Self = StObject.set(x, "RotationOccurredWithinFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationLambdaArn(value: NonEmptyString): Self = this.set("RotationLambdaArn", value.asInstanceOf[js.Any])
+    def setRotationOccurredWithinFrequencyUndefined: Self = StObject.set(x, "RotationOccurredWithinFrequency", js.undefined)
     
     @scala.inline
-    def deleteRotationLambdaArn: Self = this.set("RotationLambdaArn", js.undefined)
+    def setRotationRules(value: AwsSecretsManagerSecretRotationRules): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationOccurredWithinFrequency(value: Boolean): Self = this.set("RotationOccurredWithinFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationOccurredWithinFrequency: Self = this.set("RotationOccurredWithinFrequency", js.undefined)
-    
-    @scala.inline
-    def setRotationRules(value: AwsSecretsManagerSecretRotationRules): Self = this.set("RotationRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationRules: Self = this.set("RotationRules", js.undefined)
+    def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
   }
 }

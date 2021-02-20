@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioSelectorSettings extends js.Object {
+trait AudioSelectorSettings extends StObject {
   
   var AudioLanguageSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioLanguageSelection] = js.native
   
@@ -22,36 +23,24 @@ object AudioSelectorSettings {
   }
   
   @scala.inline
-  implicit class AudioSelectorSettingsOps[Self <: AudioSelectorSettings] (val x: Self) extends AnyVal {
+  implicit class AudioSelectorSettingsMutableBuilder[Self <: AudioSelectorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioLanguageSelection(value: AudioLanguageSelection): Self = StObject.set(x, "AudioLanguageSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioLanguageSelectionUndefined: Self = StObject.set(x, "AudioLanguageSelection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioPidSelection(value: AudioPidSelection): Self = StObject.set(x, "AudioPidSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioLanguageSelection(value: AudioLanguageSelection): Self = this.set("AudioLanguageSelection", value.asInstanceOf[js.Any])
+    def setAudioPidSelectionUndefined: Self = StObject.set(x, "AudioPidSelection", js.undefined)
     
     @scala.inline
-    def deleteAudioLanguageSelection: Self = this.set("AudioLanguageSelection", js.undefined)
+    def setAudioTrackSelection(value: AudioTrackSelection): Self = StObject.set(x, "AudioTrackSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioPidSelection(value: AudioPidSelection): Self = this.set("AudioPidSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudioPidSelection: Self = this.set("AudioPidSelection", js.undefined)
-    
-    @scala.inline
-    def setAudioTrackSelection(value: AudioTrackSelection): Self = this.set("AudioTrackSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudioTrackSelection: Self = this.set("AudioTrackSelection", js.undefined)
+    def setAudioTrackSelectionUndefined: Self = StObject.set(x, "AudioTrackSelection", js.undefined)
   }
 }

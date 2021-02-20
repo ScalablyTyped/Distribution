@@ -16,12 +16,13 @@ import typings.spectrum.spectrumStrings.set
 import typings.spectrum.spectrumStrings.show
 import typings.spectrum.spectrumStrings.toggle
 import typings.tinycolor2.mod.Instance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Called at the beginning of a drag event on either hue slider, alpha slider, or main color picker areas.
@@ -40,7 +41,7 @@ trait JQuery extends js.Object {
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* color */ Instance, _]
   ): JQuery = js.native
   
-   // in most cases this is JQuery except for the get method which returns a tinycolorInstance
+  // in most cases this is JQuery except for the get method which returns a tinycolorInstance
   /**
     * Initializes the input element that it is called on
     * as a spectrum colorpicker instance.

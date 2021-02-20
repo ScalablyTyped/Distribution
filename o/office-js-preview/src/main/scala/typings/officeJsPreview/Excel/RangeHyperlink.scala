@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait RangeHyperlink extends js.Object {
+trait RangeHyperlink extends StObject {
   
   /**
     *
@@ -54,42 +55,30 @@ object RangeHyperlink {
   }
   
   @scala.inline
-  implicit class RangeHyperlinkOps[Self <: RangeHyperlink] (val x: Self) extends AnyVal {
+  implicit class RangeHyperlinkMutableBuilder[Self <: RangeHyperlink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentReference(value: String): Self = StObject.set(x, "documentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDocumentReferenceUndefined: Self = StObject.set(x, "documentReference", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setScreenTip(value: String): Self = StObject.set(x, "screenTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentReference(value: String): Self = this.set("documentReference", value.asInstanceOf[js.Any])
+    def setScreenTipUndefined: Self = StObject.set(x, "screenTip", js.undefined)
     
     @scala.inline
-    def deleteDocumentReference: Self = this.set("documentReference", js.undefined)
+    def setTextToDisplay(value: String): Self = StObject.set(x, "textToDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenTip(value: String): Self = this.set("screenTip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenTip: Self = this.set("screenTip", js.undefined)
-    
-    @scala.inline
-    def setTextToDisplay(value: String): Self = this.set("textToDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextToDisplay: Self = this.set("textToDisplay", js.undefined)
+    def setTextToDisplayUndefined: Self = StObject.set(x, "textToDisplay", js.undefined)
   }
 }

@@ -9,6 +9,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLTableCellElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,31 +41,19 @@ object TableSortableHeaderCellProps {
   }
   
   @scala.inline
-  implicit class TableSortableHeaderCellPropsOps[Self <: TableSortableHeaderCellProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TableSortableHeaderCellPropsMutableBuilder[Self <: TableSortableHeaderCellProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnSortChange(
       value: /* arg */ js.Object with (Event[
           (MouseEvent[HTMLTableCellElement, NativeMouseEvent]) | KeyboardEvent[HTMLTableCellElement]
         ]) => Unit
-    ): Self = this.set("onSortChange", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onSortChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSortOrder(value: asc | desc): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: active | inactive): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: active | inactive): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

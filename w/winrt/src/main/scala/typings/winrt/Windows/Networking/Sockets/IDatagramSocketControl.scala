@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDatagramSocketControl extends js.Object {
+trait IDatagramSocketControl extends StObject {
   
   var outboundUnicastHopLimit: Double = js.native
   
@@ -20,24 +21,12 @@ object IDatagramSocketControl {
   }
   
   @scala.inline
-  implicit class IDatagramSocketControlOps[Self <: IDatagramSocketControl] (val x: Self) extends AnyVal {
+  implicit class IDatagramSocketControlMutableBuilder[Self <: IDatagramSocketControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutboundUnicastHopLimit(value: Double): Self = this.set("outboundUnicastHopLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQualityOfService(value: SocketQualityOfService): Self = this.set("qualityOfService", value.asInstanceOf[js.Any])
+    def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
   }
 }

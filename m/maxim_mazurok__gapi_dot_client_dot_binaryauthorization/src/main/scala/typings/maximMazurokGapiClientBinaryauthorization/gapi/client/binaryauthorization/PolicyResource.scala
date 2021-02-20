@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBinaryauthorization.anon.Fields
 import typings.maximMazurokGapiClientBinaryauthorization.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyResource extends js.Object {
+trait PolicyResource extends StObject {
   
   /** Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. */
   def getIamPolicy(): Request[IamPolicy] = js.native

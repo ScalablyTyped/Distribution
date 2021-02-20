@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TreeStructureGroup extends js.Object
+sealed trait TreeStructureGroup extends StObject
 @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TreeStructureGroup")
 @js.native
-object TreeStructureGroup extends js.Object {
+object TreeStructureGroup extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TreeStructureGroup with Double] = js.native
   
   @js.native
   sealed trait Areas extends TreeStructureGroup
-  /* 0 */ @js.native
-  object Areas extends TopLevel[Areas with Double]
+  /* 0 */ val Areas: typings.vsoNodeApi.workItemTrackingInterfacesMod.TreeStructureGroup.Areas with Double = js.native
   
   @js.native
   sealed trait Iterations extends TreeStructureGroup
-  /* 1 */ @js.native
-  object Iterations extends TopLevel[Iterations with Double]
+  /* 1 */ val Iterations: typings.vsoNodeApi.workItemTrackingInterfacesMod.TreeStructureGroup.Iterations with Double = js.native
 }

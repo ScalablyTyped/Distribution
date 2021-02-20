@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FixedToolbarOptions extends js.Object {
+trait FixedToolbarOptions extends StObject {
   
   var disablePageZoom: js.UndefOr[Boolean] = js.native
   
@@ -36,78 +37,66 @@ object FixedToolbarOptions {
   }
   
   @scala.inline
-  implicit class FixedToolbarOptionsOps[Self <: FixedToolbarOptions] (val x: Self) extends AnyVal {
+  implicit class FixedToolbarOptionsMutableBuilder[Self <: FixedToolbarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisablePageZoom(value: Boolean): Self = StObject.set(x, "disablePageZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisablePageZoomUndefined: Self = StObject.set(x, "disablePageZoom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePageZoom(value: Boolean): Self = this.set("disablePageZoom", value.asInstanceOf[js.Any])
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def deleteDisablePageZoom: Self = this.set("disablePageZoom", js.undefined)
+    def setHideDuringFocus(value: String): Self = StObject.set(x, "hideDuringFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setHideDuringFocusUndefined: Self = StObject.set(x, "hideDuringFocus", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDuringFocus(value: String): Self = this.set("hideDuringFocus", value.asInstanceOf[js.Any])
+    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
     @scala.inline
-    def deleteHideDuringFocus: Self = this.set("hideDuringFocus", js.undefined)
+    def setSupportBlacklist(value: js.Function): Self = StObject.set(x, "supportBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
+    def setSupportBlacklistUndefined: Self = StObject.set(x, "supportBlacklist", js.undefined)
     
     @scala.inline
-    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
+    def setTapToggle(value: Boolean): Self = StObject.set(x, "tapToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportBlacklist(value: js.Function): Self = this.set("supportBlacklist", value.asInstanceOf[js.Any])
+    def setTapToggleBlacklist(value: String): Self = StObject.set(x, "tapToggleBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSupportBlacklist: Self = this.set("supportBlacklist", js.undefined)
+    def setTapToggleBlacklistUndefined: Self = StObject.set(x, "tapToggleBlacklist", js.undefined)
     
     @scala.inline
-    def setTapToggle(value: Boolean): Self = this.set("tapToggle", value.asInstanceOf[js.Any])
+    def setTapToggleUndefined: Self = StObject.set(x, "tapToggle", js.undefined)
     
     @scala.inline
-    def deleteTapToggle: Self = this.set("tapToggle", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapToggleBlacklist(value: String): Self = this.set("tapToggleBlacklist", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteTapToggleBlacklist: Self = this.set("tapToggleBlacklist", js.undefined)
+    def setUpdatePagePadding(value: Boolean): Self = StObject.set(x, "updatePagePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setUpdatePagePaddingUndefined: Self = StObject.set(x, "updatePagePadding", js.undefined)
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setVisibleOnPageShow(value: Boolean): Self = StObject.set(x, "visibleOnPageShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatePagePadding(value: Boolean): Self = this.set("updatePagePadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatePagePadding: Self = this.set("updatePagePadding", js.undefined)
-    
-    @scala.inline
-    def setVisibleOnPageShow(value: Boolean): Self = this.set("visibleOnPageShow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleOnPageShow: Self = this.set("visibleOnPageShow", js.undefined)
+    def setVisibleOnPageShowUndefined: Self = StObject.set(x, "visibleOnPageShow", js.undefined)
   }
 }

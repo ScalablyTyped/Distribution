@@ -1,12 +1,13 @@
 package typings.plotlyJs.mod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotMouseEvent extends js.Object {
+trait PlotMouseEvent extends StObject {
   
   var event: MouseEvent = js.native
   
@@ -21,27 +22,15 @@ object PlotMouseEvent {
   }
   
   @scala.inline
-  implicit class PlotMouseEventOps[Self <: PlotMouseEvent] (val x: Self) extends AnyVal {
+  implicit class PlotMouseEventMutableBuilder[Self <: PlotMouseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointsVarargs(value: PlotDatum*): Self = this.set("points", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoints(value: js.Array[PlotDatum]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

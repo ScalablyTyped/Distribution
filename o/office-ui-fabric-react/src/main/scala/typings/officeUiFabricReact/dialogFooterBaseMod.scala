@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Dialog/DialogFooter.base", JSImport.Namespace)
-@js.native
-object dialogFooterBaseMod extends js.Object {
+object dialogFooterBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog/DialogFooter.base", "DialogFooterBase")
   @js.native
   class DialogFooterBase protected ()
     extends Component[IDialogFooterProps, js.Object, js.Any] {

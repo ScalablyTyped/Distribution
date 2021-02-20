@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppConfigurationSettingItem extends js.Object {
+trait AppConfigurationSettingItem extends StObject {
   
   // app configuration key.
   var appConfigKey: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object AppConfigurationSettingItem {
   }
   
   @scala.inline
-  implicit class AppConfigurationSettingItemOps[Self <: AppConfigurationSettingItem] (val x: Self) extends AnyVal {
+  implicit class AppConfigurationSettingItemMutableBuilder[Self <: AppConfigurationSettingItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppConfigKey(value: String): Self = StObject.set(x, "appConfigKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppConfigKeyType(value: MdmAppConfigKeyType): Self = StObject.set(x, "appConfigKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppConfigKeyTypeUndefined: Self = StObject.set(x, "appConfigKeyType", js.undefined)
     
     @scala.inline
-    def setAppConfigKey(value: String): Self = this.set("appConfigKey", value.asInstanceOf[js.Any])
+    def setAppConfigKeyUndefined: Self = StObject.set(x, "appConfigKey", js.undefined)
     
     @scala.inline
-    def deleteAppConfigKey: Self = this.set("appConfigKey", js.undefined)
+    def setAppConfigKeyValue(value: String): Self = StObject.set(x, "appConfigKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppConfigKeyType(value: MdmAppConfigKeyType): Self = this.set("appConfigKeyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppConfigKeyType: Self = this.set("appConfigKeyType", js.undefined)
-    
-    @scala.inline
-    def setAppConfigKeyValue(value: String): Self = this.set("appConfigKeyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppConfigKeyValue: Self = this.set("appConfigKeyValue", js.undefined)
+    def setAppConfigKeyValueUndefined: Self = StObject.set(x, "appConfigKeyValue", js.undefined)
   }
 }

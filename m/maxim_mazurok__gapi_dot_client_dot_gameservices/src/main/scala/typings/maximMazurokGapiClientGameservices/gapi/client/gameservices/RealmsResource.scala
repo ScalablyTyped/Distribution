@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientGameservices.anon.NameOauthtoken
 import typings.maximMazurokGapiClientGameservices.anon.QuotaUser
 import typings.maximMazurokGapiClientGameservices.anon.RealmId
 import typings.maximMazurokGapiClientGameservices.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RealmsResource extends js.Object {
+trait RealmsResource extends StObject {
   
   def create(request: KeyOauthtoken, body: Realm): Request[Operation] = js.native
   /** Creates a new realm in a given project and location. */

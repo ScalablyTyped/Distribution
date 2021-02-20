@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRetentionConfigurationRequest extends js.Object {
+trait PutRetentionConfigurationRequest extends StObject {
   
   /**
     * Number of days AWS Config stores your historical information.  Currently, only applicable to the configuration item history. 
@@ -21,21 +22,9 @@ object PutRetentionConfigurationRequest {
   }
   
   @scala.inline
-  implicit class PutRetentionConfigurationRequestOps[Self <: PutRetentionConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class PutRetentionConfigurationRequestMutableBuilder[Self <: PutRetentionConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = this.set("RetentionPeriodInDays", value.asInstanceOf[js.Any])
+    def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = StObject.set(x, "RetentionPeriodInDays", value.asInstanceOf[js.Any])
   }
 }

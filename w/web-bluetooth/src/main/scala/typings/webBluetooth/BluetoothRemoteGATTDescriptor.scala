@@ -2,12 +2,13 @@ package typings.webBluetooth
 
 import typings.std.BufferSource
 import typings.std.DataView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BluetoothRemoteGATTDescriptor extends js.Object {
+trait BluetoothRemoteGATTDescriptor extends StObject {
   
   val characteristic: BluetoothRemoteGATTCharacteristic = js.native
   
@@ -33,36 +34,24 @@ object BluetoothRemoteGATTDescriptor {
   }
   
   @scala.inline
-  implicit class BluetoothRemoteGATTDescriptorOps[Self <: BluetoothRemoteGATTDescriptor] (val x: Self) extends AnyVal {
+  implicit class BluetoothRemoteGATTDescriptorMutableBuilder[Self <: BluetoothRemoteGATTDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacteristic(value: BluetoothRemoteGATTCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadValue(value: () => js.Promise[DataView]): Self = StObject.set(x, "readValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacteristic(value: BluetoothRemoteGATTCharacteristic): Self = this.set("characteristic", value.asInstanceOf[js.Any])
+    def setValue(value: DataView): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadValue(value: () => js.Promise[DataView]): Self = this.set("readValue", js.Any.fromFunction0(value))
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteValue(value: BufferSource => js.Promise[Unit]): Self = this.set("writeValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValue(value: DataView): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setWriteValue(value: BufferSource => js.Promise[Unit]): Self = StObject.set(x, "writeValue", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object containing additional pathfinding flags.
   */
 @js.native
-trait PathFinderOpts extends js.Object {
+trait PathFinderOpts extends StObject {
   
   /**
     * Instead of searching for a path to the goals this will search for a path away from the goals.
@@ -67,66 +68,54 @@ object PathFinderOpts {
   }
   
   @scala.inline
-  implicit class PathFinderOptsOps[Self <: PathFinderOpts] (val x: Self) extends AnyVal {
+  implicit class PathFinderOptsMutableBuilder[Self <: PathFinderOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlee(value: Boolean): Self = StObject.set(x, "flee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleeUndefined: Self = StObject.set(x, "flee", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeuristicWeight(value: Double): Self = StObject.set(x, "heuristicWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlee(value: Boolean): Self = this.set("flee", value.asInstanceOf[js.Any])
+    def setHeuristicWeightUndefined: Self = StObject.set(x, "heuristicWeight", js.undefined)
     
     @scala.inline
-    def deleteFlee: Self = this.set("flee", js.undefined)
+    def setMaxCost(value: Double): Self = StObject.set(x, "maxCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeuristicWeight(value: Double): Self = this.set("heuristicWeight", value.asInstanceOf[js.Any])
+    def setMaxCostUndefined: Self = StObject.set(x, "maxCost", js.undefined)
     
     @scala.inline
-    def deleteHeuristicWeight: Self = this.set("heuristicWeight", js.undefined)
+    def setMaxOps(value: Double): Self = StObject.set(x, "maxOps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCost(value: Double): Self = this.set("maxCost", value.asInstanceOf[js.Any])
+    def setMaxOpsUndefined: Self = StObject.set(x, "maxOps", js.undefined)
     
     @scala.inline
-    def deleteMaxCost: Self = this.set("maxCost", js.undefined)
+    def setMaxRooms(value: Double): Self = StObject.set(x, "maxRooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxOps(value: Double): Self = this.set("maxOps", value.asInstanceOf[js.Any])
+    def setMaxRoomsUndefined: Self = StObject.set(x, "maxRooms", js.undefined)
     
     @scala.inline
-    def deleteMaxOps: Self = this.set("maxOps", js.undefined)
+    def setPlainCost(value: Double): Self = StObject.set(x, "plainCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRooms(value: Double): Self = this.set("maxRooms", value.asInstanceOf[js.Any])
+    def setPlainCostUndefined: Self = StObject.set(x, "plainCost", js.undefined)
     
     @scala.inline
-    def deleteMaxRooms: Self = this.set("maxRooms", js.undefined)
+    def setRoomCallback(value: /* roomName */ String => Boolean | CostMatrix): Self = StObject.set(x, "roomCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlainCost(value: Double): Self = this.set("plainCost", value.asInstanceOf[js.Any])
+    def setRoomCallbackUndefined: Self = StObject.set(x, "roomCallback", js.undefined)
     
     @scala.inline
-    def deletePlainCost: Self = this.set("plainCost", js.undefined)
+    def setSwampCost(value: Double): Self = StObject.set(x, "swampCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomCallback(value: /* roomName */ String => Boolean | CostMatrix): Self = this.set("roomCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRoomCallback: Self = this.set("roomCallback", js.undefined)
-    
-    @scala.inline
-    def setSwampCost(value: Double): Self = this.set("swampCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwampCost: Self = this.set("swampCost", js.undefined)
+    def setSwampCostUndefined: Self = StObject.set(x, "swampCost", js.undefined)
   }
 }

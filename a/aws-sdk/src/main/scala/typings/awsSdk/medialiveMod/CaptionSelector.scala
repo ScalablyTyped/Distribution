@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionSelector extends js.Object {
+trait CaptionSelector extends StObject {
   
   /**
     * When specified this field indicates the three letter language code of the caption track to extract from the source.
@@ -31,33 +32,21 @@ object CaptionSelector {
   }
   
   @scala.inline
-  implicit class CaptionSelectorOps[Self <: CaptionSelector] (val x: Self) extends AnyVal {
+  implicit class CaptionSelectorMutableBuilder[Self <: CaptionSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: stringMin1): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: stringMin1): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSelectorSettings(value: CaptionSelectorSettings): Self = StObject.set(x, "SelectorSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: string): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
-    
-    @scala.inline
-    def setSelectorSettings(value: CaptionSelectorSettings): Self = this.set("SelectorSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectorSettings: Self = this.set("SelectorSettings", js.undefined)
+    def setSelectorSettingsUndefined: Self = StObject.set(x, "SelectorSettings", js.undefined)
   }
 }

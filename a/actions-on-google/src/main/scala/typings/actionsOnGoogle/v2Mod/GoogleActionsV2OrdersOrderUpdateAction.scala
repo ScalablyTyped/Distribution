@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersOrderUpdateAction extends js.Object {
+trait GoogleActionsV2OrdersOrderUpdateAction extends StObject {
   
   /**
     * Button label and link.
@@ -26,30 +27,18 @@ object GoogleActionsV2OrdersOrderUpdateAction {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersOrderUpdateActionOps[Self <: GoogleActionsV2OrdersOrderUpdateAction] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersOrderUpdateActionMutableBuilder[Self <: GoogleActionsV2OrdersOrderUpdateAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: GoogleActionsV2UiElementsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: GoogleActionsV2OrdersOrderUpdateActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: GoogleActionsV2UiElementsButton): Self = this.set("button", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
-    
-    @scala.inline
-    def setType(value: GoogleActionsV2OrdersOrderUpdateActionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

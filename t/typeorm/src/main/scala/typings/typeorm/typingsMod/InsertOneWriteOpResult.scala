@@ -1,12 +1,13 @@
 package typings.typeorm.typingsMod
 
 import typings.typeorm.anon.Ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertOneWriteOpResult extends js.Object {
+trait InsertOneWriteOpResult extends StObject {
   
   /**
     * The connection object used for the operation.
@@ -51,36 +52,24 @@ object InsertOneWriteOpResult {
   }
   
   @scala.inline
-  implicit class InsertOneWriteOpResultOps[Self <: InsertOneWriteOpResult] (val x: Self) extends AnyVal {
+  implicit class InsertOneWriteOpResultMutableBuilder[Self <: InsertOneWriteOpResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertedCount(value: scala.Double): Self = StObject.set(x, "insertedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertedId(value: ObjectID): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: js.Any): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setOps(value: js.Array[_]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedCount(value: scala.Double): Self = this.set("insertedCount", value.asInstanceOf[js.Any])
+    def setOpsVarargs(value: js.Any*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
     @scala.inline
-    def setInsertedId(value: ObjectID): Self = this.set("insertedId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpsVarargs(value: js.Any*): Self = this.set("ops", js.Array(value :_*))
-    
-    @scala.inline
-    def setOps(value: js.Array[_]): Self = this.set("ops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: Ok): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: Ok): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.androiduix.android.view
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewConfiguration extends js.Object {
+trait ViewConfiguration extends StObject {
   
   var density: js.Any = js.native
   
@@ -101,102 +102,90 @@ object ViewConfiguration {
   }
   
   @scala.inline
-  implicit class ViewConfigurationOps[Self <: ViewConfiguration] (val x: Self) extends AnyVal {
+  implicit class ViewConfigurationMutableBuilder[Self <: ViewConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDensity(value: js.Any): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetScaledDoubleTapSlop(value: () => Double): Self = StObject.set(x, "getScaledDoubleTapSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetScaledDoubleTapTouchSlop(value: () => Double): Self = StObject.set(x, "getScaledDoubleTapTouchSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDensity(value: js.Any): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setGetScaledEdgeSlop(value: () => Double): Self = StObject.set(x, "getScaledEdgeSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledDoubleTapSlop(value: () => Double): Self = this.set("getScaledDoubleTapSlop", js.Any.fromFunction0(value))
+    def setGetScaledFadingEdgeLength(value: () => Double): Self = StObject.set(x, "getScaledFadingEdgeLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledDoubleTapTouchSlop(value: () => Double): Self = this.set("getScaledDoubleTapTouchSlop", js.Any.fromFunction0(value))
+    def setGetScaledMaximumDrawingCacheSize(value: () => Double): Self = StObject.set(x, "getScaledMaximumDrawingCacheSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledEdgeSlop(value: () => Double): Self = this.set("getScaledEdgeSlop", js.Any.fromFunction0(value))
+    def setGetScaledMaximumFlingVelocity(value: () => Double): Self = StObject.set(x, "getScaledMaximumFlingVelocity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledFadingEdgeLength(value: () => Double): Self = this.set("getScaledFadingEdgeLength", js.Any.fromFunction0(value))
+    def setGetScaledMinimumFlingVelocity(value: () => Double): Self = StObject.set(x, "getScaledMinimumFlingVelocity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledMaximumDrawingCacheSize(value: () => Double): Self = this.set("getScaledMaximumDrawingCacheSize", js.Any.fromFunction0(value))
+    def setGetScaledOverflingDistance(value: () => Double): Self = StObject.set(x, "getScaledOverflingDistance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledMaximumFlingVelocity(value: () => Double): Self = this.set("getScaledMaximumFlingVelocity", js.Any.fromFunction0(value))
+    def setGetScaledOverscrollDistance(value: () => Double): Self = StObject.set(x, "getScaledOverscrollDistance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledMinimumFlingVelocity(value: () => Double): Self = this.set("getScaledMinimumFlingVelocity", js.Any.fromFunction0(value))
+    def setGetScaledPagingTouchSlop(value: () => Double): Self = StObject.set(x, "getScaledPagingTouchSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledOverflingDistance(value: () => Double): Self = this.set("getScaledOverflingDistance", js.Any.fromFunction0(value))
+    def setGetScaledScrollBarSize(value: () => Double): Self = StObject.set(x, "getScaledScrollBarSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledOverscrollDistance(value: () => Double): Self = this.set("getScaledOverscrollDistance", js.Any.fromFunction0(value))
+    def setGetScaledTouchSlop(value: () => Double): Self = StObject.set(x, "getScaledTouchSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledPagingTouchSlop(value: () => Double): Self = this.set("getScaledPagingTouchSlop", js.Any.fromFunction0(value))
+    def setGetScaledWindowTouchSlop(value: () => Double): Self = StObject.set(x, "getScaledWindowTouchSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScaledScrollBarSize(value: () => Double): Self = this.set("getScaledScrollBarSize", js.Any.fromFunction0(value))
+    def setMDoubleTapSlop(value: Double): Self = StObject.set(x, "mDoubleTapSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetScaledTouchSlop(value: () => Double): Self = this.set("getScaledTouchSlop", js.Any.fromFunction0(value))
+    def setMDoubleTapTouchSlop(value: Double): Self = StObject.set(x, "mDoubleTapTouchSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetScaledWindowTouchSlop(value: () => Double): Self = this.set("getScaledWindowTouchSlop", js.Any.fromFunction0(value))
+    def setMEdgeSlop(value: Double): Self = StObject.set(x, "mEdgeSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMDoubleTapSlop(value: Double): Self = this.set("mDoubleTapSlop", value.asInstanceOf[js.Any])
+    def setMFadingEdgeLength(value: Double): Self = StObject.set(x, "mFadingEdgeLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMDoubleTapTouchSlop(value: Double): Self = this.set("mDoubleTapTouchSlop", value.asInstanceOf[js.Any])
+    def setMMaximumDrawingCacheSize(value: Double): Self = StObject.set(x, "mMaximumDrawingCacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEdgeSlop(value: Double): Self = this.set("mEdgeSlop", value.asInstanceOf[js.Any])
+    def setMMaximumFlingVelocity(value: Double): Self = StObject.set(x, "mMaximumFlingVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMFadingEdgeLength(value: Double): Self = this.set("mFadingEdgeLength", value.asInstanceOf[js.Any])
+    def setMMinimumFlingVelocity(value: Double): Self = StObject.set(x, "mMinimumFlingVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMMaximumDrawingCacheSize(value: Double): Self = this.set("mMaximumDrawingCacheSize", value.asInstanceOf[js.Any])
+    def setMOverflingDistance(value: Double): Self = StObject.set(x, "mOverflingDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMMaximumFlingVelocity(value: Double): Self = this.set("mMaximumFlingVelocity", value.asInstanceOf[js.Any])
+    def setMOverscrollDistance(value: Double): Self = StObject.set(x, "mOverscrollDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMMinimumFlingVelocity(value: Double): Self = this.set("mMinimumFlingVelocity", value.asInstanceOf[js.Any])
+    def setMPagingTouchSlop(value: Double): Self = StObject.set(x, "mPagingTouchSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMOverflingDistance(value: Double): Self = this.set("mOverflingDistance", value.asInstanceOf[js.Any])
+    def setMScrollbarSize(value: Double): Self = StObject.set(x, "mScrollbarSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMOverscrollDistance(value: Double): Self = this.set("mOverscrollDistance", value.asInstanceOf[js.Any])
+    def setMTouchSlop(value: Double): Self = StObject.set(x, "mTouchSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMPagingTouchSlop(value: Double): Self = this.set("mPagingTouchSlop", value.asInstanceOf[js.Any])
+    def setMWindowTouchSlop(value: Double): Self = StObject.set(x, "mWindowTouchSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMScrollbarSize(value: Double): Self = this.set("mScrollbarSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMTouchSlop(value: Double): Self = this.set("mTouchSlop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMWindowTouchSlop(value: Double): Self = this.set("mWindowTouchSlop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizeAndDensity(value: js.Any): Self = this.set("sizeAndDensity", value.asInstanceOf[js.Any])
+    def setSizeAndDensity(value: js.Any): Self = StObject.set(x, "sizeAndDensity", value.asInstanceOf[js.Any])
   }
 }

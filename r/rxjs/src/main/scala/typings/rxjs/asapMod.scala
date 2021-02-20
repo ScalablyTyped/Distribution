@@ -1,15 +1,18 @@
 package typings.rxjs
 
 import typings.rxjs.asapSchedulerMod.AsapScheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/scheduler/asap", JSImport.Namespace)
-@js.native
-object asapMod extends js.Object {
+object asapMod {
   
+  @JSImport("rxjs/internal/scheduler/asap", "asap")
+  @js.native
   val asap: AsapScheduler = js.native
   
+  @JSImport("rxjs/internal/scheduler/asap", "asapScheduler")
+  @js.native
   val asapScheduler: AsapScheduler = js.native
 }

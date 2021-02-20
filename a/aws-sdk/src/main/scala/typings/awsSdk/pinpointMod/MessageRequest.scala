@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageRequest extends js.Object {
+trait MessageRequest extends StObject {
   
   /**
     * A map of key-value pairs, where each key is an address and each value is an AddressConfiguration object. An address can be a push notification token, a phone number, or an email address. You can use an AddressConfiguration object to tailor the message for an address by specifying settings such as content overrides and message variables.
@@ -46,51 +47,39 @@ object MessageRequest {
   }
   
   @scala.inline
-  implicit class MessageRequestOps[Self <: MessageRequest] (val x: Self) extends AnyVal {
+  implicit class MessageRequestMutableBuilder[Self <: MessageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: MapOfAddressConfiguration): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: MapOfString): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageConfiguration(value: DirectMessageConfiguration): Self = this.set("MessageConfiguration", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
     
     @scala.inline
-    def setAddresses(value: MapOfAddressConfiguration): Self = this.set("Addresses", value.asInstanceOf[js.Any])
+    def setEndpoints(value: MapOfEndpointSendConfiguration): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddresses: Self = this.set("Addresses", js.undefined)
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def setContext(value: MapOfString): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setMessageConfiguration(value: DirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("Context", js.undefined)
+    def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: MapOfEndpointSendConfiguration): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    def setTraceId(value: string): Self = StObject.set(x, "TraceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateConfiguration(value: TemplateConfiguration): Self = this.set("TemplateConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateConfiguration: Self = this.set("TemplateConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTraceId(value: string): Self = this.set("TraceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceId: Self = this.set("TraceId", js.undefined)
+    def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
   }
 }

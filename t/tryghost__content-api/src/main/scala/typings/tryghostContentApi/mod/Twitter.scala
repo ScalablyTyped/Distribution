@@ -1,11 +1,12 @@
 package typings.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Twitter extends js.Object {
+trait Twitter extends StObject {
   
   var twitter_description: js.UndefOr[Nullable[String]] = js.native
   
@@ -22,45 +23,33 @@ object Twitter {
   }
   
   @scala.inline
-  implicit class TwitterOps[Self <: Twitter] (val x: Self) extends AnyVal {
+  implicit class TwitterMutableBuilder[Self <: Twitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTwitter_description(value: Nullable[String]): Self = StObject.set(x, "twitter_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTwitter_descriptionNull: Self = StObject.set(x, "twitter_description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTwitter_descriptionUndefined: Self = StObject.set(x, "twitter_description", js.undefined)
     
     @scala.inline
-    def setTwitter_description(value: Nullable[String]): Self = this.set("twitter_description", value.asInstanceOf[js.Any])
+    def setTwitter_image(value: Nullable[String]): Self = StObject.set(x, "twitter_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTwitter_description: Self = this.set("twitter_description", js.undefined)
+    def setTwitter_imageNull: Self = StObject.set(x, "twitter_image", null)
     
     @scala.inline
-    def setTwitter_descriptionNull: Self = this.set("twitter_description", null)
+    def setTwitter_imageUndefined: Self = StObject.set(x, "twitter_image", js.undefined)
     
     @scala.inline
-    def setTwitter_image(value: Nullable[String]): Self = this.set("twitter_image", value.asInstanceOf[js.Any])
+    def setTwitter_title(value: Nullable[String]): Self = StObject.set(x, "twitter_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTwitter_image: Self = this.set("twitter_image", js.undefined)
+    def setTwitter_titleNull: Self = StObject.set(x, "twitter_title", null)
     
     @scala.inline
-    def setTwitter_imageNull: Self = this.set("twitter_image", null)
-    
-    @scala.inline
-    def setTwitter_title(value: Nullable[String]): Self = this.set("twitter_title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwitter_title: Self = this.set("twitter_title", js.undefined)
-    
-    @scala.inline
-    def setTwitter_titleNull: Self = this.set("twitter_title", null)
+    def setTwitter_titleUndefined: Self = StObject.set(x, "twitter_title", js.undefined)
   }
 }

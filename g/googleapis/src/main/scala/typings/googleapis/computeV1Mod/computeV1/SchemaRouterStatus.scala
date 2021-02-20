@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaRouterStatus extends js.Object {
+trait SchemaRouterStatus extends StObject {
   
   /**
     * Best routes for this router&#39;s network.
@@ -35,60 +36,48 @@ object SchemaRouterStatus {
   }
   
   @scala.inline
-  implicit class SchemaRouterStatusOps[Self <: SchemaRouterStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaRouterStatusMutableBuilder[Self <: SchemaRouterStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBestRoutes(value: js.Array[SchemaRoute]): Self = StObject.set(x, "bestRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBestRoutesForRouter(value: js.Array[SchemaRoute]): Self = StObject.set(x, "bestRoutesForRouter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBestRoutesForRouterUndefined: Self = StObject.set(x, "bestRoutesForRouter", js.undefined)
     
     @scala.inline
-    def setBestRoutesVarargs(value: SchemaRoute*): Self = this.set("bestRoutes", js.Array(value :_*))
+    def setBestRoutesForRouterVarargs(value: SchemaRoute*): Self = StObject.set(x, "bestRoutesForRouter", js.Array(value :_*))
     
     @scala.inline
-    def setBestRoutes(value: js.Array[SchemaRoute]): Self = this.set("bestRoutes", value.asInstanceOf[js.Any])
+    def setBestRoutesUndefined: Self = StObject.set(x, "bestRoutes", js.undefined)
     
     @scala.inline
-    def deleteBestRoutes: Self = this.set("bestRoutes", js.undefined)
+    def setBestRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "bestRoutes", js.Array(value :_*))
     
     @scala.inline
-    def setBestRoutesForRouterVarargs(value: SchemaRoute*): Self = this.set("bestRoutesForRouter", js.Array(value :_*))
+    def setBgpPeerStatus(value: js.Array[SchemaRouterStatusBgpPeerStatus]): Self = StObject.set(x, "bgpPeerStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBestRoutesForRouter(value: js.Array[SchemaRoute]): Self = this.set("bestRoutesForRouter", value.asInstanceOf[js.Any])
+    def setBgpPeerStatusUndefined: Self = StObject.set(x, "bgpPeerStatus", js.undefined)
     
     @scala.inline
-    def deleteBestRoutesForRouter: Self = this.set("bestRoutesForRouter", js.undefined)
+    def setBgpPeerStatusVarargs(value: SchemaRouterStatusBgpPeerStatus*): Self = StObject.set(x, "bgpPeerStatus", js.Array(value :_*))
     
     @scala.inline
-    def setBgpPeerStatusVarargs(value: SchemaRouterStatusBgpPeerStatus*): Self = this.set("bgpPeerStatus", js.Array(value :_*))
+    def setNatStatus(value: js.Array[SchemaRouterStatusNatStatus]): Self = StObject.set(x, "natStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgpPeerStatus(value: js.Array[SchemaRouterStatusBgpPeerStatus]): Self = this.set("bgpPeerStatus", value.asInstanceOf[js.Any])
+    def setNatStatusUndefined: Self = StObject.set(x, "natStatus", js.undefined)
     
     @scala.inline
-    def deleteBgpPeerStatus: Self = this.set("bgpPeerStatus", js.undefined)
+    def setNatStatusVarargs(value: SchemaRouterStatusNatStatus*): Self = StObject.set(x, "natStatus", js.Array(value :_*))
     
     @scala.inline
-    def setNatStatusVarargs(value: SchemaRouterStatusNatStatus*): Self = this.set("natStatus", js.Array(value :_*))
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatStatus(value: js.Array[SchemaRouterStatusNatStatus]): Self = this.set("natStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNatStatus: Self = this.set("natStatus", js.undefined)
-    
-    @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

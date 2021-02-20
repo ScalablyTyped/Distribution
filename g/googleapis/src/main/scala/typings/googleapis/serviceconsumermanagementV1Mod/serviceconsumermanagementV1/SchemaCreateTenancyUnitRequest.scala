@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service.
   */
 @js.native
-trait SchemaCreateTenancyUnitRequest extends js.Object {
+trait SchemaCreateTenancyUnitRequest extends StObject {
   
   /**
     * Optional service producer-provided identifier of the tenancy unit. Must
@@ -31,24 +32,12 @@ object SchemaCreateTenancyUnitRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateTenancyUnitRequestOps[Self <: SchemaCreateTenancyUnitRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateTenancyUnitRequestMutableBuilder[Self <: SchemaCreateTenancyUnitRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTenancyUnitId(value: String): Self = this.set("tenancyUnitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancyUnitId: Self = this.set("tenancyUnitId", js.undefined)
+    def setTenancyUnitIdUndefined: Self = StObject.set(x, "tenancyUnitId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsElasticsearchDomainDetails extends js.Object {
+trait AwsElasticsearchDomainDetails extends StObject {
   
   /**
     * IAM policy document specifying the access policies for the new Amazon ES domain.
@@ -66,78 +67,66 @@ object AwsElasticsearchDomainDetails {
   }
   
   @scala.inline
-  implicit class AwsElasticsearchDomainDetailsOps[Self <: AwsElasticsearchDomainDetails] (val x: Self) extends AnyVal {
+  implicit class AwsElasticsearchDomainDetailsMutableBuilder[Self <: AwsElasticsearchDomainDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPolicies(value: NonEmptyString): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPoliciesUndefined: Self = StObject.set(x, "AccessPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainEndpointOptions(value: AwsElasticsearchDomainDomainEndpointOptions): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicies(value: NonEmptyString): Self = this.set("AccessPolicies", value.asInstanceOf[js.Any])
+    def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
     
     @scala.inline
-    def deleteAccessPolicies: Self = this.set("AccessPolicies", js.undefined)
+    def setDomainId(value: NonEmptyString): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainEndpointOptions(value: AwsElasticsearchDomainDomainEndpointOptions): Self = this.set("DomainEndpointOptions", value.asInstanceOf[js.Any])
+    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
     @scala.inline
-    def deleteDomainEndpointOptions: Self = this.set("DomainEndpointOptions", js.undefined)
+    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainId(value: NonEmptyString): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def deleteDomainId: Self = this.set("DomainId", js.undefined)
+    def setElasticsearchVersion(value: NonEmptyString): Self = StObject.set(x, "ElasticsearchVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: NonEmptyString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setElasticsearchVersionUndefined: Self = StObject.set(x, "ElasticsearchVersion", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setEncryptionAtRestOptions(value: AwsElasticsearchDomainEncryptionAtRestOptions): Self = StObject.set(x, "EncryptionAtRestOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchVersion(value: NonEmptyString): Self = this.set("ElasticsearchVersion", value.asInstanceOf[js.Any])
+    def setEncryptionAtRestOptionsUndefined: Self = StObject.set(x, "EncryptionAtRestOptions", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchVersion: Self = this.set("ElasticsearchVersion", js.undefined)
+    def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionAtRestOptions(value: AwsElasticsearchDomainEncryptionAtRestOptions): Self = this.set("EncryptionAtRestOptions", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def deleteEncryptionAtRestOptions: Self = this.set("EncryptionAtRestOptions", js.undefined)
+    def setEndpoints(value: FieldMap): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: NonEmptyString): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setNodeToNodeEncryptionOptions(value: AwsElasticsearchDomainNodeToNodeEncryptionOptions): Self = StObject.set(x, "NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: FieldMap): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    def setVPCOptions(value: AwsElasticsearchDomainVPCOptions): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeToNodeEncryptionOptions(value: AwsElasticsearchDomainNodeToNodeEncryptionOptions): Self = this.set("NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeToNodeEncryptionOptions: Self = this.set("NodeToNodeEncryptionOptions", js.undefined)
-    
-    @scala.inline
-    def setVPCOptions(value: AwsElasticsearchDomainVPCOptions): Self = this.set("VPCOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCOptions: Self = this.set("VPCOptions", js.undefined)
+    def setVPCOptionsUndefined: Self = StObject.set(x, "VPCOptions", js.undefined)
   }
 }

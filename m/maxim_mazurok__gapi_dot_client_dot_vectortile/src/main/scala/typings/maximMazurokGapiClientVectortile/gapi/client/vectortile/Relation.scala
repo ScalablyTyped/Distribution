@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Relation extends js.Object {
+trait Relation extends StObject {
   
   /** Zero-based index to look up the related feature from the list of features in the tile. */
   var relatedFeatureIndex: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object Relation {
   }
   
   @scala.inline
-  implicit class RelationOps[Self <: Relation] (val x: Self) extends AnyVal {
+  implicit class RelationMutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedFeatureIndex(value: Double): Self = StObject.set(x, "relatedFeatureIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelatedFeatureIndexUndefined: Self = StObject.set(x, "relatedFeatureIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelationType(value: String): Self = StObject.set(x, "relationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedFeatureIndex(value: Double): Self = this.set("relatedFeatureIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelatedFeatureIndex: Self = this.set("relatedFeatureIndex", js.undefined)
-    
-    @scala.inline
-    def setRelationType(value: String): Self = this.set("relationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationType: Self = this.set("relationType", js.undefined)
+    def setRelationTypeUndefined: Self = StObject.set(x, "relationType", js.undefined)
   }
 }

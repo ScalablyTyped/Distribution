@@ -1,12 +1,13 @@
 package typings.xstate.typesMod
 
 import typings.xstate.actorMod.Actor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendActionOptions[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait SendActionOptions[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var delay: js.UndefOr[Double | String | (DelayExpr[TContext, TEvent])] = js.native
   
@@ -25,44 +26,32 @@ object SendActionOptions {
   }
   
   @scala.inline
-  implicit class SendActionOptionsOps[Self <: SendActionOptions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (SendActionOptions[TContext, TEvent])) extends AnyVal {
+  implicit class SendActionOptionsMutableBuilder[Self <: SendActionOptions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (SendActionOptions[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = this.set("delay", js.Any.fromFunction3(value))
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
-    
-    @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setTo(value: String | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[_, AnyEventObject])])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setToFunction3(
       value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => String | Double | (Actor[_, AnyEventObject])
-    ): Self = this.set("to", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "to", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setTo(value: String | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[_, AnyEventObject])])): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

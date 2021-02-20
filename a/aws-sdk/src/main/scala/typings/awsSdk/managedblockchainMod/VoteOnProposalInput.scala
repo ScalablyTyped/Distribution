@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoteOnProposalInput extends js.Object {
+trait VoteOnProposalInput extends StObject {
   
   /**
     *  The unique identifier of the network. 
@@ -41,30 +42,18 @@ object VoteOnProposalInput {
   }
   
   @scala.inline
-  implicit class VoteOnProposalInputOps[Self <: VoteOnProposalInput] (val x: Self) extends AnyVal {
+  implicit class VoteOnProposalInputMutableBuilder[Self <: VoteOnProposalInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVote(value: VoteValue): Self = StObject.set(x, "Vote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProposalId(value: ResourceIdString): Self = this.set("ProposalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVote(value: VoteValue): Self = this.set("Vote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoterMemberId(value: ResourceIdString): Self = this.set("VoterMemberId", value.asInstanceOf[js.Any])
+    def setVoterMemberId(value: ResourceIdString): Self = StObject.set(x, "VoterMemberId", value.asInstanceOf[js.Any])
   }
 }

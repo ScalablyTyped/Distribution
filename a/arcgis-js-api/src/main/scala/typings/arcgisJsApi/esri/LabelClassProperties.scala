@@ -27,12 +27,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`center-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.static
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelClassProperties extends js.Object {
+trait LabelClassProperties extends StObject {
   
   /**
     * Defines how labels should be placed relative to one another.
@@ -108,74 +109,62 @@ object LabelClassProperties {
   }
   
   @scala.inline
-  implicit class LabelClassPropertiesOps[Self <: LabelClassProperties] (val x: Self) extends AnyVal {
+  implicit class LabelClassPropertiesMutableBuilder[Self <: LabelClassProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeconflictionStrategy(value: none | static): Self = StObject.set(x, "deconflictionStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeconflictionStrategyUndefined: Self = StObject.set(x, "deconflictionStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelExpression(value: String): Self = StObject.set(x, "labelExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeconflictionStrategy(value: none | static): Self = this.set("deconflictionStrategy", value.asInstanceOf[js.Any])
+    def setLabelExpressionInfo(value: LabelClassLabelExpressionInfo): Self = StObject.set(x, "labelExpressionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeconflictionStrategy: Self = this.set("deconflictionStrategy", js.undefined)
+    def setLabelExpressionInfoUndefined: Self = StObject.set(x, "labelExpressionInfo", js.undefined)
     
     @scala.inline
-    def setLabelExpression(value: String): Self = this.set("labelExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelExpression: Self = this.set("labelExpression", js.undefined)
-    
-    @scala.inline
-    def setLabelExpressionInfo(value: LabelClassLabelExpressionInfo): Self = this.set("labelExpressionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelExpressionInfo: Self = this.set("labelExpressionInfo", js.undefined)
+    def setLabelExpressionUndefined: Self = StObject.set(x, "labelExpression", js.undefined)
     
     @scala.inline
     def setLabelPlacement(
       value: `above-center` | `above-left` | `above-right` | `below-center` | `below-left` | `below-right` | `center-center` | `center-left` | `center-right` | `above-after` | `above-along` | `above-before` | `above-start` | `above-end` | `below-after` | `below-along` | `below-before` | `below-start` | `below-end` | `center-after` | `center-along` | `center-before` | `center-start` | `center-end` | `always-horizontal`
-    ): Self = this.set("labelPlacement", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelPlacement: Self = this.set("labelPlacement", js.undefined)
+    def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
     
     @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxScale: Self = this.set("maxScale", js.undefined)
+    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
     @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinScale: Self = this.set("minScale", js.undefined)
+    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
     @scala.inline
-    def setSymbol(value: TextSymbolProperties | LabelSymbol3DProperties): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: TextSymbolProperties | LabelSymbol3DProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def setUseCodedValues(value: Boolean): Self = this.set("useCodedValues", value.asInstanceOf[js.Any])
+    def setUseCodedValues(value: Boolean): Self = StObject.set(x, "useCodedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseCodedValues: Self = this.set("useCodedValues", js.undefined)
+    def setUseCodedValuesUndefined: Self = StObject.set(x, "useCodedValues", js.undefined)
     
     @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

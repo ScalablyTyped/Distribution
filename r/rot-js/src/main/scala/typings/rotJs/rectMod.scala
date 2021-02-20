@@ -3,13 +3,29 @@ package typings.rotJs
 import org.scalablytyped.runtime.StringDictionary
 import typings.rotJs.typesMod.DisplayData
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/display/rect", JSImport.Namespace)
-@js.native
-object rectMod extends js.Object {
+object rectMod {
+  
+  @JSImport("rot-js/lib/display/rect", JSImport.Default)
+  @js.native
+  class default () extends Rect
+  /* static members */
+  object default {
+    
+    @JSImport("rot-js/lib/display/rect", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rot-js/lib/display/rect", "default.cache")
+    @js.native
+    def cache: Boolean = js.native
+    @scala.inline
+    def cache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Rect
@@ -24,14 +40,5 @@ object rectMod extends js.Object {
     var _spacingX: Double = js.native
     
     var _spacingY: Double = js.native
-  }
-  
-  @js.native
-  class default () extends Rect
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var cache: Boolean = js.native
   }
 }

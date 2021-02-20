@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientTranslate.anon.Alt
 import typings.maximMazurokGapiClientTranslate.anon.DisplayLanguageCode
 import typings.maximMazurokGapiClientTranslate.anon.Parent
 import typings.maximMazurokGapiClientTranslate.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   def detectLanguage(request: Alt, body: DetectLanguageRequest): Request[DetectLanguageResponse] = js.native
   /** Detects the language of text within a request. */

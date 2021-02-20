@@ -1,15 +1,14 @@
 package typings.murmurhashJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Murmur2 extends js.Object {
+  trait Murmur2 extends StObject {
     
     def murmur2(str: String): Double = js.native
     def murmur2(str: String, seed: Double): Double = js.native

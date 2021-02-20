@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyPackageVersionsRequest extends js.Object {
+trait CopyPackageVersionsRequest extends StObject {
   
   /**
     *  The name of the package that is copied. 
@@ -79,72 +80,60 @@ object CopyPackageVersionsRequest {
   }
   
   @scala.inline
-  implicit class CopyPackageVersionsRequestOps[Self <: CopyPackageVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class CopyPackageVersionsRequestMutableBuilder[Self <: CopyPackageVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowOverwrite(value: BooleanOptional): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationRepository(value: RepositoryName): Self = StObject.set(x, "destinationRepository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationRepository(value: RepositoryName): Self = this.set("destinationRepository", value.asInstanceOf[js.Any])
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRepository(value: RepositoryName): Self = this.set("sourceRepository", value.asInstanceOf[js.Any])
+    def setIncludeFromUpstream(value: BooleanOptional): Self = StObject.set(x, "includeFromUpstream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOverwrite(value: BooleanOptional): Self = this.set("allowOverwrite", value.asInstanceOf[js.Any])
+    def setIncludeFromUpstreamUndefined: Self = StObject.set(x, "includeFromUpstream", js.undefined)
     
     @scala.inline
-    def deleteAllowOverwrite: Self = this.set("allowOverwrite", js.undefined)
+    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    def setSourceRepository(value: RepositoryName): Self = StObject.set(x, "sourceRepository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFromUpstream(value: BooleanOptional): Self = this.set("includeFromUpstream", value.asInstanceOf[js.Any])
+    def setVersionRevisions(value: PackageVersionRevisionMap): Self = StObject.set(x, "versionRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeFromUpstream: Self = this.set("includeFromUpstream", js.undefined)
+    def setVersionRevisionsUndefined: Self = StObject.set(x, "versionRevisions", js.undefined)
     
     @scala.inline
-    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setVersions(value: PackageVersionList): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def setVersionRevisions(value: PackageVersionRevisionMap): Self = this.set("versionRevisions", value.asInstanceOf[js.Any])
+    def setVersionsVarargs(value: PackageVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
     @scala.inline
-    def deleteVersionRevisions: Self = this.set("versionRevisions", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: PackageVersion*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: PackageVersionList): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

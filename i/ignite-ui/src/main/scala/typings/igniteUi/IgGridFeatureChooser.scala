@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,90 +59,78 @@ object IgGridFeatureChooser {
   }
   
   @scala.inline
-  implicit class IgGridFeatureChooserOps[Self <: IgGridFeatureChooser] (val x: Self) extends AnyVal {
+  implicit class IgGridFeatureChooserMutableBuilder[Self <: IgGridFeatureChooser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropDownWidth(value: js.Any): Self = StObject.set(x, "dropDownWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setDropDownWidthUndefined: Self = StObject.set(x, "dropDownWidth", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setFeatureChooserDropDownOpened(value: (/* event */ Event, /* ui */ FeatureChooserDropDownOpenedEventUIParam) => Unit): Self = StObject.set(x, "featureChooserDropDownOpened", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDropDownWidth(value: js.Any): Self = this.set("dropDownWidth", value.asInstanceOf[js.Any])
+    def setFeatureChooserDropDownOpenedUndefined: Self = StObject.set(x, "featureChooserDropDownOpened", js.undefined)
     
     @scala.inline
-    def deleteDropDownWidth: Self = this.set("dropDownWidth", js.undefined)
+    def setFeatureChooserDropDownOpening(value: (/* event */ Event, /* ui */ FeatureChooserDropDownOpeningEventUIParam) => Unit): Self = StObject.set(x, "featureChooserDropDownOpening", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeatureChooserDropDownOpened(value: (/* event */ Event, /* ui */ FeatureChooserDropDownOpenedEventUIParam) => Unit): Self = this.set("featureChooserDropDownOpened", js.Any.fromFunction2(value))
+    def setFeatureChooserDropDownOpeningUndefined: Self = StObject.set(x, "featureChooserDropDownOpening", js.undefined)
     
     @scala.inline
-    def deleteFeatureChooserDropDownOpened: Self = this.set("featureChooserDropDownOpened", js.undefined)
+    def setFeatureChooserRendered(value: (/* event */ Event, /* ui */ FeatureChooserRenderedEventUIParam) => Unit): Self = StObject.set(x, "featureChooserRendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeatureChooserDropDownOpening(value: (/* event */ Event, /* ui */ FeatureChooserDropDownOpeningEventUIParam) => Unit): Self = this.set("featureChooserDropDownOpening", js.Any.fromFunction2(value))
+    def setFeatureChooserRenderedUndefined: Self = StObject.set(x, "featureChooserRendered", js.undefined)
     
     @scala.inline
-    def deleteFeatureChooserDropDownOpening: Self = this.set("featureChooserDropDownOpening", js.undefined)
+    def setFeatureChooserRendering(value: (/* event */ Event, /* ui */ FeatureChooserRenderingEventUIParam) => Unit): Self = StObject.set(x, "featureChooserRendering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeatureChooserRendered(value: (/* event */ Event, /* ui */ FeatureChooserRenderedEventUIParam) => Unit): Self = this.set("featureChooserRendered", js.Any.fromFunction2(value))
+    def setFeatureChooserRenderingUndefined: Self = StObject.set(x, "featureChooserRendering", js.undefined)
     
     @scala.inline
-    def deleteFeatureChooserRendered: Self = this.set("featureChooserRendered", js.undefined)
+    def setFeatureToggled(value: (/* event */ Event, /* ui */ FeatureToggledEventUIParam) => Unit): Self = StObject.set(x, "featureToggled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeatureChooserRendering(value: (/* event */ Event, /* ui */ FeatureChooserRenderingEventUIParam) => Unit): Self = this.set("featureChooserRendering", js.Any.fromFunction2(value))
+    def setFeatureToggledUndefined: Self = StObject.set(x, "featureToggled", js.undefined)
     
     @scala.inline
-    def deleteFeatureChooserRendering: Self = this.set("featureChooserRendering", js.undefined)
+    def setFeatureToggling(value: (/* event */ Event, /* ui */ FeatureTogglingEventUIParam) => Unit): Self = StObject.set(x, "featureToggling", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeatureToggled(value: (/* event */ Event, /* ui */ FeatureToggledEventUIParam) => Unit): Self = this.set("featureToggled", js.Any.fromFunction2(value))
+    def setFeatureTogglingUndefined: Self = StObject.set(x, "featureToggling", js.undefined)
     
     @scala.inline
-    def deleteFeatureToggled: Self = this.set("featureToggled", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureToggling(value: (/* event */ Event, /* ui */ FeatureTogglingEventUIParam) => Unit): Self = this.set("featureToggling", js.Any.fromFunction2(value))
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteFeatureToggling: Self = this.set("featureToggling", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMenuToggling(value: (/* event */ Event, /* ui */ MenuTogglingEventUIParam) => Unit): Self = StObject.set(x, "menuToggling", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMenuTogglingUndefined: Self = StObject.set(x, "menuToggling", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuToggling(value: (/* event */ Event, /* ui */ MenuTogglingEventUIParam) => Unit): Self = this.set("menuToggling", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteMenuToggling: Self = this.set("menuToggling", js.undefined)
-    
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
   }
 }

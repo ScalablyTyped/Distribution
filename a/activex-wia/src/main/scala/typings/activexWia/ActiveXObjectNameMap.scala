@@ -6,12 +6,13 @@ import typings.activexWia.WIA.ImageFile
 import typings.activexWia.WIA.ImageProcess
 import typings.activexWia.WIA.Rational
 import typings.activexWia.WIA.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("WIA.CommonDialog")
   var WIADotCommonDialog: CommonDialog = js.native

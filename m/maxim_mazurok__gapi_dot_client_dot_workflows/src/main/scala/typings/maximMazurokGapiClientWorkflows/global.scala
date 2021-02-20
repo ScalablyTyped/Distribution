@@ -3,27 +3,29 @@ package typings.maximMazurokGapiClientWorkflows
 import typings.maximMazurokGapiClientWorkflows.gapi.client.workflows.ProjectsResource
 import typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.v1beta
 import typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.workflows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Workflows API v1beta */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: workflows, version: v1beta): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: workflows, version: v1beta, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object workflows extends js.Object {
+      object workflows {
         
+        @JSGlobal("gapi.client.workflows.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
     }

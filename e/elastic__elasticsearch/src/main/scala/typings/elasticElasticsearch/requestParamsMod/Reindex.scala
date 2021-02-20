@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,69 +35,57 @@ object Reindex {
   }
   
   @scala.inline
-  implicit class ReindexOps[Self <: Reindex[_], T] (val x: Self with Reindex[T]) extends AnyVal {
+  implicit class ReindexMutableBuilder[Self <: Reindex[_], T] (val x: Self with Reindex[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax_docs(value: Double): Self = StObject.set(x, "max_docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax_docsUndefined: Self = StObject.set(x, "max_docs", js.undefined)
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_docs(value: Double): Self = this.set("max_docs", value.asInstanceOf[js.Any])
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
     @scala.inline
-    def deleteMax_docs: Self = this.set("max_docs", js.undefined)
+    def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    def setRequests_per_secondUndefined: Self = StObject.set(x, "requests_per_second", js.undefined)
     
     @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setScroll(value: String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequests_per_second(value: Double): Self = this.set("requests_per_second", value.asInstanceOf[js.Any])
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteRequests_per_second: Self = this.set("requests_per_second", js.undefined)
+    def setSlices(value: Double | String): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroll(value: String): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlices(value: Double | String): Self = this.set("slices", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSlices: Self = this.set("slices", js.undefined)
+    def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWait_for_active_shards(value: String): Self = this.set("wait_for_active_shards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_active_shards: Self = this.set("wait_for_active_shards", js.undefined)
-    
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = this.set("wait_for_completion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_completion: Self = this.set("wait_for_completion", js.undefined)
+    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

@@ -1,14 +1,14 @@
 package typings.agGrid
 
 import typings.agGrid.beanStubMod.BeanStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/valueService/changeDetectionService", JSImport.Namespace)
-@js.native
-object changeDetectionServiceMod extends js.Object {
+object changeDetectionServiceMod {
   
+  @JSImport("ag-grid/dist/lib/valueService/changeDetectionService", "ChangeDetectionService")
   @js.native
   class ChangeDetectionService () extends BeanStub {
     

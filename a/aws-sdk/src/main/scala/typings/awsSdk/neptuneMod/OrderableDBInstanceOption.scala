@@ -1,11 +1,12 @@
 package typings.awsSdk.neptuneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderableDBInstanceOption extends js.Object {
+trait OrderableDBInstanceOption extends StObject {
   
   /**
     * A list of Availability Zones for a DB instance.
@@ -116,141 +117,129 @@ object OrderableDBInstanceOption {
   }
   
   @scala.inline
-  implicit class OrderableDBInstanceOptionOps[Self <: OrderableDBInstanceOption] (val x: Self) extends AnyVal {
+  implicit class OrderableDBInstanceOptionMutableBuilder[Self <: OrderableDBInstanceOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setDBInstanceClassUndefined: Self = StObject.set(x, "DBInstanceClass", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBInstanceClass(value: String): Self = this.set("DBInstanceClass", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteDBInstanceClass: Self = this.set("DBInstanceClass", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setLicenseModel(value: String): Self = StObject.set(x, "LicenseModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setLicenseModelUndefined: Self = StObject.set(x, "LicenseModel", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setMaxIopsPerDbInstance(value: IntegerOptional): Self = StObject.set(x, "MaxIopsPerDbInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseModel(value: String): Self = this.set("LicenseModel", value.asInstanceOf[js.Any])
+    def setMaxIopsPerDbInstanceUndefined: Self = StObject.set(x, "MaxIopsPerDbInstance", js.undefined)
     
     @scala.inline
-    def deleteLicenseModel: Self = this.set("LicenseModel", js.undefined)
+    def setMaxIopsPerGib(value: DoubleOptional): Self = StObject.set(x, "MaxIopsPerGib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIopsPerDbInstance(value: IntegerOptional): Self = this.set("MaxIopsPerDbInstance", value.asInstanceOf[js.Any])
+    def setMaxIopsPerGibUndefined: Self = StObject.set(x, "MaxIopsPerGib", js.undefined)
     
     @scala.inline
-    def deleteMaxIopsPerDbInstance: Self = this.set("MaxIopsPerDbInstance", js.undefined)
+    def setMaxStorageSize(value: IntegerOptional): Self = StObject.set(x, "MaxStorageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIopsPerGib(value: DoubleOptional): Self = this.set("MaxIopsPerGib", value.asInstanceOf[js.Any])
+    def setMaxStorageSizeUndefined: Self = StObject.set(x, "MaxStorageSize", js.undefined)
     
     @scala.inline
-    def deleteMaxIopsPerGib: Self = this.set("MaxIopsPerGib", js.undefined)
+    def setMinIopsPerDbInstance(value: IntegerOptional): Self = StObject.set(x, "MinIopsPerDbInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxStorageSize(value: IntegerOptional): Self = this.set("MaxStorageSize", value.asInstanceOf[js.Any])
+    def setMinIopsPerDbInstanceUndefined: Self = StObject.set(x, "MinIopsPerDbInstance", js.undefined)
     
     @scala.inline
-    def deleteMaxStorageSize: Self = this.set("MaxStorageSize", js.undefined)
+    def setMinIopsPerGib(value: DoubleOptional): Self = StObject.set(x, "MinIopsPerGib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinIopsPerDbInstance(value: IntegerOptional): Self = this.set("MinIopsPerDbInstance", value.asInstanceOf[js.Any])
+    def setMinIopsPerGibUndefined: Self = StObject.set(x, "MinIopsPerGib", js.undefined)
     
     @scala.inline
-    def deleteMinIopsPerDbInstance: Self = this.set("MinIopsPerDbInstance", js.undefined)
+    def setMinStorageSize(value: IntegerOptional): Self = StObject.set(x, "MinStorageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinIopsPerGib(value: DoubleOptional): Self = this.set("MinIopsPerGib", value.asInstanceOf[js.Any])
+    def setMinStorageSizeUndefined: Self = StObject.set(x, "MinStorageSize", js.undefined)
     
     @scala.inline
-    def deleteMinIopsPerGib: Self = this.set("MinIopsPerGib", js.undefined)
+    def setMultiAZCapable(value: Boolean): Self = StObject.set(x, "MultiAZCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinStorageSize(value: IntegerOptional): Self = this.set("MinStorageSize", value.asInstanceOf[js.Any])
+    def setMultiAZCapableUndefined: Self = StObject.set(x, "MultiAZCapable", js.undefined)
     
     @scala.inline
-    def deleteMinStorageSize: Self = this.set("MinStorageSize", js.undefined)
+    def setReadReplicaCapable(value: Boolean): Self = StObject.set(x, "ReadReplicaCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiAZCapable(value: Boolean): Self = this.set("MultiAZCapable", value.asInstanceOf[js.Any])
+    def setReadReplicaCapableUndefined: Self = StObject.set(x, "ReadReplicaCapable", js.undefined)
     
     @scala.inline
-    def deleteMultiAZCapable: Self = this.set("MultiAZCapable", js.undefined)
+    def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadReplicaCapable(value: Boolean): Self = this.set("ReadReplicaCapable", value.asInstanceOf[js.Any])
+    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
     @scala.inline
-    def deleteReadReplicaCapable: Self = this.set("ReadReplicaCapable", js.undefined)
+    def setSupportsEnhancedMonitoring(value: Boolean): Self = StObject.set(x, "SupportsEnhancedMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageType(value: String): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    def setSupportsEnhancedMonitoringUndefined: Self = StObject.set(x, "SupportsEnhancedMonitoring", js.undefined)
     
     @scala.inline
-    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    def setSupportsIAMDatabaseAuthentication(value: Boolean): Self = StObject.set(x, "SupportsIAMDatabaseAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsEnhancedMonitoring(value: Boolean): Self = this.set("SupportsEnhancedMonitoring", value.asInstanceOf[js.Any])
+    def setSupportsIAMDatabaseAuthenticationUndefined: Self = StObject.set(x, "SupportsIAMDatabaseAuthentication", js.undefined)
     
     @scala.inline
-    def deleteSupportsEnhancedMonitoring: Self = this.set("SupportsEnhancedMonitoring", js.undefined)
+    def setSupportsIops(value: Boolean): Self = StObject.set(x, "SupportsIops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsIAMDatabaseAuthentication(value: Boolean): Self = this.set("SupportsIAMDatabaseAuthentication", value.asInstanceOf[js.Any])
+    def setSupportsIopsUndefined: Self = StObject.set(x, "SupportsIops", js.undefined)
     
     @scala.inline
-    def deleteSupportsIAMDatabaseAuthentication: Self = this.set("SupportsIAMDatabaseAuthentication", js.undefined)
+    def setSupportsPerformanceInsights(value: Boolean): Self = StObject.set(x, "SupportsPerformanceInsights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsIops(value: Boolean): Self = this.set("SupportsIops", value.asInstanceOf[js.Any])
+    def setSupportsPerformanceInsightsUndefined: Self = StObject.set(x, "SupportsPerformanceInsights", js.undefined)
     
     @scala.inline
-    def deleteSupportsIops: Self = this.set("SupportsIops", js.undefined)
+    def setSupportsStorageEncryption(value: Boolean): Self = StObject.set(x, "SupportsStorageEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsPerformanceInsights(value: Boolean): Self = this.set("SupportsPerformanceInsights", value.asInstanceOf[js.Any])
+    def setSupportsStorageEncryptionUndefined: Self = StObject.set(x, "SupportsStorageEncryption", js.undefined)
     
     @scala.inline
-    def deleteSupportsPerformanceInsights: Self = this.set("SupportsPerformanceInsights", js.undefined)
+    def setVpc(value: Boolean): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsStorageEncryption(value: Boolean): Self = this.set("SupportsStorageEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsStorageEncryption: Self = this.set("SupportsStorageEncryption", js.undefined)
-    
-    @scala.inline
-    def setVpc(value: Boolean): Self = this.set("Vpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpc: Self = this.set("Vpc", js.undefined)
+    def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
   }
 }

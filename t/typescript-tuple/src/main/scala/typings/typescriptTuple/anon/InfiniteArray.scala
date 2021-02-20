@@ -1,11 +1,12 @@
 package typings.typescriptTuple.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfiniteArray[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */, Replacement] extends js.Object {
+trait InfiniteArray[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */, Replacement] extends StObject {
   
   var empty: Holder = js.native
   
@@ -22,30 +23,18 @@ object InfiniteArray {
   }
   
   @scala.inline
-  implicit class InfiniteArrayOps[Self <: InfiniteArray[_, _, _], Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */, Replacement] (val x: Self with (InfiniteArray[Holder, Tuple, Replacement])) extends AnyVal {
+  implicit class InfiniteArrayMutableBuilder[Self <: InfiniteArray[_, _, _], Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */, Replacement] (val x: Self with (InfiniteArray[Holder, Tuple, Replacement])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmpty(value: Holder): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfinite(value: js.Array[Replacement]): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfiniteVarargs(value: Replacement*): Self = StObject.set(x, "infinite", js.Array(value :_*))
     
     @scala.inline
-    def setEmpty(value: Holder): Self = this.set("empty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfiniteVarargs(value: Replacement*): Self = this.set("infinite", js.Array(value :_*))
-    
-    @scala.inline
-    def setInfinite(value: js.Array[Replacement]): Self = this.set("infinite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonEmpty(value: js.Any): Self = this.set("nonEmpty", value.asInstanceOf[js.Any])
+    def setNonEmpty(value: js.Any): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }
 }

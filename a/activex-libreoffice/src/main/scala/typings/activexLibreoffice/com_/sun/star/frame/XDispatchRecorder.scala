@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,36 +88,24 @@ object XDispatchRecorder {
   }
   
   @scala.inline
-  implicit class XDispatchRecorderOps[Self <: XDispatchRecorder] (val x: Self) extends AnyVal {
+  implicit class XDispatchRecorderMutableBuilder[Self <: XDispatchRecorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndRecording(value: () => Unit): Self = StObject.set(x, "endRecording", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRecordedMacro(value: () => String): Self = StObject.set(x, "getRecordedMacro", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recordDispatch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRecordedMacro(value: String): Self = this.set("RecordedMacro", value.asInstanceOf[js.Any])
+    def setRecordDispatchAsComment(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recordDispatchAsComment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEndRecording(value: () => Unit): Self = this.set("endRecording", js.Any.fromFunction0(value))
+    def setRecordedMacro(value: String): Self = StObject.set(x, "RecordedMacro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRecordedMacro(value: () => String): Self = this.set("getRecordedMacro", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRecordDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = this.set("recordDispatch", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRecordDispatchAsComment(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = this.set("recordDispatchAsComment", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStartRecording(value: XFrame => Unit): Self = this.set("startRecording", js.Any.fromFunction1(value))
+    def setStartRecording(value: XFrame => Unit): Self = StObject.set(x, "startRecording", js.Any.fromFunction1(value))
   }
 }

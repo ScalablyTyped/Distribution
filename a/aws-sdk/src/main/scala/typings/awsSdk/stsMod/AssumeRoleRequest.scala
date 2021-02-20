@@ -1,6 +1,7 @@
 package typings.awsSdk.stsMod
 
 import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,81 +68,69 @@ object AssumeRoleRequest {
   }
   
   @scala.inline
-  implicit class AssumeRoleRequestOps[Self <: AssumeRoleRequest] (val x: Self) extends AnyVal {
+  implicit class AssumeRoleRequestMutableBuilder[Self <: AssumeRoleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationSeconds(value: roleDurationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalId(value: externalIdType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: arnType): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
     @scala.inline
-    def setRoleSessionName(value: roleSessionNameType): Self = this.set("RoleSessionName", value.asInstanceOf[js.Any])
+    def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: roleDurationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
     
     @scala.inline
-    def setExternalId(value: externalIdType): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
     
     @scala.inline
-    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def setPolicy(value: sessionPolicyDocumentType): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    def setRoleArn(value: arnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setRoleSessionName(value: roleSessionNameType): Self = StObject.set(x, "RoleSessionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = this.set("PolicyArns", js.Array(value :_*))
+    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArns(value: policyDescriptorListType): Self = this.set("PolicyArns", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
     @scala.inline
-    def deletePolicyArns: Self = this.set("PolicyArns", js.undefined)
+    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTokenCode(value: tokenCodeType): Self = StObject.set(x, "TokenCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTokenCodeUndefined: Self = StObject.set(x, "TokenCode", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTransitiveTagKeys(value: tagKeyListType): Self = StObject.set(x, "TransitiveTagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenCode(value: tokenCodeType): Self = this.set("TokenCode", value.asInstanceOf[js.Any])
+    def setTransitiveTagKeysUndefined: Self = StObject.set(x, "TransitiveTagKeys", js.undefined)
     
     @scala.inline
-    def deleteTokenCode: Self = this.set("TokenCode", js.undefined)
-    
-    @scala.inline
-    def setTransitiveTagKeysVarargs(value: tagKeyType*): Self = this.set("TransitiveTagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitiveTagKeys(value: tagKeyListType): Self = this.set("TransitiveTagKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitiveTagKeys: Self = this.set("TransitiveTagKeys", js.undefined)
+    def setTransitiveTagKeysVarargs(value: tagKeyType*): Self = StObject.set(x, "TransitiveTagKeys", js.Array(value :_*))
   }
 }

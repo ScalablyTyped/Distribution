@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGAnimatedLengthList extends js.Object {
+trait SVGAnimatedLengthList extends StObject {
   
   @JSName("MSHTML.SVGAnimatedLengthList_typekey")
   var MSHTMLDotSVGAnimatedLengthList_typekey: SVGAnimatedLengthList = js.native
@@ -28,27 +29,15 @@ object SVGAnimatedLengthList {
   }
   
   @scala.inline
-  implicit class SVGAnimatedLengthListOps[Self <: SVGAnimatedLengthList] (val x: Self) extends AnyVal {
+  implicit class SVGAnimatedLengthListMutableBuilder[Self <: SVGAnimatedLengthList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimVal(value: SVGLengthList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseVal(value: SVGLengthList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedLengthList_typekey(value: SVGAnimatedLengthList): Self = this.set("MSHTML.SVGAnimatedLengthList_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimVal(value: SVGLengthList): Self = this.set("animVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseVal(value: SVGLengthList): Self = this.set("baseVal", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGAnimatedLengthList_typekey(value: SVGAnimatedLengthList): Self = StObject.set(x, "MSHTML.SVGAnimatedLengthList_typekey", value.asInstanceOf[js.Any])
   }
 }

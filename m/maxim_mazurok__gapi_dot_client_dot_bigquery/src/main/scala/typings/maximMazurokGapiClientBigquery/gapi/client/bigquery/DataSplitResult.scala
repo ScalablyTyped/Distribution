@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSplitResult extends js.Object {
+trait DataSplitResult extends StObject {
   
   /** Table reference of the evaluation data after split. */
   var evaluationTable: js.UndefOr[TableReference] = js.native
@@ -22,30 +23,18 @@ object DataSplitResult {
   }
   
   @scala.inline
-  implicit class DataSplitResultOps[Self <: DataSplitResult] (val x: Self) extends AnyVal {
+  implicit class DataSplitResultMutableBuilder[Self <: DataSplitResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationTable(value: TableReference): Self = StObject.set(x, "evaluationTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationTableUndefined: Self = StObject.set(x, "evaluationTable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrainingTable(value: TableReference): Self = StObject.set(x, "trainingTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationTable(value: TableReference): Self = this.set("evaluationTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluationTable: Self = this.set("evaluationTable", js.undefined)
-    
-    @scala.inline
-    def setTrainingTable(value: TableReference): Self = this.set("trainingTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingTable: Self = this.set("trainingTable", js.undefined)
+    def setTrainingTableUndefined: Self = StObject.set(x, "trainingTable", js.undefined)
   }
 }

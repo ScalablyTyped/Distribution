@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceSpecification extends js.Object {
+trait ServiceSpecification extends StObject {
   
   /**
     * The Amazon EC2 hardware specifications that you want AWS to provide recommendations for.
@@ -21,24 +22,12 @@ object ServiceSpecification {
   }
   
   @scala.inline
-  implicit class ServiceSpecificationOps[Self <: ServiceSpecification] (val x: Self) extends AnyVal {
+  implicit class ServiceSpecificationMutableBuilder[Self <: ServiceSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEC2Specification(value: EC2Specification): Self = StObject.set(x, "EC2Specification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEC2Specification(value: EC2Specification): Self = this.set("EC2Specification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEC2Specification: Self = this.set("EC2Specification", js.undefined)
+    def setEC2SpecificationUndefined: Self = StObject.set(x, "EC2Specification", js.undefined)
   }
 }

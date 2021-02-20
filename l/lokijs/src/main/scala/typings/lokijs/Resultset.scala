@@ -2,6 +2,7 @@ package typings.lokijs
 
 import typings.lokijs.anon.PartialGetDataOptions
 import typings.lokijs.anon.PartialSimplesortOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *      .data();
   */
 @js.native
-trait Resultset[E /* <: js.Object */] extends js.Object {
+trait Resultset[E /* <: js.Object */] extends StObject {
   
   @JSName("$and")
   def $and(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native

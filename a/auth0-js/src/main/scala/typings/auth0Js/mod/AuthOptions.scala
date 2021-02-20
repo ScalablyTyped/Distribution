@@ -1,12 +1,13 @@
 package typings.auth0Js.mod
 
 import typings.auth0Js.anon.Jwksuri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthOptions extends js.Object {
+trait AuthOptions extends StObject {
   
   var __tryLocalStorageFirst: js.UndefOr[Boolean] = js.native
   
@@ -71,162 +72,150 @@ object AuthOptions {
   }
   
   @scala.inline
-  implicit class AuthOptionsOps[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setJwksURI(value: String): Self = StObject.set(x, "jwksURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__tryLocalStorageFirst(value: Boolean): Self = this.set("__tryLocalStorageFirst", value.asInstanceOf[js.Any])
+    def setJwksURIUndefined: Self = StObject.set(x, "jwksURI", js.undefined)
     
     @scala.inline
-    def delete__tryLocalStorageFirst: Self = this.set("__tryLocalStorageFirst", js.undefined)
+    def setLeeway(value: Double): Self = StObject.set(x, "leeway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_csrf(value: String): Self = this.set("_csrf", value.asInstanceOf[js.Any])
+    def setLeewayUndefined: Self = StObject.set(x, "leeway", js.undefined)
     
     @scala.inline
-    def delete_csrf: Self = this.set("_csrf", js.undefined)
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_disableDeprecationWarnings(value: Boolean): Self = this.set("_disableDeprecationWarnings", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def delete_disableDeprecationWarnings: Self = this.set("_disableDeprecationWarnings", js.undefined)
+    def setOverrides(value: Jwksuri): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_intstate(value: String): Self = this.set("_intstate", value.asInstanceOf[js.Any])
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def delete_intstate: Self = this.set("_intstate", js.undefined)
+    def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sendTelemetry(value: Boolean): Self = this.set("_sendTelemetry", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def delete_sendTelemetry: Self = this.set("_sendTelemetry", js.undefined)
+    def setPopupOrigin(value: String): Self = StObject.set(x, "popupOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_telemetryInfo(value: js.Any): Self = this.set("_telemetryInfo", value.asInstanceOf[js.Any])
+    def setPopupOriginUndefined: Self = StObject.set(x, "popupOrigin", js.undefined)
     
     @scala.inline
-    def delete_telemetryInfo: Self = this.set("_telemetryInfo", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_timesToRetryFailedRequests(value: Double): Self = this.set("_timesToRetryFailedRequests", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def delete_timesToRetryFailedRequests: Self = this.set("_timesToRetryFailedRequests", js.undefined)
+    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
+    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     
     @scala.inline
-    def deleteAudience: Self = this.set("audience", js.undefined)
+    def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwksURI(value: String): Self = this.set("jwksURI", value.asInstanceOf[js.Any])
+    def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
     @scala.inline
-    def deleteJwksURI: Self = this.set("jwksURI", js.undefined)
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeeway(value: Double): Self = this.set("leeway", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deleteLeeway: Self = this.set("leeway", js.undefined)
+    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
     @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrides(value: Jwksuri): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Any): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupOrigin(value: String): Self = this.set("popupOrigin", value.asInstanceOf[js.Any])
+    def setTenantUndefined: Self = StObject.set(x, "tenant", js.undefined)
     
     @scala.inline
-    def deletePopupOrigin: Self = this.set("popupOrigin", js.undefined)
+    def setUniversalLoginPage(value: Boolean): Self = StObject.set(x, "universalLoginPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setUniversalLoginPageUndefined: Self = StObject.set(x, "universalLoginPage", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def set__tryLocalStorageFirst(value: Boolean): Self = StObject.set(x, "__tryLocalStorageFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    def set__tryLocalStorageFirstUndefined: Self = StObject.set(x, "__tryLocalStorageFirst", js.undefined)
     
     @scala.inline
-    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    def set_csrf(value: String): Self = StObject.set(x, "_csrf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseMode(value: String): Self = this.set("responseMode", value.asInstanceOf[js.Any])
+    def set_csrfUndefined: Self = StObject.set(x, "_csrf", js.undefined)
     
     @scala.inline
-    def deleteResponseMode: Self = this.set("responseMode", js.undefined)
+    def set_disableDeprecationWarnings(value: Boolean): Self = StObject.set(x, "_disableDeprecationWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def set_disableDeprecationWarningsUndefined: Self = StObject.set(x, "_disableDeprecationWarnings", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def set_intstate(value: String): Self = StObject.set(x, "_intstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    def set_intstateUndefined: Self = StObject.set(x, "_intstate", js.undefined)
     
     @scala.inline
-    def deleteResponse_type: Self = this.set("response_type", js.undefined)
+    def set_sendTelemetry(value: Boolean): Self = StObject.set(x, "_sendTelemetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def set_sendTelemetryUndefined: Self = StObject.set(x, "_sendTelemetry", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def set_telemetryInfo(value: js.Any): Self = StObject.set(x, "_telemetryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def set_telemetryInfoUndefined: Self = StObject.set(x, "_telemetryInfo", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def set_timesToRetryFailedRequests(value: Double): Self = StObject.set(x, "_timesToRetryFailedRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTenant(value: String): Self = this.set("tenant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenant: Self = this.set("tenant", js.undefined)
-    
-    @scala.inline
-    def setUniversalLoginPage(value: Boolean): Self = this.set("universalLoginPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniversalLoginPage: Self = this.set("universalLoginPage", js.undefined)
+    def set_timesToRetryFailedRequestsUndefined: Self = StObject.set(x, "_timesToRetryFailedRequests", js.undefined)
   }
 }

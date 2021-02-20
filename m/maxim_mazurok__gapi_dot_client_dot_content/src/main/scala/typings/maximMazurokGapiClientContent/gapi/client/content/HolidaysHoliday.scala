@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HolidaysHoliday extends js.Object {
+trait HolidaysHoliday extends StObject {
   
   /**
     * The CLDR territory code of the country in which the holiday is available. E.g. "US", "DE", "GB". A holiday cutoff can only be configured in a shipping settings service with matching
@@ -43,54 +44,42 @@ object HolidaysHoliday {
   }
   
   @scala.inline
-  implicit class HolidaysHolidayOps[Self <: HolidaysHoliday] (val x: Self) extends AnyVal {
+  implicit class HolidaysHolidayMutableBuilder[Self <: HolidaysHoliday] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setDeliveryGuaranteeDate(value: String): Self = StObject.set(x, "deliveryGuaranteeDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDeliveryGuaranteeDateUndefined: Self = StObject.set(x, "deliveryGuaranteeDate", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDeliveryGuaranteeHour(value: String): Self = StObject.set(x, "deliveryGuaranteeHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryGuaranteeDate(value: String): Self = this.set("deliveryGuaranteeDate", value.asInstanceOf[js.Any])
+    def setDeliveryGuaranteeHourUndefined: Self = StObject.set(x, "deliveryGuaranteeHour", js.undefined)
     
     @scala.inline
-    def deleteDeliveryGuaranteeDate: Self = this.set("deliveryGuaranteeDate", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryGuaranteeHour(value: String): Self = this.set("deliveryGuaranteeHour", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDeliveryGuaranteeHour: Self = this.set("deliveryGuaranteeHour", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

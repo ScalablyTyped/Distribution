@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 3.5 */
 @js.native
-trait TableFilterField3 extends js.Object {
+trait TableFilterField3 extends StObject {
   
   /** specifies how the condition is connected to the previous condition. */
   var Connection: FilterConnection = js.native
@@ -30,30 +31,18 @@ object TableFilterField3 {
   }
   
   @scala.inline
-  implicit class TableFilterField3Ops[Self <: TableFilterField3] (val x: Self) extends AnyVal {
+  implicit class TableFilterField3MutableBuilder[Self <: TableFilterField3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: FilterConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: FilterConnection): Self = this.set("Connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setField(value: Double): Self = this.set("Field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: Double): Self = this.set("Operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: SafeArray[FilterFieldValue]): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValues(value: SafeArray[FilterFieldValue]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

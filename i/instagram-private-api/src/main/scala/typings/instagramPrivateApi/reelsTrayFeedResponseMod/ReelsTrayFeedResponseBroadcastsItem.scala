@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReelsTrayFeedResponseBroadcastsItem extends js.Object {
+trait ReelsTrayFeedResponseBroadcastsItem extends StObject {
   
   var broadcast_message: String = js.native
   
@@ -80,84 +81,72 @@ object ReelsTrayFeedResponseBroadcastsItem {
   }
   
   @scala.inline
-  implicit class ReelsTrayFeedResponseBroadcastsItemOps[Self <: ReelsTrayFeedResponseBroadcastsItem] (val x: Self) extends AnyVal {
+  implicit class ReelsTrayFeedResponseBroadcastsItemMutableBuilder[Self <: ReelsTrayFeedResponseBroadcastsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcast_message(value: String): Self = StObject.set(x, "broadcast_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcast_owner(value: ReelsTrayFeedResponseBroadcastOwner): Self = StObject.set(x, "broadcast_owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBroadcast_status(value: String): Self = StObject.set(x, "broadcast_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcast_message(value: String): Self = this.set("broadcast_message", value.asInstanceOf[js.Any])
+    def setCobroadcasters(value: js.Array[_]): Self = StObject.set(x, "cobroadcasters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcast_owner(value: ReelsTrayFeedResponseBroadcastOwner): Self = this.set("broadcast_owner", value.asInstanceOf[js.Any])
+    def setCobroadcastersVarargs(value: js.Any*): Self = StObject.set(x, "cobroadcasters", js.Array(value :_*))
     
     @scala.inline
-    def setBroadcast_status(value: String): Self = this.set("broadcast_status", value.asInstanceOf[js.Any])
+    def setCover_frame_url(value: String): Self = StObject.set(x, "cover_frame_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCobroadcastersVarargs(value: js.Any*): Self = this.set("cobroadcasters", js.Array(value :_*))
+    def setDash_abr_playback_url(value: Null): Self = StObject.set(x, "dash_abr_playback_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCobroadcasters(value: js.Array[_]): Self = this.set("cobroadcasters", value.asInstanceOf[js.Any])
+    def setDash_live_predictive_playback_url(value: String): Self = StObject.set(x, "dash_live_predictive_playback_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover_frame_url(value: String): Self = this.set("cover_frame_url", value.asInstanceOf[js.Any])
+    def setDash_playback_url(value: String): Self = StObject.set(x, "dash_playback_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash_abr_playback_url(value: Null): Self = this.set("dash_abr_playback_url", value.asInstanceOf[js.Any])
+    def setHide_from_feed_unit(value: Boolean): Self = StObject.set(x, "hide_from_feed_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash_live_predictive_playback_url(value: String): Self = this.set("dash_live_predictive_playback_url", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash_playback_url(value: String): Self = this.set("dash_playback_url", value.asInstanceOf[js.Any])
+    def setInternal_only(value: Boolean): Self = StObject.set(x, "internal_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide_from_feed_unit(value: Boolean): Self = this.set("hide_from_feed_unit", value.asInstanceOf[js.Any])
+    def setIs_gaming_content(value: Boolean): Self = StObject.set(x, "is_gaming_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIs_player_live_trace_enabled(value: Double): Self = StObject.set(x, "is_player_live_trace_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal_only(value: Boolean): Self = this.set("internal_only", value.asInstanceOf[js.Any])
+    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_gaming_content(value: Boolean): Self = this.set("is_gaming_content", value.asInstanceOf[js.Any])
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_player_live_trace_enabled(value: Double): Self = this.set("is_player_live_trace_enabled", value.asInstanceOf[js.Any])
+    def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    def setPublished_time(value: Double): Self = StObject.set(x, "published_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setRanked_position(value: Double): Self = StObject.set(x, "ranked_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganic_tracking_token(value: String): Self = this.set("organic_tracking_token", value.asInstanceOf[js.Any])
+    def setRtmp_playback_url(value: String): Self = StObject.set(x, "rtmp_playback_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished_time(value: Double): Self = this.set("published_time", value.asInstanceOf[js.Any])
+    def setSeen_ranked_position(value: Double): Self = StObject.set(x, "seen_ranked_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanked_position(value: Double): Self = this.set("ranked_position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRtmp_playback_url(value: String): Self = this.set("rtmp_playback_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeen_ranked_position(value: Double): Self = this.set("seen_ranked_position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_count(value: Double): Self = this.set("viewer_count", value.asInstanceOf[js.Any])
+    def setViewer_count(value: Double): Self = StObject.set(x, "viewer_count", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
 @js.native
-trait SjclRandom extends js.Object {
+trait SjclRandom extends StObject {
   
   def addEntropy(data: String, estimatedEntropy: Double, source: String): Unit = js.native
   def addEntropy(data: js.Array[Double], estimatedEntropy: Double, source: String): Unit = js.native

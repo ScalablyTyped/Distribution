@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointConfiguration extends js.Object {
+trait EndpointConfiguration extends StObject {
   
   /**
     * A list of endpoint types of an API (RestApi) or its custom domain name (DomainName). For an edge-optimized API and its custom domain name, the endpoint type is "EDGE". For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.
@@ -26,36 +27,24 @@ object EndpointConfiguration {
   }
   
   @scala.inline
-  implicit class EndpointConfigurationOps[Self <: EndpointConfiguration] (val x: Self) extends AnyVal {
+  implicit class EndpointConfigurationMutableBuilder[Self <: EndpointConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTypes(value: ListOfEndpointType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypesVarargs(value: EndpointType*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setTypesVarargs(value: EndpointType*): Self = this.set("types", js.Array(value :_*))
+    def setVpcEndpointIds(value: ListOfString): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: ListOfEndpointType): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setVpcEndpointIdsUndefined: Self = StObject.set(x, "vpcEndpointIds", js.undefined)
     
     @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
-    
-    @scala.inline
-    def setVpcEndpointIdsVarargs(value: String*): Self = this.set("vpcEndpointIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcEndpointIds(value: ListOfString): Self = this.set("vpcEndpointIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointIds: Self = this.set("vpcEndpointIds", js.undefined)
+    def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
   }
 }

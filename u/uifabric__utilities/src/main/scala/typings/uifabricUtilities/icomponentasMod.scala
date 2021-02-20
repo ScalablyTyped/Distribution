@@ -2,13 +2,12 @@ package typings.uifabricUtilities
 
 import typings.react.mod.ComponentType
 import typings.uifabricUtilities.anon.DefaultRender
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/IComponentAs", JSImport.Namespace)
-@js.native
-object icomponentasMod extends js.Object {
+object icomponentasMod {
   
   type IComponentAs[T] = ComponentType[IComponentAsProps[T]]
   

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaOptions extends js.Object {
+trait CaOptions extends StObject {
   
   /** Optional. Refers to the "CA" X.509 extension, which is a boolean value. When this value is missing, the extension will be omitted from the CA certificate. */
   var isCa: js.UndefOr[Boolean] = js.native
@@ -25,30 +26,18 @@ object CaOptions {
   }
   
   @scala.inline
-  implicit class CaOptionsOps[Self <: CaOptions] (val x: Self) extends AnyVal {
+  implicit class CaOptionsMutableBuilder[Self <: CaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCa(value: Boolean): Self = StObject.set(x, "isCa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCaUndefined: Self = StObject.set(x, "isCa", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxIssuerPathLength(value: Double): Self = StObject.set(x, "maxIssuerPathLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCa(value: Boolean): Self = this.set("isCa", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCa: Self = this.set("isCa", js.undefined)
-    
-    @scala.inline
-    def setMaxIssuerPathLength(value: Double): Self = this.set("maxIssuerPathLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxIssuerPathLength: Self = this.set("maxIssuerPathLength", js.undefined)
+    def setMaxIssuerPathLengthUndefined: Self = StObject.set(x, "maxIssuerPathLength", js.undefined)
   }
 }

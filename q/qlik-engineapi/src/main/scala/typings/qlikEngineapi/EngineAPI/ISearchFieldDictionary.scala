@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchFieldDictionary...
   */
 @js.native
-trait ISearchFieldDictionary extends js.Object {
+trait ISearchFieldDictionary extends StObject {
   
   /**
     * Position of the field in the list of fields, starting from 0.
@@ -31,27 +32,15 @@ object ISearchFieldDictionary {
   }
   
   @scala.inline
-  implicit class ISearchFieldDictionaryOps[Self <: ISearchFieldDictionary] (val x: Self) extends AnyVal {
+  implicit class ISearchFieldDictionaryMutableBuilder[Self <: ISearchFieldDictionary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQField(value: Double): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQResult(value: js.Array[ISearchTermResult]): Self = StObject.set(x, "qResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQField(value: Double): Self = this.set("qField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQResultVarargs(value: ISearchTermResult*): Self = this.set("qResult", js.Array(value :_*))
-    
-    @scala.inline
-    def setQResult(value: js.Array[ISearchTermResult]): Self = this.set("qResult", value.asInstanceOf[js.Any])
+    def setQResultVarargs(value: ISearchTermResult*): Self = StObject.set(x, "qResult", js.Array(value :_*))
   }
 }

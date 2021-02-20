@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_InventorySchedule", JSImport.Namespace)
-@js.native
-object inventoryScheduleMod extends js.Object {
+object inventoryScheduleMod {
   
-  @JSName("_InventorySchedule")
+  @JSImport("@aws-sdk/client-s3-node/model/_InventorySchedule", "_InventorySchedule")
+  @js.native
   val InventorySchedule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

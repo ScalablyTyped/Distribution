@@ -3,12 +3,13 @@ package typings.tryghostContentApi.mod
 import typings.tryghostContentApi.tryghostContentApiStrings.canary
 import typings.tryghostContentApi.tryghostContentApiStrings.v2
 import typings.tryghostContentApi.tryghostContentApiStrings.v3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GhostContentAPIOptions extends js.Object {
+trait GhostContentAPIOptions extends StObject {
   
   /** @default "ghost" */
   var ghostPath: js.UndefOr[String] = js.native
@@ -36,39 +37,27 @@ object GhostContentAPIOptions {
   }
   
   @scala.inline
-  implicit class GhostContentAPIOptionsOps[Self <: GhostContentAPIOptions] (val x: Self) extends AnyVal {
+  implicit class GhostContentAPIOptionsMutableBuilder[Self <: GhostContentAPIOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGhostPath(value: String): Self = StObject.set(x, "ghostPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGhostPathUndefined: Self = StObject.set(x, "ghostPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: v2 | v3 | canary): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostPath(value: String): Self = this.set("ghostPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGhostPath: Self = this.set("ghostPath", js.undefined)
-    
-    @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setVersion(value: v2 | v3 | canary): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

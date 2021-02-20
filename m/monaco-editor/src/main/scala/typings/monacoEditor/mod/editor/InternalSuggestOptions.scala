@@ -3,13 +3,14 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.anon.Visible
 import typings.monacoEditor.monacoEditorStrings.insert
 import typings.monacoEditor.monacoEditorStrings.replace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.ISuggestOptions>> */
 @js.native
-trait InternalSuggestOptions extends js.Object {
+trait InternalSuggestOptions extends StObject {
   
   val filterGraceful: Boolean = js.native
   
@@ -126,123 +127,111 @@ object InternalSuggestOptions {
   }
   
   @scala.inline
-  implicit class InternalSuggestOptionsOps[Self <: InternalSuggestOptions] (val x: Self) extends AnyVal {
+  implicit class InternalSuggestOptionsMutableBuilder[Self <: InternalSuggestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterGraceful(value: Boolean): Self = StObject.set(x, "filterGraceful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertMode(value: insert | replace): Self = StObject.set(x, "insertMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalityBonus(value: Boolean): Self = StObject.set(x, "localityBonus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterGraceful(value: Boolean): Self = this.set("filterGraceful", value.asInstanceOf[js.Any])
+    def setMaxVisibleSuggestions(value: Double): Self = StObject.set(x, "maxVisibleSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertMode(value: insert | replace): Self = this.set("insertMode", value.asInstanceOf[js.Any])
+    def setShareSuggestSelections(value: Boolean): Self = StObject.set(x, "shareSuggestSelections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalityBonus(value: Boolean): Self = this.set("localityBonus", value.asInstanceOf[js.Any])
+    def setShowClasses(value: Boolean): Self = StObject.set(x, "showClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVisibleSuggestions(value: Double): Self = this.set("maxVisibleSuggestions", value.asInstanceOf[js.Any])
+    def setShowColors(value: Boolean): Self = StObject.set(x, "showColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareSuggestSelections(value: Boolean): Self = this.set("shareSuggestSelections", value.asInstanceOf[js.Any])
+    def setShowConstants(value: Boolean): Self = StObject.set(x, "showConstants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowClasses(value: Boolean): Self = this.set("showClasses", value.asInstanceOf[js.Any])
+    def setShowConstructors(value: Boolean): Self = StObject.set(x, "showConstructors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowColors(value: Boolean): Self = this.set("showColors", value.asInstanceOf[js.Any])
+    def setShowEnumMembers(value: Boolean): Self = StObject.set(x, "showEnumMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowConstants(value: Boolean): Self = this.set("showConstants", value.asInstanceOf[js.Any])
+    def setShowEnums(value: Boolean): Self = StObject.set(x, "showEnums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowConstructors(value: Boolean): Self = this.set("showConstructors", value.asInstanceOf[js.Any])
+    def setShowEvents(value: Boolean): Self = StObject.set(x, "showEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEnumMembers(value: Boolean): Self = this.set("showEnumMembers", value.asInstanceOf[js.Any])
+    def setShowFields(value: Boolean): Self = StObject.set(x, "showFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEnums(value: Boolean): Self = this.set("showEnums", value.asInstanceOf[js.Any])
+    def setShowFiles(value: Boolean): Self = StObject.set(x, "showFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEvents(value: Boolean): Self = this.set("showEvents", value.asInstanceOf[js.Any])
+    def setShowFolders(value: Boolean): Self = StObject.set(x, "showFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFields(value: Boolean): Self = this.set("showFields", value.asInstanceOf[js.Any])
+    def setShowFunctions(value: Boolean): Self = StObject.set(x, "showFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFiles(value: Boolean): Self = this.set("showFiles", value.asInstanceOf[js.Any])
+    def setShowIcons(value: Boolean): Self = StObject.set(x, "showIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFolders(value: Boolean): Self = this.set("showFolders", value.asInstanceOf[js.Any])
+    def setShowInterfaces(value: Boolean): Self = StObject.set(x, "showInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFunctions(value: Boolean): Self = this.set("showFunctions", value.asInstanceOf[js.Any])
+    def setShowIssues(value: Boolean): Self = StObject.set(x, "showIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIcons(value: Boolean): Self = this.set("showIcons", value.asInstanceOf[js.Any])
+    def setShowKeywords(value: Boolean): Self = StObject.set(x, "showKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInterfaces(value: Boolean): Self = this.set("showInterfaces", value.asInstanceOf[js.Any])
+    def setShowMethods(value: Boolean): Self = StObject.set(x, "showMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIssues(value: Boolean): Self = this.set("showIssues", value.asInstanceOf[js.Any])
+    def setShowModules(value: Boolean): Self = StObject.set(x, "showModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowKeywords(value: Boolean): Self = this.set("showKeywords", value.asInstanceOf[js.Any])
+    def setShowOperators(value: Boolean): Self = StObject.set(x, "showOperators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMethods(value: Boolean): Self = this.set("showMethods", value.asInstanceOf[js.Any])
+    def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowModules(value: Boolean): Self = this.set("showModules", value.asInstanceOf[js.Any])
+    def setShowReferences(value: Boolean): Self = StObject.set(x, "showReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOperators(value: Boolean): Self = this.set("showOperators", value.asInstanceOf[js.Any])
+    def setShowSnippets(value: Boolean): Self = StObject.set(x, "showSnippets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowProperties(value: Boolean): Self = this.set("showProperties", value.asInstanceOf[js.Any])
+    def setShowStructs(value: Boolean): Self = StObject.set(x, "showStructs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowReferences(value: Boolean): Self = this.set("showReferences", value.asInstanceOf[js.Any])
+    def setShowTypeParameters(value: Boolean): Self = StObject.set(x, "showTypeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSnippets(value: Boolean): Self = this.set("showSnippets", value.asInstanceOf[js.Any])
+    def setShowUnits(value: Boolean): Self = StObject.set(x, "showUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowStructs(value: Boolean): Self = this.set("showStructs", value.asInstanceOf[js.Any])
+    def setShowUsers(value: Boolean): Self = StObject.set(x, "showUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTypeParameters(value: Boolean): Self = this.set("showTypeParameters", value.asInstanceOf[js.Any])
+    def setShowValues(value: Boolean): Self = StObject.set(x, "showValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowUnits(value: Boolean): Self = this.set("showUnits", value.asInstanceOf[js.Any])
+    def setShowVariables(value: Boolean): Self = StObject.set(x, "showVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowUsers(value: Boolean): Self = this.set("showUsers", value.asInstanceOf[js.Any])
+    def setShowWords(value: Boolean): Self = StObject.set(x, "showWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowValues(value: Boolean): Self = this.set("showValues", value.asInstanceOf[js.Any])
+    def setSnippetsPreventQuickSuggestions(value: Boolean): Self = StObject.set(x, "snippetsPreventQuickSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowVariables(value: Boolean): Self = this.set("showVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowWords(value: Boolean): Self = this.set("showWords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnippetsPreventQuickSuggestions(value: Boolean): Self = this.set("snippetsPreventQuickSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusBar(value: Visible): Self = this.set("statusBar", value.asInstanceOf[js.Any])
+    def setStatusBar(value: Visible): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
   }
 }

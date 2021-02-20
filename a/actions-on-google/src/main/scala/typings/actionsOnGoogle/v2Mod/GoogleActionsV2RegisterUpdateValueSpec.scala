@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2RegisterUpdateValueSpec extends js.Object {
+trait GoogleActionsV2RegisterUpdateValueSpec extends StObject {
   
   /**
     * The list of arguments to necessary to fulfill an update.
@@ -33,39 +34,27 @@ object GoogleActionsV2RegisterUpdateValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2RegisterUpdateValueSpecOps[Self <: GoogleActionsV2RegisterUpdateValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2RegisterUpdateValueSpecMutableBuilder[Self <: GoogleActionsV2RegisterUpdateValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = this.set("arguments", js.Array(value :_*))
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setTriggerContext(value: GoogleActionsV2TriggerContext): Self = StObject.set(x, "triggerContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntent: Self = this.set("intent", js.undefined)
-    
-    @scala.inline
-    def setTriggerContext(value: GoogleActionsV2TriggerContext): Self = this.set("triggerContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerContext: Self = this.set("triggerContext", js.undefined)
+    def setTriggerContextUndefined: Self = StObject.set(x, "triggerContext", js.undefined)
   }
 }

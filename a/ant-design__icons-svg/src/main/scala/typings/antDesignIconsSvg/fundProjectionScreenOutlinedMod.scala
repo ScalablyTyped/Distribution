@@ -1,13 +1,20 @@
 package typings.antDesignIconsSvg
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsSvg.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-svg/lib/asn/FundProjectionScreenOutlined", JSImport.Namespace)
-@js.native
-object fundProjectionScreenOutlinedMod extends js.Object {
+object fundProjectionScreenOutlinedMod extends Shortcut {
   
+  @JSImport("@ant-design/icons-svg/lib/asn/FundProjectionScreenOutlined", JSImport.Default)
+  @js.native
   val default: IconDefinition = js.native
+  
+  type _To = IconDefinition
+  
+  /* This means you don't have to write `default`, but can instead just say `fundProjectionScreenOutlinedMod.foo` */
+  override def _to: IconDefinition = default
 }

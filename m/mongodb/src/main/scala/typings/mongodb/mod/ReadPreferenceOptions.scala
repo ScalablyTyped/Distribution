@@ -1,12 +1,13 @@
 package typings.mongodb.mod
 
 import typings.mongodb.anon.Enabled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadPreferenceOptions extends js.Object {
+trait ReadPreferenceOptions extends StObject {
   
   var hedge: js.UndefOr[Enabled] = js.native
   
@@ -24,30 +25,18 @@ object ReadPreferenceOptions {
   }
   
   @scala.inline
-  implicit class ReadPreferenceOptionsOps[Self <: ReadPreferenceOptions] (val x: Self) extends AnyVal {
+  implicit class ReadPreferenceOptionsMutableBuilder[Self <: ReadPreferenceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHedge(value: Enabled): Self = StObject.set(x, "hedge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHedgeUndefined: Self = StObject.set(x, "hedge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHedge(value: Enabled): Self = this.set("hedge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHedge: Self = this.set("hedge", js.undefined)
-    
-    @scala.inline
-    def setMaxStalenessSeconds(value: scala.Double): Self = this.set("maxStalenessSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxStalenessSeconds: Self = this.set("maxStalenessSeconds", js.undefined)
+    def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
   }
 }

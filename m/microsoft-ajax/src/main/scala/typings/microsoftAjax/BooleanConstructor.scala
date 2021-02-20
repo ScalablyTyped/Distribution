@@ -1,5 +1,6 @@
 package typings.microsoftAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * @see {@link http://msdn.microsoft.com/en-us/library/bb397557(v=vs.100).aspx}
 */
 @js.native
-trait BooleanConstructor extends js.Object {
+trait BooleanConstructor extends StObject {
   
   //#region Extensions
   /**
@@ -27,21 +28,9 @@ object BooleanConstructor {
   }
   
   @scala.inline
-  implicit class BooleanConstructorOps[Self <: BooleanConstructor] (val x: Self) extends AnyVal {
+  implicit class BooleanConstructorMutableBuilder[Self <: BooleanConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: java.lang.String => Boolean): Self = this.set("parse", js.Any.fromFunction1(value))
+    def setParse(value: java.lang.String => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

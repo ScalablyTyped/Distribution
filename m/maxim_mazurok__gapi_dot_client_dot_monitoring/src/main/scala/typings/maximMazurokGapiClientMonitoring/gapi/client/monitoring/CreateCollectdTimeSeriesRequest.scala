@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCollectdTimeSeriesRequest extends js.Object {
+trait CreateCollectdTimeSeriesRequest extends StObject {
   
   /**
     * The collectd payloads representing the time series data. You must not include more than a single point for each time series, so no two payloads can have the same values for all of
@@ -28,39 +29,27 @@ object CreateCollectdTimeSeriesRequest {
   }
   
   @scala.inline
-  implicit class CreateCollectdTimeSeriesRequestOps[Self <: CreateCollectdTimeSeriesRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCollectdTimeSeriesRequestMutableBuilder[Self <: CreateCollectdTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectdPayloads(value: js.Array[CollectdPayload]): Self = StObject.set(x, "collectdPayloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectdPayloadsVarargs(value: CollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
     
     @scala.inline
-    def setCollectdPayloadsVarargs(value: CollectdPayload*): Self = this.set("collectdPayloads", js.Array(value :_*))
+    def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectdPayloads(value: js.Array[CollectdPayload]): Self = this.set("collectdPayloads", value.asInstanceOf[js.Any])
+    def setCollectdVersionUndefined: Self = StObject.set(x, "collectdVersion", js.undefined)
     
     @scala.inline
-    def deleteCollectdPayloads: Self = this.set("collectdPayloads", js.undefined)
+    def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectdVersion(value: String): Self = this.set("collectdVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollectdVersion: Self = this.set("collectdVersion", js.undefined)
-    
-    @scala.inline
-    def setResource(value: MonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

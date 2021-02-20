@@ -4,12 +4,13 @@ import typings.aframe.anon.CheckHasPositionalTracking
 import typings.aframe.anon.GetComponentProperty
 import typings.aframe.anon.IsCoordinate
 import typings.aframe.anon.Parse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Utils_ extends js.Object {
+trait Utils_ extends StObject {
   
   var coordinates: IsCoordinate = js.native
   

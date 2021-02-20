@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/trending-down", JSImport.Namespace)
-@js.native
-object trendingDownMod extends js.Object {
+object trendingDownMod {
   
+  @JSImport("material-ui/svg-icons/action/trending-down", JSImport.Default)
+  @js.native
+  class default () extends ActionTrendingDown
+  
+  @JSImport("material-ui/svg-icons/action/trending-down", "ActionTrendingDown")
   @js.native
   class ActionTrendingDown ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

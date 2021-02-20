@@ -1,11 +1,12 @@
 package typings.awsSdk.ramMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceptResourceShareInvitationResponse extends js.Object {
+trait AcceptResourceShareInvitationResponse extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
@@ -26,30 +27,18 @@ object AcceptResourceShareInvitationResponse {
   }
   
   @scala.inline
-  implicit class AcceptResourceShareInvitationResponseOps[Self <: AcceptResourceShareInvitationResponse] (val x: Self) extends AnyVal {
+  implicit class AcceptResourceShareInvitationResponseMutableBuilder[Self <: AcceptResourceShareInvitationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceShareInvitation(value: ResourceShareInvitation): Self = StObject.set(x, "resourceShareInvitation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
-    
-    @scala.inline
-    def setResourceShareInvitation(value: ResourceShareInvitation): Self = this.set("resourceShareInvitation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceShareInvitation: Self = this.set("resourceShareInvitation", js.undefined)
+    def setResourceShareInvitationUndefined: Self = StObject.set(x, "resourceShareInvitation", js.undefined)
   }
 }

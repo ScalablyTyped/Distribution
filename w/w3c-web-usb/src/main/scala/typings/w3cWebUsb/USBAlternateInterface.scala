@@ -1,11 +1,12 @@
 package typings.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait USBAlternateInterface extends js.Object {
+trait USBAlternateInterface extends StObject {
   
   val alternateSetting: Double = js.native
   
@@ -34,42 +35,30 @@ object USBAlternateInterface {
   }
   
   @scala.inline
-  implicit class USBAlternateInterfaceOps[Self <: USBAlternateInterface] (val x: Self) extends AnyVal {
+  implicit class USBAlternateInterfaceMutableBuilder[Self <: USBAlternateInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateSetting(value: Double): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpoints(value: js.Array[USBEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointsVarargs(value: USBEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setAlternateSetting(value: Double): Self = this.set("alternateSetting", value.asInstanceOf[js.Any])
+    def setInterfaceClass(value: Double): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointsVarargs(value: USBEndpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: js.Array[USBEndpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    def setInterfaceNameUndefined: Self = StObject.set(x, "interfaceName", js.undefined)
     
     @scala.inline
-    def setInterfaceClass(value: Double): Self = this.set("interfaceClass", value.asInstanceOf[js.Any])
+    def setInterfaceProtocol(value: Double): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfaceProtocol(value: Double): Self = this.set("interfaceProtocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterfaceSubclass(value: Double): Self = this.set("interfaceSubclass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterfaceName(value: String): Self = this.set("interfaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterfaceName: Self = this.set("interfaceName", js.undefined)
+    def setInterfaceSubclass(value: Double): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
   }
 }

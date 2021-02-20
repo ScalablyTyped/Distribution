@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDedicatedIpResponse extends js.Object {
+trait GetDedicatedIpResponse extends StObject {
   
   /**
     * An object that contains information about a dedicated IP address.
@@ -21,24 +22,12 @@ object GetDedicatedIpResponse {
   }
   
   @scala.inline
-  implicit class GetDedicatedIpResponseOps[Self <: GetDedicatedIpResponse] (val x: Self) extends AnyVal {
+  implicit class GetDedicatedIpResponseMutableBuilder[Self <: GetDedicatedIpResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDedicatedIp(value: DedicatedIp): Self = StObject.set(x, "DedicatedIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDedicatedIp(value: DedicatedIp): Self = this.set("DedicatedIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDedicatedIp: Self = this.set("DedicatedIp", js.undefined)
+    def setDedicatedIpUndefined: Self = StObject.set(x, "DedicatedIp", js.undefined)
   }
 }

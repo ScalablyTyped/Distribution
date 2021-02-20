@@ -2,6 +2,7 @@ package typings.playcanvas.pc
 
 import typings.playcanvas.pc.callbacks.FindNode
 import typings.playcanvas.pc.callbacks.ForEach
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

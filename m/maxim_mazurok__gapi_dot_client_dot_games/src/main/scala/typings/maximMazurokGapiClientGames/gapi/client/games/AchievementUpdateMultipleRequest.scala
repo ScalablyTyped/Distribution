@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AchievementUpdateMultipleRequest extends js.Object {
+trait AchievementUpdateMultipleRequest extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementUpdateMultipleRequest`. */
   var kind: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object AchievementUpdateMultipleRequest {
   }
   
   @scala.inline
-  implicit class AchievementUpdateMultipleRequestOps[Self <: AchievementUpdateMultipleRequest] (val x: Self) extends AnyVal {
+  implicit class AchievementUpdateMultipleRequestMutableBuilder[Self <: AchievementUpdateMultipleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdates(value: js.Array[AchievementUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setUpdatesVarargs(value: AchievementUpdateRequest*): Self = this.set("updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: js.Array[AchievementUpdateRequest]): Self = this.set("updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdates: Self = this.set("updates", js.undefined)
+    def setUpdatesVarargs(value: AchievementUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

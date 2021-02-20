@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobEnvironment extends js.Object {
+trait JobEnvironment extends StObject {
   
   var endpoints: js.Array[ServiceEndpoint] = js.native
   
@@ -39,45 +40,33 @@ object JobEnvironment {
   }
   
   @scala.inline
-  implicit class JobEnvironmentOps[Self <: JobEnvironment] (val x: Self) extends AnyVal {
+  implicit class JobEnvironmentMutableBuilder[Self <: JobEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoints(value: js.Array[ServiceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointsVarargs(value: ServiceEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointsVarargs(value: ServiceEndpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
     @scala.inline
-    def setEndpoints(value: js.Array[ServiceEndpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskVarargs(value: MaskHint*): Self = this.set("mask", js.Array(value :_*))
+    def setSecureFiles(value: js.Array[SecureFile]): Self = StObject.set(x, "secureFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: js.Array[MaskHint]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setSecureFilesVarargs(value: SecureFile*): Self = StObject.set(x, "secureFiles", js.Array(value :_*))
     
     @scala.inline
-    def setOptions(value: StringDictionary[JobOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSystemConnection(value: ServiceEndpoint): Self = StObject.set(x, "systemConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecureFilesVarargs(value: SecureFile*): Self = this.set("secureFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecureFiles(value: js.Array[SecureFile]): Self = this.set("secureFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemConnection(value: ServiceEndpoint): Self = this.set("systemConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

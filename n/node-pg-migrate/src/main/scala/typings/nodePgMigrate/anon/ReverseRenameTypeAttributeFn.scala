@@ -1,12 +1,13 @@
 package typings.nodePgMigrate.anon
 
 import typings.nodePgMigrate.typesTypesMod.RenameTypeAttributeFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseRenameTypeAttributeFn extends js.Object {
+trait ReverseRenameTypeAttributeFn extends StObject {
   
   def reverse(
     typeName: typings.nodePgMigrate.generalTypesMod.Name,

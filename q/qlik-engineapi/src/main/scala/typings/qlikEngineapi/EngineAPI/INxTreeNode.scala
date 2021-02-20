@@ -1,11 +1,12 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INxTreeNode extends js.Object {
+trait INxTreeNode extends StObject {
   
   /**
     * Attribute dimension values.
@@ -76,54 +77,42 @@ object INxTreeNode {
   }
   
   @scala.inline
-  implicit class INxTreeNodeOps[Self <: INxTreeNode] (val x: Self) extends AnyVal {
+  implicit class INxTreeNodeMutableBuilder[Self <: INxTreeNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQElemNo(value: Double): Self = this.set("qElemNo", value.asInstanceOf[js.Any])
+    def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
     
     @scala.inline
-    def setQNodeNr(value: Double): Self = this.set("qNodeNr", value.asInstanceOf[js.Any])
+    def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNodes(value: INxTreeNode): Self = this.set("qNodes", value.asInstanceOf[js.Any])
+    def setQNodeNr(value: Double): Self = StObject.set(x, "qNodeNr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQParentNode(value: Double): Self = this.set("qParentNode", value.asInstanceOf[js.Any])
+    def setQNodes(value: INxTreeNode): Self = StObject.set(x, "qNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQRow(value: Double): Self = this.set("qRow", value.asInstanceOf[js.Any])
+    def setQParentNode(value: Double): Self = StObject.set(x, "qParentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
+    def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQType(value: NxTreeNodeType): Self = this.set("qType", value.asInstanceOf[js.Any])
+    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQValues(value: INxTreeValue): Self = this.set("qValues", value.asInstanceOf[js.Any])
+    def setQType(value: NxTreeNodeType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrDims(value: INxAttributeDimValues): Self = this.set("qAttrDims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQAttrDims: Self = this.set("qAttrDims", js.undefined)
-    
-    @scala.inline
-    def setQAttrExps(value: INxAttributeExpressionValues): Self = this.set("qAttrExps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQAttrExps: Self = this.set("qAttrExps", js.undefined)
+    def setQValues(value: INxTreeValue): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
   }
 }

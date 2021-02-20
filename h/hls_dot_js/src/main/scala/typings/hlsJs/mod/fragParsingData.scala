@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait fragParsingData extends js.Object {
+trait fragParsingData extends StObject {
   
   var endDTS: Double = js.native
   
@@ -48,48 +49,36 @@ object fragParsingData {
   }
   
   @scala.inline
-  implicit class fragParsingDataOps[Self <: fragParsingData] (val x: Self) extends AnyVal {
+  implicit class fragParsingDataMutableBuilder[Self <: fragParsingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDTS(value: Double): Self = StObject.set(x, "endDTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPTS(value: Double): Self = StObject.set(x, "endPTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDTS(value: Double): Self = this.set("endDTS", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPTS(value: Double): Self = this.set("endPTS", value.asInstanceOf[js.Any])
+    def setMdat(value: js.Any): Self = StObject.set(x, "mdat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrag(value: Fragment): Self = this.set("frag", value.asInstanceOf[js.Any])
+    def setMoof(value: js.Any): Self = StObject.set(x, "moof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNb(value: Double): Self = StObject.set(x, "nb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMdat(value: js.Any): Self = this.set("mdat", value.asInstanceOf[js.Any])
+    def setStartDTS(value: Double): Self = StObject.set(x, "startDTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoof(value: js.Any): Self = this.set("moof", value.asInstanceOf[js.Any])
+    def setStartPTS(value: Double): Self = StObject.set(x, "startPTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNb(value: Double): Self = this.set("nb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartDTS(value: Double): Self = this.set("startDTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPTS(value: Double): Self = this.set("startPTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

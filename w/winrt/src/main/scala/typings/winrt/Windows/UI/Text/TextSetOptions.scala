@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextSetOptions extends js.Object
+sealed trait TextSetOptions extends StObject
 @JSGlobal("Windows.UI.Text.TextSetOptions")
 @js.native
-object TextSetOptions extends js.Object {
+object TextSetOptions extends StObject {
   
   @js.native
   sealed trait applyRtfDocumentDefaults extends TextSetOptions

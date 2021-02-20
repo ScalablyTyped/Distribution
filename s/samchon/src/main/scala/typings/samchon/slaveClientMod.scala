@@ -2,20 +2,14 @@ package typings.samchon
 
 import typings.samchon.iserverconnectorMod.IServerConnector
 import typings.samchon.slaveSystemMod.SlaveSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/slave/SlaveClient", JSImport.Namespace)
-@js.native
-object slaveClientMod extends js.Object {
+object slaveClientMod {
   
-  @js.native
-  trait ISlaveClient extends SlaveSystem {
-    
-    def connect(ip: String, port: Double): Unit = js.native
-  }
-  
+  @JSImport("samchon/templates/slave/SlaveClient", "SlaveClient")
   @js.native
   /**
     * Default Constructor.
@@ -26,5 +20,11 @@ object slaveClientMod extends js.Object {
       * @inheritdoc
       */
     /* protected */ def createServerConnector(): IServerConnector = js.native
+  }
+  
+  @js.native
+  trait ISlaveClient extends SlaveSystem {
+    
+    def connect(ip: String, port: Double): Unit = js.native
   }
 }

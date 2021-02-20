@@ -3,14 +3,14 @@ package typings.grpcGrpcJs
 import typings.grpcGrpcJs.channelMod.Channel
 import typings.grpcGrpcJs.filterMod.BaseFilter
 import typings.grpcGrpcJs.filterMod.FilterFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/compression-filter", JSImport.Namespace)
-@js.native
-object compressionFilterMod extends js.Object {
+object compressionFilterMod {
   
+  @JSImport("@grpc/grpc-js/build/src/compression-filter", "CompressionFilter")
   @js.native
   class CompressionFilter () extends BaseFilter {
     
@@ -19,6 +19,7 @@ object compressionFilterMod extends js.Object {
     var sendCompression: js.Any = js.native
   }
   
+  @JSImport("@grpc/grpc-js/build/src/compression-filter", "CompressionFilterFactory")
   @js.native
   class CompressionFilterFactory protected () extends FilterFactory[CompressionFilter] {
     def this(channel: Channel) = this()

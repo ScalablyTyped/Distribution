@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the direction timed text is written. */
 @JSGlobal("Windows.Media.Core.TimedTextWritingMode")
 @js.native
-object TimedTextWritingMode extends js.Object {
+object TimedTextWritingMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Core.TimedTextWritingMode with Double] = js.native

@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file picker that lets the user choose the file name, extension, and storage location for a file. */
 @js.native
-trait FileSavePicker extends js.Object {
+trait FileSavePicker extends StObject {
   
   /** Gets or sets the label text of the commit button in the file picker UI. */
   var commitButtonText: String = js.native
@@ -70,51 +71,39 @@ object FileSavePicker {
   }
   
   @scala.inline
-  implicit class FileSavePickerOps[Self <: FileSavePicker] (val x: Self) extends AnyVal {
+  implicit class FileSavePickerMutableBuilder[Self <: FileSavePicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultFileExtension(value: String): Self = StObject.set(x, "defaultFileExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitButtonText(value: String): Self = this.set("commitButtonText", value.asInstanceOf[js.Any])
+    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationData(value: ValueSet): Self = this.set("continuationData", value.asInstanceOf[js.Any])
+    def setFileTypeChoices(value: IMap[String, IVector[String]]): Self = StObject.set(x, "fileTypeChoices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFileExtension(value: String): Self = this.set("defaultFileExtension", value.asInstanceOf[js.Any])
+    def setPickSaveFileAndContinue(value: () => Unit): Self = StObject.set(x, "pickSaveFileAndContinue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnterpriseId(value: String): Self = this.set("enterpriseId", value.asInstanceOf[js.Any])
+    def setPickSaveFileAsync(value: () => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "pickSaveFileAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileTypeChoices(value: IMap[String, IVector[String]]): Self = this.set("fileTypeChoices", value.asInstanceOf[js.Any])
+    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickSaveFileAndContinue(value: () => Unit): Self = this.set("pickSaveFileAndContinue", js.Any.fromFunction0(value))
+    def setSuggestedFileName(value: String): Self = StObject.set(x, "suggestedFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickSaveFileAsync(value: () => IPromiseWithIAsyncOperation[StorageFile]): Self = this.set("pickSaveFileAsync", js.Any.fromFunction0(value))
+    def setSuggestedSaveFile(value: StorageFile): Self = StObject.set(x, "suggestedSaveFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingsIdentifier(value: String): Self = this.set("settingsIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedFileName(value: String): Self = this.set("suggestedFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSaveFile(value: StorageFile): Self = this.set("suggestedSaveFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedStartLocation(value: PickerLocationId): Self = this.set("suggestedStartLocation", value.asInstanceOf[js.Any])
+    def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
   }
 }

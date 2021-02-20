@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when the operation finishes with some failure.
   */
 @js.native
-trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails extends js.Object {
+trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails extends StObject {
   
   /**
     * The number of resources that had errors.
@@ -44,42 +45,30 @@ object SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetailsOps[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetailsMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFhirStore(value: String): Self = StObject.set(x, "fhirStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: String): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setFhirStoreUndefined: Self = StObject.set(x, "fhirStore", js.undefined)
     
     @scala.inline
-    def deleteErrorCount: Self = this.set("errorCount", js.undefined)
+    def setInputSize(value: String): Self = StObject.set(x, "inputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFhirStore(value: String): Self = this.set("fhirStore", value.asInstanceOf[js.Any])
+    def setInputSizeUndefined: Self = StObject.set(x, "inputSize", js.undefined)
     
     @scala.inline
-    def deleteFhirStore: Self = this.set("fhirStore", js.undefined)
+    def setSuccessCount(value: String): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSize(value: String): Self = this.set("inputSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputSize: Self = this.set("inputSize", js.undefined)
-    
-    @scala.inline
-    def setSuccessCount(value: String): Self = this.set("successCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
   }
 }

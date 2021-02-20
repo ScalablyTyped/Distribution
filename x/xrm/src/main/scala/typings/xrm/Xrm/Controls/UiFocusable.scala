@@ -1,5 +1,6 @@
 package typings.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for focusable UI elements.
   */
 @js.native
-trait UiFocusable extends js.Object {
+trait UiFocusable extends StObject {
   
   /**
     * Sets focus on the element.
@@ -24,21 +25,9 @@ object UiFocusable {
   }
   
   @scala.inline
-  implicit class UiFocusableOps[Self <: UiFocusable] (val x: Self) extends AnyVal {
+  implicit class UiFocusableMutableBuilder[Self <: UiFocusable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetFocus(value: () => Unit): Self = this.set("setFocus", js.Any.fromFunction0(value))
+    def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
   }
 }

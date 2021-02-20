@@ -6,12 +6,13 @@ import typings.node.anon.BaseEncodingOptionsflagst
 import typings.node.anon.EncodingBufferEncoding
 import typings.node.anon.`3`
 import typings.node.fsMod.PathLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofreadFile extends js.Object {
+trait TypeofreadFile extends StObject {
   
   def apply(path: Double, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = js.native
   def apply(

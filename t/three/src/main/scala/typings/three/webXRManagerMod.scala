@@ -8,14 +8,14 @@ import typings.three.webXRMod.XRFrameRequestCallback
 import typings.three.webXRMod.XRReferenceSpace
 import typings.three.webXRMod.XRReferenceSpaceType
 import typings.three.webXRMod.XRSession
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webxr/WebXRManager", JSImport.Namespace)
-@js.native
-object webXRManagerMod extends js.Object {
+object webXRManagerMod {
   
+  @JSImport("three/src/renderers/webxr/WebXRManager", "WebXRManager")
   @js.native
   class WebXRManager protected () extends EventDispatcher {
     def this(renderer: js.Any, gl: WebGLRenderingContext) = this()

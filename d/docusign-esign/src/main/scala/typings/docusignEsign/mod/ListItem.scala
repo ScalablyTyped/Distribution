@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListItem extends js.Object {
+trait ListItem extends StObject {
   
   /**
     * When set to **true**, indicates that this item is the default selection shown to a signer.
@@ -45,54 +46,42 @@ object ListItem {
   }
   
   @scala.inline
-  implicit class ListItemOps[Self <: ListItem] (val x: Self) extends AnyVal {
+  implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "selectedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectedMetadataUndefined: Self = StObject.set(x, "selectedMetadata", js.undefined)
     
     @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("selectedMetadata", value.asInstanceOf[js.Any])
+    def setTextMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "textMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedMetadata: Self = this.set("selectedMetadata", js.undefined)
+    def setTextMetadataUndefined: Self = StObject.set(x, "textMetadata", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("textMetadata", value.asInstanceOf[js.Any])
+    def setValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "valueMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextMetadata: Self = this.set("textMetadata", js.undefined)
+    def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("valueMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueMetadata: Self = this.set("valueMetadata", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

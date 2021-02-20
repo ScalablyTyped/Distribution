@@ -14,13 +14,14 @@ import typings.storybookUi.storybookUiStrings.error
 import typings.storybookUi.storybookUiStrings.loading
 import typings.storybookUi.storybookUiStrings.ready
 import typings.storybookUi.storybookUiStrings.unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @storybook/api.@storybook/api/dist/modules/refs.ComposedRef & {  state :std.ReturnType<(isLoading : boolean, isAuthRequired : boolean, isError : boolean, isEmpty : boolean): 'auth' | 'error' | 'loading' | 'empty' | 'ready'>} & react.react.RefAttributes<std.HTMLElement> */
 @js.native
-trait ComposedRefstateReturnTyp extends js.Object {
+trait ComposedRefstateReturnTyp extends StObject {
   
   var error: js.UndefOr[js.Any] = js.native
   
@@ -78,22 +79,49 @@ object ComposedRefstateReturnTyp {
   }
   
   @scala.inline
-  implicit class ComposedRefstateReturnTypOps[Self <: ComposedRefstateReturnTyp] (val x: Self) extends AnyVal {
+  implicit class ComposedRefstateReturnTypMutableBuilder[Self <: ComposedRefstateReturnTyp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKeyNull: Self = StObject.set(x, "key", null)
+    
+    @scala.inline
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    @scala.inline
+    def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
+    
+    @scala.inline
+    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    
+    @scala.inline
+    def setRef(value: Ref[HTMLElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    @scala.inline
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
     def setState(
@@ -106,75 +134,36 @@ object ComposedRefstateReturnTyp {
             auth | error | loading | empty | ready
           ]
         ]
-    ): Self = this.set("state", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStories(value: StoriesHash): Self = this.set("stories", value.asInstanceOf[js.Any])
+    def setStories(value: StoriesHash): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: js.Any): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setType(value: `auto-inject` | unknown | `lazy` | `server-checked`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginUrl(value: String): Self = this.set("loginUrl", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteLoginUrl: Self = this.set("loginUrl", js.undefined)
+    def setVersions(value: Versions): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReady(value: Boolean): Self = this.set("ready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
-    
-    @scala.inline
-    def setRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRef(value: Ref[HTMLElement]): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setRefNull: Self = this.set("ref", null)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: `auto-inject` | unknown | `lazy` | `server-checked`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersions(value: Versions): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
   }
 }

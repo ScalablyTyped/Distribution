@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HangulHanjaConversionDictionaries extends js.Object {
+trait HangulHanjaConversionDictionaries extends StObject {
   
   var ActiveCustomDictionary: Dictionary = js.native
   
@@ -52,51 +53,39 @@ object HangulHanjaConversionDictionaries {
   }
   
   @scala.inline
-  implicit class HangulHanjaConversionDictionariesOps[Self <: HangulHanjaConversionDictionaries] (val x: Self) extends AnyVal {
+  implicit class HangulHanjaConversionDictionariesMutableBuilder[Self <: HangulHanjaConversionDictionaries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCustomDictionary(value: Dictionary): Self = StObject.set(x, "ActiveCustomDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd(value: String => Dictionary): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCustomDictionary(value: Dictionary): Self = this.set("ActiveCustomDictionary", value.asInstanceOf[js.Any])
+    def setBuiltinDictionary(value: Dictionary): Self = StObject.set(x, "BuiltinDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: String => Dictionary): Self = this.set("Add", js.Any.fromFunction1(value))
+    def setClearAll(value: () => Unit): Self = StObject.set(x, "ClearAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltinDictionary(value: Dictionary): Self = this.set("BuiltinDictionary", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearAll(value: () => Unit): Self = this.set("ClearAll", js.Any.fromFunction0(value))
+    def setItem(value: js.Any => Dictionary): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => Dictionary): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMaximum(value: Double): Self = this.set("Maximum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotHangulHanjaConversionDictionaries_typekey(value: HangulHanjaConversionDictionaries): Self = this.set("Word.HangulHanjaConversionDictionaries_typekey", value.asInstanceOf[js.Any])
+    def setWordDotHangulHanjaConversionDictionaries_typekey(value: HangulHanjaConversionDictionaries): Self = StObject.set(x, "Word.HangulHanjaConversionDictionaries_typekey", value.asInstanceOf[js.Any])
   }
 }

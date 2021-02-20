@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccountLimitsAnswer extends js.Object {
+trait DescribeAccountLimitsAnswer extends StObject {
   
   /**
     * The maximum number of groups allowed for your AWS account. The default is 200 groups per AWS Region.
@@ -36,42 +37,30 @@ object DescribeAccountLimitsAnswer {
   }
   
   @scala.inline
-  implicit class DescribeAccountLimitsAnswerOps[Self <: DescribeAccountLimitsAnswer] (val x: Self) extends AnyVal {
+  implicit class DescribeAccountLimitsAnswerMutableBuilder[Self <: DescribeAccountLimitsAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxNumberOfAutoScalingGroups(value: MaxNumberOfAutoScalingGroups): Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxNumberOfAutoScalingGroupsUndefined: Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxNumberOfLaunchConfigurations(value: MaxNumberOfLaunchConfigurations): Self = StObject.set(x, "MaxNumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumberOfAutoScalingGroups(value: MaxNumberOfAutoScalingGroups): Self = this.set("MaxNumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
+    def setMaxNumberOfLaunchConfigurationsUndefined: Self = StObject.set(x, "MaxNumberOfLaunchConfigurations", js.undefined)
     
     @scala.inline
-    def deleteMaxNumberOfAutoScalingGroups: Self = this.set("MaxNumberOfAutoScalingGroups", js.undefined)
+    def setNumberOfAutoScalingGroups(value: NumberOfAutoScalingGroups): Self = StObject.set(x, "NumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumberOfLaunchConfigurations(value: MaxNumberOfLaunchConfigurations): Self = this.set("MaxNumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
+    def setNumberOfAutoScalingGroupsUndefined: Self = StObject.set(x, "NumberOfAutoScalingGroups", js.undefined)
     
     @scala.inline
-    def deleteMaxNumberOfLaunchConfigurations: Self = this.set("MaxNumberOfLaunchConfigurations", js.undefined)
+    def setNumberOfLaunchConfigurations(value: NumberOfLaunchConfigurations): Self = StObject.set(x, "NumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfAutoScalingGroups(value: NumberOfAutoScalingGroups): Self = this.set("NumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfAutoScalingGroups: Self = this.set("NumberOfAutoScalingGroups", js.undefined)
-    
-    @scala.inline
-    def setNumberOfLaunchConfigurations(value: NumberOfLaunchConfigurations): Self = this.set("NumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfLaunchConfigurations: Self = this.set("NumberOfLaunchConfigurations", js.undefined)
+    def setNumberOfLaunchConfigurationsUndefined: Self = StObject.set(x, "NumberOfLaunchConfigurations", js.undefined)
   }
 }

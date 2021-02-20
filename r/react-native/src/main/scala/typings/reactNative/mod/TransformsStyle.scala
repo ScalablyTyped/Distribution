@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformsStyle extends js.Object {
+trait TransformsStyle extends StObject {
   
   /**
     * @deprecated Use rotate in transform prop instead.
@@ -52,72 +53,60 @@ object TransformsStyle {
   }
   
   @scala.inline
-  implicit class TransformsStyleOps[Self <: TransformsStyle] (val x: Self) extends AnyVal {
+  implicit class TransformsStyleMutableBuilder[Self <: TransformsStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleX: Self = this.set("scaleX", js.undefined)
-    
-    @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleY: Self = this.set("scaleY", js.undefined)
-    
-    @scala.inline
-    def setTransformVarargs(
-      value: (PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform)*
-    ): Self = this.set("transform", js.Array(value :_*))
+    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     @scala.inline
     def setTransform(
       value: js.Array[
           PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
         ]
-    ): Self = this.set("transform", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformMatrix(value: js.Array[Double]): Self = StObject.set(x, "transformMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformMatrixVarargs(value: Double*): Self = this.set("transformMatrix", js.Array(value :_*))
+    def setTransformMatrixUndefined: Self = StObject.set(x, "transformMatrix", js.undefined)
     
     @scala.inline
-    def setTransformMatrix(value: js.Array[Double]): Self = this.set("transformMatrix", value.asInstanceOf[js.Any])
+    def setTransformMatrixVarargs(value: Double*): Self = StObject.set(x, "transformMatrix", js.Array(value :_*))
     
     @scala.inline
-    def deleteTransformMatrix: Self = this.set("transformMatrix", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def setTranslateX(value: Double): Self = this.set("translateX", value.asInstanceOf[js.Any])
+    def setTransformVarargs(
+      value: (PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform)*
+    ): Self = StObject.set(x, "transform", js.Array(value :_*))
     
     @scala.inline
-    def deleteTranslateX: Self = this.set("translateX", js.undefined)
+    def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateY(value: Double): Self = this.set("translateY", value.asInstanceOf[js.Any])
+    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
     @scala.inline
-    def deleteTranslateY: Self = this.set("translateY", js.undefined)
+    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
   }
 }

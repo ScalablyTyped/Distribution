@@ -1,17 +1,17 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.slider")
-@js.native
-object slider extends js.Object {
+object slider {
   
   @js.native
-  sealed trait sliderType extends js.Object
+  sealed trait sliderType extends StObject
+  @JSGlobal("ej.slider.sliderType")
   @js.native
-  object sliderType extends js.Object {
+  object sliderType extends StObject {
     
     //Shows default slider
     @js.native

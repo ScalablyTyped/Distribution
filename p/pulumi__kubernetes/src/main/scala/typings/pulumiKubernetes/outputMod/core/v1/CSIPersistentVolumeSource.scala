@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents storage that is managed by an external CSI volume driver (Beta feature)
   */
 @js.native
-trait CSIPersistentVolumeSource extends js.Object {
+trait CSIPersistentVolumeSource extends StObject {
   
   /**
     * ControllerExpandSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI ControllerExpandVolume call. This is an alpha field and requires enabling ExpandCSIVolumes feature gate. This field is optional, and may be empty if no secret is required. If the secret object contains more than one secret, all secrets are passed.
@@ -75,45 +76,33 @@ object CSIPersistentVolumeSource {
   }
   
   @scala.inline
-  implicit class CSIPersistentVolumeSourceOps[Self <: CSIPersistentVolumeSource] (val x: Self) extends AnyVal {
+  implicit class CSIPersistentVolumeSourceMutableBuilder[Self <: CSIPersistentVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControllerExpandSecretRef(value: SecretReference): Self = StObject.set(x, "controllerExpandSecretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllerPublishSecretRef(value: SecretReference): Self = StObject.set(x, "controllerPublishSecretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerExpandSecretRef(value: SecretReference): Self = this.set("controllerExpandSecretRef", value.asInstanceOf[js.Any])
+    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerPublishSecretRef(value: SecretReference): Self = this.set("controllerPublishSecretRef", value.asInstanceOf[js.Any])
+    def setNodePublishSecretRef(value: SecretReference): Self = StObject.set(x, "nodePublishSecretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("driver", value.asInstanceOf[js.Any])
+    def setNodeStageSecretRef(value: SecretReference): Self = StObject.set(x, "nodeStageSecretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: String): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePublishSecretRef(value: SecretReference): Self = this.set("nodePublishSecretRef", value.asInstanceOf[js.Any])
+    def setVolumeAttributes(value: StringDictionary[String]): Self = StObject.set(x, "volumeAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeStageSecretRef(value: SecretReference): Self = this.set("nodeStageSecretRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeAttributes(value: StringDictionary[String]): Self = this.set("volumeAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeHandle(value: String): Self = this.set("volumeHandle", value.asInstanceOf[js.Any])
+    def setVolumeHandle(value: String): Self = StObject.set(x, "volumeHandle", value.asInstanceOf[js.Any])
   }
 }

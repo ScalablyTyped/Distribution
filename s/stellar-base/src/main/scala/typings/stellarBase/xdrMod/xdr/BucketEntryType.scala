@@ -8,12 +8,13 @@ import typings.stellarBase.stellarBaseStrings.deadentry
 import typings.stellarBase.stellarBaseStrings.initentry
 import typings.stellarBase.stellarBaseStrings.liveentry
 import typings.stellarBase.stellarBaseStrings.metaentry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketEntryType extends js.Object {
+trait BucketEntryType extends StObject {
   
   val name: metaentry | liveentry | deadentry | initentry = js.native
   
@@ -28,24 +29,12 @@ object BucketEntryType {
   }
   
   @scala.inline
-  implicit class BucketEntryTypeOps[Self <: BucketEntryType] (val x: Self) extends AnyVal {
+  implicit class BucketEntryTypeMutableBuilder[Self <: BucketEntryType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: metaentry | liveentry | deadentry | initentry): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: metaentry | liveentry | deadentry | initentry): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: `-1` | `0` | `1` | `2`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `-1` | `0` | `1` | `2`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

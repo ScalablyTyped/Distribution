@@ -1,14 +1,21 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "FixedSizeList")
 @js.native
-class FixedSizeList ()
+class FixedSizeList protected ()
   extends Component[FixedSizeListProps, js.Object, js.Any] {
+  def this(props: FixedSizeListProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: FixedSizeListProps, context: js.Any) = this()
   
   /**
     * Scroll to the specified offset (scrollTop or scrollLeft, depending on the direction prop).

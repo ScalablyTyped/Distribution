@@ -1,6 +1,7 @@
 package typings.angularCompiler.compileMetadataMod
 
 import typings.angularCompiler.anon.Module
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,48 +36,36 @@ object CompileNgModuleSummary {
   }
   
   @scala.inline
-  implicit class CompileNgModuleSummaryOps[Self <: CompileNgModuleSummary] (val x: Self) extends AnyVal {
+  implicit class CompileNgModuleSummaryMutableBuilder[Self <: CompileNgModuleSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntryComponents(value: js.Array[CompileEntryComponentMetadata]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryComponentsVarargs(value: CompileEntryComponentMetadata*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportedDirectives(value: js.Array[CompileIdentifierMetadata]): Self = StObject.set(x, "exportedDirectives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryComponentsVarargs(value: CompileEntryComponentMetadata*): Self = this.set("entryComponents", js.Array(value :_*))
+    def setExportedDirectivesVarargs(value: CompileIdentifierMetadata*): Self = StObject.set(x, "exportedDirectives", js.Array(value :_*))
     
     @scala.inline
-    def setEntryComponents(value: js.Array[CompileEntryComponentMetadata]): Self = this.set("entryComponents", value.asInstanceOf[js.Any])
+    def setExportedPipes(value: js.Array[CompileIdentifierMetadata]): Self = StObject.set(x, "exportedPipes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportedDirectivesVarargs(value: CompileIdentifierMetadata*): Self = this.set("exportedDirectives", js.Array(value :_*))
+    def setExportedPipesVarargs(value: CompileIdentifierMetadata*): Self = StObject.set(x, "exportedPipes", js.Array(value :_*))
     
     @scala.inline
-    def setExportedDirectives(value: js.Array[CompileIdentifierMetadata]): Self = this.set("exportedDirectives", value.asInstanceOf[js.Any])
+    def setModules(value: js.Array[CompileTypeMetadata]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportedPipesVarargs(value: CompileIdentifierMetadata*): Self = this.set("exportedPipes", js.Array(value :_*))
+    def setModulesVarargs(value: CompileTypeMetadata*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
     @scala.inline
-    def setExportedPipes(value: js.Array[CompileIdentifierMetadata]): Self = this.set("exportedPipes", value.asInstanceOf[js.Any])
+    def setProviders(value: js.Array[Module]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModulesVarargs(value: CompileTypeMetadata*): Self = this.set("modules", js.Array(value :_*))
-    
-    @scala.inline
-    def setModules(value: js.Array[CompileTypeMetadata]): Self = this.set("modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvidersVarargs(value: Module*): Self = this.set("providers", js.Array(value :_*))
-    
-    @scala.inline
-    def setProviders(value: js.Array[Module]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    def setProvidersVarargs(value: Module*): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

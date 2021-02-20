@@ -1,5 +1,6 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.axeCore.axeCoreStrings.embedded
   - typings.axeCore.axeCoreStrings.interactive
 */
-trait HtmlContentTypes extends js.Object
+trait HtmlContentTypes extends StObject
 object HtmlContentTypes {
   
   @scala.inline

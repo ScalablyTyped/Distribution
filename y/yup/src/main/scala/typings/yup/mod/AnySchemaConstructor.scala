@@ -1,5 +1,6 @@
 package typings.yup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.yup.mod.ArraySchemaConstructor
   - typings.yup.mod.ObjectSchemaConstructor
 */
-trait AnySchemaConstructor extends js.Object
+trait AnySchemaConstructor extends StObject

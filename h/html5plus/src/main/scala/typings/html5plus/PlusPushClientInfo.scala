@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
   */
 @js.native
-trait PlusPushClientInfo extends js.Object {
+trait PlusPushClientInfo extends StObject {
   
   /**
     * 第三方推送服务的应用标识
@@ -53,42 +54,30 @@ object PlusPushClientInfo {
   }
   
   @scala.inline
-  implicit class PlusPushClientInfoOps[Self <: PlusPushClientInfo] (val x: Self) extends AnyVal {
+  implicit class PlusPushClientInfoMutableBuilder[Self <: PlusPushClientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppkey(value: String): Self = StObject.set(x, "appkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppid(value: String): Self = this.set("appid", value.asInstanceOf[js.Any])
+    def setAppkeyUndefined: Self = StObject.set(x, "appkey", js.undefined)
     
     @scala.inline
-    def deleteAppid: Self = this.set("appid", js.undefined)
+    def setClientid(value: String): Self = StObject.set(x, "clientid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppkey(value: String): Self = this.set("appkey", value.asInstanceOf[js.Any])
+    def setClientidUndefined: Self = StObject.set(x, "clientid", js.undefined)
     
     @scala.inline
-    def deleteAppkey: Self = this.set("appkey", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientid(value: String): Self = this.set("clientid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientid: Self = this.set("clientid", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

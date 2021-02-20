@@ -37,14 +37,14 @@ import typings.menubar.menubarStrings.trayLeft
 import typings.menubar.menubarStrings.trayRight
 import typings.menubar.menubarStrings.windowPosition
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("menubar/lib/Menubar", JSImport.Namespace)
-@js.native
-object menubarMod extends js.Object {
+object menubarMod {
   
+  @JSImport("menubar/lib/Menubar", "Menubar")
   @js.native
   class Menubar protected () extends EventEmitter {
     def this(app: App) = this()

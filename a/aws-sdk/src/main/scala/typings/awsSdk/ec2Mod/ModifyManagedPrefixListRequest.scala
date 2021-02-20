@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyManagedPrefixListRequest extends js.Object {
+trait ModifyManagedPrefixListRequest extends StObject {
   
   /**
     * One or more entries to add to the prefix list.
@@ -46,57 +47,45 @@ object ModifyManagedPrefixListRequest {
   }
   
   @scala.inline
-  implicit class ModifyManagedPrefixListRequestOps[Self <: ModifyManagedPrefixListRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyManagedPrefixListRequestMutableBuilder[Self <: ModifyManagedPrefixListRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEntries(value: AddPrefixListEntries): Self = StObject.set(x, "AddEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEntriesUndefined: Self = StObject.set(x, "AddEntries", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "AddEntries", js.Array(value :_*))
     
     @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
+    def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEntriesVarargs(value: AddPrefixListEntry*): Self = this.set("AddEntries", js.Array(value :_*))
+    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
     
     @scala.inline
-    def setAddEntries(value: AddPrefixListEntries): Self = this.set("AddEntries", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddEntries: Self = this.set("AddEntries", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setCurrentVersion(value: Long): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("CurrentVersion", js.undefined)
+    def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPrefixListNameUndefined: Self = StObject.set(x, "PrefixListName", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setRemoveEntries(value: RemovePrefixListEntries): Self = StObject.set(x, "RemoveEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListName(value: String): Self = this.set("PrefixListName", value.asInstanceOf[js.Any])
+    def setRemoveEntriesUndefined: Self = StObject.set(x, "RemoveEntries", js.undefined)
     
     @scala.inline
-    def deletePrefixListName: Self = this.set("PrefixListName", js.undefined)
-    
-    @scala.inline
-    def setRemoveEntriesVarargs(value: RemovePrefixListEntry*): Self = this.set("RemoveEntries", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveEntries(value: RemovePrefixListEntries): Self = this.set("RemoveEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveEntries: Self = this.set("RemoveEntries", js.undefined)
+    def setRemoveEntriesVarargs(value: RemovePrefixListEntry*): Self = StObject.set(x, "RemoveEntries", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as it directly and indirectly includes LatLng objects.
   */
 @js.native
-trait DirectionsRoute extends js.Object {
+trait DirectionsRoute extends StObject {
   
   /** The bounds for this route. */
   var bounds: LatLngBounds = js.native
@@ -81,54 +82,42 @@ object DirectionsRoute {
   }
   
   @scala.inline
-  implicit class DirectionsRouteOps[Self <: DirectionsRoute] (val x: Self) extends AnyVal {
+  implicit class DirectionsRouteMutableBuilder[Self <: DirectionsRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrights(value: String): Self = StObject.set(x, "copyrights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFare(value: TransitFare): Self = StObject.set(x, "fare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: LatLngBounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setLegs(value: js.Array[DirectionsLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrights(value: String): Self = this.set("copyrights", value.asInstanceOf[js.Any])
+    def setLegsVarargs(value: DirectionsLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
     
     @scala.inline
-    def setFare(value: TransitFare): Self = this.set("fare", value.asInstanceOf[js.Any])
+    def setOverview_path(value: js.Array[LatLng]): Self = StObject.set(x, "overview_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegsVarargs(value: DirectionsLeg*): Self = this.set("legs", js.Array(value :_*))
+    def setOverview_pathVarargs(value: LatLng*): Self = StObject.set(x, "overview_path", js.Array(value :_*))
     
     @scala.inline
-    def setLegs(value: js.Array[DirectionsLeg]): Self = this.set("legs", value.asInstanceOf[js.Any])
+    def setOverview_polyline(value: String): Self = StObject.set(x, "overview_polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview_pathVarargs(value: LatLng*): Self = this.set("overview_path", js.Array(value :_*))
+    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview_path(value: js.Array[LatLng]): Self = this.set("overview_path", value.asInstanceOf[js.Any])
+    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     
     @scala.inline
-    def setOverview_polyline(value: String): Self = this.set("overview_polyline", value.asInstanceOf[js.Any])
+    def setWaypoint_order(value: js.Array[Double]): Self = StObject.set(x, "waypoint_order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaypoint_orderVarargs(value: Double*): Self = this.set("waypoint_order", js.Array(value :_*))
-    
-    @scala.inline
-    def setWaypoint_order(value: js.Array[Double]): Self = this.set("waypoint_order", value.asInstanceOf[js.Any])
+    def setWaypoint_orderVarargs(value: Double*): Self = StObject.set(x, "waypoint_order", js.Array(value :_*))
   }
 }

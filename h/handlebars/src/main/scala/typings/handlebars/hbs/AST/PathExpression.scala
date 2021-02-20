@@ -1,5 +1,6 @@
 package typings.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object PathExpression {
   }
   
   @scala.inline
-  implicit class PathExpressionOps[Self <: PathExpression] (val x: Self) extends AnyVal {
+  implicit class PathExpressionMutableBuilder[Self <: PathExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Boolean): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
     
     @scala.inline
-    def setOriginal(value: String): Self = this.set("original", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartsVarargs(value: String*): Self = this.set("parts", js.Array(value :_*))
-    
-    @scala.inline
-    def setParts(value: js.Array[String]): Self = this.set("parts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.PathExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.handlebars.handlebarsStrings.PathExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

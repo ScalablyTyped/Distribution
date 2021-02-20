@@ -4,16 +4,15 @@ import typings.jquery.JQuery.Event
 import typings.twineSugarcube.anon.Add
 import typings.twineSugarcube.anon.Clear
 import typings.twineSugarcube.anon.Delete
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twine-sugarcube/audio", JSImport.Namespace)
-@js.native
-object audioMod extends js.Object {
+object audioMod {
   
   @js.native
-  trait AudioList extends js.Object {
+  trait AudioList extends StObject {
     
     /**
       * Returns the playlist's total playtime in seconds, Infinity if it contains any streams, or NaN if no metadata exists.
@@ -213,7 +212,7 @@ object audioMod extends js.Object {
   }
   
   @js.native
-  trait AudioRunner extends js.Object {
+  trait AudioRunner extends StObject {
     
     /**
       * Starts playback of the selected tracks and fades them between the specified starting and destination volume levels
@@ -564,7 +563,7 @@ object audioMod extends js.Object {
   }
   
   @js.native
-  trait AudioTrack extends js.Object {
+  trait AudioTrack extends StObject {
     
     /**
       * Returns the track's total playtime in seconds, Infinity for a stream, or NaN if no metadata exists.
@@ -1004,7 +1003,7 @@ object audioMod extends js.Object {
   }
   
   @js.native
-  trait SimpleAudioAPI extends js.Object {
+  trait SimpleAudioAPI extends StObject {
     
     val groups: Clear = js.native
     

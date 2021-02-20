@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSignalingChannelsOutput extends js.Object {
+trait ListSignalingChannelsOutput extends StObject {
   
   /**
     * An array of ChannelInfo objects.
@@ -26,33 +27,21 @@ object ListSignalingChannelsOutput {
   }
   
   @scala.inline
-  implicit class ListSignalingChannelsOutputOps[Self <: ListSignalingChannelsOutput] (val x: Self) extends AnyVal {
+  implicit class ListSignalingChannelsOutputMutableBuilder[Self <: ListSignalingChannelsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelInfoList(value: ChannelInfoList): Self = StObject.set(x, "ChannelInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelInfoListUndefined: Self = StObject.set(x, "ChannelInfoList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelInfoListVarargs(value: ChannelInfo*): Self = StObject.set(x, "ChannelInfoList", js.Array(value :_*))
     
     @scala.inline
-    def setChannelInfoListVarargs(value: ChannelInfo*): Self = this.set("ChannelInfoList", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelInfoList(value: ChannelInfoList): Self = this.set("ChannelInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelInfoList: Self = this.set("ChannelInfoList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

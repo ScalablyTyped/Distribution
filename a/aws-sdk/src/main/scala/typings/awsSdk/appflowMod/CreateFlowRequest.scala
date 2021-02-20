@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFlowRequest extends js.Object {
+trait CreateFlowRequest extends StObject {
   
   /**
     *  A description of the flow you want to create. 
@@ -62,57 +63,45 @@ object CreateFlowRequest {
   }
   
   @scala.inline
-  implicit class CreateFlowRequestOps[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFlowRequestMutableBuilder[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: FlowDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationFlowConfigList(value: DestinationFlowConfigList): Self = StObject.set(x, "destinationFlowConfigList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = this.set("destinationFlowConfigList", js.Array(value :_*))
+    def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationFlowConfigList(value: DestinationFlowConfigList): Self = this.set("destinationFlowConfigList", value.asInstanceOf[js.Any])
+    def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowName(value: FlowName): Self = this.set("flowName", value.asInstanceOf[js.Any])
+    def setKmsArn(value: KMSArn): Self = StObject.set(x, "kmsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFlowConfig(value: SourceFlowConfig): Self = this.set("sourceFlowConfig", value.asInstanceOf[js.Any])
+    def setKmsArnUndefined: Self = StObject.set(x, "kmsArn", js.undefined)
     
     @scala.inline
-    def setTasksVarargs(value: Task*): Self = this.set("tasks", js.Array(value :_*))
+    def setSourceFlowConfig(value: SourceFlowConfig): Self = StObject.set(x, "sourceFlowConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTasks(value: Tasks): Self = this.set("tasks", value.asInstanceOf[js.Any])
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerConfig(value: TriggerConfig): Self = this.set("triggerConfig", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setDescription(value: FlowDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTasks(value: Tasks): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
     
     @scala.inline
-    def setKmsArn(value: KMSArn): Self = this.set("kmsArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsArn: Self = this.set("kmsArn", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTriggerConfig(value: TriggerConfig): Self = StObject.set(x, "triggerConfig", value.asInstanceOf[js.Any])
   }
 }

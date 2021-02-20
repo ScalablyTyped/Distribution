@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAggregateResourceConfigResponse extends js.Object {
+trait GetAggregateResourceConfigResponse extends StObject {
   
   /**
     * Returns a ConfigurationItem object.
@@ -21,24 +22,12 @@ object GetAggregateResourceConfigResponse {
   }
   
   @scala.inline
-  implicit class GetAggregateResourceConfigResponseOps[Self <: GetAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
+  implicit class GetAggregateResourceConfigResponseMutableBuilder[Self <: GetAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationItem(value: ConfigurationItem): Self = StObject.set(x, "ConfigurationItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationItem(value: ConfigurationItem): Self = this.set("ConfigurationItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationItem: Self = this.set("ConfigurationItem", js.undefined)
+    def setConfigurationItemUndefined: Self = StObject.set(x, "ConfigurationItem", js.undefined)
   }
 }

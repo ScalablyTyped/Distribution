@@ -12,6 +12,7 @@ import typings.std.EventTarget
 import typings.std.File
 import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,31 +22,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FileTools ()
   extends typings.babylonjs.indexMod.FileTools
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "FileTools")
-@js.native
-object FileTools extends js.Object {
+object FileTools {
+  
+  @JSImport("babylonjs/Legacy/legacy", "FileTools")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets or sets the base URL to use to load assets
     */
-  var BaseUrl: String = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.BaseUrl")
+  @js.native
+  def BaseUrl: String = js.native
+  @scala.inline
+  def BaseUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseUrl")(x.asInstanceOf[js.Any])
   
   /**
     * Default behaviour for cors in the application.
     * It can be a string if the expected behavior is identical in the entire app.
     * Or a callback to be able to set it per url or on a group of them (in case of Video source for instance)
     */
-  var CorsBehavior: String | (js.Function1[/* url */ String | js.Array[String], String]) = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.CorsBehavior")
+  @js.native
+  def CorsBehavior: String | (js.Function1[/* url */ String | js.Array[String], String]) = js.native
+  @scala.inline
+  def CorsBehavior_=(x: String | (js.Function1[/* url */ String | js.Array[String], String])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CorsBehavior")(x.asInstanceOf[js.Any])
   
   /**
     * Gets or sets the retry strategy to apply when an error happens while loading an asset
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.DefaultRetryStrategy")
+  @js.native
   def DefaultRetryStrategy(url: String, request: typings.babylonjs.webRequestMod.WebRequest, retryIndex: Double): Double = js.native
   
   /**
     * Checks if the loaded document was accessed via `file:`-Protocol.
     * @returns boolean
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.IsFileURL")
+  @js.native
   def IsFileURL(): Boolean = js.native
   
   /**
@@ -58,10 +73,14 @@ object FileTools extends js.Object {
     * @param onError callback called when the file fails to load
     * @returns a file request object
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -74,6 +93,8 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -81,6 +102,8 @@ object FileTools extends js.Object {
     offlineProvider: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -93,12 +116,16 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.UndefOr[scala.Nothing],
     offlineProvider: IOfflineProvider
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -111,6 +138,8 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -118,6 +147,8 @@ object FileTools extends js.Object {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -130,11 +161,15 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -147,6 +182,8 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -154,6 +191,8 @@ object FileTools extends js.Object {
     offlineProvider: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -166,12 +205,16 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -184,6 +227,8 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -191,6 +236,8 @@ object FileTools extends js.Object {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadFile")
+  @js.native
   def LoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -213,12 +260,16 @@ object FileTools extends js.Object {
     * @param mimeType optional mime type
     * @returns the HTMLImageElement of the loaded image
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: String,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
     onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
     offlineProvider: Nullable[IOfflineProvider]
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: String,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
@@ -226,12 +277,16 @@ object FileTools extends js.Object {
     offlineProvider: Nullable[IOfflineProvider],
     mimeType: String
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: ArrayBufferView,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
     onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
     offlineProvider: Nullable[IOfflineProvider]
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: ArrayBufferView,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
@@ -239,12 +294,16 @@ object FileTools extends js.Object {
     offlineProvider: Nullable[IOfflineProvider],
     mimeType: String
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: ArrayBuffer,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
     onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
     offlineProvider: Nullable[IOfflineProvider]
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: ArrayBuffer,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
@@ -252,12 +311,16 @@ object FileTools extends js.Object {
     offlineProvider: Nullable[IOfflineProvider],
     mimeType: String
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: Blob,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
     onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
     offlineProvider: Nullable[IOfflineProvider]
   ): Nullable[HTMLImageElement] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.LoadImage")
+  @js.native
   def LoadImage(
     input: Blob,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
@@ -269,6 +332,8 @@ object FileTools extends js.Object {
   /**
     * Gets or sets a function used to pre-process url before using them to load assets
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.PreprocessUrl")
+  @js.native
   def PreprocessUrl(url: String): String = js.native
   
   /**
@@ -280,7 +345,11 @@ object FileTools extends js.Object {
     * @param onError defines the callback to call when an error occurs
     * @returns a file request object
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(file: File, onSuccess: js.Function1[/* data */ js.Any, Unit]): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
@@ -288,12 +357,16 @@ object FileTools extends js.Object {
     useArrayBuffer: js.UndefOr[scala.Nothing],
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
     onProgress: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
@@ -301,11 +374,15 @@ object FileTools extends js.Object {
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
@@ -313,12 +390,16 @@ object FileTools extends js.Object {
     useArrayBuffer: js.UndefOr[scala.Nothing],
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], _],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.ReadFile")
+  @js.native
   def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ js.Any, Unit],
@@ -337,6 +418,8 @@ object FileTools extends js.Object {
     * @param onOpened callback called when the web request is opened
     * @returns a file request object
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -345,6 +428,8 @@ object FileTools extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -358,6 +443,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -370,6 +457,8 @@ object FileTools extends js.Object {
     useArrayBuffer: js.UndefOr[scala.Nothing],
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -383,6 +472,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -394,6 +485,8 @@ object FileTools extends js.Object {
     offlineProvider: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -407,6 +500,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -419,6 +514,8 @@ object FileTools extends js.Object {
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -432,6 +529,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -442,6 +541,8 @@ object FileTools extends js.Object {
     onProgress: js.UndefOr[scala.Nothing],
     offlineProvider: IOfflineProvider
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -455,6 +556,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -467,6 +570,8 @@ object FileTools extends js.Object {
     useArrayBuffer: js.UndefOr[scala.Nothing],
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -480,6 +585,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -491,6 +598,8 @@ object FileTools extends js.Object {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -504,6 +613,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -516,6 +627,8 @@ object FileTools extends js.Object {
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -529,6 +642,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -538,6 +653,8 @@ object FileTools extends js.Object {
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -551,6 +668,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -563,6 +682,8 @@ object FileTools extends js.Object {
     useArrayBuffer: js.UndefOr[scala.Nothing],
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -576,6 +697,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -587,6 +710,8 @@ object FileTools extends js.Object {
     offlineProvider: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -600,6 +725,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -612,6 +739,8 @@ object FileTools extends js.Object {
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -625,6 +754,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -635,6 +766,8 @@ object FileTools extends js.Object {
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -648,6 +781,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -660,6 +795,8 @@ object FileTools extends js.Object {
     useArrayBuffer: js.UndefOr[scala.Nothing],
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -673,6 +810,8 @@ object FileTools extends js.Object {
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -684,6 +823,8 @@ object FileTools extends js.Object {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -697,6 +838,8 @@ object FileTools extends js.Object {
     onError: js.UndefOr[scala.Nothing],
     onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -709,6 +852,8 @@ object FileTools extends js.Object {
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
   ): IFileRequest = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.RequestFile")
+  @js.native
   def RequestFile(
     url: String,
     onSuccess: js.Function2[
@@ -728,7 +873,11 @@ object FileTools extends js.Object {
     * @param url define the url we are trying
     * @param element define the dom element where to configure the cors policy
     */
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.SetCorsBehavior")
+  @js.native
   def SetCorsBehavior(url: String, element: CrossOrigin): Unit = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools.SetCorsBehavior")
+  @js.native
   def SetCorsBehavior(url: js.Array[String], element: CrossOrigin): Unit = js.native
   
   /**
@@ -736,5 +885,9 @@ object FileTools extends js.Object {
     * @param url defines the url to clean
     * @returns the cleaned url
     */
-  var _CleanUrl: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "FileTools._CleanUrl")
+  @js.native
+  def _CleanUrl: js.Any = js.native
+  @scala.inline
+  def _CleanUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanUrl")(x.asInstanceOf[js.Any])
 }

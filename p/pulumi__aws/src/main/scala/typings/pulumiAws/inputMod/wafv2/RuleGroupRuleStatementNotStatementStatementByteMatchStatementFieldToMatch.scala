@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch extends js.Object {
+trait RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch extends StObject {
   
   /**
     * Inspect all query arguments.
@@ -74,76 +75,64 @@ object RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch
   }
   
   @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchOps[Self <: RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAllQueryArguments(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments
         ]
-    ): Self = this.set("allQueryArguments", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "allQueryArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllQueryArguments: Self = this.set("allQueryArguments", js.undefined)
+    def setAllQueryArgumentsUndefined: Self = StObject.set(x, "allQueryArguments", js.undefined)
     
     @scala.inline
-    def setBody(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBody]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBody(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setMethod(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchMethod]): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMethod(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
     def setQueryString(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString
         ]
-    ): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryString: Self = this.set("queryString", js.undefined)
+    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
     
     @scala.inline
     def setSingleHeader(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader
         ]
-    ): Self = this.set("singleHeader", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "singleHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleHeader: Self = this.set("singleHeader", js.undefined)
+    def setSingleHeaderUndefined: Self = StObject.set(x, "singleHeader", js.undefined)
     
     @scala.inline
     def setSingleQueryArgument(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument
         ]
-    ): Self = this.set("singleQueryArgument", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "singleQueryArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleQueryArgument: Self = this.set("singleQueryArgument", js.undefined)
+    def setSingleQueryArgumentUndefined: Self = StObject.set(x, "singleQueryArgument", js.undefined)
     
     @scala.inline
-    def setUriPath(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath]): Self = this.set("uriPath", value.asInstanceOf[js.Any])
+    def setUriPath(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath]): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUriPath: Self = this.set("uriPath", js.undefined)
+    def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
   }
 }

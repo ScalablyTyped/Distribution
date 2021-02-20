@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientValueObject extends js.Object {
+trait ClientValueObject extends StObject {
   
   def customFromJson(obj: js.Any): Boolean = js.native
   
@@ -32,33 +33,21 @@ object ClientValueObject {
   }
   
   @scala.inline
-  implicit class ClientValueObjectOps[Self <: ClientValueObject] (val x: Self) extends AnyVal {
+  implicit class ClientValueObjectMutableBuilder[Self <: ClientValueObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomWriteToXml(value: (XmlWriter, SerializationContext) => Boolean): Self = StObject.set(x, "customWriteToXml", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCustomFromJson(value: js.Any => Boolean): Self = this.set("customFromJson", js.Any.fromFunction1(value))
+    def setGet_typeId(value: () => String): Self = StObject.set(x, "get_typeId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCustomWriteToXml(value: (XmlWriter, SerializationContext) => Boolean): Self = this.set("customWriteToXml", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setFromJson(value: js.Any => Unit): Self = this.set("fromJson", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet_typeId(value: () => String): Self = this.set("get_typeId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWriteToXml(value: (XmlWriter, SerializationContext) => Unit): Self = this.set("writeToXml", js.Any.fromFunction2(value))
+    def setWriteToXml(value: (XmlWriter, SerializationContext) => Unit): Self = StObject.set(x, "writeToXml", js.Any.fromFunction2(value))
   }
 }

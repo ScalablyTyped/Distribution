@@ -3,6 +3,7 @@ package typings.ssh2.mod
 import typings.node.streamMod.Writable
 import typings.ssh2.ssh2Booleans.`true`
 import typings.ssh2.ssh2Strings.close
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

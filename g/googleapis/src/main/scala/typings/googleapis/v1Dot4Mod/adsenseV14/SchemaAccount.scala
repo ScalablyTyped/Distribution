@@ -1,11 +1,12 @@
 package typings.googleapis.v1Dot4Mod.adsenseV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAccount extends js.Object {
+trait SchemaAccount extends StObject {
   
   var creation_time: js.UndefOr[String] = js.native
   
@@ -48,63 +49,51 @@ object SchemaAccount {
   }
   
   @scala.inline
-  implicit class SchemaAccountOps[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountMutableBuilder[Self <: SchemaAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreation_time(value: String): Self = this.set("creation_time", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCreation_time: Self = this.set("creation_time", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPremium(value: Boolean): Self = StObject.set(x, "premium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPremiumUndefined: Self = StObject.set(x, "premium", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubAccounts(value: js.Array[SchemaAccount]): Self = StObject.set(x, "subAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremium(value: Boolean): Self = this.set("premium", value.asInstanceOf[js.Any])
+    def setSubAccountsUndefined: Self = StObject.set(x, "subAccounts", js.undefined)
     
     @scala.inline
-    def deletePremium: Self = this.set("premium", js.undefined)
+    def setSubAccountsVarargs(value: SchemaAccount*): Self = StObject.set(x, "subAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setSubAccountsVarargs(value: SchemaAccount*): Self = this.set("subAccounts", js.Array(value :_*))
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubAccounts(value: js.Array[SchemaAccount]): Self = this.set("subAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubAccounts: Self = this.set("subAccounts", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

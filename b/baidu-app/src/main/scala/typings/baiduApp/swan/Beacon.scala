@@ -1,11 +1,12 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Beacon extends js.Object {
+trait Beacon extends StObject {
   
   /** iBeacon 设备的距离 */
   var accuracy: Double = js.native
@@ -34,36 +35,24 @@ object Beacon {
   }
   
   @scala.inline
-  implicit class BeaconOps[Self <: Beacon] (val x: Self) extends AnyVal {
+  implicit class BeaconMutableBuilder[Self <: Beacon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setProximity(value: Double): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajor(value: String): Self = this.set("major", value.asInstanceOf[js.Any])
+    def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinor(value: String): Self = this.set("minor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProximity(value: Double): Self = this.set("proximity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRssi(value: Double): Self = this.set("rssi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

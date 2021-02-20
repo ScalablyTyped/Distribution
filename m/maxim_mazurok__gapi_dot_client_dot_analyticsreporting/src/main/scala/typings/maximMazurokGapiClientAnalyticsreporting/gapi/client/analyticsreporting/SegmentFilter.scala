@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentFilter extends js.Object {
+trait SegmentFilter extends StObject {
   
   /**
     * If true, match the complement of simple or sequence segment. For example, to match all visits not from "New York", we can define the segment as follows: "sessionSegment": {
@@ -32,36 +33,24 @@ object SegmentFilter {
   }
   
   @scala.inline
-  implicit class SegmentFilterOps[Self <: SegmentFilter] (val x: Self) extends AnyVal {
+  implicit class SegmentFilterMutableBuilder[Self <: SegmentFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSequenceSegment(value: SequenceSegment): Self = StObject.set(x, "sequenceSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNot(value: Boolean): Self = this.set("not", value.asInstanceOf[js.Any])
+    def setSequenceSegmentUndefined: Self = StObject.set(x, "sequenceSegment", js.undefined)
     
     @scala.inline
-    def deleteNot: Self = this.set("not", js.undefined)
+    def setSimpleSegment(value: SimpleSegment): Self = StObject.set(x, "simpleSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceSegment(value: SequenceSegment): Self = this.set("sequenceSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceSegment: Self = this.set("sequenceSegment", js.undefined)
-    
-    @scala.inline
-    def setSimpleSegment(value: SimpleSegment): Self = this.set("simpleSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimpleSegment: Self = this.set("simpleSegment", js.undefined)
+    def setSimpleSegmentUndefined: Self = StObject.set(x, "simpleSegment", js.undefined)
   }
 }

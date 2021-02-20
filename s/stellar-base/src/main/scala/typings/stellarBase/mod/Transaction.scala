@@ -2,6 +2,7 @@ package typings.stellarBase.mod
 
 import typings.stellarBase.anon.MinTime
 import typings.stellarBase.xdrMod.default.TransactionEnvelope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

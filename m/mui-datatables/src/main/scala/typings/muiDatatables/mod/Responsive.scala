@@ -1,5 +1,6 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.muiDatatables.muiDatatablesStrings.standard
   - typings.muiDatatables.muiDatatablesStrings.simple
 */
-trait Responsive extends js.Object
+trait Responsive extends StObject
 object Responsive {
   
   @scala.inline

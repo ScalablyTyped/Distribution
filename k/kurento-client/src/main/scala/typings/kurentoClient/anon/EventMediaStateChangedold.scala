@@ -3,13 +3,14 @@ package typings.kurentoClient.anon
 import typings.kurentoClient.kurentoClientStrings.MediaStateChanged
 import typings.kurentoClient.mod.MediaState
 import typings.kurentoClient.mod.Tag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'MediaStateChanged', {  oldState :kurento-client.kurento-client.MediaState,   newState :kurento-client.kurento-client.MediaState}> */
 @js.native
-trait EventMediaStateChangedold extends js.Object {
+trait EventMediaStateChangedold extends StObject {
   
   var newState: MediaState = js.native
   
@@ -43,42 +44,30 @@ object EventMediaStateChangedold {
   }
   
   @scala.inline
-  implicit class EventMediaStateChangedoldOps[Self <: EventMediaStateChangedold] (val x: Self) extends AnyVal {
+  implicit class EventMediaStateChangedoldMutableBuilder[Self <: EventMediaStateChangedold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewState(value: MediaState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldState(value: MediaState): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewState(value: MediaState): Self = this.set("newState", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldState(value: MediaState): Self = this.set("oldState", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestampMillis(value: String): Self = this.set("timestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MediaStateChanged): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MediaStateChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

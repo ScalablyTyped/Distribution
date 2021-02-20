@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2Manifold extends js.Object {
+trait b2Manifold extends StObject {
   
   /**
     * Copies the manifold.
@@ -68,45 +69,33 @@ object b2Manifold {
   }
   
   @scala.inline
-  implicit class b2ManifoldOps[Self <: b2Manifold] (val x: Self) extends AnyVal {
+  implicit class b2ManifoldMutableBuilder[Self <: b2Manifold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => b2Manifold): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setM_localPlaneNormal(value: b2Vec2): Self = StObject.set(x, "m_localPlaneNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setM_localPoint(value: b2Vec2): Self = StObject.set(x, "m_localPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => b2Manifold): Self = this.set("Copy", js.Any.fromFunction0(value))
+    def setM_pointCount(value: Double): Self = StObject.set(x, "m_pointCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    def setM_points(value: js.Array[b2ManifoldPoint]): Self = StObject.set(x, "m_points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: b2Manifold => Unit): Self = this.set("Set", js.Any.fromFunction1(value))
+    def setM_pointsVarargs(value: b2ManifoldPoint*): Self = StObject.set(x, "m_points", js.Array(value :_*))
     
     @scala.inline
-    def setM_localPlaneNormal(value: b2Vec2): Self = this.set("m_localPlaneNormal", value.asInstanceOf[js.Any])
+    def setM_type(value: Double): Self = StObject.set(x, "m_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM_localPoint(value: b2Vec2): Self = this.set("m_localPoint", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setM_pointCount(value: Double): Self = this.set("m_pointCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM_pointsVarargs(value: b2ManifoldPoint*): Self = this.set("m_points", js.Array(value :_*))
-    
-    @scala.inline
-    def setM_points(value: js.Array[b2ManifoldPoint]): Self = this.set("m_points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM_type(value: Double): Self = this.set("m_type", value.asInstanceOf[js.Any])
+    def setSet(value: b2Manifold => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }
 }

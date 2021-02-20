@@ -1,13 +1,14 @@
 package typings.mapsjs.mod
 
 import typings.mapsjs.mod.geometry.polygon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapsjs", "point")
 @js.native
-class point protected () extends js.Object {
+class point protected () extends StObject {
   def this(x: Double, y: Double) = this()
   
   /**
@@ -66,11 +67,13 @@ class point protected () extends js.Object {
     */
   def toProps(): pointObject = js.native
 }
-@JSImport("mapsjs", "point")
-@js.native
-object point extends js.Object {
+object point {
   
+  @JSImport("mapsjs", "point.distance")
+  @js.native
   def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
   
+  @JSImport("mapsjs", "point.midpoint")
+  @js.native
   def midpoint(x1: Double, y1: Double, x2: Double, y2: Double): point = js.native
 }

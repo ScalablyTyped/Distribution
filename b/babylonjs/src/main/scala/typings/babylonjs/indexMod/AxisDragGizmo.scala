@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,26 +83,32 @@ class AxisDragGizmo protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "AxisDragGizmo")
-@js.native
-object AxisDragGizmo extends js.Object {
+object AxisDragGizmo {
   
   /** @hidden */
+  @JSImport("babylonjs/index", "AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial
   ): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  @JSImport("babylonjs/index", "AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial,
     thickness: js.UndefOr[scala.Nothing],
     isCollider: Boolean
   ): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  @JSImport("babylonjs/index", "AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial,
     thickness: Double
   ): typings.babylonjs.transformNodeMod.TransformNode = js.native
+  @JSImport("babylonjs/index", "AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial,
@@ -110,5 +117,7 @@ object AxisDragGizmo extends js.Object {
   ): typings.babylonjs.transformNodeMod.TransformNode = js.native
   
   /** @hidden */
+  @JSImport("babylonjs/index", "AxisDragGizmo._CreateArrowInstance")
+  @js.native
   def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = js.native
 }

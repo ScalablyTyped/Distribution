@@ -1,13 +1,14 @@
 package typings.expoFileSystem.fileSystemTypesMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined expo-file-system.expo-file-system/build/FileSystem.types.FileSystemDownloadResult */
 @js.native
-trait DownloadResult extends js.Object {
+trait DownloadResult extends StObject {
   
   var headers: Record[String, String] = js.native
   
@@ -28,39 +29,27 @@ object DownloadResult {
   }
   
   @scala.inline
-  implicit class DownloadResultOps[Self <: DownloadResult] (val x: Self) extends AnyVal {
+  implicit class DownloadResultMutableBuilder[Self <: DownloadResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
     
     @scala.inline
-    def setHeaders(value: Record[String, String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5(value: String): Self = this.set("md5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMd5: Self = this.set("md5", js.undefined)
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMimeTypeNull: Self = this.set("mimeType", null)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

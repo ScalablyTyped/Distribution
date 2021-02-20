@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.Dictionary
 import typings.lodash.mod.MemoVoidIteratorCapped
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashTransform extends js.Object {
+trait LodashTransform extends StObject {
   
   def apply[TResult](iteratee: __, accumulator: TResult): LodashTransform1x2[TResult] = js.native
   def apply[T](iteratee: __, accumulator: __, `object`: js.Array[T]): LodashTransform1x4[T] = js.native

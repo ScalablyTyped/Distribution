@@ -2,12 +2,13 @@ package typings.reactJoyride.mod
 
 import typings.react.mod.CSSProperties
 import typings.reactJoyride.anon.ArrowColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Styles extends js.Object {
+trait Styles extends StObject {
   
   var beacon: js.UndefOr[CSSProperties] = js.native
   
@@ -56,132 +57,120 @@ object Styles {
   }
   
   @scala.inline
-  implicit class StylesOps[Self <: Styles] (val x: Self) extends AnyVal {
+  implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeacon(value: CSSProperties): Self = StObject.set(x, "beacon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeaconInner(value: CSSProperties): Self = StObject.set(x, "beaconInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeaconInnerUndefined: Self = StObject.set(x, "beaconInner", js.undefined)
     
     @scala.inline
-    def setBeacon(value: CSSProperties): Self = this.set("beacon", value.asInstanceOf[js.Any])
+    def setBeaconOuter(value: CSSProperties): Self = StObject.set(x, "beaconOuter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeacon: Self = this.set("beacon", js.undefined)
+    def setBeaconOuterUndefined: Self = StObject.set(x, "beaconOuter", js.undefined)
     
     @scala.inline
-    def setBeaconInner(value: CSSProperties): Self = this.set("beaconInner", value.asInstanceOf[js.Any])
+    def setBeaconUndefined: Self = StObject.set(x, "beacon", js.undefined)
     
     @scala.inline
-    def deleteBeaconInner: Self = this.set("beaconInner", js.undefined)
+    def setButtonBack(value: CSSProperties): Self = StObject.set(x, "buttonBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconOuter(value: CSSProperties): Self = this.set("beaconOuter", value.asInstanceOf[js.Any])
+    def setButtonBackUndefined: Self = StObject.set(x, "buttonBack", js.undefined)
     
     @scala.inline
-    def deleteBeaconOuter: Self = this.set("beaconOuter", js.undefined)
+    def setButtonClose(value: CSSProperties): Self = StObject.set(x, "buttonClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBack(value: CSSProperties): Self = this.set("buttonBack", value.asInstanceOf[js.Any])
+    def setButtonCloseUndefined: Self = StObject.set(x, "buttonClose", js.undefined)
     
     @scala.inline
-    def deleteButtonBack: Self = this.set("buttonBack", js.undefined)
+    def setButtonNext(value: CSSProperties): Self = StObject.set(x, "buttonNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonClose(value: CSSProperties): Self = this.set("buttonClose", value.asInstanceOf[js.Any])
+    def setButtonNextUndefined: Self = StObject.set(x, "buttonNext", js.undefined)
     
     @scala.inline
-    def deleteButtonClose: Self = this.set("buttonClose", js.undefined)
+    def setButtonSkip(value: CSSProperties): Self = StObject.set(x, "buttonSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonNext(value: CSSProperties): Self = this.set("buttonNext", value.asInstanceOf[js.Any])
+    def setButtonSkipUndefined: Self = StObject.set(x, "buttonSkip", js.undefined)
     
     @scala.inline
-    def deleteButtonNext: Self = this.set("buttonNext", js.undefined)
+    def setOptions(value: ArrowColor): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonSkip(value: CSSProperties): Self = this.set("buttonSkip", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteButtonSkip: Self = this.set("buttonSkip", js.undefined)
+    def setOverlay(value: CSSProperties): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ArrowColor): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOverlayLegacy(value: CSSProperties): Self = StObject.set(x, "overlayLegacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOverlayLegacyCenter(value: CSSProperties): Self = StObject.set(x, "overlayLegacyCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: CSSProperties): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setOverlayLegacyCenterUndefined: Self = StObject.set(x, "overlayLegacyCenter", js.undefined)
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setOverlayLegacyUndefined: Self = StObject.set(x, "overlayLegacy", js.undefined)
     
     @scala.inline
-    def setOverlayLegacy(value: CSSProperties): Self = this.set("overlayLegacy", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteOverlayLegacy: Self = this.set("overlayLegacy", js.undefined)
+    def setSpotlight(value: CSSProperties): Self = StObject.set(x, "spotlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayLegacyCenter(value: CSSProperties): Self = this.set("overlayLegacyCenter", value.asInstanceOf[js.Any])
+    def setSpotlightLegacy(value: CSSProperties): Self = StObject.set(x, "spotlightLegacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverlayLegacyCenter: Self = this.set("overlayLegacyCenter", js.undefined)
+    def setSpotlightLegacyUndefined: Self = StObject.set(x, "spotlightLegacy", js.undefined)
     
     @scala.inline
-    def setSpotlight(value: CSSProperties): Self = this.set("spotlight", value.asInstanceOf[js.Any])
+    def setSpotlightUndefined: Self = StObject.set(x, "spotlight", js.undefined)
     
     @scala.inline
-    def deleteSpotlight: Self = this.set("spotlight", js.undefined)
+    def setTooltip(value: CSSProperties): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotlightLegacy(value: CSSProperties): Self = this.set("spotlightLegacy", value.asInstanceOf[js.Any])
+    def setTooltipContainer(value: CSSProperties): Self = StObject.set(x, "tooltipContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpotlightLegacy: Self = this.set("spotlightLegacy", js.undefined)
+    def setTooltipContainerUndefined: Self = StObject.set(x, "tooltipContainer", js.undefined)
     
     @scala.inline
-    def setTooltip(value: CSSProperties): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTooltipContent(value: CSSProperties): Self = StObject.set(x, "tooltipContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
     
     @scala.inline
-    def setTooltipContainer(value: CSSProperties): Self = this.set("tooltipContainer", value.asInstanceOf[js.Any])
+    def setTooltipFooter(value: CSSProperties): Self = StObject.set(x, "tooltipFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipContainer: Self = this.set("tooltipContainer", js.undefined)
+    def setTooltipFooterSpacer(value: CSSProperties): Self = StObject.set(x, "tooltipFooterSpacer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipContent(value: CSSProperties): Self = this.set("tooltipContent", value.asInstanceOf[js.Any])
+    def setTooltipFooterSpacerUndefined: Self = StObject.set(x, "tooltipFooterSpacer", js.undefined)
     
     @scala.inline
-    def deleteTooltipContent: Self = this.set("tooltipContent", js.undefined)
+    def setTooltipFooterUndefined: Self = StObject.set(x, "tooltipFooter", js.undefined)
     
     @scala.inline
-    def setTooltipFooter(value: CSSProperties): Self = this.set("tooltipFooter", value.asInstanceOf[js.Any])
+    def setTooltipTitle(value: CSSProperties): Self = StObject.set(x, "tooltipTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipFooter: Self = this.set("tooltipFooter", js.undefined)
+    def setTooltipTitleUndefined: Self = StObject.set(x, "tooltipTitle", js.undefined)
     
     @scala.inline
-    def setTooltipFooterSpacer(value: CSSProperties): Self = this.set("tooltipFooterSpacer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipFooterSpacer: Self = this.set("tooltipFooterSpacer", js.undefined)
-    
-    @scala.inline
-    def setTooltipTitle(value: CSSProperties): Self = this.set("tooltipTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipTitle: Self = this.set("tooltipTitle", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

@@ -3,21 +3,21 @@ package typings.firebaseDatabase
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.sortedMapMod.SortedMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/ImmutableTree", JSImport.Namespace)
-@js.native
-object immutableTreeMod extends js.Object {
+object immutableTreeMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/ImmutableTree", "ImmutableTree")
   @js.native
   /**
     * @template T
     * @param {?T} value
     * @param {SortedMap.<string, !ImmutableTree.<T>>=} children
     */
-  class ImmutableTree[T] () extends js.Object {
+  class ImmutableTree[T] () extends StObject {
     def this(value: T) = this()
     def this(value: T, children: SortedMap[String, ImmutableTree[T]]) = this()
     def this(value: Null, children: SortedMap[String, ImmutableTree[T]]) = this()
@@ -154,16 +154,25 @@ object immutableTreeMod extends js.Object {
     val value: T | Null = js.native
   }
   /* static members */
-  @js.native
-  object ImmutableTree extends js.Object {
+  object ImmutableTree {
     
-    var Empty: ImmutableTree[_] = js.native
+    @JSImport("@firebase/database/dist/src/core/util/ImmutableTree", "ImmutableTree")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@firebase/database/dist/src/core/util/ImmutableTree", "ImmutableTree.Empty")
+    @js.native
+    def Empty: ImmutableTree[js.Any] = js.native
+    @scala.inline
+    def Empty_=(x: ImmutableTree[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
     
     /**
       * @template T
       * @param {!Object.<string, !T>} obj
       * @return {!ImmutableTree.<!T>}
       */
+    @JSImport("@firebase/database/dist/src/core/util/ImmutableTree", "ImmutableTree.fromObject")
+    @js.native
     def fromObject[T](obj: StringDictionary[T]): ImmutableTree[T] = js.native
   }
 }

@@ -2,27 +2,16 @@ package typings.grumblerScripts
 
 import typings.grumblerScripts.anon.Version
 import typings.grumblerScripts.typesMod.WebpackConfigOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grumbler-scripts/config", JSImport.Namespace)
-@js.native
-object configMod extends js.Object {
+object configMod {
   
-  def getCurrentVersion(pkg: Version): String = js.native
-  
-  def getKarmaConfig(karma: js.Object): js.Object = js.native
-  def getKarmaConfig(karma: js.Object, cfg: js.Object): js.Object = js.native
-  
-  def getNextVersion(pkg: Version): String = js.native
-  def getNextVersion(pkg: Version, level: String): String = js.native
-  
-  def getWebpackConfig(): js.Object = js.native
-  def getWebpackConfig(options: WebpackConfigOptions): js.Object = js.native
-  
+  @JSImport("grumbler-scripts/config", "ENV")
   @js.native
-  object ENV extends js.Object {
+  object ENV extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.grumblerScripts.constantsMod.ENV with String] = js.native
@@ -39,4 +28,29 @@ object configMod extends js.Object {
     
     /* "test" */ val TEST: typings.grumblerScripts.constantsMod.ENV.TEST with String = js.native
   }
+  
+  @JSImport("grumbler-scripts/config", "getCurrentVersion")
+  @js.native
+  def getCurrentVersion(pkg: Version): String = js.native
+  
+  @JSImport("grumbler-scripts/config", "getKarmaConfig")
+  @js.native
+  def getKarmaConfig(karma: js.Object): js.Object = js.native
+  @JSImport("grumbler-scripts/config", "getKarmaConfig")
+  @js.native
+  def getKarmaConfig(karma: js.Object, cfg: js.Object): js.Object = js.native
+  
+  @JSImport("grumbler-scripts/config", "getNextVersion")
+  @js.native
+  def getNextVersion(pkg: Version): String = js.native
+  @JSImport("grumbler-scripts/config", "getNextVersion")
+  @js.native
+  def getNextVersion(pkg: Version, level: String): String = js.native
+  
+  @JSImport("grumbler-scripts/config", "getWebpackConfig")
+  @js.native
+  def getWebpackConfig(): js.Object = js.native
+  @JSImport("grumbler-scripts/config", "getWebpackConfig")
+  @js.native
+  def getWebpackConfig(options: WebpackConfigOptions): js.Object = js.native
 }

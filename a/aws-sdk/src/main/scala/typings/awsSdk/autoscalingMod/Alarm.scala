@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alarm extends js.Object {
+trait Alarm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the alarm.
@@ -26,30 +27,18 @@ object Alarm {
   }
   
   @scala.inline
-  implicit class AlarmOps[Self <: Alarm] (val x: Self) extends AnyVal {
+  implicit class AlarmMutableBuilder[Self <: Alarm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarmARN(value: ResourceName): Self = StObject.set(x, "AlarmARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlarmARNUndefined: Self = StObject.set(x, "AlarmARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlarmName(value: XmlStringMaxLen255): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmARN(value: ResourceName): Self = this.set("AlarmARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlarmARN: Self = this.set("AlarmARN", js.undefined)
-    
-    @scala.inline
-    def setAlarmName(value: XmlStringMaxLen255): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlarmName: Self = this.set("AlarmName", js.undefined)
+    def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
   }
 }

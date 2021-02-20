@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.runtime
 
 import typings.chromeApps.chromeAppsStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONSchemaArrayType extends js.Object {
+trait JSONSchemaArrayType extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -24,30 +25,18 @@ object JSONSchemaArrayType {
   }
   
   @scala.inline
-  implicit class JSONSchemaArrayTypeOps[Self <: JSONSchemaArrayType] (val x: Self) extends AnyVal {
+  implicit class JSONSchemaArrayTypeMutableBuilder[Self <: JSONSchemaArrayType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: array): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

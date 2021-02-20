@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An entry describing an error that has occurred.
   */
 @js.native
-trait SchemaErrorLogEntry extends js.Object {
+trait SchemaErrorLogEntry extends StObject {
   
   /**
     * A list of messages that carry the error details.
@@ -30,33 +31,21 @@ object SchemaErrorLogEntry {
   }
   
   @scala.inline
-  implicit class SchemaErrorLogEntryOps[Self <: SchemaErrorLogEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaErrorLogEntryMutableBuilder[Self <: SchemaErrorLogEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorDetails(value: js.Array[String]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
     
     @scala.inline
-    def setErrorDetailsVarargs(value: String*): Self = this.set("errorDetails", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: js.Array[String]): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

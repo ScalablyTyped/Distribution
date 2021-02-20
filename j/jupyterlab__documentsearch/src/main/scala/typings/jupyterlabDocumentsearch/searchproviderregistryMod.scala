@@ -4,14 +4,14 @@ import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
 import typings.jupyterlabDocumentsearch.tokensMod.ISearchProviderRegistry
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/documentsearch/lib/searchproviderregistry", JSImport.Namespace)
-@js.native
-object searchproviderregistryMod extends js.Object {
+object searchproviderregistryMod {
   
+  @JSImport("@jupyterlab/documentsearch/lib/searchproviderregistry", "SearchProviderRegistry")
   @js.native
   class SearchProviderRegistry () extends ISearchProviderRegistry {
     

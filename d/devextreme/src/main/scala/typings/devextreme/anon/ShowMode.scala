@@ -5,12 +5,13 @@ import typings.devextreme.devextremeStrings.bottom
 import typings.devextreme.devextremeStrings.onHover
 import typings.devextreme.devextremeStrings.top
 import typings.devextreme.mod.DevExpress.ui.format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShowMode extends js.Object {
+trait ShowMode extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -29,45 +30,33 @@ object ShowMode {
   }
   
   @scala.inline
-  implicit class ShowModeOps[Self <: ShowMode] (val x: Self) extends AnyVal {
+  implicit class ShowModeMutableBuilder[Self <: ShowMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    def setPosition(value: bottom | top): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setShowMode(value: always | onHover): Self = StObject.set(x, "showMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: bottom | top): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setShowMode(value: always | onHover): Self = this.set("showMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowMode: Self = this.set("showMode", js.undefined)
+    def setShowModeUndefined: Self = StObject.set(x, "showMode", js.undefined)
   }
 }

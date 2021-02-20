@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetJobOutputOutput extends js.Object {
+trait GetJobOutputOutput extends StObject {
   
   /**
     * Indicates the range units accepted. For more information, see RFC2616. 
@@ -51,60 +52,48 @@ object GetJobOutputOutput {
   }
   
   @scala.inline
-  implicit class GetJobOutputOutputOps[Self <: GetJobOutputOutput] (val x: Self) extends AnyVal {
+  implicit class GetJobOutputOutputMutableBuilder[Self <: GetJobOutputOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptRanges(value: String): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptRangesUndefined: Self = StObject.set(x, "acceptRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptRanges(value: String): Self = this.set("acceptRanges", value.asInstanceOf[js.Any])
+    def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
     
     @scala.inline
-    def deleteAcceptRanges: Self = this.set("acceptRanges", js.undefined)
+    def setBody(value: Stream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveDescription(value: String): Self = this.set("archiveDescription", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteArchiveDescription: Self = this.set("archiveDescription", js.undefined)
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Stream): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setContentRange(value: String): Self = StObject.set(x, "contentRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    def setContentRangeUndefined: Self = StObject.set(x, "contentRange", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRange(value: String): Self = this.set("contentRange", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteContentRange: Self = this.set("contentRange", js.undefined)
+    def setStatus(value: httpstatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: httpstatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

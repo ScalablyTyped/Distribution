@@ -9,12 +9,13 @@ import typings.openpgp.openpgpBooleans.`false`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptOptions extends js.Object {
+trait EncryptOptions extends StObject {
   
   /**
     * (optional) if the return values should be ascii armored or the message/signature objects
@@ -100,120 +101,108 @@ object EncryptOptions {
   }
   
   @scala.inline
-  implicit class EncryptOptionsOps[Self <: EncryptOptions] (val x: Self) extends AnyVal {
+  implicit class EncryptOptionsMutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArmorUndefined: Self = StObject.set(x, "armor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompression(value: compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def setArmor(value: Boolean): Self = this.set("armor", value.asInstanceOf[js.Any])
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArmor: Self = this.set("armor", js.undefined)
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setCompression(value: compression): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setFromUserIds(value: js.Array[UserID]): Self = StObject.set(x, "fromUserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setFromUserIdsUndefined: Self = StObject.set(x, "fromUserIds", js.undefined)
     
     @scala.inline
-    def setDetached(value: Boolean): Self = this.set("detached", value.asInstanceOf[js.Any])
+    def setFromUserIdsVarargs(value: UserID*): Self = StObject.set(x, "fromUserIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteDetached: Self = this.set("detached", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromUserIdsVarargs(value: UserID*): Self = this.set("fromUserIds", js.Array(value :_*))
+    def setPasswords(value: String | js.Array[_]): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromUserIds(value: js.Array[UserID]): Self = this.set("fromUserIds", value.asInstanceOf[js.Any])
+    def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
     
     @scala.inline
-    def deleteFromUserIds: Self = this.set("fromUserIds", js.undefined)
+    def setPasswordsVarargs(value: js.Any*): Self = StObject.set(x, "passwords", js.Array(value :_*))
     
     @scala.inline
-    def setPasswordsVarargs(value: js.Any*): Self = this.set("passwords", js.Array(value :_*))
+    def setPrivateKeys(value: Key | js.Array[_]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswords(value: String | js.Array[_]): Self = this.set("passwords", value.asInstanceOf[js.Any])
+    def setPrivateKeysUndefined: Self = StObject.set(x, "privateKeys", js.undefined)
     
     @scala.inline
-    def deletePasswords: Self = this.set("passwords", js.undefined)
+    def setPrivateKeysVarargs(value: js.Any*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
     
     @scala.inline
-    def setPrivateKeysVarargs(value: js.Any*): Self = this.set("privateKeys", js.Array(value :_*))
+    def setPublicKeys(value: Key | js.Array[_]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeys(value: Key | js.Array[_]): Self = this.set("privateKeys", value.asInstanceOf[js.Any])
+    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
     @scala.inline
-    def deletePrivateKeys: Self = this.set("privateKeys", js.undefined)
+    def setPublicKeysVarargs(value: js.Any*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
     
     @scala.inline
-    def setPublicKeysVarargs(value: js.Any*): Self = this.set("publicKeys", js.Array(value :_*))
+    def setReturnSessionKey(value: Boolean): Self = StObject.set(x, "returnSessionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeys(value: Key | js.Array[_]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
+    def setReturnSessionKeyUndefined: Self = StObject.set(x, "returnSessionKey", js.undefined)
     
     @scala.inline
-    def deletePublicKeys: Self = this.set("publicKeys", js.undefined)
+    def setSessionKey(value: Algorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnSessionKey(value: Boolean): Self = this.set("returnSessionKey", value.asInstanceOf[js.Any])
+    def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
     
     @scala.inline
-    def deleteReturnSessionKey: Self = this.set("returnSessionKey", js.undefined)
+    def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionKey(value: Algorithm): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def deleteSessionKey: Self = this.set("sessionKey", js.undefined)
+    def setStreaming(value: web | node | `false`): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: Signature): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
     
     @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setToUserIds(value: js.Array[UserID]): Self = StObject.set(x, "toUserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreaming(value: web | node | `false`): Self = this.set("streaming", value.asInstanceOf[js.Any])
+    def setToUserIdsUndefined: Self = StObject.set(x, "toUserIds", js.undefined)
     
     @scala.inline
-    def deleteStreaming: Self = this.set("streaming", js.undefined)
+    def setToUserIdsVarargs(value: UserID*): Self = StObject.set(x, "toUserIds", js.Array(value :_*))
     
     @scala.inline
-    def setToUserIdsVarargs(value: UserID*): Self = this.set("toUserIds", js.Array(value :_*))
+    def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToUserIds(value: js.Array[UserID]): Self = this.set("toUserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToUserIds: Self = this.set("toUserIds", js.undefined)
-    
-    @scala.inline
-    def setWildcard(value: Boolean): Self = this.set("wildcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWildcard: Self = this.set("wildcard", js.undefined)
+    def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
   }
 }

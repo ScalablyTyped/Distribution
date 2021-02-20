@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,33 +47,21 @@ object CSSKeyframesRule {
   }
   
   @scala.inline
-  implicit class CSSKeyframesRuleOps[Self <: CSSKeyframesRule] (val x: Self) extends AnyVal {
+  implicit class CSSKeyframesRuleMutableBuilder[Self <: CSSKeyframesRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendRule(value: java.lang.String => Unit): Self = StObject.set(x, "appendRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssRules(value: CSSRuleList): Self = StObject.set(x, "cssRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteRule(value: java.lang.String => Unit): Self = StObject.set(x, "deleteRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendRule(value: java.lang.String => Unit): Self = this.set("appendRule", js.Any.fromFunction1(value))
+    def setFindRule(value: java.lang.String => CSSKeyframeRule | Null): Self = StObject.set(x, "findRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCssRules(value: CSSRuleList): Self = this.set("cssRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleteRule(value: java.lang.String => Unit): Self = this.set("deleteRule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindRule(value: java.lang.String => CSSKeyframeRule | Null): Self = this.set("findRule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

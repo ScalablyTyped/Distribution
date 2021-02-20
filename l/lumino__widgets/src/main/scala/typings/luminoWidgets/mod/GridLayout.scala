@@ -3,6 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.anon.PartialICellConfig
 import typings.luminoWidgets.gridlayoutMod.GridLayout.ICellConfig
 import typings.luminoWidgets.gridlayoutMod.GridLayout.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class GridLayout ()
   extends typings.luminoWidgets.gridlayoutMod.GridLayout {
   def this(options: IOptions) = this()
 }
-@JSImport("@lumino/widgets", "GridLayout")
-@js.native
-object GridLayout extends js.Object {
+object GridLayout {
   
   /**
     * Get the cell config for the given widget.
@@ -29,6 +28,8 @@ object GridLayout extends js.Object {
     *
     * @returns The cell config for the widget.
     */
+  @JSImport("@lumino/widgets", "GridLayout.getCellConfig")
+  @js.native
   def getCellConfig(widget: typings.luminoWidgets.widgetMod.Widget): ICellConfig = js.native
   
   /**
@@ -38,5 +39,7 @@ object GridLayout extends js.Object {
     *
     * @param value - The value for the cell config.
     */
+  @JSImport("@lumino/widgets", "GridLayout.setCellConfig")
+  @js.native
   def setCellConfig(widget: typings.luminoWidgets.widgetMod.Widget, value: PartialICellConfig): Unit = js.native
 }

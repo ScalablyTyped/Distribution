@@ -1,16 +1,16 @@
 package typings.asmcryptoJs
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asmcrypto.js/dist_es8/aes/cmac", JSImport.Namespace)
-@js.native
-object cmacMod extends js.Object {
+object cmacMod {
   
+  @JSImport("asmcrypto.js/dist_es8/aes/cmac", "AES_CMAC")
   @js.native
-  class AES_CMAC protected () extends js.Object {
+  class AES_CMAC protected () extends StObject {
     def this(key: Uint8Array) = this()
     
     val buffer: js.Any = js.native
@@ -28,9 +28,10 @@ object cmacMod extends js.Object {
     var result: Uint8Array | Null = js.native
   }
   /* static members */
-  @js.native
-  object AES_CMAC extends js.Object {
+  object AES_CMAC {
     
+    @JSImport("asmcrypto.js/dist_es8/aes/cmac", "AES_CMAC.bytes")
+    @js.native
     def bytes(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
   }
 }

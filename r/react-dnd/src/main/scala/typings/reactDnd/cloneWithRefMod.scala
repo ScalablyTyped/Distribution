@@ -1,13 +1,14 @@
 package typings.reactDnd
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd/lib/utils/cloneWithRef", JSImport.Namespace)
-@js.native
-object cloneWithRefMod extends js.Object {
+object cloneWithRefMod {
   
+  @JSImport("react-dnd/lib/utils/cloneWithRef", "cloneWithRef")
+  @js.native
   def cloneWithRef(element: js.Any, newRef: js.Any): ReactElement = js.native
 }

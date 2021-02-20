@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientTranscoder.anon.Callback
 import typings.maximMazurokGapiClientTranscoder.anon.Fields
 import typings.maximMazurokGapiClientTranscoder.anon.JobTemplateId
 import typings.maximMazurokGapiClientTranscoder.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobTemplatesResource extends js.Object {
+trait JobTemplatesResource extends StObject {
   
   /** Creates a job template in the specified region. */
   def create(request: JobTemplateId): Request[JobTemplate] = js.native

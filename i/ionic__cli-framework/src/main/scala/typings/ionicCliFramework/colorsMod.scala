@@ -1,19 +1,24 @@
 package typings.ionicCliFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/cli-framework/lib/colors", JSImport.Namespace)
-@js.native
-object colorsMod extends js.Object {
+object colorsMod {
   
+  @JSImport("@ionic/cli-framework/lib/colors", "DEFAULT_COLORS")
+  @js.native
   val DEFAULT_COLORS: Colors = js.native
   
+  @JSImport("@ionic/cli-framework/lib/colors", "NO_COLORS")
+  @js.native
   val NO_COLORS: Colors = js.native
   
+  type ColorFunction = js.Function1[/* repeated */ String, String]
+  
   @js.native
-  trait Colors extends js.Object {
+  trait Colors extends StObject {
     
     /**
       * Used to mark text as ancillary or supportive.
@@ -81,7 +86,7 @@ object colorsMod extends js.Object {
   }
   
   @js.native
-  trait HelpColors extends js.Object {
+  trait HelpColors extends StObject {
     
     var group: HelpGroupColors = js.native
     
@@ -98,7 +103,7 @@ object colorsMod extends js.Object {
   
   /* Inlined {[ G in std.Exclude<@ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup, @ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup.HIDDEN | @ionic/cli-framework.@ionic/cli-framework/definitions.MetadataGroup.ADVANCED> ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction} */
   @js.native
-  trait HelpGroupColors extends js.Object {
+  trait HelpGroupColors extends StObject {
     
     def beta(text: String*): String = js.native
     @JSName("beta")
@@ -119,7 +124,7 @@ object colorsMod extends js.Object {
   
   /* Inlined {[ L in @ionic/cli-framework.@ionic/cli-framework/lib/logger.LoggerLevel ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction} */
   @js.native
-  trait LoggerColors extends js.Object {
+  trait LoggerColors extends StObject {
     
     def DEBUG(text: String*): String = js.native
     @JSName("DEBUG")
@@ -137,6 +142,4 @@ object colorsMod extends js.Object {
     @JSName("WARN")
     var WARN_Original: ColorFunction = js.native
   }
-  
-  type ColorFunction = js.Function1[/* repeated */ String, String]
 }

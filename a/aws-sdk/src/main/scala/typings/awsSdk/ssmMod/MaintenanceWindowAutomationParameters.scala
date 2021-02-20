@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowAutomationParameters extends js.Object {
+trait MaintenanceWindowAutomationParameters extends StObject {
   
   /**
     * The version of an Automation document to use during task execution.
@@ -26,30 +27,18 @@ object MaintenanceWindowAutomationParameters {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowAutomationParametersOps[Self <: MaintenanceWindowAutomationParameters] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowAutomationParametersMutableBuilder[Self <: MaintenanceWindowAutomationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: AutomationParameterMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: AutomationParameterMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

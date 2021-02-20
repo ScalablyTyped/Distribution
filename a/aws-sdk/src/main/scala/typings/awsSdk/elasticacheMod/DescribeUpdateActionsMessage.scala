@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeUpdateActionsMessage extends js.Object {
+trait DescribeUpdateActionsMessage extends StObject {
   
   /**
     * The cache cluster IDs
@@ -66,90 +67,78 @@ object DescribeUpdateActionsMessage {
   }
   
   @scala.inline
-  implicit class DescribeUpdateActionsMessageOps[Self <: DescribeUpdateActionsMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeUpdateActionsMessageMutableBuilder[Self <: DescribeUpdateActionsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterIds(value: CacheClusterIdList): Self = StObject.set(x, "CacheClusterIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheClusterIdsUndefined: Self = StObject.set(x, "CacheClusterIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheClusterIdsVarargs(value: String*): Self = StObject.set(x, "CacheClusterIds", js.Array(value :_*))
     
     @scala.inline
-    def setCacheClusterIdsVarargs(value: String*): Self = this.set("CacheClusterIds", js.Array(value :_*))
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterIds(value: CacheClusterIdList): Self = this.set("CacheClusterIds", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterIds: Self = this.set("CacheClusterIds", js.undefined)
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setReplicationGroupIds(value: ReplicationGroupIdList): Self = StObject.set(x, "ReplicationGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setReplicationGroupIdsUndefined: Self = StObject.set(x, "ReplicationGroupIds", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setReplicationGroupIdsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setReplicationGroupIdsVarargs(value: String*): Self = this.set("ReplicationGroupIds", js.Array(value :_*))
+    def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupIds(value: ReplicationGroupIdList): Self = this.set("ReplicationGroupIds", value.asInstanceOf[js.Any])
+    def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
     
     @scala.inline
-    def deleteReplicationGroupIds: Self = this.set("ReplicationGroupIds", js.undefined)
+    def setServiceUpdateStatus(value: ServiceUpdateStatusList): Self = StObject.set(x, "ServiceUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    def setServiceUpdateStatusUndefined: Self = StObject.set(x, "ServiceUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
+    def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = StObject.set(x, "ServiceUpdateStatus", js.Array(value :_*))
     
     @scala.inline
-    def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = this.set("ServiceUpdateStatus", js.Array(value :_*))
+    def setServiceUpdateTimeRange(value: TimeRangeFilter): Self = StObject.set(x, "ServiceUpdateTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateStatus(value: ServiceUpdateStatusList): Self = this.set("ServiceUpdateStatus", value.asInstanceOf[js.Any])
+    def setServiceUpdateTimeRangeUndefined: Self = StObject.set(x, "ServiceUpdateTimeRange", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateStatus: Self = this.set("ServiceUpdateStatus", js.undefined)
+    def setShowNodeLevelUpdateStatus(value: BooleanOptional): Self = StObject.set(x, "ShowNodeLevelUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateTimeRange(value: TimeRangeFilter): Self = this.set("ServiceUpdateTimeRange", value.asInstanceOf[js.Any])
+    def setShowNodeLevelUpdateStatusUndefined: Self = StObject.set(x, "ShowNodeLevelUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateTimeRange: Self = this.set("ServiceUpdateTimeRange", js.undefined)
+    def setUpdateActionStatus(value: UpdateActionStatusList): Self = StObject.set(x, "UpdateActionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNodeLevelUpdateStatus(value: BooleanOptional): Self = this.set("ShowNodeLevelUpdateStatus", value.asInstanceOf[js.Any])
+    def setUpdateActionStatusUndefined: Self = StObject.set(x, "UpdateActionStatus", js.undefined)
     
     @scala.inline
-    def deleteShowNodeLevelUpdateStatus: Self = this.set("ShowNodeLevelUpdateStatus", js.undefined)
-    
-    @scala.inline
-    def setUpdateActionStatusVarargs(value: UpdateActionStatus*): Self = this.set("UpdateActionStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdateActionStatus(value: UpdateActionStatusList): Self = this.set("UpdateActionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateActionStatus: Self = this.set("UpdateActionStatus", js.undefined)
+    def setUpdateActionStatusVarargs(value: UpdateActionStatus*): Self = StObject.set(x, "UpdateActionStatus", js.Array(value :_*))
   }
 }

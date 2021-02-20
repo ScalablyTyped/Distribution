@@ -2,12 +2,13 @@ package typings.polished.anon
 
 import typings.polished.polishedStrings.BackslashPlussign
 import typings.polished.polishedStrings.Plussign
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prefix extends js.Object {
+trait Prefix extends StObject {
   
   var infix: RightToLeft = js.native
   
@@ -26,30 +27,18 @@ object Prefix {
   }
   
   @scala.inline
-  implicit class PrefixOps[Self <: Prefix] (val x: Self) extends AnyVal {
+  implicit class PrefixMutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfix(value: RightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrefix(value: ArgCountF): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegSymbol(value: BackslashPlussign): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfix(value: RightToLeft): Self = this.set("infix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: ArgCountF): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegSymbol(value: BackslashPlussign): Self = this.set("regSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: Plussign): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: Plussign): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

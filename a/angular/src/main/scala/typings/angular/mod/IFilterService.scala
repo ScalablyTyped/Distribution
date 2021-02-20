@@ -9,6 +9,7 @@ import typings.angular.angularStrings.lowercase
 import typings.angular.angularStrings.number
 import typings.angular.angularStrings.orderBy
 import typings.angular.angularStrings.uppercase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see https://docs.angularjs.org/api/ng/service/$filter
   */
 @js.native
-trait IFilterService extends js.Object {
+trait IFilterService extends StObject {
   
   def apply(name: currency): IFilterCurrency = js.native
   def apply(name: date): IFilterDate = js.native

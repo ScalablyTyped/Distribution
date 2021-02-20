@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IApplicationDataStatics extends js.Object {
+trait IApplicationDataStatics extends StObject {
   
   var current: ApplicationData = js.native
 }
@@ -18,21 +19,9 @@ object IApplicationDataStatics {
   }
   
   @scala.inline
-  implicit class IApplicationDataStaticsOps[Self <: IApplicationDataStatics] (val x: Self) extends AnyVal {
+  implicit class IApplicationDataStaticsMutableBuilder[Self <: IApplicationDataStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrent(value: ApplicationData): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setCurrent(value: ApplicationData): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }
 }

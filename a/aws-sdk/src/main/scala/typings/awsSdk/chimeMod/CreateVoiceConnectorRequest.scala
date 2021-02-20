@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVoiceConnectorRequest extends js.Object {
+trait CreateVoiceConnectorRequest extends StObject {
   
   /**
     * The AWS Region in which the Amazon Chime Voice Connector is created. Default value: us-east-1.
@@ -31,30 +32,18 @@ object CreateVoiceConnectorRequest {
   }
   
   @scala.inline
-  implicit class CreateVoiceConnectorRequestOps[Self <: CreateVoiceConnectorRequest] (val x: Self) extends AnyVal {
+  implicit class CreateVoiceConnectorRequestMutableBuilder[Self <: CreateVoiceConnectorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: VoiceConnectorAwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: VoiceConnectorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: VoiceConnectorName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequireEncryption(value: Boolean): Self = this.set("RequireEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAwsRegion(value: VoiceConnectorAwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    def setRequireEncryption(value: Boolean): Self = StObject.set(x, "RequireEncryption", value.asInstanceOf[js.Any])
   }
 }

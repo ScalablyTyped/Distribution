@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileAttrs extends js.Object {
+trait TileAttrs extends StObject {
   
   var reps: js.Array[Double] = js.native
 }
@@ -18,24 +19,12 @@ object TileAttrs {
   }
   
   @scala.inline
-  implicit class TileAttrsOps[Self <: TileAttrs] (val x: Self) extends AnyVal {
+  implicit class TileAttrsMutableBuilder[Self <: TileAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReps(value: js.Array[Double]): Self = StObject.set(x, "reps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepsVarargs(value: Double*): Self = this.set("reps", js.Array(value :_*))
-    
-    @scala.inline
-    def setReps(value: js.Array[Double]): Self = this.set("reps", value.asInstanceOf[js.Any])
+    def setRepsVarargs(value: Double*): Self = StObject.set(x, "reps", js.Array(value :_*))
   }
 }

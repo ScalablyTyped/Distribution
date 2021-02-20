@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoncurrentVersionExpiration extends js.Object {
+trait NoncurrentVersionExpiration extends StObject {
   
   /**
     * Specifies the number of days an object is noncurrent before Amazon S3 can perform the associated action. For information about the noncurrent days calculations, see How Amazon S3 Calculates When an Object Became Noncurrent in the Amazon Simple Storage Service Developer Guide.
@@ -21,24 +22,12 @@ object NoncurrentVersionExpiration {
   }
   
   @scala.inline
-  implicit class NoncurrentVersionExpirationOps[Self <: NoncurrentVersionExpiration] (val x: Self) extends AnyVal {
+  implicit class NoncurrentVersionExpirationMutableBuilder[Self <: NoncurrentVersionExpiration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoncurrentDays(value: Days): Self = StObject.set(x, "NoncurrentDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNoncurrentDays(value: Days): Self = this.set("NoncurrentDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoncurrentDays: Self = this.set("NoncurrentDays", js.undefined)
+    def setNoncurrentDaysUndefined: Self = StObject.set(x, "NoncurrentDays", js.undefined)
   }
 }

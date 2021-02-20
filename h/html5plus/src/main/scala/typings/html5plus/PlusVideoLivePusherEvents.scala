@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
 @js.native
-trait PlusVideoLivePusherEvents extends js.Object {
+trait PlusVideoLivePusherEvents extends StObject {
   
   /**
     * 渲染错误事件
@@ -83,36 +84,24 @@ object PlusVideoLivePusherEvents {
   }
   
   @scala.inline
-  implicit class PlusVideoLivePusherEventsOps[Self <: PlusVideoLivePusherEvents] (val x: Self) extends AnyVal {
+  implicit class PlusVideoLivePusherEventsMutableBuilder[Self <: PlusVideoLivePusherEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetstatus(value: String): Self = StObject.set(x, "netstatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setNetstatusUndefined: Self = StObject.set(x, "netstatus", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setStatechange(value: String): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetstatus(value: String): Self = this.set("netstatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetstatus: Self = this.set("netstatus", js.undefined)
-    
-    @scala.inline
-    def setStatechange(value: String): Self = this.set("statechange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatechange: Self = this.set("statechange", js.undefined)
+    def setStatechangeUndefined: Self = StObject.set(x, "statechange", js.undefined)
   }
 }

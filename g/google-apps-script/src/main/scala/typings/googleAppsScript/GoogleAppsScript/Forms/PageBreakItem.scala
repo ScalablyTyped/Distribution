@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     pageThree.setGoToPage(FormApp.PageNavigationType.RESTART); // At end of page two, restart form
   */
 @js.native
-trait PageBreakItem extends js.Object {
+trait PageBreakItem extends StObject {
   
   def duplicate(): PageBreakItem = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplateInstanceMetadataOptionsRequest extends js.Object {
+trait LaunchTemplateInstanceMetadataOptionsRequest extends StObject {
   
   /**
     * This parameter enables or disables the HTTP metadata endpoint on your instances. If the parameter is not specified, the default state is enabled.  If you specify a value of disabled, you will not be able to access your instance metadata.  
@@ -31,36 +32,24 @@ object LaunchTemplateInstanceMetadataOptionsRequest {
   }
   
   @scala.inline
-  implicit class LaunchTemplateInstanceMetadataOptionsRequestOps[Self <: LaunchTemplateInstanceMetadataOptionsRequest] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateInstanceMetadataOptionsRequestMutableBuilder[Self <: LaunchTemplateInstanceMetadataOptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpEndpoint(value: LaunchTemplateInstanceMetadataEndpointState): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpEndpointUndefined: Self = StObject.set(x, "HttpEndpoint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpPutResponseHopLimit(value: Integer): Self = StObject.set(x, "HttpPutResponseHopLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpEndpoint(value: LaunchTemplateInstanceMetadataEndpointState): Self = this.set("HttpEndpoint", value.asInstanceOf[js.Any])
+    def setHttpPutResponseHopLimitUndefined: Self = StObject.set(x, "HttpPutResponseHopLimit", js.undefined)
     
     @scala.inline
-    def deleteHttpEndpoint: Self = this.set("HttpEndpoint", js.undefined)
+    def setHttpTokens(value: LaunchTemplateHttpTokensState): Self = StObject.set(x, "HttpTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpPutResponseHopLimit(value: Integer): Self = this.set("HttpPutResponseHopLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpPutResponseHopLimit: Self = this.set("HttpPutResponseHopLimit", js.undefined)
-    
-    @scala.inline
-    def setHttpTokens(value: LaunchTemplateHttpTokensState): Self = this.set("HttpTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpTokens: Self = this.set("HttpTokens", js.undefined)
+    def setHttpTokensUndefined: Self = StObject.set(x, "HttpTokens", js.undefined)
   }
 }

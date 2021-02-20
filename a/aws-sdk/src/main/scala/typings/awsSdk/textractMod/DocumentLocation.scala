@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentLocation extends js.Object {
+trait DocumentLocation extends StObject {
   
   /**
     * The Amazon S3 bucket that contains the input document.
@@ -21,24 +22,12 @@ object DocumentLocation {
   }
   
   @scala.inline
-  implicit class DocumentLocationOps[Self <: DocumentLocation] (val x: Self) extends AnyVal {
+  implicit class DocumentLocationMutableBuilder[Self <: DocumentLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3Object(value: S3Object): Self = this.set("S3Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Object: Self = this.set("S3Object", js.undefined)
+    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

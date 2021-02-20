@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2DevicesAndroidAppVersionFilter extends js.Object {
+trait GoogleActionsV2DevicesAndroidAppVersionFilter extends StObject {
   
   /**
     * Max version code, inclusive.
@@ -33,30 +34,18 @@ object GoogleActionsV2DevicesAndroidAppVersionFilter {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2DevicesAndroidAppVersionFilterOps[Self <: GoogleActionsV2DevicesAndroidAppVersionFilter] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2DevicesAndroidAppVersionFilterMutableBuilder[Self <: GoogleActionsV2DevicesAndroidAppVersionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinVersion(value: Double): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVersion(value: Double): Self = this.set("maxVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxVersion: Self = this.set("maxVersion", js.undefined)
-    
-    @scala.inline
-    def setMinVersion(value: Double): Self = this.set("minVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinVersion: Self = this.set("minVersion", js.undefined)
+    def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
   }
 }

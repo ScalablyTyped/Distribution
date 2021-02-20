@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceStatus extends js.Object {
+trait InstanceStatus extends StObject {
   
   /**
     * The Availability Zone of the instance.
@@ -51,63 +52,51 @@ object InstanceStatus {
   }
   
   @scala.inline
-  implicit class InstanceStatusOps[Self <: InstanceStatus] (val x: Self) extends AnyVal {
+  implicit class InstanceStatusMutableBuilder[Self <: InstanceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: InstanceStatusEventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setEventsVarargs(value: InstanceStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: InstanceStatusEvent*): Self = this.set("Events", js.Array(value :_*))
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: InstanceStatusEventList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("Events", js.undefined)
+    def setInstanceState(value: InstanceState): Self = StObject.set(x, "InstanceState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setInstanceStateUndefined: Self = StObject.set(x, "InstanceState", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setInstanceStatus(value: InstanceStatusSummary): Self = StObject.set(x, "InstanceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceState(value: InstanceState): Self = this.set("InstanceState", value.asInstanceOf[js.Any])
+    def setInstanceStatusUndefined: Self = StObject.set(x, "InstanceStatus", js.undefined)
     
     @scala.inline
-    def deleteInstanceState: Self = this.set("InstanceState", js.undefined)
+    def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceStatus(value: InstanceStatusSummary): Self = this.set("InstanceStatus", value.asInstanceOf[js.Any])
+    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
     @scala.inline
-    def deleteInstanceStatus: Self = this.set("InstanceStatus", js.undefined)
+    def setSystemStatus(value: InstanceStatusSummary): Self = StObject.set(x, "SystemStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
-    
-    @scala.inline
-    def setSystemStatus(value: InstanceStatusSummary): Self = this.set("SystemStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemStatus: Self = this.set("SystemStatus", js.undefined)
+    def setSystemStatusUndefined: Self = StObject.set(x, "SystemStatus", js.undefined)
   }
 }

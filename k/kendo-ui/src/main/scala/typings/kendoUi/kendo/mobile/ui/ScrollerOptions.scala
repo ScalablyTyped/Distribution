@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollerOptions extends js.Object {
+trait ScrollerOptions extends StObject {
   
   var elastic: js.UndefOr[Boolean] = js.native
   
@@ -38,84 +39,72 @@ object ScrollerOptions {
   }
   
   @scala.inline
-  implicit class ScrollerOptionsOps[Self <: ScrollerOptions] (val x: Self) extends AnyVal {
+  implicit class ScrollerOptionsMutableBuilder[Self <: ScrollerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElastic(value: Boolean): Self = StObject.set(x, "elastic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElasticUndefined: Self = StObject.set(x, "elastic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: ScrollerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElastic(value: Boolean): Self = this.set("elastic", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteElastic: Self = this.set("elastic", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: ScrollerMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setPull(value: /* e */ ScrollerEvent => Unit): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPullOffset(value: Double): Self = StObject.set(x, "pullOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPullOffsetUndefined: Self = StObject.set(x, "pullOffset", js.undefined)
     
     @scala.inline
-    def setPull(value: /* e */ ScrollerEvent => Unit): Self = this.set("pull", js.Any.fromFunction1(value))
+    def setPullToRefresh(value: Boolean): Self = StObject.set(x, "pullToRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePull: Self = this.set("pull", js.undefined)
+    def setPullToRefreshUndefined: Self = StObject.set(x, "pullToRefresh", js.undefined)
     
     @scala.inline
-    def setPullOffset(value: Double): Self = this.set("pullOffset", value.asInstanceOf[js.Any])
+    def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
     @scala.inline
-    def deletePullOffset: Self = this.set("pullOffset", js.undefined)
+    def setResize(value: /* e */ ScrollerEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPullToRefresh(value: Boolean): Self = this.set("pullToRefresh", value.asInstanceOf[js.Any])
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deletePullToRefresh: Self = this.set("pullToRefresh", js.undefined)
+    def setScroll(value: /* e */ ScrollerScrollEvent => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResize(value: /* e */ ScrollerEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroll(value: /* e */ ScrollerScrollEvent => Unit): Self = this.set("scroll", js.Any.fromFunction1(value))
+    def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setVisibleScrollHints(value: Boolean): Self = StObject.set(x, "visibleScrollHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNative(value: Boolean): Self = this.set("useNative", value.asInstanceOf[js.Any])
+    def setVisibleScrollHintsUndefined: Self = StObject.set(x, "visibleScrollHints", js.undefined)
     
     @scala.inline
-    def deleteUseNative: Self = this.set("useNative", js.undefined)
+    def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibleScrollHints(value: Boolean): Self = this.set("visibleScrollHints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleScrollHints: Self = this.set("visibleScrollHints", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Boolean): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

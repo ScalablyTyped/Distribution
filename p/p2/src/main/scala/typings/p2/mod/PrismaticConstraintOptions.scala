@@ -1,5 +1,6 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object PrismaticConstraintOptions {
   }
   
   @scala.inline
-  implicit class PrismaticConstraintOptionsOps[Self <: PrismaticConstraintOptions] (val x: Self) extends AnyVal {
+  implicit class PrismaticConstraintOptionsMutableBuilder[Self <: PrismaticConstraintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableRotationalLock(value: Boolean): Self = StObject.set(x, "disableRotationalLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableRotationalLockUndefined: Self = StObject.set(x, "disableRotationalLock", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRotationalLock(value: Boolean): Self = this.set("disableRotationalLock", value.asInstanceOf[js.Any])
+    def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
     
     @scala.inline
-    def deleteDisableRotationalLock: Self = this.set("disableRotationalLock", js.undefined)
+    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = this.set("localAnchorA", value.asInstanceOf[js.Any])
+    def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
     
     @scala.inline
-    def deleteLocalAnchorA: Self = this.set("localAnchorA", js.undefined)
+    def setLocalAxisA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAxisA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = this.set("localAnchorB", value.asInstanceOf[js.Any])
+    def setLocalAxisAUndefined: Self = StObject.set(x, "localAxisA", js.undefined)
     
     @scala.inline
-    def deleteLocalAnchorB: Self = this.set("localAnchorB", js.undefined)
+    def setLowerLimit(value: Double): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAxisA(value: js.Tuple2[Double, Double]): Self = this.set("localAxisA", value.asInstanceOf[js.Any])
+    def setLowerLimitUndefined: Self = StObject.set(x, "lowerLimit", js.undefined)
     
     @scala.inline
-    def deleteLocalAxisA: Self = this.set("localAxisA", js.undefined)
+    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerLimit(value: Double): Self = this.set("lowerLimit", value.asInstanceOf[js.Any])
+    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
     
     @scala.inline
-    def deleteLowerLimit: Self = this.set("lowerLimit", js.undefined)
+    def setUpperLimit(value: Double): Self = StObject.set(x, "upperLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxForce(value: Double): Self = this.set("maxForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxForce: Self = this.set("maxForce", js.undefined)
-    
-    @scala.inline
-    def setUpperLimit(value: Double): Self = this.set("upperLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperLimit: Self = this.set("upperLimit", js.undefined)
+    def setUpperLimitUndefined: Self = StObject.set(x, "upperLimit", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendProjectSessionActionRequest extends js.Object {
+trait SendProjectSessionActionRequest extends StObject {
   
   /**
     * A unique identifier for an interactive session that's currently open and ready for work. The action will be performed on this session.
@@ -40,51 +41,39 @@ object SendProjectSessionActionRequest {
   }
   
   @scala.inline
-  implicit class SendProjectSessionActionRequestOps[Self <: SendProjectSessionActionRequest] (val x: Self) extends AnyVal {
+  implicit class SendProjectSessionActionRequestMutableBuilder[Self <: SendProjectSessionActionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientSessionId(value: ClientSessionId): Self = StObject.set(x, "ClientSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientSessionIdUndefined: Self = StObject.set(x, "ClientSessionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProjectName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPreview(value: Preview): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSessionId(value: ClientSessionId): Self = this.set("ClientSessionId", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "Preview", js.undefined)
     
     @scala.inline
-    def deleteClientSessionId: Self = this.set("ClientSessionId", js.undefined)
+    def setRecipeStep(value: RecipeStep): Self = StObject.set(x, "RecipeStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Preview): Self = this.set("Preview", value.asInstanceOf[js.Any])
+    def setRecipeStepUndefined: Self = StObject.set(x, "RecipeStep", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("Preview", js.undefined)
+    def setStepIndex(value: StepIndex): Self = StObject.set(x, "StepIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipeStep(value: RecipeStep): Self = this.set("RecipeStep", value.asInstanceOf[js.Any])
+    def setStepIndexUndefined: Self = StObject.set(x, "StepIndex", js.undefined)
     
     @scala.inline
-    def deleteRecipeStep: Self = this.set("RecipeStep", js.undefined)
+    def setViewFrame(value: ViewFrame): Self = StObject.set(x, "ViewFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepIndex(value: StepIndex): Self = this.set("StepIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepIndex: Self = this.set("StepIndex", js.undefined)
-    
-    @scala.inline
-    def setViewFrame(value: ViewFrame): Self = this.set("ViewFrame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewFrame: Self = this.set("ViewFrame", js.undefined)
+    def setViewFrameUndefined: Self = StObject.set(x, "ViewFrame", js.undefined)
   }
 }

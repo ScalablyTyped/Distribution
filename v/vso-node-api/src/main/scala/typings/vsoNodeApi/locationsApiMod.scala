@@ -8,13 +8,19 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.ConnectOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/LocationsApi", JSImport.Namespace)
-@js.native
-object locationsApiMod extends js.Object {
+object locationsApiMod {
+  
+  @JSImport("vso-node-api/LocationsApi", "LocationsApi")
+  @js.native
+  class LocationsApi protected () extends ILocationsApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait ILocationsApi extends ClientApiBase {
@@ -62,11 +68,5 @@ object locationsApiMod extends js.Object {
     def getServiceDefinitions(serviceType: String): js.Promise[js.Array[ServiceDefinition]] = js.native
     
     def updateServiceDefinitions(serviceDefinitions: VssJsonCollectionWrapperV[js.Array[ServiceDefinition]]): js.Promise[Unit] = js.native
-  }
-  
-  @js.native
-  class LocationsApi protected () extends ILocationsApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

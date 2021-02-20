@@ -1,13 +1,14 @@
 package typings.nodal.mod
 
 import typings.nodal.anon.TypeofModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "RelationshipPath")
 @js.native
-class RelationshipPath protected () extends js.Object {
+class RelationshipPath protected () extends StObject {
   def this(path: js.Array[RelationshipEdge | RelationshipNode]) = this()
   
   def add(node: RelationshipNode, edge: RelationshipEdge): RelationshipPath = js.native

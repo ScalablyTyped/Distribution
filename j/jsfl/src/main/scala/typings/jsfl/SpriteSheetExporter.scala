@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpriteSheetExporter extends js.Object {
+trait SpriteSheetExporter extends StObject {
   
   def addBitmap(item: FlashItem): js.Any = js.native
   

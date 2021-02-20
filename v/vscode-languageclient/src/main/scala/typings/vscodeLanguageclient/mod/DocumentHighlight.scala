@@ -1,18 +1,21 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "DocumentHighlight")
-@js.native
-object DocumentHighlight extends js.Object {
+object DocumentHighlight {
   
   /**
     * Create a DocumentHighlight object.
     * @param range The range the highlight applies to.
     */
+  @JSImport("vscode-languageclient", "DocumentHighlight.create")
+  @js.native
   def create(range: typings.vscodeLanguageserverTypes.mod.Range): typings.vscodeLanguageserverTypes.mod.DocumentHighlight = js.native
+  @JSImport("vscode-languageclient", "DocumentHighlight.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     kind: typings.vscodeLanguageserverTypes.mod.DocumentHighlightKind

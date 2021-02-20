@@ -4,14 +4,14 @@ import typings.three.anon.Distance
 import typings.three.cameraMod.Camera
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/objects/LOD", JSImport.Namespace)
-@js.native
-object lodMod extends js.Object {
+object lodMod {
   
+  @JSImport("three/src/objects/LOD", "LOD")
   @js.native
   class LOD () extends Object3D {
     

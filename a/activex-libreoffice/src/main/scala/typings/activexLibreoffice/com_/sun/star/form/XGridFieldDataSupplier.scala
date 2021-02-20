@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,24 +58,12 @@ object XGridFieldDataSupplier {
   }
   
   @scala.inline
-  implicit class XGridFieldDataSupplierOps[Self <: XGridFieldDataSupplier] (val x: Self) extends AnyVal {
+  implicit class XGridFieldDataSupplierMutableBuilder[Self <: XGridFieldDataSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryFieldData(value: (Double, `type`) => SafeArray[_]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueryFieldData(value: (Double, `type`) => SafeArray[_]): Self = this.set("queryFieldData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setQueryFieldDataType(value: `type` => SafeArray[Boolean]): Self = this.set("queryFieldDataType", js.Any.fromFunction1(value))
+    def setQueryFieldDataType(value: `type` => SafeArray[Boolean]): Self = StObject.set(x, "queryFieldDataType", js.Any.fromFunction1(value))
   }
 }

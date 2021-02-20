@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,16 +25,20 @@ class LayoutGridColumn protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk", "pages.LayoutGridColumn")
-@js.native
-object LayoutGridColumn extends js.Object {
+object LayoutGridColumn {
+  
+  @JSImport("mendixmodelsdk", "pages.LayoutGridColumn")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new LayoutGridColumn instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridColumn.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn = js.native
   
   /**
@@ -41,9 +46,22 @@ object LayoutGridColumn extends js.Object {
     * The new LayoutGridColumn will be automatically stored in the 'columns' property
     * of the parent LayoutGridRow element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridColumn.createIn")
+  @js.native
   def createIn(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridRow): typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridColumn.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridColumn.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

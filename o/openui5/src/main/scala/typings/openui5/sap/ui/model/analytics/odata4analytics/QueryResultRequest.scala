@@ -1,12 +1,13 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResultRequest extends js.Object {
+trait QueryResultRequest extends StObject {
   
   /**
     * Add one or more dimensions to the aggregation level
@@ -246,87 +247,75 @@ object QueryResultRequest {
   }
   
   @scala.inline
-  implicit class QueryResultRequestOps[Self <: QueryResultRequest] (val x: Self) extends AnyVal {
+  implicit class QueryResultRequestMutableBuilder[Self <: QueryResultRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "addToAggregationLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAggregationLevel(value: () => js.Array[_]): Self = StObject.set(x, "getAggregationLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAggregationLevelDetails(value: js.Any => js.Any): Self = StObject.set(x, "getAggregationLevelDetails", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddToAggregationLevel(value: js.Any => Unit): Self = this.set("addToAggregationLevel", js.Any.fromFunction1(value))
+    def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAggregationLevel(value: () => js.Array[_]): Self = this.set("getAggregationLevel", js.Any.fromFunction0(value))
+    def setGetMeasureNames(value: () => js.Array[_]): Self = StObject.set(x, "getMeasureNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAggregationLevelDetails(value: js.Any => js.Any): Self = this.set("getAggregationLevelDetails", js.Any.fromFunction1(value))
+    def setGetParameterizationRequest(value: () => js.Any): Self = StObject.set(x, "getParameterizationRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilterExpression(value: () => FilterExpression): Self = this.set("getFilterExpression", js.Any.fromFunction0(value))
+    def setGetQueryResult(value: () => QueryResult): Self = StObject.set(x, "getQueryResult", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMeasureNames(value: () => js.Array[_]): Self = this.set("getMeasureNames", js.Any.fromFunction0(value))
+    def setGetResultPageBoundaries(value: () => js.Any): Self = StObject.set(x, "getResultPageBoundaries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParameterizationRequest(value: () => js.Any): Self = this.set("getParameterizationRequest", js.Any.fromFunction0(value))
+    def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetQueryResult(value: () => QueryResult): Self = this.set("getQueryResult", js.Any.fromFunction0(value))
+    def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetResultPageBoundaries(value: () => js.Any): Self = this.set("getResultPageBoundaries", js.Any.fromFunction0(value))
+    def setGetURIToQueryResultEntitySet(value: String => String): Self = StObject.set(x, "getURIToQueryResultEntitySet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSortExpression(value: () => SortExpression): Self = this.set("getSortExpression", js.Any.fromFunction0(value))
+    def setGetURIToQueryResultEntries(value: (String, String) => String): Self = StObject.set(x, "getURIToQueryResultEntries", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetURIQueryOptionValue(value: String => String): Self = this.set("getURIQueryOptionValue", js.Any.fromFunction1(value))
+    def setIncludeDimensionKeyTextAttributes(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "includeDimensionKeyTextAttributes", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetURIToQueryResultEntitySet(value: String => String): Self = this.set("getURIToQueryResultEntitySet", js.Any.fromFunction1(value))
+    def setIncludeMeasureRawFormattedValueUnit(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "includeMeasureRawFormattedValueUnit", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetURIToQueryResultEntries(value: (String, String) => String): Self = this.set("getURIToQueryResultEntries", js.Any.fromFunction2(value))
+    def setRemoveFromAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "removeFromAggregationLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncludeDimensionKeyTextAttributes(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("includeDimensionKeyTextAttributes", js.Any.fromFunction4(value))
+    def setSetAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "setAggregationLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncludeMeasureRawFormattedValueUnit(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("includeMeasureRawFormattedValueUnit", js.Any.fromFunction4(value))
+    def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveFromAggregationLevel(value: js.Any => Unit): Self = this.set("removeFromAggregationLevel", js.Any.fromFunction1(value))
+    def setSetMeasures(value: js.Any => Unit): Self = StObject.set(x, "setMeasures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAggregationLevel(value: js.Any => Unit): Self = this.set("setAggregationLevel", js.Any.fromFunction1(value))
+    def setSetParameterizationRequest(value: js.Any => Unit): Self = StObject.set(x, "setParameterizationRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFilterExpression(value: FilterExpression => Unit): Self = this.set("setFilterExpression", js.Any.fromFunction1(value))
+    def setSetRequestOptions(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "setRequestOptions", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetMeasures(value: js.Any => Unit): Self = this.set("setMeasures", js.Any.fromFunction1(value))
+    def setSetResourcePath(value: js.Any => Unit): Self = StObject.set(x, "setResourcePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetParameterizationRequest(value: js.Any => Unit): Self = this.set("setParameterizationRequest", js.Any.fromFunction1(value))
+    def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = StObject.set(x, "setResultPageBoundaries", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetRequestOptions(value: (Boolean, Boolean, Boolean) => Unit): Self = this.set("setRequestOptions", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetResourcePath(value: js.Any => Unit): Self = this.set("setResourcePath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = this.set("setResultPageBoundaries", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetSortExpression(value: SortExpression => Unit): Self = this.set("setSortExpression", js.Any.fromFunction1(value))
+    def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 
 import typings.node.Buffer
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.manageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

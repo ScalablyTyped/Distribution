@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Graphics.Printing
 
 import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackagePropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPrintTask extends js.Object {
+trait IPrintTask extends StObject {
   
   var oncompleted: js.Any = js.native
   
@@ -39,39 +40,27 @@ object IPrintTask {
   }
   
   @scala.inline
-  implicit class IPrintTaskOps[Self <: IPrintTask] (val x: Self) extends AnyVal {
+  implicit class IPrintTaskMutableBuilder[Self <: IPrintTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnpreviewing(value: js.Any): Self = StObject.set(x, "onpreviewing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnprogressing(value: js.Any): Self = StObject.set(x, "onprogressing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOncompleted(value: js.Any): Self = this.set("oncompleted", value.asInstanceOf[js.Any])
+    def setOnsubmitting(value: js.Any): Self = StObject.set(x, "onsubmitting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpreviewing(value: js.Any): Self = this.set("onpreviewing", value.asInstanceOf[js.Any])
+    def setOptions(value: PrintTaskOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnprogressing(value: js.Any): Self = this.set("onprogressing", value.asInstanceOf[js.Any])
+    def setProperties(value: DataPackagePropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsubmitting(value: js.Any): Self = this.set("onsubmitting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: PrintTaskOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: DataPackagePropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: IPrintDocumentSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: IPrintDocumentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

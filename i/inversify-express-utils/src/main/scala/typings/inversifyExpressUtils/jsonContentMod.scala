@@ -1,14 +1,14 @@
 package typings.inversifyExpressUtils
 
 import typings.inversifyExpressUtils.httpContentMod.HttpContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-express-utils/dts/content/jsonContent", JSImport.Namespace)
-@js.native
-object jsonContentMod extends js.Object {
+object jsonContentMod {
   
+  @JSImport("inversify-express-utils/dts/content/jsonContent", "JsonContent")
   @js.native
   class JsonContent protected () extends HttpContent {
     def this(content: js.Any) = this()

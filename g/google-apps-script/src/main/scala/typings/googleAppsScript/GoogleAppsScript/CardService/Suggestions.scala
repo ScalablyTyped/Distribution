@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *             .addSuggestion("Second suggestion"))
   */
 @js.native
-trait Suggestions extends js.Object {
+trait Suggestions extends StObject {
   
   def addSuggestion(suggestion: String): Suggestions = js.native
   
@@ -28,24 +29,12 @@ object Suggestions {
   }
   
   @scala.inline
-  implicit class SuggestionsOps[Self <: Suggestions] (val x: Self) extends AnyVal {
+  implicit class SuggestionsMutableBuilder[Self <: Suggestions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSuggestion(value: String => Suggestions): Self = StObject.set(x, "addSuggestion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddSuggestion(value: String => Suggestions): Self = this.set("addSuggestion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAddSuggestions(value: js.Array[String] => Suggestions): Self = this.set("addSuggestions", js.Any.fromFunction1(value))
+    def setAddSuggestions(value: js.Array[String] => Suggestions): Self = StObject.set(x, "addSuggestions", js.Any.fromFunction1(value))
   }
 }

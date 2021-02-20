@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PresentLocalNotificationDetails extends js.Object {
+trait PresentLocalNotificationDetails extends StObject {
   
   var alertAction: String = js.native
   
@@ -30,54 +31,42 @@ object PresentLocalNotificationDetails {
   }
   
   @scala.inline
-  implicit class PresentLocalNotificationDetailsOps[Self <: PresentLocalNotificationDetails] (val x: Self) extends AnyVal {
+  implicit class PresentLocalNotificationDetailsMutableBuilder[Self <: PresentLocalNotificationDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertAction(value: String): Self = StObject.set(x, "alertAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertBody(value: String): Self = StObject.set(x, "alertBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertTitle(value: String): Self = StObject.set(x, "alertTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertAction(value: String): Self = this.set("alertAction", value.asInstanceOf[js.Any])
+    def setAlertTitleUndefined: Self = StObject.set(x, "alertTitle", js.undefined)
     
     @scala.inline
-    def setAlertBody(value: String): Self = this.set("alertBody", value.asInstanceOf[js.Any])
+    def setApplicationIconBadgeNumber(value: Double): Self = StObject.set(x, "applicationIconBadgeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertTitle(value: String): Self = this.set("alertTitle", value.asInstanceOf[js.Any])
+    def setApplicationIconBadgeNumberUndefined: Self = StObject.set(x, "applicationIconBadgeNumber", js.undefined)
     
     @scala.inline
-    def deleteAlertTitle: Self = this.set("alertTitle", js.undefined)
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationIconBadgeNumber(value: Double): Self = this.set("applicationIconBadgeNumber", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def deleteApplicationIconBadgeNumber: Self = this.set("applicationIconBadgeNumber", js.undefined)
+    def setSoundName(value: String): Self = StObject.set(x, "soundName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setSoundNameUndefined: Self = StObject.set(x, "soundName", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setUserInfo(value: js.Object): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundName(value: String): Self = this.set("soundName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoundName: Self = this.set("soundName", js.undefined)
-    
-    @scala.inline
-    def setUserInfo(value: js.Object): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

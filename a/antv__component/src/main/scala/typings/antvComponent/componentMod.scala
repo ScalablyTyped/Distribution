@@ -8,13 +8,18 @@ import typings.antvGBase.mod.Base
 import typings.antvGBase.typesMod.BBox
 import typings.std.Partial
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/abstract/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
+  
+  @JSImport("@antv/component/lib/abstract/component", JSImport.Default)
+  @js.native
+  abstract class default[T /* <: ComponentCfg */] protected () extends Component[T] {
+    def this(cfg: T) = this()
+  }
   
   @js.native
   trait Component[T /* <: ComponentCfg */]
@@ -35,7 +40,7 @@ object componentMod extends js.Object {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): js.Any with (Record[String, js.Array[EventType]]) = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
     
     def getLayoutBBox(): BBox = js.native
     
@@ -57,35 +62,29 @@ object componentMod extends js.Object {
     def isSlider(): Boolean = js.native
     
     /**
-      * 移除事件
+      * 取消监听一个事件，或者一个channel
+      * @param evt
+      * @param callback
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): js.Any with this.type = js.native
-    /**
-      * 移除事件
-      * @param eventName 事件名
-      */
+    override def off(): this.type with js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(eventName: String): js.Any with this.type = js.native
-    /**
-      * 移除事件
-      * @param eventName 事件名
-      * @param callback  回调函数
-      */
+    override def off(evt: String): this.type with js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(eventName: String, callback: js.Function): js.Any with this.type = js.native
+    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
     
     /**
-      * 绑定事件
-      * @param  eventName 事件名
-      * @param callback  回调函数
+      * 监听一个事件
+      * @param evt
+      * @param callback
+      * @param once
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(eventName: String, callback: js.Function): js.Any with this.type = js.native
+    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
     
     /**
       * 绘制组件
@@ -106,10 +105,5 @@ object componentMod extends js.Object {
     def update(cfg: Partial[T]): Unit = js.native
     
     /* protected */ def updateInner(cfg: Partial[T]): Unit = js.native
-  }
-  
-  @js.native
-  abstract class default[T /* <: ComponentCfg */] protected () extends Component[T] {
-    def this(cfg: T) = this()
   }
 }

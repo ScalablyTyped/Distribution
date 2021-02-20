@@ -1,11 +1,12 @@
 package typings.awsSdk.ivsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stream extends js.Object {
+trait Stream extends StObject {
   
   /**
     * Channel ARN for the stream.
@@ -46,54 +47,42 @@ object Stream {
   }
   
   @scala.inline
-  implicit class StreamOps[Self <: Stream] (val x: Self) extends AnyVal {
+  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealth(value: StreamHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelArn(value: ChannelArn): Self = this.set("channelArn", value.asInstanceOf[js.Any])
+    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
     @scala.inline
-    def deleteChannelArn: Self = this.set("channelArn", js.undefined)
+    def setPlaybackUrl(value: PlaybackURL): Self = StObject.set(x, "playbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealth(value: StreamHealth): Self = this.set("health", value.asInstanceOf[js.Any])
+    def setPlaybackUrlUndefined: Self = StObject.set(x, "playbackUrl", js.undefined)
     
     @scala.inline
-    def deleteHealth: Self = this.set("health", js.undefined)
+    def setStartTime(value: StreamStartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackUrl(value: PlaybackURL): Self = this.set("playbackUrl", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deletePlaybackUrl: Self = this.set("playbackUrl", js.undefined)
+    def setState(value: StreamState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: StreamStartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setViewerCount(value: StreamViewerCount): Self = StObject.set(x, "viewerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: StreamState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setViewerCount(value: StreamViewerCount): Self = this.set("viewerCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewerCount: Self = this.set("viewerCount", js.undefined)
+    def setViewerCountUndefined: Self = StObject.set(x, "viewerCount", js.undefined)
   }
 }

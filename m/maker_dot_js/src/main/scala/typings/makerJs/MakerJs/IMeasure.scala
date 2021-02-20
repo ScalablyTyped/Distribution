@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A measurement of extents, the high and low points.
   */
 @js.native
-trait IMeasure extends js.Object {
+trait IMeasure extends StObject {
   
   /**
     * The point containing both the highest x and y values of the rectangle containing the item being measured.
@@ -29,24 +30,12 @@ object IMeasure {
   }
   
   @scala.inline
-  implicit class IMeasureOps[Self <: IMeasure] (val x: Self) extends AnyVal {
+  implicit class IMeasureMutableBuilder[Self <: IMeasure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHigh(value: IPoint): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHigh(value: IPoint): Self = this.set("high", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLow(value: IPoint): Self = this.set("low", value.asInstanceOf[js.Any])
+    def setLow(value: IPoint): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
   }
 }

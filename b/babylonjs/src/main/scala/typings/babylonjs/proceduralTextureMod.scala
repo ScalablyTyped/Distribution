@@ -14,14 +14,14 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/Procedurals/proceduralTexture", JSImport.Namespace)
-@js.native
-object proceduralTextureMod extends js.Object {
+object proceduralTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/Procedurals/proceduralTexture", "ProceduralTexture")
   @js.native
   class ProceduralTexture protected () extends Texture {
     /**

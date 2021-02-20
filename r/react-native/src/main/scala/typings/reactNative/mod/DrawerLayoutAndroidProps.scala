@@ -11,6 +11,7 @@ import typings.reactNative.reactNativeStrings.left
 import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.right
 import typings.reactNative.reactNativeStrings.unlocked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,81 +116,69 @@ object DrawerLayoutAndroidProps {
   }
   
   @scala.inline
-  implicit class DrawerLayoutAndroidPropsOps[Self <: DrawerLayoutAndroidProps] (val x: Self) extends AnyVal {
+  implicit class DrawerLayoutAndroidPropsMutableBuilder[Self <: DrawerLayoutAndroidProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawerBackgroundColor(value: ColorValue): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderNavigationView(value: () => Element): Self = this.set("renderNavigationView", js.Any.fromFunction0(value))
+    def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
     
     @scala.inline
-    def setDrawerBackgroundColor(value: ColorValue): Self = this.set("drawerBackgroundColor", value.asInstanceOf[js.Any])
+    def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrawerBackgroundColor: Self = this.set("drawerBackgroundColor", js.undefined)
+    def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
     
     @scala.inline
-    def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = this.set("drawerLockMode", value.asInstanceOf[js.Any])
+    def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrawerLockMode: Self = this.set("drawerLockMode", js.undefined)
+    def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
     
     @scala.inline
-    def setDrawerPosition(value: left | right): Self = this.set("drawerPosition", value.asInstanceOf[js.Any])
+    def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrawerPosition: Self = this.set("drawerPosition", js.undefined)
+    def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
     @scala.inline
-    def setDrawerWidth(value: Double): Self = this.set("drawerWidth", value.asInstanceOf[js.Any])
+    def setOnDrawerClose(value: () => Unit): Self = StObject.set(x, "onDrawerClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDrawerWidth: Self = this.set("drawerWidth", js.undefined)
+    def setOnDrawerCloseUndefined: Self = StObject.set(x, "onDrawerClose", js.undefined)
     
     @scala.inline
-    def setKeyboardDismissMode(value: none | `on-drag`): Self = this.set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    def setOnDrawerOpen(value: () => Unit): Self = StObject.set(x, "onDrawerOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteKeyboardDismissMode: Self = this.set("keyboardDismissMode", js.undefined)
+    def setOnDrawerOpenUndefined: Self = StObject.set(x, "onDrawerOpen", js.undefined)
     
     @scala.inline
-    def setOnDrawerClose(value: () => Unit): Self = this.set("onDrawerClose", js.Any.fromFunction0(value))
+    def setOnDrawerSlide(value: /* event */ DrawerSlideEvent => Unit): Self = StObject.set(x, "onDrawerSlide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDrawerClose: Self = this.set("onDrawerClose", js.undefined)
+    def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
     
     @scala.inline
-    def setOnDrawerOpen(value: () => Unit): Self = this.set("onDrawerOpen", js.Any.fromFunction0(value))
+    def setOnDrawerStateChanged(value: /* event */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDrawerOpen: Self = this.set("onDrawerOpen", js.undefined)
+    def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
     
     @scala.inline
-    def setOnDrawerSlide(value: /* event */ DrawerSlideEvent => Unit): Self = this.set("onDrawerSlide", js.Any.fromFunction1(value))
+    def setRenderNavigationView(value: () => Element): Self = StObject.set(x, "renderNavigationView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnDrawerSlide: Self = this.set("onDrawerSlide", js.undefined)
+    def setStatusBarBackgroundColor(value: ColorValue): Self = StObject.set(x, "statusBarBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDrawerStateChanged(value: /* event */ Idle | Dragging | Settling => Unit): Self = this.set("onDrawerStateChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDrawerStateChanged: Self = this.set("onDrawerStateChanged", js.undefined)
-    
-    @scala.inline
-    def setStatusBarBackgroundColor(value: ColorValue): Self = this.set("statusBarBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusBarBackgroundColor: Self = this.set("statusBarBackgroundColor", js.undefined)
+    def setStatusBarBackgroundColorUndefined: Self = StObject.set(x, "statusBarBackgroundColor", js.undefined)
   }
 }

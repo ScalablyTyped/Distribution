@@ -1,11 +1,12 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MappingRule extends js.Object {
+trait MappingRule extends StObject {
   
   /**
     * <p>The claim name that must be present in the token, for example, "isAdmin" or
@@ -29,9 +30,43 @@ trait MappingRule extends js.Object {
     */
   var Value: js.UndefOr[String] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MappingRule")
-@js.native
-object MappingRule extends js.Object {
+object MappingRule {
   
+  @scala.inline
+  def apply(): MappingRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[MappingRule]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MappingRule.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: MappingRule): js.Any = js.native
+  
+  @scala.inline
+  implicit class MappingRuleMutableBuilder[Self <: MappingRule] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setClaimUndefined: Self = StObject.set(x, "Claim", js.undefined)
+    
+    @scala.inline
+    def setMatchType(value: MappingRuleMatchType | String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMatchTypeUndefined: Self = StObject.set(x, "MatchType", js.undefined)
+    
+    @scala.inline
+    def setRoleARN(value: String): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    
+    @scala.inline
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+  }
 }

@@ -9,19 +9,22 @@ import typings.rsocketTypes.reactiveSocketTypesMod.ReactiveSocket
 import typings.rsocketTypes.reactiveSocketTypesMod.Responder
 import typings.std.Error
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-core/RSocketMachine", JSImport.Namespace)
-@js.native
-object rsocketmachineMod extends js.Object {
+object rsocketmachineMod {
   
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -32,6 +35,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -41,6 +46,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.UndefOr[scala.Nothing],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -51,6 +58,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -59,6 +68,8 @@ object rsocketmachineMod extends js.Object {
     requestHandler: js.UndefOr[scala.Nothing],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -69,6 +80,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -78,6 +91,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -88,6 +103,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -95,6 +112,8 @@ object rsocketmachineMod extends js.Object {
     serializers: js.UndefOr[scala.Nothing],
     requestHandler: Partial[Responder[D, M]]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -105,6 +124,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -114,6 +135,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.UndefOr[scala.Nothing],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -124,6 +147,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -132,6 +157,8 @@ object rsocketmachineMod extends js.Object {
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -142,6 +169,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -151,6 +180,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -161,12 +192,16 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -177,6 +212,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -186,6 +223,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.UndefOr[scala.Nothing],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -196,6 +235,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -204,6 +245,8 @@ object rsocketmachineMod extends js.Object {
     requestHandler: js.UndefOr[scala.Nothing],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -214,6 +257,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -223,6 +268,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -233,6 +280,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -240,6 +289,8 @@ object rsocketmachineMod extends js.Object {
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -250,6 +301,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -259,6 +312,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.UndefOr[scala.Nothing],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -269,6 +324,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -277,6 +334,8 @@ object rsocketmachineMod extends js.Object {
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -287,6 +346,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -296,6 +357,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @js.native
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -307,11 +370,15 @@ object rsocketmachineMod extends js.Object {
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
   
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -321,6 +388,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -329,6 +398,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.UndefOr[scala.Nothing],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -338,6 +409,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -345,6 +418,8 @@ object rsocketmachineMod extends js.Object {
     serializers: js.UndefOr[scala.Nothing],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -354,6 +429,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -362,6 +439,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -371,12 +450,16 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -386,6 +469,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -394,6 +479,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.UndefOr[scala.Nothing],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -403,6 +490,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -410,6 +499,8 @@ object rsocketmachineMod extends js.Object {
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit]
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -419,6 +510,8 @@ object rsocketmachineMod extends js.Object {
     requesterLeaseHandler: js.UndefOr[scala.Nothing],
     responderLeaseHandler: ResponderLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -427,6 +520,8 @@ object rsocketmachineMod extends js.Object {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
   ): RSocketMachine[D, M] = js.native
+  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
+  @js.native
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],

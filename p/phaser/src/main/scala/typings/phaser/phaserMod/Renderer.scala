@@ -7,22 +7,36 @@ import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotState
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "Renderer")
-@js.native
-object Renderer extends js.Object {
+object Renderer {
   
-  @js.native
-  object Canvas extends js.Object {
+  object Canvas {
+    
+    /**
+      * The Canvas Renderer is responsible for managing 2D canvas rendering contexts, including the one used by the Game's canvas. It tracks the internal state of a given context and can renderer textured Game Objects to it, taking into account alpha, blending, and scaling.
+      */
+    @JSImport("phaser", "Renderer.Canvas.CanvasRenderer")
+    @js.native
+    class CanvasRenderer protected ()
+      extends typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer {
+      /**
+        * 
+        * @param game The Phaser Game instance that owns this renderer.
+        */
+      def this(game: typings.phaser.Phaser.Game) = this()
+    }
     
     /**
       * Returns an array which maps the default blend modes to supported Canvas blend modes.
       * 
       * If the browser doesn't support a blend mode, it will default to the normal `source-over` blend mode.
       */
+    @JSImport("phaser", "Renderer.Canvas.GetBlendModes")
+    @js.native
     def GetBlendModes(): js.Array[_] = js.native
     
     /**
@@ -44,12 +58,16 @@ object Renderer extends js.Object {
       * @param camera The Camera that is rendering the Game Object.
       * @param parentMatrix A parent transform matrix to apply to the Game Object before rendering.
       */
+    @JSImport("phaser", "Renderer.Canvas.SetTransform")
+    @js.native
     def SetTransform(
       renderer: typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer,
       ctx: CanvasRenderingContext2D,
       src: GameObject,
       camera: Camera
     ): Boolean = js.native
+    @JSImport("phaser", "Renderer.Canvas.SetTransform")
+    @js.native
     def SetTransform(
       renderer: typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer,
       ctx: CanvasRenderingContext2D,
@@ -57,23 +75,9 @@ object Renderer extends js.Object {
       camera: Camera,
       parentMatrix: TransformMatrix
     ): Boolean = js.native
-    
-    /**
-      * The Canvas Renderer is responsible for managing 2D canvas rendering contexts, including the one used by the Game's canvas. It tracks the internal state of a given context and can renderer textured Game Objects to it, taking into account alpha, blending, and scaling.
-      */
-    @js.native
-    class CanvasRenderer protected ()
-      extends typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer {
-      /**
-        * 
-        * @param game The Phaser Game instance that owns this renderer.
-        */
-      def this(game: typings.phaser.Phaser.Game) = this()
-    }
   }
   
-  @js.native
-  object Snapshot extends js.Object {
+  object Snapshot {
     
     /**
       * Takes a snapshot of an area from the current frame displayed by a canvas.
@@ -83,6 +87,8 @@ object Renderer extends js.Object {
       * @param sourceCanvas The canvas to take a snapshot of.
       * @param config The snapshot configuration object.
       */
+    @JSImport("phaser", "Renderer.Snapshot.Canvas")
+    @js.native
     def Canvas(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = js.native
     
     /**
@@ -93,14 +99,14 @@ object Renderer extends js.Object {
       * @param sourceCanvas The canvas to take a snapshot of.
       * @param config The snapshot configuration object.
       */
+    @JSImport("phaser", "Renderer.Snapshot.WebGL")
+    @js.native
     def WebGL(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = js.native
   }
   
-  @js.native
-  object WebGL extends js.Object {
+  object WebGL {
     
-    @js.native
-    object Pipelines extends js.Object {
+    object Pipelines {
       
       /**
         * BitmapMaskPipeline handles all bitmap masking rendering in WebGL. It works by using 
@@ -115,6 +121,7 @@ object Renderer extends js.Object {
         * - vertexCapacity: The amount of vertices that shall be allocated
         * - vertexSize: The size of a single vertex in bytes.
         */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.BitmapMaskPipeline")
       @js.native
       class BitmapMaskPipeline protected ()
         extends typings.phaser.Phaser.Renderer.WebGL.Pipelines.BitmapMaskPipeline {
@@ -130,6 +137,7 @@ object Renderer extends js.Object {
         * This pipeline extends TextureTintPipeline so it implements all it's rendering functions
         * and batching system.
         */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.ForwardDiffuseLightPipeline")
       @js.native
       class ForwardDiffuseLightPipeline protected ()
         extends typings.phaser.Phaser.Renderer.WebGL.Pipelines.ForwardDiffuseLightPipeline {
@@ -153,6 +161,7 @@ object Renderer extends js.Object {
         * - vertexCapacity: The amount of vertices that shall be allocated
         * - vertexSize: The size of a single vertex in bytes.
         */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.TextureTintPipeline")
       @js.native
       class TextureTintPipeline protected ()
         extends typings.phaser.Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline {
@@ -174,6 +183,7 @@ object Renderer extends js.Object {
         * - vertexCapacity: The amount of vertices that shall be allocated
         * - vertexSize: The size of a single vertex in bytes.
         */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.TextureTintStripPipeline")
       @js.native
       class TextureTintStripPipeline protected ()
         extends typings.phaser.Phaser.Renderer.WebGL.Pipelines.TextureTintStripPipeline {
@@ -185,20 +195,23 @@ object Renderer extends js.Object {
       }
     }
     
-    @js.native
-    object Utils extends js.Object {
+    object Utils {
       
       /**
         * Counts how many attributes of 32 bits a vertex has
         * @param attributes Array of attributes
         * @param glContext WebGLContext used for check types
         */
+      @JSImport("phaser", "Renderer.WebGL.Utils.getComponentCount")
+      @js.native
       def getComponentCount(attributes: js.Array[_], glContext: WebGLRenderingContext): Double = js.native
       
       /**
         * Unpacks a Uint24 RGB into an array of floats of ranges of 0.0 and 1.0
         * @param rgb RGB packed as a Uint24
         */
+      @JSImport("phaser", "Renderer.WebGL.Utils.getFloatsFromUintRGB")
+      @js.native
       def getFloatsFromUintRGB(rgb: Double): js.Array[_] = js.native
       
       /**
@@ -207,6 +220,8 @@ object Renderer extends js.Object {
         * @param rgb Uint24 representing RGB components
         * @param a Float32 representing Alpha component
         */
+      @JSImport("phaser", "Renderer.WebGL.Utils.getTintAppendFloatAlpha")
+      @js.native
       def getTintAppendFloatAlpha(rgb: Double, a: Double): Double = js.native
       
       /**
@@ -216,6 +231,8 @@ object Renderer extends js.Object {
         * @param rgb Uint24 representing RGB components
         * @param a Float32 representing Alpha component
         */
+      @JSImport("phaser", "Renderer.WebGL.Utils.getTintAppendFloatAlphaAndSwap")
+      @js.native
       def getTintAppendFloatAlphaAndSwap(rgb: Double, a: Double): Double = js.native
       
       /**
@@ -225,6 +242,8 @@ object Renderer extends js.Object {
         * @param b Blue component in a range from 0.0 to 1.0
         * @param a Alpha component in a range from 0.0 to 1.0
         */
+      @JSImport("phaser", "Renderer.WebGL.Utils.getTintFromFloats")
+      @js.native
       def getTintFromFloats(r: Double, g: Double, b: Double, a: Double): Double = js.native
     }
     
@@ -259,6 +278,7 @@ object Renderer extends js.Object {
       * Here you can find more information of how to describe an attribute:
       * - https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer
       */
+    @JSImport("phaser", "Renderer.WebGL.WebGLPipeline")
     @js.native
     class WebGLPipeline protected ()
       extends typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline {
@@ -278,6 +298,7 @@ object Renderer extends js.Object {
       * unexpected behavior. It's recommended that WebGL interaction is done through
       * WebGLRenderer and/or WebGLPipeline.
       */
+    @JSImport("phaser", "Renderer.WebGL.WebGLRenderer")
     @js.native
     class WebGLRenderer protected ()
       extends typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer {

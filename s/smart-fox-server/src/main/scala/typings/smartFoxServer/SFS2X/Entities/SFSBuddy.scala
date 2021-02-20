@@ -1,12 +1,13 @@
 package typings.smartFoxServer.SFS2X.Entities
 
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SFSBuddy extends js.Object {
+trait SFSBuddy extends StObject {
   
   /**
     * Indicates whether this user has the specified Buddy Variable set or not.
@@ -98,54 +99,42 @@ object SFSBuddy {
   }
   
   @scala.inline
-  implicit class SFSBuddyOps[Self <: SFSBuddy] (val x: Self) extends AnyVal {
+  implicit class SFSBuddyMutableBuilder[Self <: SFSBuddy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNickName(value: () => String): Self = StObject.set(x, "getNickName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOfflineVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getOfflineVariables", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContainsVariable(value: String => Boolean): Self = this.set("containsVariable", js.Any.fromFunction1(value))
+    def setGetOnlineVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getOnlineVariables", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNickName(value: () => String): Self = this.set("getNickName", js.Any.fromFunction0(value))
+    def setGetState(value: () => String): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOfflineVariables(value: () => js.Array[SFSBuddyVariable]): Self = this.set("getOfflineVariables", js.Any.fromFunction0(value))
+    def setGetVariable(value: String => SFSBuddyVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOnlineVariables(value: () => js.Array[SFSBuddyVariable]): Self = this.set("getOnlineVariables", js.Any.fromFunction0(value))
+    def setGetVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetState(value: () => String): Self = this.set("getState", js.Any.fromFunction0(value))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVariable(value: String => SFSBuddyVariable): Self = this.set("getVariable", js.Any.fromFunction1(value))
+    def setIsBlocked(value: () => Boolean): Self = StObject.set(x, "isBlocked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVariables(value: () => js.Array[SFSBuddyVariable]): Self = this.set("getVariables", js.Any.fromFunction0(value))
+    def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsTemp(value: () => Boolean): Self = StObject.set(x, "isTemp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBlocked(value: () => Boolean): Self = this.set("isBlocked", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOnline(value: () => Boolean): Self = this.set("isOnline", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsTemp(value: () => Boolean): Self = this.set("isTemp", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

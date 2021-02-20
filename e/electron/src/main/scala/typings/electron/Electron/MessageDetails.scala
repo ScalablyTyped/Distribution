@@ -14,12 +14,13 @@ import typings.electron.electronStrings.storage
 import typings.electron.electronStrings.violation
 import typings.electron.electronStrings.worker
 import typings.electron.electronStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageDetails extends js.Object {
+trait MessageDetails extends StObject {
   
   /**
     * The log level, from 0 to 3. In order it matches `verbose`, `info`, `warning` and
@@ -70,38 +71,26 @@ object MessageDetails {
   }
   
   @scala.inline
-  implicit class MessageDetailsOps[Self <: MessageDetails] (val x: Self) extends AnyVal {
+  implicit class MessageDetailsMutableBuilder[Self <: MessageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSource(
       value: javascript | xml | network | `console-api` | storage | `app-cache` | rendering | security | deprecation | worker | violation | intervention | recommendation | other
-    ): Self = this.set("source", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUrl(value: String): Self = this.set("sourceUrl", value.asInstanceOf[js.Any])
+    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionId(value: Double): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    def setVersionId(value: Double): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

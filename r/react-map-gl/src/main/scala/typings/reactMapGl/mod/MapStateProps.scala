@@ -1,13 +1,14 @@
 package typings.reactMapGl.mod
 
 import typings.reactMapGl.reactMapGlStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-map-gl.react-map-gl.ViewportProps & react-map-gl.react-map-gl.InteractiveState> */
 @js.native
-trait MapStateProps extends js.Object {
+trait MapStateProps extends StObject {
   
   var altitude: js.UndefOr[Double] = js.native
   
@@ -60,144 +61,132 @@ object MapStateProps {
   }
   
   @scala.inline
-  implicit class MapStatePropsOps[Self <: MapStateProps] (val x: Self) extends AnyVal {
+  implicit class MapStatePropsMutableBuilder[Self <: MapStateProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteBearing: Self = this.set("bearing", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setMaxPitchUndefined: Self = StObject.set(x, "maxPitch", js.undefined)
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPitch(value: Double): Self = this.set("maxPitch", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxPitch: Self = this.set("maxPitch", js.undefined)
+    def setMinPitch(value: Double): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinPitchUndefined: Self = StObject.set(x, "minPitch", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPitch(value: Double): Self = this.set("minPitch", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMinPitch: Self = this.set("minPitch", js.undefined)
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    def setStartBearingUndefined: Self = StObject.set(x, "startBearing", js.undefined)
     
     @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
+    def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startPanLngLat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartBearing(value: Double): Self = this.set("startBearing", value.asInstanceOf[js.Any])
+    def setStartPanLngLatUndefined: Self = StObject.set(x, "startPanLngLat", js.undefined)
     
     @scala.inline
-    def deleteStartBearing: Self = this.set("startBearing", js.undefined)
+    def setStartPitch(value: Double): Self = StObject.set(x, "startPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = this.set("startPanLngLat", value.asInstanceOf[js.Any])
+    def setStartPitchUndefined: Self = StObject.set(x, "startPitch", js.undefined)
     
     @scala.inline
-    def deleteStartPanLngLat: Self = this.set("startPanLngLat", js.undefined)
+    def setStartZoom(value: Double): Self = StObject.set(x, "startZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPitch(value: Double): Self = this.set("startPitch", value.asInstanceOf[js.Any])
+    def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startZoomLngLat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartPitch: Self = this.set("startPitch", js.undefined)
+    def setStartZoomLngLatUndefined: Self = StObject.set(x, "startZoomLngLat", js.undefined)
     
     @scala.inline
-    def setStartZoom(value: Double): Self = this.set("startZoom", value.asInstanceOf[js.Any])
+    def setStartZoomUndefined: Self = StObject.set(x, "startZoom", js.undefined)
     
     @scala.inline
-    def deleteStartZoom: Self = this.set("startZoom", js.undefined)
+    def setTransitionDuration(value: Double | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = this.set("startZoomLngLat", value.asInstanceOf[js.Any])
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def deleteStartZoomLngLat: Self = this.set("startZoomLngLat", js.undefined)
+    def setTransitionEasing(value: /* t */ Double => Double): Self = StObject.set(x, "transitionEasing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionDuration(value: Double | auto): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setTransitionEasingUndefined: Self = StObject.set(x, "transitionEasing", js.undefined)
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionInterpolator(value: TransitionInterpolator): Self = StObject.set(x, "transitionInterpolator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionEasing(value: /* t */ Double => Double): Self = this.set("transitionEasing", js.Any.fromFunction1(value))
+    def setTransitionInterpolatorUndefined: Self = StObject.set(x, "transitionInterpolator", js.undefined)
     
     @scala.inline
-    def deleteTransitionEasing: Self = this.set("transitionEasing", js.undefined)
+    def setTransitionInterruption(value: TRANSITION_EVENTS): Self = StObject.set(x, "transitionInterruption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionInterpolator(value: TransitionInterpolator): Self = this.set("transitionInterpolator", value.asInstanceOf[js.Any])
+    def setTransitionInterruptionUndefined: Self = StObject.set(x, "transitionInterruption", js.undefined)
     
     @scala.inline
-    def deleteTransitionInterpolator: Self = this.set("transitionInterpolator", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionInterruption(value: TRANSITION_EVENTS): Self = this.set("transitionInterruption", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTransitionInterruption: Self = this.set("transitionInterruption", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

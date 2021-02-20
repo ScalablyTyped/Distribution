@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1HyperparameterSpec extends js.Object {
+trait GoogleCloudMlV1HyperparameterSpec extends StObject {
   
   /** Optional. The search algorithm specified for the hyperparameter tuning job. Uses the default AI Platform hyperparameter tuning algorithm if unspecified. */
   var algorithm: js.UndefOr[String] = js.native
@@ -53,75 +54,63 @@ object GoogleCloudMlV1HyperparameterSpec {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1HyperparameterSpecOps[Self <: GoogleCloudMlV1HyperparameterSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1HyperparameterSpecMutableBuilder[Self <: GoogleCloudMlV1HyperparameterSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableTrialEarlyStopping(value: Boolean): Self = StObject.set(x, "enableTrialEarlyStopping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setEnableTrialEarlyStoppingUndefined: Self = StObject.set(x, "enableTrialEarlyStopping", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setGoal(value: String): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTrialEarlyStopping(value: Boolean): Self = this.set("enableTrialEarlyStopping", value.asInstanceOf[js.Any])
+    def setGoalUndefined: Self = StObject.set(x, "goal", js.undefined)
     
     @scala.inline
-    def deleteEnableTrialEarlyStopping: Self = this.set("enableTrialEarlyStopping", js.undefined)
+    def setHyperparameterMetricTag(value: String): Self = StObject.set(x, "hyperparameterMetricTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoal(value: String): Self = this.set("goal", value.asInstanceOf[js.Any])
+    def setHyperparameterMetricTagUndefined: Self = StObject.set(x, "hyperparameterMetricTag", js.undefined)
     
     @scala.inline
-    def deleteGoal: Self = this.set("goal", js.undefined)
+    def setMaxFailedTrials(value: Double): Self = StObject.set(x, "maxFailedTrials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperparameterMetricTag(value: String): Self = this.set("hyperparameterMetricTag", value.asInstanceOf[js.Any])
+    def setMaxFailedTrialsUndefined: Self = StObject.set(x, "maxFailedTrials", js.undefined)
     
     @scala.inline
-    def deleteHyperparameterMetricTag: Self = this.set("hyperparameterMetricTag", js.undefined)
+    def setMaxParallelTrials(value: Double): Self = StObject.set(x, "maxParallelTrials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFailedTrials(value: Double): Self = this.set("maxFailedTrials", value.asInstanceOf[js.Any])
+    def setMaxParallelTrialsUndefined: Self = StObject.set(x, "maxParallelTrials", js.undefined)
     
     @scala.inline
-    def deleteMaxFailedTrials: Self = this.set("maxFailedTrials", js.undefined)
+    def setMaxTrials(value: Double): Self = StObject.set(x, "maxTrials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParallelTrials(value: Double): Self = this.set("maxParallelTrials", value.asInstanceOf[js.Any])
+    def setMaxTrialsUndefined: Self = StObject.set(x, "maxTrials", js.undefined)
     
     @scala.inline
-    def deleteMaxParallelTrials: Self = this.set("maxParallelTrials", js.undefined)
+    def setParams(value: js.Array[GoogleCloudMlV1ParameterSpec]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTrials(value: Double): Self = this.set("maxTrials", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteMaxTrials: Self = this.set("maxTrials", js.undefined)
+    def setParamsVarargs(value: GoogleCloudMlV1ParameterSpec*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setParamsVarargs(value: GoogleCloudMlV1ParameterSpec*): Self = this.set("params", js.Array(value :_*))
+    def setResumePreviousJobId(value: String): Self = StObject.set(x, "resumePreviousJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[GoogleCloudMlV1ParameterSpec]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setResumePreviousJobId(value: String): Self = this.set("resumePreviousJobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResumePreviousJobId: Self = this.set("resumePreviousJobId", js.undefined)
+    def setResumePreviousJobIdUndefined: Self = StObject.set(x, "resumePreviousJobId", js.undefined)
   }
 }

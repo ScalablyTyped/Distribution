@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMaterialSheenDefines extends js.Object {
+trait IMaterialSheenDefines extends StObject {
   
   var SHEEN: Boolean = js.native
   
@@ -51,51 +52,39 @@ object IMaterialSheenDefines {
   }
   
   @scala.inline
-  implicit class IMaterialSheenDefinesOps[Self <: IMaterialSheenDefines] (val x: Self) extends AnyVal {
+  implicit class IMaterialSheenDefinesMutableBuilder[Self <: IMaterialSheenDefines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSHEEN(value: Boolean): Self = StObject.set(x, "SHEEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSHEEN_ALBEDOSCALING(value: Boolean): Self = StObject.set(x, "SHEEN_ALBEDOSCALING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSHEEN_LINKWITHALBEDO(value: Boolean): Self = StObject.set(x, "SHEEN_LINKWITHALBEDO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN(value: Boolean): Self = this.set("SHEEN", value.asInstanceOf[js.Any])
+    def setSHEEN_ROUGHNESS(value: Boolean): Self = StObject.set(x, "SHEEN_ROUGHNESS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_ALBEDOSCALING(value: Boolean): Self = this.set("SHEEN_ALBEDOSCALING", value.asInstanceOf[js.Any])
+    def setSHEEN_TEXTURE(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_LINKWITHALBEDO(value: Boolean): Self = this.set("SHEEN_LINKWITHALBEDO", value.asInstanceOf[js.Any])
+    def setSHEEN_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "SHEEN_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_ROUGHNESS(value: Boolean): Self = this.set("SHEEN_ROUGHNESS", value.asInstanceOf[js.Any])
+    def setSHEEN_TEXTURE_ROUGHNESS(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_TEXTURE(value: Boolean): Self = this.set("SHEEN_TEXTURE", value.asInstanceOf[js.Any])
+    def setSHEEN_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_TEXTUREDIRECTUV(value: Double): Self = this.set("SHEEN_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+    def setSHEEN_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = StObject.set(x, "SHEEN_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_TEXTURE_ROUGHNESS(value: Boolean): Self = this.set("SHEEN_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
+    def setSHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = StObject.set(x, "SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHEEN_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = this.set("SHEEN_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSHEEN_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = this.set("SHEEN_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = this.set("SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_areTexturesDirty(value: Boolean): Self = this.set("_areTexturesDirty", value.asInstanceOf[js.Any])
+    def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
   }
 }

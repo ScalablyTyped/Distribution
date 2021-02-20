@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaChangePolicy extends js.Object {
+trait SchemaChangePolicy extends StObject {
   
   /**
     * The deletion behavior when the crawler finds a deleted object.
@@ -26,30 +27,18 @@ object SchemaChangePolicy {
   }
   
   @scala.inline
-  implicit class SchemaChangePolicyOps[Self <: SchemaChangePolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaChangePolicyMutableBuilder[Self <: SchemaChangePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteBehavior(value: DeleteBehavior): Self = StObject.set(x, "DeleteBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteBehaviorUndefined: Self = StObject.set(x, "DeleteBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateBehavior(value: UpdateBehavior): Self = StObject.set(x, "UpdateBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteBehavior(value: DeleteBehavior): Self = this.set("DeleteBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteBehavior: Self = this.set("DeleteBehavior", js.undefined)
-    
-    @scala.inline
-    def setUpdateBehavior(value: UpdateBehavior): Self = this.set("UpdateBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateBehavior: Self = this.set("UpdateBehavior", js.undefined)
+    def setUpdateBehaviorUndefined: Self = StObject.set(x, "UpdateBehavior", js.undefined)
   }
 }

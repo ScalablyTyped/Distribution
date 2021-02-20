@@ -3,16 +3,16 @@ package typings.apolloServerEnv
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("apollo-server-env/dist/url", JSImport.Namespace)
-@js.native
-object urlMod extends js.Object {
+object urlMod {
   
+  @JSImport("apollo-server-env/dist/url", "URL")
   @js.native
-  class URL protected () extends js.Object {
+  class URL protected () extends StObject {
     def this(input: String) = this()
     def this(input: String, base: String) = this()
     def this(input: String, base: URL) = this()
@@ -44,6 +44,7 @@ object urlMod extends js.Object {
     var username: String = js.native
   }
   
+  @JSImport("apollo-server-env/dist/url", "URLSearchParams")
   @js.native
   class URLSearchParams ()
     extends Iterable[js.Tuple2[String, String]] {

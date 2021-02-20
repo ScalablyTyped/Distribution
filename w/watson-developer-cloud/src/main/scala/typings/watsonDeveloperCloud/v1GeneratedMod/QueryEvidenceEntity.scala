@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Entity description and location within evidence field. */
 @js.native
-trait QueryEvidenceEntity extends js.Object {
+trait QueryEvidenceEntity extends StObject {
   
   /** The end location of the entity text in the identified field. This value is exclusive. */
   var end_offset: js.UndefOr[Double] = js.native
@@ -29,42 +30,30 @@ object QueryEvidenceEntity {
   }
   
   @scala.inline
-  implicit class QueryEvidenceEntityOps[Self <: QueryEvidenceEntity] (val x: Self) extends AnyVal {
+  implicit class QueryEvidenceEntityMutableBuilder[Self <: QueryEvidenceEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_offset(value: Double): Self = this.set("end_offset", value.asInstanceOf[js.Any])
+    def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
     
     @scala.inline
-    def deleteEnd_offset: Self = this.set("end_offset", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_offset(value: Double): Self = this.set("start_offset", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteStart_offset: Self = this.set("start_offset", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

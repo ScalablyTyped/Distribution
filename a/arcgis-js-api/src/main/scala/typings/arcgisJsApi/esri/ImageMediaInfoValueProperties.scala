@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageMediaInfoValueProperties extends js.Object {
+trait ImageMediaInfoValueProperties extends StObject {
   
   /**
     * A string containing a URL to be launched in a browser when a user clicks the image.
@@ -30,30 +31,18 @@ object ImageMediaInfoValueProperties {
   }
   
   @scala.inline
-  implicit class ImageMediaInfoValuePropertiesOps[Self <: ImageMediaInfoValueProperties] (val x: Self) extends AnyVal {
+  implicit class ImageMediaInfoValuePropertiesMutableBuilder[Self <: ImageMediaInfoValueProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkURL(value: String): Self = this.set("linkURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkURL: Self = this.set("linkURL", js.undefined)
-    
-    @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceURL: Self = this.set("sourceURL", js.undefined)
+    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.stellarSdk.horizonApiMod.Horizon
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.payment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,42 +49,30 @@ object PaymentOperationResponse {
   }
   
   @scala.inline
-  implicit class PaymentOperationResponseOps[Self <: PaymentOperationResponse] (val x: Self) extends AnyVal {
+  implicit class PaymentOperationResponseMutableBuilder[Self <: PaymentOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsset_code(value: String): Self = StObject.set(x, "asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsset_codeUndefined: Self = StObject.set(x, "asset_code", js.undefined)
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setAsset_issuer(value: String): Self = StObject.set(x, "asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_type(value: AssetType): Self = this.set("asset_type", value.asInstanceOf[js.Any])
+    def setAsset_issuerUndefined: Self = StObject.set(x, "asset_issuer", js.undefined)
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setAsset_type(value: AssetType): Self = StObject.set(x, "asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_code(value: String): Self = this.set("asset_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsset_code: Self = this.set("asset_code", js.undefined)
-    
-    @scala.inline
-    def setAsset_issuer(value: String): Self = this.set("asset_issuer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsset_issuer: Self = this.set("asset_issuer", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

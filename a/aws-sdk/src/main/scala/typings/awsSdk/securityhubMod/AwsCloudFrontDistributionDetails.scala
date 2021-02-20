@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCloudFrontDistributionDetails extends js.Object {
+trait AwsCloudFrontDistributionDetails extends StObject {
   
   /**
     * Provides information about the cache configuration for the distribution.
@@ -71,84 +72,72 @@ object AwsCloudFrontDistributionDetails {
   }
   
   @scala.inline
-  implicit class AwsCloudFrontDistributionDetailsOps[Self <: AwsCloudFrontDistributionDetails] (val x: Self) extends AnyVal {
+  implicit class AwsCloudFrontDistributionDetailsMutableBuilder[Self <: AwsCloudFrontDistributionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheBehaviors(value: AwsCloudFrontDistributionCacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheBehaviorsUndefined: Self = StObject.set(x, "CacheBehaviors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultCacheBehavior(value: AwsCloudFrontDistributionDefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheBehaviors(value: AwsCloudFrontDistributionCacheBehaviors): Self = this.set("CacheBehaviors", value.asInstanceOf[js.Any])
+    def setDefaultCacheBehaviorUndefined: Self = StObject.set(x, "DefaultCacheBehavior", js.undefined)
     
     @scala.inline
-    def deleteCacheBehaviors: Self = this.set("CacheBehaviors", js.undefined)
+    def setDefaultRootObject(value: NonEmptyString): Self = StObject.set(x, "DefaultRootObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCacheBehavior(value: AwsCloudFrontDistributionDefaultCacheBehavior): Self = this.set("DefaultCacheBehavior", value.asInstanceOf[js.Any])
+    def setDefaultRootObjectUndefined: Self = StObject.set(x, "DefaultRootObject", js.undefined)
     
     @scala.inline
-    def deleteDefaultCacheBehavior: Self = this.set("DefaultCacheBehavior", js.undefined)
+    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRootObject(value: NonEmptyString): Self = this.set("DefaultRootObject", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def deleteDefaultRootObject: Self = this.set("DefaultRootObject", js.undefined)
+    def setETag(value: NonEmptyString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: NonEmptyString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setLastModifiedTime(value: NonEmptyString): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: NonEmptyString): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
+    def setLogging(value: AwsCloudFrontDistributionLogging): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: NonEmptyString): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    def setOriginGroups(value: AwsCloudFrontDistributionOriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: AwsCloudFrontDistributionLogging): Self = this.set("Logging", value.asInstanceOf[js.Any])
+    def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("Logging", js.undefined)
+    def setOrigins(value: AwsCloudFrontDistributionOrigins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginGroups(value: AwsCloudFrontDistributionOriginGroups): Self = this.set("OriginGroups", value.asInstanceOf[js.Any])
+    def setOriginsUndefined: Self = StObject.set(x, "Origins", js.undefined)
     
     @scala.inline
-    def deleteOriginGroups: Self = this.set("OriginGroups", js.undefined)
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigins(value: AwsCloudFrontDistributionOrigins): Self = this.set("Origins", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteOrigins: Self = this.set("Origins", js.undefined)
+    def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setWebAclId(value: NonEmptyString): Self = this.set("WebAclId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebAclId: Self = this.set("WebAclId", js.undefined)
+    def setWebAclIdUndefined: Self = StObject.set(x, "WebAclId", js.undefined)
   }
 }

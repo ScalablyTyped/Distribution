@@ -10,6 +10,7 @@ import typings.solidityParserAntlr.solidityParserAntlrStrings.szabo
 import typings.solidityParserAntlr.solidityParserAntlrStrings.weeks
 import typings.solidityParserAntlr.solidityParserAntlrStrings.wei
 import typings.solidityParserAntlr.solidityParserAntlrStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object NumberLiteral {
   }
   
   @scala.inline
-  implicit class NumberLiteralOps[Self <: NumberLiteral] (val x: Self) extends AnyVal {
+  implicit class NumberLiteralMutableBuilder[Self <: NumberLiteral] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubdenomination(value: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years): Self = StObject.set(x, "subdenomination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubdenominationNull: Self = StObject.set(x, "subdenomination", null)
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubdenomination(value: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years): Self = this.set("subdenomination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubdenominationNull: Self = this.set("subdenomination", null)
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

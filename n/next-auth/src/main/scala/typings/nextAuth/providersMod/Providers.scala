@@ -1,11 +1,12 @@
 package typings.nextAuth.providersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Providers extends js.Object {
+trait Providers extends StObject {
   
   var Apple: typings.nextAuth.providersMod.Apple = js.native
   
@@ -86,87 +87,75 @@ object Providers {
   }
   
   @scala.inline
-  implicit class ProvidersOps[Self <: Providers] (val x: Self) extends AnyVal {
+  implicit class ProvidersMutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApple(value: /* options */ ProviderAppleOptions => GenericReturnConfig): Self = StObject.set(x, "Apple", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth0(value: /* options */ ProviderAuth0Options => GenericReturnConfig): Self = StObject.set(x, "Auth0", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasecamp(value: /* options */ ProviderBasecampOptions => GenericReturnConfig): Self = StObject.set(x, "Basecamp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApple(value: /* options */ ProviderAppleOptions => GenericReturnConfig): Self = this.set("Apple", js.Any.fromFunction1(value))
+    def setBattleNet(value: /* options */ ProviderBattleNetOptions => GenericReturnConfig): Self = StObject.set(x, "BattleNet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuth0(value: /* options */ ProviderAuth0Options => GenericReturnConfig): Self = this.set("Auth0", js.Any.fromFunction1(value))
+    def setBox(value: /* options */ ProviderBoxOptions => GenericReturnConfig): Self = StObject.set(x, "Box", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBasecamp(value: /* options */ ProviderBasecampOptions => GenericReturnConfig): Self = this.set("Basecamp", js.Any.fromFunction1(value))
+    def setCognito(value: /* options */ ProviderCognitoOptions => GenericReturnConfig): Self = StObject.set(x, "Cognito", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBattleNet(value: /* options */ ProviderBattleNetOptions => GenericReturnConfig): Self = this.set("BattleNet", js.Any.fromFunction1(value))
+    def setCredentials(value: /* options */ ProviderCredentialsOptions => GenericReturnConfig): Self = StObject.set(x, "Credentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBox(value: /* options */ ProviderBoxOptions => GenericReturnConfig): Self = this.set("Box", js.Any.fromFunction1(value))
+    def setDiscord(value: /* options */ ProviderDiscordOptions => GenericReturnConfig): Self = StObject.set(x, "Discord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCognito(value: /* options */ ProviderCognitoOptions => GenericReturnConfig): Self = this.set("Cognito", js.Any.fromFunction1(value))
+    def setEmail(value: /* options */ ProviderEmailOptions => GenericReturnConfig): Self = StObject.set(x, "Email", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCredentials(value: /* options */ ProviderCredentialsOptions => GenericReturnConfig): Self = this.set("Credentials", js.Any.fromFunction1(value))
+    def setFacebook(value: /* options */ ProviderFacebookOptions => GenericReturnConfig): Self = StObject.set(x, "Facebook", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDiscord(value: /* options */ ProviderDiscordOptions => GenericReturnConfig): Self = this.set("Discord", js.Any.fromFunction1(value))
+    def setGitHub(value: /* options */ ProviderGitHubOptions => GenericReturnConfig): Self = StObject.set(x, "GitHub", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEmail(value: /* options */ ProviderEmailOptions => GenericReturnConfig): Self = this.set("Email", js.Any.fromFunction1(value))
+    def setGitLab(value: /* options */ ProviderGitLabOptions => GenericReturnConfig): Self = StObject.set(x, "GitLab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFacebook(value: /* options */ ProviderFacebookOptions => GenericReturnConfig): Self = this.set("Facebook", js.Any.fromFunction1(value))
+    def setGoogle(value: /* options */ ProviderGoogleOptions => GenericReturnConfig): Self = StObject.set(x, "Google", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGitHub(value: /* options */ ProviderGitHubOptions => GenericReturnConfig): Self = this.set("GitHub", js.Any.fromFunction1(value))
+    def setIdentityServer4(value: /* options */ ProviderIS4Options => GenericReturnConfig): Self = StObject.set(x, "IdentityServer4", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGitLab(value: /* options */ ProviderGitLabOptions => GenericReturnConfig): Self = this.set("GitLab", js.Any.fromFunction1(value))
+    def setLinkedIn(value: /* options */ ProviderLinkedInOptions => GenericReturnConfig): Self = StObject.set(x, "LinkedIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoogle(value: /* options */ ProviderGoogleOptions => GenericReturnConfig): Self = this.set("Google", js.Any.fromFunction1(value))
+    def setMixer(value: /* options */ ProviderMixerOptions => GenericReturnConfig): Self = StObject.set(x, "Mixer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIdentityServer4(value: /* options */ ProviderIS4Options => GenericReturnConfig): Self = this.set("IdentityServer4", js.Any.fromFunction1(value))
+    def setOkta(value: /* options */ ProviderOktaOptions => GenericReturnConfig): Self = StObject.set(x, "Okta", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLinkedIn(value: /* options */ ProviderLinkedInOptions => GenericReturnConfig): Self = this.set("LinkedIn", js.Any.fromFunction1(value))
+    def setReddit(value: /* options */ ProviderRedditOptions => GenericReturnConfig): Self = StObject.set(x, "Reddit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMixer(value: /* options */ ProviderMixerOptions => GenericReturnConfig): Self = this.set("Mixer", js.Any.fromFunction1(value))
+    def setSlack(value: /* options */ ProviderSlackOptions => GenericReturnConfig): Self = StObject.set(x, "Slack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOkta(value: /* options */ ProviderOktaOptions => GenericReturnConfig): Self = this.set("Okta", js.Any.fromFunction1(value))
+    def setSpotify(value: /* options */ ProviderSpotifyOptions => GenericReturnConfig): Self = StObject.set(x, "Spotify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReddit(value: /* options */ ProviderRedditOptions => GenericReturnConfig): Self = this.set("Reddit", js.Any.fromFunction1(value))
+    def setTwitch(value: /* options */ ProviderTwitchOptions => GenericReturnConfig): Self = StObject.set(x, "Twitch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSlack(value: /* options */ ProviderSlackOptions => GenericReturnConfig): Self = this.set("Slack", js.Any.fromFunction1(value))
+    def setTwitter(value: /* options */ ProviderTwitterOptions => GenericReturnConfig): Self = StObject.set(x, "Twitter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpotify(value: /* options */ ProviderSpotifyOptions => GenericReturnConfig): Self = this.set("Spotify", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTwitch(value: /* options */ ProviderTwitchOptions => GenericReturnConfig): Self = this.set("Twitch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTwitter(value: /* options */ ProviderTwitterOptions => GenericReturnConfig): Self = this.set("Twitter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setYandex(value: /* options */ ProviderYandexOptions => GenericReturnConfig): Self = this.set("Yandex", js.Any.fromFunction1(value))
+    def setYandex(value: /* options */ ProviderYandexOptions => GenericReturnConfig): Self = StObject.set(x, "Yandex", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.uploadInterfaceMod.ItemRender
 import typings.antd.uploadInterfaceMod.UploadFile
 import typings.antd.uploadInterfaceMod.UploadListProgressProps
@@ -13,18 +14,19 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/upload/UploadList/ListItem", JSImport.Namespace)
-@js.native
-object uploadListListItemMod extends js.Object {
+object uploadListListItemMod extends Shortcut {
   
+  @JSImport("antd/lib/upload/UploadList/ListItem", JSImport.Default)
+  @js.native
   val default: ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLDivElement]] = js.native
   
   @js.native
-  trait ListItemProps extends js.Object {
+  trait ListItemProps extends StObject {
     
     def actionIconRender(customIcon: ReactNode, callback: js.Function0[Unit], prefixCls: String): ReactNode = js.native
     def actionIconRender(customIcon: ReactNode, callback: js.Function0[Unit], prefixCls: String, title: String): ReactNode = js.native
@@ -67,4 +69,9 @@ object uploadListListItemMod extends js.Object {
     
     var style: js.UndefOr[CSSProperties] = js.native
   }
+  
+  type _To = ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLDivElement]]
+  
+  /* This means you don't have to write `default`, but can instead just say `uploadListListItemMod.foo` */
+  override def _to: ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLDivElement]] = default
 }

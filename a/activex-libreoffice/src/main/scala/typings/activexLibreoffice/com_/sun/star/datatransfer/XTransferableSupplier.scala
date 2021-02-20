@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.datatransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XTransferableSupplier extends js.Object {
+trait XTransferableSupplier extends StObject {
   
   /**
     * To get access to a transferable representation of a selected part of an object.
@@ -42,27 +43,15 @@ object XTransferableSupplier {
   }
   
   @scala.inline
-  implicit class XTransferableSupplierOps[Self <: XTransferableSupplier] (val x: Self) extends AnyVal {
+  implicit class XTransferableSupplierMutableBuilder[Self <: XTransferableSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTransferable(value: () => XTransferable): Self = StObject.set(x, "getTransferable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertTransferable(value: XTransferable => Unit): Self = StObject.set(x, "insertTransferable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransferable(value: XTransferable): Self = this.set("Transferable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetTransferable(value: () => XTransferable): Self = this.set("getTransferable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInsertTransferable(value: XTransferable => Unit): Self = this.set("insertTransferable", js.Any.fromFunction1(value))
+    def setTransferable(value: XTransferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
   }
 }

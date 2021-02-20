@@ -1,23 +1,13 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CollectionReference[T] extends Query[T] {
-  /** The identifier of the collection. */
-  val id: String = js.native
-  /**
-    * A reference to the containing Document if this is a subcollection, else
-    * null.
-    */
-  val parent: DocumentReference[DocumentData] | Null = js.native
-  /**
-    * A string representing the path of the referenced collection (relative
-    * to the root of the database).
-    */
-  val path: String = js.native
+  
   /**
     * Add a new document to this collection with the specified data, assigning
     * it a document ID automatically.
@@ -27,6 +17,7 @@ trait CollectionReference[T] extends Query[T] {
     * newly created document after it has been written to the backend.
     */
   def add(data: T): js.Promise[DocumentReference[T]] = js.native
+  
   /**
     * Get a `DocumentReference` for a randomly-named document within this
     * collection. An automatically-generated unique ID will be used as the
@@ -43,6 +34,10 @@ trait CollectionReference[T] extends Query[T] {
     * @return The `DocumentReference` instance.
     */
   def doc(documentPath: String): DocumentReference[T] = js.native
+  
+  /** The identifier of the collection. */
+  val id: String = js.native
+  
   /**
     * Returns true if this `CollectionReference` is equal to the provided one.
     *
@@ -50,6 +45,7 @@ trait CollectionReference[T] extends Query[T] {
     * @return true if this `CollectionReference` is equal to the provided one.
     */
   def isEqual(other: CollectionReference[T]): Boolean = js.native
+  
   /**
     * Retrieves the list of documents in this collection.
     *
@@ -63,5 +59,16 @@ trait CollectionReference[T] extends Query[T] {
     * collection.
     */
   def listDocuments(): js.Promise[js.Array[DocumentReference[T]]] = js.native
+  
+  /**
+    * A reference to the containing Document if this is a subcollection, else
+    * null.
+    */
+  val parent: DocumentReference[DocumentData] | Null = js.native
+  
+  /**
+    * A string representing the path of the referenced collection (relative
+    * to the root of the database).
+    */
+  val path: String = js.native
 }
-

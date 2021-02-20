@@ -1,6 +1,7 @@
 package typings.angularCompiler.publicApiMod
 
 import typings.angularCompiler.extractorMod.ExtractorHost
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,12 @@ class Extractor protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@angular/compiler/public_api", "Extractor")
-@js.native
-object Extractor extends js.Object {
+object Extractor {
   
+  @JSImport("@angular/compiler/public_api", "Extractor.create")
+  @js.native
   def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = js.native
+  @JSImport("@angular/compiler/public_api", "Extractor.create")
+  @js.native
   def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = js.native
 }

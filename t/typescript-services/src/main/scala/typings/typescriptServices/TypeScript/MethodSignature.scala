@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object MethodSignature {
   }
   
   @scala.inline
-  implicit class MethodSignatureOps[Self <: MethodSignature] (val x: Self) extends AnyVal {
+  implicit class MethodSignatureMutableBuilder[Self <: MethodSignature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = this.set("callSignature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyName(value: IASTToken): Self = this.set("propertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuestionToken(value: ASTSpan): Self = this.set("questionToken", value.asInstanceOf[js.Any])
+    def setQuestionToken(value: ASTSpan): Self = StObject.set(x, "questionToken", value.asInstanceOf[js.Any])
   }
 }

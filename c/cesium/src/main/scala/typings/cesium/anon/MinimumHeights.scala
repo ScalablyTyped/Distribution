@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinimumHeights extends js.Object {
+trait MinimumHeights extends StObject {
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
   
@@ -27,54 +28,42 @@ object MinimumHeights {
   }
   
   @scala.inline
-  implicit class MinimumHeightsOps[Self <: MinimumHeights] (val x: Self) extends AnyVal {
+  implicit class MinimumHeightsMutableBuilder[Self <: MinimumHeights] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionsVarargs(value: Cartesian3*): Self = this.set("positions", js.Array(value :_*))
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def setPositions(value: js.Array[Cartesian3]): Self = this.set("positions", value.asInstanceOf[js.Any])
+    def setMaximumHeights(value: js.Array[Double]): Self = StObject.set(x, "maximumHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setMaximumHeightsUndefined: Self = StObject.set(x, "maximumHeights", js.undefined)
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setMaximumHeightsVarargs(value: Double*): Self = StObject.set(x, "maximumHeights", js.Array(value :_*))
     
     @scala.inline
-    def setGranularity(value: Double): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    def setMinimumHeights(value: js.Array[Double]): Self = StObject.set(x, "minimumHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    def setMinimumHeightsUndefined: Self = StObject.set(x, "minimumHeights", js.undefined)
     
     @scala.inline
-    def setMaximumHeightsVarargs(value: Double*): Self = this.set("maximumHeights", js.Array(value :_*))
+    def setMinimumHeightsVarargs(value: Double*): Self = StObject.set(x, "minimumHeights", js.Array(value :_*))
     
     @scala.inline
-    def setMaximumHeights(value: js.Array[Double]): Self = this.set("maximumHeights", value.asInstanceOf[js.Any])
+    def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumHeights: Self = this.set("maximumHeights", js.undefined)
-    
-    @scala.inline
-    def setMinimumHeightsVarargs(value: Double*): Self = this.set("minimumHeights", js.Array(value :_*))
-    
-    @scala.inline
-    def setMinimumHeights(value: js.Array[Double]): Self = this.set("minimumHeights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumHeights: Self = this.set("minimumHeights", js.undefined)
+    def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
   }
 }

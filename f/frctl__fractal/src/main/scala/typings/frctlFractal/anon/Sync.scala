@@ -1,11 +1,12 @@
 package typings.frctlFractal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sync extends js.Object {
+trait Sync extends StObject {
   
   var server: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Sync {
   }
   
   @scala.inline
-  implicit class SyncOps[Self <: Sync] (val x: Self) extends AnyVal {
+  implicit class SyncMutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSync(value: External): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
-    
-    @scala.inline
-    def setSync(value: External): Self = this.set("sync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSync: Self = this.set("sync", js.undefined)
+    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

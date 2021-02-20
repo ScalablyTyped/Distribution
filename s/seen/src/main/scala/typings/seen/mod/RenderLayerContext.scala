@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "RenderLayerContext")
 @js.native
-class RenderLayerContext () extends js.Object {
+class RenderLayerContext () extends StObject {
   
   def circle(): js.Any = js.native
   

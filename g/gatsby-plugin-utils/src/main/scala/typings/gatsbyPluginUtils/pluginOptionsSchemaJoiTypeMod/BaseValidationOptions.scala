@@ -6,12 +6,13 @@ import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.iso
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.string
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.time
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.utc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseValidationOptions extends js.Object {
+trait BaseValidationOptions extends StObject {
   
   /**
     * when true, stops validation on the first error, otherwise returns all the errors found.
@@ -119,102 +120,90 @@ object BaseValidationOptions {
   }
   
   @scala.inline
-  implicit class BaseValidationOptionsOps[Self <: BaseValidationOptions] (val x: Self) extends AnyVal {
+  implicit class BaseValidationOptionsMutableBuilder[Self <: BaseValidationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortEarly(value: Boolean): Self = this.set("abortEarly", value.asInstanceOf[js.Any])
+    def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
     
     @scala.inline
-    def deleteAbortEarly: Self = this.set("abortEarly", js.undefined)
+    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnknown(value: Boolean): Self = this.set("allowUnknown", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteAllowUnknown: Self = this.set("allowUnknown", js.undefined)
+    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Context): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDateFormat(value: date | iso | string | time | utc): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: date | iso | string | time | utc): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setErrors(value: ErrorFormattingOptions): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setExternals(value: Boolean): Self = StObject.set(x, "externals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: ErrorFormattingOptions): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setExternalsUndefined: Self = StObject.set(x, "externals", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setNoDefaults(value: Boolean): Self = StObject.set(x, "noDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternals(value: Boolean): Self = this.set("externals", value.asInstanceOf[js.Any])
+    def setNoDefaultsUndefined: Self = StObject.set(x, "noDefaults", js.undefined)
     
     @scala.inline
-    def deleteExternals: Self = this.set("externals", js.undefined)
+    def setNonEnumerables(value: Boolean): Self = StObject.set(x, "nonEnumerables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDefaults(value: Boolean): Self = this.set("noDefaults", value.asInstanceOf[js.Any])
+    def setNonEnumerablesUndefined: Self = StObject.set(x, "nonEnumerables", js.undefined)
     
     @scala.inline
-    def deleteNoDefaults: Self = this.set("noDefaults", js.undefined)
+    def setPresence(value: PresenceMode): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonEnumerables(value: Boolean): Self = this.set("nonEnumerables", value.asInstanceOf[js.Any])
+    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
     @scala.inline
-    def deleteNonEnumerables: Self = this.set("nonEnumerables", js.undefined)
+    def setSkipFunctions(value: Boolean): Self = StObject.set(x, "skipFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresence(value: PresenceMode): Self = this.set("presence", value.asInstanceOf[js.Any])
+    def setSkipFunctionsUndefined: Self = StObject.set(x, "skipFunctions", js.undefined)
     
     @scala.inline
-    def deletePresence: Self = this.set("presence", js.undefined)
+    def setStripUnknown(value: Boolean | Arrays): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipFunctions(value: Boolean): Self = this.set("skipFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipFunctions: Self = this.set("skipFunctions", js.undefined)
-    
-    @scala.inline
-    def setStripUnknown(value: Boolean | Arrays): Self = this.set("stripUnknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripUnknown: Self = this.set("stripUnknown", js.undefined)
+    def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
   }
 }

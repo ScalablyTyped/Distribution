@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobBookmarkEntry extends js.Object {
+trait JobBookmarkEntry extends StObject {
   
   /**
     * The attempt ID number.
@@ -51,60 +52,48 @@ object JobBookmarkEntry {
   }
   
   @scala.inline
-  implicit class JobBookmarkEntryOps[Self <: JobBookmarkEntry] (val x: Self) extends AnyVal {
+  implicit class JobBookmarkEntryMutableBuilder[Self <: JobBookmarkEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempt(value: IntegerValue): Self = StObject.set(x, "Attempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptUndefined: Self = StObject.set(x, "Attempt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobBookmark(value: JsonValue): Self = StObject.set(x, "JobBookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttempt(value: IntegerValue): Self = this.set("Attempt", value.asInstanceOf[js.Any])
+    def setJobBookmarkUndefined: Self = StObject.set(x, "JobBookmark", js.undefined)
     
     @scala.inline
-    def deleteAttempt: Self = this.set("Attempt", js.undefined)
+    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobBookmark(value: JsonValue): Self = this.set("JobBookmark", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteJobBookmark: Self = this.set("JobBookmark", js.undefined)
+    def setPreviousRunId(value: RunId): Self = StObject.set(x, "PreviousRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setPreviousRunIdUndefined: Self = StObject.set(x, "PreviousRunId", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setRun(value: IntegerValue): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousRunId(value: RunId): Self = this.set("PreviousRunId", value.asInstanceOf[js.Any])
+    def setRunId(value: RunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousRunId: Self = this.set("PreviousRunId", js.undefined)
+    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
     
     @scala.inline
-    def setRun(value: IntegerValue): Self = this.set("Run", value.asInstanceOf[js.Any])
+    def setRunUndefined: Self = StObject.set(x, "Run", js.undefined)
     
     @scala.inline
-    def deleteRun: Self = this.set("Run", js.undefined)
+    def setVersion(value: IntegerValue): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunId(value: RunId): Self = this.set("RunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunId: Self = this.set("RunId", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: IntegerValue): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

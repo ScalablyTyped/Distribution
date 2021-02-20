@@ -1,12 +1,13 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information associated with the response to the operation. */
 @js.native
-trait IFeedCallbackOptions extends js.Object {
+trait IFeedCallbackOptions extends StObject {
   
   /** Opaque token for continuing the read feed or query. */
   var continuation: String = js.native
@@ -26,27 +27,15 @@ object IFeedCallbackOptions {
   }
   
   @scala.inline
-  implicit class IFeedCallbackOptionsOps[Self <: IFeedCallbackOptions] (val x: Self) extends AnyVal {
+  implicit class IFeedCallbackOptionsMutableBuilder[Self <: IFeedCallbackOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentCollectionSizeInMB(value: String): Self = StObject.set(x, "currentCollectionSizeInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContinuation(value: String): Self = this.set("continuation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentCollectionSizeInMB(value: String): Self = this.set("currentCollectionSizeInMB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxCollectionSizeInMB(value: String): Self = this.set("maxCollectionSizeInMB", value.asInstanceOf[js.Any])
+    def setMaxCollectionSizeInMB(value: String): Self = StObject.set(x, "maxCollectionSizeInMB", value.asInstanceOf[js.Any])
   }
 }

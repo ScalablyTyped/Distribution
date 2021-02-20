@@ -1,5 +1,6 @@
 package typings.fixedDataTable2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("fixed-data-table-2", JSImport.Namespace)
 @js.native
-object fixedDataTable2Require extends js.Object
+object fixedDataTable2Require extends StObject

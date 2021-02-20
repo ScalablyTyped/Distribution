@@ -1,21 +1,36 @@
 package typings.reactVirtualized
 
 import typings.reactVirtualized.anon.Disabled
+import typings.reactVirtualized.esArrowKeyStepperMod.ArrowKeyStepperProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-virtualized/dist/commonjs/ArrowKeyStepper", JSImport.Namespace)
-@js.native
-object arrowKeyStepperMod extends js.Object {
+object arrowKeyStepperMod {
   
+  @JSImport("react-virtualized/dist/commonjs/ArrowKeyStepper", "ArrowKeyStepper")
   @js.native
-  class ArrowKeyStepper ()
-    extends typings.reactVirtualized.esArrowKeyStepperMod.ArrowKeyStepper
+  class ArrowKeyStepper protected ()
+    extends typings.reactVirtualized.esArrowKeyStepperMod.ArrowKeyStepper {
+    def this(props: ArrowKeyStepperProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ArrowKeyStepperProps, context: js.Any) = this()
+  }
   /* static members */
-  @js.native
-  object ArrowKeyStepper extends js.Object {
+  object ArrowKeyStepper {
     
-    var defaultProps: Disabled = js.native
+    @JSImport("react-virtualized/dist/commonjs/ArrowKeyStepper", "ArrowKeyStepper")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/commonjs/ArrowKeyStepper", "ArrowKeyStepper.defaultProps")
+    @js.native
+    def defaultProps: Disabled = js.native
+    @scala.inline
+    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

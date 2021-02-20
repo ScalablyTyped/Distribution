@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,39 +80,27 @@ object XPrinterPropertySet {
   }
   
   @scala.inline
-  implicit class XPrinterPropertySetOps[Self <: XPrinterPropertySet] (val x: Self) extends AnyVal {
+  implicit class XPrinterPropertySetMutableBuilder[Self <: XPrinterPropertySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinarySetup(value: SafeArray[Double]): Self = StObject.set(x, "BinarySetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormDescriptions(value: SafeArray[String]): Self = StObject.set(x, "FormDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBinarySetup(value: () => SafeArray[Double]): Self = StObject.set(x, "getBinarySetup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBinarySetup(value: SafeArray[Double]): Self = this.set("BinarySetup", value.asInstanceOf[js.Any])
+    def setGetFormDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getFormDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormDescriptions(value: SafeArray[String]): Self = this.set("FormDescriptions", value.asInstanceOf[js.Any])
+    def setSelectForm(value: String => Unit): Self = StObject.set(x, "selectForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBinarySetup(value: () => SafeArray[Double]): Self = this.set("getBinarySetup", js.Any.fromFunction0(value))
+    def setSetBinarySetup(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setBinarySetup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormDescriptions(value: () => SafeArray[String]): Self = this.set("getFormDescriptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelectForm(value: String => Unit): Self = this.set("selectForm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetBinarySetup(value: SeqEquiv[Double] => Unit): Self = this.set("setBinarySetup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetHorizontal(value: Boolean => Unit): Self = this.set("setHorizontal", js.Any.fromFunction1(value))
+    def setSetHorizontal(value: Boolean => Unit): Self = StObject.set(x, "setHorizontal", js.Any.fromFunction1(value))
   }
 }

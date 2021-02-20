@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object FilePropertyBag {
   }
   
   @scala.inline
-  implicit class FilePropertyBagOps[Self <: FilePropertyBag] (val x: Self) extends AnyVal {
+  implicit class FilePropertyBagMutableBuilder[Self <: FilePropertyBag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLastModified(value: Double): Self = this.set("lastModified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
   }
 }

@@ -1,13 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/_BlobMetadata", JSImport.Namespace)
-@js.native
-object blobMetadataMod extends js.Object {
+object blobMetadataMod {
   
-  @JSName("_BlobMetadata")
+  @JSImport("@aws-sdk/client-codecommit-node/model/_BlobMetadata", "_BlobMetadata")
+  @js.native
   val BlobMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

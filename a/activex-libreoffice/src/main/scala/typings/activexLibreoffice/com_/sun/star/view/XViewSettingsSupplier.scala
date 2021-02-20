@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.view
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object XViewSettingsSupplier {
   }
   
   @scala.inline
-  implicit class XViewSettingsSupplierOps[Self <: XViewSettingsSupplier] (val x: Self) extends AnyVal {
+  implicit class XViewSettingsSupplierMutableBuilder[Self <: XViewSettingsSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetViewSettings(value: () => XPropertySet): Self = StObject.set(x, "getViewSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setViewSettings(value: XPropertySet): Self = this.set("ViewSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetViewSettings(value: () => XPropertySet): Self = this.set("getViewSettings", js.Any.fromFunction0(value))
+    def setViewSettings(value: XPropertySet): Self = StObject.set(x, "ViewSettings", value.asInstanceOf[js.Any])
   }
 }

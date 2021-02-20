@@ -2,6 +2,7 @@ package typings.babylonjs.buildersIndexMod
 
 import typings.babylonjs.anon.Thickness
 import typings.babylonjs.meshMod.Mesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TorusBuilder ()
   extends typings.babylonjs.torusBuilderMod.TorusBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/Builders/index", "TorusBuilder")
-@js.native
-object TorusBuilder extends js.Object {
+object TorusBuilder {
   
   /**
     * Creates a torus mesh
@@ -29,5 +28,7 @@ object TorusBuilder extends js.Object {
     * @returns the torus mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#torus
     */
+  @JSImport("babylonjs/Meshes/Builders/index", "TorusBuilder.CreateTorus")
+  @js.native
   def CreateTorus(name: String, options: Thickness, scene: js.Any): Mesh = js.native
 }

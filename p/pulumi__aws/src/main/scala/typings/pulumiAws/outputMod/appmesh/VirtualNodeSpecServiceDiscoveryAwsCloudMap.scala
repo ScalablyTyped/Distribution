@@ -1,12 +1,13 @@
 package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecServiceDiscoveryAwsCloudMap extends js.Object {
+trait VirtualNodeSpecServiceDiscoveryAwsCloudMap extends StObject {
   
   /**
     * A string map that contains attributes with values that you can use to filter instances by any custom attribute that you specified when you registered the instance. Only instances that match all of the specified key/value pairs will be returned.
@@ -33,30 +34,18 @@ object VirtualNodeSpecServiceDiscoveryAwsCloudMap {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecServiceDiscoveryAwsCloudMapOps[Self <: VirtualNodeSpecServiceDiscoveryAwsCloudMap] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecServiceDiscoveryAwsCloudMapMutableBuilder[Self <: VirtualNodeSpecServiceDiscoveryAwsCloudMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceName(value: String): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

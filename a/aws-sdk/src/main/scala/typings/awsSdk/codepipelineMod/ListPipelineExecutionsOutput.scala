@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPipelineExecutionsOutput extends js.Object {
+trait ListPipelineExecutionsOutput extends StObject {
   
   /**
     * A token that can be used in the next ListPipelineExecutions call. To view all items in the list, continue to call this operation with each subsequent token until no more nextToken values are returned.
@@ -26,33 +27,21 @@ object ListPipelineExecutionsOutput {
   }
   
   @scala.inline
-  implicit class ListPipelineExecutionsOutputOps[Self <: ListPipelineExecutionsOutput] (val x: Self) extends AnyVal {
+  implicit class ListPipelineExecutionsOutputMutableBuilder[Self <: ListPipelineExecutionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineExecutionSummaries(value: PipelineExecutionSummaryList): Self = StObject.set(x, "pipelineExecutionSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setPipelineExecutionSummariesUndefined: Self = StObject.set(x, "pipelineExecutionSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setPipelineExecutionSummariesVarargs(value: PipelineExecutionSummary*): Self = this.set("pipelineExecutionSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setPipelineExecutionSummaries(value: PipelineExecutionSummaryList): Self = this.set("pipelineExecutionSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineExecutionSummaries: Self = this.set("pipelineExecutionSummaries", js.undefined)
+    def setPipelineExecutionSummariesVarargs(value: PipelineExecutionSummary*): Self = StObject.set(x, "pipelineExecutionSummaries", js.Array(value :_*))
   }
 }

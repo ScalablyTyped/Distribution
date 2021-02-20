@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object configWorkers {
   }
   
   @scala.inline
-  implicit class configWorkersOps[Self <: configWorkers] (val x: Self) extends AnyVal {
+  implicit class configWorkersMutableBuilder[Self <: configWorkers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoaderConfig(value: configWorkersLoaderConfig): Self = StObject.set(x, "loaderConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoaderConfigUndefined: Self = StObject.set(x, "loaderConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoaderUrl(value: js.Any): Self = StObject.set(x, "loaderUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaderConfig(value: configWorkersLoaderConfig): Self = this.set("loaderConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaderConfig: Self = this.set("loaderConfig", js.undefined)
-    
-    @scala.inline
-    def setLoaderUrl(value: js.Any): Self = this.set("loaderUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaderUrl: Self = this.set("loaderUrl", js.undefined)
+    def setLoaderUrlUndefined: Self = StObject.set(x, "loaderUrl", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionInfo extends js.Object {
+trait ExecutionInfo extends StObject {
   
   def getRemainingCreateQuota(): Double = js.native
   
@@ -29,30 +30,18 @@ object ExecutionInfo {
   }
   
   @scala.inline
-  implicit class ExecutionInfoOps[Self <: ExecutionInfo] (val x: Self) extends AnyVal {
+  implicit class ExecutionInfoMutableBuilder[Self <: ExecutionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRemainingCreateQuota(value: () => Double): Self = StObject.set(x, "getRemainingCreateQuota", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRemainingGetQuota(value: () => Double): Self = StObject.set(x, "getRemainingGetQuota", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRemainingTime(value: () => Double): Self = StObject.set(x, "getRemainingTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRemainingCreateQuota(value: () => Double): Self = this.set("getRemainingCreateQuota", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRemainingGetQuota(value: () => Double): Self = this.set("getRemainingGetQuota", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRemainingTime(value: () => Double): Self = this.set("getRemainingTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsPreview(value: () => Boolean): Self = this.set("isPreview", js.Any.fromFunction0(value))
+    def setIsPreview(value: () => Boolean): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
   }
 }

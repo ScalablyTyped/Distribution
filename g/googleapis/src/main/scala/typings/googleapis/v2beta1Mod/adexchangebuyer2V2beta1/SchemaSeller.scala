@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Manager account ID.
   */
 @js.native
-trait SchemaSeller extends js.Object {
+trait SchemaSeller extends StObject {
   
   /**
     * The unique ID for the seller. The seller fills in this field. The seller
@@ -31,30 +32,18 @@ object SchemaSeller {
   }
   
   @scala.inline
-  implicit class SchemaSellerOps[Self <: SchemaSeller] (val x: Self) extends AnyVal {
+  implicit class SchemaSellerMutableBuilder[Self <: SchemaSeller] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
-    
-    @scala.inline
-    def setSubAccountId(value: String): Self = this.set("subAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubAccountId: Self = this.set("subAccountId", js.undefined)
+    def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
   }
 }

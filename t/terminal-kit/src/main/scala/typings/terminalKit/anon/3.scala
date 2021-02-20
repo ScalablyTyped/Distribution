@@ -1,41 +1,28 @@
 package typings.terminalKit.anon
 
+import typings.terminalKit.terminalMod.GridMenuResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `3` extends js.Object {
+trait `3` extends StObject {
   
-  var shrink: js.UndefOr[Height] = js.native
+  var promise: js.Promise[GridMenuResponse] = js.native
 }
 object `3` {
   
   @scala.inline
-  def apply(): `3` = {
-    val __obj = js.Dynamic.literal()
+  def apply(promise: js.Promise[GridMenuResponse]): `3` = {
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
   @scala.inline
-  implicit class `3Ops`[Self <: `3`] (val x: Self) extends AnyVal {
+  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShrink(value: Height): Self = this.set("shrink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShrink: Self = this.set("shrink", js.undefined)
+    def setPromise(value: js.Promise[GridMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

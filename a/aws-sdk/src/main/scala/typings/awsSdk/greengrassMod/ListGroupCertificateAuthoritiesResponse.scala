@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGroupCertificateAuthoritiesResponse extends js.Object {
+trait ListGroupCertificateAuthoritiesResponse extends StObject {
   
   /**
     * A list of certificate authorities associated with the group.
@@ -21,27 +22,15 @@ object ListGroupCertificateAuthoritiesResponse {
   }
   
   @scala.inline
-  implicit class ListGroupCertificateAuthoritiesResponseOps[Self <: ListGroupCertificateAuthoritiesResponse] (val x: Self) extends AnyVal {
+  implicit class ListGroupCertificateAuthoritiesResponseMutableBuilder[Self <: ListGroupCertificateAuthoritiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupCertificateAuthorities(value: listOfGroupCertificateAuthorityProperties): Self = StObject.set(x, "GroupCertificateAuthorities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupCertificateAuthoritiesUndefined: Self = StObject.set(x, "GroupCertificateAuthorities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupCertificateAuthoritiesVarargs(value: GroupCertificateAuthorityProperties*): Self = this.set("GroupCertificateAuthorities", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupCertificateAuthorities(value: listOfGroupCertificateAuthorityProperties): Self = this.set("GroupCertificateAuthorities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupCertificateAuthorities: Self = this.set("GroupCertificateAuthorities", js.undefined)
+    def setGroupCertificateAuthoritiesVarargs(value: GroupCertificateAuthorityProperties*): Self = StObject.set(x, "GroupCertificateAuthorities", js.Array(value :_*))
   }
 }

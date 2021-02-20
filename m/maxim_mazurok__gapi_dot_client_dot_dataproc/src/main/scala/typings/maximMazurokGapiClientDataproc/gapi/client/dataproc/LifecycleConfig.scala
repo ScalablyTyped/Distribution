@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecycleConfig extends js.Object {
+trait LifecycleConfig extends StObject {
   
   /** Optional. The time when cluster will be auto-deleted (see JSON representation of Timestamp (https://developers.google.com/protocol-buffers/docs/proto3#json)). */
   var autoDeleteTime: js.UndefOr[String] = js.native
@@ -37,42 +38,30 @@ object LifecycleConfig {
   }
   
   @scala.inline
-  implicit class LifecycleConfigOps[Self <: LifecycleConfig] (val x: Self) extends AnyVal {
+  implicit class LifecycleConfigMutableBuilder[Self <: LifecycleConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDeleteTime(value: String): Self = StObject.set(x, "autoDeleteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDeleteTimeUndefined: Self = StObject.set(x, "autoDeleteTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoDeleteTtl(value: String): Self = StObject.set(x, "autoDeleteTtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeleteTime(value: String): Self = this.set("autoDeleteTime", value.asInstanceOf[js.Any])
+    def setAutoDeleteTtlUndefined: Self = StObject.set(x, "autoDeleteTtl", js.undefined)
     
     @scala.inline
-    def deleteAutoDeleteTime: Self = this.set("autoDeleteTime", js.undefined)
+    def setIdleDeleteTtl(value: String): Self = StObject.set(x, "idleDeleteTtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeleteTtl(value: String): Self = this.set("autoDeleteTtl", value.asInstanceOf[js.Any])
+    def setIdleDeleteTtlUndefined: Self = StObject.set(x, "idleDeleteTtl", js.undefined)
     
     @scala.inline
-    def deleteAutoDeleteTtl: Self = this.set("autoDeleteTtl", js.undefined)
+    def setIdleStartTime(value: String): Self = StObject.set(x, "idleStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleDeleteTtl(value: String): Self = this.set("idleDeleteTtl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdleDeleteTtl: Self = this.set("idleDeleteTtl", js.undefined)
-    
-    @scala.inline
-    def setIdleStartTime(value: String): Self = this.set("idleStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdleStartTime: Self = this.set("idleStartTime", js.undefined)
+    def setIdleStartTimeUndefined: Self = StObject.set(x, "idleStartTime", js.undefined)
   }
 }

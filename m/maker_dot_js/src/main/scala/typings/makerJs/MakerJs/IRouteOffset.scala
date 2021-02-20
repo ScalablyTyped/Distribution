@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A route to either a path or a model, and the absolute offset of it.
   */
 @js.native
-trait IRouteOffset extends js.Object {
+trait IRouteOffset extends StObject {
   
   var layer: String = js.native
   
@@ -27,33 +28,21 @@ object IRouteOffset {
   }
   
   @scala.inline
-  implicit class IRouteOffsetOps[Self <: IRouteOffset] (val x: Self) extends AnyVal {
+  implicit class IRouteOffsetMutableBuilder[Self <: IRouteOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffset(value: IPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoute(value: js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: String): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: IPoint): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouteVarargs(value: String*): Self = this.set("route", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoute(value: js.Array[String]): Self = this.set("route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouteKey(value: String): Self = this.set("routeKey", value.asInstanceOf[js.Any])
+    def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

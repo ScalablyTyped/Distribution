@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.policy.v1beta1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodDisruptionBudgetStatus represents information about the status of a PodDisruptionBudget. Status may trail the actual state of a system.
   */
 @js.native
-trait PodDisruptionBudgetStatus extends js.Object {
+trait PodDisruptionBudgetStatus extends StObject {
   
   /**
     * current number of healthy pods
@@ -56,42 +57,30 @@ object PodDisruptionBudgetStatus {
   }
   
   @scala.inline
-  implicit class PodDisruptionBudgetStatusOps[Self <: PodDisruptionBudgetStatus] (val x: Self) extends AnyVal {
+  implicit class PodDisruptionBudgetStatusMutableBuilder[Self <: PodDisruptionBudgetStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentHealthy(value: Input[Double]): Self = StObject.set(x, "currentHealthy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredHealthy(value: Input[Double]): Self = StObject.set(x, "desiredHealthy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisruptedPods(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "disruptedPods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentHealthy(value: Input[Double]): Self = this.set("currentHealthy", value.asInstanceOf[js.Any])
+    def setDisruptedPodsUndefined: Self = StObject.set(x, "disruptedPods", js.undefined)
     
     @scala.inline
-    def setDesiredHealthy(value: Input[Double]): Self = this.set("desiredHealthy", value.asInstanceOf[js.Any])
+    def setDisruptionsAllowed(value: Input[Double]): Self = StObject.set(x, "disruptionsAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisruptionsAllowed(value: Input[Double]): Self = this.set("disruptionsAllowed", value.asInstanceOf[js.Any])
+    def setExpectedPods(value: Input[Double]): Self = StObject.set(x, "expectedPods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedPods(value: Input[Double]): Self = this.set("expectedPods", value.asInstanceOf[js.Any])
+    def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisruptedPods(value: Input[StringDictionary[Input[String]]]): Self = this.set("disruptedPods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisruptedPods: Self = this.set("disruptedPods", js.undefined)
-    
-    @scala.inline
-    def setObservedGeneration(value: Input[Double]): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
   }
 }

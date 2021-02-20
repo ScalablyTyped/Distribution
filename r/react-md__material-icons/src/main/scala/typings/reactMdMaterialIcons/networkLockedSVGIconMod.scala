@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/NetworkLockedSVGIcon", JSImport.Namespace)
-@js.native
-object networkLockedSVGIconMod extends js.Object {
+object networkLockedSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/NetworkLockedSVGIcon", "NetworkLockedSVGIcon")
+  @js.native
   val NetworkLockedSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

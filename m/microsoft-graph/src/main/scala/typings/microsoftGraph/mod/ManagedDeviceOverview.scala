@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,54 +32,42 @@ object ManagedDeviceOverview {
   }
   
   @scala.inline
-  implicit class ManagedDeviceOverviewOps[Self <: ManagedDeviceOverview] (val x: Self) extends AnyVal {
+  implicit class ManagedDeviceOverviewMutableBuilder[Self <: ManagedDeviceOverview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceExchangeAccessStateSummary(value: NullableOption[DeviceExchangeAccessStateSummary]): Self = StObject.set(x, "deviceExchangeAccessStateSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceExchangeAccessStateSummaryNull: Self = StObject.set(x, "deviceExchangeAccessStateSummary", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceExchangeAccessStateSummaryUndefined: Self = StObject.set(x, "deviceExchangeAccessStateSummary", js.undefined)
     
     @scala.inline
-    def setDeviceExchangeAccessStateSummary(value: NullableOption[DeviceExchangeAccessStateSummary]): Self = this.set("deviceExchangeAccessStateSummary", value.asInstanceOf[js.Any])
+    def setDeviceOperatingSystemSummary(value: NullableOption[DeviceOperatingSystemSummary]): Self = StObject.set(x, "deviceOperatingSystemSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceExchangeAccessStateSummary: Self = this.set("deviceExchangeAccessStateSummary", js.undefined)
+    def setDeviceOperatingSystemSummaryNull: Self = StObject.set(x, "deviceOperatingSystemSummary", null)
     
     @scala.inline
-    def setDeviceExchangeAccessStateSummaryNull: Self = this.set("deviceExchangeAccessStateSummary", null)
+    def setDeviceOperatingSystemSummaryUndefined: Self = StObject.set(x, "deviceOperatingSystemSummary", js.undefined)
     
     @scala.inline
-    def setDeviceOperatingSystemSummary(value: NullableOption[DeviceOperatingSystemSummary]): Self = this.set("deviceOperatingSystemSummary", value.asInstanceOf[js.Any])
+    def setDualEnrolledDeviceCount(value: Double): Self = StObject.set(x, "dualEnrolledDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceOperatingSystemSummary: Self = this.set("deviceOperatingSystemSummary", js.undefined)
+    def setDualEnrolledDeviceCountUndefined: Self = StObject.set(x, "dualEnrolledDeviceCount", js.undefined)
     
     @scala.inline
-    def setDeviceOperatingSystemSummaryNull: Self = this.set("deviceOperatingSystemSummary", null)
+    def setEnrolledDeviceCount(value: Double): Self = StObject.set(x, "enrolledDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDualEnrolledDeviceCount(value: Double): Self = this.set("dualEnrolledDeviceCount", value.asInstanceOf[js.Any])
+    def setEnrolledDeviceCountUndefined: Self = StObject.set(x, "enrolledDeviceCount", js.undefined)
     
     @scala.inline
-    def deleteDualEnrolledDeviceCount: Self = this.set("dualEnrolledDeviceCount", js.undefined)
+    def setMdmEnrolledCount(value: Double): Self = StObject.set(x, "mdmEnrolledCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrolledDeviceCount(value: Double): Self = this.set("enrolledDeviceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnrolledDeviceCount: Self = this.set("enrolledDeviceCount", js.undefined)
-    
-    @scala.inline
-    def setMdmEnrolledCount(value: Double): Self = this.set("mdmEnrolledCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMdmEnrolledCount: Self = this.set("mdmEnrolledCount", js.undefined)
+    def setMdmEnrolledCountUndefined: Self = StObject.set(x, "mdmEnrolledCount", js.undefined)
   }
 }

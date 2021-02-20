@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleFirestoreAdminV1ImportDocumentsMetadata extends js.Object {
+trait GoogleFirestoreAdminV1ImportDocumentsMetadata extends StObject {
   
   /** Which collection ids are being imported. */
   var collectionIds: js.UndefOr[js.Array[String]] = js.native
@@ -37,63 +38,51 @@ object GoogleFirestoreAdminV1ImportDocumentsMetadata {
   }
   
   @scala.inline
-  implicit class GoogleFirestoreAdminV1ImportDocumentsMetadataOps[Self <: GoogleFirestoreAdminV1ImportDocumentsMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleFirestoreAdminV1ImportDocumentsMetadataMutableBuilder[Self <: GoogleFirestoreAdminV1ImportDocumentsMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
     
     @scala.inline
-    def setCollectionIdsVarargs(value: String*): Self = this.set("collectionIds", js.Array(value :_*))
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionIds(value: js.Array[String]): Self = this.set("collectionIds", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCollectionIds: Self = this.set("collectionIds", js.undefined)
+    def setInputUriPrefix(value: String): Self = StObject.set(x, "inputUriPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setInputUriPrefixUndefined: Self = StObject.set(x, "inputUriPrefix", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setOperationState(value: String): Self = StObject.set(x, "operationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputUriPrefix(value: String): Self = this.set("inputUriPrefix", value.asInstanceOf[js.Any])
+    def setOperationStateUndefined: Self = StObject.set(x, "operationState", js.undefined)
     
     @scala.inline
-    def deleteInputUriPrefix: Self = this.set("inputUriPrefix", js.undefined)
+    def setProgressBytes(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationState(value: String): Self = this.set("operationState", value.asInstanceOf[js.Any])
+    def setProgressBytesUndefined: Self = StObject.set(x, "progressBytes", js.undefined)
     
     @scala.inline
-    def deleteOperationState: Self = this.set("operationState", js.undefined)
+    def setProgressDocuments(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressBytes(value: GoogleFirestoreAdminV1Progress): Self = this.set("progressBytes", value.asInstanceOf[js.Any])
+    def setProgressDocumentsUndefined: Self = StObject.set(x, "progressDocuments", js.undefined)
     
     @scala.inline
-    def deleteProgressBytes: Self = this.set("progressBytes", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressDocuments(value: GoogleFirestoreAdminV1Progress): Self = this.set("progressDocuments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressDocuments: Self = this.set("progressDocuments", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

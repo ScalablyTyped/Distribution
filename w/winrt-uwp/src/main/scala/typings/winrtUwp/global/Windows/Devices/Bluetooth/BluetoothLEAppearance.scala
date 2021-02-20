@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class BluetoothLEAppearance ()
   extends typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance
-/* static members */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearance")
-@js.native
-object BluetoothLEAppearance extends js.Object {
+object BluetoothLEAppearance {
   
   /**
     * Creates a BluetoothLEAppearance object by supplying values for Category (see BluetoothLEAppearanceCategories ) and Subcategory (see BluetoothLEAppearanceSubcategories ) of the Bluetooth LE device.
@@ -20,6 +18,9 @@ object BluetoothLEAppearance extends js.Object {
     * @param appearanceSubCategory The Bluetooth LE appearance subcategory. See BluetoothLEAppearanceSubcategories .
     * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
     */
+  /* static member */
+  @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearance.fromParts")
+  @js.native
   def fromParts(appearanceCategory: Double, appearanceSubCategory: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance = js.native
   
   /**
@@ -27,5 +28,8 @@ object BluetoothLEAppearance extends js.Object {
     * @param rawValue The raw integer value representing the appearance category and subcategory.
     * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
     */
+  /* static member */
+  @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearance.fromRawValue")
+  @js.native
   def fromRawValue(rawValue: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance = js.native
 }

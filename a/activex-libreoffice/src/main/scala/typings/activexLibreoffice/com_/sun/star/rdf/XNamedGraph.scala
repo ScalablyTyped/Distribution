@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rdf
 
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,36 +108,24 @@ object XNamedGraph {
   }
   
   @scala.inline
-  implicit class XNamedGraphOps[Self <: XNamedGraph] (val x: Self) extends AnyVal {
+  implicit class XNamedGraphMutableBuilder[Self <: XNamedGraph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddStatement(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "addStatement", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => XURI): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: XURI): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatements", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddStatement(value: (XResource, XURI, XNode) => Unit): Self = this.set("addStatement", js.Any.fromFunction3(value))
+    def setName(value: XURI): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => XURI): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = this.set("getStatements", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoveStatements(value: (XResource, XURI, XNode) => Unit): Self = this.set("removeStatements", js.Any.fromFunction3(value))
+    def setRemoveStatements(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "removeStatements", js.Any.fromFunction3(value))
   }
 }

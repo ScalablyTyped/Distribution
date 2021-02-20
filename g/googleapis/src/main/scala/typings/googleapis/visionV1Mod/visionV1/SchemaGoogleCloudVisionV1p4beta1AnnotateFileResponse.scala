@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * more images, which individually have their own responses.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse extends js.Object {
+trait SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse extends StObject {
   
   /**
     * Information about the file for which this response is generated.
@@ -35,39 +36,27 @@ object SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponseOps[Self <: SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponseMutableBuilder[Self <: SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputConfig(value: SchemaGoogleCloudVisionV1p4beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponses(value: js.Array[SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: SchemaGoogleCloudVisionV1p4beta1InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
+    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
     @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
+    def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
     
     @scala.inline
-    def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse*): Self = this.set("responses", js.Array(value :_*))
+    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponses(value: js.Array[SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse]): Self = this.set("responses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponses: Self = this.set("responses", js.undefined)
-    
-    @scala.inline
-    def setTotalPages(value: Double): Self = this.set("totalPages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPages: Self = this.set("totalPages", js.undefined)
+    def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
   }
 }

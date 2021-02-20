@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogConfiguration extends js.Object {
+trait LogConfiguration extends StObject {
   
   /**
     * The log driver to use for the container. For tasks on AWS Fargate, the supported log drivers are awslogs, splunk, and awsfirelens. For tasks hosted on Amazon EC2 instances, the supported log drivers are awslogs, fluentd, gelf, json-file, journald, logentries,syslog, splunk, and awsfirelens. For more information about using the awslogs log driver, see Using the awslogs log driver in the Amazon Elastic Container Service Developer Guide. For more information about using the awsfirelens log driver, see Custom log routing in the Amazon Elastic Container Service Developer Guide.  If you have a custom driver that is not listed, you can fork the Amazon ECS container agent project that is available on GitHub and customize it to work with that driver. We encourage you to submit pull requests for changes that you would like to have included. However, we do not currently provide support for running modified copies of this software. 
@@ -31,36 +32,24 @@ object LogConfiguration {
   }
   
   @scala.inline
-  implicit class LogConfigurationOps[Self <: LogConfiguration] (val x: Self) extends AnyVal {
+  implicit class LogConfigurationMutableBuilder[Self <: LogConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogDriver(value: LogDriver): Self = StObject.set(x, "logDriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: LogConfigurationOptionsMap): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setLogDriver(value: LogDriver): Self = this.set("logDriver", value.asInstanceOf[js.Any])
+    def setSecretOptions(value: SecretList): Self = StObject.set(x, "secretOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: LogConfigurationOptionsMap): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSecretOptionsUndefined: Self = StObject.set(x, "secretOptions", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setSecretOptionsVarargs(value: Secret*): Self = this.set("secretOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecretOptions(value: SecretList): Self = this.set("secretOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretOptions: Self = this.set("secretOptions", js.undefined)
+    def setSecretOptionsVarargs(value: Secret*): Self = StObject.set(x, "secretOptions", js.Array(value :_*))
   }
 }

@@ -12,12 +12,13 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.hellosignColonuserSend
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.hellosignColonuserSignRequest
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.hellosignColonverifyDomainRequest
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.hellosignColonverifyDomainResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Messages extends js.Object {
+trait Messages extends StObject {
   
   var APP_CONFIGURE: hellosignColonconfigure = js.native
   
@@ -65,54 +66,42 @@ object Messages {
   }
   
   @scala.inline
-  implicit class MessagesOps[Self <: Messages] (val x: Self) extends AnyVal {
+  implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPP_CONFIGURE(value: hellosignColonconfigure): Self = StObject.set(x, "APP_CONFIGURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAPP_ERROR(value: hellosignColonerror): Self = StObject.set(x, "APP_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAPP_INITIALIZE(value: hellosignColoninitialize): Self = StObject.set(x, "APP_INITIALIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPP_CONFIGURE(value: hellosignColonconfigure): Self = this.set("APP_CONFIGURE", value.asInstanceOf[js.Any])
+    def setAPP_VERIFY_DOMAIN_REQUEST(value: hellosignColonverifyDomainRequest): Self = StObject.set(x, "APP_VERIFY_DOMAIN_REQUEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPP_ERROR(value: hellosignColonerror): Self = this.set("APP_ERROR", value.asInstanceOf[js.Any])
+    def setAPP_VERIFY_DOMAIN_RESPONSE(value: hellosignColonverifyDomainResponse): Self = StObject.set(x, "APP_VERIFY_DOMAIN_RESPONSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPP_INITIALIZE(value: hellosignColoninitialize): Self = this.set("APP_INITIALIZE", value.asInstanceOf[js.Any])
+    def setUSER_CANCEL_REQUEST(value: hellosignColonuserCancelRequest): Self = StObject.set(x, "USER_CANCEL_REQUEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPP_VERIFY_DOMAIN_REQUEST(value: hellosignColonverifyDomainRequest): Self = this.set("APP_VERIFY_DOMAIN_REQUEST", value.asInstanceOf[js.Any])
+    def setUSER_CREATE_TEMPLATE(value: hellosignColonuserCreateTemplate): Self = StObject.set(x, "USER_CREATE_TEMPLATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPP_VERIFY_DOMAIN_RESPONSE(value: hellosignColonverifyDomainResponse): Self = this.set("APP_VERIFY_DOMAIN_RESPONSE", value.asInstanceOf[js.Any])
+    def setUSER_DECLINE_REQUEST(value: hellosignColonuserDeclineRequest): Self = StObject.set(x, "USER_DECLINE_REQUEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUSER_CANCEL_REQUEST(value: hellosignColonuserCancelRequest): Self = this.set("USER_CANCEL_REQUEST", value.asInstanceOf[js.Any])
+    def setUSER_FINISH_REQUEST(value: hellosignColonuserFinishRequest): Self = StObject.set(x, "USER_FINISH_REQUEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUSER_CREATE_TEMPLATE(value: hellosignColonuserCreateTemplate): Self = this.set("USER_CREATE_TEMPLATE", value.asInstanceOf[js.Any])
+    def setUSER_REASSIGN_REQUEST(value: hellosignColonuserReassignRequest): Self = StObject.set(x, "USER_REASSIGN_REQUEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUSER_DECLINE_REQUEST(value: hellosignColonuserDeclineRequest): Self = this.set("USER_DECLINE_REQUEST", value.asInstanceOf[js.Any])
+    def setUSER_SEND_REQUEST(value: hellosignColonuserSendRequest): Self = StObject.set(x, "USER_SEND_REQUEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUSER_FINISH_REQUEST(value: hellosignColonuserFinishRequest): Self = this.set("USER_FINISH_REQUEST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUSER_REASSIGN_REQUEST(value: hellosignColonuserReassignRequest): Self = this.set("USER_REASSIGN_REQUEST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUSER_SEND_REQUEST(value: hellosignColonuserSendRequest): Self = this.set("USER_SEND_REQUEST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUSER_SIGN_REQUEST(value: hellosignColonuserSignRequest): Self = this.set("USER_SIGN_REQUEST", value.asInstanceOf[js.Any])
+    def setUSER_SIGN_REQUEST(value: hellosignColonuserSignRequest): Self = StObject.set(x, "USER_SIGN_REQUEST", value.asInstanceOf[js.Any])
   }
 }

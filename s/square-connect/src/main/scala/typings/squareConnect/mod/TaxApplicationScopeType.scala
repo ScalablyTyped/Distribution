@@ -1,5 +1,6 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.squareConnect.squareConnectStrings.LINE_ITEM
   - typings.squareConnect.squareConnectStrings.OTHER_TAX_SCOPE
 */
-trait TaxApplicationScopeType extends js.Object
+trait TaxApplicationScopeType extends StObject
 object TaxApplicationScopeType {
   
   @scala.inline

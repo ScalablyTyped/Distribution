@@ -1,5 +1,6 @@
 package typings.agGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LargeTextCellEditor ()
   extends typings.agGrid.largeTextCellEditorMod.LargeTextCellEditor
 /* static members */
-@JSImport("ag-grid", "LargeTextCellEditor")
-@js.native
-object LargeTextCellEditor extends js.Object {
+object LargeTextCellEditor {
   
-  var TEMPLATE: js.Any = js.native
+  @JSImport("ag-grid", "LargeTextCellEditor")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid", "LargeTextCellEditor.TEMPLATE")
+  @js.native
+  def TEMPLATE: js.Any = js.native
+  @scala.inline
+  def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
 }

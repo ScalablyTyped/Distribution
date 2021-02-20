@@ -1,11 +1,12 @@
 package typings.amapJsSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultType extends js.Object {
+trait DefaultType extends StObject {
   
   var defaultType: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object DefaultType {
   }
   
   @scala.inline
-  implicit class DefaultTypeOps[Self <: DefaultType] (val x: Self) extends AnyVal {
+  implicit class DefaultTypeMutableBuilder[Self <: DefaultType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultType(value: Double): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowRoad(value: Boolean): Self = StObject.set(x, "showRoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultType(value: Double): Self = this.set("defaultType", value.asInstanceOf[js.Any])
+    def setShowRoadUndefined: Self = StObject.set(x, "showRoad", js.undefined)
     
     @scala.inline
-    def deleteDefaultType: Self = this.set("defaultType", js.undefined)
+    def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRoad(value: Boolean): Self = this.set("showRoad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowRoad: Self = this.set("showRoad", js.undefined)
-    
-    @scala.inline
-    def setShowTraffic(value: Boolean): Self = this.set("showTraffic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowTraffic: Self = this.set("showTraffic", js.undefined)
+    def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
   }
 }

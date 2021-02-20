@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Callback result for a payment authorization update.
   */
 @js.native
-trait PaymentAuthorizationResult extends js.Object {
+trait PaymentAuthorizationResult extends StObject {
   
   /**
     * Error for the last PaymentData, will be displayed to the user.
@@ -29,27 +30,15 @@ object PaymentAuthorizationResult {
   }
   
   @scala.inline
-  implicit class PaymentAuthorizationResultOps[Self <: PaymentAuthorizationResult] (val x: Self) extends AnyVal {
+  implicit class PaymentAuthorizationResultMutableBuilder[Self <: PaymentAuthorizationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransactionState(value: TransactionState): Self = this.set("transactionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: PaymentDataError): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setTransactionState(value: TransactionState): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
   }
 }

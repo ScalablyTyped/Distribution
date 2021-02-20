@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJourneysResponse extends js.Object {
+trait ListJourneysResponse extends StObject {
   
   var JourneysResponse: typings.awsSdk.pinpointMod.JourneysResponse = js.native
 }
@@ -18,21 +19,9 @@ object ListJourneysResponse {
   }
   
   @scala.inline
-  implicit class ListJourneysResponseOps[Self <: ListJourneysResponse] (val x: Self) extends AnyVal {
+  implicit class ListJourneysResponseMutableBuilder[Self <: ListJourneysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJourneysResponse(value: JourneysResponse): Self = this.set("JourneysResponse", value.asInstanceOf[js.Any])
+    def setJourneysResponse(value: JourneysResponse): Self = StObject.set(x, "JourneysResponse", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Failures extends js.Object {
+trait Failures extends StObject {
   
   var failures: Double = js.native
   
@@ -26,33 +27,21 @@ object Failures {
   }
   
   @scala.inline
-  implicit class FailuresOps[Self <: Failures] (val x: Self) extends AnyVal {
+  implicit class FailuresMutableBuilder[Self <: Failures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailures(value: Double): Self = this.set("failures", value.asInstanceOf[js.Any])
+    def setSuites(value: Double): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasses(value: Double): Self = this.set("passes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPending(value: Double): Self = this.set("pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuites(value: Double): Self = this.set("suites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTests(value: Double): Self = this.set("tests", value.asInstanceOf[js.Any])
+    def setTests(value: Double): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
   }
 }

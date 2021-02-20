@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import typings.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A constraint for a SpeechRecognizer object based on a Speech Recognition Grammar Specification (SRGS) file. */
 @js.native
-trait SpeechRecognitionGrammarFileConstraint extends js.Object {
+trait SpeechRecognitionGrammarFileConstraint extends StObject {
   
   /** Gets the StorageFile object representing the Speech Recognition Grammar Specification (SRGS) grammar file. */
   var grammarFile: StorageFile = js.native
@@ -40,33 +41,21 @@ object SpeechRecognitionGrammarFileConstraint {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionGrammarFileConstraintOps[Self <: SpeechRecognitionGrammarFileConstraint] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionGrammarFileConstraintMutableBuilder[Self <: SpeechRecognitionGrammarFileConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrammarFile(value: StorageFile): Self = StObject.set(x, "grammarFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrammarFile(value: StorageFile): Self = this.set("grammarFile", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProbability(value: SpeechRecognitionConstraintProbability): Self = this.set("probability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SpeechRecognitionConstraintType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

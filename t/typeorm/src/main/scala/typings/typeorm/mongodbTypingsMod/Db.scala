@@ -8,6 +8,7 @@ import typings.typeorm.anon.W
 import typings.typeorm.anon.`1`
 import typings.typeorm.anon.`6`
 import typings.typeorm.platformPlatformToolsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

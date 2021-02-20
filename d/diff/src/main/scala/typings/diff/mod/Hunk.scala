@@ -1,11 +1,12 @@
 package typings.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hunk extends js.Object {
+trait Hunk extends StObject {
   
   var linedelimiters: js.Array[String] = js.native
   
@@ -35,42 +36,30 @@ object Hunk {
   }
   
   @scala.inline
-  implicit class HunkOps[Self <: Hunk] (val x: Self) extends AnyVal {
+  implicit class HunkMutableBuilder[Self <: Hunk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinedelimiters(value: js.Array[String]): Self = StObject.set(x, "linedelimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinedelimitersVarargs(value: String*): Self = StObject.set(x, "linedelimiters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinedelimitersVarargs(value: String*): Self = this.set("linedelimiters", js.Array(value :_*))
+    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
     @scala.inline
-    def setLinedelimiters(value: js.Array[String]): Self = this.set("linedelimiters", value.asInstanceOf[js.Any])
+    def setNewLines(value: Double): Self = StObject.set(x, "newLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesVarargs(value: String*): Self = this.set("lines", js.Array(value :_*))
+    def setNewStart(value: Double): Self = StObject.set(x, "newStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines(value: js.Array[String]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setOldLines(value: Double): Self = StObject.set(x, "oldLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLines(value: Double): Self = this.set("newLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewStart(value: Double): Self = this.set("newStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldLines(value: Double): Self = this.set("oldLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldStart(value: Double): Self = this.set("oldStart", value.asInstanceOf[js.Any])
+    def setOldStart(value: Double): Self = StObject.set(x, "oldStart", value.asInstanceOf[js.Any])
   }
 }

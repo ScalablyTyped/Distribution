@@ -1,5 +1,6 @@
 package typings.luminoApplication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@lumino/application", JSImport.Namespace)
 @js.native
-object luminoApplicationRequire extends js.Object
+object luminoApplicationRequire extends StObject

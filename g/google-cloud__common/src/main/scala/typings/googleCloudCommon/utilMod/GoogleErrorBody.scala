@@ -1,12 +1,13 @@
 package typings.googleCloudCommon.utilMod
 
 import typings.teenyRequest.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleErrorBody extends js.Object {
+trait GoogleErrorBody extends StObject {
   
   var code: Double = js.native
   
@@ -25,39 +26,27 @@ object GoogleErrorBody {
   }
   
   @scala.inline
-  implicit class GoogleErrorBodyOps[Self <: GoogleErrorBody] (val x: Self) extends AnyVal {
+  implicit class GoogleErrorBodyMutableBuilder[Self <: GoogleErrorBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Array[GoogleInnerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setErrorsVarargs(value: GoogleInnerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setResponse(value: Response[_]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: GoogleInnerError*): Self = this.set("errors", js.Array(value :_*))
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setErrors(value: js.Array[GoogleInnerError]): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setResponse(value: Response[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.fridaGum.ObjC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxyEventCallbacks[D, T, S] extends js.Object {
+trait ProxyEventCallbacks[D, T, S] extends StObject {
   
   /**
     * Gets notified right after the object has been deallocated.
@@ -37,30 +38,18 @@ object ProxyEventCallbacks {
   }
   
   @scala.inline
-  implicit class ProxyEventCallbacksOps[Self <: ProxyEventCallbacks[_, _, _], D, T, S] (val x: Self with (ProxyEventCallbacks[D, T, S])) extends AnyVal {
+  implicit class ProxyEventCallbacksMutableBuilder[Self <: ProxyEventCallbacks[_, _, _], D, T, S] (val x: Self with (ProxyEventCallbacks[D, T, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDealloc(value: js.ThisFunction0[/* this */ UserMethodInvocation[D, T, S], Unit]): Self = StObject.set(x, "dealloc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeallocUndefined: Self = StObject.set(x, "dealloc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForward(value: js.ThisFunction1[/* this */ UserMethodInvocation[D, T, S], /* name */ String, Unit]): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealloc(value: js.ThisFunction0[/* this */ UserMethodInvocation[D, T, S], Unit]): Self = this.set("dealloc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDealloc: Self = this.set("dealloc", js.undefined)
-    
-    @scala.inline
-    def setForward(value: js.ThisFunction1[/* this */ UserMethodInvocation[D, T, S], /* name */ String, Unit]): Self = this.set("forward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForward: Self = this.set("forward", js.undefined)
+    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
   }
 }

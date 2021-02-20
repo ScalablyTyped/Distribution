@@ -2,12 +2,13 @@ package typings.iscroll
 
 import typings.iscroll.anon.Fn
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScrollOptions extends js.Object {
+trait IScrollOptions extends StObject {
   
   var HWCompositing: js.UndefOr[Boolean] = js.native
   
@@ -130,333 +131,321 @@ object IScrollOptions {
   }
   
   @scala.inline
-  implicit class IScrollOptionsOps[Self <: IScrollOptions] (val x: Self) extends AnyVal {
+  implicit class IScrollOptionsMutableBuilder[Self <: IScrollOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBounceEasing(value: String | Fn): Self = StObject.set(x, "bounceEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounceEasingUndefined: Self = StObject.set(x, "bounceEasing", js.undefined)
     
     @scala.inline
-    def setHWCompositing(value: Boolean): Self = this.set("HWCompositing", value.asInstanceOf[js.Any])
+    def setBounceLock(value: Boolean): Self = StObject.set(x, "bounceLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHWCompositing: Self = this.set("HWCompositing", js.undefined)
+    def setBounceLockUndefined: Self = StObject.set(x, "bounceLock", js.undefined)
     
     @scala.inline
-    def setBounce(value: Boolean): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    def setBounceTime(value: Double): Self = StObject.set(x, "bounceTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounce: Self = this.set("bounce", js.undefined)
+    def setBounceTimeUndefined: Self = StObject.set(x, "bounceTime", js.undefined)
     
     @scala.inline
-    def setBounceEasing(value: String | Fn): Self = this.set("bounceEasing", value.asInstanceOf[js.Any])
+    def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
     
     @scala.inline
-    def deleteBounceEasing: Self = this.set("bounceEasing", js.undefined)
+    def setCheckDOMChanges(value: Boolean): Self = StObject.set(x, "checkDOMChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceLock(value: Boolean): Self = this.set("bounceLock", value.asInstanceOf[js.Any])
+    def setCheckDOMChangesUndefined: Self = StObject.set(x, "checkDOMChanges", js.undefined)
     
     @scala.inline
-    def deleteBounceLock: Self = this.set("bounceLock", js.undefined)
+    def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceTime(value: Double): Self = this.set("bounceTime", value.asInstanceOf[js.Any])
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteBounceTime: Self = this.set("bounceTime", js.undefined)
+    def setDirectionLockThreshold(value: Double): Self = StObject.set(x, "directionLockThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckDOMChanges(value: Boolean): Self = this.set("checkDOMChanges", value.asInstanceOf[js.Any])
+    def setDirectionLockThresholdUndefined: Self = StObject.set(x, "directionLockThreshold", js.undefined)
     
     @scala.inline
-    def deleteCheckDOMChanges: Self = this.set("checkDOMChanges", js.undefined)
+    def setDisableMouse(value: Boolean): Self = StObject.set(x, "disableMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: Boolean): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDisableMouseUndefined: Self = StObject.set(x, "disableMouse", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setDisablePointer(value: Boolean): Self = StObject.set(x, "disablePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionLockThreshold(value: Double): Self = this.set("directionLockThreshold", value.asInstanceOf[js.Any])
+    def setDisablePointerUndefined: Self = StObject.set(x, "disablePointer", js.undefined)
     
     @scala.inline
-    def deleteDirectionLockThreshold: Self = this.set("directionLockThreshold", js.undefined)
+    def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMouse(value: Boolean): Self = this.set("disableMouse", value.asInstanceOf[js.Any])
+    def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
     
     @scala.inline
-    def deleteDisableMouse: Self = this.set("disableMouse", js.undefined)
+    def setDoubleTapZoom(value: Double): Self = StObject.set(x, "doubleTapZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePointer(value: Boolean): Self = this.set("disablePointer", value.asInstanceOf[js.Any])
+    def setDoubleTapZoomUndefined: Self = StObject.set(x, "doubleTapZoom", js.undefined)
     
     @scala.inline
-    def deleteDisablePointer: Self = this.set("disablePointer", js.undefined)
+    def setEventPassthrough(value: String | Boolean): Self = StObject.set(x, "eventPassthrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTouch(value: Boolean): Self = this.set("disableTouch", value.asInstanceOf[js.Any])
+    def setEventPassthroughUndefined: Self = StObject.set(x, "eventPassthrough", js.undefined)
     
     @scala.inline
-    def deleteDisableTouch: Self = this.set("disableTouch", js.undefined)
+    def setFadeScrollbar(value: Boolean): Self = StObject.set(x, "fadeScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleTapZoom(value: Double): Self = this.set("doubleTapZoom", value.asInstanceOf[js.Any])
+    def setFadeScrollbarUndefined: Self = StObject.set(x, "fadeScrollbar", js.undefined)
     
     @scala.inline
-    def deleteDoubleTapZoom: Self = this.set("doubleTapZoom", js.undefined)
+    def setFadeScrollbars(value: Boolean): Self = StObject.set(x, "fadeScrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPassthrough(value: String | Boolean): Self = this.set("eventPassthrough", value.asInstanceOf[js.Any])
+    def setFadeScrollbarsUndefined: Self = StObject.set(x, "fadeScrollbars", js.undefined)
     
     @scala.inline
-    def deleteEventPassthrough: Self = this.set("eventPassthrough", js.undefined)
+    def setFixedScrollbar(value: Boolean): Self = StObject.set(x, "fixedScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeScrollbar(value: Boolean): Self = this.set("fadeScrollbar", value.asInstanceOf[js.Any])
+    def setFixedScrollbarUndefined: Self = StObject.set(x, "fixedScrollbar", js.undefined)
     
     @scala.inline
-    def deleteFadeScrollbar: Self = this.set("fadeScrollbar", js.undefined)
+    def setFreeScroll(value: Boolean): Self = StObject.set(x, "freeScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeScrollbars(value: Boolean): Self = this.set("fadeScrollbars", value.asInstanceOf[js.Any])
+    def setFreeScrollUndefined: Self = StObject.set(x, "freeScroll", js.undefined)
     
     @scala.inline
-    def deleteFadeScrollbars: Self = this.set("fadeScrollbars", js.undefined)
+    def setHScrollbar(value: Boolean): Self = StObject.set(x, "hScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedScrollbar(value: Boolean): Self = this.set("fixedScrollbar", value.asInstanceOf[js.Any])
+    def setHScrollbarUndefined: Self = StObject.set(x, "hScrollbar", js.undefined)
     
     @scala.inline
-    def deleteFixedScrollbar: Self = this.set("fixedScrollbar", js.undefined)
+    def setHWCompositing(value: Boolean): Self = StObject.set(x, "HWCompositing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreeScroll(value: Boolean): Self = this.set("freeScroll", value.asInstanceOf[js.Any])
+    def setHWCompositingUndefined: Self = StObject.set(x, "HWCompositing", js.undefined)
     
     @scala.inline
-    def deleteFreeScroll: Self = this.set("freeScroll", js.undefined)
+    def setHandleClick(value: Boolean): Self = StObject.set(x, "handleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHScrollbar(value: Boolean): Self = this.set("hScrollbar", value.asInstanceOf[js.Any])
+    def setHandleClickUndefined: Self = StObject.set(x, "handleClick", js.undefined)
     
     @scala.inline
-    def deleteHScrollbar: Self = this.set("hScrollbar", js.undefined)
+    def setHideScrollbar(value: Boolean): Self = StObject.set(x, "hideScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleClick(value: Boolean): Self = this.set("handleClick", value.asInstanceOf[js.Any])
+    def setHideScrollbarUndefined: Self = StObject.set(x, "hideScrollbar", js.undefined)
     
     @scala.inline
-    def deleteHandleClick: Self = this.set("handleClick", js.undefined)
+    def setInteractiveScrollbars(value: Boolean): Self = StObject.set(x, "interactiveScrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideScrollbar(value: Boolean): Self = this.set("hideScrollbar", value.asInstanceOf[js.Any])
+    def setInteractiveScrollbarsUndefined: Self = StObject.set(x, "interactiveScrollbars", js.undefined)
     
     @scala.inline
-    def deleteHideScrollbar: Self = this.set("hideScrollbar", js.undefined)
+    def setInvertWheelDirection(value: Boolean): Self = StObject.set(x, "invertWheelDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractiveScrollbars(value: Boolean): Self = this.set("interactiveScrollbars", value.asInstanceOf[js.Any])
+    def setInvertWheelDirectionUndefined: Self = StObject.set(x, "invertWheelDirection", js.undefined)
     
     @scala.inline
-    def deleteInteractiveScrollbars: Self = this.set("interactiveScrollbars", js.undefined)
+    def setLockDirection(value: Boolean): Self = StObject.set(x, "lockDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertWheelDirection(value: Boolean): Self = this.set("invertWheelDirection", value.asInstanceOf[js.Any])
+    def setLockDirectionUndefined: Self = StObject.set(x, "lockDirection", js.undefined)
     
     @scala.inline
-    def deleteInvertWheelDirection: Self = this.set("invertWheelDirection", js.undefined)
+    def setMomentum(value: Boolean): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockDirection(value: Boolean): Self = this.set("lockDirection", value.asInstanceOf[js.Any])
+    def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
     
     @scala.inline
-    def deleteLockDirection: Self = this.set("lockDirection", js.undefined)
+    def setMouseWheel(value: Boolean): Self = StObject.set(x, "mouseWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMomentum(value: Boolean): Self = this.set("momentum", value.asInstanceOf[js.Any])
+    def setMouseWheelSpeed(value: Double): Self = StObject.set(x, "mouseWheelSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMomentum: Self = this.set("momentum", js.undefined)
+    def setMouseWheelSpeedUndefined: Self = StObject.set(x, "mouseWheelSpeed", js.undefined)
     
     @scala.inline
-    def setMouseWheel(value: Boolean): Self = this.set("mouseWheel", value.asInstanceOf[js.Any])
+    def setMouseWheelUndefined: Self = StObject.set(x, "mouseWheel", js.undefined)
     
     @scala.inline
-    def deleteMouseWheel: Self = this.set("mouseWheel", js.undefined)
+    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelSpeed(value: Double): Self = this.set("mouseWheelSpeed", value.asInstanceOf[js.Any])
+    def setPreventDefaultException(value: js.Array[RegExp] | js.Object): Self = StObject.set(x, "preventDefaultException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMouseWheelSpeed: Self = this.set("mouseWheelSpeed", js.undefined)
+    def setPreventDefaultExceptionUndefined: Self = StObject.set(x, "preventDefaultException", js.undefined)
     
     @scala.inline
-    def setPreventDefault(value: Boolean): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setPreventDefaultExceptionVarargs(value: RegExp*): Self = StObject.set(x, "preventDefaultException", js.Array(value :_*))
     
     @scala.inline
-    def deletePreventDefault: Self = this.set("preventDefault", js.undefined)
+    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
     @scala.inline
-    def setPreventDefaultExceptionVarargs(value: RegExp*): Self = this.set("preventDefaultException", js.Array(value :_*))
+    def setProbeType(value: Double): Self = StObject.set(x, "probeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDefaultException(value: js.Array[RegExp] | js.Object): Self = this.set("preventDefaultException", value.asInstanceOf[js.Any])
+    def setProbeTypeUndefined: Self = StObject.set(x, "probeType", js.undefined)
     
     @scala.inline
-    def deletePreventDefaultException: Self = this.set("preventDefaultException", js.undefined)
+    def setReleaseScroll(value: Boolean): Self = StObject.set(x, "releaseScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProbeType(value: Double): Self = this.set("probeType", value.asInstanceOf[js.Any])
+    def setReleaseScrollUndefined: Self = StObject.set(x, "releaseScroll", js.undefined)
     
     @scala.inline
-    def deleteProbeType: Self = this.set("probeType", js.undefined)
+    def setResizeIndicator(value: Boolean): Self = StObject.set(x, "resizeIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseScroll(value: Boolean): Self = this.set("releaseScroll", value.asInstanceOf[js.Any])
+    def setResizeIndicatorUndefined: Self = StObject.set(x, "resizeIndicator", js.undefined)
     
     @scala.inline
-    def deleteReleaseScroll: Self = this.set("releaseScroll", js.undefined)
+    def setResizePolling(value: Double): Self = StObject.set(x, "resizePolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeIndicator(value: Boolean): Self = this.set("resizeIndicator", value.asInstanceOf[js.Any])
+    def setResizePollingUndefined: Self = StObject.set(x, "resizePolling", js.undefined)
     
     @scala.inline
-    def deleteResizeIndicator: Self = this.set("resizeIndicator", js.undefined)
+    def setScrollX(value: Boolean): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizePolling(value: Double): Self = this.set("resizePolling", value.asInstanceOf[js.Any])
+    def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
     
     @scala.inline
-    def deleteResizePolling: Self = this.set("resizePolling", js.undefined)
+    def setScrollY(value: Boolean): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollX(value: Boolean): Self = this.set("scrollX", value.asInstanceOf[js.Any])
+    def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
     
     @scala.inline
-    def deleteScrollX: Self = this.set("scrollX", js.undefined)
+    def setScrollbarClass(value: String): Self = StObject.set(x, "scrollbarClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollY(value: Boolean): Self = this.set("scrollY", value.asInstanceOf[js.Any])
+    def setScrollbarClassUndefined: Self = StObject.set(x, "scrollbarClass", js.undefined)
     
     @scala.inline
-    def deleteScrollY: Self = this.set("scrollY", js.undefined)
+    def setScrollbars(value: Boolean | String): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarClass(value: String): Self = this.set("scrollbarClass", value.asInstanceOf[js.Any])
+    def setScrollbarsUndefined: Self = StObject.set(x, "scrollbars", js.undefined)
     
     @scala.inline
-    def deleteScrollbarClass: Self = this.set("scrollbarClass", js.undefined)
+    def setShrinkScrollbars(value: String): Self = StObject.set(x, "shrinkScrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbars(value: Boolean | String): Self = this.set("scrollbars", value.asInstanceOf[js.Any])
+    def setShrinkScrollbarsUndefined: Self = StObject.set(x, "shrinkScrollbars", js.undefined)
     
     @scala.inline
-    def deleteScrollbars: Self = this.set("scrollbars", js.undefined)
+    def setSnap(value: String | Boolean): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShrinkScrollbars(value: String): Self = this.set("shrinkScrollbars", value.asInstanceOf[js.Any])
+    def setSnapThreshold(value: Double): Self = StObject.set(x, "snapThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShrinkScrollbars: Self = this.set("shrinkScrollbars", js.undefined)
+    def setSnapThresholdUndefined: Self = StObject.set(x, "snapThreshold", js.undefined)
     
     @scala.inline
-    def setSnap(value: String | Boolean): Self = this.set("snap", value.asInstanceOf[js.Any])
+    def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
     @scala.inline
-    def deleteSnap: Self = this.set("snap", js.undefined)
+    def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapThreshold(value: Double): Self = this.set("snapThreshold", value.asInstanceOf[js.Any])
+    def setStartXUndefined: Self = StObject.set(x, "startX", js.undefined)
     
     @scala.inline
-    def deleteSnapThreshold: Self = this.set("snapThreshold", js.undefined)
+    def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartX(value: Double): Self = this.set("startX", value.asInstanceOf[js.Any])
+    def setStartYUndefined: Self = StObject.set(x, "startY", js.undefined)
     
     @scala.inline
-    def deleteStartX: Self = this.set("startX", js.undefined)
+    def setTap(value: Boolean): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartY(value: Double): Self = this.set("startY", value.asInstanceOf[js.Any])
+    def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
     
     @scala.inline
-    def deleteStartY: Self = this.set("startY", js.undefined)
+    def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTap(value: Boolean): Self = this.set("tap", value.asInstanceOf[js.Any])
+    def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
     
     @scala.inline
-    def deleteTap: Self = this.set("tap", js.undefined)
+    def setUseTransform(value: Boolean): Self = StObject.set(x, "useTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopOffset(value: Double): Self = this.set("topOffset", value.asInstanceOf[js.Any])
+    def setUseTransformUndefined: Self = StObject.set(x, "useTransform", js.undefined)
     
     @scala.inline
-    def deleteTopOffset: Self = this.set("topOffset", js.undefined)
+    def setUseTransition(value: Boolean): Self = StObject.set(x, "useTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseTransform(value: Boolean): Self = this.set("useTransform", value.asInstanceOf[js.Any])
+    def setUseTransitionUndefined: Self = StObject.set(x, "useTransition", js.undefined)
     
     @scala.inline
-    def deleteUseTransform: Self = this.set("useTransform", js.undefined)
+    def setVScrollbar(value: Boolean): Self = StObject.set(x, "vScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseTransition(value: Boolean): Self = this.set("useTransition", value.asInstanceOf[js.Any])
+    def setVScrollbarUndefined: Self = StObject.set(x, "vScrollbar", js.undefined)
     
     @scala.inline
-    def deleteUseTransition: Self = this.set("useTransition", js.undefined)
+    def setWheelAction(value: String): Self = StObject.set(x, "wheelAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVScrollbar(value: Boolean): Self = this.set("vScrollbar", value.asInstanceOf[js.Any])
+    def setWheelActionUndefined: Self = StObject.set(x, "wheelAction", js.undefined)
     
     @scala.inline
-    def deleteVScrollbar: Self = this.set("vScrollbar", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWheelAction(value: String): Self = this.set("wheelAction", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWheelAction: Self = this.set("wheelAction", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setZoomMax(value: Double): Self = StObject.set(x, "zoomMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setZoomMaxUndefined: Self = StObject.set(x, "zoomMax", js.undefined)
     
     @scala.inline
-    def setZoom(value: Boolean): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoomMin(value: Double): Self = StObject.set(x, "zoomMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomMinUndefined: Self = StObject.set(x, "zoomMin", js.undefined)
     
     @scala.inline
-    def setZoomMax(value: Double): Self = this.set("zoomMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMax: Self = this.set("zoomMax", js.undefined)
-    
-    @scala.inline
-    def setZoomMin(value: Double): Self = this.set("zoomMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMin: Self = this.set("zoomMin", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

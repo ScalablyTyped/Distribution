@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the level of read access provided to an app calendar. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess")
 @js.native
-object AppointmentCalendarOtherAppReadAccess extends js.Object {
+object AppointmentCalendarOtherAppReadAccess extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

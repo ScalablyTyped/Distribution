@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,36 +56,24 @@ object XConnectable {
   }
   
   @scala.inline
-  implicit class XConnectableOps[Self <: XConnectable] (val x: Self) extends AnyVal {
+  implicit class XConnectableMutableBuilder[Self <: XConnectable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPredecessor(value: () => XConnectable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSuccessor(value: () => XConnectable): Self = StObject.set(x, "getSuccessor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredecessor(value: XConnectable): Self = StObject.set(x, "Predecessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredecessor(value: XConnectable): Self = this.set("Predecessor", value.asInstanceOf[js.Any])
+    def setSetPredecessor(value: XConnectable => Unit): Self = StObject.set(x, "setPredecessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSuccessor(value: XConnectable): Self = this.set("Successor", value.asInstanceOf[js.Any])
+    def setSetSuccessor(value: XConnectable => Unit): Self = StObject.set(x, "setSuccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPredecessor(value: () => XConnectable): Self = this.set("getPredecessor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSuccessor(value: () => XConnectable): Self = this.set("getSuccessor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPredecessor(value: XConnectable => Unit): Self = this.set("setPredecessor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSuccessor(value: XConnectable => Unit): Self = this.set("setSuccessor", js.Any.fromFunction1(value))
+    def setSuccessor(value: XConnectable): Self = StObject.set(x, "Successor", value.asInstanceOf[js.Any])
   }
 }

@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.view.PaperOrientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,51 +121,39 @@ object GenericDrawPage {
   }
   
   @scala.inline
-  implicit class GenericDrawPageOps[Self <: GenericDrawPage] (val x: Self) extends AnyVal {
+  implicit class GenericDrawPageMutableBuilder[Self <: GenericDrawPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderBottom(value: Double): Self = StObject.set(x, "BorderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderLeft(value: Double): Self = StObject.set(x, "BorderLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderRight(value: Double): Self = StObject.set(x, "BorderRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottom(value: Double): Self = this.set("BorderBottom", value.asInstanceOf[js.Any])
+    def setBorderTop(value: Double): Self = StObject.set(x, "BorderTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeft(value: Double): Self = this.set("BorderLeft", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRight(value: Double): Self = this.set("BorderRight", value.asInstanceOf[js.Any])
+    def setIsBackgroundDark(value: Boolean): Self = StObject.set(x, "IsBackgroundDark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTop(value: Double): Self = this.set("BorderTop", value.asInstanceOf[js.Any])
+    def setNavigationOrder(value: XIndexAccess): Self = StObject.set(x, "NavigationOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBackgroundDark(value: Boolean): Self = this.set("IsBackgroundDark", value.asInstanceOf[js.Any])
+    def setOrientation(value: PaperOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationOrder(value: XIndexAccess): Self = this.set("NavigationOrder", value.asInstanceOf[js.Any])
+    def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("Number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: PaperOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDefinedAttributes(value: XNameContainer): Self = this.set("UserDefinedAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

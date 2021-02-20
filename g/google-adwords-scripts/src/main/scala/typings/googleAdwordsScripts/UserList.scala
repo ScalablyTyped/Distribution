@@ -1,12 +1,13 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // User Lists
 @js.native
-trait UserList extends js.Object {
+trait UserList extends StObject {
   
   def close(): Unit = js.native
   
@@ -87,87 +88,75 @@ object UserList {
   }
   
   @scala.inline
-  implicit class UserListOps[Self <: UserList] (val x: Self) extends AnyVal {
+  implicit class UserListMutableBuilder[Self <: UserList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedAdGroups(value: () => AdWordsSelector[AdGroup]): Self = StObject.set(x, "excludedAdGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "excludedCampaigns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExcludedAdGroups(value: () => AdWordsSelector[AdGroup]): Self = this.set("excludedAdGroups", js.Any.fromFunction0(value))
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExcludedCampaigns(value: () => AdWordsSelector[Campaign]): Self = this.set("excludedCampaigns", js.Any.fromFunction0(value))
+    def setGetMembershipLifeSpan(value: () => Double): Self = StObject.set(x, "getMembershipLifeSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetSizeForDisplay(value: () => Double): Self = StObject.set(x, "getSizeForDisplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMembershipLifeSpan(value: () => Double): Self = this.set("getMembershipLifeSpan", js.Any.fromFunction0(value))
+    def setGetSizeForSearch(value: () => Double): Self = StObject.set(x, "getSizeForSearch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetSizeRangeForDisplay(value: () => UserListSizeRange): Self = StObject.set(x, "getSizeRangeForDisplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSizeForDisplay(value: () => Double): Self = this.set("getSizeForDisplay", js.Any.fromFunction0(value))
+    def setGetSizeRangeForSearch(value: () => UserListSizeRange): Self = StObject.set(x, "getSizeRangeForSearch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSizeForSearch(value: () => Double): Self = this.set("getSizeForSearch", js.Any.fromFunction0(value))
+    def setGetType(value: () => UserListType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSizeRangeForDisplay(value: () => UserListSizeRange): Self = this.set("getSizeRangeForDisplay", js.Any.fromFunction0(value))
+    def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSizeRangeForSearch(value: () => UserListSizeRange): Self = this.set("getSizeRangeForSearch", js.Any.fromFunction0(value))
+    def setIsEligibleForDisplay(value: () => Boolean): Self = StObject.set(x, "isEligibleForDisplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetType(value: () => UserListType): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setIsEligibleForSearch(value: () => Boolean): Self = StObject.set(x, "isEligibleForSearch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsClosed(value: () => Boolean): Self = this.set("isClosed", js.Any.fromFunction0(value))
+    def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEligibleForDisplay(value: () => Boolean): Self = this.set("isEligibleForDisplay", js.Any.fromFunction0(value))
+    def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEligibleForSearch(value: () => Boolean): Self = this.set("isEligibleForSearch", js.Any.fromFunction0(value))
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsOpen(value: () => Boolean): Self = this.set("isOpen", js.Any.fromFunction0(value))
+    def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsReadOnly(value: () => Boolean): Self = this.set("isReadOnly", js.Any.fromFunction0(value))
+    def setSetMembershipLifeSpan(value: Double => Unit): Self = StObject.set(x, "setMembershipLifeSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
+    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDescription(value: String => Unit): Self = this.set("setDescription", js.Any.fromFunction1(value))
+    def setTargetedAdGroups(value: () => AdWordsSelector[AdGroup]): Self = StObject.set(x, "targetedAdGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetMembershipLifeSpan(value: Double => Unit): Self = this.set("setMembershipLifeSpan", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetName(value: String => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTargetedAdGroups(value: () => AdWordsSelector[AdGroup]): Self = this.set("targetedAdGroups", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTargetedCampaigns(value: () => AdWordsSelector[Campaign]): Self = this.set("targetedCampaigns", js.Any.fromFunction0(value))
+    def setTargetedCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "targetedCampaigns", js.Any.fromFunction0(value))
   }
 }

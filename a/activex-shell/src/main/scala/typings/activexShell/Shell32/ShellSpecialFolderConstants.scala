@@ -38,6 +38,7 @@ import typings.activexShell.activexShellNumbers.`6`
 import typings.activexShell.activexShellNumbers.`7`
 import typings.activexShell.activexShellNumbers.`8`
 import typings.activexShell.activexShellNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,7 +85,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`21`
   - typings.activexShell.activexShellNumbers.`36`
 */
-trait ShellSpecialFolderConstants extends js.Object
+trait ShellSpecialFolderConstants extends StObject
 object ShellSpecialFolderConstants {
   
   @scala.inline

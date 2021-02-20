@@ -1,11 +1,12 @@
 package typings.overlayscrollbars.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionInfo extends js.Object {
+trait ExtensionInfo extends StObject {
   
   var defaultOptions: js.UndefOr[js.Object] = js.native
   
@@ -22,30 +23,18 @@ object ExtensionInfo {
   }
   
   @scala.inline
-  implicit class ExtensionInfoOps[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
+  implicit class ExtensionInfoMutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultOptions(value: js.Object): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionFactory(value: (js.Object, Compatibility, js.Any) => Extension): Self = StObject.set(x, "extensionFactory", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setExtensionFactory(value: (js.Object, Compatibility, js.Any) => Extension): Self = this.set("extensionFactory", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultOptions(value: js.Object): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultOptions: Self = this.set("defaultOptions", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

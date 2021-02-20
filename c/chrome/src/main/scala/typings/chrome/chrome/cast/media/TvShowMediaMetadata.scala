@@ -1,12 +1,13 @@
 package typings.chrome.chrome.cast.media
 
 import typings.chrome.chrome.cast.Image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TvShowMediaMetadata extends js.Object {
+trait TvShowMediaMetadata extends StObject {
   
   var episode: Double = js.native
   
@@ -60,57 +61,45 @@ object TvShowMediaMetadata {
   }
   
   @scala.inline
-  implicit class TvShowMediaMetadataOps[Self <: TvShowMediaMetadata] (val x: Self) extends AnyVal {
+  implicit class TvShowMediaMetadataMutableBuilder[Self <: TvShowMediaMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEpisode(value: Double): Self = StObject.set(x, "episode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEpisodeNumber(value: Double): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEpisodeTitle(value: String): Self = StObject.set(x, "episodeTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpisode(value: Double): Self = this.set("episode", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpisodeNumber(value: Double): Self = this.set("episodeNumber", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setEpisodeTitle(value: String): Self = this.set("episodeTitle", value.asInstanceOf[js.Any])
+    def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: Image*): Self = this.set("images", js.Array(value :_*))
+    def setOriginalAirdate(value: String): Self = StObject.set(x, "originalAirdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[Image]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataType(value: MetadataType): Self = this.set("metadataType", value.asInstanceOf[js.Any])
+    def setSeason(value: Double): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalAirdate(value: String): Self = this.set("originalAirdate", value.asInstanceOf[js.Any])
+    def setSeasonNumber(value: Double): Self = StObject.set(x, "seasonNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseYear(value: Double): Self = this.set("releaseYear", value.asInstanceOf[js.Any])
+    def setSeriesTitle(value: String): Self = StObject.set(x, "seriesTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeason(value: Double): Self = this.set("season", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeasonNumber(value: Double): Self = this.set("seasonNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeriesTitle(value: String): Self = this.set("seriesTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MetadataType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Indice extends js.Object {
+trait Indice extends StObject {
   
   /**
     * Index creation date.
@@ -71,45 +72,33 @@ object Indice {
   }
   
   @scala.inline
-  implicit class IndiceOps[Self <: Indice] (val x: Self) extends AnyVal {
+  implicit class IndiceMutableBuilder[Self <: Indice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: Double): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Double): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSize(value: Double): Self = this.set("dataSize", value.asInstanceOf[js.Any])
+    def setLastBuildTimes(value: Double): Self = StObject.set(x, "lastBuildTimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: Double): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: Double): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    def setNumberOfPendingTasks(value: Double): Self = StObject.set(x, "numberOfPendingTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastBuildTimes(value: Double): Self = this.set("lastBuildTimes", value.asInstanceOf[js.Any])
+    def setPendingTask(value: Boolean): Self = StObject.set(x, "pendingTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfPendingTasks(value: Double): Self = this.set("numberOfPendingTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPendingTask(value: Boolean): Self = this.set("pendingTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedAt(value: Double): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

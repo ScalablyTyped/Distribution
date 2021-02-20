@@ -3,14 +3,14 @@ package typings.awsSdkProtocolRest
 import typings.awsSdkTypes.serdeMod.StreamCollector
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/protocol-rest", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/protocol-rest", "RestParser")
   @js.native
   class RestParser[StreamType] protected ()
     extends typings.awsSdkProtocolRest.restParserMod.RestParser[StreamType] {
@@ -23,6 +23,7 @@ object mod extends js.Object {
     ) = this()
   }
   
+  @JSImport("@aws-sdk/protocol-rest", "RestSerializer")
   @js.native
   class RestSerializer[StreamType] protected ()
     extends typings.awsSdkProtocolRest.restSerializerMod.RestSerializer[StreamType] {

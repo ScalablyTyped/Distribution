@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,39 +154,27 @@ object XAccessibleEditableText {
   }
   
   @scala.inline
-  implicit class XAccessibleEditableTextOps[Self <: XAccessibleEditableText] (val x: Self) extends AnyVal {
+  implicit class XAccessibleEditableTextMutableBuilder[Self <: XAccessibleEditableText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCutText(value: (Double, Double) => Boolean): Self = StObject.set(x, "cutText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteText(value: (Double, Double) => Boolean): Self = StObject.set(x, "deleteText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertText(value: (String, Double) => Boolean): Self = StObject.set(x, "insertText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCutText(value: (Double, Double) => Boolean): Self = this.set("cutText", js.Any.fromFunction2(value))
+    def setPasteText(value: Double => Boolean): Self = StObject.set(x, "pasteText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteText(value: (Double, Double) => Boolean): Self = this.set("deleteText", js.Any.fromFunction2(value))
+    def setReplaceText(value: (Double, Double, String) => Boolean): Self = StObject.set(x, "replaceText", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInsertText(value: (String, Double) => Boolean): Self = this.set("insertText", js.Any.fromFunction2(value))
+    def setSetAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Boolean): Self = StObject.set(x, "setAttributes", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPasteText(value: Double => Boolean): Self = this.set("pasteText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceText(value: (Double, Double, String) => Boolean): Self = this.set("replaceText", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Boolean): Self = this.set("setAttributes", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetText(value: String => Boolean): Self = this.set("setText", js.Any.fromFunction1(value))
+    def setSetText(value: String => Boolean): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

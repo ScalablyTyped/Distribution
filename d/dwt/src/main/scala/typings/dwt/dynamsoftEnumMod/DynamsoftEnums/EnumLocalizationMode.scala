@@ -1,56 +1,48 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumLocalizationMode extends js.Object
+sealed trait EnumLocalizationMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumLocalizationMode")
 @js.native
-object EnumLocalizationMode extends js.Object {
+object EnumLocalizationMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumLocalizationMode with Double] = js.native
   
   @js.native
   sealed trait LM_AUTO extends EnumLocalizationMode
-  /* 1 */ @js.native
-  object LM_AUTO extends TopLevel[LM_AUTO with Double]
+  /* 1 */ val LM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_AUTO with Double = js.native
   
   @js.native
   sealed trait LM_CONNECTED_BLOCKS extends EnumLocalizationMode
-  /* 2 */ @js.native
-  object LM_CONNECTED_BLOCKS extends TopLevel[LM_CONNECTED_BLOCKS with Double]
+  /* 2 */ val LM_CONNECTED_BLOCKS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_CONNECTED_BLOCKS with Double = js.native
   
   @js.native
   sealed trait LM_LINES extends EnumLocalizationMode
-  /* 8 */ @js.native
-  object LM_LINES extends TopLevel[LM_LINES with Double]
+  /* 8 */ val LM_LINES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_LINES with Double = js.native
   
   @js.native
   sealed trait LM_SCAN_DIRECTLY extends EnumLocalizationMode
-  /* 16 */ @js.native
-  object LM_SCAN_DIRECTLY extends TopLevel[LM_SCAN_DIRECTLY with Double]
+  /* 16 */ val LM_SCAN_DIRECTLY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_SCAN_DIRECTLY with Double = js.native
   
   @js.native
   sealed trait LM_SKIP extends EnumLocalizationMode
-  /* 0 */ @js.native
-  object LM_SKIP extends TopLevel[LM_SKIP with Double]
+  /* 0 */ val LM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_SKIP with Double = js.native
   
   @js.native
   sealed trait LM_STATISTICS extends EnumLocalizationMode
-  /* 4 */ @js.native
-  object LM_STATISTICS extends TopLevel[LM_STATISTICS with Double]
+  /* 4 */ val LM_STATISTICS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_STATISTICS with Double = js.native
   
   @js.native
   sealed trait LM_STATISTICS_MARKS extends EnumLocalizationMode
-  /* 32 */ @js.native
-  object LM_STATISTICS_MARKS extends TopLevel[LM_STATISTICS_MARKS with Double]
+  /* 32 */ val LM_STATISTICS_MARKS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_STATISTICS_MARKS with Double = js.native
   
   @js.native
   sealed trait LM_STATISTICS_POSTAL_CODE extends EnumLocalizationMode
-  /* 64 */ @js.native
-  object LM_STATISTICS_POSTAL_CODE extends TopLevel[LM_STATISTICS_POSTAL_CODE with Double]
+  /* 64 */ val LM_STATISTICS_POSTAL_CODE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumLocalizationMode.LM_STATISTICS_POSTAL_CODE with Double = js.native
 }

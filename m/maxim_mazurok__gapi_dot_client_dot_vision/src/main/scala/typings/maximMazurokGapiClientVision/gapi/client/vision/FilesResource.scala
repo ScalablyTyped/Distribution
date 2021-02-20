@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientVision.anon.Callback
 import typings.maximMazurokGapiClientVision.anon.Fields
 import typings.maximMazurokGapiClientVision.anon.Key
 import typings.maximMazurokGapiClientVision.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilesResource extends js.Object {
+trait FilesResource extends StObject {
   
   /**
     * Service that performs image detection and annotation for a batch of files. Now only "application/pdf", "image/tiff" and "image/gif" are supported. This service will extract at most

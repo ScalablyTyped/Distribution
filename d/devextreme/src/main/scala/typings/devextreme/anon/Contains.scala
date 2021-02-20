@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contains extends js.Object {
+trait Contains extends StObject {
   
   var between: js.UndefOr[String] = js.native
   
@@ -42,96 +43,84 @@ object Contains {
   }
   
   @scala.inline
-  implicit class ContainsOps[Self <: Contains] (val x: Self) extends AnyVal {
+  implicit class ContainsMutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBetween(value: String): Self = this.set("between", value.asInstanceOf[js.Any])
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def deleteBetween: Self = this.set("between", js.undefined)
+    def setEndsWith(value: String): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: String): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setEndsWithUndefined: Self = StObject.set(x, "endsWith", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setEqual(value: String): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndsWith(value: String): Self = this.set("endsWith", value.asInstanceOf[js.Any])
+    def setEqualUndefined: Self = StObject.set(x, "equal", js.undefined)
     
     @scala.inline
-    def deleteEndsWith: Self = this.set("endsWith", js.undefined)
+    def setGreaterThan(value: String): Self = StObject.set(x, "greaterThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqual(value: String): Self = this.set("equal", value.asInstanceOf[js.Any])
+    def setGreaterThanOrEqual(value: String): Self = StObject.set(x, "greaterThanOrEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEqual: Self = this.set("equal", js.undefined)
+    def setGreaterThanOrEqualUndefined: Self = StObject.set(x, "greaterThanOrEqual", js.undefined)
     
     @scala.inline
-    def setGreaterThan(value: String): Self = this.set("greaterThan", value.asInstanceOf[js.Any])
+    def setGreaterThanUndefined: Self = StObject.set(x, "greaterThan", js.undefined)
     
     @scala.inline
-    def deleteGreaterThan: Self = this.set("greaterThan", js.undefined)
+    def setIsBlank(value: String): Self = StObject.set(x, "isBlank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanOrEqual(value: String): Self = this.set("greaterThanOrEqual", value.asInstanceOf[js.Any])
+    def setIsBlankUndefined: Self = StObject.set(x, "isBlank", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanOrEqual: Self = this.set("greaterThanOrEqual", js.undefined)
+    def setIsNotBlank(value: String): Self = StObject.set(x, "isNotBlank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBlank(value: String): Self = this.set("isBlank", value.asInstanceOf[js.Any])
+    def setIsNotBlankUndefined: Self = StObject.set(x, "isNotBlank", js.undefined)
     
     @scala.inline
-    def deleteIsBlank: Self = this.set("isBlank", js.undefined)
+    def setLessThan(value: String): Self = StObject.set(x, "lessThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNotBlank(value: String): Self = this.set("isNotBlank", value.asInstanceOf[js.Any])
+    def setLessThanOrEqual(value: String): Self = StObject.set(x, "lessThanOrEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsNotBlank: Self = this.set("isNotBlank", js.undefined)
+    def setLessThanOrEqualUndefined: Self = StObject.set(x, "lessThanOrEqual", js.undefined)
     
     @scala.inline
-    def setLessThan(value: String): Self = this.set("lessThan", value.asInstanceOf[js.Any])
+    def setLessThanUndefined: Self = StObject.set(x, "lessThan", js.undefined)
     
     @scala.inline
-    def deleteLessThan: Self = this.set("lessThan", js.undefined)
+    def setNotContains(value: String): Self = StObject.set(x, "notContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanOrEqual(value: String): Self = this.set("lessThanOrEqual", value.asInstanceOf[js.Any])
+    def setNotContainsUndefined: Self = StObject.set(x, "notContains", js.undefined)
     
     @scala.inline
-    def deleteLessThanOrEqual: Self = this.set("lessThanOrEqual", js.undefined)
+    def setNotEqual(value: String): Self = StObject.set(x, "notEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotContains(value: String): Self = this.set("notContains", value.asInstanceOf[js.Any])
+    def setNotEqualUndefined: Self = StObject.set(x, "notEqual", js.undefined)
     
     @scala.inline
-    def deleteNotContains: Self = this.set("notContains", js.undefined)
+    def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotEqual(value: String): Self = this.set("notEqual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotEqual: Self = this.set("notEqual", js.undefined)
-    
-    @scala.inline
-    def setStartsWith(value: String): Self = this.set("startsWith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartsWith: Self = this.set("startsWith", js.undefined)
+    def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
   }
 }

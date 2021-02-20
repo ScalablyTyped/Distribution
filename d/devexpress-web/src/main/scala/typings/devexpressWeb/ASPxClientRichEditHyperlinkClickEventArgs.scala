@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,30 +45,18 @@ object ASPxClientRichEditHyperlinkClickEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientRichEditHyperlinkClickEventArgsOps[Self <: ASPxClientRichEditHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientRichEditHyperlinkClickEventArgsMutableBuilder[Self <: ASPxClientRichEditHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHyperlinkType(value: ASPxClientOfficeDocumentLinkType): Self = StObject.set(x, "hyperlinkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandled(value: Boolean): Self = this.set("handled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = this.set("htmlEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHyperlinkType(value: ASPxClientOfficeDocumentLinkType): Self = this.set("hyperlinkType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetUri(value: String): Self = this.set("targetUri", value.asInstanceOf[js.Any])
+    def setTargetUri(value: String): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
   }
 }

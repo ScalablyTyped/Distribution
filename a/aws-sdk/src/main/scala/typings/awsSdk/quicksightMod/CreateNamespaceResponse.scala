@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNamespaceResponse extends js.Object {
+trait CreateNamespaceResponse extends StObject {
   
   /**
     * The ARN of the QuickSight namespace you created. 
@@ -51,60 +52,48 @@ object CreateNamespaceResponse {
   }
   
   @scala.inline
-  implicit class CreateNamespaceResponseOps[Self <: CreateNamespaceResponse] (val x: Self) extends AnyVal {
+  implicit class CreateNamespaceResponseMutableBuilder[Self <: CreateNamespaceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityRegion(value: String): Self = StObject.set(x, "CapacityRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCapacityRegionUndefined: Self = StObject.set(x, "CapacityRegion", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCreationStatus(value: NamespaceStatus): Self = StObject.set(x, "CreationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityRegion(value: String): Self = this.set("CapacityRegion", value.asInstanceOf[js.Any])
+    def setCreationStatusUndefined: Self = StObject.set(x, "CreationStatus", js.undefined)
     
     @scala.inline
-    def deleteCapacityRegion: Self = this.set("CapacityRegion", js.undefined)
+    def setIdentityStore(value: IdentityStore): Self = StObject.set(x, "IdentityStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationStatus(value: NamespaceStatus): Self = this.set("CreationStatus", value.asInstanceOf[js.Any])
+    def setIdentityStoreUndefined: Self = StObject.set(x, "IdentityStore", js.undefined)
     
     @scala.inline
-    def deleteCreationStatus: Self = this.set("CreationStatus", js.undefined)
+    def setName(value: Namespace): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityStore(value: IdentityStore): Self = this.set("IdentityStore", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteIdentityStore: Self = this.set("IdentityStore", js.undefined)
+    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Namespace): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

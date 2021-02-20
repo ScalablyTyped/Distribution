@@ -27,13 +27,14 @@ import typings.node.streamMod.ReadableOptions
 import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.process.<global>.NodeJS.ReadStream & {  fd :0} */
 @js.native
-trait ReadStreamfd0 extends js.Object {
+trait ReadStreamfd0 extends StObject {
   
   def _destroy(error: Null, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _destroy(error: Error, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native

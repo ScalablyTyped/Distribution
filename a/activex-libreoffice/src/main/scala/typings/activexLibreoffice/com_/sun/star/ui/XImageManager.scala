@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,39 +109,27 @@ object XImageManager {
   }
   
   @scala.inline
-  implicit class XImageManagerOps[Self <: XImageManager] (val x: Self) extends AnyVal {
+  implicit class XImageManagerMutableBuilder[Self <: XImageManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllImageNames(value: Double => SafeArray[String]): Self = StObject.set(x, "getAllImageNames", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetImages(value: (Double, SeqEquiv[String]) => SafeArray[XGraphic]): Self = StObject.set(x, "getImages", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasImage(value: (Double, String) => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAllImageNames(value: Double => SafeArray[String]): Self = this.set("getAllImageNames", js.Any.fromFunction1(value))
+    def setInsertImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = StObject.set(x, "insertImages", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetImages(value: (Double, SeqEquiv[String]) => SafeArray[XGraphic]): Self = this.set("getImages", js.Any.fromFunction2(value))
+    def setRemoveImages(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "removeImages", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasImage(value: (Double, String) => Boolean): Self = this.set("hasImage", js.Any.fromFunction2(value))
+    def setReplaceImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = StObject.set(x, "replaceImages", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInsertImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = this.set("insertImages", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoveImages(value: (Double, SeqEquiv[String]) => Unit): Self = this.set("removeImages", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReplaceImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = this.set("replaceImages", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

@@ -56,12 +56,13 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.transition
 import typings.semanticUiDimmer.semanticUiDimmerStrings.useCSS
 import typings.semanticUiDimmer.semanticUiDimmerStrings.variation
 import typings.semanticUiDimmer.semanticUiDimmerStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def dimmer(): JQuery = js.native
   def dimmer(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native

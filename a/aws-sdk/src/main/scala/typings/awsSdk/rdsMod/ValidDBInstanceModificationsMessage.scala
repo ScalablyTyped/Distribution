@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidDBInstanceModificationsMessage extends js.Object {
+trait ValidDBInstanceModificationsMessage extends StObject {
   
   /**
     * Valid storage options for your DB instance. 
@@ -26,36 +27,24 @@ object ValidDBInstanceModificationsMessage {
   }
   
   @scala.inline
-  implicit class ValidDBInstanceModificationsMessageOps[Self <: ValidDBInstanceModificationsMessage] (val x: Self) extends AnyVal {
+  implicit class ValidDBInstanceModificationsMessageMutableBuilder[Self <: ValidDBInstanceModificationsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStorage(value: ValidStorageOptionsList): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageVarargs(value: ValidStorageOptions*): Self = StObject.set(x, "Storage", js.Array(value :_*))
     
     @scala.inline
-    def setStorageVarargs(value: ValidStorageOptions*): Self = this.set("Storage", js.Array(value :_*))
+    def setValidProcessorFeatures(value: AvailableProcessorFeatureList): Self = StObject.set(x, "ValidProcessorFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: ValidStorageOptionsList): Self = this.set("Storage", value.asInstanceOf[js.Any])
+    def setValidProcessorFeaturesUndefined: Self = StObject.set(x, "ValidProcessorFeatures", js.undefined)
     
     @scala.inline
-    def deleteStorage: Self = this.set("Storage", js.undefined)
-    
-    @scala.inline
-    def setValidProcessorFeaturesVarargs(value: AvailableProcessorFeature*): Self = this.set("ValidProcessorFeatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidProcessorFeatures(value: AvailableProcessorFeatureList): Self = this.set("ValidProcessorFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidProcessorFeatures: Self = this.set("ValidProcessorFeatures", js.undefined)
+    def setValidProcessorFeaturesVarargs(value: AvailableProcessorFeature*): Self = StObject.set(x, "ValidProcessorFeatures", js.Array(value :_*))
   }
 }

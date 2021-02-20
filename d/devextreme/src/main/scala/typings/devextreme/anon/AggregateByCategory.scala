@@ -17,12 +17,13 @@ import typings.devextreme.devextremeStrings.string_
 import typings.devextreme.devextremeStrings.week
 import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.viz.ScaleBreak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateByCategory extends js.Object {
+trait AggregateByCategory extends StObject {
   
   var aggregateByCategory: js.UndefOr[Boolean] = js.native
   
@@ -101,217 +102,205 @@ object AggregateByCategory {
   }
   
   @scala.inline
-  implicit class AggregateByCategoryOps[Self <: AggregateByCategory] (val x: Self) extends AnyVal {
+  implicit class AggregateByCategoryMutableBuilder[Self <: AggregateByCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateByCategory(value: Boolean): Self = StObject.set(x, "aggregateByCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateByCategoryUndefined: Self = StObject.set(x, "aggregateByCategory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationGroupWidth(value: Double): Self = StObject.set(x, "aggregationGroupWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateByCategory(value: Boolean): Self = this.set("aggregateByCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregateByCategory: Self = this.set("aggregateByCategory", js.undefined)
-    
-    @scala.inline
-    def setAggregationGroupWidth(value: Double): Self = this.set("aggregationGroupWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationGroupWidth: Self = this.set("aggregationGroupWidth", js.undefined)
+    def setAggregationGroupWidthUndefined: Self = StObject.set(x, "aggregationGroupWidth", js.undefined)
     
     @scala.inline
     def setAggregationInterval(
       value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-    ): Self = this.set("aggregationInterval", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAggregationInterval: Self = this.set("aggregationInterval", js.undefined)
+    def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
     
     @scala.inline
-    def setAllowDecimals(value: Boolean): Self = this.set("allowDecimals", value.asInstanceOf[js.Any])
+    def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowDecimals: Self = this.set("allowDecimals", js.undefined)
+    def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
     
     @scala.inline
-    def setBreakStyle(value: Line): Self = this.set("breakStyle", value.asInstanceOf[js.Any])
+    def setBreakStyle(value: Line): Self = StObject.set(x, "breakStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakStyle: Self = this.set("breakStyle", js.undefined)
+    def setBreakStyleUndefined: Self = StObject.set(x, "breakStyle", js.undefined)
     
     @scala.inline
-    def setBreaksVarargs(value: ScaleBreak*): Self = this.set("breaks", js.Array(value :_*))
+    def setBreaks(value: js.Array[ScaleBreak]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreaks(value: js.Array[ScaleBreak]): Self = this.set("breaks", value.asInstanceOf[js.Any])
+    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
     @scala.inline
-    def deleteBreaks: Self = this.set("breaks", js.undefined)
+    def setBreaksVarargs(value: ScaleBreak*): Self = StObject.set(x, "breaks", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: (Double | String | typings.std.Date)*): Self = this.set("categories", js.Array(value :_*))
+    def setCategories(value: js.Array[Double | String | typings.std.Date]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[Double | String | typings.std.Date]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setCategoriesVarargs(value: (Double | String | typings.std.Date)*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setEndOnTick(value: Boolean): Self = this.set("endOnTick", value.asInstanceOf[js.Any])
+    def setEndOnTick(value: Boolean): Self = StObject.set(x, "endOnTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndOnTick: Self = this.set("endOnTick", js.undefined)
+    def setEndOnTickUndefined: Self = StObject.set(x, "endOnTick", js.undefined)
     
     @scala.inline
-    def setEndValue(value: Double | typings.std.Date | String): Self = this.set("endValue", value.asInstanceOf[js.Any])
+    def setEndValue(value: Double | typings.std.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndValue: Self = this.set("endValue", js.undefined)
+    def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
     
     @scala.inline
-    def setHolidaysVarargs(value: (typings.std.Date | Double | String)*): Self = this.set("holidays", js.Array(value :_*))
+    def setHolidays(value: js.Array[typings.std.Date | Double | String]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHolidays(value: js.Array[typings.std.Date | Double | String]): Self = this.set("holidays", value.asInstanceOf[js.Any])
+    def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
     
     @scala.inline
-    def deleteHolidays: Self = this.set("holidays", js.undefined)
+    def setHolidaysVarargs(value: (typings.std.Date | Double | String)*): Self = StObject.set(x, "holidays", js.Array(value :_*))
     
     @scala.inline
-    def setLabel(value: OverlappingBehavior): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: OverlappingBehavior): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLinearThreshold(value: Double): Self = this.set("linearThreshold", value.asInstanceOf[js.Any])
+    def setLinearThreshold(value: Double): Self = StObject.set(x, "linearThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinearThreshold: Self = this.set("linearThreshold", js.undefined)
+    def setLinearThresholdUndefined: Self = StObject.set(x, "linearThreshold", js.undefined)
     
     @scala.inline
-    def setLogarithmBase(value: Double): Self = this.set("logarithmBase", value.asInstanceOf[js.Any])
+    def setLogarithmBase(value: Double): Self = StObject.set(x, "logarithmBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogarithmBase: Self = this.set("logarithmBase", js.undefined)
+    def setLogarithmBaseUndefined: Self = StObject.set(x, "logarithmBase", js.undefined)
     
     @scala.inline
-    def setMarker(value: Label): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMarker(value: Label): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
     def setMaxRange(
       value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-    ): Self = this.set("maxRange", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRange: Self = this.set("maxRange", js.undefined)
+    def setMaxRangeUndefined: Self = StObject.set(x, "maxRange", js.undefined)
     
     @scala.inline
     def setMinRange(
       value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-    ): Self = this.set("minRange", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinRange: Self = this.set("minRange", js.undefined)
+    def setMinRangeUndefined: Self = StObject.set(x, "minRange", js.undefined)
     
     @scala.inline
-    def setMinorTick(value: ColorOpacity): Self = this.set("minorTick", value.asInstanceOf[js.Any])
+    def setMinorTick(value: ColorOpacity): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinorTick: Self = this.set("minorTick", js.undefined)
+    def setMinorTickCount(value: Double): Self = StObject.set(x, "minorTickCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTickCount(value: Double): Self = this.set("minorTickCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinorTickCount: Self = this.set("minorTickCount", js.undefined)
+    def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
     
     @scala.inline
     def setMinorTickInterval(
       value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-    ): Self = this.set("minorTickInterval", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinorTickInterval: Self = this.set("minorTickInterval", js.undefined)
+    def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
     
     @scala.inline
-    def setPlaceholderHeight(value: Double): Self = this.set("placeholderHeight", value.asInstanceOf[js.Any])
+    def setMinorTickUndefined: Self = StObject.set(x, "minorTick", js.undefined)
     
     @scala.inline
-    def deletePlaceholderHeight: Self = this.set("placeholderHeight", js.undefined)
+    def setPlaceholderHeight(value: Double): Self = StObject.set(x, "placeholderHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCustomBoundaryTicks(value: Boolean): Self = this.set("showCustomBoundaryTicks", value.asInstanceOf[js.Any])
+    def setPlaceholderHeightUndefined: Self = StObject.set(x, "placeholderHeight", js.undefined)
     
     @scala.inline
-    def deleteShowCustomBoundaryTicks: Self = this.set("showCustomBoundaryTicks", js.undefined)
+    def setShowCustomBoundaryTicks(value: Boolean): Self = StObject.set(x, "showCustomBoundaryTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleWorkdaysVarargs(value: (typings.std.Date | Double | String)*): Self = this.set("singleWorkdays", js.Array(value :_*))
+    def setShowCustomBoundaryTicksUndefined: Self = StObject.set(x, "showCustomBoundaryTicks", js.undefined)
     
     @scala.inline
-    def setSingleWorkdays(value: js.Array[typings.std.Date | Double | String]): Self = this.set("singleWorkdays", value.asInstanceOf[js.Any])
+    def setSingleWorkdays(value: js.Array[typings.std.Date | Double | String]): Self = StObject.set(x, "singleWorkdays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleWorkdays: Self = this.set("singleWorkdays", js.undefined)
+    def setSingleWorkdaysUndefined: Self = StObject.set(x, "singleWorkdays", js.undefined)
     
     @scala.inline
-    def setStartValue(value: Double | typings.std.Date | String): Self = this.set("startValue", value.asInstanceOf[js.Any])
+    def setSingleWorkdaysVarargs(value: (typings.std.Date | Double | String)*): Self = StObject.set(x, "singleWorkdays", js.Array(value :_*))
     
     @scala.inline
-    def deleteStartValue: Self = this.set("startValue", js.undefined)
+    def setStartValue(value: Double | typings.std.Date | String): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTick(value: OpacityWidth): Self = this.set("tick", value.asInstanceOf[js.Any])
+    def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
     
     @scala.inline
-    def deleteTick: Self = this.set("tick", js.undefined)
+    def setTick(value: OpacityWidth): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickInterval(
       value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-    ): Self = this.set("tickInterval", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTickInterval: Self = this.set("tickInterval", js.undefined)
+    def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
     
     @scala.inline
-    def setType(value: continuous | discrete | logarithmic | semidiscrete): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: continuous | discrete | logarithmic | semidiscrete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueType(value: datetime | numeric | string_): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteValueType: Self = this.set("valueType", js.undefined)
+    def setValueType(value: datetime | numeric | string_): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkWeekVarargs(value: Double*): Self = this.set("workWeek", js.Array(value :_*))
+    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
     
     @scala.inline
-    def setWorkWeek(value: js.Array[Double]): Self = this.set("workWeek", value.asInstanceOf[js.Any])
+    def setWorkWeek(value: js.Array[Double]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkWeek: Self = this.set("workWeek", js.undefined)
+    def setWorkWeekUndefined: Self = StObject.set(x, "workWeek", js.undefined)
     
     @scala.inline
-    def setWorkdaysOnly(value: Boolean): Self = this.set("workdaysOnly", value.asInstanceOf[js.Any])
+    def setWorkWeekVarargs(value: Double*): Self = StObject.set(x, "workWeek", js.Array(value :_*))
     
     @scala.inline
-    def deleteWorkdaysOnly: Self = this.set("workdaysOnly", js.undefined)
+    def setWorkdaysOnly(value: Boolean): Self = StObject.set(x, "workdaysOnly", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWorkdaysOnlyUndefined: Self = StObject.set(x, "workdaysOnly", js.undefined)
   }
 }

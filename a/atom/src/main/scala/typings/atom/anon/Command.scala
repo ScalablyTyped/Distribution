@@ -1,19 +1,20 @@
 package typings.atom.anon
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Command extends js.Object {
+trait Command extends StObject {
   
-   // e.g. 'ctrl-x ctrl-s'
+  // e.g. 'ctrl-x ctrl-s'
   var command: js.UndefOr[String] = js.native
   
   var keystrokes: js.UndefOr[String] = js.native
   
-   // e.g. 'editor:backspace'
+  // e.g. 'editor:backspace'
   var target: js.UndefOr[Element] = js.native
 }
 object Command {
@@ -25,36 +26,24 @@ object Command {
   }
   
   @scala.inline
-  implicit class CommandOps[Self <: Command] (val x: Self) extends AnyVal {
+  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setKeystrokesUndefined: Self = StObject.set(x, "keystrokes", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeystrokes(value: String): Self = this.set("keystrokes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeystrokes: Self = this.set("keystrokes", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

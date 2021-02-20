@@ -1,11 +1,12 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextViewStateChangeInfo extends js.Object {
+trait ContextViewStateChangeInfo extends StObject {
   
   var interactionState: ExtraState = js.native
   
@@ -22,27 +23,15 @@ object ContextViewStateChangeInfo {
   }
   
   @scala.inline
-  implicit class ContextViewStateChangeInfoOps[Self <: ContextViewStateChangeInfo] (val x: Self) extends AnyVal {
+  implicit class ContextViewStateChangeInfoMutableBuilder[Self <: ContextViewStateChangeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractionState(value: ExtraState): Self = StObject.set(x, "interactionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewViewState(value: ViewportProps): Self = StObject.set(x, "newViewState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInteractionState(value: ExtraState): Self = this.set("interactionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewViewState(value: ViewportProps): Self = this.set("newViewState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewState(value: ViewportProps): Self = this.set("viewState", value.asInstanceOf[js.Any])
+    def setViewState(value: ViewportProps): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
   }
 }

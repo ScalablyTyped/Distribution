@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectServiceSessionErrorStatus extends js.Object
+sealed trait WiFiDirectServiceSessionErrorStatus extends StObject
 /** Values used in the WiFiDirectServiceSession.ErrorStatus property. */
 @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus")
 @js.native
-object WiFiDirectServiceSessionErrorStatus extends js.Object {
+object WiFiDirectServiceSessionErrorStatus extends StObject {
   
   /** The L2 connection was disassociated unexpectedly. */
   @js.native

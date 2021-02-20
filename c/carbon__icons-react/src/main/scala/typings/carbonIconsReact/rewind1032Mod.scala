@@ -1,13 +1,20 @@
 package typings.carbonIconsReact
 
+import org.scalablytyped.runtime.Shortcut
 import typings.carbonIconsReact.mod.CarbonIconType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@carbon/icons-react/lib/rewind--10/32", JSImport.Namespace)
-@js.native
-object rewind1032Mod extends js.Object {
+object rewind1032Mod extends Shortcut {
   
+  @JSImport("@carbon/icons-react/lib/rewind--10/32", JSImport.Default)
+  @js.native
   val default: CarbonIconType = js.native
+  
+  type _To = CarbonIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `rewind1032Mod.foo` */
+  override def _to: CarbonIconType = default
 }

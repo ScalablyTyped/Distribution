@@ -6,6 +6,7 @@ import typings.yaml.utilMod.Type.FLOW_MAP
 import typings.yaml.utilMod.Type.FLOW_SEQ
 import typings.yaml.utilMod.Type.MAP
 import typings.yaml.utilMod.Type.SEQ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

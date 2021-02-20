@@ -1,11 +1,12 @@
 package typings.mithril.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteResolver[Attrs, State] extends js.Object {
+trait RouteResolver[Attrs, State] extends StObject {
   
   /** The onmatch hook is called when the router needs to find a component to render. */
   var onmatch: js.UndefOr[
@@ -32,19 +33,7 @@ object RouteResolver {
   }
   
   @scala.inline
-  implicit class RouteResolverOps[Self <: RouteResolver[_, _], Attrs, State] (val x: Self with (RouteResolver[Attrs, State])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class RouteResolverMutableBuilder[Self <: RouteResolver[_, _], Attrs, State] (val x: Self with (RouteResolver[Attrs, State])) extends AnyVal {
     
     @scala.inline
     def setOnmatch(
@@ -55,15 +44,15 @@ object RouteResolver {
           /* route */ String, 
           (ComponentTypes[_, _]) | js.Promise[_] | Unit
         ]
-    ): Self = this.set("onmatch", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onmatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnmatch: Self = this.set("onmatch", js.undefined)
+    def setOnmatchUndefined: Self = StObject.set(x, "onmatch", js.undefined)
     
     @scala.inline
-    def setRender(value: js.ThisFunction1[RouteResolver[Attrs, State], /* vnode */ Vnode[Attrs, State], Children]): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setRender(value: js.ThisFunction1[RouteResolver[Attrs, State], /* vnode */ Vnode[Attrs, State], Children]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

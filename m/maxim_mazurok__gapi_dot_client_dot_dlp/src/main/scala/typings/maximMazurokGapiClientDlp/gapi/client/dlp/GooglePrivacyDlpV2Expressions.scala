@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2Expressions extends js.Object {
+trait GooglePrivacyDlpV2Expressions extends StObject {
   
   /** Conditions to apply to the expression. */
   var conditions: js.UndefOr[GooglePrivacyDlpV2Conditions] = js.native
@@ -22,30 +23,18 @@ object GooglePrivacyDlpV2Expressions {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ExpressionsOps[Self <: GooglePrivacyDlpV2Expressions] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ExpressionsMutableBuilder[Self <: GooglePrivacyDlpV2Expressions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: GooglePrivacyDlpV2Conditions): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogicalOperator(value: String): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: GooglePrivacyDlpV2Conditions): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
-    
-    @scala.inline
-    def setLogicalOperator(value: String): Self = this.set("logicalOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogicalOperator: Self = this.set("logicalOperator", js.undefined)
+    def setLogicalOperatorUndefined: Self = StObject.set(x, "logicalOperator", js.undefined)
   }
 }

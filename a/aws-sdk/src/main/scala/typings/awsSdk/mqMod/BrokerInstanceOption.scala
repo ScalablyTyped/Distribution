@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokerInstanceOption extends js.Object {
+trait BrokerInstanceOption extends StObject {
   
   /**
     * The list of available az.
@@ -46,63 +47,51 @@ object BrokerInstanceOption {
   }
   
   @scala.inline
-  implicit class BrokerInstanceOptionOps[Self <: BrokerInstanceOption] (val x: Self) extends AnyVal {
+  implicit class BrokerInstanceOptionMutableBuilder[Self <: BrokerInstanceOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: listOfAvailabilityZone): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: listOfAvailabilityZone): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineType(value: EngineType): Self = this.set("EngineType", value.asInstanceOf[js.Any])
+    def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
     
     @scala.inline
-    def deleteEngineType: Self = this.set("EngineType", js.undefined)
+    def setStorageType(value: BrokerStorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
     @scala.inline
-    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    def setSupportedDeploymentModes(value: listOfDeploymentMode): Self = StObject.set(x, "SupportedDeploymentModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageType(value: BrokerStorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    def setSupportedDeploymentModesUndefined: Self = StObject.set(x, "SupportedDeploymentModes", js.undefined)
     
     @scala.inline
-    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    def setSupportedDeploymentModesVarargs(value: DeploymentMode*): Self = StObject.set(x, "SupportedDeploymentModes", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedDeploymentModesVarargs(value: DeploymentMode*): Self = this.set("SupportedDeploymentModes", js.Array(value :_*))
+    def setSupportedEngineVersions(value: listOfString): Self = StObject.set(x, "SupportedEngineVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedDeploymentModes(value: listOfDeploymentMode): Self = this.set("SupportedDeploymentModes", value.asInstanceOf[js.Any])
+    def setSupportedEngineVersionsUndefined: Self = StObject.set(x, "SupportedEngineVersions", js.undefined)
     
     @scala.inline
-    def deleteSupportedDeploymentModes: Self = this.set("SupportedDeploymentModes", js.undefined)
-    
-    @scala.inline
-    def setSupportedEngineVersionsVarargs(value: string*): Self = this.set("SupportedEngineVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedEngineVersions(value: listOfString): Self = this.set("SupportedEngineVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedEngineVersions: Self = this.set("SupportedEngineVersions", js.undefined)
+    def setSupportedEngineVersionsVarargs(value: string*): Self = StObject.set(x, "SupportedEngineVersions", js.Array(value :_*))
   }
 }

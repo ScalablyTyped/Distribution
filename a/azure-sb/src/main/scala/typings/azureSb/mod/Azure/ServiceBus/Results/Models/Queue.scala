@@ -3,6 +3,7 @@ package typings.azureSb.mod.Azure.ServiceBus.Results.Models
 import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,39 +59,27 @@ object Queue {
   }
   
   @scala.inline
-  implicit class QueueOps[Self <: Queue] (val x: Self) extends AnyVal {
+  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockDuration(value: Duration): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDeliveryCount(value: String): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetteringOnMessageExpiration(value: String): Self = this.set("DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    def setMessageCount(value: String): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockDuration(value: Duration): Self = this.set("LockDuration", value.asInstanceOf[js.Any])
+    def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeliveryCount(value: String): Self = this.set("MaxDeliveryCount", value.asInstanceOf[js.Any])
+    def setRequiresSession(value: String): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageCount(value: String): Self = this.set("MessageCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueName(value: String): Self = this.set("QueueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequiresSession(value: String): Self = this.set("RequiresSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportOrdering(value: String): Self = this.set("SupportOrdering", value.asInstanceOf[js.Any])
+    def setSupportOrdering(value: String): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
   }
 }

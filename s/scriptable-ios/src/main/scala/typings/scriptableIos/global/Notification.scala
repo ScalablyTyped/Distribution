@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Notification ()
   extends typings.scriptableIos.Notification
-/* static members */
-@JSGlobal("Notification")
-@js.native
-object Notification extends js.Object {
+object Notification {
   
   /**
     * _Delivered notifications displayed in the Notification Center._
@@ -27,6 +25,9 @@ object Notification extends js.Object {
     * Fetches all notifications that have been scheduled from Scriptable and that are still displayed in the Notification Center of iOS.
     * @see https://docs.scriptable.app/notification/#alldelivered
     */
+  /* static member */
+  @JSGlobal("Notification.allDelivered")
+  @js.native
   def allDelivered(): js.Promise[js.Array[typings.scriptableIos.Notification]] = js.native
   
   /**
@@ -35,6 +36,9 @@ object Notification extends js.Object {
     * Fetches all notifications that have been scheduled from Scriptable and are waiting to be delivered.
     * @see https://docs.scriptable.app/notification/#allpending
     */
+  /* static member */
+  @JSGlobal("Notification.allPending")
+  @js.native
   def allPending(): js.Promise[js.Array[typings.scriptableIos.Notification]] = js.native
   
   /**
@@ -43,6 +47,9 @@ object Notification extends js.Object {
     * Removes all notifications that have been scheduled from Scriptable and that are still displayed in the Notification Center of iOS.
     * @see https://docs.scriptable.app/notification/#removealldelivered
     */
+  /* static member */
+  @JSGlobal("Notification.removeAllDelivered")
+  @js.native
   def removeAllDelivered(): js.Promise[Unit] = js.native
   
   /**
@@ -53,6 +60,9 @@ object Notification extends js.Object {
     * Use with caution. This removes all notifications scheduled across all of your scripts and the action cannot be undone.
     * @see https://docs.scriptable.app/notification/#removeallpending
     */
+  /* static member */
+  @JSGlobal("Notification.removeAllPending")
+  @js.native
   def removeAllPending(): js.Promise[Unit] = js.native
   
   /**
@@ -62,6 +72,9 @@ object Notification extends js.Object {
     * `Notification.removePending()`.
     * @see https://docs.scriptable.app/notification/#removedelivered
     */
+  /* static member */
+  @JSGlobal("Notification.removeDelivered")
+  @js.native
   def removeDelivered(identifiers: js.Array[String]): js.Promise[Unit] = js.native
   
   /**
@@ -71,6 +84,9 @@ object Notification extends js.Object {
     * remove delivered notifications, see `Notification.removeDelivered()`.
     * @see https://docs.scriptable.app/notification/#removepending
     */
+  /* static member */
+  @JSGlobal("Notification.removePending")
+  @js.native
   def removePending(identifiers: js.Array[String]): js.Promise[Unit] = js.native
   
   /**
@@ -82,5 +98,8 @@ object Notification extends js.Object {
     * manually reset the value using `Notification.resetCurrent`.
     * @see https://docs.scriptable.app/notification/#resetcurrent
     */
+  /* static member */
+  @JSGlobal("Notification.resetCurrent")
+  @js.native
   def resetCurrent(): Unit = js.native
 }

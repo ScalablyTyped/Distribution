@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutlineColor extends js.Object {
+trait OutlineColor extends StObject {
   
   var fill: js.UndefOr[Property] = js.native
   
@@ -38,78 +39,66 @@ object OutlineColor {
   }
   
   @scala.inline
-  implicit class OutlineColorOps[Self <: OutlineColor] (val x: Self) extends AnyVal {
+  implicit class OutlineColorMutableBuilder[Self <: OutlineColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: Property): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaterial(value: MaterialProperty): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Property): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setOutline(value: Property): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: MaterialProperty): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setOutlineColor(value: Property): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def setOutline(value: Property): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setOutlineWidth(value: Property): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: Property): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setRadii(value: Property): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineWidth(value: Property): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
     @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setShow(value: Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadii(value: Property): Self = this.set("radii", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRadii: Self = this.set("radii", js.undefined)
+    def setSlicePartitions(value: Property): Self = StObject.set(x, "slicePartitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Property): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSlicePartitionsUndefined: Self = StObject.set(x, "slicePartitions", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setStackPartitions(value: Property): Self = StObject.set(x, "stackPartitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlicePartitions(value: Property): Self = this.set("slicePartitions", value.asInstanceOf[js.Any])
+    def setStackPartitionsUndefined: Self = StObject.set(x, "stackPartitions", js.undefined)
     
     @scala.inline
-    def deleteSlicePartitions: Self = this.set("slicePartitions", js.undefined)
+    def setSubdivisions(value: Property): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackPartitions(value: Property): Self = this.set("stackPartitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackPartitions: Self = this.set("stackPartitions", js.undefined)
-    
-    @scala.inline
-    def setSubdivisions(value: Property): Self = this.set("subdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdivisions: Self = this.set("subdivisions", js.undefined)
+    def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
   }
 }

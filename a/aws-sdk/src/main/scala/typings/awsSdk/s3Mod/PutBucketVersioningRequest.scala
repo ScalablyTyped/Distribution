@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutBucketVersioningRequest extends js.Object {
+trait PutBucketVersioningRequest extends StObject {
   
   /**
     * The bucket name.
@@ -41,42 +42,30 @@ object PutBucketVersioningRequest {
   }
   
   @scala.inline
-  implicit class PutBucketVersioningRequestOps[Self <: PutBucketVersioningRequest] (val x: Self) extends AnyVal {
+  implicit class PutBucketVersioningRequestMutableBuilder[Self <: PutBucketVersioningRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersioningConfiguration(value: VersioningConfiguration): Self = this.set("VersioningConfiguration", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    def setMFA(value: MFA): Self = StObject.set(x, "MFA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+    def setMFAUndefined: Self = StObject.set(x, "MFA", js.undefined)
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
-    
-    @scala.inline
-    def setMFA(value: MFA): Self = this.set("MFA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMFA: Self = this.set("MFA", js.undefined)
+    def setVersioningConfiguration(value: VersioningConfiguration): Self = StObject.set(x, "VersioningConfiguration", value.asInstanceOf[js.Any])
   }
 }

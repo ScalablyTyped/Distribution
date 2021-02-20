@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CombinedData extends js.Object {
+trait CombinedData extends StObject {
   
   var barData: js.UndefOr[BarData] = js.native
   
@@ -26,48 +27,36 @@ object CombinedData {
   }
   
   @scala.inline
-  implicit class CombinedDataOps[Self <: CombinedData] (val x: Self) extends AnyVal {
+  implicit class CombinedDataMutableBuilder[Self <: CombinedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarData(value: BarData): Self = StObject.set(x, "barData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarDataUndefined: Self = StObject.set(x, "barData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBubbleData(value: BubbleData): Self = StObject.set(x, "bubbleData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarData(value: BarData): Self = this.set("barData", value.asInstanceOf[js.Any])
+    def setBubbleDataUndefined: Self = StObject.set(x, "bubbleData", js.undefined)
     
     @scala.inline
-    def deleteBarData: Self = this.set("barData", js.undefined)
+    def setCandleData(value: CandleStickData): Self = StObject.set(x, "candleData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleData(value: BubbleData): Self = this.set("bubbleData", value.asInstanceOf[js.Any])
+    def setCandleDataUndefined: Self = StObject.set(x, "candleData", js.undefined)
     
     @scala.inline
-    def deleteBubbleData: Self = this.set("bubbleData", js.undefined)
+    def setLineData(value: LineData): Self = StObject.set(x, "lineData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandleData(value: CandleStickData): Self = this.set("candleData", value.asInstanceOf[js.Any])
+    def setLineDataUndefined: Self = StObject.set(x, "lineData", js.undefined)
     
     @scala.inline
-    def deleteCandleData: Self = this.set("candleData", js.undefined)
+    def setScatterData(value: ScatterData): Self = StObject.set(x, "scatterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineData(value: LineData): Self = this.set("lineData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineData: Self = this.set("lineData", js.undefined)
-    
-    @scala.inline
-    def setScatterData(value: ScatterData): Self = this.set("scatterData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScatterData: Self = this.set("scatterData", js.undefined)
+    def setScatterDataUndefined: Self = StObject.set(x, "scatterData", js.undefined)
   }
 }

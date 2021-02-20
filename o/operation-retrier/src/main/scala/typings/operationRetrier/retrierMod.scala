@@ -3,17 +3,29 @@ package typings.operationRetrier
 import typings.node.eventsMod.EventEmitter
 import typings.operationRetrier.anon.Initial
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("operation-retrier/lib/retrier", JSImport.Namespace)
-@js.native
-object retrierMod extends js.Object {
+object retrierMod {
   
   /**
     * Provides retrier service
     */
+  @JSImport("operation-retrier/lib/retrier", JSImport.Default)
+  @js.native
+  class default protected () extends Retrier {
+    /**
+      * Creates a new Retrier instance
+      */
+    def this(options: Initial) = this()
+  }
+  
+  /**
+    * Provides retrier service
+    */
+  @JSImport("operation-retrier/lib/retrier", "Retrier")
   @js.native
   class Retrier protected () extends EventEmitter {
     /**
@@ -70,16 +82,5 @@ object retrierMod extends js.Object {
     def succeeded(arg: js.Any): Unit = js.native
     
     var timeout: js.Any = js.native
-  }
-  
-  /**
-    * Provides retrier service
-    */
-  @js.native
-  class default protected () extends Retrier {
-    /**
-      * Creates a new Retrier instance
-      */
-    def this(options: Initial) = this()
   }
 }

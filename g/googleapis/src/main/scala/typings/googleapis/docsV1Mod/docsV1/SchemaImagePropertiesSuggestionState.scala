@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * suggested value.
   */
 @js.native
-trait SchemaImagePropertiesSuggestionState extends js.Object {
+trait SchemaImagePropertiesSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to angle.
@@ -57,60 +58,48 @@ object SchemaImagePropertiesSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaImagePropertiesSuggestionStateOps[Self <: SchemaImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaImagePropertiesSuggestionStateMutableBuilder[Self <: SchemaImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrightnessSuggested(value: Boolean): Self = StObject.set(x, "brightnessSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleSuggested(value: Boolean): Self = this.set("angleSuggested", value.asInstanceOf[js.Any])
+    def setBrightnessSuggestedUndefined: Self = StObject.set(x, "brightnessSuggested", js.undefined)
     
     @scala.inline
-    def deleteAngleSuggested: Self = this.set("angleSuggested", js.undefined)
+    def setContentUriSuggested(value: Boolean): Self = StObject.set(x, "contentUriSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightnessSuggested(value: Boolean): Self = this.set("brightnessSuggested", value.asInstanceOf[js.Any])
+    def setContentUriSuggestedUndefined: Self = StObject.set(x, "contentUriSuggested", js.undefined)
     
     @scala.inline
-    def deleteBrightnessSuggested: Self = this.set("brightnessSuggested", js.undefined)
+    def setContrastSuggested(value: Boolean): Self = StObject.set(x, "contrastSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUriSuggested(value: Boolean): Self = this.set("contentUriSuggested", value.asInstanceOf[js.Any])
+    def setContrastSuggestedUndefined: Self = StObject.set(x, "contrastSuggested", js.undefined)
     
     @scala.inline
-    def deleteContentUriSuggested: Self = this.set("contentUriSuggested", js.undefined)
+    def setCropPropertiesSuggestionState(value: SchemaCropPropertiesSuggestionState): Self = StObject.set(x, "cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrastSuggested(value: Boolean): Self = this.set("contrastSuggested", value.asInstanceOf[js.Any])
+    def setCropPropertiesSuggestionStateUndefined: Self = StObject.set(x, "cropPropertiesSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteContrastSuggested: Self = this.set("contrastSuggested", js.undefined)
+    def setSourceUriSuggested(value: Boolean): Self = StObject.set(x, "sourceUriSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropPropertiesSuggestionState(value: SchemaCropPropertiesSuggestionState): Self = this.set("cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    def setSourceUriSuggestedUndefined: Self = StObject.set(x, "sourceUriSuggested", js.undefined)
     
     @scala.inline
-    def deleteCropPropertiesSuggestionState: Self = this.set("cropPropertiesSuggestionState", js.undefined)
+    def setTransparencySuggested(value: Boolean): Self = StObject.set(x, "transparencySuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUriSuggested(value: Boolean): Self = this.set("sourceUriSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceUriSuggested: Self = this.set("sourceUriSuggested", js.undefined)
-    
-    @scala.inline
-    def setTransparencySuggested(value: Boolean): Self = this.set("transparencySuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparencySuggested: Self = this.set("transparencySuggested", js.undefined)
+    def setTransparencySuggestedUndefined: Self = StObject.set(x, "transparencySuggested", js.undefined)
   }
 }

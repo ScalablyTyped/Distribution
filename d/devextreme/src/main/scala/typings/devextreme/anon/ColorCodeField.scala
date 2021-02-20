@@ -22,12 +22,13 @@ import typings.devextreme.devextremeStrings.extrapolate
 import typings.devextreme.devextremeStrings.gradient
 import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorCodeField extends js.Object {
+trait ColorCodeField extends StObject {
   
   var colorCodeField: js.UndefOr[String] = js.native
   
@@ -52,62 +53,50 @@ object ColorCodeField {
   }
   
   @scala.inline
-  implicit class ColorCodeFieldOps[Self <: ColorCodeField] (val x: Self) extends AnyVal {
+  implicit class ColorCodeFieldMutableBuilder[Self <: ColorCodeField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorCodeField(value: String): Self = StObject.set(x, "colorCodeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorCodeFieldUndefined: Self = StObject.set(x, "colorCodeField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorizeGroups(value: Boolean): Self = StObject.set(x, "colorizeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorCodeField(value: String): Self = this.set("colorCodeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorCodeField: Self = this.set("colorCodeField", js.undefined)
-    
-    @scala.inline
-    def setColorizeGroups(value: Boolean): Self = this.set("colorizeGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorizeGroups: Self = this.set("colorizeGroups", js.undefined)
-    
-    @scala.inline
-    def setPaletteVarargs(value: String*): Self = this.set("palette", js.Array(value :_*))
+    def setColorizeGroupsUndefined: Self = StObject.set(x, "colorizeGroups", js.undefined)
     
     @scala.inline
     def setPalette(
       value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-    ): Self = this.set("palette", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = this.set("paletteExtensionMode", value.asInstanceOf[js.Any])
+    def setPaletteExtensionModeUndefined: Self = StObject.set(x, "paletteExtensionMode", js.undefined)
     
     @scala.inline
-    def deletePaletteExtensionMode: Self = this.set("paletteExtensionMode", js.undefined)
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def setRangeVarargs(value: Double*): Self = this.set("range", js.Array(value :_*))
+    def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
     @scala.inline
-    def setRange(value: js.Array[Double]): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def setType(value: discrete | gradient | none | range): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: discrete | gradient | none | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

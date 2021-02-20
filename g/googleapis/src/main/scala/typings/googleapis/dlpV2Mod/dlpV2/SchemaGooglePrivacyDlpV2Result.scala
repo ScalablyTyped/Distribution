@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All result fields mentioned below are updated while the job is processing.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Result extends js.Object {
+trait SchemaGooglePrivacyDlpV2Result extends StObject {
   
   /**
     * Statistics of how many instances of each info type were found during
@@ -35,39 +36,27 @@ object SchemaGooglePrivacyDlpV2Result {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ResultOps[Self <: SchemaGooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2ResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoTypeStats(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]): Self = StObject.set(x, "infoTypeStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoTypeStatsUndefined: Self = StObject.set(x, "infoTypeStats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoTypeStatsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeStats*): Self = StObject.set(x, "infoTypeStats", js.Array(value :_*))
     
     @scala.inline
-    def setInfoTypeStatsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeStats*): Self = this.set("infoTypeStats", js.Array(value :_*))
+    def setProcessedBytes(value: String): Self = StObject.set(x, "processedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoTypeStats(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]): Self = this.set("infoTypeStats", value.asInstanceOf[js.Any])
+    def setProcessedBytesUndefined: Self = StObject.set(x, "processedBytes", js.undefined)
     
     @scala.inline
-    def deleteInfoTypeStats: Self = this.set("infoTypeStats", js.undefined)
+    def setTotalEstimatedBytes(value: String): Self = StObject.set(x, "totalEstimatedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessedBytes(value: String): Self = this.set("processedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessedBytes: Self = this.set("processedBytes", js.undefined)
-    
-    @scala.inline
-    def setTotalEstimatedBytes(value: String): Self = this.set("totalEstimatedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalEstimatedBytes: Self = this.set("totalEstimatedBytes", js.undefined)
+    def setTotalEstimatedBytesUndefined: Self = StObject.set(x, "totalEstimatedBytes", js.undefined)
   }
 }

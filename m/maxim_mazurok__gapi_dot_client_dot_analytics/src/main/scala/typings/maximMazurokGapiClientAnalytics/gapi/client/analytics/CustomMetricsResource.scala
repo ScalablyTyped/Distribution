@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.AltFields
 import typings.maximMazurokGapiClientAnalytics.anon.CustomMetricId
 import typings.maximMazurokGapiClientAnalytics.anon.CustomMetricIdFields
 import typings.maximMazurokGapiClientAnalytics.anon.Startindex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomMetricsResource extends js.Object {
+trait CustomMetricsResource extends StObject {
   
   /** Get a custom metric to which the user has access. */
   def get(): Request[CustomMetric] = js.native

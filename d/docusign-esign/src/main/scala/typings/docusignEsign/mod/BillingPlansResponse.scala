@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingPlansResponse extends js.Object {
+trait BillingPlansResponse extends StObject {
   
   /**
     * Reserved: TBD
@@ -21,27 +22,15 @@ object BillingPlansResponse {
   }
   
   @scala.inline
-  implicit class BillingPlansResponseOps[Self <: BillingPlansResponse] (val x: Self) extends AnyVal {
+  implicit class BillingPlansResponseMutableBuilder[Self <: BillingPlansResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = StObject.set(x, "billingPlans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingPlansUndefined: Self = StObject.set(x, "billingPlans", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBillingPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = this.set("billingPlans", js.Array(value :_*))
-    
-    @scala.inline
-    def setBillingPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = this.set("billingPlans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingPlans: Self = this.set("billingPlans", js.undefined)
+    def setBillingPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "billingPlans", js.Array(value :_*))
   }
 }

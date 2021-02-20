@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeMaterialBlockTargets extends js.Object
+sealed trait NodeMaterialBlockTargets extends StObject
 @JSGlobal("BABYLON.NodeMaterialBlockTargets")
 @js.native
-object NodeMaterialBlockTargets extends js.Object {
+object NodeMaterialBlockTargets extends StObject {
   
   /** Fragment shader */
   @js.native

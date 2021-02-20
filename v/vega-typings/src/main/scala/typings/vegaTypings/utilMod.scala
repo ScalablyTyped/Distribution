@@ -1,12 +1,11 @@
 package typings.vegaTypings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vega-typings/types/spec/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
+object utilMod {
   
   type Vector10[T] = js.Tuple10[T, T, T, T, T, T, T, T, T, T]
   

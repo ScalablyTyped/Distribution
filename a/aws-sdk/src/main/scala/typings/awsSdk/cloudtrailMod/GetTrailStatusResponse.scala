@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTrailStatusResponse extends js.Object {
+trait GetTrailStatusResponse extends StObject {
   
   /**
     * Whether the CloudTrail is currently logging AWS API calls.
@@ -101,120 +102,108 @@ object GetTrailStatusResponse {
   }
   
   @scala.inline
-  implicit class GetTrailStatusResponseOps[Self <: GetTrailStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetTrailStatusResponseMutableBuilder[Self <: GetTrailStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLogging(value: Boolean): Self = StObject.set(x, "IsLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLoggingUndefined: Self = StObject.set(x, "IsLogging", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestCloudWatchLogsDeliveryError(value: String): Self = StObject.set(x, "LatestCloudWatchLogsDeliveryError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLogging(value: Boolean): Self = this.set("IsLogging", value.asInstanceOf[js.Any])
+    def setLatestCloudWatchLogsDeliveryErrorUndefined: Self = StObject.set(x, "LatestCloudWatchLogsDeliveryError", js.undefined)
     
     @scala.inline
-    def deleteIsLogging: Self = this.set("IsLogging", js.undefined)
+    def setLatestCloudWatchLogsDeliveryTime(value: Date): Self = StObject.set(x, "LatestCloudWatchLogsDeliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestCloudWatchLogsDeliveryError(value: String): Self = this.set("LatestCloudWatchLogsDeliveryError", value.asInstanceOf[js.Any])
+    def setLatestCloudWatchLogsDeliveryTimeUndefined: Self = StObject.set(x, "LatestCloudWatchLogsDeliveryTime", js.undefined)
     
     @scala.inline
-    def deleteLatestCloudWatchLogsDeliveryError: Self = this.set("LatestCloudWatchLogsDeliveryError", js.undefined)
+    def setLatestDeliveryAttemptSucceeded(value: String): Self = StObject.set(x, "LatestDeliveryAttemptSucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestCloudWatchLogsDeliveryTime(value: Date): Self = this.set("LatestCloudWatchLogsDeliveryTime", value.asInstanceOf[js.Any])
+    def setLatestDeliveryAttemptSucceededUndefined: Self = StObject.set(x, "LatestDeliveryAttemptSucceeded", js.undefined)
     
     @scala.inline
-    def deleteLatestCloudWatchLogsDeliveryTime: Self = this.set("LatestCloudWatchLogsDeliveryTime", js.undefined)
+    def setLatestDeliveryAttemptTime(value: String): Self = StObject.set(x, "LatestDeliveryAttemptTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDeliveryAttemptSucceeded(value: String): Self = this.set("LatestDeliveryAttemptSucceeded", value.asInstanceOf[js.Any])
+    def setLatestDeliveryAttemptTimeUndefined: Self = StObject.set(x, "LatestDeliveryAttemptTime", js.undefined)
     
     @scala.inline
-    def deleteLatestDeliveryAttemptSucceeded: Self = this.set("LatestDeliveryAttemptSucceeded", js.undefined)
+    def setLatestDeliveryError(value: String): Self = StObject.set(x, "LatestDeliveryError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDeliveryAttemptTime(value: String): Self = this.set("LatestDeliveryAttemptTime", value.asInstanceOf[js.Any])
+    def setLatestDeliveryErrorUndefined: Self = StObject.set(x, "LatestDeliveryError", js.undefined)
     
     @scala.inline
-    def deleteLatestDeliveryAttemptTime: Self = this.set("LatestDeliveryAttemptTime", js.undefined)
+    def setLatestDeliveryTime(value: Date): Self = StObject.set(x, "LatestDeliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDeliveryError(value: String): Self = this.set("LatestDeliveryError", value.asInstanceOf[js.Any])
+    def setLatestDeliveryTimeUndefined: Self = StObject.set(x, "LatestDeliveryTime", js.undefined)
     
     @scala.inline
-    def deleteLatestDeliveryError: Self = this.set("LatestDeliveryError", js.undefined)
+    def setLatestDigestDeliveryError(value: String): Self = StObject.set(x, "LatestDigestDeliveryError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDeliveryTime(value: Date): Self = this.set("LatestDeliveryTime", value.asInstanceOf[js.Any])
+    def setLatestDigestDeliveryErrorUndefined: Self = StObject.set(x, "LatestDigestDeliveryError", js.undefined)
     
     @scala.inline
-    def deleteLatestDeliveryTime: Self = this.set("LatestDeliveryTime", js.undefined)
+    def setLatestDigestDeliveryTime(value: Date): Self = StObject.set(x, "LatestDigestDeliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDigestDeliveryError(value: String): Self = this.set("LatestDigestDeliveryError", value.asInstanceOf[js.Any])
+    def setLatestDigestDeliveryTimeUndefined: Self = StObject.set(x, "LatestDigestDeliveryTime", js.undefined)
     
     @scala.inline
-    def deleteLatestDigestDeliveryError: Self = this.set("LatestDigestDeliveryError", js.undefined)
+    def setLatestNotificationAttemptSucceeded(value: String): Self = StObject.set(x, "LatestNotificationAttemptSucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDigestDeliveryTime(value: Date): Self = this.set("LatestDigestDeliveryTime", value.asInstanceOf[js.Any])
+    def setLatestNotificationAttemptSucceededUndefined: Self = StObject.set(x, "LatestNotificationAttemptSucceeded", js.undefined)
     
     @scala.inline
-    def deleteLatestDigestDeliveryTime: Self = this.set("LatestDigestDeliveryTime", js.undefined)
+    def setLatestNotificationAttemptTime(value: String): Self = StObject.set(x, "LatestNotificationAttemptTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestNotificationAttemptSucceeded(value: String): Self = this.set("LatestNotificationAttemptSucceeded", value.asInstanceOf[js.Any])
+    def setLatestNotificationAttemptTimeUndefined: Self = StObject.set(x, "LatestNotificationAttemptTime", js.undefined)
     
     @scala.inline
-    def deleteLatestNotificationAttemptSucceeded: Self = this.set("LatestNotificationAttemptSucceeded", js.undefined)
+    def setLatestNotificationError(value: String): Self = StObject.set(x, "LatestNotificationError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestNotificationAttemptTime(value: String): Self = this.set("LatestNotificationAttemptTime", value.asInstanceOf[js.Any])
+    def setLatestNotificationErrorUndefined: Self = StObject.set(x, "LatestNotificationError", js.undefined)
     
     @scala.inline
-    def deleteLatestNotificationAttemptTime: Self = this.set("LatestNotificationAttemptTime", js.undefined)
+    def setLatestNotificationTime(value: Date): Self = StObject.set(x, "LatestNotificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestNotificationError(value: String): Self = this.set("LatestNotificationError", value.asInstanceOf[js.Any])
+    def setLatestNotificationTimeUndefined: Self = StObject.set(x, "LatestNotificationTime", js.undefined)
     
     @scala.inline
-    def deleteLatestNotificationError: Self = this.set("LatestNotificationError", js.undefined)
+    def setStartLoggingTime(value: Date): Self = StObject.set(x, "StartLoggingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestNotificationTime(value: Date): Self = this.set("LatestNotificationTime", value.asInstanceOf[js.Any])
+    def setStartLoggingTimeUndefined: Self = StObject.set(x, "StartLoggingTime", js.undefined)
     
     @scala.inline
-    def deleteLatestNotificationTime: Self = this.set("LatestNotificationTime", js.undefined)
+    def setStopLoggingTime(value: Date): Self = StObject.set(x, "StopLoggingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLoggingTime(value: Date): Self = this.set("StartLoggingTime", value.asInstanceOf[js.Any])
+    def setStopLoggingTimeUndefined: Self = StObject.set(x, "StopLoggingTime", js.undefined)
     
     @scala.inline
-    def deleteStartLoggingTime: Self = this.set("StartLoggingTime", js.undefined)
+    def setTimeLoggingStarted(value: String): Self = StObject.set(x, "TimeLoggingStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopLoggingTime(value: Date): Self = this.set("StopLoggingTime", value.asInstanceOf[js.Any])
+    def setTimeLoggingStartedUndefined: Self = StObject.set(x, "TimeLoggingStarted", js.undefined)
     
     @scala.inline
-    def deleteStopLoggingTime: Self = this.set("StopLoggingTime", js.undefined)
+    def setTimeLoggingStopped(value: String): Self = StObject.set(x, "TimeLoggingStopped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeLoggingStarted(value: String): Self = this.set("TimeLoggingStarted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeLoggingStarted: Self = this.set("TimeLoggingStarted", js.undefined)
-    
-    @scala.inline
-    def setTimeLoggingStopped(value: String): Self = this.set("TimeLoggingStopped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeLoggingStopped: Self = this.set("TimeLoggingStopped", js.undefined)
+    def setTimeLoggingStoppedUndefined: Self = StObject.set(x, "TimeLoggingStopped", js.undefined)
   }
 }

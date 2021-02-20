@@ -5,12 +5,13 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Particles.Particle
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticleEmitterConfig extends js.Object {
+trait ParticleEmitterConfig extends StObject {
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationX} (emit only).
@@ -285,483 +286,471 @@ object ParticleEmitterConfig {
   }
   
   @scala.inline
-  implicit class ParticleEmitterConfigOps[Self <: ParticleEmitterConfig] (val x: Self) extends AnyVal {
+  implicit class ParticleEmitterConfigMutableBuilder[Self <: ParticleEmitterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerationX(value: EmitterOpOnEmitType): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccelerationXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "accelerationX", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccelerationXUndefined: Self = StObject.set(x, "accelerationX", js.undefined)
     
     @scala.inline
-    def setAccelerationXVarargs(value: Double*): Self = this.set("accelerationX", js.Array(value :_*))
+    def setAccelerationXVarargs(value: Double*): Self = StObject.set(x, "accelerationX", js.Array(value :_*))
     
     @scala.inline
-    def setAccelerationXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("accelerationX", js.Any.fromFunction3(value))
+    def setAccelerationY(value: EmitterOpOnEmitType): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerationX(value: EmitterOpOnEmitType): Self = this.set("accelerationX", value.asInstanceOf[js.Any])
+    def setAccelerationYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "accelerationY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAccelerationX: Self = this.set("accelerationX", js.undefined)
+    def setAccelerationYUndefined: Self = StObject.set(x, "accelerationY", js.undefined)
     
     @scala.inline
-    def setAccelerationYVarargs(value: Double*): Self = this.set("accelerationY", js.Array(value :_*))
+    def setAccelerationYVarargs(value: Double*): Self = StObject.set(x, "accelerationY", js.Array(value :_*))
     
     @scala.inline
-    def setAccelerationYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("accelerationY", js.Any.fromFunction3(value))
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerationY(value: EmitterOpOnEmitType): Self = this.set("accelerationY", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteAccelerationY: Self = this.set("accelerationY", js.undefined)
+    def setAlpha(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAlphaFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "alpha", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAlphaFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "alpha", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAlphaVarargs(value: Double*): Self = this.set("alpha", js.Array(value :_*))
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def setAlphaFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = this.set("alpha", js.Any.fromFunction4(value))
+    def setAlphaVarargs(value: Double*): Self = StObject.set(x, "alpha", js.Array(value :_*))
     
     @scala.inline
-    def setAlphaFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("alpha", js.Any.fromFunction3(value))
+    def setAngle(value: EmitterOpOnEmitType): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAngleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "angle", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def setAngleVarargs(value: Double*): Self = this.set("angle", js.Array(value :_*))
+    def setAngleVarargs(value: Double*): Self = StObject.set(x, "angle", js.Array(value :_*))
     
     @scala.inline
-    def setAngleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("angle", js.Any.fromFunction3(value))
+    def setBlendMode(value: BlendModes | String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: EmitterOpOnEmitType): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setBounce(value: EmitterOpOnEmitType): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendMode(value: BlendModes | String): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    def setBounceFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "bounce", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteBlendMode: Self = this.set("blendMode", js.undefined)
+    def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
     
     @scala.inline
-    def setBounceVarargs(value: Double*): Self = this.set("bounce", js.Array(value :_*))
+    def setBounceVarargs(value: Double*): Self = StObject.set(x, "bounce", js.Array(value :_*))
     
     @scala.inline
-    def setBounceFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("bounce", js.Any.fromFunction3(value))
+    def setBounds(value: ParticleEmitterBounds | ParticleEmitterBoundsAlt): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounce(value: EmitterOpOnEmitType): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def deleteBounce: Self = this.set("bounce", js.undefined)
+    def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: ParticleEmitterBounds | ParticleEmitterBoundsAlt): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setCollideBottom(value: Boolean): Self = StObject.set(x, "collideBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackScope(value: js.Any): Self = this.set("callbackScope", value.asInstanceOf[js.Any])
+    def setCollideBottomUndefined: Self = StObject.set(x, "collideBottom", js.undefined)
     
     @scala.inline
-    def deleteCallbackScope: Self = this.set("callbackScope", js.undefined)
+    def setCollideLeft(value: Boolean): Self = StObject.set(x, "collideLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollideBottom(value: Boolean): Self = this.set("collideBottom", value.asInstanceOf[js.Any])
+    def setCollideLeftUndefined: Self = StObject.set(x, "collideLeft", js.undefined)
     
     @scala.inline
-    def deleteCollideBottom: Self = this.set("collideBottom", js.undefined)
+    def setCollideRight(value: Boolean): Self = StObject.set(x, "collideRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollideLeft(value: Boolean): Self = this.set("collideLeft", value.asInstanceOf[js.Any])
+    def setCollideRightUndefined: Self = StObject.set(x, "collideRight", js.undefined)
     
     @scala.inline
-    def deleteCollideLeft: Self = this.set("collideLeft", js.undefined)
+    def setCollideTop(value: Boolean): Self = StObject.set(x, "collideTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollideRight(value: Boolean): Self = this.set("collideRight", value.asInstanceOf[js.Any])
+    def setCollideTopUndefined: Self = StObject.set(x, "collideTop", js.undefined)
     
     @scala.inline
-    def deleteCollideRight: Self = this.set("collideRight", js.undefined)
+    def setDeathCallback(value: Boolean): Self = StObject.set(x, "deathCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollideTop(value: Boolean): Self = this.set("collideTop", value.asInstanceOf[js.Any])
+    def setDeathCallbackScope(value: js.Any): Self = StObject.set(x, "deathCallbackScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollideTop: Self = this.set("collideTop", js.undefined)
+    def setDeathCallbackScopeUndefined: Self = StObject.set(x, "deathCallbackScope", js.undefined)
     
     @scala.inline
-    def setDeathCallback(value: Boolean): Self = this.set("deathCallback", value.asInstanceOf[js.Any])
+    def setDeathCallbackUndefined: Self = StObject.set(x, "deathCallback", js.undefined)
     
     @scala.inline
-    def deleteDeathCallback: Self = this.set("deathCallback", js.undefined)
+    def setDelay(value: EmitterOpOnEmitType): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeathCallbackScope(value: js.Any): Self = this.set("deathCallbackScope", value.asInstanceOf[js.Any])
+    def setDelayFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDeathCallbackScope: Self = this.set("deathCallbackScope", js.undefined)
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setDelayVarargs(value: Double*): Self = this.set("delay", js.Array(value :_*))
+    def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
     
     @scala.inline
-    def setDelayFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("delay", js.Any.fromFunction3(value))
+    def setEmitCallback(value: js.Function): Self = StObject.set(x, "emitCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: EmitterOpOnEmitType): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEmitCallbackScope(value: js.Any): Self = StObject.set(x, "emitCallbackScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEmitCallbackScopeUndefined: Self = StObject.set(x, "emitCallbackScope", js.undefined)
     
     @scala.inline
-    def setEmitCallback(value: js.Function): Self = this.set("emitCallback", value.asInstanceOf[js.Any])
+    def setEmitCallbackUndefined: Self = StObject.set(x, "emitCallback", js.undefined)
     
     @scala.inline
-    def deleteEmitCallback: Self = this.set("emitCallback", js.undefined)
+    def setEmitZone(value: js.Object): Self = StObject.set(x, "emitZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitCallbackScope(value: js.Any): Self = this.set("emitCallbackScope", value.asInstanceOf[js.Any])
+    def setEmitZoneUndefined: Self = StObject.set(x, "emitZone", js.undefined)
     
     @scala.inline
-    def deleteEmitCallbackScope: Self = this.set("emitCallbackScope", js.undefined)
+    def setFollow(value: GameObject): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitZone(value: js.Object): Self = this.set("emitZone", value.asInstanceOf[js.Any])
+    def setFollowOffset(value: js.Object): Self = StObject.set(x, "followOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmitZone: Self = this.set("emitZone", js.undefined)
+    def setFollowOffsetDotx(value: Double): Self = StObject.set(x, "followOffset.x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: GameObject): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def setFollowOffsetDotxUndefined: Self = StObject.set(x, "followOffset.x", js.undefined)
     
     @scala.inline
-    def deleteFollow: Self = this.set("follow", js.undefined)
+    def setFollowOffsetDoty(value: Double): Self = StObject.set(x, "followOffset.y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowOffset(value: js.Object): Self = this.set("followOffset", value.asInstanceOf[js.Any])
+    def setFollowOffsetDotyUndefined: Self = StObject.set(x, "followOffset.y", js.undefined)
     
     @scala.inline
-    def deleteFollowOffset: Self = this.set("followOffset", js.undefined)
+    def setFollowOffsetUndefined: Self = StObject.set(x, "followOffset", js.undefined)
     
     @scala.inline
-    def setFollowOffsetDotx(value: Double): Self = this.set("followOffset.x", value.asInstanceOf[js.Any])
+    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     @scala.inline
-    def deleteFollowOffsetDotx: Self = this.set("followOffset.x", js.undefined)
+    def setFrame(value: Double | (js.Array[Double | Frame | String]) | String | Frame | ParticleEmitterFrameConfig): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowOffsetDoty(value: Double): Self = this.set("followOffset.y", value.asInstanceOf[js.Any])
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def deleteFollowOffsetDoty: Self = this.set("followOffset.y", js.undefined)
+    def setFrameVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frame", js.Array(value :_*))
     
     @scala.inline
-    def setFrameVarargs(value: (Double | Frame | String)*): Self = this.set("frame", js.Array(value :_*))
+    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: Double | (js.Array[Double | Frame | String]) | String | Frame | ParticleEmitterFrameConfig): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
+    def setGravityX(value: Double): Self = StObject.set(x, "gravityX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setGravityXUndefined: Self = StObject.set(x, "gravityX", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setGravityY(value: Double): Self = StObject.set(x, "gravityY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravityX(value: Double): Self = this.set("gravityX", value.asInstanceOf[js.Any])
+    def setGravityYUndefined: Self = StObject.set(x, "gravityY", js.undefined)
     
     @scala.inline
-    def deleteGravityX: Self = this.set("gravityX", js.undefined)
+    def setLifespan(value: EmitterOpOnEmitType): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravityY(value: Double): Self = this.set("gravityY", value.asInstanceOf[js.Any])
+    def setLifespanFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "lifespan", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGravityY: Self = this.set("gravityY", js.undefined)
+    def setLifespanUndefined: Self = StObject.set(x, "lifespan", js.undefined)
     
     @scala.inline
-    def setLifespanVarargs(value: Double*): Self = this.set("lifespan", js.Array(value :_*))
+    def setLifespanVarargs(value: Double*): Self = StObject.set(x, "lifespan", js.Array(value :_*))
     
     @scala.inline
-    def setLifespanFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("lifespan", js.Any.fromFunction3(value))
+    def setMaxParticles(value: integer): Self = StObject.set(x, "maxParticles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifespan(value: EmitterOpOnEmitType): Self = this.set("lifespan", value.asInstanceOf[js.Any])
+    def setMaxParticlesUndefined: Self = StObject.set(x, "maxParticles", js.undefined)
     
     @scala.inline
-    def deleteLifespan: Self = this.set("lifespan", js.undefined)
+    def setMaxVelocityX(value: EmitterOpOnEmitType): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParticles(value: integer): Self = this.set("maxParticles", value.asInstanceOf[js.Any])
+    def setMaxVelocityXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "maxVelocityX", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMaxParticles: Self = this.set("maxParticles", js.undefined)
+    def setMaxVelocityXUndefined: Self = StObject.set(x, "maxVelocityX", js.undefined)
     
     @scala.inline
-    def setMaxVelocityXVarargs(value: Double*): Self = this.set("maxVelocityX", js.Array(value :_*))
+    def setMaxVelocityXVarargs(value: Double*): Self = StObject.set(x, "maxVelocityX", js.Array(value :_*))
     
     @scala.inline
-    def setMaxVelocityXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("maxVelocityX", js.Any.fromFunction3(value))
+    def setMaxVelocityY(value: EmitterOpOnEmitType): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVelocityX(value: EmitterOpOnEmitType): Self = this.set("maxVelocityX", value.asInstanceOf[js.Any])
+    def setMaxVelocityYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "maxVelocityY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMaxVelocityX: Self = this.set("maxVelocityX", js.undefined)
+    def setMaxVelocityYUndefined: Self = StObject.set(x, "maxVelocityY", js.undefined)
     
     @scala.inline
-    def setMaxVelocityYVarargs(value: Double*): Self = this.set("maxVelocityY", js.Array(value :_*))
+    def setMaxVelocityYVarargs(value: Double*): Self = StObject.set(x, "maxVelocityY", js.Array(value :_*))
     
     @scala.inline
-    def setMaxVelocityYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("maxVelocityY", js.Any.fromFunction3(value))
+    def setMoveToX(value: EmitterOpOnEmitType): Self = StObject.set(x, "moveToX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVelocityY(value: EmitterOpOnEmitType): Self = this.set("maxVelocityY", value.asInstanceOf[js.Any])
+    def setMoveToXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "moveToX", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMaxVelocityY: Self = this.set("maxVelocityY", js.undefined)
+    def setMoveToXUndefined: Self = StObject.set(x, "moveToX", js.undefined)
     
     @scala.inline
-    def setMoveToXVarargs(value: Double*): Self = this.set("moveToX", js.Array(value :_*))
+    def setMoveToXVarargs(value: Double*): Self = StObject.set(x, "moveToX", js.Array(value :_*))
     
     @scala.inline
-    def setMoveToXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("moveToX", js.Any.fromFunction3(value))
+    def setMoveToY(value: EmitterOpOnEmitType): Self = StObject.set(x, "moveToY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveToX(value: EmitterOpOnEmitType): Self = this.set("moveToX", value.asInstanceOf[js.Any])
+    def setMoveToYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "moveToY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMoveToX: Self = this.set("moveToX", js.undefined)
+    def setMoveToYUndefined: Self = StObject.set(x, "moveToY", js.undefined)
     
     @scala.inline
-    def setMoveToYVarargs(value: Double*): Self = this.set("moveToY", js.Array(value :_*))
+    def setMoveToYVarargs(value: Double*): Self = StObject.set(x, "moveToY", js.Array(value :_*))
     
     @scala.inline
-    def setMoveToYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("moveToY", js.Any.fromFunction3(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveToY(value: EmitterOpOnEmitType): Self = this.set("moveToY", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMoveToY: Self = this.set("moveToY", js.undefined)
+    def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParticleBringToTop(value: Boolean): Self = StObject.set(x, "particleBringToTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: Boolean): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setParticleBringToTopUndefined: Self = StObject.set(x, "particleBringToTop", js.undefined)
     
     @scala.inline
-    def deleteOn: Self = this.set("on", js.undefined)
+    def setParticleClass(value: Particle): Self = StObject.set(x, "particleClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticleBringToTop(value: Boolean): Self = this.set("particleBringToTop", value.asInstanceOf[js.Any])
+    def setParticleClassUndefined: Self = StObject.set(x, "particleClass", js.undefined)
     
     @scala.inline
-    def deleteParticleBringToTop: Self = this.set("particleBringToTop", js.undefined)
+    def setQuantity(value: EmitterOpOnEmitType): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticleClass(value: Particle): Self = this.set("particleClass", value.asInstanceOf[js.Any])
+    def setQuantityFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "quantity", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteParticleClass: Self = this.set("particleClass", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def setQuantityVarargs(value: Double*): Self = this.set("quantity", js.Array(value :_*))
+    def setQuantityVarargs(value: Double*): Self = StObject.set(x, "quantity", js.Array(value :_*))
     
     @scala.inline
-    def setQuantityFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("quantity", js.Any.fromFunction3(value))
+    def setRadial(value: Boolean): Self = StObject.set(x, "radial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: EmitterOpOnEmitType): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setRadialUndefined: Self = StObject.set(x, "radial", js.undefined)
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setRotate(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadial(value: Boolean): Self = this.set("radial", value.asInstanceOf[js.Any])
+    def setRotateFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRadial: Self = this.set("radial", js.undefined)
+    def setRotateFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setRotateVarargs(value: Double*): Self = this.set("rotate", js.Array(value :_*))
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def setRotateFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = this.set("rotate", js.Any.fromFunction4(value))
+    def setRotateVarargs(value: Double*): Self = StObject.set(x, "rotate", js.Array(value :_*))
     
     @scala.inline
-    def setRotateFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("rotate", js.Any.fromFunction3(value))
+    def setScale(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setScaleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setScaleFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setScaleVarargs(value: Double*): Self = this.set("scale", js.Array(value :_*))
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setScaleFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = this.set("scale", js.Any.fromFunction4(value))
+    def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value :_*))
     
     @scala.inline
-    def setScaleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("scale", js.Any.fromFunction3(value))
+    def setScaleX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScaleXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "scaleX", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "scaleX", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setScaleXVarargs(value: Double*): Self = this.set("scaleX", js.Array(value :_*))
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
     @scala.inline
-    def setScaleXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = this.set("scaleX", js.Any.fromFunction4(value))
+    def setScaleXVarargs(value: Double*): Self = StObject.set(x, "scaleX", js.Array(value :_*))
     
     @scala.inline
-    def setScaleXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("scaleX", js.Any.fromFunction3(value))
+    def setScaleY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setScaleYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "scaleY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteScaleX: Self = this.set("scaleX", js.undefined)
+    def setScaleYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "scaleY", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setScaleYVarargs(value: Double*): Self = this.set("scaleY", js.Array(value :_*))
+    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     @scala.inline
-    def setScaleYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = this.set("scaleY", js.Any.fromFunction4(value))
+    def setScaleYVarargs(value: Double*): Self = StObject.set(x, "scaleY", js.Array(value :_*))
     
     @scala.inline
-    def setScaleYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("scaleY", js.Any.fromFunction3(value))
+    def setSpeed(value: EmitterOpOnEmitType): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setSpeedFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "speed", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteScaleY: Self = this.set("scaleY", js.undefined)
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
     @scala.inline
-    def setSpeedVarargs(value: Double*): Self = this.set("speed", js.Array(value :_*))
+    def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
     
     @scala.inline
-    def setSpeedFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("speed", js.Any.fromFunction3(value))
+    def setSpeedX(value: EmitterOpOnEmitType): Self = StObject.set(x, "speedX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeed(value: EmitterOpOnEmitType): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setSpeedXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "speedX", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setSpeedXUndefined: Self = StObject.set(x, "speedX", js.undefined)
     
     @scala.inline
-    def setSpeedXVarargs(value: Double*): Self = this.set("speedX", js.Array(value :_*))
+    def setSpeedXVarargs(value: Double*): Self = StObject.set(x, "speedX", js.Array(value :_*))
     
     @scala.inline
-    def setSpeedXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("speedX", js.Any.fromFunction3(value))
+    def setSpeedY(value: EmitterOpOnEmitType): Self = StObject.set(x, "speedY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedX(value: EmitterOpOnEmitType): Self = this.set("speedX", value.asInstanceOf[js.Any])
+    def setSpeedYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "speedY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSpeedX: Self = this.set("speedX", js.undefined)
+    def setSpeedYUndefined: Self = StObject.set(x, "speedY", js.undefined)
     
     @scala.inline
-    def setSpeedYVarargs(value: Double*): Self = this.set("speedY", js.Array(value :_*))
+    def setSpeedYVarargs(value: Double*): Self = StObject.set(x, "speedY", js.Array(value :_*))
     
     @scala.inline
-    def setSpeedYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("speedY", js.Any.fromFunction3(value))
+    def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedY(value: EmitterOpOnEmitType): Self = this.set("speedY", value.asInstanceOf[js.Any])
+    def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
     
     @scala.inline
-    def deleteSpeedY: Self = this.set("speedY", js.undefined)
+    def setTint(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeScale(value: Double): Self = this.set("timeScale", value.asInstanceOf[js.Any])
+    def setTintFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "tint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTimeScale: Self = this.set("timeScale", js.undefined)
+    def setTintFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "tint", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setTintVarargs(value: Double*): Self = this.set("tint", js.Array(value :_*))
+    def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
     
     @scala.inline
-    def setTintFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = this.set("tint", js.Any.fromFunction4(value))
+    def setTintVarargs(value: Double*): Self = StObject.set(x, "tint", js.Array(value :_*))
     
     @scala.inline
-    def setTintFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("tint", js.Any.fromFunction3(value))
+    def setTrackVisible(value: Boolean): Self = StObject.set(x, "trackVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTint(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = this.set("tint", value.asInstanceOf[js.Any])
+    def setTrackVisibleUndefined: Self = StObject.set(x, "trackVisible", js.undefined)
     
     @scala.inline
-    def deleteTint: Self = this.set("tint", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackVisible(value: Boolean): Self = this.set("trackVisible", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteTrackVisible: Self = this.set("trackVisible", js.undefined)
+    def setX(value: EmitterOpOnEmitType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "x", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def setXVarargs(value: Double*): Self = this.set("x", js.Array(value :_*))
+    def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
     
     @scala.inline
-    def setXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("x", js.Any.fromFunction3(value))
+    def setY(value: EmitterOpOnEmitType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: EmitterOpOnEmitType): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "y", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def setYVarargs(value: Double*): Self = this.set("y", js.Array(value :_*))
-    
-    @scala.inline
-    def setYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = this.set("y", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setY(value: EmitterOpOnEmitType): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

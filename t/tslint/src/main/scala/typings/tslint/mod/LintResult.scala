@@ -1,12 +1,13 @@
 package typings.tslint.mod
 
 import typings.tslint.formatterMod.FormatterConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LintResult extends js.Object {
+trait LintResult extends StObject {
   
   var errorCount: Double = js.native
   
@@ -35,45 +36,33 @@ object LintResult {
   }
   
   @scala.inline
-  implicit class LintResultOps[Self <: LintResult] (val x: Self) extends AnyVal {
+  implicit class LintResultMutableBuilder[Self <: LintResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailures(value: js.Array[typings.tslint.ruleMod.RuleFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailuresVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
     @scala.inline
-    def setErrorCount(value: Double): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setFixes(value: js.Array[typings.tslint.ruleMod.RuleFailure]): Self = StObject.set(x, "fixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailuresVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = this.set("failures", js.Array(value :_*))
+    def setFixesUndefined: Self = StObject.set(x, "fixes", js.undefined)
     
     @scala.inline
-    def setFailures(value: js.Array[typings.tslint.ruleMod.RuleFailure]): Self = this.set("failures", value.asInstanceOf[js.Any])
+    def setFixesVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = StObject.set(x, "fixes", js.Array(value :_*))
     
     @scala.inline
-    def setFormat(value: String | FormatterConstructor): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: String | FormatterConstructor): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: String): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningCount(value: Double): Self = this.set("warningCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFixesVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = this.set("fixes", js.Array(value :_*))
-    
-    @scala.inline
-    def setFixes(value: js.Array[typings.tslint.ruleMod.RuleFailure]): Self = this.set("fixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixes: Self = this.set("fixes", js.undefined)
+    def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
   }
 }

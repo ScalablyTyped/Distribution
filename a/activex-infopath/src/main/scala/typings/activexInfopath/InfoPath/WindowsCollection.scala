@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsCollection extends js.Object {
+trait WindowsCollection extends StObject {
   
   val Count: Double = js.native
   
@@ -24,27 +25,15 @@ object WindowsCollection {
   }
   
   @scala.inline
-  implicit class WindowsCollectionOps[Self <: WindowsCollection] (val x: Self) extends AnyVal {
+  implicit class WindowsCollectionMutableBuilder[Self <: WindowsCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotWindowsCollection_typekey(value: WindowsCollection): Self = StObject.set(x, "InfoPath.WindowsCollection_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfoPathDotWindowsCollection_typekey(value: WindowsCollection): Self = this.set("InfoPath.WindowsCollection_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: js.Any => Window): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setItem(value: js.Any => Window): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

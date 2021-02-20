@@ -1,11 +1,12 @@
 package typings.plugapi.mod.Event
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModMoveDJ extends js.Object {
+trait ModMoveDJ extends StObject {
   
   var index: Double = js.native
   
@@ -24,30 +25,18 @@ object ModMoveDJ {
   }
   
   @scala.inline
-  implicit class ModMoveDJOps[Self <: ModMoveDJ] (val x: Self) extends AnyVal {
+  implicit class ModMoveDJMutableBuilder[Self <: ModMoveDJ] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOld(value: Double): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModerator(value: String): Self = this.set("moderator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOld(value: Double): Self = this.set("old", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserID(value: String): Self = this.set("userID", value.asInstanceOf[js.Any])
+    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

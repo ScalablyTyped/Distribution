@@ -2,6 +2,7 @@ package typings.mendixmodelsdk.javaactionsMod.javaactions
 
 import typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeAction
 import typings.mendixmodelsdk.instancesMod.IList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

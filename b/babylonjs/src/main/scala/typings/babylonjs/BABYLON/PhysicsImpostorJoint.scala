@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsImpostorJoint extends js.Object {
+trait PhysicsImpostorJoint extends StObject {
   
   /** Defines the impostor that is connected to the main impostor using this joint */
   var connectedImpostor: PhysicsImpostor = js.native
@@ -25,27 +26,15 @@ object PhysicsImpostorJoint {
   }
   
   @scala.inline
-  implicit class PhysicsImpostorJointOps[Self <: PhysicsImpostorJoint] (val x: Self) extends AnyVal {
+  implicit class PhysicsImpostorJointMutableBuilder[Self <: PhysicsImpostorJoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectedImpostor(value: PhysicsImpostor): Self = StObject.set(x, "connectedImpostor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJoint(value: PhysicsJoint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectedImpostor(value: PhysicsImpostor): Self = this.set("connectedImpostor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJoint(value: PhysicsJoint): Self = this.set("joint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMainImpostor(value: PhysicsImpostor): Self = this.set("mainImpostor", value.asInstanceOf[js.Any])
+    def setMainImpostor(value: PhysicsImpostor): Self = StObject.set(x, "mainImpostor", value.asInstanceOf[js.Any])
   }
 }

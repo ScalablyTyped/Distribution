@@ -1,22 +1,23 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuyTrade extends js.Object {
+trait BuyTrade extends StObject {
   
-   // timestamp in ISO format of offer validity
+  // timestamp in ISO format of offer validity
   var cid: js.UndefOr[String] = js.native
   
-   // state of trade after confirmTrade
+  // state of trade after confirmTrade
   var error: js.UndefOr[String] = js.native
   
-   // hash of tx from exchange to user
+  // hash of tx from exchange to user
   var exchange: js.UndefOr[String] = js.native
   
-   // 1000
+  // 1000
   var fiatCurrency: js.UndefOr[String] = js.native
   
   var fiatStringAmount: js.UndefOr[String] = js.native
@@ -29,50 +30,50 @@ trait BuyTrade extends js.Object {
   
   var minCrypto: js.UndefOr[Double] = js.native
   
-   // google clientID
+  // google clientID
   var minFiat: js.UndefOr[Double] = js.native
   
-   // ID of the quote assigned by exchange
+  // ID of the quote assigned by exchange
   var orderId: js.UndefOr[String] = js.native
   
-   // ID of the order assigned by us
+  // ID of the order assigned by us
   var originalPaymentId: js.UndefOr[String] = js.native
   
   var partnerData: js.UndefOr[String] = js.native
   
-   // ID of the payment assigned by us and later changed by the partner
+  // ID of the payment assigned by us and later changed by the partner
   var paymentId: js.UndefOr[String] = js.native
   
   var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.native
   
-   // 100
+  // 100
   var quoteId: js.UndefOr[String] = js.native
   
-   // users address for receive tx
+  // users address for receive tx
   var rate: js.UndefOr[Double] = js.native
   
-   // 0.12345
+  // 0.12345
   var receiveAddress: js.UndefOr[String] = js.native
   
-   // EUR
+  // EUR
   var receiveCurrency: js.UndefOr[String] = js.native
   
-   // BTC
+  // BTC
   var receiveStringAmount: js.UndefOr[String] = js.native
   
-   // something went wrong after confirmTrade
+  // something went wrong after confirmTrade
   var receiveTxHash: js.UndefOr[String] = js.native
   
-   // ID of the payment assigned by us or by partner
+  // ID of the payment assigned by us or by partner
   var status: js.UndefOr[BuyTradeStatus] = js.native
   
-   // arbitrary data specific for the partner
+  // arbitrary data specific for the partner
   var tags: js.UndefOr[js.Array[BuyTradeTag]] = js.native
   
   // locally used data types
   var tradeForm: js.UndefOr[BuyTradeFormResponse] = js.native
   
-   // which exchange this trade belongs to, used for discrimination in ExchangeService
+  // which exchange this trade belongs to, used for discrimination in ExchangeService
   var validUntil: js.UndefOr[String] = js.native
 }
 object BuyTrade {
@@ -84,171 +85,159 @@ object BuyTrade {
   }
   
   @scala.inline
-  implicit class BuyTradeOps[Self <: BuyTrade] (val x: Self) extends AnyVal {
+  implicit class BuyTradeMutableBuilder[Self <: BuyTrade] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCid(value: String): Self = this.set("cid", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCid: Self = this.set("cid", js.undefined)
+    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFiatCurrency(value: String): Self = StObject.set(x, "fiatCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchange(value: String): Self = this.set("exchange", value.asInstanceOf[js.Any])
+    def setFiatCurrencyUndefined: Self = StObject.set(x, "fiatCurrency", js.undefined)
     
     @scala.inline
-    def deleteExchange: Self = this.set("exchange", js.undefined)
+    def setFiatStringAmount(value: String): Self = StObject.set(x, "fiatStringAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiatCurrency(value: String): Self = this.set("fiatCurrency", value.asInstanceOf[js.Any])
+    def setFiatStringAmountUndefined: Self = StObject.set(x, "fiatStringAmount", js.undefined)
     
     @scala.inline
-    def deleteFiatCurrency: Self = this.set("fiatCurrency", js.undefined)
+    def setInfoNote(value: String): Self = StObject.set(x, "infoNote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiatStringAmount(value: String): Self = this.set("fiatStringAmount", value.asInstanceOf[js.Any])
+    def setInfoNoteUndefined: Self = StObject.set(x, "infoNote", js.undefined)
     
     @scala.inline
-    def deleteFiatStringAmount: Self = this.set("fiatStringAmount", js.undefined)
+    def setMaxCrypto(value: Double): Self = StObject.set(x, "maxCrypto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoNote(value: String): Self = this.set("infoNote", value.asInstanceOf[js.Any])
+    def setMaxCryptoUndefined: Self = StObject.set(x, "maxCrypto", js.undefined)
     
     @scala.inline
-    def deleteInfoNote: Self = this.set("infoNote", js.undefined)
+    def setMaxFiat(value: Double): Self = StObject.set(x, "maxFiat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCrypto(value: Double): Self = this.set("maxCrypto", value.asInstanceOf[js.Any])
+    def setMaxFiatUndefined: Self = StObject.set(x, "maxFiat", js.undefined)
     
     @scala.inline
-    def deleteMaxCrypto: Self = this.set("maxCrypto", js.undefined)
+    def setMinCrypto(value: Double): Self = StObject.set(x, "minCrypto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFiat(value: Double): Self = this.set("maxFiat", value.asInstanceOf[js.Any])
+    def setMinCryptoUndefined: Self = StObject.set(x, "minCrypto", js.undefined)
     
     @scala.inline
-    def deleteMaxFiat: Self = this.set("maxFiat", js.undefined)
+    def setMinFiat(value: Double): Self = StObject.set(x, "minFiat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinCrypto(value: Double): Self = this.set("minCrypto", value.asInstanceOf[js.Any])
+    def setMinFiatUndefined: Self = StObject.set(x, "minFiat", js.undefined)
     
     @scala.inline
-    def deleteMinCrypto: Self = this.set("minCrypto", js.undefined)
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFiat(value: Double): Self = this.set("minFiat", value.asInstanceOf[js.Any])
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
     @scala.inline
-    def deleteMinFiat: Self = this.set("minFiat", js.undefined)
+    def setOriginalPaymentId(value: String): Self = StObject.set(x, "originalPaymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    def setOriginalPaymentIdUndefined: Self = StObject.set(x, "originalPaymentId", js.undefined)
     
     @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setPartnerData(value: String): Self = StObject.set(x, "partnerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPaymentId(value: String): Self = this.set("originalPaymentId", value.asInstanceOf[js.Any])
+    def setPartnerDataUndefined: Self = StObject.set(x, "partnerData", js.undefined)
     
     @scala.inline
-    def deleteOriginalPaymentId: Self = this.set("originalPaymentId", js.undefined)
+    def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerData(value: String): Self = this.set("partnerData", value.asInstanceOf[js.Any])
+    def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
     
     @scala.inline
-    def deletePartnerData: Self = this.set("partnerData", js.undefined)
+    def setPaymentMethod(value: BuyCryptoPaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentId(value: String): Self = this.set("paymentId", value.asInstanceOf[js.Any])
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def deletePaymentId: Self = this.set("paymentId", js.undefined)
+    def setQuoteId(value: String): Self = StObject.set(x, "quoteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethod(value: BuyCryptoPaymentMethod): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setQuoteIdUndefined: Self = StObject.set(x, "quoteId", js.undefined)
     
     @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteId(value: String): Self = this.set("quoteId", value.asInstanceOf[js.Any])
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def deleteQuoteId: Self = this.set("quoteId", js.undefined)
+    def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setReceiveAddressUndefined: Self = StObject.set(x, "receiveAddress", js.undefined)
     
     @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
+    def setReceiveCurrency(value: String): Self = StObject.set(x, "receiveCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveAddress(value: String): Self = this.set("receiveAddress", value.asInstanceOf[js.Any])
+    def setReceiveCurrencyUndefined: Self = StObject.set(x, "receiveCurrency", js.undefined)
     
     @scala.inline
-    def deleteReceiveAddress: Self = this.set("receiveAddress", js.undefined)
+    def setReceiveStringAmount(value: String): Self = StObject.set(x, "receiveStringAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveCurrency(value: String): Self = this.set("receiveCurrency", value.asInstanceOf[js.Any])
+    def setReceiveStringAmountUndefined: Self = StObject.set(x, "receiveStringAmount", js.undefined)
     
     @scala.inline
-    def deleteReceiveCurrency: Self = this.set("receiveCurrency", js.undefined)
+    def setReceiveTxHash(value: String): Self = StObject.set(x, "receiveTxHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveStringAmount(value: String): Self = this.set("receiveStringAmount", value.asInstanceOf[js.Any])
+    def setReceiveTxHashUndefined: Self = StObject.set(x, "receiveTxHash", js.undefined)
     
     @scala.inline
-    def deleteReceiveStringAmount: Self = this.set("receiveStringAmount", js.undefined)
+    def setStatus(value: BuyTradeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveTxHash(value: String): Self = this.set("receiveTxHash", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteReceiveTxHash: Self = this.set("receiveTxHash", js.undefined)
+    def setTags(value: js.Array[BuyTradeTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: BuyTradeStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTagsVarargs(value: BuyTradeTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: BuyTradeTag*): Self = this.set("tags", js.Array(value :_*))
+    def setTradeForm(value: BuyTradeFormResponse): Self = StObject.set(x, "tradeForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[BuyTradeTag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTradeFormUndefined: Self = StObject.set(x, "tradeForm", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setValidUntil(value: String): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTradeForm(value: BuyTradeFormResponse): Self = this.set("tradeForm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTradeForm: Self = this.set("tradeForm", js.undefined)
-    
-    @scala.inline
-    def setValidUntil(value: String): Self = this.set("validUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidUntil: Self = this.set("validUntil", js.undefined)
+    def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
   }
 }

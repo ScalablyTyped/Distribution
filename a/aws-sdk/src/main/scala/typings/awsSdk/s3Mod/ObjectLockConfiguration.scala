@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectLockConfiguration extends js.Object {
+trait ObjectLockConfiguration extends StObject {
   
   /**
     * Indicates whether this bucket has an Object Lock configuration enabled.
@@ -26,30 +27,18 @@ object ObjectLockConfiguration {
   }
   
   @scala.inline
-  implicit class ObjectLockConfigurationOps[Self <: ObjectLockConfiguration] (val x: Self) extends AnyVal {
+  implicit class ObjectLockConfigurationMutableBuilder[Self <: ObjectLockConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectLockEnabled(value: ObjectLockEnabled): Self = StObject.set(x, "ObjectLockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectLockEnabledUndefined: Self = StObject.set(x, "ObjectLockEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRule(value: ObjectLockRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockEnabled(value: ObjectLockEnabled): Self = this.set("ObjectLockEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectLockEnabled: Self = this.set("ObjectLockEnabled", js.undefined)
-    
-    @scala.inline
-    def setRule(value: ObjectLockRule): Self = this.set("Rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("Rule", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "Rule", js.undefined)
   }
 }

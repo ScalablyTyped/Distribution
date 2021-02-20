@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqsAction extends js.Object {
+trait SqsAction extends StObject {
   
   /**
     * You can configure the action payload when you send a message to an Amazon SQS queue.
@@ -31,33 +32,21 @@ object SqsAction {
   }
   
   @scala.inline
-  implicit class SqsActionOps[Self <: SqsAction] (val x: Self) extends AnyVal {
+  implicit class SqsActionMutableBuilder[Self <: SqsAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueueUrl(value: QueueUrl): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueUrl(value: QueueUrl): Self = this.set("queueUrl", value.asInstanceOf[js.Any])
+    def setUseBase64(value: UseBase64): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: Payload): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
-    
-    @scala.inline
-    def setUseBase64(value: UseBase64): Self = this.set("useBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBase64: Self = this.set("useBase64", js.undefined)
+    def setUseBase64Undefined: Self = StObject.set(x, "useBase64", js.undefined)
   }
 }

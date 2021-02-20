@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Server
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Proxy
 */
-trait AuthChallengeSource extends js.Object
+trait AuthChallengeSource extends StObject
 object AuthChallengeSource {
   
   @scala.inline

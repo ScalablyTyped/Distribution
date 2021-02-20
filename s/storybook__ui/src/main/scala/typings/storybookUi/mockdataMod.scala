@@ -4,32 +4,60 @@ import typings.std.Record
 import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookUi.anon.`111`
 import typings.storybookUi.anon.`112`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/ui/dist/components/sidebar/mockdata", JSImport.Namespace)
-@js.native
-object mockdataMod extends js.Object {
+object mockdataMod {
   
+  @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockDataset")
+  @js.native
   val mockDataset: MockDataSet_ = js.native
   
-  @js.native
-  object mockExpanded extends js.Object {
+  object mockExpanded {
     
-    var noRoot: `112` = js.native
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockExpanded")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var noRootSecond: `112` = js.native
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockExpanded.noRoot")
+    @js.native
+    def noRoot: `112` = js.native
     
-    var withRoot: `111` = js.native
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockExpanded.noRootSecond")
+    @js.native
+    def noRootSecond: `112` = js.native
+    @scala.inline
+    def noRootSecond_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRootSecond")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def noRoot_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRoot")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockExpanded.withRoot")
+    @js.native
+    def withRoot: `111` = js.native
+    @scala.inline
+    def withRoot_=(x: `111`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withRoot")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object mockSelected extends js.Object {
+  object mockSelected {
     
-    var noRoot: `112` = js.native
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockSelected")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var withRoot: `111` = js.native
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockSelected.noRoot")
+    @js.native
+    def noRoot: `112` = js.native
+    @scala.inline
+    def noRoot_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRoot")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockSelected.withRoot")
+    @js.native
+    def withRoot: `111` = js.native
+    @scala.inline
+    def withRoot_=(x: `111`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withRoot")(x.asInstanceOf[js.Any])
   }
   
   type MockDataSet_ = Record[String, StoriesHash]

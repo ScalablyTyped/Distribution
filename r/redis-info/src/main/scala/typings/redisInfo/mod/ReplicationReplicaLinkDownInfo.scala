@@ -1,12 +1,13 @@
 package typings.redisInfo.mod
 
 import typings.redisInfo.mod.LinkStatus.DOWN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationReplicaLinkDownInfo extends js.Object {
+trait ReplicationReplicaLinkDownInfo extends StObject {
   
   var master_link_down_since_seconds: String = js.native
   
@@ -21,24 +22,12 @@ object ReplicationReplicaLinkDownInfo {
   }
   
   @scala.inline
-  implicit class ReplicationReplicaLinkDownInfoOps[Self <: ReplicationReplicaLinkDownInfo] (val x: Self) extends AnyVal {
+  implicit class ReplicationReplicaLinkDownInfoMutableBuilder[Self <: ReplicationReplicaLinkDownInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaster_link_down_since_seconds(value: String): Self = StObject.set(x, "master_link_down_since_seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaster_link_down_since_seconds(value: String): Self = this.set("master_link_down_since_seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaster_link_status(value: DOWN): Self = this.set("master_link_status", value.asInstanceOf[js.Any])
+    def setMaster_link_status(value: DOWN): Self = StObject.set(x, "master_link_status", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepoSource extends js.Object {
+trait RepoSource extends StObject {
   
   /** Regex matching branches to build. The syntax of the regular expressions accepted is the syntax accepted by RE2 and described at https://github.com/google/re2/wiki/Syntax */
   var branchName: js.UndefOr[String] = js.native
@@ -48,70 +49,58 @@ object RepoSource {
   }
   
   @scala.inline
-  implicit class RepoSourceOps[Self <: RepoSource] (val x: Self) extends AnyVal {
+  implicit class RepoSourceMutableBuilder[Self <: RepoSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchName(value: String): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    def setCommitShaUndefined: Self = StObject.set(x, "commitSha", js.undefined)
     
     @scala.inline
-    def deleteBranchName: Self = this.set("branchName", js.undefined)
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitSha(value: String): Self = this.set("commitSha", value.asInstanceOf[js.Any])
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def deleteCommitSha: Self = this.set("commitSha", js.undefined)
+    def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertRegex(value: Boolean): Self = this.set("invertRegex", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteInvertRegex: Self = this.set("invertRegex", js.undefined)
+    def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setRepoName(value: String): Self = this.set("repoName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepoName: Self = this.set("repoName", js.undefined)
+    def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
     
     @scala.inline
     def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource with TopLevel[js.Any]
-    ): Self = this.set("substitutions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubstitutions: Self = this.set("substitutions", js.undefined)
+    def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
     
     @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

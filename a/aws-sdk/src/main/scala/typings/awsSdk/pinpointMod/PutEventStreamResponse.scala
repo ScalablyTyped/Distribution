@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutEventStreamResponse extends js.Object {
+trait PutEventStreamResponse extends StObject {
   
   var EventStream: typings.awsSdk.pinpointMod.EventStream = js.native
 }
@@ -18,21 +19,9 @@ object PutEventStreamResponse {
   }
   
   @scala.inline
-  implicit class PutEventStreamResponseOps[Self <: PutEventStreamResponse] (val x: Self) extends AnyVal {
+  implicit class PutEventStreamResponseMutableBuilder[Self <: PutEventStreamResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventStream(value: EventStream): Self = this.set("EventStream", value.asInstanceOf[js.Any])
+    def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.ts3NodejsLibrary.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/types/ResponseTypes.ServerGroupEntry> */
 @js.native
-trait PartialServerGroupEntry extends js.Object {
+trait PartialServerGroupEntry extends StObject {
   
   var iconid: js.UndefOr[String] = js.native
   
@@ -37,78 +38,66 @@ object PartialServerGroupEntry {
   }
   
   @scala.inline
-  implicit class PartialServerGroupEntryOps[Self <: PartialServerGroupEntry] (val x: Self) extends AnyVal {
+  implicit class PartialServerGroupEntryMutableBuilder[Self <: PartialServerGroupEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconid(value: String): Self = StObject.set(x, "iconid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconidUndefined: Self = StObject.set(x, "iconid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNMemberAddp(value: Double): Self = StObject.set(x, "nMemberAddp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconid(value: String): Self = this.set("iconid", value.asInstanceOf[js.Any])
+    def setNMemberAddpUndefined: Self = StObject.set(x, "nMemberAddp", js.undefined)
     
     @scala.inline
-    def deleteIconid: Self = this.set("iconid", js.undefined)
+    def setNMemberRemovep(value: Double): Self = StObject.set(x, "nMemberRemovep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNMemberAddp(value: Double): Self = this.set("nMemberAddp", value.asInstanceOf[js.Any])
+    def setNMemberRemovepUndefined: Self = StObject.set(x, "nMemberRemovep", js.undefined)
     
     @scala.inline
-    def deleteNMemberAddp: Self = this.set("nMemberAddp", js.undefined)
+    def setNModifyp(value: Double): Self = StObject.set(x, "nModifyp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNMemberRemovep(value: Double): Self = this.set("nMemberRemovep", value.asInstanceOf[js.Any])
+    def setNModifypUndefined: Self = StObject.set(x, "nModifyp", js.undefined)
     
     @scala.inline
-    def deleteNMemberRemovep: Self = this.set("nMemberRemovep", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNModifyp(value: Double): Self = this.set("nModifyp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteNModifyp: Self = this.set("nModifyp", js.undefined)
+    def setNamemode(value: Double): Self = StObject.set(x, "namemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamemodeUndefined: Self = StObject.set(x, "namemode", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSavedb(value: Double): Self = StObject.set(x, "savedb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamemode(value: Double): Self = this.set("namemode", value.asInstanceOf[js.Any])
+    def setSavedbUndefined: Self = StObject.set(x, "savedb", js.undefined)
     
     @scala.inline
-    def deleteNamemode: Self = this.set("namemode", js.undefined)
+    def setSgid(value: String): Self = StObject.set(x, "sgid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavedb(value: Double): Self = this.set("savedb", value.asInstanceOf[js.Any])
+    def setSgidUndefined: Self = StObject.set(x, "sgid", js.undefined)
     
     @scala.inline
-    def deleteSavedb: Self = this.set("savedb", js.undefined)
+    def setSortid(value: Double): Self = StObject.set(x, "sortid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSgid(value: String): Self = this.set("sgid", value.asInstanceOf[js.Any])
+    def setSortidUndefined: Self = StObject.set(x, "sortid", js.undefined)
     
     @scala.inline
-    def deleteSgid: Self = this.set("sgid", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortid(value: Double): Self = this.set("sortid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortid: Self = this.set("sortid", js.undefined)
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

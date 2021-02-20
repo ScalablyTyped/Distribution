@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.MaxResults
 import typings.maximMazurokGapiClientDfareporting.anon.Resource
 import typings.maximMazurokGapiClientDfareporting.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvertiserGroupsResource extends js.Object {
+trait AdvertiserGroupsResource extends StObject {
   
   /** Deletes an existing advertiser group. */
   def delete(): Request[Unit] = js.native

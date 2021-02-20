@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,9 +35,7 @@ class LensFlare protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "LensFlare")
-@js.native
-object LensFlare extends js.Object {
+object LensFlare {
   
   /**
     * Creates a new Lens Flare.
@@ -50,6 +49,8 @@ object LensFlare extends js.Object {
     * @param system Define the `lensFlareSystem` this flare is part of
     * @returns The newly created Lens Flare
     */
+  @JSImport("babylonjs", "LensFlare.AddFlare")
+  @js.native
   def AddFlare(
     size: Double,
     position: Double,

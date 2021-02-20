@@ -1,12 +1,13 @@
 package typings.reachRouter.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchProps[TParams] extends js.Object {
+trait MatchProps[TParams] extends StObject {
   
   var children: MatchRenderFn[TParams] = js.native
   
@@ -21,24 +22,12 @@ object MatchProps {
   }
   
   @scala.inline
-  implicit class MatchPropsOps[Self <: MatchProps[_], TParams] (val x: Self with MatchProps[TParams]) extends AnyVal {
+  implicit class MatchPropsMutableBuilder[Self <: MatchProps[_], TParams] (val x: Self with MatchProps[TParams]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: /* props */ MatchRenderProps[TParams] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildren(value: /* props */ MatchRenderProps[TParams] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

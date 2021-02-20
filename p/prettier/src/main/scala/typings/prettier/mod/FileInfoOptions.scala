@@ -1,11 +1,12 @@
 package typings.prettier.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileInfoOptions extends js.Object {
+trait FileInfoOptions extends StObject {
   
   var ignorePath: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object FileInfoOptions {
   }
   
   @scala.inline
-  implicit class FileInfoOptionsOps[Self <: FileInfoOptions] (val x: Self) extends AnyVal {
+  implicit class FileInfoOptionsMutableBuilder[Self <: FileInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnorePath(value: String): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnorePath(value: String): Self = this.set("ignorePath", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deleteIgnorePath: Self = this.set("ignorePath", js.undefined)
+    def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: String*): Self = this.set("plugins", js.Array(value :_*))
+    def setResolveConfig(value: Boolean): Self = StObject.set(x, "resolveConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[String]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setResolveConfigUndefined: Self = StObject.set(x, "resolveConfig", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setWithNodeModules(value: Boolean): Self = StObject.set(x, "withNodeModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveConfig(value: Boolean): Self = this.set("resolveConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolveConfig: Self = this.set("resolveConfig", js.undefined)
-    
-    @scala.inline
-    def setWithNodeModules(value: Boolean): Self = this.set("withNodeModules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithNodeModules: Self = this.set("withNodeModules", js.undefined)
+    def setWithNodeModulesUndefined: Self = StObject.set(x, "withNodeModules", js.undefined)
   }
 }

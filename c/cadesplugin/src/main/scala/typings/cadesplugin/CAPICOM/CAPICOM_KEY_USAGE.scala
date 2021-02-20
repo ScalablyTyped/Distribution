@@ -9,6 +9,7 @@ import typings.cadesplugin.cadespluginNumbers.`32`
 import typings.cadesplugin.cadespluginNumbers.`4`
 import typings.cadesplugin.cadespluginNumbers.`64`
 import typings.cadesplugin.cadespluginNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,45 +55,33 @@ object CAPICOM_KEY_USAGE {
   }
   
   @scala.inline
-  implicit class CAPICOM_KEY_USAGEOps[Self <: CAPICOM_KEY_USAGE] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_KEY_USAGEMutableBuilder[Self <: CAPICOM_KEY_USAGE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_CRL_SIGN_KEY_USAGE(value: `2`): Self = StObject.set(x, "CAPICOM_CRL_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_DATA_ENCIPHERMENT_KEY_USAGE(value: `16`): Self = StObject.set(x, "CAPICOM_DATA_ENCIPHERMENT_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_DECIPHER_ONLY_KEY_USAGE(value: `32768`): Self = StObject.set(x, "CAPICOM_DECIPHER_ONLY_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CRL_SIGN_KEY_USAGE(value: `2`): Self = this.set("CAPICOM_CRL_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_ENCIPHER_ONLY_KEY_USAGE(value: `1`): Self = StObject.set(x, "CAPICOM_ENCIPHER_ONLY_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_DATA_ENCIPHERMENT_KEY_USAGE(value: `16`): Self = this.set("CAPICOM_DATA_ENCIPHERMENT_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_KEY_AGREEMENT_KEY_USAGE(value: `8`): Self = StObject.set(x, "CAPICOM_KEY_AGREEMENT_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_DECIPHER_ONLY_KEY_USAGE(value: `32768`): Self = this.set("CAPICOM_DECIPHER_ONLY_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_KEY_CERT_SIGN_KEY_USAGE(value: `4`): Self = StObject.set(x, "CAPICOM_KEY_CERT_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_ENCIPHER_ONLY_KEY_USAGE(value: `1`): Self = this.set("CAPICOM_ENCIPHER_ONLY_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_KEY_ENCIPHERMENT_KEY_USAGE(value: `32`): Self = StObject.set(x, "CAPICOM_KEY_ENCIPHERMENT_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_KEY_AGREEMENT_KEY_USAGE(value: `8`): Self = this.set("CAPICOM_KEY_AGREEMENT_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_NON_REPUDIATION_KEY_USAGE(value: `64`): Self = StObject.set(x, "CAPICOM_NON_REPUDIATION_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_KEY_CERT_SIGN_KEY_USAGE(value: `4`): Self = this.set("CAPICOM_KEY_CERT_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_KEY_ENCIPHERMENT_KEY_USAGE(value: `32`): Self = this.set("CAPICOM_KEY_ENCIPHERMENT_KEY_USAGE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_NON_REPUDIATION_KEY_USAGE(value: `64`): Self = this.set("CAPICOM_NON_REPUDIATION_KEY_USAGE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_OFFLINE_CRL_SIGN_KEY_USAGE(value: `2`): Self = this.set("CAPICOM_OFFLINE_CRL_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_OFFLINE_CRL_SIGN_KEY_USAGE(value: `2`): Self = StObject.set(x, "CAPICOM_OFFLINE_CRL_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
   }
 }

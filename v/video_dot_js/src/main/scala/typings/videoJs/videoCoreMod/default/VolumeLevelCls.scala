@@ -2,14 +2,16 @@ package typings.videoJs.videoCoreMod.default
 
 import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.mod.videojs.ComponentOptions
+import typings.videoJs.mod.videojs.VolumeLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core", "VolumeLevel")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core", "default.VolumeLevel")
 @js.native
-class VolumeLevelCls protected ()
-  extends typings.videoJs.mod.videojs.VolumeLevel {
+class VolumeLevelCls protected () extends VolumeLevel {
   /**
     * Creates an instance of this class.
     *

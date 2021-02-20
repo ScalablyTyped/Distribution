@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionAdminSettings extends js.Object {
+trait SubscriptionAdminSettings extends StObject {
   
   /**
     * If true, members of the group subscribed to the associated subscription cannot opt (choose not to get notified)
@@ -21,21 +22,9 @@ object SubscriptionAdminSettings {
   }
   
   @scala.inline
-  implicit class SubscriptionAdminSettingsOps[Self <: SubscriptionAdminSettings] (val x: Self) extends AnyVal {
+  implicit class SubscriptionAdminSettingsMutableBuilder[Self <: SubscriptionAdminSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlockUserOptOut(value: Boolean): Self = this.set("blockUserOptOut", value.asInstanceOf[js.Any])
+    def setBlockUserOptOut(value: Boolean): Self = StObject.set(x, "blockUserOptOut", value.asInstanceOf[js.Any])
   }
 }

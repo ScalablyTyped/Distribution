@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstanceStorageConfigResponse extends js.Object {
+trait DescribeInstanceStorageConfigResponse extends StObject {
   
   /**
     * A valid storage type.
@@ -21,24 +22,12 @@ object DescribeInstanceStorageConfigResponse {
   }
   
   @scala.inline
-  implicit class DescribeInstanceStorageConfigResponseOps[Self <: DescribeInstanceStorageConfigResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeInstanceStorageConfigResponseMutableBuilder[Self <: DescribeInstanceStorageConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStorageConfig(value: InstanceStorageConfig): Self = StObject.set(x, "StorageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStorageConfig(value: InstanceStorageConfig): Self = this.set("StorageConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageConfig: Self = this.set("StorageConfig", js.undefined)
+    def setStorageConfigUndefined: Self = StObject.set(x, "StorageConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerMessagesRecurrenceMessages extends js.Object {
+trait SchedulerMessagesRecurrenceMessages extends StObject {
   
   var deleteRecurring: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object SchedulerMessagesRecurrenceMessages {
   }
   
   @scala.inline
-  implicit class SchedulerMessagesRecurrenceMessagesOps[Self <: SchedulerMessagesRecurrenceMessages] (val x: Self) extends AnyVal {
+  implicit class SchedulerMessagesRecurrenceMessagesMutableBuilder[Self <: SchedulerMessagesRecurrenceMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteRecurring(value: String): Self = StObject.set(x, "deleteRecurring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteRecurringUndefined: Self = StObject.set(x, "deleteRecurring", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteWindowOccurrence(value: String): Self = StObject.set(x, "deleteWindowOccurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRecurring(value: String): Self = this.set("deleteRecurring", value.asInstanceOf[js.Any])
+    def setDeleteWindowOccurrenceUndefined: Self = StObject.set(x, "deleteWindowOccurrence", js.undefined)
     
     @scala.inline
-    def deleteDeleteRecurring: Self = this.set("deleteRecurring", js.undefined)
+    def setDeleteWindowSeries(value: String): Self = StObject.set(x, "deleteWindowSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteWindowOccurrence(value: String): Self = this.set("deleteWindowOccurrence", value.asInstanceOf[js.Any])
+    def setDeleteWindowSeriesUndefined: Self = StObject.set(x, "deleteWindowSeries", js.undefined)
     
     @scala.inline
-    def deleteDeleteWindowOccurrence: Self = this.set("deleteWindowOccurrence", js.undefined)
+    def setDeleteWindowTitle(value: String): Self = StObject.set(x, "deleteWindowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteWindowSeries(value: String): Self = this.set("deleteWindowSeries", value.asInstanceOf[js.Any])
+    def setDeleteWindowTitleUndefined: Self = StObject.set(x, "deleteWindowTitle", js.undefined)
     
     @scala.inline
-    def deleteDeleteWindowSeries: Self = this.set("deleteWindowSeries", js.undefined)
+    def setEditRecurring(value: String): Self = StObject.set(x, "editRecurring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteWindowTitle(value: String): Self = this.set("deleteWindowTitle", value.asInstanceOf[js.Any])
+    def setEditRecurringUndefined: Self = StObject.set(x, "editRecurring", js.undefined)
     
     @scala.inline
-    def deleteDeleteWindowTitle: Self = this.set("deleteWindowTitle", js.undefined)
+    def setEditWindowOccurrence(value: String): Self = StObject.set(x, "editWindowOccurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditRecurring(value: String): Self = this.set("editRecurring", value.asInstanceOf[js.Any])
+    def setEditWindowOccurrenceUndefined: Self = StObject.set(x, "editWindowOccurrence", js.undefined)
     
     @scala.inline
-    def deleteEditRecurring: Self = this.set("editRecurring", js.undefined)
+    def setEditWindowSeries(value: String): Self = StObject.set(x, "editWindowSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditWindowOccurrence(value: String): Self = this.set("editWindowOccurrence", value.asInstanceOf[js.Any])
+    def setEditWindowSeriesUndefined: Self = StObject.set(x, "editWindowSeries", js.undefined)
     
     @scala.inline
-    def deleteEditWindowOccurrence: Self = this.set("editWindowOccurrence", js.undefined)
+    def setEditWindowTitle(value: String): Self = StObject.set(x, "editWindowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditWindowSeries(value: String): Self = this.set("editWindowSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditWindowSeries: Self = this.set("editWindowSeries", js.undefined)
-    
-    @scala.inline
-    def setEditWindowTitle(value: String): Self = this.set("editWindowTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditWindowTitle: Self = this.set("editWindowTitle", js.undefined)
+    def setEditWindowTitleUndefined: Self = StObject.set(x, "editWindowTitle", js.undefined)
   }
 }

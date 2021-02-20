@@ -1,20 +1,20 @@
 package typings.heremaps.global.H
 
 import typings.heremaps.H.util.ContextItem.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** util *****/
-@JSGlobal("H.util")
-@js.native
-object util extends js.Object {
+object util {
   
   /**
     * The cache represents a in-memory LRU-cache with a fixed size. It stores any data that is added until the cache's content exceeds a maximum size. Once the size of all content elements
     * exceeds the maximum size the cache will drop the least recently retrieved elements until the size of the cache is within the bounds of its maximum size. Data elements are always
     * associated with an identifier that allow to retrieve them at a later stage and their content size.
     */
+  @JSGlobal("H.util.Cache")
   @js.native
   class Cache protected ()
     extends typings.heremaps.H.util.Cache {
@@ -45,6 +45,7 @@ object util extends js.Object {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
+  @JSGlobal("H.util.ChangeEvent")
   @js.native
   class ChangeEvent protected ()
     extends typings.heremaps.H.util.ChangeEvent {
@@ -61,6 +62,7 @@ object util extends js.Object {
     * This class represents a contextual information/action.
     * @property SEPARATOR {H.util.ContextItem} - Separator for the context items
     */
+  @JSGlobal("H.util.ContextItem")
   @js.native
   /**
     * Constructor
@@ -70,16 +72,24 @@ object util extends js.Object {
     extends typings.heremaps.H.util.ContextItem {
     def this(opt_options: Options) = this()
   }
-  /* static members */
-  @js.native
-  object ContextItem extends js.Object {
+  object ContextItem {
     
-    var SEPARATOR: typings.heremaps.H.util.ContextItem = js.native
+    @JSGlobal("H.util.ContextItem")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSGlobal("H.util.ContextItem.SEPARATOR")
+    @js.native
+    def SEPARATOR: typings.heremaps.H.util.ContextItem = js.native
+    @scala.inline
+    def SEPARATOR_=(x: typings.heremaps.H.util.ContextItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPARATOR")(x.asInstanceOf[js.Any])
   }
   
   /**
     * Object which can be safely disposed.
     */
+  @JSGlobal("H.util.Disposable")
   @js.native
   /**
     * Constructor
@@ -94,6 +104,7 @@ object util extends js.Object {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
+  @JSGlobal("H.util.Event")
   @js.native
   class Event protected ()
     extends typings.heremaps.H.util.Event {
@@ -109,6 +120,7 @@ object util extends js.Object {
   /**
     * EventTarget enabled listening and dispatching events on all instances and derived classes.
     */
+  @JSGlobal("H.util.EventTarget")
   @js.native
   /**
     * Constructor
@@ -117,23 +129,17 @@ object util extends js.Object {
     extends typings.heremaps.H.util.EventTarget
   
   /**
-    * There is no documentation about this API
-    */
-  @js.native
-  object Job extends js.Object
-  
-  /**
     * This class represents an list of ordered entries which dispatches events when the list is modified.
     * @event add {H.util.OList.Event} - Fired when an entry was added to the list.
     * @event remove {H.util.OList.Event} - Fired when an entry was removed from the list.
     * @event set {H.util.OList.Event} - Fired when an entry was set in the list.
     * @event move {H.util.OList.Event} - Fired when an entry was moved within the list.
     */
+  @JSGlobal("H.util.OList")
   @js.native
   class OList ()
     extends typings.heremaps.H.util.OList
-  @js.native
-  object OList extends js.Object {
+  object OList {
     
     /**
       * The event class for events that are dispatched by OList
@@ -142,6 +148,7 @@ object util extends js.Object {
       * @property type {string} - Name of the dispatched event
       * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
       */
+    @JSGlobal("H.util.OList.Event")
     @js.native
     class Event protected ()
       extends typings.heremaps.H.util.OList.Event {
@@ -168,6 +175,7 @@ object util extends js.Object {
   /**
     * A generic class to represent a handle for any kind of asynchronous processed requests
     */
+  @JSGlobal("H.util.Request")
   @js.native
   /**
     * Constructor
@@ -180,14 +188,14 @@ object util extends js.Object {
     def this(opt_onprogress: js.UndefOr[scala.Nothing], opt_total: Double) = this()
     def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit], opt_total: Double) = this()
   }
-  @js.native
-  object Request extends js.Object {
+  object Request {
     
     /**
       * The supported states of an request
       */
+    @JSGlobal("H.util.Request.State")
     @js.native
-    object State extends js.Object {
+    object State extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.util.Request.State with Double] = js.native
@@ -204,24 +212,25 @@ object util extends js.Object {
     }
   }
   
-  @js.native
-  object animation extends js.Object {
+  object animation {
     
     /**
       * This mamespace contains easing functions used for Animation class.
       */
+    @JSGlobal("H.util.animation.ease")
     @js.native
     class ease ()
       extends typings.heremaps.H.util.animation.ease
-    /* static members */
-    @js.native
-    object ease extends js.Object {
+    object ease {
       
       /**
         * This function defines ease in and out with slope.
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
+      /* static member */
+      @JSGlobal("H.util.animation.ease.EASE_IN_OUT_QUINT")
+      @js.native
       def EASE_IN_OUT_QUINT(`val`: Double): Double = js.native
       
       /**
@@ -229,6 +238,9 @@ object util extends js.Object {
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
+      /* static member */
+      @JSGlobal("H.util.animation.ease.EASE_IN_QUAD")
+      @js.native
       def EASE_IN_QUAD(`val`: Double): Double = js.native
       
       /**
@@ -236,6 +248,9 @@ object util extends js.Object {
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
+      /* static member */
+      @JSGlobal("H.util.animation.ease.EASE_OUT_CIRC")
+      @js.native
       def EASE_OUT_CIRC(`val`: Double): Double = js.native
       
       /**
@@ -243,6 +258,9 @@ object util extends js.Object {
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
+      /* static member */
+      @JSGlobal("H.util.animation.ease.EASE_OUT_QUAD")
+      @js.native
       def EASE_OUT_QUAD(`val`: Double): Double = js.native
       
       /**
@@ -250,7 +268,15 @@ object util extends js.Object {
         * @param val {number} - A value in range [0..1] to translate
         * @returns {number} - the translated value
         */
+      /* static member */
+      @JSGlobal("H.util.animation.ease.LINEAR")
+      @js.native
       def LINEAR(`val`: Double): Double = js.native
     }
   }
+  
+  /**
+    * There is no documentation about this API
+    */
+  object Job
 }

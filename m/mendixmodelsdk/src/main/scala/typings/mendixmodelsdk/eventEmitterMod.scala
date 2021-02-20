@@ -1,16 +1,16 @@
 package typings.mendixmodelsdk
 
 import typings.std.Extract
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/EventEmitter", JSImport.Namespace)
-@js.native
-object eventEmitterMod extends js.Object {
+object eventEmitterMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/EventEmitter", "EventEmitter")
   @js.native
-  class EventEmitter[T] () extends js.Object {
+  class EventEmitter[T] () extends StObject {
     
     def emit[E /* <: Extract[/* keyof T */ String, String] */](
       eventType: E,

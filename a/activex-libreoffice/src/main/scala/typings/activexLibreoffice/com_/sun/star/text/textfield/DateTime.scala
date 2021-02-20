@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,39 +100,27 @@ object DateTime {
   }
   
   @scala.inline
-  implicit class DateTimeOps[Self <: DateTime] (val x: Self) extends AnyVal {
+  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjust(value: Double): Self = StObject.set(x, "Adjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTimeFormat(value: Double): Self = StObject.set(x, "DateTimeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjust(value: Double): Self = this.set("Adjust", value.asInstanceOf[js.Any])
+    def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeFormat(value: Double): Self = this.set("DateTimeFormat", value.asInstanceOf[js.Any])
+    def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = this.set("DateTimeValue", value.asInstanceOf[js.Any])
+    def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDate(value: Boolean): Self = this.set("IsDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = this.set("IsFixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFixedLanguage(value: Boolean): Self = this.set("IsFixedLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
   }
 }

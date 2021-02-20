@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * StaticMapAllows for the creation and decoration of static map images.
   */
 @js.native
-trait BlobSource extends js.Object {
+trait BlobSource extends StObject {
   
   def getAs(contentType: String): Blob = js.native
   
@@ -60,24 +61,12 @@ object BlobSource {
   }
   
   @scala.inline
-  implicit class BlobSourceOps[Self <: BlobSource] (val x: Self) extends AnyVal {
+  implicit class BlobSourceMutableBuilder[Self <: BlobSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAs(value: String => Blob): Self = this.set("getAs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetBlob(value: () => Blob): Self = this.set("getBlob", js.Any.fromFunction0(value))
+    def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import typings.tuyaPanelKit.mod.MobileInfo
 import typings.tuyaPanelKit.mod.NetworkType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Back extends js.Object {
+trait Back extends StObject {
   
   /**
     * 返回到 app 列表页面

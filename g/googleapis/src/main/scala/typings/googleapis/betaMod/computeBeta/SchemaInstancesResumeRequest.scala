@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstancesResumeRequest extends js.Object {
+trait SchemaInstancesResumeRequest extends StObject {
   
   /**
     * Array of disks associated with this instance that are protected with a
@@ -33,33 +34,21 @@ object SchemaInstancesResumeRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstancesResumeRequestOps[Self <: SchemaInstancesResumeRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstancesResumeRequestMutableBuilder[Self <: SchemaInstancesResumeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisks(value: js.Array[SchemaCustomerEncryptionKeyProtectedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisksVarargs(value: SchemaCustomerEncryptionKeyProtectedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
     @scala.inline
-    def setDisksVarargs(value: SchemaCustomerEncryptionKeyProtectedDisk*): Self = this.set("disks", js.Array(value :_*))
+    def setInstanceEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "instanceEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: js.Array[SchemaCustomerEncryptionKeyProtectedDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
-    
-    @scala.inline
-    def setInstanceEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("instanceEncryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceEncryptionKey: Self = this.set("instanceEncryptionKey", js.undefined)
+    def setInstanceEncryptionKeyUndefined: Self = StObject.set(x, "instanceEncryptionKey", js.undefined)
   }
 }

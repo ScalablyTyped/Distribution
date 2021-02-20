@@ -3,29 +3,31 @@ package typings.maximMazurokGapiClientIdentitytoolkit
 import typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit.RelyingpartyResource
 import typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.identitytoolkit
 import typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.v3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Identity Toolkit API v3 */
-      def load(name: identitytoolkit, version: v3): js.Thenable[Unit] = js.native
-      def load(name: identitytoolkit, version: v3, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object identitytoolkit extends js.Object {
+      object identitytoolkit {
         
+        @JSGlobal("gapi.client.identitytoolkit.relyingparty")
+        @js.native
         val relyingparty: RelyingpartyResource = js.native
       }
+      
+      /** Load Google Identity Toolkit API v3 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: identitytoolkit, version: v3): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: identitytoolkit, version: v3, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

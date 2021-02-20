@@ -1,12 +1,13 @@
 package typings.ydnDb.ydn.db
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   def abort(): js.Any = js.native
   
@@ -40,36 +41,24 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: () => js.Any): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlways(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanAbort(value: () => Boolean): Self = StObject.set(x, "canAbort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAbort(value: () => js.Any): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setDone(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlways(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = this.set("always", js.Any.fromFunction1(value))
+    def setFail(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanAbort(value: () => Boolean): Self = this.set("canAbort", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDone(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = this.set("done", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFail(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = this.set("fail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setThen(value: (js.Function1[/* data */ js.Any, _], js.Function1[/* data */ Error, _]) => js.Any): Self = this.set("then", js.Any.fromFunction2(value))
+    def setThen(value: (js.Function1[/* data */ js.Any, _], js.Function1[/* data */ Error, _]) => js.Any): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
   }
 }

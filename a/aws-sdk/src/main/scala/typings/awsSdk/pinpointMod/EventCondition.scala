@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventCondition extends js.Object {
+trait EventCondition extends StObject {
   
   /**
     * The dimensions for the event filter to use for the activity.
@@ -26,30 +27,18 @@ object EventCondition {
   }
   
   @scala.inline
-  implicit class EventConditionOps[Self <: EventCondition] (val x: Self) extends AnyVal {
+  implicit class EventConditionMutableBuilder[Self <: EventCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: EventDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageActivity(value: string): Self = StObject.set(x, "MessageActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: EventDimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
-    
-    @scala.inline
-    def setMessageActivity(value: string): Self = this.set("MessageActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageActivity: Self = this.set("MessageActivity", js.undefined)
+    def setMessageActivityUndefined: Self = StObject.set(x, "MessageActivity", js.undefined)
   }
 }

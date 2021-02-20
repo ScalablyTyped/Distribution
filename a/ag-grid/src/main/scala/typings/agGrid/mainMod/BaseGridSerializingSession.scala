@@ -2,6 +2,7 @@ package typings.agGrid.mainMod
 
 import typings.agGrid.exportParamsMod.ProcessCellForExportParams
 import typings.agGrid.exportParamsMod.ProcessHeaderForExportParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

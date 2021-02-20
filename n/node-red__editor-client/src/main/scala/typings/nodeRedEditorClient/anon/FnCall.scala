@@ -4,12 +4,13 @@ import typings.nodeRedEditorClient.mod.NotificationType
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCall extends js.Object {
+trait FnCall extends StObject {
   
   def apply(msg: String): HTMLDivElement = js.native
   def apply(msg: String, options: Buttons): HTMLDivElement = js.native

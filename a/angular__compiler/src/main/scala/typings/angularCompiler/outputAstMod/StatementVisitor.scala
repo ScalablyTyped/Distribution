@@ -1,11 +1,12 @@
 package typings.angularCompiler.outputAstMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatementVisitor extends js.Object {
+trait StatementVisitor extends StObject {
   
   def visitDeclareClassStmt(stmt: ClassStmt, context: js.Any): js.Any = js.native
   
@@ -41,42 +42,30 @@ object StatementVisitor {
   }
   
   @scala.inline
-  implicit class StatementVisitorOps[Self <: StatementVisitor] (val x: Self) extends AnyVal {
+  implicit class StatementVisitorMutableBuilder[Self <: StatementVisitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVisitDeclareClassStmt(value: (ClassStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareClassStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVisitDeclareFunctionStmt(value: (DeclareFunctionStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareFunctionStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVisitDeclareVarStmt(value: (DeclareVarStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareVarStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitDeclareClassStmt(value: (ClassStmt, js.Any) => js.Any): Self = this.set("visitDeclareClassStmt", js.Any.fromFunction2(value))
+    def setVisitExpressionStmt(value: (ExpressionStatement, js.Any) => js.Any): Self = StObject.set(x, "visitExpressionStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitDeclareFunctionStmt(value: (DeclareFunctionStmt, js.Any) => js.Any): Self = this.set("visitDeclareFunctionStmt", js.Any.fromFunction2(value))
+    def setVisitIfStmt(value: (IfStmt_, js.Any) => js.Any): Self = StObject.set(x, "visitIfStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitDeclareVarStmt(value: (DeclareVarStmt, js.Any) => js.Any): Self = this.set("visitDeclareVarStmt", js.Any.fromFunction2(value))
+    def setVisitReturnStmt(value: (ReturnStatement, js.Any) => js.Any): Self = StObject.set(x, "visitReturnStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitExpressionStmt(value: (ExpressionStatement, js.Any) => js.Any): Self = this.set("visitExpressionStmt", js.Any.fromFunction2(value))
+    def setVisitThrowStmt(value: (ThrowStmt, js.Any) => js.Any): Self = StObject.set(x, "visitThrowStmt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitIfStmt(value: (IfStmt_, js.Any) => js.Any): Self = this.set("visitIfStmt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVisitReturnStmt(value: (ReturnStatement, js.Any) => js.Any): Self = this.set("visitReturnStmt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVisitThrowStmt(value: (ThrowStmt, js.Any) => js.Any): Self = this.set("visitThrowStmt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVisitTryCatchStmt(value: (TryCatchStmt, js.Any) => js.Any): Self = this.set("visitTryCatchStmt", js.Any.fromFunction2(value))
+    def setVisitTryCatchStmt(value: (TryCatchStmt, js.Any) => js.Any): Self = StObject.set(x, "visitTryCatchStmt", js.Any.fromFunction2(value))
   }
 }

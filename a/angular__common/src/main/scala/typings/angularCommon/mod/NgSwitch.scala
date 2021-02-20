@@ -1,12 +1,13 @@
 package typings.angularCommon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgSwitch")
 @js.native
-class NgSwitch () extends js.Object {
+class NgSwitch () extends StObject {
   
   var _caseCount: js.Any = js.native
   

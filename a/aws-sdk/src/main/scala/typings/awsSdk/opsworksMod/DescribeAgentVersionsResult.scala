@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAgentVersionsResult extends js.Object {
+trait DescribeAgentVersionsResult extends StObject {
   
   /**
     * The agent versions for the specified stack or configuration manager. Note that this value is the complete version number, not the abbreviated number used by the console.
@@ -21,27 +22,15 @@ object DescribeAgentVersionsResult {
   }
   
   @scala.inline
-  implicit class DescribeAgentVersionsResultOps[Self <: DescribeAgentVersionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeAgentVersionsResultMutableBuilder[Self <: DescribeAgentVersionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentVersions(value: AgentVersions): Self = StObject.set(x, "AgentVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentVersionsUndefined: Self = StObject.set(x, "AgentVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentVersionsVarargs(value: AgentVersion*): Self = this.set("AgentVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setAgentVersions(value: AgentVersions): Self = this.set("AgentVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentVersions: Self = this.set("AgentVersions", js.undefined)
+    def setAgentVersionsVarargs(value: AgentVersion*): Self = StObject.set(x, "AgentVersions", js.Array(value :_*))
   }
 }

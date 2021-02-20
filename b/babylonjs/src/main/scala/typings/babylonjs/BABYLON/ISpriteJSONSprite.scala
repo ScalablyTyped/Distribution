@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISpriteJSONSprite extends js.Object {
+trait ISpriteJSONSprite extends StObject {
   
   /**
     * string name of the Frame
@@ -53,36 +54,24 @@ object ISpriteJSONSprite {
   }
   
   @scala.inline
-  implicit class ISpriteJSONSpriteOps[Self <: ISpriteJSONSprite] (val x: Self) extends AnyVal {
+  implicit class ISpriteJSONSpriteMutableBuilder[Self <: ISpriteJSONSprite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: ISpriteJSONSpriteFrameData): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setSourceSize(value: ISpriteJSONSpriteSourceSize): Self = StObject.set(x, "sourceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: ISpriteJSONSpriteFrameData): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setSpriteSourceSize(value: ISpriteJSONSpriteFrameData): Self = StObject.set(x, "spriteSourceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotated(value: Boolean): Self = this.set("rotated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceSize(value: ISpriteJSONSpriteSourceSize): Self = this.set("sourceSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpriteSourceSize(value: ISpriteJSONSpriteFrameData): Self = this.set("spriteSourceSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrimmed(value: Boolean): Self = this.set("trimmed", value.asInstanceOf[js.Any])
+    def setTrimmed(value: Boolean): Self = StObject.set(x, "trimmed", value.asInstanceOf[js.Any])
   }
 }

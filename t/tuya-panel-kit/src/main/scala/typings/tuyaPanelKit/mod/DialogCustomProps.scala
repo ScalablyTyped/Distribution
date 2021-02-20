@@ -6,6 +6,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.`21`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,108 +49,96 @@ object DialogCustomProps {
   }
   
   @scala.inline
-  implicit class DialogCustomPropsOps[Self <: DialogCustomProps] (val x: Self) extends AnyVal {
+  implicit class DialogCustomPropsMutableBuilder[Self <: DialogCustomProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelAccessibilityLabel(value: String): Self = StObject.set(x, "cancelAccessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelAccessibilityLabelUndefined: Self = StObject.set(x, "cancelAccessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setCancelTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "cancelTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmText(value: String): Self = this.set("confirmText", value.asInstanceOf[js.Any])
+    def setCancelTextStyleNull: Self = StObject.set(x, "cancelTextStyle", null)
     
     @scala.inline
-    def setCancelAccessibilityLabel(value: String): Self = this.set("cancelAccessibilityLabel", value.asInstanceOf[js.Any])
+    def setCancelTextStyleUndefined: Self = StObject.set(x, "cancelTextStyle", js.undefined)
     
     @scala.inline
-    def deleteCancelAccessibilityLabel: Self = this.set("cancelAccessibilityLabel", js.undefined)
+    def setConfirmAccessibilityLabel(value: String): Self = StObject.set(x, "confirmAccessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTextStyle(value: StyleProp[TextStyle]): Self = this.set("cancelTextStyle", value.asInstanceOf[js.Any])
+    def setConfirmAccessibilityLabelUndefined: Self = StObject.set(x, "confirmAccessibilityLabel", js.undefined)
     
     @scala.inline
-    def deleteCancelTextStyle: Self = this.set("cancelTextStyle", js.undefined)
+    def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTextStyleNull: Self = this.set("cancelTextStyle", null)
+    def setConfirmTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "confirmTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmAccessibilityLabel(value: String): Self = this.set("confirmAccessibilityLabel", value.asInstanceOf[js.Any])
+    def setConfirmTextStyleNull: Self = StObject.set(x, "confirmTextStyle", null)
     
     @scala.inline
-    def deleteConfirmAccessibilityLabel: Self = this.set("confirmAccessibilityLabel", js.undefined)
+    def setConfirmTextStyleUndefined: Self = StObject.set(x, "confirmTextStyle", js.undefined)
     
     @scala.inline
-    def setConfirmTextStyle(value: StyleProp[TextStyle]): Self = this.set("confirmTextStyle", value.asInstanceOf[js.Any])
+    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmTextStyle: Self = this.set("confirmTextStyle", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setConfirmTextStyleNull: Self = this.set("confirmTextStyle", null)
+    def setFooter(value: ElementType[_] | js.Function0[ReactNode]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setFooterFunction0(value: () => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def setFooterFunction0(value: () => ReactNode): Self = this.set("footer", js.Any.fromFunction0(value))
+    def setFooterWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "footerWrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: ElementType[_] | js.Function0[ReactNode]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setFooterWrapperStyleNull: Self = StObject.set(x, "footerWrapperStyle", null)
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setFooterWrapperStyleUndefined: Self = StObject.set(x, "footerWrapperStyle", js.undefined)
     
     @scala.inline
-    def setFooterWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("footerWrapperStyle", value.asInstanceOf[js.Any])
+    def setHeader(value: ElementType[_] | js.Function0[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooterWrapperStyle: Self = this.set("footerWrapperStyle", js.undefined)
+    def setHeaderFunction0(value: () => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFooterWrapperStyleNull: Self = this.set("footerWrapperStyle", null)
+    def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderFunction0(value: () => ReactNode): Self = this.set("header", js.Any.fromFunction0(value))
+    def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
     
     @scala.inline
-    def setHeader(value: ElementType[_] | js.Function0[ReactNode]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setHeaderStyle(value: StyleProp[ViewStyle]): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
     @scala.inline
-    def setHeaderStyleNull: Self = this.set("headerStyle", null)
+    def setOnConfirm(value: (/* data */ js.Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnCancel(value: () => Unit): Self = this.set("onCancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
-    
-    @scala.inline
-    def setOnConfirm(value: (/* data */ js.Any, /* args */ `21`) => Unit): Self = this.set("onConfirm", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnConfirm: Self = this.set("onConfirm", js.undefined)
+    def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
   }
 }

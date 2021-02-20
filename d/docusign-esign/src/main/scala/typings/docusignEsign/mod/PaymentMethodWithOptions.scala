@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentMethodWithOptions extends js.Object {
+trait PaymentMethodWithOptions extends StObject {
   
   /**
     * The payment options that are compatible with the payment method in the `type` property.
@@ -40,33 +41,21 @@ object PaymentMethodWithOptions {
   }
   
   @scala.inline
-  implicit class PaymentMethodWithOptionsOps[Self <: PaymentMethodWithOptions] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodWithOptionsMutableBuilder[Self <: PaymentMethodWithOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportedOptions(value: js.Array[String]): Self = StObject.set(x, "supportedOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportedOptionsUndefined: Self = StObject.set(x, "supportedOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportedOptionsVarargs(value: String*): Self = StObject.set(x, "supportedOptions", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedOptionsVarargs(value: String*): Self = this.set("supportedOptions", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedOptions(value: js.Array[String]): Self = this.set("supportedOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedOptions: Self = this.set("supportedOptions", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

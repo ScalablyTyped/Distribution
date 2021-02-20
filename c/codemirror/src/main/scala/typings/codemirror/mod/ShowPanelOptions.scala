@@ -4,12 +4,13 @@ import typings.codemirror.codemirrorStrings.`after-top`
 import typings.codemirror.codemirrorStrings.`before-bottom`
 import typings.codemirror.codemirrorStrings.bottom
 import typings.codemirror.codemirrorStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShowPanelOptions extends js.Object {
+trait ShowPanelOptions extends StObject {
   
   /**The new panel will be added after the given panel. */
   var after: js.UndefOr[Panel] = js.native
@@ -40,48 +41,36 @@ object ShowPanelOptions {
   }
   
   @scala.inline
-  implicit class ShowPanelOptionsOps[Self <: ShowPanelOptions] (val x: Self) extends AnyVal {
+  implicit class ShowPanelOptionsMutableBuilder[Self <: ShowPanelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: Panel): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: Panel): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: Panel): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setPosition(value: top | `after-top` | bottom | `before-bottom`): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: Panel): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setReplace(value: Panel): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: top | `after-top` | bottom | `before-bottom`): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplace(value: Panel): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
-    
-    @scala.inline
-    def setStable(value: Boolean): Self = this.set("stable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStable: Self = this.set("stable", js.undefined)
+    def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
   }
 }

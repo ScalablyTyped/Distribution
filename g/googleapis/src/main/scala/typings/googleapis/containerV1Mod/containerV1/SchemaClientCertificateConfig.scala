@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for client certificates on the cluster.
   */
 @js.native
-trait SchemaClientCertificateConfig extends js.Object {
+trait SchemaClientCertificateConfig extends StObject {
   
   /**
     * Issue a client certificate.
@@ -24,24 +25,12 @@ object SchemaClientCertificateConfig {
   }
   
   @scala.inline
-  implicit class SchemaClientCertificateConfigOps[Self <: SchemaClientCertificateConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaClientCertificateConfigMutableBuilder[Self <: SchemaClientCertificateConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssueClientCertificate(value: Boolean): Self = StObject.set(x, "issueClientCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIssueClientCertificate(value: Boolean): Self = this.set("issueClientCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIssueClientCertificate: Self = this.set("issueClientCertificate", js.undefined)
+    def setIssueClientCertificateUndefined: Self = StObject.set(x, "issueClientCertificate", js.undefined)
   }
 }

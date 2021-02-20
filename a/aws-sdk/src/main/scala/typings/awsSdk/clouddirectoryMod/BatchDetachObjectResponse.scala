@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetachObjectResponse extends js.Object {
+trait BatchDetachObjectResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the detached object.
@@ -21,24 +22,12 @@ object BatchDetachObjectResponse {
   }
   
   @scala.inline
-  implicit class BatchDetachObjectResponseOps[Self <: BatchDetachObjectResponse] (val x: Self) extends AnyVal {
+  implicit class BatchDetachObjectResponseMutableBuilder[Self <: BatchDetachObjectResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "detachedObjectIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetachedObjectIdentifier(value: ObjectIdentifier): Self = this.set("detachedObjectIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetachedObjectIdentifier: Self = this.set("detachedObjectIdentifier", js.undefined)
+    def setDetachedObjectIdentifierUndefined: Self = StObject.set(x, "detachedObjectIdentifier", js.undefined)
   }
 }

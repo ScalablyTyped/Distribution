@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteGlobalReplicationGroupMessage extends js.Object {
+trait DeleteGlobalReplicationGroupMessage extends StObject {
   
   /**
     * The name of the Global Datastore
@@ -26,24 +27,12 @@ object DeleteGlobalReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class DeleteGlobalReplicationGroupMessageOps[Self <: DeleteGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteGlobalReplicationGroupMessageMutableBuilder[Self <: DeleteGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetainPrimaryReplicationGroup(value: Boolean): Self = this.set("RetainPrimaryReplicationGroup", value.asInstanceOf[js.Any])
+    def setRetainPrimaryReplicationGroup(value: Boolean): Self = StObject.set(x, "RetainPrimaryReplicationGroup", value.asInstanceOf[js.Any])
   }
 }

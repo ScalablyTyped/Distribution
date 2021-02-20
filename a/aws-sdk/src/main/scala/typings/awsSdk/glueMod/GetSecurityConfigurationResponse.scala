@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSecurityConfigurationResponse extends js.Object {
+trait GetSecurityConfigurationResponse extends StObject {
   
   /**
     * The requested security configuration.
@@ -21,24 +22,12 @@ object GetSecurityConfigurationResponse {
   }
   
   @scala.inline
-  implicit class GetSecurityConfigurationResponseOps[Self <: GetSecurityConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class GetSecurityConfigurationResponseMutableBuilder[Self <: GetSecurityConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurityConfiguration(value: SecurityConfiguration): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSecurityConfiguration(value: SecurityConfiguration): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.babelCore.mod
 
 import typings.babelCore.anon.Loc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BabelFileMetadata extends js.Object {
+trait BabelFileMetadata extends StObject {
   
   var marked: js.Array[Loc] = js.native
   
@@ -23,33 +24,21 @@ object BabelFileMetadata {
   }
   
   @scala.inline
-  implicit class BabelFileMetadataOps[Self <: BabelFileMetadata] (val x: Self) extends AnyVal {
+  implicit class BabelFileMetadataMutableBuilder[Self <: BabelFileMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarked(value: js.Array[Loc]): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkedVarargs(value: Loc*): Self = StObject.set(x, "marked", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModules(value: BabelFileModulesMetadata): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkedVarargs(value: Loc*): Self = this.set("marked", js.Array(value :_*))
+    def setUsedHelpers(value: js.Array[String]): Self = StObject.set(x, "usedHelpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarked(value: js.Array[Loc]): Self = this.set("marked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModules(value: BabelFileModulesMetadata): Self = this.set("modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedHelpersVarargs(value: String*): Self = this.set("usedHelpers", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsedHelpers(value: js.Array[String]): Self = this.set("usedHelpers", value.asInstanceOf[js.Any])
+    def setUsedHelpersVarargs(value: String*): Self = StObject.set(x, "usedHelpers", js.Array(value :_*))
   }
 }

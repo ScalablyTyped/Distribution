@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,99 +137,87 @@ object ParamsResourceProjectsTimeseriesList {
   }
   
   @scala.inline
-  implicit class ParamsResourceProjectsTimeseriesListOps[Self <: ParamsResourceProjectsTimeseriesList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProjectsTimeseriesListMutableBuilder[Self <: ParamsResourceProjectsTimeseriesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationDotalignmentPeriod(value: String): Self = StObject.set(x, "aggregation.alignmentPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationDotalignmentPeriodUndefined: Self = StObject.set(x, "aggregation.alignmentPeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationDotcrossSeriesReducer(value: String): Self = StObject.set(x, "aggregation.crossSeriesReducer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationDotalignmentPeriod(value: String): Self = this.set("aggregation.alignmentPeriod", value.asInstanceOf[js.Any])
+    def setAggregationDotcrossSeriesReducerUndefined: Self = StObject.set(x, "aggregation.crossSeriesReducer", js.undefined)
     
     @scala.inline
-    def deleteAggregationDotalignmentPeriod: Self = this.set("aggregation.alignmentPeriod", js.undefined)
+    def setAggregationDotgroupByFields(value: js.Array[String]): Self = StObject.set(x, "aggregation.groupByFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationDotcrossSeriesReducer(value: String): Self = this.set("aggregation.crossSeriesReducer", value.asInstanceOf[js.Any])
+    def setAggregationDotgroupByFieldsUndefined: Self = StObject.set(x, "aggregation.groupByFields", js.undefined)
     
     @scala.inline
-    def deleteAggregationDotcrossSeriesReducer: Self = this.set("aggregation.crossSeriesReducer", js.undefined)
+    def setAggregationDotgroupByFieldsVarargs(value: String*): Self = StObject.set(x, "aggregation.groupByFields", js.Array(value :_*))
     
     @scala.inline
-    def setAggregationDotgroupByFieldsVarargs(value: String*): Self = this.set("aggregation.groupByFields", js.Array(value :_*))
+    def setAggregationDotperSeriesAligner(value: String): Self = StObject.set(x, "aggregation.perSeriesAligner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationDotgroupByFields(value: js.Array[String]): Self = this.set("aggregation.groupByFields", value.asInstanceOf[js.Any])
+    def setAggregationDotperSeriesAlignerUndefined: Self = StObject.set(x, "aggregation.perSeriesAligner", js.undefined)
     
     @scala.inline
-    def deleteAggregationDotgroupByFields: Self = this.set("aggregation.groupByFields", js.undefined)
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationDotperSeriesAligner(value: String): Self = this.set("aggregation.perSeriesAligner", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAggregationDotperSeriesAligner: Self = this.set("aggregation.perSeriesAligner", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setIntervalDotendTime(value: String): Self = StObject.set(x, "interval.endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setIntervalDotendTimeUndefined: Self = StObject.set(x, "interval.endTime", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setIntervalDotstartTime(value: String): Self = StObject.set(x, "interval.startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalDotendTime(value: String): Self = this.set("interval.endTime", value.asInstanceOf[js.Any])
+    def setIntervalDotstartTimeUndefined: Self = StObject.set(x, "interval.startTime", js.undefined)
     
     @scala.inline
-    def deleteIntervalDotendTime: Self = this.set("interval.endTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalDotstartTime(value: String): Self = this.set("interval.startTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIntervalDotstartTime: Self = this.set("interval.startTime", js.undefined)
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
-    
-    @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBuildOutput extends js.Object {
+trait UpdateBuildOutput extends StObject {
   
   /**
     * The updated build resource.
@@ -21,24 +22,12 @@ object UpdateBuildOutput {
   }
   
   @scala.inline
-  implicit class UpdateBuildOutputOps[Self <: UpdateBuildOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateBuildOutputMutableBuilder[Self <: UpdateBuildOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: Build): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuild(value: Build): Self = this.set("Build", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuild: Self = this.set("Build", js.undefined)
+    def setBuildUndefined: Self = StObject.set(x, "Build", js.undefined)
   }
 }

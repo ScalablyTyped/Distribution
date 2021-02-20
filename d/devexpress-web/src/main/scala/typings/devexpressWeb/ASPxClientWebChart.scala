@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,81 +124,69 @@ object ASPxClientWebChart {
   }
   
   @scala.inline
-  implicit class ASPxClientWebChartOps[Self <: ASPxClientWebChart] (val x: Self) extends AnyVal {
+  implicit class ASPxClientWebChartMutableBuilder[Self <: ASPxClientWebChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: js.Array[ASPxClientAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsVarargs(value: ASPxClientAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppearanceName(value: String): Self = StObject.set(x, "appearanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsVarargs(value: ASPxClientAnnotation*): Self = this.set("annotations", js.Array(value :_*))
+    def setChartControl(value: ASPxClientWebChartControl): Self = StObject.set(x, "chartControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Array[ASPxClientAnnotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setCrosshairOptions(value: ASPxClientCrosshairOptions): Self = StObject.set(x, "crosshairOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearanceName(value: String): Self = this.set("appearanceName", value.asInstanceOf[js.Any])
+    def setCssPostfix(value: String): Self = StObject.set(x, "cssPostfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartControl(value: ASPxClientWebChartControl): Self = this.set("chartControl", value.asInstanceOf[js.Any])
+    def setDiagram(value: ASPxClientWebChartElement): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairOptions(value: ASPxClientCrosshairOptions): Self = this.set("crosshairOptions", value.asInstanceOf[js.Any])
+    def setLegend(value: ASPxClientLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssPostfix(value: String): Self = this.set("cssPostfix", value.asInstanceOf[js.Any])
+    def setLegends(value: js.Array[ASPxClientLegend]): Self = StObject.set(x, "legends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagram(value: ASPxClientWebChartElement): Self = this.set("diagram", value.asInstanceOf[js.Any])
+    def setLegendsVarargs(value: ASPxClientLegend*): Self = StObject.set(x, "legends", js.Array(value :_*))
     
     @scala.inline
-    def setLegend(value: ASPxClientLegend): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setPaletteName(value: String): Self = StObject.set(x, "paletteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendsVarargs(value: ASPxClientLegend*): Self = this.set("legends", js.Array(value :_*))
+    def setSelectionMode(value: String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegends(value: js.Array[ASPxClientLegend]): Self = this.set("legends", value.asInstanceOf[js.Any])
+    def setSeries(value: js.Array[ASPxClientSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaletteName(value: String): Self = this.set("paletteName", value.asInstanceOf[js.Any])
+    def setSeriesVarargs(value: ASPxClientSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSelectionMode(value: String): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setShowCrosshair(value: Boolean): Self = StObject.set(x, "showCrosshair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesVarargs(value: ASPxClientSeries*): Self = this.set("series", js.Array(value :_*))
+    def setShowPointToolTip(value: Boolean): Self = StObject.set(x, "showPointToolTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[ASPxClientSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setShowSeriesToolTip(value: Boolean): Self = StObject.set(x, "showSeriesToolTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCrosshair(value: Boolean): Self = this.set("showCrosshair", value.asInstanceOf[js.Any])
+    def setTitles(value: js.Array[ASPxClientChartTitle]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPointToolTip(value: Boolean): Self = this.set("showPointToolTip", value.asInstanceOf[js.Any])
+    def setTitlesVarargs(value: ASPxClientChartTitle*): Self = StObject.set(x, "titles", js.Array(value :_*))
     
     @scala.inline
-    def setShowSeriesToolTip(value: Boolean): Self = this.set("showSeriesToolTip", value.asInstanceOf[js.Any])
+    def setToolTipController(value: ASPxClientToolTipController): Self = StObject.set(x, "toolTipController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitlesVarargs(value: ASPxClientChartTitle*): Self = this.set("titles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTitles(value: js.Array[ASPxClientChartTitle]): Self = this.set("titles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolTipController(value: ASPxClientToolTipController): Self = this.set("toolTipController", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolTipPosition(value: ASPxClientToolTipPosition): Self = this.set("toolTipPosition", value.asInstanceOf[js.Any])
+    def setToolTipPosition(value: ASPxClientToolTipPosition): Self = StObject.set(x, "toolTipPosition", value.asInstanceOf[js.Any])
   }
 }

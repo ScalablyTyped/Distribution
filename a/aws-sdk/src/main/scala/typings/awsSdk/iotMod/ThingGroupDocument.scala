@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThingGroupDocument extends js.Object {
+trait ThingGroupDocument extends StObject {
   
   /**
     * The thing group attributes.
@@ -41,51 +42,39 @@ object ThingGroupDocument {
   }
   
   @scala.inline
-  implicit class ThingGroupDocumentOps[Self <: ThingGroupDocument] (val x: Self) extends AnyVal {
+  implicit class ThingGroupDocumentMutableBuilder[Self <: ThingGroupDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentGroupNames(value: ThingGroupNameList): Self = StObject.set(x, "parentGroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setParentGroupNamesUndefined: Self = StObject.set(x, "parentGroupNames", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setParentGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "parentGroupNames", js.Array(value :_*))
     
     @scala.inline
-    def setParentGroupNamesVarargs(value: ThingGroupName*): Self = this.set("parentGroupNames", js.Array(value :_*))
+    def setThingGroupDescription(value: ThingGroupDescription): Self = StObject.set(x, "thingGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentGroupNames(value: ThingGroupNameList): Self = this.set("parentGroupNames", value.asInstanceOf[js.Any])
+    def setThingGroupDescriptionUndefined: Self = StObject.set(x, "thingGroupDescription", js.undefined)
     
     @scala.inline
-    def deleteParentGroupNames: Self = this.set("parentGroupNames", js.undefined)
+    def setThingGroupId(value: ThingGroupId): Self = StObject.set(x, "thingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupDescription(value: ThingGroupDescription): Self = this.set("thingGroupDescription", value.asInstanceOf[js.Any])
+    def setThingGroupIdUndefined: Self = StObject.set(x, "thingGroupId", js.undefined)
     
     @scala.inline
-    def deleteThingGroupDescription: Self = this.set("thingGroupDescription", js.undefined)
+    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupId(value: ThingGroupId): Self = this.set("thingGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingGroupId: Self = this.set("thingGroupId", js.undefined)
-    
-    @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = this.set("thingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingGroupName: Self = this.set("thingGroupName", js.undefined)
+    def setThingGroupNameUndefined: Self = StObject.set(x, "thingGroupName", js.undefined)
   }
 }

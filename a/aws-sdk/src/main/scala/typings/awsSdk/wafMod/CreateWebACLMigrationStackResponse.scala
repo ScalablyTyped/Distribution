@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWebACLMigrationStackResponse extends js.Object {
+trait CreateWebACLMigrationStackResponse extends StObject {
   
   /**
     * The URL of the template created in Amazon S3. 
@@ -21,21 +22,9 @@ object CreateWebACLMigrationStackResponse {
   }
   
   @scala.inline
-  implicit class CreateWebACLMigrationStackResponseOps[Self <: CreateWebACLMigrationStackResponse] (val x: Self) extends AnyVal {
+  implicit class CreateWebACLMigrationStackResponseMutableBuilder[Self <: CreateWebACLMigrationStackResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3ObjectUrl(value: S3ObjectUrl): Self = this.set("S3ObjectUrl", value.asInstanceOf[js.Any])
+    def setS3ObjectUrl(value: S3ObjectUrl): Self = StObject.set(x, "S3ObjectUrl", value.asInstanceOf[js.Any])
   }
 }

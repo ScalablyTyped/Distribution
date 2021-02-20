@@ -10,18 +10,23 @@ import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStati
 import typings.react.mod.ComponentType
 import typings.std.Exclude
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@callstack/react-theme-provider", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@callstack/react-theme-provider", "createTheming")
+  @js.native
   def createTheming[Theme](defaultTheme: Theme): ThemingType[Theme] = js.native
   
+  type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<T[P]> * / object}
+    */ $DeepPartial with TopLevel[js.Any]
+  
   @js.native
-  trait ThemingType[Theme] extends js.Object {
+  trait ThemingType[Theme] extends StObject {
     
     var ThemeProvider: ComponentType[`0`[Theme]] = js.native
     
@@ -33,10 +38,6 @@ object mod extends js.Object {
         js.Object
       ]) = js.native
   }
-  
-  type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<T[P]> * / object}
-    */ $DeepPartial with TopLevel[js.Any]
   
   type Without[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
 }

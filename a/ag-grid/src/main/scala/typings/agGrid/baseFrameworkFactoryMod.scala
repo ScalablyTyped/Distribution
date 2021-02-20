@@ -8,14 +8,14 @@ import typings.agGrid.colDefMod.ColDef
 import typings.agGrid.gridOptionsMod.GridOptions
 import typings.agGrid.iCellRendererMod.ICellRendererFunc
 import typings.agGrid.iFrameworkFactoryMod.IFrameworkFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/baseFrameworkFactory", JSImport.Namespace)
-@js.native
-object baseFrameworkFactoryMod extends js.Object {
+object baseFrameworkFactoryMod {
   
+  @JSImport("ag-grid/dist/lib/baseFrameworkFactory", "BaseFrameworkFactory")
   @js.native
   class BaseFrameworkFactory () extends IFrameworkFactory {
     

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameServerDeploymentRollout extends js.Object {
+trait GameServerDeploymentRollout extends StObject {
   
   /** Output only. The creation time. */
   var createTime: js.UndefOr[String] = js.native
@@ -40,57 +41,45 @@ object GameServerDeploymentRollout {
   }
   
   @scala.inline
-  implicit class GameServerDeploymentRolloutOps[Self <: GameServerDeploymentRollout] (val x: Self) extends AnyVal {
+  implicit class GameServerDeploymentRolloutMutableBuilder[Self <: GameServerDeploymentRollout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultGameServerConfig(value: String): Self = StObject.set(x, "defaultGameServerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDefaultGameServerConfigUndefined: Self = StObject.set(x, "defaultGameServerConfig", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultGameServerConfig(value: String): Self = this.set("defaultGameServerConfig", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDefaultGameServerConfig: Self = this.set("defaultGameServerConfig", js.undefined)
+    def setGameServerConfigOverrides(value: js.Array[GameServerConfigOverride]): Self = StObject.set(x, "gameServerConfigOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setGameServerConfigOverridesUndefined: Self = StObject.set(x, "gameServerConfigOverrides", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setGameServerConfigOverridesVarargs(value: GameServerConfigOverride*): Self = StObject.set(x, "gameServerConfigOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setGameServerConfigOverridesVarargs(value: GameServerConfigOverride*): Self = this.set("gameServerConfigOverrides", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerConfigOverrides(value: js.Array[GameServerConfigOverride]): Self = this.set("gameServerConfigOverrides", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGameServerConfigOverrides: Self = this.set("gameServerConfigOverrides", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

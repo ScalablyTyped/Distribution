@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.DirectX
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DirectXPixelFormat extends js.Object
+sealed trait DirectXPixelFormat extends StObject
 /** Specifies pixel formats, which includes fully-typed and type-less formats. This is a managed version of the DXGI_FORMAT enumeration. */
 @JSGlobal("Windows.Graphics.DirectX.DirectXPixelFormat")
 @js.native
-object DirectXPixelFormat extends js.Object {
+object DirectXPixelFormat extends StObject {
   
   @js.native
   sealed trait a8P8 extends DirectXPixelFormat

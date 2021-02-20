@@ -1,12 +1,13 @@
 package typings.firebaseDatabase.anon
 
 import typings.firebaseDatabase.referenceMod.Reference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofINTERNAL extends js.Object {
+trait TypeofINTERNAL extends StObject {
   
   def dataUpdateCount(ref: Reference): Double = js.native
   

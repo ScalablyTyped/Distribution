@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Redirect extends js.Object {
+trait Redirect extends StObject {
   
   /**
     * The host name to use in the redirect request.
@@ -41,48 +42,36 @@ object Redirect {
   }
   
   @scala.inline
-  implicit class RedirectOps[Self <: Redirect] (val x: Self) extends AnyVal {
+  implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostName(value: HostName): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostNameUndefined: Self = StObject.set(x, "HostName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpRedirectCode(value: HttpRedirectCode): Self = StObject.set(x, "HttpRedirectCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostName(value: HostName): Self = this.set("HostName", value.asInstanceOf[js.Any])
+    def setHttpRedirectCodeUndefined: Self = StObject.set(x, "HttpRedirectCode", js.undefined)
     
     @scala.inline
-    def deleteHostName: Self = this.set("HostName", js.undefined)
+    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRedirectCode(value: HttpRedirectCode): Self = this.set("HttpRedirectCode", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def deleteHttpRedirectCode: Self = this.set("HttpRedirectCode", js.undefined)
+    def setReplaceKeyPrefixWith(value: ReplaceKeyPrefixWith): Self = StObject.set(x, "ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setReplaceKeyPrefixWithUndefined: Self = StObject.set(x, "ReplaceKeyPrefixWith", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    def setReplaceKeyWith(value: ReplaceKeyWith): Self = StObject.set(x, "ReplaceKeyWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceKeyPrefixWith(value: ReplaceKeyPrefixWith): Self = this.set("ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceKeyPrefixWith: Self = this.set("ReplaceKeyPrefixWith", js.undefined)
-    
-    @scala.inline
-    def setReplaceKeyWith(value: ReplaceKeyWith): Self = this.set("ReplaceKeyWith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceKeyWith: Self = this.set("ReplaceKeyWith", js.undefined)
+    def setReplaceKeyWithUndefined: Self = StObject.set(x, "ReplaceKeyWith", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateCatalogImageRequest")
 @js.native
-class CreateCatalogImageRequest () extends js.Object {
+class CreateCatalogImageRequest () extends StObject {
   
   /**
     * A unique string that identifies this CreateCatalogImage request.

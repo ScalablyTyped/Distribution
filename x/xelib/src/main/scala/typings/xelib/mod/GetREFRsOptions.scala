@@ -1,11 +1,12 @@
 package typings.xelib.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetREFRsOptions extends js.Object {
+trait GetREFRsOptions extends StObject {
   
   /**
     * Pass true to exclude deleted REFRs.
@@ -34,36 +35,24 @@ object GetREFRsOptions {
   }
   
   @scala.inline
-  implicit class GetREFRsOptionsOps[Self <: GetREFRsOptions] (val x: Self) extends AnyVal {
+  implicit class GetREFRsOptionsMutableBuilder[Self <: GetREFRsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeDeleted(value: Boolean): Self = StObject.set(x, "excludeDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeDeletedUndefined: Self = StObject.set(x, "excludeDeleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeDisabled(value: Boolean): Self = StObject.set(x, "excludeDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeDeleted(value: Boolean): Self = this.set("excludeDeleted", value.asInstanceOf[js.Any])
+    def setExcludeDisabledUndefined: Self = StObject.set(x, "excludeDisabled", js.undefined)
     
     @scala.inline
-    def deleteExcludeDeleted: Self = this.set("excludeDeleted", js.undefined)
+    def setExcludeXESP(value: Boolean): Self = StObject.set(x, "excludeXESP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeDisabled(value: Boolean): Self = this.set("excludeDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludeDisabled: Self = this.set("excludeDisabled", js.undefined)
-    
-    @scala.inline
-    def setExcludeXESP(value: Boolean): Self = this.set("excludeXESP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludeXESP: Self = this.set("excludeXESP", js.undefined)
+    def setExcludeXESPUndefined: Self = StObject.set(x, "excludeXESP", js.undefined)
   }
 }

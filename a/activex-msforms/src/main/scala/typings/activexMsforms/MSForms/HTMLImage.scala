@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLImage extends js.Object {
+trait HTMLImage extends StObject {
   
   var Action: String = js.native
   
@@ -40,39 +41,27 @@ object HTMLImage {
   }
   
   @scala.inline
-  implicit class HTMLImageOps[Self <: HTMLImage] (val x: Self) extends AnyVal {
+  implicit class HTMLImageMutableBuilder[Self <: HTMLImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    def setMSFormsDotHTMLImage_typekey(value: HTMLImage): Self = StObject.set(x, "MSForms.HTMLImage_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLName(value: String): Self = this.set("HTMLName", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLType(value: String): Self = this.set("HTMLType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMSFormsDotHTMLImage_typekey(value: HTMLImage): Self = this.set("MSForms.HTMLImage_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("Method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

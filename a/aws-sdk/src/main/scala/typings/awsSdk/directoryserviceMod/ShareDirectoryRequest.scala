@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShareDirectoryRequest extends js.Object {
+trait ShareDirectoryRequest extends StObject {
   
   /**
     * Identifier of the AWS Managed Microsoft AD directory that you want to share with other AWS accounts.
@@ -36,33 +37,21 @@ object ShareDirectoryRequest {
   }
   
   @scala.inline
-  implicit class ShareDirectoryRequestOps[Self <: ShareDirectoryRequest] (val x: Self) extends AnyVal {
+  implicit class ShareDirectoryRequestMutableBuilder[Self <: ShareDirectoryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
     
     @scala.inline
-    def setShareMethod(value: ShareMethod): Self = this.set("ShareMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShareTarget(value: ShareTarget): Self = this.set("ShareTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShareNotes(value: Notes): Self = this.set("ShareNotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareNotes: Self = this.set("ShareNotes", js.undefined)
+    def setShareTarget(value: ShareTarget): Self = StObject.set(x, "ShareTarget", value.asInstanceOf[js.Any])
   }
 }

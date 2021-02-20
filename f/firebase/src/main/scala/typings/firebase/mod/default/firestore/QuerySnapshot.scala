@@ -1,12 +1,13 @@
 package typings.firebase.mod.default.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.QuerySnapshot")
+@JSImport("firebase", "default.firestore.QuerySnapshot")
 @js.native
-class QuerySnapshot[T] protected () extends js.Object {
+class QuerySnapshot[T] protected () extends StObject {
   
   /**
     * Returns an array of the documents changes since the last snapshot. If this

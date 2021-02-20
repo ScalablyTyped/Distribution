@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.webXRControllerTeleportationMod.IWebXRTeleportationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,13 +21,13 @@ class WebXRMotionControllerTeleportation protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "WebXRMotionControllerTeleportation")
-@js.native
-object WebXRMotionControllerTeleportation extends js.Object {
+object WebXRMotionControllerTeleportation {
   
   /**
     * The module's name
     */
+  @JSImport("babylonjs/Legacy/legacy", "WebXRMotionControllerTeleportation.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -34,5 +35,7 @@ object WebXRMotionControllerTeleportation extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the webxr specs version
     */
+  @JSImport("babylonjs/Legacy/legacy", "WebXRMotionControllerTeleportation.Version")
+  @js.native
   val Version: Double = js.native
 }

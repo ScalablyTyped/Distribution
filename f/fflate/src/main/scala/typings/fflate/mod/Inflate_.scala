@@ -1,6 +1,7 @@
 package typings.fflate.mod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates an inflation stream
   * @param cb The callback to call whenever data is inflated
   */
-class Inflate_ () extends js.Object {
+class Inflate_ () extends StObject {
   def this(cb: FlateStreamHandler) = this()
   
   var c: js.Any = js.native

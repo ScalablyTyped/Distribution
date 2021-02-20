@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,51 +32,39 @@ object DeviceComplianceActionItem {
   }
   
   @scala.inline
-  implicit class DeviceComplianceActionItemOps[Self <: DeviceComplianceActionItem] (val x: Self) extends AnyVal {
+  implicit class DeviceComplianceActionItemMutableBuilder[Self <: DeviceComplianceActionItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionType(value: DeviceComplianceActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGracePeriodHours(value: Double): Self = StObject.set(x, "gracePeriodHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: DeviceComplianceActionType): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setGracePeriodHoursUndefined: Self = StObject.set(x, "gracePeriodHours", js.undefined)
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setNotificationMessageCCList(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notificationMessageCCList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGracePeriodHours(value: Double): Self = this.set("gracePeriodHours", value.asInstanceOf[js.Any])
+    def setNotificationMessageCCListNull: Self = StObject.set(x, "notificationMessageCCList", null)
     
     @scala.inline
-    def deleteGracePeriodHours: Self = this.set("gracePeriodHours", js.undefined)
+    def setNotificationMessageCCListUndefined: Self = StObject.set(x, "notificationMessageCCList", js.undefined)
     
     @scala.inline
-    def setNotificationMessageCCListVarargs(value: String*): Self = this.set("notificationMessageCCList", js.Array(value :_*))
+    def setNotificationMessageCCListVarargs(value: String*): Self = StObject.set(x, "notificationMessageCCList", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationMessageCCList(value: NullableOption[js.Array[String]]): Self = this.set("notificationMessageCCList", value.asInstanceOf[js.Any])
+    def setNotificationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "notificationTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationMessageCCList: Self = this.set("notificationMessageCCList", js.undefined)
+    def setNotificationTemplateIdNull: Self = StObject.set(x, "notificationTemplateId", null)
     
     @scala.inline
-    def setNotificationMessageCCListNull: Self = this.set("notificationMessageCCList", null)
-    
-    @scala.inline
-    def setNotificationTemplateId(value: NullableOption[String]): Self = this.set("notificationTemplateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationTemplateId: Self = this.set("notificationTemplateId", js.undefined)
-    
-    @scala.inline
-    def setNotificationTemplateIdNull: Self = this.set("notificationTemplateId", null)
+    def setNotificationTemplateIdUndefined: Self = StObject.set(x, "notificationTemplateId", js.undefined)
   }
 }

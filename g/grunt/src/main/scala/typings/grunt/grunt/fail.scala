@@ -1,18 +1,18 @@
 package typings.grunt.grunt
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("grunt.fail")
-@js.native
-object fail extends js.Object {
+object fail {
   
   @js.native
-  sealed trait ErrorCode extends js.Object
+  sealed trait ErrorCode extends StObject
+  @JSGlobal("grunt.fail.ErrorCode")
   @js.native
-  object ErrorCode extends js.Object {
+  object ErrorCode extends StObject {
     
     @js.native
     sealed trait Autocomplete extends ErrorCode
@@ -37,7 +37,7 @@ object fail extends js.Object {
   }
   
   @js.native
-  trait FailModule extends js.Object {
+  trait FailModule extends StObject {
     
     /**
       * Display a warning and abort Grunt immediately.

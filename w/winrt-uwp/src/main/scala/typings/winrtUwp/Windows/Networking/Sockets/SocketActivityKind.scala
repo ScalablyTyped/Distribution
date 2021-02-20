@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocketActivityKind extends js.Object
+sealed trait SocketActivityKind extends StObject
 /** Describes the kind of socket object being transferred to or from the socket broker. */
 @JSGlobal("Windows.Networking.Sockets.SocketActivityKind")
 @js.native
-object SocketActivityKind extends js.Object {
+object SocketActivityKind extends StObject {
   
   /** A socket type of DatagramSocket . */
   @js.native

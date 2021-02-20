@@ -2,12 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskAgentPoolMaintenanceJob extends js.Object {
+trait TaskAgentPoolMaintenanceJob extends StObject {
   
   /**
     * The maintenance definition for the maintenance job
@@ -100,63 +101,51 @@ object TaskAgentPoolMaintenanceJob {
   }
   
   @scala.inline
-  implicit class TaskAgentPoolMaintenanceJobOps[Self <: TaskAgentPoolMaintenanceJob] (val x: Self) extends AnyVal {
+  implicit class TaskAgentPoolMaintenanceJobMutableBuilder[Self <: TaskAgentPoolMaintenanceJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: Double): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: Double): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setLogsDownloadUrl(value: String): Self = StObject.set(x, "logsDownloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTime(value: Date): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    def setOrchestrationId(value: String): Self = StObject.set(x, "orchestrationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: Double): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogsDownloadUrl(value: String): Self = this.set("logsDownloadUrl", value.asInstanceOf[js.Any])
+    def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrchestrationId(value: String): Self = this.set("orchestrationId", value.asInstanceOf[js.Any])
+    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: TaskAgentPoolReference): Self = this.set("pool", value.asInstanceOf[js.Any])
+    def setResult(value: TaskAgentPoolMaintenanceJobResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueTime(value: Date): Self = this.set("queueTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
+    def setStatus(value: TaskAgentPoolMaintenanceJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: TaskAgentPoolMaintenanceJobResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setTargetAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "targetAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTargetAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "targetAgents", js.Array(value :_*))
     
     @scala.inline
-    def setStatus(value: TaskAgentPoolMaintenanceJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetAgentsVarargs(value: TaskAgentReference*): Self = this.set("targetAgents", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetAgents(value: js.Array[TaskAgentReference]): Self = this.set("targetAgents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningCount(value: Double): Self = this.set("warningCount", value.asInstanceOf[js.Any])
+    def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
   }
 }

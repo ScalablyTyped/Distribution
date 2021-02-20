@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.ExperimentId
 import typings.maximMazurokGapiClientAnalytics.anon.FieldsKey
 import typings.maximMazurokGapiClientAnalytics.anon.KeyMaxresults
 import typings.maximMazurokGapiClientAnalytics.anon.ProfileId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExperimentsResource extends js.Object {
+trait ExperimentsResource extends StObject {
   
   /** Delete an experiment. */
   def delete(): Request[Unit] = js.native

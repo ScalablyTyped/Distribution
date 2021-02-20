@@ -1,11 +1,12 @@
 package typings.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnumerateClassLoadersCallbacks extends js.Object {
+trait EnumerateClassLoadersCallbacks extends StObject {
   
   /**
     * Called when all class loaders have been enumerated.
@@ -27,24 +28,12 @@ object EnumerateClassLoadersCallbacks {
   }
   
   @scala.inline
-  implicit class EnumerateClassLoadersCallbacksOps[Self <: EnumerateClassLoadersCallbacks] (val x: Self) extends AnyVal {
+  implicit class EnumerateClassLoadersCallbacksMutableBuilder[Self <: EnumerateClassLoadersCallbacks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnComplete(value: () => Unit): Self = this.set("onComplete", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit): Self = this.set("onMatch", js.Any.fromFunction1(value))
+    def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
   }
 }

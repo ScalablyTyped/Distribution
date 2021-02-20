@@ -2,12 +2,13 @@ package typings.isMyJsonValid.mod
 
 import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import typings.isMyJsonValid.isMyJsonValidStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NullableArraySchema[ItemSchema /* <: AnySchema */] extends js.Object {
+trait NullableArraySchema[ItemSchema /* <: AnySchema */] extends StObject {
   
   var items: ItemSchema = js.native
   
@@ -23,27 +24,15 @@ object NullableArraySchema {
   }
   
   @scala.inline
-  implicit class NullableArraySchemaOps[Self <: NullableArraySchema[_], ItemSchema /* <: AnySchema */] (val x: Self with NullableArraySchema[ItemSchema]) extends AnyVal {
+  implicit class NullableArraySchemaMutableBuilder[Self <: NullableArraySchema[_], ItemSchema /* <: AnySchema */] (val x: Self with NullableArraySchema[ItemSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: js.Array[array | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItems(value: ItemSchema): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeVarargs(value: (array | `null`)*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[array | `null`]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeVarargs(value: (array | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

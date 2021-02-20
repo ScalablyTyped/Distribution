@@ -1,11 +1,12 @@
 package typings.sparkpost.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dkimrecord extends js.Object {
+trait Dkimrecord extends StObject {
   
   var dkim_record: String = js.native
   
@@ -20,24 +21,12 @@ object Dkimrecord {
   }
   
   @scala.inline
-  implicit class DkimrecordOps[Self <: Dkimrecord] (val x: Self) extends AnyVal {
+  implicit class DkimrecordMutableBuilder[Self <: Dkimrecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDkim_record(value: String): Self = StObject.set(x, "dkim_record", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDkim_record(value: String): Self = this.set("dkim_record", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpf_record(value: String): Self = this.set("spf_record", value.asInstanceOf[js.Any])
+    def setSpf_record(value: String): Self = StObject.set(x, "spf_record", value.asInstanceOf[js.Any])
   }
 }

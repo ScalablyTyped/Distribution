@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.uniformsLibMod.IUniform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlphaMap extends js.Object {
+trait AlphaMap extends StObject {
   
   var alphaMap: IUniform = js.native
   
@@ -36,36 +37,24 @@ object AlphaMap {
   }
   
   @scala.inline
-  implicit class AlphaMapOps[Self <: AlphaMap] (val x: Self) extends AnyVal {
+  implicit class AlphaMapMutableBuilder[Self <: AlphaMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaMap(value: IUniform): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiffuse(value: IUniform): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMap(value: IUniform): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaMap(value: IUniform): Self = this.set("alphaMap", value.asInstanceOf[js.Any])
+    def setOpacity(value: IUniform): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffuse(value: IUniform): Self = this.set("diffuse", value.asInstanceOf[js.Any])
+    def setUv2Transform(value: IUniform): Self = StObject.set(x, "uv2Transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: IUniform): Self = this.set("map", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpacity(value: IUniform): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUv2Transform(value: IUniform): Self = this.set("uv2Transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUvTransform(value: IUniform): Self = this.set("uvTransform", value.asInstanceOf[js.Any])
+    def setUvTransform(value: IUniform): Self = StObject.set(x, "uvTransform", value.asInstanceOf[js.Any])
   }
 }

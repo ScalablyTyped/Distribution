@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesShared
 
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.block
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object IBlock {
   }
   
   @scala.inline
-  implicit class IBlockOps[Self <: IBlock] (val x: Self) extends AnyVal {
+  implicit class IBlockMutableBuilder[Self <: IBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTicking_area(value: ITickingArea): Self = StObject.set(x, "ticking_area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__identifier__(value: String): Self = this.set("__identifier__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set__type__(value: block): Self = this.set("__type__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = this.set("block_position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicking_area(value: ITickingArea): Self = this.set("ticking_area", value.asInstanceOf[js.Any])
+    def set__type__(value: block): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

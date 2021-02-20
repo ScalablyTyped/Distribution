@@ -8,16 +8,14 @@ import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.eventGroupMod.EventGroup
 import typings.uifabricUtilities.idisposableMod.IDisposable
 import typings.uifabricUtilities.warnWarnMod.ISettingsMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/BaseComponent", JSImport.Namespace)
-@js.native
-object baseComponentMod extends js.Object {
+object baseComponentMod {
   
-  def nullRender(): Element | Null = js.native
-  
+  @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent")
   @js.native
   class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
     extends Component[TProps, TState, js.Any] {
@@ -131,15 +129,26 @@ object baseComponentMod extends js.Object {
     def componentWillUnmount_MBaseComponent(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object BaseComponent extends js.Object {
+  object BaseComponent {
     
     /**
       * @deprecated Use React's error boundaries instead.
       */
+    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
+    @js.native
     def onError(): Unit = js.native
+    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
+    @js.native
     def onError(errorMessage: js.UndefOr[scala.Nothing], ex: js.Any): Unit = js.native
+    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
+    @js.native
     def onError(errorMessage: String): Unit = js.native
+    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
+    @js.native
     def onError(errorMessage: String, ex: js.Any): Unit = js.native
   }
+  
+  @JSImport("@uifabric/utilities/lib/BaseComponent", "nullRender")
+  @js.native
+  def nullRender(): Element | Null = js.native
 }

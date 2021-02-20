@@ -8,13 +8,12 @@ import typings.rdfExt.namedNodeMod.NamedNodeExt
 import typings.rdfExt.rdfExtStrings._empty
 import typings.rdfExt.variableMod.VariableExt
 import typings.rdfJs.mod.Quad
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdf-ext/lib/Quad", JSImport.Namespace)
-@js.native
-object quadMod extends js.Object {
+object quadMod {
   
   @js.native
   trait QuadExt extends Quad {

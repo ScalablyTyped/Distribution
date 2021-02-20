@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerServicesListResult extends js.Object {
+trait ContainerServicesListResult extends StObject {
   
   /**
     * An array of objects that describe one or more container services.
@@ -21,27 +22,15 @@ object ContainerServicesListResult {
   }
   
   @scala.inline
-  implicit class ContainerServicesListResultOps[Self <: ContainerServicesListResult] (val x: Self) extends AnyVal {
+  implicit class ContainerServicesListResultMutableBuilder[Self <: ContainerServicesListResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerServices(value: ContainerServiceList): Self = StObject.set(x, "containerServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerServicesUndefined: Self = StObject.set(x, "containerServices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainerServicesVarargs(value: ContainerService*): Self = this.set("containerServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setContainerServices(value: ContainerServiceList): Self = this.set("containerServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerServices: Self = this.set("containerServices", js.undefined)
+    def setContainerServicesVarargs(value: ContainerService*): Self = StObject.set(x, "containerServices", js.Array(value :_*))
   }
 }

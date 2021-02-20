@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Registration extends js.Object {
+trait Registration extends StObject {
   
   /**
     * Required. Settings for contact information linked to the `Registration`. You cannot update these with the `UpdateRegistration` method. To update these settings, use the
@@ -70,100 +71,88 @@ object Registration {
   }
   
   @scala.inline
-  implicit class RegistrationOps[Self <: Registration] (val x: Self) extends AnyVal {
+  implicit class RegistrationMutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactSettings(value: ContactSettings): Self = StObject.set(x, "contactSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactSettingsUndefined: Self = StObject.set(x, "contactSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactSettings(value: ContactSettings): Self = this.set("contactSettings", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteContactSettings: Self = this.set("contactSettings", js.undefined)
+    def setDnsSettings(value: DnsSettings): Self = StObject.set(x, "dnsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDnsSettingsUndefined: Self = StObject.set(x, "dnsSettings", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsSettings(value: DnsSettings): Self = this.set("dnsSettings", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteDnsSettings: Self = this.set("dnsSettings", js.undefined)
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setIssues(value: js.Array[String]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
     @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
-    
-    @scala.inline
-    def setIssuesVarargs(value: String*): Self = this.set("issues", js.Array(value :_*))
-    
-    @scala.inline
-    def setIssues(value: js.Array[String]): Self = this.set("issues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIssues: Self = this.set("issues", js.undefined)
+    def setIssuesVarargs(value: String*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setManagementSettings(value: ManagementSettings): Self = this.set("managementSettings", value.asInstanceOf[js.Any])
+    def setManagementSettings(value: ManagementSettings): Self = StObject.set(x, "managementSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagementSettings: Self = this.set("managementSettings", js.undefined)
+    def setManagementSettingsUndefined: Self = StObject.set(x, "managementSettings", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPendingContactSettings(value: ContactSettings): Self = this.set("pendingContactSettings", value.asInstanceOf[js.Any])
+    def setPendingContactSettings(value: ContactSettings): Self = StObject.set(x, "pendingContactSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePendingContactSettings: Self = this.set("pendingContactSettings", js.undefined)
+    def setPendingContactSettingsUndefined: Self = StObject.set(x, "pendingContactSettings", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setSupportedPrivacyVarargs(value: String*): Self = this.set("supportedPrivacy", js.Array(value :_*))
+    def setSupportedPrivacy(value: js.Array[String]): Self = StObject.set(x, "supportedPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedPrivacy(value: js.Array[String]): Self = this.set("supportedPrivacy", value.asInstanceOf[js.Any])
+    def setSupportedPrivacyUndefined: Self = StObject.set(x, "supportedPrivacy", js.undefined)
     
     @scala.inline
-    def deleteSupportedPrivacy: Self = this.set("supportedPrivacy", js.undefined)
+    def setSupportedPrivacyVarargs(value: String*): Self = StObject.set(x, "supportedPrivacy", js.Array(value :_*))
   }
 }

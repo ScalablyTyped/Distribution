@@ -1,11 +1,12 @@
 package typings.ckeditorCkeditor5Engine.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchType extends js.Object {
+trait BatchType extends StObject {
   
   var batchType: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object BatchType {
   }
   
   @scala.inline
-  implicit class BatchTypeOps[Self <: BatchType] (val x: Self) extends AnyVal {
+  implicit class BatchTypeMutableBuilder[Self <: BatchType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchType(value: String): Self = StObject.set(x, "batchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchTypeUndefined: Self = StObject.set(x, "batchType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchType(value: String): Self = this.set("batchType", value.asInstanceOf[js.Any])
+    def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
     
     @scala.inline
-    def deleteBatchType: Self = this.set("batchType", js.undefined)
+    def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRangeBackward(value: Boolean): Self = this.set("lastRangeBackward", value.asInstanceOf[js.Any])
+    def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
     
     @scala.inline
-    def deleteLastRangeBackward: Self = this.set("lastRangeBackward", js.undefined)
+    def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootName(value: String): Self = this.set("rootName", value.asInstanceOf[js.Any])
+    def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
     
     @scala.inline
-    def deleteRootName: Self = this.set("rootName", js.undefined)
-    
-    @scala.inline
-    def setSelectionAttributesVarargs(value: js.Object*): Self = this.set("selectionAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectionAttributes(value: js.Array[js.Object]): Self = this.set("selectionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionAttributes: Self = this.set("selectionAttributes", js.undefined)
+    def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
   }
 }

@@ -5,13 +5,14 @@ import typings.braintree.anon.AccountNotAuthorizedContactUs
 import typings.braintree.anon.AmexPayWithPoints
 import typings.braintree.anon.Authorize
 import typings.braintree.anon.IssuingBank
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Test")
 @js.native
-class Test () extends js.Object {
+class Test () extends StObject {
   
   var CreditCardDefaults: IssuingBank = js.native
   

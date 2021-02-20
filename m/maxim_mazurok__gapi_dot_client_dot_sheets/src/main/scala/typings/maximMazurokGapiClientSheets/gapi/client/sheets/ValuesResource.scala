@@ -14,12 +14,13 @@ import typings.maximMazurokGapiClientSheets.anon.ResponseDateTimeRenderOption
 import typings.maximMazurokGapiClientSheets.anon.ResponseValueRenderOption
 import typings.maximMazurokGapiClientSheets.anon.SpreadsheetId
 import typings.maximMazurokGapiClientSheets.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValuesResource extends js.Object {
+trait ValuesResource extends StObject {
   
   /**
     * Appends values to a spreadsheet. The input range is used to search for existing data and find a "table" within that range. Values will be appended to the next row of the table,

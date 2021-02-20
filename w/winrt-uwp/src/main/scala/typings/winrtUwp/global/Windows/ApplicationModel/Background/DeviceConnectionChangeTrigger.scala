@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class DeviceConnectionChangeTrigger ()
   extends typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger")
-@js.native
-object DeviceConnectionChangeTrigger extends js.Object {
+object DeviceConnectionChangeTrigger {
   
   /**
     * Begins an asynchronous operation to get the DeviceConnectionChangeTrigger associated with the specified Id.
     * @param deviceId The device Id with which to find the associated trigger.
     * @return The DeviceConnectionChangeTrigger object associated with the specified device Id.
     */
+  /* static member */
+  @JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger.fromIdAsync")
+  @js.native
   def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[
     typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger
   ] = js.native

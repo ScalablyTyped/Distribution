@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindInPageOptions extends js.Object {
+trait FindInPageOptions extends StObject {
   
   /**
     * Whether the operation is first request or a follow up, defaults to `false`.
@@ -43,48 +44,36 @@ object FindInPageOptions {
   }
   
   @scala.inline
-  implicit class FindInPageOptionsOps[Self <: FindInPageOptions] (val x: Self) extends AnyVal {
+  implicit class FindInPageOptionsMutableBuilder[Self <: FindInPageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindNext(value: Boolean): Self = StObject.set(x, "findNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindNextUndefined: Self = StObject.set(x, "findNext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindNext(value: Boolean): Self = this.set("findNext", value.asInstanceOf[js.Any])
+    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
     @scala.inline
-    def deleteFindNext: Self = this.set("findNext", js.undefined)
+    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForward(value: Boolean): Self = this.set("forward", value.asInstanceOf[js.Any])
+    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
     @scala.inline
-    def deleteForward: Self = this.set("forward", js.undefined)
+    def setMedialCapitalAsWordStart(value: Boolean): Self = StObject.set(x, "medialCapitalAsWordStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
+    def setMedialCapitalAsWordStartUndefined: Self = StObject.set(x, "medialCapitalAsWordStart", js.undefined)
     
     @scala.inline
-    def deleteMatchCase: Self = this.set("matchCase", js.undefined)
+    def setWordStart(value: Boolean): Self = StObject.set(x, "wordStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedialCapitalAsWordStart(value: Boolean): Self = this.set("medialCapitalAsWordStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedialCapitalAsWordStart: Self = this.set("medialCapitalAsWordStart", js.undefined)
-    
-    @scala.inline
-    def setWordStart(value: Boolean): Self = this.set("wordStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordStart: Self = this.set("wordStart", js.undefined)
+    def setWordStartUndefined: Self = StObject.set(x, "wordStart", js.undefined)
   }
 }

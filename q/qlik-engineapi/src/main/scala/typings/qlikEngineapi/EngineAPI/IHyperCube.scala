@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *          (GetLayout, GetHyperCubeData, GetHyperCubePivotData, GetHyperCubeStackData).
   */
 @js.native
-trait IHyperCube extends js.Object {
+trait IHyperCube extends StObject {
   
   /**
     * Set of data.
@@ -152,93 +153,81 @@ object IHyperCube {
   }
   
   @scala.inline
-  implicit class IHyperCubeOps[Self <: IHyperCube] (val x: Self) extends AnyVal {
+  implicit class IHyperCubeMutableBuilder[Self <: IHyperCube] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDataPages(value: js.Array[INxDataPage]): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDataPagesVarargs(value: INxDataPage*): Self = StObject.set(x, "qDataPages", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDimensionInfo(value: js.Array[INxDimensionInfo]): Self = StObject.set(x, "qDimensionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDataPagesVarargs(value: INxDataPage*): Self = this.set("qDataPages", js.Array(value :_*))
+    def setQDimensionInfoVarargs(value: INxDimensionInfo*): Self = StObject.set(x, "qDimensionInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQDataPages(value: js.Array[INxDataPage]): Self = this.set("qDataPages", value.asInstanceOf[js.Any])
+    def setQEffectiveInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qEffectiveInterColumnSortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDimensionInfoVarargs(value: INxDimensionInfo*): Self = this.set("qDimensionInfo", js.Array(value :_*))
+    def setQEffectiveInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qEffectiveInterColumnSortOrder", js.Array(value :_*))
     
     @scala.inline
-    def setQDimensionInfo(value: js.Array[INxDimensionInfo]): Self = this.set("qDimensionInfo", value.asInstanceOf[js.Any])
+    def setQError(value: INxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQEffectiveInterColumnSortOrderVarargs(value: Double*): Self = this.set("qEffectiveInterColumnSortOrder", js.Array(value :_*))
+    def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
     
     @scala.inline
-    def setQEffectiveInterColumnSortOrder(value: js.Array[Double]): Self = this.set("qEffectiveInterColumnSortOrder", value.asInstanceOf[js.Any])
+    def setQGrandTotalRow(value: js.Array[INxCell]): Self = StObject.set(x, "qGrandTotalRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQGrandTotalRowVarargs(value: INxCell*): Self = this.set("qGrandTotalRow", js.Array(value :_*))
+    def setQGrandTotalRowVarargs(value: INxCell*): Self = StObject.set(x, "qGrandTotalRow", js.Array(value :_*))
     
     @scala.inline
-    def setQGrandTotalRow(value: js.Array[INxCell]): Self = this.set("qGrandTotalRow", value.asInstanceOf[js.Any])
+    def setQHasOtherValues(value: Boolean): Self = StObject.set(x, "qHasOtherValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasOtherValues(value: Boolean): Self = this.set("qHasOtherValues", value.asInstanceOf[js.Any])
+    def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMeasureInfoVarargs(value: INxMeasureInfo*): Self = this.set("qMeasureInfo", js.Array(value :_*))
+    def setQIndentModeUndefined: Self = StObject.set(x, "qIndentMode", js.undefined)
     
     @scala.inline
-    def setQMeasureInfo(value: js.Array[INxMeasureInfo]): Self = this.set("qMeasureInfo", value.asInstanceOf[js.Any])
+    def setQLastExpandedPos(value: INxCellPosition): Self = StObject.set(x, "qLastExpandedPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMode(value: NxHypercubeMode): Self = this.set("qMode", value.asInstanceOf[js.Any])
+    def setQLastExpandedPosUndefined: Self = StObject.set(x, "qLastExpandedPos", js.undefined)
     
     @scala.inline
-    def setQNoOfLeftDims(value: Double): Self = this.set("qNoOfLeftDims", value.asInstanceOf[js.Any])
+    def setQMeasureInfo(value: js.Array[INxMeasureInfo]): Self = StObject.set(x, "qMeasureInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPivotDataPagesVarargs(value: INxPivotPage*): Self = this.set("qPivotDataPages", js.Array(value :_*))
+    def setQMeasureInfoVarargs(value: INxMeasureInfo*): Self = StObject.set(x, "qMeasureInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQPivotDataPages(value: js.Array[INxPivotPage]): Self = this.set("qPivotDataPages", value.asInstanceOf[js.Any])
+    def setQMode(value: NxHypercubeMode): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSize(value: ISize): Self = this.set("qSize", value.asInstanceOf[js.Any])
+    def setQNoOfLeftDims(value: Double): Self = StObject.set(x, "qNoOfLeftDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStackedDataPagesVarargs(value: INxStackPage*): Self = this.set("qStackedDataPages", js.Array(value :_*))
+    def setQPivotDataPages(value: js.Array[INxPivotPage]): Self = StObject.set(x, "qPivotDataPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStackedDataPages(value: js.Array[INxStackPage]): Self = this.set("qStackedDataPages", value.asInstanceOf[js.Any])
+    def setQPivotDataPagesVarargs(value: INxPivotPage*): Self = StObject.set(x, "qPivotDataPages", js.Array(value :_*))
     
     @scala.inline
-    def setQStateName(value: String): Self = this.set("qStateName", value.asInstanceOf[js.Any])
+    def setQSize(value: ISize): Self = StObject.set(x, "qSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQError(value: INxValidationError): Self = this.set("qError", value.asInstanceOf[js.Any])
+    def setQStackedDataPages(value: js.Array[INxStackPage]): Self = StObject.set(x, "qStackedDataPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQError: Self = this.set("qError", js.undefined)
+    def setQStackedDataPagesVarargs(value: INxStackPage*): Self = StObject.set(x, "qStackedDataPages", js.Array(value :_*))
     
     @scala.inline
-    def setQIndentMode(value: Boolean): Self = this.set("qIndentMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQIndentMode: Self = this.set("qIndentMode", js.undefined)
-    
-    @scala.inline
-    def setQLastExpandedPos(value: INxCellPosition): Self = this.set("qLastExpandedPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQLastExpandedPos: Self = this.set("qLastExpandedPos", js.undefined)
+    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

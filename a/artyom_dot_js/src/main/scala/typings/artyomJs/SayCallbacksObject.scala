@@ -1,11 +1,12 @@
 package typings.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SayCallbacksObject extends js.Object {
+trait SayCallbacksObject extends StObject {
   
   var lang: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object SayCallbacksObject {
   }
   
   @scala.inline
-  implicit class SayCallbacksObjectOps[Self <: SayCallbacksObject] (val x: Self) extends AnyVal {
+  implicit class SayCallbacksObjectMutableBuilder[Self <: SayCallbacksObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setOnStart(value: js.Function): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnd(value: js.Function): Self = this.set("onEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
-    
-    @scala.inline
-    def setOnStart(value: js.Function): Self = this.set("onStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
   }
 }

@@ -8,16 +8,16 @@ import typings.firebaseDatabase.operationMod.Operation
 import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.viewCacheMod.ViewCache
 import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/ViewProcessor", JSImport.Namespace)
-@js.native
-object viewProcessorMod extends js.Object {
+object viewProcessorMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ProcessorResult")
   @js.native
-  class ProcessorResult protected () extends js.Object {
+  class ProcessorResult protected () extends StObject {
     /**
       * @param {!ViewCache} viewCache
       * @param {!Array.<!Change>} changes
@@ -29,8 +29,9 @@ object viewProcessorMod extends js.Object {
     val viewCache: ViewCache = js.native
   }
   
+  @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ViewProcessor")
   @js.native
-  class ViewProcessor protected () extends js.Object {
+  class ViewProcessor protected () extends StObject {
     /**
       * @param {!NodeFilter} filter_
       */
@@ -188,8 +189,11 @@ object viewProcessorMod extends js.Object {
     var revertUserWrite_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object ViewProcessor extends js.Object {
+  object ViewProcessor {
+    
+    @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ViewProcessor")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @param {!ViewCache} viewCache
@@ -197,7 +201,11 @@ object viewProcessorMod extends js.Object {
       * @return {boolean}
       * @private
       */
-    var cacheHasChild_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ViewProcessor.cacheHasChild_")
+    @js.native
+    def cacheHasChild_ : js.Any = js.native
+    @scala.inline
+    def cacheHasChild__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHasChild_")(x.asInstanceOf[js.Any])
     
     /**
       * @param {!ViewCache} oldViewCache
@@ -205,6 +213,10 @@ object viewProcessorMod extends js.Object {
       * @param {!Array.<!Change>} accumulator
       * @private
       */
-    var maybeAddValueEvent_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ViewProcessor.maybeAddValueEvent_")
+    @js.native
+    def maybeAddValueEvent_ : js.Any = js.native
+    @scala.inline
+    def maybeAddValueEvent__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maybeAddValueEvent_")(x.asInstanceOf[js.Any])
   }
 }

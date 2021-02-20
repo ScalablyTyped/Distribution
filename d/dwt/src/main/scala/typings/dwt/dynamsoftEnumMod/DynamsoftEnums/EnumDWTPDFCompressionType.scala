@@ -1,16 +1,16 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTPDFCompressionType extends js.Object
+sealed trait EnumDWTPDFCompressionType extends StObject
 /** PDF file compression type. */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_PDFCompressionType")
 @js.native
-object EnumDWTPDFCompressionType extends js.Object {
+object EnumDWTPDFCompressionType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTPDFCompressionType with Double] = js.native
@@ -18,36 +18,30 @@ object EnumDWTPDFCompressionType extends js.Object {
   /** Auto mode. */
   @js.native
   sealed trait PDF_AUTO extends EnumDWTPDFCompressionType
-  /* 0 */ @js.native
-  object PDF_AUTO extends TopLevel[PDF_AUTO with Double]
+  /* 0 */ val PDF_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType.PDF_AUTO with Double = js.native
   
   /** CCITT Group 3 fax encoding. */
   @js.native
   sealed trait PDF_FAX3 extends EnumDWTPDFCompressionType
-  /* 1 */ @js.native
-  object PDF_FAX3 extends TopLevel[PDF_FAX3 with Double]
+  /* 1 */ val PDF_FAX3: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType.PDF_FAX3 with Double = js.native
   
   /** CCITT Group 4 fax encoding */
   @js.native
   sealed trait PDF_FAX4 extends EnumDWTPDFCompressionType
-  /* 2 */ @js.native
-  object PDF_FAX4 extends TopLevel[PDF_FAX4 with Double]
+  /* 2 */ val PDF_FAX4: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType.PDF_FAX4 with Double = js.native
   
   /** JPEG compression. */
   @js.native
   sealed trait PDF_JPEG extends EnumDWTPDFCompressionType
-  /* 5 */ @js.native
-  object PDF_JPEG extends TopLevel[PDF_JPEG with Double]
+  /* 5 */ val PDF_JPEG: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType.PDF_JPEG with Double = js.native
   
   /** Lempel Ziv and Welch */
   @js.native
   sealed trait PDF_LZW extends EnumDWTPDFCompressionType
-  /* 3 */ @js.native
-  object PDF_LZW extends TopLevel[PDF_LZW with Double]
+  /* 3 */ val PDF_LZW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType.PDF_LZW with Double = js.native
   
   /** CCITT modified Huffman RLE. */
   @js.native
   sealed trait PDF_RLE extends EnumDWTPDFCompressionType
-  /* 4 */ @js.native
-  object PDF_RLE extends TopLevel[PDF_RLE with Double]
+  /* 4 */ val PDF_RLE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType.PDF_RLE with Double = js.native
 }

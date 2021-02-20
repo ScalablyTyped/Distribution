@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a part of a training phrase.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart extends js.Object {
+trait SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart extends StObject {
   
   /**
     * Optional. The parameter name for the value extracted from the annotated
@@ -45,42 +46,30 @@ object SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePartOps[Self <: SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePartMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteEntityType: Self = this.set("entityType", js.undefined)
+    def setUserDefined(value: Boolean): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUserDefined(value: Boolean): Self = this.set("userDefined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefined: Self = this.set("userDefined", js.undefined)
+    def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
   }
 }

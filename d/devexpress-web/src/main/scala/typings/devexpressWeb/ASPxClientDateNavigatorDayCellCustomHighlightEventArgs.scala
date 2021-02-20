@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientDateNavigatorDayCellCustomHighlightEventArgsOps[Self <: ASPxClientDateNavigatorDayCellCustomHighlightEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDateNavigatorDayCellCustomHighlightEventArgsMutableBuilder[Self <: ASPxClientDateNavigatorDayCellCustomHighlightEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointments(value: js.Array[ASPxClientAppointment]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppointmentsVarargs(value: ASPxClientAppointment*): Self = StObject.set(x, "appointments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentsVarargs(value: ASPxClientAppointment*): Self = this.set("appointments", js.Array(value :_*))
-    
-    @scala.inline
-    def setAppointments(value: js.Array[ASPxClientAppointment]): Self = this.set("appointments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = this.set("htmlElement", value.asInstanceOf[js.Any])
+    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
   }
 }

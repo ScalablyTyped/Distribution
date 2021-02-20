@@ -2,12 +2,13 @@ package typings.babelTraverse.anon
 
 import org.scalablytyped.runtime.TopLevel
 import typings.babelTraverse.mod.Visitor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofvisitors extends js.Object {
+trait Typeofvisitors extends StObject {
   
   /**
     * `explode()` will take a `Visitor` object with all of the various shorthands

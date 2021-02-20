@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutActionRevisionOutput extends js.Object {
+trait PutActionRevisionOutput extends StObject {
   
   /**
     * Indicates whether the artifact revision was previously used in an execution of the specified pipeline.
@@ -26,30 +27,18 @@ object PutActionRevisionOutput {
   }
   
   @scala.inline
-  implicit class PutActionRevisionOutputOps[Self <: PutActionRevisionOutput] (val x: Self) extends AnyVal {
+  implicit class PutActionRevisionOutputMutableBuilder[Self <: PutActionRevisionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewRevisionUndefined: Self = StObject.set(x, "newRevision", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewRevision(value: Boolean): Self = this.set("newRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewRevision: Self = this.set("newRevision", js.undefined)
-    
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineExecutionId: Self = this.set("pipelineExecutionId", js.undefined)
+    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
   }
 }

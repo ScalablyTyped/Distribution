@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * all editors to share logic and reduce the amount of replicated code among editors.
   */
 @js.native
-trait IContentEditingHelper extends js.Object {
+trait IContentEditingHelper extends StObject {
   
   /**
     * @ngdoc method
@@ -113,39 +114,27 @@ object IContentEditingHelper {
   }
   
   @scala.inline
-  implicit class IContentEditingHelperOps[Self <: IContentEditingHelper] (val x: Self) extends AnyVal {
+  implicit class IContentEditingHelperMutableBuilder[Self <: IContentEditingHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllProps(value: js.Any => js.Any): Self = StObject.set(x, "getAllProps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllowedActions(value: (js.Any, js.Any) => js.Array[String]): Self = StObject.set(x, "getAllowedActions", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetButtonFromAction(value: String => js.Any): Self = StObject.set(x, "getButtonFromAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllProps(value: js.Any => js.Any): Self = this.set("getAllProps", js.Any.fromFunction1(value))
+    def setHandleSaveError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handleSaveError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllowedActions(value: (js.Any, js.Any) => js.Array[String]): Self = this.set("getAllowedActions", js.Any.fromFunction2(value))
+    def setHandleSuccessfulSave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handleSuccessfulSave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetButtonFromAction(value: String => js.Any): Self = this.set("getButtonFromAction", js.Any.fromFunction1(value))
+    def setReBindChangedProperties(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "reBindChangedProperties", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHandleSaveError(value: /* repeated */ js.Any => Unit): Self = this.set("handleSaveError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHandleSuccessfulSave(value: /* repeated */ js.Any => Unit): Self = this.set("handleSuccessfulSave", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReBindChangedProperties(value: (js.Any, js.Any) => Unit): Self = this.set("reBindChangedProperties", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRedirectToCreatedContent(value: (Double, js.Any) => Unit): Self = this.set("redirectToCreatedContent", js.Any.fromFunction2(value))
+    def setRedirectToCreatedContent(value: (Double, js.Any) => Unit): Self = StObject.set(x, "redirectToCreatedContent", js.Any.fromFunction2(value))
   }
 }

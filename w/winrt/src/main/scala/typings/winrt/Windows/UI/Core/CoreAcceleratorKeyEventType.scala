@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreAcceleratorKeyEventType extends js.Object
+sealed trait CoreAcceleratorKeyEventType extends StObject
 @JSGlobal("Windows.UI.Core.CoreAcceleratorKeyEventType")
 @js.native
-object CoreAcceleratorKeyEventType extends js.Object {
+object CoreAcceleratorKeyEventType extends StObject {
   
   @js.native
   sealed trait character extends CoreAcceleratorKeyEventType

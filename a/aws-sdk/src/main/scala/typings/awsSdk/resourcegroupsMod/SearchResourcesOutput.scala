@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResourcesOutput extends js.Object {
+trait SearchResourcesOutput extends StObject {
   
   /**
     * If present, indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null.
@@ -31,42 +32,30 @@ object SearchResourcesOutput {
   }
   
   @scala.inline
-  implicit class SearchResourcesOutputOps[Self <: SearchResourcesOutput] (val x: Self) extends AnyVal {
+  implicit class SearchResourcesOutputMutableBuilder[Self <: SearchResourcesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryErrors(value: QueryErrorList): Self = StObject.set(x, "QueryErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setQueryErrorsUndefined: Self = StObject.set(x, "QueryErrors", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setQueryErrorsVarargs(value: QueryError*): Self = StObject.set(x, "QueryErrors", js.Array(value :_*))
     
     @scala.inline
-    def setQueryErrorsVarargs(value: QueryError*): Self = this.set("QueryErrors", js.Array(value :_*))
+    def setResourceIdentifiers(value: ResourceIdentifierList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryErrors(value: QueryErrorList): Self = this.set("QueryErrors", value.asInstanceOf[js.Any])
+    def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
     
     @scala.inline
-    def deleteQueryErrors: Self = this.set("QueryErrors", js.undefined)
-    
-    @scala.inline
-    def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = this.set("ResourceIdentifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceIdentifiers(value: ResourceIdentifierList): Self = this.set("ResourceIdentifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceIdentifiers: Self = this.set("ResourceIdentifiers", js.undefined)
+    def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
   }
 }

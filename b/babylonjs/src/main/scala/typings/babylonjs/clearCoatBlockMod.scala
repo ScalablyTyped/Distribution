@@ -5,14 +5,14 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.reflectionBlockMod.ReflectionBlock
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/PBR/clearCoatBlock", JSImport.Namespace)
-@js.native
-object clearCoatBlockMod extends js.Object {
+object clearCoatBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/clearCoatBlock", "ClearCoatBlock")
   @js.native
   class ClearCoatBlock protected () extends NodeMaterialBlock {
     /**
@@ -81,8 +81,7 @@ object clearCoatBlockMod extends js.Object {
     def worldTangent: NodeMaterialConnectionPoint = js.native
   }
   /* static members */
-  @js.native
-  object ClearCoatBlock extends js.Object {
+  object ClearCoatBlock {
     
     /**
       * Gets the main code of the block (fragment side)
@@ -95,6 +94,8 @@ object clearCoatBlockMod extends js.Object {
       * @param worldNormalVarName name of the variable holding the world normal
       * @returns the shader code
       */
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/clearCoatBlock", "ClearCoatBlock.GetCode")
+    @js.native
     def GetCode(
       state: NodeMaterialBuildState,
       ccBlock: Nullable[ClearCoatBlock],

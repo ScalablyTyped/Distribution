@@ -8,24 +8,31 @@ import typings.std.AsyncIterable
 import typings.std.Iterable
 import typings.typeorm.typeormStrings.browser
 import typings.typeorm.typeormStrings.node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/platform/PlatformTools", JSImport.Namespace)
-@js.native
-object platformToolsMod extends js.Object {
+object platformToolsMod {
   
+  @JSImport("typeorm/browser/platform/PlatformTools", "EventEmitter")
   @js.native
   class EventEmitter ()
     extends typings.node.eventsMod.EventEmitter {
     def this(options: EventEmitterOptions) = this()
   }
-  /* static members */
-  @js.native
-  object EventEmitter extends js.Object {
+  object EventEmitter {
     
-    var defaultMaxListeners: Double = js.native
+    @JSImport("typeorm/browser/platform/PlatformTools", "EventEmitter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("typeorm/browser/platform/PlatformTools", "EventEmitter.defaultMaxListeners")
+    @js.native
+    def defaultMaxListeners: Double = js.native
+    @scala.inline
+    def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
     
     /**
       * This symbol shall be used to install a listener for only monitoring `'error'`
@@ -36,19 +43,29 @@ object platformToolsMod extends js.Object {
       * `'error'` event is emitted, therefore the process will still crash if no
       * regular `'error'` listener is installed.
       */
+    /* static member */
+    @JSImport("typeorm/browser/platform/PlatformTools", "EventEmitter.errorMonitor")
+    @js.native
     val errorMonitor: js.Symbol = js.native
     
     /** @deprecated since v4.0.0 */
+    /* static member */
+    @JSImport("typeorm/browser/platform/PlatformTools", "EventEmitter.listenerCount")
+    @js.native
     def listenerCount(emitter: typings.node.eventsMod.EventEmitter, event: String): Double = js.native
+    @JSImport("typeorm/browser/platform/PlatformTools", "EventEmitter.listenerCount")
+    @js.native
     def listenerCount(emitter: typings.node.eventsMod.EventEmitter, event: js.Symbol): Double = js.native
   }
   
+  @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools")
   @js.native
-  class PlatformTools () extends js.Object
+  class PlatformTools () extends StObject
   /* static members */
-  @js.native
-  object PlatformTools extends js.Object {
+  object PlatformTools {
     
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.appendFileSync")
+    @js.native
     def appendFileSync(filename: String, data: js.Any): Unit = js.native
     
     /**
@@ -56,99 +73,147 @@ object platformToolsMod extends js.Object {
       *
       * @param path The file to load as a dotenv configuration
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.dotenv")
+    @js.native
     def dotenv(pathStr: String): Unit = js.native
     
     /**
       * Synchronously checks if file exist. Does "fs.existsSync".
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.fileExist")
+    @js.native
     def fileExist(pathStr: String): Boolean = js.native
     
     /**
       * Gets environment variable.
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.getEnvVariable")
+    @js.native
     def getEnvVariable(name: String): js.Any = js.native
     
     /**
       * Gets global variable where global stuff can be stored.
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.getGlobalVariable")
+    @js.native
     def getGlobalVariable(): js.Any = js.native
     
     /**
       * Highlights json string to be print in the console.
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.highlightJson")
+    @js.native
     def highlightJson(json: String): String = js.native
     
     /**
       * Highlights sql string to be print in the console.
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.highlightSql")
+    @js.native
     def highlightSql(sql: String): String = js.native
     
     /**
       * Loads ("require"-s) given file or package.
       * This operation only supports on node platform
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.load")
+    @js.native
     def load(name: String): js.Any = js.native
     
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.log")
+    @js.native
     def log(message: String): Unit = js.native
     
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.logError")
+    @js.native
     def logError(prefix: String, error: js.Any): Unit = js.native
     
     /**
       * Logging functions needed by AdvancedConsoleLogger
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.logInfo")
+    @js.native
     def logInfo(prefix: String, info: js.Any): Unit = js.native
     
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.logWarn")
+    @js.native
     def logWarn(prefix: String, warning: js.Any): Unit = js.native
     
     /**
       * Gets file extension. Does "path.extname".
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.pathExtname")
+    @js.native
     def pathExtname(pathStr: String): String = js.native
     
     /**
       * Normalizes given path. Does "path.normalize".
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.pathNormalize")
+    @js.native
     def pathNormalize(pathStr: String): String = js.native
     
     /**
       * Resolved given path. Does "path.resolve".
       */
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.pathResolve")
+    @js.native
     def pathResolve(pathStr: String): String = js.native
     
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.readFileSync")
+    @js.native
     def readFileSync(filename: String): Buffer = js.native
+    
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.warn")
+    @js.native
+    def warn(message: String): String = js.native
+    
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.writeFile")
+    @js.native
+    def writeFile(path: String, data: js.Any): js.Promise[Unit] = js.native
     
     /**
       * Type of the currently running platform.
       */
-    var `type`: browser | node = js.native
-    
-    def warn(message: String): String = js.native
-    
-    def writeFile(path: String, data: js.Any): js.Promise[Unit] = js.native
+    @JSImport("typeorm/browser/platform/PlatformTools", "PlatformTools.type")
+    @js.native
+    val `type`: browser | node = js.native
   }
   
+  @JSImport("typeorm/browser/platform/PlatformTools", "ReadStream")
   @js.native
   class ReadStream ()
-    extends typings.node.fsMod.ReadStream
+    extends typings.node.fsMod.ReadStream {
+    def this(opts: ReadableOptions) = this()
+  }
   
+  @JSImport("typeorm/browser/platform/PlatformTools", "Readable")
   @js.native
   class Readable ()
     extends typings.node.streamMod.Readable {
     def this(opts: ReadableOptions) = this()
   }
-  /* static members */
-  @js.native
-  object Readable extends js.Object {
+  object Readable {
     
+    @JSImport("typeorm/browser/platform/PlatformTools", "Readable.from")
+    @js.native
     def from(iterable: AsyncIterable[_]): typings.node.streamMod.Readable = js.native
+    @JSImport("typeorm/browser/platform/PlatformTools", "Readable.from")
+    @js.native
     def from(iterable: AsyncIterable[_], options: ReadableOptions): typings.node.streamMod.Readable = js.native
     /**
       * A utility method for creating Readable Streams out of iterators.
       */
+    /* static member */
+    @JSImport("typeorm/browser/platform/PlatformTools", "Readable.from")
+    @js.native
     def from(iterable: Iterable[_]): typings.node.streamMod.Readable = js.native
+    @JSImport("typeorm/browser/platform/PlatformTools", "Readable.from")
+    @js.native
     def from(iterable: Iterable[_], options: ReadableOptions): typings.node.streamMod.Readable = js.native
   }
   
+  @JSImport("typeorm/browser/platform/PlatformTools", "Writable")
   @js.native
   class Writable ()
     extends typings.node.streamMod.Writable {

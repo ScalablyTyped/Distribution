@@ -6,14 +6,14 @@ import typings.materialDataTable.anon.PartialMDCDataTableAdapte
 import typings.materialDataTable.typesMod.SortActionEventData
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/data-table/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/data-table/foundation", "MDCDataTableFoundation")
   @js.native
   class MDCDataTableFoundation () extends MDCFoundation[MDCDataTableAdapter] {
     def this(adapter: PartialMDCDataTableAdapte) = this()
@@ -81,11 +81,5 @@ object foundationMod extends js.Object {
       * loading state.
       */
     def showProgress(): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCDataTableFoundation extends js.Object {
-    
-    def defaultAdapter: MDCDataTableAdapter = js.native
   }
 }

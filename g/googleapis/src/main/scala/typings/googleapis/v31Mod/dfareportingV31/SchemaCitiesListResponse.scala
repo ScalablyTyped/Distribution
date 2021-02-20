@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * City List Response
   */
 @js.native
-trait SchemaCitiesListResponse extends js.Object {
+trait SchemaCitiesListResponse extends StObject {
   
   /**
     * City collection.
@@ -30,33 +31,21 @@ object SchemaCitiesListResponse {
   }
   
   @scala.inline
-  implicit class SchemaCitiesListResponseOps[Self <: SchemaCitiesListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCitiesListResponseMutableBuilder[Self <: SchemaCitiesListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCities(value: js.Array[SchemaCity]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
     @scala.inline
-    def setCitiesVarargs(value: SchemaCity*): Self = this.set("cities", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCities(value: js.Array[SchemaCity]): Self = this.set("cities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCities: Self = this.set("cities", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

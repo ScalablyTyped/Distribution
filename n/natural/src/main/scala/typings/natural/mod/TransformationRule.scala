@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformationRule extends js.Object {
+trait TransformationRule extends StObject {
   
   @JSName("apply")
   def apply(tagged_sentence: js.Array[js.Array[String]], position: Double): Unit = js.native
@@ -33,36 +34,24 @@ object TransformationRule {
   }
   
   @scala.inline
-  implicit class TransformationRuleOps[Self <: TransformationRule] (val x: Self) extends AnyVal {
+  implicit class TransformationRuleMutableBuilder[Self <: TransformationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: (js.Array[js.Array[String]], Double) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLiteral(value: js.Array[String]): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLiteralVarargs(value: String*): Self = StObject.set(x, "literal", js.Array(value :_*))
     
     @scala.inline
-    def setApply(value: (js.Array[js.Array[String]], Double) => Unit): Self = this.set("apply", js.Any.fromFunction2(value))
+    def setNew_category(value: String): Self = StObject.set(x, "new_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiteralVarargs(value: String*): Self = this.set("literal", js.Array(value :_*))
+    def setOld_category(value: String): Self = StObject.set(x, "old_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiteral(value: js.Array[String]): Self = this.set("literal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNew_category(value: String): Self = this.set("new_category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOld_category(value: String): Self = this.set("old_category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredicate(value: Predicate): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    def setPredicate(value: Predicate): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
   }
 }

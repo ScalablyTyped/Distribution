@@ -1,5 +1,6 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Customized Adaptive Bitrate Streaming Controller.
   */
 @js.native
-trait AbrController extends js.Object {
+trait AbrController extends StObject {
   
   /**
     * get: capping/max level value that could be used by ABR Controller
@@ -57,39 +58,27 @@ object AbrController {
   }
   
   @scala.inline
-  implicit class AbrControllerOps[Self <: AbrController] (val x: Self) extends AnyVal {
+  implicit class AbrControllerMutableBuilder[Self <: AbrController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoLevelCapping(value: Double): Self = StObject.set(x, "autoLevelCapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandledEvents(value: js.Array[String]): Self = StObject.set(x, "handledEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandledEventsVarargs(value: String*): Self = StObject.set(x, "handledEvents", js.Array(value :_*))
     
     @scala.inline
-    def setAutoLevelCapping(value: Double): Self = this.set("autoLevelCapping", value.asInstanceOf[js.Any])
+    def setHls(value: Hls): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandledEventsVarargs(value: String*): Self = this.set("handledEvents", js.Array(value :_*))
+    def setLastLoadedFragLevel(value: Double): Self = StObject.set(x, "lastLoadedFragLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandledEvents(value: js.Array[String]): Self = this.set("handledEvents", value.asInstanceOf[js.Any])
+    def setNextAutoLevel(value: Double): Self = StObject.set(x, "nextAutoLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHls(value: Hls): Self = this.set("hls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastLoadedFragLevel(value: Double): Self = this.set("lastLoadedFragLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextAutoLevel(value: Double): Self = this.set("nextAutoLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseGenericHandler(value: Boolean): Self = this.set("useGenericHandler", value.asInstanceOf[js.Any])
+    def setUseGenericHandler(value: Boolean): Self = StObject.set(x, "useGenericHandler", value.asInstanceOf[js.Any])
   }
 }

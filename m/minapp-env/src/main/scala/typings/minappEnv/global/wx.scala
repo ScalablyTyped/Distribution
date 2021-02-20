@@ -1,11 +1,20 @@
 package typings.minappEnv.global
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.minappEnv.wx.Wx
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("wx")
-@js.native
-object wx extends TopLevel[Wx]
+object wx extends Shortcut {
+  
+  @JSGlobal("wx")
+  @js.native
+  val ^ : Wx = js.native
+  
+  type _To = Wx
+  
+  /* This means you don't have to write `^`, but can instead just say `wx.foo` */
+  override def _to: Wx = ^
+}

@@ -1,12 +1,13 @@
 package typings.antvComponent.typesMod
 
 import typings.antvGBase.typesMod.ShapeAttrs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrosshairLineCfg extends js.Object {
+trait CrosshairLineCfg extends StObject {
   
   /**
     * 线的配置项
@@ -23,24 +24,12 @@ object CrosshairLineCfg {
   }
   
   @scala.inline
-  implicit class CrosshairLineCfgOps[Self <: CrosshairLineCfg] (val x: Self) extends AnyVal {
+  implicit class CrosshairLineCfgMutableBuilder[Self <: CrosshairLineCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

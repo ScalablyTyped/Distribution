@@ -3,15 +3,18 @@ package typings.unistUtilIs
 import typings.std.Partial
 import typings.unist.mod.Node
 import typings.unist.mod.Parent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("unist-util-is", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]]): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](
     node: js.Any,
     test: js.Array[Test[_]],
@@ -19,7 +22,11 @@ object mod extends js.Object {
     parent: js.UndefOr[scala.Nothing],
     context: js.Any
   ): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: js.UndefOr[scala.Nothing], parent: Parent): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](
     node: js.Any,
     test: js.Array[Test[_]],
@@ -27,7 +34,11 @@ object mod extends js.Object {
     parent: Parent,
     context: js.Any
   ): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](
     node: js.Any,
     test: js.Array[Test[_]],
@@ -35,7 +46,11 @@ object mod extends js.Object {
     parent: js.UndefOr[scala.Nothing],
     context: js.Any
   ): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double, parent: Parent): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
   /**
     * Unist utility to check if a node passes a test.
@@ -52,7 +67,11 @@ object mod extends js.Object {
     * @typeParam T type that node is compared with
     * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
     */
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T]): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](
     node: js.Any,
     test: Test[T],
@@ -60,11 +79,23 @@ object mod extends js.Object {
     parent: js.UndefOr[scala.Nothing],
     context: js.Any
   ): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: js.UndefOr[scala.Nothing], parent: Parent): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: js.UndefOr[scala.Nothing], parent: Parent, context: js.Any): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: js.UndefOr[scala.Nothing], context: js.Any): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent): /* is T */ Boolean = js.native
+  @JSImport("unist-util-is", JSImport.Namespace)
+  @js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
   
   /**

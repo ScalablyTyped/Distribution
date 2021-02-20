@@ -2,17 +2,20 @@ package typings.playable
 
 import typings.playable.interactionIndicatorTypesMod.IInteractionIndicatorViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator.view", JSImport.Namespace)
-@js.native
-object interactionIndicatorViewMod extends js.Object {
+object interactionIndicatorViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator.view", JSImport.Default)
+  @js.native
+  class default () extends InteractionIndicatorView
   
   @js.native
   trait InteractionIndicatorView
-    extends typings.playable.stylableMod.default[IInteractionIndicatorViewStyles] {
+    extends typings.playable.viewMod.default[IInteractionIndicatorViewStyles] {
     
     @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
@@ -55,7 +58,4 @@ object interactionIndicatorViewMod extends js.Object {
     
     def show(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends InteractionIndicatorView
 }

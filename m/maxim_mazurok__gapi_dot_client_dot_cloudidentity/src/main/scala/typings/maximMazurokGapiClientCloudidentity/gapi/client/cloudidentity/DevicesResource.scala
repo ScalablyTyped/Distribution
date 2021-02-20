@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientCloudidentity.anon.QuotaUser
 import typings.maximMazurokGapiClientCloudidentity.anon.Resource
 import typings.maximMazurokGapiClientCloudidentity.anon.UploadType
 import typings.maximMazurokGapiClientCloudidentity.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevicesResource extends js.Object {
+trait DevicesResource extends StObject {
   
   def cancelWipe(request: Key, body: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceRequest): Request[Operation] = js.native
   /**

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoverageHours extends js.Object {
+trait CoverageHours extends StObject {
   
   /**
     * The percentage of instance hours that a reservation covered.
@@ -36,42 +37,30 @@ object CoverageHours {
   }
   
   @scala.inline
-  implicit class CoverageHoursOps[Self <: CoverageHours] (val x: Self) extends AnyVal {
+  implicit class CoverageHoursMutableBuilder[Self <: CoverageHours] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverageHoursPercentage(value: CoverageHoursPercentage): Self = StObject.set(x, "CoverageHoursPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverageHoursPercentageUndefined: Self = StObject.set(x, "CoverageHoursPercentage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDemandHours(value: OnDemandHours): Self = StObject.set(x, "OnDemandHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverageHoursPercentage(value: CoverageHoursPercentage): Self = this.set("CoverageHoursPercentage", value.asInstanceOf[js.Any])
+    def setOnDemandHoursUndefined: Self = StObject.set(x, "OnDemandHours", js.undefined)
     
     @scala.inline
-    def deleteCoverageHoursPercentage: Self = this.set("CoverageHoursPercentage", js.undefined)
+    def setReservedHours(value: ReservedHours): Self = StObject.set(x, "ReservedHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandHours(value: OnDemandHours): Self = this.set("OnDemandHours", value.asInstanceOf[js.Any])
+    def setReservedHoursUndefined: Self = StObject.set(x, "ReservedHours", js.undefined)
     
     @scala.inline
-    def deleteOnDemandHours: Self = this.set("OnDemandHours", js.undefined)
+    def setTotalRunningHours(value: TotalRunningHours): Self = StObject.set(x, "TotalRunningHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedHours(value: ReservedHours): Self = this.set("ReservedHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedHours: Self = this.set("ReservedHours", js.undefined)
-    
-    @scala.inline
-    def setTotalRunningHours(value: TotalRunningHours): Self = this.set("TotalRunningHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRunningHours: Self = this.set("TotalRunningHours", js.undefined)
+    def setTotalRunningHoursUndefined: Self = StObject.set(x, "TotalRunningHours", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.modelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-cognito-identity/types/models", "MappingRuleMatchType")
 @js.native
-object MappingRuleMatchType extends js.Object {
+object MappingRuleMatchType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.awsSdkClientCognitoIdentity.models0Mod.MappingRuleMatchType with String] = js.native

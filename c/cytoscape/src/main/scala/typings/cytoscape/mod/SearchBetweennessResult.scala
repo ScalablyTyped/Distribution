@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.betweennessCentrality
   */
 @js.native
-trait SearchBetweennessResult extends js.Object {
+trait SearchBetweennessResult extends StObject {
   
   /** returns the betweenness centrality of the specified node */
   def betweenness(node: NodeSingular): Double = js.native
@@ -31,27 +32,15 @@ object SearchBetweennessResult {
   }
   
   @scala.inline
-  implicit class SearchBetweennessResultOps[Self <: SearchBetweennessResult] (val x: Self) extends AnyVal {
+  implicit class SearchBetweennessResultMutableBuilder[Self <: SearchBetweennessResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBetweenness(value: NodeSingular => Double): Self = StObject.set(x, "betweenness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBetweennessNormalised(value: NodeSingular => Double): Self = StObject.set(x, "betweennessNormalised", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBetweenness(value: NodeSingular => Double): Self = this.set("betweenness", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBetweennessNormalised(value: NodeSingular => Double): Self = this.set("betweennessNormalised", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBetweennessNormalized(value: NodeSingular => Double): Self = this.set("betweennessNormalized", js.Any.fromFunction1(value))
+    def setBetweennessNormalized(value: NodeSingular => Double): Self = StObject.set(x, "betweennessNormalized", js.Any.fromFunction1(value))
   }
 }

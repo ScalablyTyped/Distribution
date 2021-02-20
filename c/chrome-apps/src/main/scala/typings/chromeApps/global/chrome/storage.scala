@@ -6,6 +6,7 @@ import typings.chromeApps.chrome.storage.ManagedStorageArea
 import typings.chromeApps.chrome.storage.StorageAreas
 import typings.chromeApps.chrome.storage.StorageChange
 import typings.chromeApps.chrome.storage.SyncStorageArea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  'storage'
   * @since Chrome 20.
   */
-@JSGlobal("chrome.storage")
-@js.native
-object storage extends js.Object {
+object storage {
   
   /** Items in the local storage area are local to each machine. */
+  @JSGlobal("chrome.storage.local")
+  @js.native
   val local: LocalStorageArea = js.native
   
   /**
@@ -33,13 +34,19 @@ object storage extends js.Object {
     * results in an error.
     * @since Chrome 33.
     */
+  @JSGlobal("chrome.storage.managed")
+  @js.native
   val managed: ManagedStorageArea = js.native
   
   /** Fired when one or more items change. */
+  @JSGlobal("chrome.storage.onChanged")
+  @js.native
   val onChanged: typings.chromeApps.chrome.events.Event[
     js.Function2[/* changes */ StringDictionary[StorageChange], /* areaName */ StorageAreas, Unit]
   ] = js.native
   
   /** Items in the sync storage area are synced using Chrome Sync. */
+  @JSGlobal("chrome.storage.sync")
+  @js.native
   val sync: SyncStorageArea = js.native
 }

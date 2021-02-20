@@ -6,6 +6,7 @@ import typings.filepond.anon.Output
 import typings.std.Blob
 import typings.std.Element
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof filepond.filepond.FilePondOptions ]: -? filepond.filepond.FilePondOptions[P]} */ @JSImport("filepond", "FilePond")
 @js.native
-class FilePond () extends js.Object {
+class FilePond () extends StObject {
   
   /**
     * Adds an event listener to the given event.

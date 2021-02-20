@@ -1,11 +1,12 @@
 package typings.sugar.sugarjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locale extends js.Object {
+trait Locale extends StObject {
   
   def addFormat(src: java.lang.String): Unit = js.native
   def addFormat(src: java.lang.String, to: typings.sugar.Array[java.lang.String]): Unit = js.native

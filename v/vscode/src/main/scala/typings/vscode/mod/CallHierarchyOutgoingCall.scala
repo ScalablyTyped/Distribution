@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CallHierarchyOutgoingCall")
 @js.native
-class CallHierarchyOutgoingCall protected () extends js.Object {
+class CallHierarchyOutgoingCall protected () extends StObject {
   /**
     * Create a new call object.
     *

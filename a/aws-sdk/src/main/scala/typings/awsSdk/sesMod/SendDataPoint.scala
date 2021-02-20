@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendDataPoint extends js.Object {
+trait SendDataPoint extends StObject {
   
   /**
     * Number of emails that have bounced.
@@ -41,48 +42,36 @@ object SendDataPoint {
   }
   
   @scala.inline
-  implicit class SendDataPointOps[Self <: SendDataPoint] (val x: Self) extends AnyVal {
+  implicit class SendDataPointMutableBuilder[Self <: SendDataPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounces(value: Counter): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBouncesUndefined: Self = StObject.set(x, "Bounces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplaints(value: Counter): Self = StObject.set(x, "Complaints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounces(value: Counter): Self = this.set("Bounces", value.asInstanceOf[js.Any])
+    def setComplaintsUndefined: Self = StObject.set(x, "Complaints", js.undefined)
     
     @scala.inline
-    def deleteBounces: Self = this.set("Bounces", js.undefined)
+    def setDeliveryAttempts(value: Counter): Self = StObject.set(x, "DeliveryAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplaints(value: Counter): Self = this.set("Complaints", value.asInstanceOf[js.Any])
+    def setDeliveryAttemptsUndefined: Self = StObject.set(x, "DeliveryAttempts", js.undefined)
     
     @scala.inline
-    def deleteComplaints: Self = this.set("Complaints", js.undefined)
+    def setRejects(value: Counter): Self = StObject.set(x, "Rejects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryAttempts(value: Counter): Self = this.set("DeliveryAttempts", value.asInstanceOf[js.Any])
+    def setRejectsUndefined: Self = StObject.set(x, "Rejects", js.undefined)
     
     @scala.inline
-    def deleteDeliveryAttempts: Self = this.set("DeliveryAttempts", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejects(value: Counter): Self = this.set("Rejects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejects: Self = this.set("Rejects", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

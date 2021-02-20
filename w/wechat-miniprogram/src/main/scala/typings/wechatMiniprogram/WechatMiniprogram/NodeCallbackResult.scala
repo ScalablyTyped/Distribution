@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeCallbackResult extends js.Object {
+trait NodeCallbackResult extends StObject {
   
   /** 节点对应的 Node 实例 */
   var node: IAnyObject = js.native
@@ -19,21 +20,9 @@ object NodeCallbackResult {
   }
   
   @scala.inline
-  implicit class NodeCallbackResultOps[Self <: NodeCallbackResult] (val x: Self) extends AnyVal {
+  implicit class NodeCallbackResultMutableBuilder[Self <: NodeCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNode(value: IAnyObject): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: IAnyObject): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

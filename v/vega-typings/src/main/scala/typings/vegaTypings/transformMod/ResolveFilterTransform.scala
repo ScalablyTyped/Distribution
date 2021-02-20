@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.resolvefilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object ResolveFilterTransform {
   }
   
   @scala.inline
-  implicit class ResolveFilterTransformOps[Self <: ResolveFilterTransform] (val x: Self) extends AnyVal {
+  implicit class ResolveFilterTransformMutableBuilder[Self <: ResolveFilterTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: SignalRef): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnore(value: Double | SignalRef): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilter(value: SignalRef): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnore(value: Double | SignalRef): Self = this.set("ignore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: resolvefilter): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: resolvefilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

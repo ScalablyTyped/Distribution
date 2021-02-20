@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHostReservationsRequest extends js.Object {
+trait DescribeHostReservationsRequest extends StObject {
   
   /**
     * The filters.    instance-family - The instance family (for example, m4).    payment-option - The payment option (NoUpfront | PartialUpfront | AllUpfront).    state - The state of the reservation (payment-pending | payment-failed | active | retired).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
@@ -36,48 +37,36 @@ object DescribeHostReservationsRequest {
   }
   
   @scala.inline
-  implicit class DescribeHostReservationsRequestOps[Self <: DescribeHostReservationsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeHostReservationsRequestMutableBuilder[Self <: DescribeHostReservationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: FilterList): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: Filter*): Self = this.set("Filter", js.Array(value :_*))
+    def setHostReservationIdSet(value: HostReservationIdSet): Self = StObject.set(x, "HostReservationIdSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: FilterList): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setHostReservationIdSetUndefined: Self = StObject.set(x, "HostReservationIdSet", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setHostReservationIdSetVarargs(value: HostReservationId*): Self = StObject.set(x, "HostReservationIdSet", js.Array(value :_*))
     
     @scala.inline
-    def setHostReservationIdSetVarargs(value: HostReservationId*): Self = this.set("HostReservationIdSet", js.Array(value :_*))
+    def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostReservationIdSet(value: HostReservationIdSet): Self = this.set("HostReservationIdSet", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteHostReservationIdSet: Self = this.set("HostReservationIdSet", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

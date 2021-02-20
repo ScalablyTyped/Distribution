@@ -1,22 +1,20 @@
 package typings.exceljs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DocumentType extends js.Object
+sealed trait DocumentType extends StObject
 @JSImport("exceljs", "DocumentType")
 @js.native
-object DocumentType extends js.Object {
+object DocumentType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DocumentType with Double] = js.native
   
   @js.native
   sealed trait Xlsx extends DocumentType
-  /* 1 */ @js.native
-  object Xlsx
-    extends TopLevel[typings.exceljs.mod.DocumentType.Xlsx with Double]
+  /* 1 */ val Xlsx: typings.exceljs.mod.DocumentType.Xlsx with Double = js.native
 }

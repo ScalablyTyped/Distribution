@@ -4,6 +4,7 @@ import typings.luminoMessaging.mod.ConflatableMessage
 import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.widgetMod.Widget.IOptions
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,44 +20,12 @@ class Widget ()
   extends typings.luminoWidgets.widgetMod.Widget {
   def this(options: IOptions) = this()
 }
-@JSImport("@lumino/widgets", "Widget")
-@js.native
-object Widget extends js.Object {
-  
-  /**
-    * Attach a widget to a host DOM node.
-    *
-    * @param widget - The widget of interest.
-    *
-    * @param host - The DOM node to use as the widget's host.
-    *
-    * @param ref - The child of `host` to use as the reference element.
-    *   If this is provided, the widget will be inserted before this
-    *   node in the host. The default is `null`, which will cause the
-    *   widget to be added as the last child of the host.
-    *
-    * #### Notes
-    * This will throw an error if the widget is not a root widget, if
-    * the widget is already attached, or if the host is not attached
-    * to the DOM.
-    */
-  def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement): Unit = js.native
-  def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = js.native
-  
-  /**
-    * Detach the widget from its host DOM node.
-    *
-    * @param widget - The widget of interest.
-    *
-    * #### Notes
-    * This will throw an error if the widget is not a root widget,
-    * or if the widget is not attached to the DOM.
-    */
-  def detach(widget: typings.luminoWidgets.widgetMod.Widget): Unit = js.native
+object Widget {
   
   /**
     * A message class for child related messages.
     */
+  @JSImport("@lumino/widgets", "Widget.ChildMessage")
   @js.native
   class ChildMessage protected ()
     extends typings.luminoWidgets.widgetMod.Widget.ChildMessage {
@@ -73,8 +42,9 @@ object Widget extends js.Object {
   /**
     * An enum of widget bit flags.
     */
+  @JSImport("@lumino/widgets", "Widget.Flag")
   @js.native
-  object Flag extends js.Object {
+  object Flag extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.luminoWidgets.widgetMod.Widget.Flag with Double] = js.native
@@ -93,8 +63,7 @@ object Widget extends js.Object {
   /**
     * A collection of stateless messages related to widgets.
     */
-  @js.native
-  object Msg extends js.Object {
+  object Msg {
     
     /**
       * A singleton conflatable `'activate-request'` message.
@@ -104,6 +73,8 @@ object Widget extends js.Object {
       * perform the actions necessary to activate the widget, which
       * may include focusing its node or descendant node.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.ActivateRequest")
+    @js.native
     val ActivateRequest: ConflatableMessage = js.native
     
     /**
@@ -112,6 +83,8 @@ object Widget extends js.Object {
       * #### Notes
       * This message is sent to a widget after it is attached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.AfterAttach")
+    @js.native
     val AfterAttach: Message = js.native
     
     /**
@@ -120,6 +93,8 @@ object Widget extends js.Object {
       * #### Notes
       * This message is sent to a widget after it is detached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.AfterDetach")
+    @js.native
     val AfterDetach: Message = js.native
     
     /**
@@ -130,6 +105,8 @@ object Widget extends js.Object {
       *
       * This message is **not** sent when the widget is being detached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.AfterHide")
+    @js.native
     val AfterHide: Message = js.native
     
     /**
@@ -140,6 +117,8 @@ object Widget extends js.Object {
       *
       * This message is **not** sent when the widget is being attached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.AfterShow")
+    @js.native
     val AfterShow: Message = js.native
     
     /**
@@ -148,6 +127,8 @@ object Widget extends js.Object {
       * #### Notes
       * This message is sent to a widget before it is attached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.BeforeAttach")
+    @js.native
     val BeforeAttach: Message = js.native
     
     /**
@@ -156,6 +137,8 @@ object Widget extends js.Object {
       * #### Notes
       * This message is sent to a widget before it is detached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.BeforeDetach")
+    @js.native
     val BeforeDetach: Message = js.native
     
     /**
@@ -166,6 +149,8 @@ object Widget extends js.Object {
       *
       * This message is **not** sent when the widget is being detached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.BeforeHide")
+    @js.native
     val BeforeHide: Message = js.native
     
     /**
@@ -176,6 +161,8 @@ object Widget extends js.Object {
       *
       * This message is **not** sent when the widget is being attached.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.BeforeShow")
+    @js.native
     val BeforeShow: Message = js.native
     
     /**
@@ -185,6 +172,8 @@ object Widget extends js.Object {
       * This message should be dispatched to a widget when it should close
       * and remove itself from the widget hierarchy.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.CloseRequest")
+    @js.native
     val CloseRequest: ConflatableMessage = js.native
     
     /**
@@ -196,6 +185,8 @@ object Widget extends js.Object {
       * its child widgets, and to update their position and size. Not all
       * layouts will respond to messages of this type.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.FitRequest")
+    @js.native
     val FitRequest: ConflatableMessage = js.native
     
     /**
@@ -204,6 +195,8 @@ object Widget extends js.Object {
       * #### Notes
       * This message is sent to a widget when its parent has changed.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.ParentChanged")
+    @js.native
     val ParentChanged: Message = js.native
     
     /**
@@ -217,12 +210,15 @@ object Widget extends js.Object {
       * For widgets with a layout, this message will inform the layout to
       * update the position and size of its child widgets.
       */
+    @JSImport("@lumino/widgets", "Widget.Msg.UpdateRequest")
+    @js.native
     val UpdateRequest: ConflatableMessage = js.native
   }
   
   /**
     * A message class for `'resize'` messages.
     */
+  @JSImport("@lumino/widgets", "Widget.ResizeMessage")
   @js.native
   class ResizeMessage protected ()
     extends typings.luminoWidgets.widgetMod.Widget.ResizeMessage {
@@ -240,12 +236,50 @@ object Widget extends js.Object {
   /**
     * The namespace for the `ResizeMessage` class statics.
     */
-  @js.native
-  object ResizeMessage extends js.Object {
+  object ResizeMessage {
     
     /**
       * A singleton `'resize'` message with an unknown size.
       */
+    @JSImport("@lumino/widgets", "Widget.ResizeMessage.UnknownSize")
+    @js.native
     val UnknownSize: typings.luminoWidgets.widgetMod.Widget.ResizeMessage = js.native
   }
+  
+  /**
+    * Attach a widget to a host DOM node.
+    *
+    * @param widget - The widget of interest.
+    *
+    * @param host - The DOM node to use as the widget's host.
+    *
+    * @param ref - The child of `host` to use as the reference element.
+    *   If this is provided, the widget will be inserted before this
+    *   node in the host. The default is `null`, which will cause the
+    *   widget to be added as the last child of the host.
+    *
+    * #### Notes
+    * This will throw an error if the widget is not a root widget, if
+    * the widget is already attached, or if the host is not attached
+    * to the DOM.
+    */
+  @JSImport("@lumino/widgets", "Widget.attach")
+  @js.native
+  def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement): Unit = js.native
+  @JSImport("@lumino/widgets", "Widget.attach")
+  @js.native
+  def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = js.native
+  
+  /**
+    * Detach the widget from its host DOM node.
+    *
+    * @param widget - The widget of interest.
+    *
+    * #### Notes
+    * This will throw an error if the widget is not a root widget,
+    * or if the widget is not attached to the DOM.
+    */
+  @JSImport("@lumino/widgets", "Widget.detach")
+  @js.native
+  def detach(widget: typings.luminoWidgets.widgetMod.Widget): Unit = js.native
 }

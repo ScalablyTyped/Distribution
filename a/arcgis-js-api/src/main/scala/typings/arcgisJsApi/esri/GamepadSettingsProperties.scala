@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.document
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.view
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GamepadSettingsProperties extends js.Object {
+trait GamepadSettingsProperties extends StObject {
   
   /**
     * Determines what focus is required for gamepad events to be dispatched.
@@ -26,24 +27,12 @@ object GamepadSettingsProperties {
   }
   
   @scala.inline
-  implicit class GamepadSettingsPropertiesOps[Self <: GamepadSettingsProperties] (val x: Self) extends AnyVal {
+  implicit class GamepadSettingsPropertiesMutableBuilder[Self <: GamepadSettingsProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabledFocusMode(value: document | view | none): Self = StObject.set(x, "enabledFocusMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabledFocusMode(value: document | view | none): Self = this.set("enabledFocusMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabledFocusMode: Self = this.set("enabledFocusMode", js.undefined)
+    def setEnabledFocusModeUndefined: Self = StObject.set(x, "enabledFocusMode", js.undefined)
   }
 }

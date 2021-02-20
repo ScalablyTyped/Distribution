@@ -1,12 +1,13 @@
 package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rules[P /* <: js.Object */] extends js.Object {
+trait Rules[P /* <: js.Object */] extends StObject {
   
   var description: js.UndefOr[String | (js.Function1[/* params */ P, String])] = js.native
   
@@ -40,47 +41,35 @@ object Rules {
   }
   
   @scala.inline
-  implicit class RulesOps[Self <: Rules[_], P /* <: js.Object */] (val x: Self with Rules[P]) extends AnyVal {
+  implicit class RulesMutableBuilder[Self <: Rules[_], P /* <: js.Object */] (val x: Self with Rules[P]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String | (js.Function1[/* params */ P, String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionFunction1(value: /* params */ P => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescriptionFunction1(value: /* params */ P => String): Self = this.set("description", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDescription(value: String | (js.Function1[/* params */ P, String])): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParams(
       value: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
       */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with TopLevel[js.Any])
-    ): Self = this.set("params", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setSetup(value: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]): Self = this.set("setup", value.asInstanceOf[js.Any])
+    def setSetup(value: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetup: Self = this.set("setup", js.undefined)
+    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
     @scala.inline
     def setValidate(
@@ -92,9 +81,9 @@ object Rules {
           /* options */ ValidationOptions, 
           _
         ]
-    ): Self = this.set("validate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

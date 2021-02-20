@@ -1,11 +1,12 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalloutAction extends js.Object {
+trait CalloutAction extends StObject {
   
   def getDisabledToolTip(): String = js.native
   
@@ -53,54 +54,42 @@ object CalloutAction {
   }
   
   @scala.inline
-  implicit class CalloutActionOps[Self <: CalloutAction] (val x: Self) extends AnyVal {
+  implicit class CalloutActionMutableBuilder[Self <: CalloutAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDisabledToolTip(value: () => String): Self = StObject.set(x, "getDisabledToolTip", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIsDisabledCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "getIsDisabledCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIsMenu(value: () => Boolean): Self = StObject.set(x, "getIsMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisabledToolTip(value: () => String): Self = this.set("getDisabledToolTip", js.Any.fromFunction0(value))
+    def setGetIsVisibleCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "getIsVisibleCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetIsDisabledCallback(value: CalloutAction => Boolean): Self = this.set("getIsDisabledCallback", js.Any.fromFunction1(value))
+    def setGetMenuEntries(value: () => js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "getMenuEntries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsMenu(value: () => Boolean): Self = this.set("getIsMenu", js.Any.fromFunction0(value))
+    def setGetOnClickCallback(value: (js.Any, CalloutAction) => js.Any): Self = StObject.set(x, "getOnClickCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetIsVisibleCallback(value: CalloutAction => Boolean): Self = this.set("getIsVisibleCallback", js.Any.fromFunction1(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMenuEntries(value: () => js.Array[CalloutActionMenuEntry]): Self = this.set("getMenuEntries", js.Any.fromFunction0(value))
+    def setGetToolTop(value: () => String): Self = StObject.set(x, "getToolTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOnClickCallback(value: (js.Any, CalloutAction) => js.Any): Self = this.set("getOnClickCallback", js.Any.fromFunction2(value))
+    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetToolTop(value: () => String): Self = this.set("getToolTop", js.Any.fromFunction0(value))
+    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = this.set("isEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = this.set("isVisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRender(value: () => Unit): Self = this.set("render", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: CalloutActionOptions => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: CalloutActionOptions => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResult extends js.Object {
+trait QueryResult extends StObject {
   
   /**
     * Find dimension by name
@@ -131,60 +132,48 @@ object QueryResult {
   }
   
   @scala.inline
-  implicit class QueryResultOps[Self <: QueryResult] (val x: Self) extends AnyVal {
+  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindDimensionByName(value: String => Dimension): Self = StObject.set(x, "findDimensionByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindDimensionByPropertyName(value: String => Dimension): Self = StObject.set(x, "findDimensionByPropertyName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindMeasureByName(value: String => Measure): Self = StObject.set(x, "findMeasureByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindDimensionByName(value: String => Dimension): Self = this.set("findDimensionByName", js.Any.fromFunction1(value))
+    def setFindMeasureByPropertyName(value: String => Measure): Self = StObject.set(x, "findMeasureByPropertyName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindDimensionByPropertyName(value: String => Dimension): Self = this.set("findDimensionByPropertyName", js.Any.fromFunction1(value))
+    def setGetAllDimensionNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllDimensionNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindMeasureByName(value: String => Measure): Self = this.set("findMeasureByName", js.Any.fromFunction1(value))
+    def setGetAllDimensions(value: () => js.Any): Self = StObject.set(x, "getAllDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindMeasureByPropertyName(value: String => Measure): Self = this.set("findMeasureByPropertyName", js.Any.fromFunction1(value))
+    def setGetAllMeasureNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllMeasureNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllDimensionNames(value: () => js.Array[String]): Self = this.set("getAllDimensionNames", js.Any.fromFunction0(value))
+    def setGetAllMeasures(value: () => js.Any): Self = StObject.set(x, "getAllMeasures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllDimensions(value: () => js.Any): Self = this.set("getAllDimensions", js.Any.fromFunction0(value))
+    def setGetEntitySet(value: () => EntitySet): Self = StObject.set(x, "getEntitySet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllMeasureNames(value: () => js.Array[String]): Self = this.set("getAllMeasureNames", js.Any.fromFunction0(value))
+    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllMeasures(value: () => js.Any): Self = this.set("getAllMeasures", js.Any.fromFunction0(value))
+    def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntitySet(value: () => EntitySet): Self = this.set("getEntitySet", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = this.set("getEntityType", js.Any.fromFunction0(value))
+    def setGetParameterization(value: () => Parameterization): Self = StObject.set(x, "getParameterization", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModel(value: () => js.Any): Self = this.set("getModel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParameterization(value: () => Parameterization): Self = this.set("getParameterization", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTotaledPropertiesListProperty(value: () => js.Any): Self = this.set("getTotaledPropertiesListProperty", js.Any.fromFunction0(value))
+    def setGetTotaledPropertiesListProperty(value: () => js.Any): Self = StObject.set(x, "getTotaledPropertiesListProperty", js.Any.fromFunction0(value))
   }
 }

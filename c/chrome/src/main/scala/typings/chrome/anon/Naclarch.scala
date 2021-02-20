@@ -1,11 +1,12 @@
 package typings.chrome.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Naclarch extends js.Object {
+trait Naclarch extends StObject {
   
   var nacl_arch: js.UndefOr[String] = js.native
   
@@ -20,27 +21,15 @@ object Naclarch {
   }
   
   @scala.inline
-  implicit class NaclarchOps[Self <: Naclarch] (val x: Self) extends AnyVal {
+  implicit class NaclarchMutableBuilder[Self <: Naclarch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNacl_arch(value: String): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNacl_archUndefined: Self = StObject.set(x, "nacl_arch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSub_package_path(value: String): Self = this.set("sub_package_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNacl_arch(value: String): Self = this.set("nacl_arch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNacl_arch: Self = this.set("nacl_arch", js.undefined)
+    def setSub_package_path(value: String): Self = StObject.set(x, "sub_package_path", value.asInstanceOf[js.Any])
   }
 }

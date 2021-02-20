@@ -1,11 +1,12 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUndeleteServiceAccountResponse extends js.Object {
+trait SchemaUndeleteServiceAccountResponse extends StObject {
   
   /**
     * Metadata for the restored service account.
@@ -21,24 +22,12 @@ object SchemaUndeleteServiceAccountResponse {
   }
   
   @scala.inline
-  implicit class SchemaUndeleteServiceAccountResponseOps[Self <: SchemaUndeleteServiceAccountResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaUndeleteServiceAccountResponseMutableBuilder[Self <: SchemaUndeleteServiceAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRestoredAccount(value: SchemaServiceAccount): Self = StObject.set(x, "restoredAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRestoredAccount(value: SchemaServiceAccount): Self = this.set("restoredAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestoredAccount: Self = this.set("restoredAccount", js.undefined)
+    def setRestoredAccountUndefined: Self = StObject.set(x, "restoredAccount", js.undefined)
   }
 }

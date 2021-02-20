@@ -1,13 +1,14 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operators/repeatWhen", JSImport.Namespace)
-@js.native
-object repeatWhenMod extends js.Object {
+object repeatWhenMod {
   
+  @JSImport("rxjs-compat/operators/repeatWhen", "repeatWhen")
+  @js.native
   def repeatWhen[T](
     notifier: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* notifications */ js.Any, 

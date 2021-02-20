@@ -1,11 +1,12 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTeardownTag extends js.Object {
+trait SchemaTeardownTag extends StObject {
   
   /**
     * If true, fire the teardown tag if and only if the main tag fires
@@ -28,30 +29,18 @@ object SchemaTeardownTag {
   }
   
   @scala.inline
-  implicit class SchemaTeardownTagOps[Self <: SchemaTeardownTag] (val x: Self) extends AnyVal {
+  implicit class SchemaTeardownTagMutableBuilder[Self <: SchemaTeardownTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStopTeardownOnFailureUndefined: Self = StObject.set(x, "stopTeardownOnFailure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopTeardownOnFailure(value: Boolean): Self = this.set("stopTeardownOnFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopTeardownOnFailure: Self = this.set("stopTeardownOnFailure", js.undefined)
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

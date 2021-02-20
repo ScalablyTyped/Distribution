@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHubResponse extends js.Object {
+trait DescribeHubResponse extends StObject {
   
   /**
     * Whether to automatically enable new controls when they are added to standards that are enabled. If set to true, then new controls for enabled standards are enabled automatically. If set to false, then new controls are not enabled.
@@ -31,36 +32,24 @@ object DescribeHubResponse {
   }
   
   @scala.inline
-  implicit class DescribeHubResponseOps[Self <: DescribeHubResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeHubResponseMutableBuilder[Self <: DescribeHubResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoEnableControlsUndefined: Self = StObject.set(x, "AutoEnableControls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHubArn(value: NonEmptyString): Self = StObject.set(x, "HubArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoEnableControls(value: Boolean): Self = this.set("AutoEnableControls", value.asInstanceOf[js.Any])
+    def setHubArnUndefined: Self = StObject.set(x, "HubArn", js.undefined)
     
     @scala.inline
-    def deleteAutoEnableControls: Self = this.set("AutoEnableControls", js.undefined)
+    def setSubscribedAt(value: NonEmptyString): Self = StObject.set(x, "SubscribedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHubArn(value: NonEmptyString): Self = this.set("HubArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHubArn: Self = this.set("HubArn", js.undefined)
-    
-    @scala.inline
-    def setSubscribedAt(value: NonEmptyString): Self = this.set("SubscribedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribedAt: Self = this.set("SubscribedAt", js.undefined)
+    def setSubscribedAtUndefined: Self = StObject.set(x, "SubscribedAt", js.undefined)
   }
 }

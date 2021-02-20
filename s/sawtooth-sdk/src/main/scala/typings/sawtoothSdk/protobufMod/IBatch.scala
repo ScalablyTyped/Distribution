@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBatch extends js.Object {
+trait IBatch extends StObject {
   
   /** Batch header */
   var header: js.UndefOr[Uint8Array | Null] = js.native
@@ -29,57 +30,45 @@ object IBatch {
   }
   
   @scala.inline
-  implicit class IBatchOps[Self <: IBatch] (val x: Self) extends AnyVal {
+  implicit class IBatchMutableBuilder[Self <: IBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderNull: Self = StObject.set(x, "header", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderSignature(value: String): Self = StObject.set(x, "headerSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Uint8Array): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeaderSignatureNull: Self = StObject.set(x, "headerSignature", null)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderSignatureUndefined: Self = StObject.set(x, "headerSignature", js.undefined)
     
     @scala.inline
-    def setHeaderNull: Self = this.set("header", null)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setHeaderSignature(value: String): Self = this.set("headerSignature", value.asInstanceOf[js.Any])
+    def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderSignature: Self = this.set("headerSignature", js.undefined)
+    def setTraceNull: Self = StObject.set(x, "trace", null)
     
     @scala.inline
-    def setHeaderSignatureNull: Self = this.set("headerSignature", null)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     
     @scala.inline
-    def setTrace(value: Boolean): Self = this.set("trace", value.asInstanceOf[js.Any])
+    def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
+    def setTransactionsNull: Self = StObject.set(x, "transactions", null)
     
     @scala.inline
-    def setTraceNull: Self = this.set("trace", null)
+    def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
     @scala.inline
-    def setTransactionsVarargs(value: ITransaction*): Self = this.set("transactions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransactions(value: js.Array[ITransaction]): Self = this.set("transactions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactions: Self = this.set("transactions", js.undefined)
-    
-    @scala.inline
-    def setTransactionsNull: Self = this.set("transactions", null)
+    def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
   }
 }

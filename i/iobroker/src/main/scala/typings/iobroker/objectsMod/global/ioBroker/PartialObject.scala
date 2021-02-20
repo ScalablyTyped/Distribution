@@ -1,5 +1,6 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,84 +20,84 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.objectsMod.global.ioBroker.PartialScriptObject
   - typings.iobroker.objectsMod.global.ioBroker.PartialOtherObject
 */
-trait PartialObject extends js.Object
+trait PartialObject extends StObject
 object PartialObject {
   
   @scala.inline
-  def PartialScriptObject(): PartialObject = {
+  def PartialAdapterObject(): typings.iobroker.objectsMod.global.ioBroker.PartialAdapterObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialAdapterObject]
   }
   
   @scala.inline
-  def PartialMetaObject(): PartialObject = {
+  def PartialChannelObject(): typings.iobroker.objectsMod.global.ioBroker.PartialChannelObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialChannelObject]
   }
   
   @scala.inline
-  def PartialInstanceObject(): PartialObject = {
+  def PartialDeviceObject(): typings.iobroker.objectsMod.global.ioBroker.PartialDeviceObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialDeviceObject]
   }
   
   @scala.inline
-  def PartialGroupObject(): PartialObject = {
+  def PartialEnumObject(): typings.iobroker.objectsMod.global.ioBroker.PartialEnumObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialEnumObject]
   }
   
   @scala.inline
-  def PartialFolderObject(): PartialObject = {
+  def PartialFolderObject(): typings.iobroker.objectsMod.global.ioBroker.PartialFolderObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialFolderObject]
   }
   
   @scala.inline
-  def PartialEnumObject(): PartialObject = {
+  def PartialGroupObject(): typings.iobroker.objectsMod.global.ioBroker.PartialGroupObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialGroupObject]
   }
   
   @scala.inline
-  def PartialDeviceObject(): PartialObject = {
+  def PartialHostObject(): typings.iobroker.objectsMod.global.ioBroker.PartialHostObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialHostObject]
   }
   
   @scala.inline
-  def PartialOtherObject(): PartialObject = {
+  def PartialInstanceObject(): typings.iobroker.objectsMod.global.ioBroker.PartialInstanceObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialInstanceObject]
   }
   
   @scala.inline
-  def PartialChannelObject(): PartialObject = {
+  def PartialMetaObject(): typings.iobroker.objectsMod.global.ioBroker.PartialMetaObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialMetaObject]
   }
   
   @scala.inline
-  def PartialStateObject(): PartialObject = {
+  def PartialOtherObject(): typings.iobroker.objectsMod.global.ioBroker.PartialOtherObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialOtherObject]
   }
   
   @scala.inline
-  def PartialAdapterObject(): PartialObject = {
+  def PartialScriptObject(): typings.iobroker.objectsMod.global.ioBroker.PartialScriptObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialScriptObject]
   }
   
   @scala.inline
-  def PartialUserObject(): PartialObject = {
+  def PartialStateObject(): typings.iobroker.objectsMod.global.ioBroker.PartialStateObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialStateObject]
   }
   
   @scala.inline
-  def PartialHostObject(): PartialObject = {
+  def PartialUserObject(): typings.iobroker.objectsMod.global.ioBroker.PartialUserObject = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.PartialUserObject]
   }
 }

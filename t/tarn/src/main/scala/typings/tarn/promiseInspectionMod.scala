@@ -1,16 +1,16 @@
 package typings.tarn
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tarn/dist/PromiseInspection", JSImport.Namespace)
-@js.native
-object promiseInspectionMod extends js.Object {
+object promiseInspectionMod {
   
+  @JSImport("tarn/dist/PromiseInspection", "PromiseInspection")
   @js.native
-  class PromiseInspection[T] protected () extends js.Object {
+  class PromiseInspection[T] protected () extends StObject {
     def this(args: PromiseInspectionArgs[T]) = this()
     
     var _error: Error | Unit = js.native
@@ -30,5 +30,19 @@ object promiseInspectionMod extends js.Object {
     - typings.tarn.anon.Error[T]
     - typings.tarn.anon.Value[T]
   */
-  trait PromiseInspectionArgs[T] extends js.Object
+  trait PromiseInspectionArgs[T] extends StObject
+  object PromiseInspectionArgs {
+    
+    @scala.inline
+    def Error[T](value: T): typings.tarn.anon.Error[T] = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.tarn.anon.Error[T]]
+    }
+    
+    @scala.inline
+    def Value[T](error: Error): typings.tarn.anon.Value[T] = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.tarn.anon.Value[T]]
+    }
+  }
 }

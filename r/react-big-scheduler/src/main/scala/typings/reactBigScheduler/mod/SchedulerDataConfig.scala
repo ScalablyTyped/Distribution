@@ -1,11 +1,12 @@
 package typings.reactBigScheduler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerDataConfig extends js.Object {
+trait SchedulerDataConfig extends StObject {
   
   var agendaMaxEventWidth: js.UndefOr[Double] = js.native
   
@@ -112,309 +113,297 @@ object SchedulerDataConfig {
   }
   
   @scala.inline
-  implicit class SchedulerDataConfigOps[Self <: SchedulerDataConfig] (val x: Self) extends AnyVal {
+  implicit class SchedulerDataConfigMutableBuilder[Self <: SchedulerDataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgendaMaxEventWidth(value: Double): Self = StObject.set(x, "agendaMaxEventWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgendaMaxEventWidthUndefined: Self = StObject.set(x, "agendaMaxEventWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgendaResourceTableWidth(value: Double): Self = StObject.set(x, "agendaResourceTableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgendaMaxEventWidth(value: Double): Self = this.set("agendaMaxEventWidth", value.asInstanceOf[js.Any])
+    def setAgendaResourceTableWidthUndefined: Self = StObject.set(x, "agendaResourceTableWidth", js.undefined)
     
     @scala.inline
-    def deleteAgendaMaxEventWidth: Self = this.set("agendaMaxEventWidth", js.undefined)
+    def setCalendarPopoverEnabled(value: Boolean): Self = StObject.set(x, "calendarPopoverEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgendaResourceTableWidth(value: Double): Self = this.set("agendaResourceTableWidth", value.asInstanceOf[js.Any])
+    def setCalendarPopoverEnabledUndefined: Self = StObject.set(x, "calendarPopoverEnabled", js.undefined)
     
     @scala.inline
-    def deleteAgendaResourceTableWidth: Self = this.set("agendaResourceTableWidth", js.undefined)
+    def setCheckConflict(value: Boolean): Self = StObject.set(x, "checkConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarPopoverEnabled(value: Boolean): Self = this.set("calendarPopoverEnabled", value.asInstanceOf[js.Any])
+    def setCheckConflictUndefined: Self = StObject.set(x, "checkConflict", js.undefined)
     
     @scala.inline
-    def deleteCalendarPopoverEnabled: Self = this.set("calendarPopoverEnabled", js.undefined)
+    def setCreatable(value: Boolean): Self = StObject.set(x, "creatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckConflict(value: Boolean): Self = this.set("checkConflict", value.asInstanceOf[js.Any])
+    def setCreatableUndefined: Self = StObject.set(x, "creatable", js.undefined)
     
     @scala.inline
-    def deleteCheckConflict: Self = this.set("checkConflict", js.undefined)
+    def setCrossResourceMove(value: Boolean): Self = StObject.set(x, "crossResourceMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatable(value: Boolean): Self = this.set("creatable", value.asInstanceOf[js.Any])
+    def setCrossResourceMoveUndefined: Self = StObject.set(x, "crossResourceMove", js.undefined)
     
     @scala.inline
-    def deleteCreatable: Self = this.set("creatable", js.undefined)
+    def setDayCellWidth(value: Double): Self = StObject.set(x, "dayCellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossResourceMove(value: Boolean): Self = this.set("crossResourceMove", value.asInstanceOf[js.Any])
+    def setDayCellWidthUndefined: Self = StObject.set(x, "dayCellWidth", js.undefined)
     
     @scala.inline
-    def deleteCrossResourceMove: Self = this.set("crossResourceMove", js.undefined)
+    def setDayMaxEvents(value: Double): Self = StObject.set(x, "dayMaxEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayCellWidth(value: Double): Self = this.set("dayCellWidth", value.asInstanceOf[js.Any])
+    def setDayMaxEventsUndefined: Self = StObject.set(x, "dayMaxEvents", js.undefined)
     
     @scala.inline
-    def deleteDayCellWidth: Self = this.set("dayCellWidth", js.undefined)
+    def setDayResourceTableWidth(value: Double): Self = StObject.set(x, "dayResourceTableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayMaxEvents(value: Double): Self = this.set("dayMaxEvents", value.asInstanceOf[js.Any])
+    def setDayResourceTableWidthUndefined: Self = StObject.set(x, "dayResourceTableWidth", js.undefined)
     
     @scala.inline
-    def deleteDayMaxEvents: Self = this.set("dayMaxEvents", js.undefined)
+    def setDayStartFrom(value: Double): Self = StObject.set(x, "dayStartFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayResourceTableWidth(value: Double): Self = this.set("dayResourceTableWidth", value.asInstanceOf[js.Any])
+    def setDayStartFromUndefined: Self = StObject.set(x, "dayStartFrom", js.undefined)
     
     @scala.inline
-    def deleteDayResourceTableWidth: Self = this.set("dayResourceTableWidth", js.undefined)
+    def setDayStopTo(value: Double): Self = StObject.set(x, "dayStopTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayStartFrom(value: Double): Self = this.set("dayStartFrom", value.asInstanceOf[js.Any])
+    def setDayStopToUndefined: Self = StObject.set(x, "dayStopTo", js.undefined)
     
     @scala.inline
-    def deleteDayStartFrom: Self = this.set("dayStartFrom", js.undefined)
+    def setDefaultEventBgColor(value: String): Self = StObject.set(x, "defaultEventBgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayStopTo(value: Double): Self = this.set("dayStopTo", value.asInstanceOf[js.Any])
+    def setDefaultEventBgColorUndefined: Self = StObject.set(x, "defaultEventBgColor", js.undefined)
     
     @scala.inline
-    def deleteDayStopTo: Self = this.set("dayStopTo", js.undefined)
+    def setDisplayWeekend(value: Boolean): Self = StObject.set(x, "displayWeekend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEventBgColor(value: String): Self = this.set("defaultEventBgColor", value.asInstanceOf[js.Any])
+    def setDisplayWeekendUndefined: Self = StObject.set(x, "displayWeekend", js.undefined)
     
     @scala.inline
-    def deleteDefaultEventBgColor: Self = this.set("defaultEventBgColor", js.undefined)
+    def setEndResizable(value: Boolean): Self = StObject.set(x, "endResizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayWeekend(value: Boolean): Self = this.set("displayWeekend", value.asInstanceOf[js.Any])
+    def setEndResizableUndefined: Self = StObject.set(x, "endResizable", js.undefined)
     
     @scala.inline
-    def deleteDisplayWeekend: Self = this.set("displayWeekend", js.undefined)
+    def setEventItemHeight(value: Double): Self = StObject.set(x, "eventItemHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndResizable(value: Boolean): Self = this.set("endResizable", value.asInstanceOf[js.Any])
+    def setEventItemHeightUndefined: Self = StObject.set(x, "eventItemHeight", js.undefined)
     
     @scala.inline
-    def deleteEndResizable: Self = this.set("endResizable", js.undefined)
+    def setEventItemLineHeight(value: Double): Self = StObject.set(x, "eventItemLineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventItemHeight(value: Double): Self = this.set("eventItemHeight", value.asInstanceOf[js.Any])
+    def setEventItemLineHeightUndefined: Self = StObject.set(x, "eventItemLineHeight", js.undefined)
     
     @scala.inline
-    def deleteEventItemHeight: Self = this.set("eventItemHeight", js.undefined)
+    def setEventItemPopoverEnabled(value: Boolean): Self = StObject.set(x, "eventItemPopoverEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventItemLineHeight(value: Double): Self = this.set("eventItemLineHeight", value.asInstanceOf[js.Any])
+    def setEventItemPopoverEnabledUndefined: Self = StObject.set(x, "eventItemPopoverEnabled", js.undefined)
     
     @scala.inline
-    def deleteEventItemLineHeight: Self = this.set("eventItemLineHeight", js.undefined)
+    def setHeaderEnabled(value: Boolean): Self = StObject.set(x, "headerEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventItemPopoverEnabled(value: Boolean): Self = this.set("eventItemPopoverEnabled", value.asInstanceOf[js.Any])
+    def setHeaderEnabledUndefined: Self = StObject.set(x, "headerEnabled", js.undefined)
     
     @scala.inline
-    def deleteEventItemPopoverEnabled: Self = this.set("eventItemPopoverEnabled", js.undefined)
+    def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderEnabled(value: Boolean): Self = this.set("headerEnabled", value.asInstanceOf[js.Any])
+    def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
     
     @scala.inline
-    def deleteHeaderEnabled: Self = this.set("headerEnabled", js.undefined)
+    def setMonthCellWidth(value: Double): Self = StObject.set(x, "monthCellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinuteStep(value: Double): Self = this.set("minuteStep", value.asInstanceOf[js.Any])
+    def setMonthCellWidthUndefined: Self = StObject.set(x, "monthCellWidth", js.undefined)
     
     @scala.inline
-    def deleteMinuteStep: Self = this.set("minuteStep", js.undefined)
+    def setMonthMaxEvents(value: Double): Self = StObject.set(x, "monthMaxEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthCellWidth(value: Double): Self = this.set("monthCellWidth", value.asInstanceOf[js.Any])
+    def setMonthMaxEventsUndefined: Self = StObject.set(x, "monthMaxEvents", js.undefined)
     
     @scala.inline
-    def deleteMonthCellWidth: Self = this.set("monthCellWidth", js.undefined)
+    def setMonthResourceTableWidth(value: Double): Self = StObject.set(x, "monthResourceTableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthMaxEvents(value: Double): Self = this.set("monthMaxEvents", value.asInstanceOf[js.Any])
+    def setMonthResourceTableWidthUndefined: Self = StObject.set(x, "monthResourceTableWidth", js.undefined)
     
     @scala.inline
-    def deleteMonthMaxEvents: Self = this.set("monthMaxEvents", js.undefined)
+    def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthResourceTableWidth(value: Double): Self = this.set("monthResourceTableWidth", value.asInstanceOf[js.Any])
+    def setMovableUndefined: Self = StObject.set(x, "movable", js.undefined)
     
     @scala.inline
-    def deleteMonthResourceTableWidth: Self = this.set("monthResourceTableWidth", js.undefined)
+    def setNonAgendaSlotMinHeight(value: Double): Self = StObject.set(x, "nonAgendaSlotMinHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovable(value: Boolean): Self = this.set("movable", value.asInstanceOf[js.Any])
+    def setNonAgendaSlotMinHeightUndefined: Self = StObject.set(x, "nonAgendaSlotMinHeight", js.undefined)
     
     @scala.inline
-    def deleteMovable: Self = this.set("movable", js.undefined)
+    def setNonWorkingTimeBodyBgColor(value: String): Self = StObject.set(x, "nonWorkingTimeBodyBgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonAgendaSlotMinHeight(value: Double): Self = this.set("nonAgendaSlotMinHeight", value.asInstanceOf[js.Any])
+    def setNonWorkingTimeBodyBgColorUndefined: Self = StObject.set(x, "nonWorkingTimeBodyBgColor", js.undefined)
     
     @scala.inline
-    def deleteNonAgendaSlotMinHeight: Self = this.set("nonAgendaSlotMinHeight", js.undefined)
+    def setNonWorkingTimeHeadBgColor(value: String): Self = StObject.set(x, "nonWorkingTimeHeadBgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonWorkingTimeBodyBgColor(value: String): Self = this.set("nonWorkingTimeBodyBgColor", value.asInstanceOf[js.Any])
+    def setNonWorkingTimeHeadBgColorUndefined: Self = StObject.set(x, "nonWorkingTimeHeadBgColor", js.undefined)
     
     @scala.inline
-    def deleteNonWorkingTimeBodyBgColor: Self = this.set("nonWorkingTimeBodyBgColor", js.undefined)
+    def setNonWorkingTimeHeadColor(value: String): Self = StObject.set(x, "nonWorkingTimeHeadColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonWorkingTimeHeadBgColor(value: String): Self = this.set("nonWorkingTimeHeadBgColor", value.asInstanceOf[js.Any])
+    def setNonWorkingTimeHeadColorUndefined: Self = StObject.set(x, "nonWorkingTimeHeadColor", js.undefined)
     
     @scala.inline
-    def deleteNonWorkingTimeHeadBgColor: Self = this.set("nonWorkingTimeHeadBgColor", js.undefined)
+    def setQuarterCellWidth(value: Double): Self = StObject.set(x, "quarterCellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonWorkingTimeHeadColor(value: String): Self = this.set("nonWorkingTimeHeadColor", value.asInstanceOf[js.Any])
+    def setQuarterCellWidthUndefined: Self = StObject.set(x, "quarterCellWidth", js.undefined)
     
     @scala.inline
-    def deleteNonWorkingTimeHeadColor: Self = this.set("nonWorkingTimeHeadColor", js.undefined)
+    def setQuarterMaxEvents(value: Double): Self = StObject.set(x, "quarterMaxEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarterCellWidth(value: Double): Self = this.set("quarterCellWidth", value.asInstanceOf[js.Any])
+    def setQuarterMaxEventsUndefined: Self = StObject.set(x, "quarterMaxEvents", js.undefined)
     
     @scala.inline
-    def deleteQuarterCellWidth: Self = this.set("quarterCellWidth", js.undefined)
+    def setQuarterResourceTableWidth(value: Double): Self = StObject.set(x, "quarterResourceTableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarterMaxEvents(value: Double): Self = this.set("quarterMaxEvents", value.asInstanceOf[js.Any])
+    def setQuarterResourceTableWidthUndefined: Self = StObject.set(x, "quarterResourceTableWidth", js.undefined)
     
     @scala.inline
-    def deleteQuarterMaxEvents: Self = this.set("quarterMaxEvents", js.undefined)
+    def setRecurringEventsEnabled(value: Boolean): Self = StObject.set(x, "recurringEventsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarterResourceTableWidth(value: Double): Self = this.set("quarterResourceTableWidth", value.asInstanceOf[js.Any])
+    def setRecurringEventsEnabledUndefined: Self = StObject.set(x, "recurringEventsEnabled", js.undefined)
     
     @scala.inline
-    def deleteQuarterResourceTableWidth: Self = this.set("quarterResourceTableWidth", js.undefined)
+    def setRelativeMove(value: Boolean): Self = StObject.set(x, "relativeMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurringEventsEnabled(value: Boolean): Self = this.set("recurringEventsEnabled", value.asInstanceOf[js.Any])
+    def setRelativeMoveUndefined: Self = StObject.set(x, "relativeMove", js.undefined)
     
     @scala.inline
-    def deleteRecurringEventsEnabled: Self = this.set("recurringEventsEnabled", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeMove(value: Boolean): Self = this.set("relativeMove", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteRelativeMove: Self = this.set("relativeMove", js.undefined)
+    def setSchedulerMaxHeight(value: Double): Self = StObject.set(x, "schedulerMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setSchedulerMaxHeightUndefined: Self = StObject.set(x, "schedulerMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setSchedulerWidth(value: Double | String): Self = StObject.set(x, "schedulerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedulerMaxHeight(value: Double): Self = this.set("schedulerMaxHeight", value.asInstanceOf[js.Any])
+    def setSchedulerWidthUndefined: Self = StObject.set(x, "schedulerWidth", js.undefined)
     
     @scala.inline
-    def deleteSchedulerMaxHeight: Self = this.set("schedulerMaxHeight", js.undefined)
+    def setScrollToSpecialMomentEnabled(value: Boolean): Self = StObject.set(x, "scrollToSpecialMomentEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedulerWidth(value: Double | String): Self = this.set("schedulerWidth", value.asInstanceOf[js.Any])
+    def setScrollToSpecialMomentEnabledUndefined: Self = StObject.set(x, "scrollToSpecialMomentEnabled", js.undefined)
     
     @scala.inline
-    def deleteSchedulerWidth: Self = this.set("schedulerWidth", js.undefined)
+    def setSelectedAreaColor(value: String): Self = StObject.set(x, "selectedAreaColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollToSpecialMomentEnabled(value: Boolean): Self = this.set("scrollToSpecialMomentEnabled", value.asInstanceOf[js.Any])
+    def setSelectedAreaColorUndefined: Self = StObject.set(x, "selectedAreaColor", js.undefined)
     
     @scala.inline
-    def deleteScrollToSpecialMomentEnabled: Self = this.set("scrollToSpecialMomentEnabled", js.undefined)
+    def setStartResizable(value: Boolean): Self = StObject.set(x, "startResizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedAreaColor(value: String): Self = this.set("selectedAreaColor", value.asInstanceOf[js.Any])
+    def setStartResizableUndefined: Self = StObject.set(x, "startResizable", js.undefined)
     
     @scala.inline
-    def deleteSelectedAreaColor: Self = this.set("selectedAreaColor", js.undefined)
+    def setSummaryColor(value: String): Self = StObject.set(x, "summaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartResizable(value: Boolean): Self = this.set("startResizable", value.asInstanceOf[js.Any])
+    def setSummaryColorUndefined: Self = StObject.set(x, "summaryColor", js.undefined)
     
     @scala.inline
-    def deleteStartResizable: Self = this.set("startResizable", js.undefined)
+    def setSummaryPos(value: SummaryPos): Self = StObject.set(x, "summaryPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryColor(value: String): Self = this.set("summaryColor", value.asInstanceOf[js.Any])
+    def setSummaryPosUndefined: Self = StObject.set(x, "summaryPos", js.undefined)
     
     @scala.inline
-    def deleteSummaryColor: Self = this.set("summaryColor", js.undefined)
+    def setTableHeaderHeight(value: Double): Self = StObject.set(x, "tableHeaderHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryPos(value: SummaryPos): Self = this.set("summaryPos", value.asInstanceOf[js.Any])
+    def setTableHeaderHeightUndefined: Self = StObject.set(x, "tableHeaderHeight", js.undefined)
     
     @scala.inline
-    def deleteSummaryPos: Self = this.set("summaryPos", js.undefined)
+    def setViews(value: js.Array[View]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableHeaderHeight(value: Double): Self = this.set("tableHeaderHeight", value.asInstanceOf[js.Any])
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
     @scala.inline
-    def deleteTableHeaderHeight: Self = this.set("tableHeaderHeight", js.undefined)
+    def setViewsVarargs(value: View*): Self = StObject.set(x, "views", js.Array(value :_*))
     
     @scala.inline
-    def setViewsVarargs(value: View*): Self = this.set("views", js.Array(value :_*))
+    def setWeekCellWidth(value: Double): Self = StObject.set(x, "weekCellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViews(value: js.Array[View]): Self = this.set("views", value.asInstanceOf[js.Any])
+    def setWeekCellWidthUndefined: Self = StObject.set(x, "weekCellWidth", js.undefined)
     
     @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
+    def setWeekMaxEvents(value: Double): Self = StObject.set(x, "weekMaxEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekCellWidth(value: Double): Self = this.set("weekCellWidth", value.asInstanceOf[js.Any])
+    def setWeekMaxEventsUndefined: Self = StObject.set(x, "weekMaxEvents", js.undefined)
     
     @scala.inline
-    def deleteWeekCellWidth: Self = this.set("weekCellWidth", js.undefined)
+    def setWeekResourceTableWidth(value: Double): Self = StObject.set(x, "weekResourceTableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekMaxEvents(value: Double): Self = this.set("weekMaxEvents", value.asInstanceOf[js.Any])
+    def setWeekResourceTableWidthUndefined: Self = StObject.set(x, "weekResourceTableWidth", js.undefined)
     
     @scala.inline
-    def deleteWeekMaxEvents: Self = this.set("weekMaxEvents", js.undefined)
+    def setYearCellWidth(value: Double): Self = StObject.set(x, "yearCellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekResourceTableWidth(value: Double): Self = this.set("weekResourceTableWidth", value.asInstanceOf[js.Any])
+    def setYearCellWidthUndefined: Self = StObject.set(x, "yearCellWidth", js.undefined)
     
     @scala.inline
-    def deleteWeekResourceTableWidth: Self = this.set("weekResourceTableWidth", js.undefined)
+    def setYearMaxEvents(value: Double): Self = StObject.set(x, "yearMaxEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYearCellWidth(value: Double): Self = this.set("yearCellWidth", value.asInstanceOf[js.Any])
+    def setYearMaxEventsUndefined: Self = StObject.set(x, "yearMaxEvents", js.undefined)
     
     @scala.inline
-    def deleteYearCellWidth: Self = this.set("yearCellWidth", js.undefined)
+    def setYearResourceTableWidth(value: Double): Self = StObject.set(x, "yearResourceTableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYearMaxEvents(value: Double): Self = this.set("yearMaxEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearMaxEvents: Self = this.set("yearMaxEvents", js.undefined)
-    
-    @scala.inline
-    def setYearResourceTableWidth(value: Double): Self = this.set("yearResourceTableWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearResourceTableWidth: Self = this.set("yearResourceTableWidth", js.undefined)
+    def setYearResourceTableWidthUndefined: Self = StObject.set(x, "yearResourceTableWidth", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Light
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "TreeItem")
 @js.native
-class TreeItem protected () extends js.Object {
+class TreeItem protected () extends StObject {
   /**
     * @param label A human-readable string describing this item
     * @param collapsibleState [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item. Default is [TreeItemCollapsibleState.None](#TreeItemCollapsibleState.None)

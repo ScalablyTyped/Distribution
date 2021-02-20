@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * performs a command.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemotebuildbotCommandDurations extends js.Object {
+trait SchemaGoogleDevtoolsRemotebuildbotCommandDurations extends StObject {
   
   /**
     * The time spent preparing the command to be run in a Docker container
@@ -57,60 +58,48 @@ object SchemaGoogleDevtoolsRemotebuildbotCommandDurations {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemotebuildbotCommandDurationsOps[Self <: SchemaGoogleDevtoolsRemotebuildbotCommandDurations] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemotebuildbotCommandDurationsMutableBuilder[Self <: SchemaGoogleDevtoolsRemotebuildbotCommandDurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDockerPrep(value: String): Self = StObject.set(x, "dockerPrep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDockerPrepUndefined: Self = StObject.set(x, "dockerPrep", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerPrep(value: String): Self = this.set("dockerPrep", value.asInstanceOf[js.Any])
+    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
     @scala.inline
-    def deleteDockerPrep: Self = this.set("dockerPrep", js.undefined)
+    def setExecution(value: String): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownload(value: String): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
     
     @scala.inline
-    def deleteDownload: Self = this.set("download", js.undefined)
+    def setIsoPrepDone(value: String): Self = StObject.set(x, "isoPrepDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecution(value: String): Self = this.set("execution", value.asInstanceOf[js.Any])
+    def setIsoPrepDoneUndefined: Self = StObject.set(x, "isoPrepDone", js.undefined)
     
     @scala.inline
-    def deleteExecution: Self = this.set("execution", js.undefined)
+    def setOverall(value: String): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoPrepDone(value: String): Self = this.set("isoPrepDone", value.asInstanceOf[js.Any])
+    def setOverallUndefined: Self = StObject.set(x, "overall", js.undefined)
     
     @scala.inline
-    def deleteIsoPrepDone: Self = this.set("isoPrepDone", js.undefined)
+    def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverall(value: String): Self = this.set("overall", value.asInstanceOf[js.Any])
+    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
     @scala.inline
-    def deleteOverall: Self = this.set("overall", js.undefined)
+    def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdout(value: String): Self = this.set("stdout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdout: Self = this.set("stdout", js.undefined)
-    
-    @scala.inline
-    def setUpload(value: String): Self = this.set("upload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyGlobalClusterMessage extends js.Object {
+trait ModifyGlobalClusterMessage extends StObject {
   
   /**
     *  Indicates if the global database cluster has deletion protection enabled. The global database cluster can't be deleted when deletion protection is enabled. 
@@ -31,36 +32,24 @@ object ModifyGlobalClusterMessage {
   }
   
   @scala.inline
-  implicit class ModifyGlobalClusterMessageOps[Self <: ModifyGlobalClusterMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyGlobalClusterMessageMutableBuilder[Self <: ModifyGlobalClusterMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletionProtection(value: BooleanOptional): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionProtection(value: BooleanOptional): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    def setGlobalClusterIdentifierUndefined: Self = StObject.set(x, "GlobalClusterIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    def setNewGlobalClusterIdentifier(value: String): Self = StObject.set(x, "NewGlobalClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalClusterIdentifier(value: String): Self = this.set("GlobalClusterIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalClusterIdentifier: Self = this.set("GlobalClusterIdentifier", js.undefined)
-    
-    @scala.inline
-    def setNewGlobalClusterIdentifier(value: String): Self = this.set("NewGlobalClusterIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewGlobalClusterIdentifier: Self = this.set("NewGlobalClusterIdentifier", js.undefined)
+    def setNewGlobalClusterIdentifierUndefined: Self = StObject.set(x, "NewGlobalClusterIdentifier", js.undefined)
   }
 }

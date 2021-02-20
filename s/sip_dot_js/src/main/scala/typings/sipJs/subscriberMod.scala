@@ -8,14 +8,14 @@ import typings.sipJs.subscriberOptionsMod.SubscriberOptions
 import typings.sipJs.subscriberSubscribeOptionsMod.SubscriberSubscribeOptions
 import typings.sipJs.subscriptionMod.Subscription
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/subscriber", JSImport.Namespace)
-@js.native
-object subscriberMod extends js.Object {
+object subscriberMod {
   
+  @JSImport("sip.js/lib/api/subscriber", "Subscriber")
   @js.native
   class Subscriber protected () extends Subscription {
     /**

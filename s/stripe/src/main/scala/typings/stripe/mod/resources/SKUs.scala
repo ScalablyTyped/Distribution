@@ -10,13 +10,14 @@ import typings.stripe.mod.skus.ISku
 import typings.stripe.mod.skus.ISkuCreationOptions
 import typings.stripe.mod.skus.ISkuListOptions
 import typings.stripe.mod.skus.ISkuUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.SKUs")
 @js.native
-class SKUs () extends js.Object {
+class SKUs () extends StObject {
   
   def create(data: ISkuCreationOptions): js.Promise[ISku] = js.native
   /**

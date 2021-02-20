@@ -1,12 +1,13 @@
 package typings.googleapis.computeV1Mod.computeV1
 
 import typings.googleapis.anon.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaManagedInstanceLastAttempt extends js.Object {
+trait SchemaManagedInstanceLastAttempt extends StObject {
   
   /**
     * [Output Only] Encountered errors during the last attempt to create or
@@ -23,24 +24,12 @@ object SchemaManagedInstanceLastAttempt {
   }
   
   @scala.inline
-  implicit class SchemaManagedInstanceLastAttemptOps[Self <: SchemaManagedInstanceLastAttempt] (val x: Self) extends AnyVal {
+  implicit class SchemaManagedInstanceLastAttemptMutableBuilder[Self <: SchemaManagedInstanceLastAttempt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: `3`): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrors(value: `3`): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
   }
 }

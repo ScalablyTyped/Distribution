@@ -1,15 +1,18 @@
 package typings.protobufjs
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs/cli/pbts", JSImport.Namespace)
-@js.native
-object pbtsMod extends js.Object {
+object pbtsMod {
   
+  @JSImport("protobufjs/cli/pbts", "main")
+  @js.native
   def main(args: js.Array[String]): js.UndefOr[Double] = js.native
+  @JSImport("protobufjs/cli/pbts", "main")
+  @js.native
   def main(args: js.Array[String], callback: pbtsCallback): js.UndefOr[Double] = js.native
   
   type pbtsCallback = js.Function2[/* err */ Error | Null, /* output */ js.UndefOr[String], Unit]

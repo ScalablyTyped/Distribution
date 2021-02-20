@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.INVALID_PIN
 import typings.chromeApps.chromeAppsStrings.INVALID_PUK
 import typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED
 import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INVALIDPIN extends js.Object {
+trait INVALIDPIN extends StObject {
   
   var INVALID_PIN: typings.chromeApps.chromeAppsStrings.INVALID_PIN = js.native
   
@@ -33,30 +34,18 @@ object INVALIDPIN {
   }
   
   @scala.inline
-  implicit class INVALIDPINOps[Self <: INVALIDPIN] (val x: Self) extends AnyVal {
+  implicit class INVALIDPINMutableBuilder[Self <: INVALIDPIN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setINVALID_PIN(value: INVALID_PIN): Self = StObject.set(x, "INVALID_PIN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setINVALID_PUK(value: INVALID_PUK): Self = StObject.set(x, "INVALID_PUK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMAX_ATTEMPTS_EXCEEDED(value: MAX_ATTEMPTS_EXCEEDED): Self = StObject.set(x, "MAX_ATTEMPTS_EXCEEDED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINVALID_PIN(value: INVALID_PIN): Self = this.set("INVALID_PIN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setINVALID_PUK(value: INVALID_PUK): Self = this.set("INVALID_PUK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMAX_ATTEMPTS_EXCEEDED(value: MAX_ATTEMPTS_EXCEEDED): Self = this.set("MAX_ATTEMPTS_EXCEEDED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNKNOWN_ERROR(value: UNKNOWN_ERROR): Self = this.set("UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+    def setUNKNOWN_ERROR(value: UNKNOWN_ERROR): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
   }
 }

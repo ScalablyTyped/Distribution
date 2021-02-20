@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnumValuesDisabledAsDuplicateOfDefault extends js.Object {
+trait EnumValuesDisabledAsDuplicateOfDefault extends StObject {
   
   var enumValues: DisabledAsDuplicateOfDefault = js.native
 }
@@ -18,21 +19,9 @@ object EnumValuesDisabledAsDuplicateOfDefault {
   }
   
   @scala.inline
-  implicit class EnumValuesDisabledAsDuplicateOfDefaultOps[Self <: EnumValuesDisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
+  implicit class EnumValuesDisabledAsDuplicateOfDefaultMutableBuilder[Self <: EnumValuesDisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnumValues(value: DisabledAsDuplicateOfDefault): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+    def setEnumValues(value: DisabledAsDuplicateOfDefault): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

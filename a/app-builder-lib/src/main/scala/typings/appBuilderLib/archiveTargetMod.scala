@@ -3,14 +3,14 @@ package typings.appBuilderLib
 import typings.appBuilderLib.coreMod.Target
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/ArchiveTarget", JSImport.Namespace)
-@js.native
-object archiveTargetMod extends js.Object {
+object archiveTargetMod {
   
+  @JSImport("app-builder-lib/out/targets/ArchiveTarget", "ArchiveTarget")
   @js.native
   class ArchiveTarget protected () extends Target {
     def this(name: String, outDir: String, packager: PlatformPackager[_]) = this()

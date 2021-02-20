@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapNavigationOptions extends js.Object {
+trait MapNavigationOptions extends StObject {
   
   /**
     * (Highmaps) General options for the map navigation buttons. Individual
@@ -82,72 +83,60 @@ object MapNavigationOptions {
   }
   
   @scala.inline
-  implicit class MapNavigationOptionsOps[Self <: MapNavigationOptions] (val x: Self) extends AnyVal {
+  implicit class MapNavigationOptionsMutableBuilder[Self <: MapNavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonOptions(value: MapNavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: MapNavigationButtonsOptions): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonOptions(value: MapNavigationButtonOptions): Self = this.set("buttonOptions", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteButtonOptions: Self = this.set("buttonOptions", js.undefined)
+    def setEnableButtons(value: Boolean): Self = StObject.set(x, "enableButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: MapNavigationButtonsOptions): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setEnableButtonsUndefined: Self = StObject.set(x, "enableButtons", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setEnableDoubleClickZoom(value: Boolean): Self = StObject.set(x, "enableDoubleClickZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableButtons(value: Boolean): Self = this.set("enableButtons", value.asInstanceOf[js.Any])
+    def setEnableDoubleClickZoomTo(value: Boolean): Self = StObject.set(x, "enableDoubleClickZoomTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableButtons: Self = this.set("enableButtons", js.undefined)
+    def setEnableDoubleClickZoomToUndefined: Self = StObject.set(x, "enableDoubleClickZoomTo", js.undefined)
     
     @scala.inline
-    def setEnableDoubleClickZoom(value: Boolean): Self = this.set("enableDoubleClickZoom", value.asInstanceOf[js.Any])
+    def setEnableDoubleClickZoomUndefined: Self = StObject.set(x, "enableDoubleClickZoom", js.undefined)
     
     @scala.inline
-    def deleteEnableDoubleClickZoom: Self = this.set("enableDoubleClickZoom", js.undefined)
+    def setEnableMouseWheelZoom(value: Boolean): Self = StObject.set(x, "enableMouseWheelZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDoubleClickZoomTo(value: Boolean): Self = this.set("enableDoubleClickZoomTo", value.asInstanceOf[js.Any])
+    def setEnableMouseWheelZoomUndefined: Self = StObject.set(x, "enableMouseWheelZoom", js.undefined)
     
     @scala.inline
-    def deleteEnableDoubleClickZoomTo: Self = this.set("enableDoubleClickZoomTo", js.undefined)
+    def setEnableTouchZoom(value: Boolean): Self = StObject.set(x, "enableTouchZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMouseWheelZoom(value: Boolean): Self = this.set("enableMouseWheelZoom", value.asInstanceOf[js.Any])
+    def setEnableTouchZoomUndefined: Self = StObject.set(x, "enableTouchZoom", js.undefined)
     
     @scala.inline
-    def deleteEnableMouseWheelZoom: Self = this.set("enableMouseWheelZoom", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTouchZoom(value: Boolean): Self = this.set("enableTouchZoom", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteEnableTouchZoom: Self = this.set("enableTouchZoom", js.undefined)
+    def setMouseWheelSensitivity(value: Double): Self = StObject.set(x, "mouseWheelSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setMouseWheelSensitivity(value: Double): Self = this.set("mouseWheelSensitivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouseWheelSensitivity: Self = this.set("mouseWheelSensitivity", js.undefined)
+    def setMouseWheelSensitivityUndefined: Self = StObject.set(x, "mouseWheelSensitivity", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyParameter extends js.Object {
+trait PolicyParameter extends StObject {
   
   /**
     *  Name of the parameter from the list of Review Polices. 
@@ -31,42 +32,30 @@ object PolicyParameter {
   }
   
   @scala.inline
-  implicit class PolicyParameterOps[Self <: PolicyParameter] (val x: Self) extends AnyVal {
+  implicit class PolicyParameterMutableBuilder[Self <: PolicyParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapEntries(value: ParameterMapEntryList): Self = StObject.set(x, "MapEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setMapEntriesUndefined: Self = StObject.set(x, "MapEntries", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setMapEntriesVarargs(value: ParameterMapEntry*): Self = StObject.set(x, "MapEntries", js.Array(value :_*))
     
     @scala.inline
-    def setMapEntriesVarargs(value: ParameterMapEntry*): Self = this.set("MapEntries", js.Array(value :_*))
+    def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapEntries(value: ParameterMapEntryList): Self = this.set("MapEntries", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteMapEntries: Self = this.set("MapEntries", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: StringList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollingLegacy extends js.Object {
+trait ScrollingLegacy extends StObject {
   
   var bAutoCss: Boolean = js.native
   
@@ -38,39 +39,27 @@ object ScrollingLegacy {
   }
   
   @scala.inline
-  implicit class ScrollingLegacyOps[Self <: ScrollingLegacy] (val x: Self) extends AnyVal {
+  implicit class ScrollingLegacyMutableBuilder[Self <: ScrollingLegacy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBAutoCss(value: Boolean): Self = StObject.set(x, "bAutoCss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBCollapse(value: Boolean): Self = StObject.set(x, "bCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBInfinite(value: Boolean): Self = StObject.set(x, "bInfinite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBAutoCss(value: Boolean): Self = this.set("bAutoCss", value.asInstanceOf[js.Any])
+    def setIBarWidth(value: Double): Self = StObject.set(x, "iBarWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCollapse(value: Boolean): Self = this.set("bCollapse", value.asInstanceOf[js.Any])
+    def setILoadGap(value: Double): Self = StObject.set(x, "iLoadGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBInfinite(value: Boolean): Self = this.set("bInfinite", value.asInstanceOf[js.Any])
+    def setSX(value: String): Self = StObject.set(x, "sX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIBarWidth(value: Double): Self = this.set("iBarWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setILoadGap(value: Double): Self = this.set("iLoadGap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSX(value: String): Self = this.set("sX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSY(value: String): Self = this.set("sY", value.asInstanceOf[js.Any])
+    def setSY(value: String): Self = StObject.set(x, "sY", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceFileUpload extends js.Object {
+trait SourceFileUpload extends StObject {
   
   // name of the file
   var file_name: String = js.native
@@ -25,27 +26,15 @@ object SourceFileUpload {
   }
   
   @scala.inline
-  implicit class SourceFileUploadOps[Self <: SourceFileUpload] (val x: Self) extends AnyVal {
+  implicit class SourceFileUploadMutableBuilder[Self <: SourceFileUpload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFile_name(value: String): Self = this.set("file_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFile_size(value: Double): Self = this.set("file_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFile_upload_time(value: String): Self = this.set("file_upload_time", value.asInstanceOf[js.Any])
+    def setFile_upload_time(value: String): Self = StObject.set(x, "file_upload_time", value.asInstanceOf[js.Any])
   }
 }

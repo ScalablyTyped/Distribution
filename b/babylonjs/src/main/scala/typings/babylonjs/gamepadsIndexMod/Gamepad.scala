@@ -1,5 +1,6 @@
 package typings.babylonjs.gamepadsIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -293,32 +294,54 @@ class Gamepad protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Gamepads/index", "Gamepad")
-@js.native
-object Gamepad extends js.Object {
+object Gamepad {
+  
+  @JSImport("babylonjs/Gamepads/index", "Gamepad")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Represents an Dual Shock controller
     */
-  var DUALSHOCK: Double = js.native
+  @JSImport("babylonjs/Gamepads/index", "Gamepad.DUALSHOCK")
+  @js.native
+  def DUALSHOCK: Double = js.native
+  @scala.inline
+  def DUALSHOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUALSHOCK")(x.asInstanceOf[js.Any])
   
   /**
     * Represents a gamepad controller
     */
-  var GAMEPAD: Double = js.native
+  @JSImport("babylonjs/Gamepads/index", "Gamepad.GAMEPAD")
+  @js.native
+  def GAMEPAD: Double = js.native
+  @scala.inline
+  def GAMEPAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GAMEPAD")(x.asInstanceOf[js.Any])
   
   /**
     * Represents a generic controller
     */
-  var GENERIC: Double = js.native
+  @JSImport("babylonjs/Gamepads/index", "Gamepad.GENERIC")
+  @js.native
+  def GENERIC: Double = js.native
+  @scala.inline
+  def GENERIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GENERIC")(x.asInstanceOf[js.Any])
   
   /**
     * Represents a pose-enabled controller
     */
-  var POSE_ENABLED: Double = js.native
+  @JSImport("babylonjs/Gamepads/index", "Gamepad.POSE_ENABLED")
+  @js.native
+  def POSE_ENABLED: Double = js.native
+  @scala.inline
+  def POSE_ENABLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSE_ENABLED")(x.asInstanceOf[js.Any])
   
   /**
     * Represents an XBox controller
     */
-  var XBOX: Double = js.native
+  @JSImport("babylonjs/Gamepads/index", "Gamepad.XBOX")
+  @js.native
+  def XBOX: Double = js.native
+  @scala.inline
+  def XBOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
 }

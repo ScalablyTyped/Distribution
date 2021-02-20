@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePackageRequest extends js.Object {
+trait CreatePackageRequest extends StObject {
   
   /**
     * Description of the package.
@@ -36,33 +37,21 @@ object CreatePackageRequest {
   }
   
   @scala.inline
-  implicit class CreatePackageRequestOps[Self <: CreatePackageRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePackageRequestMutableBuilder[Self <: CreatePackageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPackageDescription(value: PackageDescription): Self = StObject.set(x, "PackageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPackageDescriptionUndefined: Self = StObject.set(x, "PackageDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageName(value: PackageName): Self = StObject.set(x, "PackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: PackageName): Self = this.set("PackageName", value.asInstanceOf[js.Any])
+    def setPackageSource(value: PackageSource): Self = StObject.set(x, "PackageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageSource(value: PackageSource): Self = this.set("PackageSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageType(value: PackageType): Self = this.set("PackageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageDescription(value: PackageDescription): Self = this.set("PackageDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageDescription: Self = this.set("PackageDescription", js.undefined)
+    def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
   }
 }

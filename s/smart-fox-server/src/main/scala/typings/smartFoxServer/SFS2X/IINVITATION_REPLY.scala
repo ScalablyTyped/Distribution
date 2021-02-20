@@ -1,12 +1,13 @@
 package typings.smartFoxServer.SFS2X
 
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IINVITATION_REPLY extends js.Object {
+trait IINVITATION_REPLY extends StObject {
   
   var data: js.Object = js.native
   
@@ -23,27 +24,15 @@ object IINVITATION_REPLY {
   }
   
   @scala.inline
-  implicit class IINVITATION_REPLYOps[Self <: IINVITATION_REPLY] (val x: Self) extends AnyVal {
+  implicit class IINVITATION_REPLYMutableBuilder[Self <: IINVITATION_REPLY] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvitee(value: SFSUser): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvitee(value: SFSUser): Self = this.set("invitee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReply(value: Double): Self = this.set("reply", value.asInstanceOf[js.Any])
+    def setReply(value: Double): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
   }
 }

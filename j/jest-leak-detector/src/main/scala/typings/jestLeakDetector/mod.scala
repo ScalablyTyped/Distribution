@@ -1,15 +1,15 @@
 package typings.jestLeakDetector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-leak-detector", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("jest-leak-detector", JSImport.Default)
   @js.native
-  class default protected () extends js.Object {
+  class default protected () extends StObject {
     def this(value: js.Any) = this()
     
     var _isReferenceBeingHeld: js.Any = js.native

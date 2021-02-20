@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Overview of the modifications that occurred.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2TransformationOverview extends js.Object {
+trait SchemaGooglePrivacyDlpV2TransformationOverview extends StObject {
   
   /**
     * Transformations applied to the dataset.
@@ -29,33 +30,21 @@ object SchemaGooglePrivacyDlpV2TransformationOverview {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TransformationOverviewOps[Self <: SchemaGooglePrivacyDlpV2TransformationOverview] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2TransformationOverviewMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TransformationOverview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransformationSummaries(value: js.Array[SchemaGooglePrivacyDlpV2TransformationSummary]): Self = StObject.set(x, "transformationSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransformationSummariesUndefined: Self = StObject.set(x, "transformationSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransformationSummariesVarargs(value: SchemaGooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setTransformationSummariesVarargs(value: SchemaGooglePrivacyDlpV2TransformationSummary*): Self = this.set("transformationSummaries", js.Array(value :_*))
+    def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformationSummaries(value: js.Array[SchemaGooglePrivacyDlpV2TransformationSummary]): Self = this.set("transformationSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformationSummaries: Self = this.set("transformationSummaries", js.undefined)
-    
-    @scala.inline
-    def setTransformedBytes(value: String): Self = this.set("transformedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformedBytes: Self = this.set("transformedBytes", js.undefined)
+    def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
   }
 }

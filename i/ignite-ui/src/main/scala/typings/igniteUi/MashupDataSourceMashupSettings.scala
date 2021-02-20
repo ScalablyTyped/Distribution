@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,33 +32,21 @@ object MashupDataSourceMashupSettings {
   }
   
   @scala.inline
-  implicit class MashupDataSourceMashupSettingsOps[Self <: MashupDataSourceMashupSettings] (val x: Self) extends AnyVal {
+  implicit class MashupDataSourceMashupSettingsMutableBuilder[Self <: MashupDataSourceMashupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = this.set("dataSource", js.Array(value :_*))
+    def setIgnorePartialRecords(value: Boolean): Self = StObject.set(x, "ignorePartialRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Array[_]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
-    
-    @scala.inline
-    def setIgnorePartialRecords(value: Boolean): Self = this.set("ignorePartialRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnorePartialRecords: Self = this.set("ignorePartialRecords", js.undefined)
+    def setIgnorePartialRecordsUndefined: Self = StObject.set(x, "ignorePartialRecords", js.undefined)
   }
 }

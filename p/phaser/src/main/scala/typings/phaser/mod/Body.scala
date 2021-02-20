@@ -2,6 +2,7 @@ package typings.phaser.mod
 
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IChamferableBodyDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Body ()
   extends typings.phaser.MatterJS.Body
-/* static members */
-@JSImport("matter", "Body")
-@js.native
-object Body extends js.Object {
+object Body {
   
   /**
     * Applies a force to a body from a given world-space position, including resulting torque.
@@ -31,6 +29,9 @@ object Body extends js.Object {
     * @param {vector} position
     * @param {vector} force
     */
+  /* static member */
+  @JSImport("matter", "Body.applyForce")
+  @js.native
   def applyForce(body: BodyType, position: typings.phaser.MatterJS.Vector, force: typings.phaser.MatterJS.Vector): Unit = js.native
   
   /**
@@ -41,6 +42,9 @@ object Body extends js.Object {
     * @param {} options
     * @return {body} body
     */
+  /* static member */
+  @JSImport("matter", "Body.create")
+  @js.native
   def create(options: IChamferableBodyDefinition): typings.phaser.MatterJS.Body = js.native
   
   /**
@@ -49,6 +53,9 @@ object Body extends js.Object {
     * @method nextCategory
     * @return {Number} Unique category bitfield
     */
+  /* static member */
+  @JSImport("matter", "Body.nextCategory")
+  @js.native
   def nextCategory(): Double = js.native
   
   /**
@@ -59,6 +66,9 @@ object Body extends js.Object {
     * @param {bool} [isNonColliding=false]
     * @return {Number} Unique group index
     */
+  /* static member */
+  @JSImport("matter", "Body.nextGroup")
+  @js.native
   def nextGroup(isNonColliding: Boolean): Double = js.native
   
   /**
@@ -67,6 +77,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} rotation
     */
+  /* static member */
+  @JSImport("matter", "Body.rotate")
+  @js.native
   def rotate(body: BodyType, rotation: Double): Unit = js.native
   
   /**
@@ -77,7 +90,12 @@ object Body extends js.Object {
     * @param {number} scaleY
     * @param {vector} [point]
     */
+  /* static member */
+  @JSImport("matter", "Body.scale")
+  @js.native
   def scale(body: BodyType, scaleX: Double, scaleY: Double): Unit = js.native
+  @JSImport("matter", "Body.scale")
+  @js.native
   def scale(body: BodyType, scaleX: Double, scaleY: Double, point: typings.phaser.MatterJS.Vector): Unit = js.native
   
   /**
@@ -88,7 +106,12 @@ object Body extends js.Object {
     * @param {} settings A property name (or map of properties and values) to set on the body.
     * @param {} value The value to set if `settings` is a single property name.
     */
+  /* static member */
+  @JSImport("matter", "Body.set")
+  @js.native
   def set(body: BodyType, settings: js.Any): Unit = js.native
+  @JSImport("matter", "Body.set")
+  @js.native
   def set(body: BodyType, settings: js.Any, value: js.Any): Unit = js.native
   
   /**
@@ -97,6 +120,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} angle
     */
+  /* static member */
+  @JSImport("matter", "Body.setAngle")
+  @js.native
   def setAngle(body: BodyType, angle: Double): Unit = js.native
   
   /**
@@ -105,6 +131,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} velocity
     */
+  /* static member */
+  @JSImport("matter", "Body.setAngularVelocity")
+  @js.native
   def setAngularVelocity(body: BodyType, velocity: Double): Unit = js.native
   
   /**
@@ -113,6 +142,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} density
     */
+  /* static member */
+  @JSImport("matter", "Body.setDensity")
+  @js.native
   def setDensity(body: BodyType, density: Double): Unit = js.native
   
   /**
@@ -122,6 +154,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} inertia
     */
+  /* static member */
+  @JSImport("matter", "Body.setInertia")
+  @js.native
   def setInertia(body: BodyType, inertia: Double): Unit = js.native
   
   /**
@@ -130,6 +165,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} mass
     */
+  /* static member */
+  @JSImport("matter", "Body.setMass")
+  @js.native
   def setMass(body: BodyType, mass: Double): Unit = js.native
   
   /**
@@ -142,7 +180,12 @@ object Body extends js.Object {
     * @param [body] parts
     * @param {bool} [autoHull=true]
     */
+  /* static member */
+  @JSImport("matter", "Body.setParts")
+  @js.native
   def setParts(body: BodyType, parts: js.Array[BodyType]): Unit = js.native
+  @JSImport("matter", "Body.setParts")
+  @js.native
   def setParts(body: BodyType, parts: js.Array[BodyType], autoHull: Boolean): Unit = js.native
   
   /**
@@ -151,6 +194,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {vector} position
     */
+  /* static member */
+  @JSImport("matter", "Body.setPosition")
+  @js.native
   def setPosition(body: BodyType, position: typings.phaser.MatterJS.Vector): Unit = js.native
   
   /**
@@ -159,6 +205,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {bool} isStatic
     */
+  /* static member */
+  @JSImport("matter", "Body.setStatic")
+  @js.native
   def setStatic(body: BodyType, isStatic: Boolean): Unit = js.native
   
   /**
@@ -167,6 +216,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {vector} velocity
     */
+  /* static member */
+  @JSImport("matter", "Body.setVelocity")
+  @js.native
   def setVelocity(body: BodyType, velocity: typings.phaser.MatterJS.Vector): Unit = js.native
   
   /**
@@ -181,6 +233,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {vector[]} vertices
     */
+  /* static member */
+  @JSImport("matter", "Body.setVertices")
+  @js.native
   def setVertices(body: BodyType, vertices: js.Array[typings.phaser.MatterJS.Vector]): Unit = js.native
   
   /**
@@ -189,6 +244,9 @@ object Body extends js.Object {
     * @param {body} body
     * @param {vector} translation
     */
+  /* static member */
+  @JSImport("matter", "Body.translate")
+  @js.native
   def translate(body: BodyType, translation: typings.phaser.MatterJS.Vector): Unit = js.native
   
   /**
@@ -199,5 +257,8 @@ object Body extends js.Object {
     * @param {number} timeScale
     * @param {number} correction
     */
+  /* static member */
+  @JSImport("matter", "Body.update")
+  @js.native
   def update(body: BodyType, deltaTime: Double, timeScale: Double, correction: Double): Unit = js.native
 }

@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/metadata
   */
 @js.native
-trait NodeCollectionMetadata extends js.Object {
+trait NodeCollectionMetadata extends StObject {
   
   /**
     * Get the maximum degree of the nodes in the collection.
@@ -69,39 +70,27 @@ object NodeCollectionMetadata {
   }
   
   @scala.inline
-  implicit class NodeCollectionMetadataOps[Self <: NodeCollectionMetadata] (val x: Self) extends AnyVal {
+  implicit class NodeCollectionMetadataMutableBuilder[Self <: NodeCollectionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxDegree(value: Boolean => Double): Self = StObject.set(x, "maxDegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxIndegree(value: Boolean => Double): Self = StObject.set(x, "maxIndegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxOutdegree(value: Boolean => Double): Self = StObject.set(x, "maxOutdegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxDegree(value: Boolean => Double): Self = this.set("maxDegree", js.Any.fromFunction1(value))
+    def setMinDegree(value: Boolean => Double): Self = StObject.set(x, "minDegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxIndegree(value: Boolean => Double): Self = this.set("maxIndegree", js.Any.fromFunction1(value))
+    def setMinIndegree(value: Boolean => Double): Self = StObject.set(x, "minIndegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxOutdegree(value: Boolean => Double): Self = this.set("maxOutdegree", js.Any.fromFunction1(value))
+    def setMinOutdegree(value: Boolean => Double): Self = StObject.set(x, "minOutdegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinDegree(value: Boolean => Double): Self = this.set("minDegree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMinIndegree(value: Boolean => Double): Self = this.set("minIndegree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMinOutdegree(value: Boolean => Double): Self = this.set("minOutdegree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTotalDegree(value: Boolean => Double): Self = this.set("totalDegree", js.Any.fromFunction1(value))
+    def setTotalDegree(value: Boolean => Double): Self = StObject.set(x, "totalDegree", js.Any.fromFunction1(value))
   }
 }

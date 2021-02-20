@@ -1,12 +1,13 @@
 package typings.gapiDrive.gapi.client.drive
 
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignfileList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileListResource extends js.Object {
+trait FileListResource extends StObject {
   
   var etag: String = js.native
   
@@ -39,42 +40,30 @@ object FileListResource {
   }
   
   @scala.inline
-  implicit class FileListResourceOps[Self <: FileListResource] (val x: Self) extends AnyVal {
+  implicit class FileListResourceMutableBuilder[Self <: FileListResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncompleteSearch(value: Boolean): Self = StObject.set(x, "incompleteSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[FileResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: FileResource*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setIncompleteSearch(value: Boolean): Self = this.set("incompleteSearch", value.asInstanceOf[js.Any])
+    def setKind(value: driveNumbersignfileList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: FileResource*): Self = this.set("items", js.Array(value :_*))
+    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[FileResource]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: driveNumbersignfileList): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextLink(value: String): Self = this.set("nextLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
   }
 }

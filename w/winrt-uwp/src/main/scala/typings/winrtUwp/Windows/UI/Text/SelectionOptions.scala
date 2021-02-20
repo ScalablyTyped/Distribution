@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionOptions extends js.Object
+sealed trait SelectionOptions extends StObject
 /** Describes the options that apply to a selection. */
 @JSGlobal("Windows.UI.Text.SelectionOptions")
 @js.native
-object SelectionOptions extends js.Object {
+object SelectionOptions extends StObject {
   
   /** The selection is active; that is, the text control has the input focus. */
   @js.native

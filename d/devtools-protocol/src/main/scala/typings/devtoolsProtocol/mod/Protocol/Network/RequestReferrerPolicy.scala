@@ -8,6 +8,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.`strict-origin-when-cros
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`strict-origin`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`unsafe-url`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.origin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`strict-origin`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`strict-origin-when-cross-origin`
 */
-trait RequestReferrerPolicy extends js.Object
+trait RequestReferrerPolicy extends StObject
 object RequestReferrerPolicy {
   
   @scala.inline

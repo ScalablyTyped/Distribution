@@ -1,11 +1,12 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IThemingProvider extends js.Object {
+trait IThemingProvider extends StObject {
   
   def alwaysWatchTheme(alwaysWatch: Boolean): Unit = js.native
   

@@ -1,35 +1,31 @@
 package typings.reapop
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reapop/dist/reducers/notifications/constants", JSImport.Namespace)
-@js.native
-object notificationsConstantsMod extends js.Object {
+object notificationsConstantsMod {
   
   @js.native
-  sealed trait NotificationAction extends js.Object
+  sealed trait NotificationAction extends StObject
+  @JSImport("reapop/dist/reducers/notifications/constants", "NotificationAction")
   @js.native
-  object NotificationAction extends js.Object {
+  object NotificationAction extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[NotificationAction with String] = js.native
     
     @js.native
     sealed trait DismissNotification extends NotificationAction
-    /* "reapop/dismissNotification" */ @js.native
-    object DismissNotification extends TopLevel[DismissNotification with String]
+    /* "reapop/dismissNotification" */ val DismissNotification: typings.reapop.notificationsConstantsMod.NotificationAction.DismissNotification with String = js.native
     
     @js.native
     sealed trait DismissNotifications extends NotificationAction
-    /* "reapop/dismissNotifications" */ @js.native
-    object DismissNotifications extends TopLevel[DismissNotifications with String]
+    /* "reapop/dismissNotifications" */ val DismissNotifications: typings.reapop.notificationsConstantsMod.NotificationAction.DismissNotifications with String = js.native
     
     @js.native
     sealed trait UpsertNotification extends NotificationAction
-    /* "reapop/upsertNotification" */ @js.native
-    object UpsertNotification extends TopLevel[UpsertNotification with String]
+    /* "reapop/upsertNotification" */ val UpsertNotification: typings.reapop.notificationsConstantsMod.NotificationAction.UpsertNotification with String = js.native
   }
 }

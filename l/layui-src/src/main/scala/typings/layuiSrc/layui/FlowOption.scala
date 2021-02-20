@@ -1,12 +1,13 @@
 package typings.layuiSrc.layui
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowOption extends js.Object {
+trait FlowOption extends StObject {
   
   var done: js.UndefOr[
     js.Function2[
@@ -37,62 +38,50 @@ object FlowOption {
   }
   
   @scala.inline
-  implicit class FlowOptionOps[Self <: FlowOption] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class FlowOptionMutableBuilder[Self <: FlowOption] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDone(
       value: (/* page */ Double, /* next */ js.Function2[/* html */ String, /* isMore */ Boolean, Unit]) => Unit
-    ): Self = this.set("done", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def setElem(value: String | HTMLElement): Self = this.set("elem", value.asInstanceOf[js.Any])
+    def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElem: Self = this.set("elem", js.undefined)
+    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setIsAuto(value: Boolean): Self = this.set("isAuto", value.asInstanceOf[js.Any])
+    def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAuto: Self = this.set("isAuto", js.undefined)
+    def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
     
     @scala.inline
-    def setIsLazyimg(value: Boolean): Self = this.set("isLazyimg", value.asInstanceOf[js.Any])
+    def setIsLazyimg(value: Boolean): Self = StObject.set(x, "isLazyimg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsLazyimg: Self = this.set("isLazyimg", js.undefined)
+    def setIsLazyimgUndefined: Self = StObject.set(x, "isLazyimg", js.undefined)
     
     @scala.inline
-    def setMb(value: Double): Self = this.set("mb", value.asInstanceOf[js.Any])
+    def setMb(value: Double): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMb: Self = this.set("mb", js.undefined)
+    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
     @scala.inline
-    def setScrollElem(value: String | HTMLElement): Self = this.set("scrollElem", value.asInstanceOf[js.Any])
+    def setScrollElem(value: String | HTMLElement): Self = StObject.set(x, "scrollElem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollElem: Self = this.set("scrollElem", js.undefined)
+    def setScrollElemUndefined: Self = StObject.set(x, "scrollElem", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSimulationJobRequest extends js.Object {
+trait CreateSimulationJobRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
@@ -76,93 +77,81 @@ object CreateSimulationJobRequest {
   }
   
   @scala.inline
-  implicit class CreateSimulationJobRequestOps[Self <: CreateSimulationJobRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSimulationJobRequestMutableBuilder[Self <: CreateSimulationJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompute(value: Compute): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRole(value: IamRole): Self = this.set("iamRole", value.asInstanceOf[js.Any])
+    def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
     
     @scala.inline
-    def setMaxJobDurationInSeconds(value: JobDuration): Self = this.set("maxJobDurationInSeconds", value.asInstanceOf[js.Any])
+    def setDataSources(value: DataSourceConfigs): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setDataSourcesVarargs(value: DataSourceConfig*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
     
     @scala.inline
-    def setCompute(value: Compute): Self = this.set("compute", value.asInstanceOf[js.Any])
+    def setFailureBehavior(value: FailureBehavior): Self = StObject.set(x, "failureBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompute: Self = this.set("compute", js.undefined)
+    def setFailureBehaviorUndefined: Self = StObject.set(x, "failureBehavior", js.undefined)
     
     @scala.inline
-    def setDataSourcesVarargs(value: DataSourceConfig*): Self = this.set("dataSources", js.Array(value :_*))
+    def setIamRole(value: IamRole): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: DataSourceConfigs): Self = this.set("dataSources", value.asInstanceOf[js.Any])
+    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSources: Self = this.set("dataSources", js.undefined)
+    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
     @scala.inline
-    def setFailureBehavior(value: FailureBehavior): Self = this.set("failureBehavior", value.asInstanceOf[js.Any])
+    def setMaxJobDurationInSeconds(value: JobDuration): Self = StObject.set(x, "maxJobDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureBehavior: Self = this.set("failureBehavior", js.undefined)
+    def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
     
     @scala.inline
-    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    def setRobotApplications(value: RobotApplicationConfigs): Self = StObject.set(x, "robotApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputLocation(value: OutputLocation): Self = this.set("outputLocation", value.asInstanceOf[js.Any])
+    def setRobotApplicationsUndefined: Self = StObject.set(x, "robotApplications", js.undefined)
     
     @scala.inline
-    def deleteOutputLocation: Self = this.set("outputLocation", js.undefined)
+    def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value :_*))
     
     @scala.inline
-    def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = this.set("robotApplications", js.Array(value :_*))
+    def setSimulationApplications(value: SimulationApplicationConfigs): Self = StObject.set(x, "simulationApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRobotApplications(value: RobotApplicationConfigs): Self = this.set("robotApplications", value.asInstanceOf[js.Any])
+    def setSimulationApplicationsUndefined: Self = StObject.set(x, "simulationApplications", js.undefined)
     
     @scala.inline
-    def deleteRobotApplications: Self = this.set("robotApplications", js.undefined)
+    def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value :_*))
     
     @scala.inline
-    def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = this.set("simulationApplications", js.Array(value :_*))
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimulationApplications(value: SimulationApplicationConfigs): Self = this.set("simulationApplications", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSimulationApplications: Self = this.set("simulationApplications", js.undefined)
+    def setVpcConfig(value: VPCConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VPCConfig): Self = this.set("vpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("vpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object WindowsDefenderAdvancedThreatProtectionConfiguration {
   }
   
   @scala.inline
-  implicit class WindowsDefenderAdvancedThreatProtectionConfigurationOps[Self <: WindowsDefenderAdvancedThreatProtectionConfiguration] (val x: Self) extends AnyVal {
+  implicit class WindowsDefenderAdvancedThreatProtectionConfigurationMutableBuilder[Self <: WindowsDefenderAdvancedThreatProtectionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSampleSharing(value: Boolean): Self = StObject.set(x, "allowSampleSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSampleSharingUndefined: Self = StObject.set(x, "allowSampleSharing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableExpeditedTelemetryReporting(value: Boolean): Self = StObject.set(x, "enableExpeditedTelemetryReporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSampleSharing(value: Boolean): Self = this.set("allowSampleSharing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowSampleSharing: Self = this.set("allowSampleSharing", js.undefined)
-    
-    @scala.inline
-    def setEnableExpeditedTelemetryReporting(value: Boolean): Self = this.set("enableExpeditedTelemetryReporting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableExpeditedTelemetryReporting: Self = this.set("enableExpeditedTelemetryReporting", js.undefined)
+    def setEnableExpeditedTelemetryReportingUndefined: Self = StObject.set(x, "enableExpeditedTelemetryReporting", js.undefined)
   }
 }

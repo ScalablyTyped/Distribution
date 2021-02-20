@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.required
   - typings.microsoftGraph.microsoftGraphStrings.disallowed
 */
-trait WindowsHelloForBusinessPinUsage extends js.Object
+trait WindowsHelloForBusinessPinUsage extends StObject
 object WindowsHelloForBusinessPinUsage {
   
   @scala.inline

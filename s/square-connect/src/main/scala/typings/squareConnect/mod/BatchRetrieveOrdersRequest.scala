@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BatchRetrieveOrdersRequest")
 @js.native
-class BatchRetrieveOrdersRequest () extends js.Object {
+class BatchRetrieveOrdersRequest () extends StObject {
   
   /**
     * The ID of the location for these orders.

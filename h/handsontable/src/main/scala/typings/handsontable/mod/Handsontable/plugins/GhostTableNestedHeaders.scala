@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GhostTableNestedHeaders extends js.Object {
+trait GhostTableNestedHeaders extends StObject {
   
   def clear(): Unit = js.native
   
@@ -24,33 +25,21 @@ object GhostTableNestedHeaders {
   }
   
   @scala.inline
-  implicit class GhostTableNestedHeadersOps[Self <: GhostTableNestedHeaders] (val x: Self) extends AnyVal {
+  implicit class GhostTableNestedHeadersMutableBuilder[Self <: GhostTableNestedHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNestedHeaders(value: NestedHeaders): Self = StObject.set(x, "nestedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setWidthsCache(value: js.Array[_]): Self = StObject.set(x, "widthsCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNestedHeaders(value: NestedHeaders): Self = this.set("nestedHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthsCacheVarargs(value: js.Any*): Self = this.set("widthsCache", js.Array(value :_*))
-    
-    @scala.inline
-    def setWidthsCache(value: js.Array[_]): Self = this.set("widthsCache", value.asInstanceOf[js.Any])
+    def setWidthsCacheVarargs(value: js.Any*): Self = StObject.set(x, "widthsCache", js.Array(value :_*))
   }
 }

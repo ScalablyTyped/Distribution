@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/TableCell/TableCell.TableCellClassKey>> */
 @js.native
-trait PartialClassNameMapTableCBody extends js.Object {
+trait PartialClassNameMapTableCBody extends StObject {
   
   var body: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object PartialClassNameMapTableCBody {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapTableCBodyOps[Self <: PartialClassNameMapTableCBody] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapTableCBodyMutableBuilder[Self <: PartialClassNameMapTableCBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: String): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setNumeric(value: String): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead(value: String): Self = this.set("head", value.asInstanceOf[js.Any])
+    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
     @scala.inline
-    def deleteHead: Self = this.set("head", js.undefined)
+    def setPaddingCheckbox(value: String): Self = StObject.set(x, "paddingCheckbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumeric(value: String): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    def setPaddingCheckboxUndefined: Self = StObject.set(x, "paddingCheckbox", js.undefined)
     
     @scala.inline
-    def deleteNumeric: Self = this.set("numeric", js.undefined)
+    def setPaddingDense(value: String): Self = StObject.set(x, "paddingDense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingCheckbox(value: String): Self = this.set("paddingCheckbox", value.asInstanceOf[js.Any])
+    def setPaddingDenseUndefined: Self = StObject.set(x, "paddingDense", js.undefined)
     
     @scala.inline
-    def deletePaddingCheckbox: Self = this.set("paddingCheckbox", js.undefined)
+    def setPaddingNone(value: String): Self = StObject.set(x, "paddingNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingDense(value: String): Self = this.set("paddingDense", value.asInstanceOf[js.Any])
+    def setPaddingNoneUndefined: Self = StObject.set(x, "paddingNone", js.undefined)
     
     @scala.inline
-    def deletePaddingDense: Self = this.set("paddingDense", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingNone(value: String): Self = this.set("paddingNone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingNone: Self = this.set("paddingNone", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

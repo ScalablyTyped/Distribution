@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,30 +78,18 @@ object XPersistObject {
   }
   
   @scala.inline
-  implicit class XPersistObjectOps[Self <: XPersistObject] (val x: Self) extends AnyVal {
+  implicit class XPersistObjectMutableBuilder[Self <: XPersistObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRead(value: XObjectInputStream => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetServiceName(value: () => String): Self = this.set("getServiceName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRead(value: XObjectInputStream => Unit): Self = this.set("read", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: XObjectOutputStream => Unit): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWrite(value: XObjectOutputStream => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

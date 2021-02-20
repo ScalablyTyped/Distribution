@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBooks.anon
 
 import typings.maximMazurokGapiClientBooks.gapi.client.books.DownloadAccessRestriction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessViewStatus extends js.Object {
+trait AccessViewStatus extends StObject {
   
   /**
     * Combines the access and viewability of this volume into a single status field for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN, SAMPLE or NONE. (In LITE
@@ -69,102 +70,90 @@ object AccessViewStatus {
   }
   
   @scala.inline
-  implicit class AccessViewStatusOps[Self <: AccessViewStatus] (val x: Self) extends AnyVal {
+  implicit class AccessViewStatusMutableBuilder[Self <: AccessViewStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessViewStatus(value: String): Self = StObject.set(x, "accessViewStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessViewStatusUndefined: Self = StObject.set(x, "accessViewStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessViewStatus(value: String): Self = this.set("accessViewStatus", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteAccessViewStatus: Self = this.set("accessViewStatus", js.undefined)
+    def setDownloadAccess(value: DownloadAccessRestriction): Self = StObject.set(x, "downloadAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDownloadAccessUndefined: Self = StObject.set(x, "downloadAccess", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setDriveImportedContentLink(value: String): Self = StObject.set(x, "driveImportedContentLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadAccess(value: DownloadAccessRestriction): Self = this.set("downloadAccess", value.asInstanceOf[js.Any])
+    def setDriveImportedContentLinkUndefined: Self = StObject.set(x, "driveImportedContentLink", js.undefined)
     
     @scala.inline
-    def deleteDownloadAccess: Self = this.set("downloadAccess", js.undefined)
+    def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveImportedContentLink(value: String): Self = this.set("driveImportedContentLink", value.asInstanceOf[js.Any])
+    def setEmbeddableUndefined: Self = StObject.set(x, "embeddable", js.undefined)
     
     @scala.inline
-    def deleteDriveImportedContentLink: Self = this.set("driveImportedContentLink", js.undefined)
+    def setEpub(value: AcsTokenLink): Self = StObject.set(x, "epub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddable(value: Boolean): Self = this.set("embeddable", value.asInstanceOf[js.Any])
+    def setEpubUndefined: Self = StObject.set(x, "epub", js.undefined)
     
     @scala.inline
-    def deleteEmbeddable: Self = this.set("embeddable", js.undefined)
+    def setExplicitOfflineLicenseManagement(value: Boolean): Self = StObject.set(x, "explicitOfflineLicenseManagement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpub(value: AcsTokenLink): Self = this.set("epub", value.asInstanceOf[js.Any])
+    def setExplicitOfflineLicenseManagementUndefined: Self = StObject.set(x, "explicitOfflineLicenseManagement", js.undefined)
     
     @scala.inline
-    def deleteEpub: Self = this.set("epub", js.undefined)
+    def setPdf(value: AcsTokenLink): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitOfflineLicenseManagement(value: Boolean): Self = this.set("explicitOfflineLicenseManagement", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deleteExplicitOfflineLicenseManagement: Self = this.set("explicitOfflineLicenseManagement", js.undefined)
+    def setPublicDomain(value: Boolean): Self = StObject.set(x, "publicDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdf(value: AcsTokenLink): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setPublicDomainUndefined: Self = StObject.set(x, "publicDomain", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setQuoteSharingAllowed(value: Boolean): Self = StObject.set(x, "quoteSharingAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicDomain(value: Boolean): Self = this.set("publicDomain", value.asInstanceOf[js.Any])
+    def setQuoteSharingAllowedUndefined: Self = StObject.set(x, "quoteSharingAllowed", js.undefined)
     
     @scala.inline
-    def deletePublicDomain: Self = this.set("publicDomain", js.undefined)
+    def setTextToSpeechPermission(value: String): Self = StObject.set(x, "textToSpeechPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteSharingAllowed(value: Boolean): Self = this.set("quoteSharingAllowed", value.asInstanceOf[js.Any])
+    def setTextToSpeechPermissionUndefined: Self = StObject.set(x, "textToSpeechPermission", js.undefined)
     
     @scala.inline
-    def deleteQuoteSharingAllowed: Self = this.set("quoteSharingAllowed", js.undefined)
+    def setViewOrderUrl(value: String): Self = StObject.set(x, "viewOrderUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextToSpeechPermission(value: String): Self = this.set("textToSpeechPermission", value.asInstanceOf[js.Any])
+    def setViewOrderUrlUndefined: Self = StObject.set(x, "viewOrderUrl", js.undefined)
     
     @scala.inline
-    def deleteTextToSpeechPermission: Self = this.set("textToSpeechPermission", js.undefined)
+    def setViewability(value: String): Self = StObject.set(x, "viewability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewOrderUrl(value: String): Self = this.set("viewOrderUrl", value.asInstanceOf[js.Any])
+    def setViewabilityUndefined: Self = StObject.set(x, "viewability", js.undefined)
     
     @scala.inline
-    def deleteViewOrderUrl: Self = this.set("viewOrderUrl", js.undefined)
+    def setWebReaderLink(value: String): Self = StObject.set(x, "webReaderLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewability(value: String): Self = this.set("viewability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewability: Self = this.set("viewability", js.undefined)
-    
-    @scala.inline
-    def setWebReaderLink(value: String): Self = this.set("webReaderLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebReaderLink: Self = this.set("webReaderLink", js.undefined)
+    def setWebReaderLinkUndefined: Self = StObject.set(x, "webReaderLink", js.undefined)
   }
 }

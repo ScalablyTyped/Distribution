@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * version.
   */
 @js.native
-trait SchemaSyncWorkspaceResponse extends js.Object {
+trait SchemaSyncWorkspaceResponse extends StObject {
   
   /**
     * The merge conflict after sync. If this field is not empty, the sync is
@@ -32,33 +33,21 @@ object SchemaSyncWorkspaceResponse {
   }
   
   @scala.inline
-  implicit class SchemaSyncWorkspaceResponseOps[Self <: SchemaSyncWorkspaceResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSyncWorkspaceResponseMutableBuilder[Self <: SchemaSyncWorkspaceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
     
     @scala.inline
-    def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = this.set("mergeConflict", js.Array(value :_*))
+    def setSyncStatus(value: SchemaSyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = this.set("mergeConflict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeConflict: Self = this.set("mergeConflict", js.undefined)
-    
-    @scala.inline
-    def setSyncStatus(value: SchemaSyncStatus): Self = this.set("syncStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncStatus: Self = this.set("syncStatus", js.undefined)
+    def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
   }
 }

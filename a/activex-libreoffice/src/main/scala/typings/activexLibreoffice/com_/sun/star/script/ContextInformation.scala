@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   */
 @js.native
-trait ContextInformation extends js.Object {
+trait ContextInformation extends StObject {
   
   /** contains the first column in the **EndLine** that is NOT associated with the context. */
   var EndColumn: Double = js.native
@@ -63,39 +64,27 @@ object ContextInformation {
   }
   
   @scala.inline
-  implicit class ContextInformationOps[Self <: ContextInformation] (val x: Self) extends AnyVal {
+  implicit class ContextInformationMutableBuilder[Self <: ContextInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndLine(value: Double): Self = StObject.set(x, "EndLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalVariableNames(value: SafeArray[String]): Self = StObject.set(x, "LocalVariableNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("EndColumn", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("EndLine", value.asInstanceOf[js.Any])
+    def setSourceCode(value: String): Self = StObject.set(x, "SourceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalVariableNames(value: SafeArray[String]): Self = this.set("LocalVariableNames", value.asInstanceOf[js.Any])
+    def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCode(value: String): Self = this.set("SourceCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartColumn(value: Double): Self = this.set("StartColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartLine(value: Double): Self = this.set("StartLine", value.asInstanceOf[js.Any])
+    def setStartLine(value: Double): Self = StObject.set(x, "StartLine", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileOptions extends js.Object {
+trait CompileOptions extends StObject {
   
   /**
     * If true and the provided schema is (or contains parts) using an older version of joi, will return a compiled schema that is compatible with the older version.
@@ -22,21 +23,9 @@ object CompileOptions {
   }
   
   @scala.inline
-  implicit class CompileOptionsOps[Self <: CompileOptions] (val x: Self) extends AnyVal {
+  implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLegacy(value: Boolean): Self = this.set("legacy", value.asInstanceOf[js.Any])
+    def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
   }
 }

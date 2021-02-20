@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,42 +69,30 @@ object PickerChangeEvent {
   }
   
   @scala.inline
-  implicit class PickerChangeEventOps[Self <: PickerChangeEvent] (val x: Self) extends AnyVal {
+  implicit class PickerChangeEventMutableBuilder[Self <: PickerChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: PickerColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountDownDuration(value: Double): Self = StObject.set(x, "countDownDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: PickerColumn): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setRow(value: PickerRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountDownDuration(value: Double): Self = this.set("countDownDuration", value.asInstanceOf[js.Any])
+    def setSelectedValue(value: js.Array[String]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow(value: PickerRow): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setSelectedValueVarargs(value: String*): Self = StObject.set(x, "selectedValue", js.Array(value :_*))
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedValueVarargs(value: String*): Self = this.set("selectedValue", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedValue(value: js.Array[String]): Self = this.set("selectedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

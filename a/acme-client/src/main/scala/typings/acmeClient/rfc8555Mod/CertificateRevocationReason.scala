@@ -1,66 +1,56 @@
 package typings.acmeClient.rfc8555Mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CertificateRevocationReason extends js.Object
+sealed trait CertificateRevocationReason extends StObject
 @JSImport("acme-client/types/rfc8555", "CertificateRevocationReason")
 @js.native
-object CertificateRevocationReason extends js.Object {
+object CertificateRevocationReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CertificateRevocationReason with Double] = js.native
   
   @js.native
   sealed trait AACompromise extends CertificateRevocationReason
-  /* 10 */ @js.native
-  object AACompromise extends TopLevel[AACompromise with Double]
+  /* 10 */ val AACompromise: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.AACompromise with Double = js.native
   
   @js.native
   sealed trait AffiliationChanged extends CertificateRevocationReason
-  /* 3 */ @js.native
-  object AffiliationChanged extends TopLevel[AffiliationChanged with Double]
+  /* 3 */ val AffiliationChanged: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.AffiliationChanged with Double = js.native
   
   @js.native
   sealed trait CACompromise extends CertificateRevocationReason
-  /* 2 */ @js.native
-  object CACompromise extends TopLevel[CACompromise with Double]
+  /* 2 */ val CACompromise: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.CACompromise with Double = js.native
   
   @js.native
   sealed trait CertificateHold extends CertificateRevocationReason
-  /* 6 */ @js.native
-  object CertificateHold extends TopLevel[CertificateHold with Double]
+  /* 6 */ val CertificateHold: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.CertificateHold with Double = js.native
   
   @js.native
   sealed trait CessationOfOperation extends CertificateRevocationReason
-  /* 5 */ @js.native
-  object CessationOfOperation extends TopLevel[CessationOfOperation with Double]
+  /* 5 */ val CessationOfOperation: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.CessationOfOperation with Double = js.native
   
   @js.native
   sealed trait KeyCompromise extends CertificateRevocationReason
-  /* 1 */ @js.native
-  object KeyCompromise extends TopLevel[KeyCompromise with Double]
+  /* 1 */ val KeyCompromise: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.KeyCompromise with Double = js.native
   
   @js.native
   sealed trait PrivilegeWithdrawn extends CertificateRevocationReason
-  /* 9 */ @js.native
-  object PrivilegeWithdrawn extends TopLevel[PrivilegeWithdrawn with Double]
+  /* 9 */ val PrivilegeWithdrawn: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.PrivilegeWithdrawn with Double = js.native
   
   @js.native
   sealed trait RemoveFromCRL extends CertificateRevocationReason
-  /* 8 */ @js.native
-  object RemoveFromCRL extends TopLevel[RemoveFromCRL with Double]
+  /* 8 */ val RemoveFromCRL: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.RemoveFromCRL with Double = js.native
   
   @js.native
   sealed trait Superseded extends CertificateRevocationReason
-  /* 4 */ @js.native
-  object Superseded extends TopLevel[Superseded with Double]
+  /* 4 */ val Superseded: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.Superseded with Double = js.native
   
   @js.native
   sealed trait Unspecified extends CertificateRevocationReason
-  /* 0 */ @js.native
-  object Unspecified extends TopLevel[Unspecified with Double]
+  /* 0 */ val Unspecified: typings.acmeClient.rfc8555Mod.CertificateRevocationReason.Unspecified with Double = js.native
 }

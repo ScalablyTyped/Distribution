@@ -1,11 +1,12 @@
 package typings.easyXapiSupertest.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ares extends js.Object {
+trait Ares extends StObject {
   
   var ares: String = js.native
   
@@ -38,39 +39,27 @@ object Ares {
   }
   
   @scala.inline
-  implicit class AresOps[Self <: Ares] (val x: Self) extends AnyVal {
+  implicit class AresMutableBuilder[Self <: Ares] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAres(value: String): Self = StObject.set(x, "ares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttp_parser(value: String): Self = StObject.set(x, "http_parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAres(value: String): Self = this.set("ares", value.asInstanceOf[js.Any])
+    def setOpenssl(value: String): Self = StObject.set(x, "openssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp_parser(value: String): Self = this.set("http_parser", value.asInstanceOf[js.Any])
+    def setUv(value: String): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: String): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setV8(value: String): Self = StObject.set(x, "v8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenssl(value: String): Self = this.set("openssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUv(value: String): Self = this.set("uv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV8(value: String): Self = this.set("v8", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZlib(value: String): Self = this.set("zlib", value.asInstanceOf[js.Any])
+    def setZlib(value: String): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
   }
 }

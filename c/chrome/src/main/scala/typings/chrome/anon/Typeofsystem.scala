@@ -1,11 +1,12 @@
 package typings.chrome.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofsystem extends js.Object {
+trait Typeofsystem extends StObject {
   
   ////////////////////
   // System CPU
@@ -56,30 +57,18 @@ object Typeofsystem {
   }
   
   @scala.inline
-  implicit class TypeofsystemOps[Self <: Typeofsystem] (val x: Self) extends AnyVal {
+  implicit class TypeofsystemMutableBuilder[Self <: Typeofsystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpu(value: Typeofcpu): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplay(value: Typeofdisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemory(value: Typeofmemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: Typeofcpu): Self = this.set("cpu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplay(value: Typeofdisplay): Self = this.set("display", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemory(value: Typeofmemory): Self = this.set("memory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorage(value: TypeofstorageEjectDevice): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setStorage(value: TypeofstorageEjectDevice): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

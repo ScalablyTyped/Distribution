@@ -2,13 +2,12 @@ package typings.reactNativeGoogleAnalyticsBridge
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-google-analytics-bridge/dist/models/Custom", JSImport.Namespace)
-@js.native
-object customMod extends js.Object {
+object customMod {
   
   type CustomDimensionsByField = StringDictionary[Double | String | Boolean]
   

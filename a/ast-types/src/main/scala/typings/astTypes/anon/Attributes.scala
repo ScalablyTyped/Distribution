@@ -15,12 +15,13 @@ import typings.astTypes.kindsMod.JSXSpreadChildKind
 import typings.astTypes.kindsMod.JSXTextKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.SourceLocationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attributes extends js.Object {
+trait Attributes extends StObject {
   
   var attributes: js.UndefOr[js.Array[JSXAttributeKind | JSXSpreadAttributeKind]] = js.native
   
@@ -51,87 +52,75 @@ object Attributes {
   }
   
   @scala.inline
-  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[JSXAttributeKind | JSXSpreadAttributeKind]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpeningElement(value: JSXOpeningElementKind): Self = this.set("openingElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributesVarargs(value: (JSXAttributeKind | JSXSpreadAttributeKind)*): Self = this.set("attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: js.Array[JSXAttributeKind | JSXSpreadAttributeKind]): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
-    
-    @scala.inline
-    def setChildrenVarargs(
-      value: (JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind)*
-    ): Self = this.set("children", js.Array(value :_*))
+    def setAttributesVarargs(value: (JSXAttributeKind | JSXSpreadAttributeKind)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
     def setChildren(
       value: js.Array[
           JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind
         ]
-    ): Self = this.set("children", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setClosingElement(value: JSXClosingElementKind): Self = this.set("closingElement", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(
+      value: (JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind)*
+    ): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def deleteClosingElement: Self = this.set("closingElement", js.undefined)
+    def setClosingElement(value: JSXClosingElementKind): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosingElementNull: Self = this.set("closingElement", null)
+    def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setClosingElementUndefined: Self = StObject.set(x, "closingElement", js.undefined)
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setName(value: JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setName(value: JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfClosing(value: Boolean): Self = this.set("selfClosing", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteSelfClosing: Self = this.set("selfClosing", js.undefined)
+    def setOpeningElement(value: JSXOpeningElementKind): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSelfClosingUndefined: Self = StObject.set(x, "selfClosing", js.undefined)
   }
 }

@@ -2,16 +2,15 @@ package typings.mitt
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mitt.mittStrings.Asterisk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("mitt")
-@js.native
-object mitt extends js.Object {
+object mitt {
   
   @js.native
-  trait Emitter extends js.Object {
+  trait Emitter extends StObject {
     
     /**
     		 * Invoke all handlers for the given type.

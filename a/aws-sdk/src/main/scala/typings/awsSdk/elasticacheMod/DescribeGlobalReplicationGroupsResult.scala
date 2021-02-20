@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGlobalReplicationGroupsResult extends js.Object {
+trait DescribeGlobalReplicationGroupsResult extends StObject {
   
   /**
     * Indicates the slot configuration and global identifier for each slice group.
@@ -26,33 +27,21 @@ object DescribeGlobalReplicationGroupsResult {
   }
   
   @scala.inline
-  implicit class DescribeGlobalReplicationGroupsResultOps[Self <: DescribeGlobalReplicationGroupsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeGlobalReplicationGroupsResultMutableBuilder[Self <: DescribeGlobalReplicationGroupsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalReplicationGroups(value: GlobalReplicationGroupList): Self = StObject.set(x, "GlobalReplicationGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalReplicationGroupsUndefined: Self = StObject.set(x, "GlobalReplicationGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalReplicationGroupsVarargs(value: GlobalReplicationGroup*): Self = StObject.set(x, "GlobalReplicationGroups", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalReplicationGroupsVarargs(value: GlobalReplicationGroup*): Self = this.set("GlobalReplicationGroups", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalReplicationGroups(value: GlobalReplicationGroupList): Self = this.set("GlobalReplicationGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalReplicationGroups: Self = this.set("GlobalReplicationGroups", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

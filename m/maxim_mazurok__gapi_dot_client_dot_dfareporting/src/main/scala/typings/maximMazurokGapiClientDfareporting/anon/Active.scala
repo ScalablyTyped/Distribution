@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Active extends js.Object {
+trait Active extends StObject {
   
   /** Whether the schedule is active or not. Must be set to either true or false. */
   var active: js.UndefOr[Boolean] = js.native
@@ -42,63 +43,51 @@ object Active {
   }
   
   @scala.inline
-  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setEveryUndefined: Self = StObject.set(x, "every", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvery(value: Double): Self = this.set("every", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def deleteEvery: Self = this.set("every", js.undefined)
+    def setRepeats(value: String): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: String): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setRepeatsOnWeekDays(value: js.Array[String]): Self = StObject.set(x, "repeatsOnWeekDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    def setRepeatsOnWeekDaysUndefined: Self = StObject.set(x, "repeatsOnWeekDays", js.undefined)
     
     @scala.inline
-    def setRepeats(value: String): Self = this.set("repeats", value.asInstanceOf[js.Any])
+    def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value :_*))
     
     @scala.inline
-    def deleteRepeats: Self = this.set("repeats", js.undefined)
+    def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
     
     @scala.inline
-    def setRepeatsOnWeekDaysVarargs(value: String*): Self = this.set("repeatsOnWeekDays", js.Array(value :_*))
+    def setRunsOnDayOfMonth(value: String): Self = StObject.set(x, "runsOnDayOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatsOnWeekDays(value: js.Array[String]): Self = this.set("repeatsOnWeekDays", value.asInstanceOf[js.Any])
+    def setRunsOnDayOfMonthUndefined: Self = StObject.set(x, "runsOnDayOfMonth", js.undefined)
     
     @scala.inline
-    def deleteRepeatsOnWeekDays: Self = this.set("repeatsOnWeekDays", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunsOnDayOfMonth(value: String): Self = this.set("runsOnDayOfMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunsOnDayOfMonth: Self = this.set("runsOnDayOfMonth", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

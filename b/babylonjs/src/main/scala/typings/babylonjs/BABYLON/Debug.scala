@@ -1,16 +1,15 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.PartialISkeletonViewerOptComputeBonesUsingShaders
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.Debug")
-@js.native
-object Debug extends js.Object {
+object Debug {
   
   @js.native
-  trait AxesViewer extends js.Object {
+  trait AxesViewer extends StObject {
     
     var _instanced: js.Any = js.native
     
@@ -92,7 +91,7 @@ object Debug extends js.Object {
   }
   
   @js.native
-  trait PhysicsViewer extends js.Object {
+  trait PhysicsViewer extends StObject {
     
     var _debugBoxMesh: js.Any = js.native
     
@@ -158,7 +157,7 @@ object Debug extends js.Object {
   }
   
   @js.native
-  trait SkeletonViewer extends js.Object {
+  trait SkeletonViewer extends StObject {
     
     /** The Dynamic bindings for the update functions */
     var _bindObs: js.Any = js.native

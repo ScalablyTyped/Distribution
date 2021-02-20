@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.linguistic2
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,27 +43,15 @@ object XMeaning {
   }
   
   @scala.inline
-  implicit class XMeaningOps[Self <: XMeaning] (val x: Self) extends AnyVal {
+  implicit class XMeaningMutableBuilder[Self <: XMeaning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMeaning(value: () => String): Self = StObject.set(x, "getMeaning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeaning(value: String): Self = StObject.set(x, "Meaning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMeaning(value: String): Self = this.set("Meaning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetMeaning(value: () => String): Self = this.set("getMeaning", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQuerySynonyms(value: () => SafeArray[String]): Self = this.set("querySynonyms", js.Any.fromFunction0(value))
+    def setQuerySynonyms(value: () => SafeArray[String]): Self = StObject.set(x, "querySynonyms", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAilment extends js.Object {
+trait IAilment extends StObject {
   
   def detected(): js.Promise[Boolean] = js.native
   
@@ -35,42 +36,30 @@ object IAilment {
   }
   
   @scala.inline
-  implicit class IAilmentOps[Self <: IAilment] (val x: Self) extends AnyVal {
+  implicit class IAilmentMutableBuilder[Self <: IAilment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "detected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTreatmentSteps(value: () => js.Promise[js.Array[PatientTreatmentStep]]): Self = StObject.set(x, "getTreatmentSteps", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDetected(value: () => js.Promise[Boolean]): Self = this.set("detected", js.Any.fromFunction0(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMessage(value: () => js.Promise[String]): Self = this.set("getMessage", js.Any.fromFunction0(value))
+    def setImplicit(value: Boolean): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTreatmentSteps(value: () => js.Promise[js.Array[PatientTreatmentStep]]): Self = this.set("getTreatmentSteps", js.Any.fromFunction0(value))
+    def setProjects(value: js.Array[ProjectType]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
     @scala.inline
-    def setImplicit(value: Boolean): Self = this.set("implicit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectsVarargs(value: ProjectType*): Self = this.set("projects", js.Array(value :_*))
-    
-    @scala.inline
-    def setProjects(value: js.Array[ProjectType]): Self = this.set("projects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjects: Self = this.set("projects", js.undefined)
+    def setProjectsVarargs(value: ProjectType*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

@@ -2,12 +2,13 @@ package typings.ngbootbox
 
 import typings.bootbox.BootboxDefaultOptions
 import typings.bootbox.BootboxLocaleValues
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootboxService extends js.Object {
+trait BootboxService extends StObject {
   
   def addLocale(name: String, values: BootboxLocaleValues): Unit = js.native
   
@@ -46,45 +47,33 @@ object BootboxService {
   }
   
   @scala.inline
-  implicit class BootboxServiceOps[Self <: BootboxService] (val x: Self) extends AnyVal {
+  implicit class BootboxServiceMutableBuilder[Self <: BootboxService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLocale(value: (String, BootboxLocaleValues) => Unit): Self = StObject.set(x, "addLocale", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlert(value: String => js.Promise[_]): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfirm(value: String => js.Promise[_]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddLocale(value: (String, BootboxLocaleValues) => Unit): Self = this.set("addLocale", js.Any.fromFunction2(value))
+    def setCustomDialog(value: NgBootboxDialog => Unit): Self = StObject.set(x, "customDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlert(value: String => js.Promise[_]): Self = this.set("alert", js.Any.fromFunction1(value))
+    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfirm(value: String => js.Promise[_]): Self = this.set("confirm", js.Any.fromFunction1(value))
+    def setPrompt(value: String => js.Promise[_]): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCustomDialog(value: NgBootboxDialog => Unit): Self = this.set("customDialog", js.Any.fromFunction1(value))
+    def setRemoveLocale(value: String => Unit): Self = StObject.set(x, "removeLocale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideAll(value: () => Unit): Self = this.set("hideAll", js.Any.fromFunction0(value))
+    def setSetDefaults(value: BootboxDefaultOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrompt(value: String => js.Promise[_]): Self = this.set("prompt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveLocale(value: String => Unit): Self = this.set("removeLocale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaults(value: BootboxDefaultOptions => Unit): Self = this.set("setDefaults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocale(value: String => Unit): Self = this.set("setLocale", js.Any.fromFunction1(value))
+    def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
   }
 }

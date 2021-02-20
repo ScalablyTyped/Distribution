@@ -13,6 +13,7 @@ import typings.activexVbide.activexVbideNumbers.`6`
 import typings.activexVbide.activexVbideNumbers.`7`
 import typings.activexVbide.activexVbideNumbers.`8`
 import typings.activexVbide.activexVbideNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexVbide.activexVbideNumbers.`6`
   - typings.activexVbide.activexVbideNumbers.`7`
 */
-trait vbextFileTypes extends js.Object
+trait vbextFileTypes extends StObject
 object vbextFileTypes {
   
   @scala.inline

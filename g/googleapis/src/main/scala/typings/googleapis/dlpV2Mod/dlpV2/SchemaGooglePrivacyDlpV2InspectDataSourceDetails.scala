@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The results of an inspect DataSource job.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2InspectDataSourceDetails extends js.Object {
+trait SchemaGooglePrivacyDlpV2InspectDataSourceDetails extends StObject {
   
   /**
     * The configuration used for this job.
@@ -29,30 +30,18 @@ object SchemaGooglePrivacyDlpV2InspectDataSourceDetails {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectDataSourceDetailsOps[Self <: SchemaGooglePrivacyDlpV2InspectDataSourceDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2InspectDataSourceDetailsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectDataSourceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestedOptions(value: SchemaGooglePrivacyDlpV2RequestedOptions): Self = StObject.set(x, "requestedOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestedOptionsUndefined: Self = StObject.set(x, "requestedOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResult(value: SchemaGooglePrivacyDlpV2Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedOptions(value: SchemaGooglePrivacyDlpV2RequestedOptions): Self = this.set("requestedOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedOptions: Self = this.set("requestedOptions", js.undefined)
-    
-    @scala.inline
-    def setResult(value: SchemaGooglePrivacyDlpV2Result): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

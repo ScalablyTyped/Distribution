@@ -3,16 +3,16 @@ package typings.appBuilderLib
 import typings.appBuilderLib.coreMod.Target
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import typings.builderUtil.archMod.Arch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/remoteBuilder/RemoteBuilder", JSImport.Namespace)
-@js.native
-object remoteBuilderMod extends js.Object {
+object remoteBuilderMod {
   
+  @JSImport("app-builder-lib/out/remoteBuilder/RemoteBuilder", "RemoteBuilder")
   @js.native
-  class RemoteBuilder protected () extends js.Object {
+  class RemoteBuilder protected () extends StObject {
     def this(packager: PlatformPackager[_]) = this()
     
     var _build: js.Any = js.native

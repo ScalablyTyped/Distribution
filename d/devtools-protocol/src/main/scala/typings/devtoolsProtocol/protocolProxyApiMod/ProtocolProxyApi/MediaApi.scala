@@ -10,12 +10,13 @@ import typings.devtoolsProtocol.mod.Protocol.Media.PlayerEventsAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.Media.PlayerMessagesLoggedEvent
 import typings.devtoolsProtocol.mod.Protocol.Media.PlayerPropertiesChangedEvent
 import typings.devtoolsProtocol.mod.Protocol.Media.PlayersCreatedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaApi extends js.Object {
+trait MediaApi extends StObject {
   
   /**
     * Disables the Media domain.

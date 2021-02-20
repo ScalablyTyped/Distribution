@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmPrivateVirtualInterfaceRequest extends js.Object {
+trait ConfirmPrivateVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the Direct Connect gateway.
@@ -31,33 +32,21 @@ object ConfirmPrivateVirtualInterfaceRequest {
   }
   
   @scala.inline
-  implicit class ConfirmPrivateVirtualInterfaceRequestOps[Self <: ConfirmPrivateVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  implicit class ConfirmPrivateVirtualInterfaceRequestMutableBuilder[Self <: ConfirmPrivateVirtualInterfaceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
     
     @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
-    
-    @scala.inline
-    def setVirtualGatewayId(value: VirtualGatewayId): Self = this.set("virtualGatewayId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualGatewayId: Self = this.set("virtualGatewayId", js.undefined)
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

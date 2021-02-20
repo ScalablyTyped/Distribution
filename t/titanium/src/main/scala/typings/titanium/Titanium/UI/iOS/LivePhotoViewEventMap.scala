@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,66 +67,54 @@ object LivePhotoViewEventMap {
   }
   
   @scala.inline
-  implicit class LivePhotoViewEventMapOps[Self <: LivePhotoViewEventMap] (val x: Self) extends AnyVal {
+  implicit class LivePhotoViewEventMapMutableBuilder[Self <: LivePhotoViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: LivePhotoViewClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDblclick(value: LivePhotoViewDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoubletap(value: LivePhotoViewDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: LivePhotoViewClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setKeypressed(value: LivePhotoViewKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: LivePhotoViewDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setLongpress(value: LivePhotoViewLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: LivePhotoViewDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setPinch(value: LivePhotoViewPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: LivePhotoViewKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPostlayout(value: LivePhotoViewPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: LivePhotoViewLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setSingletap(value: LivePhotoViewSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: LivePhotoViewPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setStart(value: LivePhotoViewStartEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: LivePhotoViewPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setStop(value: LivePhotoViewStopEvent): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: LivePhotoViewSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setSwipe(value: LivePhotoViewSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: LivePhotoViewStartEvent): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: LivePhotoViewTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: LivePhotoViewStopEvent): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setTouchend(value: LivePhotoViewTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: LivePhotoViewSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: LivePhotoViewTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: LivePhotoViewTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: LivePhotoViewTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: LivePhotoViewTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: LivePhotoViewTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: LivePhotoViewTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: LivePhotoViewTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: LivePhotoViewTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

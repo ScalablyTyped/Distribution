@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .addItem("radio button three title", "radio_three_value", false);
   */
 @js.native
-trait SelectionInput extends js.Object {
+trait SelectionInput extends StObject {
   
   def addItem(text: js.Any, value: js.Any, selected: Boolean): SelectionInput = js.native
   
@@ -53,33 +54,21 @@ object SelectionInput {
   }
   
   @scala.inline
-  implicit class SelectionInputOps[Self <: SelectionInput] (val x: Self) extends AnyVal {
+  implicit class SelectionInputMutableBuilder[Self <: SelectionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddItem(value: (js.Any, js.Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetFieldName(value: String => SelectionInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetOnChangeAction(value: Action => SelectionInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddItem(value: (js.Any, js.Any, Boolean) => SelectionInput): Self = this.set("addItem", js.Any.fromFunction3(value))
+    def setSetTitle(value: String => SelectionInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFieldName(value: String => SelectionInput): Self = this.set("setFieldName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOnChangeAction(value: Action => SelectionInput): Self = this.set("setOnChangeAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => SelectionInput): Self = this.set("setTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetType(value: SelectionInputType => SelectionInput): Self = this.set("setType", js.Any.fromFunction1(value))
+    def setSetType(value: SelectionInputType => SelectionInput): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
   }
 }

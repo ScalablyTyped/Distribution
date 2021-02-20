@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetInstancesScopedList extends js.Object {
+trait TargetInstancesScopedList extends StObject {
   
   /** A list of target instances contained in this scope. */
   var targetInstances: js.UndefOr[js.Array[TargetInstance]] = js.native
@@ -23,33 +24,21 @@ object TargetInstancesScopedList {
   }
   
   @scala.inline
-  implicit class TargetInstancesScopedListOps[Self <: TargetInstancesScopedList] (val x: Self) extends AnyVal {
+  implicit class TargetInstancesScopedListMutableBuilder[Self <: TargetInstancesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetInstances(value: js.Array[TargetInstance]): Self = StObject.set(x, "targetInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetInstancesUndefined: Self = StObject.set(x, "targetInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "targetInstances", js.Array(value :_*))
     
     @scala.inline
-    def setTargetInstancesVarargs(value: TargetInstance*): Self = this.set("targetInstances", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetInstances(value: js.Array[TargetInstance]): Self = this.set("targetInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetInstances: Self = this.set("targetInstances", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

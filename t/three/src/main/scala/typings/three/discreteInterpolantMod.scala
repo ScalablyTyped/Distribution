@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.interpolantMod.Interpolant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/interpolants/DiscreteInterpolant", JSImport.Namespace)
-@js.native
-object discreteInterpolantMod extends js.Object {
+object discreteInterpolantMod {
   
+  @JSImport("three/src/math/interpolants/DiscreteInterpolant", "DiscreteInterpolant")
   @js.native
   class DiscreteInterpolant protected () extends Interpolant {
     def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()

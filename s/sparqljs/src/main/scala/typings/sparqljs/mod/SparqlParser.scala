@@ -1,11 +1,12 @@
 package typings.sparqljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparqlParser extends js.Object {
+trait SparqlParser extends StObject {
   
   def parse(query: String): SparqlQuery = js.native
 }
@@ -18,21 +19,9 @@ object SparqlParser {
   }
   
   @scala.inline
-  implicit class SparqlParserOps[Self <: SparqlParser] (val x: Self) extends AnyVal {
+  implicit class SparqlParserMutableBuilder[Self <: SparqlParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: String => SparqlQuery): Self = this.set("parse", js.Any.fromFunction1(value))
+    def setParse(value: String => SparqlQuery): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

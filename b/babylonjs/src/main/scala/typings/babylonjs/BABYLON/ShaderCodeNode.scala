@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShaderCodeNode extends js.Object {
+trait ShaderCodeNode extends StObject {
   
   var additionalDefineKey: js.UndefOr[String] = js.native
   
@@ -33,45 +34,33 @@ object ShaderCodeNode {
   }
   
   @scala.inline
-  implicit class ShaderCodeNodeOps[Self <: ShaderCodeNode] (val x: Self) extends AnyVal {
+  implicit class ShaderCodeNodeMutableBuilder[Self <: ShaderCodeNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalDefineKey(value: String): Self = StObject.set(x, "additionalDefineKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalDefineKeyUndefined: Self = StObject.set(x, "additionalDefineKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalDefineValue(value: String): Self = StObject.set(x, "additionalDefineValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: ShaderCodeNode*): Self = this.set("children", js.Array(value :_*))
+    def setAdditionalDefineValueUndefined: Self = StObject.set(x, "additionalDefineValue", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[ShaderCodeNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[ShaderCodeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: org.scalablytyped.runtime.StringDictionary[String] => Boolean): Self = this.set("isValid", js.Any.fromFunction1(value))
+    def setChildrenVarargs(value: ShaderCodeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setIsValid(value: org.scalablytyped.runtime.StringDictionary[String] => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProcess(value: (org.scalablytyped.runtime.StringDictionary[String], ProcessingOptions) => String): Self = this.set("process", js.Any.fromFunction2(value))
+    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalDefineKey(value: String): Self = this.set("additionalDefineKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalDefineKey: Self = this.set("additionalDefineKey", js.undefined)
-    
-    @scala.inline
-    def setAdditionalDefineValue(value: String): Self = this.set("additionalDefineValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalDefineValue: Self = this.set("additionalDefineValue", js.undefined)
+    def setProcess(value: (org.scalablytyped.runtime.StringDictionary[String], ProcessingOptions) => String): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
   }
 }

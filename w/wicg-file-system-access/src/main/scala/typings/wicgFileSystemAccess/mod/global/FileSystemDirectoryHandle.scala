@@ -3,15 +3,14 @@ package typings.wicgFileSystemAccess.mod.global
 import typings.std.AsyncIterableIterator
 import typings.wicgFileSystemAccess.mod.BaseFileSystemHandle
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("FileSystemDirectoryHandle")
 @js.native
-class FileSystemDirectoryHandle ()
-  extends BaseFileSystemHandle
-     with FileSystemHandle {
+class FileSystemDirectoryHandle () extends BaseFileSystemHandle {
   
   def entries(): AsyncIterableIterator[js.Tuple2[String, FileSystemHandle]] = js.native
   
@@ -75,13 +74,13 @@ class FileSystemDirectoryHandle ()
   
   def values(): AsyncIterableIterator[FileSystemHandle] = js.native
 }
-/* static members */
-@JSGlobal("FileSystemDirectoryHandle")
-@js.native
-object FileSystemDirectoryHandle extends js.Object {
+object FileSystemDirectoryHandle {
   
   /**
     * @deprecated Old method just for Chromium <=85. Use `navigator.storage.getDirectory()` in the new API.
     */
+  /* static member */
+  @JSGlobal("FileSystemDirectoryHandle.getSystemDirectory")
+  @js.native
   def getSystemDirectory(options: GetSystemDirectoryOptions): js.Promise[FileSystemDirectoryHandle] = js.native
 }

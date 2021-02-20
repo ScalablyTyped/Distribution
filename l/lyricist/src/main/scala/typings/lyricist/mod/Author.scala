@@ -1,11 +1,12 @@
 package typings.lyricist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Author extends js.Object {
+trait Author extends StObject {
   
   var attribution: Double = js.native
   
@@ -22,30 +23,18 @@ object Author {
   }
   
   @scala.inline
-  implicit class AuthorOps[Self <: Author] (val x: Self) extends AnyVal {
+  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPinned_role(value: js.Any): Self = StObject.set(x, "pinned_role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPinned_roleUndefined: Self = StObject.set(x, "pinned_role", js.undefined)
     
     @scala.inline
-    def setAttribution(value: Double): Self = this.set("attribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPinned_role(value: js.Any): Self = this.set("pinned_role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePinned_role: Self = this.set("pinned_role", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

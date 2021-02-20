@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureSet extends js.Object {
+trait FeatureSet extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -65,81 +66,69 @@ object FeatureSet {
   }
   
   @scala.inline
-  implicit class FeatureSetOps[Self <: FeatureSet] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrencyFeatureSetPricesVarargs(
-      value: (/* Information about the price and currency associated with the feature set. Reserved for internal DocuSign use only. */ CurrencyFeatureSetPrice)*
-    ): Self = this.set("currencyFeatureSetPrices", js.Array(value :_*))
+  implicit class FeatureSetMutableBuilder[Self <: FeatureSet] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCurrencyFeatureSetPrices(
       value: js.Array[
           /* Information about the price and currency associated with the feature set. Reserved for internal DocuSign use only. */ CurrencyFeatureSetPrice
         ]
-    ): Self = this.set("currencyFeatureSetPrices", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "currencyFeatureSetPrices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrencyFeatureSetPrices: Self = this.set("currencyFeatureSetPrices", js.undefined)
+    def setCurrencyFeatureSetPricesUndefined: Self = StObject.set(x, "currencyFeatureSetPrices", js.undefined)
     
     @scala.inline
-    def setEnvelopeFee(value: String): Self = this.set("envelopeFee", value.asInstanceOf[js.Any])
+    def setCurrencyFeatureSetPricesVarargs(
+      value: (/* Information about the price and currency associated with the feature set. Reserved for internal DocuSign use only. */ CurrencyFeatureSetPrice)*
+    ): Self = StObject.set(x, "currencyFeatureSetPrices", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnvelopeFee: Self = this.set("envelopeFee", js.undefined)
+    def setEnvelopeFee(value: String): Self = StObject.set(x, "envelopeFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureSetId(value: String): Self = this.set("featureSetId", value.asInstanceOf[js.Any])
+    def setEnvelopeFeeUndefined: Self = StObject.set(x, "envelopeFee", js.undefined)
     
     @scala.inline
-    def deleteFeatureSetId: Self = this.set("featureSetId", js.undefined)
+    def setFeatureSetId(value: String): Self = StObject.set(x, "featureSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedFee(value: String): Self = this.set("fixedFee", value.asInstanceOf[js.Any])
+    def setFeatureSetIdUndefined: Self = StObject.set(x, "featureSetId", js.undefined)
     
     @scala.inline
-    def deleteFixedFee: Self = this.set("fixedFee", js.undefined)
+    def setFixedFee(value: String): Self = StObject.set(x, "fixedFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs21CFRPart11(value: String): Self = this.set("is21CFRPart11", value.asInstanceOf[js.Any])
+    def setFixedFeeUndefined: Self = StObject.set(x, "fixedFee", js.undefined)
     
     @scala.inline
-    def deleteIs21CFRPart11: Self = this.set("is21CFRPart11", js.undefined)
+    def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: String): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setIs21CFRPart11Undefined: Self = StObject.set(x, "is21CFRPart11", js.undefined)
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def setIsActive(value: String): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: String): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    def setIsEnabled(value: String): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeatFee(value: String): Self = this.set("seatFee", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteSeatFee: Self = this.set("seatFee", js.undefined)
+    def setSeatFee(value: String): Self = StObject.set(x, "seatFee", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSeatFeeUndefined: Self = StObject.set(x, "seatFee", js.undefined)
   }
 }

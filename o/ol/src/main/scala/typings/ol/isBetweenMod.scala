@@ -1,13 +1,13 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/format/filter/IsBetween", JSImport.Namespace)
-@js.native
-object isBetweenMod extends js.Object {
+object isBetweenMod {
   
+  @JSImport("ol/format/filter/IsBetween", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.ol.comparisonMod.default {

@@ -24,6 +24,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.tel
 import typings.oracleOraclejet.oracleOraclejetStrings.text
 import typings.oracleOraclejet.oracleOraclejetStrings.url
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,33 +70,21 @@ object ojInputTextSettableProperties {
   }
   
   @scala.inline
-  implicit class ojInputTextSettablePropertiesOps[Self <: ojInputTextSettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojInputTextSettablePropertiesMutableBuilder[Self <: ojInputTextSettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearIcon(value: never | always | conditional): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverter(value: Converter[_] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConverterNull: Self = StObject.set(x, "converter", null)
     
     @scala.inline
-    def setClearIcon(value: never | always | conditional): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualKeyboard(value: auto | email | number | search | tel | text | url): Self = this.set("virtualKeyboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConverter(value: Converter[_] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConverterNull: Self = this.set("converter", null)
+    def setVirtualKeyboard(value: auto | email | number | search | tel | text | url): Self = StObject.set(x, "virtualKeyboard", value.asInstanceOf[js.Any])
   }
 }

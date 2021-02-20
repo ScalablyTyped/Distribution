@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginRequestPolicyConfig extends js.Object {
+trait OriginRequestPolicyConfig extends StObject {
   
   /**
     * A comment to describe the origin request policy.
@@ -46,36 +47,24 @@ object OriginRequestPolicyConfig {
   }
   
   @scala.inline
-  implicit class OriginRequestPolicyConfigOps[Self <: OriginRequestPolicyConfig] (val x: Self) extends AnyVal {
+  implicit class OriginRequestPolicyConfigMutableBuilder[Self <: OriginRequestPolicyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookiesConfig(value: OriginRequestPolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookiesConfig(value: OriginRequestPolicyCookiesConfig): Self = this.set("CookiesConfig", value.asInstanceOf[js.Any])
+    def setHeadersConfig(value: OriginRequestPolicyHeadersConfig): Self = StObject.set(x, "HeadersConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersConfig(value: OriginRequestPolicyHeadersConfig): Self = this.set("HeadersConfig", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryStringsConfig(value: OriginRequestPolicyQueryStringsConfig): Self = this.set("QueryStringsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setQueryStringsConfig(value: OriginRequestPolicyQueryStringsConfig): Self = StObject.set(x, "QueryStringsConfig", value.asInstanceOf[js.Any])
   }
 }

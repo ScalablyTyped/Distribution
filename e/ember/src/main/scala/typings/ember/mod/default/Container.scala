@@ -1,5 +1,6 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A container used to instantiate and cache objects.
   */
-@JSImport("ember", "Container")
+@JSImport("ember", "default.Container")
 @js.native
 class Container ()
   extends typings.ember.mod.Ember.Container

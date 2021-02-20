@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudOrgpolicyV1ListPolicy extends js.Object {
+trait GoogleCloudOrgpolicyV1ListPolicy extends StObject {
   
   /** The policy all_values state. */
   var allValues: js.UndefOr[String] = js.native
@@ -59,54 +60,42 @@ object GoogleCloudOrgpolicyV1ListPolicy {
   }
   
   @scala.inline
-  implicit class GoogleCloudOrgpolicyV1ListPolicyOps[Self <: GoogleCloudOrgpolicyV1ListPolicy] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudOrgpolicyV1ListPolicyMutableBuilder[Self <: GoogleCloudOrgpolicyV1ListPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllValues(value: String): Self = StObject.set(x, "allValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllValuesUndefined: Self = StObject.set(x, "allValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllValues(value: String): Self = this.set("allValues", value.asInstanceOf[js.Any])
+    def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
     @scala.inline
-    def deleteAllValues: Self = this.set("allValues", js.undefined)
+    def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedValuesVarargs(value: String*): Self = this.set("allowedValues", js.Array(value :_*))
+    def setDeniedValues(value: js.Array[String]): Self = StObject.set(x, "deniedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValues(value: js.Array[String]): Self = this.set("allowedValues", value.asInstanceOf[js.Any])
+    def setDeniedValuesUndefined: Self = StObject.set(x, "deniedValues", js.undefined)
     
     @scala.inline
-    def deleteAllowedValues: Self = this.set("allowedValues", js.undefined)
+    def setDeniedValuesVarargs(value: String*): Self = StObject.set(x, "deniedValues", js.Array(value :_*))
     
     @scala.inline
-    def setDeniedValuesVarargs(value: String*): Self = this.set("deniedValues", js.Array(value :_*))
+    def setInheritFromParent(value: Boolean): Self = StObject.set(x, "inheritFromParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeniedValues(value: js.Array[String]): Self = this.set("deniedValues", value.asInstanceOf[js.Any])
+    def setInheritFromParentUndefined: Self = StObject.set(x, "inheritFromParent", js.undefined)
     
     @scala.inline
-    def deleteDeniedValues: Self = this.set("deniedValues", js.undefined)
+    def setSuggestedValue(value: String): Self = StObject.set(x, "suggestedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritFromParent(value: Boolean): Self = this.set("inheritFromParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInheritFromParent: Self = this.set("inheritFromParent", js.undefined)
-    
-    @scala.inline
-    def setSuggestedValue(value: String): Self = this.set("suggestedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedValue: Self = this.set("suggestedValue", js.undefined)
+    def setSuggestedValueUndefined: Self = StObject.set(x, "suggestedValue", js.undefined)
   }
 }

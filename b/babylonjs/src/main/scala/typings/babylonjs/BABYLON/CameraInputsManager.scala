@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraInputsManager[TCamera /* <: Camera */] extends js.Object {
+trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
   
   var _addCheckInputs: js.Any = js.native
   

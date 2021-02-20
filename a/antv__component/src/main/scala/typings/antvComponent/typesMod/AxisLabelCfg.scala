@@ -2,12 +2,13 @@ package typings.antvComponent.typesMod
 
 import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.ShapeAttrs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisLabelCfg extends js.Object {
+trait AxisLabelCfg extends StObject {
   
   /**
     * 是否自动省略，默认 false
@@ -60,78 +61,66 @@ object AxisLabelCfg {
   }
   
   @scala.inline
-  implicit class AxisLabelCfgOps[Self <: AxisLabelCfg] (val x: Self) extends AnyVal {
+  implicit class AxisLabelCfgMutableBuilder[Self <: AxisLabelCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoEllipsis(value: Boolean | avoidCallback | String): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAutoEllipsisFunction3(
       value: (/* isVertical */ Boolean, /* labelGroup */ IGroup, /* limitLength */ js.UndefOr[Double]) => Boolean
-    ): Self = this.set("autoEllipsis", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "autoEllipsis", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAutoEllipsis(value: Boolean | avoidCallback | String): Self = this.set("autoEllipsis", value.asInstanceOf[js.Any])
+    def setAutoEllipsisUndefined: Self = StObject.set(x, "autoEllipsis", js.undefined)
     
     @scala.inline
-    def deleteAutoEllipsis: Self = this.set("autoEllipsis", js.undefined)
+    def setAutoHide(value: Boolean | avoidCallback | String): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAutoHideFunction3(
       value: (/* isVertical */ Boolean, /* labelGroup */ IGroup, /* limitLength */ js.UndefOr[Double]) => Boolean
-    ): Self = this.set("autoHide", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "autoHide", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAutoHide(value: Boolean | avoidCallback | String): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    def setAutoRotate(value: Boolean | avoidCallback | String): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAutoRotateFunction3(
       value: (/* isVertical */ Boolean, /* labelGroup */ IGroup, /* limitLength */ js.UndefOr[Double]) => Boolean
-    ): Self = this.set("autoRotate", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "autoRotate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAutoRotate(value: Boolean | avoidCallback | String): Self = this.set("autoRotate", value.asInstanceOf[js.Any])
+    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
     @scala.inline
-    def deleteAutoRotate: Self = this.set("autoRotate", js.undefined)
+    def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => js.Any): Self = this.set("formatter", js.Any.fromFunction3(value))
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setStyle(value: ShapeAttrs | ShapeAttrsCallback): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleFunction3(value: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => ShapeAttrs): Self = this.set("style", js.Any.fromFunction3(value))
+    def setStyleFunction3(value: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => ShapeAttrs): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setStyle(value: ShapeAttrs | ShapeAttrsCallback): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

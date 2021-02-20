@@ -1,5 +1,6 @@
 package typings.jsCookie
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("js-cookie", JSImport.Namespace)
 @js.native
-object jsCookieRequire extends js.Object
+object jsCookieRequire extends StObject

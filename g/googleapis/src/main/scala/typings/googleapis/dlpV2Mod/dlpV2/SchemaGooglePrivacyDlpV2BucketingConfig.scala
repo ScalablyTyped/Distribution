@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://cloud.google.com/dlp/docs/concepts-bucketing to learn more.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2BucketingConfig extends js.Object {
+trait SchemaGooglePrivacyDlpV2BucketingConfig extends StObject {
   
   /**
     * Set of buckets. Ranges must be non-overlapping.
@@ -31,27 +32,15 @@ object SchemaGooglePrivacyDlpV2BucketingConfig {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BucketingConfigOps[Self <: SchemaGooglePrivacyDlpV2BucketingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2BucketingConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2BucketingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: js.Array[SchemaGooglePrivacyDlpV2Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucketsVarargs(value: SchemaGooglePrivacyDlpV2Bucket*): Self = this.set("buckets", js.Array(value :_*))
-    
-    @scala.inline
-    def setBuckets(value: js.Array[SchemaGooglePrivacyDlpV2Bucket]): Self = this.set("buckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    def setBucketsVarargs(value: SchemaGooglePrivacyDlpV2Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
   }
 }

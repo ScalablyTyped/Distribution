@@ -1,5 +1,6 @@
 package typings.regexpp.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object Backreference {
   }
   
   @scala.inline
-  implicit class BackreferenceOps[Self <: Backreference] (val x: Self) extends AnyVal {
+  implicit class BackreferenceMutableBuilder[Self <: Backreference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRef(value: Double | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolved(value: CapturingGroup): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Alternative | Quantifier): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRef(value: Double | String): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolved(value: CapturingGroup): Self = this.set("resolved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Backreference): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.regexpp.regexppStrings.Backreference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

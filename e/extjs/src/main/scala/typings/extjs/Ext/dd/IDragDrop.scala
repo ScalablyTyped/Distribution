@@ -4,6 +4,7 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -328,378 +329,366 @@ object IDragDrop {
   }
   
   @scala.inline
-  implicit class IDragDropOps[Self <: IDragDrop] (val x: Self) extends AnyVal {
+  implicit class IDragDropMutableBuilder[Self <: IDragDrop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddInvalidHandleClass(value: /* cssClass */ js.UndefOr[String] => Unit): Self = StObject.set(x, "addInvalidHandleClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddInvalidHandleClassUndefined: Self = StObject.set(x, "addInvalidHandleClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddInvalidHandleId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "addInvalidHandleId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddInvalidHandleClass(value: /* cssClass */ js.UndefOr[String] => Unit): Self = this.set("addInvalidHandleClass", js.Any.fromFunction1(value))
+    def setAddInvalidHandleIdUndefined: Self = StObject.set(x, "addInvalidHandleId", js.undefined)
     
     @scala.inline
-    def deleteAddInvalidHandleClass: Self = this.set("addInvalidHandleClass", js.undefined)
+    def setAddInvalidHandleType(value: /* tagName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "addInvalidHandleType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddInvalidHandleId(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("addInvalidHandleId", js.Any.fromFunction1(value))
+    def setAddInvalidHandleTypeUndefined: Self = StObject.set(x, "addInvalidHandleType", js.undefined)
     
     @scala.inline
-    def deleteAddInvalidHandleId: Self = this.set("addInvalidHandleId", js.undefined)
+    def setAddToGroup(value: /* sGroup */ js.UndefOr[String] => Unit): Self = StObject.set(x, "addToGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddInvalidHandleType(value: /* tagName */ js.UndefOr[String] => Unit): Self = this.set("addInvalidHandleType", js.Any.fromFunction1(value))
+    def setAddToGroupUndefined: Self = StObject.set(x, "addToGroup", js.undefined)
     
     @scala.inline
-    def deleteAddInvalidHandleType: Self = this.set("addInvalidHandleType", js.undefined)
+    def setApplyConfig(value: () => Unit): Self = StObject.set(x, "applyConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddToGroup(value: /* sGroup */ js.UndefOr[String] => Unit): Self = this.set("addToGroup", js.Any.fromFunction1(value))
+    def setApplyConfigUndefined: Self = StObject.set(x, "applyConfig", js.undefined)
     
     @scala.inline
-    def deleteAddToGroup: Self = this.set("addToGroup", js.undefined)
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyConfig(value: () => Unit): Self = this.set("applyConfig", js.Any.fromFunction0(value))
+    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
     @scala.inline
-    def deleteApplyConfig: Self = this.set("applyConfig", js.undefined)
+    def setClearConstraints(value: () => Unit): Self = StObject.set(x, "clearConstraints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setClearConstraintsUndefined: Self = StObject.set(x, "clearConstraints", js.undefined)
     
     @scala.inline
-    def deleteAvailable: Self = this.set("available", js.undefined)
+    def setClearTicks(value: () => Unit): Self = StObject.set(x, "clearTicks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearConstraints(value: () => Unit): Self = this.set("clearConstraints", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClearConstraints: Self = this.set("clearConstraints", js.undefined)
-    
-    @scala.inline
-    def setClearTicks(value: () => Unit): Self = this.set("clearTicks", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClearTicks: Self = this.set("clearTicks", js.undefined)
+    def setClearTicksUndefined: Self = StObject.set(x, "clearTicks", js.undefined)
     
     @scala.inline
     def setConstrainTo(
       value: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Unit
-    ): Self = this.set("constrainTo", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "constrainTo", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteConstrainTo: Self = this.set("constrainTo", js.undefined)
+    def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
     @scala.inline
-    def setDefaultPadding(value: js.Any): Self = this.set("defaultPadding", value.asInstanceOf[js.Any])
+    def setDefaultPadding(value: js.Any): Self = StObject.set(x, "defaultPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultPadding: Self = this.set("defaultPadding", js.undefined)
+    def setDefaultPaddingUndefined: Self = StObject.set(x, "defaultPadding", js.undefined)
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def setEndDrag(value: /* e */ js.UndefOr[Event] => Unit): Self = this.set("endDrag", js.Any.fromFunction1(value))
+    def setEndDrag(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEndDrag: Self = this.set("endDrag", js.undefined)
+    def setEndDragUndefined: Self = StObject.set(x, "endDrag", js.undefined)
     
     @scala.inline
-    def setGetDragEl(value: () => HTMLElement): Self = this.set("getDragEl", js.Any.fromFunction0(value))
+    def setGetDragEl(value: () => HTMLElement): Self = StObject.set(x, "getDragEl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDragEl: Self = this.set("getDragEl", js.undefined)
+    def setGetDragElUndefined: Self = StObject.set(x, "getDragEl", js.undefined)
     
     @scala.inline
-    def setGetEl(value: () => HTMLElement): Self = this.set("getEl", js.Any.fromFunction0(value))
+    def setGetEl(value: () => HTMLElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
     @scala.inline
-    def setGroups(value: js.Any): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def setHasOuterHandles(value: Boolean): Self = this.set("hasOuterHandles", value.asInstanceOf[js.Any])
+    def setHasOuterHandles(value: Boolean): Self = StObject.set(x, "hasOuterHandles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasOuterHandles: Self = this.set("hasOuterHandles", js.undefined)
+    def setHasOuterHandlesUndefined: Self = StObject.set(x, "hasOuterHandles", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setIgnoreSelf(value: Boolean): Self = this.set("ignoreSelf", value.asInstanceOf[js.Any])
+    def setIgnoreSelf(value: Boolean): Self = StObject.set(x, "ignoreSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreSelf: Self = this.set("ignoreSelf", js.undefined)
+    def setIgnoreSelfUndefined: Self = StObject.set(x, "ignoreSelf", js.undefined)
     
     @scala.inline
     def setInit(
       value: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("init", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    ): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
     def setInitTarget(
       value: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("initTarget", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "initTarget", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInitTarget: Self = this.set("initTarget", js.undefined)
+    def setInitTargetUndefined: Self = StObject.set(x, "initTarget", js.undefined)
     
     @scala.inline
-    def setInvalidHandleClasses(value: Array): Self = this.set("invalidHandleClasses", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteInvalidHandleClasses: Self = this.set("invalidHandleClasses", js.undefined)
+    def setInvalidHandleClasses(value: Array): Self = StObject.set(x, "invalidHandleClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidHandleIds(value: js.Any): Self = this.set("invalidHandleIds", value.asInstanceOf[js.Any])
+    def setInvalidHandleClassesUndefined: Self = StObject.set(x, "invalidHandleClasses", js.undefined)
     
     @scala.inline
-    def deleteInvalidHandleIds: Self = this.set("invalidHandleIds", js.undefined)
+    def setInvalidHandleIds(value: js.Any): Self = StObject.set(x, "invalidHandleIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidHandleTypes(value: js.Any): Self = this.set("invalidHandleTypes", value.asInstanceOf[js.Any])
+    def setInvalidHandleIdsUndefined: Self = StObject.set(x, "invalidHandleIds", js.undefined)
     
     @scala.inline
-    def deleteInvalidHandleTypes: Self = this.set("invalidHandleTypes", js.undefined)
+    def setInvalidHandleTypes(value: js.Any): Self = StObject.set(x, "invalidHandleTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocked(value: () => Boolean): Self = this.set("isLocked", js.Any.fromFunction0(value))
+    def setInvalidHandleTypesUndefined: Self = StObject.set(x, "invalidHandleTypes", js.undefined)
     
     @scala.inline
-    def deleteIsLocked: Self = this.set("isLocked", js.undefined)
+    def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsTarget(value: Boolean): Self = this.set("isTarget", value.asInstanceOf[js.Any])
+    def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
     @scala.inline
-    def deleteIsTarget: Self = this.set("isTarget", js.undefined)
+    def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidHandleChild(value: /* node */ js.UndefOr[HTMLElement] => Boolean): Self = this.set("isValidHandleChild", js.Any.fromFunction1(value))
+    def setIsTargetUndefined: Self = StObject.set(x, "isTarget", js.undefined)
     
     @scala.inline
-    def deleteIsValidHandleChild: Self = this.set("isValidHandleChild", js.undefined)
+    def setIsValidHandleChild(value: /* node */ js.UndefOr[HTMLElement] => Boolean): Self = StObject.set(x, "isValidHandleChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLock(value: () => Unit): Self = this.set("lock", js.Any.fromFunction0(value))
+    def setIsValidHandleChildUndefined: Self = StObject.set(x, "isValidHandleChild", js.undefined)
     
     @scala.inline
-    def deleteLock: Self = this.set("lock", js.undefined)
+    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaintainOffset(value: Boolean): Self = this.set("maintainOffset", value.asInstanceOf[js.Any])
+    def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
     
     @scala.inline
-    def deleteMaintainOffset: Self = this.set("maintainOffset", js.undefined)
+    def setMaintainOffset(value: Boolean): Self = StObject.set(x, "maintainOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveOnly(value: Boolean): Self = this.set("moveOnly", value.asInstanceOf[js.Any])
+    def setMaintainOffsetUndefined: Self = StObject.set(x, "maintainOffset", js.undefined)
     
     @scala.inline
-    def deleteMoveOnly: Self = this.set("moveOnly", js.undefined)
+    def setMoveOnly(value: Boolean): Self = StObject.set(x, "moveOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAvailable(value: () => Unit): Self = this.set("onAvailable", js.Any.fromFunction0(value))
+    def setMoveOnlyUndefined: Self = StObject.set(x, "moveOnly", js.undefined)
     
     @scala.inline
-    def deleteOnAvailable: Self = this.set("onAvailable", js.undefined)
+    def setOnAvailable(value: () => Unit): Self = StObject.set(x, "onAvailable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnDrag(value: /* e */ js.UndefOr[Event] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnAvailableUndefined: Self = StObject.set(x, "onAvailable", js.undefined)
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnDrag(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = this.set("onDragDrop", js.Any.fromFunction2(value))
+    def setOnDragDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragDrop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDragDrop: Self = this.set("onDragDrop", js.undefined)
+    def setOnDragDropUndefined: Self = StObject.set(x, "onDragDrop", js.undefined)
     
     @scala.inline
-    def setOnDragEnter(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = this.set("onDragEnter", js.Any.fromFunction2(value))
+    def setOnDragEnter(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
     @scala.inline
-    def setOnDragOut(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = this.set("onDragOut", js.Any.fromFunction2(value))
+    def setOnDragOut(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragOut", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDragOut: Self = this.set("onDragOut", js.undefined)
+    def setOnDragOutUndefined: Self = StObject.set(x, "onDragOut", js.undefined)
     
     @scala.inline
-    def setOnDragOver(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = this.set("onDragOver", js.Any.fromFunction2(value))
+    def setOnDragOver(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
     @scala.inline
-    def setOnInvalidDrop(value: /* e */ js.UndefOr[Event] => Unit): Self = this.set("onInvalidDrop", js.Any.fromFunction1(value))
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
     @scala.inline
-    def deleteOnInvalidDrop: Self = this.set("onInvalidDrop", js.undefined)
+    def setOnInvalidDrop(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onInvalidDrop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseDown(value: /* e */ js.UndefOr[Event] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    def setOnInvalidDropUndefined: Self = StObject.set(x, "onInvalidDrop", js.undefined)
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setOnMouseDown(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseUp(value: /* e */ js.UndefOr[Event] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    def setOnMouseUp(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPadding(value: Array): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPadding(value: Array): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryButtonOnly(value: Boolean): Self = this.set("primaryButtonOnly", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deletePrimaryButtonOnly: Self = this.set("primaryButtonOnly", js.undefined)
+    def setPrimaryButtonOnly(value: Boolean): Self = StObject.set(x, "primaryButtonOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveFromGroup(value: /* sGroup */ js.UndefOr[String] => Unit): Self = this.set("removeFromGroup", js.Any.fromFunction1(value))
+    def setPrimaryButtonOnlyUndefined: Self = StObject.set(x, "primaryButtonOnly", js.undefined)
     
     @scala.inline
-    def deleteRemoveFromGroup: Self = this.set("removeFromGroup", js.undefined)
+    def setRemoveFromGroup(value: /* sGroup */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeFromGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveInvalidHandleClass(value: /* cssClass */ js.UndefOr[String] => Unit): Self = this.set("removeInvalidHandleClass", js.Any.fromFunction1(value))
+    def setRemoveFromGroupUndefined: Self = StObject.set(x, "removeFromGroup", js.undefined)
     
     @scala.inline
-    def deleteRemoveInvalidHandleClass: Self = this.set("removeInvalidHandleClass", js.undefined)
+    def setRemoveInvalidHandleClass(value: /* cssClass */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeInvalidHandleClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveInvalidHandleId(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("removeInvalidHandleId", js.Any.fromFunction1(value))
+    def setRemoveInvalidHandleClassUndefined: Self = StObject.set(x, "removeInvalidHandleClass", js.undefined)
     
     @scala.inline
-    def deleteRemoveInvalidHandleId: Self = this.set("removeInvalidHandleId", js.undefined)
+    def setRemoveInvalidHandleId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeInvalidHandleId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveInvalidHandleType(value: /* tagName */ js.UndefOr[String] => Unit): Self = this.set("removeInvalidHandleType", js.Any.fromFunction1(value))
+    def setRemoveInvalidHandleIdUndefined: Self = StObject.set(x, "removeInvalidHandleId", js.undefined)
     
     @scala.inline
-    def deleteRemoveInvalidHandleType: Self = this.set("removeInvalidHandleType", js.undefined)
+    def setRemoveInvalidHandleType(value: /* tagName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeInvalidHandleType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetConstraints(value: /* maintainOffset */ js.UndefOr[Boolean] => Unit): Self = this.set("resetConstraints", js.Any.fromFunction1(value))
+    def setRemoveInvalidHandleTypeUndefined: Self = StObject.set(x, "removeInvalidHandleType", js.undefined)
     
     @scala.inline
-    def deleteResetConstraints: Self = this.set("resetConstraints", js.undefined)
+    def setResetConstraints(value: /* maintainOffset */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "resetConstraints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDragElId(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("setDragElId", js.Any.fromFunction1(value))
+    def setResetConstraintsUndefined: Self = StObject.set(x, "resetConstraints", js.undefined)
     
     @scala.inline
-    def deleteSetDragElId: Self = this.set("setDragElId", js.undefined)
+    def setSetDragElId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDragElId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHandleElId(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("setHandleElId", js.Any.fromFunction1(value))
+    def setSetDragElIdUndefined: Self = StObject.set(x, "setDragElId", js.undefined)
     
     @scala.inline
-    def deleteSetHandleElId: Self = this.set("setHandleElId", js.undefined)
+    def setSetHandleElId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setHandleElId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInitPosition(value: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Unit): Self = this.set("setInitPosition", js.Any.fromFunction2(value))
+    def setSetHandleElIdUndefined: Self = StObject.set(x, "setHandleElId", js.undefined)
     
     @scala.inline
-    def deleteSetInitPosition: Self = this.set("setInitPosition", js.undefined)
+    def setSetInitPosition(value: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setInitPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetOuterHandleElId(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("setOuterHandleElId", js.Any.fromFunction1(value))
+    def setSetInitPositionUndefined: Self = StObject.set(x, "setInitPosition", js.undefined)
     
     @scala.inline
-    def deleteSetOuterHandleElId: Self = this.set("setOuterHandleElId", js.undefined)
+    def setSetOuterHandleElId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setOuterHandleElId", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSetOuterHandleElIdUndefined: Self = StObject.set(x, "setOuterHandleElId", js.undefined)
     
     @scala.inline
     def setSetPadding(
       value: (/* iTop */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iBot */ js.UndefOr[Double], /* iLeft */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("setPadding", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "setPadding", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteSetPadding: Self = this.set("setPadding", js.undefined)
+    def setSetPaddingUndefined: Self = StObject.set(x, "setPadding", js.undefined)
     
     @scala.inline
     def setSetXConstraint(
       value: (/* iLeft */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("setXConstraint", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "setXConstraint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSetXConstraint: Self = this.set("setXConstraint", js.undefined)
+    def setSetXConstraintUndefined: Self = StObject.set(x, "setXConstraint", js.undefined)
     
     @scala.inline
     def setSetYConstraint(
       value: (/* iUp */ js.UndefOr[Double], /* iDown */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("setYConstraint", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "setYConstraint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSetYConstraint: Self = this.set("setYConstraint", js.undefined)
+    def setSetYConstraintUndefined: Self = StObject.set(x, "setYConstraint", js.undefined)
     
     @scala.inline
-    def setStartDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = this.set("startDrag", js.Any.fromFunction2(value))
+    def setStartDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "startDrag", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteStartDrag: Self = this.set("startDrag", js.undefined)
+    def setStartDragUndefined: Self = StObject.set(x, "startDrag", js.undefined)
     
     @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
     @scala.inline
-    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
+    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteUnlock: Self = this.set("unlock", js.undefined)
+    def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
     
     @scala.inline
-    def setUnreg(value: () => Unit): Self = this.set("unreg", js.Any.fromFunction0(value))
+    def setUnreg(value: () => Unit): Self = StObject.set(x, "unreg", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteUnreg: Self = this.set("unreg", js.undefined)
+    def setUnregUndefined: Self = StObject.set(x, "unreg", js.undefined)
     
     @scala.inline
-    def setXTicks(value: Array): Self = this.set("xTicks", value.asInstanceOf[js.Any])
+    def setXTicks(value: Array): Self = StObject.set(x, "xTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteXTicks: Self = this.set("xTicks", js.undefined)
+    def setXTicksUndefined: Self = StObject.set(x, "xTicks", js.undefined)
     
     @scala.inline
-    def setYTicks(value: Array): Self = this.set("yTicks", value.asInstanceOf[js.Any])
+    def setYTicks(value: Array): Self = StObject.set(x, "yTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteYTicks: Self = this.set("yTicks", js.undefined)
+    def setYTicksUndefined: Self = StObject.set(x, "yTicks", js.undefined)
   }
 }

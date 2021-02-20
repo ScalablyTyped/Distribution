@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DocumentFormat extends js.Object
+sealed trait DocumentFormat extends StObject
 /**
   * Lists file document formats.
   */
 @JSGlobal("DocumentFormat")
 @js.native
-object DocumentFormat extends js.Object {
+object DocumentFormat extends StObject {
   
   /**
     * MS Word 97-2003 binary file format.

@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentVersionMetadata extends js.Object {
+trait DocumentVersionMetadata extends StObject {
   
   /**
     * The timestamp when the content of the document was originally created.
@@ -81,96 +82,84 @@ object DocumentVersionMetadata {
   }
   
   @scala.inline
-  implicit class DocumentVersionMetadataOps[Self <: DocumentVersionMetadata] (val x: Self) extends AnyVal {
+  implicit class DocumentVersionMetadataMutableBuilder[Self <: DocumentVersionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentCreatedTimestampUndefined: Self = StObject.set(x, "ContentCreatedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentCreatedTimestamp(value: TimestampType): Self = this.set("ContentCreatedTimestamp", value.asInstanceOf[js.Any])
+    def setContentModifiedTimestampUndefined: Self = StObject.set(x, "ContentModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteContentCreatedTimestamp: Self = this.set("ContentCreatedTimestamp", js.undefined)
+    def setContentType(value: DocumentContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentModifiedTimestamp(value: TimestampType): Self = this.set("ContentModifiedTimestamp", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def deleteContentModifiedTimestamp: Self = this.set("ContentModifiedTimestamp", js.undefined)
+    def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: DocumentContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    def setCreatorId(value: IdType): Self = StObject.set(x, "CreatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setCreatorIdUndefined: Self = StObject.set(x, "CreatorId", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setId(value: DocumentVersionIdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorId(value: IdType): Self = this.set("CreatorId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteCreatorId: Self = this.set("CreatorId", js.undefined)
+    def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: DocumentVersionIdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setName(value: ResourceNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTimestamp(value: TimestampType): Self = this.set("ModifiedTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteModifiedTimestamp: Self = this.set("ModifiedTimestamp", js.undefined)
+    def setSignature(value: HashType): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSize(value: SizeType): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: HashType): Self = this.set("Signature", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
     @scala.inline
-    def deleteSignature: Self = this.set("Signature", js.undefined)
+    def setSource(value: DocumentSourceUrlMap): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: SizeType): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setStatus(value: DocumentStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: DocumentSourceUrlMap): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setThumbnail(value: DocumentThumbnailUrlMap): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DocumentStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setThumbnail(value: DocumentThumbnailUrlMap): Self = this.set("Thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnail: Self = this.set("Thumbnail", js.undefined)
+    def setThumbnailUndefined: Self = StObject.set(x, "Thumbnail", js.undefined)
   }
 }

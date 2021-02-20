@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTimeSeriesServiceStatisticsResult extends js.Object {
+trait GetTimeSeriesServiceStatisticsResult extends StObject {
   
   /**
     * A flag indicating whether or not a group's filter expression has been consistent, or if a returned aggregation might show statistics from an older version of the group's filter expression.
@@ -31,39 +32,27 @@ object GetTimeSeriesServiceStatisticsResult {
   }
   
   @scala.inline
-  implicit class GetTimeSeriesServiceStatisticsResultOps[Self <: GetTimeSeriesServiceStatisticsResult] (val x: Self) extends AnyVal {
+  implicit class GetTimeSeriesServiceStatisticsResultMutableBuilder[Self <: GetTimeSeriesServiceStatisticsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsOldGroupVersionsUndefined: Self = StObject.set(x, "ContainsOldGroupVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsOldGroupVersions(value: Boolean): Self = this.set("ContainsOldGroupVersions", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteContainsOldGroupVersions: Self = this.set("ContainsOldGroupVersions", js.undefined)
+    def setTimeSeriesServiceStatistics(value: TimeSeriesServiceStatisticsList): Self = StObject.set(x, "TimeSeriesServiceStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTimeSeriesServiceStatisticsUndefined: Self = StObject.set(x, "TimeSeriesServiceStatistics", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTimeSeriesServiceStatisticsVarargs(value: TimeSeriesServiceStatistics*): Self = this.set("TimeSeriesServiceStatistics", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimeSeriesServiceStatistics(value: TimeSeriesServiceStatisticsList): Self = this.set("TimeSeriesServiceStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeriesServiceStatistics: Self = this.set("TimeSeriesServiceStatistics", js.undefined)
+    def setTimeSeriesServiceStatisticsVarargs(value: TimeSeriesServiceStatistics*): Self = StObject.set(x, "TimeSeriesServiceStatistics", js.Array(value :_*))
   }
 }

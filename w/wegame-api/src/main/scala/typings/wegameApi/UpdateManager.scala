@@ -1,11 +1,12 @@
 package typings.wegameApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateManager extends js.Object {
+trait UpdateManager extends StObject {
   
   /**
     * 应用更新包并重启
@@ -41,30 +42,18 @@ object UpdateManager {
   }
   
   @scala.inline
-  implicit class UpdateManagerOps[Self <: UpdateManager] (val x: Self) extends AnyVal {
+  implicit class UpdateManagerMutableBuilder[Self <: UpdateManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyUpdate(value: () => Unit): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnCheckForUpdate(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onCheckForUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnUpdateFailed(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onUpdateFailed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplyUpdate(value: () => Unit): Self = this.set("applyUpdate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnCheckForUpdate(value: js.Function0[Unit] => Unit): Self = this.set("onCheckForUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnUpdateFailed(value: js.Function0[Unit] => Unit): Self = this.set("onUpdateFailed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnUpdateReady(value: js.Function0[Unit] => Unit): Self = this.set("onUpdateReady", js.Any.fromFunction1(value))
+    def setOnUpdateReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onUpdateReady", js.Any.fromFunction1(value))
   }
 }

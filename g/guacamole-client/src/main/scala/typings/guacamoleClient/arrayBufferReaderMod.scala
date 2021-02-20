@@ -2,16 +2,16 @@ package typings.guacamoleClient
 
 import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/ArrayBufferReader", JSImport.Namespace)
-@js.native
-object arrayBufferReaderMod extends js.Object {
+object arrayBufferReaderMod {
   
+  @JSImport("guacamole-client/lib/ArrayBufferReader", "ArrayBufferReader")
   @js.native
-  class ArrayBufferReader protected () extends js.Object {
+  class ArrayBufferReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       */

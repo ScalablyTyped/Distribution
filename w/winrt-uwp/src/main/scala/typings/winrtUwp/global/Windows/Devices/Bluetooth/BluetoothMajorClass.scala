@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the Major Class code of the device, which is the general family of device with which the device is associated. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothMajorClass")
 @js.native
-object BluetoothMajorClass extends js.Object {
+object BluetoothMajorClass extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothMajorClass with Double] = js.native

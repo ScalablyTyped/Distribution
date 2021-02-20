@@ -1,11 +1,12 @@
 package typings.vueCompilerSfc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetURLOptions extends js.Object {
+trait AssetURLOptions extends StObject {
   
   /**
     * If base is provided, instead of transforming relative asset urls into
@@ -29,39 +30,27 @@ object AssetURLOptions {
   }
   
   @scala.inline
-  implicit class AssetURLOptionsOps[Self <: AssetURLOptions] (val x: Self) extends AnyVal {
+  implicit class AssetURLOptionsMutableBuilder[Self <: AssetURLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseNull: Self = StObject.set(x, "base", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setIncludeAbsolute(value: Boolean): Self = StObject.set(x, "includeAbsolute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setIncludeAbsoluteUndefined: Self = StObject.set(x, "includeAbsolute", js.undefined)
     
     @scala.inline
-    def setBaseNull: Self = this.set("base", null)
+    def setTags(value: AssetURLTagConfig): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAbsolute(value: Boolean): Self = this.set("includeAbsolute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeAbsolute: Self = this.set("includeAbsolute", js.undefined)
-    
-    @scala.inline
-    def setTags(value: AssetURLTagConfig): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

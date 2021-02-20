@@ -3,14 +3,39 @@ package typings.ol
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.eventsMod.EventsKey
 import typings.ol.olStrings.propertychange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/Object", JSImport.Namespace)
-@js.native
-object objectMod extends js.Object {
+object objectMod {
   
+  @JSImport("ol/Object", JSImport.Default)
+  @js.native
+  class default () extends BaseObject {
+    def this(opt_values: StringDictionary[js.Any]) = this()
+  }
+  
+  @JSImport("ol/Object", "ObjectEvent")
+  @js.native
+  class ObjectEvent protected ()
+    extends typings.ol.eventMod.default {
+    def this(`type`: String, key: String, oldValue: js.Any) = this()
+    
+    /**
+      * The name of the property whose value is changing.
+      */
+    var key: String = js.native
+    
+    /**
+      * The old value. To get the new value use e.target.get(e.key) where
+      * e is the event object.
+      */
+    var oldValue: js.Any = js.native
+  }
+  
+  @JSImport("ol/Object", "getChangeEventType")
+  @js.native
   def getChangeEventType(key: String): String = js.native
   
   @js.native
@@ -63,27 +88,5 @@ object objectMod extends js.Object {
       */
     def unset(key: String): Unit = js.native
     def unset(key: String, opt_silent: Boolean): Unit = js.native
-  }
-  
-  @js.native
-  class ObjectEvent protected ()
-    extends typings.ol.eventMod.default {
-    def this(`type`: String, key: String, oldValue: js.Any) = this()
-    
-    /**
-      * The name of the property whose value is changing.
-      */
-    var key: String = js.native
-    
-    /**
-      * The old value. To get the new value use e.target.get(e.key) where
-      * e is the event object.
-      */
-    var oldValue: js.Any = js.native
-  }
-  
-  @js.native
-  class default () extends BaseObject {
-    def this(opt_values: StringDictionary[js.Any]) = this()
   }
 }

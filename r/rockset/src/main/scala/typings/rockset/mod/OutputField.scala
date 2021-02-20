@@ -2,12 +2,13 @@ package typings.rockset.mod
 
 import typings.rockset.rocksetStrings.FAIL
 import typings.rockset.rocksetStrings.SKIP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputField extends js.Object {
+trait OutputField extends StObject {
   
   // The name of a field, parsed as a SQL qualified name
   var field_name: js.UndefOr[String] = js.native
@@ -27,36 +28,24 @@ object OutputField {
   }
   
   @scala.inline
-  implicit class OutputFieldOps[Self <: OutputField] (val x: Self) extends AnyVal {
+  implicit class OutputFieldMutableBuilder[Self <: OutputField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOn_error(value: SKIP | FAIL): Self = StObject.set(x, "on_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField_name(value: String): Self = this.set("field_name", value.asInstanceOf[js.Any])
+    def setOn_errorUndefined: Self = StObject.set(x, "on_error", js.undefined)
     
     @scala.inline
-    def deleteField_name: Self = this.set("field_name", js.undefined)
+    def setValue(value: SqlExpression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_error(value: SKIP | FAIL): Self = this.set("on_error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOn_error: Self = this.set("on_error", js.undefined)
-    
-    @scala.inline
-    def setValue(value: SqlExpression): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DownwardAPIVolumeFile represents information to create the file containing the pod field
   */
 @js.native
-trait DownwardAPIVolumeFile extends js.Object {
+trait DownwardAPIVolumeFile extends StObject {
   
   /**
     * Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.
@@ -40,39 +41,27 @@ object DownwardAPIVolumeFile {
   }
   
   @scala.inline
-  implicit class DownwardAPIVolumeFileOps[Self <: DownwardAPIVolumeFile] (val x: Self) extends AnyVal {
+  implicit class DownwardAPIVolumeFileMutableBuilder[Self <: DownwardAPIVolumeFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldRef(value: Input[ObjectFieldSelector]): Self = StObject.set(x, "fieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldRefUndefined: Self = StObject.set(x, "fieldRef", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: Input[Double]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setFieldRef(value: Input[ObjectFieldSelector]): Self = this.set("fieldRef", value.asInstanceOf[js.Any])
+    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldRef: Self = this.set("fieldRef", js.undefined)
+    def setResourceFieldRef(value: Input[ResourceFieldSelector]): Self = StObject.set(x, "resourceFieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Input[Double]): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setResourceFieldRef(value: Input[ResourceFieldSelector]): Self = this.set("resourceFieldRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceFieldRef: Self = this.set("resourceFieldRef", js.undefined)
+    def setResourceFieldRefUndefined: Self = StObject.set(x, "resourceFieldRef", js.undefined)
   }
 }

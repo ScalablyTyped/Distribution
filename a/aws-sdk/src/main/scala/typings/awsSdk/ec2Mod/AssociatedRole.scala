@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociatedRole extends js.Object {
+trait AssociatedRole extends StObject {
   
   /**
     * The ARN of the associated IAM role.
@@ -36,42 +37,30 @@ object AssociatedRole {
   }
   
   @scala.inline
-  implicit class AssociatedRoleOps[Self <: AssociatedRole] (val x: Self) extends AnyVal {
+  implicit class AssociatedRoleMutableBuilder[Self <: AssociatedRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedRoleArn(value: ResourceArn): Self = StObject.set(x, "AssociatedRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedRoleArnUndefined: Self = StObject.set(x, "AssociatedRoleArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateS3BucketName(value: String): Self = StObject.set(x, "CertificateS3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedRoleArn(value: ResourceArn): Self = this.set("AssociatedRoleArn", value.asInstanceOf[js.Any])
+    def setCertificateS3BucketNameUndefined: Self = StObject.set(x, "CertificateS3BucketName", js.undefined)
     
     @scala.inline
-    def deleteAssociatedRoleArn: Self = this.set("AssociatedRoleArn", js.undefined)
+    def setCertificateS3ObjectKey(value: String): Self = StObject.set(x, "CertificateS3ObjectKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateS3BucketName(value: String): Self = this.set("CertificateS3BucketName", value.asInstanceOf[js.Any])
+    def setCertificateS3ObjectKeyUndefined: Self = StObject.set(x, "CertificateS3ObjectKey", js.undefined)
     
     @scala.inline
-    def deleteCertificateS3BucketName: Self = this.set("CertificateS3BucketName", js.undefined)
+    def setEncryptionKmsKeyId(value: String): Self = StObject.set(x, "EncryptionKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateS3ObjectKey(value: String): Self = this.set("CertificateS3ObjectKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateS3ObjectKey: Self = this.set("CertificateS3ObjectKey", js.undefined)
-    
-    @scala.inline
-    def setEncryptionKmsKeyId(value: String): Self = this.set("EncryptionKmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionKmsKeyId: Self = this.set("EncryptionKmsKeyId", js.undefined)
+    def setEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "EncryptionKmsKeyId", js.undefined)
   }
 }

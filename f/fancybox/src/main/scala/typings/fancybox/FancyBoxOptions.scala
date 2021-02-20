@@ -23,12 +23,13 @@ import typings.fancybox.fancyboxStrings.thumbs
 import typings.fancybox.fancyboxStrings.tube
 import typings.fancybox.fancyboxStrings.zoom
 import typings.jquery.JQuery.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxOptions extends js.Object {
+trait FancyBoxOptions extends StObject {
   
   /**
     * After instance has been closed
@@ -341,410 +342,398 @@ object FancyBoxOptions {
   }
   
   @scala.inline
-  implicit class FancyBoxOptionsOps[Self <: FancyBoxOptions] (val x: Self) extends AnyVal {
+  implicit class FancyBoxOptionsMutableBuilder[Self <: FancyBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterClose(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterLoad(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterClose(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = this.set("afterClose", js.Any.fromFunction2(value))
+    def setAfterLoadUndefined: Self = StObject.set(x, "afterLoad", js.undefined)
     
     @scala.inline
-    def deleteAfterClose: Self = this.set("afterClose", js.undefined)
+    def setAfterShow(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterLoad(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = this.set("afterLoad", js.Any.fromFunction2(value))
+    def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
     
     @scala.inline
-    def deleteAfterLoad: Self = this.set("afterLoad", js.undefined)
+    def setAjax(value: FancyBoxAjaxOption): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterShow(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = this.set("afterShow", js.Any.fromFunction2(value))
+    def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
     
     @scala.inline
-    def deleteAfterShow: Self = this.set("afterShow", js.undefined)
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjax(value: FancyBoxAjaxOption): Self = this.set("ajax", value.asInstanceOf[js.Any])
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def deleteAjax: Self = this.set("ajax", js.undefined)
+    def setAnimationEffect(value: Boolean | zoom | fade | `zoom-in-out`): Self = StObject.set(x, "animationEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setAnimationEffectUndefined: Self = StObject.set(x, "animationEffect", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEffect(value: Boolean | zoom | fade | `zoom-in-out`): Self = this.set("animationEffect", value.asInstanceOf[js.Any])
+    def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
     
     @scala.inline
-    def deleteAnimationEffect: Self = this.set("animationEffect", js.undefined)
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrows(value: Boolean): Self = this.set("arrows", value.asInstanceOf[js.Any])
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def deleteArrows: Self = this.set("arrows", js.undefined)
+    def setBackFocus(value: Boolean): Self = StObject.set(x, "backFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setBackFocusUndefined: Self = StObject.set(x, "backFocus", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackFocus(value: Boolean): Self = this.set("backFocus", value.asInstanceOf[js.Any])
+    def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
     
     @scala.inline
-    def deleteBackFocus: Self = this.set("backFocus", js.undefined)
+    def setBaseTpl(value: String): Self = StObject.set(x, "baseTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseClass(value: String): Self = this.set("baseClass", value.asInstanceOf[js.Any])
+    def setBaseTplUndefined: Self = StObject.set(x, "baseTpl", js.undefined)
     
     @scala.inline
-    def deleteBaseClass: Self = this.set("baseClass", js.undefined)
+    def setBeforeClose(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBaseTpl(value: String): Self = this.set("baseTpl", value.asInstanceOf[js.Any])
+    def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
     @scala.inline
-    def deleteBaseTpl: Self = this.set("baseTpl", js.undefined)
+    def setBeforeLoad(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "beforeLoad", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeClose(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = this.set("beforeClose", js.Any.fromFunction2(value))
+    def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
     
     @scala.inline
-    def deleteBeforeClose: Self = this.set("beforeClose", js.undefined)
+    def setBeforeShow(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "beforeShow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeLoad(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = this.set("beforeLoad", js.Any.fromFunction2(value))
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def deleteBeforeLoad: Self = this.set("beforeLoad", js.undefined)
+    def setBtnTpl(value: FancyBoxButtonTemplateOptions): Self = StObject.set(x, "btnTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeShow(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = this.set("beforeShow", js.Any.fromFunction2(value))
+    def setBtnTplUndefined: Self = StObject.set(x, "btnTpl", js.undefined)
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setButtons(value: js.Array[zoom | share | slideShow | fullScreen | download | thumbs | close]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnTpl(value: FancyBoxButtonTemplateOptions): Self = this.set("btnTpl", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteBtnTpl: Self = this.set("btnTpl", js.undefined)
-    
-    @scala.inline
-    def setButtonsVarargs(value: (zoom | share | slideShow | fullScreen | download | thumbs | close)*): Self = this.set("buttons", js.Array(value :_*))
-    
-    @scala.inline
-    def setButtons(value: js.Array[zoom | share | slideShow | fullScreen | download | thumbs | close]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
-    
-    @scala.inline
-    def setCaptionFunction2(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => String): Self = this.set("caption", js.Any.fromFunction2(value))
+    def setButtonsVarargs(value: (zoom | share | slideShow | fullScreen | download | thumbs | close)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
     def setCaption(
       value: String | (js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, String])
-    ): Self = this.set("caption", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setCaptionFunction2(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => String): Self = StObject.set(x, "caption", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    @scala.inline
+    def setClickContent(value: FancyBoxInteractions): Self = StObject.set(x, "clickContent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClickContentFunction2(
       value: (/* slide */ js.UndefOr[FancyBoxSlide], /* event */ js.UndefOr[Event]) => FancyBoxInteractionTypes
-    ): Self = this.set("clickContent", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "clickContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClickContent(value: FancyBoxInteractions): Self = this.set("clickContent", value.asInstanceOf[js.Any])
+    def setClickContentUndefined: Self = StObject.set(x, "clickContent", js.undefined)
     
     @scala.inline
-    def deleteClickContent: Self = this.set("clickContent", js.undefined)
+    def setClickOutside(value: FancyBoxInteractions): Self = StObject.set(x, "clickOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClickOutsideFunction2(
       value: (/* slide */ js.UndefOr[FancyBoxSlide], /* event */ js.UndefOr[Event]) => FancyBoxInteractionTypes
-    ): Self = this.set("clickOutside", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "clickOutside", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClickOutside(value: FancyBoxInteractions): Self = this.set("clickOutside", value.asInstanceOf[js.Any])
+    def setClickOutsideUndefined: Self = StObject.set(x, "clickOutside", js.undefined)
     
     @scala.inline
-    def deleteClickOutside: Self = this.set("clickOutside", js.undefined)
+    def setClickSlide(value: FancyBoxInteractions): Self = StObject.set(x, "clickSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClickSlideFunction2(
       value: (/* slide */ js.UndefOr[FancyBoxSlide], /* event */ js.UndefOr[Event]) => FancyBoxInteractionTypes
-    ): Self = this.set("clickSlide", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "clickSlide", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClickSlide(value: FancyBoxInteractions): Self = this.set("clickSlide", value.asInstanceOf[js.Any])
+    def setClickSlideUndefined: Self = StObject.set(x, "clickSlide", js.undefined)
     
     @scala.inline
-    def deleteClickSlide: Self = this.set("clickSlide", js.undefined)
+    def setCloseExisting(value: Boolean): Self = StObject.set(x, "closeExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseExisting(value: Boolean): Self = this.set("closeExisting", value.asInstanceOf[js.Any])
+    def setCloseExistingUndefined: Self = StObject.set(x, "closeExisting", js.undefined)
     
     @scala.inline
-    def deleteCloseExisting: Self = this.set("closeExisting", js.undefined)
+    def setDblclickContent(value: FancyBoxInteractions): Self = StObject.set(x, "dblclickContent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDblclickContentFunction2(
       value: (/* slide */ js.UndefOr[FancyBoxSlide], /* event */ js.UndefOr[Event]) => FancyBoxInteractionTypes
-    ): Self = this.set("dblclickContent", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "dblclickContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDblclickContent(value: FancyBoxInteractions): Self = this.set("dblclickContent", value.asInstanceOf[js.Any])
+    def setDblclickContentUndefined: Self = StObject.set(x, "dblclickContent", js.undefined)
     
     @scala.inline
-    def deleteDblclickContent: Self = this.set("dblclickContent", js.undefined)
+    def setDblclickOutside(value: FancyBoxInteractions): Self = StObject.set(x, "dblclickOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDblclickOutsideFunction2(
       value: (/* slide */ js.UndefOr[FancyBoxSlide], /* event */ js.UndefOr[Event]) => FancyBoxInteractionTypes
-    ): Self = this.set("dblclickOutside", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "dblclickOutside", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDblclickOutside(value: FancyBoxInteractions): Self = this.set("dblclickOutside", value.asInstanceOf[js.Any])
+    def setDblclickOutsideUndefined: Self = StObject.set(x, "dblclickOutside", js.undefined)
     
     @scala.inline
-    def deleteDblclickOutside: Self = this.set("dblclickOutside", js.undefined)
+    def setDblclickSlide(value: FancyBoxInteractions): Self = StObject.set(x, "dblclickSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDblclickSlideFunction2(
       value: (/* slide */ js.UndefOr[FancyBoxSlide], /* event */ js.UndefOr[Event]) => FancyBoxInteractionTypes
-    ): Self = this.set("dblclickSlide", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "dblclickSlide", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDblclickSlide(value: FancyBoxInteractions): Self = this.set("dblclickSlide", value.asInstanceOf[js.Any])
+    def setDblclickSlideUndefined: Self = StObject.set(x, "dblclickSlide", js.undefined)
     
     @scala.inline
-    def deleteDblclickSlide: Self = this.set("dblclickSlide", js.undefined)
+    def setDefaultType(value: image | `inline` | ajax | iframe | html): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultType(value: image | `inline` | ajax | iframe | html): Self = this.set("defaultType", value.asInstanceOf[js.Any])
+    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
     @scala.inline
-    def deleteDefaultType: Self = this.set("defaultType", js.undefined)
+    def setErrorTpl(value: String): Self = StObject.set(x, "errorTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorTpl(value: String): Self = this.set("errorTpl", value.asInstanceOf[js.Any])
+    def setErrorTplUndefined: Self = StObject.set(x, "errorTpl", js.undefined)
     
     @scala.inline
-    def deleteErrorTpl: Self = this.set("errorTpl", js.undefined)
+    def setFullScreen(value: Autostart): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullScreen(value: Autostart): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
     @scala.inline
-    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutter(value: Double): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
     @scala.inline
-    def deleteGutter: Self = this.set("gutter", js.undefined)
+    def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: js.Any): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setHideScrollbar(value: Boolean): Self = StObject.set(x, "hideScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideScrollbar(value: Boolean): Self = this.set("hideScrollbar", value.asInstanceOf[js.Any])
+    def setHideScrollbarUndefined: Self = StObject.set(x, "hideScrollbar", js.undefined)
     
     @scala.inline
-    def deleteHideScrollbar: Self = this.set("hideScrollbar", js.undefined)
+    def setI18n(value: FancyBoxInternationalizationOptions): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: FancyBoxInternationalizationOptions): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
     @scala.inline
-    def deleteI18n: Self = this.set("i18n", js.undefined)
+    def setIdleTime(value: Double): Self = StObject.set(x, "idleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleTime(value: Double): Self = this.set("idleTime", value.asInstanceOf[js.Any])
+    def setIdleTimeUndefined: Self = StObject.set(x, "idleTime", js.undefined)
     
     @scala.inline
-    def deleteIdleTime: Self = this.set("idleTime", js.undefined)
+    def setIframe(value: FancyBoxIframeSettings): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframe(value: FancyBoxIframeSettings): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
     
     @scala.inline
-    def deleteIframe: Self = this.set("iframe", js.undefined)
+    def setImage(value: FancyBoxImageOption): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: FancyBoxImageOption): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setInfobar(value: Boolean): Self = StObject.set(x, "infobar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfobar(value: Boolean): Self = this.set("infobar", value.asInstanceOf[js.Any])
+    def setInfobarUndefined: Self = StObject.set(x, "infobar", js.undefined)
     
     @scala.inline
-    def deleteInfobar: Self = this.set("infobar", js.undefined)
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setMedia(value: FancyBoxPlainObject): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: FancyBoxPlainObject): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def deleteModal: Self = this.set("modal", js.undefined)
+    def setOnActivate(value: /* instance */ FancyBoxInstance => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnActivate(value: /* instance */ FancyBoxInstance => Unit): Self = this.set("onActivate", js.Any.fromFunction1(value))
+    def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
     @scala.inline
-    def deleteOnActivate: Self = this.set("onActivate", js.undefined)
+    def setOnDeactivate(value: /* instance */ FancyBoxInstance => Unit): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDeactivate(value: /* instance */ FancyBoxInstance => Unit): Self = this.set("onDeactivate", js.Any.fromFunction1(value))
+    def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
     @scala.inline
-    def deleteOnDeactivate: Self = this.set("onDeactivate", js.undefined)
+    def setOnInit(value: /* instance */ FancyBoxInstance => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInit(value: /* instance */ FancyBoxInstance => Unit): Self = this.set("onInit", js.Any.fromFunction1(value))
+    def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     
     @scala.inline
-    def deleteOnInit: Self = this.set("onInit", js.undefined)
+    def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentEl(value: String): Self = this.set("parentEl", value.asInstanceOf[js.Any])
+    def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
     
     @scala.inline
-    def deleteParentEl: Self = this.set("parentEl", js.undefined)
+    def setPreventCaptionOverlap(value: Boolean): Self = StObject.set(x, "preventCaptionOverlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventCaptionOverlap(value: Boolean): Self = this.set("preventCaptionOverlap", value.asInstanceOf[js.Any])
+    def setPreventCaptionOverlapUndefined: Self = StObject.set(x, "preventCaptionOverlap", js.undefined)
     
     @scala.inline
-    def deletePreventCaptionOverlap: Self = this.set("preventCaptionOverlap", js.undefined)
+    def setProtect(value: Boolean): Self = StObject.set(x, "protect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtect(value: Boolean): Self = this.set("protect", value.asInstanceOf[js.Any])
+    def setProtectUndefined: Self = StObject.set(x, "protect", js.undefined)
     
     @scala.inline
-    def deleteProtect: Self = this.set("protect", js.undefined)
+    def setSlideClass(value: String): Self = StObject.set(x, "slideClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideClass(value: String): Self = this.set("slideClass", value.asInstanceOf[js.Any])
+    def setSlideClassUndefined: Self = StObject.set(x, "slideClass", js.undefined)
     
     @scala.inline
-    def deleteSlideClass: Self = this.set("slideClass", js.undefined)
+    def setSlideShow(value: AutoStart_): Self = StObject.set(x, "slideShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideShow(value: AutoStart_): Self = this.set("slideShow", value.asInstanceOf[js.Any])
+    def setSlideShowUndefined: Self = StObject.set(x, "slideShow", js.undefined)
     
     @scala.inline
-    def deleteSlideShow: Self = this.set("slideShow", js.undefined)
+    def setSmallBtn(value: Boolean | auto): Self = StObject.set(x, "smallBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallBtn(value: Boolean | auto): Self = this.set("smallBtn", value.asInstanceOf[js.Any])
+    def setSmallBtnUndefined: Self = StObject.set(x, "smallBtn", js.undefined)
     
     @scala.inline
-    def deleteSmallBtn: Self = this.set("smallBtn", js.undefined)
+    def setSpinnerTpl(value: String): Self = StObject.set(x, "spinnerTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerTpl(value: String): Self = this.set("spinnerTpl", value.asInstanceOf[js.Any])
+    def setSpinnerTplUndefined: Self = StObject.set(x, "spinnerTpl", js.undefined)
     
     @scala.inline
-    def deleteSpinnerTpl: Self = this.set("spinnerTpl", js.undefined)
+    def setThumbs(value: FancyThumbsOptions): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbs(value: FancyThumbsOptions): Self = this.set("thumbs", value.asInstanceOf[js.Any])
+    def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
     
     @scala.inline
-    def deleteThumbs: Self = this.set("thumbs", js.undefined)
+    def setToolbar(value: Boolean | auto): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: Boolean | auto): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setTouch(value: FancyBoxTouchOptions | `false`): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouch(value: FancyBoxTouchOptions | `false`): Self = this.set("touch", value.asInstanceOf[js.Any])
+    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
     
     @scala.inline
-    def deleteTouch: Self = this.set("touch", js.undefined)
+    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionEffect(value: fade | slide | circular | tube | `zoom-in-out` | rotate | Boolean): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionEffect(value: fade | slide | circular | tube | `zoom-in-out` | rotate | Boolean): Self = this.set("transitionEffect", value.asInstanceOf[js.Any])
+    def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
     
     @scala.inline
-    def deleteTransitionEffect: Self = this.set("transitionEffect", js.undefined)
+    def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrapFocus(value: Boolean): Self = this.set("trapFocus", value.asInstanceOf[js.Any])
+    def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
     
     @scala.inline
-    def deleteTrapFocus: Self = this.set("trapFocus", js.undefined)
+    def setVideo(value: FancyBoxVideoOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: FancyBoxVideoOptions): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setWheel(value: auto | `false`): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWheel(value: auto | `false`): Self = this.set("wheel", value.asInstanceOf[js.Any])
+    def setWheelUndefined: Self = StObject.set(x, "wheel", js.undefined)
     
     @scala.inline
-    def deleteWheel: Self = this.set("wheel", js.undefined)
+    def setZoomOpacity(value: auto | Boolean): Self = StObject.set(x, "zoomOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomOpacity(value: auto | Boolean): Self = this.set("zoomOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOpacity: Self = this.set("zoomOpacity", js.undefined)
+    def setZoomOpacityUndefined: Self = StObject.set(x, "zoomOpacity", js.undefined)
   }
 }

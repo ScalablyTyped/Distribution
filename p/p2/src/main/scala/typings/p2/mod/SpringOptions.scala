@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpringOptions extends js.Object {
+trait SpringOptions extends StObject {
   
   var damping: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object SpringOptions {
   }
   
   @scala.inline
-  implicit class SpringOptionsOps[Self <: SpringOptions] (val x: Self) extends AnyVal {
+  implicit class SpringOptionsMutableBuilder[Self <: SpringOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
     
     @scala.inline
-    def deleteDamping: Self = this.set("damping", js.undefined)
+    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = this.set("localAnchorA", value.asInstanceOf[js.Any])
+    def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
     
     @scala.inline
-    def deleteLocalAnchorA: Self = this.set("localAnchorA", js.undefined)
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = this.set("localAnchorB", value.asInstanceOf[js.Any])
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
     @scala.inline
-    def deleteLocalAnchorB: Self = this.set("localAnchorB", js.undefined)
+    def setWorldAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
+    def setWorldAnchorAUndefined: Self = StObject.set(x, "worldAnchorA", js.undefined)
     
     @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
+    def setWorldAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldAnchorA(value: js.Tuple2[Double, Double]): Self = this.set("worldAnchorA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldAnchorA: Self = this.set("worldAnchorA", js.undefined)
-    
-    @scala.inline
-    def setWorldAnchorB(value: js.Tuple2[Double, Double]): Self = this.set("worldAnchorB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldAnchorB: Self = this.set("worldAnchorB", js.undefined)
+    def setWorldAnchorBUndefined: Self = StObject.set(x, "worldAnchorB", js.undefined)
   }
 }

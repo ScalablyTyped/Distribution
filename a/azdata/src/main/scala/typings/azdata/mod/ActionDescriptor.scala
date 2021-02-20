@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionDescriptor extends js.Object {
+trait ActionDescriptor extends StObject {
   
   /**
     * Name of the clickable action. If not defined then no action will be shown
@@ -31,33 +32,21 @@ object ActionDescriptor {
   }
   
   @scala.inline
-  implicit class ActionDescriptorOps[Self <: ActionDescriptor] (val x: Self) extends AnyVal {
+  implicit class ActionDescriptorMutableBuilder[Self <: ActionDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionTitle(value: String): Self = StObject.set(x, "actionTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTitleUndefined: Self = StObject.set(x, "actionTitle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setCallbackDataUndefined: Self = StObject.set(x, "callbackData", js.undefined)
     
     @scala.inline
-    def setActionTitle(value: String): Self = this.set("actionTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionTitle: Self = this.set("actionTitle", js.undefined)
-    
-    @scala.inline
-    def setCallbackData(value: js.Any): Self = this.set("callbackData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCallbackData: Self = this.set("callbackData", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

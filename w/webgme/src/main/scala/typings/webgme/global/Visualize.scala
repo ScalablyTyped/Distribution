@@ -1,13 +1,13 @@
 package typings.webgme.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Visualize")
-@js.native
-object Visualize extends js.Object {
+object Visualize {
   
+  @JSGlobal("Visualize.Visualizer")
   @js.native
   class Visualizer ()
     extends typings.webgme.Visualize.Visualizer

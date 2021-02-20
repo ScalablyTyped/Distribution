@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Win32LobAppInstallExperience extends js.Object {
+trait Win32LobAppInstallExperience extends StObject {
   
   // Device restart behavior. Possible values are: basedOnReturnCode, allow, suppress, force.
   var deviceRestartBehavior: js.UndefOr[Win32LobAppRestartBehavior] = js.native
@@ -22,30 +23,18 @@ object Win32LobAppInstallExperience {
   }
   
   @scala.inline
-  implicit class Win32LobAppInstallExperienceOps[Self <: Win32LobAppInstallExperience] (val x: Self) extends AnyVal {
+  implicit class Win32LobAppInstallExperienceMutableBuilder[Self <: Win32LobAppInstallExperience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceRestartBehavior(value: Win32LobAppRestartBehavior): Self = StObject.set(x, "deviceRestartBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceRestartBehaviorUndefined: Self = StObject.set(x, "deviceRestartBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunAsAccount(value: RunAsAccountType): Self = StObject.set(x, "runAsAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceRestartBehavior(value: Win32LobAppRestartBehavior): Self = this.set("deviceRestartBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceRestartBehavior: Self = this.set("deviceRestartBehavior", js.undefined)
-    
-    @scala.inline
-    def setRunAsAccount(value: RunAsAccountType): Self = this.set("runAsAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunAsAccount: Self = this.set("runAsAccount", js.undefined)
+    def setRunAsAccountUndefined: Self = StObject.set(x, "runAsAccount", js.undefined)
   }
 }

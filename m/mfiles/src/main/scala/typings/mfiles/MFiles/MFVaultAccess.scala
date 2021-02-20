@@ -26,6 +26,7 @@ import typings.mfiles.mfilesNumbers.`65536`
 import typings.mfiles.mfilesNumbers.`8192`
 import typings.mfiles.mfilesNumbers.`8388608`
 import typings.mfiles.mfilesNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`268435456`
   - typings.mfiles.mfilesNumbers.`536870912`
 */
-trait MFVaultAccess extends js.Object
+trait MFVaultAccess extends StObject
 object MFVaultAccess {
   
   @scala.inline

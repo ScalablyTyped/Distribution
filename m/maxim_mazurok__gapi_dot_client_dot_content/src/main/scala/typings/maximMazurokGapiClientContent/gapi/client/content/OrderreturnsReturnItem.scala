@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderreturnsReturnItem extends js.Object {
+trait OrderreturnsReturnItem extends StObject {
   
   /** Refunds the item. */
   var refund: js.UndefOr[OrderreturnsRefundOperation] = js.native
@@ -25,36 +26,24 @@ object OrderreturnsReturnItem {
   }
   
   @scala.inline
-  implicit class OrderreturnsReturnItemOps[Self <: OrderreturnsReturnItem] (val x: Self) extends AnyVal {
+  implicit class OrderreturnsReturnItemMutableBuilder[Self <: OrderreturnsReturnItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRefund(value: OrderreturnsRefundOperation): Self = StObject.set(x, "refund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRefundUndefined: Self = StObject.set(x, "refund", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReject(value: OrderreturnsRejectOperation): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund(value: OrderreturnsRefundOperation): Self = this.set("refund", value.asInstanceOf[js.Any])
+    def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
     
     @scala.inline
-    def deleteRefund: Self = this.set("refund", js.undefined)
+    def setReturnItemId(value: String): Self = StObject.set(x, "returnItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReject(value: OrderreturnsRejectOperation): Self = this.set("reject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReject: Self = this.set("reject", js.undefined)
-    
-    @scala.inline
-    def setReturnItemId(value: String): Self = this.set("returnItemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnItemId: Self = this.set("returnItemId", js.undefined)
+    def setReturnItemIdUndefined: Self = StObject.set(x, "returnItemId", js.undefined)
   }
 }

@@ -11,6 +11,7 @@ import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.Element
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait IAngularStatic extends js.Object {
+trait IAngularStatic extends StObject {
   
   /**
     * Restores the pre-1.8 behavior of jqLite that turns XHTML-like strings like

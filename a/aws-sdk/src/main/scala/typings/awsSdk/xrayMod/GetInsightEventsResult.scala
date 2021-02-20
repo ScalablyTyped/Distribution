@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInsightEventsResult extends js.Object {
+trait GetInsightEventsResult extends StObject {
   
   /**
     * A detailed description of the event. This includes the time of the event, client and root cause impact statistics, and the top anomalous service at the time of the event.
@@ -26,33 +27,21 @@ object GetInsightEventsResult {
   }
   
   @scala.inline
-  implicit class GetInsightEventsResultOps[Self <: GetInsightEventsResult] (val x: Self) extends AnyVal {
+  implicit class GetInsightEventsResultMutableBuilder[Self <: GetInsightEventsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsightEvents(value: InsightEventList): Self = StObject.set(x, "InsightEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsightEventsUndefined: Self = StObject.set(x, "InsightEvents", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsightEventsVarargs(value: InsightEvent*): Self = StObject.set(x, "InsightEvents", js.Array(value :_*))
     
     @scala.inline
-    def setInsightEventsVarargs(value: InsightEvent*): Self = this.set("InsightEvents", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsightEvents(value: InsightEventList): Self = this.set("InsightEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsightEvents: Self = this.set("InsightEvents", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

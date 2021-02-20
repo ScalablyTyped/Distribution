@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.VectorXYZ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever a piston moves a block.
   */
 @js.native
-trait IPistonMovedBlockEventData extends js.Object {
+trait IPistonMovedBlockEventData extends StObject {
   
   /**
     * The position of the block that was moved
@@ -35,27 +36,15 @@ object IPistonMovedBlockEventData {
   }
   
   @scala.inline
-  implicit class IPistonMovedBlockEventDataOps[Self <: IPistonMovedBlockEventData] (val x: Self) extends AnyVal {
+  implicit class IPistonMovedBlockEventDataMutableBuilder[Self <: IPistonMovedBlockEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPiston_action(value: String): Self = StObject.set(x, "piston_action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = this.set("block_position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPiston_action(value: String): Self = this.set("piston_action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPiston_position(value: VectorXYZ): Self = this.set("piston_position", value.asInstanceOf[js.Any])
+    def setPiston_position(value: VectorXYZ): Self = StObject.set(x, "piston_position", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.backlogJs.mod.Option.Project
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProjectsParams extends js.Object {
+trait GetProjectsParams extends StObject {
   
   var all: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object GetProjectsParams {
   }
   
   @scala.inline
-  implicit class GetProjectsParamsOps[Self <: GetProjectsParams] (val x: Self) extends AnyVal {
+  implicit class GetProjectsParamsMutableBuilder[Self <: GetProjectsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
-    
-    @scala.inline
-    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArchived: Self = this.set("archived", js.undefined)
+    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
   }
 }

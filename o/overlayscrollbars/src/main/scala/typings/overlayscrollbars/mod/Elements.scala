@@ -2,12 +2,13 @@ package typings.overlayscrollbars.mod
 
 import typings.overlayscrollbars.anon.Handle
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Elements extends js.Object {
+trait Elements extends StObject {
   
   var content: HTMLElement = js.native
   
@@ -43,42 +44,30 @@ object Elements {
   }
   
   @scala.inline
-  implicit class ElementsOps[Self <: Elements] (val x: Self) extends AnyVal {
+  implicit class ElementsMutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPadding(value: HTMLElement): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: HTMLElement): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setScrollbarCorner(value: HTMLElement): Self = StObject.set(x, "scrollbarCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: HTMLElement): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setScrollbarHorizontal(value: Handle): Self = StObject.set(x, "scrollbarHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: HTMLElement): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setScrollbarVertical(value: Handle): Self = StObject.set(x, "scrollbarVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarCorner(value: HTMLElement): Self = this.set("scrollbarCorner", value.asInstanceOf[js.Any])
+    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarHorizontal(value: Handle): Self = this.set("scrollbarHorizontal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollbarVertical(value: Handle): Self = this.set("scrollbarVertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewport(value: HTMLElement): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentLanguage extends js.Object {
+trait EnvironmentLanguage extends StObject {
   
   /**
     * The list of Docker images that are related by the specified programming language.
@@ -26,33 +27,21 @@ object EnvironmentLanguage {
   }
   
   @scala.inline
-  implicit class EnvironmentLanguageOps[Self <: EnvironmentLanguage] (val x: Self) extends AnyVal {
+  implicit class EnvironmentLanguageMutableBuilder[Self <: EnvironmentLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImages(value: EnvironmentImages): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagesVarargs(value: EnvironmentImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImagesVarargs(value: EnvironmentImage*): Self = this.set("images", js.Array(value :_*))
+    def setLanguage(value: LanguageType): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: EnvironmentImages): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
-    
-    @scala.inline
-    def setLanguage(value: LanguageType): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

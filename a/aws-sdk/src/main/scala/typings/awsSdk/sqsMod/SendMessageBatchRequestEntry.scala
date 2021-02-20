@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMessageBatchRequestEntry extends js.Object {
+trait SendMessageBatchRequestEntry extends StObject {
   
   /**
     * The length of time, in seconds, for which a specific message is delayed. Valid values: 0 to 900. Maximum: 15 minutes. Messages with a positive DelaySeconds value become available for processing after the delay period is finished. If you don't specify a value, the default value for the queue is applied.   When you set FifoQueue, you can't set DelaySeconds per message. You can set this parameter only on a queue level. 
@@ -51,54 +52,42 @@ object SendMessageBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class SendMessageBatchRequestEntryOps[Self <: SendMessageBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class SendMessageBatchRequestEntryMutableBuilder[Self <: SendMessageBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelaySeconds(value: Integer): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelaySecondsUndefined: Self = StObject.set(x, "DelaySeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMessageAttributes(value: MessageBodyAttributeMap): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageBody(value: String): Self = this.set("MessageBody", value.asInstanceOf[js.Any])
+    def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
     
     @scala.inline
-    def setDelaySeconds(value: Integer): Self = this.set("DelaySeconds", value.asInstanceOf[js.Any])
+    def setMessageBody(value: String): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelaySeconds: Self = this.set("DelaySeconds", js.undefined)
+    def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageAttributes(value: MessageBodyAttributeMap): Self = this.set("MessageAttributes", value.asInstanceOf[js.Any])
+    def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
     
     @scala.inline
-    def deleteMessageAttributes: Self = this.set("MessageAttributes", js.undefined)
+    def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageDeduplicationId(value: String): Self = this.set("MessageDeduplicationId", value.asInstanceOf[js.Any])
+    def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
     
     @scala.inline
-    def deleteMessageDeduplicationId: Self = this.set("MessageDeduplicationId", js.undefined)
+    def setMessageSystemAttributes(value: MessageBodySystemAttributeMap): Self = StObject.set(x, "MessageSystemAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageGroupId(value: String): Self = this.set("MessageGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageGroupId: Self = this.set("MessageGroupId", js.undefined)
-    
-    @scala.inline
-    def setMessageSystemAttributes(value: MessageBodySystemAttributeMap): Self = this.set("MessageSystemAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageSystemAttributes: Self = this.set("MessageSystemAttributes", js.undefined)
+    def setMessageSystemAttributesUndefined: Self = StObject.set(x, "MessageSystemAttributes", js.undefined)
   }
 }

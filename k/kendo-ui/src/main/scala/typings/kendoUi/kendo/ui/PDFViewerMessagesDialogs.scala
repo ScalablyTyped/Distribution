@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFViewerMessagesDialogs extends js.Object {
+trait PDFViewerMessagesDialogs extends StObject {
   
   var cancel: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object PDFViewerMessagesDialogs {
   }
   
   @scala.inline
-  implicit class PDFViewerMessagesDialogsOps[Self <: PDFViewerMessagesDialogs] (val x: Self) extends AnyVal {
+  implicit class PDFViewerMessagesDialogsMutableBuilder[Self <: PDFViewerMessagesDialogs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportAsDialog(value: PDFViewerMessagesDialogsExportAsDialog): Self = StObject.set(x, "exportAsDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setExportAsDialogUndefined: Self = StObject.set(x, "exportAsDialog", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAsDialog(value: PDFViewerMessagesDialogsExportAsDialog): Self = this.set("exportAsDialog", value.asInstanceOf[js.Any])
+    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
     @scala.inline
-    def deleteExportAsDialog: Self = this.set("exportAsDialog", js.undefined)
+    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkText(value: String): Self = this.set("okText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOkText: Self = this.set("okText", js.undefined)
-    
-    @scala.inline
-    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
   }
 }

@@ -9,6 +9,7 @@ import typings.activexAdodb.activexAdodbNumbers.`3`
 import typings.activexAdodb.activexAdodbNumbers.`4194304`
 import typings.activexAdodb.activexAdodbNumbers.`4`
 import typings.activexAdodb.activexAdodbNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAdodb.activexAdodbNumbers.`0`
   - typings.activexAdodb.activexAdodbNumbers.`2`
 */
-trait ConnectModeEnum extends js.Object
+trait ConnectModeEnum extends StObject
 object ConnectModeEnum {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofoptions14 extends js.Object {
+trait Typeofoptions14 extends StObject {
   
   val payload_2: Typeofpayload2 = js.native
   
@@ -22,30 +23,18 @@ object Typeofoptions14 {
   }
   
   @scala.inline
-  implicit class Typeofoptions14Ops[Self <: Typeofoptions14] (val x: Self) extends AnyVal {
+  implicit class Typeofoptions14MutableBuilder[Self <: Typeofoptions14] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload_2(value: Typeofpayload2): Self = StObject.set(x, "payload_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPre_2(value: js.Array[AssignStringMethod]): Self = StObject.set(x, "pre_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPre_2Varargs(value: AssignStringMethod*): Self = StObject.set(x, "pre_2", js.Array(value :_*))
     
     @scala.inline
-    def setPayload_2(value: Typeofpayload2): Self = this.set("payload_2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPre_2Varargs(value: AssignStringMethod*): Self = this.set("pre_2", js.Array(value :_*))
-    
-    @scala.inline
-    def setPre_2(value: js.Array[AssignStringMethod]): Self = this.set("pre_2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidate_7(value: Typeofvalidate7): Self = this.set("validate_7", value.asInstanceOf[js.Any])
+    def setValidate_7(value: Typeofvalidate7): Self = StObject.set(x, "validate_7", value.asInstanceOf[js.Any])
   }
 }

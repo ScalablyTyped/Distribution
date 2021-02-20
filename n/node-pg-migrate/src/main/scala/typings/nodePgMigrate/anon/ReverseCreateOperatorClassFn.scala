@@ -4,12 +4,13 @@ import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.operatorsTypesMod.CreateOperatorClassFn
 import typings.nodePgMigrate.operatorsTypesMod.CreateOperatorClassOptions
 import typings.nodePgMigrate.operatorsTypesMod.OperatorListDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateOperatorClassFn extends js.Object {
+trait ReverseCreateOperatorClassFn extends StObject {
   
   def reverse(
     operatorClassName: typings.nodePgMigrate.generalTypesMod.Name,

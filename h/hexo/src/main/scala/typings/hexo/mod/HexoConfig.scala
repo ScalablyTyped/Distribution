@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hexo.anon.Autodetect
 import typings.hexo.hexoBooleans.`false`
 import typings.hexo.mod.extend.Deployer.Config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -264,168 +265,156 @@ object HexoConfig {
   }
   
   @scala.inline
-  implicit class HexoConfigOps[Self <: HexoConfig] (val x: Self) extends AnyVal {
+  implicit class HexoConfigMutableBuilder[Self <: HexoConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchive_dir(value: String): Self = StObject.set(x, "archive_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory_dir(value: String): Self = StObject.set(x, "category_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchive_dir(value: String): Self = this.set("archive_dir", value.asInstanceOf[js.Any])
+    def setCategory_map(value: StringDictionary[String | Double]): Self = StObject.set(x, "category_map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCode_dir(value: String): Self = StObject.set(x, "code_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory_dir(value: String): Self = this.set("category_dir", value.asInstanceOf[js.Any])
+    def setDate_format(value: String): Self = StObject.set(x, "date_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory_map(value: StringDictionary[String | Double]): Self = this.set("category_map", value.asInstanceOf[js.Any])
+    def setDefault_category(value: String): Self = StObject.set(x, "default_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_dir(value: String): Self = this.set("code_dir", value.asInstanceOf[js.Any])
+    def setDefault_layout(value: String): Self = StObject.set(x, "default_layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate_format(value: String): Self = this.set("date_format", value.asInstanceOf[js.Any])
+    def setDeploy(value: Config): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_category(value: String): Self = this.set("default_category", value.asInstanceOf[js.Any])
+    def setDeployNull: Self = StObject.set(x, "deploy", null)
     
     @scala.inline
-    def setDefault_layout(value: String): Self = this.set("default_layout", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_link(value: Boolean): Self = this.set("external_link", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setFilename_case(value: Double): Self = this.set("filename_case", value.asInstanceOf[js.Any])
+    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setFuture(value: Boolean): Self = this.set("future", value.asInstanceOf[js.Any])
+    def setExternal_link(value: Boolean): Self = StObject.set(x, "external_link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: Autodetect): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setFilename_case(value: Double): Self = StObject.set(x, "filename_case", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n_dir(value: String): Self = this.set("i18n_dir", value.asInstanceOf[js.Any])
+    def setFuture(value: Boolean): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreVarargs(value: String*): Self = this.set("ignore", js.Array(value :_*))
+    def setHighlight(value: Autodetect): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore(value: js.Array[String]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setI18n_dir(value: String): Self = StObject.set(x, "i18n_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_post_name(value: String): Self = this.set("new_post_name", value.asInstanceOf[js.Any])
+    def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setPagination_dir(value: String): Self = this.set("pagination_dir", value.asInstanceOf[js.Any])
+    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def setPermalink(value: String): Self = this.set("permalink", value.asInstanceOf[js.Any])
+    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setPost_asset_folder(value: Boolean): Self = this.set("post_asset_folder", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic_dir(value: String): Self = this.set("public_dir", value.asInstanceOf[js.Any])
+    def setNew_post_name(value: String): Self = StObject.set(x, "new_post_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelative_link(value: Boolean): Self = this.set("relative_link", value.asInstanceOf[js.Any])
+    def setPagination_dir(value: String): Self = StObject.set(x, "pagination_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender_drafts(value: Boolean): Self = this.set("render_drafts", value.asInstanceOf[js.Any])
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setPermalink(value: String): Self = StObject.set(x, "permalink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_dir(value: String): Self = this.set("source_dir", value.asInstanceOf[js.Any])
+    def setPermalink_defaults(value: String): Self = StObject.set(x, "permalink_defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setPermalink_defaultsNull: Self = StObject.set(x, "permalink_defaults", null)
     
     @scala.inline
-    def setTag_dir(value: String): Self = this.set("tag_dir", value.asInstanceOf[js.Any])
+    def setPost_asset_folder(value: Boolean): Self = StObject.set(x, "post_asset_folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag_map(value: StringDictionary[String | Double]): Self = this.set("tag_map", value.asInstanceOf[js.Any])
+    def setPublic_dir(value: String): Self = StObject.set(x, "public_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String | `false`): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setRelative_link(value: Boolean): Self = StObject.set(x, "relative_link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme_config(value: StringDictionary[String | Double]): Self = this.set("theme_config", value.asInstanceOf[js.Any])
+    def setRender_drafts(value: Boolean): Self = StObject.set(x, "render_drafts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime_format(value: String): Self = this.set("time_format", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setSkip_render(value: String | js.Array[String]): Self = StObject.set(x, "skip_render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setSkip_renderNull: Self = StObject.set(x, "skip_render", null)
     
     @scala.inline
-    def setTitlecase(value: Boolean): Self = this.set("titlecase", value.asInstanceOf[js.Any])
+    def setSkip_renderVarargs(value: String*): Self = StObject.set(x, "skip_render", js.Array(value :_*))
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setSource_dir(value: String): Self = StObject.set(x, "source_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploy(value: Config): Self = this.set("deploy", value.asInstanceOf[js.Any])
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployNull: Self = this.set("deploy", null)
+    def setTag_dir(value: String): Self = StObject.set(x, "tag_dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    def setTag_map(value: StringDictionary[String | Double]): Self = StObject.set(x, "tag_map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setTheme(value: String | `false`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setTheme_config(value: StringDictionary[String | Double]): Self = StObject.set(x, "theme_config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeVarargs(value: String*): Self = this.set("include", js.Array(value :_*))
+    def setTime_format(value: String): Self = StObject.set(x, "time_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Array[String]): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermalink_defaults(value: String): Self = this.set("permalink_defaults", value.asInstanceOf[js.Any])
+    def setTitlecase(value: Boolean): Self = StObject.set(x, "titlecase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermalink_defaultsNull: Self = this.set("permalink_defaults", null)
-    
-    @scala.inline
-    def setSkip_renderVarargs(value: String*): Self = this.set("skip_render", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkip_render(value: String | js.Array[String]): Self = this.set("skip_render", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkip_renderNull: Self = this.set("skip_render", null)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

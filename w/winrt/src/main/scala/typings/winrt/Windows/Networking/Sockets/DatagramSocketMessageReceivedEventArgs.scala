@@ -3,6 +3,7 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Storage.Streams.DataReader
 import typings.winrt.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

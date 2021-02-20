@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hexo.mod.Locals.Category
 import typings.hexo.mod.Locals.Page
 import typings.hexo.mod.Locals.Tag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Site extends js.Object {
+trait Site extends StObject {
   
   var categories: Model[Category] = js.native
   
@@ -36,33 +37,21 @@ object Site {
   }
   
   @scala.inline
-  implicit class SiteOps[Self <: Site] (val x: Self) extends AnyVal {
+  implicit class SiteMutableBuilder[Self <: Site] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: Model[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPages(value: Model[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: Model[Category]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setPosts(value: Model[typings.hexo.mod.Locals.Post]): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPages(value: Model[Page]): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosts(value: Model[typings.hexo.mod.Locals.Post]): Self = this.set("posts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: Model[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTags(value: Model[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferParametersProperties extends js.Object {
+trait BufferParametersProperties extends StObject {
   
   /**
     * The spatial reference in which the geometries are buffered.
@@ -71,66 +72,54 @@ object BufferParametersProperties {
   }
   
   @scala.inline
-  implicit class BufferParametersPropertiesOps[Self <: BufferParametersProperties] (val x: Self) extends AnyVal {
+  implicit class BufferParametersPropertiesMutableBuilder[Self <: BufferParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "bufferSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferSpatialReferenceUndefined: Self = StObject.set(x, "bufferSpatialReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistances(value: js.Array[Double]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferSpatialReference(value: SpatialReferenceProperties): Self = this.set("bufferSpatialReference", value.asInstanceOf[js.Any])
+    def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
     
     @scala.inline
-    def deleteBufferSpatialReference: Self = this.set("bufferSpatialReference", js.undefined)
+    def setDistancesVarargs(value: Double*): Self = StObject.set(x, "distances", js.Array(value :_*))
     
     @scala.inline
-    def setDistancesVarargs(value: Double*): Self = this.set("distances", js.Array(value :_*))
+    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistances(value: js.Array[Double]): Self = this.set("distances", value.asInstanceOf[js.Any])
+    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
     @scala.inline
-    def deleteDistances: Self = this.set("distances", js.undefined)
+    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeodesic(value: Boolean): Self = this.set("geodesic", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteGeodesic: Self = this.set("geodesic", js.undefined)
+    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
     @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = this.set("geometries", js.Array(value :_*))
+    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setUnionResults(value: Boolean): Self = StObject.set(x, "unionResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setUnionResultsUndefined: Self = StObject.set(x, "unionResults", js.undefined)
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnionResults(value: Boolean): Self = this.set("unionResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnionResults: Self = this.set("unionResults", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

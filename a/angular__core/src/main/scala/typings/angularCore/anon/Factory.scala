@@ -4,12 +4,13 @@ import typings.angularCore.angularCoreStrings.any
 import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
 import typings.angularCore.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Factory[T] extends js.Object {
+trait Factory[T] extends StObject {
   
   def factory(): T = js.native
   
@@ -26,33 +27,21 @@ object Factory {
   }
   
   @scala.inline
-  implicit class FactoryOps[Self <: Factory[_], T] (val x: Self with Factory[T]) extends AnyVal {
+  implicit class FactoryMutableBuilder[Self <: Factory[_], T] (val x: Self with Factory[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvidedIn(value: Type[_] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     
     @scala.inline
-    def setFactory(value: () => T): Self = this.set("factory", js.Any.fromFunction0(value))
+    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
     
     @scala.inline
-    def setToken(value: js.Any): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvidedIn(value: Type[_] | root | platform | any): Self = this.set("providedIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvidedIn: Self = this.set("providedIn", js.undefined)
-    
-    @scala.inline
-    def setProvidedInNull: Self = this.set("providedIn", null)
+    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

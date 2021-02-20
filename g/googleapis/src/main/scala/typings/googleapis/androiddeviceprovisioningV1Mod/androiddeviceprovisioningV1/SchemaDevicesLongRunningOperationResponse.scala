@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * operations](/zero-touch/guides/how-it-works#operations).
   */
 @js.native
-trait SchemaDevicesLongRunningOperationResponse extends js.Object {
+trait SchemaDevicesLongRunningOperationResponse extends StObject {
   
   /**
     * The processing status for each device in the operation. One
@@ -34,33 +35,21 @@ object SchemaDevicesLongRunningOperationResponse {
   }
   
   @scala.inline
-  implicit class SchemaDevicesLongRunningOperationResponseOps[Self <: SchemaDevicesLongRunningOperationResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDevicesLongRunningOperationResponseMutableBuilder[Self <: SchemaDevicesLongRunningOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPerDeviceStatus(value: js.Array[SchemaOperationPerDevice]): Self = StObject.set(x, "perDeviceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPerDeviceStatusUndefined: Self = StObject.set(x, "perDeviceStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerDeviceStatusVarargs(value: SchemaOperationPerDevice*): Self = StObject.set(x, "perDeviceStatus", js.Array(value :_*))
     
     @scala.inline
-    def setPerDeviceStatusVarargs(value: SchemaOperationPerDevice*): Self = this.set("perDeviceStatus", js.Array(value :_*))
+    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerDeviceStatus(value: js.Array[SchemaOperationPerDevice]): Self = this.set("perDeviceStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerDeviceStatus: Self = this.set("perDeviceStatus", js.undefined)
-    
-    @scala.inline
-    def setSuccessCount(value: Double): Self = this.set("successCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
   }
 }

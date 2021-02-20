@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLAppBehavior extends js.Object {
+trait HTMLAppBehavior extends StObject {
   
   @JSName("MSHTML.HTMLAppBehavior_typekey")
   var MSHTMLDotHTMLAppBehavior_typekey: HTMLAppBehavior = js.native
@@ -76,75 +77,63 @@ object HTMLAppBehavior {
   }
   
   @scala.inline
-  implicit class HTMLAppBehaviorOps[Self <: HTMLAppBehavior] (val x: Self) extends AnyVal {
+  implicit class HTMLAppBehaviorMutableBuilder[Self <: HTMLAppBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLAppBehavior_typekey(value: HTMLAppBehavior): Self = this.set("MSHTML.HTMLAppBehavior_typekey", value.asInstanceOf[js.Any])
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: String): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStyle(value: String): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setInnerBorder(value: String): Self = StObject.set(x, "innerBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandLine(value: String): Self = this.set("commandLine", value.asInstanceOf[js.Any])
+    def setMSHTMLDotHTMLAppBehavior_typekey(value: HTMLAppBehavior): Self = StObject.set(x, "MSHTML.HTMLAppBehavior_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenu(value: String): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    def setMaximizeButton(value: String): Self = StObject.set(x, "maximizeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setMinimizeButton(value: String): Self = StObject.set(x, "minimizeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerBorder(value: String): Self = this.set("innerBorder", value.asInstanceOf[js.Any])
+    def setScroll(value: String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximizeButton(value: String): Self = this.set("maximizeButton", value.asInstanceOf[js.Any])
+    def setScrollFlat(value: String): Self = StObject.set(x, "scrollFlat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimizeButton(value: String): Self = this.set("minimizeButton", value.asInstanceOf[js.Any])
+    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroll(value: String): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setShowInTaskBar(value: String): Self = StObject.set(x, "showInTaskBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollFlat(value: String): Self = this.set("scrollFlat", value.asInstanceOf[js.Any])
+    def setSingleInstance(value: String): Self = StObject.set(x, "singleInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: String): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSysMenu(value: String): Self = StObject.set(x, "sysMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInTaskBar(value: String): Self = this.set("showInTaskBar", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleInstance(value: String): Self = this.set("singleInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSysMenu(value: String): Self = this.set("sysMenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowState(value: String): Self = this.set("windowState", value.asInstanceOf[js.Any])
+    def setWindowState(value: String): Self = StObject.set(x, "windowState", value.asInstanceOf[js.Any])
   }
 }

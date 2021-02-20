@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridColumnGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait GridColumnGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The column-gap CSS property sets the size of the gap (gutter) between an element's columns.
@@ -25,30 +26,18 @@ object GridColumnGapProps {
   }
   
   @scala.inline
-  implicit class GridColumnGapPropsOps[Self <: GridColumnGapProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridColumnGapProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridColumnGapPropsMutableBuilder[Self <: GridColumnGapProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridColumnGapProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridColumnGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridColumnGapNull: Self = StObject.set(x, "gridColumnGap", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
     @scala.inline
-    def setGridColumnGapVarargs(value: (TVal | Null)*): Self = this.set("gridColumnGap", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridColumnGap(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("gridColumnGap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridColumnGap: Self = this.set("gridColumnGap", js.undefined)
-    
-    @scala.inline
-    def setGridColumnGapNull: Self = this.set("gridColumnGap", null)
+    def setGridColumnGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
   }
 }

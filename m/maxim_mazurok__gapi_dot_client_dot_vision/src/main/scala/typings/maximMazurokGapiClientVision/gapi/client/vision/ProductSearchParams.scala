@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductSearchParams extends js.Object {
+trait ProductSearchParams extends StObject {
   
   /** The bounding polygon around the area of interest in the image. If it is not specified, system discretion will be applied. */
   var boundingPoly: js.UndefOr[BoundingPoly] = js.native
@@ -36,45 +37,33 @@ object ProductSearchParams {
   }
   
   @scala.inline
-  implicit class ProductSearchParamsOps[Self <: ProductSearchParams] (val x: Self) extends AnyVal {
+  implicit class ProductSearchParamsMutableBuilder[Self <: ProductSearchParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingPoly(value: BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    def setProductCategories(value: js.Array[String]): Self = StObject.set(x, "productCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setProductCategoriesUndefined: Self = StObject.set(x, "productCategories", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value :_*))
     
     @scala.inline
-    def setProductCategoriesVarargs(value: String*): Self = this.set("productCategories", js.Array(value :_*))
+    def setProductSet(value: String): Self = StObject.set(x, "productSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCategories(value: js.Array[String]): Self = this.set("productCategories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductCategories: Self = this.set("productCategories", js.undefined)
-    
-    @scala.inline
-    def setProductSet(value: String): Self = this.set("productSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductSet: Self = this.set("productSet", js.undefined)
+    def setProductSetUndefined: Self = StObject.set(x, "productSet", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ProjectionPickerViewModel")
 @js.native
-class ProjectionPickerViewModel protected () extends js.Object {
+class ProjectionPickerViewModel protected () extends StObject {
   def this(scene: Scene) = this()
   
   def destroy(): Unit = js.native

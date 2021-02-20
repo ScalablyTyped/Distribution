@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConfigRequest extends js.Object {
+trait GetConfigRequest extends StObject {
   
   /**
     * The ARN of the client.
@@ -31,30 +32,18 @@ object GetConfigRequest {
   }
   
   @scala.inline
-  implicit class GetConfigRequestOps[Self <: GetConfigRequest] (val x: Self) extends AnyVal {
+  implicit class GetConfigRequestMutableBuilder[Self <: GetConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientVersion(value: ClientVersion): Self = StObject.set(x, "ClientVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHapgList(value: HapgList): Self = StObject.set(x, "HapgList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientArn(value: ClientArn): Self = this.set("ClientArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientVersion(value: ClientVersion): Self = this.set("ClientVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHapgListVarargs(value: HapgArn*): Self = this.set("HapgList", js.Array(value :_*))
-    
-    @scala.inline
-    def setHapgList(value: HapgList): Self = this.set("HapgList", value.asInstanceOf[js.Any])
+    def setHapgListVarargs(value: HapgArn*): Self = StObject.set(x, "HapgList", js.Array(value :_*))
   }
 }

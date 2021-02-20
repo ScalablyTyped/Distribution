@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for turn-based match modification metadata.
   */
 @js.native
-trait SchemaTurnBasedMatchModification extends js.Object {
+trait SchemaTurnBasedMatchModification extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -36,36 +37,24 @@ object SchemaTurnBasedMatchModification {
   }
   
   @scala.inline
-  implicit class SchemaTurnBasedMatchModificationOps[Self <: SchemaTurnBasedMatchModification] (val x: Self) extends AnyVal {
+  implicit class SchemaTurnBasedMatchModificationMutableBuilder[Self <: SchemaTurnBasedMatchModification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiedTimestampMillis(value: String): Self = StObject.set(x, "modifiedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setModifiedTimestampMillisUndefined: Self = StObject.set(x, "modifiedTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTimestampMillis(value: String): Self = this.set("modifiedTimestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifiedTimestampMillis: Self = this.set("modifiedTimestampMillis", js.undefined)
-    
-    @scala.inline
-    def setParticipantId(value: String): Self = this.set("participantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParticipantId: Self = this.set("participantId", js.undefined)
+    def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
   }
 }

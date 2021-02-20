@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MasteryTreeItemDto extends js.Object {
+trait MasteryTreeItemDto extends StObject {
   
   var masteryId: Double = js.native
   
@@ -20,24 +21,12 @@ object MasteryTreeItemDto {
   }
   
   @scala.inline
-  implicit class MasteryTreeItemDtoOps[Self <: MasteryTreeItemDto] (val x: Self) extends AnyVal {
+  implicit class MasteryTreeItemDtoMutableBuilder[Self <: MasteryTreeItemDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMasteryId(value: Double): Self = StObject.set(x, "masteryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMasteryId(value: Double): Self = this.set("masteryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrereq(value: String): Self = this.set("prereq", value.asInstanceOf[js.Any])
+    def setPrereq(value: String): Self = StObject.set(x, "prereq", value.asInstanceOf[js.Any])
   }
 }

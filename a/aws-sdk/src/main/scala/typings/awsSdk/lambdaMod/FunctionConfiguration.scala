@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionConfiguration extends js.Object {
+trait FunctionConfiguration extends StObject {
   
   /**
     * The SHA256 hash of the function's deployment package.
@@ -151,186 +152,174 @@ object FunctionConfiguration {
   }
   
   @scala.inline
-  implicit class FunctionConfigurationOps[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+  implicit class FunctionConfigurationMutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSha256(value: String): Self = this.set("CodeSha256", value.asInstanceOf[js.Any])
+    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
     
     @scala.inline
-    def deleteCodeSha256: Self = this.set("CodeSha256", js.undefined)
+    def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSize(value: Long): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
+    def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
     
     @scala.inline
-    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterConfig(value: DeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    def setEnvironment(value: EnvironmentResponse): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setFileSystemConfigs(value: FileSystemConfigList): Self = StObject.set(x, "FileSystemConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: EnvironmentResponse): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setFileSystemConfigsUndefined: Self = StObject.set(x, "FileSystemConfigs", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = StObject.set(x, "FileSystemConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = this.set("FileSystemConfigs", js.Array(value :_*))
+    def setFunctionArn(value: NameSpacedFunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemConfigs(value: FileSystemConfigList): Self = this.set("FileSystemConfigs", value.asInstanceOf[js.Any])
+    def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
     
     @scala.inline
-    def deleteFileSystemConfigs: Self = this.set("FileSystemConfigs", js.undefined)
+    def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionArn(value: NameSpacedFunctionArn): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
     
     @scala.inline
-    def deleteFunctionArn: Self = this.set("FunctionArn", js.undefined)
+    def setHandler(value: Handler): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: NamespacedFunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: Handler): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("Handler", js.undefined)
+    def setLastModified(value: Timestamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSKeyArn(value: KMSKeyArn): Self = this.set("KMSKeyArn", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
     @scala.inline
-    def deleteKMSKeyArn: Self = this.set("KMSKeyArn", js.undefined)
+    def setLastUpdateStatus(value: LastUpdateStatus): Self = StObject.set(x, "LastUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: Timestamp): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setLastUpdateStatusReason(value: LastUpdateStatusReason): Self = StObject.set(x, "LastUpdateStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setLastUpdateStatusReasonCode(value: LastUpdateStatusReasonCode): Self = StObject.set(x, "LastUpdateStatusReasonCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateStatus(value: LastUpdateStatus): Self = this.set("LastUpdateStatus", value.asInstanceOf[js.Any])
+    def setLastUpdateStatusReasonCodeUndefined: Self = StObject.set(x, "LastUpdateStatusReasonCode", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateStatus: Self = this.set("LastUpdateStatus", js.undefined)
+    def setLastUpdateStatusReasonUndefined: Self = StObject.set(x, "LastUpdateStatusReason", js.undefined)
     
     @scala.inline
-    def setLastUpdateStatusReason(value: LastUpdateStatusReason): Self = this.set("LastUpdateStatusReason", value.asInstanceOf[js.Any])
+    def setLastUpdateStatusUndefined: Self = StObject.set(x, "LastUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateStatusReason: Self = this.set("LastUpdateStatusReason", js.undefined)
+    def setLayers(value: LayersReferenceList): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateStatusReasonCode(value: LastUpdateStatusReasonCode): Self = this.set("LastUpdateStatusReasonCode", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateStatusReasonCode: Self = this.set("LastUpdateStatusReasonCode", js.undefined)
+    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "Layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: Layer*): Self = this.set("Layers", js.Array(value :_*))
+    def setMasterArn(value: FunctionArn): Self = StObject.set(x, "MasterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: LayersReferenceList): Self = this.set("Layers", value.asInstanceOf[js.Any])
+    def setMasterArnUndefined: Self = StObject.set(x, "MasterArn", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("Layers", js.undefined)
+    def setMemorySize(value: MemorySize): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterArn(value: FunctionArn): Self = this.set("MasterArn", value.asInstanceOf[js.Any])
+    def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
     
     @scala.inline
-    def deleteMasterArn: Self = this.set("MasterArn", js.undefined)
+    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorySize(value: MemorySize): Self = this.set("MemorySize", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def deleteMemorySize: Self = this.set("MemorySize", js.undefined)
+    def setRole(value: RoleArn): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setRuntime(value: Runtime): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: RoleArn): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: Runtime): Self = this.set("Runtime", value.asInstanceOf[js.Any])
+    def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuntime: Self = this.set("Runtime", js.undefined)
+    def setStateReasonCode(value: StateReasonCode): Self = StObject.set(x, "StateReasonCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateReasonCodeUndefined: Self = StObject.set(x, "StateReasonCode", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
     @scala.inline
-    def setStateReason(value: StateReason): Self = this.set("StateReason", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStateReason: Self = this.set("StateReason", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateReasonCode(value: StateReasonCode): Self = this.set("StateReasonCode", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteStateReasonCode: Self = this.set("StateReasonCode", js.undefined)
+    def setTracingConfig(value: TracingConfigResponse): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracingConfig(value: TracingConfigResponse): Self = this.set("TracingConfig", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     
     @scala.inline
-    def deleteTracingConfig: Self = this.set("TracingConfig", js.undefined)
+    def setVpcConfig(value: VpcConfigResponse): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfigResponse): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

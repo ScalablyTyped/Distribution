@@ -1,5 +1,6 @@
 package typings.qrcodeGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qrcodeGenerator.qrcodeGeneratorNumbers.`39`
   - typings.qrcodeGenerator.qrcodeGeneratorNumbers.`40`
 */
-trait TypeNumber extends js.Object
+trait TypeNumber extends StObject
 object TypeNumber {
   
   @scala.inline

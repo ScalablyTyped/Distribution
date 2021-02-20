@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a tuple of axis points.
   */
 @js.native
-trait ASPxClientDashboardItemDataAxisPointTuple extends js.Object {
+trait ASPxClientDashboardItemDataAxisPointTuple extends StObject {
   
   /**
     * Returns the axis point belonging to the default data axis. An ASPxClientDashboardItemDataAxisPoint object that is the axis point.

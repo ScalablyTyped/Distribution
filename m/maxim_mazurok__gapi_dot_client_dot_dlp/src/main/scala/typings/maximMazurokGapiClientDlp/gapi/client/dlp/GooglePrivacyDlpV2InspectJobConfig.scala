@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2InspectJobConfig extends js.Object {
+trait GooglePrivacyDlpV2InspectJobConfig extends StObject {
   
   /** Actions to execute at the completion of the job. */
   var actions: js.UndefOr[js.Array[GooglePrivacyDlpV2Action]] = js.native
@@ -28,45 +29,33 @@ object GooglePrivacyDlpV2InspectJobConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2InspectJobConfigOps[Self <: GooglePrivacyDlpV2InspectJobConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2InspectJobConfigMutableBuilder[Self <: GooglePrivacyDlpV2InspectJobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[GooglePrivacyDlpV2Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: GooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: GooglePrivacyDlpV2Action*): Self = this.set("actions", js.Array(value :_*))
+    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[GooglePrivacyDlpV2Action]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = this.set("inspectConfig", value.asInstanceOf[js.Any])
+    def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     
     @scala.inline
-    def deleteInspectConfig: Self = this.set("inspectConfig", js.undefined)
+    def setStorageConfig(value: GooglePrivacyDlpV2StorageConfig): Self = StObject.set(x, "storageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectTemplateName(value: String): Self = this.set("inspectTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInspectTemplateName: Self = this.set("inspectTemplateName", js.undefined)
-    
-    @scala.inline
-    def setStorageConfig(value: GooglePrivacyDlpV2StorageConfig): Self = this.set("storageConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageConfig: Self = this.set("storageConfig", js.undefined)
+    def setStorageConfigUndefined: Self = StObject.set(x, "storageConfig", js.undefined)
   }
 }

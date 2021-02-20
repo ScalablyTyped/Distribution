@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DelegationSet extends js.Object {
+trait DelegationSet extends StObject {
   
   /**
     * The value that you specified for CallerReference when you created the reusable delegation set.
@@ -31,36 +32,24 @@ object DelegationSet {
   }
   
   @scala.inline
-  implicit class DelegationSetOps[Self <: DelegationSet] (val x: Self) extends AnyVal {
+  implicit class DelegationSetMutableBuilder[Self <: DelegationSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerReferenceUndefined: Self = StObject.set(x, "CallerReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameServersVarargs(value: DNSName*): Self = this.set("NameServers", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def setNameServers(value: DelegationSetNameServers): Self = this.set("NameServers", value.asInstanceOf[js.Any])
+    def setNameServers(value: DelegationSetNameServers): Self = StObject.set(x, "NameServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerReference(value: Nonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCallerReference: Self = this.set("CallerReference", js.undefined)
-    
-    @scala.inline
-    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setNameServersVarargs(value: DNSName*): Self = StObject.set(x, "NameServers", js.Array(value :_*))
   }
 }

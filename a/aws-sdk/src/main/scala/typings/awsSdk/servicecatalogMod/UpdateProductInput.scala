@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProductInput extends js.Object {
+trait UpdateProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -71,87 +72,75 @@ object UpdateProductInput {
   }
   
   @scala.inline
-  implicit class UpdateProductInputOps[Self <: UpdateProductInput] (val x: Self) extends AnyVal {
+  implicit class UpdateProductInputMutableBuilder[Self <: UpdateProductInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddTags(value: AddTags): Self = StObject.set(x, "AddTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setAddTagsUndefined: Self = StObject.set(x, "AddTags", js.undefined)
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value :_*))
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setDescription(value: ProductViewShortDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddTagsVarargs(value: Tag*): Self = this.set("AddTags", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setAddTags(value: AddTags): Self = this.set("AddTags", value.asInstanceOf[js.Any])
+    def setDistributor(value: ProductViewOwner): Self = StObject.set(x, "Distributor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddTags: Self = this.set("AddTags", js.undefined)
+    def setDistributorUndefined: Self = StObject.set(x, "Distributor", js.undefined)
     
     @scala.inline
-    def setDescription(value: ProductViewShortDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: ProductViewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributor(value: ProductViewOwner): Self = this.set("Distributor", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteDistributor: Self = this.set("Distributor", js.undefined)
+    def setOwner(value: ProductViewOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProductViewName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRemoveTags(value: TagKeys): Self = StObject.set(x, "RemoveTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: ProductViewOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setRemoveTagsUndefined: Self = StObject.set(x, "RemoveTags", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setRemoveTagsVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTags", js.Array(value :_*))
     
     @scala.inline
-    def setRemoveTagsVarargs(value: TagKey*): Self = this.set("RemoveTags", js.Array(value :_*))
+    def setSupportDescription(value: SupportDescription): Self = StObject.set(x, "SupportDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveTags(value: TagKeys): Self = this.set("RemoveTags", value.asInstanceOf[js.Any])
+    def setSupportDescriptionUndefined: Self = StObject.set(x, "SupportDescription", js.undefined)
     
     @scala.inline
-    def deleteRemoveTags: Self = this.set("RemoveTags", js.undefined)
+    def setSupportEmail(value: SupportEmail): Self = StObject.set(x, "SupportEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportDescription(value: SupportDescription): Self = this.set("SupportDescription", value.asInstanceOf[js.Any])
+    def setSupportEmailUndefined: Self = StObject.set(x, "SupportEmail", js.undefined)
     
     @scala.inline
-    def deleteSupportDescription: Self = this.set("SupportDescription", js.undefined)
+    def setSupportUrl(value: SupportUrl): Self = StObject.set(x, "SupportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportEmail(value: SupportEmail): Self = this.set("SupportEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportEmail: Self = this.set("SupportEmail", js.undefined)
-    
-    @scala.inline
-    def setSupportUrl(value: SupportUrl): Self = this.set("SupportUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportUrl: Self = this.set("SupportUrl", js.undefined)
+    def setSupportUrlUndefined: Self = StObject.set(x, "SupportUrl", js.undefined)
   }
 }

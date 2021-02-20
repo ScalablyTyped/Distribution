@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceConfig extends js.Object {
+trait InstanceConfig extends StObject {
   
   /** The name of this instance configuration as it appears in UIs. */
   var displayName: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object InstanceConfig {
   }
   
   @scala.inline
-  implicit class InstanceConfigOps[Self <: InstanceConfig] (val x: Self) extends AnyVal {
+  implicit class InstanceConfigMutableBuilder[Self <: InstanceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setReplicas(value: js.Array[ReplicaInfo]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setReplicasVarargs(value: ReplicaInfo*): Self = this.set("replicas", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicas(value: js.Array[ReplicaInfo]): Self = this.set("replicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicas: Self = this.set("replicas", js.undefined)
+    def setReplicasVarargs(value: ReplicaInfo*): Self = StObject.set(x, "replicas", js.Array(value :_*))
   }
 }

@@ -15,12 +15,13 @@ import typings.gitlab.servicesMod.GroupMilestones
 import typings.gitlab.servicesMod.GroupProjects
 import typings.gitlab.servicesMod.GroupVariables
 import typings.gitlab.servicesMod.Groups
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EpicDiscussions extends js.Object {
+trait EpicDiscussions extends StObject {
   
   var EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions] = js.native
   
@@ -74,60 +75,48 @@ object EpicDiscussions {
   }
   
   @scala.inline
-  implicit class EpicDiscussionsOps[Self <: EpicDiscussions] (val x: Self) extends AnyVal {
+  implicit class EpicDiscussionsMutableBuilder[Self <: EpicDiscussions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEpicDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions]): Self = StObject.set(x, "EpicDiscussions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEpicIssues(value: Instantiable0[typings.gitlab.servicesMod.EpicIssues]): Self = StObject.set(x, "EpicIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEpicNotes(value: Instantiable1[/* options */ BaseServiceOptions, EpicNotes]): Self = StObject.set(x, "EpicNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpicDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions]): Self = this.set("EpicDiscussions", value.asInstanceOf[js.Any])
+    def setEpics(value: Instantiable0[Epics]): Self = StObject.set(x, "Epics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpicIssues(value: Instantiable0[typings.gitlab.servicesMod.EpicIssues]): Self = this.set("EpicIssues", value.asInstanceOf[js.Any])
+    def setGroupAccessRequests(value: Instantiable1[/* options */ BaseServiceOptions, GroupAccessRequests]): Self = StObject.set(x, "GroupAccessRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpicNotes(value: Instantiable1[/* options */ BaseServiceOptions, EpicNotes]): Self = this.set("EpicNotes", value.asInstanceOf[js.Any])
+    def setGroupBadges(value: Instantiable1[/* options */ BaseServiceOptions, GroupBadges]): Self = StObject.set(x, "GroupBadges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpics(value: Instantiable0[Epics]): Self = this.set("Epics", value.asInstanceOf[js.Any])
+    def setGroupCustomAttributes(value: Instantiable1[/* options */ BaseServiceOptions, GroupCustomAttributes]): Self = StObject.set(x, "GroupCustomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupAccessRequests(value: Instantiable1[/* options */ BaseServiceOptions, GroupAccessRequests]): Self = this.set("GroupAccessRequests", value.asInstanceOf[js.Any])
+    def setGroupIssueBoards(value: Instantiable1[/* options */ BaseServiceOptions, GroupIssueBoards]): Self = StObject.set(x, "GroupIssueBoards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBadges(value: Instantiable1[/* options */ BaseServiceOptions, GroupBadges]): Self = this.set("GroupBadges", value.asInstanceOf[js.Any])
+    def setGroupLabels(value: Instantiable1[/* options */ BaseServiceOptions, GroupLabels]): Self = StObject.set(x, "GroupLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupCustomAttributes(value: Instantiable1[/* options */ BaseServiceOptions, GroupCustomAttributes]): Self = this.set("GroupCustomAttributes", value.asInstanceOf[js.Any])
+    def setGroupMembers(value: Instantiable1[/* options */ BaseServiceOptions, GroupMembers]): Self = StObject.set(x, "GroupMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIssueBoards(value: Instantiable1[/* options */ BaseServiceOptions, GroupIssueBoards]): Self = this.set("GroupIssueBoards", value.asInstanceOf[js.Any])
+    def setGroupMilestones(value: Instantiable1[/* options */ BaseServiceOptions, GroupMilestones]): Self = StObject.set(x, "GroupMilestones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupLabels(value: Instantiable1[/* options */ BaseServiceOptions, GroupLabels]): Self = this.set("GroupLabels", value.asInstanceOf[js.Any])
+    def setGroupProjects(value: Instantiable0[GroupProjects]): Self = StObject.set(x, "GroupProjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupMembers(value: Instantiable1[/* options */ BaseServiceOptions, GroupMembers]): Self = this.set("GroupMembers", value.asInstanceOf[js.Any])
+    def setGroupVariables(value: Instantiable1[/* options */ BaseServiceOptions, GroupVariables]): Self = StObject.set(x, "GroupVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupMilestones(value: Instantiable1[/* options */ BaseServiceOptions, GroupMilestones]): Self = this.set("GroupMilestones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupProjects(value: Instantiable0[GroupProjects]): Self = this.set("GroupProjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupVariables(value: Instantiable1[/* options */ BaseServiceOptions, GroupVariables]): Self = this.set("GroupVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroups(value: Instantiable0[Groups]): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setGroups(value: Instantiable0[Groups]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
   }
 }

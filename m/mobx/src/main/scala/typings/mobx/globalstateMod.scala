@@ -4,26 +4,20 @@ import typings.mobx.coreObservableMod.IObservable
 import typings.mobx.derivationMod.IDerivation
 import typings.mobx.internalMod.Reaction_
 import typings.mobx.mobxStrings.strict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx/lib/core/globalstate", JSImport.Namespace)
-@js.native
-object globalstateMod extends js.Object {
+object globalstateMod {
   
-  def getGlobal(): js.Any = js.native
-  
-  def getGlobalState(): js.Any = js.native
-  
-  var globalState: MobXGlobals = js.native
-  
-  def isolateGlobalState(): Unit = js.native
-  
-  def resetGlobalState(): Unit = js.native
-  
+  @JSImport("mobx/lib/core/globalstate", JSImport.Namespace)
   @js.native
-  class MobXGlobals () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("mobx/lib/core/globalstate", "MobXGlobals")
+  @js.native
+  class MobXGlobals () extends StObject {
     
     /**
       * globally unique token to signal unchanged
@@ -138,6 +132,28 @@ object globalstateMod extends js.Object {
       */
     var version: Double = js.native
   }
+  
+  @JSImport("mobx/lib/core/globalstate", "getGlobal")
+  @js.native
+  def getGlobal(): js.Any = js.native
+  
+  @JSImport("mobx/lib/core/globalstate", "getGlobalState")
+  @js.native
+  def getGlobalState(): js.Any = js.native
+  
+  @JSImport("mobx/lib/core/globalstate", "globalState")
+  @js.native
+  def globalState: MobXGlobals = js.native
+  @scala.inline
+  def globalState_=(x: MobXGlobals): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalState")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mobx/lib/core/globalstate", "isolateGlobalState")
+  @js.native
+  def isolateGlobalState(): Unit = js.native
+  
+  @JSImport("mobx/lib/core/globalstate", "resetGlobalState")
+  @js.native
+  def resetGlobalState(): Unit = js.native
   
   type IUNCHANGED = js.Object
 }

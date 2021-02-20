@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod.ec2
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotFleetRequestLaunchSpecification extends js.Object {
+trait SpotFleetRequestLaunchSpecification extends StObject {
   
   var ami: Input[String] = js.native
   
@@ -76,144 +77,132 @@ object SpotFleetRequestLaunchSpecification {
   }
   
   @scala.inline
-  implicit class SpotFleetRequestLaunchSpecificationOps[Self <: SpotFleetRequestLaunchSpecification] (val x: Self) extends AnyVal {
+  implicit class SpotFleetRequestLaunchSpecificationMutableBuilder[Self <: SpotFleetRequestLaunchSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmi(value: Input[String]): Self = StObject.set(x, "ami", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatePublicIpAddress(value: Input[Boolean]): Self = StObject.set(x, "associatePublicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "associatePublicIpAddress", js.undefined)
     
     @scala.inline
-    def setAmi(value: Input[String]): Self = this.set("ami", value.asInstanceOf[js.Any])
+    def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: Input[String]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
     @scala.inline
-    def setAssociatePublicIpAddress(value: Input[Boolean]): Self = this.set("associatePublicIpAddress", value.asInstanceOf[js.Any])
+    def setEbsBlockDevices(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEbsBlockDevice]]]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssociatePublicIpAddress: Self = this.set("associatePublicIpAddress", js.undefined)
+    def setEbsBlockDevicesUndefined: Self = StObject.set(x, "ebsBlockDevices", js.undefined)
     
     @scala.inline
-    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setEbsBlockDevicesVarargs(value: Input[SpotFleetRequestLaunchSpecificationEbsBlockDevice]*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    def setEbsOptimized(value: Input[Boolean]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsBlockDevicesVarargs(value: Input[SpotFleetRequestLaunchSpecificationEbsBlockDevice]*): Self = this.set("ebsBlockDevices", js.Array(value :_*))
+    def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
     
     @scala.inline
-    def setEbsBlockDevices(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEbsBlockDevice]]]): Self = this.set("ebsBlockDevices", value.asInstanceOf[js.Any])
+    def setEphemeralBlockDevices(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]]]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEbsBlockDevices: Self = this.set("ebsBlockDevices", js.undefined)
+    def setEphemeralBlockDevicesUndefined: Self = StObject.set(x, "ephemeralBlockDevices", js.undefined)
     
     @scala.inline
-    def setEbsOptimized(value: Input[Boolean]): Self = this.set("ebsOptimized", value.asInstanceOf[js.Any])
+    def setEphemeralBlockDevicesVarargs(value: Input[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
     
     @scala.inline
-    def deleteEbsOptimized: Self = this.set("ebsOptimized", js.undefined)
+    def setIamInstanceProfile(value: Input[String]): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralBlockDevicesVarargs(value: Input[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]*): Self = this.set("ephemeralBlockDevices", js.Array(value :_*))
+    def setIamInstanceProfileArn(value: Input[String]): Self = StObject.set(x, "iamInstanceProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralBlockDevices(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]]]): Self = this.set("ephemeralBlockDevices", value.asInstanceOf[js.Any])
+    def setIamInstanceProfileArnUndefined: Self = StObject.set(x, "iamInstanceProfileArn", js.undefined)
     
     @scala.inline
-    def deleteEphemeralBlockDevices: Self = this.set("ephemeralBlockDevices", js.undefined)
+    def setIamInstanceProfileUndefined: Self = StObject.set(x, "iamInstanceProfile", js.undefined)
     
     @scala.inline
-    def setIamInstanceProfile(value: Input[String]): Self = this.set("iamInstanceProfile", value.asInstanceOf[js.Any])
+    def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIamInstanceProfile: Self = this.set("iamInstanceProfile", js.undefined)
+    def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamInstanceProfileArn(value: Input[String]): Self = this.set("iamInstanceProfileArn", value.asInstanceOf[js.Any])
+    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
     @scala.inline
-    def deleteIamInstanceProfileArn: Self = this.set("iamInstanceProfileArn", js.undefined)
+    def setMonitoring(value: Input[Boolean]): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: Input[String]): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
     
     @scala.inline
-    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    def setPlacementGroup(value: Input[String]): Self = StObject.set(x, "placementGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoring(value: Input[Boolean]): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    def setPlacementGroupUndefined: Self = StObject.set(x, "placementGroup", js.undefined)
     
     @scala.inline
-    def deleteMonitoring: Self = this.set("monitoring", js.undefined)
+    def setPlacementTenancy(value: Input[String]): Self = StObject.set(x, "placementTenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementGroup(value: Input[String]): Self = this.set("placementGroup", value.asInstanceOf[js.Any])
+    def setPlacementTenancyUndefined: Self = StObject.set(x, "placementTenancy", js.undefined)
     
     @scala.inline
-    def deletePlacementGroup: Self = this.set("placementGroup", js.undefined)
+    def setRootBlockDevices(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecificationRootBlockDevice]]]): Self = StObject.set(x, "rootBlockDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementTenancy(value: Input[String]): Self = this.set("placementTenancy", value.asInstanceOf[js.Any])
+    def setRootBlockDevicesUndefined: Self = StObject.set(x, "rootBlockDevices", js.undefined)
     
     @scala.inline
-    def deletePlacementTenancy: Self = this.set("placementTenancy", js.undefined)
+    def setRootBlockDevicesVarargs(value: Input[SpotFleetRequestLaunchSpecificationRootBlockDevice]*): Self = StObject.set(x, "rootBlockDevices", js.Array(value :_*))
     
     @scala.inline
-    def setRootBlockDevicesVarargs(value: Input[SpotFleetRequestLaunchSpecificationRootBlockDevice]*): Self = this.set("rootBlockDevices", js.Array(value :_*))
+    def setSpotPrice(value: Input[String]): Self = StObject.set(x, "spotPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootBlockDevices(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecificationRootBlockDevice]]]): Self = this.set("rootBlockDevices", value.asInstanceOf[js.Any])
+    def setSpotPriceUndefined: Self = StObject.set(x, "spotPrice", js.undefined)
     
     @scala.inline
-    def deleteRootBlockDevices: Self = this.set("rootBlockDevices", js.undefined)
+    def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotPrice(value: Input[String]): Self = this.set("spotPrice", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     
     @scala.inline
-    def deleteSpotPrice: Self = this.set("spotPrice", js.undefined)
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserData(value: Input[String]): Self = this.set("userData", value.asInstanceOf[js.Any])
+    def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "vpcSecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("vpcSecurityGroupIds", js.Array(value :_*))
+    def setWeightedCapacity(value: Input[String]): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("vpcSecurityGroupIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSecurityGroupIds: Self = this.set("vpcSecurityGroupIds", js.undefined)
-    
-    @scala.inline
-    def setWeightedCapacity(value: Input[String]): Self = this.set("weightedCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedCapacity: Self = this.set("weightedCapacity", js.undefined)
+    def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.ionic.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Appid extends js.Object {
+trait Appid extends StObject {
   
   var `app-id`: String = js.native
   
@@ -41,36 +42,24 @@ object Appid {
   }
   
   @scala.inline
-  implicit class AppidOps[Self <: Appid] (val x: Self) extends AnyVal {
+  implicit class AppidMutableBuilder[Self <: Appid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setApp-id`(value: String): Self = StObject.set(x, "app-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setChannel-name`(value: String): Self = StObject.set(x, "channel-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setMax-store`(value: String): Self = StObject.set(x, "max-store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setApp-id`(value: String): Self = this.set("app-id", value.asInstanceOf[js.Any])
+    def `setMin-background-duration`(value: String): Self = StObject.set(x, "min-background-duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChannel-name`(value: String): Self = this.set("channel-name", value.asInstanceOf[js.Any])
+    def `setUpdate-api`(value: String): Self = StObject.set(x, "update-api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-store`(value: String): Self = this.set("max-store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setMin-background-duration`(value: String): Self = this.set("min-background-duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUpdate-api`(value: String): Self = this.set("update-api", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUpdate-method`(value: String): Self = this.set("update-method", value.asInstanceOf[js.Any])
+    def `setUpdate-method`(value: String): Self = StObject.set(x, "update-method", value.asInstanceOf[js.Any])
   }
 }

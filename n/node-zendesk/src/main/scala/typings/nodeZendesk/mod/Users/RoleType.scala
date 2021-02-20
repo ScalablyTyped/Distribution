@@ -1,5 +1,6 @@
 package typings.nodeZendesk.mod.Users
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeZendesk.nodeZendeskNumbers.`1`
   - typings.nodeZendesk.nodeZendeskNumbers.`2`
 */
-trait RoleType extends js.Object
+trait RoleType extends StObject
 object RoleType {
   
   @scala.inline

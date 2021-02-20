@@ -1,12 +1,13 @@
 package typings.jsprintmanager.mod.JSPM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.JSPMWebSocket")
 @js.native
-class JSPMWebSocket () extends js.Object {
+class JSPMWebSocket () extends StObject {
   def this(addr: String) = this()
   def this(addr: js.UndefOr[scala.Nothing], port: Double) = this()
   def this(addr: String, port: Double) = this()

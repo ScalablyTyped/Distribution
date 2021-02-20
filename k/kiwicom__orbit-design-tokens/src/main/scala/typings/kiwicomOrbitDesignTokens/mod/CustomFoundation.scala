@@ -1,12 +1,13 @@
 package typings.kiwicomOrbitDesignTokens.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  palette :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomPalette,   base :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomBase}> */
 @js.native
-trait CustomFoundation extends js.Object {
+trait CustomFoundation extends StObject {
   
   var base: js.UndefOr[CustomBase] = js.native
   
@@ -21,30 +22,18 @@ object CustomFoundation {
   }
   
   @scala.inline
-  implicit class CustomFoundationOps[Self <: CustomFoundation] (val x: Self) extends AnyVal {
+  implicit class CustomFoundationMutableBuilder[Self <: CustomFoundation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: CustomBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPalette(value: CustomPalette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: CustomBase): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
-    
-    @scala.inline
-    def setPalette(value: CustomPalette): Self = this.set("palette", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
   }
 }

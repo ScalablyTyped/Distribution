@@ -1,11 +1,12 @@
 package typings.symphonyApiClientNode.streamsClientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchRoomResponse extends js.Object {
+trait SearchRoomResponse extends StObject {
   
   var count: Double = js.native
   
@@ -35,39 +36,27 @@ object SearchRoomResponse {
   }
   
   @scala.inline
-  implicit class SearchRoomResponseOps[Self <: SearchRoomResponse] (val x: Self) extends AnyVal {
+  implicit class SearchRoomResponseMutableBuilder[Self <: SearchRoomResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFacetedMatchCount(value: js.Array[FacetedMatch]): Self = StObject.set(x, "facetedMatchCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetedMatchCountVarargs(value: FacetedMatch*): Self = StObject.set(x, "facetedMatchCount", js.Array(value :_*))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetedMatchCountVarargs(value: FacetedMatch*): Self = this.set("facetedMatchCount", js.Array(value :_*))
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetedMatchCount(value: js.Array[FacetedMatch]): Self = this.set("facetedMatchCount", value.asInstanceOf[js.Any])
+    def setRooms(value: RoomInfo): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRooms(value: RoomInfo): Self = this.set("rooms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
   }
 }

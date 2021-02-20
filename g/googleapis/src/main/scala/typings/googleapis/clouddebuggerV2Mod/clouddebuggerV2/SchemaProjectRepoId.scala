@@ -1,5 +1,6 @@
 package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * winged-cargo-31) and a repo name within that project.
   */
 @js.native
-trait SchemaProjectRepoId extends js.Object {
+trait SchemaProjectRepoId extends StObject {
   
   /**
     * The ID of the project.
@@ -30,30 +31,18 @@ object SchemaProjectRepoId {
   }
   
   @scala.inline
-  implicit class SchemaProjectRepoIdOps[Self <: SchemaProjectRepoId] (val x: Self) extends AnyVal {
+  implicit class SchemaProjectRepoIdMutableBuilder[Self <: SchemaProjectRepoId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setRepoName(value: String): Self = this.set("repoName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepoName: Self = this.set("repoName", js.undefined)
+    def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
   }
 }

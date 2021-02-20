@@ -2,6 +2,7 @@ package typings.nodeRsa.mod
 
 import typings.node.Buffer
 import typings.nodeRsa.nodeRsaStrings.pkcs1_oaep
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object AdvancedEncryptionSchemePKCS1OAEP {
   }
   
   @scala.inline
-  implicit class AdvancedEncryptionSchemePKCS1OAEPOps[Self <: AdvancedEncryptionSchemePKCS1OAEP] (val x: Self) extends AnyVal {
+  implicit class AdvancedEncryptionSchemePKCS1OAEPMutableBuilder[Self <: AdvancedEncryptionSchemePKCS1OAEP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMgf(value: (/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm) => Buffer): Self = StObject.set(x, "mgf", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMgfUndefined: Self = StObject.set(x, "mgf", js.undefined)
     
     @scala.inline
-    def setHash(value: HashingAlgorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheme(value: pkcs1_oaep): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMgf(value: (/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm) => Buffer): Self = this.set("mgf", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteMgf: Self = this.set("mgf", js.undefined)
+    def setScheme(value: pkcs1_oaep): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

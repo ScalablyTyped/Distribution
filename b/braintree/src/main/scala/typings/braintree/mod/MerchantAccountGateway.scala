@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MerchantAccountGateway extends js.Object {
+trait MerchantAccountGateway extends StObject {
   
   def all(): js.Promise[js.Array[MerchantAccount]] = js.native
   

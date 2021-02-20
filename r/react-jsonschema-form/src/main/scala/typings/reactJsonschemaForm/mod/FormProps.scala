@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jsonSchema.mod.JSONSchema6
 import typings.react.mod.StatelessComponent
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormProps[T] extends js.Object {
+trait FormProps[T] extends StObject {
   
   var ArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[_]]] = js.native
   
@@ -103,246 +104,234 @@ object FormProps {
   }
   
   @scala.inline
-  implicit class FormPropsOps[Self <: FormProps[_], T] (val x: Self with FormProps[T]) extends AnyVal {
+  implicit class FormPropsMutableBuilder[Self <: FormProps[_], T] (val x: Self with FormProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptcharset(value: String): Self = StObject.set(x, "acceptcharset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptcharsetUndefined: Self = StObject.set(x, "acceptcharset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: JSONSchema6): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def setArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[_]]): Self = this.set("ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    def setAdditionalMetaSchemas(value: js.Array[js.Object]): Self = StObject.set(x, "additionalMetaSchemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArrayFieldTemplate: Self = this.set("ArrayFieldTemplate", js.undefined)
+    def setAdditionalMetaSchemasUndefined: Self = StObject.set(x, "additionalMetaSchemas", js.undefined)
     
     @scala.inline
-    def setErrorList(value: StatelessComponent[ErrorListProps]): Self = this.set("ErrorList", value.asInstanceOf[js.Any])
+    def setAdditionalMetaSchemasVarargs(value: js.Object*): Self = StObject.set(x, "additionalMetaSchemas", js.Array(value :_*))
     
     @scala.inline
-    def deleteErrorList: Self = this.set("ErrorList", js.undefined)
+    def setArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[_]]): Self = StObject.set(x, "ArrayFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = this.set("FieldTemplate", value.asInstanceOf[js.Any])
+    def setArrayFieldTemplateUndefined: Self = StObject.set(x, "ArrayFieldTemplate", js.undefined)
     
     @scala.inline
-    def deleteFieldTemplate: Self = this.set("FieldTemplate", js.undefined)
+    def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[_]]): Self = this.set("ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
     
     @scala.inline
-    def deleteObjectFieldTemplate: Self = this.set("ObjectFieldTemplate", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptcharset(value: String): Self = this.set("acceptcharset", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAcceptcharset: Self = this.set("acceptcharset", js.undefined)
+    def setCustomFormats(value: StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalMetaSchemasVarargs(value: js.Object*): Self = this.set("additionalMetaSchemas", js.Array(value :_*))
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setAdditionalMetaSchemas(value: js.Array[js.Object]): Self = this.set("additionalMetaSchemas", value.asInstanceOf[js.Any])
+    def setEnctype(value: String): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalMetaSchemas: Self = this.set("additionalMetaSchemas", js.undefined)
+    def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
     
     @scala.inline
-    def setAutocomplete(value: String): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    def setErrorList(value: StatelessComponent[ErrorListProps]): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    def setErrorListUndefined: Self = StObject.set(x, "ErrorList", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = StObject.set(x, "FieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setFieldTemplateUndefined: Self = StObject.set(x, "FieldTemplate", js.undefined)
     
     @scala.inline
-    def setCustomFormats(value: StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]): Self = this.set("customFormats", value.asInstanceOf[js.Any])
+    def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomFormats: Self = this.set("customFormats", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFormContextUndefined: Self = StObject.set(x, "formContext", js.undefined)
     
     @scala.inline
-    def setEnctype(value: String): Self = this.set("enctype", value.asInstanceOf[js.Any])
+    def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnctype: Self = this.set("enctype", js.undefined)
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def setFields(value: StringDictionary[Field]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormContext(value: js.Any): Self = this.set("formContext", value.asInstanceOf[js.Any])
+    def setIdPrefixUndefined: Self = StObject.set(x, "idPrefix", js.undefined)
     
     @scala.inline
-    def deleteFormContext: Self = this.set("formContext", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setFormData(value: T): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setLiveOmit(value: Boolean): Self = StObject.set(x, "liveOmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setLiveOmitUndefined: Self = StObject.set(x, "liveOmit", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLiveValidate(value: Boolean): Self = StObject.set(x, "liveValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLiveValidateUndefined: Self = StObject.set(x, "liveValidate", js.undefined)
     
     @scala.inline
-    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setLiveOmit(value: Boolean): Self = this.set("liveOmit", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLiveOmit: Self = this.set("liveOmit", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setLiveValidate(value: Boolean): Self = this.set("liveValidate", value.asInstanceOf[js.Any])
+    def setNoHtml5Validate(value: Boolean): Self = StObject.set(x, "noHtml5Validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLiveValidate: Self = this.set("liveValidate", js.undefined)
+    def setNoHtml5ValidateUndefined: Self = StObject.set(x, "noHtml5Validate", js.undefined)
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[_]]): Self = StObject.set(x, "ObjectFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setObjectFieldTemplateUndefined: Self = StObject.set(x, "ObjectFieldTemplate", js.undefined)
     
     @scala.inline
-    def setNoHtml5Validate(value: Boolean): Self = this.set("noHtml5Validate", value.asInstanceOf[js.Any])
+    def setOmitExtraData(value: Boolean): Self = StObject.set(x, "omitExtraData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoHtml5Validate: Self = this.set("noHtml5Validate", js.undefined)
+    def setOmitExtraDataUndefined: Self = StObject.set(x, "omitExtraData", js.undefined)
     
     @scala.inline
-    def setNoValidate(value: Boolean): Self = this.set("noValidate", value.asInstanceOf[js.Any])
+    def setOnBlur(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteNoValidate: Self = this.set("noValidate", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOmitExtraData(value: Boolean): Self = this.set("omitExtraData", value.asInstanceOf[js.Any])
+    def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => _): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOmitExtraData: Self = this.set("omitExtraData", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Unit): Self = this.set("onBlur", js.Any.fromFunction2(value))
+    def setOnError(value: /* e */ js.Any => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => _): Self = this.set("onChange", js.Any.fromFunction2(value))
+    def setOnFocus(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnError(value: /* e */ js.Any => _): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnSubmit(value: /* e */ ISubmitEvent[T] => _): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Unit): Self = this.set("onFocus", js.Any.fromFunction2(value))
+    def setSafeRenderCompletion(value: Boolean): Self = StObject.set(x, "safeRenderCompletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setSafeRenderCompletionUndefined: Self = StObject.set(x, "safeRenderCompletion", js.undefined)
     
     @scala.inline
-    def setOnSubmit(value: /* e */ ISubmitEvent[T] => _): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    def setShowErrorList(value: Boolean): Self = StObject.set(x, "showErrorList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeRenderCompletion(value: Boolean): Self = this.set("safeRenderCompletion", value.asInstanceOf[js.Any])
+    def setShowErrorListUndefined: Self = StObject.set(x, "showErrorList", js.undefined)
     
     @scala.inline
-    def deleteSafeRenderCompletion: Self = this.set("safeRenderCompletion", js.undefined)
+    def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowErrorList(value: Boolean): Self = this.set("showErrorList", value.asInstanceOf[js.Any])
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
     @scala.inline
-    def deleteShowErrorList: Self = this.set("showErrorList", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTransformErrors(value: /* errors */ js.Array[AjvError] => js.Array[AjvError]): Self = StObject.set(x, "transformErrors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTransformErrorsUndefined: Self = StObject.set(x, "transformErrors", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformErrors(value: /* errors */ js.Array[AjvError] => js.Array[AjvError]): Self = this.set("transformErrors", js.Any.fromFunction1(value))
+    def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
     
     @scala.inline
-    def deleteTransformErrors: Self = this.set("transformErrors", js.undefined)
+    def setValidate(value: (/* formData */ T, /* errors */ FormValidation) => FormValidation): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUiSchema(value: UiSchema): Self = this.set("uiSchema", value.asInstanceOf[js.Any])
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteUiSchema: Self = this.set("uiSchema", js.undefined)
+    def setWidgets(value: StringDictionary[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate(value: (/* formData */ T, /* errors */ FormValidation) => FormValidation): Self = this.set("validate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
-    
-    @scala.inline
-    def setWidgets(value: StringDictionary[Widget]): Self = this.set("widgets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidgets: Self = this.set("widgets", js.undefined)
+    def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCustomVerificationEmailTemplateRequest extends js.Object {
+trait UpdateCustomVerificationEmailTemplateRequest extends StObject {
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
@@ -46,51 +47,39 @@ object UpdateCustomVerificationEmailTemplateRequest {
   }
   
   @scala.inline
-  implicit class UpdateCustomVerificationEmailTemplateRequestOps[Self <: UpdateCustomVerificationEmailTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateCustomVerificationEmailTemplateRequestMutableBuilder[Self <: UpdateCustomVerificationEmailTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureRedirectionURLUndefined: Self = StObject.set(x, "FailureRedirectionURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromEmailAddress(value: FromAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: TemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setFromEmailAddressUndefined: Self = StObject.set(x, "FromEmailAddress", js.undefined)
     
     @scala.inline
-    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = this.set("FailureRedirectionURL", value.asInstanceOf[js.Any])
+    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = StObject.set(x, "SuccessRedirectionURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureRedirectionURL: Self = this.set("FailureRedirectionURL", js.undefined)
+    def setSuccessRedirectionURLUndefined: Self = StObject.set(x, "SuccessRedirectionURL", js.undefined)
     
     @scala.inline
-    def setFromEmailAddress(value: FromAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    def setTemplateContent(value: TemplateContent): Self = StObject.set(x, "TemplateContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromEmailAddress: Self = this.set("FromEmailAddress", js.undefined)
+    def setTemplateContentUndefined: Self = StObject.set(x, "TemplateContent", js.undefined)
     
     @scala.inline
-    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = this.set("SuccessRedirectionURL", value.asInstanceOf[js.Any])
+    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuccessRedirectionURL: Self = this.set("SuccessRedirectionURL", js.undefined)
+    def setTemplateSubject(value: Subject): Self = StObject.set(x, "TemplateSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateContent(value: TemplateContent): Self = this.set("TemplateContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateContent: Self = this.set("TemplateContent", js.undefined)
-    
-    @scala.inline
-    def setTemplateSubject(value: Subject): Self = this.set("TemplateSubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateSubject: Self = this.set("TemplateSubject", js.undefined)
+    def setTemplateSubjectUndefined: Self = StObject.set(x, "TemplateSubject", js.undefined)
   }
 }

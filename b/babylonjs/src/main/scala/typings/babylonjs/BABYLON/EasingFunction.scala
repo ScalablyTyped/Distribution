@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,30 +42,18 @@ object EasingFunction {
   }
   
   @scala.inline
-  implicit class EasingFunctionOps[Self <: EasingFunction] (val x: Self) extends AnyVal {
+  implicit class EasingFunctionMutableBuilder[Self <: EasingFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEaseInCore(value: Double => Double): Self = StObject.set(x, "easeInCore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEasingMode(value: () => Double): Self = StObject.set(x, "getEasingMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetEasingMode(value: Double => Unit): Self = StObject.set(x, "setEasingMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_easingMode(value: js.Any): Self = this.set("_easingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEaseInCore(value: Double => Double): Self = this.set("easeInCore", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetEasingMode(value: () => Double): Self = this.set("getEasingMode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetEasingMode(value: Double => Unit): Self = this.set("setEasingMode", js.Any.fromFunction1(value))
+    def set_easingMode(value: js.Any): Self = StObject.set(x, "_easingMode", value.asInstanceOf[js.Any])
   }
 }

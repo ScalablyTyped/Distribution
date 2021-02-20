@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for BatchUpdateDocument.
   */
 @js.native
-trait SchemaBatchUpdateDocumentRequest extends js.Object {
+trait SchemaBatchUpdateDocumentRequest extends StObject {
   
   /**
     * A list of updates to apply to the document.
@@ -29,33 +30,21 @@ object SchemaBatchUpdateDocumentRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchUpdateDocumentRequestOps[Self <: SchemaBatchUpdateDocumentRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchUpdateDocumentRequestMutableBuilder[Self <: SchemaBatchUpdateDocumentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequests(value: js.Array[SchemaRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
     
     @scala.inline
-    def setRequestsVarargs(value: SchemaRequest*): Self = this.set("requests", js.Array(value :_*))
+    def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequests(value: js.Array[SchemaRequest]): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
-    
-    @scala.inline
-    def setWriteControl(value: SchemaWriteControl): Self = this.set("writeControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteControl: Self = this.set("writeControl", js.undefined)
+    def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
   }
 }

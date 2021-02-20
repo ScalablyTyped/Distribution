@@ -7,16 +7,16 @@ import typings.sipJs.registererRegisterOptionsMod.RegistererRegisterOptions
 import typings.sipJs.registererStateMod.RegistererState
 import typings.sipJs.registererUnregisterOptionsMod.RegistererUnregisterOptions
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/registerer", JSImport.Namespace)
-@js.native
-object registererMod extends js.Object {
+object registererMod {
   
+  @JSImport("sip.js/lib/api/registerer", "Registerer")
   @js.native
-  class Registerer protected () extends js.Object {
+  class Registerer protected () extends StObject {
     /**
       * Constructs a new instance of the `Registerer` class.
       * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -173,15 +173,28 @@ object registererMod extends js.Object {
     var waitingWarning: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Registerer extends js.Object {
+  object Registerer {
     
+    @JSImport("sip.js/lib/api/registerer", "Registerer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sip.js/lib/api/registerer", "Registerer.defaultExpires")
+    @js.native
     val defaultExpires: js.Any = js.native
     
     /** Default registerer options. */
-    var defaultOptions: js.Any = js.native
+    @JSImport("sip.js/lib/api/registerer", "Registerer.defaultOptions")
+    @js.native
+    def defaultOptions: js.Any = js.native
+    @scala.inline
+    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
-    var newUUID: js.Any = js.native
+    @JSImport("sip.js/lib/api/registerer", "Registerer.newUUID")
+    @js.native
+    def newUUID: js.Any = js.native
+    @scala.inline
+    def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
     
     /**
       * Strip properties with undefined values from options.
@@ -189,6 +202,10 @@ object registererMod extends js.Object {
       * https://github.com/Microsoft/TypeScript/issues/13195
       * @param options - Options to reduce
       */
-    var stripUndefinedProperties: js.Any = js.native
+    @JSImport("sip.js/lib/api/registerer", "Registerer.stripUndefinedProperties")
+    @js.native
+    def stripUndefinedProperties: js.Any = js.native
+    @scala.inline
+    def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
   }
 }

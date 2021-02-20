@@ -6,13 +6,14 @@ import typings.awsSdk.machinelearningMod.PageLimit
 import typings.awsSdk.machinelearningMod.SortOrder
 import typings.awsSdk.machinelearningMod.StringType
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/machinelearning.DescribeDataSourcesInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeDataSourcesInputw extends js.Object {
+trait DescribeDataSourcesInputw extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -81,90 +82,78 @@ object DescribeDataSourcesInputw {
   }
   
   @scala.inline
-  implicit class DescribeDataSourcesInputwOps[Self <: DescribeDataSourcesInputw] (val x: Self) extends AnyVal {
+  implicit class DescribeDataSourcesInputwMutableBuilder[Self <: DescribeDataSourcesInputw] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEQ(value: ComparatorValue): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setEQUndefined: Self = StObject.set(x, "EQ", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setFilterVariable(value: DataSourceFilterVariable): Self = StObject.set(x, "FilterVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEQ(value: ComparatorValue): Self = this.set("EQ", value.asInstanceOf[js.Any])
+    def setFilterVariableUndefined: Self = StObject.set(x, "FilterVariable", js.undefined)
     
     @scala.inline
-    def deleteEQ: Self = this.set("EQ", js.undefined)
+    def setGE(value: ComparatorValue): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterVariable(value: DataSourceFilterVariable): Self = this.set("FilterVariable", value.asInstanceOf[js.Any])
+    def setGEUndefined: Self = StObject.set(x, "GE", js.undefined)
     
     @scala.inline
-    def deleteFilterVariable: Self = this.set("FilterVariable", js.undefined)
+    def setGT(value: ComparatorValue): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGE(value: ComparatorValue): Self = this.set("GE", value.asInstanceOf[js.Any])
+    def setGTUndefined: Self = StObject.set(x, "GT", js.undefined)
     
     @scala.inline
-    def deleteGE: Self = this.set("GE", js.undefined)
+    def setLE(value: ComparatorValue): Self = StObject.set(x, "LE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGT(value: ComparatorValue): Self = this.set("GT", value.asInstanceOf[js.Any])
+    def setLEUndefined: Self = StObject.set(x, "LE", js.undefined)
     
     @scala.inline
-    def deleteGT: Self = this.set("GT", js.undefined)
+    def setLT(value: ComparatorValue): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLE(value: ComparatorValue): Self = this.set("LE", value.asInstanceOf[js.Any])
+    def setLTUndefined: Self = StObject.set(x, "LT", js.undefined)
     
     @scala.inline
-    def deleteLE: Self = this.set("LE", js.undefined)
+    def setLimit(value: PageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLT(value: ComparatorValue): Self = this.set("LT", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteLT: Self = this.set("LT", js.undefined)
+    def setNE(value: ComparatorValue): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: PageLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNEUndefined: Self = StObject.set(x, "NE", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setNextToken(value: StringType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNE(value: ComparatorValue): Self = this.set("NE", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteNE: Self = this.set("NE", js.undefined)
+    def setPrefix(value: ComparatorValue): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: StringType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: ComparatorValue): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

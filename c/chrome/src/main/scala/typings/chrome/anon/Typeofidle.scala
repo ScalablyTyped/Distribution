@@ -2,12 +2,13 @@ package typings.chrome.anon
 
 import typings.chrome.chrome.idle.IdleState
 import typings.chrome.chrome.idle.IdleStateChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofidle extends js.Object {
+trait Typeofidle extends StObject {
   
   def getAutoLockDelay(callback: js.Function1[/* delay */ Double, Unit]): Unit = js.native
   
@@ -31,30 +32,18 @@ object Typeofidle {
   }
   
   @scala.inline
-  implicit class TypeofidleOps[Self <: Typeofidle] (val x: Self) extends AnyVal {
+  implicit class TypeofidleMutableBuilder[Self <: Typeofidle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAutoLockDelay(value: js.Function1[/* delay */ Double, Unit] => Unit): Self = StObject.set(x, "getAutoLockDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnStateChanged(value: IdleStateChangedEvent): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryState(value: (Double, js.Function1[/* newState */ IdleState, Unit]) => Unit): Self = StObject.set(x, "queryState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAutoLockDelay(value: js.Function1[/* delay */ Double, Unit] => Unit): Self = this.set("getAutoLockDelay", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnStateChanged(value: IdleStateChangedEvent): Self = this.set("onStateChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryState(value: (Double, js.Function1[/* newState */ IdleState, Unit]) => Unit): Self = this.set("queryState", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDetectionInterval(value: Double => Unit): Self = this.set("setDetectionInterval", js.Any.fromFunction1(value))
+    def setSetDetectionInterval(value: Double => Unit): Self = StObject.set(x, "setDetectionInterval", js.Any.fromFunction1(value))
   }
 }

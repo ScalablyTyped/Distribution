@@ -1,6 +1,7 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import typings.googleapis.anon.PhoneNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Template for an individual account info.
   */
 @js.native
-trait SchemaUserInfo extends js.Object {
+trait SchemaUserInfo extends StObject {
   
   /**
     * User creation timestamp.
@@ -115,135 +116,123 @@ object SchemaUserInfo {
   }
   
   @scala.inline
-  implicit class SchemaUserInfoOps[Self <: SchemaUserInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaUserInfoMutableBuilder[Self <: SchemaUserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomAttributes(value: String): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setCustomAuth(value: Boolean): Self = StObject.set(x, "customAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributes(value: String): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    def setCustomAuthUndefined: Self = StObject.set(x, "customAuth", js.undefined)
     
     @scala.inline
-    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAuth(value: Boolean): Self = this.set("customAuth", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteCustomAuth: Self = this.set("customAuth", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEmailVerifiedUndefined: Self = StObject.set(x, "emailVerified", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setLastLoginAt(value: String): Self = StObject.set(x, "lastLoginAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailVerified(value: Boolean): Self = this.set("emailVerified", value.asInstanceOf[js.Any])
+    def setLastLoginAtUndefined: Self = StObject.set(x, "lastLoginAt", js.undefined)
     
     @scala.inline
-    def deleteEmailVerified: Self = this.set("emailVerified", js.undefined)
+    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastLoginAt(value: String): Self = this.set("lastLoginAt", value.asInstanceOf[js.Any])
+    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
     
     @scala.inline
-    def deleteLastLoginAt: Self = this.set("lastLoginAt", js.undefined)
+    def setPasswordHash(value: String): Self = StObject.set(x, "passwordHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
+    def setPasswordHashUndefined: Self = StObject.set(x, "passwordHash", js.undefined)
     
     @scala.inline
-    def deleteLocalId: Self = this.set("localId", js.undefined)
+    def setPasswordUpdatedAt(value: Double): Self = StObject.set(x, "passwordUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordHash(value: String): Self = this.set("passwordHash", value.asInstanceOf[js.Any])
+    def setPasswordUpdatedAtUndefined: Self = StObject.set(x, "passwordUpdatedAt", js.undefined)
     
     @scala.inline
-    def deletePasswordHash: Self = this.set("passwordHash", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordUpdatedAt(value: Double): Self = this.set("passwordUpdatedAt", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deletePasswordUpdatedAt: Self = this.set("passwordUpdatedAt", js.undefined)
+    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setProviderUserInfo(value: js.Array[PhoneNumber]): Self = StObject.set(x, "providerUserInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    def setProviderUserInfoUndefined: Self = StObject.set(x, "providerUserInfo", js.undefined)
     
     @scala.inline
-    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    def setProviderUserInfoVarargs(value: PhoneNumber*): Self = StObject.set(x, "providerUserInfo", js.Array(value :_*))
     
     @scala.inline
-    def setProviderUserInfoVarargs(value: PhoneNumber*): Self = this.set("providerUserInfo", js.Array(value :_*))
+    def setRawPassword(value: String): Self = StObject.set(x, "rawPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderUserInfo(value: js.Array[PhoneNumber]): Self = this.set("providerUserInfo", value.asInstanceOf[js.Any])
+    def setRawPasswordUndefined: Self = StObject.set(x, "rawPassword", js.undefined)
     
     @scala.inline
-    def deleteProviderUserInfo: Self = this.set("providerUserInfo", js.undefined)
+    def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawPassword(value: String): Self = this.set("rawPassword", value.asInstanceOf[js.Any])
+    def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
     @scala.inline
-    def deleteRawPassword: Self = this.set("rawPassword", js.undefined)
+    def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalt(value: String): Self = this.set("salt", value.asInstanceOf[js.Any])
+    def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
     
     @scala.inline
-    def deleteSalt: Self = this.set("salt", js.undefined)
+    def setValidSince(value: String): Self = StObject.set(x, "validSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
+    def setValidSinceUndefined: Self = StObject.set(x, "validSince", js.undefined)
     
     @scala.inline
-    def deleteScreenName: Self = this.set("screenName", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidSince(value: String): Self = this.set("validSince", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidSince: Self = this.set("validSince", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.tensorflowTfjsData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/util/ring_buffer", JSImport.Namespace)
-@js.native
-object ringBufferMod extends js.Object {
+object ringBufferMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/util/ring_buffer", "RingBuffer")
   @js.native
-  class RingBuffer[T] protected () extends js.Object {
+  class RingBuffer[T] protected () extends StObject {
     /**
       * Constructs a `RingBuffer`.
       * @param capacity The number of items that the buffer can accomodate.

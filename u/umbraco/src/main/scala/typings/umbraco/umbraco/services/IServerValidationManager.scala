@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * model objects (not user defined). The methods below are named according to these rules: Properties vs Fields.
   */
 @js.native
-trait IServerValidationManager extends js.Object {
+trait IServerValidationManager extends StObject {
   
   /**
     * @ngdoc function
@@ -196,57 +197,45 @@ object IServerValidationManager {
   }
   
   @scala.inline
-  implicit class IServerValidationManagerOps[Self <: IServerValidationManager] (val x: Self) extends AnyVal {
+  implicit class IServerValidationManagerMutableBuilder[Self <: IServerValidationManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFieldError(value: (String, String) => Unit): Self = StObject.set(x, "addFieldError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddPropertyError(value: (String, String, String) => Unit): Self = StObject.set(x, "addPropertyError", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddFieldError(value: (String, String) => Unit): Self = this.set("addFieldError", js.Any.fromFunction2(value))
+    def setExecuteAndClearAllSubscriptions(value: () => Unit): Self = StObject.set(x, "executeAndClearAllSubscriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPropertyError(value: (String, String, String) => Unit): Self = this.set("addPropertyError", js.Any.fromFunction3(value))
+    def setGetFieldCallbacks(value: String => js.Any): Self = StObject.set(x, "getFieldCallbacks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetFieldError(value: String => String): Self = StObject.set(x, "getFieldError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExecuteAndClearAllSubscriptions(value: () => Unit): Self = this.set("executeAndClearAllSubscriptions", js.Any.fromFunction0(value))
+    def setGetPropertyCallbacks(value: (String, String) => Unit): Self = StObject.set(x, "getPropertyCallbacks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFieldCallbacks(value: String => js.Any): Self = this.set("getFieldCallbacks", js.Any.fromFunction1(value))
+    def setGetPropertyError(value: (String, String) => String): Self = StObject.set(x, "getPropertyError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFieldError(value: String => String): Self = this.set("getFieldError", js.Any.fromFunction1(value))
+    def setHasFieldError(value: String => Boolean): Self = StObject.set(x, "hasFieldError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertyCallbacks(value: (String, String) => Unit): Self = this.set("getPropertyCallbacks", js.Any.fromFunction2(value))
+    def setHasPropertyError(value: (String, String) => Boolean): Self = StObject.set(x, "hasPropertyError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPropertyError(value: (String, String) => String): Self = this.set("getPropertyError", js.Any.fromFunction2(value))
+    def setRemovePropertyError(value: (String, String) => Unit): Self = StObject.set(x, "removePropertyError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasFieldError(value: String => Boolean): Self = this.set("hasFieldError", js.Any.fromFunction1(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasPropertyError(value: (String, String) => Boolean): Self = this.set("hasPropertyError", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemovePropertyError(value: (String, String) => Unit): Self = this.set("removePropertyError", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubscribe(value: (String, String, js.Function) => Unit): Self = this.set("subscribe", js.Any.fromFunction3(value))
+    def setSubscribe(value: (String, String, js.Function) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
   }
 }

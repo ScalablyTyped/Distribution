@@ -1,5 +1,6 @@
 package typings.paypalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://developer.paypal.com/webapps/developer/docs/api/#details-object for more details.
   */
 @js.native
-trait PayPalPaymentDetails extends js.Object {
+trait PayPalPaymentDetails extends StObject {
   
   /**
     * Amount charged for shipping. 10 characters max with support for 2 decimal places.
@@ -36,27 +37,15 @@ object PayPalPaymentDetails {
   }
   
   @scala.inline
-  implicit class PayPalPaymentDetailsOps[Self <: PayPalPaymentDetails] (val x: Self) extends AnyVal {
+  implicit class PayPalPaymentDetailsMutableBuilder[Self <: PayPalPaymentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShipping(value: String): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShipping(value: String): Self = this.set("shipping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtotal(value: String): Self = this.set("subtotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTax(value: String): Self = this.set("tax", value.asInstanceOf[js.Any])
+    def setTax(value: String): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
   }
 }

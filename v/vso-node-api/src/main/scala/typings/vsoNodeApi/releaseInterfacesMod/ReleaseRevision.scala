@@ -2,12 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseRevision extends js.Object {
+trait ReleaseRevision extends StObject {
   
   var changeDetails: String = js.native
   
@@ -40,39 +41,27 @@ object ReleaseRevision {
   }
   
   @scala.inline
-  implicit class ReleaseRevisionOps[Self <: ReleaseRevision] (val x: Self) extends AnyVal {
+  implicit class ReleaseRevisionMutableBuilder[Self <: ReleaseRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeDetails(value: String): Self = StObject.set(x, "changeDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDetails(value: String): Self = this.set("changeDetails", value.asInstanceOf[js.Any])
+    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: String): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedBy(value: IdentityRef): Self = this.set("changedBy", value.asInstanceOf[js.Any])
+    def setDefinitionSnapshotRevision(value: Double): Self = StObject.set(x, "definitionSnapshotRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedDate(value: Date): Self = this.set("changedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefinitionSnapshotRevision(value: Double): Self = this.set("definitionSnapshotRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseId(value: Double): Self = this.set("releaseId", value.asInstanceOf[js.Any])
+    def setReleaseId(value: Double): Self = StObject.set(x, "releaseId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/_ListOfSegmentDimensions", JSImport.Namespace)
-@js.native
-object listOfSegmentDimensionsMod extends js.Object {
+object listOfSegmentDimensionsMod {
   
-  @JSName("_ListOfSegmentDimensions")
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/_ListOfSegmentDimensions", "_ListOfSegmentDimensions")
+  @js.native
   val ListOfSegmentDimensions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

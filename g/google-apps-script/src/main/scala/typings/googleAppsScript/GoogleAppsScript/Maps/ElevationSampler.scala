@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Elevation API
   */
 @js.native
-trait ElevationSampler extends js.Object {
+trait ElevationSampler extends StObject {
   
   def sampleLocation(latitude: Double, longitude: Double): js.Any = js.native
   

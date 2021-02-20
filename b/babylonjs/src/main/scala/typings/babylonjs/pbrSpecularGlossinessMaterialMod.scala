@@ -4,14 +4,14 @@ import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.pbrBaseSimpleMaterialMod.PBRBaseSimpleMaterial
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/PBR/pbrSpecularGlossinessMaterial", JSImport.Namespace)
-@js.native
-object pbrSpecularGlossinessMaterialMod extends js.Object {
+object pbrSpecularGlossinessMaterialMod {
   
+  @JSImport("babylonjs/Materials/PBR/pbrSpecularGlossinessMaterial", "PBRSpecularGlossinessMaterial")
   @js.native
   class PBRSpecularGlossinessMaterial protected () extends PBRBaseSimpleMaterial {
     /**
@@ -49,12 +49,13 @@ object pbrSpecularGlossinessMaterialMod extends js.Object {
     var specularGlossinessTexture: BaseTexture = js.native
   }
   /* static members */
-  @js.native
-  object PBRSpecularGlossinessMaterial extends js.Object {
+  object PBRSpecularGlossinessMaterial {
     
     /**
       * Parses a JSON object correponding to the serialize function.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrSpecularGlossinessMaterial", "PBRSpecularGlossinessMaterial.Parse")
+    @js.native
     def Parse(source: js.Any, scene: Scene, rootUrl: String): PBRSpecularGlossinessMaterial = js.native
   }
 }

@@ -1,17 +1,18 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CustomXMLNodeType extends js.Object
+sealed trait CustomXMLNodeType extends StObject
 /**
   * Specifies the type of the XML node.
   */
 @JSGlobal("Office.CustomXMLNodeType")
 @js.native
-object CustomXMLNodeType extends js.Object {
+object CustomXMLNodeType extends StObject {
   
   /**
     * The node is an attribute.

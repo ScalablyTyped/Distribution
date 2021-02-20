@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information on a cell that is being edited.
   */
 @js.native
-trait ASPxClientVerticalGridCellInfo extends js.Object {
+trait ASPxClientVerticalGridCellInfo extends StObject {
   
   /**
     * Gets the visible index of the record that contains the cell currently being processed.
@@ -29,24 +30,12 @@ object ASPxClientVerticalGridCellInfo {
   }
   
   @scala.inline
-  implicit class ASPxClientVerticalGridCellInfoOps[Self <: ASPxClientVerticalGridCellInfo] (val x: Self) extends AnyVal {
+  implicit class ASPxClientVerticalGridCellInfoMutableBuilder[Self <: ASPxClientVerticalGridCellInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecordVisibleIndex(value: Double): Self = StObject.set(x, "recordVisibleIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordVisibleIndex(value: Double): Self = this.set("recordVisibleIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRow(value: ASPxClientVerticalGridRow): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.googleGeolocation
 import typings.std.GeolocationPosition
 import typings.std.GeolocationPositionError
 import typings.std.PositionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeolocationStatic extends js.Object {
+trait GeolocationStatic extends StObject {
   
   def getCurrentPosition(success: js.Function1[/* position */ GeolocationPosition, Unit]): Unit = js.native
   def getCurrentPosition(

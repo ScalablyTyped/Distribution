@@ -4,6 +4,7 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.winjs.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
   **/
 @js.native
-trait Flyout extends js.Object {
+trait Flyout extends StObject {
   
   //#endregion Events
   //#region Methods

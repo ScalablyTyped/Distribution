@@ -1,14 +1,14 @@
 package typings.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ModelFetchOptions
-  extends PersistenceOptions
-     with Silenceable
-     with Validable
+  extends ModelSetOptions
+     with PersistenceOptions
      with Parseable
 object ModelFetchOptions {
   

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineItemBudget extends js.Object {
+trait LineItemBudget extends StObject {
   
   /**
     * Required. The type of the budget allocation. `LINE_ITEM_BUDGET_ALLOCATION_TYPE_AUTOMATIC` is only applicable when automatic budget allocation is enabled for the parent insertion
@@ -33,36 +34,24 @@ object LineItemBudget {
   }
   
   @scala.inline
-  implicit class LineItemBudgetOps[Self <: LineItemBudget] (val x: Self) extends AnyVal {
+  implicit class LineItemBudgetMutableBuilder[Self <: LineItemBudget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudgetAllocationType(value: String): Self = StObject.set(x, "budgetAllocationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetAllocationTypeUndefined: Self = StObject.set(x, "budgetAllocationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBudgetUnit(value: String): Self = StObject.set(x, "budgetUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetAllocationType(value: String): Self = this.set("budgetAllocationType", value.asInstanceOf[js.Any])
+    def setBudgetUnitUndefined: Self = StObject.set(x, "budgetUnit", js.undefined)
     
     @scala.inline
-    def deleteBudgetAllocationType: Self = this.set("budgetAllocationType", js.undefined)
+    def setMaxAmount(value: String): Self = StObject.set(x, "maxAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetUnit(value: String): Self = this.set("budgetUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBudgetUnit: Self = this.set("budgetUnit", js.undefined)
-    
-    @scala.inline
-    def setMaxAmount(value: String): Self = this.set("maxAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAmount: Self = this.set("maxAmount", js.undefined)
+    def setMaxAmountUndefined: Self = StObject.set(x, "maxAmount", js.undefined)
   }
 }

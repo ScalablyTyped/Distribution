@@ -4,12 +4,13 @@ import typings.jquery.JQuery
 import typings.jquery.JQueryCoordinates
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait plot extends js.Object {
+trait plot extends StObject {
   
   def draw(): Unit = js.native
   

@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_AccessControlPolicy", JSImport.Namespace)
-@js.native
-object accessControlPolicyMod extends js.Object {
+object accessControlPolicyMod {
   
-  @JSName("_AccessControlPolicy")
+  @JSImport("@aws-sdk/client-s3-node/model/_AccessControlPolicy", "_AccessControlPolicy")
+  @js.native
   val AccessControlPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

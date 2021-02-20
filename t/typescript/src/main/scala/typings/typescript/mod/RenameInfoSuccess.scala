@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import typings.typescript.typescriptBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object RenameInfoSuccess {
   }
   
   @scala.inline
-  implicit class RenameInfoSuccessOps[Self <: RenameInfoSuccess] (val x: Self) extends AnyVal {
+  implicit class RenameInfoSuccessMutableBuilder[Self <: RenameInfoSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanRename(value: `true`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: java.lang.String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileToRename(value: java.lang.String): Self = StObject.set(x, "fileToRename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRename(value: `true`): Self = this.set("canRename", value.asInstanceOf[js.Any])
+    def setFileToRenameUndefined: Self = StObject.set(x, "fileToRename", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: java.lang.String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFullDisplayName(value: java.lang.String): Self = StObject.set(x, "fullDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDisplayName(value: java.lang.String): Self = this.set("fullDisplayName", value.asInstanceOf[js.Any])
+    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ScriptElementKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKindModifiers(value: java.lang.String): Self = this.set("kindModifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerSpan(value: TextSpan): Self = this.set("triggerSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileToRename(value: java.lang.String): Self = this.set("fileToRename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileToRename: Self = this.set("fileToRename", js.undefined)
+    def setTriggerSpan(value: TextSpan): Self = StObject.set(x, "triggerSpan", value.asInstanceOf[js.Any])
   }
 }

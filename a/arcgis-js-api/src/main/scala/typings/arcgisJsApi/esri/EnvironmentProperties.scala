@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentProperties extends js.Object {
+trait EnvironmentProperties extends StObject {
   
   /**
     * Specifies whether the atmosphere should be displayed.
@@ -44,42 +45,30 @@ object EnvironmentProperties {
   }
   
   @scala.inline
-  implicit class EnvironmentPropertiesOps[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
+  implicit class EnvironmentPropertiesMutableBuilder[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: BackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtmosphereEnabled(value: Boolean): Self = this.set("atmosphereEnabled", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAtmosphereEnabled: Self = this.set("atmosphereEnabled", js.undefined)
+    def setLighting(value: LightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: BackgroundProperties): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighting(value: LightingProperties): Self = this.set("lighting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLighting: Self = this.set("lighting", js.undefined)
-    
-    @scala.inline
-    def setStarsEnabled(value: Boolean): Self = this.set("starsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarsEnabled: Self = this.set("starsEnabled", js.undefined)
+    def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
   }
 }

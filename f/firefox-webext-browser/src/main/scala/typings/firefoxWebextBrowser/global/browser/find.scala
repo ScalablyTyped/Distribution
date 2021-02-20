@@ -3,6 +3,7 @@ package typings.firefoxWebextBrowser.global.browser
 import typings.firefoxWebextBrowser.anon.Count
 import typings.firefoxWebextBrowser.browser.find.FindParams
 import typings.firefoxWebextBrowser.browser.find.HighlightResultsParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Not allowed in: Content scripts, Devtools pages
   */
-@JSGlobal("browser.find")
-@js.native
-object find extends js.Object {
+object find {
   
   /* find functions */
   /**
@@ -24,20 +23,32 @@ object find extends js.Object {
     * @param queryphrase The string to search for.
     * @param [params] Search parameters.
     */
+  @JSGlobal("browser.find.find")
+  @js.native
   def find(queryphrase: String): js.Promise[Count] = js.native
+  @JSGlobal("browser.find.find")
+  @js.native
   def find(queryphrase: String, params: FindParams): js.Promise[Count] = js.native
   
   /**
     * Highlight a range
     * @param [params] highlightResults parameters
     */
+  @JSGlobal("browser.find.highlightResults")
+  @js.native
   def highlightResults(): Unit = js.native
+  @JSGlobal("browser.find.highlightResults")
+  @js.native
   def highlightResults(params: HighlightResultsParams): Unit = js.native
   
   /**
     * Remove all highlighting from previous searches.
     * @param [tabId] Tab to highlight. Defaults to the active tab.
     */
+  @JSGlobal("browser.find.removeHighlighting")
+  @js.native
   def removeHighlighting(): Unit = js.native
+  @JSGlobal("browser.find.removeHighlighting")
+  @js.native
   def removeHighlighting(tabId: Double): Unit = js.native
 }

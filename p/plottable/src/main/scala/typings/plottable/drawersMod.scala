@@ -12,65 +12,29 @@ import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.symbolFactoriesMod.SymbolFactory
 import typings.std.CanvasRenderingContext2D
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/drawers", JSImport.Namespace)
-@js.native
-object drawersMod extends js.Object {
+object drawersMod {
   
-  val ContextStyleAttrs: js.Array[String] = js.native
-  
-  val RectangleCanvasDrawStep: CanvasDrawStep = js.native
-  
-  def getStrokeDashArray(style: Record[String, _]): js.Array[Double] = js.native
-  
-  def getStrokeWidth(style: Record[String, _]): Double = js.native
-  
-  def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[_]], d3LineFactory: js.Function0[Line_[_]]): CanvasDrawStep = js.native
-  
-  def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[_]]): CanvasDrawStep = js.native
-  
-  def makeSymbolCanvasDrawStep(
-    dataset: Dataset,
-    symbolProjector: js.Function0[IAccessor[SymbolFactory]],
-    sizeProjector: js.Function0[IAccessor[Double]]
-  ): CanvasDrawStep = js.native
-  def makeSymbolCanvasDrawStep(
-    dataset: Dataset,
-    symbolProjector: js.Function0[IAccessor[SymbolFactory]],
-    sizeProjector: js.Function0[IAccessor[Double]],
-    stepBuffer: CanvasBuffer
-  ): CanvasDrawStep = js.native
-  
-  def renderArea(
-    context: CanvasRenderingContext2D,
-    d3Area: Area_[_],
-    data: js.Array[_],
-    style: IFillStyle with IStrokeStyle
-  ): Unit = js.native
-  
-  def renderLine(context: CanvasRenderingContext2D, d3Line: Line_[_], data: js.Array[_], style: IStrokeStyle): Unit = js.native
-  
-  def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, _]): Unit = js.native
-  
-  def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
-  
-  def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
-  
+  @JSImport("plottable/build/src/drawers", "ArcOutlineSVGDrawer")
   @js.native
   class ArcOutlineSVGDrawer ()
     extends typings.plottable.arcOutlineDrawerMod.ArcOutlineSVGDrawer
   
+  @JSImport("plottable/build/src/drawers", "ArcSVGDrawer")
   @js.native
   class ArcSVGDrawer ()
     extends typings.plottable.arcDrawerMod.ArcSVGDrawer
   
+  @JSImport("plottable/build/src/drawers", "AreaSVGDrawer")
   @js.native
   class AreaSVGDrawer ()
     extends typings.plottable.areaDrawerMod.AreaSVGDrawer
   
+  @JSImport("plottable/build/src/drawers", "CanvasDrawer")
   @js.native
   class CanvasDrawer protected ()
     extends typings.plottable.canvasDrawerMod.CanvasDrawer {
@@ -81,10 +45,16 @@ object drawersMod extends js.Object {
     def this(_context: CanvasRenderingContext2D, _drawStep: CanvasDrawStep) = this()
   }
   
+  @JSImport("plottable/build/src/drawers", "ContextStyleAttrs")
+  @js.native
+  val ContextStyleAttrs: js.Array[String] = js.native
+  
+  @JSImport("plottable/build/src/drawers", "LineSVGDrawer")
   @js.native
   class LineSVGDrawer ()
     extends typings.plottable.lineDrawerMod.LineSVGDrawer
   
+  @JSImport("plottable/build/src/drawers", "ProxyDrawer")
   @js.native
   class ProxyDrawer protected ()
     extends typings.plottable.drawerMod.ProxyDrawer {
@@ -101,18 +71,25 @@ object drawersMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("plottable/build/src/drawers", "RectangleCanvasDrawStep")
+  @js.native
+  val RectangleCanvasDrawStep: CanvasDrawStep = js.native
+  
+  @JSImport("plottable/build/src/drawers", "RectangleCanvasDrawer")
   @js.native
   class RectangleCanvasDrawer protected ()
     extends typings.plottable.rectangleDrawerMod.RectangleCanvasDrawer {
     def this(ctx: CanvasRenderingContext2D) = this()
   }
   
+  @JSImport("plottable/build/src/drawers", "RectangleSVGDrawer")
   @js.native
   class RectangleSVGDrawer ()
     extends typings.plottable.rectangleDrawerMod.RectangleSVGDrawer {
     def this(_rootClassName: String) = this()
   }
   
+  @JSImport("plottable/build/src/drawers", "SVGDrawer")
   @js.native
   class SVGDrawer protected ()
     extends typings.plottable.svgDrawerMod.SVGDrawer {
@@ -124,11 +101,70 @@ object drawersMod extends js.Object {
     def this(svgElementName: String, className: String) = this()
   }
   
+  @JSImport("plottable/build/src/drawers", "SegmentSVGDrawer")
   @js.native
   class SegmentSVGDrawer ()
     extends typings.plottable.segmentDrawerMod.SegmentSVGDrawer
   
+  @JSImport("plottable/build/src/drawers", "SymbolSVGDrawer")
   @js.native
   class SymbolSVGDrawer ()
     extends typings.plottable.symbolDrawerMod.SymbolSVGDrawer
+  
+  @JSImport("plottable/build/src/drawers", "getStrokeDashArray")
+  @js.native
+  def getStrokeDashArray(style: Record[String, _]): js.Array[Double] = js.native
+  
+  @JSImport("plottable/build/src/drawers", "getStrokeWidth")
+  @js.native
+  def getStrokeWidth(style: Record[String, _]): Double = js.native
+  
+  @JSImport("plottable/build/src/drawers", "makeAreaCanvasDrawStep")
+  @js.native
+  def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[_]], d3LineFactory: js.Function0[Line_[_]]): CanvasDrawStep = js.native
+  
+  @JSImport("plottable/build/src/drawers", "makeLineCanvasDrawStep")
+  @js.native
+  def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[_]]): CanvasDrawStep = js.native
+  
+  @JSImport("plottable/build/src/drawers", "makeSymbolCanvasDrawStep")
+  @js.native
+  def makeSymbolCanvasDrawStep(
+    dataset: Dataset,
+    symbolProjector: js.Function0[IAccessor[SymbolFactory]],
+    sizeProjector: js.Function0[IAccessor[Double]]
+  ): CanvasDrawStep = js.native
+  @JSImport("plottable/build/src/drawers", "makeSymbolCanvasDrawStep")
+  @js.native
+  def makeSymbolCanvasDrawStep(
+    dataset: Dataset,
+    symbolProjector: js.Function0[IAccessor[SymbolFactory]],
+    sizeProjector: js.Function0[IAccessor[Double]],
+    stepBuffer: CanvasBuffer
+  ): CanvasDrawStep = js.native
+  
+  @JSImport("plottable/build/src/drawers", "renderArea")
+  @js.native
+  def renderArea(
+    context: CanvasRenderingContext2D,
+    d3Area: Area_[_],
+    data: js.Array[_],
+    style: IFillStyle with IStrokeStyle
+  ): Unit = js.native
+  
+  @JSImport("plottable/build/src/drawers", "renderLine")
+  @js.native
+  def renderLine(context: CanvasRenderingContext2D, d3Line: Line_[_], data: js.Array[_], style: IStrokeStyle): Unit = js.native
+  
+  @JSImport("plottable/build/src/drawers", "renderPathWithStyle")
+  @js.native
+  def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, _]): Unit = js.native
+  
+  @JSImport("plottable/build/src/drawers", "resolveAttributes")
+  @js.native
+  def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
+  
+  @JSImport("plottable/build/src/drawers", "resolveAttributesSubsetWithStyles")
+  @js.native
+  def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
 }

@@ -1,12 +1,13 @@
 package typings.mapsjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapsjs", "envelope")
 @js.native
-class envelope protected () extends js.Object {
+class envelope protected () extends StObject {
   def this(minX: Double, minY: Double, maxX: Double, maxY: Double) = this()
   
   /**
@@ -128,17 +129,25 @@ class envelope protected () extends js.Object {
     */
   def toObject(): envObject = js.native
 }
-@JSImport("mapsjs", "envelope")
-@js.native
-object envelope extends js.Object {
+object envelope {
   
+  @JSImport("mapsjs", "envelope.createFromCenterAndMargins")
+  @js.native
   def createFromCenterAndMargins(centerPtX: Double, centerPtY: Double, marginX: Double, marginY: Double): envelope = js.native
   
+  @JSImport("mapsjs", "envelope.createFromMdnXml")
+  @js.native
   def createFromMdnXml(xml: String): envelope = js.native
   
+  @JSImport("mapsjs", "envelope.createFromPoints")
+  @js.native
   def createFromPoints(pt1: point, pt2: point): envelope = js.native
   
+  @JSImport("mapsjs", "envelope.intersects")
+  @js.native
   def intersects(env1: envelope, env2: envelope): Boolean = js.native
   
+  @JSImport("mapsjs", "envelope.union")
+  @js.native
   def union(env1: envelope, env2: envelope): envelope = js.native
 }

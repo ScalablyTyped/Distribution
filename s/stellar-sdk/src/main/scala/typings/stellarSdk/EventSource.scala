@@ -4,6 +4,7 @@ import typings.std.MessageEvent
 import typings.stellarSdk.stellarSdkStrings.error
 import typings.stellarSdk.stellarSdkStrings.message
 import typings.stellarSdk.stellarSdkStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,12 +7,13 @@ import typings.awsLambda.awsLambdaStrings.DEVICE_SRP_AUTH
 import typings.awsLambda.awsLambdaStrings.PASSWORD_VERIFIER
 import typings.awsLambda.awsLambdaStrings.SMS_MFA
 import typings.awsLambda.awsLambdaStrings.SRP_A
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChallengeResult extends js.Object {
+trait ChallengeResult extends StObject {
   
   var challengeMetadata: js.UndefOr[String] = js.native
   
@@ -32,32 +33,20 @@ object ChallengeResult {
   }
   
   @scala.inline
-  implicit class ChallengeResultOps[Self <: ChallengeResult] (val x: Self) extends AnyVal {
+  implicit class ChallengeResultMutableBuilder[Self <: ChallengeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallengeMetadataUndefined: Self = StObject.set(x, "challengeMetadata", js.undefined)
     
     @scala.inline
     def setChallengeName(
       value: CUSTOM_CHALLENGE | PASSWORD_VERIFIER | SMS_MFA | DEVICE_SRP_AUTH | DEVICE_PASSWORD_VERIFIER | ADMIN_NO_SRP_AUTH | SRP_A
-    ): Self = this.set("challengeName", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeResult(value: Boolean): Self = this.set("challengeResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChallengeMetadata(value: String): Self = this.set("challengeMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChallengeMetadata: Self = this.set("challengeMetadata", js.undefined)
+    def setChallengeResult(value: Boolean): Self = StObject.set(x, "challengeResult", value.asInstanceOf[js.Any])
   }
 }

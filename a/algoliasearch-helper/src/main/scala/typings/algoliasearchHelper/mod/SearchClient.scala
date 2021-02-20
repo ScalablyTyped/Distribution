@@ -1,12 +1,13 @@
 package typings.algoliasearchHelper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<algoliasearch-helper.algoliasearch-helper.Client, 'search' | 'searchForFacetValues'> */
 @js.native
-trait SearchClient extends js.Object {
+trait SearchClient extends StObject {
   
   var search: js.UndefOr[js.Any] = js.native
   
@@ -21,30 +22,18 @@ object SearchClient {
   }
   
   @scala.inline
-  implicit class SearchClientOps[Self <: SearchClient] (val x: Self) extends AnyVal {
+  implicit class SearchClientMutableBuilder[Self <: SearchClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchForFacetValues(value: js.Any): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchForFacetValuesUndefined: Self = StObject.set(x, "searchForFacetValues", js.undefined)
     
     @scala.inline
-    def setSearch(value: js.Any): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setSearchForFacetValues(value: js.Any): Self = this.set("searchForFacetValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchForFacetValues: Self = this.set("searchForFacetValues", js.undefined)
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

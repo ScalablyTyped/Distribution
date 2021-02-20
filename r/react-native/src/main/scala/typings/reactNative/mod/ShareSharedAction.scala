@@ -1,6 +1,7 @@
 package typings.reactNative.mod
 
 import typings.reactNative.reactNativeStrings.sharedAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object ShareSharedAction {
   }
   
   @scala.inline
-  implicit class ShareSharedActionOps[Self <: ShareSharedAction] (val x: Self) extends AnyVal {
+  implicit class ShareSharedActionMutableBuilder[Self <: ShareSharedAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: sharedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: sharedAction): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivityType(value: String): Self = this.set("activityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivityType: Self = this.set("activityType", js.undefined)
+    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
   }
 }

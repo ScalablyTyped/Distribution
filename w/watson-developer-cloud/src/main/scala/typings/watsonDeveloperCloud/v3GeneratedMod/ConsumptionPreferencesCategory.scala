@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ConsumptionPreferencesCategory. */
 @js.native
-trait ConsumptionPreferencesCategory extends js.Object {
+trait ConsumptionPreferencesCategory extends StObject {
   
   /** The unique, non-localized identifier of the consumption preferences category to which the results pertain. IDs have the form `consumption_preferences_{category}`. */
   var consumption_preference_category_id: String = js.native
@@ -30,30 +31,18 @@ object ConsumptionPreferencesCategory {
   }
   
   @scala.inline
-  implicit class ConsumptionPreferencesCategoryOps[Self <: ConsumptionPreferencesCategory] (val x: Self) extends AnyVal {
+  implicit class ConsumptionPreferencesCategoryMutableBuilder[Self <: ConsumptionPreferencesCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumption_preference_category_id(value: String): Self = StObject.set(x, "consumption_preference_category_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumption_preferences(value: js.Array[ConsumptionPreferences]): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumption_preferencesVarargs(value: ConsumptionPreferences*): Self = StObject.set(x, "consumption_preferences", js.Array(value :_*))
     
     @scala.inline
-    def setConsumption_preference_category_id(value: String): Self = this.set("consumption_preference_category_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConsumption_preferencesVarargs(value: ConsumptionPreferences*): Self = this.set("consumption_preferences", js.Array(value :_*))
-    
-    @scala.inline
-    def setConsumption_preferences(value: js.Array[ConsumptionPreferences]): Self = this.set("consumption_preferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

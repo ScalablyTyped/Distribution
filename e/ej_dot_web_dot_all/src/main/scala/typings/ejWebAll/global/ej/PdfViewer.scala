@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class PdfViewer protected ()
   extends typings.ejWebAll.ej.PdfViewer {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.PdfViewer.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.PdfViewer.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.PdfViewer")
-@js.native
-object PdfViewer extends js.Object {
+object PdfViewer {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.PdfViewer = js.native
-  
+  @JSGlobal("ej.PdfViewer")
   @js.native
-  object AnnotationType extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.PdfViewer.AnnotationType")
+  @js.native
+  object AnnotationType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PdfViewer.AnnotationType with Double] = js.native
@@ -37,8 +36,9 @@ object PdfViewer extends js.Object {
     /* 0 */ val Underline: typings.ejWebAll.ej.PdfViewer.AnnotationType.Underline with Double = js.native
   }
   
+  @JSGlobal("ej.PdfViewer.BufferingMode")
   @js.native
-  object BufferingMode extends js.Object {
+  object BufferingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PdfViewer.BufferingMode with Double] = js.native
@@ -48,8 +48,9 @@ object PdfViewer extends js.Object {
     /* 0 */ val Default: typings.ejWebAll.ej.PdfViewer.BufferingMode.Default with Double = js.native
   }
   
+  @JSGlobal("ej.PdfViewer.InteractionMode")
   @js.native
-  object InteractionMode extends js.Object {
+  object InteractionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PdfViewer.InteractionMode with Double] = js.native
@@ -59,8 +60,9 @@ object PdfViewer extends js.Object {
     /* 0 */ val TextSelection: typings.ejWebAll.ej.PdfViewer.InteractionMode.TextSelection with Double = js.native
   }
   
+  @JSGlobal("ej.PdfViewer.LinkTarget")
   @js.native
-  object LinkTarget extends js.Object {
+  object LinkTarget extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PdfViewer.LinkTarget with Double] = js.native
@@ -72,8 +74,16 @@ object PdfViewer extends js.Object {
     /* 2 */ val NewWindow: typings.ejWebAll.ej.PdfViewer.LinkTarget.NewWindow with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.PdfViewer.Locale")
   @js.native
-  object PdfService extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.PdfViewer.PdfService")
+  @js.native
+  object PdfService extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PdfViewer.PdfService with Double] = js.native
@@ -83,8 +93,9 @@ object PdfViewer extends js.Object {
     /* 1 */ val Remote: typings.ejWebAll.ej.PdfViewer.PdfService.Remote with Double = js.native
   }
   
+  @JSGlobal("ej.PdfViewer.ToolbarItems")
   @js.native
-  object ToolbarItems extends js.Object {
+  object ToolbarItems extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PdfViewer.ToolbarItems with Double] = js.native
@@ -107,4 +118,11 @@ object PdfViewer extends js.Object {
     
     /* 4 */ val TextSearchTool: typings.ejWebAll.ej.PdfViewer.ToolbarItems.TextSearchTool with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.PdfViewer.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.PdfViewer = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.PdfViewer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

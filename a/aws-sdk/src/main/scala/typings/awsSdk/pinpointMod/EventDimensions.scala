@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventDimensions extends js.Object {
+trait EventDimensions extends StObject {
   
   /**
     * One or more custom attributes that your application reports to Amazon Pinpoint. You can use these attributes as selection criteria when you create an event filter.
@@ -31,36 +32,24 @@ object EventDimensions {
   }
   
   @scala.inline
-  implicit class EventDimensionsOps[Self <: EventDimensions] (val x: Self) extends AnyVal {
+  implicit class EventDimensionsMutableBuilder[Self <: EventDimensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: SetDimension): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: MapOfAttributeDimension): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setMetrics(value: MapOfMetricDimension): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: SetDimension): Self = this.set("EventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventType: Self = this.set("EventType", js.undefined)
-    
-    @scala.inline
-    def setMetrics(value: MapOfMetricDimension): Self = this.set("Metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
   }
 }

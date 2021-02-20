@@ -5,6 +5,7 @@ import typings.pulumiAws.apiKeyMod.ApiKeyState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class ApiKey protected ()
   def this(name: String, args: ApiKeyArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/apigateway", "ApiKey")
-@js.native
-object ApiKey extends js.Object {
+object ApiKey {
   
   /**
     * Get an existing ApiKey resource's state with the given name, ID, and optional extra
@@ -39,14 +38,24 @@ object ApiKey extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/apigateway", "ApiKey.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.apiKeyMod.ApiKey = js.native
+  @JSImport("@pulumi/aws/apigateway", "ApiKey.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apiKeyMod.ApiKey = js.native
+  @JSImport("@pulumi/aws/apigateway", "ApiKey.get")
+  @js.native
   def get(name: String, id: Input[ID], state: ApiKeyState): typings.pulumiAws.apiKeyMod.ApiKey = js.native
+  @JSImport("@pulumi/aws/apigateway", "ApiKey.get")
+  @js.native
   def get(name: String, id: Input[ID], state: ApiKeyState, opts: CustomResourceOptions): typings.pulumiAws.apiKeyMod.ApiKey = js.native
   
   /**
     * Returns true if the given object is an instance of ApiKey.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/apigateway", "ApiKey.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/apiKey.ApiKey */ Boolean = js.native
 }

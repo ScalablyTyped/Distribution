@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,39 +105,27 @@ object XAccessibleHyperlink {
   }
   
   @scala.inline
-  implicit class XAccessibleHyperlinkOps[Self <: XAccessibleHyperlink] (val x: Self) extends AnyVal {
+  implicit class XAccessibleHyperlinkMutableBuilder[Self <: XAccessibleHyperlink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIndex(value: Double): Self = StObject.set(x, "EndIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAccessibleActionAnchor(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAccessibleActionObject(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("EndIndex", value.asInstanceOf[js.Any])
+    def setGetEndIndex(value: () => Double): Self = StObject.set(x, "getEndIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("StartIndex", value.asInstanceOf[js.Any])
+    def setGetStartIndex(value: () => Double): Self = StObject.set(x, "getStartIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleActionAnchor(value: Double => js.Any): Self = this.set("getAccessibleActionAnchor", js.Any.fromFunction1(value))
+    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleActionObject(value: Double => js.Any): Self = this.set("getAccessibleActionObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetEndIndex(value: () => Double): Self = this.set("getEndIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStartIndex(value: () => Double): Self = this.set("getStartIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    def setStartIndex(value: Double): Self = StObject.set(x, "StartIndex", value.asInstanceOf[js.Any])
   }
 }

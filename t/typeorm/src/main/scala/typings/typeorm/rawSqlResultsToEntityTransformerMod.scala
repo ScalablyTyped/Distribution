@@ -9,16 +9,16 @@ import typings.typeorm.queryExpressionMapMod.QueryExpressionMap
 import typings.typeorm.queryRunnerMod.QueryRunner
 import typings.typeorm.relationCountLoadResultMod.RelationCountLoadResult
 import typings.typeorm.relationIdLoadResultMod.RelationIdLoadResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/transformer/RawSqlResultsToEntityTransformer", JSImport.Namespace)
-@js.native
-object rawSqlResultsToEntityTransformerMod extends js.Object {
+object rawSqlResultsToEntityTransformerMod {
   
+  @JSImport("typeorm/browser/query-builder/transformer/RawSqlResultsToEntityTransformer", "RawSqlResultsToEntityTransformer")
   @js.native
-  class RawSqlResultsToEntityTransformer protected () extends js.Object {
+  class RawSqlResultsToEntityTransformer protected () extends StObject {
     def this(
       expressionMap: QueryExpressionMap,
       driver: Driver,

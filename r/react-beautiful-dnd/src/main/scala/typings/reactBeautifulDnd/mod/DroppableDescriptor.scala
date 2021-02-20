@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DroppableDescriptor extends js.Object {
+trait DroppableDescriptor extends StObject {
   
   var id: DroppableId = js.native
   
@@ -23,27 +24,15 @@ object DroppableDescriptor {
   }
   
   @scala.inline
-  implicit class DroppableDescriptorOps[Self <: DroppableDescriptor] (val x: Self) extends AnyVal {
+  implicit class DroppableDescriptorMutableBuilder[Self <: DroppableDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: DroppableId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: DroppableMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: DroppableId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: DroppableMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TypeId): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p1beta1OutputConfig extends js.Object {
+trait GoogleCloudVisionV1p1beta1OutputConfig extends StObject {
   
   /**
     * The max number of response protos to put into each output JSON file on Google Cloud Storage. The valid range is [1, 100]. If not specified, the default value is 20. For example, for
@@ -26,30 +27,18 @@ object GoogleCloudVisionV1p1beta1OutputConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1OutputConfigOps[Self <: GoogleCloudVisionV1p1beta1OutputConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p1beta1OutputConfigMutableBuilder[Self <: GoogleCloudVisionV1p1beta1OutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsDestination(value: GoogleCloudVisionV1p1beta1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
-    
-    @scala.inline
-    def setGcsDestination(value: GoogleCloudVisionV1p1beta1GcsDestination): Self = this.set("gcsDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsDestination: Self = this.set("gcsDestination", js.undefined)
+    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.microsoftAjax.global.Sys
 import org.scalablytyped.runtime.StringDictionary
 import typings.microsoftAjax.Sys.UI.DomElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +14,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains types related to the user interface (UI), such as controls, events, and UI properties in the Microsoft Ajax Library.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397431(v=vs.100).aspx}
   */
-@JSGlobal("Sys.UI")
-@js.native
-object UI extends js.Object {
+object UI {
   
-  var DomElement: typings.microsoftAjax.Sys.UI.DomElement = js.native
+  @JSGlobal("Sys.UI")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Provides a base class for all ASP.NET AJAX client behaviors.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb311020(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.UI.Behavior")
   @js.native
   class Behavior ()
     extends typings.microsoftAjax.Sys.UI.Behavior
-  /* static members */
-  @js.native
-  object Behavior extends js.Object {
+  object Behavior {
     
     //#region Methods
     /**
       * Gets a Sys.UI.Behavior instance with the specified name property from the specified HTML Document Object Model (DOM) element. This member a static member and can be invoked without creating an instance of the class.
       * @return The specified Behavior object, if found; otherwise, null.
       */
+    /* static member */
+    @JSGlobal("Sys.UI.Behavior.getBehaviorByName")
+    @js.native
     def getBehaviorByName(element: HTMLElement, name: String): typings.microsoftAjax.Sys.UI.Behavior = js.native
     
     /**
@@ -43,12 +46,18 @@ object UI extends js.Object {
       *           The HTMLElement object to search.
       * @return An array of references to Behavior objects, or null if no references exist.
       */
+    /* static member */
+    @JSGlobal("Sys.UI.Behavior.getBehaviors")
+    @js.native
     def getBehaviors(element: DomElement): js.Array[typings.microsoftAjax.Sys.UI.Behavior] = js.native
     
     /**
       * Gets an array of Sys.UI.Behavior objects that are of the specified type from the specified HTML Document Object Model (DOM) element. This method is static and can be invoked without creating an instance of the class.
       * @return An array of all Behavior objects of the specified type that are associated with the specified DOM element, if found; otherwise, an empty array.
       */
+    /* static member */
+    @JSGlobal("Sys.UI.Behavior.getBehaviorsByType")
+    @js.native
     def getBehaviorsByType(element: HTMLElement, `type`: typings.microsoftAjax.Sys.UI.Behavior): js.Array[typings.microsoftAjax.Sys.UI.Behavior] = js.native
   }
   
@@ -56,6 +65,7 @@ object UI extends js.Object {
     * Creates an object that contains a set of integer coordinates representing position, width, and height.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397698(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.UI.Bounds")
   @js.native
   //#region Constructors
   /**
@@ -67,6 +77,7 @@ object UI extends js.Object {
   /**
     * Provides the base class for all all ASP.NET AJAX client controls.
     */
+  @JSGlobal("Sys.UI.Control")
   @js.native
   class Control protected ()
     extends typings.microsoftAjax.Sys.UI.Control {
@@ -82,10 +93,17 @@ object UI extends js.Object {
     def this(element: HTMLElement) = this()
   }
   
+  @JSGlobal("Sys.UI.DomElement")
+  @js.native
+  def DomElement: typings.microsoftAjax.Sys.UI.DomElement = js.native
+  @scala.inline
+  def DomElement_=(x: DomElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DomElement")(x.asInstanceOf[js.Any])
+  
   /**
     * Provides cross-browser access to DOM event properties and helper APIs that are used to attach handlers to DOM element events.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310935(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.UI.DomEvent")
   @js.native
   class DomEvent protected ()
     extends typings.microsoftAjax.Sys.UI.DomEvent {
@@ -97,9 +115,7 @@ object UI extends js.Object {
       */
     def this(domElement: HTMLElement) = this()
   }
-  /* static members */
-  @js.native
-  object DomEvent extends js.Object {
+  object DomEvent {
     
     //#endregion
     //#region Methods
@@ -117,11 +133,20 @@ object UI extends js.Object {
       * @param autoRemove
       *          (Optional) A boolean value that determines whether the handler should be removed automatically when the element is disposed.
       */
-    def addHandler(element: HTMLElement, eventName: String, handler: js.Function1[/* e */ this.type, Unit]): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.UI.DomEvent.addHandler")
+    @js.native
     def addHandler(
       element: HTMLElement,
       eventName: String,
-      handler: js.Function1[/* e */ this.type, Unit],
+      handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]
+    ): Unit = js.native
+    @JSGlobal("Sys.UI.DomEvent.addHandler")
+    @js.native
+    def addHandler(
+      element: HTMLElement,
+      eventName: String,
+      handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit],
       autoRemove: Boolean
     ): Unit = js.native
     
@@ -146,21 +171,30 @@ object UI extends js.Object {
       * @throws Error.invalidOperation - (Debug) One of the handlers specified in events is not a function.
       *
       */
+    /* static member */
+    @JSGlobal("Sys.UI.DomEvent.addHandlers")
+    @js.native
     def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]]
     ): Unit = js.native
+    @JSGlobal("Sys.UI.DomEvent.addHandlers")
+    @js.native
     def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
       handlerOwner: js.UndefOr[scala.Nothing],
       autoRemove: Boolean
     ): Unit = js.native
+    @JSGlobal("Sys.UI.DomEvent.addHandlers")
+    @js.native
     def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
       handlerOwner: js.Any
     ): Unit = js.native
+    @JSGlobal("Sys.UI.DomEvent.addHandlers")
+    @js.native
     def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
@@ -176,6 +210,9 @@ object UI extends js.Object {
       * @param element
       *          The element that exposes the events.
       */
+    /* static member */
+    @JSGlobal("Sys.UI.DomEvent.clearHandlers")
+    @js.native
     def clearHandlers(element: HTMLElement): Unit = js.native
     
     /**
@@ -188,15 +225,23 @@ object UI extends js.Object {
       * @param handler
       *          The event handler to remove.
       */
-    def removeHandler(element: HTMLElement, eventName: String, handler: js.Function1[/* e */ this.type, Unit]): Unit = js.native
+    /* static member */
+    @JSGlobal("Sys.UI.DomEvent.removeHandler")
+    @js.native
+    def removeHandler(
+      element: HTMLElement,
+      eventName: String,
+      handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]
+    ): Unit = js.native
   }
   
   /**
     * Describes key codes.
     * The values correspond to values in the Document Object Model (DOM).
     */
+  @JSGlobal("Sys.UI.Key")
   @js.native
-  object Key extends js.Object {
+  object Key extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.microsoftAjax.Sys.UI.Key with Double] = js.native
@@ -233,8 +278,9 @@ object UI extends js.Object {
   /**
     * Describes mouse button locations.
     */
+  @JSGlobal("Sys.UI.MouseButton")
   @js.native
-  object MouseButton extends js.Object {
+  object MouseButton extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.microsoftAjax.Sys.UI.MouseButton with Double] = js.native
@@ -250,6 +296,7 @@ object UI extends js.Object {
     * Creates an object that contains a set of integer coordinates that represent a position. The getLocation method of the HTMLElement class returns a Point object.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb383992(v=vs.100).aspx}        *
     */
+  @JSGlobal("Sys.UI.Point")
   @js.native
   class Point protected ()
     extends typings.microsoftAjax.Sys.UI.Point {
@@ -266,8 +313,9 @@ object UI extends js.Object {
     * Describes the layout of a DOM element in the page when the element's visible property is set to false.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397498(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.UI.VisibilityMode")
   @js.native
-  object VisibilityMode extends js.Object {
+  object VisibilityMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.microsoftAjax.Sys.UI.VisibilityMode with Double] = js.native

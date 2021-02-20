@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext
 
 import typings.senchaTouch.Ext.util.IGeolocation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,132 +100,120 @@ object IMap {
   }
   
   @scala.inline
-  implicit class IMapOps[Self <: IMap] (val x: Self) extends AnyVal {
+  implicit class IMapMutableBuilder[Self <: IMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeo(value: IGeolocation): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGeo(value: () => IGeolocation): Self = StObject.set(x, "getGeo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGeo(value: IGeolocation): Self = this.set("geo", value.asInstanceOf[js.Any])
+    def setGetGeoUndefined: Self = StObject.set(x, "getGeo", js.undefined)
     
     @scala.inline
-    def deleteGeo: Self = this.set("geo", js.undefined)
+    def setGetMap(value: () => _): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGeo(value: () => IGeolocation): Self = this.set("getGeo", js.Any.fromFunction0(value))
+    def setGetMapListeners(value: () => _): Self = StObject.set(x, "getMapListeners", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetGeo: Self = this.set("getGeo", js.undefined)
+    def setGetMapListenersUndefined: Self = StObject.set(x, "getMapListeners", js.undefined)
     
     @scala.inline
-    def setGetMap(value: () => _): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setGetMapUndefined: Self = StObject.set(x, "getMap", js.undefined)
     
     @scala.inline
-    def deleteGetMap: Self = this.set("getMap", js.undefined)
+    def setGetState(value: () => _): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMapListeners(value: () => _): Self = this.set("getMapListeners", js.Any.fromFunction0(value))
+    def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
-    def deleteGetMapListeners: Self = this.set("getMapListeners", js.undefined)
+    def setGetUseCurrentLocation(value: () => _): Self = StObject.set(x, "getUseCurrentLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetState(value: () => _): Self = this.set("getState", js.Any.fromFunction0(value))
+    def setGetUseCurrentLocationUndefined: Self = StObject.set(x, "getUseCurrentLocation", js.undefined)
     
     @scala.inline
-    def deleteGetState: Self = this.set("getState", js.undefined)
+    def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUseCurrentLocation(value: () => _): Self = this.set("getUseCurrentLocation", js.Any.fromFunction0(value))
+    def setMapListeners(value: js.Any): Self = StObject.set(x, "mapListeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetUseCurrentLocation: Self = this.set("getUseCurrentLocation", js.undefined)
+    def setMapListenersUndefined: Self = StObject.set(x, "mapListeners", js.undefined)
     
     @scala.inline
-    def setMap(value: js.Any): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMapOptions(value: js.Any): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setMapOptionsUndefined: Self = StObject.set(x, "mapOptions", js.undefined)
     
     @scala.inline
-    def setMapListeners(value: js.Any): Self = this.set("mapListeners", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteMapListeners: Self = this.set("mapListeners", js.undefined)
+    def setMaskMap(value: Boolean): Self = StObject.set(x, "maskMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapOptions(value: js.Any): Self = this.set("mapOptions", value.asInstanceOf[js.Any])
+    def setMaskMapCls(value: java.lang.String): Self = StObject.set(x, "maskMapCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapOptions: Self = this.set("mapOptions", js.undefined)
+    def setMaskMapClsUndefined: Self = StObject.set(x, "maskMapCls", js.undefined)
     
     @scala.inline
-    def setMaskMap(value: Boolean): Self = this.set("maskMap", value.asInstanceOf[js.Any])
+    def setMaskMapUndefined: Self = StObject.set(x, "maskMap", js.undefined)
     
     @scala.inline
-    def deleteMaskMap: Self = this.set("maskMap", js.undefined)
+    def setSetGeo(value: /* geo */ js.UndefOr[IGeolocation] => Unit): Self = StObject.set(x, "setGeo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskMapCls(value: java.lang.String): Self = this.set("maskMapCls", value.asInstanceOf[js.Any])
+    def setSetGeoUndefined: Self = StObject.set(x, "setGeo", js.undefined)
     
     @scala.inline
-    def deleteMaskMapCls: Self = this.set("maskMapCls", js.undefined)
+    def setSetMap(value: /* map */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGeo(value: /* geo */ js.UndefOr[IGeolocation] => Unit): Self = this.set("setGeo", js.Any.fromFunction1(value))
+    def setSetMapCenter(value: /* coordinates */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMapCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetGeo: Self = this.set("setGeo", js.undefined)
+    def setSetMapCenterUndefined: Self = StObject.set(x, "setMapCenter", js.undefined)
     
     @scala.inline
-    def setSetMap(value: /* map */ js.UndefOr[js.Any] => Unit): Self = this.set("setMap", js.Any.fromFunction1(value))
+    def setSetMapListeners(value: /* mapListeners */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMapListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMap: Self = this.set("setMap", js.undefined)
+    def setSetMapListenersUndefined: Self = StObject.set(x, "setMapListeners", js.undefined)
     
     @scala.inline
-    def setSetMapCenter(value: /* coordinates */ js.UndefOr[js.Any] => Unit): Self = this.set("setMapCenter", js.Any.fromFunction1(value))
+    def setSetMapOptions(value: /* mapOptions */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMapOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMapCenter: Self = this.set("setMapCenter", js.undefined)
+    def setSetMapOptionsUndefined: Self = StObject.set(x, "setMapOptions", js.undefined)
     
     @scala.inline
-    def setSetMapListeners(value: /* mapListeners */ js.UndefOr[js.Any] => Unit): Self = this.set("setMapListeners", js.Any.fromFunction1(value))
+    def setSetMapUndefined: Self = StObject.set(x, "setMap", js.undefined)
     
     @scala.inline
-    def deleteSetMapListeners: Self = this.set("setMapListeners", js.undefined)
+    def setSetUseCurrentLocation(value: /* useCurrentLocation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUseCurrentLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMapOptions(value: /* mapOptions */ js.UndefOr[js.Any] => Unit): Self = this.set("setMapOptions", js.Any.fromFunction1(value))
+    def setSetUseCurrentLocationUndefined: Self = StObject.set(x, "setUseCurrentLocation", js.undefined)
     
     @scala.inline
-    def deleteSetMapOptions: Self = this.set("setMapOptions", js.undefined)
+    def setUpdate(value: /* coordinates */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUseCurrentLocation(value: /* useCurrentLocation */ js.UndefOr[js.Any] => Unit): Self = this.set("setUseCurrentLocation", js.Any.fromFunction1(value))
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteSetUseCurrentLocation: Self = this.set("setUseCurrentLocation", js.undefined)
+    def setUseCurrentLocation(value: js.Any): Self = StObject.set(x, "useCurrentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: /* coordinates */ js.UndefOr[js.Any] => Unit): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUseCurrentLocation(value: js.Any): Self = this.set("useCurrentLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCurrentLocation: Self = this.set("useCurrentLocation", js.undefined)
+    def setUseCurrentLocationUndefined: Self = StObject.set(x, "useCurrentLocation", js.undefined)
   }
 }

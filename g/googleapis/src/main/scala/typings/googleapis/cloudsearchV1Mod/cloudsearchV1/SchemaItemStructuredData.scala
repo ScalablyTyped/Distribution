@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Available structured data fields for the item.
   */
 @js.native
-trait SchemaItemStructuredData extends js.Object {
+trait SchemaItemStructuredData extends StObject {
   
   /**
     * Hashing value provided by the API caller. This can be used with the
@@ -32,30 +33,18 @@ object SchemaItemStructuredData {
   }
   
   @scala.inline
-  implicit class SchemaItemStructuredDataOps[Self <: SchemaItemStructuredData] (val x: Self) extends AnyVal {
+  implicit class SchemaItemStructuredDataMutableBuilder[Self <: SchemaItemStructuredData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObject(value: SchemaStructuredDataObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
-    
-    @scala.inline
-    def setObject(value: SchemaStructuredDataObject): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }
 }

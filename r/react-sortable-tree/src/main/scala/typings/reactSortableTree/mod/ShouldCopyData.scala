@@ -1,11 +1,12 @@
 package typings.reactSortableTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShouldCopyData extends js.Object {
+trait ShouldCopyData extends StObject {
   
   var node: TreeNode = js.native
   
@@ -22,30 +23,18 @@ object ShouldCopyData {
   }
   
   @scala.inline
-  implicit class ShouldCopyDataOps[Self <: ShouldCopyData] (val x: Self) extends AnyVal {
+  implicit class ShouldCopyDataMutableBuilder[Self <: ShouldCopyData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNode(value: TreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrevPath(value: NumberOrStringArray): Self = StObject.set(x, "prevPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrevPathVarargs(value: (String | Double)*): Self = StObject.set(x, "prevPath", js.Array(value :_*))
     
     @scala.inline
-    def setNode(value: TreeNode): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevPathVarargs(value: (String | Double)*): Self = this.set("prevPath", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrevPath(value: NumberOrStringArray): Self = this.set("prevPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevTreeIndex(value: Double): Self = this.set("prevTreeIndex", value.asInstanceOf[js.Any])
+    def setPrevTreeIndex(value: Double): Self = StObject.set(x, "prevTreeIndex", value.asInstanceOf[js.Any])
   }
 }

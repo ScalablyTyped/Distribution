@@ -1,12 +1,13 @@
 package typings.muiDatatables.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTablePopover extends js.Object {
+trait MUIDataTablePopover extends StObject {
   
   var action: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
   
@@ -35,72 +36,60 @@ object MUIDataTablePopover {
   }
   
   @scala.inline
-  implicit class MUIDataTablePopoverOps[Self <: MUIDataTablePopover] (val x: Self) extends AnyVal {
+  implicit class MUIDataTablePopoverMutableBuilder[Self <: MUIDataTablePopover] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: /* args */ js.Any => _): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorEl(value: ReactNode): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: /* args */ js.Any => _): Self = this.set("action", js.Any.fromFunction1(value))
+    def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setAnchorOrigin(value: js.Any): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorEl(value: ReactNode): Self = this.set("anchorEl", value.asInstanceOf[js.Any])
+    def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
     
     @scala.inline
-    def deleteAnchorEl: Self = this.set("anchorEl", js.undefined)
+    def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOrigin(value: js.Any): Self = this.set("anchorOrigin", value.asInstanceOf[js.Any])
+    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
     @scala.inline
-    def deleteAnchorOrigin: Self = this.set("anchorOrigin", js.undefined)
+    def setOnClose(value: /* args */ js.Any => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElevation(value: Double): Self = this.set("elevation", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteElevation: Self = this.set("elevation", js.undefined)
+    def setOnExited(value: /* args */ js.Any => _): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClose(value: /* args */ js.Any => _): Self = this.set("onClose", js.Any.fromFunction1(value))
+    def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExited(value: /* args */ js.Any => _): Self = this.set("onExited", js.Any.fromFunction1(value))
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
     @scala.inline
-    def deleteOnExited: Self = this.set("onExited", js.undefined)
+    def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: Boolean): Self = this.set("option", value.asInstanceOf[js.Any])
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def setTransformOrigin(value: js.Any): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: js.Any): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setTransformOrigin(value: js.Any): Self = this.set("transformOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformOrigin: Self = this.set("transformOrigin", js.undefined)
+    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
   }
 }

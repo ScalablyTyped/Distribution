@@ -1,11 +1,12 @@
 package typings.agoraRtcSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Success extends js.Object {
+trait Success extends StObject {
   
   /**
     * - An empty string if `success` is `true`.
@@ -32,27 +33,15 @@ object Success {
   }
   
   @scala.inline
-  implicit class SuccessOps[Self <: Success] (val x: Self) extends AnyVal {
+  implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUid(value: Double | String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: Double | String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EvaluationOperationStatus extends js.Object
+sealed trait EvaluationOperationStatus extends StObject
 @JSImport("vso-node-api/interfaces/NotificationInterfaces", "EvaluationOperationStatus")
 @js.native
-object EvaluationOperationStatus extends js.Object {
+object EvaluationOperationStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EvaluationOperationStatus with Double] = js.native
@@ -19,62 +19,54 @@ object EvaluationOperationStatus extends js.Object {
     */
   @js.native
   sealed trait Cancelled extends EvaluationOperationStatus
-  /* 3 */ @js.native
-  object Cancelled extends TopLevel[Cancelled with Double]
+  /* 3 */ val Cancelled: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.Cancelled with Double = js.native
   
   /**
     * The operation completed with a failure.
     */
   @js.native
   sealed trait Failed extends EvaluationOperationStatus
-  /* 5 */ @js.native
-  object Failed extends TopLevel[Failed with Double]
+  /* 5 */ val Failed: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.Failed with Double = js.native
   
   /**
     * The operation is in progress.
     */
   @js.native
   sealed trait InProgress extends EvaluationOperationStatus
-  /* 2 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 2 */ val InProgress: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.InProgress with Double = js.native
   
   /**
     * The operation could not be found.
     */
   @js.native
   sealed trait NotFound extends EvaluationOperationStatus
-  /* 7 */ @js.native
-  object NotFound extends TopLevel[NotFound with Double]
+  /* 7 */ val NotFound: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.NotFound with Double = js.native
   
   /**
     * The operation object does not have the status set.
     */
   @js.native
   sealed trait NotSet extends EvaluationOperationStatus
-  /* 0 */ @js.native
-  object NotSet extends TopLevel[NotSet with Double]
+  /* 0 */ val NotSet: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.NotSet with Double = js.native
   
   /**
     * The operation has been queued.
     */
   @js.native
   sealed trait Queued extends EvaluationOperationStatus
-  /* 1 */ @js.native
-  object Queued extends TopLevel[Queued with Double]
+  /* 1 */ val Queued: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.Queued with Double = js.native
   
   /**
     * The operation completed successfully.
     */
   @js.native
   sealed trait Succeeded extends EvaluationOperationStatus
-  /* 4 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 4 */ val Succeeded: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.Succeeded with Double = js.native
   
   /**
     * The operation timed out.
     */
   @js.native
   sealed trait TimedOut extends EvaluationOperationStatus
-  /* 6 */ @js.native
-  object TimedOut extends TopLevel[TimedOut with Double]
+  /* 6 */ val TimedOut: typings.vsoNodeApi.notificationInterfacesMod.EvaluationOperationStatus.TimedOut with Double = js.native
 }

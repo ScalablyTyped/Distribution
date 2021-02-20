@@ -18,13 +18,14 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.symlink.Type
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memfs/lib/volume", "Volume")
 @js.native
-class Volume () extends js.Object {
+class Volume () extends StObject {
   def this(props: js.Object) = this()
   
   var FSWatcher: Instantiable0[typings.memfs.volumeMod.FSWatcher] = js.native
@@ -576,9 +577,11 @@ class Volume () extends js.Object {
   def writeSync(fd: Double, str: String, position: Double, encoding: BufferEncoding): Double = js.native
 }
 /* static members */
-@JSImport("memfs/lib/volume", "Volume")
-@js.native
-object Volume extends js.Object {
+object Volume {
+  
+  @JSImport("memfs/lib/volume", "Volume")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Global file descriptor counter. UNIX file descriptors start from 0 and go sequentially
@@ -587,11 +590,23 @@ object Volume extends js.Object {
     * @type {number}
     * @todo This should not be static, right?
     */
-  var fd: Double = js.native
+  @JSImport("memfs/lib/volume", "Volume.fd")
+  @js.native
+  def fd: Double = js.native
+  @scala.inline
+  def fd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
   
+  @JSImport("memfs/lib/volume", "Volume.fromJSON")
+  @js.native
   def fromJSON(json: DirectoryJSON): Volume = js.native
+  @JSImport("memfs/lib/volume", "Volume.fromJSON")
+  @js.native
   def fromJSON(json: DirectoryJSON, cwd: String): Volume = js.native
   
+  @JSImport("memfs/lib/volume", "Volume.fromNestedJSON")
+  @js.native
   def fromNestedJSON(json: NestedDirectoryJSON): Volume = js.native
+  @JSImport("memfs/lib/volume", "Volume.fromNestedJSON")
+  @js.native
   def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): Volume = js.native
 }

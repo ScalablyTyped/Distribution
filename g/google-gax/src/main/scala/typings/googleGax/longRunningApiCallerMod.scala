@@ -5,13 +5,14 @@ import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.callMod.OngoingCallPromise
 import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/longRunningCalls/longRunningApiCaller", JSImport.Namespace)
-@js.native
-object longRunningApiCallerMod extends js.Object {
+object longRunningApiCallerMod {
+  
+  @JSImport("google-gax/build/src/longRunningCalls/longRunningApiCaller", "LongrunningApiCaller")
   @js.native
   class LongrunningApiCaller protected () extends APICaller {
     /**
@@ -24,15 +25,16 @@ object longRunningApiCallerMod extends js.Object {
       * used for polling the operation.
       */
     def this(longrunningDescriptor: LongRunningDescriptor) = this()
+    
     var _wrapOperation: js.Any = js.native
-    var longrunningDescriptor: LongRunningDescriptor = js.native
+    
     def call(
       apiCall: SimpleCallbackFunction,
       argument: js.Object,
       settings: CallOptions,
       canceller: OngoingCallPromise
     ): Unit = js.native
+    
+    var longrunningDescriptor: LongRunningDescriptor = js.native
   }
-  
 }
-

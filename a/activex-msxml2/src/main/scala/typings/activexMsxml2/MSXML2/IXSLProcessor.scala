@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IXSLProcessor Interface */
 @js.native
-trait IXSLProcessor extends js.Object {
+trait IXSLProcessor extends StObject {
   
   @JSName("MSXML2.IXSLProcessor_typekey")
   var MSXML2DotIXSLProcessor_typekey: IXSLProcessor = js.native

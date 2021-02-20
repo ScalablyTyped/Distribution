@@ -2,17 +2,12 @@ package typings.skatejs
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.skatejs.typesMod.WithComponent
-import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
-  
-  @js.native
-  trait Instantiable extends Instantiable0[HTMLElement]
+object anon {
   
   @js.native
   trait TypeofWithComponent

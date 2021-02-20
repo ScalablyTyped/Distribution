@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaceDetectionParams extends js.Object {
+trait FaceDetectionParams extends StObject {
   
   var faceindex: js.UndefOr[ImgixParamType] = js.native
   
@@ -22,36 +23,24 @@ object FaceDetectionParams {
   }
   
   @scala.inline
-  implicit class FaceDetectionParamsOps[Self <: FaceDetectionParams] (val x: Self) extends AnyVal {
+  implicit class FaceDetectionParamsMutableBuilder[Self <: FaceDetectionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceindex(value: ImgixParamType): Self = StObject.set(x, "faceindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceindexUndefined: Self = StObject.set(x, "faceindex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacepad(value: ImgixParamType): Self = StObject.set(x, "facepad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceindex(value: ImgixParamType): Self = this.set("faceindex", value.asInstanceOf[js.Any])
+    def setFacepadUndefined: Self = StObject.set(x, "facepad", js.undefined)
     
     @scala.inline
-    def deleteFaceindex: Self = this.set("faceindex", js.undefined)
+    def setFaces(value: ImgixParamType): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacepad(value: ImgixParamType): Self = this.set("facepad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFacepad: Self = this.set("facepad", js.undefined)
-    
-    @scala.inline
-    def setFaces(value: ImgixParamType): Self = this.set("faces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaces: Self = this.set("faces", js.undefined)
+    def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
   }
 }

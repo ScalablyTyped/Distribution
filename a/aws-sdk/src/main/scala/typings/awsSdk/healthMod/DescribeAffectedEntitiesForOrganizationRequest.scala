@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAffectedEntitiesForOrganizationRequest extends js.Object {
+trait DescribeAffectedEntitiesForOrganizationRequest extends StObject {
   
   /**
     * The locale (language) to return information in. English (en) is the default and the only supported value at this time.
@@ -36,42 +37,30 @@ object DescribeAffectedEntitiesForOrganizationRequest {
   }
   
   @scala.inline
-  implicit class DescribeAffectedEntitiesForOrganizationRequestOps[Self <: DescribeAffectedEntitiesForOrganizationRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAffectedEntitiesForOrganizationRequestMutableBuilder[Self <: DescribeAffectedEntitiesForOrganizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = this.set("organizationEntityFilters", js.Array(value :_*))
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setOrganizationEntityFilters(value: OrganizationEntityFiltersList): Self = this.set("organizationEntityFilters", value.asInstanceOf[js.Any])
+    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setOrganizationEntityFilters(value: OrganizationEntityFiltersList): Self = StObject.set(x, "organizationEntityFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: maxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: nextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEntityFilters", js.Array(value :_*))
   }
 }

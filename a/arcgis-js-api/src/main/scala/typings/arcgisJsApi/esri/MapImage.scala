@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.bmp
 import typings.arcgisJsApi.arcgisJsApiStrings.gif
 import typings.arcgisJsApi.arcgisJsApiStrings.jpg
 import typings.arcgisJsApi.arcgisJsApiStrings.png
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

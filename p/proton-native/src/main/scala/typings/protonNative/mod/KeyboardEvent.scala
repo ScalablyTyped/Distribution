@@ -1,11 +1,12 @@
 package typings.protonNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyboardEvent extends js.Object {
+trait KeyboardEvent extends StObject {
   
   var extKey: Double = js.native
   
@@ -24,30 +25,18 @@ object KeyboardEvent {
   }
   
   @scala.inline
-  implicit class KeyboardEventOps[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtKey(value: Double): Self = StObject.set(x, "extKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifierKey(value: Double): Self = StObject.set(x, "modifierKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtKey(value: Double): Self = this.set("extKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifierKey(value: Double): Self = this.set("modifierKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifiers(value: Double): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setModifiers(value: Double): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
   }
 }

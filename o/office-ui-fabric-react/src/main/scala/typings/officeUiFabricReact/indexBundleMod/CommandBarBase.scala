@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class CommandBarBase protected ()
   def this(props: ICommandBarProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "CommandBarBase")
-@js.native
-object CommandBarBase extends js.Object {
+object CommandBarBase {
   
-  var defaultProps: ICommandBarProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "CommandBarBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "CommandBarBase.defaultProps")
+  @js.native
+  def defaultProps: ICommandBarProps = js.native
+  @scala.inline
+  def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

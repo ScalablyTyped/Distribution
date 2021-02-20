@@ -27,13 +27,14 @@ import typings.winrtUwp.winrtUwpStrings.focuschanged
 import typings.winrtUwp.winrtUwpStrings.photoconfirmationcaptured
 import typings.winrtUwp.winrtUwpStrings.recordlimitationexceeded
 import typings.winrtUwp.winrtUwpStrings.thermalstatuschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for capturing photos, audio, and videos from a capture device, such as a webcam. */
 @js.native
-trait MediaCapture extends js.Object {
+trait MediaCapture extends StObject {
   
   /**
     * Adds an audio effect to the capture pipeline.

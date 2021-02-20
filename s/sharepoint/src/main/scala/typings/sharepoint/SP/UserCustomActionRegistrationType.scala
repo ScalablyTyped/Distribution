@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserCustomActionRegistrationType extends js.Object
+sealed trait UserCustomActionRegistrationType extends StObject
 @JSGlobal("SP.UserCustomActionRegistrationType")
 @js.native
-object UserCustomActionRegistrationType extends js.Object {
+object UserCustomActionRegistrationType extends StObject {
   
   @js.native
   sealed trait contentType extends UserCustomActionRegistrationType

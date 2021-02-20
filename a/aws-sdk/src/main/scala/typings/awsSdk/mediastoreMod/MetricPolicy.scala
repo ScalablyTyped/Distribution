@@ -1,11 +1,12 @@
 package typings.awsSdk.mediastoreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricPolicy extends js.Object {
+trait MetricPolicy extends StObject {
   
   /**
     * A setting to enable or disable metrics at the container level.
@@ -26,30 +27,18 @@ object MetricPolicy {
   }
   
   @scala.inline
-  implicit class MetricPolicyOps[Self <: MetricPolicy] (val x: Self) extends AnyVal {
+  implicit class MetricPolicyMutableBuilder[Self <: MetricPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerLevelMetrics(value: ContainerLevelMetrics): Self = StObject.set(x, "ContainerLevelMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricPolicyRules(value: MetricPolicyRules): Self = StObject.set(x, "MetricPolicyRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricPolicyRulesUndefined: Self = StObject.set(x, "MetricPolicyRules", js.undefined)
     
     @scala.inline
-    def setContainerLevelMetrics(value: ContainerLevelMetrics): Self = this.set("ContainerLevelMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = this.set("MetricPolicyRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetricPolicyRules(value: MetricPolicyRules): Self = this.set("MetricPolicyRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricPolicyRules: Self = this.set("MetricPolicyRules", js.undefined)
+    def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = StObject.set(x, "MetricPolicyRules", js.Array(value :_*))
   }
 }

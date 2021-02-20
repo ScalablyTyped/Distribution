@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateChapCredentialsInput extends js.Object {
+trait UpdateChapCredentialsInput extends StObject {
   
   /**
     * The iSCSI initiator that connects to the target.
@@ -36,33 +37,21 @@ object UpdateChapCredentialsInput {
   }
   
   @scala.inline
-  implicit class UpdateChapCredentialsInputOps[Self <: UpdateChapCredentialsInput] (val x: Self) extends AnyVal {
+  implicit class UpdateChapCredentialsInputMutableBuilder[Self <: UpdateChapCredentialsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecretToAuthenticateInitiator(value: ChapSecret): Self = StObject.set(x, "SecretToAuthenticateInitiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretToAuthenticateTarget(value: ChapSecret): Self = StObject.set(x, "SecretToAuthenticateTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiatorName(value: IqnName): Self = this.set("InitiatorName", value.asInstanceOf[js.Any])
+    def setSecretToAuthenticateTargetUndefined: Self = StObject.set(x, "SecretToAuthenticateTarget", js.undefined)
     
     @scala.inline
-    def setSecretToAuthenticateInitiator(value: ChapSecret): Self = this.set("SecretToAuthenticateInitiator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = this.set("TargetARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretToAuthenticateTarget(value: ChapSecret): Self = this.set("SecretToAuthenticateTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretToAuthenticateTarget: Self = this.set("SecretToAuthenticateTarget", js.undefined)
+    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.steamClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CMsgClientLogon extends js.Object {
+trait CMsgClientLogon extends StObject {
   
   /**
     * Your steam login
@@ -40,39 +41,27 @@ object CMsgClientLogon {
   }
   
   @scala.inline
-  implicit class CMsgClientLogonOps[Self <: CMsgClientLogon] (val x: Self) extends AnyVal {
+  implicit class CMsgClientLogonMutableBuilder[Self <: CMsgClientLogon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_name(value: String): Self = StObject.set(x, "account_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth_codeUndefined: Self = StObject.set(x, "auth_code", js.undefined)
     
     @scala.inline
-    def setAccount_name(value: String): Self = this.set("account_name", value.asInstanceOf[js.Any])
+    def setSha_sentryfile(value: String): Self = StObject.set(x, "sha_sentryfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_code(value: String): Self = this.set("auth_code", value.asInstanceOf[js.Any])
+    def setSha_sentryfileUndefined: Self = StObject.set(x, "sha_sentryfile", js.undefined)
     
     @scala.inline
-    def deleteAuth_code: Self = this.set("auth_code", js.undefined)
+    def setTwo_factor_code(value: String): Self = StObject.set(x, "two_factor_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha_sentryfile(value: String): Self = this.set("sha_sentryfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSha_sentryfile: Self = this.set("sha_sentryfile", js.undefined)
-    
-    @scala.inline
-    def setTwo_factor_code(value: String): Self = this.set("two_factor_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwo_factor_code: Self = this.set("two_factor_code", js.undefined)
+    def setTwo_factor_codeUndefined: Self = StObject.set(x, "two_factor_code", js.undefined)
   }
 }

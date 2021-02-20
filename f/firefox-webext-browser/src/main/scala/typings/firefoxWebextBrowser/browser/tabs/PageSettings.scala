@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the page settings to be used when saving a page as a pdf file. */
 @js.native
-trait PageSettings extends js.Object {
+trait PageSettings extends StObject {
   
   /** The spacing between the bottom of the footers and the bottom edge of the paper (inches). Default: 0. */
   var edgeBottom: js.UndefOr[Double] = js.native
@@ -86,156 +87,144 @@ object PageSettings {
   }
   
   @scala.inline
-  implicit class PageSettingsOps[Self <: PageSettings] (val x: Self) extends AnyVal {
+  implicit class PageSettingsMutableBuilder[Self <: PageSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdgeBottom(value: Double): Self = StObject.set(x, "edgeBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgeBottomUndefined: Self = StObject.set(x, "edgeBottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeLeft(value: Double): Self = StObject.set(x, "edgeLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeBottom(value: Double): Self = this.set("edgeBottom", value.asInstanceOf[js.Any])
+    def setEdgeLeftUndefined: Self = StObject.set(x, "edgeLeft", js.undefined)
     
     @scala.inline
-    def deleteEdgeBottom: Self = this.set("edgeBottom", js.undefined)
+    def setEdgeRight(value: Double): Self = StObject.set(x, "edgeRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeLeft(value: Double): Self = this.set("edgeLeft", value.asInstanceOf[js.Any])
+    def setEdgeRightUndefined: Self = StObject.set(x, "edgeRight", js.undefined)
     
     @scala.inline
-    def deleteEdgeLeft: Self = this.set("edgeLeft", js.undefined)
+    def setEdgeTop(value: Double): Self = StObject.set(x, "edgeTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeRight(value: Double): Self = this.set("edgeRight", value.asInstanceOf[js.Any])
+    def setEdgeTopUndefined: Self = StObject.set(x, "edgeTop", js.undefined)
     
     @scala.inline
-    def deleteEdgeRight: Self = this.set("edgeRight", js.undefined)
+    def setFooterCenter(value: String): Self = StObject.set(x, "footerCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeTop(value: Double): Self = this.set("edgeTop", value.asInstanceOf[js.Any])
+    def setFooterCenterUndefined: Self = StObject.set(x, "footerCenter", js.undefined)
     
     @scala.inline
-    def deleteEdgeTop: Self = this.set("edgeTop", js.undefined)
+    def setFooterLeft(value: String): Self = StObject.set(x, "footerLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterCenter(value: String): Self = this.set("footerCenter", value.asInstanceOf[js.Any])
+    def setFooterLeftUndefined: Self = StObject.set(x, "footerLeft", js.undefined)
     
     @scala.inline
-    def deleteFooterCenter: Self = this.set("footerCenter", js.undefined)
+    def setFooterRight(value: String): Self = StObject.set(x, "footerRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterLeft(value: String): Self = this.set("footerLeft", value.asInstanceOf[js.Any])
+    def setFooterRightUndefined: Self = StObject.set(x, "footerRight", js.undefined)
     
     @scala.inline
-    def deleteFooterLeft: Self = this.set("footerLeft", js.undefined)
+    def setHeaderCenter(value: String): Self = StObject.set(x, "headerCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterRight(value: String): Self = this.set("footerRight", value.asInstanceOf[js.Any])
+    def setHeaderCenterUndefined: Self = StObject.set(x, "headerCenter", js.undefined)
     
     @scala.inline
-    def deleteFooterRight: Self = this.set("footerRight", js.undefined)
+    def setHeaderLeft(value: String): Self = StObject.set(x, "headerLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCenter(value: String): Self = this.set("headerCenter", value.asInstanceOf[js.Any])
+    def setHeaderLeftUndefined: Self = StObject.set(x, "headerLeft", js.undefined)
     
     @scala.inline
-    def deleteHeaderCenter: Self = this.set("headerCenter", js.undefined)
+    def setHeaderRight(value: String): Self = StObject.set(x, "headerRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderLeft(value: String): Self = this.set("headerLeft", value.asInstanceOf[js.Any])
+    def setHeaderRightUndefined: Self = StObject.set(x, "headerRight", js.undefined)
     
     @scala.inline
-    def deleteHeaderLeft: Self = this.set("headerLeft", js.undefined)
+    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRight(value: String): Self = this.set("headerRight", value.asInstanceOf[js.Any])
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def deleteHeaderRight: Self = this.set("headerRight", js.undefined)
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: Double): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRight(value: Double): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setPaperHeight(value: Double): Self = StObject.set(x, "paperHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Double): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPaperHeightUndefined: Self = StObject.set(x, "paperHeight", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setPaperSizeUnit(value: Double): Self = StObject.set(x, "paperSizeUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperHeight(value: Double): Self = this.set("paperHeight", value.asInstanceOf[js.Any])
+    def setPaperSizeUnitUndefined: Self = StObject.set(x, "paperSizeUnit", js.undefined)
     
     @scala.inline
-    def deletePaperHeight: Self = this.set("paperHeight", js.undefined)
+    def setPaperWidth(value: Double): Self = StObject.set(x, "paperWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperSizeUnit(value: Double): Self = this.set("paperSizeUnit", value.asInstanceOf[js.Any])
+    def setPaperWidthUndefined: Self = StObject.set(x, "paperWidth", js.undefined)
     
     @scala.inline
-    def deletePaperSizeUnit: Self = this.set("paperSizeUnit", js.undefined)
+    def setScaling(value: Double): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperWidth(value: Double): Self = this.set("paperWidth", value.asInstanceOf[js.Any])
+    def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
     
     @scala.inline
-    def deletePaperWidth: Self = this.set("paperWidth", js.undefined)
+    def setShowBackgroundColors(value: Boolean): Self = StObject.set(x, "showBackgroundColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaling(value: Double): Self = this.set("scaling", value.asInstanceOf[js.Any])
+    def setShowBackgroundColorsUndefined: Self = StObject.set(x, "showBackgroundColors", js.undefined)
     
     @scala.inline
-    def deleteScaling: Self = this.set("scaling", js.undefined)
+    def setShowBackgroundImages(value: Boolean): Self = StObject.set(x, "showBackgroundImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBackgroundColors(value: Boolean): Self = this.set("showBackgroundColors", value.asInstanceOf[js.Any])
+    def setShowBackgroundImagesUndefined: Self = StObject.set(x, "showBackgroundImages", js.undefined)
     
     @scala.inline
-    def deleteShowBackgroundColors: Self = this.set("showBackgroundColors", js.undefined)
+    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBackgroundImages(value: Boolean): Self = this.set("showBackgroundImages", value.asInstanceOf[js.Any])
+    def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
     
     @scala.inline
-    def deleteShowBackgroundImages: Self = this.set("showBackgroundImages", js.undefined)
+    def setToFileName(value: String): Self = StObject.set(x, "toFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShrinkToFit(value: Boolean): Self = this.set("shrinkToFit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShrinkToFit: Self = this.set("shrinkToFit", js.undefined)
-    
-    @scala.inline
-    def setToFileName(value: String): Self = this.set("toFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToFileName: Self = this.set("toFileName", js.undefined)
+    def setToFileNameUndefined: Self = StObject.set(x, "toFileName", js.undefined)
   }
 }

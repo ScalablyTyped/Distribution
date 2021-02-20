@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirewallManagerRuleGroup extends js.Object {
+trait FirewallManagerRuleGroup extends StObject {
   
   /**
     * The processing guidance for an AWS Firewall Manager rule. This is like a regular rule Statement, but it can only contain a rule group reference.
@@ -41,33 +42,21 @@ object FirewallManagerRuleGroup {
   }
   
   @scala.inline
-  implicit class FirewallManagerRuleGroupOps[Self <: FirewallManagerRuleGroup] (val x: Self) extends AnyVal {
+  implicit class FirewallManagerRuleGroupMutableBuilder[Self <: FirewallManagerRuleGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewallManagerStatement(value: FirewallManagerStatement): Self = StObject.set(x, "FirewallManagerStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrideAction(value: OverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallManagerStatement(value: FirewallManagerStatement): Self = this.set("FirewallManagerStatement", value.asInstanceOf[js.Any])
+    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverrideAction(value: OverrideAction): Self = this.set("OverrideAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriority(value: RulePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+    def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
   }
 }

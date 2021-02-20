@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFPermission
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccessControlEntryData extends js.Object {
+trait IAccessControlEntryData extends StObject {
   
   var AttachObjectsPermission: MFPermission = js.native
   
@@ -39,39 +40,27 @@ object IAccessControlEntryData {
   }
   
   @scala.inline
-  implicit class IAccessControlEntryDataOps[Self <: IAccessControlEntryData] (val x: Self) extends AnyVal {
+  implicit class IAccessControlEntryDataMutableBuilder[Self <: IAccessControlEntryData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachObjectsPermission(value: MFPermission): Self = StObject.set(x, "AttachObjectsPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone(value: () => IAccessControlEntryData): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachObjectsPermission(value: MFPermission): Self = this.set("AttachObjectsPermission", value.asInstanceOf[js.Any])
+    def setDeletePermission(value: MFPermission): Self = StObject.set(x, "DeletePermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangePermissionsPermission(value: MFPermission): Self = this.set("ChangePermissionsPermission", value.asInstanceOf[js.Any])
+    def setEditPermission(value: MFPermission): Self = StObject.set(x, "EditPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IAccessControlEntryData): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setReadPermission(value: MFPermission): Self = StObject.set(x, "ReadPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePermission(value: MFPermission): Self = this.set("DeletePermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditPermission(value: MFPermission): Self = this.set("EditPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadPermission(value: MFPermission): Self = this.set("ReadPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetAllPermissions(value: MFPermission => Unit): Self = this.set("SetAllPermissions", js.Any.fromFunction1(value))
+    def setSetAllPermissions(value: MFPermission => Unit): Self = StObject.set(x, "SetAllPermissions", js.Any.fromFunction1(value))
   }
 }

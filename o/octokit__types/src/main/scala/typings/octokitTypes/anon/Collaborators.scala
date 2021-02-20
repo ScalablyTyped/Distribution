@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collaborators extends js.Object {
+trait Collaborators extends StObject {
   
   var collaborators: Double = js.native
   
@@ -24,30 +25,18 @@ object Collaborators {
   }
   
   @scala.inline
-  implicit class CollaboratorsOps[Self <: Collaborators] (val x: Self) extends AnyVal {
+  implicit class CollaboratorsMutableBuilder[Self <: Collaborators] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivate_repos(value: Double): Self = StObject.set(x, "private_repos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollaborators(value: Double): Self = this.set("collaborators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate_repos(value: Double): Self = this.set("private_repos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpace(value: Double): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
   }
 }

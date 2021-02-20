@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.task
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserRecord extends js.Object {
+trait UserRecord extends StObject {
   
   var Passwords: SafeArray[String] = js.native
   
@@ -21,24 +22,12 @@ object UserRecord {
   }
   
   @scala.inline
-  implicit class UserRecordOps[Self <: UserRecord] (val x: Self) extends AnyVal {
+  implicit class UserRecordMutableBuilder[Self <: UserRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPasswords(value: SafeArray[String]): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPasswords(value: SafeArray[String]): Self = this.set("Passwords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

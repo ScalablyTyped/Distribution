@@ -1,11 +1,12 @@
 package typings.tizenTvWebapis.avplayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AVPlaySubtitleAttribute extends js.Object {
+trait AVPlaySubtitleAttribute extends StObject {
   
   var attr_type: String = js.native
   
@@ -22,27 +23,15 @@ object AVPlaySubtitleAttribute {
   }
   
   @scala.inline
-  implicit class AVPlaySubtitleAttributeOps[Self <: AVPlaySubtitleAttribute] (val x: Self) extends AnyVal {
+  implicit class AVPlaySubtitleAttributeMutableBuilder[Self <: AVPlaySubtitleAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr_type(value: String): Self = StObject.set(x, "attr_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStart_pos(value: Double): Self = StObject.set(x, "start_pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttr_type(value: String): Self = this.set("attr_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_pos(value: Double): Self = this.set("start_pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop_pos(value: Double): Self = this.set("stop_pos", value.asInstanceOf[js.Any])
+    def setStop_pos(value: Double): Self = StObject.set(x, "stop_pos", value.asInstanceOf[js.Any])
   }
 }

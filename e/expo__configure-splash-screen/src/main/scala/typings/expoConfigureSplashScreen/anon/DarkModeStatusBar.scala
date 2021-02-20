@@ -1,11 +1,12 @@
 package typings.expoConfigureSplashScreen.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DarkModeStatusBar extends js.Object {
+trait DarkModeStatusBar extends StObject {
   
   var darkMode: js.UndefOr[`5`] = js.native
   
@@ -20,30 +21,18 @@ object DarkModeStatusBar {
   }
   
   @scala.inline
-  implicit class DarkModeStatusBarOps[Self <: DarkModeStatusBar] (val x: Self) extends AnyVal {
+  implicit class DarkModeStatusBarMutableBuilder[Self <: DarkModeStatusBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDarkMode(value: `5`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusBar(value: BackgroundColorHidden): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarkMode(value: `5`): Self = this.set("darkMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDarkMode: Self = this.set("darkMode", js.undefined)
-    
-    @scala.inline
-    def setStatusBar(value: BackgroundColorHidden): Self = this.set("statusBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusBar: Self = this.set("statusBar", js.undefined)
+    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
   }
 }

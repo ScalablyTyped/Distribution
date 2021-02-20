@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineSummary extends js.Object {
+trait PipelineSummary extends StObject {
   
   /**
     * When the pipeline was created.
@@ -36,45 +37,33 @@ object PipelineSummary {
   }
   
   @scala.inline
-  implicit class PipelineSummaryOps[Self <: PipelineSummary] (val x: Self) extends AnyVal {
+  implicit class PipelineSummaryMutableBuilder[Self <: PipelineSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    def setReprocessingSummaries(value: ReprocessingSummaries): Self = StObject.set(x, "reprocessingSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    def setReprocessingSummariesUndefined: Self = StObject.set(x, "reprocessingSummaries", js.undefined)
     
     @scala.inline
-    def deletePipelineName: Self = this.set("pipelineName", js.undefined)
-    
-    @scala.inline
-    def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = this.set("reprocessingSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setReprocessingSummaries(value: ReprocessingSummaries): Self = this.set("reprocessingSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReprocessingSummaries: Self = this.set("reprocessingSummaries", js.undefined)
+    def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = StObject.set(x, "reprocessingSummaries", js.Array(value :_*))
   }
 }

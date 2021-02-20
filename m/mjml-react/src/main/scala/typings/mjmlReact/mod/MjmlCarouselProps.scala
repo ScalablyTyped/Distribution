@@ -5,12 +5,13 @@ import typings.csstype.mod.BorderProperty
 import typings.csstype.mod.BorderRadiusProperty
 import typings.mjmlReact.mjmlReactStrings.hidden
 import typings.mjmlReact.mjmlReactStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MjmlCarouselProps extends js.Object {
+trait MjmlCarouselProps extends StObject {
   
   var align: js.UndefOr[String] = js.native
   
@@ -45,90 +46,78 @@ object MjmlCarouselProps {
   }
   
   @scala.inline
-  implicit class MjmlCarouselPropsOps[Self <: MjmlCarouselProps] (val x: Self) extends AnyVal {
+  implicit class MjmlCarouselPropsMutableBuilder[Self <: MjmlCarouselProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: BackgroundColorProperty): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setIconWidth(value: String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: String | Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setLeftIcon(value: String): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconWidth(value: String): Self = this.set("iconWidth", value.asInstanceOf[js.Any])
+    def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
     
     @scala.inline
-    def deleteIconWidth: Self = this.set("iconWidth", js.undefined)
+    def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIcon(value: String): Self = this.set("leftIcon", value.asInstanceOf[js.Any])
+    def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
     
     @scala.inline
-    def deleteLeftIcon: Self = this.set("leftIcon", js.undefined)
+    def setTbBorder(value: BorderProperty[String | Double]): Self = StObject.set(x, "tbBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIcon(value: String): Self = this.set("rightIcon", value.asInstanceOf[js.Any])
+    def setTbBorderRadius(value: BorderRadiusProperty[String | Double]): Self = StObject.set(x, "tbBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRightIcon: Self = this.set("rightIcon", js.undefined)
+    def setTbBorderRadiusUndefined: Self = StObject.set(x, "tbBorderRadius", js.undefined)
     
     @scala.inline
-    def setTbBorder(value: BorderProperty[String | Double]): Self = this.set("tbBorder", value.asInstanceOf[js.Any])
+    def setTbBorderUndefined: Self = StObject.set(x, "tbBorder", js.undefined)
     
     @scala.inline
-    def deleteTbBorder: Self = this.set("tbBorder", js.undefined)
+    def setTbHoverBorderColor(value: String): Self = StObject.set(x, "tbHoverBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbBorderRadius(value: BorderRadiusProperty[String | Double]): Self = this.set("tbBorderRadius", value.asInstanceOf[js.Any])
+    def setTbHoverBorderColorUndefined: Self = StObject.set(x, "tbHoverBorderColor", js.undefined)
     
     @scala.inline
-    def deleteTbBorderRadius: Self = this.set("tbBorderRadius", js.undefined)
+    def setTbSelectedBorderColor(value: String): Self = StObject.set(x, "tbSelectedBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbHoverBorderColor(value: String): Self = this.set("tbHoverBorderColor", value.asInstanceOf[js.Any])
+    def setTbSelectedBorderColorUndefined: Self = StObject.set(x, "tbSelectedBorderColor", js.undefined)
     
     @scala.inline
-    def deleteTbHoverBorderColor: Self = this.set("tbHoverBorderColor", js.undefined)
+    def setTbWidth(value: String): Self = StObject.set(x, "tbWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbSelectedBorderColor(value: String): Self = this.set("tbSelectedBorderColor", value.asInstanceOf[js.Any])
+    def setTbWidthUndefined: Self = StObject.set(x, "tbWidth", js.undefined)
     
     @scala.inline
-    def deleteTbSelectedBorderColor: Self = this.set("tbSelectedBorderColor", js.undefined)
+    def setThumbnails(value: hidden | visible): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbWidth(value: String): Self = this.set("tbWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTbWidth: Self = this.set("tbWidth", js.undefined)
-    
-    @scala.inline
-    def setThumbnails(value: hidden | visible): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
   }
 }

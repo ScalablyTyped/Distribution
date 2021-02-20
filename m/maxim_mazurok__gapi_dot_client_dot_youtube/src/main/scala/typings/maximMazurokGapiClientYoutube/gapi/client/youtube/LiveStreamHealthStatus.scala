@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveStreamHealthStatus extends js.Object {
+trait LiveStreamHealthStatus extends StObject {
   
   /** The configurations issues on this stream */
   var configurationIssues: js.UndefOr[js.Array[LiveStreamConfigurationIssue]] = js.native
@@ -25,39 +26,27 @@ object LiveStreamHealthStatus {
   }
   
   @scala.inline
-  implicit class LiveStreamHealthStatusOps[Self <: LiveStreamHealthStatus] (val x: Self) extends AnyVal {
+  implicit class LiveStreamHealthStatusMutableBuilder[Self <: LiveStreamHealthStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationIssues(value: js.Array[LiveStreamConfigurationIssue]): Self = StObject.set(x, "configurationIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationIssuesUndefined: Self = StObject.set(x, "configurationIssues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = this.set("configurationIssues", js.Array(value :_*))
+    def setLastUpdateTimeSeconds(value: String): Self = StObject.set(x, "lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationIssues(value: js.Array[LiveStreamConfigurationIssue]): Self = this.set("configurationIssues", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeSecondsUndefined: Self = StObject.set(x, "lastUpdateTimeSeconds", js.undefined)
     
     @scala.inline
-    def deleteConfigurationIssues: Self = this.set("configurationIssues", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTimeSeconds(value: String): Self = this.set("lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateTimeSeconds: Self = this.set("lastUpdateTimeSeconds", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

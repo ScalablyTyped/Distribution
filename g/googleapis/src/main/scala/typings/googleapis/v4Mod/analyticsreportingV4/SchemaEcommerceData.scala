@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * E-commerce details associated with the user activity.
   */
 @js.native
-trait SchemaEcommerceData extends js.Object {
+trait SchemaEcommerceData extends StObject {
   
   /**
     * Action associated with this e-commerce action.
@@ -39,45 +40,33 @@ object SchemaEcommerceData {
   }
   
   @scala.inline
-  implicit class SchemaEcommerceDataOps[Self <: SchemaEcommerceData] (val x: Self) extends AnyVal {
+  implicit class SchemaEcommerceDataMutableBuilder[Self <: SchemaEcommerceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEcommerceType(value: String): Self = StObject.set(x, "ecommerceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: String): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setEcommerceTypeUndefined: Self = StObject.set(x, "ecommerceType", js.undefined)
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setProducts(value: js.Array[SchemaProductData]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcommerceType(value: String): Self = this.set("ecommerceType", value.asInstanceOf[js.Any])
+    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     @scala.inline
-    def deleteEcommerceType: Self = this.set("ecommerceType", js.undefined)
+    def setProductsVarargs(value: SchemaProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
     
     @scala.inline
-    def setProductsVarargs(value: SchemaProductData*): Self = this.set("products", js.Array(value :_*))
+    def setTransaction(value: SchemaTransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducts(value: js.Array[SchemaProductData]): Self = this.set("products", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducts: Self = this.set("products", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: SchemaTransactionData): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

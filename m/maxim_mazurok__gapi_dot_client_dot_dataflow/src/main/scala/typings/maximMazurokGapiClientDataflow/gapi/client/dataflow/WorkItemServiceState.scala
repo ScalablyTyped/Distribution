@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemServiceState extends js.Object {
+trait WorkItemServiceState extends StObject {
   
   /**
     * If set, a request to complete the work item with the given status. This will not be set to OK, unless supported by the specific kind of WorkItem. It can be used for the backend to
@@ -60,85 +61,73 @@ object WorkItemServiceState {
   }
   
   @scala.inline
-  implicit class WorkItemServiceStateOps[Self <: WorkItemServiceState] (val x: Self) extends AnyVal {
+  implicit class WorkItemServiceStateMutableBuilder[Self <: WorkItemServiceState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleteWorkStatus(value: Status): Self = StObject.set(x, "completeWorkStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompleteWorkStatus(value: Status): Self = this.set("completeWorkStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompleteWorkStatus: Self = this.set("completeWorkStatus", js.undefined)
+    def setCompleteWorkStatusUndefined: Self = StObject.set(x, "completeWorkStatus", js.undefined)
     
     @scala.inline
     def setHarnessData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState with TopLevel[js.Any]
-    ): Self = this.set("harnessData", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "harnessData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHarnessData: Self = this.set("harnessData", js.undefined)
+    def setHarnessDataUndefined: Self = StObject.set(x, "harnessData", js.undefined)
     
     @scala.inline
-    def setHotKeyDetection(value: HotKeyDetection): Self = this.set("hotKeyDetection", value.asInstanceOf[js.Any])
+    def setHotKeyDetection(value: HotKeyDetection): Self = StObject.set(x, "hotKeyDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHotKeyDetection: Self = this.set("hotKeyDetection", js.undefined)
+    def setHotKeyDetectionUndefined: Self = StObject.set(x, "hotKeyDetection", js.undefined)
     
     @scala.inline
-    def setLeaseExpireTime(value: String): Self = this.set("leaseExpireTime", value.asInstanceOf[js.Any])
+    def setLeaseExpireTime(value: String): Self = StObject.set(x, "leaseExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeaseExpireTime: Self = this.set("leaseExpireTime", js.undefined)
+    def setLeaseExpireTimeUndefined: Self = StObject.set(x, "leaseExpireTime", js.undefined)
     
     @scala.inline
-    def setMetricShortIdVarargs(value: MetricShortId*): Self = this.set("metricShortId", js.Array(value :_*))
+    def setMetricShortId(value: js.Array[MetricShortId]): Self = StObject.set(x, "metricShortId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricShortId(value: js.Array[MetricShortId]): Self = this.set("metricShortId", value.asInstanceOf[js.Any])
+    def setMetricShortIdUndefined: Self = StObject.set(x, "metricShortId", js.undefined)
     
     @scala.inline
-    def deleteMetricShortId: Self = this.set("metricShortId", js.undefined)
+    def setMetricShortIdVarargs(value: MetricShortId*): Self = StObject.set(x, "metricShortId", js.Array(value :_*))
     
     @scala.inline
-    def setNextReportIndex(value: String): Self = this.set("nextReportIndex", value.asInstanceOf[js.Any])
+    def setNextReportIndex(value: String): Self = StObject.set(x, "nextReportIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextReportIndex: Self = this.set("nextReportIndex", js.undefined)
+    def setNextReportIndexUndefined: Self = StObject.set(x, "nextReportIndex", js.undefined)
     
     @scala.inline
-    def setReportStatusInterval(value: String): Self = this.set("reportStatusInterval", value.asInstanceOf[js.Any])
+    def setReportStatusInterval(value: String): Self = StObject.set(x, "reportStatusInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReportStatusInterval: Self = this.set("reportStatusInterval", js.undefined)
+    def setReportStatusIntervalUndefined: Self = StObject.set(x, "reportStatusInterval", js.undefined)
     
     @scala.inline
-    def setSplitRequest(value: ApproximateSplitRequest): Self = this.set("splitRequest", value.asInstanceOf[js.Any])
+    def setSplitRequest(value: ApproximateSplitRequest): Self = StObject.set(x, "splitRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSplitRequest: Self = this.set("splitRequest", js.undefined)
+    def setSplitRequestUndefined: Self = StObject.set(x, "splitRequest", js.undefined)
     
     @scala.inline
-    def setSuggestedStopPoint(value: ApproximateProgress): Self = this.set("suggestedStopPoint", value.asInstanceOf[js.Any])
+    def setSuggestedStopPoint(value: ApproximateProgress): Self = StObject.set(x, "suggestedStopPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedStopPoint: Self = this.set("suggestedStopPoint", js.undefined)
+    def setSuggestedStopPointUndefined: Self = StObject.set(x, "suggestedStopPoint", js.undefined)
     
     @scala.inline
-    def setSuggestedStopPosition(value: Position): Self = this.set("suggestedStopPosition", value.asInstanceOf[js.Any])
+    def setSuggestedStopPosition(value: Position): Self = StObject.set(x, "suggestedStopPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedStopPosition: Self = this.set("suggestedStopPosition", js.undefined)
+    def setSuggestedStopPositionUndefined: Self = StObject.set(x, "suggestedStopPosition", js.undefined)
   }
 }

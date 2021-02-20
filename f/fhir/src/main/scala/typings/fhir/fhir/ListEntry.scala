@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,51 +50,39 @@ object ListEntry {
   }
   
   @scala.inline
-  implicit class ListEntryOps[Self <: ListEntry] (val x: Self) extends AnyVal {
+  implicit class ListEntryMutableBuilder[Self <: ListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: Reference): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setFlag(value: CodeableConcept): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
     @scala.inline
-    def set_deleted(value: Element): Self = this.set("_deleted", value.asInstanceOf[js.Any])
+    def setItem(value: Reference): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_deleted: Self = this.set("_deleted", js.undefined)
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def set_deleted(value: Element): Self = StObject.set(x, "_deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
-    
-    @scala.inline
-    def setFlag(value: CodeableConcept): Self = this.set("flag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlag: Self = this.set("flag", js.undefined)
+    def set_deletedUndefined: Self = StObject.set(x, "_deleted", js.undefined)
   }
 }

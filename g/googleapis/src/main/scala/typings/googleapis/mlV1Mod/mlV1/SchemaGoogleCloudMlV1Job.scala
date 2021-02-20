@@ -1,6 +1,7 @@
 package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a training, prediction or explanation job.
   */
 @js.native
-trait SchemaGoogleCloudMlV1Job extends js.Object {
+trait SchemaGoogleCloudMlV1Job extends StObject {
   
   /**
     * Output only. When the job was created.
@@ -91,90 +92,78 @@ object SchemaGoogleCloudMlV1Job {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudMlV1JobOps[Self <: SchemaGoogleCloudMlV1Job] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudMlV1JobMutableBuilder[Self <: SchemaGoogleCloudMlV1Job] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setPredictionInput(value: SchemaGoogleCloudMlV1PredictionInput): Self = StObject.set(x, "predictionInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setPredictionInputUndefined: Self = StObject.set(x, "predictionInput", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setPredictionOutput(value: SchemaGoogleCloudMlV1PredictionOutput): Self = StObject.set(x, "predictionOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredictionInput(value: SchemaGoogleCloudMlV1PredictionInput): Self = this.set("predictionInput", value.asInstanceOf[js.Any])
+    def setPredictionOutputUndefined: Self = StObject.set(x, "predictionOutput", js.undefined)
     
     @scala.inline
-    def deletePredictionInput: Self = this.set("predictionInput", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredictionOutput(value: SchemaGoogleCloudMlV1PredictionOutput): Self = this.set("predictionOutput", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deletePredictionOutput: Self = this.set("predictionOutput", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTrainingInput(value: SchemaGoogleCloudMlV1TrainingInput): Self = StObject.set(x, "trainingInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTrainingInputUndefined: Self = StObject.set(x, "trainingInput", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTrainingOutput(value: SchemaGoogleCloudMlV1TrainingOutput): Self = StObject.set(x, "trainingOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingInput(value: SchemaGoogleCloudMlV1TrainingInput): Self = this.set("trainingInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingInput: Self = this.set("trainingInput", js.undefined)
-    
-    @scala.inline
-    def setTrainingOutput(value: SchemaGoogleCloudMlV1TrainingOutput): Self = this.set("trainingOutput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingOutput: Self = this.set("trainingOutput", js.undefined)
+    def setTrainingOutputUndefined: Self = StObject.set(x, "trainingOutput", js.undefined)
   }
 }

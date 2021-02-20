@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/julia", JSImport.Namespace)
-@js.native
-object prismJuliaMod extends js.Object {
+object prismJuliaMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/julia", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * mirrored.
   */
 @js.native
-trait HoriOrientationFormat extends js.Object {
+trait HoriOrientationFormat extends StObject {
   
   /** determines the horizontal alignment of an object. The values refer to com::sun::star::HoriOrientation. */
   var HorizontalOrientation: Double = js.native
@@ -40,30 +41,18 @@ object HoriOrientationFormat {
   }
   
   @scala.inline
-  implicit class HoriOrientationFormatOps[Self <: HoriOrientationFormat] (val x: Self) extends AnyVal {
+  implicit class HoriOrientationFormatMutableBuilder[Self <: HoriOrientationFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontalOrientation(value: Double): Self = StObject.set(x, "HorizontalOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalRelation(value: Double): Self = StObject.set(x, "HorizontalRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositionToggle(value: Boolean): Self = StObject.set(x, "PositionToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalOrientation(value: Double): Self = this.set("HorizontalOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontalRelation(value: Double): Self = this.set("HorizontalRelation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionToggle(value: Boolean): Self = this.set("PositionToggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXPos(value: Double): Self = this.set("XPos", value.asInstanceOf[js.Any])
+    def setXPos(value: Double): Self = StObject.set(x, "XPos", value.asInstanceOf[js.Any])
   }
 }

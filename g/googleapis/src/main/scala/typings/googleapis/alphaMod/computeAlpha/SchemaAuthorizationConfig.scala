@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * control for a service.
   */
 @js.native
-trait SchemaAuthorizationConfig extends js.Object {
+trait SchemaAuthorizationConfig extends StObject {
   
   /**
     * List of RbacPolicies.
@@ -25,27 +26,15 @@ object SchemaAuthorizationConfig {
   }
   
   @scala.inline
-  implicit class SchemaAuthorizationConfigOps[Self <: SchemaAuthorizationConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthorizationConfigMutableBuilder[Self <: SchemaAuthorizationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicies(value: js.Array[SchemaRbacPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPoliciesVarargs(value: SchemaRbacPolicy*): Self = this.set("policies", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicies(value: js.Array[SchemaRbacPolicy]): Self = this.set("policies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicies: Self = this.set("policies", js.undefined)
+    def setPoliciesVarargs(value: SchemaRbacPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

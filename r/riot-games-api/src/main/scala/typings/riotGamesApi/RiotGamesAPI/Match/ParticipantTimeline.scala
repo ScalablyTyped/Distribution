@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticipantTimeline extends js.Object {
+trait ParticipantTimeline extends StObject {
   
   var ancientGolemAssistsPerMinCounts: ParticipantTimelineData = js.native
   
@@ -98,99 +99,87 @@ object ParticipantTimeline {
   }
   
   @scala.inline
-  implicit class ParticipantTimelineOps[Self <: ParticipantTimeline] (val x: Self) extends AnyVal {
+  implicit class ParticipantTimelineMutableBuilder[Self <: ParticipantTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAncientGolemAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "ancientGolemAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAncientGolemKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "ancientGolemKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssistedLaneDeathsPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "assistedLaneDeathsPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncientGolemAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("ancientGolemAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setAssistedLaneKillsPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "assistedLaneKillsPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncientGolemKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("ancientGolemKillsPerMinCounts", value.asInstanceOf[js.Any])
+    def setBaronAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "baronAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssistedLaneDeathsPerMinDeltas(value: ParticipantTimelineData): Self = this.set("assistedLaneDeathsPerMinDeltas", value.asInstanceOf[js.Any])
+    def setBaronKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "baronKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssistedLaneKillsPerMinDeltas(value: ParticipantTimelineData): Self = this.set("assistedLaneKillsPerMinDeltas", value.asInstanceOf[js.Any])
+    def setCreepsPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "creepsPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaronAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("baronAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setCsDiffPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "csDiffPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaronKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("baronKillsPerMinCounts", value.asInstanceOf[js.Any])
+    def setDamageTakenDiffPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "damageTakenDiffPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreepsPerMinDeltas(value: ParticipantTimelineData): Self = this.set("creepsPerMinDeltas", value.asInstanceOf[js.Any])
+    def setDamageTakenPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "damageTakenPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsDiffPerMinDeltas(value: ParticipantTimelineData): Self = this.set("csDiffPerMinDeltas", value.asInstanceOf[js.Any])
+    def setDragonAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "dragonAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDamageTakenDiffPerMinDeltas(value: ParticipantTimelineData): Self = this.set("damageTakenDiffPerMinDeltas", value.asInstanceOf[js.Any])
+    def setDragonKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "dragonKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDamageTakenPerMinDeltas(value: ParticipantTimelineData): Self = this.set("damageTakenPerMinDeltas", value.asInstanceOf[js.Any])
+    def setElderLizardAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "elderLizardAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragonAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("dragonAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setElderLizardKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "elderLizardKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragonKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("dragonKillsPerMinCounts", value.asInstanceOf[js.Any])
+    def setGoldPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "goldPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElderLizardAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("elderLizardAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setInhibitorAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "inhibitorAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElderLizardKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("elderLizardKillsPerMinCounts", value.asInstanceOf[js.Any])
+    def setInhibitorKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "inhibitorKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoldPerMinDeltas(value: ParticipantTimelineData): Self = this.set("goldPerMinDeltas", value.asInstanceOf[js.Any])
+    def setLane(value: String): Self = StObject.set(x, "lane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInhibitorAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("inhibitorAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInhibitorKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("inhibitorKillsPerMinCounts", value.asInstanceOf[js.Any])
+    def setTowerAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "towerAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLane(value: String): Self = this.set("lane", value.asInstanceOf[js.Any])
+    def setTowerKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "towerKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setTowerKillsPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "towerKillsPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTowerAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("towerAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setVilemawAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "vilemawAssistsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTowerKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("towerKillsPerMinCounts", value.asInstanceOf[js.Any])
+    def setVilemawKillsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "vilemawKillsPerMinCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTowerKillsPerMinDeltas(value: ParticipantTimelineData): Self = this.set("towerKillsPerMinDeltas", value.asInstanceOf[js.Any])
+    def setWardsPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "wardsPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVilemawAssistsPerMinCounts(value: ParticipantTimelineData): Self = this.set("vilemawAssistsPerMinCounts", value.asInstanceOf[js.Any])
+    def setXpDiffPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "xpDiffPerMinDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVilemawKillsPerMinCounts(value: ParticipantTimelineData): Self = this.set("vilemawKillsPerMinCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWardsPerMinDeltas(value: ParticipantTimelineData): Self = this.set("wardsPerMinDeltas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXpDiffPerMinDeltas(value: ParticipantTimelineData): Self = this.set("xpDiffPerMinDeltas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXpPerMinDeltas(value: ParticipantTimelineData): Self = this.set("xpPerMinDeltas", value.asInstanceOf[js.Any])
+    def setXpPerMinDeltas(value: ParticipantTimelineData): Self = StObject.set(x, "xpPerMinDeltas", value.asInstanceOf[js.Any])
   }
 }

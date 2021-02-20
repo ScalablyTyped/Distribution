@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFirewallResponse extends js.Object {
+trait CreateFirewallResponse extends StObject {
   
   /**
     * The configuration settings for the firewall. These settings include the firewall policy and the subnets in your VPC to use for the firewall endpoints. 
@@ -26,30 +27,18 @@ object CreateFirewallResponse {
   }
   
   @scala.inline
-  implicit class CreateFirewallResponseOps[Self <: CreateFirewallResponse] (val x: Self) extends AnyVal {
+  implicit class CreateFirewallResponseMutableBuilder[Self <: CreateFirewallResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewall(value: Firewall): Self = StObject.set(x, "Firewall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirewallStatus(value: FirewallStatus): Self = StObject.set(x, "FirewallStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirewallStatusUndefined: Self = StObject.set(x, "FirewallStatus", js.undefined)
     
     @scala.inline
-    def setFirewall(value: Firewall): Self = this.set("Firewall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirewall: Self = this.set("Firewall", js.undefined)
-    
-    @scala.inline
-    def setFirewallStatus(value: FirewallStatus): Self = this.set("FirewallStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirewallStatus: Self = this.set("FirewallStatus", js.undefined)
+    def setFirewallUndefined: Self = StObject.set(x, "Firewall", js.undefined)
   }
 }

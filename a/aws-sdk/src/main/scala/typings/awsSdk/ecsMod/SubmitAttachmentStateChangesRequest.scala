@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitAttachmentStateChangesRequest extends js.Object {
+trait SubmitAttachmentStateChangesRequest extends StObject {
   
   /**
     * Any attachments associated with the state change request.
@@ -26,30 +27,18 @@ object SubmitAttachmentStateChangesRequest {
   }
   
   @scala.inline
-  implicit class SubmitAttachmentStateChangesRequestOps[Self <: SubmitAttachmentStateChangesRequest] (val x: Self) extends AnyVal {
+  implicit class SubmitAttachmentStateChangesRequestMutableBuilder[Self <: SubmitAttachmentStateChangesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: AttachmentStateChanges): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: AttachmentStateChange*): Self = this.set("attachments", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttachments(value: AttachmentStateChanges): Self = this.set("attachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
   }
 }

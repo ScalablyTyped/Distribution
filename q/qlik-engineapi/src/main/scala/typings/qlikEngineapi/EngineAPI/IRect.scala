@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Rect...
   */
 @js.native
-trait IRect extends js.Object {
+trait IRect extends StObject {
   
   /**
     * Number of rows or elements in the page. The indexing of the rows may vary depending on whether the cells are
@@ -43,30 +44,18 @@ object IRect {
   }
   
   @scala.inline
-  implicit class IRectOps[Self <: IRect] (val x: Self) extends AnyVal {
+  implicit class IRectMutableBuilder[Self <: IRect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQLeft(value: Double): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQTop(value: Double): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHeight(value: Double): Self = this.set("qHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLeft(value: Double): Self = this.set("qLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTop(value: Double): Self = this.set("qTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQWidth(value: Double): Self = this.set("qWidth", value.asInstanceOf[js.Any])
+    def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
   }
 }

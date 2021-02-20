@@ -2,12 +2,13 @@ package typings.agGrid.anon
 
 import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeepWithinBounds extends js.Object {
+trait KeepWithinBounds extends StObject {
   
   var column: typings.agGrid.columnMod.Column = js.native
   
@@ -43,57 +44,45 @@ object KeepWithinBounds {
   }
   
   @scala.inline
-  implicit class KeepWithinBoundsOps[Self <: KeepWithinBounds] (val x: Self) extends AnyVal {
+  implicit class KeepWithinBoundsMutableBuilder[Self <: KeepWithinBounds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: typings.agGrid.columnMod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEPopup(value: HTMLElement): Self = StObject.set(x, "ePopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventSource(value: HTMLElement): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: typings.agGrid.columnMod.Column): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setKeepWithinBounds(value: Boolean): Self = StObject.set(x, "keepWithinBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEPopup(value: HTMLElement): Self = this.set("ePopup", value.asInstanceOf[js.Any])
+    def setKeepWithinBoundsUndefined: Self = StObject.set(x, "keepWithinBounds", js.undefined)
     
     @scala.inline
-    def setEventSource(value: HTMLElement): Self = this.set("eventSource", value.asInstanceOf[js.Any])
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowNode(value: RowNode): Self = this.set("rowNode", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNudgeX(value: Double): Self = StObject.set(x, "nudgeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepWithinBounds(value: Boolean): Self = this.set("keepWithinBounds", value.asInstanceOf[js.Any])
+    def setNudgeXUndefined: Self = StObject.set(x, "nudgeX", js.undefined)
     
     @scala.inline
-    def deleteKeepWithinBounds: Self = this.set("keepWithinBounds", js.undefined)
+    def setNudgeY(value: Double): Self = StObject.set(x, "nudgeY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setNudgeYUndefined: Self = StObject.set(x, "nudgeY", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNudgeX(value: Double): Self = this.set("nudgeX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNudgeX: Self = this.set("nudgeX", js.undefined)
-    
-    @scala.inline
-    def setNudgeY(value: Double): Self = this.set("nudgeY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNudgeY: Self = this.set("nudgeY", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

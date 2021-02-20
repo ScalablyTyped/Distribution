@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,60 +62,48 @@ object ParamsResourceStatsGetindex {
   }
   
   @scala.inline
-  implicit class ParamsResourceStatsGetindexOps[Self <: ParamsResourceStatsGetindex] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceStatsGetindexMutableBuilder[Self <: ParamsResourceStatsGetindex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromDateDotday(value: Double): Self = StObject.set(x, "fromDate.day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setFromDateDotdayUndefined: Self = StObject.set(x, "fromDate.day", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setFromDateDotmonth(value: Double): Self = StObject.set(x, "fromDate.month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDateDotday(value: Double): Self = this.set("fromDate.day", value.asInstanceOf[js.Any])
+    def setFromDateDotmonthUndefined: Self = StObject.set(x, "fromDate.month", js.undefined)
     
     @scala.inline
-    def deleteFromDateDotday: Self = this.set("fromDate.day", js.undefined)
+    def setFromDateDotyear(value: Double): Self = StObject.set(x, "fromDate.year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDateDotmonth(value: Double): Self = this.set("fromDate.month", value.asInstanceOf[js.Any])
+    def setFromDateDotyearUndefined: Self = StObject.set(x, "fromDate.year", js.undefined)
     
     @scala.inline
-    def deleteFromDateDotmonth: Self = this.set("fromDate.month", js.undefined)
+    def setToDateDotday(value: Double): Self = StObject.set(x, "toDate.day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDateDotyear(value: Double): Self = this.set("fromDate.year", value.asInstanceOf[js.Any])
+    def setToDateDotdayUndefined: Self = StObject.set(x, "toDate.day", js.undefined)
     
     @scala.inline
-    def deleteFromDateDotyear: Self = this.set("fromDate.year", js.undefined)
+    def setToDateDotmonth(value: Double): Self = StObject.set(x, "toDate.month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToDateDotday(value: Double): Self = this.set("toDate.day", value.asInstanceOf[js.Any])
+    def setToDateDotmonthUndefined: Self = StObject.set(x, "toDate.month", js.undefined)
     
     @scala.inline
-    def deleteToDateDotday: Self = this.set("toDate.day", js.undefined)
+    def setToDateDotyear(value: Double): Self = StObject.set(x, "toDate.year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToDateDotmonth(value: Double): Self = this.set("toDate.month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToDateDotmonth: Self = this.set("toDate.month", js.undefined)
-    
-    @scala.inline
-    def setToDateDotyear(value: Double): Self = this.set("toDate.year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToDateDotyear: Self = this.set("toDate.year", js.undefined)
+    def setToDateDotyearUndefined: Self = StObject.set(x, "toDate.year", js.undefined)
   }
 }

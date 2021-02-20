@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnSize extends js.Object {
+trait ColumnSize extends StObject {
   
   var idx: js.UndefOr[Double] = js.native
   
@@ -24,45 +25,33 @@ object ColumnSize {
   }
   
   @scala.inline
-  implicit class ColumnSizeOps[Self <: ColumnSize] (val x: Self) extends AnyVal {
+  implicit class ColumnSizeMutableBuilder[Self <: ColumnSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdxUndefined: Self = StObject.set(x, "idx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasure(value: MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdx(value: Double): Self = this.set("idx", value.asInstanceOf[js.Any])
+    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
     @scala.inline
-    def deleteIdx: Self = this.set("idx", js.undefined)
+    def setTuple(value: js.Array[String]): Self = StObject.set(x, "tuple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasure(value: MeasureObject): Self = this.set("measure", value.asInstanceOf[js.Any])
+    def setTupleUndefined: Self = StObject.set(x, "tuple", js.undefined)
     
     @scala.inline
-    def deleteMeasure: Self = this.set("measure", js.undefined)
+    def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
     
     @scala.inline
-    def setTupleVarargs(value: String*): Self = this.set("tuple", js.Array(value :_*))
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTuple(value: js.Array[String]): Self = this.set("tuple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTuple: Self = this.set("tuple", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

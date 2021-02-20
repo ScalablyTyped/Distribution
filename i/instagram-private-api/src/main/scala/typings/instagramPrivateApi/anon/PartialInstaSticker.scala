@@ -1,13 +1,14 @@
 package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<instagram-private-api.instagram-private-api/dist/sticker-builder/stickers.InstaSticker> */
 @js.native
-trait PartialInstaSticker extends js.Object {
+trait PartialInstaSticker extends StObject {
   
   var additionalConfigureProperties: js.UndefOr[js.Function0[_]] = js.native
   
@@ -58,138 +59,126 @@ object PartialInstaSticker {
   }
   
   @scala.inline
-  implicit class PartialInstaStickerOps[Self <: PartialInstaSticker] (val x: Self) extends AnyVal {
+  implicit class PartialInstaStickerMutableBuilder[Self <: PartialInstaSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalConfigureProperties(value: () => _): Self = StObject.set(x, "additionalConfigureProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalConfigurePropertiesUndefined: Self = StObject.set(x, "additionalConfigureProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottom(value: () => PartialInstaSticker): Self = StObject.set(x, "bottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdditionalConfigureProperties(value: () => _): Self = this.set("additionalConfigureProperties", js.Any.fromFunction0(value))
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteAdditionalConfigureProperties: Self = this.set("additionalConfigureProperties", js.undefined)
+    def setCenter(value: () => PartialInstaSticker): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBottom(value: () => PartialInstaSticker): Self = this.set("bottom", js.Any.fromFunction0(value))
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: () => PartialInstaSticker): Self = this.set("center", js.Any.fromFunction0(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIsSticker(value: Boolean): Self = StObject.set(x, "isSticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: () => String): Self = this.set("id", js.Any.fromFunction0(value))
+    def setIsStickerUndefined: Self = StObject.set(x, "isSticker", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKey(value: () => String): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsSticker(value: Boolean): Self = this.set("isSticker", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteIsSticker: Self = this.set("isSticker", js.undefined)
+    def setLeft(value: () => PartialInstaSticker): Self = StObject.set(x, "left", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKey(value: () => String): Self = this.set("key", js.Any.fromFunction0(value))
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMoveBackwards(value: /* layers */ js.UndefOr[Double] => PartialInstaSticker): Self = StObject.set(x, "moveBackwards", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLeft(value: () => PartialInstaSticker): Self = this.set("left", js.Any.fromFunction0(value))
+    def setMoveBackwardsUndefined: Self = StObject.set(x, "moveBackwards", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMoveForward(value: /* layers */ js.UndefOr[Double] => PartialInstaSticker): Self = StObject.set(x, "moveForward", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveBackwards(value: /* layers */ js.UndefOr[Double] => PartialInstaSticker): Self = this.set("moveBackwards", js.Any.fromFunction1(value))
+    def setMoveForwardUndefined: Self = StObject.set(x, "moveForward", js.undefined)
     
     @scala.inline
-    def deleteMoveBackwards: Self = this.set("moveBackwards", js.undefined)
+    def setRight(value: () => PartialInstaSticker): Self = StObject.set(x, "right", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveForward(value: /* layers */ js.UndefOr[Double] => PartialInstaSticker): Self = this.set("moveForward", js.Any.fromFunction1(value))
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteMoveForward: Self = this.set("moveForward", js.undefined)
+    def setRotateDeg(value: /* deg */ Double => PartialInstaSticker): Self = StObject.set(x, "rotateDeg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRight(value: () => PartialInstaSticker): Self = this.set("right", js.Any.fromFunction0(value))
+    def setRotateDegUndefined: Self = StObject.set(x, "rotateDeg", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateDeg(value: /* deg */ Double => PartialInstaSticker): Self = this.set("rotateDeg", js.Any.fromFunction1(value))
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRotateDeg: Self = this.set("rotateDeg", js.undefined)
+    def setScale(value: /* factor */ Double => PartialInstaSticker): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setToJSON(value: () => StringDictionary[_]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScale(value: /* factor */ Double => PartialInstaSticker): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setTop(value: () => PartialInstaSticker): Self = StObject.set(x, "top", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToJSON(value: () => StringDictionary[_]): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteToJSON: Self = this.set("toJSON", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: () => PartialInstaSticker): Self = this.set("top", js.Any.fromFunction0(value))
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
-    
-    @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

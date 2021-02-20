@@ -1,6 +1,7 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
 import typings.powerappsComponentFramework.anon.Guid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that encapsulates an Entity Reference as a plain object suitable for storing in the state tree
   */
 @js.native
-trait EntityReference extends js.Object {
+trait EntityReference extends StObject {
   
   /**
     * The entity logical name. Read-only.
@@ -35,30 +36,18 @@ object EntityReference {
   }
   
   @scala.inline
-  implicit class EntityReferenceOps[Self <: EntityReference] (val x: Self) extends AnyVal {
+  implicit class EntityReferenceMutableBuilder[Self <: EntityReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtnUndefined: Self = StObject.set(x, "etn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Guid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Guid): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEtn(value: String): Self = this.set("etn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtn: Self = this.set("etn", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

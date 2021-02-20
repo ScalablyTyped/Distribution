@@ -3,14 +3,14 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.lightProbeMod.LightProbe
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/lights/AmbientLightProbe", JSImport.Namespace)
-@js.native
-object ambientLightProbeMod extends js.Object {
+object ambientLightProbeMod {
   
+  @JSImport("three/src/lights/AmbientLightProbe", "AmbientLightProbe")
   @js.native
   class AmbientLightProbe () extends LightProbe {
     def this(color: String) = this()

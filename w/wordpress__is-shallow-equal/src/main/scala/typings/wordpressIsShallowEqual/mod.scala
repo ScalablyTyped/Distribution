@@ -2,13 +2,12 @@ package typings.wordpressIsShallowEqual
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/is-shallow-equal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * @typedef {Record<string, any>} ComparableObject
@@ -22,17 +21,44 @@ object mod extends js.Object {
     *
     * @return {boolean} Whether the two values are shallow equal.
     */
+  @JSImport("@wordpress/is-shallow-equal", JSImport.Namespace)
+  @js.native
   def apply(a: js.Array[_], b: js.Array[_]): Boolean = js.native
+  @JSImport("@wordpress/is-shallow-equal", JSImport.Namespace)
+  @js.native
   def apply(a: js.Array[_], b: Record[String, _]): Boolean = js.native
+  @JSImport("@wordpress/is-shallow-equal", JSImport.Namespace)
+  @js.native
   def apply(a: Record[String, _], b: js.Array[_]): Boolean = js.native
+  @JSImport("@wordpress/is-shallow-equal", JSImport.Namespace)
+  @js.native
   def apply(a: Record[String, _], b: Record[String, _]): Boolean = js.native
   
-  var isShallowEqualArrays: js.Function2[/* a */ js.Array[js.Any], /* b */ js.Array[js.Any], Boolean] = js.native
+  /**
+    * Returns true if the two arrays are shallow equal, or false otherwise.
+    *
+    * @param {any[]} a First array to compare.
+    * @param {any[]} b Second array to compare.
+    *
+    * @return {boolean} Whether the two arrays are shallow equal.
+    */
+  /* was `typeof imported_arrays` */
+  @JSImport("@wordpress/is-shallow-equal", "isShallowEqualArrays")
+  @js.native
+  def isShallowEqualArrays(a: js.Array[_], b: js.Array[_]): Boolean = js.native
   
   /**
-    * Internal dependencies;
+    * Returns true if the two objects are shallow equal, or false otherwise.
+    *
+    * @param {import('.').ComparableObject} a First object to compare.
+    * @param {import('.').ComparableObject} b Second object to compare.
+    *
+    * @return {boolean} Whether the two objects are shallow equal.
     */
-  var isShallowEqualObjects: js.Function2[/* a */ Record[String, js.Any], /* b */ Record[String, js.Any], Boolean] = js.native
+  /* was `typeof imported_objects` */
+  @JSImport("@wordpress/is-shallow-equal", "isShallowEqualObjects")
+  @js.native
+  def isShallowEqualObjects(a: Record[String, _], b: Record[String, _]): Boolean = js.native
   
   type ComparableObject = StringDictionary[js.Any]
 }

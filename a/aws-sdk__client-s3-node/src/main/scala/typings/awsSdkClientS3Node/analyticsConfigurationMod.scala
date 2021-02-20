@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_AnalyticsConfiguration", JSImport.Namespace)
-@js.native
-object analyticsConfigurationMod extends js.Object {
+object analyticsConfigurationMod {
   
-  @JSName("_AnalyticsConfiguration")
+  @JSImport("@aws-sdk/client-s3-node/model/_AnalyticsConfiguration", "_AnalyticsConfiguration")
+  @js.native
   val AnalyticsConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

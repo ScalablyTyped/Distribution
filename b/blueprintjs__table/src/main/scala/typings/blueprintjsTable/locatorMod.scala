@@ -4,54 +4,14 @@ import typings.blueprintjsTable.anon.Col
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.rectMod.Rect
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table/lib/esm/locator", JSImport.Namespace)
-@js.native
-object locatorMod extends js.Object {
+object locatorMod {
   
-  @js.native
-  trait ILocator extends js.Object {
-    
-    /**
-      * Locates a cell's row and column index given the client X
-      * coordinate. Returns -1 if the coordinate is not over a table cell.
-      */
-    def convertPointToCell(clientX: Double, clientY: Double): Col = js.native
-    
-    /**
-      * Locates a column's index given the client X coordinate. Returns -1 if
-      * the coordinate is not over a column.
-      * If `useMidpoint` is `true`, returns the index of the column whose left
-      * edge is closest, splitting on the midpoint of each column.
-      */
-    def convertPointToColumn(clientX: Double): Double = js.native
-    def convertPointToColumn(clientX: Double, useMidpoint: Boolean): Double = js.native
-    
-    /**
-      * Locates a row's index given the client Y coordinate. Returns -1 if
-      * the coordinate is not over a row.
-      * If `useMidpoint` is `true`, returns the index of the row whose top
-      * edge is closest, splitting on the midpoint of each row.
-      */
-    def convertPointToRow(clientY: Double): Double = js.native
-    def convertPointToRow(clientY: Double, useMidpoint: Boolean): Double = js.native
-    
-    /**
-      * Returns the height of the tallest cell in a given column -- specifically,
-      * tallest as in how tall the cell would have to be to display all the content in it
-      */
-    def getTallestVisibleCellInColumn(columnIndex: Double): Double = js.native
-    
-    /**
-      * Returns the width that a column must be to contain all the content of
-      * its cells without truncating or wrapping.
-      */
-    def getWidestVisibleCellInColumn(columnIndex: Double): Double = js.native
-  }
-  
+  @JSImport("@blueprintjs/table/lib/esm/locator", "Locator")
   @js.native
   class Locator protected () extends ILocator {
     def this(tableElement: HTMLElement, scrollContainerElement: HTMLElement, cellContainerElement: HTMLElement) = this()
@@ -93,9 +53,56 @@ object locatorMod extends js.Object {
     var toGridY: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Locator extends js.Object {
+  object Locator {
     
-    var CELL_HORIZONTAL_PADDING: Double = js.native
+    @JSImport("@blueprintjs/table/lib/esm/locator", "Locator")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/table/lib/esm/locator", "Locator.CELL_HORIZONTAL_PADDING")
+    @js.native
+    def CELL_HORIZONTAL_PADDING: Double = js.native
+    @scala.inline
+    def CELL_HORIZONTAL_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CELL_HORIZONTAL_PADDING")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait ILocator extends StObject {
+    
+    /**
+      * Locates a cell's row and column index given the client X
+      * coordinate. Returns -1 if the coordinate is not over a table cell.
+      */
+    def convertPointToCell(clientX: Double, clientY: Double): Col = js.native
+    
+    /**
+      * Locates a column's index given the client X coordinate. Returns -1 if
+      * the coordinate is not over a column.
+      * If `useMidpoint` is `true`, returns the index of the column whose left
+      * edge is closest, splitting on the midpoint of each column.
+      */
+    def convertPointToColumn(clientX: Double): Double = js.native
+    def convertPointToColumn(clientX: Double, useMidpoint: Boolean): Double = js.native
+    
+    /**
+      * Locates a row's index given the client Y coordinate. Returns -1 if
+      * the coordinate is not over a row.
+      * If `useMidpoint` is `true`, returns the index of the row whose top
+      * edge is closest, splitting on the midpoint of each row.
+      */
+    def convertPointToRow(clientY: Double): Double = js.native
+    def convertPointToRow(clientY: Double, useMidpoint: Boolean): Double = js.native
+    
+    /**
+      * Returns the height of the tallest cell in a given column -- specifically,
+      * tallest as in how tall the cell would have to be to display all the content in it
+      */
+    def getTallestVisibleCellInColumn(columnIndex: Double): Double = js.native
+    
+    /**
+      * Returns the width that a column must be to contain all the content of
+      * its cells without truncating or wrapping.
+      */
+    def getWidestVisibleCellInColumn(columnIndex: Double): Double = js.native
   }
 }

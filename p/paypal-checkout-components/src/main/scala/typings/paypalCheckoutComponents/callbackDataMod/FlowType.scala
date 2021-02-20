@@ -1,15 +1,15 @@
 package typings.paypalCheckoutComponents.callbackDataMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FlowType extends js.Object
+sealed trait FlowType extends StObject
 @JSImport("paypal-checkout-components/modules/callback-data", "FlowType")
 @js.native
-object FlowType extends js.Object {
+object FlowType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FlowType with String] = js.native
@@ -19,14 +19,12 @@ object FlowType extends js.Object {
     */
   @js.native
   sealed trait Checkout extends FlowType
-  /* "checkout" */ @js.native
-  object Checkout extends TopLevel[Checkout with String]
+  /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.callbackDataMod.FlowType.Checkout with String = js.native
   
   /**
     * Used to store the payment method for future use, ie subscriptions
     */
   @js.native
   sealed trait Vault extends FlowType
-  /* "vault" */ @js.native
-  object Vault extends TopLevel[Vault with String]
+  /* "vault" */ val Vault: typings.paypalCheckoutComponents.callbackDataMod.FlowType.Vault with String = js.native
 }

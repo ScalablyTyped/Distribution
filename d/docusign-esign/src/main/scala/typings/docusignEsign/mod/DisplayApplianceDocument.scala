@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayApplianceDocument extends js.Object {
+trait DisplayApplianceDocument extends StObject {
   
   var attachmentDescription: js.UndefOr[String] = js.native
   
@@ -34,66 +35,54 @@ object DisplayApplianceDocument {
   }
   
   @scala.inline
-  implicit class DisplayApplianceDocumentOps[Self <: DisplayApplianceDocument] (val x: Self) extends AnyVal {
+  implicit class DisplayApplianceDocumentMutableBuilder[Self <: DisplayApplianceDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentDescription(value: String): Self = StObject.set(x, "attachmentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentDescriptionUndefined: Self = StObject.set(x, "attachmentDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: /* Integer that identifies the document in the envelope.*/ String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentDescription(value: String): Self = this.set("attachmentDescription", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteAttachmentDescription: Self = this.set("attachmentDescription", js.undefined)
+    def setDocumentType(value: String): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: /* Integer that identifies the document in the envelope.*/ String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setDocumentTypeUndefined: Self = StObject.set(x, "documentType", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setEnvelopeId(value: /*The envelope's GUID. \n\nExample: `93be49ab-afa0-4adf-933c-f752070d71ec`*/ String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentType(value: String): Self = this.set("documentType", value.asInstanceOf[js.Any])
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def deleteDocumentType: Self = this.set("documentType", js.undefined)
+    def setExternalDocumentId(value: String): Self = StObject.set(x, "externalDocumentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: /*The envelope's GUID. \n\nExample: `93be49ab-afa0-4adf-933c-f752070d71ec`*/ String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setExternalDocumentIdUndefined: Self = StObject.set(x, "externalDocumentId", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setLatestPDFId(value: String): Self = StObject.set(x, "latestPDFId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalDocumentId(value: String): Self = this.set("externalDocumentId", value.asInstanceOf[js.Any])
+    def setLatestPDFIdUndefined: Self = StObject.set(x, "latestPDFId", js.undefined)
     
     @scala.inline
-    def deleteExternalDocumentId: Self = this.set("externalDocumentId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestPDFId(value: String): Self = this.set("latestPDFId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLatestPDFId: Self = this.set("latestPDFId", js.undefined)
+    def setPages(value: /*An array of page objects.*/ Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setPages(value: /*An array of page objects.*/ Double): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
   }
 }

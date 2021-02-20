@@ -3,6 +3,7 @@ package typings.loopback.mod
 import typings.loopback.anon.Apns
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Application")
 @js.native
-class Application () extends PersistedModel {
+class Application protected () extends PersistedModel {
+  def this(data: js.Any) = this()
   
   var anonymousAllowed: Boolean = js.native
   
@@ -121,10 +123,7 @@ class Application () extends PersistedModel {
   /** OAuth 2.0  application URL. */
   var url: String = js.native
 }
-/* static members */
-@JSImport("loopback", "Application")
-@js.native
-object Application extends js.Object {
+object Application {
   
   /**
     * Authenticate the application id and key
@@ -139,6 +138,9 @@ object Application extends js.Object {
     * - windowsKey
     * - masterKe
     */
+  /* static member */
+  @JSImport("loopback", "Application.authenticate")
+  @js.native
   def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = js.native
   
   /**
@@ -148,6 +150,9 @@ object Application extends js.Object {
     * @param {any} options  Other options
     * @param {() => void} callback  Callback function
     */
+  /* static member */
+  @JSImport("loopback", "Application.register")
+  @js.native
   def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -155,5 +160,8 @@ object Application extends js.Object {
     * @callback {() => void} callback
     * @param {Error} err
     */
+  /* static member */
+  @JSImport("loopback", "Application.resetKeys")
+  @js.native
   def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }

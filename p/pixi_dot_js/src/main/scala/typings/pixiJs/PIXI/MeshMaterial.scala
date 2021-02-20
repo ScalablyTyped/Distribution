@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,39 +83,27 @@ object MeshMaterial {
   }
   
   @scala.inline
-  implicit class MeshMaterialOps[Self <: MeshMaterial] (val x: Self) extends AnyVal {
+  implicit class MeshMaterialMutableBuilder[Self <: MeshMaterial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchable(value: Boolean): Self = StObject.set(x, "batchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchable(value: Boolean): Self = this.set("batchable", value.asInstanceOf[js.Any])
+    def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginName(value: String): Self = this.set("pluginName", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTexture(value: Texture): Self = this.set("texture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTint(value: Double): Self = this.set("tint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUvMatrix(value: TextureMatrix): Self = this.set("uvMatrix", value.asInstanceOf[js.Any])
+    def setUvMatrix(value: TextureMatrix): Self = StObject.set(x, "uvMatrix", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDistributionWithTagsRequest extends js.Object {
+trait CreateDistributionWithTagsRequest extends StObject {
   
   /**
     * The distribution's configuration information. 
@@ -21,21 +22,9 @@ object CreateDistributionWithTagsRequest {
   }
   
   @scala.inline
-  implicit class CreateDistributionWithTagsRequestOps[Self <: CreateDistributionWithTagsRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDistributionWithTagsRequestMutableBuilder[Self <: CreateDistributionWithTagsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDistributionConfigWithTags(value: DistributionConfigWithTags): Self = this.set("DistributionConfigWithTags", value.asInstanceOf[js.Any])
+    def setDistributionConfigWithTags(value: DistributionConfigWithTags): Self = StObject.set(x, "DistributionConfigWithTags", value.asInstanceOf[js.Any])
   }
 }

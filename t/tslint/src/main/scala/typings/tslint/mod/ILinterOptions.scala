@@ -1,12 +1,13 @@
 package typings.tslint.mod
 
 import typings.tslint.formatterMod.FormatterConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILinterOptions extends js.Object {
+trait ILinterOptions extends StObject {
   
   var fix: Boolean = js.native
   
@@ -27,48 +28,36 @@ object ILinterOptions {
   }
   
   @scala.inline
-  implicit class ILinterOptionsOps[Self <: ILinterOptions] (val x: Self) extends AnyVal {
+  implicit class ILinterOptionsMutableBuilder[Self <: ILinterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatter(value: String | FormatterConstructor): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def setFix(value: Boolean): Self = this.set("fix", value.asInstanceOf[js.Any])
+    def setFormattersDirectory(value: String): Self = StObject.set(x, "formattersDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: String | FormatterConstructor): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattersDirectory(value: String): Self = this.set("formattersDirectory", value.asInstanceOf[js.Any])
+    def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
     @scala.inline
-    def deleteFormattersDirectory: Self = this.set("formattersDirectory", js.undefined)
+    def setRulesDirectory(value: String | js.Array[String]): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
     
     @scala.inline
-    def deleteQuiet: Self = this.set("quiet", js.undefined)
-    
-    @scala.inline
-    def setRulesDirectoryVarargs(value: String*): Self = this.set("rulesDirectory", js.Array(value :_*))
-    
-    @scala.inline
-    def setRulesDirectory(value: String | js.Array[String]): Self = this.set("rulesDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRulesDirectory: Self = this.set("rulesDirectory", js.undefined)
+    def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value :_*))
   }
 }

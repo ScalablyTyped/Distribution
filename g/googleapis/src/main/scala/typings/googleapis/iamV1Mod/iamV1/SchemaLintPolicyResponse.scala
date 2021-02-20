@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * was able to fully execute and no lint issue was found.
   */
 @js.native
-trait SchemaLintPolicyResponse extends js.Object {
+trait SchemaLintPolicyResponse extends StObject {
   
   /**
     * List of lint results sorted by a composite &lt;severity,
@@ -31,27 +32,15 @@ object SchemaLintPolicyResponse {
   }
   
   @scala.inline
-  implicit class SchemaLintPolicyResponseOps[Self <: SchemaLintPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaLintPolicyResponseMutableBuilder[Self <: SchemaLintPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLintResults(value: js.Array[SchemaLintResult]): Self = StObject.set(x, "lintResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLintResultsVarargs(value: SchemaLintResult*): Self = this.set("lintResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setLintResults(value: js.Array[SchemaLintResult]): Self = this.set("lintResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLintResults: Self = this.set("lintResults", js.undefined)
+    def setLintResultsVarargs(value: SchemaLintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
   }
 }

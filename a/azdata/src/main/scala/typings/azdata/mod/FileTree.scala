@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileTree extends js.Object {
+trait FileTree extends StObject {
   
   var rootNode: FileTreeNode = js.native
   
@@ -20,24 +21,12 @@ object FileTree {
   }
   
   @scala.inline
-  implicit class FileTreeOps[Self <: FileTree] (val x: Self) extends AnyVal {
+  implicit class FileTreeMutableBuilder[Self <: FileTree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRootNode(value: FileTreeNode): Self = StObject.set(x, "rootNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRootNode(value: FileTreeNode): Self = this.set("rootNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedNode(value: FileTreeNode): Self = this.set("selectedNode", value.asInstanceOf[js.Any])
+    def setSelectedNode(value: FileTreeNode): Self = StObject.set(x, "selectedNode", value.asInstanceOf[js.Any])
   }
 }

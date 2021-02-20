@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "InventoryTransfer")
 @js.native
-class InventoryTransfer () extends js.Object {
+class InventoryTransfer () extends StObject {
   
   /**
     * The Square generated ID of the `CatalogObject` being tracked.

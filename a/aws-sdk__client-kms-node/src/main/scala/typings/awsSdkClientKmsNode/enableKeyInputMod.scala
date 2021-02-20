@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/EnableKeyInput", JSImport.Namespace)
-@js.native
-object enableKeyInputMod extends js.Object {
+object enableKeyInputMod {
   
+  @JSImport("@aws-sdk/client-kms-node/model/EnableKeyInput", "EnableKeyInput")
+  @js.native
   val EnableKeyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

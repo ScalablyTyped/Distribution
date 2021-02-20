@@ -3,13 +3,12 @@ package typings.restartHooks
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import typings.restartHooks.useStateAsyncMod.AsyncSetState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@restart/hooks/cjs/useSafeState", JSImport.Namespace)
-@js.native
-object useSafeStateMod extends js.Object {
+object useSafeStateMod {
   
   /**
     * `useSafeState` takes the return value of a `useState` hook and wraps the
@@ -22,6 +21,8 @@ object useSafeStateMod extends js.Object {
     * const [show, setShow] = useSafeState(useState(true));
     * ```
     */
+  @JSImport("@restart/hooks/cjs/useSafeState", JSImport.Default)
+  @js.native
   def default[TState](state: js.Tuple2[TState, AsyncSetState[TState] | StateSetter[TState]]): js.Tuple2[TState, StateSetter[TState]] = js.native
   
   type StateSetter[TState] = Dispatch[SetStateAction[TState]]

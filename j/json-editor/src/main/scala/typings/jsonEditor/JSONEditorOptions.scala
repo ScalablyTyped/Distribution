@@ -18,12 +18,13 @@ import typings.jsonEditor.jsonEditorStrings.html
 import typings.jsonEditor.jsonEditorStrings.interaction
 import typings.jsonEditor.jsonEditorStrings.jqueryui
 import typings.jsonEditor.jsonEditorStrings.never
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditorOptions[TValue] extends js.Object {
+trait JSONEditorOptions[TValue] extends StObject {
   
   /**
     * If true, JSON Editor will load external URLs in $ref via ajax.
@@ -133,136 +134,124 @@ object JSONEditorOptions {
   }
   
   @scala.inline
-  implicit class JSONEditorOptionsOps[Self <: JSONEditorOptions[_], TValue] (val x: Self with JSONEditorOptions[TValue]) extends AnyVal {
+  implicit class JSONEditorOptionsMutableBuilder[Self <: JSONEditorOptions[_], TValue] (val x: Self with JSONEditorOptions[TValue]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisable_array_add(value: Boolean): Self = StObject.set(x, "disable_array_add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjax(value: Boolean): Self = this.set("ajax", value.asInstanceOf[js.Any])
+    def setDisable_array_addUndefined: Self = StObject.set(x, "disable_array_add", js.undefined)
     
     @scala.inline
-    def deleteAjax: Self = this.set("ajax", js.undefined)
+    def setDisable_array_delete(value: Boolean): Self = StObject.set(x, "disable_array_delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_add(value: Boolean): Self = this.set("disable_array_add", value.asInstanceOf[js.Any])
+    def setDisable_array_deleteUndefined: Self = StObject.set(x, "disable_array_delete", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_add: Self = this.set("disable_array_add", js.undefined)
+    def setDisable_array_reorder(value: Boolean): Self = StObject.set(x, "disable_array_reorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_delete(value: Boolean): Self = this.set("disable_array_delete", value.asInstanceOf[js.Any])
+    def setDisable_array_reorderUndefined: Self = StObject.set(x, "disable_array_reorder", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_delete: Self = this.set("disable_array_delete", js.undefined)
+    def setDisable_collapse(value: Boolean): Self = StObject.set(x, "disable_collapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_reorder(value: Boolean): Self = this.set("disable_array_reorder", value.asInstanceOf[js.Any])
+    def setDisable_collapseUndefined: Self = StObject.set(x, "disable_collapse", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_reorder: Self = this.set("disable_array_reorder", js.undefined)
+    def setDisable_edit_json(value: Boolean): Self = StObject.set(x, "disable_edit_json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_collapse(value: Boolean): Self = this.set("disable_collapse", value.asInstanceOf[js.Any])
+    def setDisable_edit_jsonUndefined: Self = StObject.set(x, "disable_edit_json", js.undefined)
     
     @scala.inline
-    def deleteDisable_collapse: Self = this.set("disable_collapse", js.undefined)
+    def setDisable_properties(value: Boolean): Self = StObject.set(x, "disable_properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_edit_json(value: Boolean): Self = this.set("disable_edit_json", value.asInstanceOf[js.Any])
+    def setDisable_propertiesUndefined: Self = StObject.set(x, "disable_properties", js.undefined)
     
     @scala.inline
-    def deleteDisable_edit_json: Self = this.set("disable_edit_json", js.undefined)
+    def setDisplay_required_only(value: Boolean): Self = StObject.set(x, "display_required_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_properties(value: Boolean): Self = this.set("disable_properties", value.asInstanceOf[js.Any])
+    def setDisplay_required_onlyUndefined: Self = StObject.set(x, "display_required_only", js.undefined)
     
     @scala.inline
-    def deleteDisable_properties: Self = this.set("disable_properties", js.undefined)
+    def setForm_name_root(value: String): Self = StObject.set(x, "form_name_root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_required_only(value: Boolean): Self = this.set("display_required_only", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplay_required_only: Self = this.set("display_required_only", js.undefined)
-    
-    @scala.inline
-    def setForm_name_root(value: String): Self = this.set("form_name_root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForm_name_root: Self = this.set("form_name_root", js.undefined)
+    def setForm_name_rootUndefined: Self = StObject.set(x, "form_name_root", js.undefined)
     
     @scala.inline
     def setIconlib(
       value: bootstrap2 | bootstrap3 | foundation2 | foundation3 | jqueryui | fontawesome3 | fontawesome4
-    ): Self = this.set("iconlib", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "iconlib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconlib: Self = this.set("iconlib", js.undefined)
+    def setIconlibUndefined: Self = StObject.set(x, "iconlib", js.undefined)
     
     @scala.inline
-    def setKeep_oneof_values(value: Boolean): Self = this.set("keep_oneof_values", value.asInstanceOf[js.Any])
+    def setKeep_oneof_values(value: Boolean): Self = StObject.set(x, "keep_oneof_values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeep_oneof_values: Self = this.set("keep_oneof_values", js.undefined)
+    def setKeep_oneof_valuesUndefined: Self = StObject.set(x, "keep_oneof_values", js.undefined)
     
     @scala.inline
-    def setNo_additional_properties(value: Boolean): Self = this.set("no_additional_properties", value.asInstanceOf[js.Any])
+    def setNo_additional_properties(value: Boolean): Self = StObject.set(x, "no_additional_properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNo_additional_properties: Self = this.set("no_additional_properties", js.undefined)
+    def setNo_additional_propertiesUndefined: Self = StObject.set(x, "no_additional_properties", js.undefined)
     
     @scala.inline
-    def setRefs(value: js.Any): Self = this.set("refs", value.asInstanceOf[js.Any])
+    def setRefs(value: js.Any): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefs: Self = this.set("refs", js.undefined)
+    def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
     
     @scala.inline
-    def setRequired_by_default(value: Boolean): Self = this.set("required_by_default", value.asInstanceOf[js.Any])
+    def setRequired_by_default(value: Boolean): Self = StObject.set(x, "required_by_default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired_by_default: Self = this.set("required_by_default", js.undefined)
+    def setRequired_by_defaultUndefined: Self = StObject.set(x, "required_by_default", js.undefined)
     
     @scala.inline
-    def setSchema(value: js.Any): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setShow_errors(value: interaction | change | always | never): Self = this.set("show_errors", value.asInstanceOf[js.Any])
+    def setShow_errors(value: interaction | change | always | never): Self = StObject.set(x, "show_errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShow_errors: Self = this.set("show_errors", js.undefined)
+    def setShow_errorsUndefined: Self = StObject.set(x, "show_errors", js.undefined)
     
     @scala.inline
-    def setStartval(value: TValue): Self = this.set("startval", value.asInstanceOf[js.Any])
+    def setStartval(value: TValue): Self = StObject.set(x, "startval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartval: Self = this.set("startval", js.undefined)
+    def setStartvalUndefined: Self = StObject.set(x, "startval", js.undefined)
     
     @scala.inline
-    def setTemplate(value: String | Compile): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplate(value: String | Compile): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
     def setTheme(
       value: barebones | html | bootstrap2 | bootstrap3 | bootstrap4 | foundation3 | foundation4 | foundation5 | foundation6 | jqueryui
-    ): Self = this.set("theme", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

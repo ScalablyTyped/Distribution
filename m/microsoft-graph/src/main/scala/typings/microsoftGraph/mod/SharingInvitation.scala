@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharingInvitation extends js.Object {
+trait SharingInvitation extends StObject {
   
   // The email address provided for the recipient of the sharing invitation. Read-only.
   var email: js.UndefOr[NullableOption[String]] = js.native
@@ -30,54 +31,42 @@ object SharingInvitation {
   }
   
   @scala.inline
-  implicit class SharingInvitationOps[Self <: SharingInvitation] (val x: Self) extends AnyVal {
+  implicit class SharingInvitationMutableBuilder[Self <: SharingInvitation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setEmail(value: NullableOption[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setInvitedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "invitedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setInvitedByNull: Self = StObject.set(x, "invitedBy", null)
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
+    def setInvitedByUndefined: Self = StObject.set(x, "invitedBy", js.undefined)
     
     @scala.inline
-    def setInvitedBy(value: NullableOption[IdentitySet]): Self = this.set("invitedBy", value.asInstanceOf[js.Any])
+    def setRedeemedBy(value: NullableOption[String]): Self = StObject.set(x, "redeemedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvitedBy: Self = this.set("invitedBy", js.undefined)
+    def setRedeemedByNull: Self = StObject.set(x, "redeemedBy", null)
     
     @scala.inline
-    def setInvitedByNull: Self = this.set("invitedBy", null)
+    def setRedeemedByUndefined: Self = StObject.set(x, "redeemedBy", js.undefined)
     
     @scala.inline
-    def setRedeemedBy(value: NullableOption[String]): Self = this.set("redeemedBy", value.asInstanceOf[js.Any])
+    def setSignInRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "signInRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedeemedBy: Self = this.set("redeemedBy", js.undefined)
+    def setSignInRequiredNull: Self = StObject.set(x, "signInRequired", null)
     
     @scala.inline
-    def setRedeemedByNull: Self = this.set("redeemedBy", null)
-    
-    @scala.inline
-    def setSignInRequired(value: NullableOption[Boolean]): Self = this.set("signInRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignInRequired: Self = this.set("signInRequired", js.undefined)
-    
-    @scala.inline
-    def setSignInRequiredNull: Self = this.set("signInRequired", null)
+    def setSignInRequiredUndefined: Self = StObject.set(x, "signInRequired", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettlementTransactionIdentifiers extends js.Object {
+trait SettlementTransactionIdentifiers extends StObject {
   
   /** The identifier of the adjustments, if it is available. */
   var adjustmentId: js.UndefOr[String] = js.native
@@ -34,57 +35,45 @@ object SettlementTransactionIdentifiers {
   }
   
   @scala.inline
-  implicit class SettlementTransactionIdentifiersOps[Self <: SettlementTransactionIdentifiers] (val x: Self) extends AnyVal {
+  implicit class SettlementTransactionIdentifiersMutableBuilder[Self <: SettlementTransactionIdentifiers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustmentId(value: String): Self = StObject.set(x, "adjustmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustmentIdUndefined: Self = StObject.set(x, "adjustmentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustmentId(value: String): Self = this.set("adjustmentId", value.asInstanceOf[js.Any])
+    def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
     @scala.inline
-    def deleteAdjustmentId: Self = this.set("adjustmentId", js.undefined)
+    def setOrderItemId(value: String): Self = StObject.set(x, "orderItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantOrderId(value: String): Self = this.set("merchantOrderId", value.asInstanceOf[js.Any])
+    def setOrderItemIdUndefined: Self = StObject.set(x, "orderItemId", js.undefined)
     
     @scala.inline
-    def deleteMerchantOrderId: Self = this.set("merchantOrderId", js.undefined)
+    def setSettlementEntryId(value: String): Self = StObject.set(x, "settlementEntryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderItemId(value: String): Self = this.set("orderItemId", value.asInstanceOf[js.Any])
+    def setSettlementEntryIdUndefined: Self = StObject.set(x, "settlementEntryId", js.undefined)
     
     @scala.inline
-    def deleteOrderItemId: Self = this.set("orderItemId", js.undefined)
+    def setShipmentIds(value: js.Array[String]): Self = StObject.set(x, "shipmentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettlementEntryId(value: String): Self = this.set("settlementEntryId", value.asInstanceOf[js.Any])
+    def setShipmentIdsUndefined: Self = StObject.set(x, "shipmentIds", js.undefined)
     
     @scala.inline
-    def deleteSettlementEntryId: Self = this.set("settlementEntryId", js.undefined)
+    def setShipmentIdsVarargs(value: String*): Self = StObject.set(x, "shipmentIds", js.Array(value :_*))
     
     @scala.inline
-    def setShipmentIdsVarargs(value: String*): Self = this.set("shipmentIds", js.Array(value :_*))
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipmentIds(value: js.Array[String]): Self = this.set("shipmentIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipmentIds: Self = this.set("shipmentIds", js.undefined)
-    
-    @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

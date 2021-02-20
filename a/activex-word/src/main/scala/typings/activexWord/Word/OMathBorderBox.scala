@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathBorderBox extends js.Object {
+trait OMathBorderBox extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -58,57 +59,45 @@ object OMathBorderBox {
   }
   
   @scala.inline
-  implicit class OMathBorderBoxOps[Self <: OMathBorderBox] (val x: Self) extends AnyVal {
+  implicit class OMathBorderBoxMutableBuilder[Self <: OMathBorderBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setHideBot(value: Boolean): Self = StObject.set(x, "HideBot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHideLeft(value: Boolean): Self = StObject.set(x, "HideLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: OMath): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setHideRight(value: Boolean): Self = StObject.set(x, "HideRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideBot(value: Boolean): Self = this.set("HideBot", value.asInstanceOf[js.Any])
+    def setHideTop(value: Boolean): Self = StObject.set(x, "HideTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideLeft(value: Boolean): Self = this.set("HideLeft", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideRight(value: Boolean): Self = this.set("HideRight", value.asInstanceOf[js.Any])
+    def setStrikeBLTR(value: Boolean): Self = StObject.set(x, "StrikeBLTR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTop(value: Boolean): Self = this.set("HideTop", value.asInstanceOf[js.Any])
+    def setStrikeH(value: Boolean): Self = StObject.set(x, "StrikeH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStrikeTLBR(value: Boolean): Self = StObject.set(x, "StrikeTLBR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeBLTR(value: Boolean): Self = this.set("StrikeBLTR", value.asInstanceOf[js.Any])
+    def setStrikeV(value: Boolean): Self = StObject.set(x, "StrikeV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeH(value: Boolean): Self = this.set("StrikeH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrikeTLBR(value: Boolean): Self = this.set("StrikeTLBR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrikeV(value: Boolean): Self = this.set("StrikeV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathBorderBox_typekey(value: OMathBorderBox): Self = this.set("Word.OMathBorderBox_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathBorderBox_typekey(value: OMathBorderBox): Self = StObject.set(x, "Word.OMathBorderBox_typekey", value.asInstanceOf[js.Any])
   }
 }

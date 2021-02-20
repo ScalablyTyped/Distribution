@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultUserSettingOperationsAsync extends js.Object {
+trait IVaultUserSettingOperationsAsync extends StObject {
   
   def ChangeVaultLanguage(Language: Double): Unit = js.native
   def ChangeVaultLanguage(

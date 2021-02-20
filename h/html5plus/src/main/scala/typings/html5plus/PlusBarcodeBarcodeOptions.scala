@@ -2,6 +2,7 @@ package typings.html5plus
 
 import typings.html5plus.html5plusStrings.default
 import typings.html5plus.html5plusStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
   */
 @js.native
-trait PlusBarcodeBarcodeOptions extends js.Object {
+trait PlusBarcodeBarcodeOptions extends StObject {
   
   /**
     * 是否保存扫码成功时的截图
@@ -63,42 +64,30 @@ object PlusBarcodeBarcodeOptions {
   }
   
   @scala.inline
-  implicit class PlusBarcodeBarcodeOptionsOps[Self <: PlusBarcodeBarcodeOptions] (val x: Self) extends AnyVal {
+  implicit class PlusBarcodeBarcodeOptionsMutableBuilder[Self <: PlusBarcodeBarcodeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConserve(value: Boolean): Self = StObject.set(x, "conserve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConserveUndefined: Self = StObject.set(x, "conserve", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConserve(value: Boolean): Self = this.set("conserve", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteConserve: Self = this.set("conserve", js.undefined)
+    def setSound(value: none | default): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setVibrate(value: Boolean): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: none | default): Self = this.set("sound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
-    
-    @scala.inline
-    def setVibrate(value: Boolean): Self = this.set("vibrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVibrate: Self = this.set("vibrate", js.undefined)
+    def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
   }
 }

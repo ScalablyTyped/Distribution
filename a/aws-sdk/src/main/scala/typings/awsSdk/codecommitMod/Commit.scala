@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commit extends js.Object {
+trait Commit extends StObject {
   
   /**
     * Any other data associated with the specified commit.
@@ -51,63 +52,51 @@ object Commit {
   }
   
   @scala.inline
-  implicit class CommitOps[Self <: Commit] (val x: Self) extends AnyVal {
+  implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalData(value: AdditionalData): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: UserInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalData(value: AdditionalData): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
+    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: UserInfo): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setCommitter(value: UserInfo): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitId(value: ObjectId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
     
     @scala.inline
-    def deleteCommitId: Self = this.set("commitId", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitter(value: UserInfo): Self = this.set("committer", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteCommitter: Self = this.set("committer", js.undefined)
+    def setParents(value: ParentList): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setParentsVarargs(value: ObjectId*): Self = StObject.set(x, "parents", js.Array(value :_*))
     
     @scala.inline
-    def setParentsVarargs(value: ObjectId*): Self = this.set("parents", js.Array(value :_*))
+    def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParents(value: ParentList): Self = this.set("parents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParents: Self = this.set("parents", js.undefined)
-    
-    @scala.inline
-    def setTreeId(value: ObjectId): Self = this.set("treeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreeId: Self = this.set("treeId", js.undefined)
+    def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
   }
 }

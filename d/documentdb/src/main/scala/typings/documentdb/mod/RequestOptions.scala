@@ -1,12 +1,13 @@
 package typings.documentdb.mod
 
 import typings.documentdb.anon.Condition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestOptions extends js.Object {
+trait RequestOptions extends StObject {
   
   /** Conditions Associated with the request. */
   var accessCondition: js.UndefOr[Condition] = js.native
@@ -74,99 +75,87 @@ object RequestOptions {
   }
   
   @scala.inline
-  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessCondition(value: Condition): Self = StObject.set(x, "accessCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessConditionUndefined: Self = StObject.set(x, "accessCondition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsistencyLevel(value: String): Self = StObject.set(x, "consistencyLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessCondition(value: Condition): Self = this.set("accessCondition", value.asInstanceOf[js.Any])
+    def setConsistencyLevelUndefined: Self = StObject.set(x, "consistencyLevel", js.undefined)
     
     @scala.inline
-    def deleteAccessCondition: Self = this.set("accessCondition", js.undefined)
+    def setEnableCrossPartitionQuery(value: Boolean): Self = StObject.set(x, "enableCrossPartitionQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsistencyLevel(value: String): Self = this.set("consistencyLevel", value.asInstanceOf[js.Any])
+    def setEnableCrossPartitionQueryUndefined: Self = StObject.set(x, "enableCrossPartitionQuery", js.undefined)
     
     @scala.inline
-    def deleteConsistencyLevel: Self = this.set("consistencyLevel", js.undefined)
+    def setIndexingDirective(value: String): Self = StObject.set(x, "indexingDirective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCrossPartitionQuery(value: Boolean): Self = this.set("enableCrossPartitionQuery", value.asInstanceOf[js.Any])
+    def setIndexingDirectiveUndefined: Self = StObject.set(x, "indexingDirective", js.undefined)
     
     @scala.inline
-    def deleteEnableCrossPartitionQuery: Self = this.set("enableCrossPartitionQuery", js.undefined)
+    def setMaxDegreeOfParallelism(value: Boolean): Self = StObject.set(x, "maxDegreeOfParallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexingDirective(value: String): Self = this.set("indexingDirective", value.asInstanceOf[js.Any])
+    def setMaxDegreeOfParallelismUndefined: Self = StObject.set(x, "maxDegreeOfParallelism", js.undefined)
     
     @scala.inline
-    def deleteIndexingDirective: Self = this.set("indexingDirective", js.undefined)
+    def setOfferThroughput(value: Double): Self = StObject.set(x, "offerThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDegreeOfParallelism(value: Boolean): Self = this.set("maxDegreeOfParallelism", value.asInstanceOf[js.Any])
+    def setOfferThroughputUndefined: Self = StObject.set(x, "offerThroughput", js.undefined)
     
     @scala.inline
-    def deleteMaxDegreeOfParallelism: Self = this.set("maxDegreeOfParallelism", js.undefined)
+    def setOfferType(value: String): Self = StObject.set(x, "offerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferThroughput(value: Double): Self = this.set("offerThroughput", value.asInstanceOf[js.Any])
+    def setOfferTypeUndefined: Self = StObject.set(x, "offerType", js.undefined)
     
     @scala.inline
-    def deleteOfferThroughput: Self = this.set("offerThroughput", js.undefined)
+    def setPartitionKey(value: String | js.Array[String]): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferType(value: String): Self = this.set("offerType", value.asInstanceOf[js.Any])
+    def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
     
     @scala.inline
-    def deleteOfferType: Self = this.set("offerType", js.undefined)
+    def setPartitionKeyVarargs(value: String*): Self = StObject.set(x, "partitionKey", js.Array(value :_*))
     
     @scala.inline
-    def setPartitionKeyVarargs(value: String*): Self = this.set("partitionKey", js.Array(value :_*))
+    def setPopulateQuotaInfo(value: Boolean): Self = StObject.set(x, "populateQuotaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionKey(value: String | js.Array[String]): Self = this.set("partitionKey", value.asInstanceOf[js.Any])
+    def setPopulateQuotaInfoUndefined: Self = StObject.set(x, "populateQuotaInfo", js.undefined)
     
     @scala.inline
-    def deletePartitionKey: Self = this.set("partitionKey", js.undefined)
+    def setPostTriggerInclude(value: String): Self = StObject.set(x, "postTriggerInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopulateQuotaInfo(value: Boolean): Self = this.set("populateQuotaInfo", value.asInstanceOf[js.Any])
+    def setPostTriggerIncludeUndefined: Self = StObject.set(x, "postTriggerInclude", js.undefined)
     
     @scala.inline
-    def deletePopulateQuotaInfo: Self = this.set("populateQuotaInfo", js.undefined)
+    def setPreTriggerInclude(value: String): Self = StObject.set(x, "preTriggerInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostTriggerInclude(value: String): Self = this.set("postTriggerInclude", value.asInstanceOf[js.Any])
+    def setPreTriggerIncludeUndefined: Self = StObject.set(x, "preTriggerInclude", js.undefined)
     
     @scala.inline
-    def deletePostTriggerInclude: Self = this.set("postTriggerInclude", js.undefined)
+    def setResourceTokenExpirySeconds(value: Double): Self = StObject.set(x, "resourceTokenExpirySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreTriggerInclude(value: String): Self = this.set("preTriggerInclude", value.asInstanceOf[js.Any])
+    def setResourceTokenExpirySecondsUndefined: Self = StObject.set(x, "resourceTokenExpirySeconds", js.undefined)
     
     @scala.inline
-    def deletePreTriggerInclude: Self = this.set("preTriggerInclude", js.undefined)
+    def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTokenExpirySeconds(value: Double): Self = this.set("resourceTokenExpirySeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTokenExpirySeconds: Self = this.set("resourceTokenExpirySeconds", js.undefined)
-    
-    @scala.inline
-    def setSessionToken(value: String): Self = this.set("sessionToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionToken: Self = this.set("sessionToken", js.undefined)
+    def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
   }
 }

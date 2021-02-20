@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Entity deduced from similar images on the Internet.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntity extends js.Object {
+trait SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntity extends StObject {
   
   /**
     * Canonical description of the entity, in English.
@@ -35,36 +36,24 @@ object SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntity {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntityOps[Self <: SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntity] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntityMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1WebDetectionWebEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

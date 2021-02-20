@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/dematerialize", JSImport.Namespace)
-@js.native
-object operatorDematerializeMod extends js.Object {
+object operatorDematerializeMod {
   
+  @JSImport("rxjs/operator/dematerialize", "dematerialize")
+  @js.native
   def dematerialize[T](): js.Any = js.native
 }

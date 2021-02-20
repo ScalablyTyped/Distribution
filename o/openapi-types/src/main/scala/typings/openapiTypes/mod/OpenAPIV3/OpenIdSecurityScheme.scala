@@ -1,6 +1,7 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
 import typings.openapiTypes.openapiTypesStrings.openIdConnect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object OpenIdSecurityScheme {
   }
   
   @scala.inline
-  implicit class OpenIdSecuritySchemeOps[Self <: OpenIdSecurityScheme] (val x: Self) extends AnyVal {
+  implicit class OpenIdSecuritySchemeMutableBuilder[Self <: OpenIdSecurityScheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenIdConnectUrl(value: String): Self = StObject.set(x, "openIdConnectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenIdConnectUrl(value: String): Self = this.set("openIdConnectUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: openIdConnect): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: openIdConnect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

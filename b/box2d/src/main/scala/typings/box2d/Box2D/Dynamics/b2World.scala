@@ -9,12 +9,13 @@ import typings.box2d.Box2D.Dynamics.Contacts.b2Contact
 import typings.box2d.Box2D.Dynamics.Controllers.b2Controller
 import typings.box2d.Box2D.Dynamics.Joints.b2Joint
 import typings.box2d.Box2D.Dynamics.Joints.b2JointDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2World extends js.Object {
+trait b2World extends StObject {
   
   /**
     * Add a controller to the world list.

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,21 +45,9 @@ object XObjectInputStream {
   }
   
   @scala.inline
-  implicit class XObjectInputStreamOps[Self <: XObjectInputStream] (val x: Self) extends AnyVal {
+  implicit class XObjectInputStreamMutableBuilder[Self <: XObjectInputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadObject(value: () => XPersistObject): Self = this.set("readObject", js.Any.fromFunction0(value))
+    def setReadObject(value: () => XPersistObject): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpRouteAction extends js.Object {
+trait HttpRouteAction extends StObject {
   
   /**
     * The specification for allowing client side cross-origin requests. Please see W3C Recommendation for Cross Origin Resource Sharing
@@ -67,63 +68,51 @@ object HttpRouteAction {
   }
   
   @scala.inline
-  implicit class HttpRouteActionOps[Self <: HttpRouteAction] (val x: Self) extends AnyVal {
+  implicit class HttpRouteActionMutableBuilder[Self <: HttpRouteAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "corsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorsPolicyUndefined: Self = StObject.set(x, "corsPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaultInjectionPolicy(value: HttpFaultInjection): Self = StObject.set(x, "faultInjectionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorsPolicy(value: CorsPolicy): Self = this.set("corsPolicy", value.asInstanceOf[js.Any])
+    def setFaultInjectionPolicyUndefined: Self = StObject.set(x, "faultInjectionPolicy", js.undefined)
     
     @scala.inline
-    def deleteCorsPolicy: Self = this.set("corsPolicy", js.undefined)
+    def setRequestMirrorPolicy(value: RequestMirrorPolicy): Self = StObject.set(x, "requestMirrorPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultInjectionPolicy(value: HttpFaultInjection): Self = this.set("faultInjectionPolicy", value.asInstanceOf[js.Any])
+    def setRequestMirrorPolicyUndefined: Self = StObject.set(x, "requestMirrorPolicy", js.undefined)
     
     @scala.inline
-    def deleteFaultInjectionPolicy: Self = this.set("faultInjectionPolicy", js.undefined)
+    def setRetryPolicy(value: HttpRetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMirrorPolicy(value: RequestMirrorPolicy): Self = this.set("requestMirrorPolicy", value.asInstanceOf[js.Any])
+    def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
     
     @scala.inline
-    def deleteRequestMirrorPolicy: Self = this.set("requestMirrorPolicy", js.undefined)
+    def setTimeout(value: Duration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryPolicy(value: HttpRetryPolicy): Self = this.set("retryPolicy", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteRetryPolicy: Self = this.set("retryPolicy", js.undefined)
+    def setUrlRewrite(value: UrlRewrite): Self = StObject.set(x, "urlRewrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Duration): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUrlRewriteUndefined: Self = StObject.set(x, "urlRewrite", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWeightedBackendServices(value: js.Array[WeightedBackendService]): Self = StObject.set(x, "weightedBackendServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlRewrite(value: UrlRewrite): Self = this.set("urlRewrite", value.asInstanceOf[js.Any])
+    def setWeightedBackendServicesUndefined: Self = StObject.set(x, "weightedBackendServices", js.undefined)
     
     @scala.inline
-    def deleteUrlRewrite: Self = this.set("urlRewrite", js.undefined)
-    
-    @scala.inline
-    def setWeightedBackendServicesVarargs(value: WeightedBackendService*): Self = this.set("weightedBackendServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeightedBackendServices(value: js.Array[WeightedBackendService]): Self = this.set("weightedBackendServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedBackendServices: Self = this.set("weightedBackendServices", js.undefined)
+    def setWeightedBackendServicesVarargs(value: WeightedBackendService*): Self = StObject.set(x, "weightedBackendServices", js.Array(value :_*))
   }
 }

@@ -1,16 +1,16 @@
 package typings.winrtUwp.global.Windows.Globalization
 
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for formatting currencies, decimal numbers, percent values, and permille values, based on the user's languages and geographic region. */
-@JSGlobal("Windows.Globalization.NumberFormatting")
-@js.native
-object NumberFormatting extends js.Object {
+object NumberFormatting {
   
   /** Formats and parses currencies. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.CurrencyFormatter")
   @js.native
   class CurrencyFormatter protected ()
     extends typings.winrtUwp.Windows.Globalization.NumberFormatting.CurrencyFormatter {
@@ -29,8 +29,9 @@ object NumberFormatting extends js.Object {
   }
   
   /** Specifies the use of symbols or codes when currency is formatted. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.CurrencyFormatterMode")
   @js.native
-  object CurrencyFormatterMode extends js.Object {
+  object CurrencyFormatterMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -43,6 +44,7 @@ object NumberFormatting extends js.Object {
   }
   
   /** Formats and parses decimal numbers. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.DecimalFormatter")
   @js.native
   /** Creates a DecimalFormatter object and initializes it to default values. */
   class DecimalFormatter ()
@@ -56,12 +58,14 @@ object NumberFormatting extends js.Object {
   }
   
   /** Rounds numbers to a specified increment. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.IncrementNumberRounder")
   @js.native
   /** Creates an IncrementNumberRounder object. */
   class IncrementNumberRounder ()
     extends typings.winrtUwp.Windows.Globalization.NumberFormatting.IncrementNumberRounder
   
   /** Translates digits of the Latin numerical system into digits of another numerical system. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.NumeralSystemTranslator")
   @js.native
   /** Creates a NumeralSystemTranslator object initialized by the list of current runtime language values preferred by the user. */
   class NumeralSystemTranslator ()
@@ -74,6 +78,7 @@ object NumberFormatting extends js.Object {
   }
   
   /** Formats and parses percentages. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.PercentFormatter")
   @js.native
   /** Creates a PercentFormatter object and initializes it to default values. */
   class PercentFormatter ()
@@ -87,6 +92,7 @@ object NumberFormatting extends js.Object {
   }
   
   /** Formats and parses permillages. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.PermilleFormatter")
   @js.native
   /** Creates a PermilleFormatter object and initializes it to default values. */
   class PermilleFormatter ()
@@ -100,8 +106,9 @@ object NumberFormatting extends js.Object {
   }
   
   /** Specifies the algorithm used to round numbers. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.RoundingAlgorithm")
   @js.native
-  object RoundingAlgorithm extends js.Object {
+  object RoundingAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -132,6 +139,7 @@ object NumberFormatting extends js.Object {
   }
   
   /** Rounds numbers to a specified number of significant digits. */
+  @JSGlobal("Windows.Globalization.NumberFormatting.SignificantDigitsNumberRounder")
   @js.native
   /** Creates a SignificantDigitsNumberRounder object. */
   class SignificantDigitsNumberRounder ()

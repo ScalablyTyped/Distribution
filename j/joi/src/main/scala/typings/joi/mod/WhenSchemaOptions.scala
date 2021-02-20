@@ -1,11 +1,12 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WhenSchemaOptions extends js.Object {
+trait WhenSchemaOptions extends StObject {
   
   /**
     * the alternative schema type if the condition is false. Required if then is missing.
@@ -26,36 +27,24 @@ object WhenSchemaOptions {
   }
   
   @scala.inline
-  implicit class WhenSchemaOptionsOps[Self <: WhenSchemaOptions] (val x: Self) extends AnyVal {
+  implicit class WhenSchemaOptionsMutableBuilder[Self <: WhenSchemaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
     
     @scala.inline
-    def setOtherwise(value: SchemaLike): Self = this.set("otherwise", value.asInstanceOf[js.Any])
+    def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOtherwise: Self = this.set("otherwise", js.undefined)
+    def setThenNull: Self = StObject.set(x, "then", null)
     
     @scala.inline
-    def setOtherwiseNull: Self = this.set("otherwise", null)
-    
-    @scala.inline
-    def setThen(value: SchemaLike): Self = this.set("then", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThen: Self = this.set("then", js.undefined)
-    
-    @scala.inline
-    def setThenNull: Self = this.set("then", null)
+    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,36 +33,24 @@ object FlowNode {
   }
   
   @scala.inline
-  implicit class FlowNodeOps[Self <: FlowNode] (val x: Self) extends AnyVal {
+  implicit class FlowNodeMutableBuilder[Self <: FlowNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncoming(value: js.Array[SequenceFlow]): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncomingVarargs(value: SequenceFlow*): Self = StObject.set(x, "incoming", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingVarargs(value: SequenceFlow*): Self = this.set("incoming", js.Array(value :_*))
+    def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
     
     @scala.inline
-    def setIncoming(value: js.Array[SequenceFlow]): Self = this.set("incoming", value.asInstanceOf[js.Any])
+    def setOutgoing(value: js.Array[SequenceFlow]): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanesVarargs(value: Lane*): Self = this.set("lanes", js.Array(value :_*))
-    
-    @scala.inline
-    def setLanes(value: js.Array[Lane]): Self = this.set("lanes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoingVarargs(value: SequenceFlow*): Self = this.set("outgoing", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutgoing(value: js.Array[SequenceFlow]): Self = this.set("outgoing", value.asInstanceOf[js.Any])
+    def setOutgoingVarargs(value: SequenceFlow*): Self = StObject.set(x, "outgoing", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxDevices Class */
 @js.native
-trait FaxDevices extends js.Object {
+trait FaxDevices extends StObject {
   
   def apply(vIndex: js.Any): FaxDevice = js.native
   

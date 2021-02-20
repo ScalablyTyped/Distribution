@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorSummary extends js.Object {
+trait ErrorSummary extends StObject {
   
   /** Required. */
   var errorCode: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object ErrorSummary {
   }
   
   @scala.inline
-  implicit class ErrorSummaryOps[Self <: ErrorSummary] (val x: Self) extends AnyVal {
+  implicit class ErrorSummaryMutableBuilder[Self <: ErrorSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setErrorLogEntries(value: js.Array[ErrorLogEntry]): Self = StObject.set(x, "errorLogEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: String): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setErrorLogEntriesUndefined: Self = StObject.set(x, "errorLogEntries", js.undefined)
     
     @scala.inline
-    def deleteErrorCount: Self = this.set("errorCount", js.undefined)
-    
-    @scala.inline
-    def setErrorLogEntriesVarargs(value: ErrorLogEntry*): Self = this.set("errorLogEntries", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrorLogEntries(value: js.Array[ErrorLogEntry]): Self = this.set("errorLogEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorLogEntries: Self = this.set("errorLogEntries", js.undefined)
+    def setErrorLogEntriesVarargs(value: ErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value :_*))
   }
 }

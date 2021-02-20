@@ -1,11 +1,12 @@
 package typings.handlebars
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileOptions extends js.Object {
+trait CompileOptions extends StObject {
   
   var assumeObjects: js.UndefOr[Boolean] = js.native
   
@@ -36,78 +37,66 @@ object CompileOptions {
   }
   
   @scala.inline
-  implicit class CompileOptionsOps[Self <: CompileOptions] (val x: Self) extends AnyVal {
+  implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssumeObjects(value: Boolean): Self = StObject.set(x, "assumeObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssumeObjectsUndefined: Self = StObject.set(x, "assumeObjects", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompat(value: Boolean): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssumeObjects(value: Boolean): Self = this.set("assumeObjects", value.asInstanceOf[js.Any])
+    def setCompatUndefined: Self = StObject.set(x, "compat", js.undefined)
     
     @scala.inline
-    def deleteAssumeObjects: Self = this.set("assumeObjects", js.undefined)
+    def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompat(value: Boolean): Self = this.set("compat", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCompat: Self = this.set("compat", js.undefined)
+    def setExplicitPartialContext(value: Boolean): Self = StObject.set(x, "explicitPartialContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Boolean): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setExplicitPartialContextUndefined: Self = StObject.set(x, "explicitPartialContext", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setIgnoreStandalone(value: Boolean): Self = StObject.set(x, "ignoreStandalone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitPartialContext(value: Boolean): Self = this.set("explicitPartialContext", value.asInstanceOf[js.Any])
+    def setIgnoreStandaloneUndefined: Self = StObject.set(x, "ignoreStandalone", js.undefined)
     
     @scala.inline
-    def deleteExplicitPartialContext: Self = this.set("explicitPartialContext", js.undefined)
+    def setKnownHelpers(value: KnownHelpers): Self = StObject.set(x, "knownHelpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreStandalone(value: Boolean): Self = this.set("ignoreStandalone", value.asInstanceOf[js.Any])
+    def setKnownHelpersOnly(value: Boolean): Self = StObject.set(x, "knownHelpersOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreStandalone: Self = this.set("ignoreStandalone", js.undefined)
+    def setKnownHelpersOnlyUndefined: Self = StObject.set(x, "knownHelpersOnly", js.undefined)
     
     @scala.inline
-    def setKnownHelpers(value: KnownHelpers): Self = this.set("knownHelpers", value.asInstanceOf[js.Any])
+    def setKnownHelpersUndefined: Self = StObject.set(x, "knownHelpers", js.undefined)
     
     @scala.inline
-    def deleteKnownHelpers: Self = this.set("knownHelpers", js.undefined)
+    def setNoEscape(value: Boolean): Self = StObject.set(x, "noEscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnownHelpersOnly(value: Boolean): Self = this.set("knownHelpersOnly", value.asInstanceOf[js.Any])
+    def setNoEscapeUndefined: Self = StObject.set(x, "noEscape", js.undefined)
     
     @scala.inline
-    def deleteKnownHelpersOnly: Self = this.set("knownHelpersOnly", js.undefined)
+    def setPreventIndent(value: Boolean): Self = StObject.set(x, "preventIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEscape(value: Boolean): Self = this.set("noEscape", value.asInstanceOf[js.Any])
+    def setPreventIndentUndefined: Self = StObject.set(x, "preventIndent", js.undefined)
     
     @scala.inline
-    def deleteNoEscape: Self = this.set("noEscape", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventIndent(value: Boolean): Self = this.set("preventIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventIndent: Self = this.set("preventIndent", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

@@ -1,18 +1,17 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/util/RandomGenerator", JSImport.Namespace)
-@js.native
-object randomGeneratorMod extends js.Object {
+object randomGeneratorMod {
   
+  @JSImport("typeorm/browser/util/RandomGenerator", "RandomGenerator")
   @js.native
-  class RandomGenerator () extends js.Object
+  class RandomGenerator () extends StObject
   /* static members */
-  @js.native
-  object RandomGenerator extends js.Object {
+  object RandomGenerator {
     
     /**
       *  discuss at: http://locutus.io/php/sha1/
@@ -26,11 +25,15 @@ object randomGeneratorMod extends js.Object {
       *   example 1: sha1('Kevin van Zonneveld')
       *   returns 1: '54916d2e62f65b3afa6e192e6a601cdbe5cb5897'
       */
+    @JSImport("typeorm/browser/util/RandomGenerator", "RandomGenerator.sha1")
+    @js.native
     def sha1(str: String): String = js.native
     
     /**
       * RFC4122 compliant UUID v4 generator.
       */
+    @JSImport("typeorm/browser/util/RandomGenerator", "RandomGenerator.uuid4")
+    @js.native
     def uuid4(): String = js.native
   }
 }

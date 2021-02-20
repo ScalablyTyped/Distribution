@@ -1,11 +1,12 @@
 package typings.stremioAddonSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManifestCatalog extends js.Object {
+trait ManifestCatalog extends StObject {
   
   /**
     * All extra properties related to this catalog.
@@ -45,45 +46,33 @@ object ManifestCatalog {
   }
   
   @scala.inline
-  implicit class ManifestCatalogOps[Self <: ManifestCatalog] (val x: Self) extends AnyVal {
+  implicit class ManifestCatalogMutableBuilder[Self <: ManifestCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtra(value: js.Array[ManifestExtra]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraVarargs(value: ManifestExtra*): Self = StObject.set(x, "extra", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
     @scala.inline
-    def setType(value: ContentType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
     
     @scala.inline
-    def setExtraVarargs(value: ManifestExtra*): Self = this.set("extra", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtra(value: js.Array[ManifestExtra]): Self = this.set("extra", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
-    
-    @scala.inline
-    def setGenresVarargs(value: String*): Self = this.set("genres", js.Array(value :_*))
-    
-    @scala.inline
-    def setGenres(value: js.Array[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenres: Self = this.set("genres", js.undefined)
+    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

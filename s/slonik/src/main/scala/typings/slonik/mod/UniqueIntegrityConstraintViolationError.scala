@@ -1,9 +1,13 @@
 package typings.slonik.mod
 
+import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("slonik", "UniqueIntegrityConstraintViolationError")
 @js.native
-class UniqueIntegrityConstraintViolationError () extends IntegrityConstraintViolationError
+class UniqueIntegrityConstraintViolationError protected () extends IntegrityConstraintViolationError {
+  def this(error: Error, constraint: String) = this()
+}

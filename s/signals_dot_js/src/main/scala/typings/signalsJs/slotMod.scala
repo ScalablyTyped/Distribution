@@ -2,14 +2,14 @@ package typings.signalsJs
 
 import typings.signalsJs.ioncesignalMod.IOnceSignal
 import typings.signalsJs.islotMod.ISlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signals.js/lib/org/osflash/signals/Slot", JSImport.Namespace)
-@js.native
-object slotMod extends js.Object {
+object slotMod {
   
+  @JSImport("signals.js/lib/org/osflash/signals/Slot", "Slot")
   @js.native
   class Slot protected () extends ISlot {
     /**

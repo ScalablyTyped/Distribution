@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ScreenSpaceEventHandler")
 @js.native
-class ScreenSpaceEventHandler () extends js.Object {
+class ScreenSpaceEventHandler () extends StObject {
   def this(element: HTMLCanvasElement) = this()
   
   def destroy(): Unit = js.native

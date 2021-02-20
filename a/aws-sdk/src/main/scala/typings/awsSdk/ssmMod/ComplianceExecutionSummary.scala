@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceExecutionSummary extends js.Object {
+trait ComplianceExecutionSummary extends StObject {
   
   /**
     * An ID created by the system when PutComplianceItems was called. For example, CommandID is a valid execution ID. You can use this ID in subsequent calls.
@@ -31,33 +32,21 @@ object ComplianceExecutionSummary {
   }
   
   @scala.inline
-  implicit class ComplianceExecutionSummaryOps[Self <: ComplianceExecutionSummary] (val x: Self) extends AnyVal {
+  implicit class ComplianceExecutionSummaryMutableBuilder[Self <: ComplianceExecutionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionId(value: ComplianceExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionTime(value: DateTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTime(value: DateTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    def setExecutionType(value: ComplianceExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: ComplianceExecutionId): Self = this.set("ExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionId: Self = this.set("ExecutionId", js.undefined)
-    
-    @scala.inline
-    def setExecutionType(value: ComplianceExecutionType): Self = this.set("ExecutionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionType: Self = this.set("ExecutionType", js.undefined)
+    def setExecutionTypeUndefined: Self = StObject.set(x, "ExecutionType", js.undefined)
   }
 }

@@ -1,17 +1,14 @@
 package typings.`3dBinPacking`
 
 import typings.`3dBinPacking`.bws.packer.Instance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("3d-bin-packing", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @JSName("_Test")
-  def Test(): Unit = js.native
-  
+  @JSImport("3d-bin-packing", "GAWrapperArray")
   @js.native
   class GAWrapperArray protected ()
     extends typings.`3dBinPacking`.bws.packer.GAWrapperArray {
@@ -32,6 +29,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "InstanceArray")
   @js.native
   /**
     * Default Constructor.
@@ -47,6 +45,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "InstanceForm")
   @js.native
   /**
     * Default Constructor.
@@ -63,6 +62,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "InstanceFormArray")
   @js.native
   /**
     * Default Constructor.
@@ -89,6 +89,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "Packer")
   @js.native
   /**
     * Default Constructor.
@@ -112,6 +113,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "PackerForm")
   @js.native
   /**
     * Default Constructor.
@@ -135,6 +137,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "Product")
   @js.native
   /**
     * Default Constructor.
@@ -152,6 +155,10 @@ object mod extends js.Object {
     def this(name: String, width: Double, height: Double, length: Double) = this()
   }
   
+  @JSImport("3d-bin-packing", "_Test")
+  @js.native
+  def Test(): Unit = js.native
+  
   /**
     * <p> Wrap represents an act wrap(ping). </p>
     *
@@ -164,6 +171,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "Wrap")
   @js.native
   class Wrap protected ()
     extends typings.`3dBinPacking`.bws.packer.Wrap {
@@ -214,6 +222,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "Wrapper")
   @js.native
   /**
     * Default Constructor.
@@ -237,6 +246,7 @@ object mod extends js.Object {
     def this(name: String, price: Double, width: Double, height: Double, length: Double, thickness: Double) = this()
   }
   
+  @JSImport("3d-bin-packing", "WrapperArray")
   @js.native
   /**
     * Default Constructor.
@@ -249,6 +259,7 @@ object mod extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
+  @JSImport("3d-bin-packing", "WrapperGroup")
   @js.native
   /**
     * Default Constructor.

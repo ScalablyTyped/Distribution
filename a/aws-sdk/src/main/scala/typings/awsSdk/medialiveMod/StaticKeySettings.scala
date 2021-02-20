@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticKeySettings extends js.Object {
+trait StaticKeySettings extends StObject {
   
   /**
     * The URL of the license server used for protecting content.
@@ -26,27 +27,15 @@ object StaticKeySettings {
   }
   
   @scala.inline
-  implicit class StaticKeySettingsOps[Self <: StaticKeySettings] (val x: Self) extends AnyVal {
+  implicit class StaticKeySettingsMutableBuilder[Self <: StaticKeySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyProviderServer(value: InputLocation): Self = StObject.set(x, "KeyProviderServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyProviderServerUndefined: Self = StObject.set(x, "KeyProviderServer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStaticKeyValue(value: stringMin32Max32): Self = this.set("StaticKeyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyProviderServer(value: InputLocation): Self = this.set("KeyProviderServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyProviderServer: Self = this.set("KeyProviderServer", js.undefined)
+    def setStaticKeyValue(value: stringMin32Max32): Self = StObject.set(x, "StaticKeyValue", value.asInstanceOf[js.Any])
   }
 }

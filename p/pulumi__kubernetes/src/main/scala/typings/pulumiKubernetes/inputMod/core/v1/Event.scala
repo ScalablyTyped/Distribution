@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Event is a report of an event somewhere in the cluster.
   */
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   /**
     * What action was taken/failed regarding to the Regarding object.
@@ -106,114 +107,102 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvolvedObject(value: Input[ObjectReference]): Self = this.set("involvedObject", value.asInstanceOf[js.Any])
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def setMetadata(value: Input[ObjectMeta]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Input[String]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setEventTime(value: Input[String]): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setFirstTimestamp(value: Input[String]): Self = StObject.set(x, "firstTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Input[Double]): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFirstTimestampUndefined: Self = StObject.set(x, "firstTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setInvolvedObject(value: Input[ObjectReference]): Self = StObject.set(x, "involvedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: Input[String]): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setFirstTimestamp(value: Input[String]): Self = this.set("firstTimestamp", value.asInstanceOf[js.Any])
+    def setLastTimestamp(value: Input[String]): Self = StObject.set(x, "lastTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstTimestamp: Self = this.set("firstTimestamp", js.undefined)
+    def setLastTimestampUndefined: Self = StObject.set(x, "lastTimestamp", js.undefined)
     
     @scala.inline
-    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setLastTimestamp(value: Input[String]): Self = this.set("lastTimestamp", value.asInstanceOf[js.Any])
+    def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastTimestamp: Self = this.set("lastTimestamp", js.undefined)
+    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Input[String]): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRelated(value: Input[ObjectReference]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: Input[String]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReportingComponent(value: Input[String]): Self = StObject.set(x, "reportingComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelated(value: Input[ObjectReference]): Self = this.set("related", value.asInstanceOf[js.Any])
+    def setReportingComponentUndefined: Self = StObject.set(x, "reportingComponent", js.undefined)
     
     @scala.inline
-    def deleteRelated: Self = this.set("related", js.undefined)
+    def setReportingInstance(value: Input[String]): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportingComponent(value: Input[String]): Self = this.set("reportingComponent", value.asInstanceOf[js.Any])
+    def setReportingInstanceUndefined: Self = StObject.set(x, "reportingInstance", js.undefined)
     
     @scala.inline
-    def deleteReportingComponent: Self = this.set("reportingComponent", js.undefined)
+    def setSeries(value: Input[EventSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportingInstance(value: Input[String]): Self = this.set("reportingInstance", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteReportingInstance: Self = this.set("reportingInstance", js.undefined)
+    def setSource(value: Input[EventSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: Input[EventSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Input[EventSource]): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import typings.maximMazurokGapiClientAnalytics.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserDeletionRequest extends js.Object {
+trait UserDeletionRequest extends StObject {
   
   /** This marks the point in time for which all user data before should be deleted */
   var deletionRequestTime: js.UndefOr[String] = js.native
@@ -35,54 +36,42 @@ object UserDeletionRequest {
   }
   
   @scala.inline
-  implicit class UserDeletionRequestOps[Self <: UserDeletionRequest] (val x: Self) extends AnyVal {
+  implicit class UserDeletionRequestMutableBuilder[Self <: UserDeletionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletionRequestTime(value: String): Self = StObject.set(x, "deletionRequestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletionRequestTimeUndefined: Self = StObject.set(x, "deletionRequestTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirebaseProjectId(value: String): Self = StObject.set(x, "firebaseProjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionRequestTime(value: String): Self = this.set("deletionRequestTime", value.asInstanceOf[js.Any])
+    def setFirebaseProjectIdUndefined: Self = StObject.set(x, "firebaseProjectId", js.undefined)
     
     @scala.inline
-    def deleteDeletionRequestTime: Self = this.set("deletionRequestTime", js.undefined)
+    def setId(value: Type): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirebaseProjectId(value: String): Self = this.set("firebaseProjectId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFirebaseProjectId: Self = this.set("firebaseProjectId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Type): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPropertyId(value: String): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyId(value: String): Self = this.set("propertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyId: Self = this.set("propertyId", js.undefined)
-    
-    @scala.inline
-    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

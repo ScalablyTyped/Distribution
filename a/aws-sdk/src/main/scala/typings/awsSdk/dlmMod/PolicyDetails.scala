@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyDetails extends js.Object {
+trait PolicyDetails extends StObject {
   
   /**
     * A set of optional parameters for the policy. 
@@ -41,57 +42,45 @@ object PolicyDetails {
   }
   
   @scala.inline
-  implicit class PolicyDetailsOps[Self <: PolicyDetails] (val x: Self) extends AnyVal {
+  implicit class PolicyDetailsMutableBuilder[Self <: PolicyDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyType(value: PolicyTypeValues): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setResourceTypes(value: ResourceTypeValuesList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyType(value: PolicyTypeValues): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
     @scala.inline
-    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    def setResourceTypesVarargs(value: ResourceTypeValues*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setResourceTypesVarargs(value: ResourceTypeValues*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    def setSchedules(value: ScheduleList): Self = StObject.set(x, "Schedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypes(value: ResourceTypeValuesList): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    def setSchedulesUndefined: Self = StObject.set(x, "Schedules", js.undefined)
     
     @scala.inline
-    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "Schedules", js.Array(value :_*))
     
     @scala.inline
-    def setSchedulesVarargs(value: Schedule*): Self = this.set("Schedules", js.Array(value :_*))
+    def setTargetTags(value: TargetTagList): Self = StObject.set(x, "TargetTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedules(value: ScheduleList): Self = this.set("Schedules", value.asInstanceOf[js.Any])
+    def setTargetTagsUndefined: Self = StObject.set(x, "TargetTags", js.undefined)
     
     @scala.inline
-    def deleteSchedules: Self = this.set("Schedules", js.undefined)
-    
-    @scala.inline
-    def setTargetTagsVarargs(value: Tag*): Self = this.set("TargetTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetTags(value: TargetTagList): Self = this.set("TargetTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetTags: Self = this.set("TargetTags", js.undefined)
+    def setTargetTagsVarargs(value: Tag*): Self = StObject.set(x, "TargetTags", js.Array(value :_*))
   }
 }

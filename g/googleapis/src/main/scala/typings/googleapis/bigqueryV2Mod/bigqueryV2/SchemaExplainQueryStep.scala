@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaExplainQueryStep extends js.Object {
+trait SchemaExplainQueryStep extends StObject {
   
   /**
     * Machine-readable operation type.
@@ -26,33 +27,21 @@ object SchemaExplainQueryStep {
   }
   
   @scala.inline
-  implicit class SchemaExplainQueryStepOps[Self <: SchemaExplainQueryStep] (val x: Self) extends AnyVal {
+  implicit class SchemaExplainQueryStepMutableBuilder[Self <: SchemaExplainQueryStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubsteps(value: js.Array[String]): Self = StObject.set(x, "substeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSubstepsUndefined: Self = StObject.set(x, "substeps", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setSubstepsVarargs(value: String*): Self = this.set("substeps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubsteps(value: js.Array[String]): Self = this.set("substeps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubsteps: Self = this.set("substeps", js.undefined)
+    def setSubstepsVarargs(value: String*): Self = StObject.set(x, "substeps", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.weekday
   - typings.std.stdStrings.year
 */
-trait DateTimeFormatPartTypes extends js.Object
+trait DateTimeFormatPartTypes extends StObject
 object DateTimeFormatPartTypes {
   
   @scala.inline

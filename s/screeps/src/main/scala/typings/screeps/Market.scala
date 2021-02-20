@@ -2,6 +2,7 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.screeps.anon.Price
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * terminals, and your buy/sell orders. The object is accessible via the singleton Game.market property.
   */
 @js.native
-trait Market extends js.Object {
+trait Market extends StObject {
   
   /**
     * Estimate the energy transaction cost of StructureTerminal.send and Market.deal methods. The formula:

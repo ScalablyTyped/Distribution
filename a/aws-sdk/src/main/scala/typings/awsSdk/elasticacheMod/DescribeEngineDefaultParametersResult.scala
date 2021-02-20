@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEngineDefaultParametersResult extends js.Object {
+trait DescribeEngineDefaultParametersResult extends StObject {
   
   var EngineDefaults: js.UndefOr[typings.awsSdk.elasticacheMod.EngineDefaults] = js.native
 }
@@ -18,24 +19,12 @@ object DescribeEngineDefaultParametersResult {
   }
   
   @scala.inline
-  implicit class DescribeEngineDefaultParametersResultOps[Self <: DescribeEngineDefaultParametersResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEngineDefaultParametersResultMutableBuilder[Self <: DescribeEngineDefaultParametersResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEngineDefaults(value: EngineDefaults): Self = this.set("EngineDefaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEngineDefaults: Self = this.set("EngineDefaults", js.undefined)
+    def setEngineDefaultsUndefined: Self = StObject.set(x, "EngineDefaults", js.undefined)
   }
 }

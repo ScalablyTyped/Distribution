@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CssClassNames extends js.Object {
+trait CssClassNames extends StObject {
   
   var headerCell: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object CssClassNames {
   }
   
   @scala.inline
-  implicit class CssClassNamesOps[Self <: CssClassNames] (val x: Self) extends AnyVal {
+  implicit class CssClassNamesMutableBuilder[Self <: CssClassNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderRow(value: String): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCell(value: String): Self = this.set("headerCell", value.asInstanceOf[js.Any])
+    def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
     
     @scala.inline
-    def deleteHeaderCell: Self = this.set("headerCell", js.undefined)
+    def setHoverTableRow(value: String): Self = StObject.set(x, "hoverTableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRow(value: String): Self = this.set("headerRow", value.asInstanceOf[js.Any])
+    def setHoverTableRowUndefined: Self = StObject.set(x, "hoverTableRow", js.undefined)
     
     @scala.inline
-    def deleteHeaderRow: Self = this.set("headerRow", js.undefined)
+    def setOddTableRow(value: String): Self = StObject.set(x, "oddTableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverTableRow(value: String): Self = this.set("hoverTableRow", value.asInstanceOf[js.Any])
+    def setOddTableRowUndefined: Self = StObject.set(x, "oddTableRow", js.undefined)
     
     @scala.inline
-    def deleteHoverTableRow: Self = this.set("hoverTableRow", js.undefined)
+    def setRowNumberCell(value: String): Self = StObject.set(x, "rowNumberCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOddTableRow(value: String): Self = this.set("oddTableRow", value.asInstanceOf[js.Any])
+    def setRowNumberCellUndefined: Self = StObject.set(x, "rowNumberCell", js.undefined)
     
     @scala.inline
-    def deleteOddTableRow: Self = this.set("oddTableRow", js.undefined)
+    def setSelectedTableRow(value: String): Self = StObject.set(x, "selectedTableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowNumberCell(value: String): Self = this.set("rowNumberCell", value.asInstanceOf[js.Any])
+    def setSelectedTableRowUndefined: Self = StObject.set(x, "selectedTableRow", js.undefined)
     
     @scala.inline
-    def deleteRowNumberCell: Self = this.set("rowNumberCell", js.undefined)
+    def setTableCell(value: String): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTableRow(value: String): Self = this.set("selectedTableRow", value.asInstanceOf[js.Any])
+    def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
     
     @scala.inline
-    def deleteSelectedTableRow: Self = this.set("selectedTableRow", js.undefined)
+    def setTableRow(value: String): Self = StObject.set(x, "tableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableCell(value: String): Self = this.set("tableCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCell: Self = this.set("tableCell", js.undefined)
-    
-    @scala.inline
-    def setTableRow(value: String): Self = this.set("tableRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRow: Self = this.set("tableRow", js.undefined)
+    def setTableRowUndefined: Self = StObject.set(x, "tableRow", js.undefined)
   }
 }

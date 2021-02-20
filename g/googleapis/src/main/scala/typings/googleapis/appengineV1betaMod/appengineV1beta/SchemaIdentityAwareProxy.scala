@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Identity-Aware Proxy
   */
 @js.native
-trait SchemaIdentityAwareProxy extends js.Object {
+trait SchemaIdentityAwareProxy extends StObject {
   
   /**
     * Whether the serving infrastructure will authenticate and authorize all
@@ -50,48 +51,36 @@ object SchemaIdentityAwareProxy {
   }
   
   @scala.inline
-  implicit class SchemaIdentityAwareProxyOps[Self <: SchemaIdentityAwareProxy] (val x: Self) extends AnyVal {
+  implicit class SchemaIdentityAwareProxyMutableBuilder[Self <: SchemaIdentityAwareProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOauth2ClientId(value: String): Self = StObject.set(x, "oauth2ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setOauth2ClientIdUndefined: Self = StObject.set(x, "oauth2ClientId", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setOauth2ClientInfo(value: SchemaOAuth2ClientInfo): Self = StObject.set(x, "oauth2ClientInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth2ClientId(value: String): Self = this.set("oauth2ClientId", value.asInstanceOf[js.Any])
+    def setOauth2ClientInfoUndefined: Self = StObject.set(x, "oauth2ClientInfo", js.undefined)
     
     @scala.inline
-    def deleteOauth2ClientId: Self = this.set("oauth2ClientId", js.undefined)
+    def setOauth2ClientSecret(value: String): Self = StObject.set(x, "oauth2ClientSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth2ClientInfo(value: SchemaOAuth2ClientInfo): Self = this.set("oauth2ClientInfo", value.asInstanceOf[js.Any])
+    def setOauth2ClientSecretSha256(value: String): Self = StObject.set(x, "oauth2ClientSecretSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOauth2ClientInfo: Self = this.set("oauth2ClientInfo", js.undefined)
+    def setOauth2ClientSecretSha256Undefined: Self = StObject.set(x, "oauth2ClientSecretSha256", js.undefined)
     
     @scala.inline
-    def setOauth2ClientSecret(value: String): Self = this.set("oauth2ClientSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOauth2ClientSecret: Self = this.set("oauth2ClientSecret", js.undefined)
-    
-    @scala.inline
-    def setOauth2ClientSecretSha256(value: String): Self = this.set("oauth2ClientSecretSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOauth2ClientSecretSha256: Self = this.set("oauth2ClientSecretSha256", js.undefined)
+    def setOauth2ClientSecretUndefined: Self = StObject.set(x, "oauth2ClientSecret", js.undefined)
   }
 }

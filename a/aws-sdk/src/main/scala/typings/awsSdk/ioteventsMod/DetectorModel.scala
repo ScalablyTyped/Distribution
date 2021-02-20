@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectorModel extends js.Object {
+trait DetectorModel extends StObject {
   
   /**
     * Information about how the detector is configured.
@@ -26,30 +27,18 @@ object DetectorModel {
   }
   
   @scala.inline
-  implicit class DetectorModelOps[Self <: DetectorModel] (val x: Self) extends AnyVal {
+  implicit class DetectorModelMutableBuilder[Self <: DetectorModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorModelConfiguration(value: DetectorModelConfiguration): Self = StObject.set(x, "detectorModelConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectorModelConfigurationUndefined: Self = StObject.set(x, "detectorModelConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorModelDefinition(value: DetectorModelDefinition): Self = StObject.set(x, "detectorModelDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorModelConfiguration(value: DetectorModelConfiguration): Self = this.set("detectorModelConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectorModelConfiguration: Self = this.set("detectorModelConfiguration", js.undefined)
-    
-    @scala.inline
-    def setDetectorModelDefinition(value: DetectorModelDefinition): Self = this.set("detectorModelDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectorModelDefinition: Self = this.set("detectorModelDefinition", js.undefined)
+    def setDetectorModelDefinitionUndefined: Self = StObject.set(x, "detectorModelDefinition", js.undefined)
   }
 }

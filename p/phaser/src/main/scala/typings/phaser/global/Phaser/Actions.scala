@@ -11,13 +11,12 @@ import typings.phaser.Phaser.Types.Actions.CallCallback
 import typings.phaser.Phaser.Types.Actions.GridAlignConfig
 import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Actions")
-@js.native
-object Actions extends js.Object {
+object Actions {
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties, and aligns them next to each other.
@@ -28,9 +27,17 @@ object Actions extends js.Object {
     * @param offsetX Optional horizontal offset from the position. Default 0.
     * @param offsetY Optional vertical offset from the position. Default 0.
     */
+  @JSGlobal("Phaser.Actions.AlignTo")
+  @js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer): G = js.native
+  @JSGlobal("Phaser.Actions.AlignTo")
+  @js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.AlignTo")
+  @js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.AlignTo")
+  @js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = js.native
   
   /**
@@ -46,7 +53,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -54,11 +65,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Angle")
+  @js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -67,6 +90,8 @@ object Actions extends js.Object {
     * @param callback The callback to be invoked. It will be passed just one argument: the item from the array.
     * @param context The scope in which the callback will be invoked.
     */
+  @JSGlobal("Phaser.Actions.Call")
+  @js.native
   def Call[G /* <: js.Array[GameObject] */](items: G, callback: CallCallback, context: js.Any): G = js.native
   
   /**
@@ -79,7 +104,11 @@ object Actions extends js.Object {
     * @param compare The comparison object. Each property in this object will be checked against the items of the array.
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
+  @JSGlobal("Phaser.Actions.GetFirst")
+  @js.native
   def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = js.native
+  @JSGlobal("Phaser.Actions.GetFirst")
+  @js.native
   def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = js.native
   
   /**
@@ -92,7 +121,11 @@ object Actions extends js.Object {
     * @param compare The comparison object. Each property in this object will be checked against the items of the array.
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
+  @JSGlobal("Phaser.Actions.GetLast")
+  @js.native
   def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = js.native
+  @JSGlobal("Phaser.Actions.GetLast")
+  @js.native
   def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = js.native
   
   /**
@@ -101,6 +134,8 @@ object Actions extends js.Object {
     * @param items The array of items to be updated by this action.
     * @param options The GridAlign Configuration object.
     */
+  @JSGlobal("Phaser.Actions.GridAlign")
+  @js.native
   def GridAlign[G /* <: js.Array[GameObject] */](items: G, options: GridAlignConfig): G = js.native
   
   /**
@@ -116,7 +151,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -124,11 +163,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncAlpha")
+  @js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -144,7 +195,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -152,11 +207,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncX")
+  @js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -174,7 +241,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -184,6 +255,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -192,6 +265,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -201,7 +276,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -211,6 +290,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -219,6 +300,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -228,7 +311,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -238,6 +325,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -246,6 +335,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -255,7 +346,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -265,7 +360,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -275,7 +374,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -285,6 +388,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -293,6 +398,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -302,7 +409,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -312,7 +423,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -322,7 +437,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -332,7 +451,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -342,7 +465,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -352,7 +479,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncXY")
+  @js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -368,7 +499,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -376,11 +511,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.IncY")
+  @js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -392,9 +539,17 @@ object Actions extends js.Object {
     * @param startAngle Optional angle to start position from, in radians. Default 0.
     * @param endAngle Optional angle to stop position at, in radians. Default 6.28.
     */
+  @JSGlobal("Phaser.Actions.PlaceOnCircle")
+  @js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnCircle")
+  @js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnCircle")
+  @js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnCircle")
+  @js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double, endAngle: Double): G = js.native
   
   /**
@@ -406,9 +561,17 @@ object Actions extends js.Object {
     * @param startAngle Optional angle to start position from, in radians. Default 0.
     * @param endAngle Optional angle to stop position at, in radians. Default 6.28.
     */
+  @JSGlobal("Phaser.Actions.PlaceOnEllipse")
+  @js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnEllipse")
+  @js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnEllipse")
+  @js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnEllipse")
+  @js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double, endAngle: Double): G = js.native
   
   /**
@@ -416,6 +579,8 @@ object Actions extends js.Object {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param line The Line to position the Game Objects on.
     */
+  @JSGlobal("Phaser.Actions.PlaceOnLine")
+  @js.native
   def PlaceOnLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = js.native
   
   /**
@@ -427,7 +592,11 @@ object Actions extends js.Object {
     * @param rect The Rectangle to position the Game Objects on.
     * @param shift An optional positional offset. Default 1.
     */
+  @JSGlobal("Phaser.Actions.PlaceOnRectangle")
+  @js.native
   def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnRectangle")
+  @js.native
   def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, shift: integer): G = js.native
   
   /**
@@ -438,7 +607,11 @@ object Actions extends js.Object {
     * @param triangle The Triangle to position the Game Objects on.
     * @param stepRate An optional step rate, to increase or decrease the packing of the Game Objects on the lines. Default 1.
     */
+  @JSGlobal("Phaser.Actions.PlaceOnTriangle")
+  @js.native
   def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = js.native
+  @JSGlobal("Phaser.Actions.PlaceOnTriangle")
+  @js.native
   def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle, stepRate: Double): G = js.native
   
   /**
@@ -447,8 +620,14 @@ object Actions extends js.Object {
     * @param key The name of the animation to play.
     * @param startFrame The starting frame of the animation with the given key.
     */
+  @JSGlobal("Phaser.Actions.PlayAnimation")
+  @js.native
   def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String): G = js.native
+  @JSGlobal("Phaser.Actions.PlayAnimation")
+  @js.native
   def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: String): G = js.native
+  @JSGlobal("Phaser.Actions.PlayAnimation")
+  @js.native
   def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: integer): G = js.native
   
   /**
@@ -465,7 +644,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](
     items: G,
     key: String,
@@ -474,7 +657,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](
     items: G,
     key: String,
@@ -483,7 +670,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](
     items: G,
     key: String,
@@ -492,7 +683,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueInc")
+  @js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -509,7 +704,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](
     items: G,
     key: String,
@@ -518,7 +717,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](
     items: G,
     key: String,
@@ -527,7 +730,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](
     items: G,
     key: String,
@@ -536,7 +743,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.PropertyValueSet")
+  @js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -546,6 +757,8 @@ object Actions extends js.Object {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param circle The Circle to position the Game Objects within.
     */
+  @JSGlobal("Phaser.Actions.RandomCircle")
+  @js.native
   def RandomCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = js.native
   
   /**
@@ -555,6 +768,8 @@ object Actions extends js.Object {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param ellipse The Ellipse to position the Game Objects within.
     */
+  @JSGlobal("Phaser.Actions.RandomEllipse")
+  @js.native
   def RandomEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = js.native
   
   /**
@@ -564,6 +779,8 @@ object Actions extends js.Object {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param line The Line to position the Game Objects randomly on.
     */
+  @JSGlobal("Phaser.Actions.RandomLine")
+  @js.native
   def RandomLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = js.native
   
   /**
@@ -571,6 +788,8 @@ object Actions extends js.Object {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param rect The Rectangle to position the Game Objects within.
     */
+  @JSGlobal("Phaser.Actions.RandomRectangle")
+  @js.native
   def RandomRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
   
   /**
@@ -580,6 +799,8 @@ object Actions extends js.Object {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param triangle The Triangle to position the Game Objects within.
     */
+  @JSGlobal("Phaser.Actions.RandomTriangle")
+  @js.native
   def RandomTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = js.native
   
   /**
@@ -595,7 +816,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -603,11 +828,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.Rotate")
+  @js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -616,6 +853,8 @@ object Actions extends js.Object {
     * @param point Any object with public `x` and `y` properties.
     * @param angle The angle to rotate by, in radians.
     */
+  @JSGlobal("Phaser.Actions.RotateAround")
+  @js.native
   def RotateAround[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double): G = js.native
   
   /**
@@ -625,6 +864,8 @@ object Actions extends js.Object {
     * @param angle The angle to rotate by, in radians.
     * @param distance The distance from the point of rotation in pixels.
     */
+  @JSGlobal("Phaser.Actions.RotateAroundDistance")
+  @js.native
   def RotateAroundDistance[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double, distance: Double): G = js.native
   
   /**
@@ -640,7 +881,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -648,11 +893,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleX")
+  @js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -670,7 +927,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -680,6 +941,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -688,6 +951,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -697,6 +962,8 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -704,6 +971,8 @@ object Actions extends js.Object {
     stepX: js.UndefOr[scala.Nothing],
     stepY: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -713,6 +982,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -721,6 +992,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -730,7 +1003,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -740,6 +1017,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -748,6 +1027,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -757,7 +1038,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -767,6 +1052,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -775,6 +1062,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -784,7 +1073,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -794,6 +1087,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -802,6 +1097,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -811,7 +1108,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -821,6 +1122,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -829,6 +1132,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -838,7 +1143,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -848,6 +1157,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -856,6 +1167,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -865,7 +1178,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -875,7 +1192,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleXY")
+  @js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -899,7 +1220,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -907,11 +1232,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.ScaleY")
+  @js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -927,7 +1264,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -935,11 +1276,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetAlpha")
+  @js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -954,9 +1307,17 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetBlendMode")
+  @js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetBlendMode")
+  @js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetBlendMode")
+  @js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetBlendMode")
+  @js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -972,7 +1333,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -980,11 +1345,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetDepth")
+  @js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -993,6 +1370,8 @@ object Actions extends js.Object {
     * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
     * @param hitAreaCallback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
     */
+  @JSGlobal("Phaser.Actions.SetHitArea")
+  @js.native
   def SetHitArea[G /* <: js.Array[GameObject] */](items: G, hitArea: js.Any, hitAreaCallback: HitAreaCallback): G = js.native
   
   /**
@@ -1010,7 +1389,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1020,6 +1403,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1028,6 +1413,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1037,6 +1424,8 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1044,6 +1433,8 @@ object Actions extends js.Object {
     stepX: js.UndefOr[scala.Nothing],
     stepY: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1053,6 +1444,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1061,6 +1454,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1070,7 +1465,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1080,6 +1479,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1088,6 +1489,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1097,7 +1500,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1107,6 +1514,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1115,6 +1524,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1124,7 +1535,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1134,6 +1549,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1142,6 +1559,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1151,7 +1570,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1161,6 +1584,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1169,6 +1594,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1178,7 +1605,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1188,6 +1619,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1196,6 +1629,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1205,7 +1640,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1215,7 +1654,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetOrigin")
+  @js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1239,7 +1682,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -1247,11 +1694,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetRotation")
+  @js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -1269,7 +1728,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1279,6 +1742,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1287,6 +1752,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1296,6 +1763,8 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1303,6 +1772,8 @@ object Actions extends js.Object {
     stepX: js.UndefOr[scala.Nothing],
     stepY: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1312,6 +1783,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1320,6 +1793,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1329,7 +1804,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1339,6 +1818,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1347,6 +1828,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1356,7 +1839,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1366,6 +1853,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1374,6 +1863,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1383,7 +1874,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1393,6 +1888,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1401,6 +1898,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1410,7 +1909,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1420,6 +1923,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1428,6 +1933,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1437,7 +1944,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1447,6 +1958,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1455,6 +1968,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1464,7 +1979,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1474,7 +1993,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScale")
+  @js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1498,7 +2021,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -1506,11 +2033,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleX")
+  @js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -1526,7 +2065,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -1534,11 +2077,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScaleY")
+  @js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -1556,7 +2111,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1566,6 +2125,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1574,6 +2135,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1583,6 +2146,8 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1590,6 +2155,8 @@ object Actions extends js.Object {
     stepX: js.UndefOr[scala.Nothing],
     stepY: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1599,6 +2166,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1607,6 +2176,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1616,7 +2187,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1626,6 +2201,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1634,6 +2211,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1643,6 +2222,8 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1650,6 +2231,8 @@ object Actions extends js.Object {
     stepX: Double,
     stepY: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1659,6 +2242,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1667,6 +2252,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1676,7 +2263,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1686,6 +2277,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1694,6 +2287,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1703,6 +2298,8 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1710,6 +2307,8 @@ object Actions extends js.Object {
     stepX: js.UndefOr[scala.Nothing],
     stepY: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1719,6 +2318,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1727,6 +2328,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1736,7 +2339,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1746,6 +2353,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1754,6 +2363,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1763,7 +2374,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1773,6 +2388,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1781,6 +2398,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactor")
+  @js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -1804,7 +2423,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -1812,11 +2435,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorX")
+  @js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -1832,7 +2467,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -1840,11 +2479,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetScrollFactorY")
+  @js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -1855,7 +2506,11 @@ object Actions extends js.Object {
     * @param bottomLeft The tint to be applied to the bottom-left corner of item.
     * @param bottomRight The tint to be applied to the bottom-right corner of item.
     */
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](
     items: G,
     topLeft: Double,
@@ -1863,7 +2518,11 @@ object Actions extends js.Object {
     bottomLeft: js.UndefOr[scala.Nothing],
     bottomRight: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](
     items: G,
     topLeft: Double,
@@ -1871,7 +2530,11 @@ object Actions extends js.Object {
     bottomLeft: Double,
     bottomRight: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](
     items: G,
     topLeft: Double,
@@ -1879,7 +2542,11 @@ object Actions extends js.Object {
     bottomLeft: js.UndefOr[scala.Nothing],
     bottomRight: Double
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetTint")
+  @js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): G = js.native
   
   /**
@@ -1892,9 +2559,17 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetVisible")
+  @js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean): G = js.native
+  @JSGlobal("Phaser.Actions.SetVisible")
+  @js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetVisible")
+  @js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetVisible")
+  @js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer, direction: integer): G = js.native
   
   /**
@@ -1910,7 +2585,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -1918,11 +2597,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetX")
+  @js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -1940,7 +2631,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -1950,6 +2645,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -1958,6 +2655,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -1967,7 +2666,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -1977,6 +2680,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -1985,6 +2690,8 @@ object Actions extends js.Object {
     stepY: Double,
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -1994,7 +2701,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2004,6 +2715,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2012,6 +2725,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2021,7 +2736,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2031,7 +2750,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2041,7 +2764,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2051,6 +2778,8 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2059,6 +2788,8 @@ object Actions extends js.Object {
     stepY: js.UndefOr[scala.Nothing],
     index: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2068,7 +2799,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2078,7 +2813,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2088,7 +2827,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2098,7 +2841,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2108,7 +2855,11 @@ object Actions extends js.Object {
     index: integer,
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](
     items: G,
     x: Double,
@@ -2118,7 +2869,11 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetXY")
+  @js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -2134,7 +2889,11 @@ object Actions extends js.Object {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](
     items: G,
     value: Double,
@@ -2142,11 +2901,23 @@ object Actions extends js.Object {
     index: js.UndefOr[scala.Nothing],
     direction: integer
   ): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  @JSGlobal("Phaser.Actions.SetY")
+  @js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   
   /**
@@ -2162,15 +2933,25 @@ object Actions extends js.Object {
     * @param direction The iteration direction. 0 = first to last and 1 = last to first. Default 0.
     * @param output An optional objec to store the final objects position in.
     */
+  @JSGlobal("Phaser.Actions.ShiftPosition")
+  @js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double): O = js.native
+  @JSGlobal("Phaser.Actions.ShiftPosition")
+  @js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: js.UndefOr[scala.Nothing], output: O): O = js.native
+  @JSGlobal("Phaser.Actions.ShiftPosition")
+  @js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer): O = js.native
+  @JSGlobal("Phaser.Actions.ShiftPosition")
+  @js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer, output: O): O = js.native
   
   /**
     * Shuffles the array in place. The shuffled array is both modified and returned.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     */
+  @JSGlobal("Phaser.Actions.Shuffle")
+  @js.native
   def Shuffle[G /* <: js.Array[GameObject] */](items: G): G = js.native
   
   /**
@@ -2183,7 +2964,11 @@ object Actions extends js.Object {
     * @param max The maximum interpolation value.
     * @param inc Should the values be incremented? `true` or set (`false`) Default false.
     */
+  @JSGlobal("Phaser.Actions.SmoothStep")
+  @js.native
   def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SmoothStep")
+  @js.native
   def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
   
   /**
@@ -2196,7 +2981,11 @@ object Actions extends js.Object {
     * @param max The maximum interpolation value.
     * @param inc Should the values be incremented? `true` or set (`false`) Default false.
     */
+  @JSGlobal("Phaser.Actions.SmootherStep")
+  @js.native
   def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
+  @JSGlobal("Phaser.Actions.SmootherStep")
+  @js.native
   def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
   
   /**
@@ -2216,7 +3005,11 @@ object Actions extends js.Object {
     * @param max The maximum value.
     * @param inc Should the values be incremented? `true` or set (`false`) Default false.
     */
+  @JSGlobal("Phaser.Actions.Spread")
+  @js.native
   def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
+  @JSGlobal("Phaser.Actions.Spread")
+  @js.native
   def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
   
   /**
@@ -2224,6 +3017,8 @@ object Actions extends js.Object {
     * Those previously `visible = false` will become `visible = true`, and vice versa.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     */
+  @JSGlobal("Phaser.Actions.ToggleVisible")
+  @js.native
   def ToggleVisible[G /* <: js.Array[GameObject] */](items: G): G = js.native
   
   /**
@@ -2232,6 +3027,10 @@ object Actions extends js.Object {
     * @param rect The rectangle.
     * @param padding An amount added to each side of the rectangle during the operation. Default 0.
     */
+  @JSGlobal("Phaser.Actions.WrapInRectangle")
+  @js.native
   def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
+  @JSGlobal("Phaser.Actions.WrapInRectangle")
+  @js.native
   def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, padding: Double): G = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A filter.
   */
 @js.native
-trait SchemaFilter extends js.Object {
+trait SchemaFilter extends StObject {
   
   /**
     * A composite filter.
@@ -34,36 +35,24 @@ object SchemaFilter {
   }
   
   @scala.inline
-  implicit class SchemaFilterOps[Self <: SchemaFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaFilterMutableBuilder[Self <: SchemaFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompositeFilter(value: SchemaCompositeFilter): Self = StObject.set(x, "compositeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompositeFilterUndefined: Self = StObject.set(x, "compositeFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldFilter(value: SchemaFieldFilter): Self = StObject.set(x, "fieldFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompositeFilter(value: SchemaCompositeFilter): Self = this.set("compositeFilter", value.asInstanceOf[js.Any])
+    def setFieldFilterUndefined: Self = StObject.set(x, "fieldFilter", js.undefined)
     
     @scala.inline
-    def deleteCompositeFilter: Self = this.set("compositeFilter", js.undefined)
+    def setUnaryFilter(value: SchemaUnaryFilter): Self = StObject.set(x, "unaryFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldFilter(value: SchemaFieldFilter): Self = this.set("fieldFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldFilter: Self = this.set("fieldFilter", js.undefined)
-    
-    @scala.inline
-    def setUnaryFilter(value: SchemaUnaryFilter): Self = this.set("unaryFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnaryFilter: Self = this.set("unaryFilter", js.undefined)
+    def setUnaryFilterUndefined: Self = StObject.set(x, "unaryFilter", js.undefined)
   }
 }

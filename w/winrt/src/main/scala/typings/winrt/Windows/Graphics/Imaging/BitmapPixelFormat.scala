@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BitmapPixelFormat extends js.Object
+sealed trait BitmapPixelFormat extends StObject
 @JSGlobal("Windows.Graphics.Imaging.BitmapPixelFormat")
 @js.native
-object BitmapPixelFormat extends js.Object {
+object BitmapPixelFormat extends StObject {
   
   @js.native
   sealed trait bgra8 extends BitmapPixelFormat

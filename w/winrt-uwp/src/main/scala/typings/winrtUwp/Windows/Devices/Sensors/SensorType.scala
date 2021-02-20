@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SensorType extends js.Object
+sealed trait SensorType extends StObject
 /** Indicates the type of sensor. */
 @JSGlobal("Windows.Devices.Sensors.SensorType")
 @js.native
-object SensorType extends js.Object {
+object SensorType extends StObject {
   
   /** An Accelerometer . */
   @js.native

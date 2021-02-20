@@ -1,11 +1,12 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContext extends js.Object {
+trait IContext extends StObject {
   
   /** Gets the collection object. */
   def getCollection(): ICollection = js.native
@@ -28,27 +29,15 @@ object IContext {
   }
   
   @scala.inline
-  implicit class IContextOps[Self <: IContext] (val x: Self) extends AnyVal {
+  implicit class IContextMutableBuilder[Self <: IContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCollection(value: () => ICollection): Self = StObject.set(x, "getCollection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRequest(value: () => IRequest): Self = StObject.set(x, "getRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCollection(value: () => ICollection): Self = this.set("getCollection", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRequest(value: () => IRequest): Self = this.set("getRequest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetResponse(value: () => IResponse): Self = this.set("getResponse", js.Any.fromFunction0(value))
+    def setGetResponse(value: () => IResponse): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
   }
 }

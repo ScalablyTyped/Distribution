@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathDelim extends js.Object {
+trait OMathDelim extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -55,54 +56,42 @@ object OMathDelim {
   }
   
   @scala.inline
-  implicit class OMathDelimOps[Self <: OMathDelim] (val x: Self) extends AnyVal {
+  implicit class OMathDelimMutableBuilder[Self <: OMathDelim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBegChar(value: Double): Self = StObject.set(x, "BegChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setE(value: OMathArgs): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegChar(value: Double): Self = this.set("BegChar", value.asInstanceOf[js.Any])
+    def setEndChar(value: Double): Self = StObject.set(x, "EndChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setGrow(value: Boolean): Self = StObject.set(x, "Grow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: OMathArgs): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setNoLeftChar(value: Boolean): Self = StObject.set(x, "NoLeftChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndChar(value: Double): Self = this.set("EndChar", value.asInstanceOf[js.Any])
+    def setNoRightChar(value: Boolean): Self = StObject.set(x, "NoRightChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrow(value: Boolean): Self = this.set("Grow", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoLeftChar(value: Boolean): Self = this.set("NoLeftChar", value.asInstanceOf[js.Any])
+    def setSepChar(value: Double): Self = StObject.set(x, "SepChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoRightChar(value: Boolean): Self = this.set("NoRightChar", value.asInstanceOf[js.Any])
+    def setShape(value: WdOMathShapeType): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSepChar(value: Double): Self = this.set("SepChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: WdOMathShapeType): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathDelim_typekey(value: OMathDelim): Self = this.set("Word.OMathDelim_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathDelim_typekey(value: OMathDelim): Self = StObject.set(x, "Word.OMathDelim_typekey", value.asInstanceOf[js.Any])
   }
 }

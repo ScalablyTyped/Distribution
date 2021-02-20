@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISignaturePromptInfoMetadataBased extends js.Object {
+trait ISignaturePromptInfoMetadataBased extends StObject {
   
   def Clone(): ISignaturePromptInfoMetadataBased = js.native
   
@@ -32,33 +33,21 @@ object ISignaturePromptInfoMetadataBased {
   }
   
   @scala.inline
-  implicit class ISignaturePromptInfoMetadataBasedOps[Self <: ISignaturePromptInfoMetadataBased] (val x: Self) extends AnyVal {
+  implicit class ISignaturePromptInfoMetadataBasedMutableBuilder[Self <: ISignaturePromptInfoMetadataBased] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsReferencedBySignatureObject(value: Boolean): Self = StObject.set(x, "IsReferencedBySignatureObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeaningPropertyID(value: Double): Self = StObject.set(x, "MeaningPropertyID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISignaturePromptInfoMetadataBased): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setPromptInfoLookupPropertyID(value: Double): Self = StObject.set(x, "PromptInfoLookupPropertyID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReferencedBySignatureObject(value: Boolean): Self = this.set("IsReferencedBySignatureObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeaningPropertyID(value: Double): Self = this.set("MeaningPropertyID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPromptInfoLookupPropertyID(value: Double): Self = this.set("PromptInfoLookupPropertyID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReasonPropertyID(value: Double): Self = this.set("ReasonPropertyID", value.asInstanceOf[js.Any])
+    def setReasonPropertyID(value: Double): Self = StObject.set(x, "ReasonPropertyID", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassSpec[D, T, S] extends js.Object {
+trait ClassSpec[D, T, S] extends StObject {
   
   /**
     * Methods to implement.
@@ -44,52 +45,40 @@ object ClassSpec {
   }
   
   @scala.inline
-  implicit class ClassSpecOps[Self <: ClassSpec[_, _, _], D, T, S] (val x: Self with (ClassSpec[D, T, S])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ClassSpecMutableBuilder[Self <: ClassSpec[_, _, _], D, T, S] (val x: Self with (ClassSpec[D, T, S])) extends AnyVal {
     
     @scala.inline
     def setMethods(
       value: StringDictionary[
           (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
         ]
-    ): Self = this.set("methods", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setProtocolsVarargs(value: Protocol*): Self = this.set("protocols", js.Array(value :_*))
+    def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: js.Array[Protocol]): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
     @scala.inline
-    def setSuper(value: Object): Self = this.set("super", value.asInstanceOf[js.Any])
+    def setSuper(value: Object): Self = StObject.set(x, "super", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuper: Self = this.set("super", js.undefined)
+    def setSuperNull: Self = StObject.set(x, "super", null)
     
     @scala.inline
-    def setSuperNull: Self = this.set("super", null)
+    def setSuperUndefined: Self = StObject.set(x, "super", js.undefined)
   }
 }

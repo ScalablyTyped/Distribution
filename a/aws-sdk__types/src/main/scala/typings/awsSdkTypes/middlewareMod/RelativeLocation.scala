@@ -1,11 +1,12 @@
 package typings.awsSdkTypes.middlewareMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelativeLocation extends js.Object {
+trait RelativeLocation extends StObject {
   
   /**
     * Specify the relation to be before or after a know middleware.
@@ -26,24 +27,12 @@ object RelativeLocation {
   }
   
   @scala.inline
-  implicit class RelativeLocationOps[Self <: RelativeLocation] (val x: Self) extends AnyVal {
+  implicit class RelativeLocationMutableBuilder[Self <: RelativeLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelation(value: Relation): Self = this.set("relation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToMiddleware(value: String): Self = this.set("toMiddleware", value.asInstanceOf[js.Any])
+    def setToMiddleware(value: String): Self = StObject.set(x, "toMiddleware", value.asInstanceOf[js.Any])
   }
 }

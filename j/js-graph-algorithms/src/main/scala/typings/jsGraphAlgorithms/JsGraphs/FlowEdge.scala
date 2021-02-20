@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowEdge extends js.Object {
+trait FlowEdge extends StObject {
   
   def addResidualFlowTo(x: Double, deltaFlow: Double): Unit = js.native
   
@@ -46,51 +47,39 @@ object FlowEdge {
   }
   
   @scala.inline
-  implicit class FlowEdgeOps[Self <: FlowEdge] (val x: Self) extends AnyVal {
+  implicit class FlowEdgeMutableBuilder[Self <: FlowEdge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResidualFlowTo(value: (Double, Double) => Unit): Self = StObject.set(x, "addResidualFlowTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacity(value: js.Any): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlow(value: js.Any): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddResidualFlowTo(value: (Double, Double) => Unit): Self = this.set("addResidualFlowTo", js.Any.fromFunction2(value))
+    def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCapacity(value: js.Any): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlow(value: js.Any): Self = this.set("flow", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setFrom(value: () => Double): Self = this.set("from", js.Any.fromFunction0(value))
+    def setOther(value: Double => Double): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOther(value: Double => Double): Self = this.set("other", js.Any.fromFunction1(value))
+    def setResidualCapacityTo(value: Double => Double): Self = StObject.set(x, "residualCapacityTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResidualCapacityTo(value: Double => Double): Self = this.set("residualCapacityTo", js.Any.fromFunction1(value))
+    def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTo(value: () => Double): Self = this.set("to", js.Any.fromFunction0(value))
+    def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: js.Any): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW(value: js.Any): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

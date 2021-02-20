@@ -2,12 +2,13 @@ package typings.consola.mod
 
 import typings.consola.anon.typeinlogTypeConsolaLogOb
 import typings.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsolaOptions extends js.Object {
+trait ConsolaOptions extends StObject {
   
   var async: js.UndefOr[Boolean] = js.native
   
@@ -36,75 +37,63 @@ object ConsolaOptions {
   }
   
   @scala.inline
-  implicit class ConsolaOptionsOps[Self <: ConsolaOptions] (val x: Self) extends AnyVal {
+  implicit class ConsolaOptionsMutableBuilder[Self <: ConsolaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaults(value: ConsolaLogObject): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaults(value: ConsolaLogObject): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setMockFn(value: (/* type */ logType, /* defaults */ ConsolaLogObject) => ConsolaMock): Self = StObject.set(x, "mockFn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLevel(value: LogLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMockFnUndefined: Self = StObject.set(x, "mockFn", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setReporters(value: js.Array[ConsolaReporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMockFn(value: (/* type */ logType, /* defaults */ ConsolaLogObject) => ConsolaMock): Self = this.set("mockFn", js.Any.fromFunction2(value))
+    def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
     
     @scala.inline
-    def deleteMockFn: Self = this.set("mockFn", js.undefined)
+    def setReportersVarargs(value: ConsolaReporter*): Self = StObject.set(x, "reporters", js.Array(value :_*))
     
     @scala.inline
-    def setReportersVarargs(value: ConsolaReporter*): Self = this.set("reporters", js.Array(value :_*))
+    def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReporters(value: js.Array[ConsolaReporter]): Self = this.set("reporters", value.asInstanceOf[js.Any])
+    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
     @scala.inline
-    def deleteReporters: Self = this.set("reporters", js.undefined)
+    def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderr(value: WritableStream): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
     @scala.inline
-    def deleteStderr: Self = this.set("stderr", js.undefined)
+    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdout(value: WritableStream): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
     @scala.inline
-    def deleteStdout: Self = this.set("stdout", js.undefined)
+    def setTypes(value: typeinlogTypeConsolaLogOb): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottle(value: Double): Self = this.set("throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
-    
-    @scala.inline
-    def setTypes(value: typeinlogTypeConsolaLogOb): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

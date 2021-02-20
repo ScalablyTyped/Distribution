@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bright2Opacity extends js.Object {
+trait Bright2Opacity extends StObject {
   
   def bright2Opacity(bright: Double, option: Max): Double = js.native
   

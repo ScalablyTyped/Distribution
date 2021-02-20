@@ -1,11 +1,12 @@
 package typings.reactNativeFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RNFetchBlobWriteStream extends js.Object {
+trait RNFetchBlobWriteStream extends StObject {
   
   var append: Boolean = js.native
   
@@ -32,33 +33,21 @@ object RNFetchBlobWriteStream {
   }
   
   @scala.inline
-  implicit class RNFetchBlobWriteStreamOps[Self <: RNFetchBlobWriteStream] (val x: Self) extends AnyVal {
+  implicit class RNFetchBlobWriteStreamMutableBuilder[Self <: RNFetchBlobWriteStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppend(value: Boolean): Self = this.set("append", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrite(value: String => js.Promise[Unit]): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWrite(value: String => js.Promise[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

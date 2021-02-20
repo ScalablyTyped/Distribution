@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,96 +44,84 @@ object RTCIceCandidatePairStats {
   }
   
   @scala.inline
-  implicit class RTCIceCandidatePairStatsOps[Self <: RTCIceCandidatePairStats] (val x: Self) extends AnyVal {
+  implicit class RTCIceCandidatePairStatsMutableBuilder[Self <: RTCIceCandidatePairStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableIncomingBitrate(value: Double): Self = StObject.set(x, "availableIncomingBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableIncomingBitrateUndefined: Self = StObject.set(x, "availableIncomingBitrate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableOutgoingBitrate(value: Double): Self = StObject.set(x, "availableOutgoingBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableIncomingBitrate(value: Double): Self = this.set("availableIncomingBitrate", value.asInstanceOf[js.Any])
+    def setAvailableOutgoingBitrateUndefined: Self = StObject.set(x, "availableOutgoingBitrate", js.undefined)
     
     @scala.inline
-    def deleteAvailableIncomingBitrate: Self = this.set("availableIncomingBitrate", js.undefined)
+    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableOutgoingBitrate(value: Double): Self = this.set("availableOutgoingBitrate", value.asInstanceOf[js.Any])
+    def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
     
     @scala.inline
-    def deleteAvailableOutgoingBitrate: Self = this.set("availableOutgoingBitrate", js.undefined)
+    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesReceived(value: Double): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
+    def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
     
     @scala.inline
-    def deleteBytesReceived: Self = this.set("bytesReceived", js.undefined)
+    def setLocalCandidateId(value: java.lang.String): Self = StObject.set(x, "localCandidateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    def setLocalCandidateIdUndefined: Self = StObject.set(x, "localCandidateId", js.undefined)
     
     @scala.inline
-    def deleteBytesSent: Self = this.set("bytesSent", js.undefined)
+    def setNominated(value: scala.Boolean): Self = StObject.set(x, "nominated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalCandidateId(value: java.lang.String): Self = this.set("localCandidateId", value.asInstanceOf[js.Any])
+    def setNominatedUndefined: Self = StObject.set(x, "nominated", js.undefined)
     
     @scala.inline
-    def deleteLocalCandidateId: Self = this.set("localCandidateId", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNominated(value: scala.Boolean): Self = this.set("nominated", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteNominated: Self = this.set("nominated", js.undefined)
+    def setReadable(value: scala.Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setRemoteCandidateId(value: java.lang.String): Self = StObject.set(x, "remoteCandidateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadable(value: scala.Boolean): Self = this.set("readable", value.asInstanceOf[js.Any])
+    def setRemoteCandidateIdUndefined: Self = StObject.set(x, "remoteCandidateId", js.undefined)
     
     @scala.inline
-    def deleteReadable: Self = this.set("readable", js.undefined)
+    def setRoundTripTime(value: Double): Self = StObject.set(x, "roundTripTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteCandidateId(value: java.lang.String): Self = this.set("remoteCandidateId", value.asInstanceOf[js.Any])
+    def setRoundTripTimeUndefined: Self = StObject.set(x, "roundTripTime", js.undefined)
     
     @scala.inline
-    def deleteRemoteCandidateId: Self = this.set("remoteCandidateId", js.undefined)
+    def setState(value: RTCStatsIceCandidatePairState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundTripTime(value: Double): Self = this.set("roundTripTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteRoundTripTime: Self = this.set("roundTripTime", js.undefined)
+    def setTransportId(value: java.lang.String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: RTCStatsIceCandidatePairState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTransportIdUndefined: Self = StObject.set(x, "transportId", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setWritable(value: scala.Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportId(value: java.lang.String): Self = this.set("transportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportId: Self = this.set("transportId", js.undefined)
-    
-    @scala.inline
-    def setWritable(value: scala.Boolean): Self = this.set("writable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritable: Self = this.set("writable", js.undefined)
+    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

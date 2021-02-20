@@ -1,6 +1,7 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,27 +37,15 @@ object VariableSizeListProps {
   }
   
   @scala.inline
-  implicit class VariableSizeListPropsOps[Self <: VariableSizeListProps] (val x: Self) extends AnyVal {
+  implicit class VariableSizeListPropsMutableBuilder[Self <: VariableSizeListProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedItemSize(value: Double): Self = StObject.set(x, "estimatedItemSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedItemSizeUndefined: Self = StObject.set(x, "estimatedItemSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemSize(value: Double => Double): Self = this.set("itemSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEstimatedItemSize(value: Double): Self = this.set("estimatedItemSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedItemSize: Self = this.set("estimatedItemSize", js.undefined)
+    def setItemSize(value: Double => Double): Self = StObject.set(x, "itemSize", js.Any.fromFunction1(value))
   }
 }

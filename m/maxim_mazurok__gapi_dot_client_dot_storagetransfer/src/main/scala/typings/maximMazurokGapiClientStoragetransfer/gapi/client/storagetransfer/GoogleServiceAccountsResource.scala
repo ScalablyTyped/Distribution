@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientStoragetransfer.anon.Accesstoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleServiceAccountsResource extends js.Object {
+trait GoogleServiceAccountsResource extends StObject {
   
   /**
     * Returns the Google service account that is used by Storage Transfer Service to access buckets in the project where transfers run or in other projects. Each Google service account is

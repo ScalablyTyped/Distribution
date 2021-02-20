@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Feed extends js.Object {
+trait Feed extends StObject {
   
   /** Information about a `Feed` with a `feed_type` of `COURSE_ROSTER_CHANGES`. This field must be specified if `feed_type` is `COURSE_ROSTER_CHANGES`. */
   var courseRosterChangesInfo: js.UndefOr[CourseRosterChangesInfo] = js.native
@@ -25,36 +26,24 @@ object Feed {
   }
   
   @scala.inline
-  implicit class FeedOps[Self <: Feed] (val x: Self) extends AnyVal {
+  implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCourseRosterChangesInfo(value: CourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCourseRosterChangesInfoUndefined: Self = StObject.set(x, "courseRosterChangesInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCourseWorkChangesInfo(value: CourseWorkChangesInfo): Self = StObject.set(x, "courseWorkChangesInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseRosterChangesInfo(value: CourseRosterChangesInfo): Self = this.set("courseRosterChangesInfo", value.asInstanceOf[js.Any])
+    def setCourseWorkChangesInfoUndefined: Self = StObject.set(x, "courseWorkChangesInfo", js.undefined)
     
     @scala.inline
-    def deleteCourseRosterChangesInfo: Self = this.set("courseRosterChangesInfo", js.undefined)
+    def setFeedType(value: String): Self = StObject.set(x, "feedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseWorkChangesInfo(value: CourseWorkChangesInfo): Self = this.set("courseWorkChangesInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCourseWorkChangesInfo: Self = this.set("courseWorkChangesInfo", js.undefined)
-    
-    @scala.inline
-    def setFeedType(value: String): Self = this.set("feedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeedType: Self = this.set("feedType", js.undefined)
+    def setFeedTypeUndefined: Self = StObject.set(x, "feedType", js.undefined)
   }
 }

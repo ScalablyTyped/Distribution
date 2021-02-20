@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageEvent extends js.Object {
+trait MessageEvent extends StObject {
   
   /** Classification code for a given message (see [Bounce Classification Codes](https://support.sparkpost.com/customer/portal/articles/1929896)) */
   var bounce_class: String = js.native
@@ -114,93 +115,81 @@ object MessageEvent {
   }
   
   @scala.inline
-  implicit class MessageEventOps[Self <: MessageEvent] (val x: Self) extends AnyVal {
+  implicit class MessageEventMutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounce_class(value: String): Self = StObject.set(x, "bounce_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounce_class(value: String): Self = this.set("bounce_class", value.asInstanceOf[js.Any])
+    def setDelv_method(value: String): Self = StObject.set(x, "delv_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaign_id(value: String): Self = this.set("campaign_id", value.asInstanceOf[js.Any])
+    def setDevice_token(value: String): Self = StObject.set(x, "device_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer_id(value: String): Self = this.set("customer_id", value.asInstanceOf[js.Any])
+    def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelv_method(value: String): Self = this.set("delv_method", value.asInstanceOf[js.Any])
+    def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_token(value: String): Self = this.set("device_token", value.asInstanceOf[js.Any])
+    def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_code(value: String): Self = this.set("error_code", value.asInstanceOf[js.Any])
+    def setMsg_from(value: String): Self = StObject.set(x, "msg_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp_address(value: String): Self = this.set("ip_address", value.asInstanceOf[js.Any])
+    def setMsg_size(value: String): Self = StObject.set(x, "msg_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage_id(value: String): Self = this.set("message_id", value.asInstanceOf[js.Any])
+    def setNum_retries(value: String): Self = StObject.set(x, "num_retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg_from(value: String): Self = this.set("msg_from", value.asInstanceOf[js.Any])
+    def setRaw_reason(value: String): Self = StObject.set(x, "raw_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg_size(value: String): Self = this.set("msg_size", value.asInstanceOf[js.Any])
+    def setRcpt_meta(value: js.Any): Self = StObject.set(x, "rcpt_meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_retries(value: String): Self = this.set("num_retries", value.asInstanceOf[js.Any])
+    def setRcpt_tags(value: js.Array[String]): Self = StObject.set(x, "rcpt_tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw_reason(value: String): Self = this.set("raw_reason", value.asInstanceOf[js.Any])
+    def setRcpt_tagsVarargs(value: String*): Self = StObject.set(x, "rcpt_tags", js.Array(value :_*))
     
     @scala.inline
-    def setRcpt_meta(value: js.Any): Self = this.set("rcpt_meta", value.asInstanceOf[js.Any])
+    def setRcpt_to(value: String): Self = StObject.set(x, "rcpt_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRcpt_tagsVarargs(value: String*): Self = this.set("rcpt_tags", js.Array(value :_*))
+    def setRcpt_type(value: String): Self = StObject.set(x, "rcpt_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRcpt_tags(value: js.Array[String]): Self = this.set("rcpt_tags", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRcpt_to(value: String): Self = this.set("rcpt_to", value.asInstanceOf[js.Any])
+    def setRouting_domain(value: String): Self = StObject.set(x, "routing_domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRcpt_type(value: String): Self = this.set("rcpt_type", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouting_domain(value: String): Self = this.set("routing_domain", value.asInstanceOf[js.Any])
+    def setTemplate_version(value: String): Self = StObject.set(x, "template_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate_id(value: String): Self = this.set("template_id", value.asInstanceOf[js.Any])
+    def setTransmission_id(value: String): Self = StObject.set(x, "transmission_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate_version(value: String): Self = this.set("template_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmission_id(value: String): Self = this.set("transmission_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

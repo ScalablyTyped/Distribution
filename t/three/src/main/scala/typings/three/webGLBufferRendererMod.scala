@@ -4,16 +4,16 @@ import typings.std.WebGLRenderingContext
 import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
 import typings.three.webGLInfoMod.WebGLInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLBufferRenderer", JSImport.Namespace)
-@js.native
-object webGLBufferRendererMod extends js.Object {
+object webGLBufferRendererMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLBufferRenderer", "WebGLBufferRenderer")
   @js.native
-  class WebGLBufferRenderer protected () extends js.Object {
+  class WebGLBufferRenderer protected () extends StObject {
     def this(
       gl: WebGLRenderingContext,
       extensions: WebGLExtensions,

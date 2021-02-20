@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetContainerServiceMetricDataResult extends js.Object {
+trait GetContainerServiceMetricDataResult extends StObject {
   
   /**
     * An array of objects that describe the metric data returned.
@@ -26,33 +27,21 @@ object GetContainerServiceMetricDataResult {
   }
   
   @scala.inline
-  implicit class GetContainerServiceMetricDataResultOps[Self <: GetContainerServiceMetricDataResult] (val x: Self) extends AnyVal {
+  implicit class GetContainerServiceMetricDataResultMutableBuilder[Self <: GetContainerServiceMetricDataResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
     
     @scala.inline
-    def setMetricDataVarargs(value: MetricDatapoint*): Self = this.set("metricData", js.Array(value :_*))
+    def setMetricName(value: ContainerServiceMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricData(value: MetricDatapointList): Self = this.set("metricData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricData: Self = this.set("metricData", js.undefined)
-    
-    @scala.inline
-    def setMetricName(value: ContainerServiceMetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
   }
 }

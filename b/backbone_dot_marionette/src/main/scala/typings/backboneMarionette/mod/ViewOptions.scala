@@ -2,6 +2,7 @@ package typings.backboneMarionette.mod
 
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object ViewOptions {
   }
   
   @scala.inline
-  implicit class ViewOptionsOps[Self <: ViewOptions[_], TModel /* <: Model[_, ModelSetOptions, js.Object] */] (val x: Self with ViewOptions[TModel]) extends AnyVal {
+  implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[_], TModel /* <: Model[_, ModelSetOptions, js.Object] */] (val x: Self with ViewOptions[TModel]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegionClass(value: js.Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegionClassUndefined: Self = StObject.set(x, "regionClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegions(value: js.Any): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionClass(value: js.Any): Self = this.set("regionClass", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deleteRegionClass: Self = this.set("regionClass", js.undefined)
+    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegions(value: js.Any): Self = this.set("regions", value.asInstanceOf[js.Any])
+    def setTemplateContext(value: js.Any): Self = StObject.set(x, "templateContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setTemplateContextUndefined: Self = StObject.set(x, "templateContext", js.undefined)
     
     @scala.inline
-    def setTemplate(value: js.Any): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setTemplateContext(value: js.Any): Self = this.set("templateContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateContext: Self = this.set("templateContext", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

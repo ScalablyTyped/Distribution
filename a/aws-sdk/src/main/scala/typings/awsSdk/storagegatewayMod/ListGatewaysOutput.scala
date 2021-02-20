@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGatewaysOutput extends js.Object {
+trait ListGatewaysOutput extends StObject {
   
   /**
     * An array of GatewayInfo objects.
@@ -26,33 +27,21 @@ object ListGatewaysOutput {
   }
   
   @scala.inline
-  implicit class ListGatewaysOutputOps[Self <: ListGatewaysOutput] (val x: Self) extends AnyVal {
+  implicit class ListGatewaysOutputMutableBuilder[Self <: ListGatewaysOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGateways(value: Gateways): Self = StObject.set(x, "Gateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewaysUndefined: Self = StObject.set(x, "Gateways", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGatewaysVarargs(value: GatewayInfo*): Self = StObject.set(x, "Gateways", js.Array(value :_*))
     
     @scala.inline
-    def setGatewaysVarargs(value: GatewayInfo*): Self = this.set("Gateways", js.Array(value :_*))
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateways(value: Gateways): Self = this.set("Gateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGateways: Self = this.set("Gateways", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.noncompliant_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.inGracePeriod
   - typings.microsoftGraph.microsoftGraphStrings.configManager
 */
-trait ComplianceState extends js.Object
+trait ComplianceState extends StObject
 object ComplianceState {
   
   @scala.inline

@@ -2,6 +2,7 @@ package typings.pixiJs.PIXI
 
 import typings.pixiJs.pixiJsStrings.added
 import typings.pixiJs.pixiJsStrings.removed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,21 +68,9 @@ object CellValueBinding {
   }
   
   @scala.inline
-  implicit class CellValueBindingOps[Self <: CellValueBinding] (val x: Self) extends AnyVal {
+  implicit class CellValueBindingMutableBuilder[Self <: CellValueBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBoundCell(value: CellAddress): Self = this.set("BoundCell", value.asInstanceOf[js.Any])
+    def setBoundCell(value: CellAddress): Self = StObject.set(x, "BoundCell", value.asInstanceOf[js.Any])
   }
 }

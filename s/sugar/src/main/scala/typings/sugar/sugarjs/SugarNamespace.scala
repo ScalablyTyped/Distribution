@@ -1,11 +1,12 @@
 package typings.sugar.sugarjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SugarNamespace extends js.Object {
+trait SugarNamespace extends StObject {
   
   def alias(toName: java.lang.String, fn: js.UndefOr[scala.Nothing]): this.type = js.native
   def alias(toName: java.lang.String, from: java.lang.String): this.type = js.native

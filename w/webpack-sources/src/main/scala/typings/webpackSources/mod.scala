@@ -6,18 +6,18 @@ import typings.sourceMap.mod.SourceMapGenerator
 import typings.webpackSources.cachedSourceMod.^
 import typings.webpackSources.libMod.CachedData
 import typings.webpackSources.libMod.SourceLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack-sources", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Decorates a Source and caches returned results of map, source, size and sourceAndMap in memory.
     * Every other operation is delegated to the wrapped Source.
     */
+  @JSImport("webpack-sources", "CachedSource")
   @js.native
   class CachedSource protected () extends ^ {
     def this(source: typings.webpackSources.sourceMod.^) = this()
@@ -25,30 +25,34 @@ object mod extends js.Object {
     def this(source: Null, cachedData: CachedData) = this()
   }
   
+  @JSImport("webpack-sources", "CompatSource")
   @js.native
   class CompatSource protected ()
     extends typings.webpackSources.compatSourceMod.^ {
     def this(sourceLike: SourceLike) = this()
   }
-  /* static members */
-  @js.native
-  object CompatSource extends js.Object {
+  object CompatSource {
     
-    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^  | typings.webpackSources.compatSourceMod.CompatSource = js.native
+    /* static member */
+    @JSImport("webpack-sources", "CompatSource.from")
+    @js.native
+    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = js.native
   }
   
   /**
     * Concatenate multiple Sources or strings to a single source.
     */
+  @JSImport("webpack-sources", "ConcatSource")
   @js.native
   class ConcatSource protected ()
     extends typings.webpackSources.concatSourceMod.^ {
-    def this(args: (String | typings.webpackSources.sourceMod.^ )*) = this()
+    def this(args: (String | typings.webpackSources.sourceMod.^)*) = this()
   }
   
   /**
     * Represents source code, which is a copy of the original file
     */
+  @JSImport("webpack-sources", "OriginalSource")
   @js.native
   class OriginalSource protected ()
     extends typings.webpackSources.originalSourceMod.^ {
@@ -62,6 +66,7 @@ object mod extends js.Object {
   /**
     * Prefix every line of the decorated Source with a provided string.
     */
+  @JSImport("webpack-sources", "PrefixSource")
   @js.native
   class PrefixSource protected ()
     extends typings.webpackSources.prefixSourceMod.^ {
@@ -74,6 +79,7 @@ object mod extends js.Object {
   /**
     * Represents source code without SourceMap
     */
+  @JSImport("webpack-sources", "RawSource")
   @js.native
   class RawSource protected ()
     extends typings.webpackSources.rawSourceMod.^ {
@@ -84,6 +90,7 @@ object mod extends js.Object {
     * Decorates a Source with replacements and insertions of source code.
     *
     */
+  @JSImport("webpack-sources", "ReplaceSource")
   @js.native
   class ReplaceSource protected ()
     extends typings.webpackSources.replaceSourceMod.^ {
@@ -95,6 +102,7 @@ object mod extends js.Object {
     def this(source: typings.webpackSources.sourceMod.^, name: String) = this()
   }
   
+  @JSImport("webpack-sources", "SizeOnlySource")
   @js.native
   class SizeOnlySource protected ()
     extends typings.webpackSources.sizeOnlySourceMod.^ {
@@ -105,13 +113,15 @@ object mod extends js.Object {
     * Base class for all sources.
     * A Source can be asked for source code, size, source map and hash.
     */
+  @JSImport("webpack-sources", "Source")
   @js.native
   abstract class Source ()
-    extends typings.webpackSources.sourceMod.Source
+    extends typings.webpackSources.sourceMod.^
   
   /**
     * Represents source code with SourceMap, optionally having an additional SourceMap for the original source.
     */
+  @JSImport("webpack-sources", "SourceMapSource")
   @js.native
   class SourceMapSource protected ()
     extends typings.webpackSources.sourceMapSourceMod.^ {

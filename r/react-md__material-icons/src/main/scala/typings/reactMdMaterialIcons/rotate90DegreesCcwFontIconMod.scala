@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/Rotate90DegreesCcwFontIcon", JSImport.Namespace)
-@js.native
-object rotate90DegreesCcwFontIconMod extends js.Object {
+object rotate90DegreesCcwFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/Rotate90DegreesCcwFontIcon", "Rotate90DegreesCcwFontIcon")
+  @js.native
   val Rotate90DegreesCcwFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

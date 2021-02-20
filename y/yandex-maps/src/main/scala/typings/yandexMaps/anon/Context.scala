@@ -2,12 +2,13 @@ package typings.yandexMaps.anon
 
 import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IEventWorkflowController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   var context: js.UndefOr[js.Object] = js.native
   
@@ -24,39 +25,27 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControllers(value: js.Array[IEventWorkflowController]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setControllersVarargs(value: IEventWorkflowController*): Self = StObject.set(x, "controllers", js.Array(value :_*))
     
     @scala.inline
-    def setControllersVarargs(value: IEventWorkflowController*): Self = this.set("controllers", js.Array(value :_*))
+    def setParent(value: IEventManager[js.Object]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllers(value: js.Array[IEventWorkflowController]): Self = this.set("controllers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteControllers: Self = this.set("controllers", js.undefined)
-    
-    @scala.inline
-    def setParent(value: IEventManager[js.Object]): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

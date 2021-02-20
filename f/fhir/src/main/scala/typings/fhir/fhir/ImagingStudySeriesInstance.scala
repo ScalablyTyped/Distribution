@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,60 +60,48 @@ object ImagingStudySeriesInstance {
   }
   
   @scala.inline
-  implicit class ImagingStudySeriesInstanceOps[Self <: ImagingStudySeriesInstance] (val x: Self) extends AnyVal {
+  implicit class ImagingStudySeriesInstanceMutableBuilder[Self <: ImagingStudySeriesInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumber(value: unsignedInt): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSopClass(value: oid): Self = StObject.set(x, "sopClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSopClass(value: oid): Self = this.set("sopClass", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUid(value: oid): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def set_number(value: Element): Self = this.set("_number", value.asInstanceOf[js.Any])
+    def setUid(value: oid): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_number: Self = this.set("_number", js.undefined)
+    def set_number(value: Element): Self = StObject.set(x, "_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sopClass(value: Element): Self = this.set("_sopClass", value.asInstanceOf[js.Any])
+    def set_numberUndefined: Self = StObject.set(x, "_number", js.undefined)
     
     @scala.inline
-    def delete_sopClass: Self = this.set("_sopClass", js.undefined)
+    def set_sopClass(value: Element): Self = StObject.set(x, "_sopClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def set_sopClassUndefined: Self = StObject.set(x, "_sopClass", js.undefined)
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_uid(value: Element): Self = this.set("_uid", value.asInstanceOf[js.Any])
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     @scala.inline
-    def delete_uid: Self = this.set("_uid", js.undefined)
+    def set_uid(value: Element): Self = StObject.set(x, "_uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: unsignedInt): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def set_uidUndefined: Self = StObject.set(x, "_uid", js.undefined)
   }
 }

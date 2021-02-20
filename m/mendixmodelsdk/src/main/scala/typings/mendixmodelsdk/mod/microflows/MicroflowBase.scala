@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.mod.microflows
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +20,23 @@ abstract class MicroflowBase protected ()
     container: IFolderBase
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.MicroflowBase")
-@js.native
-object MicroflowBase extends js.Object {
+object MicroflowBase {
   
-  var structureTypeName: String = js.native
+  @JSImport("mendixmodelsdk", "microflows.MicroflowBase")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.MicroflowBase.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.MicroflowBase.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

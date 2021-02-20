@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,120 +47,157 @@ class Accordion protected ()
   
   def unselect(e: js.Any): Unit = js.native
 }
-@JSImport("rc-easyui", "Accordion")
-@js.native
-object Accordion extends js.Object {
+object Accordion {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Accordion.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.contextTypes.locale
+      @JSImport("rc-easyui", "Accordion.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Accordion.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.contextTypes.t
+      @JSImport("rc-easyui", "Accordion.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Accordion.defaultProps.animate")
+    @js.native
     val animate: Boolean = js.native
     
+    @JSImport("rc-easyui", "Accordion.defaultProps.border")
+    @js.native
     val border: Boolean = js.native
     
+    @JSImport("rc-easyui", "Accordion.defaultProps.multiple")
+    @js.native
     val multiple: Boolean = js.native
     
+    @JSImport("rc-easyui", "Accordion.defaultProps.onPanelSelect")
+    @js.native
     def onPanelSelect(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Accordion.defaultProps.onPanelUnselect")
+    @js.native
     def onPanelUnselect(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Accordion.defaultProps.selectedIndex")
+    @js.native
     val selectedIndex: Double = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object animate extends js.Object {
+    object animate {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.animate")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.animate
+      @JSImport("rc-easyui", "Accordion.propTypes.animate.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object border extends js.Object {
+    object border {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.border")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.border
+      @JSImport("rc-easyui", "Accordion.propTypes.border.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.className
+      @JSImport("rc-easyui", "Accordion.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object multiple extends js.Object {
+    object multiple {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.multiple")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.multiple
+      @JSImport("rc-easyui", "Accordion.propTypes.multiple.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onPanelSelect extends js.Object {
+    object onPanelSelect {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.onPanelSelect")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.onPanelSelect
+      @JSImport("rc-easyui", "Accordion.propTypes.onPanelSelect.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onPanelUnselect extends js.Object {
+    object onPanelUnselect {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.onPanelUnselect")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.onPanelUnselect
+      @JSImport("rc-easyui", "Accordion.propTypes.onPanelUnselect.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object selectedIndex extends js.Object {
+    object selectedIndex {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.selectedIndex")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.selectedIndex
+      @JSImport("rc-easyui", "Accordion.propTypes.selectedIndex.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "Accordion.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Accordion.propTypes.style
+      @JSImport("rc-easyui", "Accordion.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

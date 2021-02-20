@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCodeRepositoryInput extends js.Object {
+trait UpdateCodeRepositoryInput extends StObject {
   
   /**
     * The name of the Git repository to update.
@@ -26,27 +27,15 @@ object UpdateCodeRepositoryInput {
   }
   
   @scala.inline
-  implicit class UpdateCodeRepositoryInputOps[Self <: UpdateCodeRepositoryInput] (val x: Self) extends AnyVal {
+  implicit class UpdateCodeRepositoryInputMutableBuilder[Self <: UpdateCodeRepositoryInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGitConfig(value: GitConfigForUpdate): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCodeRepositoryName(value: EntityName): Self = this.set("CodeRepositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGitConfig(value: GitConfigForUpdate): Self = this.set("GitConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGitConfig: Self = this.set("GitConfig", js.undefined)
+    def setGitConfigUndefined: Self = StObject.set(x, "GitConfig", js.undefined)
   }
 }

@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -354,75 +355,63 @@ object XPropertyHandler {
   }
   
   @scala.inline
-  implicit class XPropertyHandlerOps[Self <: XPropertyHandler] (val x: Self) extends AnyVal {
+  implicit class XPropertyHandlerMutableBuilder[Self <: XPropertyHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActuatingProperties(value: SafeArray[String]): Self = StObject.set(x, "ActuatingProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActuatingPropertyChanged(value: (String, js.Any, js.Any, XObjectInspectorUI, Boolean) => Unit): Self = StObject.set(x, "actuatingPropertyChanged", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddPropertyChangeListener(value: XPropertyChangeListener => Unit): Self = StObject.set(x, "addPropertyChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActuatingProperties(value: SafeArray[String]): Self = this.set("ActuatingProperties", value.asInstanceOf[js.Any])
+    def setConvertToControlValue(value: (String, js.Any, `type`) => js.Any): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSupersededProperties(value: SafeArray[String]): Self = this.set("SupersededProperties", value.asInstanceOf[js.Any])
+    def setConvertToPropertyValue(value: (String, js.Any) => js.Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSupportedProperties(value: SafeArray[Property]): Self = this.set("SupportedProperties", value.asInstanceOf[js.Any])
+    def setDescribePropertyLine(value: (String, XPropertyControlFactory) => LineDescriptor): Self = StObject.set(x, "describePropertyLine", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActuatingPropertyChanged(value: (String, js.Any, js.Any, XObjectInspectorUI, Boolean) => Unit): Self = this.set("actuatingPropertyChanged", js.Any.fromFunction5(value))
+    def setGetActuatingProperties(value: () => SafeArray[String]): Self = StObject.set(x, "getActuatingProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPropertyChangeListener(value: XPropertyChangeListener => Unit): Self = this.set("addPropertyChangeListener", js.Any.fromFunction1(value))
+    def setGetPropertyState(value: String => PropertyState): Self = StObject.set(x, "getPropertyState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertToControlValue(value: (String, js.Any, `type`) => js.Any): Self = this.set("convertToControlValue", js.Any.fromFunction3(value))
+    def setGetPropertyValue(value: String => js.Any): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertToPropertyValue(value: (String, js.Any) => js.Any): Self = this.set("convertToPropertyValue", js.Any.fromFunction2(value))
+    def setGetSupersededProperties(value: () => SafeArray[String]): Self = StObject.set(x, "getSupersededProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDescribePropertyLine(value: (String, XPropertyControlFactory) => LineDescriptor): Self = this.set("describePropertyLine", js.Any.fromFunction2(value))
+    def setGetSupportedProperties(value: () => SafeArray[Property]): Self = StObject.set(x, "getSupportedProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActuatingProperties(value: () => SafeArray[String]): Self = this.set("getActuatingProperties", js.Any.fromFunction0(value))
+    def setInspect(value: XInterface => Unit): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertyState(value: String => PropertyState): Self = this.set("getPropertyState", js.Any.fromFunction1(value))
+    def setIsComposable(value: String => Boolean): Self = StObject.set(x, "isComposable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertyValue(value: String => js.Any): Self = this.set("getPropertyValue", js.Any.fromFunction1(value))
+    def setOnInteractivePropertySelection(value: (String, Boolean, js.Array[_], XObjectInspectorUI) => InteractiveSelectionResult): Self = StObject.set(x, "onInteractivePropertySelection", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetSupersededProperties(value: () => SafeArray[String]): Self = this.set("getSupersededProperties", js.Any.fromFunction0(value))
+    def setRemovePropertyChangeListener(value: XPropertyChangeListener => Unit): Self = StObject.set(x, "removePropertyChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSupportedProperties(value: () => SafeArray[Property]): Self = this.set("getSupportedProperties", js.Any.fromFunction0(value))
+    def setSetPropertyValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInspect(value: XInterface => Unit): Self = this.set("inspect", js.Any.fromFunction1(value))
+    def setSupersededProperties(value: SafeArray[String]): Self = StObject.set(x, "SupersededProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComposable(value: String => Boolean): Self = this.set("isComposable", js.Any.fromFunction1(value))
+    def setSupportedProperties(value: SafeArray[Property]): Self = StObject.set(x, "SupportedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnInteractivePropertySelection(value: (String, Boolean, js.Array[_], XObjectInspectorUI) => InteractiveSelectionResult): Self = this.set("onInteractivePropertySelection", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setRemovePropertyChangeListener(value: XPropertyChangeListener => Unit): Self = this.set("removePropertyChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPropertyValue(value: (String, js.Any) => Unit): Self = this.set("setPropertyValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSuspend(value: Boolean => Boolean): Self = this.set("suspend", js.Any.fromFunction1(value))
+    def setSuspend(value: Boolean => Boolean): Self = StObject.set(x, "suspend", js.Any.fromFunction1(value))
   }
 }

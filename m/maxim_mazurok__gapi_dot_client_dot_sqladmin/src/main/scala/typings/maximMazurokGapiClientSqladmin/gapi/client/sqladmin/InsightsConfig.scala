@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsConfig extends js.Object {
+trait InsightsConfig extends StObject {
   
   /** Whether Query Insights feature is enabled. */
   var queryInsightsEnabled: js.UndefOr[Boolean] = js.native
@@ -31,42 +32,30 @@ object InsightsConfig {
   }
   
   @scala.inline
-  implicit class InsightsConfigOps[Self <: InsightsConfig] (val x: Self) extends AnyVal {
+  implicit class InsightsConfigMutableBuilder[Self <: InsightsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryInsightsEnabled(value: Boolean): Self = StObject.set(x, "queryInsightsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryInsightsEnabledUndefined: Self = StObject.set(x, "queryInsightsEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryStringLength(value: Double): Self = StObject.set(x, "queryStringLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryInsightsEnabled(value: Boolean): Self = this.set("queryInsightsEnabled", value.asInstanceOf[js.Any])
+    def setQueryStringLengthUndefined: Self = StObject.set(x, "queryStringLength", js.undefined)
     
     @scala.inline
-    def deleteQueryInsightsEnabled: Self = this.set("queryInsightsEnabled", js.undefined)
+    def setRecordApplicationTags(value: Boolean): Self = StObject.set(x, "recordApplicationTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryStringLength(value: Double): Self = this.set("queryStringLength", value.asInstanceOf[js.Any])
+    def setRecordApplicationTagsUndefined: Self = StObject.set(x, "recordApplicationTags", js.undefined)
     
     @scala.inline
-    def deleteQueryStringLength: Self = this.set("queryStringLength", js.undefined)
+    def setRecordClientAddress(value: Boolean): Self = StObject.set(x, "recordClientAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordApplicationTags(value: Boolean): Self = this.set("recordApplicationTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordApplicationTags: Self = this.set("recordApplicationTags", js.undefined)
-    
-    @scala.inline
-    def setRecordClientAddress(value: Boolean): Self = this.set("recordClientAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordClientAddress: Self = this.set("recordClientAddress", js.undefined)
+    def setRecordClientAddressUndefined: Self = StObject.set(x, "recordClientAddress", js.undefined)
   }
 }

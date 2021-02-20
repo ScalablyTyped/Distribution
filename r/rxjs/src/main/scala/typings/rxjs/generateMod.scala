@@ -2,23 +2,32 @@ package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.SchedulerLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/observable/generate", JSImport.Namespace)
-@js.native
-object generateMod extends js.Object {
+object generateMod {
   
+  @JSImport("rxjs/internal/observable/generate", "generate")
+  @js.native
   def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S]): Observable[S] = js.native
+  @JSImport("rxjs/internal/observable/generate", "generate")
+  @js.native
   def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S], scheduler: SchedulerLike): Observable[S] = js.native
+  @JSImport("rxjs/internal/observable/generate", "generate")
+  @js.native
   def generate[S](options: GenerateBaseOptions[S]): Observable[S] = js.native
+  @JSImport("rxjs/internal/observable/generate", "generate")
+  @js.native
   def generate[T, S](
     initialState: S,
     condition: ConditionFunc[S],
     iterate: IterateFunc[S],
     resultSelector: ResultFunc[S, T]
   ): Observable[T] = js.native
+  @JSImport("rxjs/internal/observable/generate", "generate")
+  @js.native
   def generate[T, S](
     initialState: S,
     condition: ConditionFunc[S],
@@ -26,10 +35,14 @@ object generateMod extends js.Object {
     resultSelector: ResultFunc[S, T],
     scheduler: SchedulerLike
   ): Observable[T] = js.native
+  @JSImport("rxjs/internal/observable/generate", "generate")
+  @js.native
   def generate[T, S](options: GenerateOptions[T, S]): Observable[T] = js.native
   
+  type ConditionFunc[S] = js.Function1[/* state */ S, Boolean]
+  
   @js.native
-  trait GenerateBaseOptions[S] extends js.Object {
+  trait GenerateBaseOptions[S] extends StObject {
     
     /**
       * Condition function that accepts state and returns boolean.
@@ -73,8 +86,6 @@ object generateMod extends js.Object {
     @JSName("resultSelector")
     var resultSelector_Original: ResultFunc[S, T] = js.native
   }
-  
-  type ConditionFunc[S] = js.Function1[/* state */ S, Boolean]
   
   type IterateFunc[S] = js.Function1[/* state */ S, S]
   

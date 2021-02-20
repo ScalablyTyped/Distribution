@@ -1,11 +1,12 @@
 package typings.vueNiceDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandleClickDate extends js.Object {
+trait HandleClickDate extends StObject {
   
   def changeLastValidDate(date: String): Unit = js.native
   
@@ -29,30 +30,18 @@ object HandleClickDate {
   }
   
   @scala.inline
-  implicit class HandleClickDateOps[Self <: HandleClickDate] (val x: Self) extends AnyVal {
+  implicit class HandleClickDateMutableBuilder[Self <: HandleClickDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitDate(value: () => Unit): Self = StObject.set(x, "initDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeLastValidDate(value: String => Unit): Self = this.set("changeLastValidDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = this.set("handleClickDate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInitDate(value: () => Unit): Self = this.set("initDate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsValidAndSelectable(value: typings.std.Date => Boolean): Self = this.set("isValidAndSelectable", js.Any.fromFunction1(value))
+    def setIsValidAndSelectable(value: typings.std.Date => Boolean): Self = StObject.set(x, "isValidAndSelectable", js.Any.fromFunction1(value))
   }
 }

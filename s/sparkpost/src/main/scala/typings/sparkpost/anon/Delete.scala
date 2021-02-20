@@ -8,12 +8,13 @@ import typings.sparkpost.mod.RecipientListWithRecipients
 import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.UpdateRecipientList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delete extends js.Object {
+trait Delete extends StObject {
   
   /**
     * Create a recipient list by providing a recipient list object as the POST request body.

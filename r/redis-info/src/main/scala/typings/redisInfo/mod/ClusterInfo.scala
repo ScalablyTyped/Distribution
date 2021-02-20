@@ -1,11 +1,12 @@
 package typings.redisInfo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterInfo extends js.Object {
+trait ClusterInfo extends StObject {
   
   var cluster_enabled: Flag = js.native
 }
@@ -18,21 +19,9 @@ object ClusterInfo {
   }
   
   @scala.inline
-  implicit class ClusterInfoOps[Self <: ClusterInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterInfoMutableBuilder[Self <: ClusterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCluster_enabled(value: Flag): Self = this.set("cluster_enabled", value.asInstanceOf[js.Any])
+    def setCluster_enabled(value: Flag): Self = StObject.set(x, "cluster_enabled", value.asInstanceOf[js.Any])
   }
 }

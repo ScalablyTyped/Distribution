@@ -9,28 +9,12 @@ import typings.std.Pick
 import typings.std.ReadonlyArray
 import typings.std.Required
 import typings.tsEssentials.anon.TYPE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-essentials/dist/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
-  
-  @js.native
-  trait DeepReadonlyArray[T] extends ReadonlyArray[DeepReadonly[T]]
-  
-  @js.native
-  trait DeepRequiredArray[T] extends Array[DeepRequired[T]]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.tsEssentials.tsEssentialsBooleans.`false`
-    - typings.tsEssentials.tsEssentialsBooleans.`true`
-  */
-  trait IsEqualConsideringWritability[X, Y] extends js.Object
-  
-  @js.native
-  trait WritableArray[T] extends Array[DeepWritable[T]]
+object typesMod {
   
   type AsyncOrSync[T] = js.Thenable[T] | T
   
@@ -41,6 +25,9 @@ object typesMod extends js.Object {
   type DeepReadonly[T] = js.Any | DeepReadonlyObject[T] | T | (DeepReadonlyArray[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
   ])
+  
+  @js.native
+  trait DeepReadonlyArray[T] extends ReadonlyArray[DeepReadonly[T]]
   
   type DeepReadonlyObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepReadonly<T[P]>}
@@ -53,6 +40,9 @@ object typesMod extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
     ]
   ]) | NonNullable[T]
+  
+  @js.native
+  trait DeepRequiredArray[T] extends Array[DeepRequired[T]]
   
   type DeepWritable[T] = DeepWritableObject[T] | T | (WritableArray[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
@@ -67,6 +57,12 @@ object typesMod extends js.Object {
     */ typings.tsEssentials.tsEssentialsStrings.Dictionary with TopLevel[js.Any]
   
   type DictionaryValues[T] = js.Any
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.tsEssentials.tsEssentialsBooleans.`false`
+    - typings.tsEssentials.tsEssentialsBooleans.`true`
+  */
+  trait IsEqualConsideringWritability[X, Y] extends StObject
   
   type IsFullyWritable[T /* <: js.Object */] = IsEqualConsideringWritability[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -110,6 +106,9 @@ object typesMod extends js.Object {
   type Writable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: T[P]}
     */ typings.tsEssentials.tsEssentialsStrings.Writable with TopLevel[T]
+  
+  @js.native
+  trait WritableArray[T] extends Array[DeepWritable[T]]
   
   type WritableKeys[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: -? ts-essentials.ts-essentials/dist/types.IsFullyWritable<std.Pick<T, P>> extends true? P : never}[keyof T] */ js.Any
 }

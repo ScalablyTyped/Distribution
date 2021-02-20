@@ -1,14 +1,14 @@
 package typings.bingmaps.global.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.Directions.IWaypointOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.Maps.Directions")
-@js.native
-object Directions extends js.Object {
+object Directions {
   
+  @JSGlobal("Microsoft.Maps.Directions.DirectionsManager")
   @js.native
   class DirectionsManager protected ()
     extends typings.bingmaps.Microsoft.Maps.Directions.DirectionsManager {
@@ -24,8 +24,9 @@ object Directions extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.DistanceUnit")
   @js.native
-  object DistanceUnit extends js.Object {
+  object DistanceUnit extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Directions.DistanceUnit with Double] = js.native
@@ -35,8 +36,9 @@ object Directions extends js.Object {
     /* 1 */ val miles: typings.bingmaps.Microsoft.Maps.Directions.DistanceUnit.miles with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.RouteAvoidance")
   @js.native
-  object RouteAvoidance extends js.Object {
+  object RouteAvoidance extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance with Double] = js.native
@@ -58,8 +60,9 @@ object Directions extends js.Object {
     /* 0 */ val none: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.none with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.RouteMode")
   @js.native
-  object RouteMode extends js.Object {
+  object RouteMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Directions.RouteMode with Double] = js.native
@@ -73,8 +76,9 @@ object Directions extends js.Object {
     /* 3 */ val walking: typings.bingmaps.Microsoft.Maps.Directions.RouteMode.walking with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.RouteOptimization")
   @js.native
-  object RouteOptimization extends js.Object {
+  object RouteOptimization extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization with Double] = js.native
@@ -94,8 +98,9 @@ object Directions extends js.Object {
     /* 2 */ val timeWithTraffic: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeWithTraffic with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.RouteResponseCode")
   @js.native
-  object RouteResponseCode extends js.Object {
+  object RouteResponseCode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode with Double] = js.native
@@ -137,8 +142,9 @@ object Directions extends js.Object {
     /* 12 */ val waypointDisambiguation: typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.waypointDisambiguation with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.TimeType")
   @js.native
-  object TimeType extends js.Object {
+  object TimeType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Directions.TimeType with Double] = js.native
@@ -152,6 +158,7 @@ object Directions extends js.Object {
     /* 3 */ val lastAvailable: typings.bingmaps.Microsoft.Maps.Directions.TimeType.lastAvailable with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Directions.Waypoint")
   @js.native
   class Waypoint protected ()
     extends typings.bingmaps.Microsoft.Maps.Directions.Waypoint {

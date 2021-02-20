@@ -1,12 +1,11 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "events")
-@js.native
-object events extends js.Object {
+object events {
   
   /**
     * @classdesc
@@ -20,8 +19,9 @@ object events extends js.Object {
     *
     * @param type Type.
     */
+  @JSImport("openlayers", "events.Event")
   @js.native
-  class Event protected () extends js.Object {
+  class Event protected () extends StObject {
     /**
       * @classdesc
       * Stripped down implementation of the W3C DOM Level 2 Event interface.
@@ -77,6 +77,7 @@ object events extends js.Object {
     *    returns false.
     *
     */
+  @JSImport("openlayers", "events.EventTarget")
   @js.native
   /**
     * @classdesc
@@ -96,8 +97,7 @@ object events extends js.Object {
     */
   class EventTarget () extends Disposable
   
-  @js.native
-  object condition extends js.Object {
+  object condition {
     
     /**
       * Return `true` if only the alt-key is pressed, `false` otherwise (e.g. when
@@ -107,6 +107,8 @@ object events extends js.Object {
       * @return True if only the alt key is pressed.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.altKeyOnly")
+    @js.native
     def altKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -117,6 +119,8 @@ object events extends js.Object {
       * @return True if only the alt and shift keys are pressed.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.altShiftKeysOnly")
+    @js.native
     def altShiftKeysOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -126,6 +130,8 @@ object events extends js.Object {
       * @return True.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.always")
+    @js.native
     def always(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -135,6 +141,8 @@ object events extends js.Object {
       * @return True if the event is a map `click` event.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.click")
+    @js.native
     def click(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -144,6 +152,8 @@ object events extends js.Object {
       * @return True if the event is a map `dblclick` event.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.doubleClick")
+    @js.native
     def doubleClick(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -153,6 +163,8 @@ object events extends js.Object {
       * @return True if the event originates from a mouse device.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.mouseOnly")
+    @js.native
     def mouseOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -162,6 +174,8 @@ object events extends js.Object {
       * @return False.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.never")
+    @js.native
     def never(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -172,6 +186,8 @@ object events extends js.Object {
       * @return True only if there no modifier keys are pressed.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.noModifierKeys")
+    @js.native
     def noModifierKeys(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -183,6 +199,8 @@ object events extends js.Object {
       * @return True if only the platform modifier key is pressed.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.platformModifierKeyOnly")
+    @js.native
     def platformModifierKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -193,6 +211,8 @@ object events extends js.Object {
       * @return True if the browser event is a `pointermove` event.
       * @api
       */
+    @JSImport("openlayers", "events.condition.pointerMove")
+    @js.native
     def pointerMove(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -204,6 +224,8 @@ object events extends js.Object {
       * @return True if the event originates from a primary pointer.
       * @api
       */
+    @JSImport("openlayers", "events.condition.primaryAction")
+    @js.native
     def primaryAction(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -214,6 +236,8 @@ object events extends js.Object {
       * @return True if only the shift key is pressed.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.shiftKeyOnly")
+    @js.native
     def shiftKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -223,6 +247,8 @@ object events extends js.Object {
       * @return True if the event is a map `singleclick` event.
       * @api stable
       */
+    @JSImport("openlayers", "events.condition.singleClick")
+    @js.native
     def singleClick(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
     
     /**
@@ -233,6 +259,8 @@ object events extends js.Object {
       * @return True only if the target element is not editable.
       * @api
       */
+    @JSImport("openlayers", "events.condition.targetNotEditable")
+    @js.native
     def targetNotEditable(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
   }
 }

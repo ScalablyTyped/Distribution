@@ -1,6 +1,7 @@
 package typings.ractive.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,183 +96,171 @@ object BaseInitOpts {
   }
   
   @scala.inline
-  implicit class BaseInitOptsOps[Self <: BaseInitOpts[_], T /* <: Ractive[T] */] (val x: Self with BaseInitOpts[T]) extends AnyVal {
+  implicit class BaseInitOptsMutableBuilder[Self <: BaseInitOpts[_], T /* <: Ractive[T] */] (val x: Self with BaseInitOpts[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapt(value: js.Array[Adaptor | String]): Self = StObject.set(x, "adapt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdaptUndefined: Self = StObject.set(x, "adapt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdaptVarargs(value: (Adaptor | String)*): Self = StObject.set(x, "adapt", js.Array(value :_*))
     
     @scala.inline
-    def setAdaptVarargs(value: (Adaptor | String)*): Self = this.set("adapt", js.Array(value :_*))
+    def setAdaptors(value: Registry[Adaptor]): Self = StObject.set(x, "adaptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdapt(value: js.Array[Adaptor | String]): Self = this.set("adapt", value.asInstanceOf[js.Any])
+    def setAdaptorsUndefined: Self = StObject.set(x, "adaptors", js.undefined)
     
     @scala.inline
-    def deleteAdapt: Self = this.set("adapt", js.undefined)
+    def setAllowExpressions(value: Boolean): Self = StObject.set(x, "allowExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdaptors(value: Registry[Adaptor]): Self = this.set("adaptors", value.asInstanceOf[js.Any])
+    def setAllowExpressionsUndefined: Self = StObject.set(x, "allowExpressions", js.undefined)
     
     @scala.inline
-    def deleteAdaptors: Self = this.set("adaptors", js.undefined)
+    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowExpressions(value: Boolean): Self = this.set("allowExpressions", value.asInstanceOf[js.Any])
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def deleteAllowExpressions: Self = this.set("allowExpressions", js.undefined)
+    def setComponents(value: Registry[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppend(value: Boolean): Self = this.set("append", value.asInstanceOf[js.Any])
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setComputed(value: StringDictionary[Computation[T]]): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: Registry[Component]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
     
     @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
+    def setDecorators(value: Registry[Decorator[T]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputed(value: StringDictionary[Computation[T]]): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def deleteComputed: Self = this.set("computed", js.undefined)
+    def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: Registry[Decorator[T]]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setEasing(value: Registry[Easing]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegate(value: Boolean): Self = this.set("delegate", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDelegate: Self = this.set("delegate", js.undefined)
+    def setEvents(value: Registry[EventPlugin[T]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: Registry[Easing]): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setHelpers(value: Registry[Helper]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: Registry[EventPlugin[T]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setInterpolators(value: Registry[Interpolator]): Self = StObject.set(x, "interpolators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpers(value: Registry[Helper]): Self = this.set("helpers", value.asInstanceOf[js.Any])
+    def setInterpolatorsUndefined: Self = StObject.set(x, "interpolators", js.undefined)
     
     @scala.inline
-    def deleteHelpers: Self = this.set("helpers", js.undefined)
+    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolators(value: Registry[Interpolator]): Self = this.set("interpolators", value.asInstanceOf[js.Any])
+    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
     @scala.inline
-    def deleteInterpolators: Self = this.set("interpolators", js.undefined)
+    def setNestedTransitions(value: Boolean): Self = StObject.set(x, "nestedTransitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    def setNestedTransitionsUndefined: Self = StObject.set(x, "nestedTransitions", js.undefined)
     
     @scala.inline
-    def deleteLazy: Self = this.set("lazy", js.undefined)
+    def setNoIntro(value: Boolean): Self = StObject.set(x, "noIntro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedTransitions(value: Boolean): Self = this.set("nestedTransitions", value.asInstanceOf[js.Any])
+    def setNoIntroUndefined: Self = StObject.set(x, "noIntro", js.undefined)
     
     @scala.inline
-    def deleteNestedTransitions: Self = this.set("nestedTransitions", js.undefined)
+    def setNoOutro(value: Boolean): Self = StObject.set(x, "noOutro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoIntro(value: Boolean): Self = this.set("noIntro", value.asInstanceOf[js.Any])
+    def setNoOutroUndefined: Self = StObject.set(x, "noOutro", js.undefined)
     
     @scala.inline
-    def deleteNoIntro: Self = this.set("noIntro", js.undefined)
+    def setObserve(value: Registry[ObserverCallback[T] | ObserverDescriptor[T]]): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoOutro(value: Boolean): Self = this.set("noOutro", value.asInstanceOf[js.Any])
+    def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
     
     @scala.inline
-    def deleteNoOutro: Self = this.set("noOutro", js.undefined)
+    def setOn(value: Registry[ListenerCallback[T] | ListenerDescriptor[T]]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserve(value: Registry[ObserverCallback[T] | ObserverDescriptor[T]]): Self = this.set("observe", value.asInstanceOf[js.Any])
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def deleteObserve: Self = this.set("observe", js.undefined)
+    def setPartials(value: Registry[Partial]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: Registry[ListenerCallback[T] | ListenerDescriptor[T]]): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
     
     @scala.inline
-    def deleteOn: Self = this.set("on", js.undefined)
+    def setResolveInstanceMembers(value: Boolean): Self = StObject.set(x, "resolveInstanceMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartials(value: Registry[Partial]): Self = this.set("partials", value.asInstanceOf[js.Any])
+    def setResolveInstanceMembersUndefined: Self = StObject.set(x, "resolveInstanceMembers", js.undefined)
     
     @scala.inline
-    def deletePartials: Self = this.set("partials", js.undefined)
+    def setSyncComputedChildren(value: Boolean): Self = StObject.set(x, "syncComputedChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveInstanceMembers(value: Boolean): Self = this.set("resolveInstanceMembers", value.asInstanceOf[js.Any])
+    def setSyncComputedChildrenUndefined: Self = StObject.set(x, "syncComputedChildren", js.undefined)
     
     @scala.inline
-    def deleteResolveInstanceMembers: Self = this.set("resolveInstanceMembers", js.undefined)
+    def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncComputedChildren(value: Boolean): Self = this.set("syncComputedChildren", value.asInstanceOf[js.Any])
+    def setTemplateFunction1(value: /* helper */ ParseHelper => String | (js.Array[js.Object | String]) | ParsedTemplate): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSyncComputedChildren: Self = this.set("syncComputedChildren", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setTemplateVarargs(value: js.Any*): Self = this.set("template", js.Array(value :_*))
+    def setTemplateVarargs(value: js.Any*): Self = StObject.set(x, "template", js.Array(value :_*))
     
     @scala.inline
-    def setTemplateFunction1(value: /* helper */ ParseHelper => String | (js.Array[js.Object | String]) | ParsedTemplate): Self = this.set("template", js.Any.fromFunction1(value))
+    def setTransitions(value: Registry[Transition]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: Template): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTransitionsEnabled(value: Boolean): Self = StObject.set(x, "transitionsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTransitionsEnabledUndefined: Self = StObject.set(x, "transitionsEnabled", js.undefined)
     
     @scala.inline
-    def setTransitions(value: Registry[Transition]): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
     
     @scala.inline
-    def deleteTransitions: Self = this.set("transitions", js.undefined)
+    def setTwoway(value: Boolean): Self = StObject.set(x, "twoway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionsEnabled(value: Boolean): Self = this.set("transitionsEnabled", value.asInstanceOf[js.Any])
+    def setTwowayUndefined: Self = StObject.set(x, "twoway", js.undefined)
     
     @scala.inline
-    def deleteTransitionsEnabled: Self = this.set("transitionsEnabled", js.undefined)
+    def setWarnAboutAmbiguity(value: Boolean): Self = StObject.set(x, "warnAboutAmbiguity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwoway(value: Boolean): Self = this.set("twoway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwoway: Self = this.set("twoway", js.undefined)
-    
-    @scala.inline
-    def setWarnAboutAmbiguity(value: Boolean): Self = this.set("warnAboutAmbiguity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnAboutAmbiguity: Self = this.set("warnAboutAmbiguity", js.undefined)
+    def setWarnAboutAmbiguityUndefined: Self = StObject.set(x, "warnAboutAmbiguity", js.undefined)
   }
 }

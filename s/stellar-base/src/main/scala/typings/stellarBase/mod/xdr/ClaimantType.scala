@@ -1,5 +1,6 @@
 package typings.stellarBase.mod.xdr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ClaimantType ()
   extends typings.stellarBase.xdrMod.default.ClaimantType
-/* static members */
-@JSImport("stellar-base", "xdr.ClaimantType")
-@js.native
-object ClaimantType extends js.Object {
+object ClaimantType {
   
+  /* static member */
+  @JSImport("stellar-base", "xdr.ClaimantType.claimantTypeV0")
+  @js.native
   def claimantTypeV0(): typings.stellarBase.xdrMod.xdr.ClaimantType = js.native
 }

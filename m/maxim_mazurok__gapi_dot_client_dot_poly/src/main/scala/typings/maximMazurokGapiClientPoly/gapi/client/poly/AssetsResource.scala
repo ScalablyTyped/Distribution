@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientPoly.anon.Accesstoken
 import typings.maximMazurokGapiClientPoly.anon.Alt
 import typings.maximMazurokGapiClientPoly.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetsResource extends js.Object {
+trait AssetsResource extends StObject {
   
   /** Returns detailed information about an asset given its name. PRIVATE assets are returned only if the currently authenticated user (via OAuth token) is the author of the asset. */
   def get(): Request[Asset] = js.native

@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/card-header/card-header", JSImport.Namespace)
-@js.native
-object cardHeaderMod extends js.Object {
+object cardHeaderMod {
   
+  @JSImport("@ionic/core/dist/types/components/card-header/card-header", "CardHeader")
   @js.native
   class CardHeader () extends ComponentInterface {
     

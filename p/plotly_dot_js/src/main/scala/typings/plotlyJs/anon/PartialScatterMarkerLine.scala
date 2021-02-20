@@ -1,13 +1,14 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.ColorScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ScatterMarkerLine> */
 @js.native
-trait PartialScatterMarkerLine extends js.Object {
+trait PartialScatterMarkerLine extends StObject {
   
   var autocolorscale: js.UndefOr[Boolean] = js.native
   
@@ -34,75 +35,63 @@ object PartialScatterMarkerLine {
   }
   
   @scala.inline
-  implicit class PartialScatterMarkerLineOps[Self <: PartialScatterMarkerLine] (val x: Self) extends AnyVal {
+  implicit class PartialScatterMarkerLineMutableBuilder[Self <: PartialScatterMarkerLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutocolorscale(value: Boolean): Self = StObject.set(x, "autocolorscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocolorscaleUndefined: Self = StObject.set(x, "autocolorscale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCauto(value: Boolean): Self = StObject.set(x, "cauto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutocolorscale(value: Boolean): Self = this.set("autocolorscale", value.asInstanceOf[js.Any])
+    def setCautoUndefined: Self = StObject.set(x, "cauto", js.undefined)
     
     @scala.inline
-    def deleteAutocolorscale: Self = this.set("autocolorscale", js.undefined)
+    def setCmax(value: Double): Self = StObject.set(x, "cmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCauto(value: Boolean): Self = this.set("cauto", value.asInstanceOf[js.Any])
+    def setCmaxUndefined: Self = StObject.set(x, "cmax", js.undefined)
     
     @scala.inline
-    def deleteCauto: Self = this.set("cauto", js.undefined)
+    def setCmin(value: Double): Self = StObject.set(x, "cmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmax(value: Double): Self = this.set("cmax", value.asInstanceOf[js.Any])
+    def setCminUndefined: Self = StObject.set(x, "cmin", js.undefined)
     
     @scala.inline
-    def deleteCmax: Self = this.set("cmax", js.undefined)
+    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmin(value: Double): Self = this.set("cmin", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCmin: Self = this.set("cmin", js.undefined)
+    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("color", js.Array(value :_*))
+    def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorscaleUndefined: Self = StObject.set(x, "colorscale", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value :_*))
     
     @scala.inline
-    def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = this.set("colorscale", js.Array(value :_*))
+    def setReversescale(value: Boolean): Self = StObject.set(x, "reversescale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorscale(value: ColorScale): Self = this.set("colorscale", value.asInstanceOf[js.Any])
+    def setReversescaleUndefined: Self = StObject.set(x, "reversescale", js.undefined)
     
     @scala.inline
-    def deleteColorscale: Self = this.set("colorscale", js.undefined)
+    def setWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReversescale(value: Boolean): Self = this.set("reversescale", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteReversescale: Self = this.set("reversescale", js.undefined)
-    
-    @scala.inline
-    def setWidthVarargs(value: Double*): Self = this.set("width", js.Array(value :_*))
-    
-    @scala.inline
-    def setWidth(value: Double | js.Array[Double]): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value :_*))
   }
 }

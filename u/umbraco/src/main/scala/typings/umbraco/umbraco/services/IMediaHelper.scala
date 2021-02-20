@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description A helper object used for dealing with media items
   */
 @js.native
-trait IMediaHelper extends js.Object {
+trait IMediaHelper extends StObject {
   
   /**
     * @ngdoc function
@@ -156,45 +157,33 @@ object IMediaHelper {
   }
   
   @scala.inline
-  implicit class IMediaHelperOps[Self <: IMediaHelper] (val x: Self) extends AnyVal {
+  implicit class IMediaHelperMutableBuilder[Self <: IMediaHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectIfImageByExtension(value: String => Boolean): Self = StObject.set(x, "detectIfImageByExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatFileTypes(value: String => String): Self = StObject.set(x, "formatFileTypes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetImagePropertyValue(value: IMediaOptions => String): Self = StObject.set(x, "getImagePropertyValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDetectIfImageByExtension(value: String => Boolean): Self = this.set("detectIfImageByExtension", js.Any.fromFunction1(value))
+    def setGetMediaPropertyValue(value: IMediaOptions => String): Self = StObject.set(x, "getMediaPropertyValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatFileTypes(value: String => String): Self = this.set("formatFileTypes", js.Any.fromFunction1(value))
+    def setGetThumbnail(value: IMediaOptions => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetImagePropertyValue(value: IMediaOptions => String): Self = this.set("getImagePropertyValue", js.Any.fromFunction1(value))
+    def setGetThumbnailFromPath(value: String => String): Self = StObject.set(x, "getThumbnailFromPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMediaPropertyValue(value: IMediaOptions => String): Self = this.set("getMediaPropertyValue", js.Any.fromFunction1(value))
+    def setResolveFile(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetThumbnail(value: IMediaOptions => String): Self = this.set("getThumbnail", js.Any.fromFunction1(value))
+    def setResolveFileFromEntity(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFileFromEntity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetThumbnailFromPath(value: String => String): Self = this.set("getThumbnailFromPath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveFile(value: (IMediaEntity, Boolean) => String): Self = this.set("resolveFile", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResolveFileFromEntity(value: (IMediaEntity, Boolean) => String): Self = this.set("resolveFileFromEntity", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setScaleToMaxSize(value: (Double, Double, Double) => js.Any): Self = this.set("scaleToMaxSize", js.Any.fromFunction3(value))
+    def setScaleToMaxSize(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "scaleToMaxSize", js.Any.fromFunction3(value))
   }
 }

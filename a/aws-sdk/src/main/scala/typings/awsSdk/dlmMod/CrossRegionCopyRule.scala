@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrossRegionCopyRule extends js.Object {
+trait CrossRegionCopyRule extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS KMS customer master key (CMK) to use for EBS encryption. If this parameter is not specified, your AWS managed CMK for EBS is used.
@@ -41,42 +42,30 @@ object CrossRegionCopyRule {
   }
   
   @scala.inline
-  implicit class CrossRegionCopyRuleOps[Self <: CrossRegionCopyRule] (val x: Self) extends AnyVal {
+  implicit class CrossRegionCopyRuleMutableBuilder[Self <: CrossRegionCopyRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmkArn(value: CmkArn): Self = StObject.set(x, "CmkArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmkArnUndefined: Self = StObject.set(x, "CmkArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyTags(value: CopyTagsNullable): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Encrypted): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    def setCopyTagsUndefined: Self = StObject.set(x, "CopyTags", js.undefined)
     
     @scala.inline
-    def setTargetRegion(value: TargetRegion): Self = this.set("TargetRegion", value.asInstanceOf[js.Any])
+    def setEncrypted(value: Encrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmkArn(value: CmkArn): Self = this.set("CmkArn", value.asInstanceOf[js.Any])
+    def setRetainRule(value: CrossRegionCopyRetainRule): Self = StObject.set(x, "RetainRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCmkArn: Self = this.set("CmkArn", js.undefined)
+    def setRetainRuleUndefined: Self = StObject.set(x, "RetainRule", js.undefined)
     
     @scala.inline
-    def setCopyTags(value: CopyTagsNullable): Self = this.set("CopyTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyTags: Self = this.set("CopyTags", js.undefined)
-    
-    @scala.inline
-    def setRetainRule(value: CrossRegionCopyRetainRule): Self = this.set("RetainRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainRule: Self = this.set("RetainRule", js.undefined)
+    def setTargetRegion(value: TargetRegion): Self = StObject.set(x, "TargetRegion", value.asInstanceOf[js.Any])
   }
 }

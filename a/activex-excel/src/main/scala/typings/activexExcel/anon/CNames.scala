@@ -1,12 +1,13 @@
 package typings.activexExcel.anon
 
 import typings.activexStdole.stdole.GUID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CNames extends js.Object {
+trait CNames extends StObject {
   
   val cNames: Double = js.native
   
@@ -27,33 +28,21 @@ object CNames {
   }
   
   @scala.inline
-  implicit class CNamesOps[Self <: CNames] (val x: Self) extends AnyVal {
+  implicit class CNamesMutableBuilder[Self <: CNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCNames(value: Double): Self = StObject.set(x, "cNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRgdispid(value: Double): Self = StObject.set(x, "rgdispid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCNames(value: Double): Self = this.set("cNames", value.asInstanceOf[js.Any])
+    def setRgszNames(value: Double): Self = StObject.set(x, "rgszNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLcid(value: Double): Self = this.set("lcid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRgdispid(value: Double): Self = this.set("rgdispid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRgszNames(value: Double): Self = this.set("rgszNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRiid(value: GUID): Self = this.set("riid", value.asInstanceOf[js.Any])
+    def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
   }
 }

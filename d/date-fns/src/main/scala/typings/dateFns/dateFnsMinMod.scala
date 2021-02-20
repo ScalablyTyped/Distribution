@@ -1,17 +1,17 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/min", JSImport.Namespace)
-@js.native
-object dateFnsMinMod extends js.Object {
+object dateFnsMinMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/min", JSImport.Default)
+    @js.native
     def apply(datesArray: js.Array[Date | Double]): Date = js.native
   }
 }

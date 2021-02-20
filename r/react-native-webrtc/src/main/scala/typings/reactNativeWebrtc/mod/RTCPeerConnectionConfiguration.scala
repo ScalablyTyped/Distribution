@@ -3,12 +3,13 @@ package typings.reactNativeWebrtc.mod
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.all
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.public
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.relay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCPeerConnectionConfiguration extends js.Object {
+trait RTCPeerConnectionConfiguration extends StObject {
   
   var iceServers: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls] = js.native
   
@@ -23,30 +24,18 @@ object RTCPeerConnectionConfiguration {
   }
   
   @scala.inline
-  implicit class RTCPeerConnectionConfigurationOps[Self <: RTCPeerConnectionConfiguration] (val x: Self) extends AnyVal {
+  implicit class RTCPeerConnectionConfigurationMutableBuilder[Self <: RTCPeerConnectionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIceServers(value: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIceServersVarargs(value: (ConfigurationParamWithUrl | ConfigurationParamWithUrls)*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIceTransportPolicy(value: all | public | relay): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIceServersVarargs(value: (ConfigurationParamWithUrl | ConfigurationParamWithUrls)*): Self = this.set("iceServers", js.Array(value :_*))
-    
-    @scala.inline
-    def setIceServers(value: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]): Self = this.set("iceServers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIceTransportPolicy(value: all | public | relay): Self = this.set("iceTransportPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIceTransportPolicy: Self = this.set("iceTransportPolicy", js.undefined)
+    def setIceTransportPolicyUndefined: Self = StObject.set(x, "iceTransportPolicy", js.undefined)
   }
 }

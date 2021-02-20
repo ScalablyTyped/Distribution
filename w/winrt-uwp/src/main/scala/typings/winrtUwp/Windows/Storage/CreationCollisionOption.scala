@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CreationCollisionOption extends js.Object
+sealed trait CreationCollisionOption extends StObject
 /** Specifies what to do if a file or folder with the specified name already exists in the current folder when you create a new file or folder. */
 @JSGlobal("Windows.Storage.CreationCollisionOption")
 @js.native
-object CreationCollisionOption extends js.Object {
+object CreationCollisionOption extends StObject {
   
   /** Raise an exception of type System.Exception if the file or folder already exists. */
   @js.native

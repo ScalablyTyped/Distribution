@@ -15,13 +15,14 @@ import typings.angularRouter.angularRouterStrings.legacy
 import typings.angularRouter.angularRouterStrings.reload
 import typings.rxjs.mod.Observable_
 import typings.std.URIError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "Router")
 @js.native
-class Router protected () extends js.Object {
+class Router protected () extends StObject {
   def this(
     rootComponentType: Null,
     urlSerializer: UrlSerializer,

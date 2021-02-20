@@ -3,12 +3,13 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 import typings.angular.JQuery
 import typings.angularMaterial.angularMaterialBooleans.`false`
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IToastPreset[T] extends js.Object {
+trait IToastPreset[T] extends StObject {
   
   def action(action: String): T = js.native
   
@@ -33,6 +34,6 @@ trait IToastPreset[T] extends js.Object {
   
   def theme(theme: String): T = js.native
   
-   // default: root node
+  // default: root node
   def toastClass(toastClass: String): T = js.native
 }

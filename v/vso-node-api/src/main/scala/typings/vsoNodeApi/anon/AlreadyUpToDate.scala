@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlreadyUpToDate extends js.Object {
+trait AlreadyUpToDate extends StObject {
   
   var alreadyUpToDate: scala.Double = js.native
   
@@ -44,45 +45,33 @@ object AlreadyUpToDate {
   }
   
   @scala.inline
-  implicit class AlreadyUpToDateOps[Self <: AlreadyUpToDate] (val x: Self) extends AnyVal {
+  implicit class AlreadyUpToDateMutableBuilder[Self <: AlreadyUpToDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlreadyUpToDate(value: scala.Double): Self = StObject.set(x, "alreadyUpToDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInlineUpdateReceived(value: scala.Double): Self = StObject.set(x, "inlineUpdateReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstalled(value: scala.Double): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlreadyUpToDate(value: scala.Double): Self = this.set("alreadyUpToDate", value.asInstanceOf[js.Any])
+    def setPreinstalled(value: scala.Double): Self = StObject.set(x, "preinstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineUpdateReceived(value: scala.Double): Self = this.set("inlineUpdateReceived", value.asInstanceOf[js.Any])
+    def setReceivedInstallOrUpdate(value: scala.Double): Self = StObject.set(x, "receivedInstallOrUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalled(value: scala.Double): Self = this.set("installed", value.asInstanceOf[js.Any])
+    def setReceivedUninstall(value: scala.Double): Self = StObject.set(x, "receivedUninstall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreinstalled(value: scala.Double): Self = this.set("preinstalled", value.asInstanceOf[js.Any])
+    def setRequestedUpdate(value: scala.Double): Self = StObject.set(x, "requestedUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivedInstallOrUpdate(value: scala.Double): Self = this.set("receivedInstallOrUpdate", value.asInstanceOf[js.Any])
+    def setUninstalled(value: scala.Double): Self = StObject.set(x, "uninstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivedUninstall(value: scala.Double): Self = this.set("receivedUninstall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestedUpdate(value: scala.Double): Self = this.set("requestedUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUninstalled(value: scala.Double): Self = this.set("uninstalled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated(value: scala.Double): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUpdated(value: scala.Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

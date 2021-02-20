@@ -26,6 +26,7 @@ import typings.phaser.spine.Skin
 import typings.phaser.spine.Slot
 import typings.phaser.spine.TrackEntry
 import typings.phaser.spine.TransformConstraintData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent phaser.Phaser.GameObjects.Components.Transform */
 /* Inlined parent phaser.Phaser.GameObjects.Components.Visible */
 @js.native
-trait SpineGameObject extends js.Object {
+trait SpineGameObject extends StObject {
   
   /**
     * The active state of this Game Object.

@@ -10,12 +10,13 @@ import typings.node.anon.WithFileTypes
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.PathLike
 import typings.walkSync.walkSyncStrings.buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofreaddir extends js.Object {
+trait Typeofreaddir extends StObject {
   
   def apply(
     path: PathLike,

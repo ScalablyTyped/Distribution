@@ -1,6 +1,7 @@
 package typings.extjs.Ext.form
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,44 +44,32 @@ object IFieldAncestor {
   }
   
   @scala.inline
-  implicit class IFieldAncestorOps[Self <: IFieldAncestor] (val x: Self) extends AnyVal {
+  implicit class IFieldAncestorMutableBuilder[Self <: IFieldAncestor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldDefaults(value: js.Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitFieldAncestor(value: () => Unit): Self = StObject.set(x, "initFieldAncestor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFieldDefaults(value: js.Any): Self = this.set("fieldDefaults", value.asInstanceOf[js.Any])
+    def setInitFieldAncestorUndefined: Self = StObject.set(x, "initFieldAncestor", js.undefined)
     
     @scala.inline
-    def deleteFieldDefaults: Self = this.set("fieldDefaults", js.undefined)
+    def setOnFieldErrorChange(value: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFieldErrorChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInitFieldAncestor(value: () => Unit): Self = this.set("initFieldAncestor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteInitFieldAncestor: Self = this.set("initFieldAncestor", js.undefined)
-    
-    @scala.inline
-    def setOnFieldErrorChange(value: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String]) => Unit): Self = this.set("onFieldErrorChange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnFieldErrorChange: Self = this.set("onFieldErrorChange", js.undefined)
+    def setOnFieldErrorChangeUndefined: Self = StObject.set(x, "onFieldErrorChange", js.undefined)
     
     @scala.inline
     def setOnFieldValidityChange(
       value: (/* field */ js.UndefOr[typings.extjs.Ext.form.field.IField], /* valid */ js.UndefOr[Boolean]) => Unit
-    ): Self = this.set("onFieldValidityChange", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onFieldValidityChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnFieldValidityChange: Self = this.set("onFieldValidityChange", js.undefined)
+    def setOnFieldValidityChangeUndefined: Self = StObject.set(x, "onFieldValidityChange", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientContent.anon.OauthtokenOrderId
 import typings.maximMazurokGapiClientContent.anon.OrderId
 import typings.maximMazurokGapiClientContent.anon.OrderIdPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderinvoicesResource extends js.Object {
+trait OrderinvoicesResource extends StObject {
   
   def createchargeinvoice(request: OauthtokenOrderId, body: OrderinvoicesCreateChargeInvoiceRequest): Request[OrderinvoicesCreateChargeInvoiceResponse] = js.native
   /** Creates a charge invoice for a shipment group, and triggers a charge capture for orderinvoice enabled orders. */

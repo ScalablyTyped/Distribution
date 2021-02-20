@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestDataResponse extends js.Object {
+trait RequestDataResponse extends StObject {
   
   /**
     * If true, there are more entries to fetch in the given range.
@@ -26,27 +27,15 @@ object RequestDataResponse {
   }
   
   @scala.inline
-  implicit class RequestDataResponseOps[Self <: RequestDataResponse] (val x: Self) extends AnyVal {
+  implicit class RequestDataResponseMutableBuilder[Self <: RequestDataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectStoreDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "objectStoreDataEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasMore(value: Boolean): Self = this.set("hasMore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectStoreDataEntriesVarargs(value: DataEntry*): Self = this.set("objectStoreDataEntries", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjectStoreDataEntries(value: js.Array[DataEntry]): Self = this.set("objectStoreDataEntries", value.asInstanceOf[js.Any])
+    def setObjectStoreDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "objectStoreDataEntries", js.Array(value :_*))
   }
 }

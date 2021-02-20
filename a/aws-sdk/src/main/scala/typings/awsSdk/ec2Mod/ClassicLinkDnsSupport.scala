@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassicLinkDnsSupport extends js.Object {
+trait ClassicLinkDnsSupport extends StObject {
   
   /**
     * Indicates whether ClassicLink DNS support is enabled for the VPC.
@@ -26,30 +27,18 @@ object ClassicLinkDnsSupport {
   }
   
   @scala.inline
-  implicit class ClassicLinkDnsSupportOps[Self <: ClassicLinkDnsSupport] (val x: Self) extends AnyVal {
+  implicit class ClassicLinkDnsSupportMutableBuilder[Self <: ClassicLinkDnsSupport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassicLinkDnsSupported(value: Boolean): Self = StObject.set(x, "ClassicLinkDnsSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassicLinkDnsSupportedUndefined: Self = StObject.set(x, "ClassicLinkDnsSupported", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassicLinkDnsSupported(value: Boolean): Self = this.set("ClassicLinkDnsSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassicLinkDnsSupported: Self = this.set("ClassicLinkDnsSupported", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

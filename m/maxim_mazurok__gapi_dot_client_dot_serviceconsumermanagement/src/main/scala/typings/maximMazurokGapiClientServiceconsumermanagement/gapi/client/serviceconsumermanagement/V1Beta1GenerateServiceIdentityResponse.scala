@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V1Beta1GenerateServiceIdentityResponse extends js.Object {
+trait V1Beta1GenerateServiceIdentityResponse extends StObject {
   
   /** ServiceIdentity that was created or retrieved. */
   var identity: js.UndefOr[V1Beta1ServiceIdentity] = js.native
@@ -19,24 +20,12 @@ object V1Beta1GenerateServiceIdentityResponse {
   }
   
   @scala.inline
-  implicit class V1Beta1GenerateServiceIdentityResponseOps[Self <: V1Beta1GenerateServiceIdentityResponse] (val x: Self) extends AnyVal {
+  implicit class V1Beta1GenerateServiceIdentityResponseMutableBuilder[Self <: V1Beta1GenerateServiceIdentityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentity(value: V1Beta1ServiceIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdentity(value: V1Beta1ServiceIdentity): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentity: Self = this.set("identity", js.undefined)
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
   }
 }

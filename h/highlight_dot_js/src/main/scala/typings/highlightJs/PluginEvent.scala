@@ -1,5 +1,6 @@
 package typings.highlightJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highlightJs.highlightJsStrings.beforeColonhighlightBlock
   - typings.highlightJs.highlightJsStrings.afterColonhighlightBlock
 */
-trait PluginEvent extends js.Object
+trait PluginEvent extends StObject
 object PluginEvent {
   
   @scala.inline

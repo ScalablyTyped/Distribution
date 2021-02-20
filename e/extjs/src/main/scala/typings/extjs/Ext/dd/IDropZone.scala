@@ -1,6 +1,7 @@
 package typings.extjs.Ext.dd
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,72 +120,60 @@ object IDropZone {
   }
   
   @scala.inline
-  implicit class IDropZoneOps[Self <: IDropZone] (val x: Self) extends AnyVal {
+  implicit class IDropZoneMutableBuilder[Self <: IDropZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => _): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => _): Self = this.set("getTargetFromEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetTargetFromEvent: Self = this.set("getTargetFromEvent", js.undefined)
+    def setGetTargetFromEventUndefined: Self = StObject.set(x, "getTargetFromEvent", js.undefined)
     
     @scala.inline
     def setOnContainerDrop(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
-    ): Self = this.set("onContainerDrop", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onContainerDrop", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnContainerDrop: Self = this.set("onContainerDrop", js.undefined)
+    def setOnContainerDropUndefined: Self = StObject.set(x, "onContainerDrop", js.undefined)
     
     @scala.inline
     def setOnContainerOver(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
-    ): Self = this.set("onContainerOver", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onContainerOver", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnContainerOver: Self = this.set("onContainerOver", js.undefined)
+    def setOnContainerOverUndefined: Self = StObject.set(x, "onContainerOver", js.undefined)
     
     @scala.inline
     def setOnNodeDrop(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
-    ): Self = this.set("onNodeDrop", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onNodeDrop", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnNodeDrop: Self = this.set("onNodeDrop", js.undefined)
+    def setOnNodeDropUndefined: Self = StObject.set(x, "onNodeDrop", js.undefined)
     
     @scala.inline
     def setOnNodeEnter(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("onNodeEnter", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onNodeEnter", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnNodeEnter: Self = this.set("onNodeEnter", js.undefined)
+    def setOnNodeEnterUndefined: Self = StObject.set(x, "onNodeEnter", js.undefined)
     
     @scala.inline
     def setOnNodeOut(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("onNodeOut", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onNodeOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnNodeOut: Self = this.set("onNodeOut", js.undefined)
+    def setOnNodeOutUndefined: Self = StObject.set(x, "onNodeOut", js.undefined)
     
     @scala.inline
     def setOnNodeOver(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
-    ): Self = this.set("onNodeOver", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onNodeOver", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnNodeOver: Self = this.set("onNodeOver", js.undefined)
+    def setOnNodeOverUndefined: Self = StObject.set(x, "onNodeOver", js.undefined)
   }
 }

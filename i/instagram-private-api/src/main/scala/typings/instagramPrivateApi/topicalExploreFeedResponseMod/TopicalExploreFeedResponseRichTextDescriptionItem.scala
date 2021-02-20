@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseRichTextDescriptionItem extends js.Object {
+trait TopicalExploreFeedResponseRichTextDescriptionItem extends StObject {
   
   var block_type: String = js.native
   
@@ -22,27 +23,15 @@ object TopicalExploreFeedResponseRichTextDescriptionItem {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseRichTextDescriptionItemOps[Self <: TopicalExploreFeedResponseRichTextDescriptionItem] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseRichTextDescriptionItemMutableBuilder[Self <: TopicalExploreFeedResponseRichTextDescriptionItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock_type(value: String): Self = StObject.set(x, "block_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlock_type(value: String): Self = this.set("block_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_with_entities(value: TopicalExploreFeedResponseTextWithEntities): Self = this.set("text_with_entities", value.asInstanceOf[js.Any])
+    def setText_with_entities(value: TopicalExploreFeedResponseTextWithEntities): Self = StObject.set(x, "text_with_entities", value.asInstanceOf[js.Any])
   }
 }

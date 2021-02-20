@@ -1,12 +1,13 @@
 package typings.dndCore.interfacesMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Backend extends js.Object {
+trait Backend extends StObject {
   
   def connectDragPreview(sourceId: js.Any): Unsubscribe = js.native
   def connectDragPreview(sourceId: js.Any, node: js.UndefOr[scala.Nothing], options: js.Any): Unsubscribe = js.native

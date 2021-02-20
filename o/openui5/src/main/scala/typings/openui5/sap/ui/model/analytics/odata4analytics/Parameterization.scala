@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parameterization extends js.Object {
+trait Parameterization extends StObject {
   
   /**
     * Find parameter by name
@@ -71,39 +72,27 @@ object Parameterization {
   }
   
   @scala.inline
-  implicit class ParameterizationOps[Self <: Parameterization] (val x: Self) extends AnyVal {
+  implicit class ParameterizationMutableBuilder[Self <: Parameterization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindParameterByName(value: String => Parameter): Self = StObject.set(x, "findParameterByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllParameterNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllParameterNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAllParameters(value: () => js.Any): Self = StObject.set(x, "getAllParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindParameterByName(value: String => Parameter): Self = this.set("findParameterByName", js.Any.fromFunction1(value))
+    def setGetEntitySet(value: () => EntitySet): Self = StObject.set(x, "getEntitySet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllParameterNames(value: () => js.Array[String]): Self = this.set("getAllParameterNames", js.Any.fromFunction0(value))
+    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllParameters(value: () => js.Any): Self = this.set("getAllParameters", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntitySet(value: () => EntitySet): Self = this.set("getEntitySet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = this.set("getEntityType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNavigationPropertyToQueryResult(value: () => QueryResult): Self = this.set("getNavigationPropertyToQueryResult", js.Any.fromFunction0(value))
+    def setGetNavigationPropertyToQueryResult(value: () => QueryResult): Self = StObject.set(x, "getNavigationPropertyToQueryResult", js.Any.fromFunction0(value))
   }
 }

@@ -3,6 +3,7 @@ package typings.jsrsasign.mod.KJUR.asn1
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1ObjectParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ExplicitParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.TagParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

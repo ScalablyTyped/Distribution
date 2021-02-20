@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/_AutoScalingTargetTrackingScalingPolicyConfigurationDescription", JSImport.Namespace)
-@js.native
-object autoScalingTargetTrackingScalingPolicyConfigurationDescriptionMod extends js.Object {
+object autoScalingTargetTrackingScalingPolicyConfigurationDescriptionMod {
   
-  @JSName("_AutoScalingTargetTrackingScalingPolicyConfigurationDescription")
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/_AutoScalingTargetTrackingScalingPolicyConfigurationDescription", "_AutoScalingTargetTrackingScalingPolicyConfigurationDescription")
+  @js.native
   val AutoScalingTargetTrackingScalingPolicyConfigurationDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

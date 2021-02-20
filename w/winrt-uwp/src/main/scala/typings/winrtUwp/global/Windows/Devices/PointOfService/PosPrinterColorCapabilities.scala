@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the possible color cartridges that a point-of-service printer can support. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterColorCapabilities")
 @js.native
-object PosPrinterColorCapabilities extends js.Object {
+object PosPrinterColorCapabilities extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

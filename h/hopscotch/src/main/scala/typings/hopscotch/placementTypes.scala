@@ -1,5 +1,6 @@
 package typings.hopscotch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hopscotch.hopscotchStrings.right
   - typings.hopscotch.hopscotchStrings.left
 */
-trait placementTypes extends js.Object
+trait placementTypes extends StObject
 object placementTypes {
   
   @scala.inline

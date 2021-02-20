@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Import
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typings.winrtUwp.Windows.Storage.IStorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a photo import session with a photo import source. */
 @js.native
-trait PhotoImportSession extends js.Object {
+trait PhotoImportSession extends StObject {
   
   /** Gets or sets a value specifying whether the session date should be appended to the destination folder name. */
   var appendSessionDateToDestinationFolder: Boolean = js.native
@@ -57,44 +58,32 @@ object PhotoImportSession {
   }
   
   @scala.inline
-  implicit class PhotoImportSessionOps[Self <: PhotoImportSession] (val x: Self) extends AnyVal {
+  implicit class PhotoImportSessionMutableBuilder[Self <: PhotoImportSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendSessionDateToDestinationFolder(value: Boolean): Self = StObject.set(x, "appendSessionDateToDestinationFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationFileNamePrefix(value: String): Self = StObject.set(x, "destinationFileNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendSessionDateToDestinationFolder(value: Boolean): Self = this.set("appendSessionDateToDestinationFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDestinationFileNamePrefix(value: String): Self = this.set("destinationFileNamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationFolder(value: IStorageFolder): Self = this.set("destinationFolder", value.asInstanceOf[js.Any])
+    def setDestinationFolder(value: IStorageFolder): Self = StObject.set(x, "destinationFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFindItemsAsync(
       value: (PhotoImportContentTypeFilter, PhotoImportItemSelectionMode) => IPromiseWithIAsyncOperationWithProgress[PhotoImportFindItemsResult, Double]
-    ): Self = this.set("findItemsAsync", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "findItemsAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: PhotoImportSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: PhotoImportSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubfolderCreationMode(value: PhotoImportSubfolderCreationMode): Self = this.set("subfolderCreationMode", value.asInstanceOf[js.Any])
+    def setSubfolderCreationMode(value: PhotoImportSubfolderCreationMode): Self = StObject.set(x, "subfolderCreationMode", value.asInstanceOf[js.Any])
   }
 }

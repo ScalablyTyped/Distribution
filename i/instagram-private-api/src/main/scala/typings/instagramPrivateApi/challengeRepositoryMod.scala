@@ -1,19 +1,21 @@
 package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.challengeStateResponseMod.ChallengeStateResponse
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/challenge.repository", JSImport.Namespace)
-@js.native
-object challengeRepositoryMod extends js.Object {
+object challengeRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/challenge.repository", "ChallengeRepository")
   @js.native
-  class ChallengeRepository () extends Repository {
+  class ChallengeRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def auto(): js.Promise[ChallengeStateResponse] = js.native
     def auto(reset: Boolean): js.Promise[ChallengeStateResponse] = js.native

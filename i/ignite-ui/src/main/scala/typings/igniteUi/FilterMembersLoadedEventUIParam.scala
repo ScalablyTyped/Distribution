@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterMembersLoadedEventUIParam extends js.Object {
+trait FilterMembersLoadedEventUIParam extends StObject {
   
   /**
     * A collection with the newly loaded filter members.
@@ -31,42 +32,30 @@ object FilterMembersLoadedEventUIParam {
   }
   
   @scala.inline
-  implicit class FilterMembersLoadedEventUIParamOps[Self <: FilterMembersLoadedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class FilterMembersLoadedEventUIParamMutableBuilder[Self <: FilterMembersLoadedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterMembers(value: js.Array[_]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterMembersUndefined: Self = StObject.set(x, "filterMembers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "filterMembers", js.Array(value :_*))
     
     @scala.inline
-    def setFilterMembersVarargs(value: js.Any*): Self = this.set("filterMembers", js.Array(value :_*))
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterMembers(value: js.Array[_]): Self = this.set("filterMembers", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteFilterMembers: Self = this.set("filterMembers", js.undefined)
+    def setRootFilterMembers(value: js.Array[_]): Self = StObject.set(x, "rootFilterMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRootFilterMembersUndefined: Self = StObject.set(x, "rootFilterMembers", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setRootFilterMembersVarargs(value: js.Any*): Self = this.set("rootFilterMembers", js.Array(value :_*))
-    
-    @scala.inline
-    def setRootFilterMembers(value: js.Array[_]): Self = this.set("rootFilterMembers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootFilterMembers: Self = this.set("rootFilterMembers", js.undefined)
+    def setRootFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "rootFilterMembers", js.Array(value :_*))
   }
 }

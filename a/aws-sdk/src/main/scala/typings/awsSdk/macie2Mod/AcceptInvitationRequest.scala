@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceptInvitationRequest extends js.Object {
+trait AcceptInvitationRequest extends StObject {
   
   /**
     * The unique identifier for the invitation to accept.
@@ -26,24 +27,12 @@ object AcceptInvitationRequest {
   }
   
   @scala.inline
-  implicit class AcceptInvitationRequestOps[Self <: AcceptInvitationRequest] (val x: Self) extends AnyVal {
+  implicit class AcceptInvitationRequestMutableBuilder[Self <: AcceptInvitationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvitationId(value: string): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvitationId(value: string): Self = this.set("invitationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMasterAccount(value: string): Self = this.set("masterAccount", value.asInstanceOf[js.Any])
+    def setMasterAccount(value: string): Self = StObject.set(x, "masterAccount", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskRunProperties extends js.Object {
+trait TaskRunProperties extends StObject {
   
   /**
     * The configuration properties for an exporting labels task run.
@@ -41,48 +42,36 @@ object TaskRunProperties {
   }
   
   @scala.inline
-  implicit class TaskRunPropertiesOps[Self <: TaskRunProperties] (val x: Self) extends AnyVal {
+  implicit class TaskRunPropertiesMutableBuilder[Self <: TaskRunProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportLabelsTaskRunProperties(value: ExportLabelsTaskRunProperties): Self = StObject.set(x, "ExportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportLabelsTaskRunPropertiesUndefined: Self = StObject.set(x, "ExportLabelsTaskRunProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindMatchesTaskRunProperties(value: FindMatchesTaskRunProperties): Self = StObject.set(x, "FindMatchesTaskRunProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportLabelsTaskRunProperties(value: ExportLabelsTaskRunProperties): Self = this.set("ExportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
+    def setFindMatchesTaskRunPropertiesUndefined: Self = StObject.set(x, "FindMatchesTaskRunProperties", js.undefined)
     
     @scala.inline
-    def deleteExportLabelsTaskRunProperties: Self = this.set("ExportLabelsTaskRunProperties", js.undefined)
+    def setImportLabelsTaskRunProperties(value: ImportLabelsTaskRunProperties): Self = StObject.set(x, "ImportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindMatchesTaskRunProperties(value: FindMatchesTaskRunProperties): Self = this.set("FindMatchesTaskRunProperties", value.asInstanceOf[js.Any])
+    def setImportLabelsTaskRunPropertiesUndefined: Self = StObject.set(x, "ImportLabelsTaskRunProperties", js.undefined)
     
     @scala.inline
-    def deleteFindMatchesTaskRunProperties: Self = this.set("FindMatchesTaskRunProperties", js.undefined)
+    def setLabelingSetGenerationTaskRunProperties(value: LabelingSetGenerationTaskRunProperties): Self = StObject.set(x, "LabelingSetGenerationTaskRunProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportLabelsTaskRunProperties(value: ImportLabelsTaskRunProperties): Self = this.set("ImportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
+    def setLabelingSetGenerationTaskRunPropertiesUndefined: Self = StObject.set(x, "LabelingSetGenerationTaskRunProperties", js.undefined)
     
     @scala.inline
-    def deleteImportLabelsTaskRunProperties: Self = this.set("ImportLabelsTaskRunProperties", js.undefined)
+    def setTaskType(value: TaskType): Self = StObject.set(x, "TaskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingSetGenerationTaskRunProperties(value: LabelingSetGenerationTaskRunProperties): Self = this.set("LabelingSetGenerationTaskRunProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelingSetGenerationTaskRunProperties: Self = this.set("LabelingSetGenerationTaskRunProperties", js.undefined)
-    
-    @scala.inline
-    def setTaskType(value: TaskType): Self = this.set("TaskType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskType: Self = this.set("TaskType", js.undefined)
+    def setTaskTypeUndefined: Self = StObject.set(x, "TaskType", js.undefined)
   }
 }

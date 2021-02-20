@@ -1,5 +1,6 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +18,12 @@ class default protected () extends Swiper {
   def this(container: SelectableElement, options: SwiperOptions) = this()
 }
 /* static members */
-@JSImport("swiper", JSImport.Default)
-@js.native
-object default extends js.Object {
+object default {
   
   /**
     * Installs modules on Swiper in runtime.
     */
+  @JSImport("swiper", "default.use")
+  @js.native
   def use(modules: js.Array[SwiperModule]): Unit = js.native
 }

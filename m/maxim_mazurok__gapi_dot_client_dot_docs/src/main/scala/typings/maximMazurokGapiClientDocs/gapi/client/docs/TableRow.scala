@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableRow extends js.Object {
+trait TableRow extends StObject {
   
   /** The zero-based end index of this row, exclusive, in UTF-16 code units. */
   var endIndex: js.UndefOr[Double] = js.native
@@ -45,73 +46,61 @@ object TableRow {
   }
   
   @scala.inline
-  implicit class TableRowOps[Self <: TableRow] (val x: Self) extends AnyVal {
+  implicit class TableRowMutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
     @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
     
     @scala.inline
-    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
     
     @scala.inline
-    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
-    
-    @scala.inline
-    def setSuggestedInsertionIdsVarargs(value: String*): Self = this.set("suggestedInsertionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestedInsertionIds(value: js.Array[String]): Self = this.set("suggestedInsertionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedInsertionIds: Self = this.set("suggestedInsertionIds", js.undefined)
+    def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
     
     @scala.inline
     def setSuggestedTableRowStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow with TopLevel[js.Any]
-    ): Self = this.set("suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedTableRowStyleChanges: Self = this.set("suggestedTableRowStyleChanges", js.undefined)
+    def setSuggestedTableRowStyleChangesUndefined: Self = StObject.set(x, "suggestedTableRowStyleChanges", js.undefined)
     
     @scala.inline
-    def setTableCellsVarargs(value: TableCell*): Self = this.set("tableCells", js.Array(value :_*))
+    def setTableCells(value: js.Array[TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableCells(value: js.Array[TableCell]): Self = this.set("tableCells", value.asInstanceOf[js.Any])
+    def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
     
     @scala.inline
-    def deleteTableCells: Self = this.set("tableCells", js.undefined)
+    def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
     
     @scala.inline
-    def setTableRowStyle(value: TableRowStyle): Self = this.set("tableRowStyle", value.asInstanceOf[js.Any])
+    def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableRowStyle: Self = this.set("tableRowStyle", js.undefined)
+    def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.vueCompilerCore.mod.BindingMetadata
 import typings.vueCompilerCore.mod.SourceLocation
 import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import typings.vueCompilerSfc.vueCompilerSfcStrings.script
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,51 +35,39 @@ object SFCScriptBlock {
   }
   
   @scala.inline
-  implicit class SFCScriptBlockOps[Self <: SFCScriptBlock] (val x: Self) extends AnyVal {
+  implicit class SFCScriptBlockMutableBuilder[Self <: SFCScriptBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindings(value: BindingMetadata): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScriptAst(value: js.Array[Statement]): Self = StObject.set(x, "scriptAst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: script): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScriptAstUndefined: Self = StObject.set(x, "scriptAst", js.undefined)
     
     @scala.inline
-    def setBindings(value: BindingMetadata): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setScriptAstVarargs(value: Statement*): Self = StObject.set(x, "scriptAst", js.Array(value :_*))
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setScriptSetupAst(value: js.Array[Statement]): Self = StObject.set(x, "scriptSetupAst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptAstVarargs(value: Statement*): Self = this.set("scriptAst", js.Array(value :_*))
+    def setScriptSetupAstUndefined: Self = StObject.set(x, "scriptSetupAst", js.undefined)
     
     @scala.inline
-    def setScriptAst(value: js.Array[Statement]): Self = this.set("scriptAst", value.asInstanceOf[js.Any])
+    def setScriptSetupAstVarargs(value: Statement*): Self = StObject.set(x, "scriptSetupAst", js.Array(value :_*))
     
     @scala.inline
-    def deleteScriptAst: Self = this.set("scriptAst", js.undefined)
+    def setSetup(value: String | Boolean): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptSetupAstVarargs(value: Statement*): Self = this.set("scriptSetupAst", js.Array(value :_*))
+    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
     @scala.inline
-    def setScriptSetupAst(value: js.Array[Statement]): Self = this.set("scriptSetupAst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptSetupAst: Self = this.set("scriptSetupAst", js.undefined)
-    
-    @scala.inline
-    def setSetup(value: String | Boolean): Self = this.set("setup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetup: Self = this.set("setup", js.undefined)
+    def setType(value: script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcePoliciesScopedList extends js.Object {
+trait ResourcePoliciesScopedList extends StObject {
   
   /** A list of resourcePolicies contained in this scope. */
   var resourcePolicies: js.UndefOr[js.Array[ResourcePolicy]] = js.native
@@ -23,33 +24,21 @@ object ResourcePoliciesScopedList {
   }
   
   @scala.inline
-  implicit class ResourcePoliciesScopedListOps[Self <: ResourcePoliciesScopedList] (val x: Self) extends AnyVal {
+  implicit class ResourcePoliciesScopedListMutableBuilder[Self <: ResourcePoliciesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourcePolicies(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcePoliciesVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
     
     @scala.inline
-    def setResourcePoliciesVarargs(value: ResourcePolicy*): Self = this.set("resourcePolicies", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcePolicies(value: js.Array[ResourcePolicy]): Self = this.set("resourcePolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcePolicies: Self = this.set("resourcePolicies", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

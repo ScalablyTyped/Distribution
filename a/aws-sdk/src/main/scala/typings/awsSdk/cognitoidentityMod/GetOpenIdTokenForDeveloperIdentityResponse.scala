@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpenIdTokenForDeveloperIdentityResponse extends js.Object {
+trait GetOpenIdTokenForDeveloperIdentityResponse extends StObject {
   
   /**
     * A unique identifier in the format REGION:GUID.
@@ -26,30 +27,18 @@ object GetOpenIdTokenForDeveloperIdentityResponse {
   }
   
   @scala.inline
-  implicit class GetOpenIdTokenForDeveloperIdentityResponseOps[Self <: GetOpenIdTokenForDeveloperIdentityResponse] (val x: Self) extends AnyVal {
+  implicit class GetOpenIdTokenForDeveloperIdentityResponseMutableBuilder[Self <: GetOpenIdTokenForDeveloperIdentityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToken(value: OIDCToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
-    
-    @scala.inline
-    def setToken(value: OIDCToken): Self = this.set("Token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("Token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

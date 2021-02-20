@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +44,7 @@ trait FieldSchemaInView extends FieldSchema {
   /** Indicates whether the field can be sorted. Either "TRUE" or "FALSE" */
   var Sortable: String = js.native
   
-   // e.g. "Menu"
+  // e.g. "Menu"
   var css: String = js.native
   
   var fieldRenderer: js.Any = js.native
@@ -82,66 +83,54 @@ object FieldSchemaInView {
   }
   
   @scala.inline
-  implicit class FieldSchemaInViewOps[Self <: FieldSchemaInView] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInViewMutableBuilder[Self <: FieldSchemaInView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalloutMenu(value: String): Self = StObject.set(x, "CalloutMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassInfo(value: String): Self = StObject.set(x, "ClassInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalloutMenu(value: String): Self = this.set("CalloutMenu", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassInfo(value: String): Self = this.set("ClassInfo", value.asInstanceOf[js.Any])
+    def setExplicit(value: String): Self = StObject.set(x, "Explicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFieldRenderer(value: js.Any): Self = StObject.set(x, "fieldRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicit(value: String): Self = this.set("Explicit", value.asInstanceOf[js.Any])
+    def setFieldTitle(value: String): Self = StObject.set(x, "FieldTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTitle(value: String): Self = this.set("FieldTitle", value.asInstanceOf[js.Any])
+    def setFilterable(value: String): Self = StObject.set(x, "Filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterable(value: String): Self = this.set("Filterable", value.asInstanceOf[js.Any])
+    def setGridActiveAndReadOnly(value: String): Self = StObject.set(x, "GridActiveAndReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridActiveAndReadOnly(value: String): Self = this.set("GridActiveAndReadOnly", value.asInstanceOf[js.Any])
+    def setGroupField(value: String): Self = StObject.set(x, "GroupField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupField(value: String): Self = this.set("GroupField", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setListItemMenu(value: String): Self = StObject.set(x, "listItemMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: String): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setReadOnly(value: String): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealFieldName(value: String): Self = this.set("RealFieldName", value.asInstanceOf[js.Any])
+    def setRealFieldName(value: String): Self = StObject.set(x, "RealFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultType(value: String): Self = this.set("ResultType", value.asInstanceOf[js.Any])
+    def setResultType(value: String): Self = StObject.set(x, "ResultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortable(value: String): Self = this.set("Sortable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldRenderer(value: js.Any): Self = this.set("fieldRenderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListItemMenu(value: String): Self = this.set("listItemMenu", value.asInstanceOf[js.Any])
+    def setSortable(value: String): Self = StObject.set(x, "Sortable", value.asInstanceOf[js.Any])
   }
 }

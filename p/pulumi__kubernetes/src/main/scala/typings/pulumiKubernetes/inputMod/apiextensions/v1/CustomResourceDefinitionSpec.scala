@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceDefinitionSpec describes how a user wants their resource to appear
   */
 @js.native
-trait CustomResourceDefinitionSpec extends js.Object {
+trait CustomResourceDefinitionSpec extends StObject {
   
   /**
     * conversion defines conversion settings for the CRD.
@@ -55,45 +56,33 @@ object CustomResourceDefinitionSpec {
   }
   
   @scala.inline
-  implicit class CustomResourceDefinitionSpecOps[Self <: CustomResourceDefinitionSpec] (val x: Self) extends AnyVal {
+  implicit class CustomResourceDefinitionSpecMutableBuilder[Self <: CustomResourceDefinitionSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversion(value: Input[CustomResourceConversion]): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Input[String]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setNames(value: Input[CustomResourceDefinitionNames]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: Input[CustomResourceDefinitionNames]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setPreserveUnknownFields(value: Input[Boolean]): Self = StObject.set(x, "preserveUnknownFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: Input[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setPreserveUnknownFieldsUndefined: Self = StObject.set(x, "preserveUnknownFields", js.undefined)
     
     @scala.inline
-    def setVersionsVarargs(value: Input[CustomResourceDefinitionVersion]*): Self = this.set("versions", js.Array(value :_*))
+    def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersions(value: Input[js.Array[Input[CustomResourceDefinitionVersion]]]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setVersions(value: Input[js.Array[Input[CustomResourceDefinitionVersion]]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversion(value: Input[CustomResourceConversion]): Self = this.set("conversion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversion: Self = this.set("conversion", js.undefined)
-    
-    @scala.inline
-    def setPreserveUnknownFields(value: Input[Boolean]): Self = this.set("preserveUnknownFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveUnknownFields: Self = this.set("preserveUnknownFields", js.undefined)
+    def setVersionsVarargs(value: Input[CustomResourceDefinitionVersion]*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

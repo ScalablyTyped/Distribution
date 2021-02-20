@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetInstance extends js.Object {
+trait TargetInstance extends StObject {
   
   /**
     *  The currency code that AWS used to calculate the costs for this instance.
@@ -46,54 +47,42 @@ object TargetInstance {
   }
   
   @scala.inline
-  implicit class TargetInstanceOps[Self <: TargetInstance] (val x: Self) extends AnyVal {
+  implicit class TargetInstanceMutableBuilder[Self <: TargetInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTargetInstance(value: GenericBoolean): Self = StObject.set(x, "DefaultTargetInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setDefaultTargetInstanceUndefined: Self = StObject.set(x, "DefaultTargetInstance", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setEstimatedMonthlyCost(value: GenericString): Self = StObject.set(x, "EstimatedMonthlyCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTargetInstance(value: GenericBoolean): Self = this.set("DefaultTargetInstance", value.asInstanceOf[js.Any])
+    def setEstimatedMonthlyCostUndefined: Self = StObject.set(x, "EstimatedMonthlyCost", js.undefined)
     
     @scala.inline
-    def deleteDefaultTargetInstance: Self = this.set("DefaultTargetInstance", js.undefined)
+    def setEstimatedMonthlySavings(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedMonthlyCost(value: GenericString): Self = this.set("EstimatedMonthlyCost", value.asInstanceOf[js.Any])
+    def setEstimatedMonthlySavingsUndefined: Self = StObject.set(x, "EstimatedMonthlySavings", js.undefined)
     
     @scala.inline
-    def deleteEstimatedMonthlyCost: Self = this.set("EstimatedMonthlyCost", js.undefined)
+    def setExpectedResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ExpectedResourceUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedMonthlySavings(value: GenericString): Self = this.set("EstimatedMonthlySavings", value.asInstanceOf[js.Any])
+    def setExpectedResourceUtilizationUndefined: Self = StObject.set(x, "ExpectedResourceUtilization", js.undefined)
     
     @scala.inline
-    def deleteEstimatedMonthlySavings: Self = this.set("EstimatedMonthlySavings", js.undefined)
+    def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedResourceUtilization(value: ResourceUtilization): Self = this.set("ExpectedResourceUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedResourceUtilization: Self = this.set("ExpectedResourceUtilization", js.undefined)
-    
-    @scala.inline
-    def setResourceDetails(value: ResourceDetails): Self = this.set("ResourceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceDetails: Self = this.set("ResourceDetails", js.undefined)
+    def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
   }
 }

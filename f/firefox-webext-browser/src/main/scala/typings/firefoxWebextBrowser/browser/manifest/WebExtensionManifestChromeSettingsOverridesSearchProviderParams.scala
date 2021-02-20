@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebExtensionManifestChromeSettingsOverridesSearchProviderParams extends js.Object {
+trait WebExtensionManifestChromeSettingsOverridesSearchProviderParams extends StObject {
   
   /** The type of param can be either "purpose" or "pref". */
   var condition: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition] = js.native
@@ -31,45 +32,33 @@ object WebExtensionManifestChromeSettingsOverridesSearchProviderParams {
   }
   
   @scala.inline
-  implicit class WebExtensionManifestChromeSettingsOverridesSearchProviderParamsOps[Self <: WebExtensionManifestChromeSettingsOverridesSearchProviderParams] (val x: Self) extends AnyVal {
+  implicit class WebExtensionManifestChromeSettingsOverridesSearchProviderParamsMutableBuilder[Self <: WebExtensionManifestChromeSettingsOverridesSearchProviderParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPref(value: String): Self = StObject.set(x, "pref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setPrefUndefined: Self = StObject.set(x, "pref", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setPurpose(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPref(value: String): Self = this.set("pref", value.asInstanceOf[js.Any])
+    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     @scala.inline
-    def deletePref: Self = this.set("pref", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpose(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose): Self = this.set("purpose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurpose: Self = this.set("purpose", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

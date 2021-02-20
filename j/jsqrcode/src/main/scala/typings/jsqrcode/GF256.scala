@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GF256 extends js.Object {
+trait GF256 extends StObject {
   
   val One: GF256Poly = js.native
   
@@ -50,51 +51,39 @@ object GF256 {
   }
   
   @scala.inline
-  implicit class GF256Ops[Self <: GF256] (val x: Self) extends AnyVal {
+  implicit class GF256MutableBuilder[Self <: GF256] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "buildMonomial", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExp(value: Double => Double): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpTable(value: js.Array[Double]): Self = StObject.set(x, "expTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOne(value: GF256Poly): Self = this.set("One", value.asInstanceOf[js.Any])
+    def setExpTableVarargs(value: Double*): Self = StObject.set(x, "expTable", js.Array(value :_*))
     
     @scala.inline
-    def setZero(value: GF256Poly): Self = this.set("Zero", value.asInstanceOf[js.Any])
+    def setInverse(value: Double => Double): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuildMonomial(value: (Double, Double) => GF256Poly): Self = this.set("buildMonomial", js.Any.fromFunction2(value))
+    def setLog(value: Double => Double): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExp(value: Double => Double): Self = this.set("exp", js.Any.fromFunction1(value))
+    def setLogTable(value: js.Array[Double]): Self = StObject.set(x, "logTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpTableVarargs(value: Double*): Self = this.set("expTable", js.Array(value :_*))
+    def setLogTableVarargs(value: Double*): Self = StObject.set(x, "logTable", js.Array(value :_*))
     
     @scala.inline
-    def setExpTable(value: js.Array[Double]): Self = this.set("expTable", value.asInstanceOf[js.Any])
+    def setMultiply(value: (Double, Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInverse(value: Double => Double): Self = this.set("inverse", js.Any.fromFunction1(value))
+    def setOne(value: GF256Poly): Self = StObject.set(x, "One", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: Double => Double): Self = this.set("log", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLogTableVarargs(value: Double*): Self = this.set("logTable", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogTable(value: js.Array[Double]): Self = this.set("logTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiply(value: (Double, Double) => Double): Self = this.set("multiply", js.Any.fromFunction2(value))
+    def setZero(value: GF256Poly): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
   }
 }

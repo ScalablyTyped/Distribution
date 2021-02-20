@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSasportal.anon.AltCallback
 import typings.maximMazurokGapiClientSasportal.anon.CallbackFields
 import typings.maximMazurokGapiClientSasportal.anon.FieldsKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstallerResource extends js.Object {
+trait InstallerResource extends StObject {
   
   /** Generates a secret to be used with the ValidateInstaller method */
   def generateSecret(request: AltCallback): Request[SasPortalGenerateSecretResponse] = js.native

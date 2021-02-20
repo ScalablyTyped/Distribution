@@ -2,12 +2,13 @@ package typings.nodal.mod
 
 import typings.nodal.nodalNumbers.`0`
 import typings.nodal.nodalNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IColumnProperties extends js.Object {
+trait IColumnProperties extends StObject {
   
   var array: js.UndefOr[Boolean] = js.native
   
@@ -32,63 +33,51 @@ object IColumnProperties {
   }
   
   @scala.inline
-  implicit class IColumnPropertiesOps[Self <: IColumnProperties] (val x: Self) extends AnyVal {
+  implicit class IColumnPropertiesMutableBuilder[Self <: IColumnProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuto_increment(value: Boolean): Self = StObject.set(x, "auto_increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: Boolean): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setAuto_incrementUndefined: Self = StObject.set(x, "auto_increment", js.undefined)
     
     @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto_increment(value: Boolean): Self = this.set("auto_increment", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def deleteAuto_increment: Self = this.set("auto_increment", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setLengthNull: Self = StObject.set(x, "length", null)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
     @scala.inline
-    def setLengthNull: Self = this.set("length", null)
+    def setPrimary_key(value: `0` | `1` | Boolean): Self = StObject.set(x, "primary_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullable(value: Boolean): Self = this.set("nullable", value.asInstanceOf[js.Any])
+    def setPrimary_keyUndefined: Self = StObject.set(x, "primary_key", js.undefined)
     
     @scala.inline
-    def deleteNullable: Self = this.set("nullable", js.undefined)
+    def setUnique(value: `0` | `1` | Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_key(value: `0` | `1` | Boolean): Self = this.set("primary_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary_key: Self = this.set("primary_key", js.undefined)
-    
-    @scala.inline
-    def setUnique(value: `0` | `1` | Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

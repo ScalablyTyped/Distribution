@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Student in a course.
   */
 @js.native
-trait SchemaStudent extends js.Object {
+trait SchemaStudent extends StObject {
   
   /**
     * Identifier of the course.  Read-only.
@@ -43,42 +44,30 @@ object SchemaStudent {
   }
   
   @scala.inline
-  implicit class SchemaStudentOps[Self <: SchemaStudent] (val x: Self) extends AnyVal {
+  implicit class SchemaStudentMutableBuilder[Self <: SchemaStudent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfile(value: SchemaUserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    def setStudentWorkFolder(value: SchemaDriveFolder): Self = StObject.set(x, "studentWorkFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: SchemaUserProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setStudentWorkFolderUndefined: Self = StObject.set(x, "studentWorkFolder", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStudentWorkFolder(value: SchemaDriveFolder): Self = this.set("studentWorkFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudentWorkFolder: Self = this.set("studentWorkFolder", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -14,6 +14,7 @@ import typings.officeJs.officeJsStrings.Label
 import typings.officeJs.officeJsStrings.Manual
 import typings.officeJs.officeJsStrings.Unknown_
 import typings.officeJs.officeJsStrings.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

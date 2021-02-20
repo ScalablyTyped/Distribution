@@ -1,11 +1,12 @@
 package typings.ts3NodejsLibrary.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Permid extends js.Object {
+trait Permid extends StObject {
   
   var permid: js.UndefOr[Double] = js.native
   
@@ -22,33 +23,21 @@ object Permid {
   }
   
   @scala.inline
-  implicit class PermidOps[Self <: Permid] (val x: Self) extends AnyVal {
+  implicit class PermidMutableBuilder[Self <: Permid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermidUndefined: Self = StObject.set(x, "permid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermvalue(value: Double): Self = this.set("permvalue", value.asInstanceOf[js.Any])
+    def setPermsidUndefined: Self = StObject.set(x, "permsid", js.undefined)
     
     @scala.inline
-    def setPermid(value: Double): Self = this.set("permid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermid: Self = this.set("permid", js.undefined)
-    
-    @scala.inline
-    def setPermsid(value: String): Self = this.set("permsid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermsid: Self = this.set("permsid", js.undefined)
+    def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
   }
 }

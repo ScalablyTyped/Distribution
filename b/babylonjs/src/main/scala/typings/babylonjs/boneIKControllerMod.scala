@@ -5,16 +5,16 @@ import typings.babylonjs.anon.BendAxis
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Bones/boneIKController", JSImport.Namespace)
-@js.native
-object boneIKControllerMod extends js.Object {
+object boneIKControllerMod {
   
+  @JSImport("babylonjs/Bones/boneIKController", "BoneIKController")
   @js.native
-  class BoneIKController protected () extends js.Object {
+  class BoneIKController protected () extends StObject {
     /**
       * Creates a new BoneIKController
       * @param mesh defines the mesh to control
@@ -107,13 +107,28 @@ object boneIKControllerMod extends js.Object {
     def update(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object BoneIKController extends js.Object {
+  object BoneIKController {
     
-    var _tmpMats: js.Any = js.native
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpMats")
+    @js.native
+    def _tmpMats: js.Any = js.native
+    @scala.inline
+    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
-    var _tmpVecs: js.Any = js.native
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpQuat")
+    @js.native
+    def _tmpQuat: js.Any = js.native
+    @scala.inline
+    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpVecs")
+    @js.native
+    def _tmpVecs: js.Any = js.native
+    @scala.inline
+    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
 }

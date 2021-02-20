@@ -12,6 +12,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.NoFill
 import typings.officeJsPreview.officeJsPreviewStrings.Pattern
 import typings.officeJsPreview.officeJsPreviewStrings.PictureAndTexture
 import typings.officeJsPreview.officeJsPreviewStrings.Solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,25 +4,44 @@ import typings.d3Color.mod.ColorCommonInstance
 import typings.d3Color.mod.ColorSpaceObject
 import typings.d3Color.mod.Color_
 import typings.d3Color.mod.RGBColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-hsv", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-hsv", "hsv")
+  @js.native
   val hsv: HSVColorFactory = js.native
   
+  @JSImport("d3-hsv", "interpolateHsv")
+  @js.native
   def interpolateHsv(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  @JSImport("d3-hsv", "interpolateHsv")
+  @js.native
   def interpolateHsv(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @JSImport("d3-hsv", "interpolateHsv")
+  @js.native
   def interpolateHsv(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
+  @JSImport("d3-hsv", "interpolateHsv")
+  @js.native
   def interpolateHsv(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
   
+  @JSImport("d3-hsv", "interpolateHsvLong")
+  @js.native
   def interpolateHsvLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  @JSImport("d3-hsv", "interpolateHsvLong")
+  @js.native
   def interpolateHsvLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @JSImport("d3-hsv", "interpolateHsvLong")
+  @js.native
   def interpolateHsvLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
+  @JSImport("d3-hsv", "interpolateHsvLong")
+  @js.native
   def interpolateHsvLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  
+  type ColorSpaceObjectWithHSV = ColorSpaceObject | HSVColor
   
   @js.native
   trait HSVColor extends Color_ {
@@ -95,6 +114,4 @@ object mod extends js.Object {
     def apply(h: Double, s: Double, v: Double): HSVColor = js.native
     def apply(h: Double, s: Double, v: Double, opacity: Double): HSVColor = js.native
   }
-  
-  type ColorSpaceObjectWithHSV = ColorSpaceObject | HSVColor
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
 @js.native
-trait SmartCardPinPolicy extends js.Object {
+trait SmartCardPinPolicy extends StObject {
   
   /** Gets or sets whether number characters are allowed for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
   var digits: SmartCardPinCharacterPolicyOption = js.native
@@ -42,36 +43,24 @@ object SmartCardPinPolicy {
   }
   
   @scala.inline
-  implicit class SmartCardPinPolicyOps[Self <: SmartCardPinPolicy] (val x: Self) extends AnyVal {
+  implicit class SmartCardPinPolicyMutableBuilder[Self <: SmartCardPinPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigits(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "lowercaseLetters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigits(value: SmartCardPinCharacterPolicyOption): Self = this.set("digits", value.asInstanceOf[js.Any])
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = this.set("lowercaseLetters", value.asInstanceOf[js.Any])
+    def setSpecialCharacters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "specialCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecialCharacters(value: SmartCardPinCharacterPolicyOption): Self = this.set("specialCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUppercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = this.set("uppercaseLetters", value.asInstanceOf[js.Any])
+    def setUppercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "uppercaseLetters", value.asInstanceOf[js.Any])
   }
 }

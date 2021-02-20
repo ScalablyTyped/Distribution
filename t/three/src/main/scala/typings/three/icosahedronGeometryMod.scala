@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.geometryMod.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/IcosahedronGeometry", JSImport.Namespace)
-@js.native
-object icosahedronGeometryMod extends js.Object {
+object icosahedronGeometryMod {
   
+  @JSImport("three/src/geometries/IcosahedronGeometry", "IcosahedronGeometry")
   @js.native
   /**
   	 * @param [radius=1]

@@ -1,16 +1,15 @@
 package typings.firebaseDatabase
 
-import typings.firebaseDatabase.childrenNodeMod.ChildrenNodeConstructor
 import typings.firebaseDatabase.miscMod.Indexable
 import typings.firebaseDatabase.nodeMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/snap/LeafNode", JSImport.Namespace)
-@js.native
-object leafNodeMod extends js.Object {
+object leafNodeMod {
   
+  @JSImport("@firebase/database/dist/src/core/snap/LeafNode", "LeafNode")
   @js.native
   class LeafNode protected () extends Node {
     /**
@@ -67,8 +66,11 @@ object leafNodeMod extends js.Object {
     def withIndex(): Node = js.native
   }
   /* static members */
-  @js.native
-  object LeafNode extends js.Object {
+  object LeafNode {
+    
+    @JSImport("@firebase/database/dist/src/core/snap/LeafNode", "LeafNode")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The sort order for comparing leaf nodes of different types. If two leaf nodes have
@@ -76,9 +78,10 @@ object leafNodeMod extends js.Object {
       * @type {Array.<!string>}
       * @const
       */
-    var VALUE_TYPE_ORDER: js.Array[String] = js.native
-    
-    def __childrenNodeConstructor: ChildrenNodeConstructor = js.native
-    def __childrenNodeConstructor_=(`val`: ChildrenNodeConstructor): Unit = js.native
+    @JSImport("@firebase/database/dist/src/core/snap/LeafNode", "LeafNode.VALUE_TYPE_ORDER")
+    @js.native
+    def VALUE_TYPE_ORDER: js.Array[String] = js.native
+    @scala.inline
+    def VALUE_TYPE_ORDER_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_TYPE_ORDER")(x.asInstanceOf[js.Any])
   }
 }

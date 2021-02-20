@@ -1,11 +1,12 @@
 package typings.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParserBlock extends js.Object {
+trait ParserBlock extends StObject {
   
   def parse(str: String, options: Options, env: Env, tokens: js.Array[Token]): Unit = js.native
   
@@ -23,24 +24,12 @@ object ParserBlock {
   }
   
   @scala.inline
-  implicit class ParserBlockOps[Self <: ParserBlock] (val x: Self) extends AnyVal {
+  implicit class ParserBlockMutableBuilder[Self <: ParserBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = this.set("parse", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setTokenize(value: (StateBlock, Double, Double) => Unit): Self = this.set("tokenize", js.Any.fromFunction3(value))
+    def setTokenize(value: (StateBlock, Double, Double) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
   }
 }

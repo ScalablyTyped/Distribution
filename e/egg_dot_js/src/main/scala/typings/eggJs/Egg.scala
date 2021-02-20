@@ -1,5 +1,6 @@
 package typings.eggJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * eggs by watching the user's key strokes.
   */
 @js.native
-trait Egg extends js.Object {
+trait Egg extends StObject {
   
   /**
     * Use to add in your easter eggs.

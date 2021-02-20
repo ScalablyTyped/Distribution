@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/core", "\u0275Render3NgModuleRef")
 @js.native
 class ɵRender3NgModuleRef[T] protected () extends InternalNgModuleRef[T] {
-  def this(ngModuleType: Type[T]) = this()
-  def this(ngModuleType: Type[T], _parent: Injector) = this()
+  def this(ngModuleType: typings.angularCore.mod.Type[T]) = this()
+  def this(ngModuleType: typings.angularCore.mod.Type[T], _parent: Injector) = this()
   
   var _parent: Injector | Null = js.native
   

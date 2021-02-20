@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
 import typings.winrtUwp.Windows.Web.Http.HttpCookie
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a retrieve cookies operation made by a web account provider. */
 @js.native
-trait WebAccountProviderRetrieveCookiesOperation extends js.Object {
+trait WebAccountProviderRetrieveCookiesOperation extends StObject {
   
   /** Gets the app callback Uri. */
   var applicationCallbackUri: Uri = js.native
@@ -53,39 +54,27 @@ object WebAccountProviderRetrieveCookiesOperation {
   }
   
   @scala.inline
-  implicit class WebAccountProviderRetrieveCookiesOperationOps[Self <: WebAccountProviderRetrieveCookiesOperation] (val x: Self) extends AnyVal {
+  implicit class WebAccountProviderRetrieveCookiesOperationMutableBuilder[Self <: WebAccountProviderRetrieveCookiesOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: Uri): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookies(value: IVector[HttpCookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = this.set("applicationCallbackUri", value.asInstanceOf[js.Any])
+    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Uri): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCookies(value: IVector[HttpCookie]): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = this.set("reportCompleted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReportError(value: WebProviderError => Unit): Self = this.set("reportError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

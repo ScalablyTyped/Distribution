@@ -1,11 +1,12 @@
 package typings.jqueryNoty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Noty extends js.Object {
+trait Noty extends StObject {
   
   def apply(notyOptions: NotyOptions): js.Any = js.native
   

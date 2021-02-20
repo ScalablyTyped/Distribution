@@ -1,11 +1,12 @@
 package typings.fabric.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axis1 extends js.Object {
+trait Axis1 extends StObject {
   
   var axis1: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Axis1 {
   }
   
   @scala.inline
-  implicit class Axis1Ops[Self <: Axis1] (val x: Self) extends AnyVal {
+  implicit class Axis1MutableBuilder[Self <: Axis1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis1(value: js.Any): Self = StObject.set(x, "axis1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxis2(value: js.Any): Self = StObject.set(x, "axis2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimension(value: js.Any): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis1(value: js.Any): Self = this.set("axis1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAxis2(value: js.Any): Self = this.set("axis2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDimension(value: js.Any): Self = this.set("dimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: Double): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setOrigin(value: Double): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

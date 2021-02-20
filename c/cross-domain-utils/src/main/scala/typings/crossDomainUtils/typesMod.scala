@@ -1,22 +1,22 @@
 package typings.crossDomainUtils
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.crossDomainUtils.anon.Instantiable
 import typings.crossDomainUtils.anon.MockUserAgent
+import typings.crossDomainUtils.anon.TypeofXMLHttpRequest
 import typings.std.Document
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cross-domain-utils/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
+  @JSImport("cross-domain-utils/types", "TYPES")
+  @js.native
   val TYPES: /* true */ Boolean = js.native
   
   @js.native
-  trait CrossDomainWindowType extends js.Object {
+  trait CrossDomainWindowType extends StObject {
     
     def close(): Unit = js.native
     
@@ -50,10 +50,12 @@ object typesMod extends js.Object {
     var top: CrossDomainWindowType = js.native
   }
   
+  type DomainMatcher = String | js.Array[String] | RegExp
+  
   @js.native
-  trait SameDomainWindowType extends js.Object {
+  trait SameDomainWindowType extends StObject {
     
-    var XMLHttpRequest: js.UndefOr[Instantiable with Instantiable0[typings.std.global.XMLHttpRequest]] = js.native
+    var XMLHttpRequest: js.UndefOr[TypeofXMLHttpRequest] = js.native
     
     def close(): Unit = js.native
     
@@ -78,6 +80,4 @@ object typesMod extends js.Object {
     
     var self: CrossDomainWindowType = js.native
   }
-  
-  type DomainMatcher = String | js.Array[String] | RegExp
 }

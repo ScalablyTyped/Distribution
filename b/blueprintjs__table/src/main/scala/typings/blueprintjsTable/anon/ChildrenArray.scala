@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChildrenArray extends js.Object {
+trait ChildrenArray extends StObject {
   
   var childrenArray: js.Array[ReactElement] = js.native
   
@@ -45,54 +46,42 @@ object ChildrenArray {
   }
   
   @scala.inline
-  implicit class ChildrenArrayOps[Self <: ChildrenArray] (val x: Self) extends AnyVal {
+  implicit class ChildrenArrayMutableBuilder[Self <: ChildrenArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildrenArray(value: js.Array[ReactElement]): Self = StObject.set(x, "childrenArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenArrayVarargs(value: ReactElement*): Self = StObject.set(x, "childrenArray", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIdToIndex(value: StringDictionary[Double]): Self = StObject.set(x, "columnIdToIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenArrayVarargs(value: ReactElement*): Self = this.set("childrenArray", js.Array(value :_*))
+    def setColumnWidths(value: js.Array[Double]): Self = StObject.set(x, "columnWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenArray(value: js.Array[ReactElement]): Self = this.set("childrenArray", value.asInstanceOf[js.Any])
+    def setColumnWidthsVarargs(value: Double*): Self = StObject.set(x, "columnWidths", js.Array(value :_*))
     
     @scala.inline
-    def setColumnIdToIndex(value: StringDictionary[Double]): Self = this.set("columnIdToIndex", value.asInstanceOf[js.Any])
+    def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidthsVarargs(value: Double*): Self = this.set("columnWidths", js.Array(value :_*))
+    def setNumFrozenColumnsClamped(value: Double): Self = StObject.set(x, "numFrozenColumnsClamped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidths(value: js.Array[Double]): Self = this.set("columnWidths", value.asInstanceOf[js.Any])
+    def setNumFrozenRowsClamped(value: Double): Self = StObject.set(x, "numFrozenRowsClamped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusedCell(value: IFocusedCellCoordinates): Self = this.set("focusedCell", value.asInstanceOf[js.Any])
+    def setRowHeights(value: js.Array[Double]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFrozenColumnsClamped(value: Double): Self = this.set("numFrozenColumnsClamped", value.asInstanceOf[js.Any])
+    def setRowHeightsVarargs(value: Double*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
     
     @scala.inline
-    def setNumFrozenRowsClamped(value: Double): Self = this.set("numFrozenRowsClamped", value.asInstanceOf[js.Any])
+    def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeightsVarargs(value: Double*): Self = this.set("rowHeights", js.Array(value :_*))
-    
-    @scala.inline
-    def setRowHeights(value: js.Array[Double]): Self = this.set("rowHeights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedRegionsVarargs(value: IRegion*): Self = this.set("selectedRegions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedRegions(value: js.Array[IRegion]): Self = this.set("selectedRegions", value.asInstanceOf[js.Any])
+    def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
   }
 }

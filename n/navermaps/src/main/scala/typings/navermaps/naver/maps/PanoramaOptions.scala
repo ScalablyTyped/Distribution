@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanoramaOptions extends js.Object {
+trait PanoramaOptions extends StObject {
   
   var aroundControl: Boolean = js.native
   
@@ -62,63 +63,51 @@ object PanoramaOptions {
   }
   
   @scala.inline
-  implicit class PanoramaOptionsOps[Self <: PanoramaOptions] (val x: Self) extends AnyVal {
+  implicit class PanoramaOptionsMutableBuilder[Self <: PanoramaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAroundControl(value: Boolean): Self = StObject.set(x, "aroundControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAroundControlOptions(value: AroundControlOptions): Self = StObject.set(x, "aroundControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogoControl(value: Boolean): Self = StObject.set(x, "logoControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroundControl(value: Boolean): Self = this.set("aroundControl", value.asInstanceOf[js.Any])
+    def setLogoControlOptions(value: LogoControlOptions): Self = StObject.set(x, "logoControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroundControlOptions(value: AroundControlOptions): Self = this.set("aroundControlOptions", value.asInstanceOf[js.Any])
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoControl(value: Boolean): Self = this.set("logoControl", value.asInstanceOf[js.Any])
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoControlOptions(value: LogoControlOptions): Self = this.set("logoControlOptions", value.asInstanceOf[js.Any])
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setPanoId(value: String): Self = StObject.set(x, "panoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    def setPosition(value: LatLng | LatLngLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setPov(value: PanoramaPov): Self = StObject.set(x, "pov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanoId(value: String): Self = this.set("panoId", value.asInstanceOf[js.Any])
+    def setSize(value: Size | SizeLiteral): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: LatLng | LatLngLiteral): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPov(value: PanoramaPov): Self = this.set("pov", value.asInstanceOf[js.Any])
+    def setZoomControl(value: Boolean): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size | SizeLiteral): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomControl(value: Boolean): Self = this.set("zoomControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomControlOptions(value: ZoomControlOptions): Self = this.set("zoomControlOptions", value.asInstanceOf[js.Any])
+    def setZoomControlOptions(value: ZoomControlOptions): Self = StObject.set(x, "zoomControlOptions", value.asInstanceOf[js.Any])
   }
 }

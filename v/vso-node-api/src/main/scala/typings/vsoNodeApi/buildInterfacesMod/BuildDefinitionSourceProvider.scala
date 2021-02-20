@@ -2,12 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildDefinitionSourceProvider extends js.Object {
+trait BuildDefinitionSourceProvider extends StObject {
   
   /**
     * Uri of the associated definition
@@ -55,36 +56,24 @@ object BuildDefinitionSourceProvider {
   }
   
   @scala.inline
-  implicit class BuildDefinitionSourceProviderOps[Self <: BuildDefinitionSourceProvider] (val x: Self) extends AnyVal {
+  implicit class BuildDefinitionSourceProviderMutableBuilder[Self <: BuildDefinitionSourceProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionUri(value: String): Self = this.set("definitionUri", value.asInstanceOf[js.Any])
+    def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: StringDictionary[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastModified(value: Date): Self = this.set("lastModified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedTriggerTypes(value: DefinitionTriggerType): Self = this.set("supportedTriggerTypes", value.asInstanceOf[js.Any])
+    def setSupportedTriggerTypes(value: DefinitionTriggerType): Self = StObject.set(x, "supportedTriggerTypes", value.asInstanceOf[js.Any])
   }
 }

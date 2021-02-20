@@ -1,5 +1,6 @@
 package typings.nodeRsa.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeRsa.nodeRsaStrings.`components-private-pem`
   - typings.nodeRsa.nodeRsaStrings.`components-private-der`
 */
-trait FormatComponentsPrivate extends js.Object
+trait FormatComponentsPrivate extends StObject
 object FormatComponentsPrivate {
   
   @scala.inline

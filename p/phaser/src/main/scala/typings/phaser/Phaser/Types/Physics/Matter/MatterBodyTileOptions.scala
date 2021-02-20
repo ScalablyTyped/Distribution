@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatterBodyTileOptions extends js.Object {
+trait MatterBodyTileOptions extends StObject {
   
   /**
     * Whether or not to add the newly created body (or existing body if options.body is used) to the Matter world.
@@ -26,30 +27,18 @@ object MatterBodyTileOptions {
   }
   
   @scala.inline
-  implicit class MatterBodyTileOptionsOps[Self <: MatterBodyTileOptions] (val x: Self) extends AnyVal {
+  implicit class MatterBodyTileOptionsMutableBuilder[Self <: MatterBodyTileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToWorld(value: Boolean): Self = this.set("addToWorld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddToWorld: Self = this.set("addToWorld", js.undefined)
-    
-    @scala.inline
-    def setIsStatic(value: Boolean): Self = this.set("isStatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStatic: Self = this.set("isStatic", js.undefined)
+    def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
   }
 }

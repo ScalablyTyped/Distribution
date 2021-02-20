@@ -5,22 +5,25 @@ import typings.twilsock.offlinestorageMod.OfflineProductStorage
 import typings.twilsock.telemetrytrackerMod.TelemetryEventDescription
 import typings.twilsock.telemetrytrackerMod.TelemetryPoint
 import typings.twilsock.upstreamMod.Result
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
+  @JSImport("twilsock/lib/client", "TelemetryEvents")
   @js.native
-  class TelemetryEvents () extends js.Object
+  class TelemetryEvents () extends StObject
   /* static members */
-  @js.native
-  object TelemetryEvents extends js.Object {
+  object TelemetryEvents {
     
+    @JSImport("twilsock/lib/client", "TelemetryEvents.TWILSOCK_CONNECT")
+    @js.native
     val TWILSOCK_CONNECT: /* "twilsock.sdk.connect" */ String = js.native
     
+    @JSImport("twilsock/lib/client", "TelemetryEvents.TWILSOCK_INIT")
+    @js.native
     val TWILSOCK_INIT: /* "twilsock.sdk.init" */ String = js.native
   }
   
@@ -35,6 +38,7 @@ object clientMod extends js.Object {
     * @fires Twilsock#stateChanged
     * @fires Twilsock#connectionError
     */
+  @JSImport("twilsock/lib/client", "Twilsock")
   @js.native
   class Twilsock protected () extends TwilsockClient {
     /**
@@ -56,6 +60,7 @@ object clientMod extends js.Object {
     * @fires Twilsock#stateChanged
     * @fires Twilsock#connectionError
     */
+  @JSImport("twilsock/lib/client", "TwilsockClient")
   @js.native
   class TwilsockClient protected () extends EventEmitter {
     /**

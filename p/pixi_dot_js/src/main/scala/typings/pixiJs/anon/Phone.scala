@@ -1,11 +1,12 @@
 package typings.pixiJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Phone extends js.Object {
+trait Phone extends StObject {
   
   var device: Boolean = js.native
   
@@ -22,27 +23,15 @@ object Phone {
   }
   
   @scala.inline
-  implicit class PhoneOps[Self <: Phone] (val x: Self) extends AnyVal {
+  implicit class PhoneMutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDevice(value: Boolean): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhone(value: Boolean): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTablet(value: Boolean): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
   }
 }

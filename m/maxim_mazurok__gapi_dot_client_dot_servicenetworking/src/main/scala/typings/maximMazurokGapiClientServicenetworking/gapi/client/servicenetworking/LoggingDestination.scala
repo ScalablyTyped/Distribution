@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingDestination extends js.Object {
+trait LoggingDestination extends StObject {
   
   /**
     * Names of the logs to be sent to this destination. Each name must be defined in the Service.logs section. If the log name is not a domain scoped name, it will be automatically
@@ -25,33 +26,21 @@ object LoggingDestination {
   }
   
   @scala.inline
-  implicit class LoggingDestinationOps[Self <: LoggingDestination] (val x: Self) extends AnyVal {
+  implicit class LoggingDestinationMutableBuilder[Self <: LoggingDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
     @scala.inline
-    def setLogsVarargs(value: String*): Self = this.set("logs", js.Array(value :_*))
+    def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: js.Array[String]): Self = this.set("logs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogs: Self = this.set("logs", js.undefined)
-    
-    @scala.inline
-    def setMonitoredResource(value: String): Self = this.set("monitoredResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitoredResource: Self = this.set("monitoredResource", js.undefined)
+    def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
   }
 }

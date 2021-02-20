@@ -2,6 +2,7 @@ package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +38,21 @@ object SlotOutletNode {
   }
   
   @scala.inline
-  implicit class SlotOutletNodeOps[Self <: SlotOutletNode] (val x: Self) extends AnyVal {
+  implicit class SlotOutletNodeMutableBuilder[Self <: SlotOutletNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodegenNode(value: RenderSlotCall | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSsrCodegenNode(value: CallExpression): Self = StObject.set(x, "ssrCodegenNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagType(value: `2`): Self = this.set("tagType", value.asInstanceOf[js.Any])
+    def setSsrCodegenNodeUndefined: Self = StObject.set(x, "ssrCodegenNode", js.undefined)
     
     @scala.inline
-    def setCodegenNode(value: RenderSlotCall | CacheExpression): Self = this.set("codegenNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodegenNode: Self = this.set("codegenNode", js.undefined)
-    
-    @scala.inline
-    def setSsrCodegenNode(value: CallExpression): Self = this.set("ssrCodegenNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrCodegenNode: Self = this.set("ssrCodegenNode", js.undefined)
+    def setTagType(value: `2`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
   }
 }

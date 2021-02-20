@@ -1,13 +1,22 @@
 package typings.koaRange
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("koa-range", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Middleware[DefaultState, DefaultContext]]
+object mod extends Shortcut {
+  
+  @JSImport("koa-range", JSImport.Namespace)
+  @js.native
+  val ^ : Middleware[DefaultState, DefaultContext] = js.native
+  
+  type _To = Middleware[DefaultState, DefaultContext]
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: Middleware[DefaultState, DefaultContext] = ^
+}

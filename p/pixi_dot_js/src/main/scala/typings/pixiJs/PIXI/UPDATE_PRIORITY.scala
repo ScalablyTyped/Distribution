@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UPDATE_PRIORITY extends js.Object
+sealed trait UPDATE_PRIORITY extends StObject
 /**
   * Represents the update priorities used by internal PIXI classes when registered with
   * the {@link PIXI.Ticker} object. Higher priority items are updated first and lower
@@ -24,7 +25,7 @@ sealed trait UPDATE_PRIORITY extends js.Object
   */
 @JSGlobal("PIXI.UPDATE_PRIORITY")
 @js.native
-object UPDATE_PRIORITY extends js.Object {
+object UPDATE_PRIORITY extends StObject {
   
   @js.native
   sealed trait HIGH extends UPDATE_PRIORITY

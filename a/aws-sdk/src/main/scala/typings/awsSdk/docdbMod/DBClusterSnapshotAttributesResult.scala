@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterSnapshotAttributesResult extends js.Object {
+trait DBClusterSnapshotAttributesResult extends StObject {
   
   /**
     * The list of attributes and values for the cluster snapshot.
@@ -26,33 +27,21 @@ object DBClusterSnapshotAttributesResult {
   }
   
   @scala.inline
-  implicit class DBClusterSnapshotAttributesResultOps[Self <: DBClusterSnapshotAttributesResult] (val x: Self) extends AnyVal {
+  implicit class DBClusterSnapshotAttributesResultMutableBuilder[Self <: DBClusterSnapshotAttributesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterSnapshotAttributes(value: DBClusterSnapshotAttributeList): Self = StObject.set(x, "DBClusterSnapshotAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterSnapshotAttributesUndefined: Self = StObject.set(x, "DBClusterSnapshotAttributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = StObject.set(x, "DBClusterSnapshotAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = this.set("DBClusterSnapshotAttributes", js.Array(value :_*))
+    def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterSnapshotAttributes(value: DBClusterSnapshotAttributeList): Self = this.set("DBClusterSnapshotAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterSnapshotAttributes: Self = this.set("DBClusterSnapshotAttributes", js.undefined)
-    
-    @scala.inline
-    def setDBClusterSnapshotIdentifier(value: String): Self = this.set("DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterSnapshotIdentifier: Self = this.set("DBClusterSnapshotIdentifier", js.undefined)
+    def setDBClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "DBClusterSnapshotIdentifier", js.undefined)
   }
 }

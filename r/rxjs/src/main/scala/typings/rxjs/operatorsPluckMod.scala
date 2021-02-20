@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/pluck", JSImport.Namespace)
-@js.native
-object operatorsPluckMod extends js.Object {
+object operatorsPluckMod {
   
+  @JSImport("rxjs/operators/pluck", "pluck")
+  @js.native
   def pluck[T, R](properties: String*): js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Total extends js.Object {
+trait Total extends StObject {
   
   var author: Avatarurl = js.native
   
@@ -22,30 +23,18 @@ object Total {
   }
   
   @scala.inline
-  implicit class TotalOps[Self <: Total] (val x: Self) extends AnyVal {
+  implicit class TotalMutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWeeks(value: js.Array[A]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: Avatarurl): Self = this.set("author", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeeksVarargs(value: A*): Self = this.set("weeks", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeeks(value: js.Array[A]): Self = this.set("weeks", value.asInstanceOf[js.Any])
+    def setWeeksVarargs(value: A*): Self = StObject.set(x, "weeks", js.Array(value :_*))
   }
 }

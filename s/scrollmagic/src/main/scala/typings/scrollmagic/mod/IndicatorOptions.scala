@@ -1,11 +1,12 @@
 package typings.scrollmagic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndicatorOptions extends js.Object {
+trait IndicatorOptions extends StObject {
   
   var colorEnd: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object IndicatorOptions {
   }
   
   @scala.inline
-  implicit class IndicatorOptionsOps[Self <: IndicatorOptions] (val x: Self) extends AnyVal {
+  implicit class IndicatorOptionsMutableBuilder[Self <: IndicatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorEnd(value: String): Self = StObject.set(x, "colorEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorEndUndefined: Self = StObject.set(x, "colorEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorStart(value: String): Self = StObject.set(x, "colorStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorEnd(value: String): Self = this.set("colorEnd", value.asInstanceOf[js.Any])
+    def setColorStartUndefined: Self = StObject.set(x, "colorStart", js.undefined)
     
     @scala.inline
-    def deleteColorEnd: Self = this.set("colorEnd", js.undefined)
+    def setColorTrigger(value: String): Self = StObject.set(x, "colorTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorStart(value: String): Self = this.set("colorStart", value.asInstanceOf[js.Any])
+    def setColorTriggerUndefined: Self = StObject.set(x, "colorTrigger", js.undefined)
     
     @scala.inline
-    def deleteColorStart: Self = this.set("colorStart", js.undefined)
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTrigger(value: String): Self = this.set("colorTrigger", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteColorTrigger: Self = this.set("colorTrigger", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setParent(value: ElementOrSelector): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setParent(value: ElementOrSelector): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

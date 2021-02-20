@@ -2,6 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.std.Element
 import typings.vexflow.anon.Harsh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

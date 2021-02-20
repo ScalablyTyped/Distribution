@@ -1,5 +1,6 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for the JQuery callback
   */
 @js.native
-trait JQueryCallback extends js.Object {
+trait JQueryCallback extends StObject {
   
   /**
     * Add a callback or a collection of callbacks to a callback list.

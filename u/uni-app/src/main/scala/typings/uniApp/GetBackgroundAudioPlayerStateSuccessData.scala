@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBackgroundAudioPlayerStateSuccessData extends js.Object {
+trait GetBackgroundAudioPlayerStateSuccessData extends StObject {
   
   /**
     * 选定音频的播放位置（单位：s），只有在当前有音乐播放时返回
@@ -41,48 +42,36 @@ object GetBackgroundAudioPlayerStateSuccessData {
   }
   
   @scala.inline
-  implicit class GetBackgroundAudioPlayerStateSuccessDataOps[Self <: GetBackgroundAudioPlayerStateSuccessData] (val x: Self) extends AnyVal {
+  implicit class GetBackgroundAudioPlayerStateSuccessDataMutableBuilder[Self <: GetBackgroundAudioPlayerStateSuccessData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPositionUndefined: Self = StObject.set(x, "currentPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPosition(value: Double): Self = this.set("currentPosition", value.asInstanceOf[js.Any])
+    def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
     
     @scala.inline
-    def deleteCurrentPosition: Self = this.set("currentPosition", js.undefined)
+    def setDownloadPercent(value: Double): Self = StObject.set(x, "downloadPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataUrl(value: String): Self = this.set("dataUrl", value.asInstanceOf[js.Any])
+    def setDownloadPercentUndefined: Self = StObject.set(x, "downloadPercent", js.undefined)
     
     @scala.inline
-    def deleteDataUrl: Self = this.set("dataUrl", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadPercent(value: Double): Self = this.set("downloadPercent", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDownloadPercent: Self = this.set("downloadPercent", js.undefined)
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

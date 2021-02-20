@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "KeyValueDiffers")
 @js.native
-class KeyValueDiffers protected () extends js.Object {
+class KeyValueDiffers protected () extends StObject {
   def this(factories: js.Array[KeyValueDifferFactory]) = this()
   
   /**
@@ -17,11 +18,13 @@ class KeyValueDiffers protected () extends js.Object {
   def find(kv: js.Any): KeyValueDifferFactory = js.native
 }
 /* static members */
-@JSImport("@angular/core", "KeyValueDiffers")
-@js.native
-object KeyValueDiffers extends js.Object {
+object KeyValueDiffers {
   
+  @JSImport("@angular/core", "KeyValueDiffers.create")
+  @js.native
   def create[S](factories: js.Array[KeyValueDifferFactory]): KeyValueDiffers = js.native
+  @JSImport("@angular/core", "KeyValueDiffers.create")
+  @js.native
   def create[S](factories: js.Array[KeyValueDifferFactory], parent: KeyValueDiffers): KeyValueDiffers = js.native
   
   /**
@@ -44,5 +47,7 @@ object KeyValueDiffers extends js.Object {
     * })
     * ```
     */
+  @JSImport("@angular/core", "KeyValueDiffers.extend")
+  @js.native
   def extend[S](factories: js.Array[KeyValueDifferFactory]): StaticProvider = js.native
 }

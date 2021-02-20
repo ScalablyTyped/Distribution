@@ -13,12 +13,13 @@ import typings.tern.ternMod.Query
 import typings.tern.ternMod.RefsQueryResult
 import typings.tern.ternMod.RenameQueryResult
 import typings.tern.ternMod.TypeQueryResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TernOptions extends js.Object {
+trait TernOptions extends StObject {
   
   /**
     * Customize the content in tooltips for completions.
@@ -35,7 +36,9 @@ trait TernOptions extends js.Object {
     * This function will be applied
     * to documents before passing them on to Tern.
     */
-  var fileFilter: js.UndefOr[js.Function3[/* value */ String, /* docName */ String, /* doc */ Doc, String]] = js.native
+  var fileFilter: js.UndefOr[
+    js.Function3[/* value */ String, /* docName */ String, /* doc */ typings.codemirror.mod.Doc, String]
+  ] = js.native
   
   /**
     * Can be used to access files in
@@ -43,7 +46,11 @@ trait TernOptions extends js.Object {
     * indicate that a file is not available.
     */
   var getFile: js.UndefOr[
-    js.Function2[/* name */ String, /* callback */ js.Function1[/* doc */ Doc | Null, _], _]
+    js.Function2[
+      /* name */ String, 
+      /* callback */ js.Function1[/* doc */ typings.codemirror.mod.Doc | Null, _], 
+      _
+    ]
   ] = js.native
   
   /** An object mapping plugin names to configuration options. */
@@ -54,7 +61,7 @@ trait TernOptions extends js.Object {
   /** This function will be applied to the Tern responses before treating them */
   var responseFilter: js.UndefOr[
     js.Function5[
-      /* doc */ Doc, 
+      /* doc */ typings.codemirror.mod.Doc, 
       /* query */ Query, 
       /* request */ Document, 
       /* error */ js.UndefOr[Error], 
@@ -69,7 +76,7 @@ trait TernOptions extends js.Object {
   var showError: js.UndefOr[js.Function2[/* editor */ Editor, /* message */ Error, _]] = js.native
   
   /** This function should, when providing a multi-file view, switch the view or focus to the named file. */
-  var switchToDoc: js.UndefOr[js.Function2[/* name */ String, /* doc */ Doc, _]] = js.native
+  var switchToDoc: js.UndefOr[js.Function2[/* name */ String, /* doc */ typings.codemirror.mod.Doc, _]] = js.native
   
   /** Like completionTip, but for the tooltips shown for type queries. */
   var typeTip: js.UndefOr[js.Function1[/* data */ TypeQueryResult, String | HTMLElement | Null]] = js.native
@@ -101,102 +108,92 @@ object TernOptions {
   }
   
   @scala.inline
-  implicit class TernOptionsOps[Self <: TernOptions] (val x: Self) extends AnyVal {
+  implicit class TernOptionsMutableBuilder[Self <: TernOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionTip(value: /* data */ CompletionsQueryResult => String | HTMLElement | Null): Self = StObject.set(x, "completionTip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionTipUndefined: Self = StObject.set(x, "completionTip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionTip(value: /* data */ CompletionsQueryResult => String | HTMLElement | Null): Self = this.set("completionTip", js.Any.fromFunction1(value))
+    def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
     
     @scala.inline
-    def deleteCompletionTip: Self = this.set("completionTip", js.undefined)
+    def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
     
     @scala.inline
-    def setDefsVarargs(value: Def*): Self = this.set("defs", js.Array(value :_*))
+    def setFileFilter(value: (/* value */ String, /* docName */ String, /* doc */ typings.codemirror.mod.Doc) => String): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDefs(value: js.Array[Def]): Self = this.set("defs", value.asInstanceOf[js.Any])
+    def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
     
     @scala.inline
-    def deleteDefs: Self = this.set("defs", js.undefined)
+    def setGetFile(
+      value: (/* name */ String, /* callback */ js.Function1[/* doc */ typings.codemirror.mod.Doc | Null, _]) => _
+    ): Self = StObject.set(x, "getFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFileFilter(value: (/* value */ String, /* docName */ String, /* doc */ Doc) => String): Self = this.set("fileFilter", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteFileFilter: Self = this.set("fileFilter", js.undefined)
-    
-    @scala.inline
-    def setGetFile(value: (/* name */ String, /* callback */ js.Function1[/* doc */ Doc | Null, _]) => _): Self = this.set("getFile", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGetFile: Self = this.set("getFile", js.undefined)
+    def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
     
     @scala.inline
     def setPlugins(
       value: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any
-    ): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
     def setResponseFilter(
-      value: (/* doc */ Doc, /* query */ Query, /* request */ Document, /* error */ js.UndefOr[Error], /* data */ js.UndefOr[
+      value: (/* doc */ typings.codemirror.mod.Doc, /* query */ Query, /* request */ Document, /* error */ js.UndefOr[Error], /* data */ js.UndefOr[
           RefsQueryResult | DefinitionQueryResult | DocumentationQueryResult | FilesQueryResult | PropertiesQueryResult | CompletionsQueryResult | TypeQueryResult | RenameQueryResult
         ]) => _
-    ): Self = this.set("responseFilter", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "responseFilter", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteResponseFilter: Self = this.set("responseFilter", js.undefined)
+    def setResponseFilterUndefined: Self = StObject.set(x, "responseFilter", js.undefined)
     
     @scala.inline
-    def setShowError(value: (/* editor */ Editor, /* message */ Error) => _): Self = this.set("showError", js.Any.fromFunction2(value))
+    def setShowError(value: (/* editor */ Editor, /* message */ Error) => _): Self = StObject.set(x, "showError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteShowError: Self = this.set("showError", js.undefined)
+    def setShowErrorUndefined: Self = StObject.set(x, "showError", js.undefined)
     
     @scala.inline
-    def setSwitchToDoc(value: (/* name */ String, /* doc */ Doc) => _): Self = this.set("switchToDoc", js.Any.fromFunction2(value))
+    def setSwitchToDoc(value: (/* name */ String, /* doc */ typings.codemirror.mod.Doc) => _): Self = StObject.set(x, "switchToDoc", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSwitchToDoc: Self = this.set("switchToDoc", js.undefined)
+    def setSwitchToDocUndefined: Self = StObject.set(x, "switchToDoc", js.undefined)
     
     @scala.inline
-    def setTypeTip(value: /* data */ TypeQueryResult => String | HTMLElement | Null): Self = this.set("typeTip", js.Any.fromFunction1(value))
+    def setTypeTip(value: /* data */ TypeQueryResult => String | HTMLElement | Null): Self = StObject.set(x, "typeTip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTypeTip: Self = this.set("typeTip", js.undefined)
+    def setTypeTipUndefined: Self = StObject.set(x, "typeTip", js.undefined)
     
     @scala.inline
-    def setUseWorker(value: Boolean): Self = this.set("useWorker", value.asInstanceOf[js.Any])
+    def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseWorker: Self = this.set("useWorker", js.undefined)
+    def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
     
     @scala.inline
-    def setWorkerDepsVarargs(value: String*): Self = this.set("workerDeps", js.Array(value :_*))
+    def setWorkerDeps(value: js.Array[String]): Self = StObject.set(x, "workerDeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerDeps(value: js.Array[String]): Self = this.set("workerDeps", value.asInstanceOf[js.Any])
+    def setWorkerDepsUndefined: Self = StObject.set(x, "workerDeps", js.undefined)
     
     @scala.inline
-    def deleteWorkerDeps: Self = this.set("workerDeps", js.undefined)
+    def setWorkerDepsVarargs(value: String*): Self = StObject.set(x, "workerDeps", js.Array(value :_*))
     
     @scala.inline
-    def setWorkerScript(value: String): Self = this.set("workerScript", value.asInstanceOf[js.Any])
+    def setWorkerScript(value: String): Self = StObject.set(x, "workerScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkerScript: Self = this.set("workerScript", js.undefined)
+    def setWorkerScriptUndefined: Self = StObject.set(x, "workerScript", js.undefined)
   }
 }

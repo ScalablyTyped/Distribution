@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraPopoverArrowDirectionObject extends js.Object {
+trait CameraPopoverArrowDirectionObject extends StObject {
   
   var ARROW_ANY: Double = js.native
   
@@ -26,33 +27,21 @@ object CameraPopoverArrowDirectionObject {
   }
   
   @scala.inline
-  implicit class CameraPopoverArrowDirectionObjectOps[Self <: CameraPopoverArrowDirectionObject] (val x: Self) extends AnyVal {
+  implicit class CameraPopoverArrowDirectionObjectMutableBuilder[Self <: CameraPopoverArrowDirectionObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARROW_ANY(value: Double): Self = StObject.set(x, "ARROW_ANY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARROW_DOWN(value: Double): Self = StObject.set(x, "ARROW_DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setARROW_LEFT(value: Double): Self = StObject.set(x, "ARROW_LEFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARROW_ANY(value: Double): Self = this.set("ARROW_ANY", value.asInstanceOf[js.Any])
+    def setARROW_RIGHT(value: Double): Self = StObject.set(x, "ARROW_RIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARROW_DOWN(value: Double): Self = this.set("ARROW_DOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setARROW_LEFT(value: Double): Self = this.set("ARROW_LEFT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setARROW_RIGHT(value: Double): Self = this.set("ARROW_RIGHT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setARROW_UP(value: Double): Self = this.set("ARROW_UP", value.asInstanceOf[js.Any])
+    def setARROW_UP(value: Double): Self = StObject.set(x, "ARROW_UP", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.cordovaPluginMapsforge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapsforgeCachePlugin extends js.Object {
+trait MapsforgeCachePlugin extends StObject {
   
   /**
     * Sets a flag to destroy the cache when the onDestroy method is called.

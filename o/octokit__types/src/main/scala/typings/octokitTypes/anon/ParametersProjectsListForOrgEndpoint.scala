@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ProjectsListForOrgEndpoint
 import typings.octokitTypes.endpointsMod.ProjectsListForOrgRequestOptions
 import typings.octokitTypes.endpointsMod.ProjectsListForOrgResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersProjectsListForOrgEndpoint extends js.Object {
+trait ParametersProjectsListForOrgEndpoint extends StObject {
   
   var parameters: ProjectsListForOrgEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersProjectsListForOrgEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersProjectsListForOrgEndpointOps[Self <: ParametersProjectsListForOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersProjectsListForOrgEndpointMutableBuilder[Self <: ParametersProjectsListForOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ProjectsListForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ProjectsListForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ProjectsListForOrgEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ProjectsListForOrgRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ProjectsListForOrgResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ProjectsListForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

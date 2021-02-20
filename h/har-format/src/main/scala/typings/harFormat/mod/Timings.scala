@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Timings extends js.Object {
+trait Timings extends StObject {
   
   /**
     * Time spent in a queue waiting for a network connection.
@@ -66,66 +67,55 @@ trait Timings extends js.Object {
 object Timings {
   
   @scala.inline
-  def apply(receive: Double, wait: Double): Timings = {
-    val __obj = js.Dynamic.literal(receive = receive.asInstanceOf[js.Any], wait = wait.asInstanceOf[js.Any])
+  def apply(receive: Double, wait_ : Double): Timings = {
+    val __obj = js.Dynamic.literal(receive = receive.asInstanceOf[js.Any])
+    __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timings]
   }
   
   @scala.inline
-  implicit class TimingsOps[Self <: Timings] (val x: Self) extends AnyVal {
+  implicit class TimingsMutableBuilder[Self <: Timings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceive(value: Double): Self = this.set("receive", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def setWait(value: Double): Self = this.set("wait", value.asInstanceOf[js.Any])
+    def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: Double): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
     @scala.inline
-    def deleteBlocked: Self = this.set("blocked", js.undefined)
+    def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setReceive(value: Double): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: Double): Self = this.set("connect", value.asInstanceOf[js.Any])
+    def setSend(value: Double): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnect: Self = this.set("connect", js.undefined)
+    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
     @scala.inline
-    def setDns(value: Double): Self = this.set("dns", value.asInstanceOf[js.Any])
+    def setSsl(value: Double): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDns: Self = this.set("dns", js.undefined)
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def setSend(value: Double): Self = this.set("send", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend: Self = this.set("send", js.undefined)
-    
-    @scala.inline
-    def setSsl(value: Double): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
   }
 }

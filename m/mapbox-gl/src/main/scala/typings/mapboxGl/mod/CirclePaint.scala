@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,135 +57,123 @@ object CirclePaint {
   }
   
   @scala.inline
-  implicit class CirclePaintOps[Self <: CirclePaint] (val x: Self) extends AnyVal {
+  implicit class CirclePaintMutableBuilder[Self <: CirclePaint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setCircle-blur`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setCircle-blur-transition`(value: Transition): Self = StObject.set(x, "circle-blur-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setCircle-blur-transitionUndefined`: Self = StObject.set(x, "circle-blur-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-blur`(value: Double | StyleFunction | Expression): Self = this.set("circle-blur", value.asInstanceOf[js.Any])
+    def `setCircle-blurUndefined`: Self = StObject.set(x, "circle-blur", js.undefined)
     
     @scala.inline
-    def `deleteCircle-blur`: Self = this.set("circle-blur", js.undefined)
+    def `setCircle-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "circle-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-blur-transition`(value: Transition): Self = this.set("circle-blur-transition", value.asInstanceOf[js.Any])
+    def `setCircle-color-transition`(value: Transition): Self = StObject.set(x, "circle-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-blur-transition`: Self = this.set("circle-blur-transition", js.undefined)
+    def `setCircle-color-transitionUndefined`: Self = StObject.set(x, "circle-color-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-color`(value: String | StyleFunction | Expression): Self = this.set("circle-color", value.asInstanceOf[js.Any])
+    def `setCircle-colorUndefined`: Self = StObject.set(x, "circle-color", js.undefined)
     
     @scala.inline
-    def `deleteCircle-color`: Self = this.set("circle-color", js.undefined)
+    def `setCircle-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-color-transition`(value: Transition): Self = this.set("circle-color-transition", value.asInstanceOf[js.Any])
+    def `setCircle-opacity-transition`(value: Transition): Self = StObject.set(x, "circle-opacity-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-color-transition`: Self = this.set("circle-color-transition", js.undefined)
+    def `setCircle-opacity-transitionUndefined`: Self = StObject.set(x, "circle-opacity-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-opacity`(value: Double | StyleFunction | Expression): Self = this.set("circle-opacity", value.asInstanceOf[js.Any])
+    def `setCircle-opacityUndefined`: Self = StObject.set(x, "circle-opacity", js.undefined)
     
     @scala.inline
-    def `deleteCircle-opacity`: Self = this.set("circle-opacity", js.undefined)
+    def `setCircle-pitch-alignment`(value: map | viewport): Self = StObject.set(x, "circle-pitch-alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-opacity-transition`(value: Transition): Self = this.set("circle-opacity-transition", value.asInstanceOf[js.Any])
+    def `setCircle-pitch-alignmentUndefined`: Self = StObject.set(x, "circle-pitch-alignment", js.undefined)
     
     @scala.inline
-    def `deleteCircle-opacity-transition`: Self = this.set("circle-opacity-transition", js.undefined)
+    def `setCircle-pitch-scale`(value: map | viewport): Self = StObject.set(x, "circle-pitch-scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-pitch-alignment`(value: map | viewport): Self = this.set("circle-pitch-alignment", value.asInstanceOf[js.Any])
+    def `setCircle-pitch-scaleUndefined`: Self = StObject.set(x, "circle-pitch-scale", js.undefined)
     
     @scala.inline
-    def `deleteCircle-pitch-alignment`: Self = this.set("circle-pitch-alignment", js.undefined)
+    def `setCircle-radius`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-pitch-scale`(value: map | viewport): Self = this.set("circle-pitch-scale", value.asInstanceOf[js.Any])
+    def `setCircle-radius-transition`(value: Transition): Self = StObject.set(x, "circle-radius-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-pitch-scale`: Self = this.set("circle-pitch-scale", js.undefined)
+    def `setCircle-radius-transitionUndefined`: Self = StObject.set(x, "circle-radius-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-radius`(value: Double | StyleFunction | Expression): Self = this.set("circle-radius", value.asInstanceOf[js.Any])
+    def `setCircle-radiusUndefined`: Self = StObject.set(x, "circle-radius", js.undefined)
     
     @scala.inline
-    def `deleteCircle-radius`: Self = this.set("circle-radius", js.undefined)
+    def `setCircle-stroke-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "circle-stroke-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-radius-transition`(value: Transition): Self = this.set("circle-radius-transition", value.asInstanceOf[js.Any])
+    def `setCircle-stroke-color-transition`(value: Transition): Self = StObject.set(x, "circle-stroke-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-radius-transition`: Self = this.set("circle-radius-transition", js.undefined)
+    def `setCircle-stroke-color-transitionUndefined`: Self = StObject.set(x, "circle-stroke-color-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-stroke-color`(value: String | StyleFunction | Expression): Self = this.set("circle-stroke-color", value.asInstanceOf[js.Any])
+    def `setCircle-stroke-colorUndefined`: Self = StObject.set(x, "circle-stroke-color", js.undefined)
     
     @scala.inline
-    def `deleteCircle-stroke-color`: Self = this.set("circle-stroke-color", js.undefined)
+    def `setCircle-stroke-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-stroke-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-stroke-color-transition`(value: Transition): Self = this.set("circle-stroke-color-transition", value.asInstanceOf[js.Any])
+    def `setCircle-stroke-opacity-transition`(value: Transition): Self = StObject.set(x, "circle-stroke-opacity-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-stroke-color-transition`: Self = this.set("circle-stroke-color-transition", js.undefined)
+    def `setCircle-stroke-opacity-transitionUndefined`: Self = StObject.set(x, "circle-stroke-opacity-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-stroke-opacity`(value: Double | StyleFunction | Expression): Self = this.set("circle-stroke-opacity", value.asInstanceOf[js.Any])
+    def `setCircle-stroke-opacityUndefined`: Self = StObject.set(x, "circle-stroke-opacity", js.undefined)
     
     @scala.inline
-    def `deleteCircle-stroke-opacity`: Self = this.set("circle-stroke-opacity", js.undefined)
+    def `setCircle-stroke-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-stroke-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-stroke-opacity-transition`(value: Transition): Self = this.set("circle-stroke-opacity-transition", value.asInstanceOf[js.Any])
+    def `setCircle-stroke-width-transition`(value: Transition): Self = StObject.set(x, "circle-stroke-width-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-stroke-opacity-transition`: Self = this.set("circle-stroke-opacity-transition", js.undefined)
+    def `setCircle-stroke-width-transitionUndefined`: Self = StObject.set(x, "circle-stroke-width-transition", js.undefined)
     
     @scala.inline
-    def `setCircle-stroke-width`(value: Double | StyleFunction | Expression): Self = this.set("circle-stroke-width", value.asInstanceOf[js.Any])
+    def `setCircle-stroke-widthUndefined`: Self = StObject.set(x, "circle-stroke-width", js.undefined)
     
     @scala.inline
-    def `deleteCircle-stroke-width`: Self = this.set("circle-stroke-width", js.undefined)
+    def `setCircle-translate`(value: js.Array[Double] | Expression): Self = StObject.set(x, "circle-translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-stroke-width-transition`(value: Transition): Self = this.set("circle-stroke-width-transition", value.asInstanceOf[js.Any])
+    def `setCircle-translate-anchor`(value: map | viewport): Self = StObject.set(x, "circle-translate-anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCircle-stroke-width-transition`: Self = this.set("circle-stroke-width-transition", js.undefined)
+    def `setCircle-translate-anchorUndefined`: Self = StObject.set(x, "circle-translate-anchor", js.undefined)
     
     @scala.inline
-    def `setCircle-translateVarargs`(value: Double*): Self = this.set("circle-translate", js.Array(value :_*))
+    def `setCircle-translate-transition`(value: Transition): Self = StObject.set(x, "circle-translate-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCircle-translate`(value: js.Array[Double] | Expression): Self = this.set("circle-translate", value.asInstanceOf[js.Any])
+    def `setCircle-translate-transitionUndefined`: Self = StObject.set(x, "circle-translate-transition", js.undefined)
     
     @scala.inline
-    def `deleteCircle-translate`: Self = this.set("circle-translate", js.undefined)
+    def `setCircle-translateUndefined`: Self = StObject.set(x, "circle-translate", js.undefined)
     
     @scala.inline
-    def `setCircle-translate-anchor`(value: map | viewport): Self = this.set("circle-translate-anchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteCircle-translate-anchor`: Self = this.set("circle-translate-anchor", js.undefined)
-    
-    @scala.inline
-    def `setCircle-translate-transition`(value: Transition): Self = this.set("circle-translate-transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteCircle-translate-transition`: Self = this.set("circle-translate-transition", js.undefined)
+    def `setCircle-translateVarargs`(value: Double*): Self = StObject.set(x, "circle-translate", js.Array(value :_*))
   }
 }

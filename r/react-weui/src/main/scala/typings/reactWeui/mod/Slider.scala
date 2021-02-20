@@ -1,13 +1,14 @@
 package typings.reactWeui.mod
 
 import typings.reactWeui.anon.DefaultValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-weui", "Slider")
 @js.native
-class Slider protected () extends js.Object {
+class Slider protected () extends StObject {
   def this(props: js.Any) = this()
   
   def componentDidMount(): Unit = js.native
@@ -25,84 +26,116 @@ class Slider protected () extends js.Object {
   def updateValue(args: js.Any*): js.Any = js.native
 }
 /* static members */
-@JSImport("react-weui", "Slider")
-@js.native
-object Slider extends js.Object {
+object Slider {
   
-  var defaultProps: DefaultValue = js.native
-  
+  @JSImport("react-weui", "Slider")
   @js.native
-  object propTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-weui", "Slider.defaultProps")
+  @js.native
+  def defaultProps: DefaultValue = js.native
+  @scala.inline
+  def defaultProps_=(x: DefaultValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object defaultValue extends js.Object {
+    object defaultValue {
       
+      @JSImport("react-weui", "Slider.propTypes.defaultValue")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.defaultValue.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object disabled extends js.Object {
+    object disabled {
       
+      @JSImport("react-weui", "Slider.propTypes.disabled")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.disabled.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object max extends js.Object {
+    object max {
       
+      @JSImport("react-weui", "Slider.propTypes.max")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.max.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object min extends js.Object {
+    object min {
       
+      @JSImport("react-weui", "Slider.propTypes.min")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.min.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object onChange extends js.Object {
+    object onChange {
       
+      @JSImport("react-weui", "Slider.propTypes.onChange")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.onChange.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object showValue extends js.Object {
+    object showValue {
       
+      @JSImport("react-weui", "Slider.propTypes.showValue")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.showValue.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object snapToValue extends js.Object {
+    object snapToValue {
       
+      @JSImport("react-weui", "Slider.propTypes.snapToValue")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.snapToValue.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object step extends js.Object {
+    object step {
       
+      @JSImport("react-weui", "Slider.propTypes.step")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.step.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object value extends js.Object {
+    object value {
       
+      @JSImport("react-weui", "Slider.propTypes.value")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Slider.propTypes.value.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
   }

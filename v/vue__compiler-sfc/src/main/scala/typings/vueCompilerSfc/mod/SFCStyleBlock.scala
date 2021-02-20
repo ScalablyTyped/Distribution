@@ -4,6 +4,7 @@ import typings.std.Record
 import typings.vueCompilerCore.mod.SourceLocation
 import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import typings.vueCompilerSfc.vueCompilerSfcStrings.style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,39 +31,27 @@ object SFCStyleBlock {
   }
   
   @scala.inline
-  implicit class SFCStyleBlockOps[Self <: SFCStyleBlock] (val x: Self) extends AnyVal {
+  implicit class SFCStyleBlockMutableBuilder[Self <: SFCStyleBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: style): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
     @scala.inline
-    def setModule(value: String | Boolean): Self = this.set("module", value.asInstanceOf[js.Any])
+    def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModule: Self = this.set("module", js.undefined)
+    def setVars(value: String): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoped(value: Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoped: Self = this.set("scoped", js.undefined)
-    
-    @scala.inline
-    def setVars(value: String): Self = this.set("vars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVars: Self = this.set("vars", js.undefined)
+    def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
   }
 }

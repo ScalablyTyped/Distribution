@@ -1,5 +1,6 @@
 package typings.css.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,72 +18,72 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.css.mod.Page
   - typings.css.mod.Supports
 */
-trait AtRule extends js.Object
+trait AtRule extends StObject
 object AtRule {
   
   @scala.inline
-  def Supports(): AtRule = {
+  def Charset(): typings.css.mod.Charset = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Charset]
   }
   
   @scala.inline
-  def Namespace(): AtRule = {
+  def CustomMedia(): typings.css.mod.CustomMedia = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.CustomMedia]
   }
   
   @scala.inline
-  def FontFace(): AtRule = {
+  def Document(): typings.css.mod.Document = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Document]
   }
   
   @scala.inline
-  def KeyFrames(): AtRule = {
+  def FontFace(): typings.css.mod.FontFace = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.FontFace]
   }
   
   @scala.inline
-  def CustomMedia(): AtRule = {
+  def Host(): typings.css.mod.Host = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Host]
   }
   
   @scala.inline
-  def Page(): AtRule = {
+  def Import(): typings.css.mod.Import = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Import]
   }
   
   @scala.inline
-  def Document(): AtRule = {
+  def KeyFrames(): typings.css.mod.KeyFrames = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.KeyFrames]
   }
   
   @scala.inline
-  def Import(): AtRule = {
+  def Media(): typings.css.mod.Media = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Media]
   }
   
   @scala.inline
-  def Host(): AtRule = {
+  def Namespace(): typings.css.mod.Namespace = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Namespace]
   }
   
   @scala.inline
-  def Media(): AtRule = {
+  def Page(): typings.css.mod.Page = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Page]
   }
   
   @scala.inline
-  def Charset(): AtRule = {
+  def Supports(): typings.css.mod.Supports = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AtRule]
+    __obj.asInstanceOf[typings.css.mod.Supports]
   }
 }

@@ -1,12 +1,13 @@
 package typings.antd.anon
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemsUnit extends js.Object {
+trait ItemsUnit extends StObject {
   
   var itemUnit: String = js.native
   
@@ -50,57 +51,45 @@ object ItemsUnit {
   }
   
   @scala.inline
-  implicit class ItemsUnitOps[Self <: ItemsUnit] (val x: Self) extends AnyVal {
+  implicit class ItemsUnitMutableBuilder[Self <: ItemsUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUnit(value: String): Self = StObject.set(x, "itemsUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemUnit(value: String): Self = this.set("itemUnit", value.asInstanceOf[js.Any])
+    def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
     
     @scala.inline
-    def setItemsUnit(value: String): Self = this.set("itemsUnit", value.asInstanceOf[js.Any])
+    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: String): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setRemoveAll(value: String): Self = StObject.set(x, "removeAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAll(value: String): Self = this.set("removeAll", value.asInstanceOf[js.Any])
+    def setRemoveCurrent(value: String): Self = StObject.set(x, "removeCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveCurrent(value: String): Self = this.set("removeCurrent", value.asInstanceOf[js.Any])
+    def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPlaceholder(value: String): Self = this.set("searchPlaceholder", value.asInstanceOf[js.Any])
+    def setSelectAll(value: String): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAll(value: String): Self = this.set("selectAll", value.asInstanceOf[js.Any])
+    def setSelectCurrent(value: String): Self = StObject.set(x, "selectCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectCurrent(value: String): Self = this.set("selectCurrent", value.asInstanceOf[js.Any])
+    def setSelectInvert(value: String): Self = StObject.set(x, "selectInvert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectInvert(value: String): Self = this.set("selectInvert", value.asInstanceOf[js.Any])
+    def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitlesVarargs(value: String*): Self = this.set("titles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTitles(value: js.Array[String]): Self = this.set("titles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotFoundContent(value: ReactNode): Self = this.set("notFoundContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotFoundContent: Self = this.set("notFoundContent", js.undefined)
+    def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
   }
 }

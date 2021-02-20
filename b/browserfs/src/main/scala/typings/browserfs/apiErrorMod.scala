@@ -1,18 +1,15 @@
 package typings.browserfs
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browserfs/dist/node/core/api_error", JSImport.Namespace)
-@js.native
-object apiErrorMod extends js.Object {
+object apiErrorMod {
   
+  @JSImport("browserfs/dist/node/core/api_error", "ApiError")
   @js.native
   class ApiError protected () extends ErrnoException {
     /**
@@ -55,118 +52,118 @@ object apiErrorMod extends js.Object {
     def writeToBuffer(buffer: Buffer, i: Double): Buffer = js.native
   }
   /* static members */
-  @js.native
-  object ApiError extends js.Object {
+  object ApiError {
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.EEXIST")
+    @js.native
     def EEXIST(path: String): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.EISDIR")
+    @js.native
     def EISDIR(path: String): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.ENOENT")
+    @js.native
     def ENOENT(path: String): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.ENOTDIR")
+    @js.native
     def ENOTDIR(path: String): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.ENOTEMPTY")
+    @js.native
     def ENOTEMPTY(path: String): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.EPERM")
+    @js.native
     def EPERM(path: String): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.FileError")
+    @js.native
     def FileError(code: ErrorCode, p: String): ApiError = js.native
     
     /**
       * Creates an ApiError object from a buffer.
       */
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.fromBuffer")
+    @js.native
     def fromBuffer(buffer: Buffer): ApiError = js.native
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.fromBuffer")
+    @js.native
     def fromBuffer(buffer: Buffer, i: Double): ApiError = js.native
     
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError.fromJSON")
+    @js.native
     def fromJSON(json: js.Any): ApiError = js.native
   }
   
   @js.native
-  sealed trait ErrorCode extends js.Object
+  sealed trait ErrorCode extends StObject
+  @JSImport("browserfs/dist/node/core/api_error", "ErrorCode")
   @js.native
-  object ErrorCode extends js.Object {
+  object ErrorCode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ErrorCode with Double] = js.native
     
     @js.native
     sealed trait EACCES extends ErrorCode
-    /* 13 */ @js.native
-    object EACCES extends TopLevel[EACCES with Double]
+    /* 13 */ val EACCES: typings.browserfs.apiErrorMod.ErrorCode.EACCES with Double = js.native
     
     @js.native
     sealed trait EBADF extends ErrorCode
-    /* 9 */ @js.native
-    object EBADF extends TopLevel[EBADF with Double]
+    /* 9 */ val EBADF: typings.browserfs.apiErrorMod.ErrorCode.EBADF with Double = js.native
     
     @js.native
     sealed trait EBUSY extends ErrorCode
-    /* 16 */ @js.native
-    object EBUSY extends TopLevel[EBUSY with Double]
+    /* 16 */ val EBUSY: typings.browserfs.apiErrorMod.ErrorCode.EBUSY with Double = js.native
     
     @js.native
     sealed trait EEXIST extends ErrorCode
-    /* 17 */ @js.native
-    object EEXIST extends TopLevel[EEXIST with Double]
+    /* 17 */ val EEXIST: typings.browserfs.apiErrorMod.ErrorCode.EEXIST with Double = js.native
     
     @js.native
     sealed trait EFBIG extends ErrorCode
-    /* 27 */ @js.native
-    object EFBIG extends TopLevel[EFBIG with Double]
+    /* 27 */ val EFBIG: typings.browserfs.apiErrorMod.ErrorCode.EFBIG with Double = js.native
     
     @js.native
     sealed trait EINVAL extends ErrorCode
-    /* 22 */ @js.native
-    object EINVAL extends TopLevel[EINVAL with Double]
+    /* 22 */ val EINVAL: typings.browserfs.apiErrorMod.ErrorCode.EINVAL with Double = js.native
     
     @js.native
     sealed trait EIO extends ErrorCode
-    /* 5 */ @js.native
-    object EIO extends TopLevel[EIO with Double]
+    /* 5 */ val EIO: typings.browserfs.apiErrorMod.ErrorCode.EIO with Double = js.native
     
     @js.native
     sealed trait EISDIR extends ErrorCode
-    /* 21 */ @js.native
-    object EISDIR extends TopLevel[EISDIR with Double]
+    /* 21 */ val EISDIR: typings.browserfs.apiErrorMod.ErrorCode.EISDIR with Double = js.native
     
     @js.native
     sealed trait ENOENT extends ErrorCode
-    /* 2 */ @js.native
-    object ENOENT extends TopLevel[ENOENT with Double]
+    /* 2 */ val ENOENT: typings.browserfs.apiErrorMod.ErrorCode.ENOENT with Double = js.native
     
     @js.native
     sealed trait ENOSPC extends ErrorCode
-    /* 28 */ @js.native
-    object ENOSPC extends TopLevel[ENOSPC with Double]
+    /* 28 */ val ENOSPC: typings.browserfs.apiErrorMod.ErrorCode.ENOSPC with Double = js.native
     
     @js.native
     sealed trait ENOTDIR extends ErrorCode
-    /* 20 */ @js.native
-    object ENOTDIR extends TopLevel[ENOTDIR with Double]
+    /* 20 */ val ENOTDIR: typings.browserfs.apiErrorMod.ErrorCode.ENOTDIR with Double = js.native
     
     @js.native
     sealed trait ENOTEMPTY extends ErrorCode
-    /* 39 */ @js.native
-    object ENOTEMPTY extends TopLevel[ENOTEMPTY with Double]
+    /* 39 */ val ENOTEMPTY: typings.browserfs.apiErrorMod.ErrorCode.ENOTEMPTY with Double = js.native
     
     @js.native
     sealed trait ENOTSUP extends ErrorCode
-    /* 95 */ @js.native
-    object ENOTSUP extends TopLevel[ENOTSUP with Double]
+    /* 95 */ val ENOTSUP: typings.browserfs.apiErrorMod.ErrorCode.ENOTSUP with Double = js.native
     
     @js.native
     sealed trait EPERM extends ErrorCode
-    /* 1 */ @js.native
-    object EPERM extends TopLevel[EPERM with Double]
+    /* 1 */ val EPERM: typings.browserfs.apiErrorMod.ErrorCode.EPERM with Double = js.native
     
     @js.native
     sealed trait EROFS extends ErrorCode
-    /* 30 */ @js.native
-    object EROFS extends TopLevel[EROFS with Double]
+    /* 30 */ val EROFS: typings.browserfs.apiErrorMod.ErrorCode.EROFS with Double = js.native
   }
-  
-  @js.native
-  object ErrorStrings
-    extends /* code */ NumberDictionary[String]
-       with /* code */ StringDictionary[String]
 }

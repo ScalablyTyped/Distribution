@@ -3,13 +3,14 @@ package typings.exceljs.anon
 import typings.exceljs.mod.BorderStyle
 import typings.exceljs.mod.Color
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.BorderDiagonal> */
 @js.native
-trait PartialBorderDiagonalColor extends js.Object {
+trait PartialBorderDiagonalColor extends StObject {
   
   var color: js.UndefOr[Partial[Color]] = js.native
   
@@ -28,42 +29,30 @@ object PartialBorderDiagonalColor {
   }
   
   @scala.inline
-  implicit class PartialBorderDiagonalColorOps[Self <: PartialBorderDiagonalColor] (val x: Self) extends AnyVal {
+  implicit class PartialBorderDiagonalColorMutableBuilder[Self <: PartialBorderDiagonalColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Partial[Color]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Partial[Color]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setStyle(value: BorderStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDown(value: Boolean): Self = this.set("down", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: BorderStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setUp(value: Boolean): Self = this.set("up", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUp: Self = this.set("up", js.undefined)
+    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayerLatency extends js.Object {
+trait PlayerLatency extends StObject {
   
   /**
     * Amount of time that represents the time lag experienced by the player when connected to the specified Region.
@@ -31,36 +32,24 @@ object PlayerLatency {
   }
   
   @scala.inline
-  implicit class PlayerLatencyOps[Self <: PlayerLatency] (val x: Self) extends AnyVal {
+  implicit class PlayerLatencyMutableBuilder[Self <: PlayerLatency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatencyInMilliseconds(value: Float): Self = StObject.set(x, "LatencyInMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatencyInMillisecondsUndefined: Self = StObject.set(x, "LatencyInMilliseconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatencyInMilliseconds(value: Float): Self = this.set("LatencyInMilliseconds", value.asInstanceOf[js.Any])
+    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
     
     @scala.inline
-    def deleteLatencyInMilliseconds: Self = this.set("LatencyInMilliseconds", js.undefined)
+    def setRegionIdentifier(value: NonZeroAndMaxString): Self = StObject.set(x, "RegionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = this.set("PlayerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerId: Self = this.set("PlayerId", js.undefined)
-    
-    @scala.inline
-    def setRegionIdentifier(value: NonZeroAndMaxString): Self = this.set("RegionIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionIdentifier: Self = this.set("RegionIdentifier", js.undefined)
+    def setRegionIdentifierUndefined: Self = StObject.set(x, "RegionIdentifier", js.undefined)
   }
 }

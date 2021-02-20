@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEntityResponse extends js.Object {
+trait DescribeEntityResponse extends StObject {
   
   /**
     * This stringified JSON object includes the details of the entity.
@@ -41,48 +42,36 @@ object DescribeEntityResponse {
   }
   
   @scala.inline
-  implicit class DescribeEntityResponseOps[Self <: DescribeEntityResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEntityResponseMutableBuilder[Self <: DescribeEntityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Json): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityArn(value: ARN): Self = StObject.set(x, "EntityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Json): Self = this.set("Details", value.asInstanceOf[js.Any])
+    def setEntityArnUndefined: Self = StObject.set(x, "EntityArn", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
+    def setEntityIdentifier(value: Identifier): Self = StObject.set(x, "EntityIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityArn(value: ARN): Self = this.set("EntityArn", value.asInstanceOf[js.Any])
+    def setEntityIdentifierUndefined: Self = StObject.set(x, "EntityIdentifier", js.undefined)
     
     @scala.inline
-    def deleteEntityArn: Self = this.set("EntityArn", js.undefined)
+    def setEntityType(value: EntityType): Self = StObject.set(x, "EntityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityIdentifier(value: Identifier): Self = this.set("EntityIdentifier", value.asInstanceOf[js.Any])
+    def setEntityTypeUndefined: Self = StObject.set(x, "EntityType", js.undefined)
     
     @scala.inline
-    def deleteEntityIdentifier: Self = this.set("EntityIdentifier", js.undefined)
+    def setLastModifiedDate(value: StringValue): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: EntityType): Self = this.set("EntityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityType: Self = this.set("EntityType", js.undefined)
-    
-    @scala.inline
-    def setLastModifiedDate(value: StringValue): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
   }
 }

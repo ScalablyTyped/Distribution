@@ -1,13 +1,12 @@
 package typings.stringifyAuthor
 
 import typings.parseAuthor.mod.Author
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stringify-author", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Converts an `author` to a human-readable string.
@@ -18,5 +17,7 @@ object mod extends js.Object {
     * @returns
     * A string representing the `author`.
     */
+  @JSImport("stringify-author", JSImport.Namespace)
+  @js.native
   def apply(author: Author): String = js.native
 }

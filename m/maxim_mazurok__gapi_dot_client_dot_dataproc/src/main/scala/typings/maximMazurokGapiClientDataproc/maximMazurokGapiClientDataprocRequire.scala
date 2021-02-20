@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@maxim_mazurok/gapi.client.dataproc", JSImport.Namespace)
 @js.native
-object maximMazurokGapiClientDataprocRequire extends js.Object
+object maximMazurokGapiClientDataprocRequire extends StObject

@@ -1,12 +1,13 @@
 package typings.sipJs.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js/lib/core", "SubscriptionState")
 @js.native
-object SubscriptionState extends js.Object {
+object SubscriptionState extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.sipJs.subscriptionSubscriptionMod.SubscriptionState with String] = js.native

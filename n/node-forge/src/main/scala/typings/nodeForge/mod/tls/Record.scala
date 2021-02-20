@@ -1,12 +1,13 @@
 package typings.nodeForge.mod.tls
 
 import typings.nodeForge.mod.util.ByteBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Record extends js.Object {
+trait Record extends StObject {
   
   var fragment: ByteBuffer = js.native
   
@@ -28,36 +29,24 @@ object Record {
   }
   
   @scala.inline
-  implicit class RecordOps[Self <: Record] (val x: Self) extends AnyVal {
+  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFragment(value: ByteBuffer): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: ByteBuffer): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ContentType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: ProtocolVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReady(value: Boolean): Self = this.set("ready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setVersion(value: ProtocolVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

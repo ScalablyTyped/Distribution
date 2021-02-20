@@ -1,14 +1,15 @@
 package typings.revHash
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rev-hash", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("rev-hash", JSImport.Namespace)
+  @js.native
   def apply(input: String): String = js.native
   /**
   Create a hash for file revving.
@@ -23,5 +24,7 @@ object mod extends js.Object {
   //=> 'fea80f2db0'
   ```
   */
+  @JSImport("rev-hash", JSImport.Namespace)
+  @js.native
   def apply(input: Buffer): String = js.native
 }

@@ -6,6 +6,7 @@ import typings.openlayers.mod.olx.animation.AnimateCallback
 import typings.openlayers.mod.olx.animation.AnimateOptions
 import typings.openlayers.mod.olx.view.FitOptions
 import typings.openlayers.mod.proj.Projection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

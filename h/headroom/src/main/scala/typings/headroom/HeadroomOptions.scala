@@ -3,12 +3,13 @@ package typings.headroom
 import typings.headroom.anon.Bottom
 import typings.headroom.anon.Down
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeadroomOptions extends js.Object {
+trait HeadroomOptions extends StObject {
   
   /** css classes to apply multiple classes are also supported with a space-separated list */
   var classes: js.UndefOr[Bottom] = js.native
@@ -49,78 +50,66 @@ object HeadroomOptions {
   }
   
   @scala.inline
-  implicit class HeadroomOptionsOps[Self <: HeadroomOptions] (val x: Self) extends AnyVal {
+  implicit class HeadroomOptionsMutableBuilder[Self <: HeadroomOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: Bottom): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: Bottom): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setOnBottom(value: () => Unit): Self = StObject.set(x, "onBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOnBottomUndefined: Self = StObject.set(x, "onBottom", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOnNotBottom(value: () => Unit): Self = StObject.set(x, "onNotBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBottom(value: () => Unit): Self = this.set("onBottom", js.Any.fromFunction0(value))
+    def setOnNotBottomUndefined: Self = StObject.set(x, "onNotBottom", js.undefined)
     
     @scala.inline
-    def deleteOnBottom: Self = this.set("onBottom", js.undefined)
+    def setOnNotTop(value: () => Unit): Self = StObject.set(x, "onNotTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnNotBottom(value: () => Unit): Self = this.set("onNotBottom", js.Any.fromFunction0(value))
+    def setOnNotTopUndefined: Self = StObject.set(x, "onNotTop", js.undefined)
     
     @scala.inline
-    def deleteOnNotBottom: Self = this.set("onNotBottom", js.undefined)
+    def setOnPin(value: () => Unit): Self = StObject.set(x, "onPin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnNotTop(value: () => Unit): Self = this.set("onNotTop", js.Any.fromFunction0(value))
+    def setOnPinUndefined: Self = StObject.set(x, "onPin", js.undefined)
     
     @scala.inline
-    def deleteOnNotTop: Self = this.set("onNotTop", js.undefined)
+    def setOnTop(value: () => Unit): Self = StObject.set(x, "onTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPin(value: () => Unit): Self = this.set("onPin", js.Any.fromFunction0(value))
+    def setOnTopUndefined: Self = StObject.set(x, "onTop", js.undefined)
     
     @scala.inline
-    def deleteOnPin: Self = this.set("onPin", js.undefined)
+    def setOnUnpin(value: () => Unit): Self = StObject.set(x, "onUnpin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTop(value: () => Unit): Self = this.set("onTop", js.Any.fromFunction0(value))
+    def setOnUnpinUndefined: Self = StObject.set(x, "onUnpin", js.undefined)
     
     @scala.inline
-    def deleteOnTop: Self = this.set("onTop", js.undefined)
+    def setScroller(value: HTMLElement): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnpin(value: () => Unit): Self = this.set("onUnpin", js.Any.fromFunction0(value))
+    def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
     
     @scala.inline
-    def deleteOnUnpin: Self = this.set("onUnpin", js.undefined)
+    def setTolerance(value: Down | Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroller(value: HTMLElement): Self = this.set("scroller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScroller: Self = this.set("scroller", js.undefined)
-    
-    @scala.inline
-    def setTolerance(value: Down | Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * scope to create, update, or delete Photo objects.
   */
 @js.native
-trait IPhoto extends js.Object {
+trait IPhoto extends StObject {
   
   /**
     * The manufacturer of the camera that took the photo.
@@ -217,111 +218,99 @@ object IPhoto {
   }
   
   @scala.inline
-  implicit class IPhotoOps[Self <: IPhoto] (val x: Self) extends AnyVal {
+  implicit class IPhotoMutableBuilder[Self <: IPhoto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera_make(value: String): Self = StObject.set(x, "camera_make", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCamera_model(value: String): Self = StObject.set(x, "camera_model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComments_count(value: Double): Self = StObject.set(x, "comments_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera_make(value: String): Self = this.set("camera_make", value.asInstanceOf[js.Any])
+    def setComments_enabled(value: Boolean): Self = StObject.set(x, "comments_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera_model(value: String): Self = this.set("camera_model", value.asInstanceOf[js.Any])
+    def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments_count(value: Double): Self = this.set("comments_count", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments_enabled(value: Boolean): Self = this.set("comments_enabled", value.asInstanceOf[js.Any])
+    def setExposure_denominator(value: Double): Self = StObject.set(x, "exposure_denominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_time(value: String): Self = this.set("created_time", value.asInstanceOf[js.Any])
+    def setExposure_numerator(value: Double): Self = StObject.set(x, "exposure_numerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFocal_length(value: Double): Self = StObject.set(x, "focal_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposure_denominator(value: Double): Self = this.set("exposure_denominator", value.asInstanceOf[js.Any])
+    def setFocal_ratio(value: Double): Self = StObject.set(x, "focal_ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposure_numerator(value: Double): Self = this.set("exposure_numerator", value.asInstanceOf[js.Any])
+    def setFrom(value: IUserInfo): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocal_length(value: Double): Self = this.set("focal_length", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocal_ratio(value: Double): Self = this.set("focal_ratio", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: IUserInfo): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[IImageInfo]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: IImageInfo*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIs_embeddable(value: Boolean): Self = StObject.set(x, "is_embeddable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: IImageInfo*): Self = this.set("images", js.Array(value :_*))
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[IImageInfo]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_embeddable(value: Boolean): Self = this.set("is_embeddable", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setParent_id(value: String): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ILocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShared_with(value: ISharedWith): Self = StObject.set(x, "shared_with", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent_id(value: String): Self = this.set("parent_id", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared_with(value: ISharedWith): Self = this.set("shared_with", value.asInstanceOf[js.Any])
+    def setTags_count(value: Double): Self = StObject.set(x, "tags_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTags_enabled(value: Boolean): Self = StObject.set(x, "tags_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags_count(value: Double): Self = this.set("tags_count", value.asInstanceOf[js.Any])
+    def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags_enabled(value: Boolean): Self = this.set("tags_enabled", value.asInstanceOf[js.Any])
+    def setUpload_location(value: String): Self = StObject.set(x, "upload_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setWhen_taken(value: String): Self = StObject.set(x, "when_taken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_time(value: String): Self = this.set("updated_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpload_location(value: String): Self = this.set("upload_location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhen_taken(value: String): Self = this.set("when_taken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

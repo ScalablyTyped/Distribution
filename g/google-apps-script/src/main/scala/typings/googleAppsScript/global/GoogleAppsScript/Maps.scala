@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Maps")
-@js.native
-object Maps extends js.Object {
+object Maps {
   
   /**
     * An enum representing the types of restrictions to avoid when finding directions.
     */
+  @JSGlobal("GoogleAppsScript.Maps.Avoid")
   @js.native
-  object Avoid extends js.Object {
+  object Avoid extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Maps.Avoid with Double] = js.native
@@ -25,8 +25,9 @@ object Maps extends js.Object {
   /**
     * An enum representing the named colors available to use in map images.
     */
+  @JSGlobal("GoogleAppsScript.Maps.Color")
   @js.native
-  object Color extends js.Object {
+  object Color extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Maps.Color with Double] = js.native
@@ -58,8 +59,9 @@ object Maps extends js.Object {
     *
     * Google Static Maps API
     */
+  @JSGlobal("GoogleAppsScript.Maps.Format")
   @js.native
-  object Format extends js.Object {
+  object Format extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Maps.Format with Double] = js.native
@@ -83,8 +85,9 @@ object Maps extends js.Object {
     *
     * Google Static Maps API
     */
+  @JSGlobal("GoogleAppsScript.Maps.MarkerSize")
   @js.native
-  object MarkerSize extends js.Object {
+  object MarkerSize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Maps.MarkerSize with Double] = js.native
@@ -99,8 +102,9 @@ object Maps extends js.Object {
   /**
     * An enum representing the mode of travel to use when finding directions.
     */
+  @JSGlobal("GoogleAppsScript.Maps.Mode")
   @js.native
-  object Mode extends js.Object {
+  object Mode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Maps.Mode with Double] = js.native
@@ -120,8 +124,9 @@ object Maps extends js.Object {
     *
     * Google Static Maps API
     */
+  @JSGlobal("GoogleAppsScript.Maps.Type")
   @js.native
-  object Type extends js.Object {
+  object Type extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Maps.Type with Double] = js.native

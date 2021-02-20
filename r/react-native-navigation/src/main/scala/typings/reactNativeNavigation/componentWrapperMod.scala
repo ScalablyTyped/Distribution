@@ -7,16 +7,16 @@ import typings.reactNative.mod.ComponentProvider
 import typings.reactNativeNavigation.componentEventsObserverMod.ComponentEventsObserver
 import typings.reactNativeNavigation.storeMod.Store
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/components/ComponentWrapper", JSImport.Namespace)
-@js.native
-object componentWrapperMod extends js.Object {
+object componentWrapperMod {
   
+  @JSImport("react-native-navigation/lib/dist/components/ComponentWrapper", "ComponentWrapper")
   @js.native
-  class ComponentWrapper () extends js.Object {
+  class ComponentWrapper () extends StObject {
     
     def wrap(
       componentName: String,

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchImportFindingsRequest extends js.Object {
+trait BatchImportFindingsRequest extends StObject {
   
   /**
     * A list of findings to import. To successfully import a finding, it must follow the AWS Security Finding Format. Maximum of 100 findings per request.
@@ -21,24 +22,12 @@ object BatchImportFindingsRequest {
   }
   
   @scala.inline
-  implicit class BatchImportFindingsRequestOps[Self <: BatchImportFindingsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchImportFindingsRequestMutableBuilder[Self <: BatchImportFindingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindings(value: AwsSecurityFindingList): Self = StObject.set(x, "Findings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFindingsVarargs(value: AwsSecurityFinding*): Self = this.set("Findings", js.Array(value :_*))
-    
-    @scala.inline
-    def setFindings(value: AwsSecurityFindingList): Self = this.set("Findings", value.asInstanceOf[js.Any])
+    def setFindingsVarargs(value: AwsSecurityFinding*): Self = StObject.set(x, "Findings", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,90 +75,78 @@ object OperationOutcomeIssue {
   }
   
   @scala.inline
-  implicit class OperationOutcomeIssueOps[Self <: OperationOutcomeIssue] (val x: Self) extends AnyVal {
+  implicit class OperationOutcomeIssueMutableBuilder[Self <: OperationOutcomeIssue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: CodeableConcept): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDiagnostics(value: String): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: code): Self = this.set("severity", value.asInstanceOf[js.Any])
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setExpression(value: js.Array[String]): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set_diagnostics(value: Element): Self = this.set("_diagnostics", value.asInstanceOf[js.Any])
+    def setExpressionVarargs(value: String*): Self = StObject.set(x, "expression", js.Array(value :_*))
     
     @scala.inline
-    def delete_diagnostics: Self = this.set("_diagnostics", js.undefined)
+    def setLocation(value: js.Array[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_expressionVarargs(value: Element*): Self = this.set("_expression", js.Array(value :_*))
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set_expression(value: js.Array[Element]): Self = this.set("_expression", value.asInstanceOf[js.Any])
+    def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def delete_expression: Self = this.set("_expression", js.undefined)
+    def setSeverity(value: code): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_locationVarargs(value: Element*): Self = this.set("_location", js.Array(value :_*))
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_location(value: js.Array[Element]): Self = this.set("_location", value.asInstanceOf[js.Any])
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def delete_location: Self = this.set("_location", js.undefined)
+    def set_diagnostics(value: Element): Self = StObject.set(x, "_diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_severity(value: Element): Self = this.set("_severity", value.asInstanceOf[js.Any])
+    def set_diagnosticsUndefined: Self = StObject.set(x, "_diagnostics", js.undefined)
     
     @scala.inline
-    def delete_severity: Self = this.set("_severity", js.undefined)
+    def set_expression(value: js.Array[Element]): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: CodeableConcept): Self = this.set("details", value.asInstanceOf[js.Any])
+    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def set_expressionVarargs(value: Element*): Self = StObject.set(x, "_expression", js.Array(value :_*))
     
     @scala.inline
-    def setDiagnostics(value: String): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def set_location(value: js.Array[Element]): Self = StObject.set(x, "_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    def set_locationUndefined: Self = StObject.set(x, "_location", js.undefined)
     
     @scala.inline
-    def setExpressionVarargs(value: String*): Self = this.set("expression", js.Array(value :_*))
+    def set_locationVarargs(value: Element*): Self = StObject.set(x, "_location", js.Array(value :_*))
     
     @scala.inline
-    def setExpression(value: js.Array[String]): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def set_severity(value: Element): Self = StObject.set(x, "_severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
-    
-    @scala.inline
-    def setLocationVarargs(value: String*): Self = this.set("location", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocation(value: js.Array[String]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def set_severityUndefined: Self = StObject.set(x, "_severity", js.undefined)
   }
 }

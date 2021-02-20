@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityReservationGroup extends js.Object {
+trait CapacityReservationGroup extends StObject {
   
   /**
     * The ARN of the resource group.
@@ -26,30 +27,18 @@ object CapacityReservationGroup {
   }
   
   @scala.inline
-  implicit class CapacityReservationGroupOps[Self <: CapacityReservationGroup] (val x: Self) extends AnyVal {
+  implicit class CapacityReservationGroupMutableBuilder[Self <: CapacityReservationGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupArn(value: String): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupArn(value: String): Self = this.set("GroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupArn: Self = this.set("GroupArn", js.undefined)
-    
-    @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
   }
 }

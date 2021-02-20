@@ -1,11 +1,12 @@
 package typings.domMediacaptureRecord
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaRecorderOptions extends js.Object {
+trait MediaRecorderOptions extends StObject {
   
   var audioBitrateMode: js.UndefOr[BitrateMode] = js.native
   
@@ -26,48 +27,36 @@ object MediaRecorderOptions {
   }
   
   @scala.inline
-  implicit class MediaRecorderOptionsOps[Self <: MediaRecorderOptions] (val x: Self) extends AnyVal {
+  implicit class MediaRecorderOptionsMutableBuilder[Self <: MediaRecorderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioBitrateMode(value: BitrateMode): Self = StObject.set(x, "audioBitrateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioBitrateModeUndefined: Self = StObject.set(x, "audioBitrateMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBitrateMode(value: BitrateMode): Self = this.set("audioBitrateMode", value.asInstanceOf[js.Any])
+    def setAudioBitsPerSecondUndefined: Self = StObject.set(x, "audioBitsPerSecond", js.undefined)
     
     @scala.inline
-    def deleteAudioBitrateMode: Self = this.set("audioBitrateMode", js.undefined)
+    def setBitsPerSecond(value: Double): Self = StObject.set(x, "bitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBitsPerSecond(value: Double): Self = this.set("audioBitsPerSecond", value.asInstanceOf[js.Any])
+    def setBitsPerSecondUndefined: Self = StObject.set(x, "bitsPerSecond", js.undefined)
     
     @scala.inline
-    def deleteAudioBitsPerSecond: Self = this.set("audioBitsPerSecond", js.undefined)
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitsPerSecond(value: Double): Self = this.set("bitsPerSecond", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteBitsPerSecond: Self = this.set("bitsPerSecond", js.undefined)
+    def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
-    
-    @scala.inline
-    def setVideoBitsPerSecond(value: Double): Self = this.set("videoBitsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoBitsPerSecond: Self = this.set("videoBitsPerSecond", js.undefined)
+    def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
   }
 }

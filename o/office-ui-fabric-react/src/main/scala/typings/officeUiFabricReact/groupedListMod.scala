@@ -9,26 +9,16 @@ import typings.officeUiFabricReact.groupedListBaseMod.IGroupedListState
 import typings.officeUiFabricReact.groupedListSectionMod.IGroupedListSectionProps
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/GroupedList", JSImport.Namespace)
-@js.native
-object groupedListMod extends js.Object {
+object groupedListMod {
   
-  val GroupFooter: FunctionComponent[IGroupFooterProps] = js.native
-  
-  val GroupHeader: FunctionComponent[IGroupHeaderProps] = js.native
-  
-  val GroupShowAll: FunctionComponent[IGroupShowAllProps] = js.native
-  
-  val GroupSpacer: FunctionComponent[IGroupSpacerProps] = js.native
-  
-  val GroupedList: FunctionComponent[IGroupedListProps] = js.native
-  
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "CollapseAllVisibility")
   @js.native
-  object CollapseAllVisibility extends js.Object {
+  object CollapseAllVisibility extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -40,20 +30,51 @@ object groupedListMod extends js.Object {
     /* 1 */ val visible: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.visible with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupFooter")
+  @js.native
+  val GroupFooter: FunctionComponent[IGroupFooterProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupHeader")
+  @js.native
+  val GroupHeader: FunctionComponent[IGroupHeaderProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupShowAll")
+  @js.native
+  val GroupShowAll: FunctionComponent[IGroupShowAllProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupSpacer")
+  @js.native
+  val GroupSpacer: FunctionComponent[IGroupSpacerProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedList")
+  @js.native
+  val GroupedList: FunctionComponent[IGroupedListProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase")
   @js.native
   class GroupedListBase protected ()
     extends typings.officeUiFabricReact.groupedListBaseMod.GroupedListBase {
     def this(props: IGroupedListProps) = this()
   }
   /* static members */
-  @js.native
-  object GroupedListBase extends js.Object {
+  object GroupedListBase {
     
-    var defaultProps: Compact = js.native
+    @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase.defaultProps")
+    @js.native
+    def defaultProps: Compact = js.native
+    @scala.inline
+    def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase.getDerivedStateFromProps")
+    @js.native
     def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListSection")
   @js.native
   class GroupedListSection protected ()
     extends typings.officeUiFabricReact.groupedListSectionMod.GroupedListSection {

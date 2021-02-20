@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateValuesResponse extends js.Object {
+trait UpdateValuesResponse extends StObject {
   
   /** The spreadsheet the updates were applied to. */
   var spreadsheetId: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object UpdateValuesResponse {
   }
   
   @scala.inline
-  implicit class UpdateValuesResponseOps[Self <: UpdateValuesResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateValuesResponseMutableBuilder[Self <: UpdateValuesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdatedCells(value: Double): Self = StObject.set(x, "updatedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    def setUpdatedCellsUndefined: Self = StObject.set(x, "updatedCells", js.undefined)
     
     @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    def setUpdatedColumns(value: Double): Self = StObject.set(x, "updatedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedCells(value: Double): Self = this.set("updatedCells", value.asInstanceOf[js.Any])
+    def setUpdatedColumnsUndefined: Self = StObject.set(x, "updatedColumns", js.undefined)
     
     @scala.inline
-    def deleteUpdatedCells: Self = this.set("updatedCells", js.undefined)
+    def setUpdatedData(value: ValueRange): Self = StObject.set(x, "updatedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedColumns(value: Double): Self = this.set("updatedColumns", value.asInstanceOf[js.Any])
+    def setUpdatedDataUndefined: Self = StObject.set(x, "updatedData", js.undefined)
     
     @scala.inline
-    def deleteUpdatedColumns: Self = this.set("updatedColumns", js.undefined)
+    def setUpdatedRange(value: String): Self = StObject.set(x, "updatedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedData(value: ValueRange): Self = this.set("updatedData", value.asInstanceOf[js.Any])
+    def setUpdatedRangeUndefined: Self = StObject.set(x, "updatedRange", js.undefined)
     
     @scala.inline
-    def deleteUpdatedData: Self = this.set("updatedData", js.undefined)
+    def setUpdatedRows(value: Double): Self = StObject.set(x, "updatedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedRange(value: String): Self = this.set("updatedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedRange: Self = this.set("updatedRange", js.undefined)
-    
-    @scala.inline
-    def setUpdatedRows(value: Double): Self = this.set("updatedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedRows: Self = this.set("updatedRows", js.undefined)
+    def setUpdatedRowsUndefined: Self = StObject.set(x, "updatedRows", js.undefined)
   }
 }

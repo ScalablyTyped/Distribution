@@ -22,14 +22,14 @@ import typings.octokitTypes.anon.UrlString
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestInterfaceMod.RequestInterface
 import typings.octokitTypes.routeMod.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@octokit/core", "Octokit")
   @js.native
   class Octokit ()
     extends /* key */ StringDictionary[js.Any] {
@@ -102,12 +102,23 @@ object mod extends js.Object {
     def request_url[T, O /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](options: O with Method with (UrlString | Url)): js.Promise[OctokitResponse[T]] = js.native
   }
   /* static members */
-  @js.native
-  object Octokit extends js.Object {
+  object Octokit {
     
-    var VERSION: String = js.native
+    @JSImport("@octokit/core", "Octokit")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("@octokit/core", "Octokit.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    @scala.inline
+    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@octokit/core", "Octokit.defaults")
+    @js.native
     def defaults[S /* <: Constructor[_] */](defaults: js.Function): Instantiable with S = js.native
+    @JSImport("@octokit/core", "Octokit.defaults")
+    @js.native
     def defaults[S /* <: Constructor[_] */](defaults: OctokitOptions): Instantiable with S = js.native
     
     /**
@@ -116,10 +127,16 @@ object mod extends js.Object {
       * @example
       * const API = Octokit.plugin(plugin1, plugin2, plugin3, ...)
       */
+    @JSImport("@octokit/core", "Octokit.plugin")
+    @js.native
     def plugin[S /* <: Constructor[_] with Plugins */, T /* <: js.Array[OctokitPlugin] */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param newPlugins because its type T is not an array type */ newPlugins: T
     ): InstantiablePlugins with S with Constructor[UnionToIntersection[ReturnTypeOf[T]]] = js.native
     
-    var plugins: js.Array[OctokitPlugin] = js.native
+    @JSImport("@octokit/core", "Octokit.plugins")
+    @js.native
+    def plugins: js.Array[OctokitPlugin] = js.native
+    @scala.inline
+    def plugins_=(x: js.Array[OctokitPlugin]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
   }
 }

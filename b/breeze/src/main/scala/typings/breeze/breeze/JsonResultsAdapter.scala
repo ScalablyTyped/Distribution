@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonResultsAdapter extends js.Object {
+trait JsonResultsAdapter extends StObject {
   
   def extractKeyMappings(data: js.Object): js.Array[KeyMapping] = js.native
   
@@ -32,33 +33,21 @@ object JsonResultsAdapter {
   }
   
   @scala.inline
-  implicit class JsonResultsAdapterOps[Self <: JsonResultsAdapter] (val x: Self) extends AnyVal {
+  implicit class JsonResultsAdapterMutableBuilder[Self <: JsonResultsAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtractKeyMappings(value: js.Object => js.Array[KeyMapping]): Self = StObject.set(x, "extractKeyMappings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtractResults(value: js.Object => js.Object): Self = StObject.set(x, "extractResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtractSaveResults(value: js.Object => js.Array[_]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtractKeyMappings(value: js.Object => js.Array[KeyMapping]): Self = this.set("extractKeyMappings", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractResults(value: js.Object => js.Object): Self = this.set("extractResults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExtractSaveResults(value: js.Object => js.Array[_]): Self = this.set("extractSaveResults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisitNode(value: (js.Object, QueryContext, NodeContext) => typings.breeze.anon.EntityType): Self = this.set("visitNode", js.Any.fromFunction3(value))
+    def setVisitNode(value: (js.Object, QueryContext, NodeContext) => typings.breeze.anon.EntityType): Self = StObject.set(x, "visitNode", js.Any.fromFunction3(value))
   }
 }

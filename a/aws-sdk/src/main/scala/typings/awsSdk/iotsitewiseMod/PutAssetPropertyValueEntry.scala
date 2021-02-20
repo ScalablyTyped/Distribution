@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAssetPropertyValueEntry extends js.Object {
+trait PutAssetPropertyValueEntry extends StObject {
   
   /**
     * The ID of the asset to update.
@@ -41,45 +42,33 @@ object PutAssetPropertyValueEntry {
   }
   
   @scala.inline
-  implicit class PutAssetPropertyValueEntryOps[Self <: PutAssetPropertyValueEntry] (val x: Self) extends AnyVal {
+  implicit class PutAssetPropertyValueEntryMutableBuilder[Self <: PutAssetPropertyValueEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryId(value: EntryId): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryId(value: EntryId): Self = this.set("entryId", value.asInstanceOf[js.Any])
+    def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = this.set("propertyValues", js.Array(value :_*))
+    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
     @scala.inline
-    def setPropertyValues(value: AssetPropertyValues): Self = this.set("propertyValues", value.asInstanceOf[js.Any])
+    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
     @scala.inline
-    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    def setPropertyValues(value: AssetPropertyValues): Self = StObject.set(x, "propertyValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAlias(value: AssetPropertyAlias): Self = this.set("propertyAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyAlias: Self = this.set("propertyAlias", js.undefined)
-    
-    @scala.inline
-    def setPropertyId(value: ID): Self = this.set("propertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyId: Self = this.set("propertyId", js.undefined)
+    def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "propertyValues", js.Array(value :_*))
   }
 }

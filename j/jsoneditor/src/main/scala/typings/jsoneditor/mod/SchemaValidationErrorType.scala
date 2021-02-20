@@ -1,5 +1,6 @@
 package typings.jsoneditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsoneditor.jsoneditorStrings.validation
   - typings.jsoneditor.jsoneditorStrings.customValidation
 */
-trait SchemaValidationErrorType extends js.Object
+trait SchemaValidationErrorType extends StObject
 object SchemaValidationErrorType {
   
   @scala.inline

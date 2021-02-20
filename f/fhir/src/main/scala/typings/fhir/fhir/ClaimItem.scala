@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -174,243 +175,231 @@ object ClaimItem {
   }
   
   @scala.inline
-  implicit class ClaimItemOps[Self <: ClaimItem] (val x: Self) extends AnyVal {
+  implicit class ClaimItemMutableBuilder[Self <: ClaimItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCareTeamLinkId(value: js.Array[positiveInt]): Self = StObject.set(x, "careTeamLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setCareTeamLinkIdUndefined: Self = StObject.set(x, "careTeamLinkId", js.undefined)
     
     @scala.inline
-    def set_careTeamLinkIdVarargs(value: Element*): Self = this.set("_careTeamLinkId", js.Array(value :_*))
+    def setCareTeamLinkIdVarargs(value: positiveInt*): Self = StObject.set(x, "careTeamLinkId", js.Array(value :_*))
     
     @scala.inline
-    def set_careTeamLinkId(value: js.Array[Element]): Self = this.set("_careTeamLinkId", value.asInstanceOf[js.Any])
+    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_careTeamLinkId: Self = this.set("_careTeamLinkId", js.undefined)
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set_diagnosisLinkIdVarargs(value: Element*): Self = this.set("_diagnosisLinkId", js.Array(value :_*))
+    def setDetail(value: js.Array[ClaimItemDetail]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_diagnosisLinkId(value: js.Array[Element]): Self = this.set("_diagnosisLinkId", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def delete_diagnosisLinkId: Self = this.set("_diagnosisLinkId", js.undefined)
+    def setDetailVarargs(value: ClaimItemDetail*): Self = StObject.set(x, "detail", js.Array(value :_*))
     
     @scala.inline
-    def set_factor(value: Element): Self = this.set("_factor", value.asInstanceOf[js.Any])
+    def setDiagnosisLinkId(value: js.Array[positiveInt]): Self = StObject.set(x, "diagnosisLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_factor: Self = this.set("_factor", js.undefined)
+    def setDiagnosisLinkIdUndefined: Self = StObject.set(x, "diagnosisLinkId", js.undefined)
     
     @scala.inline
-    def set_informationLinkIdVarargs(value: Element*): Self = this.set("_informationLinkId", js.Array(value :_*))
+    def setDiagnosisLinkIdVarargs(value: positiveInt*): Self = StObject.set(x, "diagnosisLinkId", js.Array(value :_*))
     
     @scala.inline
-    def set_informationLinkId(value: js.Array[Element]): Self = this.set("_informationLinkId", value.asInstanceOf[js.Any])
+    def setEncounter(value: js.Array[Reference]): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_informationLinkId: Self = this.set("_informationLinkId", js.undefined)
+    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     @scala.inline
-    def set_procedureLinkIdVarargs(value: Element*): Self = this.set("_procedureLinkId", js.Array(value :_*))
+    def setEncounterVarargs(value: Reference*): Self = StObject.set(x, "encounter", js.Array(value :_*))
     
     @scala.inline
-    def set_procedureLinkId(value: js.Array[Element]): Self = this.set("_procedureLinkId", value.asInstanceOf[js.Any])
+    def setFactor(value: decimal): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_procedureLinkId: Self = this.set("_procedureLinkId", js.undefined)
+    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setInformationLinkId(value: js.Array[positiveInt]): Self = StObject.set(x, "informationLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def setInformationLinkIdUndefined: Self = StObject.set(x, "informationLinkId", js.undefined)
     
     @scala.inline
-    def set_servicedDate(value: Element): Self = this.set("_servicedDate", value.asInstanceOf[js.Any])
+    def setInformationLinkIdVarargs(value: positiveInt*): Self = StObject.set(x, "informationLinkId", js.Array(value :_*))
     
     @scala.inline
-    def delete_servicedDate: Self = this.set("_servicedDate", js.undefined)
+    def setLocationAddress(value: Address): Self = StObject.set(x, "locationAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodySite(value: CodeableConcept): Self = this.set("bodySite", value.asInstanceOf[js.Any])
+    def setLocationAddressUndefined: Self = StObject.set(x, "locationAddress", js.undefined)
     
     @scala.inline
-    def deleteBodySite: Self = this.set("bodySite", js.undefined)
+    def setLocationCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "locationCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCareTeamLinkIdVarargs(value: positiveInt*): Self = this.set("careTeamLinkId", js.Array(value :_*))
+    def setLocationCodeableConceptUndefined: Self = StObject.set(x, "locationCodeableConcept", js.undefined)
     
     @scala.inline
-    def setCareTeamLinkId(value: js.Array[positiveInt]): Self = this.set("careTeamLinkId", value.asInstanceOf[js.Any])
+    def setLocationReference(value: Reference): Self = StObject.set(x, "locationReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCareTeamLinkId: Self = this.set("careTeamLinkId", js.undefined)
+    def setLocationReferenceUndefined: Self = StObject.set(x, "locationReference", js.undefined)
     
     @scala.inline
-    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def setDetailVarargs(value: ClaimItemDetail*): Self = this.set("detail", js.Array(value :_*))
+    def setModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "modifier", js.Array(value :_*))
     
     @scala.inline
-    def setDetail(value: js.Array[ClaimItemDetail]): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setNet(value: Money): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
+    def setNetUndefined: Self = StObject.set(x, "net", js.undefined)
     
     @scala.inline
-    def setDiagnosisLinkIdVarargs(value: positiveInt*): Self = this.set("diagnosisLinkId", js.Array(value :_*))
+    def setProcedureLinkId(value: js.Array[positiveInt]): Self = StObject.set(x, "procedureLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosisLinkId(value: js.Array[positiveInt]): Self = this.set("diagnosisLinkId", value.asInstanceOf[js.Any])
+    def setProcedureLinkIdUndefined: Self = StObject.set(x, "procedureLinkId", js.undefined)
     
     @scala.inline
-    def deleteDiagnosisLinkId: Self = this.set("diagnosisLinkId", js.undefined)
+    def setProcedureLinkIdVarargs(value: positiveInt*): Self = StObject.set(x, "procedureLinkId", js.Array(value :_*))
     
     @scala.inline
-    def setEncounterVarargs(value: Reference*): Self = this.set("encounter", js.Array(value :_*))
+    def setProgramCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "programCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncounter(value: js.Array[Reference]): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    def setProgramCodeUndefined: Self = StObject.set(x, "programCode", js.undefined)
     
     @scala.inline
-    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    def setProgramCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "programCode", js.Array(value :_*))
     
     @scala.inline
-    def setFactor(value: decimal): Self = this.set("factor", value.asInstanceOf[js.Any])
+    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFactor: Self = this.set("factor", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def setInformationLinkIdVarargs(value: positiveInt*): Self = this.set("informationLinkId", js.Array(value :_*))
+    def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInformationLinkId(value: js.Array[positiveInt]): Self = this.set("informationLinkId", value.asInstanceOf[js.Any])
+    def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
     @scala.inline
-    def deleteInformationLinkId: Self = this.set("informationLinkId", js.undefined)
+    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationAddress(value: Address): Self = this.set("locationAddress", value.asInstanceOf[js.Any])
+    def setService(value: CodeableConcept): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocationAddress: Self = this.set("locationAddress", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setLocationCodeableConcept(value: CodeableConcept): Self = this.set("locationCodeableConcept", value.asInstanceOf[js.Any])
+    def setServicedDate(value: date): Self = StObject.set(x, "servicedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocationCodeableConcept: Self = this.set("locationCodeableConcept", js.undefined)
+    def setServicedDateUndefined: Self = StObject.set(x, "servicedDate", js.undefined)
     
     @scala.inline
-    def setLocationReference(value: Reference): Self = this.set("locationReference", value.asInstanceOf[js.Any])
+    def setServicedPeriod(value: Period): Self = StObject.set(x, "servicedPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocationReference: Self = this.set("locationReference", js.undefined)
+    def setServicedPeriodUndefined: Self = StObject.set(x, "servicedPeriod", js.undefined)
     
     @scala.inline
-    def setModifierVarargs(value: CodeableConcept*): Self = this.set("modifier", js.Array(value :_*))
+    def setSubSite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "subSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifier(value: js.Array[CodeableConcept]): Self = this.set("modifier", value.asInstanceOf[js.Any])
+    def setSubSiteUndefined: Self = StObject.set(x, "subSite", js.undefined)
     
     @scala.inline
-    def deleteModifier: Self = this.set("modifier", js.undefined)
+    def setSubSiteVarargs(value: CodeableConcept*): Self = StObject.set(x, "subSite", js.Array(value :_*))
     
     @scala.inline
-    def setNet(value: Money): Self = this.set("net", value.asInstanceOf[js.Any])
+    def setUdi(value: js.Array[Reference]): Self = StObject.set(x, "udi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNet: Self = this.set("net", js.undefined)
+    def setUdiUndefined: Self = StObject.set(x, "udi", js.undefined)
     
     @scala.inline
-    def setProcedureLinkIdVarargs(value: positiveInt*): Self = this.set("procedureLinkId", js.Array(value :_*))
+    def setUdiVarargs(value: Reference*): Self = StObject.set(x, "udi", js.Array(value :_*))
     
     @scala.inline
-    def setProcedureLinkId(value: js.Array[positiveInt]): Self = this.set("procedureLinkId", value.asInstanceOf[js.Any])
+    def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcedureLinkId: Self = this.set("procedureLinkId", js.undefined)
+    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
     
     @scala.inline
-    def setProgramCodeVarargs(value: CodeableConcept*): Self = this.set("programCode", js.Array(value :_*))
+    def set_careTeamLinkId(value: js.Array[Element]): Self = StObject.set(x, "_careTeamLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgramCode(value: js.Array[CodeableConcept]): Self = this.set("programCode", value.asInstanceOf[js.Any])
+    def set_careTeamLinkIdUndefined: Self = StObject.set(x, "_careTeamLinkId", js.undefined)
     
     @scala.inline
-    def deleteProgramCode: Self = this.set("programCode", js.undefined)
+    def set_careTeamLinkIdVarargs(value: Element*): Self = StObject.set(x, "_careTeamLinkId", js.Array(value :_*))
     
     @scala.inline
-    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def set_diagnosisLinkId(value: js.Array[Element]): Self = StObject.set(x, "_diagnosisLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def set_diagnosisLinkIdUndefined: Self = StObject.set(x, "_diagnosisLinkId", js.undefined)
     
     @scala.inline
-    def setRevenue(value: CodeableConcept): Self = this.set("revenue", value.asInstanceOf[js.Any])
+    def set_diagnosisLinkIdVarargs(value: Element*): Self = StObject.set(x, "_diagnosisLinkId", js.Array(value :_*))
     
     @scala.inline
-    def deleteRevenue: Self = this.set("revenue", js.undefined)
+    def set_factor(value: Element): Self = StObject.set(x, "_factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: CodeableConcept): Self = this.set("service", value.asInstanceOf[js.Any])
+    def set_factorUndefined: Self = StObject.set(x, "_factor", js.undefined)
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def set_informationLinkId(value: js.Array[Element]): Self = StObject.set(x, "_informationLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicedDate(value: date): Self = this.set("servicedDate", value.asInstanceOf[js.Any])
+    def set_informationLinkIdUndefined: Self = StObject.set(x, "_informationLinkId", js.undefined)
     
     @scala.inline
-    def deleteServicedDate: Self = this.set("servicedDate", js.undefined)
+    def set_informationLinkIdVarargs(value: Element*): Self = StObject.set(x, "_informationLinkId", js.Array(value :_*))
     
     @scala.inline
-    def setServicedPeriod(value: Period): Self = this.set("servicedPeriod", value.asInstanceOf[js.Any])
+    def set_procedureLinkId(value: js.Array[Element]): Self = StObject.set(x, "_procedureLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServicedPeriod: Self = this.set("servicedPeriod", js.undefined)
+    def set_procedureLinkIdUndefined: Self = StObject.set(x, "_procedureLinkId", js.undefined)
     
     @scala.inline
-    def setSubSiteVarargs(value: CodeableConcept*): Self = this.set("subSite", js.Array(value :_*))
+    def set_procedureLinkIdVarargs(value: Element*): Self = StObject.set(x, "_procedureLinkId", js.Array(value :_*))
     
     @scala.inline
-    def setSubSite(value: js.Array[CodeableConcept]): Self = this.set("subSite", value.asInstanceOf[js.Any])
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubSite: Self = this.set("subSite", js.undefined)
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
     
     @scala.inline
-    def setUdiVarargs(value: Reference*): Self = this.set("udi", js.Array(value :_*))
+    def set_servicedDate(value: Element): Self = StObject.set(x, "_servicedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUdi(value: js.Array[Reference]): Self = this.set("udi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUdi: Self = this.set("udi", js.undefined)
-    
-    @scala.inline
-    def setUnitPrice(value: Money): Self = this.set("unitPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitPrice: Self = this.set("unitPrice", js.undefined)
+    def set_servicedDateUndefined: Self = StObject.set(x, "_servicedDate", js.undefined)
   }
 }

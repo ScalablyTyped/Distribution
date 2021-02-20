@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentBehaviors extends js.Object {
+trait SegmentBehaviors extends StObject {
   
   /**
     * The dimension settings that are based on how recently an endpoint was active.
@@ -21,24 +22,12 @@ object SegmentBehaviors {
   }
   
   @scala.inline
-  implicit class SegmentBehaviorsOps[Self <: SegmentBehaviors] (val x: Self) extends AnyVal {
+  implicit class SegmentBehaviorsMutableBuilder[Self <: SegmentBehaviors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecency(value: RecencyDimension): Self = StObject.set(x, "Recency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecency(value: RecencyDimension): Self = this.set("Recency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecency: Self = this.set("Recency", js.undefined)
+    def setRecencyUndefined: Self = StObject.set(x, "Recency", js.undefined)
   }
 }

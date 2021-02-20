@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "ParameterInformation")
 @js.native
-class ParameterInformation protected () extends js.Object {
+class ParameterInformation protected () extends StObject {
   /**
     * Creates a new parameter information object.
     *

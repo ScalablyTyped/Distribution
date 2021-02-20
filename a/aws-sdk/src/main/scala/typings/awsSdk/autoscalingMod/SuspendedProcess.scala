@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuspendedProcess extends js.Object {
+trait SuspendedProcess extends StObject {
   
   /**
     * The name of the suspended process.
@@ -26,30 +27,18 @@ object SuspendedProcess {
   }
   
   @scala.inline
-  implicit class SuspendedProcessOps[Self <: SuspendedProcess] (val x: Self) extends AnyVal {
+  implicit class SuspendedProcessMutableBuilder[Self <: SuspendedProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProcessNameUndefined: Self = StObject.set(x, "ProcessName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuspensionReason(value: XmlStringMaxLen255): Self = StObject.set(x, "SuspensionReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessName(value: XmlStringMaxLen255): Self = this.set("ProcessName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessName: Self = this.set("ProcessName", js.undefined)
-    
-    @scala.inline
-    def setSuspensionReason(value: XmlStringMaxLen255): Self = this.set("SuspensionReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuspensionReason: Self = this.set("SuspensionReason", js.undefined)
+    def setSuspensionReasonUndefined: Self = StObject.set(x, "SuspensionReason", js.undefined)
   }
 }

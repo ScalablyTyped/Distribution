@@ -3,13 +3,14 @@ package typings.spectacle.anon
 import typings.react.mod.ReactNode
 import typings.styledSystem.mod.RequiredTheme
 import typings.styledSystem.mod.ResponsiveValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  children :react.react.ReactNode} & styled-system.styled-system.LayoutProps<styled-system.styled-system.RequiredTheme> & styled-system.styled-system.GridProps<styled-system.styled-system.RequiredTheme> & styled-system.styled-system.PositionProps<styled-system.styled-system.RequiredTheme> */
 @js.native
-trait childrenReactNodeLayoutPr extends js.Object {
+trait childrenReactNodeLayoutPr extends StObject {
   
   /**
     * The bottom CSS property participates in specifying the vertical position of a
@@ -410,22 +411,7 @@ object childrenReactNodeLayoutPr {
   }
   
   @scala.inline
-  implicit class childrenReactNodeLayoutPrOps[Self <: childrenReactNodeLayoutPr] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBottomVarargs(value: (js.Any | Null)*): Self = this.set("bottom", js.Array(value :_*))
+  implicit class childrenReactNodeLayoutPrMutableBuilder[Self <: childrenReactNodeLayoutPr] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBottom(
@@ -433,22 +419,22 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setBottomNull: Self = StObject.set(x, "bottom", null)
     
     @scala.inline
-    def setBottomNull: Self = this.set("bottom", null)
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setBottomVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "bottom", js.Array(value :_*))
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayVarargs(value: (js.Any | Null)*): Self = this.set("display", js.Array(value :_*))
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
     def setDisplay(
@@ -456,16 +442,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("display", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDisplayNull: Self = StObject.set(x, "display", null)
     
     @scala.inline
-    def setDisplayNull: Self = this.set("display", null)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setGridAreaVarargs(value: (js.Any | Null)*): Self = this.set("gridArea", js.Array(value :_*))
+    def setDisplayVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "display", js.Array(value :_*))
     
     @scala.inline
     def setGridArea(
@@ -473,16 +459,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    def setGridAreaNull: Self = StObject.set(x, "gridArea", null)
     
     @scala.inline
-    def setGridAreaNull: Self = this.set("gridArea", null)
+    def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
     @scala.inline
-    def setGridAutoColumnsVarargs(value: (js.Any | Null)*): Self = this.set("gridAutoColumns", js.Array(value :_*))
+    def setGridAreaVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
     
     @scala.inline
     def setGridAutoColumns(
@@ -490,16 +476,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridAutoColumns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridAutoColumns: Self = this.set("gridAutoColumns", js.undefined)
+    def setGridAutoColumnsNull: Self = StObject.set(x, "gridAutoColumns", null)
     
     @scala.inline
-    def setGridAutoColumnsNull: Self = this.set("gridAutoColumns", null)
+    def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
     @scala.inline
-    def setGridAutoFlowVarargs(value: (js.Any | Null)*): Self = this.set("gridAutoFlow", js.Array(value :_*))
+    def setGridAutoColumnsVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
     
     @scala.inline
     def setGridAutoFlow(
@@ -507,16 +493,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridAutoFlow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridAutoFlow: Self = this.set("gridAutoFlow", js.undefined)
+    def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
     
     @scala.inline
-    def setGridAutoFlowNull: Self = this.set("gridAutoFlow", null)
+    def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
     @scala.inline
-    def setGridAutoRowsVarargs(value: (js.Any | Null)*): Self = this.set("gridAutoRows", js.Array(value :_*))
+    def setGridAutoFlowVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
     
     @scala.inline
     def setGridAutoRows(
@@ -524,16 +510,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridAutoRows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridAutoRows: Self = this.set("gridAutoRows", js.undefined)
+    def setGridAutoRowsNull: Self = StObject.set(x, "gridAutoRows", null)
     
     @scala.inline
-    def setGridAutoRowsNull: Self = this.set("gridAutoRows", null)
+    def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
     
     @scala.inline
-    def setGridColumnVarargs(value: (js.Any | Null)*): Self = this.set("gridColumn", js.Array(value :_*))
+    def setGridAutoRowsVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
     
     @scala.inline
     def setGridColumn(
@@ -541,16 +527,7 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridColumn: Self = this.set("gridColumn", js.undefined)
-    
-    @scala.inline
-    def setGridColumnNull: Self = this.set("gridColumn", null)
-    
-    @scala.inline
-    def setGridColumnGapVarargs(value: (js.Any | Null)*): Self = this.set("gridColumnGap", js.Array(value :_*))
+    ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridColumnGap(
@@ -558,16 +535,25 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridColumnGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridColumnGap: Self = this.set("gridColumnGap", js.undefined)
+    def setGridColumnGapNull: Self = StObject.set(x, "gridColumnGap", null)
     
     @scala.inline
-    def setGridColumnGapNull: Self = this.set("gridColumnGap", null)
+    def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
     @scala.inline
-    def setGridGapVarargs(value: (js.Any | Null)*): Self = this.set("gridGap", js.Array(value :_*))
+    def setGridColumnGapVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridColumnNull: Self = StObject.set(x, "gridColumn", null)
+    
+    @scala.inline
+    def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+    
+    @scala.inline
+    def setGridColumnVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
     
     @scala.inline
     def setGridGap(
@@ -575,16 +561,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridGap: Self = this.set("gridGap", js.undefined)
+    def setGridGapNull: Self = StObject.set(x, "gridGap", null)
     
     @scala.inline
-    def setGridGapNull: Self = this.set("gridGap", null)
+    def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
     
     @scala.inline
-    def setGridRowVarargs(value: (js.Any | Null)*): Self = this.set("gridRow", js.Array(value :_*))
+    def setGridGapVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridGap", js.Array(value :_*))
     
     @scala.inline
     def setGridRow(
@@ -592,16 +578,7 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridRow: Self = this.set("gridRow", js.undefined)
-    
-    @scala.inline
-    def setGridRowNull: Self = this.set("gridRow", null)
-    
-    @scala.inline
-    def setGridRowGapVarargs(value: (js.Any | Null)*): Self = this.set("gridRowGap", js.Array(value :_*))
+    ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridRowGap(
@@ -609,16 +586,25 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridRowGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRowGap: Self = this.set("gridRowGap", js.undefined)
+    def setGridRowGapNull: Self = StObject.set(x, "gridRowGap", null)
     
     @scala.inline
-    def setGridRowGapNull: Self = this.set("gridRowGap", null)
+    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
     
     @scala.inline
-    def setGridTemplateAreasVarargs(value: (js.Any | Null)*): Self = this.set("gridTemplateAreas", js.Array(value :_*))
+    def setGridRowGapVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridRowNull: Self = StObject.set(x, "gridRow", null)
+    
+    @scala.inline
+    def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+    
+    @scala.inline
+    def setGridRowVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridRow", js.Array(value :_*))
     
     @scala.inline
     def setGridTemplateAreas(
@@ -626,16 +612,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridTemplateAreas", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateAreas: Self = this.set("gridTemplateAreas", js.undefined)
+    def setGridTemplateAreasNull: Self = StObject.set(x, "gridTemplateAreas", null)
     
     @scala.inline
-    def setGridTemplateAreasNull: Self = this.set("gridTemplateAreas", null)
+    def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
     @scala.inline
-    def setGridTemplateColumnsVarargs(value: (js.Any | Null)*): Self = this.set("gridTemplateColumns", js.Array(value :_*))
+    def setGridTemplateAreasVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
     
     @scala.inline
     def setGridTemplateColumns(
@@ -643,16 +629,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridTemplateColumns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateColumns: Self = this.set("gridTemplateColumns", js.undefined)
+    def setGridTemplateColumnsNull: Self = StObject.set(x, "gridTemplateColumns", null)
     
     @scala.inline
-    def setGridTemplateColumnsNull: Self = this.set("gridTemplateColumns", null)
+    def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
     @scala.inline
-    def setGridTemplateRowsVarargs(value: (js.Any | Null)*): Self = this.set("gridTemplateRows", js.Array(value :_*))
+    def setGridTemplateColumnsVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
     
     @scala.inline
     def setGridTemplateRows(
@@ -660,16 +646,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("gridTemplateRows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateRows: Self = this.set("gridTemplateRows", js.undefined)
+    def setGridTemplateRowsNull: Self = StObject.set(x, "gridTemplateRows", null)
     
     @scala.inline
-    def setGridTemplateRowsNull: Self = this.set("gridTemplateRows", null)
+    def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
     @scala.inline
-    def setHeightVarargs(value: (js.Any | Null)*): Self = this.set("height", js.Array(value :_*))
+    def setGridTemplateRowsVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
     
     @scala.inline
     def setHeight(
@@ -677,16 +663,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("height", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightNull: Self = StObject.set(x, "height", null)
     
     @scala.inline
-    def setHeightNull: Self = this.set("height", null)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setLeftVarargs(value: (js.Any | Null)*): Self = this.set("left", js.Array(value :_*))
+    def setHeightVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "height", js.Array(value :_*))
     
     @scala.inline
     def setLeft(
@@ -694,16 +680,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("left", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setLeftNull: Self = StObject.set(x, "left", null)
     
     @scala.inline
-    def setLeftNull: Self = this.set("left", null)
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def setMaxHeightVarargs(value: (js.Any | Null)*): Self = this.set("maxHeight", js.Array(value :_*))
+    def setLeftVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "left", js.Array(value :_*))
     
     @scala.inline
     def setMaxHeight(
@@ -711,16 +697,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
     
     @scala.inline
-    def setMaxHeightNull: Self = this.set("maxHeight", null)
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def setMaxWidthVarargs(value: (js.Any | Null)*): Self = this.set("maxWidth", js.Array(value :_*))
+    def setMaxHeightVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
     
     @scala.inline
     def setMaxWidth(
@@ -728,16 +714,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
     
     @scala.inline
-    def setMaxWidthNull: Self = this.set("maxWidth", null)
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def setMinHeightVarargs(value: (js.Any | Null)*): Self = this.set("minHeight", js.Array(value :_*))
+    def setMaxWidthVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
     
     @scala.inline
     def setMinHeight(
@@ -745,16 +731,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
     
     @scala.inline
-    def setMinHeightNull: Self = this.set("minHeight", null)
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def setMinWidthVarargs(value: (js.Any | Null)*): Self = this.set("minWidth", js.Array(value :_*))
+    def setMinHeightVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
     
     @scala.inline
     def setMinWidth(
@@ -762,16 +748,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
     
     @scala.inline
-    def setMinWidthNull: Self = this.set("minWidth", null)
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setOverflowVarargs(value: (js.Any | Null)*): Self = this.set("overflow", js.Array(value :_*))
+    def setMinWidthVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
     
     @scala.inline
     def setOverflow(
@@ -779,16 +765,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setOverflowNull: Self = StObject.set(x, "overflow", null)
     
     @scala.inline
-    def setOverflowNull: Self = this.set("overflow", null)
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def setOverflowXVarargs(value: (js.Any | Null)*): Self = this.set("overflowX", js.Array(value :_*))
+    def setOverflowVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "overflow", js.Array(value :_*))
     
     @scala.inline
     def setOverflowX(
@@ -796,16 +782,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("overflowX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowX: Self = this.set("overflowX", js.undefined)
+    def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
     
     @scala.inline
-    def setOverflowXNull: Self = this.set("overflowX", null)
+    def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
     @scala.inline
-    def setOverflowYVarargs(value: (js.Any | Null)*): Self = this.set("overflowY", js.Array(value :_*))
+    def setOverflowXVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "overflowX", js.Array(value :_*))
     
     @scala.inline
     def setOverflowY(
@@ -813,16 +799,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("overflowY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowY: Self = this.set("overflowY", js.undefined)
+    def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
     
     @scala.inline
-    def setOverflowYNull: Self = this.set("overflowY", null)
+    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
     @scala.inline
-    def setPositionVarargs(value: (js.Any | Null)*): Self = this.set("position", js.Array(value :_*))
+    def setOverflowYVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "overflowY", js.Array(value :_*))
     
     @scala.inline
     def setPosition(
@@ -830,16 +816,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionNull: Self = StObject.set(x, "position", null)
     
     @scala.inline
-    def setPositionNull: Self = this.set("position", null)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setRightVarargs(value: (js.Any | Null)*): Self = this.set("right", js.Array(value :_*))
+    def setPositionVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "position", js.Array(value :_*))
     
     @scala.inline
     def setRight(
@@ -847,16 +833,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("right", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setRightNull: Self = StObject.set(x, "right", null)
     
     @scala.inline
-    def setRightNull: Self = this.set("right", null)
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def setSizeVarargs(value: (js.Any | Null)*): Self = this.set("size", js.Array(value :_*))
+    def setRightVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "right", js.Array(value :_*))
     
     @scala.inline
     def setSize(
@@ -864,16 +850,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("size", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeNull: Self = StObject.set(x, "size", null)
     
     @scala.inline
-    def setSizeNull: Self = this.set("size", null)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setTopVarargs(value: (js.Any | Null)*): Self = this.set("top", js.Array(value :_*))
+    def setSizeVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "size", js.Array(value :_*))
     
     @scala.inline
     def setTop(
@@ -881,16 +867,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("top", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopNull: Self = StObject.set(x, "top", null)
     
     @scala.inline
-    def setTopNull: Self = this.set("top", null)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def setVerticalAlignVarargs(value: (js.Any | Null)*): Self = this.set("verticalAlign", js.Array(value :_*))
+    def setTopVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "top", js.Array(value :_*))
     
     @scala.inline
     def setVerticalAlign(
@@ -898,16 +884,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
     
     @scala.inline
-    def setVerticalAlignNull: Self = this.set("verticalAlign", null)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def setWidthVarargs(value: (js.Any | Null)*): Self = this.set("width", js.Array(value :_*))
+    def setVerticalAlignVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
     
     @scala.inline
     def setWidth(
@@ -915,16 +901,16 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("width", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthNull: Self = StObject.set(x, "width", null)
     
     @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setZIndexVarargs(value: (js.Any | Null)*): Self = this.set("zIndex", js.Array(value :_*))
+    def setWidthVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "width", js.Array(value :_*))
     
     @scala.inline
     def setZIndex(
@@ -932,12 +918,15 @@ object childrenReactNodeLayoutPr {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _, 
           RequiredTheme
         ]
-    ): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexNull: Self = StObject.set(x, "zIndex", null)
     
     @scala.inline
-    def setZIndexNull: Self = this.set("zIndex", null)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    
+    @scala.inline
+    def setZIndexVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "zIndex", js.Array(value :_*))
   }
 }

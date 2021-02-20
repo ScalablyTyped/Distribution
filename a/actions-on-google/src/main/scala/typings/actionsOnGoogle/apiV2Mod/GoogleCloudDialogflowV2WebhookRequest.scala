@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.apiV2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2WebhookRequest extends js.Object {
+trait GoogleCloudDialogflowV2WebhookRequest extends StObject {
   
   var originalDetectIntentRequest: js.UndefOr[GoogleCloudDialogflowV2OriginalDetectIntentRequest] = js.native
   
@@ -24,42 +25,30 @@ object GoogleCloudDialogflowV2WebhookRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2WebhookRequestOps[Self <: GoogleCloudDialogflowV2WebhookRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2WebhookRequestMutableBuilder[Self <: GoogleCloudDialogflowV2WebhookRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginalDetectIntentRequest(value: GoogleCloudDialogflowV2OriginalDetectIntentRequest): Self = StObject.set(x, "originalDetectIntentRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginalDetectIntentRequestUndefined: Self = StObject.set(x, "originalDetectIntentRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryResult(value: GoogleCloudDialogflowV2QueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalDetectIntentRequest(value: GoogleCloudDialogflowV2OriginalDetectIntentRequest): Self = this.set("originalDetectIntentRequest", value.asInstanceOf[js.Any])
+    def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
     
     @scala.inline
-    def deleteOriginalDetectIntentRequest: Self = this.set("originalDetectIntentRequest", js.undefined)
+    def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryResult(value: GoogleCloudDialogflowV2QueryResult): Self = this.set("queryResult", value.asInstanceOf[js.Any])
+    def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
     
     @scala.inline
-    def deleteQueryResult: Self = this.set("queryResult", js.undefined)
+    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseId(value: String): Self = this.set("responseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseId: Self = this.set("responseId", js.undefined)
-    
-    @scala.inline
-    def setSession(value: String): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

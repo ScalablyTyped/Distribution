@@ -7,14 +7,14 @@ import typings.babylonjs.gizmoMod.GizmoAxisCache
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/scaleGizmo", JSImport.Namespace)
-@js.native
-object scaleGizmoMod extends js.Object {
+object scaleGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/scaleGizmo", "ScaleGizmo")
   @js.native
   /**
     * Creates a ScaleGizmo

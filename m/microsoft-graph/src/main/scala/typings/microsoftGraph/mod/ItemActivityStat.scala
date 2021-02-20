@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,111 +47,99 @@ object ItemActivityStat {
   }
   
   @scala.inline
-  implicit class ItemActivityStatOps[Self <: ItemActivityStat] (val x: Self) extends AnyVal {
+  implicit class ItemActivityStatMutableBuilder[Self <: ItemActivityStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessNull: Self = StObject.set(x, "access", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def setAccess(value: NullableOption[ItemActionStat]): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setActivities(value: NullableOption[js.Array[ItemActivity]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setActivitiesNull: Self = StObject.set(x, "activities", null)
     
     @scala.inline
-    def setAccessNull: Self = this.set("access", null)
+    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
     @scala.inline
-    def setActivitiesVarargs(value: ItemActivity*): Self = this.set("activities", js.Array(value :_*))
+    def setActivitiesVarargs(value: ItemActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
     @scala.inline
-    def setActivities(value: NullableOption[js.Array[ItemActivity]]): Self = this.set("activities", value.asInstanceOf[js.Any])
+    def setCreate(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivities: Self = this.set("activities", js.undefined)
+    def setCreateNull: Self = StObject.set(x, "create", null)
     
     @scala.inline
-    def setActivitiesNull: Self = this.set("activities", null)
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def setCreate(value: NullableOption[ItemActionStat]): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDelete(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setDeleteNull: Self = StObject.set(x, "delete", null)
     
     @scala.inline
-    def setCreateNull: Self = this.set("create", null)
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def setDelete(value: NullableOption[ItemActionStat]): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setEdit(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setEditNull: Self = StObject.set(x, "edit", null)
     
     @scala.inline
-    def setDeleteNull: Self = this.set("delete", null)
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
     @scala.inline
-    def setEdit(value: NullableOption[ItemActionStat]): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEdit: Self = this.set("edit", js.undefined)
+    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
     @scala.inline
-    def setEditNull: Self = this.set("edit", null)
+    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
     @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = this.set("endDateTime", value.asInstanceOf[js.Any])
+    def setIncompleteData(value: NullableOption[IncompleteData]): Self = StObject.set(x, "incompleteData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDateTime: Self = this.set("endDateTime", js.undefined)
+    def setIncompleteDataNull: Self = StObject.set(x, "incompleteData", null)
     
     @scala.inline
-    def setEndDateTimeNull: Self = this.set("endDateTime", null)
+    def setIncompleteDataUndefined: Self = StObject.set(x, "incompleteData", js.undefined)
     
     @scala.inline
-    def setIncompleteData(value: NullableOption[IncompleteData]): Self = this.set("incompleteData", value.asInstanceOf[js.Any])
+    def setIsTrending(value: NullableOption[Boolean]): Self = StObject.set(x, "isTrending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncompleteData: Self = this.set("incompleteData", js.undefined)
+    def setIsTrendingNull: Self = StObject.set(x, "isTrending", null)
     
     @scala.inline
-    def setIncompleteDataNull: Self = this.set("incompleteData", null)
+    def setIsTrendingUndefined: Self = StObject.set(x, "isTrending", js.undefined)
     
     @scala.inline
-    def setIsTrending(value: NullableOption[Boolean]): Self = this.set("isTrending", value.asInstanceOf[js.Any])
+    def setMove(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTrending: Self = this.set("isTrending", js.undefined)
+    def setMoveNull: Self = StObject.set(x, "move", null)
     
     @scala.inline
-    def setIsTrendingNull: Self = this.set("isTrending", null)
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def setMove(value: NullableOption[ItemActionStat]): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
     @scala.inline
-    def setMoveNull: Self = this.set("move", null)
-    
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = this.set("startDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDateTime: Self = this.set("startDateTime", js.undefined)
-    
-    @scala.inline
-    def setStartDateTimeNull: Self = this.set("startDateTime", null)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

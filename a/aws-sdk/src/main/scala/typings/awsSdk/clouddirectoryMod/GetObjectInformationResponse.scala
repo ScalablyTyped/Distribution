@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetObjectInformationResponse extends js.Object {
+trait GetObjectInformationResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the specified object.
@@ -26,33 +27,21 @@ object GetObjectInformationResponse {
   }
   
   @scala.inline
-  implicit class GetObjectInformationResponseOps[Self <: GetObjectInformationResponse] (val x: Self) extends AnyVal {
+  implicit class GetObjectInformationResponseMutableBuilder[Self <: GetObjectInformationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaFacets(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = this.set("ObjectIdentifier", value.asInstanceOf[js.Any])
+    def setSchemaFacetsUndefined: Self = StObject.set(x, "SchemaFacets", js.undefined)
     
     @scala.inline
-    def deleteObjectIdentifier: Self = this.set("ObjectIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSchemaFacetsVarargs(value: SchemaFacet*): Self = this.set("SchemaFacets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemaFacets(value: SchemaFacetList): Self = this.set("SchemaFacets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaFacets: Self = this.set("SchemaFacets", js.undefined)
+    def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value :_*))
   }
 }

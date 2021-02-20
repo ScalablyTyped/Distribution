@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricStat extends js.Object {
+trait MetricStat extends StObject {
   
   /**
     * The metric to return, including the metric name, namespace, and dimensions.
@@ -36,33 +37,21 @@ object MetricStat {
   }
   
   @scala.inline
-  implicit class MetricStatOps[Self <: MetricStat] (val x: Self) extends AnyVal {
+  implicit class MetricStatMutableBuilder[Self <: MetricStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetric(value: Metric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStat(value: Stat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetric(value: Metric): Self = this.set("Metric", value.asInstanceOf[js.Any])
+    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStat(value: Stat): Self = this.set("Stat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

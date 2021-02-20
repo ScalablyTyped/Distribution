@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,102 +90,90 @@ object DeviceUdi {
   }
   
   @scala.inline
-  implicit class DeviceUdiOps[Self <: DeviceUdi] (val x: Self) extends AnyVal {
+  implicit class DeviceUdiMutableBuilder[Self <: DeviceUdi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrierAIDC(value: base64Binary): Self = StObject.set(x, "carrierAIDC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierAIDCUndefined: Self = StObject.set(x, "carrierAIDC", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCarrierHRF(value: String): Self = StObject.set(x, "carrierHRF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_carrierAIDC(value: Element): Self = this.set("_carrierAIDC", value.asInstanceOf[js.Any])
+    def setCarrierHRFUndefined: Self = StObject.set(x, "carrierHRF", js.undefined)
     
     @scala.inline
-    def delete_carrierAIDC: Self = this.set("_carrierAIDC", js.undefined)
+    def setDeviceIdentifier(value: String): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_carrierHRF(value: Element): Self = this.set("_carrierHRF", value.asInstanceOf[js.Any])
+    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
     @scala.inline
-    def delete_carrierHRF: Self = this.set("_carrierHRF", js.undefined)
+    def setEntryType(value: code): Self = StObject.set(x, "entryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_deviceIdentifier(value: Element): Self = this.set("_deviceIdentifier", value.asInstanceOf[js.Any])
+    def setEntryTypeUndefined: Self = StObject.set(x, "entryType", js.undefined)
     
     @scala.inline
-    def delete_deviceIdentifier: Self = this.set("_deviceIdentifier", js.undefined)
+    def setIssuer(value: uri): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_entryType(value: Element): Self = this.set("_entryType", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def delete_entryType: Self = this.set("_entryType", js.undefined)
+    def setJurisdiction(value: uri): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_issuer(value: Element): Self = this.set("_issuer", value.asInstanceOf[js.Any])
+    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
     @scala.inline
-    def delete_issuer: Self = this.set("_issuer", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_jurisdiction(value: Element): Self = this.set("_jurisdiction", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def delete_jurisdiction: Self = this.set("_jurisdiction", js.undefined)
+    def set_carrierAIDC(value: Element): Self = StObject.set(x, "_carrierAIDC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def set_carrierAIDCUndefined: Self = StObject.set(x, "_carrierAIDC", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def set_carrierHRF(value: Element): Self = StObject.set(x, "_carrierHRF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierAIDC(value: base64Binary): Self = this.set("carrierAIDC", value.asInstanceOf[js.Any])
+    def set_carrierHRFUndefined: Self = StObject.set(x, "_carrierHRF", js.undefined)
     
     @scala.inline
-    def deleteCarrierAIDC: Self = this.set("carrierAIDC", js.undefined)
+    def set_deviceIdentifier(value: Element): Self = StObject.set(x, "_deviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierHRF(value: String): Self = this.set("carrierHRF", value.asInstanceOf[js.Any])
+    def set_deviceIdentifierUndefined: Self = StObject.set(x, "_deviceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteCarrierHRF: Self = this.set("carrierHRF", js.undefined)
+    def set_entryType(value: Element): Self = StObject.set(x, "_entryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIdentifier(value: String): Self = this.set("deviceIdentifier", value.asInstanceOf[js.Any])
+    def set_entryTypeUndefined: Self = StObject.set(x, "_entryType", js.undefined)
     
     @scala.inline
-    def deleteDeviceIdentifier: Self = this.set("deviceIdentifier", js.undefined)
+    def set_issuer(value: Element): Self = StObject.set(x, "_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryType(value: code): Self = this.set("entryType", value.asInstanceOf[js.Any])
+    def set_issuerUndefined: Self = StObject.set(x, "_issuer", js.undefined)
     
     @scala.inline
-    def deleteEntryType: Self = this.set("entryType", js.undefined)
+    def set_jurisdiction(value: Element): Self = StObject.set(x, "_jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: uri): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def set_jurisdictionUndefined: Self = StObject.set(x, "_jurisdiction", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdiction(value: uri): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

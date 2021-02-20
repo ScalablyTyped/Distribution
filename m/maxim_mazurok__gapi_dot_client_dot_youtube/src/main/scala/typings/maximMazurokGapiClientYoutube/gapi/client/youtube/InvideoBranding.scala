@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvideoBranding extends js.Object {
+trait InvideoBranding extends StObject {
   
   /** The bytes the uploaded image. Only used in api to youtube communication. */
   var imageBytes: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object InvideoBranding {
   }
   
   @scala.inline
-  implicit class InvideoBrandingOps[Self <: InvideoBranding] (val x: Self) extends AnyVal {
+  implicit class InvideoBrandingMutableBuilder[Self <: InvideoBranding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageBytesUndefined: Self = StObject.set(x, "imageBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageBytes(value: String): Self = this.set("imageBytes", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageBytes: Self = this.set("imageBytes", js.undefined)
+    def setPosition(value: InvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setTargetChannelId(value: String): Self = StObject.set(x, "targetChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: InvideoPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTargetChannelIdUndefined: Self = StObject.set(x, "targetChannelId", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTiming(value: InvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetChannelId(value: String): Self = this.set("targetChannelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetChannelId: Self = this.set("targetChannelId", js.undefined)
-    
-    @scala.inline
-    def setTiming(value: InvideoTiming): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiming: Self = this.set("timing", js.undefined)
+    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

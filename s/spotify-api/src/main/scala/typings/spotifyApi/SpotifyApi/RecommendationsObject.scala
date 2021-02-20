@@ -1,5 +1,6 @@
 package typings.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [](https://developer.spotify.com/web-api/object-model/#recommendations-object)
   */
 @js.native
-trait RecommendationsObject extends js.Object {
+trait RecommendationsObject extends StObject {
   
   var seeds: js.Array[RecommendationsSeedObject] = js.native
   
@@ -24,30 +25,18 @@ object RecommendationsObject {
   }
   
   @scala.inline
-  implicit class RecommendationsObjectOps[Self <: RecommendationsObject] (val x: Self) extends AnyVal {
+  implicit class RecommendationsObjectMutableBuilder[Self <: RecommendationsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSeeds(value: js.Array[RecommendationsSeedObject]): Self = StObject.set(x, "seeds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeedsVarargs(value: RecommendationsSeedObject*): Self = StObject.set(x, "seeds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTracks(value: js.Array[TrackObjectSimplified]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeedsVarargs(value: RecommendationsSeedObject*): Self = this.set("seeds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSeeds(value: js.Array[RecommendationsSeedObject]): Self = this.set("seeds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTracksVarargs(value: TrackObjectSimplified*): Self = this.set("tracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracks(value: js.Array[TrackObjectSimplified]): Self = this.set("tracks", value.asInstanceOf[js.Any])
+    def setTracksVarargs(value: TrackObjectSimplified*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

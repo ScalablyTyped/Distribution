@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitConfig extends js.Object {
+trait GitConfig extends StObject {
   
   /**
     * The default branch for the Git repository.
@@ -31,33 +32,21 @@ object GitConfig {
   }
   
   @scala.inline
-  implicit class GitConfigOps[Self <: GitConfig] (val x: Self) extends AnyVal {
+  implicit class GitConfigMutableBuilder[Self <: GitConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: Branch): Self = StObject.set(x, "Branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchUndefined: Self = StObject.set(x, "Branch", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositoryUrl(value: GitConfigUrl): Self = StObject.set(x, "RepositoryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryUrl(value: GitConfigUrl): Self = this.set("RepositoryUrl", value.asInstanceOf[js.Any])
+    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: Branch): Self = this.set("Branch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBranch: Self = this.set("Branch", js.undefined)
-    
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
+    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
   }
 }

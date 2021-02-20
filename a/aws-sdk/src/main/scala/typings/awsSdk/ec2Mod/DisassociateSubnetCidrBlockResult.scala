@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateSubnetCidrBlockResult extends js.Object {
+trait DisassociateSubnetCidrBlockResult extends StObject {
   
   /**
     * Information about the IPv6 CIDR block association.
@@ -26,30 +27,18 @@ object DisassociateSubnetCidrBlockResult {
   }
   
   @scala.inline
-  implicit class DisassociateSubnetCidrBlockResultOps[Self <: DisassociateSubnetCidrBlockResult] (val x: Self) extends AnyVal {
+  implicit class DisassociateSubnetCidrBlockResultMutableBuilder[Self <: DisassociateSubnetCidrBlockResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpv6CidrBlockAssociation(value: SubnetIpv6CidrBlockAssociation): Self = StObject.set(x, "Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpv6CidrBlockAssociationUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6CidrBlockAssociation(value: SubnetIpv6CidrBlockAssociation): Self = this.set("Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6CidrBlockAssociation: Self = this.set("Ipv6CidrBlockAssociation", js.undefined)
-    
-    @scala.inline
-    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

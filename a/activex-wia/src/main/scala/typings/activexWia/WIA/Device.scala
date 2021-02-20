@@ -1,12 +1,13 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Device object represents an active connection to an imaging device. */
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /** Returns the specified item in the collection by position */
   /** A collection of all commands for this imaging device */

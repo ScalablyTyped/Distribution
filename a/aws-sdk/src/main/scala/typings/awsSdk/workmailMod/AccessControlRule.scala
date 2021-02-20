@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessControlRule extends js.Object {
+trait AccessControlRule extends StObject {
   
   /**
     * Access protocol actions to include in the rule. Valid values include ActiveSync, AutoDiscover, EWS, IMAP, SMTP, WindowsOutlook, and WebMail.
@@ -71,102 +72,90 @@ object AccessControlRule {
   }
   
   @scala.inline
-  implicit class AccessControlRuleOps[Self <: AccessControlRule] (val x: Self) extends AnyVal {
+  implicit class AccessControlRuleMutableBuilder[Self <: AccessControlRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: AccessControlRuleAction*): Self = this.set("Actions", js.Array(value :_*))
+    def setDateCreated(value: Timestamp): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: ActionsList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("Actions", js.undefined)
+    def setDateModified(value: Timestamp): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: Timestamp): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    def setDateModifiedUndefined: Self = StObject.set(x, "DateModified", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    def setDescription(value: AccessControlRuleDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateModified(value: Timestamp): Self = this.set("DateModified", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDateModified: Self = this.set("DateModified", js.undefined)
+    def setEffect(value: AccessControlRuleEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: AccessControlRuleDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEffectUndefined: Self = StObject.set(x, "Effect", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIpRanges(value: IpRangeList): Self = StObject.set(x, "IpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: AccessControlRuleEffect): Self = this.set("Effect", value.asInstanceOf[js.Any])
+    def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
     @scala.inline
-    def deleteEffect: Self = this.set("Effect", js.undefined)
+    def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
     
     @scala.inline
-    def setIpRangesVarargs(value: IpRange*): Self = this.set("IpRanges", js.Array(value :_*))
+    def setName(value: AccessControlRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpRanges(value: IpRangeList): Self = this.set("IpRanges", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteIpRanges: Self = this.set("IpRanges", js.undefined)
+    def setNotActions(value: ActionsList): Self = StObject.set(x, "NotActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AccessControlRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNotActionsUndefined: Self = StObject.set(x, "NotActions", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNotActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "NotActions", js.Array(value :_*))
     
     @scala.inline
-    def setNotActionsVarargs(value: AccessControlRuleAction*): Self = this.set("NotActions", js.Array(value :_*))
+    def setNotIpRanges(value: IpRangeList): Self = StObject.set(x, "NotIpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotActions(value: ActionsList): Self = this.set("NotActions", value.asInstanceOf[js.Any])
+    def setNotIpRangesUndefined: Self = StObject.set(x, "NotIpRanges", js.undefined)
     
     @scala.inline
-    def deleteNotActions: Self = this.set("NotActions", js.undefined)
+    def setNotIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "NotIpRanges", js.Array(value :_*))
     
     @scala.inline
-    def setNotIpRangesVarargs(value: IpRange*): Self = this.set("NotIpRanges", js.Array(value :_*))
+    def setNotUserIds(value: UserIdList): Self = StObject.set(x, "NotUserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotIpRanges(value: IpRangeList): Self = this.set("NotIpRanges", value.asInstanceOf[js.Any])
+    def setNotUserIdsUndefined: Self = StObject.set(x, "NotUserIds", js.undefined)
     
     @scala.inline
-    def deleteNotIpRanges: Self = this.set("NotIpRanges", js.undefined)
+    def setNotUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "NotUserIds", js.Array(value :_*))
     
     @scala.inline
-    def setNotUserIdsVarargs(value: WorkMailIdentifier*): Self = this.set("NotUserIds", js.Array(value :_*))
+    def setUserIds(value: UserIdList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotUserIds(value: UserIdList): Self = this.set("NotUserIds", value.asInstanceOf[js.Any])
+    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
     @scala.inline
-    def deleteNotUserIds: Self = this.set("NotUserIds", js.undefined)
-    
-    @scala.inline
-    def setUserIdsVarargs(value: WorkMailIdentifier*): Self = this.set("UserIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIds(value: UserIdList): Self = this.set("UserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+    def setUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

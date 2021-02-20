@@ -1,15 +1,14 @@
 package typings.knockoutRx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     def toKoObservable(): js.Any = js.native
     def toKoObservable(initialValue: T): js.Any = js.native
@@ -18,7 +17,7 @@ object Rx extends js.Object {
   }
   
   @js.native
-  trait Subject[T] extends js.Object {
+  trait Subject[T] extends StObject {
     
     def toKoObservable(): js.Any = js.native
     def toKoObservable(initialValue: T): js.Any = js.native

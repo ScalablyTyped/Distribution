@@ -12,10 +12,10 @@ import typings.googleGax.grpcMod.GrpcClientOptions
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.protobufjs.mod.Root
 import typings.protobufjs.mod.Service
-import typings.std.PromiseConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax/build/src/fallback", "GrpcClient")
 @js.native
@@ -25,19 +25,16 @@ import scala.scalajs.js.annotation._
   *
   * @param {Object=} options.auth - An instance of OAuth2Client to use in browser, or an instance of GoogleAuth from google-auth-library
   *  to use in Node.js. Required for browser, optional for Node.js.
-  * @param {Function=} options.promise - A constructor for a promise that
-  * implements the ES6 specification of promise.
   * @constructor
   */
-class GrpcClient () extends js.Object {
+class GrpcClient () extends StObject {
   def this(options: Auth) = this()
   def this(options: GrpcClientOptions) = this()
+  
   var auth: js.UndefOr[OAuth2Client | GoogleAuth] = js.native
+  
   var authClient: js.UndefOr[OAuth2Client | Compute | JWT | UserRefreshClient] = js.native
-  var fallback: Boolean = js.native
-  var getServiceMethods: js.Any = js.native
-  var grpcVersion: String = js.native
-  var promise: js.UndefOr[PromiseConstructor] = js.native
+  
   /**
     * gRPC-fallback version of constructSettings
     * A wrapper of {@link constructSettings} function under the gRPC context.
@@ -56,6 +53,7 @@ class GrpcClient () extends js.Object {
     configOverrides: ClientConfig,
     headers: OutgoingHttpHeaders
   ): js.Any = js.native
+  
   /**
     * gRPC-fallback version of createStub
     * Creates a gRPC-fallback stub with authentication headers built from supplied OAuth2Client instance
@@ -68,6 +66,13 @@ class GrpcClient () extends js.Object {
     * @return {Promise} A promise which resolves to a gRPC-fallback service stub, which is a protobuf.js service stub instance modified to match the gRPC stub API
     */
   def createStub(service: Service, opts: ClientStubOptions): js.Promise[FallbackServiceStub] = js.native
+  
+  var fallback: Boolean = js.native
+  
+  var getServiceMethods: js.Any = js.native
+  
+  var grpcVersion: String = js.native
+  
   /**
     * gRPC-fallback version of loadProto
     * Loads the protobuf root object from a JSON object created from a proto file
@@ -76,4 +81,3 @@ class GrpcClient () extends js.Object {
     */
   def loadProto(jsonObject: js.Object): Root = js.native
 }
-

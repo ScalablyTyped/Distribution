@@ -6,6 +6,7 @@ import typings.ionicCore.ionicCoreStrings.eager
 import typings.ionicCore.ionicCoreStrings.high
 import typings.ionicCore.ionicCoreStrings.low
 import typings.std.ReferrerPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,120 +69,108 @@ object IframeHTMLAttributes {
   }
   
   @scala.inline
-  implicit class IframeHTMLAttributesOps[Self <: IframeHTMLAttributes[_], T] (val x: Self with IframeHTMLAttributes[T]) extends AnyVal {
+  implicit class IframeHTMLAttributesMutableBuilder[Self <: IframeHTMLAttributes[_], T] (val x: Self with IframeHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
     
     @scala.inline
-    def setAllow(value: String): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def setAllowTransparency(value: Boolean): Self = StObject.set(x, "allowTransparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
+    def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
     
     @scala.inline
-    def setAllowFullScreen(value: Boolean): Self = this.set("allowFullScreen", value.asInstanceOf[js.Any])
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def deleteAllowFullScreen: Self = this.set("allowFullScreen", js.undefined)
+    def setFrameBorder(value: Double | String): Self = StObject.set(x, "frameBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTransparency(value: Boolean): Self = this.set("allowTransparency", value.asInstanceOf[js.Any])
+    def setFrameBorderUndefined: Self = StObject.set(x, "frameBorder", js.undefined)
     
     @scala.inline
-    def deleteAllowTransparency: Self = this.set("allowTransparency", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameBorder(value: Double | String): Self = this.set("frameBorder", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFrameBorder: Self = this.set("frameBorder", js.undefined)
+    def setImportance(value: low | auto | high): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLoading(value: `lazy` | auto | eager): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: low | auto | high): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setMarginHeight(value: Double): Self = StObject.set(x, "marginHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: `lazy` | auto | eager): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setMarginHeightUndefined: Self = StObject.set(x, "marginHeight", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setMarginWidth(value: Double): Self = StObject.set(x, "marginWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginHeight(value: Double): Self = this.set("marginHeight", value.asInstanceOf[js.Any])
+    def setMarginWidthUndefined: Self = StObject.set(x, "marginWidth", js.undefined)
     
     @scala.inline
-    def deleteMarginHeight: Self = this.set("marginHeight", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginWidth(value: Double): Self = this.set("marginWidth", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMarginWidth: Self = this.set("marginWidth", js.undefined)
+    def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSandbox(value: String): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferrerPolicy(value: ReferrerPolicy): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
+    def setScrolling(value: String): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: String): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
     
     @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrolling(value: String): Self = this.set("scrolling", value.asInstanceOf[js.Any])
+    def setSeamlessUndefined: Self = StObject.set(x, "seamless", js.undefined)
     
     @scala.inline
-    def deleteScrolling: Self = this.set("scrolling", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeamless(value: Boolean): Self = this.set("seamless", value.asInstanceOf[js.Any])
+    def setSrcDoc(value: String): Self = StObject.set(x, "srcDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeamless: Self = this.set("seamless", js.undefined)
+    def setSrcDocUndefined: Self = StObject.set(x, "srcDoc", js.undefined)
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcDoc(value: String): Self = this.set("srcDoc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcDoc: Self = this.set("srcDoc", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

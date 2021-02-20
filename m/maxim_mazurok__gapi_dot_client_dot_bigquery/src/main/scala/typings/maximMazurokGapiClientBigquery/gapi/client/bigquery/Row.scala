@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Row extends js.Object {
+trait Row extends StObject {
   
   /** The original label of this row. */
   var actualLabel: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object Row {
   }
   
   @scala.inline
-  implicit class RowOps[Self <: Row] (val x: Self) extends AnyVal {
+  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualLabel(value: String): Self = StObject.set(x, "actualLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualLabelUndefined: Self = StObject.set(x, "actualLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: js.Array[Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualLabel(value: String): Self = this.set("actualLabel", value.asInstanceOf[js.Any])
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def deleteActualLabel: Self = this.set("actualLabel", js.undefined)
-    
-    @scala.inline
-    def setEntriesVarargs(value: Entry*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[Entry]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setEntriesVarargs(value: Entry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

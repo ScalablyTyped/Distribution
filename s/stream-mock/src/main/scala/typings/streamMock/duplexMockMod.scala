@@ -7,13 +7,22 @@ import typings.node.streamMod.DuplexOptions
 import typings.std.ArrayLike
 import typings.std.Iterable
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stream-mock/lib/duplex/DuplexMock", JSImport.Namespace)
-@js.native
-object duplexMockMod extends js.Object {
+object duplexMockMod {
+  
+  @JSImport("stream-mock/lib/duplex/DuplexMock", JSImport.Default)
+  @js.native
+  class default () extends DuplexMock {
+    def this(source: ArrayLike[_]) = this()
+    def this(source: Iterable[_]) = this()
+    def this(source: js.UndefOr[scala.Nothing], options: DuplexOptions) = this()
+    def this(source: ArrayLike[_], options: DuplexOptions) = this()
+    def this(source: Iterable[_], options: DuplexOptions) = this()
+  }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.node.eventsMod.global.NodeJS.EventEmitter because Already inherited
@@ -43,14 +52,5 @@ object duplexMockMod extends js.Object {
     var it: IterableIterator[_] = js.native
     
     var objectMode: Boolean = js.native
-  }
-  
-  @js.native
-  class default () extends DuplexMock {
-    def this(source: ArrayLike[_]) = this()
-    def this(source: Iterable[_]) = this()
-    def this(source: js.UndefOr[scala.Nothing], options: DuplexOptions) = this()
-    def this(source: ArrayLike[_], options: DuplexOptions) = this()
-    def this(source: Iterable[_], options: DuplexOptions) = this()
   }
 }

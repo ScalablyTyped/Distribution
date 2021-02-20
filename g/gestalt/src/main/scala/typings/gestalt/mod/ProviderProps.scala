@@ -3,12 +3,13 @@ package typings.gestalt.mod
 import typings.gestalt.gestaltStrings.dark
 import typings.gestalt.gestaltStrings.light
 import typings.gestalt.gestaltStrings.userPreference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProviderProps extends js.Object {
+trait ProviderProps extends StObject {
   
   var colorScheme: js.UndefOr[light | dark | userPreference] = js.native
   
@@ -23,30 +24,18 @@ object ProviderProps {
   }
   
   @scala.inline
-  implicit class ProviderPropsOps[Self <: ProviderProps] (val x: Self) extends AnyVal {
+  implicit class ProviderPropsMutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorScheme(value: light | dark | userPreference): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScheme(value: light | dark | userPreference): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

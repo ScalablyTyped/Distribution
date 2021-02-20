@@ -1,11 +1,12 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Player extends js.Object {
+trait Player extends StObject {
   
   /**
     * Returns a promise that resolves with whether the player can subscribe to the game bot or not.

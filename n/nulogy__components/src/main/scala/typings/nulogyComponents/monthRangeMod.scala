@@ -1,12 +1,13 @@
 package typings.nulogyComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nulogy/components/src/MonthRange", JSImport.Namespace)
-@js.native
-object monthRangeMod extends js.Object {
+object monthRangeMod {
   
+  @JSImport("@nulogy/components/src/MonthRange", "MonthRange")
+  @js.native
   val MonthRange: js.Any = js.native
 }

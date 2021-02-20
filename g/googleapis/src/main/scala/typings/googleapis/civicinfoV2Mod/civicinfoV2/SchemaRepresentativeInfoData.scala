@@ -1,12 +1,13 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaRepresentativeInfoData extends js.Object {
+trait SchemaRepresentativeInfoData extends StObject {
   
   /**
     * Political geographic divisions that contain the requested address.
@@ -34,42 +35,30 @@ object SchemaRepresentativeInfoData {
   }
   
   @scala.inline
-  implicit class SchemaRepresentativeInfoDataOps[Self <: SchemaRepresentativeInfoData] (val x: Self) extends AnyVal {
+  implicit class SchemaRepresentativeInfoDataMutableBuilder[Self <: SchemaRepresentativeInfoData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDivisions(value: StringDictionary[SchemaGeographicDivision]): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDivisionsUndefined: Self = StObject.set(x, "divisions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffices(value: js.Array[SchemaOffice]): Self = StObject.set(x, "offices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivisions(value: StringDictionary[SchemaGeographicDivision]): Self = this.set("divisions", value.asInstanceOf[js.Any])
+    def setOfficesUndefined: Self = StObject.set(x, "offices", js.undefined)
     
     @scala.inline
-    def deleteDivisions: Self = this.set("divisions", js.undefined)
+    def setOfficesVarargs(value: SchemaOffice*): Self = StObject.set(x, "offices", js.Array(value :_*))
     
     @scala.inline
-    def setOfficesVarargs(value: SchemaOffice*): Self = this.set("offices", js.Array(value :_*))
+    def setOfficials(value: js.Array[SchemaOfficial]): Self = StObject.set(x, "officials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffices(value: js.Array[SchemaOffice]): Self = this.set("offices", value.asInstanceOf[js.Any])
+    def setOfficialsUndefined: Self = StObject.set(x, "officials", js.undefined)
     
     @scala.inline
-    def deleteOffices: Self = this.set("offices", js.undefined)
-    
-    @scala.inline
-    def setOfficialsVarargs(value: SchemaOfficial*): Self = this.set("officials", js.Array(value :_*))
-    
-    @scala.inline
-    def setOfficials(value: js.Array[SchemaOfficial]): Self = this.set("officials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfficials: Self = this.set("officials", js.undefined)
+    def setOfficialsVarargs(value: SchemaOfficial*): Self = StObject.set(x, "officials", js.Array(value :_*))
   }
 }

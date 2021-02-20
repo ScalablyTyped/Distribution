@@ -1,18 +1,19 @@
 package typings.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynaTreeAjaxOptions extends js.Object {
+trait DynaTreeAjaxOptions extends StObject {
   
   var cache: js.UndefOr[Boolean] = js.native
   
-   // >0: Make sure we get an ajax error for invalid URLs
+  // >0: Make sure we get an ajax error for invalid URLs
   var dataType: js.UndefOr[String] = js.native
   
-   // false: Append random '_' argument to the request url to prevent caching.
+  // false: Append random '_' argument to the request url to prevent caching.
   var timeout: js.UndefOr[Double] = js.native
 }
 object DynaTreeAjaxOptions {
@@ -24,36 +25,24 @@ object DynaTreeAjaxOptions {
   }
   
   @scala.inline
-  implicit class DynaTreeAjaxOptionsOps[Self <: DynaTreeAjaxOptions] (val x: Self) extends AnyVal {
+  implicit class DynaTreeAjaxOptionsMutableBuilder[Self <: DynaTreeAjaxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

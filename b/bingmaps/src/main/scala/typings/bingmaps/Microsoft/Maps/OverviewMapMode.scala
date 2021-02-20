@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverviewMapMode extends js.Object
+sealed trait OverviewMapMode extends StObject
 @JSGlobal("Microsoft.Maps.OverviewMapMode")
 @js.native
-object OverviewMapMode extends js.Object {
+object OverviewMapMode extends StObject {
   
   /** Shows the overview map in an expanded state. */
   @js.native

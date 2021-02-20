@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResult extends js.Object {
+trait QueryResult extends StObject {
   
   /** EntityManager that executed the query */
   var entityManager: js.UndefOr[EntityManager] = js.native
@@ -34,51 +35,39 @@ object QueryResult {
   }
   
   @scala.inline
-  implicit class QueryResultOps[Self <: QueryResult] (val x: Self) extends AnyVal {
+  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityManagerUndefined: Self = StObject.set(x, "entityManager", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpResponse(value: HttpResponse): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpResponse(value: HttpResponse): Self = this.set("httpResponse", value.asInstanceOf[js.Any])
+    def setInlineCount(value: Double): Self = StObject.set(x, "inlineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: EntityQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setInlineCountUndefined: Self = StObject.set(x, "inlineCount", js.undefined)
     
     @scala.inline
-    def setResultsVarargs(value: Entity*): Self = this.set("results", js.Array(value :_*))
+    def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[Entity]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResults(value: js.Array[Entity]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityManager(value: EntityManager): Self = this.set("entityManager", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: Entity*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def deleteEntityManager: Self = this.set("entityManager", js.undefined)
+    def setRetrievedEntities(value: js.Array[Entity]): Self = StObject.set(x, "retrievedEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineCount(value: Double): Self = this.set("inlineCount", value.asInstanceOf[js.Any])
+    def setRetrievedEntitiesUndefined: Self = StObject.set(x, "retrievedEntities", js.undefined)
     
     @scala.inline
-    def deleteInlineCount: Self = this.set("inlineCount", js.undefined)
-    
-    @scala.inline
-    def setRetrievedEntitiesVarargs(value: Entity*): Self = this.set("retrievedEntities", js.Array(value :_*))
-    
-    @scala.inline
-    def setRetrievedEntities(value: js.Array[Entity]): Self = this.set("retrievedEntities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetrievedEntities: Self = this.set("retrievedEntities", js.undefined)
+    def setRetrievedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "retrievedEntities", js.Array(value :_*))
   }
 }

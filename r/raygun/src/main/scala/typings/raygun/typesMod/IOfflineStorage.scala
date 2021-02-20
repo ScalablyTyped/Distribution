@@ -2,12 +2,13 @@ package typings.raygun.typesMod
 
 import typings.node.NodeJS.ErrnoException
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOfflineStorage extends js.Object {
+trait IOfflineStorage extends StObject {
   
   def init(): Unit = js.native
   def init(options: OfflineStorageOptions): Unit = js.native

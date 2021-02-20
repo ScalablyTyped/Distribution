@@ -1,11 +1,12 @@
 package typings.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountInfo extends js.Object {
+trait AccountInfo extends StObject {
   
   var countryCode: String = js.native
   
@@ -50,51 +51,39 @@ object AccountInfo {
   }
   
   @scala.inline
-  implicit class AccountInfoOps[Self <: AccountInfo] (val x: Self) extends AnyVal {
+  implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJson(value: () => js.Object): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setPrivateBytes(value: Double): Self = StObject.set(x, "privateBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: () => js.Object): Self = this.set("json", js.Any.fromFunction0(value))
+    def setPublicAppUrl(value: String): Self = StObject.set(x, "publicAppUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateBytes(value: Double): Self = this.set("privateBytes", value.asInstanceOf[js.Any])
+    def setReferralUrl(value: String): Self = StObject.set(x, "referralUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicAppUrl(value: String): Self = this.set("publicAppUrl", value.asInstanceOf[js.Any])
+    def setSharedBytes(value: Double): Self = StObject.set(x, "sharedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: Double): Self = this.set("quota", value.asInstanceOf[js.Any])
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferralUrl(value: String): Self = this.set("referralUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedBytes(value: Double): Self = this.set("sharedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedQuota(value: Double): Self = this.set("usedQuota", value.asInstanceOf[js.Any])
+    def setUsedQuota(value: Double): Self = StObject.set(x, "usedQuota", value.asInstanceOf[js.Any])
   }
 }

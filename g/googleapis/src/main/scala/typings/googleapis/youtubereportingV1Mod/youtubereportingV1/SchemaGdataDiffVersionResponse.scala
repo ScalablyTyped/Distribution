@@ -1,5 +1,6 @@
 package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gdata
   */
 @js.native
-trait SchemaGdataDiffVersionResponse extends js.Object {
+trait SchemaGdataDiffVersionResponse extends StObject {
   
   /**
     * gdata
@@ -29,30 +30,18 @@ object SchemaGdataDiffVersionResponse {
   }
   
   @scala.inline
-  implicit class SchemaGdataDiffVersionResponseOps[Self <: SchemaGdataDiffVersionResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGdataDiffVersionResponseMutableBuilder[Self <: SchemaGdataDiffVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectSizeBytes(value: String): Self = this.set("objectSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectSizeBytes: Self = this.set("objectSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
+    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

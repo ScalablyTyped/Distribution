@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePipelineRequest extends js.Object {
+trait UpdatePipelineRequest extends StObject {
   
   /**
     * The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline. If you use either s3 or s3-aws-kms as your Encryption:Mode, you don't need to provide a key with your job because a default key, known as an AWS-KMS key, is created for you automatically. You need to provide an AWS-KMS key only if you want to use a non-default AWS-KMS key, or if you are using an Encryption:Mode of aes-cbc-pkcs7, aes-ctr, or aes-gcm.
@@ -56,63 +57,51 @@ object UpdatePipelineRequest {
   }
   
   @scala.inline
-  implicit class UpdatePipelineRequestOps[Self <: UpdatePipelineRequest] (val x: Self) extends AnyVal {
+  implicit class UpdatePipelineRequestMutableBuilder[Self <: UpdatePipelineRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsKmsKeyArn(value: KeyArn): Self = StObject.set(x, "AwsKmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "AwsKmsKeyArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ContentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setContentConfigUndefined: Self = StObject.set(x, "ContentConfig", js.undefined)
     
     @scala.inline
-    def setAwsKmsKeyArn(value: KeyArn): Self = this.set("AwsKmsKeyArn", value.asInstanceOf[js.Any])
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwsKmsKeyArn: Self = this.set("AwsKmsKeyArn", js.undefined)
+    def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentConfig(value: PipelineOutputConfig): Self = this.set("ContentConfig", value.asInstanceOf[js.Any])
+    def setInputBucketUndefined: Self = StObject.set(x, "InputBucket", js.undefined)
     
     @scala.inline
-    def deleteContentConfig: Self = this.set("ContentConfig", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputBucket(value: BucketName): Self = this.set("InputBucket", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteInputBucket: Self = this.set("InputBucket", js.undefined)
+    def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifications(value: Notifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+    def setThumbnailConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ThumbnailConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
-    
-    @scala.inline
-    def setThumbnailConfig(value: PipelineOutputConfig): Self = this.set("ThumbnailConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailConfig: Self = this.set("ThumbnailConfig", js.undefined)
+    def setThumbnailConfigUndefined: Self = StObject.set(x, "ThumbnailConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceInfo extends js.Object {
+trait InstanceInfo extends StObject {
   
   /**
     * If the on-premises instance was deregistered, the time at which the on-premises instance was deregistered.
@@ -51,63 +52,51 @@ object InstanceInfo {
   }
   
   @scala.inline
-  implicit class InstanceInfoOps[Self <: InstanceInfo] (val x: Self) extends AnyVal {
+  implicit class InstanceInfoMutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeregisterTime(value: Timestamp): Self = StObject.set(x, "deregisterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeregisterTimeUndefined: Self = StObject.set(x, "deregisterTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeregisterTime(value: Timestamp): Self = this.set("deregisterTime", value.asInstanceOf[js.Any])
+    def setIamSessionArnUndefined: Self = StObject.set(x, "iamSessionArn", js.undefined)
     
     @scala.inline
-    def deleteDeregisterTime: Self = this.set("deregisterTime", js.undefined)
+    def setIamUserArn(value: IamUserArn): Self = StObject.set(x, "iamUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamSessionArn(value: IamSessionArn): Self = this.set("iamSessionArn", value.asInstanceOf[js.Any])
+    def setIamUserArnUndefined: Self = StObject.set(x, "iamUserArn", js.undefined)
     
     @scala.inline
-    def deleteIamSessionArn: Self = this.set("iamSessionArn", js.undefined)
+    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamUserArn(value: IamUserArn): Self = this.set("iamUserArn", value.asInstanceOf[js.Any])
+    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
     @scala.inline
-    def deleteIamUserArn: Self = this.set("iamUserArn", js.undefined)
+    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
     @scala.inline
-    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: InstanceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
     
     @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisterTime(value: Timestamp): Self = this.set("registerTime", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRegisterTime: Self = this.set("registerTime", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

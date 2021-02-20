@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorProviderObjectCombo extends js.Object {
+trait EditorProviderObjectCombo extends StObject {
   
   def createEditor(
     callbacks: js.Object,
@@ -63,57 +64,45 @@ object EditorProviderObjectCombo {
   }
   
   @scala.inline
-  implicit class EditorProviderObjectComboOps[Self <: EditorProviderObjectCombo] (val x: Self) extends AnyVal {
+  implicit class EditorProviderObjectComboMutableBuilder[Self <: EditorProviderObjectCombo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction6(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValue(value: () => Unit): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = this.set("createEditor", js.Any.fromFunction6(value))
+    def setInternalSelectionChanged(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "internalSelectionChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setIsValid(value: () => Unit): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetValue(value: () => Unit): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setKeyDown(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "keyDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInternalSelectionChanged(value: (js.Object, js.Object) => Unit): Self = this.set("internalSelectionChanged", js.Any.fromFunction2(value))
+    def setRefreshValue(value: () => Unit): Self = StObject.set(x, "refreshValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsValid(value: () => Unit): Self = this.set("isValid", js.Any.fromFunction0(value))
+    def setRemoveFromParent(value: () => Unit): Self = StObject.set(x, "removeFromParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKeyDown(value: (js.Object, js.Object) => Unit): Self = this.set("keyDown", js.Any.fromFunction2(value))
+    def setSelectionChanged(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRefreshValue(value: () => Unit): Self = this.set("refreshValue", js.Any.fromFunction0(value))
+    def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemoveFromParent(value: () => Unit): Self = this.set("removeFromParent", js.Any.fromFunction0(value))
+    def setSetSize(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectionChanged(value: (js.Object, js.Object) => Unit): Self = this.set("selectionChanged", js.Any.fromFunction2(value))
+    def setSetValue(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetFocus(value: () => Unit): Self = this.set("setFocus", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetSize(value: (js.Object, js.Object) => Unit): Self = this.set("setSize", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetValue(value: (js.Object, js.Object) => Unit): Self = this.set("setValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValidator(value: () => Unit): Self = this.set("validator", js.Any.fromFunction0(value))
+    def setValidator(value: () => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction0(value))
   }
 }

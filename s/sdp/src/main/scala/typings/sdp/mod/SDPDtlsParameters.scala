@@ -1,11 +1,12 @@
 package typings.sdp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SDPDtlsParameters extends js.Object {
+trait SDPDtlsParameters extends StObject {
   
   var fingerprints: js.Array[SDPFingerprint] = js.native
   
@@ -20,27 +21,15 @@ object SDPDtlsParameters {
   }
   
   @scala.inline
-  implicit class SDPDtlsParametersOps[Self <: SDPDtlsParameters] (val x: Self) extends AnyVal {
+  implicit class SDPDtlsParametersMutableBuilder[Self <: SDPDtlsParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingerprints(value: js.Array[SDPFingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerprintsVarargs(value: SDPFingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFingerprintsVarargs(value: SDPFingerprint*): Self = this.set("fingerprints", js.Array(value :_*))
-    
-    @scala.inline
-    def setFingerprints(value: js.Array[SDPFingerprint]): Self = this.set("fingerprints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

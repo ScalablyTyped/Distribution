@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.XMLHttpRequest
   - typings.devtoolsProtocol.devtoolsProtocolStrings.XSLT
 */
-trait MixedContentResourceType extends js.Object
+trait MixedContentResourceType extends StObject
 object MixedContentResourceType {
   
   @scala.inline

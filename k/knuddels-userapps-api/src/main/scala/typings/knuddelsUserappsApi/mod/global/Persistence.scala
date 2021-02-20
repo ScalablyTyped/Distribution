@@ -1,6 +1,7 @@
 package typings.knuddelsUserappsApi.mod.global
 
 import typings.knuddelsUserappsApi.mod.KnuddelsSerializable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("Persistence")
 @js.native
-class Persistence () extends js.Object {
+class Persistence () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_addNumber

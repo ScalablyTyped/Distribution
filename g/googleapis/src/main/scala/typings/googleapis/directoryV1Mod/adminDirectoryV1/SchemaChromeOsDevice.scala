@@ -7,6 +7,7 @@ import typings.googleapis.anon.Email
 import typings.googleapis.anon.Family
 import typings.googleapis.anon.ReportTime
 import typings.googleapis.anon.VolumeInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for Chrome Os Device resource in Directory API.
   */
 @js.native
-trait SchemaChromeOsDevice extends js.Object {
+trait SchemaChromeOsDevice extends StObject {
   
   /**
     * List of active time ranges (Read-only)
@@ -184,222 +185,210 @@ object SchemaChromeOsDevice {
   }
   
   @scala.inline
-  implicit class SchemaChromeOsDeviceOps[Self <: SchemaChromeOsDevice] (val x: Self) extends AnyVal {
+  implicit class SchemaChromeOsDeviceMutableBuilder[Self <: SchemaChromeOsDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTimeRanges(value: js.Array[ActiveTime]): Self = StObject.set(x, "activeTimeRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTimeRangesUndefined: Self = StObject.set(x, "activeTimeRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveTimeRangesVarargs(value: ActiveTime*): Self = StObject.set(x, "activeTimeRanges", js.Array(value :_*))
     
     @scala.inline
-    def setActiveTimeRangesVarargs(value: ActiveTime*): Self = this.set("activeTimeRanges", js.Array(value :_*))
+    def setAnnotatedAssetId(value: String): Self = StObject.set(x, "annotatedAssetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTimeRanges(value: js.Array[ActiveTime]): Self = this.set("activeTimeRanges", value.asInstanceOf[js.Any])
+    def setAnnotatedAssetIdUndefined: Self = StObject.set(x, "annotatedAssetId", js.undefined)
     
     @scala.inline
-    def deleteActiveTimeRanges: Self = this.set("activeTimeRanges", js.undefined)
+    def setAnnotatedLocation(value: String): Self = StObject.set(x, "annotatedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatedAssetId(value: String): Self = this.set("annotatedAssetId", value.asInstanceOf[js.Any])
+    def setAnnotatedLocationUndefined: Self = StObject.set(x, "annotatedLocation", js.undefined)
     
     @scala.inline
-    def deleteAnnotatedAssetId: Self = this.set("annotatedAssetId", js.undefined)
+    def setAnnotatedUser(value: String): Self = StObject.set(x, "annotatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatedLocation(value: String): Self = this.set("annotatedLocation", value.asInstanceOf[js.Any])
+    def setAnnotatedUserUndefined: Self = StObject.set(x, "annotatedUser", js.undefined)
     
     @scala.inline
-    def deleteAnnotatedLocation: Self = this.set("annotatedLocation", js.undefined)
+    def setBootMode(value: String): Self = StObject.set(x, "bootMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatedUser(value: String): Self = this.set("annotatedUser", value.asInstanceOf[js.Any])
+    def setBootModeUndefined: Self = StObject.set(x, "bootMode", js.undefined)
     
     @scala.inline
-    def deleteAnnotatedUser: Self = this.set("annotatedUser", js.undefined)
+    def setCpuStatusReports(value: js.Array[CpuTemperatureInfo]): Self = StObject.set(x, "cpuStatusReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootMode(value: String): Self = this.set("bootMode", value.asInstanceOf[js.Any])
+    def setCpuStatusReportsUndefined: Self = StObject.set(x, "cpuStatusReports", js.undefined)
     
     @scala.inline
-    def deleteBootMode: Self = this.set("bootMode", js.undefined)
+    def setCpuStatusReportsVarargs(value: CpuTemperatureInfo*): Self = StObject.set(x, "cpuStatusReports", js.Array(value :_*))
     
     @scala.inline
-    def setCpuStatusReportsVarargs(value: CpuTemperatureInfo*): Self = this.set("cpuStatusReports", js.Array(value :_*))
+    def setDeviceFiles(value: js.Array[CreateTime]): Self = StObject.set(x, "deviceFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuStatusReports(value: js.Array[CpuTemperatureInfo]): Self = this.set("cpuStatusReports", value.asInstanceOf[js.Any])
+    def setDeviceFilesUndefined: Self = StObject.set(x, "deviceFiles", js.undefined)
     
     @scala.inline
-    def deleteCpuStatusReports: Self = this.set("cpuStatusReports", js.undefined)
+    def setDeviceFilesVarargs(value: CreateTime*): Self = StObject.set(x, "deviceFiles", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceFilesVarargs(value: CreateTime*): Self = this.set("deviceFiles", js.Array(value :_*))
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceFiles(value: js.Array[CreateTime]): Self = this.set("deviceFiles", value.asInstanceOf[js.Any])
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def deleteDeviceFiles: Self = this.set("deviceFiles", js.undefined)
+    def setDiskVolumeReports(value: js.Array[VolumeInfo]): Self = StObject.set(x, "diskVolumeReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setDiskVolumeReportsUndefined: Self = StObject.set(x, "diskVolumeReports", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setDiskVolumeReportsVarargs(value: VolumeInfo*): Self = StObject.set(x, "diskVolumeReports", js.Array(value :_*))
     
     @scala.inline
-    def setDiskVolumeReportsVarargs(value: VolumeInfo*): Self = this.set("diskVolumeReports", js.Array(value :_*))
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskVolumeReports(value: js.Array[VolumeInfo]): Self = this.set("diskVolumeReports", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDiskVolumeReports: Self = this.set("diskVolumeReports", js.undefined)
+    def setEthernetMacAddress(value: String): Self = StObject.set(x, "ethernetMacAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setEthernetMacAddressUndefined: Self = StObject.set(x, "ethernetMacAddress", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEthernetMacAddress(value: String): Self = this.set("ethernetMacAddress", value.asInstanceOf[js.Any])
+    def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
     
     @scala.inline
-    def deleteEthernetMacAddress: Self = this.set("ethernetMacAddress", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareVersion(value: String): Self = this.set("firmwareVersion", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFirmwareVersion: Self = this.set("firmwareVersion", js.undefined)
+    def setLastEnrollmentTime(value: String): Self = StObject.set(x, "lastEnrollmentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastEnrollmentTimeUndefined: Self = StObject.set(x, "lastEnrollmentTime", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLastSync(value: String): Self = StObject.set(x, "lastSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEnrollmentTime(value: String): Self = this.set("lastEnrollmentTime", value.asInstanceOf[js.Any])
+    def setLastSyncUndefined: Self = StObject.set(x, "lastSync", js.undefined)
     
     @scala.inline
-    def deleteLastEnrollmentTime: Self = this.set("lastEnrollmentTime", js.undefined)
+    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSync(value: String): Self = this.set("lastSync", value.asInstanceOf[js.Any])
+    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
     
     @scala.inline
-    def deleteLastSync: Self = this.set("lastSync", js.undefined)
+    def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacAddress(value: String): Self = this.set("macAddress", value.asInstanceOf[js.Any])
+    def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
     
     @scala.inline
-    def deleteMacAddress: Self = this.set("macAddress", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeid(value: String): Self = this.set("meid", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteMeid: Self = this.set("meid", js.undefined)
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setOrderNumber(value: String): Self = StObject.set(x, "orderNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setOrderNumberUndefined: Self = StObject.set(x, "orderNumber", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderNumber(value: String): Self = this.set("orderNumber", value.asInstanceOf[js.Any])
+    def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
     
     @scala.inline
-    def deleteOrderNumber: Self = this.set("orderNumber", js.undefined)
+    def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnitPath(value: String): Self = this.set("orgUnitPath", value.asInstanceOf[js.Any])
+    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
     @scala.inline
-    def deleteOrgUnitPath: Self = this.set("orgUnitPath", js.undefined)
+    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsVersion(value: String): Self = this.set("osVersion", value.asInstanceOf[js.Any])
+    def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
     
     @scala.inline
-    def deleteOsVersion: Self = this.set("osVersion", js.undefined)
+    def setRecentUsers(value: js.Array[Email]): Self = StObject.set(x, "recentUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    def setRecentUsersUndefined: Self = StObject.set(x, "recentUsers", js.undefined)
     
     @scala.inline
-    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    def setRecentUsersVarargs(value: Email*): Self = StObject.set(x, "recentUsers", js.Array(value :_*))
     
     @scala.inline
-    def setRecentUsersVarargs(value: Email*): Self = this.set("recentUsers", js.Array(value :_*))
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentUsers(value: js.Array[Email]): Self = this.set("recentUsers", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
     @scala.inline
-    def deleteRecentUsers: Self = this.set("recentUsers", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    def setSupportEndDate(value: String): Self = StObject.set(x, "supportEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSupportEndDateUndefined: Self = StObject.set(x, "supportEndDate", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSystemRamFreeReports(value: js.Array[ReportTime]): Self = StObject.set(x, "systemRamFreeReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportEndDate(value: String): Self = this.set("supportEndDate", value.asInstanceOf[js.Any])
+    def setSystemRamFreeReportsUndefined: Self = StObject.set(x, "systemRamFreeReports", js.undefined)
     
     @scala.inline
-    def deleteSupportEndDate: Self = this.set("supportEndDate", js.undefined)
+    def setSystemRamFreeReportsVarargs(value: ReportTime*): Self = StObject.set(x, "systemRamFreeReports", js.Array(value :_*))
     
     @scala.inline
-    def setSystemRamFreeReportsVarargs(value: ReportTime*): Self = this.set("systemRamFreeReports", js.Array(value :_*))
+    def setSystemRamTotal(value: String): Self = StObject.set(x, "systemRamTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemRamFreeReports(value: js.Array[ReportTime]): Self = this.set("systemRamFreeReports", value.asInstanceOf[js.Any])
+    def setSystemRamTotalUndefined: Self = StObject.set(x, "systemRamTotal", js.undefined)
     
     @scala.inline
-    def deleteSystemRamFreeReports: Self = this.set("systemRamFreeReports", js.undefined)
+    def setTpmVersionInfo(value: Family): Self = StObject.set(x, "tpmVersionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemRamTotal(value: String): Self = this.set("systemRamTotal", value.asInstanceOf[js.Any])
+    def setTpmVersionInfoUndefined: Self = StObject.set(x, "tpmVersionInfo", js.undefined)
     
     @scala.inline
-    def deleteSystemRamTotal: Self = this.set("systemRamTotal", js.undefined)
+    def setWillAutoRenew(value: Boolean): Self = StObject.set(x, "willAutoRenew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTpmVersionInfo(value: Family): Self = this.set("tpmVersionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpmVersionInfo: Self = this.set("tpmVersionInfo", js.undefined)
-    
-    @scala.inline
-    def setWillAutoRenew(value: Boolean): Self = this.set("willAutoRenew", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWillAutoRenew: Self = this.set("willAutoRenew", js.undefined)
+    def setWillAutoRenewUndefined: Self = StObject.set(x, "willAutoRenew", js.undefined)
   }
 }

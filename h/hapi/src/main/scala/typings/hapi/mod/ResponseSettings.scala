@@ -1,12 +1,13 @@
 package typings.hapi.mod
 
 import typings.hapi.mod.Json.StringifyArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseSettings extends js.Object {
+trait ResponseSettings extends StObject {
   
   /**
     * Defaults value: true.
@@ -41,30 +42,18 @@ object ResponseSettings {
   }
   
   @scala.inline
-  implicit class ResponseSettingsOps[Self <: ResponseSettings] (val x: Self) extends AnyVal {
+  implicit class ResponseSettingsMutableBuilder[Self <: ResponseSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassThrough(value: Boolean): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStringify(value: StringifyArguments): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassThrough(value: Boolean): Self = this.set("passThrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStringify(value: StringifyArguments): Self = this.set("stringify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVaryEtag(value: Boolean): Self = this.set("varyEtag", value.asInstanceOf[js.Any])
+    def setVaryEtag(value: Boolean): Self = StObject.set(x, "varyEtag", value.asInstanceOf[js.Any])
   }
 }

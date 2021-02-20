@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CommentChangeType extends js.Object
+sealed trait CommentChangeType extends StObject
 /**
   *
   * Represents how the comments in the event were changed.
@@ -14,7 +15,7 @@ sealed trait CommentChangeType extends js.Object
   */
 @JSGlobal("Excel.CommentChangeType")
 @js.native
-object CommentChangeType extends js.Object {
+object CommentChangeType extends StObject {
   
   /**
     * Comments were edited.

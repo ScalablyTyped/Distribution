@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualExpandedKey :react-table.react-table.IdType<D>,   paginateExpandedRows :boolean,   expandSubRows :boolean,   autoResetExpanded :boolean | undefined}> */
 @js.native
-trait UseExpandedOptions[D /* <: js.Object */] extends js.Object {
+trait UseExpandedOptions[D /* <: js.Object */] extends StObject {
   
   var autoResetExpanded: js.UndefOr[Boolean] = js.native
   
@@ -25,42 +26,30 @@ object UseExpandedOptions {
   }
   
   @scala.inline
-  implicit class UseExpandedOptionsOps[Self <: UseExpandedOptions[_], D /* <: js.Object */] (val x: Self with UseExpandedOptions[D]) extends AnyVal {
+  implicit class UseExpandedOptionsMutableBuilder[Self <: UseExpandedOptions[_], D /* <: js.Object */] (val x: Self with UseExpandedOptions[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoResetExpanded(value: Boolean): Self = StObject.set(x, "autoResetExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoResetExpandedUndefined: Self = StObject.set(x, "autoResetExpanded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandSubRows(value: Boolean): Self = StObject.set(x, "expandSubRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResetExpanded(value: Boolean): Self = this.set("autoResetExpanded", value.asInstanceOf[js.Any])
+    def setExpandSubRowsUndefined: Self = StObject.set(x, "expandSubRows", js.undefined)
     
     @scala.inline
-    def deleteAutoResetExpanded: Self = this.set("autoResetExpanded", js.undefined)
+    def setManualExpandedKey(value: IdType[D]): Self = StObject.set(x, "manualExpandedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandSubRows(value: Boolean): Self = this.set("expandSubRows", value.asInstanceOf[js.Any])
+    def setManualExpandedKeyUndefined: Self = StObject.set(x, "manualExpandedKey", js.undefined)
     
     @scala.inline
-    def deleteExpandSubRows: Self = this.set("expandSubRows", js.undefined)
+    def setPaginateExpandedRows(value: Boolean): Self = StObject.set(x, "paginateExpandedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualExpandedKey(value: IdType[D]): Self = this.set("manualExpandedKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualExpandedKey: Self = this.set("manualExpandedKey", js.undefined)
-    
-    @scala.inline
-    def setPaginateExpandedRows(value: Boolean): Self = this.set("paginateExpandedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginateExpandedRows: Self = this.set("paginateExpandedRows", js.undefined)
+    def setPaginateExpandedRowsUndefined: Self = StObject.set(x, "paginateExpandedRows", js.undefined)
   }
 }

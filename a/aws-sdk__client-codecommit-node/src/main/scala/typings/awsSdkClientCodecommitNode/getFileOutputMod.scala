@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/GetFileOutput", JSImport.Namespace)
-@js.native
-object getFileOutputMod extends js.Object {
+object getFileOutputMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/GetFileOutput", "GetFileOutput")
+  @js.native
   val GetFileOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

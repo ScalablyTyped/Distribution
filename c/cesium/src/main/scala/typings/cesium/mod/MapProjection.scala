@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "MapProjection")
 @js.native
-class MapProjection () extends js.Object {
+class MapProjection () extends StObject {
   
   var ellipsoid: Ellipsoid = js.native
   

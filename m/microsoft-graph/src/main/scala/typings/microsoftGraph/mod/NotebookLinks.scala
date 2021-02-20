@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookLinks extends js.Object {
+trait NotebookLinks extends StObject {
   
   // Opens the notebook in the OneNote native client if it's installed.
   var oneNoteClientUrl: js.UndefOr[NullableOption[ExternalLink]] = js.native
@@ -22,36 +23,24 @@ object NotebookLinks {
   }
   
   @scala.inline
-  implicit class NotebookLinksOps[Self <: NotebookLinks] (val x: Self) extends AnyVal {
+  implicit class NotebookLinksMutableBuilder[Self <: NotebookLinks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteClientUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOneNoteClientUrlNull: Self = StObject.set(x, "oneNoteClientUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneNoteClientUrlUndefined: Self = StObject.set(x, "oneNoteClientUrl", js.undefined)
     
     @scala.inline
-    def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = this.set("oneNoteClientUrl", value.asInstanceOf[js.Any])
+    def setOneNoteWebUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteWebUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOneNoteClientUrl: Self = this.set("oneNoteClientUrl", js.undefined)
+    def setOneNoteWebUrlNull: Self = StObject.set(x, "oneNoteWebUrl", null)
     
     @scala.inline
-    def setOneNoteClientUrlNull: Self = this.set("oneNoteClientUrl", null)
-    
-    @scala.inline
-    def setOneNoteWebUrl(value: NullableOption[ExternalLink]): Self = this.set("oneNoteWebUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOneNoteWebUrl: Self = this.set("oneNoteWebUrl", js.undefined)
-    
-    @scala.inline
-    def setOneNoteWebUrlNull: Self = this.set("oneNoteWebUrl", null)
+    def setOneNoteWebUrlUndefined: Self = StObject.set(x, "oneNoteWebUrl", js.undefined)
   }
 }

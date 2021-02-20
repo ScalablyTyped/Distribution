@@ -3,6 +3,7 @@ package typings.officeJs.Office
 import typings.officeJs.Office.MailboxEnums.EntityType
 import typings.officeJs.Office.MailboxEnums.ItemType
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

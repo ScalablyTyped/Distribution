@@ -1,11 +1,12 @@
 package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwitchCases extends js.Object {
+trait SwitchCases extends StObject {
   
   /**
     * the required condition joi type.
@@ -26,30 +27,18 @@ object SwitchCases {
   }
   
   @scala.inline
-  implicit class SwitchCasesOps[Self <: SwitchCases] (val x: Self) extends AnyVal {
+  implicit class SwitchCasesMutableBuilder[Self <: SwitchCases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsNull: Self = StObject.set(x, "is", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs(value: SchemaLike): Self = this.set("is", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNull: Self = this.set("is", null)
-    
-    @scala.inline
-    def setThen(value: SchemaLike): Self = this.set("then", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThenNull: Self = this.set("then", null)
+    def setThenNull: Self = StObject.set(x, "then", null)
   }
 }

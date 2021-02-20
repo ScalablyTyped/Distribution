@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Active extends js.Object {
+trait Active extends StObject {
   
   var active: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object Active {
   }
   
   @scala.inline
-  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByDesign(value: scala.Double): Self = StObject.set(x, "byDesign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosed(value: scala.Double): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: scala.Double): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setFixed(value: scala.Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByDesign(value: scala.Double): Self = this.set("byDesign", value.asInstanceOf[js.Any])
+    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: scala.Double): Self = this.set("closed", value.asInstanceOf[js.Any])
+    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: scala.Double): Self = this.set("fixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPending(value: scala.Double): Self = this.set("pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = this.set("unknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWontFix(value: scala.Double): Self = this.set("wontFix", value.asInstanceOf[js.Any])
+    def setWontFix(value: scala.Double): Self = StObject.set(x, "wontFix", value.asInstanceOf[js.Any])
   }
 }

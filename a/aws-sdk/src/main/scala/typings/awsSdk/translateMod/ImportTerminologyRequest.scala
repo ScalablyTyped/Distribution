@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportTerminologyRequest extends js.Object {
+trait ImportTerminologyRequest extends StObject {
   
   /**
     * The description of the custom terminology being imported.
@@ -41,39 +42,27 @@ object ImportTerminologyRequest {
   }
   
   @scala.inline
-  implicit class ImportTerminologyRequestOps[Self <: ImportTerminologyRequest] (val x: Self) extends AnyVal {
+  implicit class ImportTerminologyRequestMutableBuilder[Self <: ImportTerminologyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeStrategy(value: MergeStrategy): Self = this.set("MergeStrategy", value.asInstanceOf[js.Any])
+    def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "MergeStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminologyData(value: TerminologyData): Self = this.set("TerminologyData", value.asInstanceOf[js.Any])
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setEncryptionKey(value: EncryptionKey): Self = this.set("EncryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionKey: Self = this.set("EncryptionKey", js.undefined)
+    def setTerminologyData(value: TerminologyData): Self = StObject.set(x, "TerminologyData", value.asInstanceOf[js.Any])
   }
 }

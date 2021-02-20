@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait Task extends js.Object {
+trait Task extends StObject {
   
   /**
     * Function which needs to be executed by the Task after the [Zone.currentTask] has been set to
@@ -108,60 +109,48 @@ object Task {
   }
   
   @scala.inline
-  implicit class TaskOps[Self <: Task] (val x: Self) extends AnyVal {
+  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelFn(value: Task => Unit): Self = StObject.set(x, "cancelFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelFnUndefined: Self = StObject.set(x, "cancelFn", js.undefined)
     
     @scala.inline
-    def setCallback(value: js.Function): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setCancelScheduleRequest(value: () => Unit): Self = StObject.set(x, "cancelScheduleRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancelScheduleRequest(value: () => Unit): Self = this.set("cancelScheduleRequest", js.Any.fromFunction0(value))
+    def setData(value: TaskData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoke(value: js.Function): Self = this.set("invoke", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setRunCount(value: Double): Self = this.set("runCount", value.asInstanceOf[js.Any])
+    def setInvoke(value: js.Function): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setRunCount(value: Double): Self = StObject.set(x, "runCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: TaskState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setScheduleFn(value: Task => Unit): Self = StObject.set(x, "scheduleFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: TaskType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScheduleFnUndefined: Self = StObject.set(x, "scheduleFn", js.undefined)
     
     @scala.inline
-    def setZone(value: Zone): Self = this.set("zone", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelFn(value: Task => Unit): Self = this.set("cancelFn", js.Any.fromFunction1(value))
+    def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancelFn: Self = this.set("cancelFn", js.undefined)
+    def setType(value: TaskType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: TaskData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setScheduleFn(value: Task => Unit): Self = this.set("scheduleFn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteScheduleFn: Self = this.set("scheduleFn", js.undefined)
+    def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

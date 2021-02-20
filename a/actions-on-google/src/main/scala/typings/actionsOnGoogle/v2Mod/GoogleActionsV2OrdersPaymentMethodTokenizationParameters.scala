@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends js.Object {
+trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends StObject {
   
   /**
     * If tokenization_type is set to `PAYMENT_GATEWAY` then the list of
@@ -59,30 +60,18 @@ object GoogleActionsV2OrdersPaymentMethodTokenizationParameters {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersPaymentMethodTokenizationParametersOps[Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersPaymentMethodTokenizationParametersMutableBuilder[Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ApiClientObjectMap[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokenizationType(value: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType): Self = StObject.set(x, "tokenizationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ApiClientObjectMap[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setTokenizationType(value: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType): Self = this.set("tokenizationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenizationType: Self = this.set("tokenizationType", js.undefined)
+    def setTokenizationTypeUndefined: Self = StObject.set(x, "tokenizationType", js.undefined)
   }
 }

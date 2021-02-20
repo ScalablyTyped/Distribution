@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,54 +30,42 @@ object RTCIceCandidateAttributes {
   }
   
   @scala.inline
-  implicit class RTCIceCandidateAttributesOps[Self <: RTCIceCandidateAttributes] (val x: Self) extends AnyVal {
+  implicit class RTCIceCandidateAttributesMutableBuilder[Self <: RTCIceCandidateAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressSourceUrl(value: java.lang.String): Self = StObject.set(x, "addressSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressSourceUrlUndefined: Self = StObject.set(x, "addressSourceUrl", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCandidateType(value: RTCStatsIceCandidateType): Self = StObject.set(x, "candidateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressSourceUrl(value: java.lang.String): Self = this.set("addressSourceUrl", value.asInstanceOf[js.Any])
+    def setCandidateTypeUndefined: Self = StObject.set(x, "candidateType", js.undefined)
     
     @scala.inline
-    def deleteAddressSourceUrl: Self = this.set("addressSourceUrl", js.undefined)
+    def setIpAddress(value: java.lang.String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidateType(value: RTCStatsIceCandidateType): Self = this.set("candidateType", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteCandidateType: Self = this.set("candidateType", js.undefined)
+    def setPortNumber(value: Double): Self = StObject.set(x, "portNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: java.lang.String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setPortNumberUndefined: Self = StObject.set(x, "portNumber", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortNumber(value: Double): Self = this.set("portNumber", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePortNumber: Self = this.set("portNumber", js.undefined)
+    def setTransport(value: java.lang.String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
-    
-    @scala.inline
-    def setTransport(value: java.lang.String): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

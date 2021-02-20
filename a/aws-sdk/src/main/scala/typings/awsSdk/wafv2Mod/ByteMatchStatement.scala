@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ByteMatchStatement extends js.Object {
+trait ByteMatchStatement extends StObject {
   
   /**
     * The part of a web request that you want AWS WAF to inspect. For more information, see FieldToMatch. 
@@ -41,33 +42,21 @@ object ByteMatchStatement {
   }
   
   @scala.inline
-  implicit class ByteMatchStatementOps[Self <: ByteMatchStatement] (val x: Self) extends AnyVal {
+  implicit class ByteMatchStatementMutableBuilder[Self <: ByteMatchStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionalConstraint(value: PositionalConstraint): Self = StObject.set(x, "PositionalConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldToMatch(value: FieldToMatch): Self = this.set("FieldToMatch", value.asInstanceOf[js.Any])
+    def setTextTransformations(value: TextTransformations): Self = StObject.set(x, "TextTransformations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionalConstraint(value: PositionalConstraint): Self = this.set("PositionalConstraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchString(value: SearchString): Self = this.set("SearchString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformationsVarargs(value: TextTransformation*): Self = this.set("TextTransformations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextTransformations(value: TextTransformations): Self = this.set("TextTransformations", value.asInstanceOf[js.Any])
+    def setTextTransformationsVarargs(value: TextTransformation*): Self = StObject.set(x, "TextTransformations", js.Array(value :_*))
   }
 }

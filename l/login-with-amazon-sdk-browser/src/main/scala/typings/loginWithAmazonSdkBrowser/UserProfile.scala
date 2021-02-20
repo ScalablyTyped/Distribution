@@ -1,5 +1,6 @@
 package typings.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* Inlined std.Partial<{  CustomerId :string,   Name :string,   PostalCode :string,   PrimaryEmail :string}> */
 @js.native
-trait UserProfile extends js.Object {
+trait UserProfile extends StObject {
   
   var CustomerId: js.UndefOr[String] = js.native
   
@@ -28,42 +29,30 @@ object UserProfile {
   }
   
   @scala.inline
-  implicit class UserProfileOps[Self <: UserProfile] (val x: Self) extends AnyVal {
+  implicit class UserProfileMutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerId(value: String): Self = StObject.set(x, "CustomerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerIdUndefined: Self = StObject.set(x, "CustomerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerId(value: String): Self = this.set("CustomerId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCustomerId: Self = this.set("CustomerId", js.undefined)
+    def setPostalCode(value: String): Self = StObject.set(x, "PostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "PostalCode", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPrimaryEmail(value: String): Self = StObject.set(x, "PrimaryEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("PostalCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalCode: Self = this.set("PostalCode", js.undefined)
-    
-    @scala.inline
-    def setPrimaryEmail(value: String): Self = this.set("PrimaryEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryEmail: Self = this.set("PrimaryEmail", js.undefined)
+    def setPrimaryEmailUndefined: Self = StObject.set(x, "PrimaryEmail", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,36 +48,24 @@ object XDataEditor {
   }
   
   @scala.inline
-  implicit class XDataEditorOps[Self <: XDataEditor] (val x: Self) extends AnyVal {
+  implicit class XDataEditorMutableBuilder[Self <: XDataEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "addDataEditorListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetModel(value: () => XInterface): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: XInterface): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: XInterface): Self = this.set("Model", value.asInstanceOf[js.Any])
+    def setRemoveDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "removeDataEditorListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddDataEditorListener(value: XDataEditorListener => Unit): Self = this.set("addDataEditorListener", js.Any.fromFunction1(value))
+    def setSetModel(value: XInterface => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModel(value: () => XInterface): Self = this.set("getModel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveDataEditorListener(value: XDataEditorListener => Unit): Self = this.set("removeDataEditorListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetModel(value: XInterface => Unit): Self = this.set("setModel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

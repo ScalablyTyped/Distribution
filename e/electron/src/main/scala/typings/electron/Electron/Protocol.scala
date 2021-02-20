@@ -2,12 +2,13 @@ package typings.electron.Electron
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Protocol extends js.Object {
+trait Protocol extends StObject {
   
   // Docs: https://electronjs.org/docs/api/protocol
   /**
@@ -313,19 +314,7 @@ object Protocol {
   }
   
   @scala.inline
-  implicit class ProtocolOps[Self <: Protocol] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setInterceptBufferProtocol(
@@ -334,7 +323,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ Buffer | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("interceptBufferProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "interceptBufferProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setInterceptFileProtocol(
@@ -343,7 +332,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("interceptFileProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "interceptFileProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setInterceptHttpProtocol(
@@ -352,7 +341,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("interceptHttpProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "interceptHttpProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setInterceptStreamProtocol(
@@ -361,7 +350,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("interceptStreamProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "interceptStreamProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setInterceptStringProtocol(
@@ -370,13 +359,13 @@ object Protocol {
           /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("interceptStringProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "interceptStringProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsProtocolIntercepted(value: String => Boolean): Self = this.set("isProtocolIntercepted", js.Any.fromFunction1(value))
+    def setIsProtocolIntercepted(value: String => Boolean): Self = StObject.set(x, "isProtocolIntercepted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsProtocolRegistered(value: String => Boolean): Self = this.set("isProtocolRegistered", js.Any.fromFunction1(value))
+    def setIsProtocolRegistered(value: String => Boolean): Self = StObject.set(x, "isProtocolRegistered", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRegisterBufferProtocol(
@@ -385,7 +374,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ Buffer | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("registerBufferProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerBufferProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRegisterFileProtocol(
@@ -394,7 +383,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("registerFileProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerFileProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRegisterHttpProtocol(
@@ -403,10 +392,10 @@ object Protocol {
           /* callback */ js.Function1[/* response */ ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("registerHttpProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerHttpProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterSchemesAsPrivileged(value: js.Array[CustomScheme] => Unit): Self = this.set("registerSchemesAsPrivileged", js.Any.fromFunction1(value))
+    def setRegisterSchemesAsPrivileged(value: js.Array[CustomScheme] => Unit): Self = StObject.set(x, "registerSchemesAsPrivileged", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRegisterStreamProtocol(
@@ -415,7 +404,7 @@ object Protocol {
           /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("registerStreamProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerStreamProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRegisterStringProtocol(
@@ -424,12 +413,12 @@ object Protocol {
           /* callback */ js.Function1[/* response */ String | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
-    ): Self = this.set("registerStringProtocol", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerStringProtocol", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUninterceptProtocol(value: String => Boolean): Self = this.set("uninterceptProtocol", js.Any.fromFunction1(value))
+    def setUninterceptProtocol(value: String => Boolean): Self = StObject.set(x, "uninterceptProtocol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnregisterProtocol(value: String => Boolean): Self = this.set("unregisterProtocol", js.Any.fromFunction1(value))
+    def setUnregisterProtocol(value: String => Boolean): Self = StObject.set(x, "unregisterProtocol", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchTranslateTextRequest extends js.Object {
+trait BatchTranslateTextRequest extends StObject {
   
   /** Optional. Glossaries to be applied for translation. It's keyed by target language code. */
   var glossaries: js.UndefOr[
@@ -59,78 +60,66 @@ object BatchTranslateTextRequest {
   }
   
   @scala.inline
-  implicit class BatchTranslateTextRequestOps[Self <: BatchTranslateTextRequest] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BatchTranslateTextRequestMutableBuilder[Self <: BatchTranslateTextRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGlossaries(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.translate.gapi.client.translate.TranslateTextGlossaryConfig}
       */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateTextRequest with TopLevel[js.Any]
-    ): Self = this.set("glossaries", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "glossaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlossaries: Self = this.set("glossaries", js.undefined)
+    def setGlossariesUndefined: Self = StObject.set(x, "glossaries", js.undefined)
     
     @scala.inline
-    def setInputConfigsVarargs(value: InputConfig*): Self = this.set("inputConfigs", js.Array(value :_*))
+    def setInputConfigs(value: js.Array[InputConfig]): Self = StObject.set(x, "inputConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfigs(value: js.Array[InputConfig]): Self = this.set("inputConfigs", value.asInstanceOf[js.Any])
+    def setInputConfigsUndefined: Self = StObject.set(x, "inputConfigs", js.undefined)
     
     @scala.inline
-    def deleteInputConfigs: Self = this.set("inputConfigs", js.undefined)
+    def setInputConfigsVarargs(value: InputConfig*): Self = StObject.set(x, "inputConfigs", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateTextRequest with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
     def setModels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateTextRequest with TopLevel[js.Any]
-    ): Self = this.set("models", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModels: Self = this.set("models", js.undefined)
+    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
     @scala.inline
-    def setOutputConfig(value: OutputConfig): Self = this.set("outputConfig", value.asInstanceOf[js.Any])
+    def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputConfig: Self = this.set("outputConfig", js.undefined)
+    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
     
     @scala.inline
-    def setSourceLanguageCode(value: String): Self = this.set("sourceLanguageCode", value.asInstanceOf[js.Any])
+    def setSourceLanguageCode(value: String): Self = StObject.set(x, "sourceLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceLanguageCode: Self = this.set("sourceLanguageCode", js.undefined)
+    def setSourceLanguageCodeUndefined: Self = StObject.set(x, "sourceLanguageCode", js.undefined)
     
     @scala.inline
-    def setTargetLanguageCodesVarargs(value: String*): Self = this.set("targetLanguageCodes", js.Array(value :_*))
+    def setTargetLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "targetLanguageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLanguageCodes(value: js.Array[String]): Self = this.set("targetLanguageCodes", value.asInstanceOf[js.Any])
+    def setTargetLanguageCodesUndefined: Self = StObject.set(x, "targetLanguageCodes", js.undefined)
     
     @scala.inline
-    def deleteTargetLanguageCodes: Self = this.set("targetLanguageCodes", js.undefined)
+    def setTargetLanguageCodesVarargs(value: String*): Self = StObject.set(x, "targetLanguageCodes", js.Array(value :_*))
   }
 }

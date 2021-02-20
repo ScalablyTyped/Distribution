@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Core.AnimationMetrics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AnimationEffect extends js.Object
+sealed trait AnimationEffect extends StObject
 /** Specifies an animation. */
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffect")
 @js.native
-object AnimationEffect extends js.Object {
+object AnimationEffect extends StObject {
   
   /** An object is added to a collection that is arranged in a grid. */
   @js.native

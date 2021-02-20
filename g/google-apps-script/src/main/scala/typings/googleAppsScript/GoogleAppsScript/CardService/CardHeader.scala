@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setImageUrl("https://image.png");
   */
 @js.native
-trait CardHeader extends js.Object {
+trait CardHeader extends StObject {
   
   def setImageAltText(imageAltText: String): CardHeader = js.native
   
@@ -41,33 +42,21 @@ object CardHeader {
   }
   
   @scala.inline
-  implicit class CardHeaderOps[Self <: CardHeader] (val x: Self) extends AnyVal {
+  implicit class CardHeaderMutableBuilder[Self <: CardHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetImageAltText(value: String => CardHeader): Self = StObject.set(x, "setImageAltText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetImageStyle(value: ImageStyle => CardHeader): Self = StObject.set(x, "setImageStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetImageUrl(value: String => CardHeader): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageAltText(value: String => CardHeader): Self = this.set("setImageAltText", js.Any.fromFunction1(value))
+    def setSetSubtitle(value: String => CardHeader): Self = StObject.set(x, "setSubtitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageStyle(value: ImageStyle => CardHeader): Self = this.set("setImageStyle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetImageUrl(value: String => CardHeader): Self = this.set("setImageUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubtitle(value: String => CardHeader): Self = this.set("setSubtitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => CardHeader): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetTitle(value: String => CardHeader): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

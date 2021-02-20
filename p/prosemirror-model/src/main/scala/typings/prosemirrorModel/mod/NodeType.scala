@@ -1,13 +1,14 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "NodeType")
 @js.native
-class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
+class NodeType[S /* <: Schema[_, _] */] () extends StObject {
   
   /**
     * Removes the marks that are not allowed in this node from the given set.

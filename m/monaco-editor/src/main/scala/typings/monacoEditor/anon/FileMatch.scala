@@ -1,11 +1,12 @@
 package typings.monacoEditor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileMatch extends js.Object {
+trait FileMatch extends StObject {
   
   /**
     * A list of file names that are associated to the schema. The '*' wildcard can be used. For example '*.schema.json', 'package.json'
@@ -31,36 +32,24 @@ object FileMatch {
   }
   
   @scala.inline
-  implicit class FileMatchOps[Self <: FileMatch] (val x: Self) extends AnyVal {
+  implicit class FileMatchMutableBuilder[Self <: FileMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileMatch(value: js.Array[String]): Self = StObject.set(x, "fileMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileMatchUndefined: Self = StObject.set(x, "fileMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileMatchVarargs(value: String*): Self = StObject.set(x, "fileMatch", js.Array(value :_*))
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileMatchVarargs(value: String*): Self = this.set("fileMatch", js.Array(value :_*))
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setFileMatch(value: js.Array[String]): Self = this.set("fileMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileMatch: Self = this.set("fileMatch", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: js.Any): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

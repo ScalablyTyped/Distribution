@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderedPhoneNumber extends js.Object {
+trait OrderedPhoneNumber extends StObject {
   
   /**
     * The phone number, in E.164 format.
@@ -26,30 +27,18 @@ object OrderedPhoneNumber {
   }
   
   @scala.inline
-  implicit class OrderedPhoneNumberOps[Self <: OrderedPhoneNumber] (val x: Self) extends AnyVal {
+  implicit class OrderedPhoneNumberMutableBuilder[Self <: OrderedPhoneNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setE164PhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "E164PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setE164PhoneNumberUndefined: Self = StObject.set(x, "E164PhoneNumber", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: OrderedPhoneNumberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE164PhoneNumber(value: E164PhoneNumber): Self = this.set("E164PhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteE164PhoneNumber: Self = this.set("E164PhoneNumber", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: OrderedPhoneNumberStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

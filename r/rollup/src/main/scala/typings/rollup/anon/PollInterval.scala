@@ -1,11 +1,12 @@
 package typings.rollup.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PollInterval extends js.Object {
+trait PollInterval extends StObject {
   
   var pollInterval: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object PollInterval {
   }
   
   @scala.inline
-  implicit class PollIntervalOps[Self <: PollInterval] (val x: Self) extends AnyVal {
+  implicit class PollIntervalMutableBuilder[Self <: PollInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPollIntervalUndefined: Self = StObject.set(x, "pollInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStabilityThreshold(value: Double): Self = StObject.set(x, "stabilityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPollInterval(value: Double): Self = this.set("pollInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePollInterval: Self = this.set("pollInterval", js.undefined)
-    
-    @scala.inline
-    def setStabilityThreshold(value: Double): Self = this.set("stabilityThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStabilityThreshold: Self = this.set("stabilityThreshold", js.undefined)
+    def setStabilityThresholdUndefined: Self = StObject.set(x, "stabilityThreshold", js.undefined)
   }
 }

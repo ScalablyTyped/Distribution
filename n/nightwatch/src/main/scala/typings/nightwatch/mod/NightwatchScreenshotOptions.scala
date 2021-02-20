@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchScreenshotOptions extends js.Object {
+trait NightwatchScreenshotOptions extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object NightwatchScreenshotOptions {
   }
   
   @scala.inline
-  implicit class NightwatchScreenshotOptionsOps[Self <: NightwatchScreenshotOptions] (val x: Self) extends AnyVal {
+  implicit class NightwatchScreenshotOptionsMutableBuilder[Self <: NightwatchScreenshotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOn_error(value: Boolean): Self = StObject.set(x, "on_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setOn_errorUndefined: Self = StObject.set(x, "on_error", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setOn_failure(value: Boolean): Self = StObject.set(x, "on_failure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_error(value: Boolean): Self = this.set("on_error", value.asInstanceOf[js.Any])
+    def setOn_failureUndefined: Self = StObject.set(x, "on_failure", js.undefined)
     
     @scala.inline
-    def deleteOn_error: Self = this.set("on_error", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_failure(value: Boolean): Self = this.set("on_failure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOn_failure: Self = this.set("on_failure", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

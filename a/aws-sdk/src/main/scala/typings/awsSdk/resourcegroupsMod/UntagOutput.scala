@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UntagOutput extends js.Object {
+trait UntagOutput extends StObject {
   
   /**
     * The ARN of the resource group from which tags have been removed.
@@ -26,33 +27,21 @@ object UntagOutput {
   }
   
   @scala.inline
-  implicit class UntagOutputOps[Self <: UntagOutput] (val x: Self) extends AnyVal {
+  implicit class UntagOutputMutableBuilder[Self <: UntagOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: TagKeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: GroupArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
-    
-    @scala.inline
-    def setKeysVarargs(value: TagKey*): Self = this.set("Keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: TagKeyList): Self = this.set("Keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("Keys", js.undefined)
+    def setKeysVarargs(value: TagKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
   }
 }

@@ -4,16 +4,16 @@ import typings.railsActivestorage.anon.DirectUploadData
 import typings.std.Blob
 import typings.std.Error
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@rails/activestorage/src/blob_upload", JSImport.Namespace)
-@js.native
-object blobUploadMod extends js.Object {
+object blobUploadMod {
   
+  @JSImport("@rails/activestorage/src/blob_upload", "BlobUpload")
   @js.native
-  class BlobUpload protected () extends js.Object {
+  class BlobUpload protected () extends StObject {
     def this(blob: DirectUploadData) = this()
     
     def create(callback: js.Function2[/* error */ Error, /* blob */ Blob, Unit]): Unit = js.native

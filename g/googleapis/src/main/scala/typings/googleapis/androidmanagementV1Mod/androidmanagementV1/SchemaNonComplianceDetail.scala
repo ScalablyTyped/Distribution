@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides detail about non-compliance with a policy setting.
   */
 @js.native
-trait SchemaNonComplianceDetail extends js.Object {
+trait SchemaNonComplianceDetail extends StObject {
   
   /**
     * If the policy setting could not be applied, the current value of the
@@ -62,54 +63,42 @@ object SchemaNonComplianceDetail {
   }
   
   @scala.inline
-  implicit class SchemaNonComplianceDetailOps[Self <: SchemaNonComplianceDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaNonComplianceDetailMutableBuilder[Self <: SchemaNonComplianceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentValue(value: js.Any): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentValueUndefined: Self = StObject.set(x, "currentValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentValue(value: js.Any): Self = this.set("currentValue", value.asInstanceOf[js.Any])
+    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
     @scala.inline
-    def deleteCurrentValue: Self = this.set("currentValue", js.undefined)
+    def setInstallationFailureReason(value: String): Self = StObject.set(x, "installationFailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
+    def setInstallationFailureReasonUndefined: Self = StObject.set(x, "installationFailureReason", js.undefined)
     
     @scala.inline
-    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
+    def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationFailureReason(value: String): Self = this.set("installationFailureReason", value.asInstanceOf[js.Any])
+    def setNonComplianceReasonUndefined: Self = StObject.set(x, "nonComplianceReason", js.undefined)
     
     @scala.inline
-    def deleteInstallationFailureReason: Self = this.set("installationFailureReason", js.undefined)
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonComplianceReason(value: String): Self = this.set("nonComplianceReason", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteNonComplianceReason: Self = this.set("nonComplianceReason", js.undefined)
+    def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
-    
-    @scala.inline
-    def setSettingName(value: String): Self = this.set("settingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingName: Self = this.set("settingName", js.undefined)
+    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
   }
 }

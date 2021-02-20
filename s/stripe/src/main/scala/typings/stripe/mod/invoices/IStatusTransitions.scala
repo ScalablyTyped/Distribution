@@ -1,11 +1,12 @@
 package typings.stripe.mod.invoices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStatusTransitions extends js.Object {
+trait IStatusTransitions extends StObject {
   
   /**
     * The time that the invoice draft was finalized.
@@ -36,42 +37,30 @@ object IStatusTransitions {
   }
   
   @scala.inline
-  implicit class IStatusTransitionsOps[Self <: IStatusTransitions] (val x: Self) extends AnyVal {
+  implicit class IStatusTransitionsMutableBuilder[Self <: IStatusTransitions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalized_at(value: Double): Self = StObject.set(x, "finalized_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalized_atNull: Self = StObject.set(x, "finalized_at", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarked_uncollectible_at(value: Double): Self = StObject.set(x, "marked_uncollectible_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalized_at(value: Double): Self = this.set("finalized_at", value.asInstanceOf[js.Any])
+    def setMarked_uncollectible_atNull: Self = StObject.set(x, "marked_uncollectible_at", null)
     
     @scala.inline
-    def setFinalized_atNull: Self = this.set("finalized_at", null)
+    def setPaid_at(value: Double): Self = StObject.set(x, "paid_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarked_uncollectible_at(value: Double): Self = this.set("marked_uncollectible_at", value.asInstanceOf[js.Any])
+    def setPaid_atNull: Self = StObject.set(x, "paid_at", null)
     
     @scala.inline
-    def setMarked_uncollectible_atNull: Self = this.set("marked_uncollectible_at", null)
+    def setVoided_at(value: Double): Self = StObject.set(x, "voided_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaid_at(value: Double): Self = this.set("paid_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaid_atNull: Self = this.set("paid_at", null)
-    
-    @scala.inline
-    def setVoided_at(value: Double): Self = this.set("voided_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoided_atNull: Self = this.set("voided_at", null)
+    def setVoided_atNull: Self = StObject.set(x, "voided_at", null)
   }
 }

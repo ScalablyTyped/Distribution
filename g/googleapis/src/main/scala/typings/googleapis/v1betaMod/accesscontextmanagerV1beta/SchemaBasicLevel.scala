@@ -1,5 +1,6 @@
 package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `BasicLevel` is an `AccessLevel` using a set of recommended features.
   */
 @js.native
-trait SchemaBasicLevel extends js.Object {
+trait SchemaBasicLevel extends StObject {
   
   /**
     * How the `conditions` list should be combined to determine if a request is
@@ -33,33 +34,21 @@ object SchemaBasicLevel {
   }
   
   @scala.inline
-  implicit class SchemaBasicLevelOps[Self <: SchemaBasicLevel] (val x: Self) extends AnyVal {
+  implicit class SchemaBasicLevelMutableBuilder[Self <: SchemaBasicLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCombiningFunctionUndefined: Self = StObject.set(x, "combiningFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[SchemaCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombiningFunction(value: String): Self = this.set("combiningFunction", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def deleteCombiningFunction: Self = this.set("combiningFunction", js.undefined)
-    
-    @scala.inline
-    def setConditionsVarargs(value: SchemaCondition*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[SchemaCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setConditionsVarargs(value: SchemaCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

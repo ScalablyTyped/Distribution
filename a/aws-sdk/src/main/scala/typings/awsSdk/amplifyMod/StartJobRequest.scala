@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartJobRequest extends js.Object {
+trait StartJobRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
@@ -56,57 +57,45 @@ object StartJobRequest {
   }
   
   @scala.inline
-  implicit class StartJobRequestOps[Self <: StartJobRequest] (val x: Self) extends AnyVal {
+  implicit class StartJobRequestMutableBuilder[Self <: StartJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
     @scala.inline
-    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    def setCommitMessageUndefined: Self = StObject.set(x, "commitMessage", js.undefined)
     
     @scala.inline
-    def setCommitId(value: CommitId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    def setCommitTime(value: CommitTime): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommitId: Self = this.set("commitId", js.undefined)
+    def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
     
     @scala.inline
-    def setCommitMessage(value: CommitMessage): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommitMessage: Self = this.set("commitMessage", js.undefined)
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def setCommitTime(value: CommitTime): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    def setJobReason(value: JobReason): Self = StObject.set(x, "jobReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommitTime: Self = this.set("commitTime", js.undefined)
+    def setJobReasonUndefined: Self = StObject.set(x, "jobReason", js.undefined)
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
-    
-    @scala.inline
-    def setJobReason(value: JobReason): Self = this.set("jobReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobReason: Self = this.set("jobReason", js.undefined)
+    def setJobType(value: JobType): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
   }
 }

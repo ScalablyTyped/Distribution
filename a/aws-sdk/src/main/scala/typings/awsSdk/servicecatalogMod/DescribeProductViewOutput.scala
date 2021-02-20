@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProductViewOutput extends js.Object {
+trait DescribeProductViewOutput extends StObject {
   
   /**
     * Summary information about the product.
@@ -26,33 +27,21 @@ object DescribeProductViewOutput {
   }
   
   @scala.inline
-  implicit class DescribeProductViewOutputOps[Self <: DescribeProductViewOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeProductViewOutputMutableBuilder[Self <: DescribeProductViewOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductViewSummaryUndefined: Self = StObject.set(x, "ProductViewSummary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvisioningArtifacts(value: ProvisioningArtifacts): Self = StObject.set(x, "ProvisioningArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductViewSummary(value: ProductViewSummary): Self = this.set("ProductViewSummary", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactsUndefined: Self = StObject.set(x, "ProvisioningArtifacts", js.undefined)
     
     @scala.inline
-    def deleteProductViewSummary: Self = this.set("ProductViewSummary", js.undefined)
-    
-    @scala.inline
-    def setProvisioningArtifactsVarargs(value: ProvisioningArtifact*): Self = this.set("ProvisioningArtifacts", js.Array(value :_*))
-    
-    @scala.inline
-    def setProvisioningArtifacts(value: ProvisioningArtifacts): Self = this.set("ProvisioningArtifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningArtifacts: Self = this.set("ProvisioningArtifacts", js.undefined)
+    def setProvisioningArtifactsVarargs(value: ProvisioningArtifact*): Self = StObject.set(x, "ProvisioningArtifacts", js.Array(value :_*))
   }
 }

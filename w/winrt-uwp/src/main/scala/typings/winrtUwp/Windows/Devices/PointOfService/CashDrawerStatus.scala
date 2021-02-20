@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the current power and availability status of the cash drawer. */
 @js.native
-trait CashDrawerStatus extends js.Object {
+trait CashDrawerStatus extends StObject {
   
   /** ExtendedStatus provides a way for a Point of Service driver or provider to send custom notifications to the app. */
   var extendedStatus: Double = js.native
@@ -23,24 +24,12 @@ object CashDrawerStatus {
   }
   
   @scala.inline
-  implicit class CashDrawerStatusOps[Self <: CashDrawerStatus] (val x: Self) extends AnyVal {
+  implicit class CashDrawerStatusMutableBuilder[Self <: CashDrawerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtendedStatus(value: Double): Self = this.set("extendedStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusKind(value: CashDrawerStatusKind): Self = this.set("statusKind", value.asInstanceOf[js.Any])
+    def setStatusKind(value: CashDrawerStatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
   }
 }

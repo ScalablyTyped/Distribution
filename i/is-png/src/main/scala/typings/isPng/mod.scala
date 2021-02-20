@@ -2,14 +2,15 @@ package typings.isPng
 
 import typings.node.Buffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-png", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("is-png", JSImport.Namespace)
+  @js.native
   def apply(buffer: Buffer): Boolean = js.native
   /**
   Check if a Buffer/Uint8Array is a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) image.
@@ -32,5 +33,7 @@ object mod extends js.Object {
   })();
   ```
   */
+  @JSImport("is-png", JSImport.Namespace)
+  @js.native
   def apply(buffer: Uint8Array): Boolean = js.native
 }

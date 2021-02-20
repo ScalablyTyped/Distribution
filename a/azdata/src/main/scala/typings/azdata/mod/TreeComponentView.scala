@@ -3,6 +3,7 @@ package typings.azdata.mod
 import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
 import typings.vscode.mod.TreeViewSelectionChangeEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

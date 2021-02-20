@@ -1,14 +1,15 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaCommand extends js.Object
+sealed trait MediaCommand extends StObject
 @JSGlobal("chrome.cast.media.MediaCommand")
 @js.native
-object MediaCommand extends js.Object {
+object MediaCommand extends StObject {
   
   @js.native
   sealed trait PAUSE extends MediaCommand

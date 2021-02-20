@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Diagnostics for a single beacon.
   */
 @js.native
-trait SchemaDiagnostics extends js.Object {
+trait SchemaDiagnostics extends StObject {
   
   /**
     * An unordered list of Alerts that the beacon has.
@@ -38,39 +39,27 @@ object SchemaDiagnostics {
   }
   
   @scala.inline
-  implicit class SchemaDiagnosticsOps[Self <: SchemaDiagnostics] (val x: Self) extends AnyVal {
+  implicit class SchemaDiagnosticsMutableBuilder[Self <: SchemaDiagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlerts(value: js.Array[String]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertsVarargs(value: String*): Self = StObject.set(x, "alerts", js.Array(value :_*))
     
     @scala.inline
-    def setAlertsVarargs(value: String*): Self = this.set("alerts", js.Array(value :_*))
+    def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlerts(value: js.Array[String]): Self = this.set("alerts", value.asInstanceOf[js.Any])
+    def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
     
     @scala.inline
-    def deleteAlerts: Self = this.set("alerts", js.undefined)
+    def setEstimatedLowBatteryDate(value: SchemaDate): Self = StObject.set(x, "estimatedLowBatteryDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconName(value: String): Self = this.set("beaconName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeaconName: Self = this.set("beaconName", js.undefined)
-    
-    @scala.inline
-    def setEstimatedLowBatteryDate(value: SchemaDate): Self = this.set("estimatedLowBatteryDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedLowBatteryDate: Self = this.set("estimatedLowBatteryDate", js.undefined)
+    def setEstimatedLowBatteryDateUndefined: Self = StObject.set(x, "estimatedLowBatteryDate", js.undefined)
   }
 }

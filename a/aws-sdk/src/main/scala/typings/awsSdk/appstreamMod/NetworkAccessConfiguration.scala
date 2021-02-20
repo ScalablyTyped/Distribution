@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkAccessConfiguration extends js.Object {
+trait NetworkAccessConfiguration extends StObject {
   
   /**
     * The resource identifier of the elastic network interface that is attached to instances in your VPC. All network interfaces have the eni-xxxxxxxx resource identifier.
@@ -26,30 +27,18 @@ object NetworkAccessConfiguration {
   }
   
   @scala.inline
-  implicit class NetworkAccessConfigurationOps[Self <: NetworkAccessConfiguration] (val x: Self) extends AnyVal {
+  implicit class NetworkAccessConfigurationMutableBuilder[Self <: NetworkAccessConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEniId(value: String): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEniIdUndefined: Self = StObject.set(x, "EniId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEniPrivateIpAddress(value: String): Self = StObject.set(x, "EniPrivateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEniId(value: String): Self = this.set("EniId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEniId: Self = this.set("EniId", js.undefined)
-    
-    @scala.inline
-    def setEniPrivateIpAddress(value: String): Self = this.set("EniPrivateIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEniPrivateIpAddress: Self = this.set("EniPrivateIpAddress", js.undefined)
+    def setEniPrivateIpAddressUndefined: Self = StObject.set(x, "EniPrivateIpAddress", js.undefined)
   }
 }

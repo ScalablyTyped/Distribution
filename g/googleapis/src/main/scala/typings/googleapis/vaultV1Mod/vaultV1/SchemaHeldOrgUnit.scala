@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * immutable.
   */
 @js.native
-trait SchemaHeldOrgUnit extends js.Object {
+trait SchemaHeldOrgUnit extends StObject {
   
   /**
     * When the org unit was put on hold. This property is immutable.
@@ -30,30 +31,18 @@ object SchemaHeldOrgUnit {
   }
   
   @scala.inline
-  implicit class SchemaHeldOrgUnitOps[Self <: SchemaHeldOrgUnit] (val x: Self) extends AnyVal {
+  implicit class SchemaHeldOrgUnitMutableBuilder[Self <: SchemaHeldOrgUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoldTimeUndefined: Self = StObject.set(x, "holdTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldTime(value: String): Self = this.set("holdTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoldTime: Self = this.set("holdTime", js.undefined)
-    
-    @scala.inline
-    def setOrgUnitId(value: String): Self = this.set("orgUnitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrgUnitId: Self = this.set("orgUnitId", js.undefined)
+    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
   }
 }

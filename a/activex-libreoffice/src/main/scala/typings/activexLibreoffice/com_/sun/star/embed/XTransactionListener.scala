@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,30 +42,18 @@ object XTransactionListener {
   }
   
   @scala.inline
-  implicit class XTransactionListenerOps[Self <: XTransactionListener] (val x: Self) extends AnyVal {
+  implicit class XTransactionListenerMutableBuilder[Self <: XTransactionListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommited(value: EventObject => Unit): Self = StObject.set(x, "commited", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreCommit(value: EventObject => Unit): Self = StObject.set(x, "preCommit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreRevert(value: EventObject => Unit): Self = StObject.set(x, "preRevert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommited(value: EventObject => Unit): Self = this.set("commited", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreCommit(value: EventObject => Unit): Self = this.set("preCommit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreRevert(value: EventObject => Unit): Self = this.set("preRevert", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReverted(value: EventObject => Unit): Self = this.set("reverted", js.Any.fromFunction1(value))
+    def setReverted(value: EventObject => Unit): Self = StObject.set(x, "reverted", js.Any.fromFunction1(value))
   }
 }

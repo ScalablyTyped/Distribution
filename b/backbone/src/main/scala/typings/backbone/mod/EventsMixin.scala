@@ -1,5 +1,6 @@
 package typings.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("backbone", "EventsMixin")
 @js.native
-abstract class EventsMixin () extends js.Object {
+abstract class EventsMixin () extends StObject {
   
   def bind(eventMap: EventMap): this.type = js.native
   def bind(eventMap: EventMap, context: js.Any): this.type = js.native

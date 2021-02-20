@@ -3,23 +3,32 @@ package typings.typedoc
 import typings.typedoc.modelsMod.DeclarationReflection
 import typings.typedoc.schemaMod.ContainerReflection
 import typings.typedoc.serializationComponentsMod.ReflectionSerializerComponent
+import typings.typedoc.serializerMod.Serializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/serialization/serializers/reflections/declaration", JSImport.Namespace)
-@js.native
-object serializersReflectionsDeclarationMod extends js.Object {
+object serializersReflectionsDeclarationMod {
   
+  @JSImport("typedoc/dist/lib/serialization/serializers/reflections/declaration", "DeclarationReflectionSerializer")
   @js.native
-  class DeclarationReflectionSerializer () extends ReflectionSerializerComponent[DeclarationReflection] {
+  class DeclarationReflectionSerializer protected () extends ReflectionSerializerComponent[DeclarationReflection] {
+    def this(owner: Serializer) = this()
     
     def toObject(declaration: DeclarationReflection, obj: ContainerReflection): typings.typedoc.schemaMod.DeclarationReflection = js.native
   }
   /* static members */
-  @js.native
-  object DeclarationReflectionSerializer extends js.Object {
+  object DeclarationReflectionSerializer {
     
-    var PRIORITY: Double = js.native
+    @JSImport("typedoc/dist/lib/serialization/serializers/reflections/declaration", "DeclarationReflectionSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("typedoc/dist/lib/serialization/serializers/reflections/declaration", "DeclarationReflectionSerializer.PRIORITY")
+    @js.native
+    def PRIORITY: Double = js.native
+    @scala.inline
+    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

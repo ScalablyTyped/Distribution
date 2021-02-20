@@ -3,12 +3,13 @@ package typings.nodeRedRuntime.mod
 import typings.nodeRedRuntime.anon.CredentialsDirty
 import typings.nodeRedRuntime.anon.CredentialsFlows
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageModule extends js.Object {
+trait StorageModule extends StObject {
   
   def getFlows(): js.Promise[CredentialsFlows] = js.native
   
@@ -50,48 +51,36 @@ object StorageModule {
   }
   
   @scala.inline
-  implicit class StorageModuleOps[Self <: StorageModule] (val x: Self) extends AnyVal {
+  implicit class StorageModuleMutableBuilder[Self <: StorageModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFlows(value: () => js.Promise[CredentialsFlows]): Self = StObject.set(x, "getFlows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLibraryEntry(value: (String, String) => js.Promise[String | js.Array[String]]): Self = StObject.set(x, "getLibraryEntry", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSessions(value: () => js.Promise[js.Object | Null]): Self = StObject.set(x, "getSessions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFlows(value: () => js.Promise[CredentialsFlows]): Self = this.set("getFlows", js.Any.fromFunction0(value))
+    def setGetSettings(value: () => js.Promise[js.Object | Null]): Self = StObject.set(x, "getSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLibraryEntry(value: (String, String) => js.Promise[String | js.Array[String]]): Self = this.set("getLibraryEntry", js.Any.fromFunction2(value))
+    def setInit(value: InternalRuntimeAPI => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSessions(value: () => js.Promise[js.Object | Null]): Self = this.set("getSessions", js.Any.fromFunction0(value))
+    def setSaveCredentials(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSettings(value: () => js.Promise[js.Object | Null]): Self = this.set("getSettings", js.Any.fromFunction0(value))
+    def setSaveFlows(value: CredentialsDirty => js.Promise[Unit]): Self = StObject.set(x, "saveFlows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInit(value: InternalRuntimeAPI => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setSaveLibraryEntry(value: (String, String, Record[String, String], String) => js.Promise[Unit]): Self = StObject.set(x, "saveLibraryEntry", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSaveCredentials(value: js.Object => js.Promise[Unit]): Self = this.set("saveCredentials", js.Any.fromFunction1(value))
+    def setSaveSessions(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveSessions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSaveFlows(value: CredentialsDirty => js.Promise[Unit]): Self = this.set("saveFlows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSaveLibraryEntry(value: (String, String, Record[String, String], String) => js.Promise[Unit]): Self = this.set("saveLibraryEntry", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSaveSessions(value: js.Object => js.Promise[Unit]): Self = this.set("saveSessions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSaveSettings(value: js.Object => js.Promise[Unit]): Self = this.set("saveSettings", js.Any.fromFunction1(value))
+    def setSaveSettings(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveSettings", js.Any.fromFunction1(value))
   }
 }

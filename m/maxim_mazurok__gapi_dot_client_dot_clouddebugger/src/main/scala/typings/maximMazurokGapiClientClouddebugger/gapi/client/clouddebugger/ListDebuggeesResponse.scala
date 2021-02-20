@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDebuggeesResponse extends js.Object {
+trait ListDebuggeesResponse extends StObject {
   
   /**
     * List of debuggees accessible to the calling user. The fields `debuggee.id` and `description` are guaranteed to be set. The `description` field is a human readable field provided by
@@ -22,27 +23,15 @@ object ListDebuggeesResponse {
   }
   
   @scala.inline
-  implicit class ListDebuggeesResponseOps[Self <: ListDebuggeesResponse] (val x: Self) extends AnyVal {
+  implicit class ListDebuggeesResponseMutableBuilder[Self <: ListDebuggeesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebuggees(value: js.Array[Debuggee]): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebuggeesUndefined: Self = StObject.set(x, "debuggees", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDebuggeesVarargs(value: Debuggee*): Self = this.set("debuggees", js.Array(value :_*))
-    
-    @scala.inline
-    def setDebuggees(value: js.Array[Debuggee]): Self = this.set("debuggees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebuggees: Self = this.set("debuggees", js.undefined)
+    def setDebuggeesVarargs(value: Debuggee*): Self = StObject.set(x, "debuggees", js.Array(value :_*))
   }
 }

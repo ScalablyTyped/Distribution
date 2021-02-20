@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverProtocol.anon
 
 import typings.vscodeLanguageserverTypes.mod.MarkupKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentationFormat extends js.Object {
+trait DocumentationFormat extends StObject {
   
   /**
     * Client supports the follow content formats for the documentation
@@ -28,33 +29,21 @@ object DocumentationFormat {
   }
   
   @scala.inline
-  implicit class DocumentationFormatOps[Self <: DocumentationFormat] (val x: Self) extends AnyVal {
+  implicit class DocumentationFormatMutableBuilder[Self <: DocumentationFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentationFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "documentationFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentationFormatVarargs(value: MarkupKind*): Self = this.set("documentationFormat", js.Array(value :_*))
+    def setParameterInformation(value: LabelOffsetSupport): Self = StObject.set(x, "parameterInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentationFormat(value: js.Array[MarkupKind]): Self = this.set("documentationFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentationFormat: Self = this.set("documentationFormat", js.undefined)
-    
-    @scala.inline
-    def setParameterInformation(value: LabelOffsetSupport): Self = this.set("parameterInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterInformation: Self = this.set("parameterInformation", js.undefined)
+    def setParameterInformationUndefined: Self = StObject.set(x, "parameterInformation", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,63 +64,51 @@ object IImageOptions {
   }
   
   @scala.inline
-  implicit class IImageOptionsOps[Self <: IImageOptions] (val x: Self) extends AnyVal {
+  implicit class IImageOptionsMutableBuilder[Self <: IImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheKey(value: String): Self = this.set("cacheKey", value.asInstanceOf[js.Any])
+    def setCropXUndefined: Self = StObject.set(x, "cropX", js.undefined)
     
     @scala.inline
-    def deleteCacheKey: Self = this.set("cacheKey", js.undefined)
+    def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropX(value: Double): Self = this.set("cropX", value.asInstanceOf[js.Any])
+    def setCropYUndefined: Self = StObject.set(x, "cropY", js.undefined)
     
     @scala.inline
-    def deleteCropX: Self = this.set("cropX", js.undefined)
+    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropY(value: Double): Self = this.set("cropY", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def deleteCropY: Self = this.set("cropY", js.undefined)
+    def setFilters(value: js.Array[IBaseFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setFiltersVarargs(value: IBaseFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: IBaseFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setMinimumScaleTrigger(value: Double): Self = StObject.set(x, "minimumScaleTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[IBaseFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMinimumScaleTriggerUndefined: Self = StObject.set(x, "minimumScaleTrigger", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setSrcFromAttribute(value: Boolean): Self = StObject.set(x, "srcFromAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumScaleTrigger(value: Double): Self = this.set("minimumScaleTrigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumScaleTrigger: Self = this.set("minimumScaleTrigger", js.undefined)
-    
-    @scala.inline
-    def setSrcFromAttribute(value: Boolean): Self = this.set("srcFromAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcFromAttribute: Self = this.set("srcFromAttribute", js.undefined)
+    def setSrcFromAttributeUndefined: Self = StObject.set(x, "srcFromAttribute", js.undefined)
   }
 }

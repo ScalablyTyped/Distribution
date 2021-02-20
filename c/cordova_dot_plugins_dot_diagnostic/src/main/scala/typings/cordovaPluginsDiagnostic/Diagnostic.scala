@@ -11,6 +11,7 @@ import typings.cordovaPluginsDiagnostic.anon.FULL
 import typings.cordovaPluginsDiagnostic.anon.GRANTED
 import typings.cordovaPluginsDiagnostic.anon.POWEREDOFF
 import typings.cordovaPluginsDiagnostic.anon.POWEREDON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Checks whether device hardware features are enabled or available to the app, e.g. camera, GPS, wifi
   */
 @js.native
-trait Diagnostic extends js.Object {
+trait Diagnostic extends StObject {
   
   /**
     * ANDROID ONLY

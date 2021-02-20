@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitConfigSourceResponse extends js.Object {
+trait SubmitConfigSourceResponse extends StObject {
   
   /** The generated service configuration. */
   var serviceConfig: js.UndefOr[Service] = js.native
@@ -19,24 +20,12 @@ object SubmitConfigSourceResponse {
   }
   
   @scala.inline
-  implicit class SubmitConfigSourceResponseOps[Self <: SubmitConfigSourceResponse] (val x: Self) extends AnyVal {
+  implicit class SubmitConfigSourceResponseMutableBuilder[Self <: SubmitConfigSourceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceConfig(value: Service): Self = StObject.set(x, "serviceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceConfig(value: Service): Self = this.set("serviceConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfig: Self = this.set("serviceConfig", js.undefined)
+    def setServiceConfigUndefined: Self = StObject.set(x, "serviceConfig", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +14,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class RemoteLauncher ()
   extends typings.winrtUwp.Windows.System.RemoteLauncher
-/* static members */
-@JSGlobal("Windows.System.RemoteLauncher")
-@js.native
-object RemoteLauncher extends js.Object {
+object RemoteLauncher {
   
   /** Starts the default app associated with the URI scheme name for the specified URI on a remote device. */
+  /* static member */
+  @JSGlobal("Windows.System.RemoteLauncher.launchUriAsync")
+  @js.native
   def launchUriAsync(remoteSystemConnectionRequest: RemoteSystemConnectionRequest, uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus] = js.native
   /** Starts the default app associated with the URI scheme name for the specified URI on a remote device, using the specified options. */
+  /* static member */
+  @JSGlobal("Windows.System.RemoteLauncher.launchUriAsync")
+  @js.native
   def launchUriAsync(
     remoteSystemConnectionRequest: RemoteSystemConnectionRequest,
     uri: Uri,
     options: typings.winrtUwp.Windows.System.RemoteLauncherOptions
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus] = js.native
   /** Starts the default app associated with the URI scheme name for the specified URI on a remote device, using the specified options and input data. */
+  /* static member */
+  @JSGlobal("Windows.System.RemoteLauncher.launchUriAsync")
+  @js.native
   def launchUriAsync(
     remoteSystemConnectionRequest: RemoteSystemConnectionRequest,
     uri: Uri,

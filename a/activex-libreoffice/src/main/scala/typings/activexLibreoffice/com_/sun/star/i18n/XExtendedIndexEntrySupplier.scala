@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,42 +97,30 @@ object XExtendedIndexEntrySupplier {
   }
   
   @scala.inline
-  implicit class XExtendedIndexEntrySupplierOps[Self <: XExtendedIndexEntrySupplier] (val x: Self) extends AnyVal {
+  implicit class XExtendedIndexEntrySupplierMutableBuilder[Self <: XExtendedIndexEntrySupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompareIndexEntry(value: (String, String, Locale, String, String, Locale) => Double): Self = StObject.set(x, "compareIndexEntry", js.Any.fromFunction6(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAlgorithmList(value: Locale => SafeArray[String]): Self = StObject.set(x, "getAlgorithmList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIndexKey(value: (String, String, Locale) => String): Self = StObject.set(x, "getIndexKey", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLocaleList(value: SafeArray[Locale]): Self = this.set("LocaleList", value.asInstanceOf[js.Any])
+    def setGetLocaleList(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocaleList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCompareIndexEntry(value: (String, String, Locale, String, String, Locale) => Double): Self = this.set("compareIndexEntry", js.Any.fromFunction6(value))
+    def setGetPhoneticCandidate(value: (String, Locale) => String): Self = StObject.set(x, "getPhoneticCandidate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAlgorithmList(value: Locale => SafeArray[String]): Self = this.set("getAlgorithmList", js.Any.fromFunction1(value))
+    def setLoadAlgorithm(value: (Locale, String, Double) => Boolean): Self = StObject.set(x, "loadAlgorithm", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetIndexKey(value: (String, String, Locale) => String): Self = this.set("getIndexKey", js.Any.fromFunction3(value))
+    def setLocaleList(value: SafeArray[Locale]): Self = StObject.set(x, "LocaleList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLocaleList(value: () => SafeArray[Locale]): Self = this.set("getLocaleList", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPhoneticCandidate(value: (String, Locale) => String): Self = this.set("getPhoneticCandidate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLoadAlgorithm(value: (Locale, String, Double) => Boolean): Self = this.set("loadAlgorithm", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUsePhoneticEntry(value: Locale => Boolean): Self = this.set("usePhoneticEntry", js.Any.fromFunction1(value))
+    def setUsePhoneticEntry(value: Locale => Boolean): Self = StObject.set(x, "usePhoneticEntry", js.Any.fromFunction1(value))
   }
 }

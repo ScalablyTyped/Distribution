@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +38,21 @@ object ConnectionInvokeOptions {
   }
   
   @scala.inline
-  implicit class ConnectionInvokeOptionsOps[Self <: ConnectionInvokeOptions] (val x: Self) extends AnyVal {
+  implicit class ConnectionInvokeOptionsMutableBuilder[Self <: ConnectionInvokeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransferList(value: js.Array[_]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
-    
-    @scala.inline
-    def setTransferListVarargs(value: js.Any*): Self = this.set("transferList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransferList(value: js.Array[_]): Self = this.set("transferList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferList: Self = this.set("transferList", js.undefined)
+    def setTransferListVarargs(value: js.Any*): Self = StObject.set(x, "transferList", js.Array(value :_*))
   }
 }

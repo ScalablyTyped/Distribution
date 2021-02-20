@@ -1,11 +1,12 @@
 package typings.mongodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dictionarymatches extends js.Object {
+trait Dictionarymatches extends StObject {
   
   var `dictionary matches`: Double = js.native
   
@@ -73,60 +74,48 @@ object Dictionarymatches {
   }
   
   @scala.inline
-  implicit class DictionarymatchesOps[Self <: Dictionarymatches] (val x: Self) extends AnyVal {
+  implicit class DictionarymatchesMutableBuilder[Self <: Dictionarymatches] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setDictionary matches`(value: Double): Self = StObject.set(x, "dictionary matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFast-path pages deleted`(value: Double): Self = StObject.set(x, "fast-path pages deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setInternal page key bytes discarded using suffix compression`(value: Double): Self = StObject.set(x, "internal page key bytes discarded using suffix compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDictionary matches`(value: Double): Self = this.set("dictionary matches", value.asInstanceOf[js.Any])
+    def `setInternal page multi-block writes`(value: Double): Self = StObject.set(x, "internal page multi-block writes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFast-path pages deleted`(value: Double): Self = this.set("fast-path pages deleted", value.asInstanceOf[js.Any])
+    def `setInternal-page overflow keys`(value: Double): Self = StObject.set(x, "internal-page overflow keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInternal page key bytes discarded using suffix compression`(value: Double): Self = this.set("internal page key bytes discarded using suffix compression", value.asInstanceOf[js.Any])
+    def `setLeaf page key bytes discarded using prefix compression`(value: Double): Self = StObject.set(x, "leaf page key bytes discarded using prefix compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInternal page multi-block writes`(value: Double): Self = this.set("internal page multi-block writes", value.asInstanceOf[js.Any])
+    def `setLeaf page multi-block writes`(value: Double): Self = StObject.set(x, "leaf page multi-block writes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInternal-page overflow keys`(value: Double): Self = this.set("internal-page overflow keys", value.asInstanceOf[js.Any])
+    def `setLeaf-page overflow keys`(value: Double): Self = StObject.set(x, "leaf-page overflow keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLeaf page key bytes discarded using prefix compression`(value: Double): Self = this.set("leaf page key bytes discarded using prefix compression", value.asInstanceOf[js.Any])
+    def `setMaximum blocks required for a page`(value: Double): Self = StObject.set(x, "maximum blocks required for a page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLeaf page multi-block writes`(value: Double): Self = this.set("leaf page multi-block writes", value.asInstanceOf[js.Any])
+    def `setOverflow values written`(value: Double): Self = StObject.set(x, "overflow values written", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLeaf-page overflow keys`(value: Double): Self = this.set("leaf-page overflow keys", value.asInstanceOf[js.Any])
+    def `setPage checksum matches`(value: Double): Self = StObject.set(x, "page checksum matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMaximum blocks required for a page`(value: Double): Self = this.set("maximum blocks required for a page", value.asInstanceOf[js.Any])
+    def `setPage reconciliation calls`(value: Double): Self = StObject.set(x, "page reconciliation calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOverflow values written`(value: Double): Self = this.set("overflow values written", value.asInstanceOf[js.Any])
+    def `setPage reconciliation calls for eviction`(value: Double): Self = StObject.set(x, "page reconciliation calls for eviction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage checksum matches`(value: Double): Self = this.set("page checksum matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setPage reconciliation calls`(value: Double): Self = this.set("page reconciliation calls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setPage reconciliation calls for eviction`(value: Double): Self = this.set("page reconciliation calls for eviction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setPages deleted`(value: Double): Self = this.set("pages deleted", value.asInstanceOf[js.Any])
+    def `setPages deleted`(value: Double): Self = StObject.set(x, "pages deleted", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ivsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetStreamKeyRequest extends js.Object {
+trait BatchGetStreamKeyRequest extends StObject {
   
   /**
     * Array of ARNs, one per channel.
@@ -21,24 +22,12 @@ object BatchGetStreamKeyRequest {
   }
   
   @scala.inline
-  implicit class BatchGetStreamKeyRequestOps[Self <: BatchGetStreamKeyRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetStreamKeyRequestMutableBuilder[Self <: BatchGetStreamKeyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArns(value: StreamKeyArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArnsVarargs(value: StreamKeyArn*): Self = this.set("arns", js.Array(value :_*))
-    
-    @scala.inline
-    def setArns(value: StreamKeyArnList): Self = this.set("arns", value.asInstanceOf[js.Any])
+    def setArnsVarargs(value: StreamKeyArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
   }
 }

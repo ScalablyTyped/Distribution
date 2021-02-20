@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceUtilizationReport extends js.Object {
+trait ResourceUtilizationReport extends StObject {
   
   /** Per container information. Key: container name. */
   var containers: js.UndefOr[
@@ -30,46 +31,34 @@ object ResourceUtilizationReport {
   }
   
   @scala.inline
-  implicit class ResourceUtilizationReportOps[Self <: ResourceUtilizationReport] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ResourceUtilizationReportMutableBuilder[Self <: ResourceUtilizationReport] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setContainers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport with TopLevel[js.Any]
-    ): Self = this.set("containers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainers: Self = this.set("containers", js.undefined)
+    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
     @scala.inline
-    def setCpuTimeVarargs(value: CPUTime*): Self = this.set("cpuTime", js.Array(value :_*))
+    def setCpuTime(value: js.Array[CPUTime]): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuTime(value: js.Array[CPUTime]): Self = this.set("cpuTime", value.asInstanceOf[js.Any])
+    def setCpuTimeUndefined: Self = StObject.set(x, "cpuTime", js.undefined)
     
     @scala.inline
-    def deleteCpuTime: Self = this.set("cpuTime", js.undefined)
+    def setCpuTimeVarargs(value: CPUTime*): Self = StObject.set(x, "cpuTime", js.Array(value :_*))
     
     @scala.inline
-    def setMemoryInfoVarargs(value: MemInfo*): Self = this.set("memoryInfo", js.Array(value :_*))
+    def setMemoryInfo(value: js.Array[MemInfo]): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryInfo(value: js.Array[MemInfo]): Self = this.set("memoryInfo", value.asInstanceOf[js.Any])
+    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
     
     @scala.inline
-    def deleteMemoryInfo: Self = this.set("memoryInfo", js.undefined)
+    def setMemoryInfoVarargs(value: MemInfo*): Self = StObject.set(x, "memoryInfo", js.Array(value :_*))
   }
 }

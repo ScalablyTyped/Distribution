@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statistics extends js.Object {
+trait Statistics extends StObject {
   
   /**
     * For a numeric field, the average value in the field.
@@ -56,66 +57,54 @@ object Statistics {
   }
   
   @scala.inline
-  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvg(value: Double): Self = StObject.set(x, "Avg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvgUndefined: Self = StObject.set(x, "Avg", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvg(value: Double): Self = this.set("Avg", value.asInstanceOf[js.Any])
+    def setCountDistinct(value: Integer): Self = StObject.set(x, "CountDistinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvg: Self = this.set("Avg", js.undefined)
+    def setCountDistinctUndefined: Self = StObject.set(x, "CountDistinct", js.undefined)
     
     @scala.inline
-    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setCountNan(value: Integer): Self = StObject.set(x, "CountNan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setCountNanUndefined: Self = StObject.set(x, "CountNan", js.undefined)
     
     @scala.inline
-    def setCountDistinct(value: Integer): Self = this.set("CountDistinct", value.asInstanceOf[js.Any])
+    def setCountNull(value: Integer): Self = StObject.set(x, "CountNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountDistinct: Self = this.set("CountDistinct", js.undefined)
+    def setCountNullUndefined: Self = StObject.set(x, "CountNull", js.undefined)
     
     @scala.inline
-    def setCountNan(value: Integer): Self = this.set("CountNan", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def deleteCountNan: Self = this.set("CountNan", js.undefined)
+    def setMax(value: String): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountNull(value: Integer): Self = this.set("CountNull", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
     @scala.inline
-    def deleteCountNull: Self = this.set("CountNull", js.undefined)
+    def setMin(value: String): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("Max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "Min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("Max", js.undefined)
+    def setStddev(value: Double): Self = StObject.set(x, "Stddev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: String): Self = this.set("Min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("Min", js.undefined)
-    
-    @scala.inline
-    def setStddev(value: Double): Self = this.set("Stddev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStddev: Self = this.set("Stddev", js.undefined)
+    def setStddevUndefined: Self = StObject.set(x, "Stddev", js.undefined)
   }
 }

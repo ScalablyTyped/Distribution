@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailConfigurationType extends js.Object {
+trait EmailConfigurationType extends StObject {
   
   /**
     * The set of configuration rules that can be applied to emails sent using Amazon SES. A configuration set is applied to an email by including a reference to the configuration set in the headers of the email. Once applied, all of the rules in that configuration set are applied to the email. Configuration sets can be used to apply the following types of rules to emails:    Event publishing – Amazon SES can track the number of send, delivery, open, click, bounce, and complaint events for each email sent. Use event publishing to send information about these events to other AWS services such as SNS and CloudWatch.   IP pool management – When leasing dedicated IP addresses with Amazon SES, you can create groups of IP addresses, called dedicated IP pools. You can then associate the dedicated IP pools with configuration sets.  
@@ -41,48 +42,36 @@ object EmailConfigurationType {
   }
   
   @scala.inline
-  implicit class EmailConfigurationTypeOps[Self <: EmailConfigurationType] (val x: Self) extends AnyVal {
+  implicit class EmailConfigurationTypeMutableBuilder[Self <: EmailConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSet(value: SESConfigurationSet): Self = StObject.set(x, "ConfigurationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSetUndefined: Self = StObject.set(x, "ConfigurationSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailSendingAccount(value: EmailSendingAccountType): Self = StObject.set(x, "EmailSendingAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSet(value: SESConfigurationSet): Self = this.set("ConfigurationSet", value.asInstanceOf[js.Any])
+    def setEmailSendingAccountUndefined: Self = StObject.set(x, "EmailSendingAccount", js.undefined)
     
     @scala.inline
-    def deleteConfigurationSet: Self = this.set("ConfigurationSet", js.undefined)
+    def setFrom(value: StringType): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSendingAccount(value: EmailSendingAccountType): Self = this.set("EmailSendingAccount", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
     @scala.inline
-    def deleteEmailSendingAccount: Self = this.set("EmailSendingAccount", js.undefined)
+    def setReplyToEmailAddress(value: EmailAddressType): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: StringType): Self = this.set("From", value.asInstanceOf[js.Any])
+    def setReplyToEmailAddressUndefined: Self = StObject.set(x, "ReplyToEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("From", js.undefined)
+    def setSourceArn(value: ArnType): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToEmailAddress(value: EmailAddressType): Self = this.set("ReplyToEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToEmailAddress: Self = this.set("ReplyToEmailAddress", js.undefined)
-    
-    @scala.inline
-    def setSourceArn(value: ArnType): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
   }
 }

@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.usng
 import typings.arcgisJsApi.arcgisJsApiStrings.utm
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,39 +61,27 @@ object GeometryServiceFromGeoCoordinateStringParams {
   }
   
   @scala.inline
-  implicit class GeometryServiceFromGeoCoordinateStringParamsOps[Self <: GeometryServiceFromGeoCoordinateStringParams] (val x: Self) extends AnyVal {
+  implicit class GeometryServiceFromGeoCoordinateStringParamsMutableBuilder[Self <: GeometryServiceFromGeoCoordinateStringParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionModeUndefined: Self = StObject.set(x, "conversionMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionType(value: mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = StObject.set(x, "conversionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSr(value: SpatialReference | String | Double): Self = this.set("sr", value.asInstanceOf[js.Any])
+    def setConversionTypeUndefined: Self = StObject.set(x, "conversionType", js.undefined)
     
     @scala.inline
-    def setStringsVarargs(value: String*): Self = this.set("strings", js.Array(value :_*))
+    def setSr(value: SpatialReference | String | Double): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrings(value: js.Array[String]): Self = this.set("strings", value.asInstanceOf[js.Any])
+    def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionMode(value: String): Self = this.set("conversionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversionMode: Self = this.set("conversionMode", js.undefined)
-    
-    @scala.inline
-    def setConversionType(value: mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = this.set("conversionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversionType: Self = this.set("conversionType", js.undefined)
+    def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
   }
 }

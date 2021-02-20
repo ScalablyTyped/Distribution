@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSchemaExtensionRequest extends js.Object {
+trait StartSchemaExtensionRequest extends StObject {
   
   /**
     * If true, creates a snapshot of the directory before applying the schema extension.
@@ -41,30 +42,18 @@ object StartSchemaExtensionRequest {
   }
   
   @scala.inline
-  implicit class StartSchemaExtensionRequestOps[Self <: StartSchemaExtensionRequest] (val x: Self) extends AnyVal {
+  implicit class StartSchemaExtensionRequestMutableBuilder[Self <: StartSchemaExtensionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateSnapshotBeforeSchemaExtension(value: CreateSnapshotBeforeSchemaExtension): Self = StObject.set(x, "CreateSnapshotBeforeSchemaExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSnapshotBeforeSchemaExtension(value: CreateSnapshotBeforeSchemaExtension): Self = this.set("CreateSnapshotBeforeSchemaExtension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLdifContent(value: LdifContent): Self = this.set("LdifContent", value.asInstanceOf[js.Any])
+    def setLdifContent(value: LdifContent): Self = StObject.set(x, "LdifContent", value.asInstanceOf[js.Any])
   }
 }

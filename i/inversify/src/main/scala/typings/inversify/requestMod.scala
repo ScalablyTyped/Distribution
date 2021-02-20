@@ -4,14 +4,14 @@ import typings.inversify.interfacesMod.interfaces.Binding
 import typings.inversify.interfacesMod.interfaces.Context
 import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import typings.inversify.interfacesMod.interfaces.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify/dts/planning/request", JSImport.Namespace)
-@js.native
-object requestMod extends js.Object {
+object requestMod {
   
+  @JSImport("inversify/dts/planning/request", "Request")
   @js.native
   class Request protected ()
     extends typings.inversify.interfacesMod.interfaces.Request {

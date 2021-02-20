@@ -1,11 +1,12 @@
 package typings.redisInfo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseReplicationInfo extends js.Object {
+trait BaseReplicationInfo extends StObject {
   
   var connected_slaves: String = js.native
   
@@ -44,45 +45,33 @@ object BaseReplicationInfo {
   }
   
   @scala.inline
-  implicit class BaseReplicationInfoOps[Self <: BaseReplicationInfo] (val x: Self) extends AnyVal {
+  implicit class BaseReplicationInfoMutableBuilder[Self <: BaseReplicationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaster_repl_offset(value: String): Self = StObject.set(x, "master_repl_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaster_replid(value: String): Self = StObject.set(x, "master_replid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected_slaves(value: String): Self = this.set("connected_slaves", value.asInstanceOf[js.Any])
+    def setMaster_replid2(value: String): Self = StObject.set(x, "master_replid2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_repl_offset(value: String): Self = this.set("master_repl_offset", value.asInstanceOf[js.Any])
+    def setRepl_backlog_active(value: Flag): Self = StObject.set(x, "repl_backlog_active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_replid(value: String): Self = this.set("master_replid", value.asInstanceOf[js.Any])
+    def setRepl_backlog_first_byte_offset(value: String): Self = StObject.set(x, "repl_backlog_first_byte_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_replid2(value: String): Self = this.set("master_replid2", value.asInstanceOf[js.Any])
+    def setRepl_backlog_histlen(value: String): Self = StObject.set(x, "repl_backlog_histlen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepl_backlog_active(value: Flag): Self = this.set("repl_backlog_active", value.asInstanceOf[js.Any])
+    def setRepl_backlog_size(value: String): Self = StObject.set(x, "repl_backlog_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepl_backlog_first_byte_offset(value: String): Self = this.set("repl_backlog_first_byte_offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepl_backlog_histlen(value: String): Self = this.set("repl_backlog_histlen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepl_backlog_size(value: String): Self = this.set("repl_backlog_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond_repl_offset(value: String): Self = this.set("second_repl_offset", value.asInstanceOf[js.Any])
+    def setSecond_repl_offset(value: String): Self = StObject.set(x, "second_repl_offset", value.asInstanceOf[js.Any])
   }
 }

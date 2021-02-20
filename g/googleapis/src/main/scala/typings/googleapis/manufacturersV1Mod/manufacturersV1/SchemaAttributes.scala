@@ -1,5 +1,6 @@
 package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://support.google.com/manufacturers/answer/6124116.
   */
 @js.native
-trait SchemaAttributes extends js.Object {
+trait SchemaAttributes extends StObject {
   
   /**
     * The additional images of the product. For more information, see
@@ -229,252 +230,240 @@ object SchemaAttributes {
   }
   
   @scala.inline
-  implicit class SchemaAttributesOps[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
+  implicit class SchemaAttributesMutableBuilder[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalImageLink(value: js.Array[SchemaImage]): Self = StObject.set(x, "additionalImageLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalImageLinkUndefined: Self = StObject.set(x, "additionalImageLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalImageLinkVarargs(value: SchemaImage*): Self = StObject.set(x, "additionalImageLink", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalImageLinkVarargs(value: SchemaImage*): Self = this.set("additionalImageLink", js.Array(value :_*))
+    def setAgeGroup(value: String): Self = StObject.set(x, "ageGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalImageLink(value: js.Array[SchemaImage]): Self = this.set("additionalImageLink", value.asInstanceOf[js.Any])
+    def setAgeGroupUndefined: Self = StObject.set(x, "ageGroup", js.undefined)
     
     @scala.inline
-    def deleteAdditionalImageLink: Self = this.set("additionalImageLink", js.undefined)
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeGroup(value: String): Self = this.set("ageGroup", value.asInstanceOf[js.Any])
+    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
     @scala.inline
-    def deleteAgeGroup: Self = this.set("ageGroup", js.undefined)
+    def setCapacity(value: SchemaCapacity): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     
     @scala.inline
-    def deleteBrand: Self = this.set("brand", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacity(value: SchemaCapacity): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCapacity: Self = this.set("capacity", js.undefined)
+    def setCount(value: SchemaCount): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: SchemaCount): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setDisclosureDate(value: String): Self = StObject.set(x, "disclosureDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisclosureDateUndefined: Self = StObject.set(x, "disclosureDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExcludedDestination(value: js.Array[String]): Self = StObject.set(x, "excludedDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisclosureDate(value: String): Self = this.set("disclosureDate", value.asInstanceOf[js.Any])
+    def setExcludedDestinationUndefined: Self = StObject.set(x, "excludedDestination", js.undefined)
     
     @scala.inline
-    def deleteDisclosureDate: Self = this.set("disclosureDate", js.undefined)
+    def setExcludedDestinationVarargs(value: String*): Self = StObject.set(x, "excludedDestination", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedDestinationVarargs(value: String*): Self = this.set("excludedDestination", js.Array(value :_*))
+    def setFeatureDescription(value: js.Array[SchemaFeatureDescription]): Self = StObject.set(x, "featureDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedDestination(value: js.Array[String]): Self = this.set("excludedDestination", value.asInstanceOf[js.Any])
+    def setFeatureDescriptionUndefined: Self = StObject.set(x, "featureDescription", js.undefined)
     
     @scala.inline
-    def deleteExcludedDestination: Self = this.set("excludedDestination", js.undefined)
+    def setFeatureDescriptionVarargs(value: SchemaFeatureDescription*): Self = StObject.set(x, "featureDescription", js.Array(value :_*))
     
     @scala.inline
-    def setFeatureDescriptionVarargs(value: SchemaFeatureDescription*): Self = this.set("featureDescription", js.Array(value :_*))
+    def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureDescription(value: js.Array[SchemaFeatureDescription]): Self = this.set("featureDescription", value.asInstanceOf[js.Any])
+    def setFlavorUndefined: Self = StObject.set(x, "flavor", js.undefined)
     
     @scala.inline
-    def deleteFeatureDescription: Self = this.set("featureDescription", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlavor(value: String): Self = this.set("flavor", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFlavor: Self = this.set("flavor", js.undefined)
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setGtin(value: js.Array[String]): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setGtinVarargs(value: String*): Self = StObject.set(x, "gtin", js.Array(value :_*))
     
     @scala.inline
-    def setGtinVarargs(value: String*): Self = this.set("gtin", js.Array(value :_*))
+    def setImageLink(value: SchemaImage): Self = StObject.set(x, "imageLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGtin(value: js.Array[String]): Self = this.set("gtin", value.asInstanceOf[js.Any])
+    def setImageLinkUndefined: Self = StObject.set(x, "imageLink", js.undefined)
     
     @scala.inline
-    def deleteGtin: Self = this.set("gtin", js.undefined)
+    def setIncludedDestination(value: js.Array[String]): Self = StObject.set(x, "includedDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLink(value: SchemaImage): Self = this.set("imageLink", value.asInstanceOf[js.Any])
+    def setIncludedDestinationUndefined: Self = StObject.set(x, "includedDestination", js.undefined)
     
     @scala.inline
-    def deleteImageLink: Self = this.set("imageLink", js.undefined)
+    def setIncludedDestinationVarargs(value: String*): Self = StObject.set(x, "includedDestination", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedDestinationVarargs(value: String*): Self = this.set("includedDestination", js.Array(value :_*))
+    def setItemGroupId(value: String): Self = StObject.set(x, "itemGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedDestination(value: js.Array[String]): Self = this.set("includedDestination", value.asInstanceOf[js.Any])
+    def setItemGroupIdUndefined: Self = StObject.set(x, "itemGroupId", js.undefined)
     
     @scala.inline
-    def deleteIncludedDestination: Self = this.set("includedDestination", js.undefined)
+    def setMaterial(value: String): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemGroupId(value: String): Self = this.set("itemGroupId", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteItemGroupId: Self = this.set("itemGroupId", js.undefined)
+    def setMpn(value: String): Self = StObject.set(x, "mpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: String): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setMpnUndefined: Self = StObject.set(x, "mpn", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpn(value: String): Self = this.set("mpn", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deleteMpn: Self = this.set("mpn", js.undefined)
+    def setProductDetail(value: js.Array[SchemaProductDetail]): Self = StObject.set(x, "productDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setProductDetailUndefined: Self = StObject.set(x, "productDetail", js.undefined)
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setProductDetailVarargs(value: SchemaProductDetail*): Self = StObject.set(x, "productDetail", js.Array(value :_*))
     
     @scala.inline
-    def setProductDetailVarargs(value: SchemaProductDetail*): Self = this.set("productDetail", js.Array(value :_*))
+    def setProductLine(value: String): Self = StObject.set(x, "productLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDetail(value: js.Array[SchemaProductDetail]): Self = this.set("productDetail", value.asInstanceOf[js.Any])
+    def setProductLineUndefined: Self = StObject.set(x, "productLine", js.undefined)
     
     @scala.inline
-    def deleteProductDetail: Self = this.set("productDetail", js.undefined)
+    def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductLine(value: String): Self = this.set("productLine", value.asInstanceOf[js.Any])
+    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
     @scala.inline
-    def deleteProductLine: Self = this.set("productLine", js.undefined)
+    def setProductPageUrl(value: String): Self = StObject.set(x, "productPageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductName(value: String): Self = this.set("productName", value.asInstanceOf[js.Any])
+    def setProductPageUrlUndefined: Self = StObject.set(x, "productPageUrl", js.undefined)
     
     @scala.inline
-    def deleteProductName: Self = this.set("productName", js.undefined)
+    def setProductType(value: js.Array[String]): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductPageUrl(value: String): Self = this.set("productPageUrl", value.asInstanceOf[js.Any])
+    def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
     
     @scala.inline
-    def deleteProductPageUrl: Self = this.set("productPageUrl", js.undefined)
+    def setProductTypeVarargs(value: String*): Self = StObject.set(x, "productType", js.Array(value :_*))
     
     @scala.inline
-    def setProductTypeVarargs(value: String*): Self = this.set("productType", js.Array(value :_*))
+    def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductType(value: js.Array[String]): Self = this.set("productType", value.asInstanceOf[js.Any])
+    def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
     
     @scala.inline
-    def deleteProductType: Self = this.set("productType", js.undefined)
+    def setScent(value: String): Self = StObject.set(x, "scent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDate(value: String): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
+    def setScentUndefined: Self = StObject.set(x, "scent", js.undefined)
     
     @scala.inline
-    def deleteReleaseDate: Self = this.set("releaseDate", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScent(value: String): Self = this.set("scent", value.asInstanceOf[js.Any])
+    def setSizeSystem(value: String): Self = StObject.set(x, "sizeSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScent: Self = this.set("scent", js.undefined)
+    def setSizeSystemUndefined: Self = StObject.set(x, "sizeSystem", js.undefined)
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSizeType(value: String): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
     @scala.inline
-    def setSizeSystem(value: String): Self = this.set("sizeSystem", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSizeSystem: Self = this.set("sizeSystem", js.undefined)
+    def setSuggestedRetailPrice(value: SchemaPrice): Self = StObject.set(x, "suggestedRetailPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeType(value: String): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    def setSuggestedRetailPriceUndefined: Self = StObject.set(x, "suggestedRetailPrice", js.undefined)
     
     @scala.inline
-    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    def setTargetClientId(value: String): Self = StObject.set(x, "targetClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedRetailPrice(value: SchemaPrice): Self = this.set("suggestedRetailPrice", value.asInstanceOf[js.Any])
+    def setTargetClientIdUndefined: Self = StObject.set(x, "targetClientId", js.undefined)
     
     @scala.inline
-    def deleteSuggestedRetailPrice: Self = this.set("suggestedRetailPrice", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetClientId(value: String): Self = this.set("targetClientId", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTargetClientId: Self = this.set("targetClientId", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setVideoLink(value: js.Array[String]): Self = StObject.set(x, "videoLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setVideoLinkUndefined: Self = StObject.set(x, "videoLink", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVideoLinkVarargs(value: String*): Self = this.set("videoLink", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideoLink(value: js.Array[String]): Self = this.set("videoLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoLink: Self = this.set("videoLink", js.undefined)
+    def setVideoLinkVarargs(value: String*): Self = StObject.set(x, "videoLink", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +25,10 @@ class Skeleton protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Skeleton")
-@js.native
-object Skeleton extends js.Object {
+object Skeleton {
   
+  @JSGlobal("BABYLON.Skeleton.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     skeleton: typings.babylonjs.BABYLON.Skeleton,
     referenceFrame: js.UndefOr[scala.Nothing],
@@ -40,6 +41,8 @@ object Skeleton extends js.Object {
     * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
     * @returns the original skeleton
     */
+  @JSGlobal("BABYLON.Skeleton.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(skeleton: typings.babylonjs.BABYLON.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.BABYLON.Skeleton] = js.native
   
   /**
@@ -48,5 +51,7 @@ object Skeleton extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new skeleton
     */
+  @JSGlobal("BABYLON.Skeleton.Parse")
+  @js.native
   def Parse(parsedSkeleton: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Skeleton = js.native
 }

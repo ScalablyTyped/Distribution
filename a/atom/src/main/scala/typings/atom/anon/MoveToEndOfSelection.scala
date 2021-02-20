@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MoveToEndOfSelection extends js.Object {
+trait MoveToEndOfSelection extends StObject {
   
   var moveToEndOfSelection: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object MoveToEndOfSelection {
   }
   
   @scala.inline
-  implicit class MoveToEndOfSelectionOps[Self <: MoveToEndOfSelection] (val x: Self) extends AnyVal {
+  implicit class MoveToEndOfSelectionMutableBuilder[Self <: MoveToEndOfSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMoveToEndOfSelection(value: Boolean): Self = StObject.set(x, "moveToEndOfSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMoveToEndOfSelection(value: Boolean): Self = this.set("moveToEndOfSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoveToEndOfSelection: Self = this.set("moveToEndOfSelection", js.undefined)
+    def setMoveToEndOfSelectionUndefined: Self = StObject.set(x, "moveToEndOfSelection", js.undefined)
   }
 }

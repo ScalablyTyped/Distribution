@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * WindowsSecurityContextOptions contain Windows-specific options and credentials.
   */
 @js.native
-trait WindowsSecurityContextOptions extends js.Object {
+trait WindowsSecurityContextOptions extends StObject {
   
   /**
     * GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
@@ -35,36 +36,24 @@ object WindowsSecurityContextOptions {
   }
   
   @scala.inline
-  implicit class WindowsSecurityContextOptionsOps[Self <: WindowsSecurityContextOptions] (val x: Self) extends AnyVal {
+  implicit class WindowsSecurityContextOptionsMutableBuilder[Self <: WindowsSecurityContextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGmsaCredentialSpec(value: Input[String]): Self = StObject.set(x, "gmsaCredentialSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGmsaCredentialSpecName(value: Input[String]): Self = StObject.set(x, "gmsaCredentialSpecName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGmsaCredentialSpecNameUndefined: Self = StObject.set(x, "gmsaCredentialSpecName", js.undefined)
     
     @scala.inline
-    def setGmsaCredentialSpec(value: Input[String]): Self = this.set("gmsaCredentialSpec", value.asInstanceOf[js.Any])
+    def setGmsaCredentialSpecUndefined: Self = StObject.set(x, "gmsaCredentialSpec", js.undefined)
     
     @scala.inline
-    def deleteGmsaCredentialSpec: Self = this.set("gmsaCredentialSpec", js.undefined)
+    def setRunAsUserName(value: Input[String]): Self = StObject.set(x, "runAsUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGmsaCredentialSpecName(value: Input[String]): Self = this.set("gmsaCredentialSpecName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGmsaCredentialSpecName: Self = this.set("gmsaCredentialSpecName", js.undefined)
-    
-    @scala.inline
-    def setRunAsUserName(value: Input[String]): Self = this.set("runAsUserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunAsUserName: Self = this.set("runAsUserName", js.undefined)
+    def setRunAsUserNameUndefined: Self = StObject.set(x, "runAsUserName", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.chromeApps.chrome.networking.onc
 
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.networking.onc.internal.ObjectFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,63 +47,51 @@ object WiFiProperties {
   }
   
   @scala.inline
-  implicit class WiFiPropertiesOps[Self <: WiFiProperties[_, _, _, _, _], M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L] (val x: Self with (WiFiProperties[M, OF, B, S, L])) extends AnyVal {
+  implicit class WiFiPropertiesMutableBuilder[Self <: WiFiProperties[_, _, _, _, _], M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L] (val x: Self with (WiFiProperties[M, OF, B, S, L])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowGatewayARPPolling(value: B): Self = StObject.set(x, "AllowGatewayARPPolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowGatewayARPPollingUndefined: Self = StObject.set(x, "AllowGatewayARPPolling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowGatewayARPPolling(value: B): Self = this.set("AllowGatewayARPPolling", value.asInstanceOf[js.Any])
+    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
     @scala.inline
-    def deleteAllowGatewayARPPolling: Self = this.set("AllowGatewayARPPolling", js.undefined)
+    def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: B): Self = this.set("AutoConnect", value.asInstanceOf[js.Any])
+    def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
     
     @scala.inline
-    def deleteAutoConnect: Self = this.set("AutoConnect", js.undefined)
+    def setFrequencyList(value: js.Array[integer]): Self = StObject.set(x, "FrequencyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEAP(value: EAPProperties): Self = this.set("EAP", value.asInstanceOf[js.Any])
+    def setFrequencyListUndefined: Self = StObject.set(x, "FrequencyList", js.undefined)
     
     @scala.inline
-    def deleteEAP: Self = this.set("EAP", js.undefined)
+    def setFrequencyListVarargs(value: integer*): Self = StObject.set(x, "FrequencyList", js.Array(value :_*))
     
     @scala.inline
-    def setFrequencyListVarargs(value: integer*): Self = this.set("FrequencyList", js.Array(value :_*))
+    def setHiddenSSID(value: B): Self = StObject.set(x, "HiddenSSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequencyList(value: js.Array[integer]): Self = this.set("FrequencyList", value.asInstanceOf[js.Any])
+    def setHiddenSSIDUndefined: Self = StObject.set(x, "HiddenSSID", js.undefined)
     
     @scala.inline
-    def deleteFrequencyList: Self = this.set("FrequencyList", js.undefined)
+    def setPassphrase(value: String): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenSSID(value: B): Self = this.set("HiddenSSID", value.asInstanceOf[js.Any])
+    def setPassphraseUndefined: Self = StObject.set(x, "Passphrase", js.undefined)
     
     @scala.inline
-    def deleteHiddenSSID: Self = this.set("HiddenSSID", js.undefined)
+    def setRoamTreshold(value: L): Self = StObject.set(x, "RoamTreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassphrase(value: String): Self = this.set("Passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassphrase: Self = this.set("Passphrase", js.undefined)
-    
-    @scala.inline
-    def setRoamTreshold(value: L): Self = this.set("RoamTreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoamTreshold: Self = this.set("RoamTreshold", js.undefined)
+    def setRoamTresholdUndefined: Self = StObject.set(x, "RoamTreshold", js.undefined)
   }
 }

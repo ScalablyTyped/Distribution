@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsHitData extends js.Object {
+trait PhysicsHitData extends StObject {
   
   /**
     * The contact point
@@ -31,27 +32,15 @@ object PhysicsHitData {
   }
   
   @scala.inline
-  implicit class PhysicsHitDataOps[Self <: PhysicsHitData] (val x: Self) extends AnyVal {
+  implicit class PhysicsHitDataMutableBuilder[Self <: PhysicsHitData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactPoint(value: Vector3): Self = StObject.set(x, "contactPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceFromOrigin(value: Double): Self = StObject.set(x, "distanceFromOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContactPoint(value: Vector3): Self = this.set("contactPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistanceFromOrigin(value: Double): Self = this.set("distanceFromOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForce(value: Vector3): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setForce(value: Vector3): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
   }
 }

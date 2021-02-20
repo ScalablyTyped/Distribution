@@ -12,14 +12,14 @@ import typings.three.quaternionMod.Quaternion
 import typings.three.sphericalMod.Spherical
 import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Vector3", JSImport.Namespace)
-@js.native
-object vector3Mod extends js.Object {
+object vector3Mod {
   
+  @JSImport("three/src/math/Vector3", "Vector3")
   @js.native
   class Vector3 () extends Vector {
     def this(x: Double) = this()

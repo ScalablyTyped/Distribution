@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConfig extends js.Object {
+trait ClientConfig extends StObject {
   
   /** Node for a particular client. */
   var node: js.UndefOr[Node] = js.native
@@ -21,33 +22,21 @@ object ClientConfig {
   }
   
   @scala.inline
-  implicit class ClientConfigOps[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXdsConfig(value: js.Array[PerXdsConfig]): Self = StObject.set(x, "xdsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: Node): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setXdsConfigUndefined: Self = StObject.set(x, "xdsConfig", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
-    
-    @scala.inline
-    def setXdsConfigVarargs(value: PerXdsConfig*): Self = this.set("xdsConfig", js.Array(value :_*))
-    
-    @scala.inline
-    def setXdsConfig(value: js.Array[PerXdsConfig]): Self = this.set("xdsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXdsConfig: Self = this.set("xdsConfig", js.undefined)
+    def setXdsConfigVarargs(value: PerXdsConfig*): Self = StObject.set(x, "xdsConfig", js.Array(value :_*))
   }
 }

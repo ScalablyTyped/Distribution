@@ -6,6 +6,7 @@ import typings.yaml.yamlStrings.BIN
 import typings.yaml.yamlStrings.HEX
 import typings.yaml.yamlStrings.OCT
 import typings.yaml.yamlStrings.TIME
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +30,7 @@ class Scalar protected () extends Node {
   
   var value: js.Any = js.native
 }
-@JSImport("yaml/types", "Scalar")
-@js.native
-object Scalar extends js.Object {
+object Scalar {
   
   /* Rewritten from type alias, can be one of: 
     - typings.yaml.utilMod.Type.BLOCK_FOLDED
@@ -40,5 +39,5 @@ object Scalar extends js.Object {
     - typings.yaml.utilMod.Type.QUOTE_DOUBLE
     - typings.yaml.utilMod.Type.QUOTE_SINGLE
   */
-  trait Type extends js.Object
+  trait Type extends StObject
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneLineChangeKind extends js.Object
+sealed trait PhoneLineChangeKind extends StObject
 /** Indicates the type of change for a background phone line change trigger. */
 @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneLineChangeKind")
 @js.native
-object PhoneLineChangeKind extends js.Object {
+object PhoneLineChangeKind extends StObject {
   
   /** A new phone line was added. */
   @js.native

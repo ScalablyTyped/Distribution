@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If `VerticalOrientation == VERT_NONE` , then the value "YPos" describes the distance from the top of the context. Otherwise "YPos" is ignored.
   */
 @js.native
-trait VertOrientationFormat extends js.Object {
+trait VertOrientationFormat extends StObject {
   
   /** determines the vertical alignment of an object. The values refer to com::sun::star::VertOrientation. */
   var VerticalOrientation: Double = js.native
@@ -33,27 +34,15 @@ object VertOrientationFormat {
   }
   
   @scala.inline
-  implicit class VertOrientationFormatOps[Self <: VertOrientationFormat] (val x: Self) extends AnyVal {
+  implicit class VertOrientationFormatMutableBuilder[Self <: VertOrientationFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVerticalOrientation(value: Double): Self = StObject.set(x, "VerticalOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVerticalRelation(value: Double): Self = StObject.set(x, "VerticalRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVerticalOrientation(value: Double): Self = this.set("VerticalOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalRelation(value: Double): Self = this.set("VerticalRelation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYPos(value: Double): Self = this.set("YPos", value.asInstanceOf[js.Any])
+    def setYPos(value: Double): Self = StObject.set(x, "YPos", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateObject extends js.Object {
+trait DateObject extends StObject {
   
   def AddDays(pvarDate: js.Any, pvarDays: js.Any): js.Any = js.native
   
@@ -34,33 +35,21 @@ object DateObject {
   }
   
   @scala.inline
-  implicit class DateObjectOps[Self <: DateObject] (val x: Self) extends AnyVal {
+  implicit class DateObjectMutableBuilder[Self <: DateObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDays(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "AddDays", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSeconds(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "AddSeconds", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoPathDotDateObject_typekey(value: DateObject): Self = StObject.set(x, "InfoPath.DateObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDays(value: (js.Any, js.Any) => js.Any): Self = this.set("AddDays", js.Any.fromFunction2(value))
+    def setNow(value: () => js.Any): Self = StObject.set(x, "Now", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSeconds(value: (js.Any, js.Any) => js.Any): Self = this.set("AddSeconds", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInfoPathDotDateObject_typekey(value: DateObject): Self = this.set("InfoPath.DateObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNow(value: () => js.Any): Self = this.set("Now", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToday(value: () => js.Any): Self = this.set("Today", js.Any.fromFunction0(value))
+    def setToday(value: () => js.Any): Self = StObject.set(x, "Today", js.Any.fromFunction0(value))
   }
 }

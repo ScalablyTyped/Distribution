@@ -2,6 +2,7 @@ package typings.microsoftAjax.Sys.UI
 
 import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,27 +63,15 @@ object Behavior {
   }
   
   @scala.inline
-  implicit class BehaviorOps[Self <: Behavior] (val x: Self) extends AnyVal {
+  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet_element(value: () => HTMLElement): Self = this.set("get_element", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_name(value: () => String): Self = this.set("get_name", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_name(value: String => Unit): Self = this.set("set_name", js.Any.fromFunction1(value))
+    def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
   }
 }

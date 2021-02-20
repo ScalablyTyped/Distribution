@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IamPolicyAnalysisResult extends js.Object {
+trait IamPolicyAnalysisResult extends StObject {
   
   /** The access control lists derived from the iam_binding that match or potentially match resource and access selectors specified in the request. */
   var accessControlLists: js.UndefOr[js.Array[GoogleCloudAssetV1AccessControlList]] = js.native
@@ -31,51 +32,39 @@ object IamPolicyAnalysisResult {
   }
   
   @scala.inline
-  implicit class IamPolicyAnalysisResultOps[Self <: IamPolicyAnalysisResult] (val x: Self) extends AnyVal {
+  implicit class IamPolicyAnalysisResultMutableBuilder[Self <: IamPolicyAnalysisResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlLists(value: js.Array[GoogleCloudAssetV1AccessControlList]): Self = StObject.set(x, "accessControlLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListsUndefined: Self = StObject.set(x, "accessControlLists", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessControlListsVarargs(value: GoogleCloudAssetV1AccessControlList*): Self = StObject.set(x, "accessControlLists", js.Array(value :_*))
     
     @scala.inline
-    def setAccessControlListsVarargs(value: GoogleCloudAssetV1AccessControlList*): Self = this.set("accessControlLists", js.Array(value :_*))
+    def setAttachedResourceFullName(value: String): Self = StObject.set(x, "attachedResourceFullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlLists(value: js.Array[GoogleCloudAssetV1AccessControlList]): Self = this.set("accessControlLists", value.asInstanceOf[js.Any])
+    def setAttachedResourceFullNameUndefined: Self = StObject.set(x, "attachedResourceFullName", js.undefined)
     
     @scala.inline
-    def deleteAccessControlLists: Self = this.set("accessControlLists", js.undefined)
+    def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedResourceFullName(value: String): Self = this.set("attachedResourceFullName", value.asInstanceOf[js.Any])
+    def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
     
     @scala.inline
-    def deleteAttachedResourceFullName: Self = this.set("attachedResourceFullName", js.undefined)
+    def setIamBinding(value: Binding): Self = StObject.set(x, "iamBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullyExplored(value: Boolean): Self = this.set("fullyExplored", value.asInstanceOf[js.Any])
+    def setIamBindingUndefined: Self = StObject.set(x, "iamBinding", js.undefined)
     
     @scala.inline
-    def deleteFullyExplored: Self = this.set("fullyExplored", js.undefined)
+    def setIdentityList(value: GoogleCloudAssetV1IdentityList): Self = StObject.set(x, "identityList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamBinding(value: Binding): Self = this.set("iamBinding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIamBinding: Self = this.set("iamBinding", js.undefined)
-    
-    @scala.inline
-    def setIdentityList(value: GoogleCloudAssetV1IdentityList): Self = this.set("identityList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityList: Self = this.set("identityList", js.undefined)
+    def setIdentityListUndefined: Self = StObject.set(x, "identityList", js.undefined)
   }
 }

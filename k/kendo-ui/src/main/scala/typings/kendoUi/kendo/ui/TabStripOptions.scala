@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabStripOptions extends js.Object {
+trait TabStripOptions extends StObject {
   
   var activate: js.UndefOr[js.Function1[/* e */ TabStripActivateEvent, Unit]] = js.native
   
@@ -57,138 +58,126 @@ object TabStripOptions {
   }
   
   @scala.inline
-  implicit class TabStripOptionsOps[Self <: TabStripOptions] (val x: Self) extends AnyVal {
+  implicit class TabStripOptionsMutableBuilder[Self <: TabStripOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: /* e */ TabStripActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: Boolean | TabStripAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: /* e */ TabStripActivateEvent => Unit): Self = this.set("activate", js.Any.fromFunction1(value))
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteActivate: Self = this.set("activate", js.undefined)
+    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | TabStripAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setContentLoad(value: /* e */ TabStripContentLoadEvent => Unit): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
     @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setContentUrls(value: js.Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLoad(value: /* e */ TabStripContentLoadEvent => Unit): Self = this.set("contentLoad", js.Any.fromFunction1(value))
+    def setContentUrlsUndefined: Self = StObject.set(x, "contentUrls", js.undefined)
     
     @scala.inline
-    def deleteContentLoad: Self = this.set("contentLoad", js.undefined)
+    def setDataContentField(value: String): Self = StObject.set(x, "dataContentField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUrls(value: js.Any): Self = this.set("contentUrls", value.asInstanceOf[js.Any])
+    def setDataContentFieldUndefined: Self = StObject.set(x, "dataContentField", js.undefined)
     
     @scala.inline
-    def deleteContentUrls: Self = this.set("contentUrls", js.undefined)
+    def setDataContentUrlField(value: String): Self = StObject.set(x, "dataContentUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataContentField(value: String): Self = this.set("dataContentField", value.asInstanceOf[js.Any])
+    def setDataContentUrlFieldUndefined: Self = StObject.set(x, "dataContentUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataContentField: Self = this.set("dataContentField", js.undefined)
+    def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataContentUrlField(value: String): Self = this.set("dataContentUrlField", value.asInstanceOf[js.Any])
+    def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataContentUrlField: Self = this.set("dataContentUrlField", js.undefined)
+    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataImageUrlField(value: String): Self = this.set("dataImageUrlField", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataImageUrlField: Self = this.set("dataImageUrlField", js.undefined)
+    def setDataSpriteCssClass(value: String): Self = StObject.set(x, "dataSpriteCssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSpriteCssClassUndefined: Self = StObject.set(x, "dataSpriteCssClass", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSpriteCssClass(value: String): Self = this.set("dataSpriteCssClass", value.asInstanceOf[js.Any])
+    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
     @scala.inline
-    def deleteDataSpriteCssClass: Self = this.set("dataSpriteCssClass", js.undefined)
+    def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    def setError(value: /* e */ TabStripErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataUrlField(value: String): Self = this.set("dataUrlField", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDataUrlField: Self = this.set("dataUrlField", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* e */ TabStripErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScrollable(value: Boolean | TabStripScrollable): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
     @scala.inline
-    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    def setSelect(value: /* e */ TabStripSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollable(value: Boolean | TabStripScrollable): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    def setShow(value: /* e */ TabStripShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelect(value: /* e */ TabStripSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setTabPosition(value: String): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: /* e */ TabStripShowEvent => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabPosition(value: String): Self = this.set("tabPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabPosition: Self = this.set("tabPosition", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

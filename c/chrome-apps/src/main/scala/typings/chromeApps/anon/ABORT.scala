@@ -15,12 +15,13 @@ import typings.chromeApps.chromeAppsStrings.NO_SPACE
 import typings.chromeApps.chromeAppsStrings.OK
 import typings.chromeApps.chromeAppsStrings.SECURITY
 import typings.chromeApps.chromeAppsStrings.TOO_MANY_OPENED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ABORT extends js.Object {
+trait ABORT extends StObject {
   
   var ABORT: typings.chromeApps.chromeAppsStrings.ABORT = js.native
   
@@ -83,69 +84,57 @@ object ABORT {
   }
   
   @scala.inline
-  implicit class ABORTOps[Self <: ABORT] (val x: Self) extends AnyVal {
+  implicit class ABORTMutableBuilder[Self <: ABORT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setABORT(value: typings.chromeApps.chromeAppsStrings.ABORT): Self = StObject.set(x, "ABORT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACCESS_DENIED(value: ACCESS_DENIED): Self = StObject.set(x, "ACCESS_DENIED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEXISTS(value: EXISTS): Self = StObject.set(x, "EXISTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setABORT(value: typings.chromeApps.chromeAppsStrings.ABORT): Self = this.set("ABORT", value.asInstanceOf[js.Any])
+    def setFAILED(value: typings.chromeApps.chromeAppsStrings.FAILED): Self = StObject.set(x, "FAILED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACCESS_DENIED(value: ACCESS_DENIED): Self = this.set("ACCESS_DENIED", value.asInstanceOf[js.Any])
+    def setINVALID_OPERATION(value: INVALID_OPERATION): Self = StObject.set(x, "INVALID_OPERATION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXISTS(value: EXISTS): Self = this.set("EXISTS", value.asInstanceOf[js.Any])
+    def setINVALID_URL(value: INVALID_URL): Self = StObject.set(x, "INVALID_URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAILED(value: typings.chromeApps.chromeAppsStrings.FAILED): Self = this.set("FAILED", value.asInstanceOf[js.Any])
+    def setIN_USE(value: IN_USE): Self = StObject.set(x, "IN_USE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINVALID_OPERATION(value: INVALID_OPERATION): Self = this.set("INVALID_OPERATION", value.asInstanceOf[js.Any])
+    def setIO(value: IO): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINVALID_URL(value: INVALID_URL): Self = this.set("INVALID_URL", value.asInstanceOf[js.Any])
+    def setNOT_A_DIRECTORY(value: NOT_A_DIRECTORY): Self = StObject.set(x, "NOT_A_DIRECTORY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIN_USE(value: IN_USE): Self = this.set("IN_USE", value.asInstanceOf[js.Any])
+    def setNOT_A_FILE(value: NOT_A_FILE): Self = StObject.set(x, "NOT_A_FILE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIO(value: IO): Self = this.set("IO", value.asInstanceOf[js.Any])
+    def setNOT_EMPTY(value: NOT_EMPTY): Self = StObject.set(x, "NOT_EMPTY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNOT_A_DIRECTORY(value: NOT_A_DIRECTORY): Self = this.set("NOT_A_DIRECTORY", value.asInstanceOf[js.Any])
+    def setNOT_FOUND(value: NOT_FOUND): Self = StObject.set(x, "NOT_FOUND", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNOT_A_FILE(value: NOT_A_FILE): Self = this.set("NOT_A_FILE", value.asInstanceOf[js.Any])
+    def setNO_MEMORY(value: NO_MEMORY): Self = StObject.set(x, "NO_MEMORY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNOT_EMPTY(value: NOT_EMPTY): Self = this.set("NOT_EMPTY", value.asInstanceOf[js.Any])
+    def setNO_SPACE(value: NO_SPACE): Self = StObject.set(x, "NO_SPACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNOT_FOUND(value: NOT_FOUND): Self = this.set("NOT_FOUND", value.asInstanceOf[js.Any])
+    def setOK(value: OK): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNO_MEMORY(value: NO_MEMORY): Self = this.set("NO_MEMORY", value.asInstanceOf[js.Any])
+    def setSECURITY(value: SECURITY): Self = StObject.set(x, "SECURITY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNO_SPACE(value: NO_SPACE): Self = this.set("NO_SPACE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOK(value: OK): Self = this.set("OK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSECURITY(value: SECURITY): Self = this.set("SECURITY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTOO_MANY_OPENED(value: TOO_MANY_OPENED): Self = this.set("TOO_MANY_OPENED", value.asInstanceOf[js.Any])
+    def setTOO_MANY_OPENED(value: TOO_MANY_OPENED): Self = StObject.set(x, "TOO_MANY_OPENED", value.asInstanceOf[js.Any])
   }
 }

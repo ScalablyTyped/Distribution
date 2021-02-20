@@ -2,6 +2,7 @@ package typings.reactNativeElements.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,78 +61,66 @@ object TextProps {
   }
   
   @scala.inline
-  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setH1(value: Boolean): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setH1Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h1Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setH1StyleNull: Self = StObject.set(x, "h1Style", null)
     
     @scala.inline
-    def setH1(value: Boolean): Self = this.set("h1", value.asInstanceOf[js.Any])
+    def setH1StyleUndefined: Self = StObject.set(x, "h1Style", js.undefined)
     
     @scala.inline
-    def deleteH1: Self = this.set("h1", js.undefined)
+    def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
     
     @scala.inline
-    def setH1Style(value: StyleProp[TextStyle]): Self = this.set("h1Style", value.asInstanceOf[js.Any])
+    def setH2(value: Boolean): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteH1Style: Self = this.set("h1Style", js.undefined)
+    def setH2Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h2Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH1StyleNull: Self = this.set("h1Style", null)
+    def setH2StyleNull: Self = StObject.set(x, "h2Style", null)
     
     @scala.inline
-    def setH2(value: Boolean): Self = this.set("h2", value.asInstanceOf[js.Any])
+    def setH2StyleUndefined: Self = StObject.set(x, "h2Style", js.undefined)
     
     @scala.inline
-    def deleteH2: Self = this.set("h2", js.undefined)
+    def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
     
     @scala.inline
-    def setH2Style(value: StyleProp[TextStyle]): Self = this.set("h2Style", value.asInstanceOf[js.Any])
+    def setH3(value: Boolean): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteH2Style: Self = this.set("h2Style", js.undefined)
+    def setH3Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h3Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH2StyleNull: Self = this.set("h2Style", null)
+    def setH3StyleNull: Self = StObject.set(x, "h3Style", null)
     
     @scala.inline
-    def setH3(value: Boolean): Self = this.set("h3", value.asInstanceOf[js.Any])
+    def setH3StyleUndefined: Self = StObject.set(x, "h3Style", js.undefined)
     
     @scala.inline
-    def deleteH3: Self = this.set("h3", js.undefined)
+    def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
     
     @scala.inline
-    def setH3Style(value: StyleProp[TextStyle]): Self = this.set("h3Style", value.asInstanceOf[js.Any])
+    def setH4(value: Boolean): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteH3Style: Self = this.set("h3Style", js.undefined)
+    def setH4Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h4Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH3StyleNull: Self = this.set("h3Style", null)
+    def setH4StyleNull: Self = StObject.set(x, "h4Style", null)
     
     @scala.inline
-    def setH4(value: Boolean): Self = this.set("h4", value.asInstanceOf[js.Any])
+    def setH4StyleUndefined: Self = StObject.set(x, "h4Style", js.undefined)
     
     @scala.inline
-    def deleteH4: Self = this.set("h4", js.undefined)
-    
-    @scala.inline
-    def setH4Style(value: StyleProp[TextStyle]): Self = this.set("h4Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteH4Style: Self = this.set("h4Style", js.undefined)
-    
-    @scala.inline
-    def setH4StyleNull: Self = this.set("h4Style", null)
+    def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.moment.momentMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MomentCreationData extends js.Object {
+trait MomentCreationData extends StObject {
   
   var format: js.UndefOr[MomentFormatSpecification] = js.native
   
@@ -26,51 +27,39 @@ object MomentCreationData {
   }
   
   @scala.inline
-  implicit class MomentCreationDataOps[Self <: MomentCreationData] (val x: Self) extends AnyVal {
+  implicit class MomentCreationDataMutableBuilder[Self <: MomentCreationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: MomentFormatSpecification): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "format", js.Array(value :_*))
     
     @scala.inline
-    def setIsUTC(value: Boolean): Self = this.set("isUTC", value.asInstanceOf[js.Any])
+    def setInput(value: MomentInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: Locale_): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setInputNull: Self = StObject.set(x, "input", null)
     
     @scala.inline
-    def setFormatVarargs(value: (String | MomentBuiltinFormat)*): Self = this.set("format", js.Array(value :_*))
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setFormat(value: MomentFormatSpecification): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setInputVarargs(value: (Double | String)*): Self = StObject.set(x, "input", js.Array(value :_*))
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setIsUTC(value: Boolean): Self = StObject.set(x, "isUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputVarargs(value: (Double | String)*): Self = this.set("input", js.Array(value :_*))
+    def setLocale(value: Locale_): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: MomentInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
-    
-    @scala.inline
-    def setInputNull: Self = this.set("input", null)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

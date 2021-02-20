@@ -3,21 +3,22 @@ package typings.domSerial
 import typings.domSerial.anon.PartialSerialPortInfo
 import typings.std.ReadableStream
 import typings.std.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialPort extends js.Object {
+trait SerialPort extends StObject {
   
-   // Chromium implementation (spec: out)
+  // Chromium implementation (spec: out)
   def getInfo(): PartialSerialPortInfo = js.native
   
   def open(options: SerialOptions): js.Promise[Unit] = js.native
   
   val readable: ReadableStream[_] = js.native
   
-   // Chromium implementation (spec: in)
+  // Chromium implementation (spec: in)
   val writable: WritableStream[_] = js.native
 }
 object SerialPort {
@@ -34,30 +35,18 @@ object SerialPort {
   }
   
   @scala.inline
-  implicit class SerialPortOps[Self <: SerialPort] (val x: Self) extends AnyVal {
+  implicit class SerialPortMutableBuilder[Self <: SerialPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInfo(value: () => PartialSerialPortInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpen(value: SerialOptions => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadable(value: ReadableStream[_]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInfo(value: () => PartialSerialPortInfo): Self = this.set("getInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: SerialOptions => js.Promise[Unit]): Self = this.set("open", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadable(value: ReadableStream[_]): Self = this.set("readable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritable(value: WritableStream[_]): Self = this.set("writable", value.asInstanceOf[js.Any])
+    def setWritable(value: WritableStream[_]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

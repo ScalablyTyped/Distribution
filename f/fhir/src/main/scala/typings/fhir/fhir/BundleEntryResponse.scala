@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,69 +65,57 @@ object BundleEntryResponse {
   }
   
   @scala.inline
-  implicit class BundleEntryResponseOps[Self <: BundleEntryResponse] (val x: Self) extends AnyVal {
+  implicit class BundleEntryResponseMutableBuilder[Self <: BundleEntryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModified(value: instant): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def set_etag(value: Element): Self = this.set("_etag", value.asInstanceOf[js.Any])
+    def setLocation(value: uri): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_etag: Self = this.set("_etag", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set_lastModified(value: Element): Self = this.set("_lastModified", value.asInstanceOf[js.Any])
+    def setOutcome(value: Resource): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_lastModified: Self = this.set("_lastModified", js.undefined)
+    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
     @scala.inline
-    def set_location(value: Element): Self = this.set("_location", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_location: Self = this.set("_location", js.undefined)
+    def set_etag(value: Element): Self = StObject.set(x, "_etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def set_etagUndefined: Self = StObject.set(x, "_etag", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def set_lastModified(value: Element): Self = StObject.set(x, "_lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def set_lastModifiedUndefined: Self = StObject.set(x, "_lastModified", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def set_location(value: Element): Self = StObject.set(x, "_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: instant): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def set_locationUndefined: Self = StObject.set(x, "_location", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: uri): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setOutcome(value: Resource): Self = this.set("outcome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

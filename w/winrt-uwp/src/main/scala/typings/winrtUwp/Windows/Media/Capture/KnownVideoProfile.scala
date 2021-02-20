@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KnownVideoProfile extends js.Object
+sealed trait KnownVideoProfile extends StObject
 /** Specifies the names of video recording profiles that are known by the system. */
 @JSGlobal("Windows.Media.Capture.KnownVideoProfile")
 @js.native
-object KnownVideoProfile extends js.Object {
+object KnownVideoProfile extends StObject {
   
   /** The profile provides hints to the driver to allow for photo capture during video capture with balanced quality between both. */
   @js.native

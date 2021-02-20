@@ -42,6 +42,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.stepped
 import typings.oracleOraclejet.oracleOraclejetStrings.straight
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -128,215 +129,203 @@ object ojChartSeriesSettableProperties {
   }
   
   @scala.inline
-  implicit class ojChartSeriesSettablePropertiesOps[Self <: ojChartSeriesSettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojChartSeriesSettablePropertiesMutableBuilder[Self <: ojChartSeriesSettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaColor(value: String): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAreaSvgClassName(value: String): Self = StObject.set(x, "areaSvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaColor(value: String): Self = this.set("areaColor", value.asInstanceOf[js.Any])
+    def setAreaSvgClassNameUndefined: Self = StObject.set(x, "areaSvgClassName", js.undefined)
     
     @scala.inline
-    def deleteAreaColor: Self = this.set("areaColor", js.undefined)
+    def setAreaSvgStyle(value: js.Object): Self = StObject.set(x, "areaSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaSvgClassName(value: String): Self = this.set("areaSvgClassName", value.asInstanceOf[js.Any])
+    def setAreaSvgStyleUndefined: Self = StObject.set(x, "areaSvgStyle", js.undefined)
     
     @scala.inline
-    def deleteAreaSvgClassName: Self = this.set("areaSvgClassName", js.undefined)
+    def setAssignedToY2(value: on | off): Self = StObject.set(x, "assignedToY2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaSvgStyle(value: js.Object): Self = this.set("areaSvgStyle", value.asInstanceOf[js.Any])
+    def setAssignedToY2Undefined: Self = StObject.set(x, "assignedToY2", js.undefined)
     
     @scala.inline
-    def deleteAreaSvgStyle: Self = this.set("areaSvgStyle", js.undefined)
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedToY2(value: on | off): Self = this.set("assignedToY2", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteAssignedToY2: Self = this.set("assignedToY2", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBoxPlot(value: Q2Color): Self = StObject.set(x, "boxPlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setBoxPlotUndefined: Self = StObject.set(x, "boxPlot", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxPlot(value: Q2Color): Self = this.set("boxPlot", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def deleteBoxPlot: Self = this.set("boxPlot", js.undefined)
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setDisplayInLegend(value: on | off | auto): Self = StObject.set(x, "displayInLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDisplayInLegendUndefined: Self = StObject.set(x, "displayInLegend", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDrilling(value: on | off | inherit): Self = StObject.set(x, "drilling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayInLegend(value: on | off | auto): Self = this.set("displayInLegend", value.asInstanceOf[js.Any])
+    def setDrillingUndefined: Self = StObject.set(x, "drilling", js.undefined)
     
     @scala.inline
-    def deleteDisplayInLegend: Self = this.set("displayInLegend", js.undefined)
+    def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrilling(value: on | off | inherit): Self = this.set("drilling", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteDrilling: Self = this.set("drilling", js.undefined)
+    def setLineType(value: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: dotted | dashed | solid): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
     
     @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineType(value: straight | curved | stepped | centeredStepped | segmented | centeredSegmented | none | auto): Self = this.set("lineType", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineType: Self = this.set("lineType", js.undefined)
+    def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setMarkerColorUndefined: Self = StObject.set(x, "markerColor", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setMarkerDisplayed(value: on | off | auto): Self = StObject.set(x, "markerDisplayed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerColor(value: String): Self = this.set("markerColor", value.asInstanceOf[js.Any])
+    def setMarkerDisplayedUndefined: Self = StObject.set(x, "markerDisplayed", js.undefined)
     
     @scala.inline
-    def deleteMarkerColor: Self = this.set("markerColor", js.undefined)
+    def setMarkerShape(value: circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerDisplayed(value: on | off | auto): Self = this.set("markerDisplayed", value.asInstanceOf[js.Any])
+    def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
     
     @scala.inline
-    def deleteMarkerDisplayed: Self = this.set("markerDisplayed", js.undefined)
+    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerShape(value: circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String): Self = this.set("markerShape", value.asInstanceOf[js.Any])
+    def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
     
     @scala.inline
-    def deleteMarkerShape: Self = this.set("markerShape", js.undefined)
+    def setMarkerSvgClassName(value: String): Self = StObject.set(x, "markerSvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSize(value: Double): Self = this.set("markerSize", value.asInstanceOf[js.Any])
+    def setMarkerSvgClassNameUndefined: Self = StObject.set(x, "markerSvgClassName", js.undefined)
     
     @scala.inline
-    def deleteMarkerSize: Self = this.set("markerSize", js.undefined)
+    def setMarkerSvgStyle(value: js.Object): Self = StObject.set(x, "markerSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSvgClassName(value: String): Self = this.set("markerSvgClassName", value.asInstanceOf[js.Any])
+    def setMarkerSvgStyleUndefined: Self = StObject.set(x, "markerSvgStyle", js.undefined)
     
     @scala.inline
-    def deleteMarkerSvgClassName: Self = this.set("markerSvgClassName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSvgStyle(value: js.Object): Self = this.set("markerSvgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkerSvgStyle: Self = this.set("markerSvgStyle", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
     def setPattern(
       value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
-    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setPieSliceExplode(value: Double): Self = this.set("pieSliceExplode", value.asInstanceOf[js.Any])
+    def setPieSliceExplode(value: Double): Self = StObject.set(x, "pieSliceExplode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePieSliceExplode: Self = this.set("pieSliceExplode", js.undefined)
+    def setPieSliceExplodeUndefined: Self = StObject.set(x, "pieSliceExplode", js.undefined)
     
     @scala.inline
-    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceHover(value: String): Self = StObject.set(x, "sourceHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceHover(value: String): Self = this.set("sourceHover", value.asInstanceOf[js.Any])
+    def setSourceHoverSelected(value: String): Self = StObject.set(x, "sourceHoverSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceHover: Self = this.set("sourceHover", js.undefined)
+    def setSourceHoverSelectedUndefined: Self = StObject.set(x, "sourceHoverSelected", js.undefined)
     
     @scala.inline
-    def setSourceHoverSelected(value: String): Self = this.set("sourceHoverSelected", value.asInstanceOf[js.Any])
+    def setSourceHoverUndefined: Self = StObject.set(x, "sourceHover", js.undefined)
     
     @scala.inline
-    def deleteSourceHoverSelected: Self = this.set("sourceHoverSelected", js.undefined)
+    def setSourceSelected(value: String): Self = StObject.set(x, "sourceSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSelected(value: String): Self = this.set("sourceSelected", value.asInstanceOf[js.Any])
+    def setSourceSelectedUndefined: Self = StObject.set(x, "sourceSelected", js.undefined)
     
     @scala.inline
-    def deleteSourceSelected: Self = this.set("sourceSelected", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setStackCategory(value: String): Self = this.set("stackCategory", value.asInstanceOf[js.Any])
+    def setStackCategory(value: String): Self = StObject.set(x, "stackCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStackCategory: Self = this.set("stackCategory", js.undefined)
+    def setStackCategoryUndefined: Self = StObject.set(x, "stackCategory", js.undefined)
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
     @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
     
     @scala.inline
-    def setType(value: bar | line | area | lineWithArea | candlestick | boxPlot | auto): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: bar | line | area | lineWithArea | candlestick | boxPlot | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

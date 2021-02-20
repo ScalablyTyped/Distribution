@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntegrationAddDetails extends js.Object {
+trait IntegrationAddDetails extends StObject {
   
   var enableArgs: js.UndefOr[js.Array[String]] = js.native
   
@@ -24,39 +25,27 @@ object IntegrationAddDetails {
   }
   
   @scala.inline
-  implicit class IntegrationAddDetailsOps[Self <: IntegrationAddDetails] (val x: Self) extends AnyVal {
+  implicit class IntegrationAddDetailsMutableBuilder[Self <: IntegrationAddDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableArgs(value: js.Array[String]): Self = StObject.set(x, "enableArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableArgsUndefined: Self = StObject.set(x, "enableArgs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableArgsVarargs(value: String*): Self = StObject.set(x, "enableArgs", js.Array(value :_*))
     
     @scala.inline
-    def setEnv(value: IonicEnvironment): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableArgsVarargs(value: String*): Self = this.set("enableArgs", js.Array(value :_*))
+    def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
     @scala.inline
-    def setEnableArgs(value: js.Array[String]): Self = this.set("enableArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableArgs: Self = this.set("enableArgs", js.undefined)
-    
-    @scala.inline
-    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuiet: Self = this.set("quiet", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

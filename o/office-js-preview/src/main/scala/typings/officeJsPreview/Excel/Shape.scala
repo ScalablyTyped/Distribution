@@ -28,6 +28,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.SendToBack
 import typings.officeJsPreview.officeJsPreviewStrings.TwoCell
 import typings.officeJsPreview.officeJsPreviewStrings.UNKNOWN
 import typings.officeJsPreview.officeJsPreviewStrings.Unsupported
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

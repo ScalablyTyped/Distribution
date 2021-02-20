@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Short Dynamic Link suffix.
   */
 @js.native
-trait SchemaSuffix extends js.Object {
+trait SchemaSuffix extends StObject {
   
   /**
     * Only applies to Option.CUSTOM.
@@ -29,30 +30,18 @@ object SchemaSuffix {
   }
   
   @scala.inline
-  implicit class SchemaSuffixOps[Self <: SchemaSuffix] (val x: Self) extends AnyVal {
+  implicit class SchemaSuffixMutableBuilder[Self <: SchemaSuffix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomSuffix(value: String): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOption(value: String): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSuffix(value: String): Self = this.set("customSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomSuffix: Self = this.set("customSuffix", js.undefined)
-    
-    @scala.inline
-    def setOption(value: String): Self = this.set("option", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleMapReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeEventValue extends js.Object {
+trait ChangeEventValue extends StObject {
   
   var bounds: Bounds = js.native
   
@@ -26,33 +27,21 @@ object ChangeEventValue {
   }
   
   @scala.inline
-  implicit class ChangeEventValueOps[Self <: ChangeEventValue] (val x: Self) extends AnyVal {
+  implicit class ChangeEventValueMutableBuilder[Self <: ChangeEventValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenter(value: Coords): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarginBounds(value: Bounds): Self = StObject.set(x, "marginBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Bounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Coords): Self = this.set("center", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarginBounds(value: Bounds): Self = this.set("marginBounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

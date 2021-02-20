@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeSigning extends js.Object {
+trait CodeSigning extends StObject {
   
   /**
     * The ID of the AWSSignerJob which was created to sign the file.
@@ -31,36 +32,24 @@ object CodeSigning {
   }
   
   @scala.inline
-  implicit class CodeSigningOps[Self <: CodeSigning] (val x: Self) extends AnyVal {
+  implicit class CodeSigningMutableBuilder[Self <: CodeSigning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsSignerJobId(value: SigningJobId): Self = StObject.set(x, "awsSignerJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsSignerJobIdUndefined: Self = StObject.set(x, "awsSignerJobId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomCodeSigning(value: CustomCodeSigning): Self = StObject.set(x, "customCodeSigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsSignerJobId(value: SigningJobId): Self = this.set("awsSignerJobId", value.asInstanceOf[js.Any])
+    def setCustomCodeSigningUndefined: Self = StObject.set(x, "customCodeSigning", js.undefined)
     
     @scala.inline
-    def deleteAwsSignerJobId: Self = this.set("awsSignerJobId", js.undefined)
+    def setStartSigningJobParameter(value: StartSigningJobParameter): Self = StObject.set(x, "startSigningJobParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomCodeSigning(value: CustomCodeSigning): Self = this.set("customCodeSigning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomCodeSigning: Self = this.set("customCodeSigning", js.undefined)
-    
-    @scala.inline
-    def setStartSigningJobParameter(value: StartSigningJobParameter): Self = this.set("startSigningJobParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartSigningJobParameter: Self = this.set("startSigningJobParameter", js.undefined)
+    def setStartSigningJobParameterUndefined: Self = StObject.set(x, "startSigningJobParameter", js.undefined)
   }
 }

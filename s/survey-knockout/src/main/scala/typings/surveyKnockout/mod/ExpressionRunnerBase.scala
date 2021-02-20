@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ExpressionRunnerBase")
 @js.native
-class ExpressionRunnerBase protected () extends js.Object {
+class ExpressionRunnerBase protected () extends StObject {
   def this(expression: String) = this()
   
   def canRun(): Boolean = js.native

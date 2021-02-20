@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlueConfiguration extends js.Object {
+trait GlueConfiguration extends StObject {
   
   /**
     * The name of the database in your AWS Glue Data Catalog in which the table is located. An AWS Glue Data Catalog database contains metadata tables.
@@ -26,24 +27,12 @@ object GlueConfiguration {
   }
   
   @scala.inline
-  implicit class GlueConfigurationOps[Self <: GlueConfiguration] (val x: Self) extends AnyVal {
+  implicit class GlueConfigurationMutableBuilder[Self <: GlueConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseName(value: GlueDatabaseName): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatabaseName(value: GlueDatabaseName): Self = this.set("databaseName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableName(value: GlueTableName): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setTableName(value: GlueTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

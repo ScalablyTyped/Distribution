@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.msk
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterEncryptionInfo extends js.Object {
+trait ClusterEncryptionInfo extends StObject {
   
   /**
     * You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
@@ -27,30 +28,18 @@ object ClusterEncryptionInfo {
   }
   
   @scala.inline
-  implicit class ClusterEncryptionInfoOps[Self <: ClusterEncryptionInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterEncryptionInfoMutableBuilder[Self <: ClusterEncryptionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionAtRestKmsKeyArn(value: Input[String]): Self = StObject.set(x, "encryptionAtRestKmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionAtRestKmsKeyArnUndefined: Self = StObject.set(x, "encryptionAtRestKmsKeyArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionInTransit(value: Input[ClusterEncryptionInfoEncryptionInTransit]): Self = StObject.set(x, "encryptionInTransit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionAtRestKmsKeyArn(value: Input[String]): Self = this.set("encryptionAtRestKmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionAtRestKmsKeyArn: Self = this.set("encryptionAtRestKmsKeyArn", js.undefined)
-    
-    @scala.inline
-    def setEncryptionInTransit(value: Input[ClusterEncryptionInfoEncryptionInTransit]): Self = this.set("encryptionInTransit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionInTransit: Self = this.set("encryptionInTransit", js.undefined)
+    def setEncryptionInTransitUndefined: Self = StObject.set(x, "encryptionInTransit", js.undefined)
   }
 }

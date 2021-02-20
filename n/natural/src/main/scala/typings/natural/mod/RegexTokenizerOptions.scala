@@ -1,12 +1,13 @@
 package typings.natural.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexTokenizerOptions extends js.Object {
+trait RegexTokenizerOptions extends StObject {
   
   var discardEmpty: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object RegexTokenizerOptions {
   }
   
   @scala.inline
-  implicit class RegexTokenizerOptionsOps[Self <: RegexTokenizerOptions] (val x: Self) extends AnyVal {
+  implicit class RegexTokenizerOptionsMutableBuilder[Self <: RegexTokenizerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscardEmpty(value: Boolean): Self = StObject.set(x, "discardEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscardEmptyUndefined: Self = StObject.set(x, "discardEmpty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscardEmpty(value: Boolean): Self = this.set("discardEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscardEmpty: Self = this.set("discardEmpty", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: RegExp): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

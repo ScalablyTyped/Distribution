@@ -3,15 +3,18 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.anon.Attrs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/AvgPool", JSImport.Namespace)
-@js.native
-object avgPoolMod extends js.Object {
+object avgPoolMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/AvgPool", "avgPool")
+  @js.native
   def avgPool(args: Attrs): TensorInfo = js.native
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/AvgPool", "avgPoolConfig")
+  @js.native
   val avgPoolConfig: KernelConfig = js.native
 }

@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
 @js.native
-trait PlusDisplay extends js.Object {
+trait PlusDisplay extends StObject {
   
   /**
     * 应用可使用的屏幕高度逻辑分辨率
@@ -39,30 +40,18 @@ object PlusDisplay {
   }
   
   @scala.inline
-  implicit class PlusDisplayOps[Self <: PlusDisplay] (val x: Self) extends AnyVal {
+  implicit class PlusDisplayMutableBuilder[Self <: PlusDisplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionHeight(value: Double): Self = this.set("resolutionHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolutionHeight: Self = this.set("resolutionHeight", js.undefined)
-    
-    @scala.inline
-    def setResolutionWidth(value: Double): Self = this.set("resolutionWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolutionWidth: Self = this.set("resolutionWidth", js.undefined)
+    def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
   }
 }

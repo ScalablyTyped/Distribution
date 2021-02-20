@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbPendingModifiedValues extends js.Object {
+trait AwsRdsDbPendingModifiedValues extends StObject {
   
   /**
     * 
@@ -91,111 +92,99 @@ object AwsRdsDbPendingModifiedValues {
   }
   
   @scala.inline
-  implicit class AwsRdsDbPendingModifiedValuesOps[Self <: AwsRdsDbPendingModifiedValues] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbPendingModifiedValuesMutableBuilder[Self <: AwsRdsDbPendingModifiedValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupRetentionPeriod(value: Integer): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedStorage(value: Integer): Self = this.set("AllocatedStorage", value.asInstanceOf[js.Any])
+    def setBackupRetentionPeriodUndefined: Self = StObject.set(x, "BackupRetentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteAllocatedStorage: Self = this.set("AllocatedStorage", js.undefined)
+    def setCaCertificateIdentifier(value: NonEmptyString): Self = StObject.set(x, "CaCertificateIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupRetentionPeriod(value: Integer): Self = this.set("BackupRetentionPeriod", value.asInstanceOf[js.Any])
+    def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "CaCertificateIdentifier", js.undefined)
     
     @scala.inline
-    def deleteBackupRetentionPeriod: Self = this.set("BackupRetentionPeriod", js.undefined)
+    def setDbInstanceClass(value: NonEmptyString): Self = StObject.set(x, "DbInstanceClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaCertificateIdentifier(value: NonEmptyString): Self = this.set("CaCertificateIdentifier", value.asInstanceOf[js.Any])
+    def setDbInstanceClassUndefined: Self = StObject.set(x, "DbInstanceClass", js.undefined)
     
     @scala.inline
-    def deleteCaCertificateIdentifier: Self = this.set("CaCertificateIdentifier", js.undefined)
+    def setDbInstanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "DbInstanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbInstanceClass(value: NonEmptyString): Self = this.set("DbInstanceClass", value.asInstanceOf[js.Any])
+    def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "DbInstanceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDbInstanceClass: Self = this.set("DbInstanceClass", js.undefined)
+    def setDbSubnetGroupName(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbInstanceIdentifier(value: NonEmptyString): Self = this.set("DbInstanceIdentifier", value.asInstanceOf[js.Any])
+    def setDbSubnetGroupNameUndefined: Self = StObject.set(x, "DbSubnetGroupName", js.undefined)
     
     @scala.inline
-    def deleteDbInstanceIdentifier: Self = this.set("DbInstanceIdentifier", js.undefined)
+    def setEngineVersion(value: NonEmptyString): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbSubnetGroupName(value: NonEmptyString): Self = this.set("DbSubnetGroupName", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteDbSubnetGroupName: Self = this.set("DbSubnetGroupName", js.undefined)
+    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: NonEmptyString): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setLicenseModel(value: NonEmptyString): Self = StObject.set(x, "LicenseModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    def setLicenseModelUndefined: Self = StObject.set(x, "LicenseModel", js.undefined)
     
     @scala.inline
-    def deleteIops: Self = this.set("Iops", js.undefined)
+    def setMasterUserPassword(value: NonEmptyString): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseModel(value: NonEmptyString): Self = this.set("LicenseModel", value.asInstanceOf[js.Any])
+    def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
     
     @scala.inline
-    def deleteLicenseModel: Self = this.set("LicenseModel", js.undefined)
+    def setMultiAZ(value: Boolean): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUserPassword(value: NonEmptyString): Self = this.set("MasterUserPassword", value.asInstanceOf[js.Any])
+    def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
     @scala.inline
-    def deleteMasterUserPassword: Self = this.set("MasterUserPassword", js.undefined)
+    def setPendingCloudWatchLogsExports(value: AwsRdsPendingCloudWatchLogsExports): Self = StObject.set(x, "PendingCloudWatchLogsExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiAZ(value: Boolean): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    def setPendingCloudWatchLogsExportsUndefined: Self = StObject.set(x, "PendingCloudWatchLogsExports", js.undefined)
     
     @scala.inline
-    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingCloudWatchLogsExports(value: AwsRdsPendingCloudWatchLogsExports): Self = this.set("PendingCloudWatchLogsExports", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePendingCloudWatchLogsExports: Self = this.set("PendingCloudWatchLogsExports", js.undefined)
+    def setProcessorFeatures(value: AwsRdsDbProcessorFeatures): Self = StObject.set(x, "ProcessorFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Integer): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = this.set("ProcessorFeatures", js.Array(value :_*))
+    def setStorageType(value: NonEmptyString): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessorFeatures(value: AwsRdsDbProcessorFeatures): Self = this.set("ProcessorFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessorFeatures: Self = this.set("ProcessorFeatures", js.undefined)
-    
-    @scala.inline
-    def setStorageType(value: NonEmptyString): Self = this.set("StorageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
   }
 }

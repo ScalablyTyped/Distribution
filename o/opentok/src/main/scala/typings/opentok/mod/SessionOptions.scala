@@ -1,11 +1,12 @@
 package typings.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionOptions extends js.Object {
+trait SessionOptions extends StObject {
   
   var archiveMode: js.UndefOr[ArchiveMode] = js.native
   
@@ -22,36 +23,24 @@ object SessionOptions {
   }
   
   @scala.inline
-  implicit class SessionOptionsOps[Self <: SessionOptions] (val x: Self) extends AnyVal {
+  implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveMode(value: ArchiveMode): Self = StObject.set(x, "archiveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveModeUndefined: Self = StObject.set(x, "archiveMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveMode(value: ArchiveMode): Self = this.set("archiveMode", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteArchiveMode: Self = this.set("archiveMode", js.undefined)
+    def setMediaMode(value: MediaMode): Self = StObject.set(x, "mediaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setMediaMode(value: MediaMode): Self = this.set("mediaMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaMode: Self = this.set("mediaMode", js.undefined)
+    def setMediaModeUndefined: Self = StObject.set(x, "mediaMode", js.undefined)
   }
 }

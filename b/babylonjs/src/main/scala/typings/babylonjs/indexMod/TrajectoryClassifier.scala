@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TrajectoryClassifier protected ()
   extends typings.babylonjs.miscIndexMod.TrajectoryClassifier
 /* static members */
-@JSImport("babylonjs/index", "TrajectoryClassifier")
-@js.native
-object TrajectoryClassifier extends js.Object {
+object TrajectoryClassifier {
   
   /**
     * Deserialize from JSON.
     * @param json JSON serialization
     * @returns deserialized TrajectorySet
     */
+  @JSImport("babylonjs/index", "TrajectoryClassifier.Deserialize")
+  @js.native
   def Deserialize(json: String): typings.babylonjs.trajectoryClassifierMod.TrajectoryClassifier = js.native
   
   /**
@@ -26,5 +27,7 @@ object TrajectoryClassifier extends js.Object {
     * sets. Better version later, probably eliminating this one.
     * @returns auto-generated TrajectorySet
     */
+  @JSImport("babylonjs/index", "TrajectoryClassifier.Generate")
+  @js.native
   def Generate(): typings.babylonjs.trajectoryClassifierMod.TrajectoryClassifier = js.native
 }

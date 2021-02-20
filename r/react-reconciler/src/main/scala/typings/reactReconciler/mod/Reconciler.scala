@@ -1,12 +1,13 @@
 package typings.reactReconciler.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends js.Object {
+trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends StObject {
   
   def batchedUpdates[A](fn: js.Function0[A]): A = js.native
   

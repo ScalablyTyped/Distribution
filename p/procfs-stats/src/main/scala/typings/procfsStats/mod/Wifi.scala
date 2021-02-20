@@ -3,12 +3,13 @@ package typings.procfsStats.mod
 import typings.procfsStats.anon.Discardedpackets
 import typings.procfsStats.anon.Missed
 import typings.procfsStats.anon.Quality
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Wifi extends js.Object {
+trait Wifi extends StObject {
   
   var Interface: String = js.native
   
@@ -53,51 +54,39 @@ object Wifi {
   }
   
   @scala.inline
-  implicit class WifiOps[Self <: Wifi] (val x: Self) extends AnyVal {
+  implicit class WifiMutableBuilder[Self <: Wifi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeacon(value: Missed): Self = StObject.set(x, "beacon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrypt(value: Discardedpackets): Self = StObject.set(x, "crypt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrag(value: Discardedpackets): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterface(value: String): Self = this.set("Interface", value.asInstanceOf[js.Any])
+    def setInterface(value: String): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeacon(value: Missed): Self = this.set("beacon", value.asInstanceOf[js.Any])
+    def setLevel(value: Quality): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrypt(value: Discardedpackets): Self = this.set("crypt", value.asInstanceOf[js.Any])
+    def setLink(value: Quality): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrag(value: Discardedpackets): Self = this.set("frag", value.asInstanceOf[js.Any])
+    def setMisc(value: Discardedpackets): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Quality): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setNoise(value: Quality): Self = StObject.set(x, "noise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: Quality): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setNwid(value: Discardedpackets): Self = StObject.set(x, "nwid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMisc(value: Discardedpackets): Self = this.set("misc", value.asInstanceOf[js.Any])
+    def setRetry(value: Discardedpackets): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoise(value: Quality): Self = this.set("noise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNwid(value: Discardedpackets): Self = this.set("nwid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetry(value: Discardedpackets): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

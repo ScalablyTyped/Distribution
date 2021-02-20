@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventRiskType extends js.Object {
+trait EventRiskType extends StObject {
   
   /**
     * Indicates whether compromised credentials were detected during an authentication event.
@@ -31,36 +32,24 @@ object EventRiskType {
   }
   
   @scala.inline
-  implicit class EventRiskTypeOps[Self <: EventRiskType] (val x: Self) extends AnyVal {
+  implicit class EventRiskTypeMutableBuilder[Self <: EventRiskType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompromisedCredentialsDetected(value: WrappedBooleanType): Self = StObject.set(x, "CompromisedCredentialsDetected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompromisedCredentialsDetectedUndefined: Self = StObject.set(x, "CompromisedCredentialsDetected", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRiskDecision(value: RiskDecisionType): Self = StObject.set(x, "RiskDecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompromisedCredentialsDetected(value: WrappedBooleanType): Self = this.set("CompromisedCredentialsDetected", value.asInstanceOf[js.Any])
+    def setRiskDecisionUndefined: Self = StObject.set(x, "RiskDecision", js.undefined)
     
     @scala.inline
-    def deleteCompromisedCredentialsDetected: Self = this.set("CompromisedCredentialsDetected", js.undefined)
+    def setRiskLevel(value: RiskLevelType): Self = StObject.set(x, "RiskLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiskDecision(value: RiskDecisionType): Self = this.set("RiskDecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskDecision: Self = this.set("RiskDecision", js.undefined)
-    
-    @scala.inline
-    def setRiskLevel(value: RiskLevelType): Self = this.set("RiskLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskLevel: Self = this.set("RiskLevel", js.undefined)
+    def setRiskLevelUndefined: Self = StObject.set(x, "RiskLevel", js.undefined)
   }
 }

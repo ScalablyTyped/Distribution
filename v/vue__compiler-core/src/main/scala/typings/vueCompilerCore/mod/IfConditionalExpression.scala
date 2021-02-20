@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,24 +32,12 @@ object IfConditionalExpression {
   }
   
   @scala.inline
-  implicit class IfConditionalExpressionOps[Self <: IfConditionalExpression] (val x: Self) extends AnyVal {
+  implicit class IfConditionalExpressionMutableBuilder[Self <: IfConditionalExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate(value: BlockCodegenNode | IfConditionalExpression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlternate(value: BlockCodegenNode | IfConditionalExpression): Self = this.set("alternate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConsequent(value: BlockCodegenNode): Self = this.set("consequent", value.asInstanceOf[js.Any])
+    def setConsequent(value: BlockCodegenNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
   }
 }

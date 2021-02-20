@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomMessageActivity extends js.Object {
+trait CustomMessageActivity extends StObject {
   
   /**
     * The destination to send the campaign or treatment to. This value can be one of the following: The name or Amazon Resource Name (ARN) of an AWS Lambda function to invoke to handle delivery of the campaign or treatment. The URL for a web application or service that supports HTTPS and can receive the message. The URL has to be a full URL, including the HTTPS protocol.
@@ -46,57 +47,45 @@ object CustomMessageActivity {
   }
   
   @scala.inline
-  implicit class CustomMessageActivityOps[Self <: CustomMessageActivity] (val x: Self) extends AnyVal {
+  implicit class CustomMessageActivityMutableBuilder[Self <: CustomMessageActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryUriUndefined: Self = StObject.set(x, "DeliveryUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointTypes(value: ListOfEndpointTypesElement): Self = StObject.set(x, "EndpointTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryUri(value: string): Self = this.set("DeliveryUri", value.asInstanceOf[js.Any])
+    def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
     
     @scala.inline
-    def deleteDeliveryUri: Self = this.set("DeliveryUri", js.undefined)
+    def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = this.set("EndpointTypes", js.Array(value :_*))
+    def setMessageConfig(value: JourneyCustomMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointTypes(value: ListOfEndpointTypesElement): Self = this.set("EndpointTypes", value.asInstanceOf[js.Any])
+    def setMessageConfigUndefined: Self = StObject.set(x, "MessageConfig", js.undefined)
     
     @scala.inline
-    def deleteEndpointTypes: Self = this.set("EndpointTypes", js.undefined)
+    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageConfig(value: JourneyCustomMessage): Self = this.set("MessageConfig", value.asInstanceOf[js.Any])
+    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
     @scala.inline
-    def deleteMessageConfig: Self = this.set("MessageConfig", js.undefined)
+    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextActivity(value: string): Self = this.set("NextActivity", value.asInstanceOf[js.Any])
+    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
     @scala.inline
-    def deleteNextActivity: Self = this.set("NextActivity", js.undefined)
+    def setTemplateVersion(value: string): Self = StObject.set(x, "TemplateVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: string): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
-    
-    @scala.inline
-    def setTemplateVersion(value: string): Self = this.set("TemplateVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateVersion: Self = this.set("TemplateVersion", js.undefined)
+    def setTemplateVersionUndefined: Self = StObject.set(x, "TemplateVersion", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram.Component
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollTimelineOption extends js.Object {
+trait ScrollTimelineOption extends StObject {
   
   /** 指定停止驱动动画进度的滚动偏移量，单位 px */
   var endScrollOffset: Double = js.native
@@ -31,36 +32,24 @@ object ScrollTimelineOption {
   }
   
   @scala.inline
-  implicit class ScrollTimelineOptionOps[Self <: ScrollTimelineOption] (val x: Self) extends AnyVal {
+  implicit class ScrollTimelineOptionMutableBuilder[Self <: ScrollTimelineOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndScrollOffset(value: Double): Self = StObject.set(x, "endScrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def setEndScrollOffset(value: Double): Self = this.set("endScrollOffset", value.asInstanceOf[js.Any])
+    def setScrollSource(value: String): Self = StObject.set(x, "scrollSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSource(value: String): Self = this.set("scrollSource", value.asInstanceOf[js.Any])
+    def setStartScrollOffset(value: Double): Self = StObject.set(x, "startScrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartScrollOffset(value: Double): Self = this.set("startScrollOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeRange(value: Double): Self = this.set("timeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setTimeRange(value: Double): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
   }
 }

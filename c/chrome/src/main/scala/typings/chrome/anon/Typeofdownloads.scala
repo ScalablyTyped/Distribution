@@ -8,12 +8,13 @@ import typings.chrome.chrome.downloads.DownloadItem
 import typings.chrome.chrome.downloads.DownloadOptions
 import typings.chrome.chrome.downloads.DownloadQuery
 import typings.chrome.chrome.downloads.GetFileIconOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofdownloads extends js.Object {
+trait Typeofdownloads extends StObject {
   
   def acceptDanger(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.accessanalyzerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFindingsRequest extends js.Object {
+trait UpdateFindingsRequest extends StObject {
   
   /**
     * The ARN of the analyzer that generated the findings to update.
@@ -41,45 +42,33 @@ object UpdateFindingsRequest {
   }
   
   @scala.inline
-  implicit class UpdateFindingsRequestOps[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateFindingsRequestMutableBuilder[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def setAnalyzerArn(value: AnalyzerArn): Self = this.set("analyzerArn", value.asInstanceOf[js.Any])
+    def setIds(value: FindingIdList): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FindingStatusUpdate): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setIdsVarargs(value: FindingId*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: FindingId*): Self = this.set("ids", js.Array(value :_*))
+    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     
     @scala.inline
-    def setIds(value: FindingIdList): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
-    
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    def setStatus(value: FindingStatusUpdate): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

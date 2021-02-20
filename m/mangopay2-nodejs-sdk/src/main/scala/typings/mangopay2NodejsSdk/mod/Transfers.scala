@@ -4,13 +4,14 @@ import typings.mangopay2NodejsSdk.mod.refund.CreateTransferRefund
 import typings.mangopay2NodejsSdk.mod.refund.RefundData
 import typings.mangopay2NodejsSdk.mod.transfer.CreateTransfer
 import typings.mangopay2NodejsSdk.mod.transfer.TransferData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Transfers")
 @js.native
-class Transfers () extends js.Object {
+class Transfers () extends StObject {
   
   /**
     * Create new transfer

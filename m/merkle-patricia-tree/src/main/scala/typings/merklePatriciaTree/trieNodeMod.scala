@@ -1,20 +1,14 @@
 package typings.merklePatriciaTree
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merkle-patricia-tree/dist/trieNode", JSImport.Namespace)
-@js.native
-object trieNodeMod extends js.Object {
+object trieNodeMod {
   
-  def decodeNode(raw: Buffer): TrieNode = js.native
-  
-  def decodeRawNode(raw: js.Array[Buffer]): TrieNode = js.native
-  
-  def isRawNode(n: js.Any): Boolean = js.native
-  
+  @JSImport("merkle-patricia-tree/dist/trieNode", "BranchNode")
   @js.native
   class BranchNode () extends TrieNode {
     
@@ -39,12 +33,14 @@ object trieNodeMod extends js.Object {
     def value_=(v: Buffer | Null): Unit = js.native
   }
   /* static members */
-  @js.native
-  object BranchNode extends js.Object {
+  object BranchNode {
     
+    @JSImport("merkle-patricia-tree/dist/trieNode", "BranchNode.fromArray")
+    @js.native
     def fromArray(arr: js.Array[Buffer]): BranchNode = js.native
   }
   
+  @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode")
   @js.native
   class ExtensionNode protected () extends TrieNode {
     def this(nibbles: Nibbles, value: Buffer) = this()
@@ -68,14 +64,18 @@ object trieNodeMod extends js.Object {
     def value_=(v: Buffer): Unit = js.native
   }
   /* static members */
-  @js.native
-  object ExtensionNode extends js.Object {
+  object ExtensionNode {
     
+    @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode.decodeKey")
+    @js.native
     def decodeKey(key: Nibbles): Nibbles = js.native
     
+    @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode.encodeKey")
+    @js.native
     def encodeKey(key: Nibbles): Nibbles = js.native
   }
   
+  @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode")
   @js.native
   class LeafNode protected () extends TrieNode {
     def this(nibbles: Nibbles, value: Buffer) = this()
@@ -99,22 +99,37 @@ object trieNodeMod extends js.Object {
     def value_=(v: Buffer): Unit = js.native
   }
   /* static members */
-  @js.native
-  object LeafNode extends js.Object {
+  object LeafNode {
     
+    @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode.decodeKey")
+    @js.native
     def decodeKey(encodedKey: Nibbles): Nibbles = js.native
     
+    @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode.encodeKey")
+    @js.native
     def encodeKey(key: Nibbles): Nibbles = js.native
   }
+  
+  @JSImport("merkle-patricia-tree/dist/trieNode", "decodeNode")
+  @js.native
+  def decodeNode(raw: Buffer): TrieNode = js.native
+  
+  @JSImport("merkle-patricia-tree/dist/trieNode", "decodeRawNode")
+  @js.native
+  def decodeRawNode(raw: js.Array[Buffer]): TrieNode = js.native
+  
+  @JSImport("merkle-patricia-tree/dist/trieNode", "isRawNode")
+  @js.native
+  def isRawNode(n: js.Any): Boolean = js.native
+  
+  type EmbeddedNode = Buffer | js.Array[Buffer]
+  
+  type Nibbles = js.Array[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.merklePatriciaTree.trieNodeMod.BranchNode
     - typings.merklePatriciaTree.trieNodeMod.ExtensionNode
     - typings.merklePatriciaTree.trieNodeMod.LeafNode
   */
-  trait TrieNode extends js.Object
-  
-  type EmbeddedNode = Buffer | js.Array[Buffer]
-  
-  type Nibbles = js.Array[Double]
+  trait TrieNode extends StObject
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariableSet extends js.Object {
+trait VariableSet extends StObject {
   
   /** The placeholder string; defined by EMM. */
   var placeholder: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object VariableSet {
   }
   
   @scala.inline
-  implicit class VariableSetOps[Self <: VariableSet] (val x: Self) extends AnyVal {
+  implicit class VariableSetMutableBuilder[Self <: VariableSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserValue(value: String): Self = StObject.set(x, "userValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
-    
-    @scala.inline
-    def setUserValue(value: String): Self = this.set("userValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserValue: Self = this.set("userValue", js.undefined)
+    def setUserValueUndefined: Self = StObject.set(x, "userValue", js.undefined)
   }
 }

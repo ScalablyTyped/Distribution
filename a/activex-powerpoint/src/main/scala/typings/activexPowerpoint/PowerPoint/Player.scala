@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Player extends js.Object {
+trait Player extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -49,48 +50,36 @@ object Player {
   }
   
   @scala.inline
-  implicit class PlayerOps[Self <: Player] (val x: Self) extends AnyVal {
+  implicit class PlayerMutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPosition(value: Double): Self = StObject.set(x, "CurrentPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoToNextBookmark(value: () => Unit): Self = StObject.set(x, "GoToNextBookmark", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setGoToPreviousBookmark(value: () => Unit): Self = StObject.set(x, "GoToPreviousBookmark", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentPosition(value: Double): Self = this.set("CurrentPosition", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToNextBookmark(value: () => Unit): Self = this.set("GoToNextBookmark", js.Any.fromFunction0(value))
+    def setPause(value: () => Unit): Self = StObject.set(x, "Pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGoToPreviousBookmark(value: () => Unit): Self = this.set("GoToPreviousBookmark", js.Any.fromFunction0(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setPowerPointDotPlayer_typekey(value: Player): Self = StObject.set(x, "PowerPoint.Player_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("Pause", js.Any.fromFunction0(value))
+    def setState(value: PpPlayerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("Play", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPowerPointDotPlayer_typekey(value: Player): Self = this.set("PowerPoint.Player_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: PpPlayerState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("Stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
   }
 }

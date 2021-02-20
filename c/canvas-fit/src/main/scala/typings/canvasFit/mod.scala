@@ -6,41 +6,88 @@ import typings.std.EventTarget
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("canvas-fit", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: js.UndefOr[scala.Nothing], scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: js.UndefOr[scala.Nothing], scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: Document): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: Document, scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: Document, scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: EventTarget): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: EventTarget, scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: EventTarget, scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: HTMLElement): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: js.UndefOr[scala.Nothing], scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: js.UndefOr[scala.Nothing], scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: Document): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: Document, scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: Document, scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: EventTarget): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: EventTarget, scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: EventTarget, scale: Double): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: HTMLElement): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: HTMLElement, scale: String): resize = js.native
+  @JSImport("canvas-fit", JSImport.Namespace)
+  @js.native
   def apply(canvas: SVGElement, parent: HTMLElement, scale: Double): resize = js.native
   
   @js.native
-  trait resize extends js.Object {
+  trait resize extends StObject {
     
     def apply(ev: js.Any): js.Any = js.native
     

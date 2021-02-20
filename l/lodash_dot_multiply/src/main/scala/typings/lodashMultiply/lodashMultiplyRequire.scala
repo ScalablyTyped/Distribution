@@ -1,5 +1,6 @@
 package typings.lodashMultiply
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("lodash.multiply", JSImport.Namespace)
 @js.native
-object lodashMultiplyRequire extends js.Object
+object lodashMultiplyRequire extends StObject

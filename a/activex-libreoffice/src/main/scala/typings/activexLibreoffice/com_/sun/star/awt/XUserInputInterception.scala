@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,30 +57,18 @@ object XUserInputInterception {
   }
   
   @scala.inline
-  implicit class XUserInputInterceptionOps[Self <: XUserInputInterception] (val x: Self) extends AnyVal {
+  implicit class XUserInputInterceptionMutableBuilder[Self <: XUserInputInterception] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "addKeyHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMouseClickHandler(value: XMouseClickHandler => Unit): Self = StObject.set(x, "addMouseClickHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "removeKeyHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddKeyHandler(value: XKeyHandler => Unit): Self = this.set("addKeyHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAddMouseClickHandler(value: XMouseClickHandler => Unit): Self = this.set("addMouseClickHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveKeyHandler(value: XKeyHandler => Unit): Self = this.set("removeKeyHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveMouseClickHandler(value: XMouseClickHandler => Unit): Self = this.set("removeMouseClickHandler", js.Any.fromFunction1(value))
+    def setRemoveMouseClickHandler(value: XMouseClickHandler => Unit): Self = StObject.set(x, "removeMouseClickHandler", js.Any.fromFunction1(value))
   }
 }

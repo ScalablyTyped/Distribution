@@ -1,11 +1,12 @@
 package typings.chrome.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dictionaryformat extends js.Object {
+trait Dictionaryformat extends StObject {
   
   var dictionary_format: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object Dictionaryformat {
   }
   
   @scala.inline
-  implicit class DictionaryformatOps[Self <: Dictionaryformat] (val x: Self) extends AnyVal {
+  implicit class DictionaryformatMutableBuilder[Self <: Dictionaryformat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDictionary_format(value: String): Self = StObject.set(x, "dictionary_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDictionary_formatUndefined: Self = StObject.set(x, "dictionary_format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDictionary_language(value: String): Self = StObject.set(x, "dictionary_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionary_format(value: String): Self = this.set("dictionary_format", value.asInstanceOf[js.Any])
+    def setDictionary_languageUndefined: Self = StObject.set(x, "dictionary_language", js.undefined)
     
     @scala.inline
-    def deleteDictionary_format: Self = this.set("dictionary_format", js.undefined)
+    def setDictionary_locale(value: String): Self = StObject.set(x, "dictionary_locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionary_language(value: String): Self = this.set("dictionary_language", value.asInstanceOf[js.Any])
+    def setDictionary_localeUndefined: Self = StObject.set(x, "dictionary_locale", js.undefined)
     
     @scala.inline
-    def deleteDictionary_language: Self = this.set("dictionary_language", js.undefined)
+    def setDictionary_path(value: String): Self = StObject.set(x, "dictionary_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionary_locale(value: String): Self = this.set("dictionary_locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDictionary_locale: Self = this.set("dictionary_locale", js.undefined)
-    
-    @scala.inline
-    def setDictionary_path(value: String): Self = this.set("dictionary_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDictionary_path: Self = this.set("dictionary_path", js.undefined)
+    def setDictionary_pathUndefined: Self = StObject.set(x, "dictionary_path", js.undefined)
   }
 }

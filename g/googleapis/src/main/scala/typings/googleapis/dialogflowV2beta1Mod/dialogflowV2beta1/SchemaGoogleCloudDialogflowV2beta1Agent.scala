@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a conversational agent.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1Agent extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1Agent extends StObject {
   
   /**
     * Optional. The URI of the agent&#39;s avatar. Avatars are used throughout
@@ -87,81 +88,69 @@ object SchemaGoogleCloudDialogflowV2beta1Agent {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1AgentOps[Self <: SchemaGoogleCloudDialogflowV2beta1Agent] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1AgentMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1Agent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatarUri(value: String): Self = StObject.set(x, "avatarUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvatarUriUndefined: Self = StObject.set(x, "avatarUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassificationThreshold(value: Double): Self = StObject.set(x, "classificationThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatarUri(value: String): Self = this.set("avatarUri", value.asInstanceOf[js.Any])
+    def setClassificationThresholdUndefined: Self = StObject.set(x, "classificationThreshold", js.undefined)
     
     @scala.inline
-    def deleteAvatarUri: Self = this.set("avatarUri", js.undefined)
+    def setDefaultLanguageCode(value: String): Self = StObject.set(x, "defaultLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassificationThreshold(value: Double): Self = this.set("classificationThreshold", value.asInstanceOf[js.Any])
+    def setDefaultLanguageCodeUndefined: Self = StObject.set(x, "defaultLanguageCode", js.undefined)
     
     @scala.inline
-    def deleteClassificationThreshold: Self = this.set("classificationThreshold", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLanguageCode(value: String): Self = this.set("defaultLanguageCode", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultLanguageCode: Self = this.set("defaultLanguageCode", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setMatchMode(value: String): Self = StObject.set(x, "matchMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLogging(value: Boolean): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    def setMatchModeUndefined: Self = StObject.set(x, "matchMode", js.undefined)
     
     @scala.inline
-    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchMode(value: String): Self = this.set("matchMode", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteMatchMode: Self = this.set("matchMode", js.undefined)
+    def setSupportedLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "supportedLanguageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setSupportedLanguageCodesUndefined: Self = StObject.set(x, "supportedLanguageCodes", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setSupportedLanguageCodesVarargs(value: String*): Self = StObject.set(x, "supportedLanguageCodes", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedLanguageCodesVarargs(value: String*): Self = this.set("supportedLanguageCodes", js.Array(value :_*))
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedLanguageCodes(value: js.Array[String]): Self = this.set("supportedLanguageCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedLanguageCodes: Self = this.set("supportedLanguageCodes", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

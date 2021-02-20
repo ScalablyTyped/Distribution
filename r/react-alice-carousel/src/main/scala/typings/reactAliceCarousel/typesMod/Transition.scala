@@ -1,11 +1,12 @@
 package typings.reactAliceCarousel.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transition extends js.Object {
+trait Transition extends StObject {
   
   var animationDuration: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object Transition {
   }
   
   @scala.inline
-  implicit class TransitionOps[Self <: Transition] (val x: Self) extends AnyVal {
+  implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationEasingFunction(value: String): Self = StObject.set(x, "animationEasingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
-    
-    @scala.inline
-    def setAnimationEasingFunction(value: String): Self = this.set("animationEasingFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationEasingFunction: Self = this.set("animationEasingFunction", js.undefined)
+    def setAnimationEasingFunctionUndefined: Self = StObject.set(x, "animationEasingFunction", js.undefined)
   }
 }

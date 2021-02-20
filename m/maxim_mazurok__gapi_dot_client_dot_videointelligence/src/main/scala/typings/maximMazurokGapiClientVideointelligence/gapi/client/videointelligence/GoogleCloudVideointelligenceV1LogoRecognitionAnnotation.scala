@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1LogoRecognitionAnnotation extends js.Object {
+trait GoogleCloudVideointelligenceV1LogoRecognitionAnnotation extends StObject {
   
   /** Entity category information to specify the logo class that all the logo tracks within this LogoRecognitionAnnotation are recognized as. */
   var entity: js.UndefOr[GoogleCloudVideointelligenceV1Entity] = js.native
@@ -25,42 +26,30 @@ object GoogleCloudVideointelligenceV1LogoRecognitionAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1LogoRecognitionAnnotationOps[Self <: GoogleCloudVideointelligenceV1LogoRecognitionAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1LogoRecognitionAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1LogoRecognitionAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: GoogleCloudVideointelligenceV1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1VideoSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: GoogleCloudVideointelligenceV1Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
+    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1VideoSegment*): Self = this.set("segments", js.Array(value :_*))
+    def setTracks(value: js.Array[GoogleCloudVideointelligenceV1Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1VideoSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
     @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
-    
-    @scala.inline
-    def setTracksVarargs(value: GoogleCloudVideointelligenceV1Track*): Self = this.set("tracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracks(value: js.Array[GoogleCloudVideointelligenceV1Track]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
+    def setTracksVarargs(value: GoogleCloudVideointelligenceV1Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

@@ -1,16 +1,21 @@
 package typings.ethereumjsVm
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-vm/dist/state/cache", JSImport.Namespace)
-@js.native
-object cacheMod extends js.Object {
+object cacheMod {
+  
+  @JSImport("ethereumjs-vm/dist/state/cache", JSImport.Default)
+  @js.native
+  class default protected () extends Cache {
+    def this(trie: js.Any) = this()
+  }
   
   @js.native
-  trait Cache extends js.Object {
+  trait Cache extends StObject {
     
     var _cache: js.Any = js.native
     
@@ -96,10 +101,5 @@ object cacheMod extends js.Object {
       * @param cb - Callback
       */
     def warm(addresses: js.Array[String], cb: js.Any): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends Cache {
-    def this(trie: js.Any) = this()
   }
 }

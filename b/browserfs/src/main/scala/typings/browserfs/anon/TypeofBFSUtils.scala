@@ -7,12 +7,13 @@ import typings.browserfs.utilMod.Arrayish
 import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofBFSUtils extends js.Object {
+trait TypeofBFSUtils extends StObject {
   
   def arrayBuffer2Buffer(ab: ArrayBuffer): Buffer = js.native
   

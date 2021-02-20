@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientAdsensehost.gapi.client.adsensehost
 
 import typings.maximMazurokGapiClientAdsensehost.anon.BackupOption
 import typings.maximMazurokGapiClientAdsensehost.anon.MarkupLanguage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdUnit extends js.Object {
+trait AdUnit extends StObject {
   
   /** Identity code of this ad unit, not necessarily unique across ad clients. */
   var code: js.UndefOr[String] = js.native
@@ -49,66 +50,54 @@ object AdUnit {
   }
   
   @scala.inline
-  implicit class AdUnitOps[Self <: AdUnit] (val x: Self) extends AnyVal {
+  implicit class AdUnitMutableBuilder[Self <: AdUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentAdsSettings(value: BackupOption): Self = StObject.set(x, "contentAdsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setContentAdsSettingsUndefined: Self = StObject.set(x, "contentAdsSettings", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setCustomStyle(value: AdStyle): Self = StObject.set(x, "customStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAdsSettings(value: BackupOption): Self = this.set("contentAdsSettings", value.asInstanceOf[js.Any])
+    def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
     
     @scala.inline
-    def deleteContentAdsSettings: Self = this.set("contentAdsSettings", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomStyle(value: AdStyle): Self = this.set("customStyle", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCustomStyle: Self = this.set("customStyle", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMobileContentAdsSettings(value: MarkupLanguage): Self = StObject.set(x, "mobileContentAdsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMobileContentAdsSettingsUndefined: Self = StObject.set(x, "mobileContentAdsSettings", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileContentAdsSettings(value: MarkupLanguage): Self = this.set("mobileContentAdsSettings", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMobileContentAdsSettings: Self = this.set("mobileContentAdsSettings", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

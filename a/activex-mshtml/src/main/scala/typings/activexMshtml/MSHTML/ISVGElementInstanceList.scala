@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISVGElementInstanceList extends js.Object {
+trait ISVGElementInstanceList extends StObject {
   
   @JSName("MSHTML.ISVGElementInstanceList_typekey")
   var MSHTMLDotISVGElementInstanceList_typekey: ISVGElementInstanceList = js.native
@@ -28,27 +29,15 @@ object ISVGElementInstanceList {
   }
   
   @scala.inline
-  implicit class ISVGElementInstanceListOps[Self <: ISVGElementInstanceList] (val x: Self) extends AnyVal {
+  implicit class ISVGElementInstanceListMutableBuilder[Self <: ISVGElementInstanceList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: Double => ISVGElementInstance): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotISVGElementInstanceList_typekey(value: ISVGElementInstanceList): Self = this.set("MSHTML.ISVGElementInstanceList_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Double => ISVGElementInstance): Self = this.set("item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMSHTMLDotISVGElementInstanceList_typekey(value: ISVGElementInstanceList): Self = StObject.set(x, "MSHTML.ISVGElementInstanceList_typekey", value.asInstanceOf[js.Any])
   }
 }

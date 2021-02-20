@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitorStreamInfo extends js.Object {
+trait MonitorStreamInfo extends StObject {
   
   /** If you have set the enableMonitorStream property to true, then this property determines the length of the live broadcast delay. */
   var broadcastStreamDelayMs: js.UndefOr[Double] = js.native
@@ -29,36 +30,24 @@ object MonitorStreamInfo {
   }
   
   @scala.inline
-  implicit class MonitorStreamInfoOps[Self <: MonitorStreamInfo] (val x: Self) extends AnyVal {
+  implicit class MonitorStreamInfoMutableBuilder[Self <: MonitorStreamInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcastStreamDelayMs(value: Double): Self = StObject.set(x, "broadcastStreamDelayMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastStreamDelayMsUndefined: Self = StObject.set(x, "broadcastStreamDelayMs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastStreamDelayMs(value: Double): Self = this.set("broadcastStreamDelayMs", value.asInstanceOf[js.Any])
+    def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
     
     @scala.inline
-    def deleteBroadcastStreamDelayMs: Self = this.set("broadcastStreamDelayMs", js.undefined)
+    def setEnableMonitorStream(value: Boolean): Self = StObject.set(x, "enableMonitorStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedHtml(value: String): Self = this.set("embedHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbedHtml: Self = this.set("embedHtml", js.undefined)
-    
-    @scala.inline
-    def setEnableMonitorStream(value: Boolean): Self = this.set("enableMonitorStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableMonitorStream: Self = this.set("enableMonitorStream", js.undefined)
+    def setEnableMonitorStreamUndefined: Self = StObject.set(x, "enableMonitorStream", js.undefined)
   }
 }

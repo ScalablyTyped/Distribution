@@ -11,20 +11,23 @@ import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
 import typings.std.IterableIterator
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-state-tree/dist/types/complex-types/map", JSImport.Namespace)
-@js.native
-object mapMod extends js.Object {
+object mapMod {
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/map", "isMapType")
+  @js.native
   def isMapType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/map.IMapType<Items> */ Boolean = js.native
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/map", "map")
+  @js.native
   def map[IT /* <: IAnyType */](subtype: IT): IMapType[IT] = js.native
   
   @js.native
-  trait IMSTMap[IT /* <: IAnyType */] extends js.Object {
+  trait IMSTMap[IT /* <: IAnyType */] extends StObject {
     
     def clear(): Unit = js.native
     

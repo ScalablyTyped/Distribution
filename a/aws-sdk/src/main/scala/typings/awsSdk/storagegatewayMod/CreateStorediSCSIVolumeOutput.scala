@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStorediSCSIVolumeOutput extends js.Object {
+trait CreateStorediSCSIVolumeOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the volume target, which includes the iSCSI name that initiators can use to connect to the target.
@@ -31,36 +32,24 @@ object CreateStorediSCSIVolumeOutput {
   }
   
   @scala.inline
-  implicit class CreateStorediSCSIVolumeOutputOps[Self <: CreateStorediSCSIVolumeOutput] (val x: Self) extends AnyVal {
+  implicit class CreateStorediSCSIVolumeOutputMutableBuilder[Self <: CreateStorediSCSIVolumeOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetARN(value: TargetARN): Self = this.set("TargetARN", value.asInstanceOf[js.Any])
+    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
     @scala.inline
-    def deleteTargetARN: Self = this.set("TargetARN", js.undefined)
+    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
-    
-    @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSizeInBytes: Self = this.set("VolumeSizeInBytes", js.undefined)
+    def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
   }
 }

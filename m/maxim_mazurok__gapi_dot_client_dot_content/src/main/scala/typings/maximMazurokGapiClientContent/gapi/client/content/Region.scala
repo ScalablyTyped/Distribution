@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Region extends js.Object {
+trait Region extends StObject {
   
   /** The display name of the region. */
   var displayName: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object Region {
   }
   
   @scala.inline
-  implicit class RegionOps[Self <: Region] (val x: Self) extends AnyVal {
+  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeotargetArea(value: RegionGeoTargetArea): Self = StObject.set(x, "geotargetArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGeotargetAreaUndefined: Self = StObject.set(x, "geotargetArea", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeotargetArea(value: RegionGeoTargetArea): Self = this.set("geotargetArea", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteGeotargetArea: Self = this.set("geotargetArea", js.undefined)
+    def setPostalCodeArea(value: RegionPostalCodeArea): Self = StObject.set(x, "postalCodeArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setPostalCodeAreaUndefined: Self = StObject.set(x, "postalCodeArea", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setRegionId(value: String): Self = StObject.set(x, "regionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCodeArea(value: RegionPostalCodeArea): Self = this.set("postalCodeArea", value.asInstanceOf[js.Any])
+    def setRegionIdUndefined: Self = StObject.set(x, "regionId", js.undefined)
     
     @scala.inline
-    def deletePostalCodeArea: Self = this.set("postalCodeArea", js.undefined)
+    def setRegionalInventoryEligible(value: Boolean): Self = StObject.set(x, "regionalInventoryEligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionId(value: String): Self = this.set("regionId", value.asInstanceOf[js.Any])
+    def setRegionalInventoryEligibleUndefined: Self = StObject.set(x, "regionalInventoryEligible", js.undefined)
     
     @scala.inline
-    def deleteRegionId: Self = this.set("regionId", js.undefined)
+    def setShippingEligible(value: Boolean): Self = StObject.set(x, "shippingEligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionalInventoryEligible(value: Boolean): Self = this.set("regionalInventoryEligible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionalInventoryEligible: Self = this.set("regionalInventoryEligible", js.undefined)
-    
-    @scala.inline
-    def setShippingEligible(value: Boolean): Self = this.set("shippingEligible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingEligible: Self = this.set("shippingEligible", js.undefined)
+    def setShippingEligibleUndefined: Self = StObject.set(x, "shippingEligible", js.undefined)
   }
 }

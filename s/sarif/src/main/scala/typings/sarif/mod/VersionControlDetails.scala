@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionControlDetails extends js.Object {
+trait VersionControlDetails extends StObject {
   
   /**
     * A Coordinated Universal Time (UTC) date and time that can be used to synchronize an enlistment to the state of
@@ -53,57 +54,45 @@ object VersionControlDetails {
   }
   
   @scala.inline
-  implicit class VersionControlDetailsOps[Self <: VersionControlDetails] (val x: Self) extends AnyVal {
+  implicit class VersionControlDetailsMutableBuilder[Self <: VersionControlDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsOfTimeUtc(value: String): Self = StObject.set(x, "asOfTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsOfTimeUtcUndefined: Self = StObject.set(x, "asOfTimeUtc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryUri(value: String): Self = this.set("repositoryUri", value.asInstanceOf[js.Any])
+    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
     @scala.inline
-    def setAsOfTimeUtc(value: String): Self = this.set("asOfTimeUtc", value.asInstanceOf[js.Any])
+    def setMappedTo(value: ArtifactLocation): Self = StObject.set(x, "mappedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsOfTimeUtc: Self = this.set("asOfTimeUtc", js.undefined)
+    def setMappedToUndefined: Self = StObject.set(x, "mappedTo", js.undefined)
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBranch: Self = this.set("branch", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setMappedTo(value: ArtifactLocation): Self = this.set("mappedTo", value.asInstanceOf[js.Any])
+    def setRepositoryUri(value: String): Self = StObject.set(x, "repositoryUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMappedTo: Self = this.set("mappedTo", js.undefined)
+    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setRevisionTag(value: String): Self = StObject.set(x, "revisionTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
-    
-    @scala.inline
-    def setRevisionTag(value: String): Self = this.set("revisionTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionTag: Self = this.set("revisionTag", js.undefined)
+    def setRevisionTagUndefined: Self = StObject.set(x, "revisionTag", js.undefined)
   }
 }

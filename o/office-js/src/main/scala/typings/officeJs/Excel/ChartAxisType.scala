@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisType extends js.Object
+sealed trait ChartAxisType extends StObject
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisType")
 @js.native
-object ChartAxisType extends js.Object {
+object ChartAxisType extends StObject {
   
   /**
     * Axis displays categories.

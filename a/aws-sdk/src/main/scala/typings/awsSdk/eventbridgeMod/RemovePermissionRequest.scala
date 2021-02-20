@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemovePermissionRequest extends js.Object {
+trait RemovePermissionRequest extends StObject {
   
   /**
     * The name of the event bus to revoke permissions for. If you omit this, the default event bus is used.
@@ -31,36 +32,24 @@ object RemovePermissionRequest {
   }
   
   @scala.inline
-  implicit class RemovePermissionRequestOps[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
+  implicit class RemovePermissionRequestMutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventBusName(value: NonPartnerEventBusName): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveAllPermissions(value: Boolean): Self = StObject.set(x, "RemoveAllPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBusName(value: NonPartnerEventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    def setRemoveAllPermissionsUndefined: Self = StObject.set(x, "RemoveAllPermissions", js.undefined)
     
     @scala.inline
-    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAllPermissions(value: Boolean): Self = this.set("RemoveAllPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveAllPermissions: Self = this.set("RemoveAllPermissions", js.undefined)
-    
-    @scala.inline
-    def setStatementId(value: StatementId): Self = this.set("StatementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatementId: Self = this.set("StatementId", js.undefined)
+    def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
   }
 }

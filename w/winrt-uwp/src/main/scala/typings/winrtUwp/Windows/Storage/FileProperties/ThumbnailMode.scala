@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThumbnailMode extends js.Object
+sealed trait ThumbnailMode extends StObject
 /** Describes the purpose of the thumbnail to determine how to adjust the thumbnail image to retrieve. */
 @JSGlobal("Windows.Storage.FileProperties.ThumbnailMode")
 @js.native
-object ThumbnailMode extends js.Object {
+object ThumbnailMode extends StObject {
   
   /** To display previews of document files. */
   @js.native

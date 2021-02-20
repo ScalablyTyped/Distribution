@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Updates the properties of the table borders in a Table.
   */
 @js.native
-trait SchemaUpdateTableBorderPropertiesRequest extends js.Object {
+trait SchemaUpdateTableBorderPropertiesRequest extends StObject {
   
   /**
     * The border position in the table range the updates should apply to. If a
@@ -54,48 +55,36 @@ object SchemaUpdateTableBorderPropertiesRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateTableBorderPropertiesRequestOps[Self <: SchemaUpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateTableBorderPropertiesRequestMutableBuilder[Self <: SchemaUpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderPositionUndefined: Self = StObject.set(x, "borderPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderPosition(value: String): Self = this.set("borderPosition", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteBorderPosition: Self = this.set("borderPosition", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setTableBorderProperties(value: SchemaTableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setTableRange(value: SchemaTableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBorderProperties(value: SchemaTableBorderProperties): Self = this.set("tableBorderProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableBorderProperties: Self = this.set("tableBorderProperties", js.undefined)
-    
-    @scala.inline
-    def setTableRange(value: SchemaTableRange): Self = this.set("tableRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRange: Self = this.set("tableRange", js.undefined)
+    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
   }
 }

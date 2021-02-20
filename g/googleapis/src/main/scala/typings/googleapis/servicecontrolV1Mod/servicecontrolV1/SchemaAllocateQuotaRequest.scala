@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for the AllocateQuota method.
   */
 @js.native
-trait SchemaAllocateQuotaRequest extends js.Object {
+trait SchemaAllocateQuotaRequest extends StObject {
   
   /**
     * Operation that describes the quota allocation.
@@ -31,30 +32,18 @@ object SchemaAllocateQuotaRequest {
   }
   
   @scala.inline
-  implicit class SchemaAllocateQuotaRequestOps[Self <: SchemaAllocateQuotaRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAllocateQuotaRequestMutableBuilder[Self <: SchemaAllocateQuotaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocateOperation(value: SchemaQuotaOperation): Self = StObject.set(x, "allocateOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocateOperationUndefined: Self = StObject.set(x, "allocateOperation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocateOperation(value: SchemaQuotaOperation): Self = this.set("allocateOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllocateOperation: Self = this.set("allocateOperation", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

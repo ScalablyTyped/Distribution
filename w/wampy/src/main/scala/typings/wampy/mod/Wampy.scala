@@ -1,11 +1,12 @@
 package typings.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Wampy extends js.Object {
+trait Wampy extends StObject {
   
   def abort(): Wampy = js.native
   

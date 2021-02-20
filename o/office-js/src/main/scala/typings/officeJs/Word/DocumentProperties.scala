@@ -7,6 +7,7 @@ import typings.officeJs.Word.Interfaces.DocumentPropertiesLoadOptions
 import typings.officeJs.Word.Interfaces.DocumentPropertiesUpdateData
 import typings.officeJs.anon.Expand
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

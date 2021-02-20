@@ -1,12 +1,13 @@
 package typings.braftEditor.anon
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BottomText extends js.Object {
+trait BottomText extends StObject {
   
   var bottomText: js.UndefOr[ReactNode] = js.native
   
@@ -59,141 +60,129 @@ object BottomText {
   }
   
   @scala.inline
-  implicit class BottomTextOps[Self <: BottomText] (val x: Self) extends AnyVal {
+  implicit class BottomTextMutableBuilder[Self <: BottomText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomText(value: ReactNode): Self = StObject.set(x, "bottomText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomTextUndefined: Self = StObject.set(x, "bottomText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def setBottomText(value: ReactNode): Self = this.set("bottomText", value.asInstanceOf[js.Any])
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBottomText: Self = this.set("bottomText", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCloseOnCancel(value: Boolean): Self = StObject.set(x, "closeOnCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setCloseOnCancelUndefined: Self = StObject.set(x, "closeOnCancel", js.undefined)
     
     @scala.inline
-    def setCloseOnBlur(value: Boolean): Self = this.set("closeOnBlur", value.asInstanceOf[js.Any])
+    def setCloseOnConfirm(value: Boolean): Self = StObject.set(x, "closeOnConfirm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseOnBlur: Self = this.set("closeOnBlur", js.undefined)
+    def setCloseOnConfirmUndefined: Self = StObject.set(x, "closeOnConfirm", js.undefined)
     
     @scala.inline
-    def setCloseOnCancel(value: Boolean): Self = this.set("closeOnCancel", value.asInstanceOf[js.Any])
+    def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseOnCancel: Self = this.set("closeOnCancel", js.undefined)
+    def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
     
     @scala.inline
-    def setCloseOnConfirm(value: Boolean): Self = this.set("closeOnConfirm", value.asInstanceOf[js.Any])
+    def setConfirmable(value: Boolean): Self = StObject.set(x, "confirmable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseOnConfirm: Self = this.set("closeOnConfirm", js.undefined)
+    def setConfirmableUndefined: Self = StObject.set(x, "confirmable", js.undefined)
     
     @scala.inline
-    def setConfirmText(value: String): Self = this.set("confirmText", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmText: Self = this.set("confirmText", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setConfirmable(value: Boolean): Self = this.set("confirmable", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmable: Self = this.set("confirmable", js.undefined)
+    def setOnBlur(value: js.Function): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOnCancel(value: js.Function): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBlur(value: js.Function): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCancel(value: js.Function): Self = this.set("onCancel", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    def setOnConfirm(value: js.Function): Self = StObject.set(x, "onConfirm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: js.Function): Self = this.set("onClose", value.asInstanceOf[js.Any])
+    def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnConfirm(value: js.Function): Self = this.set("onConfirm", value.asInstanceOf[js.Any])
+    def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
     
     @scala.inline
-    def deleteOnConfirm: Self = this.set("onConfirm", js.undefined)
+    def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCancel(value: Boolean): Self = this.set("showCancel", value.asInstanceOf[js.Any])
+    def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
     
     @scala.inline
-    def deleteShowCancel: Self = this.set("showCancel", js.undefined)
+    def setShowConfirm(value: Boolean): Self = StObject.set(x, "showConfirm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowClose(value: Boolean): Self = this.set("showClose", value.asInstanceOf[js.Any])
+    def setShowConfirmUndefined: Self = StObject.set(x, "showConfirm", js.undefined)
     
     @scala.inline
-    def deleteShowClose: Self = this.set("showClose", js.undefined)
+    def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowConfirm(value: Boolean): Self = this.set("showConfirm", value.asInstanceOf[js.Any])
+    def setShowFooterUndefined: Self = StObject.set(x, "showFooter", js.undefined)
     
     @scala.inline
-    def deleteShowConfirm: Self = this.set("showConfirm", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFooter(value: Boolean): Self = this.set("showFooter", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowFooter: Self = this.set("showFooter", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

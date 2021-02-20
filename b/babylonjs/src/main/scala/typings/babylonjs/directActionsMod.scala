@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.actionEventMod.ActionEvent
 import typings.babylonjs.actionMod.Action
 import typings.babylonjs.conditionMod.Condition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Actions/directActions", JSImport.Namespace)
-@js.native
-object directActionsMod extends js.Object {
+object directActionsMod {
   
+  @JSImport("babylonjs/Actions/directActions", "CombineAction")
   @js.native
   class CombineAction protected () extends Action {
     /**
@@ -28,6 +28,7 @@ object directActionsMod extends js.Object {
     var children: js.Array[Action] = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "DoNothingAction")
   @js.native
   /**
     * Instantiate the action
@@ -40,6 +41,7 @@ object directActionsMod extends js.Object {
     def this(triggerOptions: js.Any, condition: Condition) = this()
   }
   
+  @JSImport("babylonjs/Actions/directActions", "ExecuteCodeAction")
   @js.native
   class ExecuteCodeAction protected () extends Action {
     /**
@@ -57,6 +59,7 @@ object directActionsMod extends js.Object {
     def func(evt: ActionEvent): Unit = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "IncrementValueAction")
   @js.native
   class IncrementValueAction protected () extends Action {
     /**
@@ -87,6 +90,7 @@ object directActionsMod extends js.Object {
     var value: js.Any = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "PlayAnimationAction")
   @js.native
   class PlayAnimationAction protected () extends Action {
     /**
@@ -135,6 +139,7 @@ object directActionsMod extends js.Object {
     var to: Double = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "SetParentAction")
   @js.native
   class SetParentAction protected () extends Action {
     /**
@@ -152,6 +157,7 @@ object directActionsMod extends js.Object {
     var _target: js.Any = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "SetStateAction")
   @js.native
   class SetStateAction protected () extends Action {
     /**
@@ -172,6 +178,7 @@ object directActionsMod extends js.Object {
     var value: String = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "SetValueAction")
   @js.native
   class SetValueAction protected () extends Action {
     /**
@@ -202,6 +209,7 @@ object directActionsMod extends js.Object {
     var value: js.Any = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "StopAnimationAction")
   @js.native
   class StopAnimationAction protected () extends Action {
     /**
@@ -216,6 +224,7 @@ object directActionsMod extends js.Object {
     var _target: js.Any = js.native
   }
   
+  @JSImport("babylonjs/Actions/directActions", "SwitchBooleanAction")
   @js.native
   class SwitchBooleanAction protected () extends Action {
     /**

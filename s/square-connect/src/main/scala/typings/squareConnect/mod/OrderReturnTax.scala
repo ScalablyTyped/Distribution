@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderReturnTax")
 @js.native
-class OrderReturnTax () extends js.Object {
+class OrderReturnTax () extends StObject {
   
   /**
     * The amount of the money applied by the tax in an order.

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,57 +29,45 @@ object RoleAssignment {
   }
   
   @scala.inline
-  implicit class RoleAssignmentOps[Self <: RoleAssignment] (val x: Self) extends AnyVal {
+  implicit class RoleAssignmentMutableBuilder[Self <: RoleAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setResourceScopes(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "resourceScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setResourceScopesNull: Self = StObject.set(x, "resourceScopes", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setResourceScopesUndefined: Self = StObject.set(x, "resourceScopes", js.undefined)
     
     @scala.inline
-    def setResourceScopesVarargs(value: String*): Self = this.set("resourceScopes", js.Array(value :_*))
+    def setResourceScopesVarargs(value: String*): Self = StObject.set(x, "resourceScopes", js.Array(value :_*))
     
     @scala.inline
-    def setResourceScopes(value: NullableOption[js.Array[String]]): Self = this.set("resourceScopes", value.asInstanceOf[js.Any])
+    def setRoleDefinition(value: NullableOption[RoleDefinition]): Self = StObject.set(x, "roleDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceScopes: Self = this.set("resourceScopes", js.undefined)
+    def setRoleDefinitionNull: Self = StObject.set(x, "roleDefinition", null)
     
     @scala.inline
-    def setResourceScopesNull: Self = this.set("resourceScopes", null)
-    
-    @scala.inline
-    def setRoleDefinition(value: NullableOption[RoleDefinition]): Self = this.set("roleDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleDefinition: Self = this.set("roleDefinition", js.undefined)
-    
-    @scala.inline
-    def setRoleDefinitionNull: Self = this.set("roleDefinition", null)
+    def setRoleDefinitionUndefined: Self = StObject.set(x, "roleDefinition", js.undefined)
   }
 }

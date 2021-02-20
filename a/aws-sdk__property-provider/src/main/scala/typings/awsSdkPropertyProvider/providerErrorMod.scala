@@ -1,14 +1,14 @@
 package typings.awsSdkPropertyProvider
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/property-provider/dist/cjs/ProviderError", JSImport.Namespace)
-@js.native
-object providerErrorMod extends js.Object {
+object providerErrorMod {
   
+  @JSImport("@aws-sdk/property-provider/dist/cjs/ProviderError", "ProviderError")
   @js.native
   class ProviderError protected () extends Error {
     def this(message: String) = this()

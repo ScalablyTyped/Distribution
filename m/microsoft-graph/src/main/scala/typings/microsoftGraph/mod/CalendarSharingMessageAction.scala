@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarSharingMessageAction extends js.Object {
+trait CalendarSharingMessageAction extends StObject {
   
   var action: js.UndefOr[NullableOption[CalendarSharingAction]] = js.native
   
@@ -22,45 +23,33 @@ object CalendarSharingMessageAction {
   }
   
   @scala.inline
-  implicit class CalendarSharingMessageActionOps[Self <: CalendarSharingMessageAction] (val x: Self) extends AnyVal {
+  implicit class CalendarSharingMessageActionMutableBuilder[Self <: CalendarSharingMessageAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: NullableOption[CalendarSharingAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNull: Self = StObject.set(x, "action", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionType(value: NullableOption[CalendarSharingActionType]): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: NullableOption[CalendarSharingAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setActionTypeNull: Self = StObject.set(x, "actionType", null)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def setActionNull: Self = this.set("action", null)
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def setActionType(value: NullableOption[CalendarSharingActionType]): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setImportance(value: NullableOption[CalendarSharingActionImportance]): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setImportanceNull: Self = StObject.set(x, "importance", null)
     
     @scala.inline
-    def setActionTypeNull: Self = this.set("actionType", null)
-    
-    @scala.inline
-    def setImportance(value: NullableOption[CalendarSharingActionImportance]): Self = this.set("importance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
-    
-    @scala.inline
-    def setImportanceNull: Self = this.set("importance", null)
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
   }
 }

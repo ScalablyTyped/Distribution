@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeploymentRequest extends js.Object {
+trait GetDeploymentRequest extends StObject {
   
   /**
     * [Required] The identifier of the Deployment resource to get information about.
@@ -31,33 +32,21 @@ object GetDeploymentRequest {
   }
   
   @scala.inline
-  implicit class GetDeploymentRequestOps[Self <: GetDeploymentRequest] (val x: Self) extends AnyVal {
+  implicit class GetDeploymentRequestMutableBuilder[Self <: GetDeploymentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmbed(value: ListOfString): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
     @scala.inline
-    def setDeploymentId(value: String): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmbedVarargs(value: String*): Self = this.set("embed", js.Array(value :_*))
-    
-    @scala.inline
-    def setEmbed(value: ListOfString): Self = this.set("embed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbed: Self = this.set("embed", js.undefined)
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

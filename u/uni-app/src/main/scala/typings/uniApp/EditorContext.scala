@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorContext extends js.Object {
+trait EditorContext extends StObject {
   
   /**
     * 初始化编辑器内容，hmlt和delta同时存在时仅delta生效

@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationFieldProperties extends js.Object {
+trait DestinationFieldProperties extends StObject {
   
   /**
     *  Specifies if the destination field can be created by the current user. 
@@ -41,51 +42,39 @@ object DestinationFieldProperties {
   }
   
   @scala.inline
-  implicit class DestinationFieldPropertiesOps[Self <: DestinationFieldProperties] (val x: Self) extends AnyVal {
+  implicit class DestinationFieldPropertiesMutableBuilder[Self <: DestinationFieldProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCreatable(value: Boolean): Self = StObject.set(x, "isCreatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCreatableUndefined: Self = StObject.set(x, "isCreatable", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCreatable(value: Boolean): Self = this.set("isCreatable", value.asInstanceOf[js.Any])
+    def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
     
     @scala.inline
-    def deleteIsCreatable: Self = this.set("isCreatable", js.undefined)
+    def setIsUpdatable(value: Boolean): Self = StObject.set(x, "isUpdatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNullable(value: Boolean): Self = this.set("isNullable", value.asInstanceOf[js.Any])
+    def setIsUpdatableUndefined: Self = StObject.set(x, "isUpdatable", js.undefined)
     
     @scala.inline
-    def deleteIsNullable: Self = this.set("isNullable", js.undefined)
+    def setIsUpsertable(value: Boolean): Self = StObject.set(x, "isUpsertable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUpdatable(value: Boolean): Self = this.set("isUpdatable", value.asInstanceOf[js.Any])
+    def setIsUpsertableUndefined: Self = StObject.set(x, "isUpsertable", js.undefined)
     
     @scala.inline
-    def deleteIsUpdatable: Self = this.set("isUpdatable", js.undefined)
+    def setSupportedWriteOperations(value: SupportedWriteOperationList): Self = StObject.set(x, "supportedWriteOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUpsertable(value: Boolean): Self = this.set("isUpsertable", value.asInstanceOf[js.Any])
+    def setSupportedWriteOperationsUndefined: Self = StObject.set(x, "supportedWriteOperations", js.undefined)
     
     @scala.inline
-    def deleteIsUpsertable: Self = this.set("isUpsertable", js.undefined)
-    
-    @scala.inline
-    def setSupportedWriteOperationsVarargs(value: WriteOperationType*): Self = this.set("supportedWriteOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedWriteOperations(value: SupportedWriteOperationList): Self = this.set("supportedWriteOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedWriteOperations: Self = this.set("supportedWriteOperations", js.undefined)
+    def setSupportedWriteOperationsVarargs(value: WriteOperationType*): Self = StObject.set(x, "supportedWriteOperations", js.Array(value :_*))
   }
 }

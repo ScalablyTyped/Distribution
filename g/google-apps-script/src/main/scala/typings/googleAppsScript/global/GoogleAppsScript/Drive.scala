@@ -1,12 +1,11 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Drive")
-@js.native
-object Drive extends js.Object {
+object Drive {
   
   /**
     * An enum representing classes of users who can access a file or folder, besides any individual
@@ -17,8 +16,9 @@ object Drive extends js.Object {
     *     var folder = DriveApp.createFolder('Shared Folder');
     *     folder.setSharing(DriveApp.Access.ANYONE, DriveApp.Permission.EDIT);
     */
+  @JSGlobal("GoogleAppsScript.Drive.Access")
   @js.native
-  object Access extends js.Object {
+  object Access extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Access with Double] = js.native
@@ -44,8 +44,9 @@ object Drive extends js.Object {
     *     var folder = DriveApp.createFolder('Shared Folder');
     *     folder.setSharing(DriveApp.Access.ANYONE, DriveApp.Permission.EDIT);
     */
+  @JSGlobal("GoogleAppsScript.Drive.Permission")
   @js.native
-  object Permission extends js.Object {
+  object Permission extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Permission with Double] = js.native

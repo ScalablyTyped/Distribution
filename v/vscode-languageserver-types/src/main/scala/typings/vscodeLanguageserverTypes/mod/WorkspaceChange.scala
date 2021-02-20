@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-types", "WorkspaceChange")
 @js.native
-class WorkspaceChange () extends js.Object {
+class WorkspaceChange () extends StObject {
   def this(workspaceEdit: WorkspaceEdit) = this()
   
   var _textEditChanges: js.Any = js.native

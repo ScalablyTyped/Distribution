@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingConfiguration extends js.Object {
+trait LoggingConfiguration extends StObject {
   
   /**
     * Defines the logging destinations for the logs for a firewall. Network Firewall generates logs for stateful rule groups. 
@@ -21,24 +22,12 @@ object LoggingConfiguration {
   }
   
   @scala.inline
-  implicit class LoggingConfigurationOps[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
+  implicit class LoggingConfigurationMutableBuilder[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogDestinationConfigs(value: LogDestinationConfigs): Self = StObject.set(x, "LogDestinationConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogDestinationConfigsVarargs(value: LogDestinationConfig*): Self = this.set("LogDestinationConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogDestinationConfigs(value: LogDestinationConfigs): Self = this.set("LogDestinationConfigs", value.asInstanceOf[js.Any])
+    def setLogDestinationConfigsVarargs(value: LogDestinationConfig*): Self = StObject.set(x, "LogDestinationConfigs", js.Array(value :_*))
   }
 }

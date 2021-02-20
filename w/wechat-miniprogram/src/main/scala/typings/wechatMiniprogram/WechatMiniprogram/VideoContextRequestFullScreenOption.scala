@@ -3,12 +3,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`-90`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`0`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`90`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoContextRequestFullScreenOption extends js.Object {
+trait VideoContextRequestFullScreenOption extends StObject {
   
   /** 设置全屏时视频的方向，不指定则根据宽高比自动判断。
     *
@@ -29,24 +30,12 @@ object VideoContextRequestFullScreenOption {
   }
   
   @scala.inline
-  implicit class VideoContextRequestFullScreenOptionOps[Self <: VideoContextRequestFullScreenOption] (val x: Self) extends AnyVal {
+  implicit class VideoContextRequestFullScreenOptionMutableBuilder[Self <: VideoContextRequestFullScreenOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: `0` | `90` | `-90`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirection(value: `0` | `90` | `-90`): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
   }
 }

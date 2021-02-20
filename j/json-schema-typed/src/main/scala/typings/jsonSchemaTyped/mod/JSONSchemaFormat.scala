@@ -1,15 +1,15 @@
 package typings.jsonSchemaTyped.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JSONSchemaFormat extends js.Object
+sealed trait JSONSchemaFormat extends StObject
 @JSImport("json-schema-typed", "JSONSchemaFormat")
 @js.native
-object JSONSchemaFormat extends js.Object {
+object JSONSchemaFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[JSONSchemaFormat with String] = js.native
@@ -23,8 +23,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Date extends JSONSchemaFormat
-  /* "date" */ @js.native
-  object Date extends TopLevel[Date with String]
+  /* "date" */ val Date: typings.jsonSchemaTyped.mod.JSONSchemaFormat.Date with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid
@@ -35,8 +34,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait DateTime extends JSONSchemaFormat
-  /* "date-time" */ @js.native
-  object DateTime extends TopLevel[DateTime with String]
+  /* "date-time" */ val DateTime: typings.jsonSchemaTyped.mod.JSONSchemaFormat.DateTime with String = js.native
   
   /**
     * A string instance is valid against these attributes if it is a valid
@@ -46,8 +44,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Email extends JSONSchemaFormat
-  /* "email" */ @js.native
-  object Email extends TopLevel[Email with String]
+  /* "email" */ val Email: typings.jsonSchemaTyped.mod.JSONSchemaFormat.Email with String = js.native
   
   /**
     * As defined by [RFC 1034, section 3.1][RFC1034], including host names
@@ -59,8 +56,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Hostname extends JSONSchemaFormat
-  /* "hostname" */ @js.native
-  object Hostname extends TopLevel[Hostname with String]
+  /* "hostname" */ val Hostname: typings.jsonSchemaTyped.mod.JSONSchemaFormat.Hostname with String = js.native
   
   /**
     * A string instance is valid against these attributes if it is a valid
@@ -70,8 +66,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IDNEmail extends JSONSchemaFormat
-  /* "idn-email" */ @js.native
-  object IDNEmail extends TopLevel[IDNEmail with String]
+  /* "idn-email" */ val IDNEmail: typings.jsonSchemaTyped.mod.JSONSchemaFormat.IDNEmail with String = js.native
   
   /**
     * As defined by either [RFC 1034, section 3.1][RFC1034] as for hostname, or
@@ -83,8 +78,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IDNHostname extends JSONSchemaFormat
-  /* "idn-hostname" */ @js.native
-  object IDNHostname extends TopLevel[IDNHostname with String]
+  /* "idn-hostname" */ val IDNHostname: typings.jsonSchemaTyped.mod.JSONSchemaFormat.IDNHostname with String = js.native
   
   /**
     * An IPv4 address according to the "dotted-quad" ABNF syntax as defined in
@@ -94,8 +88,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IPv4 extends JSONSchemaFormat
-  /* "ipv4" */ @js.native
-  object IPv4 extends TopLevel[IPv4 with String]
+  /* "ipv4" */ val IPv4: typings.jsonSchemaTyped.mod.JSONSchemaFormat.IPv4 with String = js.native
   
   /**
     * An IPv6 address as defined in [RFC 4291, section 2.2][RFC4291].
@@ -104,8 +97,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IPv6 extends JSONSchemaFormat
-  /* "ipv6" */ @js.native
-  object IPv6 extends TopLevel[IPv6 with String]
+  /* "ipv6" */ val IPv6: typings.jsonSchemaTyped.mod.JSONSchemaFormat.IPv6 with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid IRI,
@@ -115,8 +107,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IRI extends JSONSchemaFormat
-  /* "iri" */ @js.native
-  object IRI extends TopLevel[IRI with String]
+  /* "iri" */ val IRI: typings.jsonSchemaTyped.mod.JSONSchemaFormat.IRI with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid IRI
@@ -127,8 +118,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait IRIReference extends JSONSchemaFormat
-  /* "iri-reference" */ @js.native
-  object IRIReference extends TopLevel[IRIReference with String]
+  /* "iri-reference" */ val IRIReference: typings.jsonSchemaTyped.mod.JSONSchemaFormat.IRIReference with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid JSON
@@ -139,8 +129,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait JSONPointer extends JSONSchemaFormat
-  /* "json-pointer" */ @js.native
-  object JSONPointer extends TopLevel[JSONPointer with String]
+  /* "json-pointer" */ val JSONPointer: typings.jsonSchemaTyped.mod.JSONSchemaFormat.JSONPointer with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid JSON
@@ -151,8 +140,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait JSONPointerURIFragment extends JSONSchemaFormat
-  /* "json-pointer-uri-fragment" */ @js.native
-  object JSONPointerURIFragment extends TopLevel[JSONPointerURIFragment with String]
+  /* "json-pointer-uri-fragment" */ val JSONPointerURIFragment: typings.jsonSchemaTyped.mod.JSONSchemaFormat.JSONPointerURIFragment with String = js.native
   
   /**
     * This attribute applies to string instances.
@@ -170,8 +158,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait RegEx extends JSONSchemaFormat
-  /* "regex" */ @js.native
-  object RegEx extends TopLevel[RegEx with String]
+  /* "regex" */ val RegEx: typings.jsonSchemaTyped.mod.JSONSchemaFormat.RegEx with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid
@@ -181,8 +168,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait RelativeJSONPointer extends JSONSchemaFormat
-  /* "relative-json-pointer" */ @js.native
-  object RelativeJSONPointer extends TopLevel[RelativeJSONPointer with String]
+  /* "relative-json-pointer" */ val RelativeJSONPointer: typings.jsonSchemaTyped.mod.JSONSchemaFormat.RelativeJSONPointer with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid
@@ -192,8 +178,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait Time extends JSONSchemaFormat
-  /* "time" */ @js.native
-  object Time extends TopLevel[Time with String]
+  /* "time" */ val Time: typings.jsonSchemaTyped.mod.JSONSchemaFormat.Time with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid URI,
@@ -203,8 +188,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait URI extends JSONSchemaFormat
-  /* "uri" */ @js.native
-  object URI extends TopLevel[URI with String]
+  /* "uri" */ val URI: typings.jsonSchemaTyped.mod.JSONSchemaFormat.URI with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid URI
@@ -215,8 +199,7 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait URIReference extends JSONSchemaFormat
-  /* "uri-reference" */ @js.native
-  object URIReference extends TopLevel[URIReference with String]
+  /* "uri-reference" */ val URIReference: typings.jsonSchemaTyped.mod.JSONSchemaFormat.URIReference with String = js.native
   
   /**
     * A string instance is valid against this attribute if it is a valid URI
@@ -229,14 +212,12 @@ object JSONSchemaFormat extends js.Object {
     */
   @js.native
   sealed trait URITemplate extends JSONSchemaFormat
-  /* "uri-template" */ @js.native
-  object URITemplate extends TopLevel[URITemplate with String]
+  /* "uri-template" */ val URITemplate: typings.jsonSchemaTyped.mod.JSONSchemaFormat.URITemplate with String = js.native
   
   /**
     * UUID
     */
   @js.native
   sealed trait UUID extends JSONSchemaFormat
-  /* "uuid" */ @js.native
-  object UUID extends TopLevel[UUID with String]
+  /* "uuid" */ val UUID: typings.jsonSchemaTyped.mod.JSONSchemaFormat.UUID with String = js.native
 }

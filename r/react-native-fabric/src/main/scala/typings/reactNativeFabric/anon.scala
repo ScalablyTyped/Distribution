@@ -1,16 +1,15 @@
 package typings.reactNativeFabric
 
 import typings.reactNativeFabric.mod.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Crash extends js.Object {
+  trait Crash extends StObject {
     
     def crash(): Unit = js.native
     
@@ -40,7 +39,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait LogAddToCart extends js.Object {
+  trait LogAddToCart extends StObject {
     
     /**
       * Sends the Add To Cart tracking event.

@@ -1,11 +1,12 @@
 package typings.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hotp_ extends js.Object {
+trait Hotp_ extends StObject {
   
   /**
     * Generate a counter-based one-time token. Specify the key and counter, and

@@ -2,12 +2,13 @@ package typings.reactHotkeys.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationOptions extends js.Object {
+trait ConfigurationOptions extends StObject {
   
   /**
     * Whether to allow combination submatches - e.g. if there is an action bound to
@@ -114,105 +115,93 @@ object ConfigurationOptions {
   }
   
   @scala.inline
-  implicit class ConfigurationOptionsOps[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
+  implicit class ConfigurationOptionsMutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCombinationSubmatches(value: Boolean): Self = StObject.set(x, "allowCombinationSubmatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCombinationSubmatchesUndefined: Self = StObject.set(x, "allowCombinationSubmatches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomKeyCodes(value: NumberDictionary[String]): Self = StObject.set(x, "customKeyCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCombinationSubmatches(value: Boolean): Self = this.set("allowCombinationSubmatches", value.asInstanceOf[js.Any])
+    def setCustomKeyCodesUndefined: Self = StObject.set(x, "customKeyCodes", js.undefined)
     
     @scala.inline
-    def deleteAllowCombinationSubmatches: Self = this.set("allowCombinationSubmatches", js.undefined)
+    def setDefaultComponent(value: ReactComponent): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKeyCodes(value: NumberDictionary[String]): Self = this.set("customKeyCodes", value.asInstanceOf[js.Any])
+    def setDefaultComponentUndefined: Self = StObject.set(x, "defaultComponent", js.undefined)
     
     @scala.inline
-    def deleteCustomKeyCodes: Self = this.set("customKeyCodes", js.undefined)
+    def setDefaultKeyEvent(value: KeyEventName): Self = StObject.set(x, "defaultKeyEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultComponent(value: ReactComponent): Self = this.set("defaultComponent", value.asInstanceOf[js.Any])
+    def setDefaultKeyEventUndefined: Self = StObject.set(x, "defaultKeyEvent", js.undefined)
     
     @scala.inline
-    def deleteDefaultComponent: Self = this.set("defaultComponent", js.undefined)
+    def setDefaultTabIndex(value: TabIndex): Self = StObject.set(x, "defaultTabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultKeyEvent(value: KeyEventName): Self = this.set("defaultKeyEvent", value.asInstanceOf[js.Any])
+    def setDefaultTabIndexUndefined: Self = StObject.set(x, "defaultTabIndex", js.undefined)
     
     @scala.inline
-    def deleteDefaultKeyEvent: Self = this.set("defaultKeyEvent", js.undefined)
+    def setEnableHardSequences(value: Boolean): Self = StObject.set(x, "enableHardSequences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTabIndex(value: TabIndex): Self = this.set("defaultTabIndex", value.asInstanceOf[js.Any])
+    def setEnableHardSequencesUndefined: Self = StObject.set(x, "enableHardSequences", js.undefined)
     
     @scala.inline
-    def deleteDefaultTabIndex: Self = this.set("defaultTabIndex", js.undefined)
+    def setIgnoreEventsCondition(value: /* keyEvent */ KeyboardEvent => Boolean): Self = StObject.set(x, "ignoreEventsCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableHardSequences(value: Boolean): Self = this.set("enableHardSequences", value.asInstanceOf[js.Any])
+    def setIgnoreEventsConditionUndefined: Self = StObject.set(x, "ignoreEventsCondition", js.undefined)
     
     @scala.inline
-    def deleteEnableHardSequences: Self = this.set("enableHardSequences", js.undefined)
+    def setIgnoreKeymapAndHandlerChangesByDefault(value: Boolean): Self = StObject.set(x, "ignoreKeymapAndHandlerChangesByDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreEventsCondition(value: /* keyEvent */ KeyboardEvent => Boolean): Self = this.set("ignoreEventsCondition", js.Any.fromFunction1(value))
+    def setIgnoreKeymapAndHandlerChangesByDefaultUndefined: Self = StObject.set(x, "ignoreKeymapAndHandlerChangesByDefault", js.undefined)
     
     @scala.inline
-    def deleteIgnoreEventsCondition: Self = this.set("ignoreEventsCondition", js.undefined)
+    def setIgnoreRepeatedEventsWhenKeyHeldDown(value: Boolean): Self = StObject.set(x, "ignoreRepeatedEventsWhenKeyHeldDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreKeymapAndHandlerChangesByDefault(value: Boolean): Self = this.set("ignoreKeymapAndHandlerChangesByDefault", value.asInstanceOf[js.Any])
+    def setIgnoreRepeatedEventsWhenKeyHeldDownUndefined: Self = StObject.set(x, "ignoreRepeatedEventsWhenKeyHeldDown", js.undefined)
     
     @scala.inline
-    def deleteIgnoreKeymapAndHandlerChangesByDefault: Self = this.set("ignoreKeymapAndHandlerChangesByDefault", js.undefined)
+    def setIgnoreTags(value: js.Array[String]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreRepeatedEventsWhenKeyHeldDown(value: Boolean): Self = this.set("ignoreRepeatedEventsWhenKeyHeldDown", value.asInstanceOf[js.Any])
+    def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
     
     @scala.inline
-    def deleteIgnoreRepeatedEventsWhenKeyHeldDown: Self = this.set("ignoreRepeatedEventsWhenKeyHeldDown", js.undefined)
+    def setIgnoreTagsVarargs(value: String*): Self = StObject.set(x, "ignoreTags", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreTagsVarargs(value: String*): Self = this.set("ignoreTags", js.Array(value :_*))
+    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreTags(value: js.Array[String]): Self = this.set("ignoreTags", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteIgnoreTags: Self = this.set("ignoreTags", js.undefined)
+    def setSimulateMissingKeyPressEvents(value: Boolean): Self = StObject.set(x, "simulateMissingKeyPressEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setSimulateMissingKeyPressEventsUndefined: Self = StObject.set(x, "simulateMissingKeyPressEvents", js.undefined)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setStopEventPropagationAfterHandling(value: Boolean): Self = StObject.set(x, "stopEventPropagationAfterHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimulateMissingKeyPressEvents(value: Boolean): Self = this.set("simulateMissingKeyPressEvents", value.asInstanceOf[js.Any])
+    def setStopEventPropagationAfterHandlingUndefined: Self = StObject.set(x, "stopEventPropagationAfterHandling", js.undefined)
     
     @scala.inline
-    def deleteSimulateMissingKeyPressEvents: Self = this.set("simulateMissingKeyPressEvents", js.undefined)
+    def setStopEventPropagationAfterIgnoring(value: Boolean): Self = StObject.set(x, "stopEventPropagationAfterIgnoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopEventPropagationAfterHandling(value: Boolean): Self = this.set("stopEventPropagationAfterHandling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopEventPropagationAfterHandling: Self = this.set("stopEventPropagationAfterHandling", js.undefined)
-    
-    @scala.inline
-    def setStopEventPropagationAfterIgnoring(value: Boolean): Self = this.set("stopEventPropagationAfterIgnoring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopEventPropagationAfterIgnoring: Self = this.set("stopEventPropagationAfterIgnoring", js.undefined)
+    def setStopEventPropagationAfterIgnoringUndefined: Self = StObject.set(x, "stopEventPropagationAfterIgnoring", js.undefined)
   }
 }

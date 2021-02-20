@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -25,30 +26,18 @@ object FontWeightProps {
   }
   
   @scala.inline
-  implicit class FontWeightPropsOps[Self <: FontWeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FontWeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class FontWeightPropsMutableBuilder[Self <: FontWeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FontWeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontWeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setFontWeightVarargs(value: (TVal | Null)*): Self = this.set("fontWeight", js.Array(value :_*))
-    
-    @scala.inline
-    def setFontWeight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
-    
-    @scala.inline
-    def setFontWeightNull: Self = this.set("fontWeight", null)
+    def setFontWeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
   }
 }

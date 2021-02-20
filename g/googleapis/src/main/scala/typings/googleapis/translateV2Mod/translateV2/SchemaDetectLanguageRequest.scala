@@ -1,5 +1,6 @@
 package typings.googleapis.translateV2Mod.translateV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request message for language detection.
   */
 @js.native
-trait SchemaDetectLanguageRequest extends js.Object {
+trait SchemaDetectLanguageRequest extends StObject {
   
   /**
     * The input text upon which to perform language detection. Repeat this
@@ -25,27 +26,15 @@ object SchemaDetectLanguageRequest {
   }
   
   @scala.inline
-  implicit class SchemaDetectLanguageRequestOps[Self <: SchemaDetectLanguageRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDetectLanguageRequestMutableBuilder[Self <: SchemaDetectLanguageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQVarargs(value: String*): Self = this.set("q", js.Array(value :_*))
-    
-    @scala.inline
-    def setQ(value: js.Array[String]): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
   }
 }

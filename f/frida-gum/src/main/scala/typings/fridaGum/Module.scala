@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Module extends js.Object {
+trait Module extends StObject {
   
   /**
     * Base address.
@@ -87,48 +88,36 @@ object Module {
   }
   
   @scala.inline
-  implicit class ModuleOps[Self <: Module] (val x: Self) extends AnyVal {
+  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnumerateExports(value: () => js.Array[ModuleExportDetails]): Self = StObject.set(x, "enumerateExports", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnumerateImports(value: () => js.Array[ModuleImportDetails]): Self = StObject.set(x, "enumerateImports", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBase(value: NativePointer): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setEnumerateRanges(value: PageProtection => js.Array[RangeDetails]): Self = StObject.set(x, "enumerateRanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnumerateExports(value: () => js.Array[ModuleExportDetails]): Self = this.set("enumerateExports", js.Any.fromFunction0(value))
+    def setEnumerateSymbols(value: () => js.Array[ModuleSymbolDetails]): Self = StObject.set(x, "enumerateSymbols", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnumerateImports(value: () => js.Array[ModuleImportDetails]): Self = this.set("enumerateImports", js.Any.fromFunction0(value))
+    def setFindExportByName(value: String => NativePointer | Null): Self = StObject.set(x, "findExportByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnumerateRanges(value: PageProtection => js.Array[RangeDetails]): Self = this.set("enumerateRanges", js.Any.fromFunction1(value))
+    def setGetExportByName(value: String => NativePointer): Self = StObject.set(x, "getExportByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnumerateSymbols(value: () => js.Array[ModuleSymbolDetails]): Self = this.set("enumerateSymbols", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindExportByName(value: String => NativePointer | Null): Self = this.set("findExportByName", js.Any.fromFunction1(value))
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExportByName(value: String => NativePointer): Self = this.set("getExportByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

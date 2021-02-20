@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTagsResponse extends js.Object {
+trait GetTagsResponse extends StObject {
   
   /**
     * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
@@ -36,36 +37,24 @@ object GetTagsResponse {
   }
   
   @scala.inline
-  implicit class GetTagsResponseOps[Self <: GetTagsResponse] (val x: Self) extends AnyVal {
+  implicit class GetTagsResponseMutableBuilder[Self <: GetTagsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnSize(value: PageSize): Self = StObject.set(x, "ReturnSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnSize(value: PageSize): Self = this.set("ReturnSize", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: Entity*): Self = this.set("Tags", js.Array(value :_*))
+    def setTagsVarargs(value: Entity*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalSize(value: PageSize): Self = this.set("TotalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    def setTotalSize(value: PageSize): Self = StObject.set(x, "TotalSize", value.asInstanceOf[js.Any])
   }
 }

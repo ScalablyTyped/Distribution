@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetFunction extends js.Object {
+trait WorksheetFunction extends StObject {
   
   def AccrInt(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any, Arg5: js.Any, Arg6: js.Any): Double = js.native
   def AccrInt(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any, Arg5: js.Any, Arg6: js.Any, Arg7: js.Any): Double = js.native

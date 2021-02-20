@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.allowsDirectInteraction
   - typings.reactNative.reactNativeStrings.pageTurn
 */
-trait AccessibilityTrait extends js.Object
+trait AccessibilityTrait extends StObject
 object AccessibilityTrait {
   
   @scala.inline

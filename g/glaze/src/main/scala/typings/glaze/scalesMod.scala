@@ -1,21 +1,26 @@
 package typings.glaze
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("glaze/dist-types/scales", JSImport.Namespace)
-@js.native
-object scalesMod extends js.Object {
+object scalesMod {
   
+  @JSImport("glaze/dist-types/scales", "modularScale")
+  @js.native
   def modularScale(ratio: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
     */ typings.glaze.glazeStrings.modularScale with TopLevel[js.Any] = js.native
+  @JSImport("glaze/dist-types/scales", "modularScale")
+  @js.native
   def modularScale[T /* <: Double */](ratio: Double, steps: js.Array[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in T ]: string}
     */ typings.glaze.glazeStrings.modularScale with TopLevel[js.Any] = js.native
   
+  @JSImport("glaze/dist-types/scales", "symmetricScale")
+  @js.native
   def symmetricScale[T /* <: String | Double */](
     nonNegativeTokens: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T ]: string | number}

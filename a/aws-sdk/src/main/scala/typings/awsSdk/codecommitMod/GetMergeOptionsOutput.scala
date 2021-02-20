@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMergeOptionsOutput extends js.Object {
+trait GetMergeOptionsOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
@@ -41,33 +42,21 @@ object GetMergeOptionsOutput {
   }
   
   @scala.inline
-  implicit class GetMergeOptionsOutputOps[Self <: GetMergeOptionsOutput] (val x: Self) extends AnyVal {
+  implicit class GetMergeOptionsOutputMutableBuilder[Self <: GetMergeOptionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeOptions(value: MergeOptions): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = this.set("baseCommitId", value.asInstanceOf[js.Any])
+    def setMergeOptionsVarargs(value: MergeOptionTypeEnum*): Self = StObject.set(x, "mergeOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = this.set("destinationCommitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMergeOptionsVarargs(value: MergeOptionTypeEnum*): Self = this.set("mergeOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setMergeOptions(value: MergeOptions): Self = this.set("mergeOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = this.set("sourceCommitId", value.asInstanceOf[js.Any])
+    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
   }
 }

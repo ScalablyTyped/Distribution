@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,66 +75,54 @@ object DirectionsProperties {
   }
   
   @scala.inline
-  implicit class DirectionsPropertiesOps[Self <: DirectionsProperties] (val x: Self) extends AnyVal {
+  implicit class DirectionsPropertiesMutableBuilder[Self <: DirectionsProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxStops(value: Double): Self = StObject.set(x, "maxStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setMaxStopsUndefined: Self = StObject.set(x, "maxStops", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setRouteServiceUrl(value: String): Self = StObject.set(x, "routeServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxStops(value: Double): Self = this.set("maxStops", value.asInstanceOf[js.Any])
+    def setRouteServiceUrlUndefined: Self = StObject.set(x, "routeServiceUrl", js.undefined)
     
     @scala.inline
-    def deleteMaxStops: Self = this.set("maxStops", js.undefined)
+    def setRouteSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "routeSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteServiceUrl(value: String): Self = this.set("routeServiceUrl", value.asInstanceOf[js.Any])
+    def setRouteSymbolUndefined: Self = StObject.set(x, "routeSymbol", js.undefined)
     
     @scala.inline
-    def deleteRouteServiceUrl: Self = this.set("routeServiceUrl", js.undefined)
+    def setSearchProperties(value: DirectionsSearchProperties): Self = StObject.set(x, "searchProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteSymbol(value: SimpleLineSymbolProperties): Self = this.set("routeSymbol", value.asInstanceOf[js.Any])
+    def setSearchPropertiesUndefined: Self = StObject.set(x, "searchProperties", js.undefined)
     
     @scala.inline
-    def deleteRouteSymbol: Self = this.set("routeSymbol", js.undefined)
+    def setStopSymbols(value: DirectionsStopSymbols): Self = StObject.set(x, "stopSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchProperties(value: DirectionsSearchProperties): Self = this.set("searchProperties", value.asInstanceOf[js.Any])
+    def setStopSymbolsUndefined: Self = StObject.set(x, "stopSymbols", js.undefined)
     
     @scala.inline
-    def deleteSearchProperties: Self = this.set("searchProperties", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopSymbols(value: DirectionsStopSymbols): Self = this.set("stopSymbols", value.asInstanceOf[js.Any])
+    def setViewModel(value: DirectionsViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStopSymbols: Self = this.set("stopSymbols", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: DirectionsViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

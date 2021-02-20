@@ -2,6 +2,7 @@ package typings.enigmaJs
 
 import typings.enigmaJs.enigmaJS.IConfig
 import typings.enigmaJs.enigmaJS.ISession
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // export = enigmaJS;
 // export as namespace enigmaJS;
 @js.native
-trait IEnigmaClass extends js.Object {
+trait IEnigmaClass extends StObject {
   
   /**
     * Create a session object.
@@ -28,21 +29,9 @@ object IEnigmaClass {
   }
   
   @scala.inline
-  implicit class IEnigmaClassOps[Self <: IEnigmaClass] (val x: Self) extends AnyVal {
+  implicit class IEnigmaClassMutableBuilder[Self <: IEnigmaClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: IConfig => ISession): Self = this.set("create", js.Any.fromFunction1(value))
+    def setCreate(value: IConfig => ISession): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

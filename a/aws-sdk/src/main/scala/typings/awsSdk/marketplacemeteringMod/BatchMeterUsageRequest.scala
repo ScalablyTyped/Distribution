@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchMeterUsageRequest extends js.Object {
+trait BatchMeterUsageRequest extends StObject {
   
   /**
     * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
@@ -26,27 +27,15 @@ object BatchMeterUsageRequest {
   }
   
   @scala.inline
-  implicit class BatchMeterUsageRequestOps[Self <: BatchMeterUsageRequest] (val x: Self) extends AnyVal {
+  implicit class BatchMeterUsageRequestMutableBuilder[Self <: BatchMeterUsageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUsageRecords(value: UsageRecordList): Self = StObject.set(x, "UsageRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageRecordsVarargs(value: UsageRecord*): Self = this.set("UsageRecords", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsageRecords(value: UsageRecordList): Self = this.set("UsageRecords", value.asInstanceOf[js.Any])
+    def setUsageRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UsageRecords", js.Array(value :_*))
   }
 }

@@ -1,16 +1,16 @@
 package typings.devexpressUtils
 
 import typings.devexpressUtils.typesMod.CmpFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/ordered-list", JSImport.Namespace)
-@js.native
-object orderedListMod extends js.Object {
+object orderedListMod {
   
+  @JSImport("@devexpress/utils/lib/class/ordered-list", "OrderedList")
   @js.native
-  class OrderedList[T] protected () extends js.Object {
+  class OrderedList[T] protected () extends StObject {
     def this(comparer: CmpFunc[T]) = this()
     
     def add(elem: T): this.type = js.native

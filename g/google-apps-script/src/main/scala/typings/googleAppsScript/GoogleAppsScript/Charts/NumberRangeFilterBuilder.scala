@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * documentation.
   */
 @js.native
-trait NumberRangeFilterBuilder extends js.Object {
+trait NumberRangeFilterBuilder extends StObject {
   
   def setMaxValue(maxValue: Integer): NumberRangeFilterBuilder = js.native
   
@@ -43,33 +44,21 @@ object NumberRangeFilterBuilder {
   }
   
   @scala.inline
-  implicit class NumberRangeFilterBuilderOps[Self <: NumberRangeFilterBuilder] (val x: Self) extends AnyVal {
+  implicit class NumberRangeFilterBuilderMutableBuilder[Self <: NumberRangeFilterBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetMaxValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetMinValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetOrientation(value: Orientation => NumberRangeFilterBuilder): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxValue(value: Integer => NumberRangeFilterBuilder): Self = this.set("setMaxValue", js.Any.fromFunction1(value))
+    def setSetShowRangeValues(value: Boolean => NumberRangeFilterBuilder): Self = StObject.set(x, "setShowRangeValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMinValue(value: Integer => NumberRangeFilterBuilder): Self = this.set("setMinValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOrientation(value: Orientation => NumberRangeFilterBuilder): Self = this.set("setOrientation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetShowRangeValues(value: Boolean => NumberRangeFilterBuilder): Self = this.set("setShowRangeValues", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTicks(value: Integer => NumberRangeFilterBuilder): Self = this.set("setTicks", js.Any.fromFunction1(value))
+    def setSetTicks(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setTicks", js.Any.fromFunction1(value))
   }
 }

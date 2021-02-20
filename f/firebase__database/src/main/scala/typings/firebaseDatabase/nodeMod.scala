@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/snap/Node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
   
+  @JSImport("@firebase/database/dist/src/core/snap/Node", "NamedNode")
   @js.native
-  class NamedNode protected () extends js.Object {
+  class NamedNode protected () extends StObject {
     def this(name: String, node: Node) = this()
     
     var MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode = js.native
@@ -23,8 +23,7 @@ object nodeMod extends js.Object {
     var node: Node = js.native
   }
   /* static members */
-  @js.native
-  object NamedNode extends js.Object {
+  object NamedNode {
     
     /**
       *
@@ -32,11 +31,13 @@ object nodeMod extends js.Object {
       * @param {!Node} node
       * @return {NamedNode}
       */
+    @JSImport("@firebase/database/dist/src/core/snap/Node", "NamedNode.Wrap")
+    @js.native
     def Wrap(name: String, node: Node): NamedNode = js.native
   }
   
   @js.native
-  trait Node extends js.Object {
+  trait Node extends StObject {
     
     /**
       * @param {!Node} other Another node

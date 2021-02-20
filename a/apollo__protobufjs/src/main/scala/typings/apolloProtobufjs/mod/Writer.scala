@@ -2,6 +2,7 @@ package typings.apolloProtobufjs.mod
 
 import typings.long.mod.Long
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@apollo/protobufjs", "Writer")
 @js.native
 /** Constructs a new writer instance. */
-class Writer () extends js.Object {
+class Writer () extends StObject {
   
   /**
     * Writes a boolish value as a varint.
@@ -170,20 +171,22 @@ class Writer () extends js.Object {
   def uint64(value: Long): Writer = js.native
 }
 /* static members */
-@JSImport("@apollo/protobufjs", "Writer")
-@js.native
-object Writer extends js.Object {
+object Writer {
   
   /**
     * Allocates a buffer of the specified size.
     * @param size Buffer size
     * @returns Buffer
     */
+  @JSImport("@apollo/protobufjs", "Writer.alloc")
+  @js.native
   def alloc(size: Double): Uint8Array = js.native
   
   /**
     * Creates a new writer.
     * @returns A {@link BufferWriter} when Buffers are supported, otherwise a {@link Writer}
     */
+  @JSImport("@apollo/protobufjs", "Writer.create")
+  @js.native
   def create(): BufferWriter | Writer = js.native
 }

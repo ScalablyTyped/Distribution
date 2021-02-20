@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansSavings extends js.Object {
+trait SavingsPlansSavings extends StObject {
   
   /**
     * The savings amount that you are accumulating for the usage that is covered by a Savings Plans, when compared to the On-Demand equivalent of the same usage.
@@ -26,30 +27,18 @@ object SavingsPlansSavings {
   }
   
   @scala.inline
-  implicit class SavingsPlansSavingsOps[Self <: SavingsPlansSavings] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansSavingsMutableBuilder[Self <: SavingsPlansSavings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetSavings(value: GenericString): Self = StObject.set(x, "NetSavings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetSavingsUndefined: Self = StObject.set(x, "NetSavings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDemandCostEquivalent(value: GenericString): Self = StObject.set(x, "OnDemandCostEquivalent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetSavings(value: GenericString): Self = this.set("NetSavings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetSavings: Self = this.set("NetSavings", js.undefined)
-    
-    @scala.inline
-    def setOnDemandCostEquivalent(value: GenericString): Self = this.set("OnDemandCostEquivalent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnDemandCostEquivalent: Self = this.set("OnDemandCostEquivalent", js.undefined)
+    def setOnDemandCostEquivalentUndefined: Self = StObject.set(x, "OnDemandCostEquivalent", js.undefined)
   }
 }

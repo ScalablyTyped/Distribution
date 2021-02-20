@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvoiceSummary extends js.Object {
+trait InvoiceSummary extends StObject {
   
   /** Summary of the total amounts of the additional charges. */
   var additionalChargeSummaries: js.UndefOr[js.Array[InvoiceSummaryAdditionalChargeSummary]] = js.native
@@ -22,33 +23,21 @@ object InvoiceSummary {
   }
   
   @scala.inline
-  implicit class InvoiceSummaryOps[Self <: InvoiceSummary] (val x: Self) extends AnyVal {
+  implicit class InvoiceSummaryMutableBuilder[Self <: InvoiceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalChargeSummaries(value: js.Array[InvoiceSummaryAdditionalChargeSummary]): Self = StObject.set(x, "additionalChargeSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalChargeSummariesUndefined: Self = StObject.set(x, "additionalChargeSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalChargeSummariesVarargs(value: InvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalChargeSummariesVarargs(value: InvoiceSummaryAdditionalChargeSummary*): Self = this.set("additionalChargeSummaries", js.Array(value :_*))
+    def setProductTotal(value: Amount): Self = StObject.set(x, "productTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalChargeSummaries(value: js.Array[InvoiceSummaryAdditionalChargeSummary]): Self = this.set("additionalChargeSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalChargeSummaries: Self = this.set("additionalChargeSummaries", js.undefined)
-    
-    @scala.inline
-    def setProductTotal(value: Amount): Self = this.set("productTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductTotal: Self = this.set("productTotal", js.undefined)
+    def setProductTotalUndefined: Self = StObject.set(x, "productTotal", js.undefined)
   }
 }

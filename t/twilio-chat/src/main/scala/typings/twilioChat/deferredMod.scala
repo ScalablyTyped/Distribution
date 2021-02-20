@@ -1,15 +1,15 @@
 package typings.twilioChat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-chat/lib/util/deferred", JSImport.Namespace)
-@js.native
-object deferredMod extends js.Object {
+object deferredMod {
   
+  @JSImport("twilio-chat/lib/util/deferred", "Deferred")
   @js.native
-  class Deferred[T] () extends js.Object {
+  class Deferred[T] () extends StObject {
     
     var _promise: js.Any = js.native
     

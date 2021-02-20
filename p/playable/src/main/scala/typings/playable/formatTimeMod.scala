@@ -1,12 +1,13 @@
 package typings.playable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/core/utils/formatTime", JSImport.Namespace)
-@js.native
-object formatTimeMod extends js.Object {
+object formatTimeMod {
   
+  @JSImport("playable/dist/src/modules/ui/core/utils/formatTime", JSImport.Default)
+  @js.native
   def default(seconds: Double): String = js.native
 }

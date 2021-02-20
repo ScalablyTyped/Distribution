@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusCodes extends js.Object {
+trait StatusCodes extends StObject {
   
   /**
     * The percentage of requests over the last 10 seconds that resulted in a 2xx (200, 201, etc.) status code.
@@ -36,42 +37,30 @@ object StatusCodes {
   }
   
   @scala.inline
-  implicit class StatusCodesOps[Self <: StatusCodes] (val x: Self) extends AnyVal {
+  implicit class StatusCodesMutableBuilder[Self <: StatusCodes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus2xx(value: NullableInteger): Self = StObject.set(x, "Status2xx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus2xxUndefined: Self = StObject.set(x, "Status2xx", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus3xx(value: NullableInteger): Self = StObject.set(x, "Status3xx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus2xx(value: NullableInteger): Self = this.set("Status2xx", value.asInstanceOf[js.Any])
+    def setStatus3xxUndefined: Self = StObject.set(x, "Status3xx", js.undefined)
     
     @scala.inline
-    def deleteStatus2xx: Self = this.set("Status2xx", js.undefined)
+    def setStatus4xx(value: NullableInteger): Self = StObject.set(x, "Status4xx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus3xx(value: NullableInteger): Self = this.set("Status3xx", value.asInstanceOf[js.Any])
+    def setStatus4xxUndefined: Self = StObject.set(x, "Status4xx", js.undefined)
     
     @scala.inline
-    def deleteStatus3xx: Self = this.set("Status3xx", js.undefined)
+    def setStatus5xx(value: NullableInteger): Self = StObject.set(x, "Status5xx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus4xx(value: NullableInteger): Self = this.set("Status4xx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus4xx: Self = this.set("Status4xx", js.undefined)
-    
-    @scala.inline
-    def setStatus5xx(value: NullableInteger): Self = this.set("Status5xx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus5xx: Self = this.set("Status5xx", js.undefined)
+    def setStatus5xxUndefined: Self = StObject.set(x, "Status5xx", js.undefined)
   }
 }

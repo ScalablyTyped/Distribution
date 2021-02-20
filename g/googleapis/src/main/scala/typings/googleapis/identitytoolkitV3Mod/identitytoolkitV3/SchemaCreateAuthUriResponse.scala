@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response of creating the IDP authentication URL.
   */
 @js.native
-trait SchemaCreateAuthUriResponse extends js.Object {
+trait SchemaCreateAuthUriResponse extends StObject {
   
   /**
     * all providers the user has once used to do federated login
@@ -65,78 +66,66 @@ object SchemaCreateAuthUriResponse {
   }
   
   @scala.inline
-  implicit class SchemaCreateAuthUriResponseOps[Self <: SchemaCreateAuthUriResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateAuthUriResponseMutableBuilder[Self <: SchemaCreateAuthUriResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllProviders(value: js.Array[String]): Self = StObject.set(x, "allProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllProvidersUndefined: Self = StObject.set(x, "allProviders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllProvidersVarargs(value: String*): Self = StObject.set(x, "allProviders", js.Array(value :_*))
     
     @scala.inline
-    def setAllProvidersVarargs(value: String*): Self = this.set("allProviders", js.Array(value :_*))
+    def setAuthUri(value: String): Self = StObject.set(x, "authUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllProviders(value: js.Array[String]): Self = this.set("allProviders", value.asInstanceOf[js.Any])
+    def setAuthUriUndefined: Self = StObject.set(x, "authUri", js.undefined)
     
     @scala.inline
-    def deleteAllProviders: Self = this.set("allProviders", js.undefined)
+    def setCaptchaRequired(value: Boolean): Self = StObject.set(x, "captchaRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthUri(value: String): Self = this.set("authUri", value.asInstanceOf[js.Any])
+    def setCaptchaRequiredUndefined: Self = StObject.set(x, "captchaRequired", js.undefined)
     
     @scala.inline
-    def deleteAuthUri: Self = this.set("authUri", js.undefined)
+    def setForExistingProvider(value: Boolean): Self = StObject.set(x, "forExistingProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptchaRequired(value: Boolean): Self = this.set("captchaRequired", value.asInstanceOf[js.Any])
+    def setForExistingProviderUndefined: Self = StObject.set(x, "forExistingProvider", js.undefined)
     
     @scala.inline
-    def deleteCaptchaRequired: Self = this.set("captchaRequired", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForExistingProvider(value: Boolean): Self = this.set("forExistingProvider", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteForExistingProvider: Self = this.set("forExistingProvider", js.undefined)
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    def setRegisteredUndefined: Self = StObject.set(x, "registered", js.undefined)
     
     @scala.inline
-    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistered(value: Boolean): Self = this.set("registered", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteRegistered: Self = this.set("registered", js.undefined)
+    def setSigninMethods(value: js.Array[String]): Self = StObject.set(x, "signinMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSigninMethodsUndefined: Self = StObject.set(x, "signinMethods", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
-    
-    @scala.inline
-    def setSigninMethodsVarargs(value: String*): Self = this.set("signinMethods", js.Array(value :_*))
-    
-    @scala.inline
-    def setSigninMethods(value: js.Array[String]): Self = this.set("signinMethods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigninMethods: Self = this.set("signinMethods", js.undefined)
+    def setSigninMethodsVarargs(value: String*): Self = StObject.set(x, "signinMethods", js.Array(value :_*))
   }
 }

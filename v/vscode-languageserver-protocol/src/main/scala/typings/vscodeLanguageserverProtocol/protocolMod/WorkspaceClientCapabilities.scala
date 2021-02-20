@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceClientCapabilities extends js.Object {
+trait WorkspaceClientCapabilities extends StObject {
   
   /**
     * The client supports applying batch edits
@@ -48,54 +49,42 @@ object WorkspaceClientCapabilities {
   }
   
   @scala.inline
-  implicit class WorkspaceClientCapabilitiesOps[Self <: WorkspaceClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class WorkspaceClientCapabilitiesMutableBuilder[Self <: WorkspaceClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyEdit(value: Boolean): Self = StObject.set(x, "applyEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyEditUndefined: Self = StObject.set(x, "applyEdit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDidChangeConfiguration(value: DidChangeConfigurationClientCapabilities): Self = StObject.set(x, "didChangeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyEdit(value: Boolean): Self = this.set("applyEdit", value.asInstanceOf[js.Any])
+    def setDidChangeConfigurationUndefined: Self = StObject.set(x, "didChangeConfiguration", js.undefined)
     
     @scala.inline
-    def deleteApplyEdit: Self = this.set("applyEdit", js.undefined)
+    def setDidChangeWatchedFiles(value: DidChangeWatchedFilesClientCapabilities): Self = StObject.set(x, "didChangeWatchedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDidChangeConfiguration(value: DidChangeConfigurationClientCapabilities): Self = this.set("didChangeConfiguration", value.asInstanceOf[js.Any])
+    def setDidChangeWatchedFilesUndefined: Self = StObject.set(x, "didChangeWatchedFiles", js.undefined)
     
     @scala.inline
-    def deleteDidChangeConfiguration: Self = this.set("didChangeConfiguration", js.undefined)
+    def setExecuteCommand(value: ExecuteCommandClientCapabilities): Self = StObject.set(x, "executeCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDidChangeWatchedFiles(value: DidChangeWatchedFilesClientCapabilities): Self = this.set("didChangeWatchedFiles", value.asInstanceOf[js.Any])
+    def setExecuteCommandUndefined: Self = StObject.set(x, "executeCommand", js.undefined)
     
     @scala.inline
-    def deleteDidChangeWatchedFiles: Self = this.set("didChangeWatchedFiles", js.undefined)
+    def setSymbol(value: WorkspaceSymbolClientCapabilities): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteCommand(value: ExecuteCommandClientCapabilities): Self = this.set("executeCommand", value.asInstanceOf[js.Any])
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def deleteExecuteCommand: Self = this.set("executeCommand", js.undefined)
+    def setWorkspaceEdit(value: WorkspaceEditClientCapabilities): Self = StObject.set(x, "workspaceEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol(value: WorkspaceSymbolClientCapabilities): Self = this.set("symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceEdit(value: WorkspaceEditClientCapabilities): Self = this.set("workspaceEdit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceEdit: Self = this.set("workspaceEdit", js.undefined)
+    def setWorkspaceEditUndefined: Self = StObject.set(x, "workspaceEdit", js.undefined)
   }
 }

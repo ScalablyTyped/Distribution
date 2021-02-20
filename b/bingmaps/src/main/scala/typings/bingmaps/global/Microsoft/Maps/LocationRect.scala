@@ -1,6 +1,7 @@
 package typings.bingmaps.global.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.IPrimitive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class LocationRect protected ()
   def this(center: typings.bingmaps.Microsoft.Maps.Location, width: Double, height: Double) = this()
 }
 /* static members */
-@JSGlobal("Microsoft.Maps.LocationRect")
-@js.native
-object LocationRect extends js.Object {
+object LocationRect {
   
   /**
     * Gets a LocationRect using the specified locations for the northwest and southeast corners.
@@ -28,6 +27,8 @@ object LocationRect extends js.Object {
     * @param southeast The south east corner of the LocationRect.
     * @returns A LocationRect using the specified locations for the northwest and southeast corners.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.fromCorners")
+  @js.native
   def fromCorners(
     northwest: typings.bingmaps.Microsoft.Maps.Location,
     southeast: typings.bingmaps.Microsoft.Maps.Location
@@ -41,6 +42,8 @@ object LocationRect extends js.Object {
     * @param east The eastern longitude of the LocationRect.
     * @returns A LocationRect defined by the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.fromEdges")
+  @js.native
   def fromEdges(north: Double, west: Double, south: Double, east: Double): typings.bingmaps.Microsoft.Maps.LocationRect = js.native
   
   /**
@@ -48,20 +51,28 @@ object LocationRect extends js.Object {
     * @param locations A list of locations.
     * @returns A LocationRect that encloses all the specified locations.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.fromLocations")
+  @js.native
   def fromLocations(locations: typings.bingmaps.Microsoft.Maps.Location*): typings.bingmaps.Microsoft.Maps.LocationRect = js.native
   /**
     * Gets a LocationRect using an array of locations.
     * @param locations An array of locations.
     * @returns A LocationRect that encloses all the specified locations.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.fromLocations")
+  @js.native
   def fromLocations(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location]): typings.bingmaps.Microsoft.Maps.LocationRect = js.native
   
+  @JSGlobal("Microsoft.Maps.LocationRect.fromShapes")
+  @js.native
   def fromShapes(shapes: js.Array[IPrimitive | js.Array[IPrimitive]]): typings.bingmaps.Microsoft.Maps.LocationRect = js.native
   /**
     * Calculates the LocationRect for an indivudal shape or an array of shapes.
     * @param shapes An indivudal shape or an array of shapes to calculate the LocationRect for.
     * @returns A LocationRect for the shapes.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.fromShapes")
+  @js.native
   def fromShapes(shapes: IPrimitive): typings.bingmaps.Microsoft.Maps.LocationRect = js.native
   
   /**
@@ -69,6 +80,8 @@ object LocationRect extends js.Object {
     * @param str A string that repsents a LocationRect with the format "north,west,south,east".
     * @returns A LocationRect defined by the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries that have been parsed by the string.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.fromString")
+  @js.native
   def fromString(str: String): typings.bingmaps.Microsoft.Maps.LocationRect = js.native
   
   /**
@@ -77,6 +90,8 @@ object LocationRect extends js.Object {
     * @param rect2 The second LocationRect to merge with the first LocationRect.
     * @returns A new LocationRect which represents the combined area of the two LocationRect objects.
     */
+  @JSGlobal("Microsoft.Maps.LocationRect.merge")
+  @js.native
   def merge(
     rect1: typings.bingmaps.Microsoft.Maps.LocationRect,
     rect2: typings.bingmaps.Microsoft.Maps.LocationRect

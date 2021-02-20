@@ -1,12 +1,13 @@
 package typings.timezonecomplete
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("timezonecomplete/dist/lib/assert", JSImport.Namespace)
-@js.native
-object assertMod extends js.Object {
+object assertMod {
   
+  @JSImport("timezonecomplete/dist/lib/assert", JSImport.Default)
+  @js.native
   def default(condition: js.Any, name: String, format: String, args: js.Any*): /* asserts condition */ Boolean = js.native
 }

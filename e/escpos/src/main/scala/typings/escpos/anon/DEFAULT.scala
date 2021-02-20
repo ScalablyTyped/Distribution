@@ -2,12 +2,13 @@ package typings.escpos.anon
 
 import typings.escpos.escposNumbers.`16`
 import typings.escpos.escposStrings.InformationseparatorthreeLeftparenthesiskEndoftextNull1C
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DEFAULT extends js.Object {
+trait DEFAULT extends StObject {
   
   var CMD: InformationseparatorthreeLeftparenthesiskEndoftextNull1C = js.native
   
@@ -31,30 +32,18 @@ object DEFAULT {
   }
   
   @scala.inline
-  implicit class DEFAULTOps[Self <: DEFAULT] (val x: Self) extends AnyVal {
+  implicit class DEFAULTMutableBuilder[Self <: DEFAULT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCMD(value: InformationseparatorthreeLeftparenthesiskEndoftextNull1C): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDEFAULT(value: typings.escpos.escposNumbers.`3`): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMAX(value: `16`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMD(value: InformationseparatorthreeLeftparenthesiskEndoftextNull1C): Self = this.set("CMD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDEFAULT(value: typings.escpos.escposNumbers.`3`): Self = this.set("DEFAULT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMAX(value: `16`): Self = this.set("MAX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMIN(value: typings.escpos.escposNumbers.`1`): Self = this.set("MIN", value.asInstanceOf[js.Any])
+    def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
   }
 }

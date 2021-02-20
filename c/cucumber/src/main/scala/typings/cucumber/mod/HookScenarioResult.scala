@@ -1,12 +1,13 @@
 package typings.cucumber.mod
 
 import typings.cucumber.mod.pickle.Pickle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HookScenarioResult extends js.Object {
+trait HookScenarioResult extends StObject {
   
   var pickle: Pickle = js.native
   
@@ -23,27 +24,15 @@ object HookScenarioResult {
   }
   
   @scala.inline
-  implicit class HookScenarioResultOps[Self <: HookScenarioResult] (val x: Self) extends AnyVal {
+  implicit class HookScenarioResultMutableBuilder[Self <: HookScenarioResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPickle(value: Pickle): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResult(value: ScenarioResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPickle(value: Pickle): Self = this.set("pickle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: ScenarioResult): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceLocation(value: SourceLocation): Self = this.set("sourceLocation", value.asInstanceOf[js.Any])
+    def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
   }
 }

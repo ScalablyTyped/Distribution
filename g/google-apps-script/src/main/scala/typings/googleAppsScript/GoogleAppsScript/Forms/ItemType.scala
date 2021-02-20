@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ItemType extends js.Object
+sealed trait ItemType extends StObject
 /**
   * An enum representing the supported types of form items. Item types can be accessed from FormApp.ItemType.
   *
@@ -21,7 +22,7 @@ sealed trait ItemType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.ItemType")
 @js.native
-object ItemType extends js.Object {
+object ItemType extends StObject {
   
   @js.native
   sealed trait CHECKBOX extends ItemType

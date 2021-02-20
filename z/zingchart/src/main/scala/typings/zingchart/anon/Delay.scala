@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delay extends js.Object {
+trait Delay extends StObject {
   
   /**
     * Sets the delay in milliseconds between each step of the animation. 5 | 10 | ...
@@ -53,60 +54,48 @@ object Delay {
   }
   
   @scala.inline
-  implicit class DelayOps[Self <: Delay] (val x: Self) extends AnyVal {
+  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffect(value: Double): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: Double): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteEffect: Self = this.set("effect", js.undefined)
+    def `setOn-change`(value: Boolean): Self = StObject.set(x, "on-change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Double): Self = this.set("method", value.asInstanceOf[js.Any])
+    def `setOn-changeUndefined`: Self = StObject.set(x, "on-change", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def `setOn-legend-toggle`(value: Boolean): Self = StObject.set(x, "on-legend-toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOn-change`(value: Boolean): Self = this.set("on-change", value.asInstanceOf[js.Any])
+    def `setOn-legend-toggleUndefined`: Self = StObject.set(x, "on-legend-toggle", js.undefined)
     
     @scala.inline
-    def `deleteOn-change`: Self = this.set("on-change", js.undefined)
+    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOn-legend-toggle`(value: Boolean): Self = this.set("on-legend-toggle", value.asInstanceOf[js.Any])
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     @scala.inline
-    def `deleteOn-legend-toggle`: Self = this.set("on-legend-toggle", js.undefined)
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: Double): Self = this.set("sequence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
-    
-    @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

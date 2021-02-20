@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,27 +43,15 @@ object XContentEnumerationAccess {
   }
   
   @scala.inline
-  implicit class XContentEnumerationAccessOps[Self <: XContentEnumerationAccess] (val x: Self) extends AnyVal {
+  implicit class XContentEnumerationAccessMutableBuilder[Self <: XContentEnumerationAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateContentEnumeration(value: String => XEnumeration): Self = StObject.set(x, "createContentEnumeration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAvailableServiceNames(value: SafeArray[String]): Self = this.set("AvailableServiceNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateContentEnumeration(value: String => XEnumeration): Self = this.set("createContentEnumeration", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAvailableServiceNames(value: () => SafeArray[String]): Self = this.set("getAvailableServiceNames", js.Any.fromFunction0(value))
+    def setGetAvailableServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableServiceNames", js.Any.fromFunction0(value))
   }
 }

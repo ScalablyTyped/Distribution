@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalClusterMember extends js.Object {
+trait GlobalClusterMember extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) for each Aurora cluster. 
@@ -36,45 +37,33 @@ object GlobalClusterMember {
   }
   
   @scala.inline
-  implicit class GlobalClusterMemberOps[Self <: GlobalClusterMember] (val x: Self) extends AnyVal {
+  implicit class GlobalClusterMemberMutableBuilder[Self <: GlobalClusterMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterArn(value: String): Self = StObject.set(x, "DBClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterArnUndefined: Self = StObject.set(x, "DBClusterArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalWriteForwardingStatus(value: WriteForwardingStatus): Self = StObject.set(x, "GlobalWriteForwardingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterArn(value: String): Self = this.set("DBClusterArn", value.asInstanceOf[js.Any])
+    def setGlobalWriteForwardingStatusUndefined: Self = StObject.set(x, "GlobalWriteForwardingStatus", js.undefined)
     
     @scala.inline
-    def deleteDBClusterArn: Self = this.set("DBClusterArn", js.undefined)
+    def setIsWriter(value: Boolean): Self = StObject.set(x, "IsWriter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalWriteForwardingStatus(value: WriteForwardingStatus): Self = this.set("GlobalWriteForwardingStatus", value.asInstanceOf[js.Any])
+    def setIsWriterUndefined: Self = StObject.set(x, "IsWriter", js.undefined)
     
     @scala.inline
-    def deleteGlobalWriteForwardingStatus: Self = this.set("GlobalWriteForwardingStatus", js.undefined)
+    def setReaders(value: ReadersArnList): Self = StObject.set(x, "Readers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWriter(value: Boolean): Self = this.set("IsWriter", value.asInstanceOf[js.Any])
+    def setReadersUndefined: Self = StObject.set(x, "Readers", js.undefined)
     
     @scala.inline
-    def deleteIsWriter: Self = this.set("IsWriter", js.undefined)
-    
-    @scala.inline
-    def setReadersVarargs(value: String*): Self = this.set("Readers", js.Array(value :_*))
-    
-    @scala.inline
-    def setReaders(value: ReadersArnList): Self = this.set("Readers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReaders: Self = this.set("Readers", js.undefined)
+    def setReadersVarargs(value: String*): Self = StObject.set(x, "Readers", js.Array(value :_*))
   }
 }

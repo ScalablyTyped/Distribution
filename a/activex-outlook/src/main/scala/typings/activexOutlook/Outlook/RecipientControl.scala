@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientControl extends js.Object {
+trait RecipientControl extends StObject {
   
   var BackColor: Double = js.native
   
@@ -40,39 +41,27 @@ object RecipientControl {
   }
   
   @scala.inline
-  implicit class RecipientControlOps[Self <: RecipientControl] (val x: Self) extends AnyVal {
+  implicit class RecipientControlMutableBuilder[Self <: RecipientControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Double): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Double): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Double): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setOutlookDot_RecipientControl_typekey(value: RecipientControl): Self = StObject.set(x, "Outlook._RecipientControl_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: js.Any): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Double): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: Double): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlookDot_RecipientControl_typekey(value: RecipientControl): Self = this.set("Outlook._RecipientControl_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Double): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecialEffect(value: Double): Self = this.set("SpecialEffect", value.asInstanceOf[js.Any])
+    def setSpecialEffect(value: Double): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
   }
 }

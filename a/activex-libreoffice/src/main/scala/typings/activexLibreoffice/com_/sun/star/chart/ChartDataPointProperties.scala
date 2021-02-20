@@ -28,6 +28,7 @@ import typings.activexLibreoffice.com_.sun.star.text.GraphicCrop
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -229,45 +230,33 @@ object ChartDataPointProperties {
   }
   
   @scala.inline
-  implicit class ChartDataPointPropertiesOps[Self <: ChartDataPointProperties] (val x: Self) extends AnyVal {
+  implicit class ChartDataPointPropertiesMutableBuilder[Self <: ChartDataPointProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelPlacement(value: Double): Self = StObject.set(x, "LabelPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelSeparator(value: String): Self = StObject.set(x, "LabelSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCaption(value: Double): Self = this.set("DataCaption", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPlacement(value: Double): Self = this.set("LabelPlacement", value.asInstanceOf[js.Any])
+    def setPercentageNumberFormat(value: Double): Self = StObject.set(x, "PercentageNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSeparator(value: String): Self = this.set("LabelSeparator", value.asInstanceOf[js.Any])
+    def setSegmentOffset(value: Double): Self = StObject.set(x, "SegmentOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setSymbolBitmapURL(value: String): Self = StObject.set(x, "SymbolBitmapURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentageNumberFormat(value: Double): Self = this.set("PercentageNumberFormat", value.asInstanceOf[js.Any])
+    def setSymbolType(value: Double): Self = StObject.set(x, "SymbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentOffset(value: Double): Self = this.set("SegmentOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolBitmapURL(value: String): Self = this.set("SymbolBitmapURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolType(value: Double): Self = this.set("SymbolType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextWordWrap(value: Boolean): Self = this.set("TextWordWrap", value.asInstanceOf[js.Any])
+    def setTextWordWrap(value: Boolean): Self = StObject.set(x, "TextWordWrap", value.asInstanceOf[js.Any])
   }
 }

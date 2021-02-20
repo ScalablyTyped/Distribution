@@ -1,5 +1,6 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The property blockSize must be implemented in a concrete subtype.
   */
 @js.native
-trait BufferedBlockAlgorithm extends js.Object {
+trait BufferedBlockAlgorithm extends StObject {
   
   def _append(data: String): Unit = js.native
   /**

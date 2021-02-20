@@ -4,14 +4,14 @@ import typings.babylonjs.iphysicsengineMod.IPhysicsEngine
 import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Physics/physicsEngine", JSImport.Namespace)
-@js.native
-object physicsEngineMod extends js.Object {
+object physicsEngineMod {
   
+  @JSImport("babylonjs/Physics/physicsEngine", "PhysicsEngine")
   @js.native
   class PhysicsEngine protected () extends IPhysicsEngine {
     /**
@@ -48,18 +48,27 @@ object physicsEngineMod extends js.Object {
     def setTimeStep(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object PhysicsEngine extends js.Object {
+  object PhysicsEngine {
+    
+    @JSImport("babylonjs/Physics/physicsEngine", "PhysicsEngine")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Factory used to create the default physics plugin.
       * @returns The default physics plugin
       */
+    @JSImport("babylonjs/Physics/physicsEngine", "PhysicsEngine.DefaultPluginFactory")
+    @js.native
     def DefaultPluginFactory(): IPhysicsEnginePlugin = js.native
     
     /**
       * Global value used to control the smallest number supported by the simulation
       */
-    var Epsilon: Double = js.native
+    @JSImport("babylonjs/Physics/physicsEngine", "PhysicsEngine.Epsilon")
+    @js.native
+    def Epsilon: Double = js.native
+    @scala.inline
+    def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
   }
 }

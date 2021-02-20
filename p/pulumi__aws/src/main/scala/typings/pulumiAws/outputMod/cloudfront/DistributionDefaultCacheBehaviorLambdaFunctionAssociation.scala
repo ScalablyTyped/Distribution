@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cloudfront
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionDefaultCacheBehaviorLambdaFunctionAssociation extends js.Object {
+trait DistributionDefaultCacheBehaviorLambdaFunctionAssociation extends StObject {
   
   /**
     * The specific event to trigger this function.
@@ -33,30 +34,18 @@ object DistributionDefaultCacheBehaviorLambdaFunctionAssociation {
   }
   
   @scala.inline
-  implicit class DistributionDefaultCacheBehaviorLambdaFunctionAssociationOps[Self <: DistributionDefaultCacheBehaviorLambdaFunctionAssociation] (val x: Self) extends AnyVal {
+  implicit class DistributionDefaultCacheBehaviorLambdaFunctionAssociationMutableBuilder[Self <: DistributionDefaultCacheBehaviorLambdaFunctionAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeBodyUndefined: Self = StObject.set(x, "includeBody", js.undefined)
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLambdaArn(value: String): Self = this.set("lambdaArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeBody(value: Boolean): Self = this.set("includeBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeBody: Self = this.set("includeBody", js.undefined)
+    def setLambdaArn(value: String): Self = StObject.set(x, "lambdaArn", value.asInstanceOf[js.Any])
   }
 }

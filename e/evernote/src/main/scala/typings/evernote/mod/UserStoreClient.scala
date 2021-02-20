@@ -10,13 +10,14 @@ import typings.evernote.mod.UserStore.AuthenticationResult
 import typings.evernote.mod.UserStore.BootstrapInfo
 import typings.evernote.mod.UserStore.PublicUserInfo
 import typings.evernote.mod.UserStore.UserUrls
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "UserStoreClient")
 @js.native
-class UserStoreClient () extends js.Object {
+class UserStoreClient () extends StObject {
   
   def authenticateLongSession(
     username: String,

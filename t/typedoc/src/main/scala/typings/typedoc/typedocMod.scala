@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.optionsOptionsMod.OptionsReader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/utils/options/readers/typedoc", JSImport.Namespace)
-@js.native
-object typedocMod extends js.Object {
+object typedocMod {
   
+  @JSImport("typedoc/dist/lib/utils/options/readers/typedoc", "TypeDocReader")
   @js.native
   class TypeDocReader () extends OptionsReader {
     

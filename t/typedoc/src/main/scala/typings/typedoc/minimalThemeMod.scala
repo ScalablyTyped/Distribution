@@ -4,14 +4,14 @@ import typings.typedoc.defaultThemeMod.DefaultTheme
 import typings.typedoc.navigationItemMod.NavigationItem
 import typings.typedoc.reflectionsMod.DeclarationReflection
 import typings.typedoc.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/themes/MinimalTheme", JSImport.Namespace)
-@js.native
-object minimalThemeMod extends js.Object {
+object minimalThemeMod {
   
+  @JSImport("typedoc/dist/lib/output/themes/MinimalTheme", "MinimalTheme")
   @js.native
   class MinimalTheme protected () extends DefaultTheme {
     def this(renderer: Renderer, basePath: String) = this()
@@ -19,9 +19,10 @@ object minimalThemeMod extends js.Object {
     var onRendererBeginPage: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object MinimalTheme extends js.Object {
+  object MinimalTheme {
     
+    @JSImport("typedoc/dist/lib/output/themes/MinimalTheme", "MinimalTheme.buildToc")
+    @js.native
     def buildToc(model: DeclarationReflection, parent: NavigationItem): Unit = js.native
   }
 }

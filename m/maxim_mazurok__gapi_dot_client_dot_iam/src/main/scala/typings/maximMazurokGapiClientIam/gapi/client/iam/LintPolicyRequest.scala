@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIam.gapi.client.iam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LintPolicyRequest extends js.Object {
+trait LintPolicyRequest extends StObject {
   
   /** google.iam.v1.Binding.condition object to be linted. */
   var condition: js.UndefOr[Expr] = js.native
@@ -26,30 +27,18 @@ object LintPolicyRequest {
   }
   
   @scala.inline
-  implicit class LintPolicyRequestOps[Self <: LintPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class LintPolicyRequestMutableBuilder[Self <: LintPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Expr): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
-    
-    @scala.inline
-    def setFullResourceName(value: String): Self = this.set("fullResourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullResourceName: Self = this.set("fullResourceName", js.undefined)
+    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
   }
 }

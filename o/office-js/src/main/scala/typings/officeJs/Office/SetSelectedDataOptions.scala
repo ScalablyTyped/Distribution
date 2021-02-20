@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides options for how to insert data to the selection.
   */
 @js.native
-trait SetSelectedDataOptions extends js.Object {
+trait SetSelectedDataOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -69,69 +70,57 @@ object SetSelectedDataOptions {
   }
   
   @scala.inline
-  implicit class SetSelectedDataOptionsOps[Self <: SetSelectedDataOptions] (val x: Self) extends AnyVal {
+  implicit class SetSelectedDataOptionsMutableBuilder[Self <: SetSelectedDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellFormat(value: js.Array[RangeFormatConfiguration]): Self = StObject.set(x, "cellFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    def setCellFormatUndefined: Self = StObject.set(x, "cellFormat", js.undefined)
     
     @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = StObject.set(x, "cellFormat", js.Array(value :_*))
     
     @scala.inline
-    def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = this.set("cellFormat", js.Array(value :_*))
+    def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFormat(value: js.Array[RangeFormatConfiguration]): Self = this.set("cellFormat", value.asInstanceOf[js.Any])
+    def setCoercionTypeUndefined: Self = StObject.set(x, "coercionType", js.undefined)
     
     @scala.inline
-    def deleteCellFormat: Self = this.set("cellFormat", js.undefined)
+    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoercionType(value: CoercionType | String): Self = this.set("coercionType", value.asInstanceOf[js.Any])
+    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
     @scala.inline
-    def deleteCoercionType: Self = this.set("coercionType", js.undefined)
+    def setImageLeft(value: Double): Self = StObject.set(x, "imageLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    def setImageLeftUndefined: Self = StObject.set(x, "imageLeft", js.undefined)
     
     @scala.inline
-    def deleteImageHeight: Self = this.set("imageHeight", js.undefined)
+    def setImageTop(value: Double): Self = StObject.set(x, "imageTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLeft(value: Double): Self = this.set("imageLeft", value.asInstanceOf[js.Any])
+    def setImageTopUndefined: Self = StObject.set(x, "imageTop", js.undefined)
     
     @scala.inline
-    def deleteImageLeft: Self = this.set("imageLeft", js.undefined)
+    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTop(value: Double): Self = this.set("imageTop", value.asInstanceOf[js.Any])
+    def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
     
     @scala.inline
-    def deleteImageTop: Self = this.set("imageTop", js.undefined)
+    def setTableOptions(value: js.Object): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageWidth(value: Double): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageWidth: Self = this.set("imageWidth", js.undefined)
-    
-    @scala.inline
-    def setTableOptions(value: js.Object): Self = this.set("tableOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableOptions: Self = this.set("tableOptions", js.undefined)
+    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

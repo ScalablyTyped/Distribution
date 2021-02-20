@@ -2,6 +2,7 @@ package typings.activexWia.WIA
 
 import typings.activexWia.activexWiaStrings.Asterisk
 import typings.activexWia.activexWiaStrings.`Leftcurlybracket00000000-0000-0000-0000-000000000000Rightcurlybracket`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaStrings.Asterisk
   - typings.activexWia.activexWiaStrings.`Leftcurlybracket00000000-0000-0000-0000-000000000000Rightcurlybracket`
 */
-trait Miscellaneous extends js.Object
+trait Miscellaneous extends StObject
 object Miscellaneous {
   
   @scala.inline

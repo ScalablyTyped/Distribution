@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codebuild
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectLogsConfig extends js.Object {
+trait ProjectLogsConfig extends StObject {
   
   /**
     * Configuration for the builds to store logs to CloudWatch
@@ -27,30 +28,18 @@ object ProjectLogsConfig {
   }
   
   @scala.inline
-  implicit class ProjectLogsConfigOps[Self <: ProjectLogsConfig] (val x: Self) extends AnyVal {
+  implicit class ProjectLogsConfigMutableBuilder[Self <: ProjectLogsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchLogs(value: Input[ProjectLogsConfigCloudwatchLogs]): Self = StObject.set(x, "cloudwatchLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudwatchLogsUndefined: Self = StObject.set(x, "cloudwatchLogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Logs(value: Input[ProjectLogsConfigS3Logs]): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchLogs(value: Input[ProjectLogsConfigCloudwatchLogs]): Self = this.set("cloudwatchLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudwatchLogs: Self = this.set("cloudwatchLogs", js.undefined)
-    
-    @scala.inline
-    def setS3Logs(value: Input[ProjectLogsConfigS3Logs]): Self = this.set("s3Logs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Logs: Self = this.set("s3Logs", js.undefined)
+    def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
   }
 }

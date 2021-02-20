@@ -1,11 +1,12 @@
 package typings.rxjsCompat.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallThisNextErrorComplete extends js.Object {
+trait FnCallThisNextErrorComplete extends StObject {
   
   def apply[T](next: js.Function1[/* x */ T, Unit]): js.Any = js.native
   def apply[T](

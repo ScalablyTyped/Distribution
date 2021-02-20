@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBillingGroupRequest extends js.Object {
+trait UpdateBillingGroupRequest extends StObject {
   
   /**
     * The name of the billing group.
@@ -31,30 +32,18 @@ object UpdateBillingGroupRequest {
   }
   
   @scala.inline
-  implicit class UpdateBillingGroupRequestOps[Self <: UpdateBillingGroupRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBillingGroupRequestMutableBuilder[Self <: UpdateBillingGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingGroupProperties(value: BillingGroupProperties): Self = StObject.set(x, "billingGroupProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = this.set("billingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBillingGroupProperties(value: BillingGroupProperties): Self = this.set("billingGroupProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
   }
 }

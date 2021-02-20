@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AllJoynSessionLostReason extends js.Object
+sealed trait AllJoynSessionLostReason extends StObject
 /** Defines values used by AllJoynSessionLostEventArgs to indicate the reason for a lost session. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionLostReason")
 @js.native
-object AllJoynSessionLostReason extends js.Object {
+object AllJoynSessionLostReason extends StObject {
   
   /** The connection supporting the session timed out. */
   @js.native

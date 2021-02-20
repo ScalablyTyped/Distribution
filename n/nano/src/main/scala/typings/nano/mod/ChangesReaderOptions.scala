@@ -1,11 +1,12 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangesReaderOptions extends js.Object {
+trait ChangesReaderOptions extends StObject {
   
   // number of changes per API call
   var batchSize: js.UndefOr[Double] = js.native
@@ -41,66 +42,54 @@ object ChangesReaderOptions {
   }
   
   @scala.inline
-  implicit class ChangesReaderOptionsOps[Self <: ChangesReaderOptions] (val x: Self) extends AnyVal {
+  implicit class ChangesReaderOptionsMutableBuilder[Self <: ChangesReaderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFastChanges(value: Boolean): Self = StObject.set(x, "fastChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setFastChangesUndefined: Self = StObject.set(x, "fastChanges", js.undefined)
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setIncludeDocs(value: Boolean): Self = StObject.set(x, "includeDocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastChanges(value: Boolean): Self = this.set("fastChanges", value.asInstanceOf[js.Any])
+    def setIncludeDocsUndefined: Self = StObject.set(x, "includeDocs", js.undefined)
     
     @scala.inline
-    def deleteFastChanges: Self = this.set("fastChanges", js.undefined)
+    def setQs(value: js.Object): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDocs(value: Boolean): Self = this.set("includeDocs", value.asInstanceOf[js.Any])
+    def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
     
     @scala.inline
-    def deleteIncludeDocs: Self = this.set("includeDocs", js.undefined)
+    def setSelector(value: MangoSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQs(value: js.Object): Self = this.set("qs", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteQs: Self = this.set("qs", js.undefined)
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: MangoSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setWait(value: Boolean): Self = this.set("wait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait: Self = this.set("wait", js.undefined)
+    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

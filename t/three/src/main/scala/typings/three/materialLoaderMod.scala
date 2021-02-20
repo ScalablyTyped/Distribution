@@ -9,14 +9,14 @@ import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import typings.three.materialMod.Material
 import typings.three.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/MaterialLoader", JSImport.Namespace)
-@js.native
-object materialLoaderMod extends js.Object {
+object materialLoaderMod {
   
+  @JSImport("three/src/loaders/MaterialLoader", "MaterialLoader")
   @js.native
   class MaterialLoader () extends Loader {
     def this(manager: LoadingManager) = this()

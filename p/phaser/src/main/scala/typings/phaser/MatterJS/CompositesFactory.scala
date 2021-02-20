@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositesFactory extends js.Object {
+trait CompositesFactory extends StObject {
   
   /**
     * Creates a composite with simple car setup of bodies and constraints.
@@ -154,41 +155,29 @@ object CompositesFactory {
   }
   
   @scala.inline
-  implicit class CompositesFactoryOps[Self <: CompositesFactory] (val x: Self) extends AnyVal {
+  implicit class CompositesFactoryMutableBuilder[Self <: CompositesFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "car", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChain(value: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType): Self = StObject.set(x, "chain", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMesh(value: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType): Self = StObject.set(x, "mesh", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = this.set("car", js.Any.fromFunction5(value))
+    def setNewtonsCradle(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "newtonsCradle", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setChain(value: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType): Self = this.set("chain", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setMesh(value: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType): Self = this.set("mesh", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setNewtonsCradle(value: (Double, Double, Double, Double, Double) => CompositeType): Self = this.set("newtonsCradle", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setPyramid(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = this.set("pyramid", js.Any.fromFunction7(value))
+    def setPyramid(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "pyramid", js.Any.fromFunction7(value))
     
     @scala.inline
     def setSoftBody(
       value: (Double, Double, Double, Double, Double, Double, Boolean, Double, js.Any, js.Any) => CompositeType
-    ): Self = this.set("softBody", js.Any.fromFunction10(value))
+    ): Self = StObject.set(x, "softBody", js.Any.fromFunction10(value))
     
     @scala.inline
-    def setStack(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = this.set("stack", js.Any.fromFunction7(value))
+    def setStack(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "stack", js.Any.fromFunction7(value))
   }
 }

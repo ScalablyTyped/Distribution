@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.Int64
 import typings.stellarBase.xdrMod.xdr.MuxedAccount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestAsset extends js.Object {
+trait DestAsset extends StObject {
   
   var destAsset: typings.stellarBase.xdrMod.xdr.Asset = js.native
   
@@ -37,39 +38,27 @@ object DestAsset {
   }
   
   @scala.inline
-  implicit class DestAssetOps[Self <: DestAsset] (val x: Self) extends AnyVal {
+  implicit class DestAssetMutableBuilder[Self <: DestAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestAsset(value: typings.stellarBase.xdrMod.xdr.Asset): Self = StObject.set(x, "destAsset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestMin(value: Int64): Self = StObject.set(x, "destMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: MuxedAccount): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestAsset(value: typings.stellarBase.xdrMod.xdr.Asset): Self = this.set("destAsset", value.asInstanceOf[js.Any])
+    def setPath(value: js.Array[typings.stellarBase.xdrMod.xdr.Asset]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestMin(value: Int64): Self = this.set("destMin", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: typings.stellarBase.xdrMod.xdr.Asset*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setDestination(value: MuxedAccount): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setSendAmount(value: Int64): Self = StObject.set(x, "sendAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: typings.stellarBase.xdrMod.xdr.Asset*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[typings.stellarBase.xdrMod.xdr.Asset]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendAmount(value: Int64): Self = this.set("sendAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendAsset(value: typings.stellarBase.xdrMod.xdr.Asset): Self = this.set("sendAsset", value.asInstanceOf[js.Any])
+    def setSendAsset(value: typings.stellarBase.xdrMod.xdr.Asset): Self = StObject.set(x, "sendAsset", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationQueryCondition extends js.Object {
+trait NotificationQueryCondition extends StObject {
   
   var eventInitiator: String = js.native
   
@@ -24,30 +25,18 @@ object NotificationQueryCondition {
   }
   
   @scala.inline
-  implicit class NotificationQueryConditionOps[Self <: NotificationQueryCondition] (val x: Self) extends AnyVal {
+  implicit class NotificationQueryConditionMutableBuilder[Self <: NotificationQueryCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventInitiator(value: String): Self = StObject.set(x, "eventInitiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscriber(value: String): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventInitiator(value: String): Self = this.set("eventInitiator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriber(value: String): Self = this.set("subscriber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionId(value: String): Self = this.set("subscriptionId", value.asInstanceOf[js.Any])
+    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
   }
 }

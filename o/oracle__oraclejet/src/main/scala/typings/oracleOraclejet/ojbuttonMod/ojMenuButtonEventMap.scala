@@ -23,6 +23,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -140,21 +141,9 @@ object ojMenuButtonEventMap {
   }
   
   @scala.inline
-  implicit class ojMenuButtonEventMapOps[Self <: ojMenuButtonEventMap] (val x: Self) extends AnyVal {
+  implicit class ojMenuButtonEventMapMutableBuilder[Self <: ojMenuButtonEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOjAction(value: ojAction): Self = this.set("ojAction", value.asInstanceOf[js.Any])
+    def setOjAction(value: ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
   }
 }

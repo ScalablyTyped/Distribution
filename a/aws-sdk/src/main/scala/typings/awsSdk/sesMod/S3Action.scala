@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Action extends js.Object {
+trait S3Action extends StObject {
   
   /**
     * The name of the Amazon S3 bucket that incoming email will be saved to.
@@ -36,39 +37,27 @@ object S3Action {
   }
   
   @scala.inline
-  implicit class S3ActionOps[Self <: S3Action] (val x: Self) extends AnyVal {
+  implicit class S3ActionMutableBuilder[Self <: S3Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: S3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyArn(value: AmazonResourceName): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     
     @scala.inline
-    def setBucketName(value: S3BucketName): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setObjectKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "ObjectKeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyArn(value: AmazonResourceName): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    def setObjectKeyPrefixUndefined: Self = StObject.set(x, "ObjectKeyPrefix", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectKeyPrefix(value: S3KeyPrefix): Self = this.set("ObjectKeyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectKeyPrefix: Self = this.set("ObjectKeyPrefix", js.undefined)
-    
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

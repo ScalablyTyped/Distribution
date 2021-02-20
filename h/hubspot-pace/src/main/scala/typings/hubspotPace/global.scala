@@ -1,21 +1,18 @@
 package typings.hubspotPace
 
 import typings.hubspotPace.HubSpotPaceInterfaces.Pace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var pace: Pace = js.native
-  
-  @js.native
-  object HubSpotPaceInterfaces extends js.Object {
+  object HubSpotPaceInterfaces {
     
+    @JSGlobal("HubSpotPaceInterfaces.PaceEvent")
     @js.native
-    object PaceEvent extends js.Object {
+    object PaceEvent extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.hubspotPace.HubSpotPaceInterfaces.PaceEvent with Double] = js.native
@@ -31,4 +28,10 @@ object global extends js.Object {
       /* 1 */ val stop: typings.hubspotPace.HubSpotPaceInterfaces.PaceEvent.stop with Double = js.native
     }
   }
+  
+  @JSGlobal("pace")
+  @js.native
+  def pace: Pace = js.native
+  @scala.inline
+  def pace_=(x: Pace): Unit = js.Dynamic.global.updateDynamic("pace")(x.asInstanceOf[js.Any])
 }

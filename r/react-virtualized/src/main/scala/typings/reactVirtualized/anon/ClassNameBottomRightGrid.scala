@@ -4,12 +4,13 @@ import typings.reactVirtualized.reactVirtualizedBooleans.`false`
 import typings.reactVirtualized.reactVirtualizedNumbers.`-1`
 import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.reactVirtualized.reactVirtualizedStrings._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassNameBottomRightGrid extends js.Object {
+trait ClassNameBottomRightGrid extends StObject {
   
   var classNameBottomLeftGrid: _empty = js.native
   
@@ -51,48 +52,36 @@ object ClassNameBottomRightGrid {
   }
   
   @scala.inline
-  implicit class ClassNameBottomRightGridOps[Self <: ClassNameBottomRightGrid] (val x: Self) extends AnyVal {
+  implicit class ClassNameBottomRightGridMutableBuilder[Self <: ClassNameBottomRightGrid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassNameBottomLeftGrid(value: _empty): Self = StObject.set(x, "classNameBottomLeftGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameBottomRightGrid(value: _empty): Self = StObject.set(x, "classNameBottomRightGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassNameTopLeftGrid(value: _empty): Self = StObject.set(x, "classNameTopLeftGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameBottomLeftGrid(value: _empty): Self = this.set("classNameBottomLeftGrid", value.asInstanceOf[js.Any])
+    def setClassNameTopRightGrid(value: _empty): Self = StObject.set(x, "classNameTopRightGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameBottomRightGrid(value: _empty): Self = this.set("classNameBottomRightGrid", value.asInstanceOf[js.Any])
+    def setEnableFixedColumnScroll(value: `false`): Self = StObject.set(x, "enableFixedColumnScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameTopLeftGrid(value: _empty): Self = this.set("classNameTopLeftGrid", value.asInstanceOf[js.Any])
+    def setEnableFixedRowScroll(value: `false`): Self = StObject.set(x, "enableFixedRowScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNameTopRightGrid(value: _empty): Self = this.set("classNameTopRightGrid", value.asInstanceOf[js.Any])
+    def setFixedColumnCount(value: `0`): Self = StObject.set(x, "fixedColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFixedColumnScroll(value: `false`): Self = this.set("enableFixedColumnScroll", value.asInstanceOf[js.Any])
+    def setFixedRowCount(value: `0`): Self = StObject.set(x, "fixedRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFixedRowScroll(value: `false`): Self = this.set("enableFixedRowScroll", value.asInstanceOf[js.Any])
+    def setScrollToColumn(value: `-1`): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedColumnCount(value: `0`): Self = this.set("fixedColumnCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFixedRowCount(value: `0`): Self = this.set("fixedRowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollToColumn(value: `-1`): Self = this.set("scrollToColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollToRow(value: `-1`): Self = this.set("scrollToRow", value.asInstanceOf[js.Any])
+    def setScrollToRow(value: `-1`): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
   }
 }

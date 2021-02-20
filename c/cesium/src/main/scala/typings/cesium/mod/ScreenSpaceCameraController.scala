@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ScreenSpaceCameraController")
 @js.native
-class ScreenSpaceCameraController protected () extends js.Object {
+class ScreenSpaceCameraController protected () extends StObject {
   def this(scene: Scene) = this()
   
   var bounceAnimationTime: Double = js.native

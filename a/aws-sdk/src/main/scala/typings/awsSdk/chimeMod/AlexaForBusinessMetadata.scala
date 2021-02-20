@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlexaForBusinessMetadata extends js.Object {
+trait AlexaForBusinessMetadata extends StObject {
   
   /**
     * The ARN of the room resource.
@@ -26,30 +27,18 @@ object AlexaForBusinessMetadata {
   }
   
   @scala.inline
-  implicit class AlexaForBusinessMetadataOps[Self <: AlexaForBusinessMetadata] (val x: Self) extends AnyVal {
+  implicit class AlexaForBusinessMetadataMutableBuilder[Self <: AlexaForBusinessMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlexaForBusinessRoomArn(value: SensitiveString): Self = StObject.set(x, "AlexaForBusinessRoomArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlexaForBusinessRoomArnUndefined: Self = StObject.set(x, "AlexaForBusinessRoomArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAlexaForBusinessEnabled(value: Boolean): Self = StObject.set(x, "IsAlexaForBusinessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlexaForBusinessRoomArn(value: SensitiveString): Self = this.set("AlexaForBusinessRoomArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlexaForBusinessRoomArn: Self = this.set("AlexaForBusinessRoomArn", js.undefined)
-    
-    @scala.inline
-    def setIsAlexaForBusinessEnabled(value: Boolean): Self = this.set("IsAlexaForBusinessEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsAlexaForBusinessEnabled: Self = this.set("IsAlexaForBusinessEnabled", js.undefined)
+    def setIsAlexaForBusinessEnabledUndefined: Self = StObject.set(x, "IsAlexaForBusinessEnabled", js.undefined)
   }
 }

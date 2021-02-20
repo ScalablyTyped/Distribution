@@ -1,28 +1,36 @@
 package typings.rcMotion
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.anon.CSSMotionPropsrefRefanyun
 import typings.rcMotion.cssmotionlistMod.CSSMotionListProps
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ForwardRefExoticComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-motion", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("rc-motion", JSImport.Default)
+  @js.native
   val default: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = js.native
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rc-motion", "CSSMotionList")
   @js.native
   class CSSMotionList protected ()
     extends Component[CSSMotionListProps, js.Any, js.Any] {
     def this(props: CSSMotionListProps) = this()
     def this(props: CSSMotionListProps, context: js.Any) = this()
   }
+  @JSImport("rc-motion", "CSSMotionList")
   @js.native
-  object CSSMotionList
-    extends TopLevel[ComponentClass[CSSMotionListProps, js.Any]]
+  val CSSMotionList: ComponentClass[CSSMotionListProps, js.Any] = js.native
+  
+  type _To = ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = default
 }

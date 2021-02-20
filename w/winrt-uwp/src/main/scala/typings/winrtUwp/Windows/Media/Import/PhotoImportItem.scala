@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.Import
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an media item that has been imported from a source. */
 @js.native
-trait PhotoImportItem extends js.Object {
+trait PhotoImportItem extends StObject {
   
   /** Gets the content type of the imported item. */
   var contentType: PhotoImportContentType = js.native
@@ -69,54 +70,42 @@ object PhotoImportItem {
   }
   
   @scala.inline
-  implicit class PhotoImportItemOps[Self <: PhotoImportItem] (val x: Self) extends AnyVal {
+  implicit class PhotoImportItemMutableBuilder[Self <: PhotoImportItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: PhotoImportContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletedFileNames(value: IVectorView[String]): Self = StObject.set(x, "deletedFileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: PhotoImportContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setImportedFileNames(value: IVectorView[String]): Self = StObject.set(x, "importedFileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedFileNames(value: IVectorView[String]): Self = this.set("deletedFileNames", value.asInstanceOf[js.Any])
+    def setItemKey(value: Double): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedFileNames(value: IVectorView[String]): Self = this.set("importedFileNames", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
+    def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemKey(value: Double): Self = this.set("itemKey", value.asInstanceOf[js.Any])
+    def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSibling(value: PhotoImportSidecar): Self = this.set("sibling", value.asInstanceOf[js.Any])
+    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = this.set("sidecars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizeInBytes(value: Double): Self = this.set("sizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoSegments(value: IVectorView[PhotoImportVideoSegment]): Self = this.set("videoSegments", value.asInstanceOf[js.Any])
+    def setVideoSegments(value: IVectorView[PhotoImportVideoSegment]): Self = StObject.set(x, "videoSegments", value.asInstanceOf[js.Any])
   }
 }

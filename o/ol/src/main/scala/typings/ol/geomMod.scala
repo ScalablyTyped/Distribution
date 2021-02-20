@@ -3,14 +3,14 @@ package typings.ol
 import typings.ol.circleMod.default
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom", JSImport.Namespace)
-@js.native
-object geomMod extends js.Object {
+object geomMod {
   
+  @JSImport("ol/geom", "Circle")
   @js.native
   class Circle protected () extends default {
     def this(center: Coordinate) = this()
@@ -19,16 +19,19 @@ object geomMod extends js.Object {
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
   }
   
+  @JSImport("ol/geom", "Geometry")
   @js.native
   abstract class Geometry ()
     extends typings.ol.geometryMod.default
   
+  @JSImport("ol/geom", "GeometryCollection")
   @js.native
   class GeometryCollection ()
     extends typings.ol.geometryCollectionMod.default {
     def this(opt_geometries: js.Array[typings.ol.geometryMod.default]) = this()
   }
   
+  @JSImport("ol/geom", "LineString")
   @js.native
   class LineString protected ()
     extends typings.ol.lineStringMod.default {
@@ -36,6 +39,7 @@ object geomMod extends js.Object {
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
   
+  @JSImport("ol/geom", "LinearRing")
   @js.native
   class LinearRing protected ()
     extends typings.ol.linearRingMod.default {
@@ -43,6 +47,7 @@ object geomMod extends js.Object {
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
   
+  @JSImport("ol/geom", "MultiLineString")
   @js.native
   class MultiLineString protected ()
     extends typings.ol.multiLineStringMod.default {
@@ -63,6 +68,7 @@ object geomMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("ol/geom", "MultiPoint")
   @js.native
   class MultiPoint protected ()
     extends typings.ol.multiPointMod.default {
@@ -70,6 +76,7 @@ object geomMod extends js.Object {
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
   
+  @JSImport("ol/geom", "MultiPolygon")
   @js.native
   class MultiPolygon protected ()
     extends typings.ol.multiPolygonMod.default {
@@ -90,6 +97,7 @@ object geomMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("ol/geom", "Point")
   @js.native
   class Point protected ()
     extends typings.ol.pointMod.default {
@@ -97,6 +105,7 @@ object geomMod extends js.Object {
     def this(coordinates: Coordinate, opt_layout: GeometryLayout) = this()
   }
   
+  @JSImport("ol/geom", "Polygon")
   @js.native
   class Polygon protected ()
     extends typings.ol.polygonMod.default {
@@ -114,6 +123,7 @@ object geomMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("ol/geom", "SimpleGeometry")
   @js.native
   abstract class SimpleGeometry ()
     extends typings.ol.simpleGeometryMod.default

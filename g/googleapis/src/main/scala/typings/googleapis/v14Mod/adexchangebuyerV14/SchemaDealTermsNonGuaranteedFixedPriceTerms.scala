@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDealTermsNonGuaranteedFixedPriceTerms extends js.Object {
+trait SchemaDealTermsNonGuaranteedFixedPriceTerms extends StObject {
   
   /**
     * Fixed price for the specified buyer.
@@ -21,27 +22,15 @@ object SchemaDealTermsNonGuaranteedFixedPriceTerms {
   }
   
   @scala.inline
-  implicit class SchemaDealTermsNonGuaranteedFixedPriceTermsOps[Self <: SchemaDealTermsNonGuaranteedFixedPriceTerms] (val x: Self) extends AnyVal {
+  implicit class SchemaDealTermsNonGuaranteedFixedPriceTermsMutableBuilder[Self <: SchemaDealTermsNonGuaranteedFixedPriceTerms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "fixedPrices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = this.set("fixedPrices", js.Array(value :_*))
-    
-    @scala.inline
-    def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = this.set("fixedPrices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixedPrices: Self = this.set("fixedPrices", js.undefined)
+    def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
   }
 }

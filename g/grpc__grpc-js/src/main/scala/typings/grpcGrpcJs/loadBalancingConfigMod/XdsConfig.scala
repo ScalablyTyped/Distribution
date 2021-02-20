@@ -1,11 +1,12 @@
 package typings.grpcGrpcJs.loadBalancingConfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XdsConfig extends js.Object {
+trait XdsConfig extends StObject {
   
   var balancerName: String = js.native
   
@@ -26,33 +27,21 @@ object XdsConfig {
   }
   
   @scala.inline
-  implicit class XdsConfigOps[Self <: XdsConfig] (val x: Self) extends AnyVal {
+  implicit class XdsConfigMutableBuilder[Self <: XdsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBalancerName(value: String): Self = StObject.set(x, "balancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "childPolicy", js.Array(value :_*))
     
     @scala.inline
-    def setBalancerName(value: String): Self = this.set("balancerName", value.asInstanceOf[js.Any])
+    def setFallbackPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "fallbackPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildPolicyVarargs(value: LoadBalancingConfig*): Self = this.set("childPolicy", js.Array(value :_*))
-    
-    @scala.inline
-    def setChildPolicy(value: js.Array[LoadBalancingConfig]): Self = this.set("childPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFallbackPolicyVarargs(value: LoadBalancingConfig*): Self = this.set("fallbackPolicy", js.Array(value :_*))
-    
-    @scala.inline
-    def setFallbackPolicy(value: js.Array[LoadBalancingConfig]): Self = this.set("fallbackPolicy", value.asInstanceOf[js.Any])
+    def setFallbackPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "fallbackPolicy", js.Array(value :_*))
   }
 }

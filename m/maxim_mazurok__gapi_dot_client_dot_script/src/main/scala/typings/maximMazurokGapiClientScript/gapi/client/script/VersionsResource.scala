@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientScript.anon.Fields
 import typings.maximMazurokGapiClientScript.anon.Key
 import typings.maximMazurokGapiClientScript.anon.PrettyPrint
 import typings.maximMazurokGapiClientScript.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionsResource extends js.Object {
+trait VersionsResource extends StObject {
   
   def create(request: Fields, body: Version): Request[Version] = js.native
   /** Creates a new immutable version using the current code, with a unique version number. */

@@ -1,5 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://developer.spotify.com/web-api/get-followed-artists/
   */
 @js.native
-trait UsersFollowedArtistsResponse extends js.Object {
+trait UsersFollowedArtistsResponse extends StObject {
   
   var artists: CursorBasedPagingObject[ArtistObjectFull] = js.native
 }
@@ -24,21 +25,9 @@ object UsersFollowedArtistsResponse {
   }
   
   @scala.inline
-  implicit class UsersFollowedArtistsResponseOps[Self <: UsersFollowedArtistsResponse] (val x: Self) extends AnyVal {
+  implicit class UsersFollowedArtistsResponseMutableBuilder[Self <: UsersFollowedArtistsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArtists(value: CursorBasedPagingObject[ArtistObjectFull]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    def setArtists(value: CursorBasedPagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
   }
 }

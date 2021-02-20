@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAdsensehost.anon.HostCustomChannelId
 import typings.maximMazurokGapiClientAdsensehost.anon.IncludeInactive
 import typings.maximMazurokGapiClientAdsensehost.anon.Key
 import typings.maximMazurokGapiClientAdsensehost.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdunitsResource extends js.Object {
+trait AdunitsResource extends StObject {
   
   /** Delete the specified ad unit from the specified publisher AdSense account. */
   def delete(): Request[AdUnit] = js.native

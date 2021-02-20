@@ -1,14 +1,14 @@
 package typings.nodegit
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/describe-options", JSImport.Namespace)
-@js.native
-object describeOptionsMod extends js.Object {
+object describeOptionsMod {
   
+  @JSImport("nodegit/describe-options", "DescribeOptions")
   @js.native
   class DescribeOptions ()
     extends /* key */ StringDictionary[js.Any] {

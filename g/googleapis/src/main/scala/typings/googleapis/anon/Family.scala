@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Family extends js.Object {
+trait Family extends StObject {
   
   var family: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object Family {
   }
   
   @scala.inline
-  implicit class FamilyOps[Self <: Family] (val x: Self) extends AnyVal {
+  implicit class FamilyMutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareVersion(value: String): Self = this.set("firmwareVersion", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def deleteFirmwareVersion: Self = this.set("firmwareVersion", js.undefined)
+    def setSpecLevel(value: String): Self = StObject.set(x, "specLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setSpecLevelUndefined: Self = StObject.set(x, "specLevel", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setTpmModel(value: String): Self = StObject.set(x, "tpmModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecLevel(value: String): Self = this.set("specLevel", value.asInstanceOf[js.Any])
+    def setTpmModelUndefined: Self = StObject.set(x, "tpmModel", js.undefined)
     
     @scala.inline
-    def deleteSpecLevel: Self = this.set("specLevel", js.undefined)
+    def setVendorSpecific(value: String): Self = StObject.set(x, "vendorSpecific", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTpmModel(value: String): Self = this.set("tpmModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpmModel: Self = this.set("tpmModel", js.undefined)
-    
-    @scala.inline
-    def setVendorSpecific(value: String): Self = this.set("vendorSpecific", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorSpecific: Self = this.set("vendorSpecific", js.undefined)
+    def setVendorSpecificUndefined: Self = StObject.set(x, "vendorSpecific", js.undefined)
   }
 }

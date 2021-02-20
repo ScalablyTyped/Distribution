@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to update the music information that is displayed on the SystemMediaTransportControls . */
 @js.native
-trait SystemMediaTransportControlsDisplayUpdater extends js.Object {
+trait SystemMediaTransportControlsDisplayUpdater extends StObject {
   
   /** Gets or sets the media id of the app. */
   var appMediaId: String = js.native
@@ -63,45 +64,33 @@ object SystemMediaTransportControlsDisplayUpdater {
   }
   
   @scala.inline
-  implicit class SystemMediaTransportControlsDisplayUpdaterOps[Self <: SystemMediaTransportControlsDisplayUpdater] (val x: Self) extends AnyVal {
+  implicit class SystemMediaTransportControlsDisplayUpdaterMutableBuilder[Self <: SystemMediaTransportControlsDisplayUpdater] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppMediaId(value: String): Self = StObject.set(x, "appMediaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyFromFileAsync(value: (MediaPlaybackType, StorageFile) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "copyFromFileAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAppMediaId(value: String): Self = this.set("appMediaId", value.asInstanceOf[js.Any])
+    def setImageProperties(value: ImageDisplayProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearAll(value: () => Unit): Self = this.set("clearAll", js.Any.fromFunction0(value))
+    def setMusicProperties(value: MusicDisplayProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyFromFileAsync(value: (MediaPlaybackType, StorageFile) => IPromiseWithIAsyncOperation[Boolean]): Self = this.set("copyFromFileAsync", js.Any.fromFunction2(value))
+    def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageProperties(value: ImageDisplayProperties): Self = this.set("imageProperties", value.asInstanceOf[js.Any])
+    def setType(value: MediaPlaybackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMusicProperties(value: MusicDisplayProperties): Self = this.set("musicProperties", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setThumbnail(value: RandomAccessStreamReference): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MediaPlaybackType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVideoProperties(value: VideoDisplayProperties): Self = this.set("videoProperties", value.asInstanceOf[js.Any])
+    def setVideoProperties(value: VideoDisplayProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
   }
 }

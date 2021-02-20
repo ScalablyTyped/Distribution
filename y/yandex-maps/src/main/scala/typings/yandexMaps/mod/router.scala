@@ -1,14 +1,14 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.anon.AddViaPoints
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "router")
-@js.native
-object router extends js.Object {
+object router {
   
+  @JSImport("yandex-maps", "router.Editor")
   @js.native
   class Editor () extends ICustomizable {
     
@@ -18,6 +18,7 @@ object router extends js.Object {
     def stop(): Unit = js.native
   }
   
+  @JSImport("yandex-maps", "router.Route")
   @js.native
   abstract class Route () extends IGeoObject[IGeometry] {
     

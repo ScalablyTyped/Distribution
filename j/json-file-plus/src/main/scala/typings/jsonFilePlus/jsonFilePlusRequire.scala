@@ -1,5 +1,6 @@
 package typings.jsonFilePlus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("json-file-plus", JSImport.Namespace)
 @js.native
-object jsonFilePlusRequire extends js.Object
+object jsonFilePlusRequire extends StObject

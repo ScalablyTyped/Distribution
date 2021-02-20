@@ -1,12 +1,13 @@
 package typings.googleapis.anon
 
 import typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.SchemaPagespeedApiFormatStringV4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Beta extends js.Object {
+trait Beta extends StObject {
   
   var beta: js.UndefOr[Boolean] = js.native
   
@@ -29,60 +30,48 @@ object Beta {
   }
   
   @scala.inline
-  implicit class BetaOps[Self <: Beta] (val x: Self) extends AnyVal {
+  implicit class BetaMutableBuilder[Self <: Beta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeta(value: Boolean): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeta(value: Boolean): Self = this.set("beta", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteBeta: Self = this.set("beta", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setLocalizedRuleNameUndefined: Self = StObject.set(x, "localizedRuleName", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedRuleName(value: String): Self = this.set("localizedRuleName", value.asInstanceOf[js.Any])
+    def setRuleImpactUndefined: Self = StObject.set(x, "ruleImpact", js.undefined)
     
     @scala.inline
-    def deleteLocalizedRuleName: Self = this.set("localizedRuleName", js.undefined)
+    def setSummary(value: SchemaPagespeedApiFormatStringV4): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleImpact(value: Double): Self = this.set("ruleImpact", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     @scala.inline
-    def deleteRuleImpact: Self = this.set("ruleImpact", js.undefined)
+    def setUrlBlocks(value: js.Array[HeaderUrls]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: SchemaPagespeedApiFormatStringV4): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setUrlBlocksUndefined: Self = StObject.set(x, "urlBlocks", js.undefined)
     
     @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setUrlBlocksVarargs(value: HeaderUrls*): Self = this.set("urlBlocks", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlBlocks(value: js.Array[HeaderUrls]): Self = this.set("urlBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlBlocks: Self = this.set("urlBlocks", js.undefined)
+    def setUrlBlocksVarargs(value: HeaderUrls*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
   }
 }

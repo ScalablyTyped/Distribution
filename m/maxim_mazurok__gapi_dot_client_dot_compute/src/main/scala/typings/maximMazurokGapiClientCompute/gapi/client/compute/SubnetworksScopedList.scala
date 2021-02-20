@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubnetworksScopedList extends js.Object {
+trait SubnetworksScopedList extends StObject {
   
   /** A list of subnetworks contained in this scope. */
   var subnetworks: js.UndefOr[js.Array[Subnetwork]] = js.native
@@ -23,33 +24,21 @@ object SubnetworksScopedList {
   }
   
   @scala.inline
-  implicit class SubnetworksScopedListOps[Self <: SubnetworksScopedList] (val x: Self) extends AnyVal {
+  implicit class SubnetworksScopedListMutableBuilder[Self <: SubnetworksScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubnetworks(value: js.Array[Subnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetworksVarargs(value: Subnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetworksVarargs(value: Subnetwork*): Self = this.set("subnetworks", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetworks(value: js.Array[Subnetwork]): Self = this.set("subnetworks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetworks: Self = this.set("subnetworks", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

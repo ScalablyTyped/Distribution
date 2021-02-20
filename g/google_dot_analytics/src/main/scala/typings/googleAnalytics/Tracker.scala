@@ -1,11 +1,12 @@
 package typings.googleAnalytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tracker extends js.Object {
+trait Tracker extends StObject {
   
   def _getAccount(): String = js.native
   

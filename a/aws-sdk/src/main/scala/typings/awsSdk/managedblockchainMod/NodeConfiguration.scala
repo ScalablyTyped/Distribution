@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeConfiguration extends js.Object {
+trait NodeConfiguration extends StObject {
   
   /**
     * The Availability Zone in which the node exists.
@@ -36,36 +37,24 @@ object NodeConfiguration {
   }
   
   @scala.inline
-  implicit class NodeConfigurationOps[Self <: NodeConfiguration] (val x: Self) extends AnyVal {
+  implicit class NodeConfigurationMutableBuilder[Self <: NodeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: AvailabilityZoneString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceType(value: InstanceTypeString): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogPublishingConfiguration(value: NodeLogPublishingConfiguration): Self = StObject.set(x, "LogPublishingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: AvailabilityZoneString): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setLogPublishingConfigurationUndefined: Self = StObject.set(x, "LogPublishingConfiguration", js.undefined)
     
     @scala.inline
-    def setInstanceType(value: InstanceTypeString): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setStateDB(value: StateDBType): Self = StObject.set(x, "StateDB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogPublishingConfiguration(value: NodeLogPublishingConfiguration): Self = this.set("LogPublishingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogPublishingConfiguration: Self = this.set("LogPublishingConfiguration", js.undefined)
-    
-    @scala.inline
-    def setStateDB(value: StateDBType): Self = this.set("StateDB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateDB: Self = this.set("StateDB", js.undefined)
+    def setStateDBUndefined: Self = StObject.set(x, "StateDB", js.undefined)
   }
 }

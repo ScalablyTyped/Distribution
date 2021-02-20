@@ -1,12 +1,13 @@
 package typings.activexOutlook.anon
 
 import typings.activexOutlook.Outlook.OutlookBarGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewGroup extends js.Object {
+trait NewGroup extends StObject {
   
   val NewGroup: OutlookBarGroup = js.native
 }
@@ -19,21 +20,9 @@ object NewGroup {
   }
   
   @scala.inline
-  implicit class NewGroupOps[Self <: NewGroup] (val x: Self) extends AnyVal {
+  implicit class NewGroupMutableBuilder[Self <: NewGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewGroup(value: OutlookBarGroup): Self = this.set("NewGroup", value.asInstanceOf[js.Any])
+    def setNewGroup(value: OutlookBarGroup): Self = StObject.set(x, "NewGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -1,66 +1,49 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioEncoding extends js.Object
-
+sealed trait AudioEncoding extends StObject
 /** AudioEncoding enum. */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.AudioEncoding")
 @js.native
-object AudioEncoding extends js.Object {
-  @js.native
-  sealed trait AUDIO_ENCODING_AMR extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_AMR_WB extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_FLAC extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_LINEAR_16 extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_MULAW extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_OGG_OPUS extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE extends AudioEncoding
-  
-  @js.native
-  sealed trait AUDIO_ENCODING_UNSPECIFIED extends AudioEncoding
+object AudioEncoding extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AudioEncoding with Double] = js.native
-  /* 4 */ @js.native
-  object AUDIO_ENCODING_AMR extends TopLevel[AUDIO_ENCODING_AMR with Double]
   
-  /* 5 */ @js.native
-  object AUDIO_ENCODING_AMR_WB extends TopLevel[AUDIO_ENCODING_AMR_WB with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_AMR extends AudioEncoding
+  /* 4 */ val AUDIO_ENCODING_AMR: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_AMR with Double = js.native
   
-  /* 2 */ @js.native
-  object AUDIO_ENCODING_FLAC extends TopLevel[AUDIO_ENCODING_FLAC with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_AMR_WB extends AudioEncoding
+  /* 5 */ val AUDIO_ENCODING_AMR_WB: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_AMR_WB with Double = js.native
   
-  /* 1 */ @js.native
-  object AUDIO_ENCODING_LINEAR_16 extends TopLevel[AUDIO_ENCODING_LINEAR_16 with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_FLAC extends AudioEncoding
+  /* 2 */ val AUDIO_ENCODING_FLAC: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_FLAC with Double = js.native
   
-  /* 3 */ @js.native
-  object AUDIO_ENCODING_MULAW extends TopLevel[AUDIO_ENCODING_MULAW with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_LINEAR_16 extends AudioEncoding
+  /* 1 */ val AUDIO_ENCODING_LINEAR_16: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_LINEAR_16 with Double = js.native
   
-  /* 6 */ @js.native
-  object AUDIO_ENCODING_OGG_OPUS extends TopLevel[AUDIO_ENCODING_OGG_OPUS with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_MULAW extends AudioEncoding
+  /* 3 */ val AUDIO_ENCODING_MULAW: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_MULAW with Double = js.native
   
-  /* 7 */ @js.native
-  object AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE extends TopLevel[AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_OGG_OPUS extends AudioEncoding
+  /* 6 */ val AUDIO_ENCODING_OGG_OPUS: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_OGG_OPUS with Double = js.native
   
-  /* 0 */ @js.native
-  object AUDIO_ENCODING_UNSPECIFIED extends TopLevel[AUDIO_ENCODING_UNSPECIFIED with Double]
+  @js.native
+  sealed trait AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE extends AudioEncoding
+  /* 7 */ val AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE with Double = js.native
   
+  @js.native
+  sealed trait AUDIO_ENCODING_UNSPECIFIED extends AudioEncoding
+  /* 0 */ val AUDIO_ENCODING_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.AudioEncoding.AUDIO_ENCODING_UNSPECIFIED with Double = js.native
 }
-

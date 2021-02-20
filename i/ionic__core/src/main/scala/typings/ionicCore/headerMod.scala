@@ -3,14 +3,14 @@ package typings.ionicCore
 import typings.ionicCore.ionicCoreStrings.condense
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/header/header", JSImport.Namespace)
-@js.native
-object headerMod extends js.Object {
+object headerMod {
   
+  @JSImport("@ionic/core/dist/types/components/header/header", "Header")
   @js.native
   class Header () extends ComponentInterface {
     

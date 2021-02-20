@@ -1,12 +1,13 @@
 package typings.rollup.anon
 
 import typings.rollup.mod.InternalModuleFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetReferenceId extends js.Object {
+trait AssetReferenceId extends StObject {
   
   var assetReferenceId: String | Null = js.native
   
@@ -40,48 +41,36 @@ object AssetReferenceId {
   }
   
   @scala.inline
-  implicit class AssetReferenceIdOps[Self <: AssetReferenceId] (val x: Self) extends AnyVal {
+  implicit class AssetReferenceIdMutableBuilder[Self <: AssetReferenceId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetReferenceId(value: String): Self = StObject.set(x, "assetReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetReferenceIdNull: Self = StObject.set(x, "assetReferenceId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkId(value: String): Self = this.set("chunkId", value.asInstanceOf[js.Any])
+    def setChunkReferenceId(value: String): Self = StObject.set(x, "chunkReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setChunkReferenceIdNull: Self = StObject.set(x, "chunkReferenceId", null)
     
     @scala.inline
-    def setFormat(value: InternalModuleFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleId(value: String): Self = this.set("moduleId", value.asInstanceOf[js.Any])
+    def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceId(value: String): Self = this.set("referenceId", value.asInstanceOf[js.Any])
+    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativePath(value: String): Self = this.set("relativePath", value.asInstanceOf[js.Any])
+    def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetReferenceId(value: String): Self = this.set("assetReferenceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssetReferenceIdNull: Self = this.set("assetReferenceId", null)
-    
-    @scala.inline
-    def setChunkReferenceId(value: String): Self = this.set("chunkReferenceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChunkReferenceIdNull: Self = this.set("chunkReferenceId", null)
+    def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
   }
 }

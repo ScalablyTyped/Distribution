@@ -8,13 +8,14 @@ import typings.baseui.baseuiStrings.toast
 import typings.baseui.baseuiStrings.warning
 import typings.baseui.toastMod.ToastOverrides
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<baseui.baseui/toast.ToastProps> & {  key :react.react.Key} */
 @js.native
-trait ReadonlyToastPropskeyKey extends js.Object {
+trait ReadonlyToastPropskeyKey extends StObject {
   
   val autoFocus: js.UndefOr[Boolean] = js.native
   
@@ -53,102 +54,90 @@ object ReadonlyToastPropskeyKey {
   }
   
   @scala.inline
-  implicit class ReadonlyToastPropskeyKeyOps[Self <: ReadonlyToastPropskeyKey] (val x: Self) extends AnyVal {
+  implicit class ReadonlyToastPropskeyKeyMutableBuilder[Self <: ReadonlyToastPropskeyKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: js.UndefOr[typings.react.mod.Key] with typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setChildren(value: (js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setChildrenFunction1(value: /* args */ Dismiss => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoHideDuration(value: Double): Self = this.set("autoHideDuration", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAutoHideDuration: Self = this.set("autoHideDuration", js.undefined)
+    def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenFunction1(value: /* args */ Dismiss => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
     
     @scala.inline
-    def setChildren(value: (js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def `setData-baseweb`(value: String): Self = StObject.set(x, "data-baseweb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
     
     @scala.inline
-    def setCloseable(value: Boolean): Self = this.set("closeable", value.asInstanceOf[js.Any])
+    def setKey(value: js.UndefOr[typings.react.mod.Key] with typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseable: Self = this.set("closeable", js.undefined)
+    def setKind(value: info | positive | warning | negative): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setData-baseweb`(value: String): Self = this.set("data-baseweb", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def `deleteData-baseweb`: Self = this.set("data-baseweb", js.undefined)
+    def setNotificationType(value: `inline` | toast): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: info | positive | warning | negative): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOnBlur(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNotificationType(value: `inline` | toast): Self = this.set("notificationType", value.asInstanceOf[js.Any])
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def deleteNotificationType: Self = this.set("notificationType", js.undefined)
+    def setOnClose(value: () => _): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBlur(value: /* e */ typings.std.Event => _): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnFocus(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClose(value: () => _): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnMouseEnter(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFocus(value: /* e */ typings.std.Event => _): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnMouseLeave(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseEnter(value: /* e */ typings.std.Event => _): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setOverrides(value: ToastOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseLeave(value: /* e */ typings.std.Event => _): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
-    
-    @scala.inline
-    def setOverrides(value: ToastOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
   }
 }

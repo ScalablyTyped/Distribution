@@ -1,5 +1,6 @@
 package typings.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about subrows.
   */
 @js.native
-trait SubRowDetails[T] extends js.Object {
+trait SubRowDetails[T] extends StObject {
   
   /**
     * Determines if the cell can expand.
@@ -47,63 +48,51 @@ object SubRowDetails {
   }
   
   @scala.inline
-  implicit class SubRowDetailsOps[Self <: SubRowDetails[_], T] (val x: Self with SubRowDetails[T]) extends AnyVal {
+  implicit class SubRowDetailsMutableBuilder[Self <: SubRowDetails[_], T] (val x: Self with SubRowDetails[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanExpandUndefined: Self = StObject.set(x, "canExpand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: T*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setCanExpand(value: Boolean): Self = this.set("canExpand", value.asInstanceOf[js.Any])
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanExpand: Self = this.set("canExpand", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: T*): Self = this.set("children", js.Array(value :_*))
+    def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[T]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setNumberSiblings(value: Double): Self = StObject.set(x, "numberSiblings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Boolean): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setNumberSiblingsUndefined: Self = StObject.set(x, "numberSiblings", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setSiblingIndex(value: Double): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberSiblings(value: Double): Self = this.set("numberSiblings", value.asInstanceOf[js.Any])
+    def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
     
     @scala.inline
-    def deleteNumberSiblings: Self = this.set("numberSiblings", js.undefined)
+    def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiblingIndex(value: Double): Self = this.set("siblingIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiblingIndex: Self = this.set("siblingIndex", js.undefined)
-    
-    @scala.inline
-    def setTreeDepth(value: Double): Self = this.set("treeDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreeDepth: Self = this.set("treeDepth", js.undefined)
+    def setTreeDepthUndefined: Self = StObject.set(x, "treeDepth", js.undefined)
   }
 }

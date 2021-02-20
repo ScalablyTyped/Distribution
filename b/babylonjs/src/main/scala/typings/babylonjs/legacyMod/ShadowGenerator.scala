@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.shadowLightMod.IShadowLight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,26 +23,36 @@ class ShadowGenerator protected ()
   def this(mapSize: Double, light: IShadowLight, usefulFloatFirst: Boolean) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "ShadowGenerator")
-@js.native
-object ShadowGenerator extends js.Object {
+object ShadowGenerator {
+  
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Name of the shadow generator class
     */
-  var CLASSNAME: String = js.native
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.CLASSNAME")
+  @js.native
+  def CLASSNAME: String = js.native
+  @scala.inline
+  def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
   
   /**
     * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
     * edge artifacts on steep falloff.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_BLURCLOSEEXPONENTIALSHADOWMAP")
+  @js.native
   val FILTER_BLURCLOSEEXPONENTIALSHADOWMAP: Double = js.native
   
   /**
     * Shadow generator mode ESM: Blurred Exponential Shadow Mapping.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_BLUREXPONENTIALSHADOWMAP")
+  @js.native
   val FILTER_BLUREXPONENTIALSHADOWMAP: Double = js.native
   
   /**
@@ -49,17 +60,23 @@ object ShadowGenerator extends js.Object {
     * edge artifacts on steep falloff.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_CLOSEEXPONENTIALSHADOWMAP")
+  @js.native
   val FILTER_CLOSEEXPONENTIALSHADOWMAP: Double = js.native
   
   /**
     * Shadow generator mode ESM: Exponential Shadow Mapping.
     * (http://developer.download.nvidia.com/presentations/2008/GDC/GDC08_SoftShadowMapping.pdf)
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_EXPONENTIALSHADOWMAP")
+  @js.native
   val FILTER_EXPONENTIALSHADOWMAP: Double = js.native
   
   /**
     * Shadow generator mode None: no filtering applied.
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_NONE")
+  @js.native
   val FILTER_NONE: Double = js.native
   
   /**
@@ -67,6 +84,8 @@ object ShadowGenerator extends js.Object {
     * benefits from Webgl 2 shadow samplers. Fallback to Poisson Sampling in Webgl 1
     * (https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch11.html)
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_PCF")
+  @js.native
   val FILTER_PCF: Double = js.native
   
   /**
@@ -74,12 +93,16 @@ object ShadowGenerator extends js.Object {
     * benefits from Webgl 2 shadow samplers. Fallback to Poisson Sampling in Webgl 1
     * Contact Hardening
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_PCSS")
+  @js.native
   val FILTER_PCSS: Double = js.native
   
   /**
     * Shadow generator mode Poisson Sampling: Percentage Closer Filtering.
     * (Multiple Tap around evenly distributed around the pixel are used to evaluate the shadow strength)
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.FILTER_POISSONSAMPLING")
+  @js.native
   val FILTER_POISSONSAMPLING: Double = js.native
   
   /**
@@ -89,7 +112,11 @@ object ShadowGenerator extends js.Object {
     * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
     * @returns The parsed shadow generator
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.Parse")
+  @js.native
   def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = js.native
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.Parse")
+  @js.native
   def Parse(
     parsedShadowGenerator: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
@@ -104,6 +131,8 @@ object ShadowGenerator extends js.Object {
     *
     * Execute PCSS with 32 taps blocker search and 64 taps PCF.
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.QUALITY_HIGH")
+  @js.native
   val QUALITY_HIGH: Double = js.native
   
   /**
@@ -114,6 +143,8 @@ object ShadowGenerator extends js.Object {
     *
     * Execute PCSS with 16 taps blocker search and 16 taps PCF.
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.QUALITY_LOW")
+  @js.native
   val QUALITY_LOW: Double = js.native
   
   /**
@@ -124,8 +155,12 @@ object ShadowGenerator extends js.Object {
     *
     * Execute PCSS with 16 taps blocker search and 32 taps PCF.
     */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator.QUALITY_MEDIUM")
+  @js.native
   val QUALITY_MEDIUM: Double = js.native
   
   /** @hidden */
+  @JSImport("babylonjs/Legacy/legacy", "ShadowGenerator._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
 }

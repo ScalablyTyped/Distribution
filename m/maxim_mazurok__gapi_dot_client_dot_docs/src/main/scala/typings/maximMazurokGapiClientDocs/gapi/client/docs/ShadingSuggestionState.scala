@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadingSuggestionState extends js.Object {
+trait ShadingSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to the Shading. */
   var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object ShadingSuggestionState {
   }
   
   @scala.inline
-  implicit class ShadingSuggestionStateOps[Self <: ShadingSuggestionState] (val x: Self) extends AnyVal {
+  implicit class ShadingSuggestionStateMutableBuilder[Self <: ShadingSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackgroundColorSuggested(value: Boolean): Self = this.set("backgroundColorSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackgroundColorSuggested: Self = this.set("backgroundColorSuggested", js.undefined)
+    def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
   }
 }

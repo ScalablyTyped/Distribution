@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,33 +48,21 @@ object XCoordinateSystemContainer {
   }
   
   @scala.inline
-  implicit class XCoordinateSystemContainerOps[Self <: XCoordinateSystemContainer] (val x: Self) extends AnyVal {
+  implicit class XCoordinateSystemContainerMutableBuilder[Self <: XCoordinateSystemContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "addCoordinateSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinateSystems(value: SafeArray[XCoordinateSystem]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCoordinateSystems(value: () => SafeArray[XCoordinateSystem]): Self = StObject.set(x, "getCoordinateSystems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCoordinateSystems(value: SafeArray[XCoordinateSystem]): Self = this.set("CoordinateSystems", value.asInstanceOf[js.Any])
+    def setRemoveCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "removeCoordinateSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCoordinateSystem(value: XCoordinateSystem => Unit): Self = this.set("addCoordinateSystem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCoordinateSystems(value: () => SafeArray[XCoordinateSystem]): Self = this.set("getCoordinateSystems", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveCoordinateSystem(value: XCoordinateSystem => Unit): Self = this.set("removeCoordinateSystem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetCoordinateSystems(value: SeqEquiv[XCoordinateSystem] => Unit): Self = this.set("setCoordinateSystems", js.Any.fromFunction1(value))
+    def setSetCoordinateSystems(value: SeqEquiv[XCoordinateSystem] => Unit): Self = StObject.set(x, "setCoordinateSystems", js.Any.fromFunction1(value))
   }
 }

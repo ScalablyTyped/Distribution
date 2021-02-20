@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for `ListBillingAccounts`.
   */
 @js.native
-trait SchemaListBillingAccountsResponse extends js.Object {
+trait SchemaListBillingAccountsResponse extends StObject {
   
   /**
     * A list of billing accounts.
@@ -31,33 +32,21 @@ object SchemaListBillingAccountsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListBillingAccountsResponseOps[Self <: SchemaListBillingAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListBillingAccountsResponseMutableBuilder[Self <: SchemaListBillingAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAccounts(value: js.Array[SchemaBillingAccount]): Self = StObject.set(x, "billingAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAccountsUndefined: Self = StObject.set(x, "billingAccounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingAccountsVarargs(value: SchemaBillingAccount*): Self = StObject.set(x, "billingAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setBillingAccountsVarargs(value: SchemaBillingAccount*): Self = this.set("billingAccounts", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAccounts(value: js.Array[SchemaBillingAccount]): Self = this.set("billingAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAccounts: Self = this.set("billingAccounts", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

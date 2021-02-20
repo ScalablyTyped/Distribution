@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/hljs/rust", JSImport.Namespace)
-@js.native
-object hljsRustMod extends js.Object {
+object hljsRustMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/hljs/rust", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

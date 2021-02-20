@@ -1,12 +1,15 @@
 package typings.rotJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/fov/discrete-shadowcasting", JSImport.Namespace)
-@js.native
-object discreteShadowcastingMod extends js.Object {
+object discreteShadowcastingMod {
+  
+  @JSImport("rot-js/lib/fov/discrete-shadowcasting", JSImport.Default)
+  @js.native
+  class default () extends DiscreteShadowcasting
   
   @js.native
   trait DiscreteShadowcasting
@@ -20,7 +23,4 @@ object discreteShadowcastingMod extends js.Object {
       */
     def _visibleCoords(A: Double, B: Double, blocks: Boolean, DATA: js.Array[Double]): Boolean = js.native
   }
-  
-  @js.native
-  class default () extends DiscreteShadowcasting
 }

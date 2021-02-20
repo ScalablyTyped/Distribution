@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocodeResult extends js.Object {
+trait GeocodeResult extends StObject {
   
   var geocodes: js.Array[LngLat] = js.native
   
@@ -22,30 +23,18 @@ object GeocodeResult {
   }
   
   @scala.inline
-  implicit class GeocodeResultOps[Self <: GeocodeResult] (val x: Self) extends AnyVal {
+  implicit class GeocodeResultMutableBuilder[Self <: GeocodeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeocodes(value: js.Array[LngLat]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeocodesVarargs(value: LngLat*): Self = StObject.set(x, "geocodes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocodesVarargs(value: LngLat*): Self = this.set("geocodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setGeocodes(value: js.Array[LngLat]): Self = this.set("geocodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultNum(value: Double): Self = this.set("resultNum", value.asInstanceOf[js.Any])
+    def setResultNum(value: Double): Self = StObject.set(x, "resultNum", value.asInstanceOf[js.Any])
   }
 }

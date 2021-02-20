@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XElement extends js.Object {
+trait XElement extends StObject {
   
   def get_attributes(): js.Any = js.native
   
@@ -35,36 +36,24 @@ object XElement {
   }
   
   @scala.inline
-  implicit class XElementOps[Self <: XElement] (val x: Self) extends AnyVal {
+  implicit class XElementMutableBuilder[Self <: XElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_attributes(value: () => js.Any): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_children(value: () => js.Any): Self = StObject.set(x, "get_children", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_attributes(value: () => js.Any): Self = this.set("get_attributes", js.Any.fromFunction0(value))
+    def setSet_attributes(value: js.Any => Unit): Self = StObject.set(x, "set_attributes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_children(value: () => js.Any): Self = this.set("get_children", js.Any.fromFunction0(value))
+    def setSet_children(value: js.Any => Unit): Self = StObject.set(x, "set_children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_name(value: () => String): Self = this.set("get_name", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_attributes(value: js.Any => Unit): Self = this.set("set_attributes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_children(value: js.Any => Unit): Self = this.set("set_children", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_name(value: String => Unit): Self = this.set("set_name", js.Any.fromFunction1(value))
+    def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
   }
 }

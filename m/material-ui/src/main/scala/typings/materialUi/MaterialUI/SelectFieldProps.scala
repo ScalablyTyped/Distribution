@@ -7,12 +7,13 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectFieldProps extends js.Object {
+trait SelectFieldProps extends StObject {
   
   // <DropDownMenu/> is the element that get the 'other' properties
   var autoWidth: js.UndefOr[Boolean] = js.native
@@ -98,218 +99,206 @@ object SelectFieldProps {
   }
   
   @scala.inline
-  implicit class SelectFieldPropsOps[Self <: SelectFieldProps] (val x: Self) extends AnyVal {
+  implicit class SelectFieldPropsMutableBuilder[Self <: SelectFieldProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDropDownMenuProps(value: DropDownMenuProps): Self = StObject.set(x, "dropDownMenuProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDropDownMenuPropsUndefined: Self = StObject.set(x, "dropDownMenuProps", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setErrorStyle(value: CSSProperties): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDownMenuProps(value: DropDownMenuProps): Self = this.set("dropDownMenuProps", value.asInstanceOf[js.Any])
+    def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
     
     @scala.inline
-    def deleteDropDownMenuProps: Self = this.set("dropDownMenuProps", js.undefined)
+    def setErrorText(value: ReactNode): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorStyle(value: CSSProperties): Self = this.set("errorStyle", value.asInstanceOf[js.Any])
+    def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
     
     @scala.inline
-    def deleteErrorStyle: Self = this.set("errorStyle", js.undefined)
+    def setFloatingLabelFixed(value: Boolean): Self = StObject.set(x, "floatingLabelFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorText(value: ReactNode): Self = this.set("errorText", value.asInstanceOf[js.Any])
+    def setFloatingLabelFixedUndefined: Self = StObject.set(x, "floatingLabelFixed", js.undefined)
     
     @scala.inline
-    def deleteErrorText: Self = this.set("errorText", js.undefined)
+    def setFloatingLabelStyle(value: CSSProperties): Self = StObject.set(x, "floatingLabelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabelFixed(value: Boolean): Self = this.set("floatingLabelFixed", value.asInstanceOf[js.Any])
+    def setFloatingLabelStyleUndefined: Self = StObject.set(x, "floatingLabelStyle", js.undefined)
     
     @scala.inline
-    def deleteFloatingLabelFixed: Self = this.set("floatingLabelFixed", js.undefined)
+    def setFloatingLabelText(value: ReactNode): Self = StObject.set(x, "floatingLabelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabelStyle(value: CSSProperties): Self = this.set("floatingLabelStyle", value.asInstanceOf[js.Any])
+    def setFloatingLabelTextUndefined: Self = StObject.set(x, "floatingLabelText", js.undefined)
     
     @scala.inline
-    def deleteFloatingLabelStyle: Self = this.set("floatingLabelStyle", js.undefined)
+    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabelText(value: ReactNode): Self = this.set("floatingLabelText", value.asInstanceOf[js.Any])
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def deleteFloatingLabelText: Self = this.set("floatingLabelText", js.undefined)
+    def setHintStyle(value: CSSProperties): Self = StObject.set(x, "hintStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setHintStyleUndefined: Self = StObject.set(x, "hintStyle", js.undefined)
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setHintText(value: ReactNode): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHintStyle(value: CSSProperties): Self = this.set("hintStyle", value.asInstanceOf[js.Any])
+    def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
     
     @scala.inline
-    def deleteHintStyle: Self = this.set("hintStyle", js.undefined)
+    def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHintText(value: ReactNode): Self = this.set("hintText", value.asInstanceOf[js.Any])
+    def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
     @scala.inline
-    def deleteHintText: Self = this.set("hintText", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconStyle(value: CSSProperties): Self = this.set("iconStyle", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIconStyle: Self = this.set("iconStyle", js.undefined)
+    def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: CSSProperties): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStyle(value: CSSProperties): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteListStyle: Self = this.set("listStyle", js.undefined)
+    def setMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMenuStyle(value: js.Any): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItemStyle(value: CSSProperties): Self = this.set("menuItemStyle", value.asInstanceOf[js.Any])
+    def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
     
     @scala.inline
-    def deleteMenuItemStyle: Self = this.set("menuItemStyle", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuStyle(value: js.Any): Self = this.set("menuStyle", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMenuStyle: Self = this.set("menuStyle", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setOnBlur(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOnBlur(value: FocusEvent[js.Object] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
     def setOnChange(
       value: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ js.Any) => Unit
-    ): Self = this.set("onChange", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: FocusEvent[js.Object] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOpenImmediately(value: Boolean): Self = this.set("openImmediately", value.asInstanceOf[js.Any])
+    def setOpenImmediately(value: Boolean): Self = StObject.set(x, "openImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenImmediately: Self = this.set("openImmediately", js.undefined)
+    def setOpenImmediatelyUndefined: Self = StObject.set(x, "openImmediately", js.undefined)
     
     @scala.inline
-    def setSelectFieldRoot(value: CSSProperties): Self = this.set("selectFieldRoot", value.asInstanceOf[js.Any])
+    def setSelectFieldRoot(value: CSSProperties): Self = StObject.set(x, "selectFieldRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectFieldRoot: Self = this.set("selectFieldRoot", js.undefined)
+    def setSelectFieldRootUndefined: Self = StObject.set(x, "selectFieldRoot", js.undefined)
     
     @scala.inline
-    def setSelectedMenuItemStyle(value: CSSProperties): Self = this.set("selectedMenuItemStyle", value.asInstanceOf[js.Any])
+    def setSelectedMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "selectedMenuItemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedMenuItemStyle: Self = this.set("selectedMenuItemStyle", js.undefined)
+    def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
     
     @scala.inline
-    def setSelectionRenderer(value: /* value */ js.Any => ReactNode): Self = this.set("selectionRenderer", js.Any.fromFunction1(value))
+    def setSelectionRenderer(value: /* value */ js.Any => ReactNode): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSelectionRenderer: Self = this.set("selectionRenderer", js.undefined)
+    def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setUnderlineDisabledStyle(value: CSSProperties): Self = this.set("underlineDisabledStyle", value.asInstanceOf[js.Any])
+    def setUnderlineDisabledStyle(value: CSSProperties): Self = StObject.set(x, "underlineDisabledStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderlineDisabledStyle: Self = this.set("underlineDisabledStyle", js.undefined)
+    def setUnderlineDisabledStyleUndefined: Self = StObject.set(x, "underlineDisabledStyle", js.undefined)
     
     @scala.inline
-    def setUnderlineFocusStyle(value: CSSProperties): Self = this.set("underlineFocusStyle", value.asInstanceOf[js.Any])
+    def setUnderlineFocusStyle(value: CSSProperties): Self = StObject.set(x, "underlineFocusStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderlineFocusStyle: Self = this.set("underlineFocusStyle", js.undefined)
+    def setUnderlineFocusStyleUndefined: Self = StObject.set(x, "underlineFocusStyle", js.undefined)
     
     @scala.inline
-    def setUnderlineStyle(value: CSSProperties): Self = this.set("underlineStyle", value.asInstanceOf[js.Any])
+    def setUnderlineStyle(value: CSSProperties): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderlineStyle: Self = this.set("underlineStyle", js.undefined)
+    def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

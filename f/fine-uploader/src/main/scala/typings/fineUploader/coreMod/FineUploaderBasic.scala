@@ -7,6 +7,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The FineUploader Core only constructor
   */
-class FineUploaderBasic () extends js.Object {
+class FineUploaderBasic () extends StObject {
   def this(fineuploaderOptions: CoreOptions) = this()
   
   /**

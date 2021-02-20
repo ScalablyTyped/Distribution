@@ -5,12 +5,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`one-to-many`
 import typings.arcgisJsApi.arcgisJsApiStrings.`one-to-one`
 import typings.arcgisJsApi.arcgisJsApiStrings.destination
 import typings.arcgisJsApi.arcgisJsApiStrings.origin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationshipProperties extends js.Object {
+trait RelationshipProperties extends StObject {
   
   /**
     * The cardinality which specifies the number of objects in the origin [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) related to the number of objects in the destination [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
@@ -84,72 +85,60 @@ object RelationshipProperties {
   }
   
   @scala.inline
-  implicit class RelationshipPropertiesOps[Self <: RelationshipProperties] (val x: Self) extends AnyVal {
+  implicit class RelationshipPropertiesMutableBuilder[Self <: RelationshipProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardinality(value: `one-to-one` | `one-to-many` | `many-to-many`): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinality(value: `one-to-one` | `one-to-many` | `many-to-many`): Self = this.set("cardinality", value.asInstanceOf[js.Any])
+    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
     @scala.inline
-    def deleteCardinality: Self = this.set("cardinality", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposite(value: Boolean): Self = this.set("composite", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteComposite: Self = this.set("composite", js.undefined)
+    def setKeyField(value: String): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKeyFieldInRelationshipTable(value: String): Self = StObject.set(x, "keyFieldInRelationshipTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKeyFieldInRelationshipTableUndefined: Self = StObject.set(x, "keyFieldInRelationshipTable", js.undefined)
     
     @scala.inline
-    def setKeyField(value: String): Self = this.set("keyField", value.asInstanceOf[js.Any])
+    def setKeyFieldUndefined: Self = StObject.set(x, "keyField", js.undefined)
     
     @scala.inline
-    def deleteKeyField: Self = this.set("keyField", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyFieldInRelationshipTable(value: String): Self = this.set("keyFieldInRelationshipTable", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeyFieldInRelationshipTable: Self = this.set("keyFieldInRelationshipTable", js.undefined)
+    def setRelatedTableId(value: Double): Self = StObject.set(x, "relatedTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRelatedTableIdUndefined: Self = StObject.set(x, "relatedTableId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRelationshipTableId(value: Double): Self = StObject.set(x, "relationshipTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedTableId(value: Double): Self = this.set("relatedTableId", value.asInstanceOf[js.Any])
+    def setRelationshipTableIdUndefined: Self = StObject.set(x, "relationshipTableId", js.undefined)
     
     @scala.inline
-    def deleteRelatedTableId: Self = this.set("relatedTableId", js.undefined)
+    def setRole(value: origin | destination): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipTableId(value: Double): Self = this.set("relationshipTableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationshipTableId: Self = this.set("relationshipTableId", js.undefined)
-    
-    @scala.inline
-    def setRole(value: origin | destination): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

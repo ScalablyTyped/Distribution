@@ -3,6 +3,7 @@ package typings.nvd3.mod
 import typings.nvd3.nvd3Strings.key
 import typings.nvd3.nvd3Strings.percent
 import typings.nvd3.nvd3Strings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

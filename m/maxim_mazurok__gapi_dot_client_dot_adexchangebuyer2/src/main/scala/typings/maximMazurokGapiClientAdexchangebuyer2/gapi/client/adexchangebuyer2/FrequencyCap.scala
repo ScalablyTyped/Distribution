@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrequencyCap extends js.Object {
+trait FrequencyCap extends StObject {
   
   /** The maximum number of impressions that can be served to a user within the specified time period. */
   var maxImpressions: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object FrequencyCap {
   }
   
   @scala.inline
-  implicit class FrequencyCapOps[Self <: FrequencyCap] (val x: Self) extends AnyVal {
+  implicit class FrequencyCapMutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumTimeUnits(value: Double): Self = StObject.set(x, "numTimeUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxImpressions(value: Double): Self = this.set("maxImpressions", value.asInstanceOf[js.Any])
+    def setNumTimeUnitsUndefined: Self = StObject.set(x, "numTimeUnits", js.undefined)
     
     @scala.inline
-    def deleteMaxImpressions: Self = this.set("maxImpressions", js.undefined)
+    def setTimeUnitType(value: String): Self = StObject.set(x, "timeUnitType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTimeUnits(value: Double): Self = this.set("numTimeUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumTimeUnits: Self = this.set("numTimeUnits", js.undefined)
-    
-    @scala.inline
-    def setTimeUnitType(value: String): Self = this.set("timeUnitType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeUnitType: Self = this.set("timeUnitType", js.undefined)
+    def setTimeUnitTypeUndefined: Self = StObject.set(x, "timeUnitType", js.undefined)
   }
 }

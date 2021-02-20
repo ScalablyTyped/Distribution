@@ -1,7 +1,6 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.babylonjs.anon.Instantiable
+import typings.babylonjs.anon.TypeofURL
 import typings.babylonjs.babylonjsStrings.vrdisplayconnected
 import typings.babylonjs.babylonjsStrings.vrdisplaydisconnected
 import typings.babylonjs.babylonjsStrings.vrdisplaypresentchange
@@ -11,20 +10,20 @@ import typings.std.Float32ArrayConstructor
 import typings.std.FrameRequestCallback
 import typings.std.IDBFactory
 import typings.std.Uint8ArrayConstructor
-import typings.std.global.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Mixins
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
   
   var AudioContext: typings.std.AudioContext = js.native
   
   var CANNON: js.Any = js.native
   
-   // WebVR, from specs 1.1
+  // WebVR, from specs 1.1
   var DracoDecoderModule: js.Any = js.native
   
   var Float32Array: Float32ArrayConstructor = js.native
@@ -58,11 +57,11 @@ trait Window extends js.Object {
   
   def mozRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
-  var mozURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  var mozURL: TypeofURL = js.native
   
   var msIndexedDB: IDBFactory = js.native
   
-  var msURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  var msURL: TypeofURL = js.native
   
   def oRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
@@ -78,5 +77,5 @@ trait Window extends js.Object {
   
   var webkitIndexedDB: IDBFactory = js.native
   
-  var webkitURL: Instantiable with (Instantiable1[/* url */ String, URL]) = js.native
+  var webkitURL: TypeofURL = js.native
 }

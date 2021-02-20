@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHumanTaskUiResponse extends js.Object {
+trait DescribeHumanTaskUiResponse extends StObject {
   
   /**
     * The timestamp when the human task user interface was created.
@@ -43,36 +44,24 @@ object DescribeHumanTaskUiResponse {
   }
   
   @scala.inline
-  implicit class DescribeHumanTaskUiResponseOps[Self <: DescribeHumanTaskUiResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeHumanTaskUiResponseMutableBuilder[Self <: DescribeHumanTaskUiResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHumanTaskUiName(value: HumanTaskUiName): Self = StObject.set(x, "HumanTaskUiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setHumanTaskUiStatus(value: HumanTaskUiStatus): Self = StObject.set(x, "HumanTaskUiStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = this.set("HumanTaskUiArn", value.asInstanceOf[js.Any])
+    def setHumanTaskUiStatusUndefined: Self = StObject.set(x, "HumanTaskUiStatus", js.undefined)
     
     @scala.inline
-    def setHumanTaskUiName(value: HumanTaskUiName): Self = this.set("HumanTaskUiName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUiTemplate(value: UiTemplateInfo): Self = this.set("UiTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHumanTaskUiStatus(value: HumanTaskUiStatus): Self = this.set("HumanTaskUiStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanTaskUiStatus: Self = this.set("HumanTaskUiStatus", js.undefined)
+    def setUiTemplate(value: UiTemplateInfo): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
   }
 }

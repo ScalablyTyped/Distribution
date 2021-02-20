@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.top
 import typings.arcgisJsApi.arcgisJsApiStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentifyParametersProperties extends js.Object {
+trait IdentifyParametersProperties extends StObject {
   
   /**
     * Resolution of the current map view in dots per inch.
@@ -138,123 +139,111 @@ object IdentifyParametersProperties {
   }
   
   @scala.inline
-  implicit class IdentifyParametersPropertiesOps[Self <: IdentifyParametersProperties] (val x: Self) extends AnyVal {
+  implicit class IdentifyParametersPropertiesMutableBuilder[Self <: IdentifyParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpi(value: Double): Self = this.set("dpi", value.asInstanceOf[js.Any])
+    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
     @scala.inline
-    def deleteDpi: Self = this.set("dpi", js.undefined)
+    def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGdbVersion(value: String): Self = this.set("gdbVersion", value.asInstanceOf[js.Any])
+    def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGdbVersion: Self = this.set("gdbVersion", js.undefined)
+    def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
     
     @scala.inline
-    def setGeometry(value: GeometryProperties): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryPrecision(value: Double): Self = this.set("geometryPrecision", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGeometryPrecision: Self = this.set("geometryPrecision", js.undefined)
+    def setLayerIds(value: js.Array[Double]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
     
     @scala.inline
-    def setLayerIdsVarargs(value: Double*): Self = this.set("layerIds", js.Array(value :_*))
+    def setLayerOption(value: top | visible | all): Self = StObject.set(x, "layerOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerIds(value: js.Array[Double]): Self = this.set("layerIds", value.asInstanceOf[js.Any])
+    def setLayerOptionUndefined: Self = StObject.set(x, "layerOption", js.undefined)
     
     @scala.inline
-    def deleteLayerIds: Self = this.set("layerIds", js.undefined)
+    def setMapExtent(value: ExtentProperties): Self = StObject.set(x, "mapExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerOption(value: top | visible | all): Self = this.set("layerOption", value.asInstanceOf[js.Any])
+    def setMapExtentUndefined: Self = StObject.set(x, "mapExtent", js.undefined)
     
     @scala.inline
-    def deleteLayerOption: Self = this.set("layerOption", js.undefined)
+    def setMaxAllowableOffset(value: Double): Self = StObject.set(x, "maxAllowableOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapExtent(value: ExtentProperties): Self = this.set("mapExtent", value.asInstanceOf[js.Any])
+    def setMaxAllowableOffsetUndefined: Self = StObject.set(x, "maxAllowableOffset", js.undefined)
     
     @scala.inline
-    def deleteMapExtent: Self = this.set("mapExtent", js.undefined)
+    def setReturnFieldName(value: Boolean): Self = StObject.set(x, "returnFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAllowableOffset(value: Double): Self = this.set("maxAllowableOffset", value.asInstanceOf[js.Any])
+    def setReturnFieldNameUndefined: Self = StObject.set(x, "returnFieldName", js.undefined)
     
     @scala.inline
-    def deleteMaxAllowableOffset: Self = this.set("maxAllowableOffset", js.undefined)
+    def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnFieldName(value: Boolean): Self = this.set("returnFieldName", value.asInstanceOf[js.Any])
+    def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
     
     @scala.inline
-    def deleteReturnFieldName: Self = this.set("returnFieldName", js.undefined)
+    def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnGeometry(value: Boolean): Self = this.set("returnGeometry", value.asInstanceOf[js.Any])
+    def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
     
     @scala.inline
-    def deleteReturnGeometry: Self = this.set("returnGeometry", js.undefined)
+    def setReturnUnformattedValues(value: Boolean): Self = StObject.set(x, "returnUnformattedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnM(value: Boolean): Self = this.set("returnM", value.asInstanceOf[js.Any])
+    def setReturnUnformattedValuesUndefined: Self = StObject.set(x, "returnUnformattedValues", js.undefined)
     
     @scala.inline
-    def deleteReturnM: Self = this.set("returnM", js.undefined)
+    def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnUnformattedValues(value: Boolean): Self = this.set("returnUnformattedValues", value.asInstanceOf[js.Any])
+    def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
     
     @scala.inline
-    def deleteReturnUnformattedValues: Self = this.set("returnUnformattedValues", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnZ(value: Boolean): Self = this.set("returnZ", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteReturnZ: Self = this.set("returnZ", js.undefined)
+    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     
     @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTolerance(value: Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

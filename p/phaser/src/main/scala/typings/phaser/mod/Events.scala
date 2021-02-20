@@ -22,6 +22,7 @@ import typings.phaser.phaserStrings.collisionStart
 import typings.phaser.phaserStrings.sleepEnd
 import typings.phaser.phaserStrings.sleepStart
 import typings.phaser.phaserStrings.tick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Events ()
   extends typings.phaser.MatterJS.Events
-/* static members */
-@JSImport("matter", "Events")
-@js.native
-object Events extends js.Object {
+object Events {
   
   /**
     * Removes the given event callback. If no callback, clears all callbacks in eventNames. If no eventNames, clears all events.
@@ -42,8 +40,14 @@ object Events extends js.Object {
     * @param eventName
     * @param callback
     */
+  /* static member */
+  @JSImport("matter", "Events.off")
+  @js.native
   def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
   
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
   /**
     * Fired when a call to `Composite.add` is made, after objects have been added.
@@ -54,7 +58,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_afterAdd(
     obj: typings.phaser.MatterJS.Engine,
     name: afterAdd,
@@ -69,7 +75,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_afterRemove(
     obj: typings.phaser.MatterJS.Engine,
     name: afterRemove,
@@ -84,7 +92,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_afterRender(
     obj: typings.phaser.MatterJS.Engine,
     name: afterRender,
@@ -99,7 +109,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_afterTick(
     obj: typings.phaser.MatterJS.Engine,
     name: afterTick,
@@ -114,7 +126,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_afterUpdate(
     obj: typings.phaser.MatterJS.Engine,
     name: afterUpdate,
@@ -129,7 +143,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_beforeAdd(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeAdd,
@@ -144,7 +160,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_beforeRemove(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeRemove,
@@ -159,7 +177,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_beforeRender(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeRender,
@@ -174,7 +194,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_beforeTick(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeTick,
@@ -189,7 +211,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_beforeUpdate(
     obj: typings.phaser.MatterJS.Engine,
     name: beforeUpdate,
@@ -205,7 +229,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_collisionActive(
     obj: typings.phaser.MatterJS.Engine,
     name: collisionActive,
@@ -221,7 +247,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_collisionEnd(
     obj: typings.phaser.MatterJS.Engine,
     name: collisionEnd,
@@ -237,7 +265,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_collisionStart(
     obj: typings.phaser.MatterJS.Engine,
     name: collisionStart,
@@ -252,7 +282,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_sleepEnd(obj: BodyType, name: sleepEnd, callback: js.Function1[/* e */ IEvent[BodyType], Unit]): Unit = js.native
   /**
     * Fired when a body starts sleeping (where `this` is the body).
@@ -263,7 +295,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_sleepStart(obj: BodyType, name: sleepStart, callback: js.Function1[/* e */ IEvent[BodyType], Unit]): Unit = js.native
   /**
     * Fired after engine timing updated, but just before update
@@ -274,7 +308,9 @@ object Events extends js.Object {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @JSName("on")
+  /* static member */
+  @JSImport("matter", "Events.on")
+  @js.native
   def on_tick(
     obj: typings.phaser.MatterJS.Engine,
     name: tick,
@@ -288,6 +324,11 @@ object Events extends js.Object {
     * @param eventNames
     * @param event
     */
+  /* static member */
+  @JSImport("matter", "Events.trigger")
+  @js.native
   def trigger(`object`: js.Any, eventNames: String): Unit = js.native
+  @JSImport("matter", "Events.trigger")
+  @js.native
   def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
 }

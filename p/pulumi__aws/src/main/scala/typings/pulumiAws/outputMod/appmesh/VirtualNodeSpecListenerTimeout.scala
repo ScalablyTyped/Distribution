@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecListenerTimeout extends js.Object {
+trait VirtualNodeSpecListenerTimeout extends StObject {
   
   /**
     * Timeouts for gRPC listeners.
@@ -36,42 +37,30 @@ object VirtualNodeSpecListenerTimeout {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecListenerTimeoutOps[Self <: VirtualNodeSpecListenerTimeout] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecListenerTimeoutMutableBuilder[Self <: VirtualNodeSpecListenerTimeout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrpc(value: VirtualNodeSpecListenerTimeoutGrpc): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttp(value: VirtualNodeSpecListenerTimeoutHttp): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrpc(value: VirtualNodeSpecListenerTimeoutGrpc): Self = this.set("grpc", value.asInstanceOf[js.Any])
+    def setHttp2(value: VirtualNodeSpecListenerTimeoutHttp2): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrpc: Self = this.set("grpc", js.undefined)
+    def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
     
     @scala.inline
-    def setHttp(value: VirtualNodeSpecListenerTimeoutHttp): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
+    def setTcp(value: VirtualNodeSpecListenerTimeoutTcp): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp2(value: VirtualNodeSpecListenerTimeoutHttp2): Self = this.set("http2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttp2: Self = this.set("http2", js.undefined)
-    
-    @scala.inline
-    def setTcp(value: VirtualNodeSpecListenerTimeoutTcp): Self = this.set("tcp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcp: Self = this.set("tcp", js.undefined)
+    def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
   }
 }

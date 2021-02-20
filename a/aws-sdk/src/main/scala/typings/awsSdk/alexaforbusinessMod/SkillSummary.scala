@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkillSummary extends js.Object {
+trait SkillSummary extends StObject {
   
   /**
     * Whether the skill is enabled under the user's account, or if it requires linking to be used.
@@ -41,48 +42,36 @@ object SkillSummary {
   }
   
   @scala.inline
-  implicit class SkillSummaryOps[Self <: SkillSummary] (val x: Self) extends AnyVal {
+  implicit class SkillSummaryMutableBuilder[Self <: SkillSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablementType(value: EnablementType): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablementTypeUndefined: Self = StObject.set(x, "EnablementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablementType(value: EnablementType): Self = this.set("EnablementType", value.asInstanceOf[js.Any])
+    def setSkillIdUndefined: Self = StObject.set(x, "SkillId", js.undefined)
     
     @scala.inline
-    def deleteEnablementType: Self = this.set("EnablementType", js.undefined)
+    def setSkillName(value: SkillName): Self = StObject.set(x, "SkillName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillId(value: SkillId): Self = this.set("SkillId", value.asInstanceOf[js.Any])
+    def setSkillNameUndefined: Self = StObject.set(x, "SkillName", js.undefined)
     
     @scala.inline
-    def deleteSkillId: Self = this.set("SkillId", js.undefined)
+    def setSkillType(value: SkillType): Self = StObject.set(x, "SkillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillName(value: SkillName): Self = this.set("SkillName", value.asInstanceOf[js.Any])
+    def setSkillTypeUndefined: Self = StObject.set(x, "SkillType", js.undefined)
     
     @scala.inline
-    def deleteSkillName: Self = this.set("SkillName", js.undefined)
+    def setSupportsLinking(value: scala.Boolean): Self = StObject.set(x, "SupportsLinking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillType(value: SkillType): Self = this.set("SkillType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillType: Self = this.set("SkillType", js.undefined)
-    
-    @scala.inline
-    def setSupportsLinking(value: scala.Boolean): Self = this.set("SupportsLinking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsLinking: Self = this.set("SupportsLinking", js.undefined)
+    def setSupportsLinkingUndefined: Self = StObject.set(x, "SupportsLinking", js.undefined)
   }
 }

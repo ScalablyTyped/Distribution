@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayHttp2ConnectionPool extends js.Object {
+trait VirtualGatewayHttp2ConnectionPool extends StObject {
   
   /**
     * Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster.
@@ -21,21 +22,9 @@ object VirtualGatewayHttp2ConnectionPool {
   }
   
   @scala.inline
-  implicit class VirtualGatewayHttp2ConnectionPoolOps[Self <: VirtualGatewayHttp2ConnectionPool] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayHttp2ConnectionPoolMutableBuilder[Self <: VirtualGatewayHttp2ConnectionPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxRequests(value: MaxRequests): Self = this.set("maxRequests", value.asInstanceOf[js.Any])
+    def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
   }
 }

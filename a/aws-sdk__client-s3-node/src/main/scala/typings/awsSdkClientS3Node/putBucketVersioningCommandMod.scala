@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesPutBucketVersioningInputMod.PutBucketVers
 import typings.awsSdkClientS3Node.typesPutBucketVersioningOutputMod.PutBucketVersioningOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/PutBucketVersioningCommand", JSImport.Namespace)
-@js.native
-object putBucketVersioningCommandMod extends js.Object {
+object putBucketVersioningCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/PutBucketVersioningCommand", "PutBucketVersioningCommand")
   @js.native
   class PutBucketVersioningCommand protected () extends Command[
           InputTypesUnion, 

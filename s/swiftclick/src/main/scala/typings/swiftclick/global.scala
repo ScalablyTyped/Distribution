@@ -1,12 +1,15 @@
 package typings.swiftclick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var SwiftClick: SwiftClickStatic = js.native
+  @JSGlobal("SwiftClick")
+  @js.native
+  def SwiftClick: SwiftClickStatic = js.native
+  @scala.inline
+  def SwiftClick_=(x: SwiftClickStatic): Unit = js.Dynamic.global.updateDynamic("SwiftClick")(x.asInstanceOf[js.Any])
 }

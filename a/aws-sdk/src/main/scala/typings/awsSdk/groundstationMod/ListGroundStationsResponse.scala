@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGroundStationsResponse extends js.Object {
+trait ListGroundStationsResponse extends StObject {
   
   /**
     * List of ground stations.
@@ -26,33 +27,21 @@ object ListGroundStationsResponse {
   }
   
   @scala.inline
-  implicit class ListGroundStationsResponseOps[Self <: ListGroundStationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListGroundStationsResponseMutableBuilder[Self <: ListGroundStationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroundStationList(value: GroundStationList): Self = StObject.set(x, "groundStationList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroundStationListUndefined: Self = StObject.set(x, "groundStationList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroundStationListVarargs(value: GroundStationData*): Self = StObject.set(x, "groundStationList", js.Array(value :_*))
     
     @scala.inline
-    def setGroundStationListVarargs(value: GroundStationData*): Self = this.set("groundStationList", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundStationList(value: GroundStationList): Self = this.set("groundStationList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroundStationList: Self = this.set("groundStationList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -1,21 +1,22 @@
 package typings.vegaTypings.scaleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _SortField extends js.Object
+trait _SortField extends StObject
 object _SortField {
   
   @scala.inline
-  def OrderSortOrder(order: SortOrder): _SortField = {
-    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_SortField]
+  def Op(op: ScaleField): typings.vegaTypings.anon.Op = {
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vegaTypings.anon.Op]
   }
   
   @scala.inline
-  def Op(op: ScaleField): _SortField = {
-    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_SortField]
+  def OrderSortOrder(order: SortOrder): typings.vegaTypings.anon.OrderSortOrder = {
+    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vegaTypings.anon.OrderSortOrder]
   }
 }

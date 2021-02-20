@@ -1,5 +1,6 @@
 package typings.regexpp.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object Alternative {
   }
   
   @scala.inline
-  implicit class AlternativeOps[Self <: Alternative] (val x: Self) extends AnyVal {
+  implicit class AlternativeMutableBuilder[Self <: Alternative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: Pattern | Group | CapturingGroup | LookaroundAssertion): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementsVarargs(value: Element*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[Element]): Self = this.set("elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: Pattern | Group | CapturingGroup | LookaroundAssertion): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Alternative): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.regexpp.regexppStrings.Alternative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,16 +6,16 @@ import typings.sqlite.interfacesMod.ISqlite.ConfigureOption
 import typings.sqlite.interfacesMod.ISqlite.RunResult
 import typings.sqlite.interfacesMod.ISqlite.SqlType
 import typings.sqlite.sqlite3Mod.Statement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sqlite/build/Database", JSImport.Namespace)
-@js.native
-object databaseMod extends js.Object {
+object databaseMod {
   
+  @JSImport("sqlite/build/Database", "Database")
   @js.native
-  class Database[Driver /* <: typings.sqlite.sqlite3Mod.Database */, Stmt /* <: Statement */] protected () extends js.Object {
+  class Database[Driver /* <: typings.sqlite.sqlite3Mod.Database */, Stmt /* <: Statement */] protected () extends StObject {
     def this(config: Config) = this()
     
     /**

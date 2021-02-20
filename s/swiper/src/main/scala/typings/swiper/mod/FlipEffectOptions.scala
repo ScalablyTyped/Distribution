@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlipEffectOptions extends js.Object {
+trait FlipEffectOptions extends StObject {
   
   var limitRotation: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object FlipEffectOptions {
   }
   
   @scala.inline
-  implicit class FlipEffectOptionsOps[Self <: FlipEffectOptions] (val x: Self) extends AnyVal {
+  implicit class FlipEffectOptionsMutableBuilder[Self <: FlipEffectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimitRotation(value: Boolean): Self = StObject.set(x, "limitRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitRotationUndefined: Self = StObject.set(x, "limitRotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitRotation(value: Boolean): Self = this.set("limitRotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimitRotation: Self = this.set("limitRotation", js.undefined)
-    
-    @scala.inline
-    def setSlideShadows(value: Boolean): Self = this.set("slideShadows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideShadows: Self = this.set("slideShadows", js.undefined)
+    def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
   }
 }

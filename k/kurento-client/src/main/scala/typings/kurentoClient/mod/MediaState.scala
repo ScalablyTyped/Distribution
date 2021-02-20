@@ -1,5 +1,6 @@
 package typings.kurentoClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.kurentoClient.kurentoClientStrings.DISCONNECTED
   - typings.kurentoClient.kurentoClientStrings.CONNECTED
 */
-trait MediaState extends js.Object
+trait MediaState extends StObject
 object MediaState {
   
   @scala.inline

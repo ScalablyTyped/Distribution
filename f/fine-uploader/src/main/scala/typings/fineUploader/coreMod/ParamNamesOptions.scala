@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParamNamesOptions extends js.Object {
+trait ParamNamesOptions extends StObject {
   
   /**
     * Name of the parameter passed with a chunked request that specifies the size in bytes of the associated chunk
@@ -58,54 +59,42 @@ object ParamNamesOptions {
   }
   
   @scala.inline
-  implicit class ParamNamesOptionsOps[Self <: ParamNamesOptions] (val x: Self) extends AnyVal {
+  implicit class ParamNamesOptionsMutableBuilder[Self <: ParamNamesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartByteOffset(value: String): Self = StObject.set(x, "partByteOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSize(value: String): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    def setPartByteOffsetUndefined: Self = StObject.set(x, "partByteOffset", js.undefined)
     
     @scala.inline
-    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    def setPartIndex(value: String): Self = StObject.set(x, "partIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartByteOffset(value: String): Self = this.set("partByteOffset", value.asInstanceOf[js.Any])
+    def setPartIndexUndefined: Self = StObject.set(x, "partIndex", js.undefined)
     
     @scala.inline
-    def deletePartByteOffset: Self = this.set("partByteOffset", js.undefined)
+    def setResuming(value: String): Self = StObject.set(x, "resuming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartIndex(value: String): Self = this.set("partIndex", value.asInstanceOf[js.Any])
+    def setResumingUndefined: Self = StObject.set(x, "resuming", js.undefined)
     
     @scala.inline
-    def deletePartIndex: Self = this.set("partIndex", js.undefined)
+    def setTotalFileSize(value: String): Self = StObject.set(x, "totalFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResuming(value: String): Self = this.set("resuming", value.asInstanceOf[js.Any])
+    def setTotalFileSizeUndefined: Self = StObject.set(x, "totalFileSize", js.undefined)
     
     @scala.inline
-    def deleteResuming: Self = this.set("resuming", js.undefined)
+    def setTotalParts(value: String): Self = StObject.set(x, "totalParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalFileSize(value: String): Self = this.set("totalFileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalFileSize: Self = this.set("totalFileSize", js.undefined)
-    
-    @scala.inline
-    def setTotalParts(value: String): Self = this.set("totalParts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalParts: Self = this.set("totalParts", js.undefined)
+    def setTotalPartsUndefined: Self = StObject.set(x, "totalParts", js.undefined)
   }
 }

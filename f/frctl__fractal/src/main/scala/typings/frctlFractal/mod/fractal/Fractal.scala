@@ -1,13 +1,14 @@
 package typings.frctlFractal.mod.fractal
 
 import typings.frctlFractal.mod.Fractal_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@frctl/fractal", "fractal.Fractal")
-@js.native
-object Fractal extends js.Object {
+object Fractal {
   
-  var `new`: Fractal_ = js.native
+  @JSImport("@frctl/fractal", "fractal.Fractal.new")
+  @js.native
+  val `new`: Fractal_ = js.native
 }

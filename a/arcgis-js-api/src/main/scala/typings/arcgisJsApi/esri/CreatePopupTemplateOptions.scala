@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.Object
 import typings.std.PropertyKey
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +38,21 @@ object CreatePopupTemplateOptions {
   }
   
   @scala.inline
-  implicit class CreatePopupTemplateOptionsOps[Self <: CreatePopupTemplateOptions] (val x: Self) extends AnyVal {
+  implicit class CreatePopupTemplateOptionsMutableBuilder[Self <: CreatePopupTemplateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreFieldTypes(value: js.Array[String]): Self = StObject.set(x, "ignoreFieldTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreFieldTypesUndefined: Self = StObject.set(x, "ignoreFieldTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreFieldTypesVarargs(value: String*): Self = StObject.set(x, "ignoreFieldTypes", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreFieldTypesVarargs(value: String*): Self = this.set("ignoreFieldTypes", js.Array(value :_*))
+    def setVisibleFieldNames(value: Set[String]): Self = StObject.set(x, "visibleFieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreFieldTypes(value: js.Array[String]): Self = this.set("ignoreFieldTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreFieldTypes: Self = this.set("ignoreFieldTypes", js.undefined)
-    
-    @scala.inline
-    def setVisibleFieldNames(value: Set[String]): Self = this.set("visibleFieldNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleFieldNames: Self = this.set("visibleFieldNames", js.undefined)
+    def setVisibleFieldNamesUndefined: Self = StObject.set(x, "visibleFieldNames", js.undefined)
   }
 }

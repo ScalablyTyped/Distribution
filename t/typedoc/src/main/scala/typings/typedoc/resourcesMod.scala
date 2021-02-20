@@ -4,16 +4,16 @@ import typings.typedoc.helpersMod.HelperStack
 import typings.typedoc.templatesMod.PartialStack
 import typings.typedoc.templatesMod.TemplateStack
 import typings.typedoc.themeMod.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/utils/resources", JSImport.Namespace)
-@js.native
-object resourcesMod extends js.Object {
+object resourcesMod {
   
+  @JSImport("typedoc/dist/lib/output/utils/resources", "Resources")
   @js.native
-  class Resources protected () extends js.Object {
+  class Resources protected () extends StObject {
     def this(theme: Theme) = this()
     
     def activate(): Boolean = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCertificateResponse extends js.Object {
+trait GetCertificateResponse extends StObject {
   
   /**
     * The ACM-issued certificate corresponding to the ARN specified as input.
@@ -26,30 +27,18 @@ object GetCertificateResponse {
   }
   
   @scala.inline
-  implicit class GetCertificateResponseOps[Self <: GetCertificateResponse] (val x: Self) extends AnyVal {
+  implicit class GetCertificateResponseMutableBuilder[Self <: GetCertificateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: CertificateBody): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateChain(value: CertificateChain): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
     @scala.inline
-    def setCertificate(value: CertificateBody): Self = this.set("Certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
-    
-    @scala.inline
-    def setCertificateChain(value: CertificateChain): Self = this.set("CertificateChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateChain: Self = this.set("CertificateChain", js.undefined)
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
   }
 }

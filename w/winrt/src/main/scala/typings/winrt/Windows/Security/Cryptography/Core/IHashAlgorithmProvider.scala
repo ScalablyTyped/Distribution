@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHashAlgorithmProvider extends js.Object {
+trait IHashAlgorithmProvider extends StObject {
   
   var algorithmName: String = js.native
   
@@ -30,30 +31,18 @@ object IHashAlgorithmProvider {
   }
   
   @scala.inline
-  implicit class IHashAlgorithmProviderOps[Self <: IHashAlgorithmProvider] (val x: Self) extends AnyVal {
+  implicit class IHashAlgorithmProviderMutableBuilder[Self <: IHashAlgorithmProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateHash(value: () => CryptographicHash): Self = StObject.set(x, "createHash", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashData(value: IBuffer => IBuffer): Self = StObject.set(x, "hashData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlgorithmName(value: String): Self = this.set("algorithmName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateHash(value: () => CryptographicHash): Self = this.set("createHash", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHashData(value: IBuffer => IBuffer): Self = this.set("hashData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHashLength(value: Double): Self = this.set("hashLength", value.asInstanceOf[js.Any])
+    def setHashLength(value: Double): Self = StObject.set(x, "hashLength", value.asInstanceOf[js.Any])
   }
 }

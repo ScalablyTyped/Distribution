@@ -24,6 +24,7 @@ import typings.chromeApps.chromeAppsStrings.mips_
 import typings.chromeApps.chromeAppsStrings.openbsd_
 import typings.chromeApps.chromeAppsStrings.win_
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 36.
   */
 @js.native
-trait PlatformInfo extends js.Object {
+trait PlatformInfo extends StObject {
   
   /**
     * The machine's processor architecture.
@@ -108,19 +109,7 @@ object PlatformInfo {
   }
   
   @scala.inline
-  implicit class PlatformInfoOps[Self <: PlatformInfo] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PlatformInfoMutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setArch(
@@ -132,7 +121,7 @@ object PlatformInfo {
             mips64_ | arm_ | `x86-64` | `x86-32` | mips_
           ]
         ]
-    ): Self = this.set("arch", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNacl_arch(
@@ -144,7 +133,7 @@ object PlatformInfo {
             mips64_ | arm_ | `x86-64` | `x86-32` | mips_
           ]
         ]
-    ): Self = this.set("nacl_arch", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOs(
@@ -156,6 +145,6 @@ object PlatformInfo {
             linux_ | openbsd_ | android_ | win_ | cros_ | mac_
           ]
         ]
-    ): Self = this.set("os", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
   }
 }

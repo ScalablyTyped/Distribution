@@ -50,13 +50,26 @@ import typings.vsoNodeApi.releaseInterfacesMod.ReleaseWorkItemRef
 import typings.vsoNodeApi.releaseInterfacesMod.SummaryMailSection
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/ReleaseApi", JSImport.Namespace)
-@js.native
-object releaseApiMod extends js.Object {
+object releaseApiMod {
+  
+  @JSImport("vso-node-api/ReleaseApi", "ReleaseApi")
+  @js.native
+  class ReleaseApi protected () extends IReleaseApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
+  /* static members */
+  object ReleaseApi {
+    
+    @JSImport("vso-node-api/ReleaseApi", "ReleaseApi.RESOURCE_AREA_ID")
+    @js.native
+    val RESOURCE_AREA_ID: String = js.native
+  }
   
   @js.native
   trait IReleaseApi extends ClientApiBase {
@@ -437,17 +450,5 @@ object releaseApiMod extends js.Object {
     def updateReleaseResource(releaseUpdateMetadata: ReleaseUpdateMetadata, project: String, releaseId: Double): js.Promise[Release] = js.native
     
     def updateReleaseSettings(releaseSettings: ReleaseSettings, project: String): js.Promise[ReleaseSettings] = js.native
-  }
-  
-  @js.native
-  class ReleaseApi protected () extends IReleaseApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
-  }
-  /* static members */
-  @js.native
-  object ReleaseApi extends js.Object {
-    
-    val RESOURCE_AREA_ID: String = js.native
   }
 }

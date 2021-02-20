@@ -1,14 +1,14 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.WorkflowServices")
-@js.native
-object WorkflowServices extends js.Object {
+object WorkflowServices {
   
   // TODO: comments, types
+  @JSGlobal("SP.WorkflowServices.InteropService")
   @js.native
   class InteropService protected ()
     extends typings.sharepoint.SP.WorkflowServices.InteropService {
@@ -17,14 +17,16 @@ object WorkflowServices extends js.Object {
       objectPath: typings.sharepoint.SP.ObjectPathStaticProperty
     ) = this()
   }
-  /* static members */
-  @js.native
-  object InteropService extends js.Object {
+  object InteropService {
     
+    /* static member */
+    @JSGlobal("SP.WorkflowServices.InteropService.getCurrent")
+    @js.native
     def getCurrent(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.WorkflowServices.InteropService = js.native
   }
   
   /** Represents a workflow definition and associated properties. */
+  @JSGlobal("SP.WorkflowServices.WorkflowDefinition")
   @js.native
   class WorkflowDefinition protected ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowDefinition {
@@ -32,35 +34,41 @@ object WorkflowServices extends js.Object {
   }
   
   /** Manages workflow definitions and workflow activity authoring. */
+  @JSGlobal("SP.WorkflowServices.WorkflowDeploymentService")
   @js.native
   class WorkflowDeploymentService ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowDeploymentService
   
   /** Represents an instance of a workflow association that performs on a list item the process that is defined in a workflow template */
+  @JSGlobal("SP.WorkflowServices.WorkflowInstance")
   @js.native
   class WorkflowInstance ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowInstance
   
   /** Reads the SharePoint workflow instances from the external workflow host and manages the instance execution. */
+  @JSGlobal("SP.WorkflowServices.WorkflowInstanceService")
   @js.native
   class WorkflowInstanceService ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowInstanceService
   
   /** Describes the workflow host configuration states and provides service objects that interact with the workflow */
+  @JSGlobal("SP.WorkflowServices.WorkflowServicesManager")
   @js.native
   class WorkflowServicesManager protected ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()
   }
-  /* static members */
-  @js.native
-  object WorkflowServicesManager extends js.Object {
+  object WorkflowServicesManager {
     
+    /* static member */
+    @JSGlobal("SP.WorkflowServices.WorkflowServicesManager.newObject")
+    @js.native
     def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager = js.native
   }
   
+  @JSGlobal("SP.WorkflowServices.WorkflowStatus")
   @js.native
-  object WorkflowStatus extends js.Object {
+  object WorkflowStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SP.WorkflowServices.WorkflowStatus with Double] = js.native
@@ -85,10 +93,12 @@ object WorkflowServices extends js.Object {
   }
   
   /** Base class representing subscriptions for the external workflow host. */
+  @JSGlobal("SP.WorkflowServices.WorkflowSubscription")
   @js.native
   class WorkflowSubscription ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowSubscription
   
+  @JSGlobal("SP.WorkflowServices.WorkflowSubscriptionService")
   @js.native
   class WorkflowSubscriptionService protected ()
     extends typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService {
@@ -97,10 +107,11 @@ object WorkflowServices extends js.Object {
       objectPath: typings.sharepoint.SP.ObjectPathStaticProperty
     ) = this()
   }
-  /* static members */
-  @js.native
-  object WorkflowSubscriptionService extends js.Object {
+  object WorkflowSubscriptionService {
     
+    /* static member */
+    @JSGlobal("SP.WorkflowServices.WorkflowSubscriptionService.getCurrent")
+    @js.native
     def getCurrent(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService = js.native
   }
 }

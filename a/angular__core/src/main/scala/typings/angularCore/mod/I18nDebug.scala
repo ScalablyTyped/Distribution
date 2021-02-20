@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait I18nDebug extends js.Object {
+trait I18nDebug extends StObject {
   
   /**
     * Human readable representation of the OpCode arrays.
@@ -25,27 +26,15 @@ object I18nDebug {
   }
   
   @scala.inline
-  implicit class I18nDebugOps[Self <: I18nDebug] (val x: Self) extends AnyVal {
+  implicit class I18nDebugMutableBuilder[Self <: I18nDebug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDebugVarargs(value: String*): Self = this.set("debug", js.Array(value :_*))
-    
-    @scala.inline
-    def setDebug(value: js.Array[String]): Self = this.set("debug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
   }
 }

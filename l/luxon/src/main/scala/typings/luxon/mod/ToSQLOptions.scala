@@ -1,11 +1,12 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToSQLOptions extends js.Object {
+trait ToSQLOptions extends StObject {
   
   var includeOffset: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ToSQLOptions {
   }
   
   @scala.inline
-  implicit class ToSQLOptionsOps[Self <: ToSQLOptions] (val x: Self) extends AnyVal {
+  implicit class ToSQLOptionsMutableBuilder[Self <: ToSQLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeOffset(value: Boolean): Self = StObject.set(x, "includeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeOffsetUndefined: Self = StObject.set(x, "includeOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeZone(value: Boolean): Self = StObject.set(x, "includeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOffset(value: Boolean): Self = this.set("includeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeOffset: Self = this.set("includeOffset", js.undefined)
-    
-    @scala.inline
-    def setIncludeZone(value: Boolean): Self = this.set("includeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeZone: Self = this.set("includeZone", js.undefined)
+    def setIncludeZoneUndefined: Self = StObject.set(x, "includeZone", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.youtube.YT
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoOrPlaylistSettings extends js.Object {
+trait VideoOrPlaylistSettings extends StObject {
   
   /**
     * Time, in seconds from the end of the (first) video, when to end playing.
@@ -31,36 +32,24 @@ object VideoOrPlaylistSettings {
   }
   
   @scala.inline
-  implicit class VideoOrPlaylistSettingsOps[Self <: VideoOrPlaylistSettings] (val x: Self) extends AnyVal {
+  implicit class VideoOrPlaylistSettingsMutableBuilder[Self <: VideoOrPlaylistSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndSecondsUndefined: Self = StObject.set(x, "endSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartSeconds(value: Double): Self = StObject.set(x, "startSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndSeconds(value: Double): Self = this.set("endSeconds", value.asInstanceOf[js.Any])
+    def setStartSecondsUndefined: Self = StObject.set(x, "startSeconds", js.undefined)
     
     @scala.inline
-    def deleteEndSeconds: Self = this.set("endSeconds", js.undefined)
+    def setSuggestedQuality(value: SuggestedVideoQuality): Self = StObject.set(x, "suggestedQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartSeconds(value: Double): Self = this.set("startSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartSeconds: Self = this.set("startSeconds", js.undefined)
-    
-    @scala.inline
-    def setSuggestedQuality(value: SuggestedVideoQuality): Self = this.set("suggestedQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedQuality: Self = this.set("suggestedQuality", js.undefined)
+    def setSuggestedQualityUndefined: Self = StObject.set(x, "suggestedQuality", js.undefined)
   }
 }

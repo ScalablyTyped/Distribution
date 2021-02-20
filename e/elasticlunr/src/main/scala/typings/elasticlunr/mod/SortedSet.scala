@@ -1,12 +1,13 @@
 package typings.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "SortedSet")
 @js.native
-class SortedSet[T] () extends js.Object {
+class SortedSet[T] () extends StObject {
   
   def add(args: js.Any*): Unit = js.native
   
@@ -33,10 +34,10 @@ class SortedSet[T] () extends js.Object {
   
   def union(otherSet: SortedSet[T]): SortedSet[T] = js.native
 }
-/* static members */
-@JSImport("elasticlunr", "SortedSet")
-@js.native
-object SortedSet extends js.Object {
+object SortedSet {
   
+  /* static member */
+  @JSImport("elasticlunr", "SortedSet.load")
+  @js.native
   def load[T](serialisedData: js.Array[T]): SortedSet[T] = js.native
 }

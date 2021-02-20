@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object FontHintingEnumValues {
   }
   
   @scala.inline
-  implicit class FontHintingEnumValuesOps[Self <: FontHintingEnumValues] (val x: Self) extends AnyVal {
+  implicit class FontHintingEnumValuesMutableBuilder[Self <: FontHintingEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: FontHinting): Self = StObject.set(x, "Full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNone(value: FontHinting): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormal(value: FontHinting): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: FontHinting): Self = this.set("Full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: FontHinting): Self = this.set("None", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: FontHinting): Self = this.set("Normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlight(value: FontHinting): Self = this.set("Slight", value.asInstanceOf[js.Any])
+    def setSlight(value: FontHinting): Self = StObject.set(x, "Slight", value.asInstanceOf[js.Any])
   }
 }

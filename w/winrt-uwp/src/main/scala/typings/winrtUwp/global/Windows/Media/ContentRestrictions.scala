@@ -1,18 +1,18 @@
 package typings.winrtUwp.global.Windows.Media
 
 import typings.winrtUwp.Windows.Media.ContentRestrictions.RatedContentCategory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes that define Family Safety settings for a Windows user. */
-@JSGlobal("Windows.Media.ContentRestrictions")
-@js.native
-object ContentRestrictions extends js.Object {
+object ContentRestrictions {
   
   /** Specifies how the content is treated, based on the user's content settings. */
+  @JSGlobal("Windows.Media.ContentRestrictions.ContentAccessRestrictionLevel")
   @js.native
-  object ContentAccessRestrictionLevel extends js.Object {
+  object ContentAccessRestrictionLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -29,13 +29,15 @@ object ContentRestrictions extends js.Object {
   }
   
   /** Contains information used to filter an app's content catalog. */
+  @JSGlobal("Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy")
   @js.native
   abstract class ContentRestrictionsBrowsePolicy ()
     extends typings.winrtUwp.Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy
   
   /** Specifies the type of a piece of content. */
+  @JSGlobal("Windows.Media.ContentRestrictions.RatedContentCategory")
   @js.native
-  object RatedContentCategory extends js.Object {
+  object RatedContentCategory extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -56,6 +58,7 @@ object ContentRestrictions extends js.Object {
   }
   
   /** Contains information about a piece of content. An app creates a RatedContentDescription object, for each piece of content to be used in the GetRestrictionLevelAsync and RequestContentAccessAsync methods. */
+  @JSGlobal("Windows.Media.ContentRestrictions.RatedContentDescription")
   @js.native
   class RatedContentDescription protected ()
     extends typings.winrtUwp.Windows.Media.ContentRestrictions.RatedContentDescription {
@@ -69,6 +72,7 @@ object ContentRestrictions extends js.Object {
   }
   
   /** Contains all behavior and functionality related to a user's Family Safety content settings. */
+  @JSGlobal("Windows.Media.ContentRestrictions.RatedContentRestrictions")
   @js.native
   /** Initializes a new instance of the RatedContentRestrictions class. */
   class RatedContentRestrictions ()

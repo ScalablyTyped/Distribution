@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveCustomerResult extends js.Object {
+trait ResolveCustomerResult extends StObject {
   
   /**
     * The CustomerIdentifier is used to identify an individual customer in your application. Calls to BatchMeterUsage require CustomerIdentifiers for each UsageRecord.
@@ -26,30 +27,18 @@ object ResolveCustomerResult {
   }
   
   @scala.inline
-  implicit class ResolveCustomerResultOps[Self <: ResolveCustomerResult] (val x: Self) extends AnyVal {
+  implicit class ResolveCustomerResultMutableBuilder[Self <: ResolveCustomerResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerIdentifierUndefined: Self = StObject.set(x, "CustomerIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerIdentifier(value: CustomerIdentifier): Self = this.set("CustomerIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerIdentifier: Self = this.set("CustomerIdentifier", js.undefined)
-    
-    @scala.inline
-    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductCode: Self = this.set("ProductCode", js.undefined)
+    def setProductCodeUndefined: Self = StObject.set(x, "ProductCode", js.undefined)
   }
 }

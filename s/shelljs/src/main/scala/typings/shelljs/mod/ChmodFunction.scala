@@ -1,11 +1,12 @@
 package typings.shelljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChmodFunction extends js.Object {
+trait ChmodFunction extends StObject {
   
   /**
     * Alters the permissions of a file or directory by either specifying the absolute
@@ -21,8 +22,8 @@ trait ChmodFunction extends js.Object {
     * @param file The file to use.
     * @return     Object with shell exit code, stderr and stdout.
     */
-  def apply(mode: String, file: String): ShellString = js.native
-  def apply(mode: Double, file: String): ShellString = js.native
+  def apply(mode: String, file: String): typings.shelljs.mod.ShellString = js.native
+  def apply(mode: Double, file: String): typings.shelljs.mod.ShellString = js.native
   /**
     * Alters the permissions of a file or directory by either specifying the absolute
     * permissions in octal form or expressing the changes in symbols.
@@ -41,6 +42,6 @@ trait ChmodFunction extends js.Object {
     * @param file    The file to use.
     * @return        Object with shell exit code, stderr and stdout.
     */
-  def apply(options: String, mode: String, file: String): ShellString = js.native
-  def apply(options: String, mode: Double, file: String): ShellString = js.native
+  def apply(options: String, mode: String, file: String): typings.shelljs.mod.ShellString = js.native
+  def apply(options: String, mode: Double, file: String): typings.shelljs.mod.ShellString = js.native
 }

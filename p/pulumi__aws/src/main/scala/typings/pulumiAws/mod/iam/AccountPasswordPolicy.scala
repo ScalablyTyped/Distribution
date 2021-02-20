@@ -5,6 +5,7 @@ import typings.pulumiAws.accountPasswordPolicyMod.AccountPasswordPolicyState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class AccountPasswordPolicy protected ()
   def this(name: String, args: AccountPasswordPolicyArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "iam.AccountPasswordPolicy")
-@js.native
-object AccountPasswordPolicy extends js.Object {
+object AccountPasswordPolicy {
   
   /**
     * Get an existing AccountPasswordPolicy resource's state with the given name, ID, and optional extra
@@ -39,14 +38,24 @@ object AccountPasswordPolicy extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws", "iam.AccountPasswordPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.accountPasswordPolicyMod.AccountPasswordPolicy = js.native
+  @JSImport("@pulumi/aws", "iam.AccountPasswordPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.accountPasswordPolicyMod.AccountPasswordPolicy = js.native
+  @JSImport("@pulumi/aws", "iam.AccountPasswordPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: AccountPasswordPolicyState): typings.pulumiAws.accountPasswordPolicyMod.AccountPasswordPolicy = js.native
+  @JSImport("@pulumi/aws", "iam.AccountPasswordPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: AccountPasswordPolicyState, opts: CustomResourceOptions): typings.pulumiAws.accountPasswordPolicyMod.AccountPasswordPolicy = js.native
   
   /**
     * Returns true if the given object is an instance of AccountPasswordPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "iam.AccountPasswordPolicy.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean = js.native
 }

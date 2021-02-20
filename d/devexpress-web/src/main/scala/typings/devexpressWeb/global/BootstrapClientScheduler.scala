@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class BootstrapClientScheduler ()
   extends typings.devexpressWeb.BootstrapClientScheduler
-/* static members */
-@JSGlobal("BootstrapClientScheduler")
-@js.native
-object BootstrapClientScheduler extends js.Object {
+object BootstrapClientScheduler {
   
+  /* static member */
+  @JSGlobal("BootstrapClientScheduler.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientScheduler = js.native
 }

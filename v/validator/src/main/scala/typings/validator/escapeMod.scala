@@ -1,15 +1,16 @@
 package typings.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("validator/lib/escape", JSImport.Namespace)
-@js.native
-object escapeMod extends js.Object {
+object escapeMod {
   
   /**
     * Replace `<`, `>`, `&`, `'`, `"` and `/` with HTML entities.
     */
+  @JSImport("validator/lib/escape", JSImport.Default)
+  @js.native
   def default(input: String): String = js.native
 }

@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfiniteHitsProvided[THit] extends js.Object {
+trait InfiniteHitsProvided[THit] extends StObject {
   
   /** indicates if there are more pages to load */
   var hasMore: Boolean = js.native
@@ -34,36 +35,24 @@ object InfiniteHitsProvided {
   }
   
   @scala.inline
-  implicit class InfiniteHitsProvidedOps[Self <: InfiniteHitsProvided[_], THit] (val x: Self with InfiniteHitsProvided[THit]) extends AnyVal {
+  implicit class InfiniteHitsProvidedMutableBuilder[Self <: InfiniteHitsProvided[_], THit] (val x: Self with InfiniteHitsProvided[THit]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMore(value: Boolean): Self = this.set("hasMore", value.asInstanceOf[js.Any])
+    def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
     @scala.inline
-    def setHasPrevious(value: Boolean): Self = this.set("hasPrevious", value.asInstanceOf[js.Any])
+    def setRefineNext(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refineNext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHitsVarargs(value: THit*): Self = this.set("hits", js.Array(value :_*))
-    
-    @scala.inline
-    def setHits(value: js.Array[THit]): Self = this.set("hits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefineNext(value: /* repeated */ js.Any => js.Any): Self = this.set("refineNext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRefinePrevious(value: /* repeated */ js.Any => js.Any): Self = this.set("refinePrevious", js.Any.fromFunction1(value))
+    def setRefinePrevious(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refinePrevious", js.Any.fromFunction1(value))
   }
 }

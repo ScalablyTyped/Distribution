@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.inside
   - typings.highcharts.highchartsStrings.outside
 */
-trait OptionsMinorTickPositionValue extends js.Object
+trait OptionsMinorTickPositionValue extends StObject
 object OptionsMinorTickPositionValue {
   
   @scala.inline

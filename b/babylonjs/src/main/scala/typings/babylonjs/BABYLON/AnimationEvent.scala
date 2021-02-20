@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationEvent extends js.Object {
+trait AnimationEvent extends StObject {
   
   /** @hidden */
   def _clone(): AnimationEvent = js.native
@@ -33,36 +34,24 @@ object AnimationEvent {
   }
   
   @scala.inline
-  implicit class AnimationEventOps[Self <: AnimationEvent] (val x: Self) extends AnyVal {
+  implicit class AnimationEventMutableBuilder[Self <: AnimationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Double => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDone(value: Boolean): Self = StObject.set(x, "isDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_clone(value: () => AnimationEvent): Self = this.set("_clone", js.Any.fromFunction0(value))
+    def setOnlyOnce(value: Boolean): Self = StObject.set(x, "onlyOnce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Double => Unit): Self = this.set("action", js.Any.fromFunction1(value))
+    def setOnlyOnceUndefined: Self = StObject.set(x, "onlyOnce", js.undefined)
     
     @scala.inline
-    def setFrame(value: Double): Self = this.set("frame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDone(value: Boolean): Self = this.set("isDone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnlyOnce(value: Boolean): Self = this.set("onlyOnce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnlyOnce: Self = this.set("onlyOnce", js.undefined)
+    def set_clone(value: () => AnimationEvent): Self = StObject.set(x, "_clone", js.Any.fromFunction0(value))
   }
 }

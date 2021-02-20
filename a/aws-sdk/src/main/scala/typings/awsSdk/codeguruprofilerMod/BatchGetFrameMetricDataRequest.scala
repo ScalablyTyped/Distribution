@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetFrameMetricDataRequest extends js.Object {
+trait BatchGetFrameMetricDataRequest extends StObject {
   
   /**
     *  The end time of the time period for the returned time series values. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
@@ -46,54 +47,42 @@ object BatchGetFrameMetricDataRequest {
   }
   
   @scala.inline
-  implicit class BatchGetFrameMetricDataRequestOps[Self <: BatchGetFrameMetricDataRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetFrameMetricDataRequestMutableBuilder[Self <: BatchGetFrameMetricDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameMetrics(value: FrameMetrics): Self = StObject.set(x, "frameMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    def setFrameMetricsUndefined: Self = StObject.set(x, "frameMetrics", js.undefined)
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setFrameMetricsVarargs(value: FrameMetric*): Self = StObject.set(x, "frameMetrics", js.Array(value :_*))
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameMetricsVarargs(value: FrameMetric*): Self = this.set("frameMetrics", js.Array(value :_*))
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setFrameMetrics(value: FrameMetrics): Self = this.set("frameMetrics", value.asInstanceOf[js.Any])
+    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrameMetrics: Self = this.set("frameMetrics", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setTargetResolution(value: AggregationPeriod): Self = StObject.set(x, "targetResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setTargetResolution(value: AggregationPeriod): Self = this.set("targetResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResolution: Self = this.set("targetResolution", js.undefined)
+    def setTargetResolutionUndefined: Self = StObject.set(x, "targetResolution", js.undefined)
   }
 }

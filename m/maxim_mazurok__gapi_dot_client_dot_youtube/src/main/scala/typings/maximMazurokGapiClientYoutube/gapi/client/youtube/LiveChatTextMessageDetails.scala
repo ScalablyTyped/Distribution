@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveChatTextMessageDetails extends js.Object {
+trait LiveChatTextMessageDetails extends StObject {
   
   /** The user's message. */
   var messageText: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object LiveChatTextMessageDetails {
   }
   
   @scala.inline
-  implicit class LiveChatTextMessageDetailsOps[Self <: LiveChatTextMessageDetails] (val x: Self) extends AnyVal {
+  implicit class LiveChatTextMessageDetailsMutableBuilder[Self <: LiveChatTextMessageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageText(value: String): Self = this.set("messageText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageText: Self = this.set("messageText", js.undefined)
+    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
   }
 }

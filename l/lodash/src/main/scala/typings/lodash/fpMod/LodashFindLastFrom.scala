@@ -4,12 +4,13 @@ import typings.lodash.mod.List
 import typings.lodash.mod.ValueIterateeCustom
 import typings.lodash.mod.ValueIteratorTypeGuard
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFindLastFrom extends js.Object {
+trait LodashFindLastFrom extends StObject {
   
   def apply(predicate: __, fromIndex: Double): LodashFindLastFrom1x2 = js.native
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): LodashFindLastFrom2x1[T] = js.native

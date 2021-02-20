@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorChange extends js.Object {
+trait EditorChange extends StObject {
   
   /** Position (in the pre-change coordinate system) where the change started. */
   var from: Position = js.native
@@ -31,45 +32,33 @@ object EditorChange {
   }
   
   @scala.inline
-  implicit class EditorChangeOps[Self <: EditorChange] (val x: Self) extends AnyVal {
+  implicit class EditorChangeMutableBuilder[Self <: EditorChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def setFrom(value: Position): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setRemoved(value: js.Array[String]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
+    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
     @scala.inline
-    def setText(value: js.Array[String]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setRemovedVarargs(value: String*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
     @scala.inline
-    def setTo(value: Position): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
-    
-    @scala.inline
-    def setRemovedVarargs(value: String*): Self = this.set("removed", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoved(value: js.Array[String]): Self = this.set("removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoved: Self = this.set("removed", js.undefined)
+    def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

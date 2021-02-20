@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitializeClusterRequest extends js.Object {
+trait InitializeClusterRequest extends StObject {
   
   /**
     * The identifier (ID) of the cluster that you are claiming. To find the cluster ID, use DescribeClusters.
@@ -31,27 +32,15 @@ object InitializeClusterRequest {
   }
   
   @scala.inline
-  implicit class InitializeClusterRequestOps[Self <: InitializeClusterRequest] (val x: Self) extends AnyVal {
+  implicit class InitializeClusterRequestMutableBuilder[Self <: InitializeClusterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignedCert(value: Cert): Self = StObject.set(x, "SignedCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignedCert(value: Cert): Self = this.set("SignedCert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrustAnchor(value: Cert): Self = this.set("TrustAnchor", value.asInstanceOf[js.Any])
+    def setTrustAnchor(value: Cert): Self = StObject.set(x, "TrustAnchor", value.asInstanceOf[js.Any])
   }
 }

@@ -11,13 +11,14 @@ import typings.reactIntl.reactIntlStrings.none
 import typings.reactIntl.reactIntlStrings.region
 import typings.reactIntl.reactIntlStrings.script
 import typings.reactIntl.reactIntlStrings.short
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNamesOptions & {  value :string | number | object} */
 @js.native
-trait DisplayNamesOptionsvalues extends js.Object {
+trait DisplayNamesOptionsvalues extends StObject {
   
   var fallback: js.UndefOr[code | none] = js.native
   
@@ -39,42 +40,30 @@ object DisplayNamesOptionsvalues {
   }
   
   @scala.inline
-  implicit class DisplayNamesOptionsvaluesOps[Self <: DisplayNamesOptionsvalues] (val x: Self) extends AnyVal {
+  implicit class DisplayNamesOptionsvaluesMutableBuilder[Self <: DisplayNamesOptionsvalues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: language | region | script | currency): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     @scala.inline
-    def setValue(value: String | Double | js.Object): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setStyle(value: narrow | short | long): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback(value: code | none): Self = this.set("fallback", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteFallback: Self = this.set("fallback", js.undefined)
+    def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleMatcher(value: lookup | (`best fit`)): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocaleMatcher: Self = this.set("localeMatcher", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: narrow | short | long): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setValue(value: String | Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

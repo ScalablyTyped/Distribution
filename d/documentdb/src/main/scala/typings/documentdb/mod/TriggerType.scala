@@ -2,6 +2,7 @@ package typings.documentdb.mod
 
 import typings.documentdb.documentdbStrings.post_
 import typings.documentdb.documentdbStrings.pre_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.documentdb.documentdbStrings.pre_
   - typings.documentdb.documentdbStrings.post_
 */
-trait TriggerType extends js.Object
+trait TriggerType extends StObject
 object TriggerType {
   
   @scala.inline

@@ -1,11 +1,14 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
+  
   /**
     * Create the document referred to by the provided `DocumentReference`.
     * The operation will fail the transaction if a document exists at the
@@ -16,6 +19,7 @@ trait Transaction extends js.Object {
     * @return This `Transaction` instance. Used for chaining method calls.
     */
   def create[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
+  
   /**
     * Deletes the document referred to by the provided `DocumentReference`.
     *
@@ -25,6 +29,7 @@ trait Transaction extends js.Object {
     */
   def delete(documentRef: DocumentReference[_]): Transaction = js.native
   def delete(documentRef: DocumentReference[_], precondition: Precondition): Transaction = js.native
+  
   /**
     * Reads the document referenced by the provided `DocumentReference.`
     * Holds a pessimistic lock on the returned document.
@@ -41,6 +46,7 @@ trait Transaction extends js.Object {
     * @return A QuerySnapshot for the retrieved data.
     */
   def get[T](query: Query[T]): js.Promise[QuerySnapshot[T]] = js.native
+  
   /**
     * Retrieves multiple documents from Firestore. Holds a pessimistic lock on
     * all returned documents.
@@ -55,7 +61,9 @@ trait Transaction extends js.Object {
     * @return A Promise that resolves with an array of resulting document
     * snapshots.
     */
-  def getAll[T](documentRefsOrReadOptions: (DocumentReference[DocumentData] | ReadOptions)*): js.Promise[js.Array[DocumentSnapshot[T]]] = js.native
+  def getAll[T](documentRefsOrReadOptions: (DocumentReference[T] | ReadOptions)*): js.Promise[js.Array[DocumentSnapshot[T]]] = js.native
+  
+  def set[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
   /**
     * Writes to the document referred to by the provided `DocumentReference`.
     * If the document does not exist yet, it will be created. If you pass
@@ -66,8 +74,8 @@ trait Transaction extends js.Object {
     * @param options An object to configure the set behavior.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def set[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
-  def set[T](documentRef: DocumentReference[T], data: T, options: SetOptions): Transaction = js.native
+  def set[T](documentRef: DocumentReference[T], data: Partial[T], options: SetOptions): Transaction = js.native
+  
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -106,4 +114,3 @@ trait Transaction extends js.Object {
   def update(documentRef: DocumentReference[_], field: String, value: js.Any, fieldsOrPrecondition: js.Any*): Transaction = js.native
   def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, fieldsOrPrecondition: js.Any*): Transaction = js.native
 }
-

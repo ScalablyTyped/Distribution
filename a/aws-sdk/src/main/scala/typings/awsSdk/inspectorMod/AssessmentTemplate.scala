@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssessmentTemplate extends js.Object {
+trait AssessmentTemplate extends StObject {
   
   /**
     * The ARN of the assessment template.
@@ -70,54 +71,42 @@ object AssessmentTemplate {
   }
   
   @scala.inline
-  implicit class AssessmentTemplateOps[Self <: AssessmentTemplate] (val x: Self) extends AnyVal {
+  implicit class AssessmentTemplateMutableBuilder[Self <: AssessmentTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentRunCount(value: ArnCount): Self = StObject.set(x, "assessmentRunCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentRunCount(value: ArnCount): Self = this.set("assessmentRunCount", value.asInstanceOf[js.Any])
+    def setDurationInSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentTargetArn(value: Arn): Self = this.set("assessmentTargetArn", value.asInstanceOf[js.Any])
+    def setLastAssessmentRunArn(value: Arn): Self = StObject.set(x, "lastAssessmentRunArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setLastAssessmentRunArnUndefined: Self = StObject.set(x, "lastAssessmentRunArn", js.undefined)
     
     @scala.inline
-    def setDurationInSeconds(value: AssessmentRunDuration): Self = this.set("durationInSeconds", value.asInstanceOf[js.Any])
+    def setName(value: AssessmentTemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AssessmentTemplateName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
     
     @scala.inline
-    def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    def setUserAttributesForFindings(value: UserAttributeList): Self = StObject.set(x, "userAttributesForFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributesForFindingsVarargs(value: Attribute*): Self = this.set("userAttributesForFindings", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserAttributesForFindings(value: UserAttributeList): Self = this.set("userAttributesForFindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastAssessmentRunArn(value: Arn): Self = this.set("lastAssessmentRunArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAssessmentRunArn: Self = this.set("lastAssessmentRunArn", js.undefined)
+    def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value :_*))
   }
 }

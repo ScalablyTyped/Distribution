@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDisassociateScramSecretResponse extends js.Object {
+trait BatchDisassociateScramSecretResponse extends StObject {
   
   /**
     * 
@@ -30,33 +31,21 @@ object BatchDisassociateScramSecretResponse {
   }
   
   @scala.inline
-  implicit class BatchDisassociateScramSecretResponseOps[Self <: BatchDisassociateScramSecretResponse] (val x: Self) extends AnyVal {
+  implicit class BatchDisassociateScramSecretResponseMutableBuilder[Self <: BatchDisassociateScramSecretResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnprocessedScramSecrets(value: listOfUnprocessedScramSecret): Self = StObject.set(x, "UnprocessedScramSecrets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    def setUnprocessedScramSecretsUndefined: Self = StObject.set(x, "UnprocessedScramSecrets", js.undefined)
     
     @scala.inline
-    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedScramSecretsVarargs(value: UnprocessedScramSecret*): Self = this.set("UnprocessedScramSecrets", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedScramSecrets(value: listOfUnprocessedScramSecret): Self = this.set("UnprocessedScramSecrets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedScramSecrets: Self = this.set("UnprocessedScramSecrets", js.undefined)
+    def setUnprocessedScramSecretsVarargs(value: UnprocessedScramSecret*): Self = StObject.set(x, "UnprocessedScramSecrets", js.Array(value :_*))
   }
 }

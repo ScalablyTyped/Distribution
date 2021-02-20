@@ -3,6 +3,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import typings.stellarSdk.horizonApiMod.Horizon.Claimant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,45 +45,33 @@ object ClaimableBalanceRecord {
   }
   
   @scala.inline
-  implicit class ClaimableBalanceRecordOps[Self <: ClaimableBalanceRecord] (val x: Self) extends AnyVal {
+  implicit class ClaimableBalanceRecordMutableBuilder[Self <: ClaimableBalanceRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsset(value: String): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaimants(value: js.Array[Claimant]): Self = StObject.set(x, "claimants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setClaimantsVarargs(value: Claimant*): Self = StObject.set(x, "claimants", js.Array(value :_*))
     
     @scala.inline
-    def setAsset(value: String): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimantsVarargs(value: Claimant*): Self = this.set("claimants", js.Array(value :_*))
+    def setLast_modified_ledger(value: Double): Self = StObject.set(x, "last_modified_ledger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimants(value: js.Array[Claimant]): Self = this.set("claimants", value.asInstanceOf[js.Any])
+    def setPaging_token(value: String): Self = StObject.set(x, "paging_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSponsor(value: String): Self = StObject.set(x, "sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_modified_ledger(value: Double): Self = this.set("last_modified_ledger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaging_token(value: String): Self = this.set("paging_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSponsor(value: String): Self = this.set("sponsor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsor: Self = this.set("sponsor", js.undefined)
+    def setSponsorUndefined: Self = StObject.set(x, "sponsor", js.undefined)
   }
 }

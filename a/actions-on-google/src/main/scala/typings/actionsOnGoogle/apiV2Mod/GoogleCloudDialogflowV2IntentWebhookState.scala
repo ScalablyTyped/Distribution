@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.apiV2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.WEBHOOK_STATE_ENABLED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING
 */
-trait GoogleCloudDialogflowV2IntentWebhookState extends js.Object
+trait GoogleCloudDialogflowV2IntentWebhookState extends StObject
 object GoogleCloudDialogflowV2IntentWebhookState {
   
   @scala.inline

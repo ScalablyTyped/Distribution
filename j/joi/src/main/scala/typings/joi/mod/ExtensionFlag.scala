@@ -1,11 +1,12 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionFlag extends js.Object {
+trait ExtensionFlag extends StObject {
   
   var default: js.UndefOr[js.Any] = js.native
   
@@ -20,30 +21,18 @@ object ExtensionFlag {
   }
   
   @scala.inline
-  implicit class ExtensionFlagOps[Self <: ExtensionFlag] (val x: Self) extends AnyVal {
+  implicit class ExtensionFlagMutableBuilder[Self <: ExtensionFlag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetter(value: String): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
-    
-    @scala.inline
-    def setSetter(value: String): Self = this.set("setter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetter: Self = this.set("setter", js.undefined)
+    def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
   }
 }

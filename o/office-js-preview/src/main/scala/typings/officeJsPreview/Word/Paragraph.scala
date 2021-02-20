@@ -29,6 +29,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Select
 import typings.officeJsPreview.officeJsPreviewStrings.Start
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.Whole
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

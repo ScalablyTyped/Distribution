@@ -1,12 +1,13 @@
 package typings.reactBootstrapTypeahead.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadContext<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.HintedInputContextKeys> */
 @js.native
-trait HintedInputContext[T /* <: TypeaheadModel */] extends js.Object {
+trait HintedInputContext[T /* <: TypeaheadModel */] extends StObject {
   
   var hintText: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object HintedInputContext {
   }
   
   @scala.inline
-  implicit class HintedInputContextOps[Self <: HintedInputContext[_], T /* <: TypeaheadModel */] (val x: Self with HintedInputContext[T]) extends AnyVal {
+  implicit class HintedInputContextMutableBuilder[Self <: HintedInputContext[_], T /* <: TypeaheadModel */] (val x: Self with HintedInputContext[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialItem(value: T): Self = StObject.set(x, "initialItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHintText(value: String): Self = this.set("hintText", value.asInstanceOf[js.Any])
+    def setInitialItemUndefined: Self = StObject.set(x, "initialItem", js.undefined)
     
     @scala.inline
-    def deleteHintText: Self = this.set("hintText", js.undefined)
+    def setOnAdd(value: /* option */ T => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialItem(value: T): Self = this.set("initialItem", value.asInstanceOf[js.Any])
+    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
     @scala.inline
-    def deleteInitialItem: Self = this.set("initialItem", js.undefined)
+    def setSelectHintOnEnter(value: Boolean): Self = StObject.set(x, "selectHintOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAdd(value: /* option */ T => Unit): Self = this.set("onAdd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnAdd: Self = this.set("onAdd", js.undefined)
-    
-    @scala.inline
-    def setSelectHintOnEnter(value: Boolean): Self = this.set("selectHintOnEnter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectHintOnEnter: Self = this.set("selectHintOnEnter", js.undefined)
+    def setSelectHintOnEnterUndefined: Self = StObject.set(x, "selectHintOnEnter", js.undefined)
   }
 }

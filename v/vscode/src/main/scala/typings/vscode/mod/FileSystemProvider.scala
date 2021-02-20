@@ -6,12 +6,13 @@ import typings.vscode.anon.Create
 import typings.vscode.anon.Excludes
 import typings.vscode.anon.Overwrite
 import typings.vscode.anon.Recursive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemProvider extends js.Object {
+trait FileSystemProvider extends StObject {
   
   /**
     * Copy files or folders. Implementing this function is optional but it will speedup

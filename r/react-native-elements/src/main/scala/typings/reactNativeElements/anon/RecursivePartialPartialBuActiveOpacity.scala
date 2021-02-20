@@ -7,13 +7,14 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.ElementObject
 import typings.reactNativeElements.mod.InnerBorderStyleProperty
 import typings.reactNativeElements.mod.RecursivePartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.ButtonGroupProps>> */
 @js.native
-trait RecursivePartialPartialBuActiveOpacity extends js.Object {
+trait RecursivePartialPartialBuActiveOpacity extends StObject {
   
   var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[_]]]] = js.native
   
@@ -74,168 +75,156 @@ object RecursivePartialPartialBuActiveOpacity {
   }
   
   @scala.inline
-  implicit class RecursivePartialPartialBuActiveOpacityOps[Self <: RecursivePartialPartialBuActiveOpacity] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialPartialBuActiveOpacityMutableBuilder[Self <: RecursivePartialPartialBuActiveOpacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOpacity(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "buttonContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setButtonContainerStyleUndefined: Self = StObject.set(x, "buttonContainerStyle", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("Component", js.undefined)
+    def setButtonStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOpacity(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
     @scala.inline
-    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    def setButtons(value: RecursivePartial[js.UndefOr[js.Array[ElementObject | String]]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("buttonContainerStyle", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteButtonContainerStyle: Self = this.set("buttonContainerStyle", js.undefined)
+    def setComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
     @scala.inline
-    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    def setContainerBorderRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "containerBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: RecursivePartial[js.UndefOr[js.Array[ElementObject | String]]]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setContainerBorderRadiusUndefined: Self = StObject.set(x, "containerBorderRadius", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerBorderRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("containerBorderRadius", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteContainerBorderRadius: Self = this.set("containerBorderRadius", js.undefined)
+    def setDisabled(value: RecursivePartial[js.UndefOr[Boolean | js.Array[Double]]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setDisabledSelectedStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "disabledSelectedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setDisabledSelectedStyleUndefined: Self = StObject.set(x, "disabledSelectedStyle", js.undefined)
     
     @scala.inline
-    def setDisabled(value: RecursivePartial[js.UndefOr[Boolean | js.Array[Double]]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabledSelectedTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "disabledSelectedTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setDisabledSelectedTextStyleUndefined: Self = StObject.set(x, "disabledSelectedTextStyle", js.undefined)
     
     @scala.inline
-    def setDisabledSelectedStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("disabledSelectedStyle", value.asInstanceOf[js.Any])
+    def setDisabledStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledSelectedStyle: Self = this.set("disabledSelectedStyle", js.undefined)
+    def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
     
     @scala.inline
-    def setDisabledSelectedTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("disabledSelectedTextStyle", value.asInstanceOf[js.Any])
+    def setDisabledTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "disabledTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledSelectedTextStyle: Self = this.set("disabledSelectedTextStyle", js.undefined)
+    def setDisabledTextStyleUndefined: Self = StObject.set(x, "disabledTextStyle", js.undefined)
     
     @scala.inline
-    def setDisabledStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("disabledStyle", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisabledStyle: Self = this.set("disabledStyle", js.undefined)
+    def setInnerBorderStyle(value: RecursivePartial[js.UndefOr[InnerBorderStyleProperty]]): Self = StObject.set(x, "innerBorderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("disabledTextStyle", value.asInstanceOf[js.Any])
+    def setInnerBorderStyleUndefined: Self = StObject.set(x, "innerBorderStyle", js.undefined)
     
     @scala.inline
-    def deleteDisabledTextStyle: Self = this.set("disabledTextStyle", js.undefined)
+    def setOnHideUnderlay(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onHideUnderlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerBorderStyle(value: RecursivePartial[js.UndefOr[InnerBorderStyleProperty]]): Self = this.set("innerBorderStyle", value.asInstanceOf[js.Any])
+    def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
     
     @scala.inline
-    def deleteInnerBorderStyle: Self = this.set("innerBorderStyle", js.undefined)
+    def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHideUnderlay(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onHideUnderlay", value.asInstanceOf[js.Any])
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteOnHideUnderlay: Self = this.set("onHideUnderlay", js.undefined)
+    def setOnShowUnderlay(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onShowUnderlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]]]): Self = this.set("onPress", value.asInstanceOf[js.Any])
+    def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setSelectMultiple(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "selectMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShowUnderlay(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onShowUnderlay", value.asInstanceOf[js.Any])
+    def setSelectMultipleUndefined: Self = StObject.set(x, "selectMultiple", js.undefined)
     
     @scala.inline
-    def deleteOnShowUnderlay: Self = this.set("onShowUnderlay", js.undefined)
+    def setSelectedButtonStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "selectedButtonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectMultiple(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("selectMultiple", value.asInstanceOf[js.Any])
+    def setSelectedButtonStyleUndefined: Self = StObject.set(x, "selectedButtonStyle", js.undefined)
     
     @scala.inline
-    def deleteSelectMultiple: Self = this.set("selectMultiple", js.undefined)
+    def setSelectedIndex(value: RecursivePartial[js.UndefOr[Double | Null]]): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedButtonStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("selectedButtonStyle", value.asInstanceOf[js.Any])
+    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
     
     @scala.inline
-    def deleteSelectedButtonStyle: Self = this.set("selectedButtonStyle", js.undefined)
+    def setSelectedIndexes(value: RecursivePartial[js.UndefOr[js.Array[Double]]]): Self = StObject.set(x, "selectedIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedIndex(value: RecursivePartial[js.UndefOr[Double | Null]]): Self = this.set("selectedIndex", value.asInstanceOf[js.Any])
+    def setSelectedIndexesUndefined: Self = StObject.set(x, "selectedIndexes", js.undefined)
     
     @scala.inline
-    def deleteSelectedIndex: Self = this.set("selectedIndex", js.undefined)
+    def setSelectedTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "selectedTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedIndexes(value: RecursivePartial[js.UndefOr[js.Array[Double]]]): Self = this.set("selectedIndexes", value.asInstanceOf[js.Any])
+    def setSelectedTextStyleUndefined: Self = StObject.set(x, "selectedTextStyle", js.undefined)
     
     @scala.inline
-    def deleteSelectedIndexes: Self = this.set("selectedIndexes", js.undefined)
+    def setSetOpacityTo(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = StObject.set(x, "setOpacityTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("selectedTextStyle", value.asInstanceOf[js.Any])
+    def setSetOpacityToUndefined: Self = StObject.set(x, "setOpacityTo", js.undefined)
     
     @scala.inline
-    def deleteSelectedTextStyle: Self = this.set("selectedTextStyle", js.undefined)
+    def setTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetOpacityTo(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = this.set("setOpacityTo", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteSetOpacityTo: Self = this.set("setOpacityTo", js.undefined)
+    def setUnderlayColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setVertical(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlayColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("underlayColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderlayColor: Self = this.set("underlayColor", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

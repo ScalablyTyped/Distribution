@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.text.XText
 import typings.activexLibreoffice.com_.sun.star.text.XTextCursor
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

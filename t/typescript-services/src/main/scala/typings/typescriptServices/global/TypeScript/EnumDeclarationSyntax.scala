@@ -3,6 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.ISeparatedSyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +22,11 @@ class EnumDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.EnumDeclarationSyntax")
-@js.native
-object EnumDeclarationSyntax extends js.Object {
+object EnumDeclarationSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.EnumDeclarationSyntax.create")
+  @js.native
   def create(
     enumKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
@@ -33,5 +34,8 @@ object EnumDeclarationSyntax extends js.Object {
     closeBraceToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.EnumDeclarationSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.EnumDeclarationSyntax.create1")
+  @js.native
   def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.EnumDeclarationSyntax = js.native
 }

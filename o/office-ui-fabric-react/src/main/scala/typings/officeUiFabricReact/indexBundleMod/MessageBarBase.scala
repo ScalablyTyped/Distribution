@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class MessageBarBase protected ()
   def this(props: IMessageBarProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "MessageBarBase")
-@js.native
-object MessageBarBase extends js.Object {
+object MessageBarBase {
   
-  var defaultProps: IMessageBarProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "MessageBarBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "MessageBarBase.defaultProps")
+  @js.native
+  def defaultProps: IMessageBarProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

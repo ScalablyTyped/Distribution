@@ -5,14 +5,14 @@ import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowLightMod.ShadowLight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/directionalLight", JSImport.Namespace)
-@js.native
-object directionalLightMod extends js.Object {
+object directionalLightMod {
   
+  @JSImport("babylonjs/Lights/directionalLight", "DirectionalLight")
   @js.native
   class DirectionalLight protected () extends ShadowLight {
     /**

@@ -1,11 +1,12 @@
 package typings.reactInspector.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InspectorBaseProps extends js.Object {
+trait InspectorBaseProps extends StObject {
   
   /**
     * Whether to inspect `data` in a table.
@@ -21,24 +22,12 @@ object InspectorBaseProps {
   }
   
   @scala.inline
-  implicit class InspectorBasePropsOps[Self <: InspectorBaseProps] (val x: Self) extends AnyVal {
+  implicit class InspectorBasePropsMutableBuilder[Self <: InspectorBaseProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTable(value: Boolean): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTable(value: Boolean): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

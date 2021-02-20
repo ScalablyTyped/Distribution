@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndOffset extends js.Object {
+trait EndOffset extends StObject {
   
   var endOffset: Double = js.native
   
@@ -32,33 +33,21 @@ object EndOffset {
   }
   
   @scala.inline
-  implicit class EndOffsetOps[Self <: EndOffset] (val x: Self) extends AnyVal {
+  implicit class EndOffsetMutableBuilder[Self <: EndOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTextNodePos(value: Double): Self = StObject.set(x, "endTextNodePos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFramePos(value: Double): Self = StObject.set(x, "framePos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: Double): Self = this.set("endOffset", value.asInstanceOf[js.Any])
+    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTextNodePos(value: Double): Self = this.set("endTextNodePos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFramePos(value: Double): Self = this.set("framePos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartOffset(value: Double): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTextNodePos(value: Double): Self = this.set("startTextNodePos", value.asInstanceOf[js.Any])
+    def setStartTextNodePos(value: Double): Self = StObject.set(x, "startTextNodePos", value.asInstanceOf[js.Any])
   }
 }

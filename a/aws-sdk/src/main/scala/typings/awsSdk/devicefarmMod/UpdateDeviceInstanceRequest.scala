@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDeviceInstanceRequest extends js.Object {
+trait UpdateDeviceInstanceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the device instance.
@@ -31,36 +32,24 @@ object UpdateDeviceInstanceRequest {
   }
   
   @scala.inline
-  implicit class UpdateDeviceInstanceRequestOps[Self <: UpdateDeviceInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDeviceInstanceRequestMutableBuilder[Self <: UpdateDeviceInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabels(value: InstanceLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    def setProfileArn(value: AmazonResourceName): Self = StObject.set(x, "profileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: InstanceLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setProfileArn(value: AmazonResourceName): Self = this.set("profileArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileArn: Self = this.set("profileArn", js.undefined)
+    def setProfileArnUndefined: Self = StObject.set(x, "profileArn", js.undefined)
   }
 }

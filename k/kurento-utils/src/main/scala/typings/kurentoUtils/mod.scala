@@ -8,14 +8,14 @@ import typings.std.MediaStream
 import typings.std.RTCIceCandidate
 import typings.std.RTCPeerConnection
 import typings.std.RTCSessionDescription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kurento-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("kurento-utils", "WebRtcPeer")
   @js.native
   class WebRtcPeer protected () extends EventEmitter {
     def this(mode: recv) = this()
@@ -111,22 +111,27 @@ object mod extends js.Object {
     def showLocalVideo(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object WebRtcPeer extends js.Object {
+  object WebRtcPeer {
     
     /**
       * Create a WebRtcPeer as receive only.
       */
+    @JSImport("kurento-utils", "WebRtcPeer.WebRtcPeerRecvonly")
+    @js.native
     def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
     
     /**
       * Create a WebRtcPeer as send only.
       */
+    @JSImport("kurento-utils", "WebRtcPeer.WebRtcPeerSendonly")
+    @js.native
     def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
     
     /**
       * Create a WebRtcPeer as send and receive.
       */
+    @JSImport("kurento-utils", "WebRtcPeer.WebRtcPeerSendrecv")
+    @js.native
     def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
   }
 }

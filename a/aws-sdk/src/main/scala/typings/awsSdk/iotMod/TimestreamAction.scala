@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimestreamAction extends js.Object {
+trait TimestreamAction extends StObject {
   
   /**
     * The name of an Amazon Timestream database.
@@ -46,39 +47,27 @@ object TimestreamAction {
   }
   
   @scala.inline
-  implicit class TimestreamActionOps[Self <: TimestreamAction] (val x: Self) extends AnyVal {
+  implicit class TimestreamActionMutableBuilder[Self <: TimestreamAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseName(value: TimestreamDatabaseName): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensions(value: TimestreamDimensionList): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsVarargs(value: TimestreamDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDatabaseName(value: TimestreamDatabaseName): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionsVarargs(value: TimestreamDimension*): Self = this.set("dimensions", js.Array(value :_*))
+    def setTableName(value: TimestreamTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: TimestreamDimensionList): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setTimestamp(value: TimestreamTimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableName(value: TimestreamTableName): Self = this.set("tableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: TimestreamTimestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

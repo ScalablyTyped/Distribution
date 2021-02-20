@@ -4,6 +4,7 @@ import typings.leaflet.mod.LatLngBoundsExpression
 import typings.leaflet.mod.LatLngTuple
 import typings.leaflet.mod.VideoOverlayOptions
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,42 +30,30 @@ object VideoOverlayProps {
   }
   
   @scala.inline
-  implicit class VideoOverlayPropsOps[Self <: VideoOverlayProps] (val x: Self) extends AnyVal {
+  implicit class VideoOverlayPropsMutableBuilder[Self <: VideoOverlayProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: LatLngTuple*): Self = this.set("bounds", js.Array(value :_*))
+    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
     
     @scala.inline
-    def setBounds(value: LatLngBoundsExpression): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlVarargs(value: String*): Self = this.set("url", js.Array(value :_*))
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def setUrl(value: String | js.Array[String] | HTMLVideoElement): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String | js.Array[String] | HTMLVideoElement): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaflet(value: LeafletContext): Self = this.set("leaflet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeaflet: Self = this.set("leaflet", js.undefined)
-    
-    @scala.inline
-    def setPlay(value: Boolean): Self = this.set("play", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
   }
 }

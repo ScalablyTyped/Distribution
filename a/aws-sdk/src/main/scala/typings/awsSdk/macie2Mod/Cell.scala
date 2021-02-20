@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cell extends js.Object {
+trait Cell extends StObject {
   
   /**
     * The location of the cell, as an absolute cell reference, that contains the data. For example, Sheet2!C5 for cell C5 on Sheet2 in a Microsoft Excel workbook. This value is null for CSV and TSV files.
@@ -36,42 +37,30 @@ object Cell {
   }
   
   @scala.inline
-  implicit class CellOps[Self <: Cell] (val x: Self) extends AnyVal {
+  implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellReference(value: string): Self = StObject.set(x, "cellReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellReferenceUndefined: Self = StObject.set(x, "cellReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn(value: long): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellReference(value: string): Self = this.set("cellReference", value.asInstanceOf[js.Any])
+    def setColumnName(value: string): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCellReference: Self = this.set("cellReference", js.undefined)
+    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
     @scala.inline
-    def setColumn(value: long): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setRow(value: long): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnName(value: string): Self = this.set("columnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnName: Self = this.set("columnName", js.undefined)
-    
-    @scala.inline
-    def setRow(value: long): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

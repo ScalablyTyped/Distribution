@@ -1,12 +1,13 @@
 package typings.tableau.tableau
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pair extends js.Object {
+trait Pair extends StObject {
   
   /** The field name to which the value is applied. */
   var fieldName: String = js.native
@@ -26,27 +27,15 @@ object Pair {
   }
   
   @scala.inline
-  implicit class PairOps[Self <: Pair] (val x: Self) extends AnyVal {
+  implicit class PairMutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormattedValue(value: String): Self = this.set("formattedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String | Double | Boolean | Date): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String | Double | Boolean | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

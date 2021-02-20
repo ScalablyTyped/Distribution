@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevokeCacheSecurityGroupIngressResult extends js.Object {
+trait RevokeCacheSecurityGroupIngressResult extends StObject {
   
   var CacheSecurityGroup: js.UndefOr[typings.awsSdk.elasticacheMod.CacheSecurityGroup] = js.native
 }
@@ -18,24 +19,12 @@ object RevokeCacheSecurityGroupIngressResult {
   }
   
   @scala.inline
-  implicit class RevokeCacheSecurityGroupIngressResultOps[Self <: RevokeCacheSecurityGroupIngressResult] (val x: Self) extends AnyVal {
+  implicit class RevokeCacheSecurityGroupIngressResultMutableBuilder[Self <: RevokeCacheSecurityGroupIngressResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCacheSecurityGroup(value: CacheSecurityGroup): Self = this.set("CacheSecurityGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheSecurityGroup: Self = this.set("CacheSecurityGroup", js.undefined)
+    def setCacheSecurityGroupUndefined: Self = StObject.set(x, "CacheSecurityGroup", js.undefined)
   }
 }

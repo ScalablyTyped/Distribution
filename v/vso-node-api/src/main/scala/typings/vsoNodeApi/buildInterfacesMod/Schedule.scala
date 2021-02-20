@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schedule extends js.Object {
+trait Schedule extends StObject {
   
   var branchFilters: js.Array[String] = js.native
   
@@ -56,42 +57,30 @@ object Schedule {
   }
   
   @scala.inline
-  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDaysToBuild(value: ScheduleDays): Self = StObject.set(x, "daysToBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchFiltersVarargs(value: String*): Self = this.set("branchFilters", js.Array(value :_*))
+    def setScheduleJobId(value: String): Self = StObject.set(x, "scheduleJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchFilters(value: js.Array[String]): Self = this.set("branchFilters", value.asInstanceOf[js.Any])
+    def setScheduleOnlyWithChanges(value: Boolean): Self = StObject.set(x, "scheduleOnlyWithChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysToBuild(value: ScheduleDays): Self = this.set("daysToBuild", value.asInstanceOf[js.Any])
+    def setStartHours(value: Double): Self = StObject.set(x, "startHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleJobId(value: String): Self = this.set("scheduleJobId", value.asInstanceOf[js.Any])
+    def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleOnlyWithChanges(value: Boolean): Self = this.set("scheduleOnlyWithChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartHours(value: Double): Self = this.set("startHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartMinutes(value: Double): Self = this.set("startMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeZoneId(value: String): Self = this.set("timeZoneId", value.asInstanceOf[js.Any])
+    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
   }
 }

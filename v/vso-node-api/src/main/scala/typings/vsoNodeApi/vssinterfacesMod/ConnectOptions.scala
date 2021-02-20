@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConnectOptions extends js.Object
+sealed trait ConnectOptions extends StObject
 @JSImport("vso-node-api/interfaces/common/VSSInterfaces", "ConnectOptions")
 @js.native
-object ConnectOptions extends js.Object {
+object ConnectOptions extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConnectOptions with Double] = js.native
@@ -19,38 +19,33 @@ object ConnectOptions extends js.Object {
     */
   @js.native
   sealed trait IncludeInheritedDefinitionsOnly extends ConnectOptions
-  /* 4 */ @js.native
-  object IncludeInheritedDefinitionsOnly extends TopLevel[IncludeInheritedDefinitionsOnly with Double]
+  /* 4 */ val IncludeInheritedDefinitionsOnly: typings.vsoNodeApi.vssinterfacesMod.ConnectOptions.IncludeInheritedDefinitionsOnly with Double = js.native
   
   /**
     * Includes the last user access for this host.
     */
   @js.native
   sealed trait IncludeLastUserAccess extends ConnectOptions
-  /* 2 */ @js.native
-  object IncludeLastUserAccess extends TopLevel[IncludeLastUserAccess with Double]
+  /* 2 */ val IncludeLastUserAccess: typings.vsoNodeApi.vssinterfacesMod.ConnectOptions.IncludeLastUserAccess with Double = js.native
   
   /**
     * When true will only return non inherited definitions. Only valid at non-deployment host.
     */
   @js.native
   sealed trait IncludeNonInheritedDefinitionsOnly extends ConnectOptions
-  /* 8 */ @js.native
-  object IncludeNonInheritedDefinitionsOnly extends TopLevel[IncludeNonInheritedDefinitionsOnly with Double]
+  /* 8 */ val IncludeNonInheritedDefinitionsOnly: typings.vsoNodeApi.vssinterfacesMod.ConnectOptions.IncludeNonInheritedDefinitionsOnly with Double = js.native
   
   /**
     * Includes information about AccessMappings and ServiceDefinitions.
     */
   @js.native
   sealed trait IncludeServices extends ConnectOptions
-  /* 1 */ @js.native
-  object IncludeServices extends TopLevel[IncludeServices with Double]
+  /* 1 */ val IncludeServices: typings.vsoNodeApi.vssinterfacesMod.ConnectOptions.IncludeServices with Double = js.native
   
   /**
     * Retrieve no optional data.
     */
   @js.native
   sealed trait None extends ConnectOptions
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.vssinterfacesMod.ConnectOptions.None with Double = js.native
 }

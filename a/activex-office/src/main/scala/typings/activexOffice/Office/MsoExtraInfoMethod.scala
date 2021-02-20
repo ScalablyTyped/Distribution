@@ -2,6 +2,7 @@ package typings.activexOffice.Office
 
 import typings.activexOffice.activexOfficeNumbers.`0`
 import typings.activexOffice.activexOfficeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`0`
   - typings.activexOffice.activexOfficeNumbers.`1`
 */
-trait MsoExtraInfoMethod extends js.Object
+trait MsoExtraInfoMethod extends StObject
 object MsoExtraInfoMethod {
   
   @scala.inline

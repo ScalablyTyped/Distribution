@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,27 +52,15 @@ object XOutputStream {
   }
   
   @scala.inline
-  implicit class XOutputStreamOps[Self <: XOutputStream] (val x: Self) extends AnyVal {
+  implicit class XOutputStreamMutableBuilder[Self <: XOutputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseOutput(value: () => Unit): Self = StObject.set(x, "closeOutput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloseOutput(value: () => Unit): Self = this.set("closeOutput", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWriteBytes(value: SeqEquiv[Double] => Unit): Self = this.set("writeBytes", js.Any.fromFunction1(value))
+    def setWriteBytes(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
   }
 }
